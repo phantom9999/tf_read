@@ -140,6 +140,7 @@ class OpKernel {
   // Returns true iff this op kernel is considered "expensive". The
   // runtime may use this flag to optimize graph execution for example
   // to "inline" inexpensive kernels.
+  // 根据消耗的时间周期判断是否是耗时任务
   virtual bool IsExpensive() {
     return expensive_ && (cost_estimate_.load(std::memory_order_relaxed) >
                           kOpIsExpensiveThresholdCycles);
@@ -152,6 +153,7 @@ class OpKernel {
     // N.B. Updates to `cost_estimate_` are atomic but unlocked.  Simultaneous
     // updates may result in one or more updates being ignored.  This does not
     // affect correctness but may slow down the update frequency.
+    // new_data = ( 10 -1) * ${old} / 10 + ${current} / 10
     cost_estimate_.store(
         (kCostDecay - 1) * cost_estimate_.load(std::memory_order_relaxed) /
                 kCostDecay +

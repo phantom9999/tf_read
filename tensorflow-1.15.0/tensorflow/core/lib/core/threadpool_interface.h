@@ -15,8 +15,12 @@ limitations under the License.
 
 #ifndef TENSORFLOW_CORE_LIB_CORE_THREADPOOL_INTERFACE_H_
 #define TENSORFLOW_CORE_LIB_CORE_THREADPOOL_INTERFACE_H_
-
+#ifdef _WIN32
+// 方便看个代码
+#include "eigen3/unsupported/Eigen/CXX11/ThreadPool"
+#else
 #include "third_party/eigen3/unsupported/Eigen/CXX11/ThreadPool"
+#endif
 
 namespace tensorflow {
 namespace thread {

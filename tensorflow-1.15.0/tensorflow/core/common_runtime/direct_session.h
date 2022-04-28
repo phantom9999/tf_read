@@ -224,6 +224,7 @@ class DirectSession : public Session {
 
   // Retrieves an already existing set of executors to run 'inputs' and
   // 'outputs', or creates and caches them for future use.
+  // 获取或者创建一个执行器，这个环节比较耗时
   ::tensorflow::Status GetOrCreateExecutors(
       gtl::ArraySlice<string> inputs, gtl::ArraySlice<string> outputs,
       gtl::ArraySlice<string> target_nodes,
@@ -417,6 +418,7 @@ class DirectSession : public Session {
   // 5. RunOptions.experimental.use_run_handler_pool is unspecified or false.
   // Otherwise run in global thread pool, session owned thread pool or handler
   // pool according to other specifications of RunOptions and ConfigProto.
+  // 在当前线程中运行
   bool run_in_caller_thread_ = false;
 
   TF_DISALLOW_COPY_AND_ASSIGN(DirectSession);

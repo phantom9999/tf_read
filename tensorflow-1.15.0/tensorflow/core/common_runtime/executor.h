@@ -38,11 +38,11 @@ class StepStatsCollector;
 //   Graph* graph = ...;
 //      ... construct graph ...
 //   Executor* executor;
-//   TF_CHECK_OK(NewSimpleExecutor(my_device, graph, &executor));
+//   TF_CHECK_OK(NewSimpleExecutor(my_device, graph, &executor));  // 创建执行器
 //   Rendezvous* rendezvous = NewNaiveRendezvous();
-//   TF_CHECK_OK(rendezvous->Send("input", some_input_tensor));
-//   TF_CHECK_OK(executor->Run({ExecutorOpts, rendezvous, nullptr}));
-//   TF_CHECK_OK(rendezvous->Recv("output", &output_tensor));
+//   TF_CHECK_OK(rendezvous->Send("input", some_input_tensor));  // feed
+//   TF_CHECK_OK(executor->Run({ExecutorOpts, rendezvous, nullptr})); // 执行
+//   TF_CHECK_OK(rendezvous->Recv("output", &output_tensor));  // fetch
 //   ... ...
 //
 // Multiple threads can call Executor::Run concurrently.
@@ -66,10 +66,10 @@ class Executor {
   //
   // RunAsync() uses the given "rendezvous", if not null, as the
   // mechanism to communicate inputs and outputs of the underlying
-  // graph computation.
+  // graph computation. 用于图节点之间的输入输出
   //
   // RunAsync() calls "stats_collector", if not null, to keep track of
-  // stats. This allows us to collect statistics and traces on demand.
+  // stats. This allows us to collect statistics and traces on demand. 状态管理器
   //
   // RunAsync() is provided a "call_frame", if the executor is used
   // for executing a function, is used to pass arguments and return
@@ -151,8 +151,8 @@ struct LocalExecutorParams {
                                       Executor** executor);
 
 // A class to help run multiple executors in parallel and wait until
-// all of them are complete.
-//
+// all of them are complete. 多个执行器并行执行
+// 像状态管理
 // ExecutorBarrier deletes itself after the function returned by Get()
 // is called.
 class ExecutorBarrier {
@@ -196,6 +196,7 @@ class ExecutorBarrier {
 
       // If we are the first error encountered, trigger an abort of the
       // Rendezvous object by this thread only.
+      // 第一个错误，记录下Rendezvous
       if (status_group_.ok() && !s.ok()) {
         error_rendez = rendez_;
         error_rendez->Ref();
@@ -209,7 +210,7 @@ class ExecutorBarrier {
       status_group_.Update(s);
 
       // If this is the last call to WhenDone, call the final callback
-      // below.
+      // below. 最后一个调用一下
       if (--pending_ == 0) {
         CHECK(done_cb_ != nullptr);
         std::swap(done, done_cb_);
@@ -224,6 +225,7 @@ class ExecutorBarrier {
     }
 
     if (done != nullptr) {
+      // 都执行完毕，才会走到这里
       delete this;
       if (!status.ok()) {
         VLOG(1) << "ExecutorBarrier finished with bad status: " << status;

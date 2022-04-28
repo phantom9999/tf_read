@@ -1,0 +1,14 @@
+[build_requires]
+
+[requires]
+protobuf/3.9.1
+gflags/2.2.2
+glog/0.5.0
+abseil/20211102.0
+eigen/3.4.0
+
+[generators]
+cmake_find_package
+cmake_paths
+
+[options]

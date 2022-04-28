@@ -92,6 +92,7 @@ Status NewThreadPoolFromThreadPoolOptions(
     thread::ThreadPool** pool, bool* owned) {
   int32 num_threads = thread_pool_options.num_threads();
   if (num_threads == 0) {
+    // 获取多少个cpu
     num_threads = NumInterOpThreadsFromSessionOptions(options);
   }
   const string& name = thread_pool_options.global_name();
@@ -315,6 +316,8 @@ DirectSession::DirectSession(const SessionOptions& options,
   const int thread_pool_size =
       options_.config.session_inter_op_thread_pool_size();
   if (thread_pool_size > 0) {
+    // 创建多个线程池
+    // 一个inter thread pool 应该对应一个cpu
     for (int i = 0; i < thread_pool_size; ++i) {
       thread::ThreadPool* pool = nullptr;
       bool owned = false;
@@ -324,9 +327,11 @@ DirectSession::DirectSession(const SessionOptions& options,
       thread_pools_.emplace_back(pool, owned);
     }
   } else if (options_.config.use_per_session_threads()) {
+    // 创建一个线程池, session owned
     thread_pools_.emplace_back(NewThreadPoolFromSessionOptions(options_),
                                true /* owned */);
   } else {
+    // 使用全局线程池(static)
     thread_pools_.emplace_back(GlobalThreadPool(options), false /* owned */);
     // Run locally if environment value of TF_NUM_INTEROP_THREADS is negative
     // and config.inter_op_parallelism_threads is unspecified or negative.
@@ -552,7 +557,9 @@ Status DirectSession::RunInternal(
 #endif
 
   // Start parallel Executors.
+  // 获取子图数量
   const size_t num_executors = executors_and_keys->items.size();
+  // 类似counterdown
   ExecutorBarrier* barrier = new ExecutorBarrier(
       num_executors, run_state.rendez, [&run_state](const Status& ret) {
         {
@@ -582,6 +589,7 @@ Status DirectSession::RunInternal(
 
   bool update_cost_model = false;
   if (options_.config.graph_options().build_cost_model() > 0) {
+    // 采样记录
     const int64 build_cost_model_every =
         options_.config.graph_options().build_cost_model();
     const int64 build_cost_model_after =
@@ -637,6 +645,7 @@ Status DirectSession::RunInternal(
   if (run_in_caller_thread_) {
     pool = nullptr;
   } else if (threadpool_options.inter_op_threadpool != nullptr) {
+    // client-session才会走到这里
     threadpool_wrapper = absl::make_unique<thread::ThreadPool>(
         threadpool_options.inter_op_threadpool);
     pool = threadpool_wrapper.get();
@@ -650,6 +659,7 @@ Status DirectSession::RunInternal(
     if (executors_and_keys->items.size() > 1) {
       pool = thread_pools_[0].first;
     } else {
+      // 只有一个子图的情况
       VLOG(1) << "Executing Session::Run() synchronously!";
     }
   }
@@ -658,6 +668,7 @@ Status DirectSession::RunInternal(
   if (ShouldUseRunHandlerPool(run_options) &&
       run_options.experimental().use_run_handler_pool()) {
     VLOG(1) << "Using RunHandler to scheduler inter-op closures.";
+    // 读环境变量、config啥的创建RunHandler对象，像实验性代码
     handler = GetOrCreateRunHandlerPool(options_)->Get(step_id);
   }
   auto* handler_ptr = handler.get();
@@ -665,12 +676,15 @@ Status DirectSession::RunInternal(
   Executor::Args::Runner default_runner = nullptr;
 
   if (pool == nullptr) {
+    // 单任务同步
     default_runner = [](Executor::Args::Closure c) { c(); };
   } else if (handler_ptr != nullptr) {
+    // 使用runhandler
     default_runner = [handler_ptr](Executor::Args::Closure c) {
       handler_ptr->ScheduleInterOpClosure(std::move(c));
     };
   } else {
+    // 使用线程池
     default_runner = [this, pool](Executor::Args::Closure c) {
       pool->Schedule(std::move(c));
     };
@@ -687,6 +701,7 @@ Status DirectSession::RunInternal(
     if (!device_thread_pool) {
       args.runner = default_runner;
     } else {
+      // 设备有自己的线程池，gpu情况
       args.runner = [this, device_thread_pool](Executor::Args::Closure c) {
         device_thread_pool->Schedule(std::move(c));
       };
@@ -794,6 +809,7 @@ Status DirectSession::Run(const RunOptions& run_options,
   run_state_args.collective_graph_key =
       run_options.experimental().collective_graph_key();
 
+  // 获取执行器
   TF_RETURN_IF_ERROR(GetOrCreateExecutors(input_tensor_names, output_names,
                                           target_nodes, &executors_and_keys,
                                           &run_state_args));
@@ -1239,6 +1255,7 @@ Status DirectSession::CreateExecutors(
     RunStateArgs* run_state_args) {
   BuildGraphOptions options;
   options.callable_options = callable_options;
+  // 控制feed/fetch实现方式
   options.use_function_convention = !run_state_args->is_partial_run;
   options.collective_graph_key =
       callable_options.run_options().experimental().collective_graph_key();
@@ -1359,6 +1376,7 @@ Status DirectSession::CreateExecutors(
     item->executor = nullptr;
     item->device = device;
     auto executor_type = options_.config.experimental().executor_type();
+    // 一个子图对应一个executor
     TF_RETURN_IF_ERROR(NewExecutor(
         executor_type, params, std::move(partition_graph), &item->executor));
   }
@@ -1417,6 +1435,7 @@ Status DirectSession::GetOrCreateExecutors(
   }
 
   // Fast lookup path, no sorting.
+  // ${input}->${output}/${target_nodes}/${is_partial_run}/${debug}
   const string key = strings::StrCat(
       absl::StrJoin(inputs, ","), "->", absl::StrJoin(outputs, ","), "/",
       absl::StrJoin(target_nodes, ","), "/", run_state_args->is_partial_run,
@@ -1450,6 +1469,7 @@ Status DirectSession::GetOrCreateExecutors(
   std::vector<string> tn_sorted(target_nodes.begin(), target_nodes.end());
   std::sort(tn_sorted.begin(), tn_sorted.end());
 
+  // ${inputs_sorted}->${outputs_sorted}/${tn_sorted}/${is_partial_run}/${debug}
   const string sorted_key = strings::StrCat(
       absl::StrJoin(inputs_sorted, ","), "->",
       absl::StrJoin(outputs_sorted, ","), "/", absl::StrJoin(tn_sorted, ","),

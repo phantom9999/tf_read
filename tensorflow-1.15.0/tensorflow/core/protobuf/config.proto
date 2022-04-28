@@ -267,7 +267,7 @@ message GraphOptions {
   bool infer_shapes = 5;
 
   // Only place the subgraphs that are run, rather than the entire graph.
-  //
+  // 放剪纸图
   // This is useful for interactive graph building, where one might
   // produce graphs that cannot be placed during the debugging
   // process.  In particular, it allows the client to continue work in
@@ -381,7 +381,7 @@ message ConfigProto {
   int32 inter_op_parallelism_threads = 5;
 
   // If true, use a new set of threads for this session rather than the global
-  // pool of threads. Only supported by direct sessions.
+  // pool of threads. Only supported by direct sessions. session级别线程池
   //
   // If false, use the global threads created by the first session, or the
   // per-session thread pools configured by session_inter_op_thread_pool.

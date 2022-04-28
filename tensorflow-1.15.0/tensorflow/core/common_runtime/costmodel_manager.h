@@ -27,6 +27,7 @@ limitations under the License.
 namespace tensorflow {
 
 // Used to manage all the cost models for a session.
+// 模型消耗管理 <graph, cost>
 class CostModelManager {
  public:
   ~CostModelManager();

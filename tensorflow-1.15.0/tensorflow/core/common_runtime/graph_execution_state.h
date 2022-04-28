@@ -46,6 +46,7 @@ struct GraphExecutionStateOptions {
   string session_handle;
   // A map from node name to device name, representing the unchangeable
   // placement of stateful nodes.
+  // <node_name, device_name>
   std::unordered_map<string, string> stateful_placements;
 };
 
@@ -73,6 +74,8 @@ struct ClientGraph {
 // executable ClientGraph from the original GraphDef that specifies
 // the complete graph and from BuildGraphOptions which specifies
 // input/output nodes.
+// GraphExecutionState用于创建ClientGraph
+// graphDef指明执行算子；BuildGraphOptions确认输入输出节点
 //
 // An executable Graph differs from a GraphDef by being Placed,
 // meaning that each Node is assigned to a single Device in the

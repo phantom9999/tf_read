@@ -28,6 +28,7 @@ namespace tensorflow {
 
 // The session state remembers the tensors we choose to keep across
 // multiple run calls.
+// session一次任务维度的存储
 class SessionState {
  public:
   // Get a tensor from the session state.
@@ -55,6 +56,7 @@ class SessionState {
 
 // The tensor store remembers the tensors we choose to keep for the
 // current run call. It is available to every op kernel.
+// op维度的存储
 class TensorStore {
  public:
   struct TensorAndKey {

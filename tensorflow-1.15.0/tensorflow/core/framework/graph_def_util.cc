@@ -70,6 +70,7 @@ Status AddDefaultAttrsToGraphDef(GraphDef* graph_def,
   for (int i = node_offset; i < graph_def->node_size(); ++i) {
     NodeDef* node_def = graph_def->mutable_node(i);
     const OpDef* op_def;
+    // 根据op名查找op_def，然后把op_def的attr添加到node_def中
     Status s = op_registry.LookUpOpDef(node_def->op(), &op_def);
     if (s.ok()) {
       AddDefaultsToNodeDef(*op_def, node_def);

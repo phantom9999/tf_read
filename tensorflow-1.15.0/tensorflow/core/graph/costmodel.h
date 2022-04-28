@@ -35,11 +35,12 @@ typedef std::unordered_map<StringPiece, int32, StringPieceHasher>
 
 class StepStats;
 
+// 模型消耗记录工具
 // CostModel keeps track of the following runtime statistics for nodes
 // of a single Graph:
-//    * The total number of times a node has executed.
-//    * The accumulated execution time (in microseconds) of a node.
-//    * The accumulated size (in bytes) of each node's output.
+//    * The total number of times a node has executed. 执行多少次
+//    * The accumulated execution time (in microseconds) of a node. 执行时间
+//    * The accumulated size (in bytes) of each node's output. 输出大小
 //
 // This class is NOT thread-safe.
 class CostModel {

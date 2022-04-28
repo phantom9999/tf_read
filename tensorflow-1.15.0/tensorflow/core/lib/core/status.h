@@ -35,6 +35,7 @@ class TF_MUST_USE_RESULT Status;
 
 /// @ingroup core
 /// Denotes success or failure of a call in Tensorflow.
+// 普通的状态类
 class Status {
  public:
   /// Create a success status.
@@ -98,6 +99,7 @@ class Status {
 };
 
 // Helper class to manage multiple child status values.
+// 管理多个子状态，记录主要原因和从原因
 class StatusGroup {
  public:
   // Utility function to mark a Status as derived. By marking derived status,
@@ -110,6 +112,7 @@ class StatusGroup {
   static void ConfigureLogHistory();
 
   // Return a merged status with combined child status messages with a summary.
+  // 把错误信息合并一下然后输出，错误信息来自recent_logs_
   Status as_summary_status() const;
   // Return a merged status with combined child status messages with
   // concatenation.
@@ -117,10 +120,11 @@ class StatusGroup {
 
   bool ok() const { return ok_; }
 
-  // Augment this group with the child status `status`.
+  // Augment this group with the child status `status`. 添加状态
   void Update(const Status& status);
 
   // Attach recent warning and error log messages
+  // 把日志数据添加到 logs对象里
   void AttachLogMessages();
   bool HasLogMessages() const { return !recent_logs_.empty(); }
 

@@ -151,19 +151,24 @@ GraphExecutionState::~GraphExecutionState() {
   GraphDef temp(*base_execution_state.original_graph_def_);
   auto flib_def = absl::make_unique<FunctionLibraryDefinition>(
       OpRegistry::Global(), temp.library());
+  // 给graph的node添加attr
   TF_RETURN_IF_ERROR(AddDefaultAttrsToGraphDef(&temp, *flib_def, 0));
   auto ret = absl::WrapUnique(
       new GraphExecutionState(nullptr, std::move(flib_def), options));
 
+  // 构造图
   auto base_graph = absl::make_unique<Graph>(OpRegistry::Global());
   TF_RETURN_IF_ERROR(
       ConvertGraphDefToGraph({}, std::move(temp), base_graph.get()));
 
   // Rewrite the graph before placement.
   ret->rewrite_metadata_.reset(new subgraph::RewriteGraphMetadata);
+  // 剪枝
   TF_RETURN_IF_ERROR(ret->PruneGraph(subgraph_options, base_graph.get(),
                                      ret->rewrite_metadata_.get()));
+  // 构造
   TF_RETURN_IF_ERROR(ret->InitBaseGraph(std::move(base_graph)));
+  // 构建图
   TF_RETURN_IF_ERROR(ret->BuildGraph(subgraph_options, out_client_graph));
   *out_state = std::move(ret);
   return Status::OK();

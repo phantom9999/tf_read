@@ -55,6 +55,7 @@ class CpuUtils {
   // time for profile.
   // This returns unsigned int because there is no guarantee that rdtsc
   // is less than 2 ^ 61.
+  // 时钟周期
   static inline uint64 GetCurrentClockCycle() {
 #if defined(__ANDROID__)
     return GetCpuUtilsHelperSingletonInstance().GetCurrentClockCycle();

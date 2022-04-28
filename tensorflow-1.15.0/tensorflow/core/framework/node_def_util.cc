@@ -729,6 +729,7 @@ Status NameRangesForNode(const Node& node, const OpDef& op_def,
   return NameRangesForNode(node.def(), op_def, inputs, outputs);
 }
 
+// 给node_def添加attr(根据op_def)
 void AddDefaultsToNodeDef(const OpDef& op_def, NodeDef* node_def) {
   for (const auto& attr_def : op_def.attr()) {
     AttrSlice attrs(*node_def);

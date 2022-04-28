@@ -23,7 +23,9 @@ limitations under the License.
 
 namespace tensorflow {
 namespace core {
-
+/**
+ * 类似智能指针
+ */
 class RefCounted {
  public:
   // Initial reference count is one.

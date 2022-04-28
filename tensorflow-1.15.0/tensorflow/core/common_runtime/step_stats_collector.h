@@ -155,6 +155,7 @@ class StepStatsCollectorInterface {
   virtual string ReportAllocsOnResourceExhausted(const string& err) = 0;
 };
 
+// StepStats -> 多个DeviceStats -> 多个NodeExecStats
 // StepStatsCollector manages the collection of a StepStats object.
 // The StepStats object holds multiple DeviceStats.
 // Each DeviceStats object holds multiple NodeExecStats.

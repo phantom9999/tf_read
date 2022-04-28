@@ -2285,6 +2285,7 @@ void ExecutorState::ScheduleReady(const TaggedNodeSeq& ready,
   }
 
   if (inline_ready == nullptr) {
+    // 第一次运行
     // Schedule to run all the ready ops in thread pool.
     for (auto& tagged_node : ready) {
       runner_([=]() { Process(tagged_node, scheduled_nsec); });

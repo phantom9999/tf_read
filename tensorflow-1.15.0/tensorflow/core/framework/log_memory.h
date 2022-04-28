@@ -25,6 +25,7 @@ namespace tensorflow {
 // frees, associating each allocation with a step identified by a
 // process-wide id. For now, logging is enabled whenever VLOG_IS_ON(1)
 // for the log_memory module.
+// 记录内存分配，通过vlog来控制
 //
 // Limitations: We don't log memory allocations by Eigen on the CPU
 // since that would require major changes to plumb through to the

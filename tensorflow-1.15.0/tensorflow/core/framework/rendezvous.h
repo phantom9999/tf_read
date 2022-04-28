@@ -28,6 +28,7 @@ limitations under the License.
 
 namespace tensorflow {
 
+// 管理输入输出的结构
 // A Rendezvous is an abstraction for passing tensors from producers
 // to consumers. A rendezvous is a table of channels. Each channel is
 // keyed by a rendezvous key. The key encodes a pair of <producer,
