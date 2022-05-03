@@ -1,6 +1,6 @@
 
 
-for filename in `find . -name '*_test.cc'`
+for filename in `find . -name '*_test.cc' -o -name '*_benchmark.cc'`
 do
     echo ${filename};
     origin_dir=`dirname ${filename}`;
