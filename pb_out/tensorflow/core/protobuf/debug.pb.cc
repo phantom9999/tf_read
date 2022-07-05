@@ -196,13 +196,14 @@ void AddDescriptorsImpl() {
       "\001(\t\022\021\n\tfile_path\030\002 \001(\t\022\025\n\rlast_modified\030"
       "\003 \001(\003\022\r\n\005bytes\030\004 \001(\003\022\r\n\005lines\030\005 \003(\t\"K\n\023D"
       "ebuggedSourceFiles\0224\n\014source_files\030\001 \003(\013"
-      "2\036.tensorflow.DebuggedSourceFileBj\n\030org."
-      "tensorflow.frameworkB\013DebugProtosP\001Z<git"
-      "hub.com/tensorflow/tensorflow/tensorflow"
-      "/go/core/protobuf\370\001\001b\006proto3"
+      "2\036.tensorflow.DebuggedSourceFileB\203\001\n\030org"
+      ".tensorflow.frameworkB\013DebugProtosP\001ZUgi"
+      "thub.com/tensorflow/tensorflow/tensorflo"
+      "w/go/core/protobuf/for_core_protos_go_pr"
+      "oto\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 628);
+      descriptor, 654);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/protobuf/debug.proto", &protobuf_RegisterTypes);
 }

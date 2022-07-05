@@ -40,7 +40,7 @@ namespace protobuf_tensorflow_2fcompiler_2ftf2xla_2ftf2xla_2eproto {
 struct TableStruct {
   static const ::google::protobuf::internal::ParseTableField entries[];
   static const ::google::protobuf::internal::AuxillaryParseTableField aux[];
-  static const ::google::protobuf::internal::ParseTable schema[6];
+  static const ::google::protobuf::internal::ParseTable schema[5];
   static const ::google::protobuf::internal::FieldMetadata field_metadata[];
   static const ::google::protobuf::internal::SerializationTable serialization_table[];
   static const ::google::protobuf::uint32 offsets[];
@@ -52,9 +52,6 @@ namespace tf2xla {
 class Config;
 class ConfigDefaultTypeInternal;
 extern ConfigDefaultTypeInternal _Config_default_instance_;
-class ConversionOptions;
-class ConversionOptionsDefaultTypeInternal;
-extern ConversionOptionsDefaultTypeInternal _ConversionOptions_default_instance_;
 class Feed;
 class FeedDefaultTypeInternal;
 extern FeedDefaultTypeInternal _Feed_default_instance_;
@@ -72,7 +69,6 @@ extern VariableDefaultTypeInternal _Variable_default_instance_;
 namespace google {
 namespace protobuf {
 template<> ::tensorflow::tf2xla::Config* Arena::CreateMaybeMessage<::tensorflow::tf2xla::Config>(Arena*);
-template<> ::tensorflow::tf2xla::ConversionOptions* Arena::CreateMaybeMessage<::tensorflow::tf2xla::ConversionOptions>(Arena*);
 template<> ::tensorflow::tf2xla::Feed* Arena::CreateMaybeMessage<::tensorflow::tf2xla::Feed>(Arena*);
 template<> ::tensorflow::tf2xla::Fetch* Arena::CreateMaybeMessage<::tensorflow::tf2xla::Fetch>(Arena*);
 template<> ::tensorflow::tf2xla::TensorId* Arena::CreateMaybeMessage<::tensorflow::tf2xla::TensorId>(Arena*);
@@ -763,124 +759,6 @@ class Variable : public ::google::protobuf::Message /* @@protoc_insertion_point(
 };
 // -------------------------------------------------------------------
 
-class ConversionOptions : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.tf2xla.ConversionOptions) */ {
- public:
-  ConversionOptions();
-  virtual ~ConversionOptions();
-
-  ConversionOptions(const ConversionOptions& from);
-
-  inline ConversionOptions& operator=(const ConversionOptions& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  #if LANG_CXX11
-  ConversionOptions(ConversionOptions&& from) noexcept
-    : ConversionOptions() {
-    *this = ::std::move(from);
-  }
-
-  inline ConversionOptions& operator=(ConversionOptions&& from) noexcept {
-    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
-      if (this != &from) InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-  #endif
-  inline ::google::protobuf::Arena* GetArena() const final {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const final {
-    return MaybeArenaPtr();
-  }
-  static const ::google::protobuf::Descriptor* descriptor();
-  static const ConversionOptions& default_instance();
-
-  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
-  static inline const ConversionOptions* internal_default_instance() {
-    return reinterpret_cast<const ConversionOptions*>(
-               &_ConversionOptions_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    4;
-
-  void UnsafeArenaSwap(ConversionOptions* other);
-  void Swap(ConversionOptions* other);
-  friend void swap(ConversionOptions& a, ConversionOptions& b) {
-    a.Swap(&b);
-  }
-
-  // implements Message ----------------------------------------------
-
-  inline ConversionOptions* New() const final {
-    return CreateMaybeMessage<ConversionOptions>(NULL);
-  }
-
-  ConversionOptions* New(::google::protobuf::Arena* arena) const final {
-    return CreateMaybeMessage<ConversionOptions>(arena);
-  }
-  void CopyFrom(const ::google::protobuf::Message& from) final;
-  void MergeFrom(const ::google::protobuf::Message& from) final;
-  void CopyFrom(const ConversionOptions& from);
-  void MergeFrom(const ConversionOptions& from);
-  void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) final;
-  void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const final;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  void SharedCtor();
-  void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(ConversionOptions* other);
-  protected:
-  explicit ConversionOptions(::google::protobuf::Arena* arena);
-  private:
-  static void ArenaDtor(void* object);
-  inline void RegisterArenaDtor(::google::protobuf::Arena* arena);
-  private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return _internal_metadata_.arena();
-  }
-  inline void* MaybeArenaPtr() const {
-    return _internal_metadata_.raw_arena_ptr();
-  }
-  public:
-
-  ::google::protobuf::Metadata GetMetadata() const final;
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  // bool custom_fake_quant_op_calls = 1;
-  void clear_custom_fake_quant_op_calls();
-  static const int kCustomFakeQuantOpCallsFieldNumber = 1;
-  bool custom_fake_quant_op_calls() const;
-  void set_custom_fake_quant_op_calls(bool value);
-
-  // @@protoc_insertion_point(class_scope:tensorflow.tf2xla.ConversionOptions)
- private:
-
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
-  typedef void InternalArenaConstructable_;
-  typedef void DestructorSkippable_;
-  bool custom_fake_quant_op_calls_;
-  mutable ::google::protobuf::internal::CachedSize _cached_size_;
-  friend struct ::protobuf_tensorflow_2fcompiler_2ftf2xla_2ftf2xla_2eproto::TableStruct;
-};
-// -------------------------------------------------------------------
-
 class Config : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.tf2xla.Config) */ {
  public:
   Config();
@@ -922,7 +800,7 @@ class Config : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
                &_Config_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    5;
+    4;
 
   void UnsafeArenaSwap(Config* other);
   void Swap(Config* other);
@@ -1016,21 +894,6 @@ class Config : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   const ::google::protobuf::RepeatedPtrField< ::tensorflow::tf2xla::Variable >&
       variable() const;
 
-  // .tensorflow.tf2xla.ConversionOptions conversion_options = 4;
-  bool has_conversion_options() const;
-  void clear_conversion_options();
-  static const int kConversionOptionsFieldNumber = 4;
-  private:
-  const ::tensorflow::tf2xla::ConversionOptions& _internal_conversion_options() const;
-  public:
-  const ::tensorflow::tf2xla::ConversionOptions& conversion_options() const;
-  ::tensorflow::tf2xla::ConversionOptions* release_conversion_options();
-  ::tensorflow::tf2xla::ConversionOptions* mutable_conversion_options();
-  void set_allocated_conversion_options(::tensorflow::tf2xla::ConversionOptions* conversion_options);
-  void unsafe_arena_set_allocated_conversion_options(
-      ::tensorflow::tf2xla::ConversionOptions* conversion_options);
-  ::tensorflow::tf2xla::ConversionOptions* unsafe_arena_release_conversion_options();
-
   // @@protoc_insertion_point(class_scope:tensorflow.tf2xla.Config)
  private:
 
@@ -1041,7 +904,6 @@ class Config : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   ::google::protobuf::RepeatedPtrField< ::tensorflow::tf2xla::Feed > feed_;
   ::google::protobuf::RepeatedPtrField< ::tensorflow::tf2xla::Fetch > fetch_;
   ::google::protobuf::RepeatedPtrField< ::tensorflow::tf2xla::Variable > variable_;
-  ::tensorflow::tf2xla::ConversionOptions* conversion_options_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcompiler_2ftf2xla_2ftf2xla_2eproto::TableStruct;
 };
@@ -1822,24 +1684,6 @@ inline void Variable::set_readonly(bool value) {
 
 // -------------------------------------------------------------------
 
-// ConversionOptions
-
-// bool custom_fake_quant_op_calls = 1;
-inline void ConversionOptions::clear_custom_fake_quant_op_calls() {
-  custom_fake_quant_op_calls_ = false;
-}
-inline bool ConversionOptions::custom_fake_quant_op_calls() const {
-  // @@protoc_insertion_point(field_get:tensorflow.tf2xla.ConversionOptions.custom_fake_quant_op_calls)
-  return custom_fake_quant_op_calls_;
-}
-inline void ConversionOptions::set_custom_fake_quant_op_calls(bool value) {
-  
-  custom_fake_quant_op_calls_ = value;
-  // @@protoc_insertion_point(field_set:tensorflow.tf2xla.ConversionOptions.custom_fake_quant_op_calls)
-}
-
-// -------------------------------------------------------------------
-
 // Config
 
 // repeated .tensorflow.tf2xla.Feed feed = 1;
@@ -1932,76 +1776,9 @@ Config::variable() const {
   return variable_;
 }
 
-// .tensorflow.tf2xla.ConversionOptions conversion_options = 4;
-inline bool Config::has_conversion_options() const {
-  return this != internal_default_instance() && conversion_options_ != NULL;
-}
-inline void Config::clear_conversion_options() {
-  if (GetArenaNoVirtual() == NULL && conversion_options_ != NULL) {
-    delete conversion_options_;
-  }
-  conversion_options_ = NULL;
-}
-inline const ::tensorflow::tf2xla::ConversionOptions& Config::_internal_conversion_options() const {
-  return *conversion_options_;
-}
-inline const ::tensorflow::tf2xla::ConversionOptions& Config::conversion_options() const {
-  const ::tensorflow::tf2xla::ConversionOptions* p = conversion_options_;
-  // @@protoc_insertion_point(field_get:tensorflow.tf2xla.Config.conversion_options)
-  return p != NULL ? *p : *reinterpret_cast<const ::tensorflow::tf2xla::ConversionOptions*>(
-      &::tensorflow::tf2xla::_ConversionOptions_default_instance_);
-}
-inline ::tensorflow::tf2xla::ConversionOptions* Config::release_conversion_options() {
-  // @@protoc_insertion_point(field_release:tensorflow.tf2xla.Config.conversion_options)
-  
-  ::tensorflow::tf2xla::ConversionOptions* temp = conversion_options_;
-  if (GetArenaNoVirtual() != NULL) {
-    temp = ::google::protobuf::internal::DuplicateIfNonNull(temp);
-  }
-  conversion_options_ = NULL;
-  return temp;
-}
-inline ::tensorflow::tf2xla::ConversionOptions* Config::unsafe_arena_release_conversion_options() {
-  // @@protoc_insertion_point(field_unsafe_arena_release:tensorflow.tf2xla.Config.conversion_options)
-  
-  ::tensorflow::tf2xla::ConversionOptions* temp = conversion_options_;
-  conversion_options_ = NULL;
-  return temp;
-}
-inline ::tensorflow::tf2xla::ConversionOptions* Config::mutable_conversion_options() {
-  
-  if (conversion_options_ == NULL) {
-    auto* p = CreateMaybeMessage<::tensorflow::tf2xla::ConversionOptions>(GetArenaNoVirtual());
-    conversion_options_ = p;
-  }
-  // @@protoc_insertion_point(field_mutable:tensorflow.tf2xla.Config.conversion_options)
-  return conversion_options_;
-}
-inline void Config::set_allocated_conversion_options(::tensorflow::tf2xla::ConversionOptions* conversion_options) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
-  if (message_arena == NULL) {
-    delete conversion_options_;
-  }
-  if (conversion_options) {
-    ::google::protobuf::Arena* submessage_arena =
-      ::google::protobuf::Arena::GetArena(conversion_options);
-    if (message_arena != submessage_arena) {
-      conversion_options = ::google::protobuf::internal::GetOwnedMessage(
-          message_arena, conversion_options, submessage_arena);
-    }
-    
-  } else {
-    
-  }
-  conversion_options_ = conversion_options;
-  // @@protoc_insertion_point(field_set_allocated:tensorflow.tf2xla.Config.conversion_options)
-}
-
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
-// -------------------------------------------------------------------
-
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

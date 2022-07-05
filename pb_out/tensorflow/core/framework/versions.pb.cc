@@ -89,13 +89,13 @@ void AddDescriptorsImpl() {
       "\n(tensorflow/core/framework/versions.pro"
       "to\022\ntensorflow\"K\n\nVersionDef\022\020\n\010producer"
       "\030\001 \001(\005\022\024\n\014min_consumer\030\002 \001(\005\022\025\n\rbad_cons"
-      "umers\030\003 \003(\005Bn\n\030org.tensorflow.frameworkB"
-      "\016VersionsProtosP\001Z=github.com/tensorflow"
-      "/tensorflow/tensorflow/go/core/framework"
-      "\370\001\001b\006proto3"
+      "umers\030\003 \003(\005B\200\001\n\030org.tensorflow.framework"
+      "B\016VersionsProtosP\001ZOgithub.com/tensorflo"
+      "w/tensorflow/tensorflow/go/core/framewor"
+      "k/versions_go_proto\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 251);
+      descriptor, 270);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/framework/versions.proto", &protobuf_RegisterTypes);
 }

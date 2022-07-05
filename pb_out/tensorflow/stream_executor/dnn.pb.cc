@@ -19,6 +19,13 @@
 #endif
 // @@protoc_insertion_point(includes)
 
+namespace protobuf_google_2fprotobuf_2fwrappers_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_google_2fprotobuf_2fwrappers_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_UInt64Value;
+}  // namespace protobuf_google_2fprotobuf_2fwrappers_2eproto
+namespace protobuf_tensorflow_2fstream_5fexecutor_2fdnn_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fstream_5fexecutor_2fdnn_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_AlgorithmProto_TuningKnobsEntry_DoNotUse;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fstream_5fexecutor_2fdnn_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_AlgorithmProto;
+}  // namespace protobuf_tensorflow_2fstream_5fexecutor_2fdnn_2eproto
 namespace stream_executor {
 namespace dnn {
 class TensorDescriptorProtoDefaultTypeInternal {
@@ -28,11 +35,24 @@ class TensorDescriptorProtoDefaultTypeInternal {
   int data_layout_;
   int filter_layout_;
 } _TensorDescriptorProto_default_instance_;
+class AlgorithmProto_TuningKnobsEntry_DoNotUseDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<AlgorithmProto_TuningKnobsEntry_DoNotUse>
+      _instance;
+} _AlgorithmProto_TuningKnobsEntry_DoNotUse_default_instance_;
 class AlgorithmProtoDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<AlgorithmProto>
       _instance;
 } _AlgorithmProto_default_instance_;
+class AlgorithmConfigProtoDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<AlgorithmConfigProto>
+      _instance;
+  const ::stream_executor::dnn::AlgorithmProto* algorithm_;
+  const ::stream_executor::dnn::AlgorithmProto* algorithm_no_scratch_;
+  ::google::protobuf::int64 scratch_size_;
+} _AlgorithmConfigProto_default_instance_;
 class ConvolutionDescriptorProtoDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<ConvolutionDescriptorProto>
@@ -55,6 +75,19 @@ static void InitDefaultsTensorDescriptorProto() {
 ::google::protobuf::internal::SCCInfo<0> scc_info_TensorDescriptorProto =
     {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTensorDescriptorProto}, {}};
 
+static void InitDefaultsAlgorithmProto_TuningKnobsEntry_DoNotUse() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::stream_executor::dnn::_AlgorithmProto_TuningKnobsEntry_DoNotUse_default_instance_;
+    new (ptr) ::stream_executor::dnn::AlgorithmProto_TuningKnobsEntry_DoNotUse();
+  }
+  ::stream_executor::dnn::AlgorithmProto_TuningKnobsEntry_DoNotUse::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<0> scc_info_AlgorithmProto_TuningKnobsEntry_DoNotUse =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsAlgorithmProto_TuningKnobsEntry_DoNotUse}, {}};
+
 static void InitDefaultsAlgorithmProto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -66,8 +99,25 @@ static void InitDefaultsAlgorithmProto() {
   ::stream_executor::dnn::AlgorithmProto::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_AlgorithmProto =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsAlgorithmProto}, {}};
+::google::protobuf::internal::SCCInfo<2> scc_info_AlgorithmProto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsAlgorithmProto}, {
+      &protobuf_tensorflow_2fstream_5fexecutor_2fdnn_2eproto::scc_info_AlgorithmProto_TuningKnobsEntry_DoNotUse.base,
+      &protobuf_google_2fprotobuf_2fwrappers_2eproto::scc_info_UInt64Value.base,}};
+
+static void InitDefaultsAlgorithmConfigProto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::stream_executor::dnn::_AlgorithmConfigProto_default_instance_;
+    new (ptr) ::stream_executor::dnn::AlgorithmConfigProto();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::stream_executor::dnn::AlgorithmConfigProto::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<1> scc_info_AlgorithmConfigProto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsAlgorithmConfigProto}, {
+      &protobuf_tensorflow_2fstream_5fexecutor_2fdnn_2eproto::scc_info_AlgorithmProto.base,}};
 
 static void InitDefaultsConvolutionDescriptorProto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -85,11 +135,13 @@ static void InitDefaultsConvolutionDescriptorProto() {
 
 void InitDefaults() {
   ::google::protobuf::internal::InitSCC(&scc_info_TensorDescriptorProto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_AlgorithmProto_TuningKnobsEntry_DoNotUse.base);
   ::google::protobuf::internal::InitSCC(&scc_info_AlgorithmProto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_AlgorithmConfigProto.base);
   ::google::protobuf::internal::InitSCC(&scc_info_ConvolutionDescriptorProto.base);
 }
 
-::google::protobuf::Metadata file_level_metadata[3];
+::google::protobuf::Metadata file_level_metadata[5];
 const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[7];
 
 const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
@@ -103,6 +155,15 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   offsetof(::stream_executor::dnn::TensorDescriptorProtoDefaultTypeInternal, data_layout_),
   offsetof(::stream_executor::dnn::TensorDescriptorProtoDefaultTypeInternal, filter_layout_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::stream_executor::dnn::TensorDescriptorProto, layout_oneof_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::stream_executor::dnn::AlgorithmProto_TuningKnobsEntry_DoNotUse, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::stream_executor::dnn::AlgorithmProto_TuningKnobsEntry_DoNotUse, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::stream_executor::dnn::AlgorithmProto_TuningKnobsEntry_DoNotUse, key_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::stream_executor::dnn::AlgorithmProto_TuningKnobsEntry_DoNotUse, value_),
+  0,
+  1,
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::stream_executor::dnn::AlgorithmProto, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -110,6 +171,20 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   ~0u,  // no _weak_field_map_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::stream_executor::dnn::AlgorithmProto, algo_id_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::stream_executor::dnn::AlgorithmProto, math_type_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::stream_executor::dnn::AlgorithmProto, tuning_knobs_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::stream_executor::dnn::AlgorithmProto, is_cudnn_frontend_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::stream_executor::dnn::AlgorithmProto, workspace_size_),
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::stream_executor::dnn::AlgorithmConfigProto, _internal_metadata_),
+  ~0u,  // no _extensions_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::stream_executor::dnn::AlgorithmConfigProto, _oneof_case_[0]),
+  ~0u,  // no _weak_field_map_
+  offsetof(::stream_executor::dnn::AlgorithmConfigProtoDefaultTypeInternal, algorithm_),
+  offsetof(::stream_executor::dnn::AlgorithmConfigProtoDefaultTypeInternal, algorithm_no_scratch_),
+  offsetof(::stream_executor::dnn::AlgorithmConfigProtoDefaultTypeInternal, scratch_size_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::stream_executor::dnn::AlgorithmConfigProto, optional_algorithm_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::stream_executor::dnn::AlgorithmConfigProto, optional_algorithm_no_scratch_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::stream_executor::dnn::AlgorithmConfigProto, optional_scratch_size_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::stream_executor::dnn::ConvolutionDescriptorProto, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -125,13 +200,17 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::stream_executor::dnn::TensorDescriptorProto)},
-  { 10, -1, sizeof(::stream_executor::dnn::AlgorithmProto)},
-  { 17, -1, sizeof(::stream_executor::dnn::ConvolutionDescriptorProto)},
+  { 10, 17, sizeof(::stream_executor::dnn::AlgorithmProto_TuningKnobsEntry_DoNotUse)},
+  { 19, -1, sizeof(::stream_executor::dnn::AlgorithmProto)},
+  { 29, -1, sizeof(::stream_executor::dnn::AlgorithmConfigProto)},
+  { 40, -1, sizeof(::stream_executor::dnn::ConvolutionDescriptorProto)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::stream_executor::dnn::_TensorDescriptorProto_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::stream_executor::dnn::_AlgorithmProto_TuningKnobsEntry_DoNotUse_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::stream_executor::dnn::_AlgorithmProto_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::stream_executor::dnn::_AlgorithmConfigProto_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::stream_executor::dnn::_ConvolutionDescriptorProto_default_instance_),
 };
 
@@ -150,49 +229,67 @@ void protobuf_AssignDescriptorsOnce() {
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 3);
+  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 5);
 }
 
 void AddDescriptorsImpl() {
   InitDefaults();
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n$tensorflow/stream_executor/dnn.proto\022\023"
-      "stream_executor.dnn\"\341\001\n\025TensorDescriptor"
-      "Proto\022\022\n\ndimensions\030\001 \003(\003\0220\n\tdata_type\030\002"
-      " \001(\0162\035.stream_executor.dnn.DataType\0226\n\013d"
-      "ata_layout\030\003 \001(\0162\037.stream_executor.dnn.D"
-      "ataLayoutH\000\022:\n\rfilter_layout\030\004 \001(\0162!.str"
-      "eam_executor.dnn.FilterLayoutH\000B\016\n\014layou"
-      "t_oneof\"\224\001\n\016AlgorithmProto\022\017\n\007algo_id\030\001 "
-      "\001(\003\022\?\n\tmath_type\030\002 \001(\0162,.stream_executor"
-      ".dnn.AlgorithmProto.MathType\"0\n\010MathType"
-      "\022\020\n\014DEFAULT_MATH\020\000\022\022\n\016TENSOR_OP_MATH\020\001\"\352"
-      "\001\n\032ConvolutionDescriptorProto\022\020\n\010padding"
-      "s\030\001 \003(\003\022\017\n\007strides\030\002 \003(\003\022\021\n\tdilations\030\003 "
-      "\003(\003\0223\n\014compute_mode\030\004 \001(\0162\035.stream_execu"
-      "tor.dnn.DataType\022\023\n\013group_count\030\005 \001(\005\022>\n"
-      "\020convolution_mode\030\006 \001(\0162$.stream_executo"
-      "r.dnn.ConvolutionMode\022\014\n\004name\030\007 \001(\t*E\n\010D"
-      "ataType\022\n\n\006kFloat\020\000\022\013\n\007kDouble\020\001\022\t\n\005kHal"
-      "f\020\002\022\t\n\005kInt8\020\003\022\n\n\006kInt32\020\004*l\n\nDataLayout"
-      "\022\021\n\rkYXDepthBatch\020\000\022\021\n\rkYXBatchDepth\020\001\022\021"
-      "\n\rkBatchYXDepth\020\002\022\021\n\rkBatchDepthYX\020\003\022\022\n\016"
-      "kBatchDepthYX4\020\004*s\n\014FilterLayout\022\022\n\016kOut"
-      "putInputYX\020\000\022\022\n\016kOutputYXInput\020\001\022\023\n\017kOut"
-      "putInputYX4\020\002\022\022\n\016kInputYXOutput\020\003\022\022\n\016kYX"
-      "InputOutput\020\004*f\n\016ActivationMode\022\t\n\005kNone"
-      "\020\000\022\014\n\010kSigmoid\020\001\022\t\n\005kRelu\020\002\022\n\n\006kRelu6\020\003\022"
-      "\n\n\006kReluX\020\004\022\t\n\005kTanh\020\005\022\r\n\tkBandPass\020\006*9\n"
-      "\017ConvolutionMode\022\025\n\021CROSS_CORRELATION\020\000\022"
-      "\017\n\013CONVOLUTION\020\001*p\n\017ConvolutionKind\022\013\n\007I"
-      "NVALID\020\000\022\013\n\007FORWARD\020\001\022\023\n\017BACKWARD_FILTER"
-      "\020\002\022\021\n\rBACKWARD_DATA\020\003\022\033\n\027FORWARD_BIAS_AC"
-      "TIVATION\020\004b\006proto3"
+      "stream_executor.dnn\032\036google/protobuf/wra"
+      "ppers.proto\"\341\001\n\025TensorDescriptorProto\022\022\n"
+      "\ndimensions\030\001 \003(\003\0220\n\tdata_type\030\002 \001(\0162\035.s"
+      "tream_executor.dnn.DataType\0226\n\013data_layo"
+      "ut\030\003 \001(\0162\037.stream_executor.dnn.DataLayou"
+      "tH\000\022:\n\rfilter_layout\030\004 \001(\0162!.stream_exec"
+      "utor.dnn.FilterLayoutH\000B\016\n\014layout_oneof\""
+      "\353\002\n\016AlgorithmProto\022\017\n\007algo_id\030\001 \001(\003\022\?\n\tm"
+      "ath_type\030\002 \001(\0162,.stream_executor.dnn.Alg"
+      "orithmProto.MathType\022J\n\014tuning_knobs\030\004 \003"
+      "(\01324.stream_executor.dnn.AlgorithmProto."
+      "TuningKnobsEntry\022\031\n\021is_cudnn_frontend\030\005 "
+      "\001(\010\0224\n\016workspace_size\030\006 \001(\0132\034.google.pro"
+      "tobuf.UInt64Value\0322\n\020TuningKnobsEntry\022\013\n"
+      "\003key\030\001 \001(\003\022\r\n\005value\030\002 \001(\003:\0028\001\"0\n\010MathTyp"
+      "e\022\020\n\014DEFAULT_MATH\020\000\022\022\n\016TENSOR_OP_MATH\020\001J"
+      "\004\010\003\020\004\"\375\001\n\024AlgorithmConfigProto\0228\n\talgori"
+      "thm\030\001 \001(\0132#.stream_executor.dnn.Algorith"
+      "mProtoH\000\022C\n\024algorithm_no_scratch\030\002 \001(\0132#"
+      ".stream_executor.dnn.AlgorithmProtoH\001\022\026\n"
+      "\014scratch_size\030\003 \001(\003H\002B\024\n\022optional_algori"
+      "thmB\037\n\035optional_algorithm_no_scratchB\027\n\025"
+      "optional_scratch_size\"\352\001\n\032ConvolutionDes"
+      "criptorProto\022\020\n\010paddings\030\001 \003(\003\022\017\n\007stride"
+      "s\030\002 \003(\003\022\021\n\tdilations\030\003 \003(\003\0223\n\014compute_mo"
+      "de\030\004 \001(\0162\035.stream_executor.dnn.DataType\022"
+      "\023\n\013group_count\030\005 \001(\005\022>\n\020convolution_mode"
+      "\030\006 \001(\0162$.stream_executor.dnn.Convolution"
+      "Mode\022\014\n\004name\030\007 \001(\t*w\n\010DataType\022\n\n\006kFloat"
+      "\020\000\022\013\n\007kDouble\020\001\022\t\n\005kHalf\020\002\022\t\n\005kInt8\020\003\022\n\n"
+      "\006kInt32\020\004\022\021\n\rkComplexFloat\020\005\022\022\n\016kComplex"
+      "Double\020\006\022\t\n\005kBF16\020\007*\201\001\n\nDataLayout\022\021\n\rkY"
+      "XDepthBatch\020\000\022\021\n\rkYXBatchDepth\020\001\022\021\n\rkBat"
+      "chYXDepth\020\002\022\021\n\rkBatchDepthYX\020\003\022\022\n\016kBatch"
+      "DepthYX4\020\004\022\023\n\017kBatchDepthYX32\020\005*\211\001\n\014Filt"
+      "erLayout\022\022\n\016kOutputInputYX\020\000\022\022\n\016kOutputY"
+      "XInput\020\001\022\023\n\017kOutputInputYX4\020\002\022\024\n\020kOutput"
+      "InputYX32\020\005\022\022\n\016kInputYXOutput\020\003\022\022\n\016kYXIn"
+      "putOutput\020\004*f\n\016ActivationMode\022\t\n\005kNone\020\000"
+      "\022\014\n\010kSigmoid\020\001\022\t\n\005kRelu\020\002\022\n\n\006kRelu6\020\003\022\n\n"
+      "\006kReluX\020\004\022\t\n\005kTanh\020\005\022\r\n\tkBandPass\020\006*9\n\017C"
+      "onvolutionMode\022\025\n\021CROSS_CORRELATION\020\000\022\017\n"
+      "\013CONVOLUTION\020\001*p\n\017ConvolutionKind\022\013\n\007INV"
+      "ALID\020\000\022\013\n\007FORWARD\020\001\022\023\n\017BACKWARD_FILTER\020\002"
+      "\022\021\n\rBACKWARD_DATA\020\003\022\033\n\027FORWARD_BIAS_ACTI"
+      "VATION\020\004B@Z>github.com/tensorflow/tensor"
+      "flow/tensorflow/go/stream_executorb\006prot"
+      "o3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 1258);
+      descriptor, 1922);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/stream_executor/dnn.proto", &protobuf_RegisterTypes);
+  ::protobuf_google_2fprotobuf_2fwrappers_2eproto::AddDescriptors();
 }
 
 void AddDescriptors() {
@@ -240,6 +337,9 @@ bool DataType_IsValid(int value) {
     case 2:
     case 3:
     case 4:
+    case 5:
+    case 6:
+    case 7:
       return true;
     default:
       return false;
@@ -257,6 +357,7 @@ bool DataLayout_IsValid(int value) {
     case 2:
     case 3:
     case 4:
+    case 5:
       return true;
     default:
       return false;
@@ -274,6 +375,7 @@ bool FilterLayout_IsValid(int value) {
     case 2:
     case 3:
     case 4:
+    case 5:
       return true;
     default:
       return false;
@@ -750,11 +852,39 @@ void TensorDescriptorProto::InternalSwap(TensorDescriptorProto* other) {
 
 // ===================================================================
 
+AlgorithmProto_TuningKnobsEntry_DoNotUse::AlgorithmProto_TuningKnobsEntry_DoNotUse() {}
+AlgorithmProto_TuningKnobsEntry_DoNotUse::AlgorithmProto_TuningKnobsEntry_DoNotUse(::google::protobuf::Arena* arena) : SuperType(arena) {}
+void AlgorithmProto_TuningKnobsEntry_DoNotUse::MergeFrom(const AlgorithmProto_TuningKnobsEntry_DoNotUse& other) {
+  MergeFromInternal(other);
+}
+::google::protobuf::Metadata AlgorithmProto_TuningKnobsEntry_DoNotUse::GetMetadata() const {
+  ::protobuf_tensorflow_2fstream_5fexecutor_2fdnn_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fstream_5fexecutor_2fdnn_2eproto::file_level_metadata[1];
+}
+void AlgorithmProto_TuningKnobsEntry_DoNotUse::MergeFrom(
+    const ::google::protobuf::Message& other) {
+  ::google::protobuf::Message::MergeFrom(other);
+}
+
+
+// ===================================================================
+
 void AlgorithmProto::InitAsDefaultInstance() {
+  ::stream_executor::dnn::_AlgorithmProto_default_instance_._instance.get_mutable()->workspace_size_ = const_cast< ::google::protobuf::UInt64Value*>(
+      ::google::protobuf::UInt64Value::internal_default_instance());
+}
+void AlgorithmProto::clear_workspace_size() {
+  if (GetArenaNoVirtual() == NULL && workspace_size_ != NULL) {
+    delete workspace_size_;
+  }
+  workspace_size_ = NULL;
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int AlgorithmProto::kAlgoIdFieldNumber;
 const int AlgorithmProto::kMathTypeFieldNumber;
+const int AlgorithmProto::kTuningKnobsFieldNumber;
+const int AlgorithmProto::kIsCudnnFrontendFieldNumber;
+const int AlgorithmProto::kWorkspaceSizeFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 AlgorithmProto::AlgorithmProto()
@@ -768,16 +898,22 @@ AlgorithmProto::AlgorithmProto(const AlgorithmProto& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
+  tuning_knobs_.MergeFrom(from.tuning_knobs_);
+  if (from.has_workspace_size()) {
+    workspace_size_ = new ::google::protobuf::UInt64Value(*from.workspace_size_);
+  } else {
+    workspace_size_ = NULL;
+  }
   ::memcpy(&algo_id_, &from.algo_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&math_type_) -
-    reinterpret_cast<char*>(&algo_id_)) + sizeof(math_type_));
+    static_cast<size_t>(reinterpret_cast<char*>(&is_cudnn_frontend_) -
+    reinterpret_cast<char*>(&algo_id_)) + sizeof(is_cudnn_frontend_));
   // @@protoc_insertion_point(copy_constructor:stream_executor.dnn.AlgorithmProto)
 }
 
 void AlgorithmProto::SharedCtor() {
-  ::memset(&algo_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&math_type_) -
-      reinterpret_cast<char*>(&algo_id_)) + sizeof(math_type_));
+  ::memset(&workspace_size_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&is_cudnn_frontend_) -
+      reinterpret_cast<char*>(&workspace_size_)) + sizeof(is_cudnn_frontend_));
 }
 
 AlgorithmProto::~AlgorithmProto() {
@@ -786,6 +922,7 @@ AlgorithmProto::~AlgorithmProto() {
 }
 
 void AlgorithmProto::SharedDtor() {
+  if (this != internal_default_instance()) delete workspace_size_;
 }
 
 void AlgorithmProto::SetCachedSize(int size) const {
@@ -808,9 +945,14 @@ void AlgorithmProto::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  tuning_knobs_.Clear();
+  if (GetArenaNoVirtual() == NULL && workspace_size_ != NULL) {
+    delete workspace_size_;
+  }
+  workspace_size_ = NULL;
   ::memset(&algo_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&math_type_) -
-      reinterpret_cast<char*>(&algo_id_)) + sizeof(math_type_));
+      reinterpret_cast<char*>(&is_cudnn_frontend_) -
+      reinterpret_cast<char*>(&algo_id_)) + sizeof(is_cudnn_frontend_));
   _internal_metadata_.Clear();
 }
 
@@ -847,6 +989,51 @@ bool AlgorithmProto::MergePartialFromCodedStream(
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
                  input, &value)));
           set_math_type(static_cast< ::stream_executor::dnn::AlgorithmProto_MathType >(value));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // map<int64, int64> tuning_knobs = 4;
+      case 4: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+          AlgorithmProto_TuningKnobsEntry_DoNotUse::Parser< ::google::protobuf::internal::MapField<
+              AlgorithmProto_TuningKnobsEntry_DoNotUse,
+              ::google::protobuf::int64, ::google::protobuf::int64,
+              ::google::protobuf::internal::WireFormatLite::TYPE_INT64,
+              ::google::protobuf::internal::WireFormatLite::TYPE_INT64,
+              0 >,
+            ::google::protobuf::Map< ::google::protobuf::int64, ::google::protobuf::int64 > > parser(&tuning_knobs_);
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
+              input, &parser));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool is_cudnn_frontend = 5;
+      case 5: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &is_cudnn_frontend_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .google.protobuf.UInt64Value workspace_size = 6;
+      case 6: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_workspace_size()));
         } else {
           goto handle_unusual;
         }
@@ -890,6 +1077,56 @@ void AlgorithmProto::SerializeWithCachedSizes(
       2, this->math_type(), output);
   }
 
+  // map<int64, int64> tuning_knobs = 4;
+  if (!this->tuning_knobs().empty()) {
+    typedef ::google::protobuf::Map< ::google::protobuf::int64, ::google::protobuf::int64 >::const_pointer
+        ConstPtr;
+    typedef ::google::protobuf::internal::SortItem< ::google::protobuf::int64, ConstPtr > SortItem;
+    typedef ::google::protobuf::internal::CompareByFirstField<SortItem> Less;
+
+    if (output->IsSerializationDeterministic() &&
+        this->tuning_knobs().size() > 1) {
+      ::std::unique_ptr<SortItem[]> items(
+          new SortItem[this->tuning_knobs().size()]);
+      typedef ::google::protobuf::Map< ::google::protobuf::int64, ::google::protobuf::int64 >::size_type size_type;
+      size_type n = 0;
+      for (::google::protobuf::Map< ::google::protobuf::int64, ::google::protobuf::int64 >::const_iterator
+          it = this->tuning_knobs().begin();
+          it != this->tuning_knobs().end(); ++it, ++n) {
+        items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
+      }
+      ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
+      ::std::unique_ptr<AlgorithmProto_TuningKnobsEntry_DoNotUse> entry;
+      for (size_type i = 0; i < n; i++) {
+        entry.reset(tuning_knobs_.NewEntryWrapper(
+            items[static_cast<ptrdiff_t>(i)].second->first, items[static_cast<ptrdiff_t>(i)].second->second));
+        ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+            4, *entry, output);
+      }
+    } else {
+      ::std::unique_ptr<AlgorithmProto_TuningKnobsEntry_DoNotUse> entry;
+      for (::google::protobuf::Map< ::google::protobuf::int64, ::google::protobuf::int64 >::const_iterator
+          it = this->tuning_knobs().begin();
+          it != this->tuning_knobs().end(); ++it) {
+        entry.reset(tuning_knobs_.NewEntryWrapper(
+            it->first, it->second));
+        ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+            4, *entry, output);
+      }
+    }
+  }
+
+  // bool is_cudnn_frontend = 5;
+  if (this->is_cudnn_frontend() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(5, this->is_cudnn_frontend(), output);
+  }
+
+  // .google.protobuf.UInt64Value workspace_size = 6;
+  if (this->has_workspace_size()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      6, this->_internal_workspace_size(), output);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -915,6 +1152,61 @@ void AlgorithmProto::SerializeWithCachedSizes(
       2, this->math_type(), target);
   }
 
+  // map<int64, int64> tuning_knobs = 4;
+  if (!this->tuning_knobs().empty()) {
+    typedef ::google::protobuf::Map< ::google::protobuf::int64, ::google::protobuf::int64 >::const_pointer
+        ConstPtr;
+    typedef ::google::protobuf::internal::SortItem< ::google::protobuf::int64, ConstPtr > SortItem;
+    typedef ::google::protobuf::internal::CompareByFirstField<SortItem> Less;
+
+    if (deterministic &&
+        this->tuning_knobs().size() > 1) {
+      ::std::unique_ptr<SortItem[]> items(
+          new SortItem[this->tuning_knobs().size()]);
+      typedef ::google::protobuf::Map< ::google::protobuf::int64, ::google::protobuf::int64 >::size_type size_type;
+      size_type n = 0;
+      for (::google::protobuf::Map< ::google::protobuf::int64, ::google::protobuf::int64 >::const_iterator
+          it = this->tuning_knobs().begin();
+          it != this->tuning_knobs().end(); ++it, ++n) {
+        items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
+      }
+      ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
+      ::std::unique_ptr<AlgorithmProto_TuningKnobsEntry_DoNotUse> entry;
+      for (size_type i = 0; i < n; i++) {
+        entry.reset(tuning_knobs_.NewEntryWrapper(
+            items[static_cast<ptrdiff_t>(i)].second->first, items[static_cast<ptrdiff_t>(i)].second->second));
+        target = ::google::protobuf::internal::WireFormatLite::
+                   InternalWriteMessageNoVirtualToArray(
+                       4, *entry, deterministic, target);
+;
+      }
+    } else {
+      ::std::unique_ptr<AlgorithmProto_TuningKnobsEntry_DoNotUse> entry;
+      for (::google::protobuf::Map< ::google::protobuf::int64, ::google::protobuf::int64 >::const_iterator
+          it = this->tuning_knobs().begin();
+          it != this->tuning_knobs().end(); ++it) {
+        entry.reset(tuning_knobs_.NewEntryWrapper(
+            it->first, it->second));
+        target = ::google::protobuf::internal::WireFormatLite::
+                   InternalWriteMessageNoVirtualToArray(
+                       4, *entry, deterministic, target);
+;
+      }
+    }
+  }
+
+  // bool is_cudnn_frontend = 5;
+  if (this->is_cudnn_frontend() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(5, this->is_cudnn_frontend(), target);
+  }
+
+  // .google.protobuf.UInt64Value workspace_size = 6;
+  if (this->has_workspace_size()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        6, this->_internal_workspace_size(), deterministic, target);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
@@ -932,6 +1224,27 @@ size_t AlgorithmProto::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
+  // map<int64, int64> tuning_knobs = 4;
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->tuning_knobs_size());
+  {
+    ::std::unique_ptr<AlgorithmProto_TuningKnobsEntry_DoNotUse> entry;
+    for (::google::protobuf::Map< ::google::protobuf::int64, ::google::protobuf::int64 >::const_iterator
+        it = this->tuning_knobs().begin();
+        it != this->tuning_knobs().end(); ++it) {
+      entry.reset(tuning_knobs_.NewEntryWrapper(it->first, it->second));
+      total_size += ::google::protobuf::internal::WireFormatLite::
+          MessageSizeNoVirtual(*entry);
+    }
+  }
+
+  // .google.protobuf.UInt64Value workspace_size = 6;
+  if (this->has_workspace_size()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *workspace_size_);
+  }
+
   // int64 algo_id = 1;
   if (this->algo_id() != 0) {
     total_size += 1 +
@@ -943,6 +1256,11 @@ size_t AlgorithmProto::ByteSizeLong() const {
   if (this->math_type() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::EnumSize(this->math_type());
+  }
+
+  // bool is_cudnn_frontend = 5;
+  if (this->is_cudnn_frontend() != 0) {
+    total_size += 1 + 1;
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -972,11 +1290,18 @@ void AlgorithmProto::MergeFrom(const AlgorithmProto& from) {
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
+  tuning_knobs_.MergeFrom(from.tuning_knobs_);
+  if (from.has_workspace_size()) {
+    mutable_workspace_size()->::google::protobuf::UInt64Value::MergeFrom(from.workspace_size());
+  }
   if (from.algo_id() != 0) {
     set_algo_id(from.algo_id());
   }
   if (from.math_type() != 0) {
     set_math_type(from.math_type());
+  }
+  if (from.is_cudnn_frontend() != 0) {
+    set_is_cudnn_frontend(from.is_cudnn_frontend());
   }
 }
 
@@ -1004,12 +1329,467 @@ void AlgorithmProto::Swap(AlgorithmProto* other) {
 }
 void AlgorithmProto::InternalSwap(AlgorithmProto* other) {
   using std::swap;
+  tuning_knobs_.Swap(&other->tuning_knobs_);
+  swap(workspace_size_, other->workspace_size_);
   swap(algo_id_, other->algo_id_);
   swap(math_type_, other->math_type_);
+  swap(is_cudnn_frontend_, other->is_cudnn_frontend_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata AlgorithmProto::GetMetadata() const {
+  protobuf_tensorflow_2fstream_5fexecutor_2fdnn_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fstream_5fexecutor_2fdnn_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void AlgorithmConfigProto::InitAsDefaultInstance() {
+  ::stream_executor::dnn::_AlgorithmConfigProto_default_instance_.algorithm_ = const_cast< ::stream_executor::dnn::AlgorithmProto*>(
+      ::stream_executor::dnn::AlgorithmProto::internal_default_instance());
+  ::stream_executor::dnn::_AlgorithmConfigProto_default_instance_.algorithm_no_scratch_ = const_cast< ::stream_executor::dnn::AlgorithmProto*>(
+      ::stream_executor::dnn::AlgorithmProto::internal_default_instance());
+  ::stream_executor::dnn::_AlgorithmConfigProto_default_instance_.scratch_size_ = GOOGLE_LONGLONG(0);
+}
+void AlgorithmConfigProto::set_allocated_algorithm(::stream_executor::dnn::AlgorithmProto* algorithm) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  clear_optional_algorithm();
+  if (algorithm) {
+    ::google::protobuf::Arena* submessage_arena = NULL;
+    if (message_arena != submessage_arena) {
+      algorithm = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, algorithm, submessage_arena);
+    }
+    set_has_algorithm();
+    optional_algorithm_.algorithm_ = algorithm;
+  }
+  // @@protoc_insertion_point(field_set_allocated:stream_executor.dnn.AlgorithmConfigProto.algorithm)
+}
+void AlgorithmConfigProto::set_allocated_algorithm_no_scratch(::stream_executor::dnn::AlgorithmProto* algorithm_no_scratch) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  clear_optional_algorithm_no_scratch();
+  if (algorithm_no_scratch) {
+    ::google::protobuf::Arena* submessage_arena = NULL;
+    if (message_arena != submessage_arena) {
+      algorithm_no_scratch = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, algorithm_no_scratch, submessage_arena);
+    }
+    set_has_algorithm_no_scratch();
+    optional_algorithm_no_scratch_.algorithm_no_scratch_ = algorithm_no_scratch;
+  }
+  // @@protoc_insertion_point(field_set_allocated:stream_executor.dnn.AlgorithmConfigProto.algorithm_no_scratch)
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int AlgorithmConfigProto::kAlgorithmFieldNumber;
+const int AlgorithmConfigProto::kAlgorithmNoScratchFieldNumber;
+const int AlgorithmConfigProto::kScratchSizeFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+AlgorithmConfigProto::AlgorithmConfigProto()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fstream_5fexecutor_2fdnn_2eproto::scc_info_AlgorithmConfigProto.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:stream_executor.dnn.AlgorithmConfigProto)
+}
+AlgorithmConfigProto::AlgorithmConfigProto(const AlgorithmConfigProto& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  clear_has_optional_algorithm();
+  switch (from.optional_algorithm_case()) {
+    case kAlgorithm: {
+      mutable_algorithm()->::stream_executor::dnn::AlgorithmProto::MergeFrom(from.algorithm());
+      break;
+    }
+    case OPTIONAL_ALGORITHM_NOT_SET: {
+      break;
+    }
+  }
+  clear_has_optional_algorithm_no_scratch();
+  switch (from.optional_algorithm_no_scratch_case()) {
+    case kAlgorithmNoScratch: {
+      mutable_algorithm_no_scratch()->::stream_executor::dnn::AlgorithmProto::MergeFrom(from.algorithm_no_scratch());
+      break;
+    }
+    case OPTIONAL_ALGORITHM_NO_SCRATCH_NOT_SET: {
+      break;
+    }
+  }
+  clear_has_optional_scratch_size();
+  switch (from.optional_scratch_size_case()) {
+    case kScratchSize: {
+      set_scratch_size(from.scratch_size());
+      break;
+    }
+    case OPTIONAL_SCRATCH_SIZE_NOT_SET: {
+      break;
+    }
+  }
+  // @@protoc_insertion_point(copy_constructor:stream_executor.dnn.AlgorithmConfigProto)
+}
+
+void AlgorithmConfigProto::SharedCtor() {
+  clear_has_optional_algorithm();
+  clear_has_optional_algorithm_no_scratch();
+  clear_has_optional_scratch_size();
+}
+
+AlgorithmConfigProto::~AlgorithmConfigProto() {
+  // @@protoc_insertion_point(destructor:stream_executor.dnn.AlgorithmConfigProto)
+  SharedDtor();
+}
+
+void AlgorithmConfigProto::SharedDtor() {
+  if (has_optional_algorithm()) {
+    clear_optional_algorithm();
+  }
+  if (has_optional_algorithm_no_scratch()) {
+    clear_optional_algorithm_no_scratch();
+  }
+  if (has_optional_scratch_size()) {
+    clear_optional_scratch_size();
+  }
+}
+
+void AlgorithmConfigProto::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* AlgorithmConfigProto::descriptor() {
+  ::protobuf_tensorflow_2fstream_5fexecutor_2fdnn_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fstream_5fexecutor_2fdnn_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const AlgorithmConfigProto& AlgorithmConfigProto::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fstream_5fexecutor_2fdnn_2eproto::scc_info_AlgorithmConfigProto.base);
+  return *internal_default_instance();
+}
+
+
+void AlgorithmConfigProto::clear_optional_algorithm() {
+// @@protoc_insertion_point(one_of_clear_start:stream_executor.dnn.AlgorithmConfigProto)
+  switch (optional_algorithm_case()) {
+    case kAlgorithm: {
+      delete optional_algorithm_.algorithm_;
+      break;
+    }
+    case OPTIONAL_ALGORITHM_NOT_SET: {
+      break;
+    }
+  }
+  _oneof_case_[0] = OPTIONAL_ALGORITHM_NOT_SET;
+}
+
+void AlgorithmConfigProto::clear_optional_algorithm_no_scratch() {
+// @@protoc_insertion_point(one_of_clear_start:stream_executor.dnn.AlgorithmConfigProto)
+  switch (optional_algorithm_no_scratch_case()) {
+    case kAlgorithmNoScratch: {
+      delete optional_algorithm_no_scratch_.algorithm_no_scratch_;
+      break;
+    }
+    case OPTIONAL_ALGORITHM_NO_SCRATCH_NOT_SET: {
+      break;
+    }
+  }
+  _oneof_case_[1] = OPTIONAL_ALGORITHM_NO_SCRATCH_NOT_SET;
+}
+
+void AlgorithmConfigProto::clear_optional_scratch_size() {
+// @@protoc_insertion_point(one_of_clear_start:stream_executor.dnn.AlgorithmConfigProto)
+  switch (optional_scratch_size_case()) {
+    case kScratchSize: {
+      // No need to clear
+      break;
+    }
+    case OPTIONAL_SCRATCH_SIZE_NOT_SET: {
+      break;
+    }
+  }
+  _oneof_case_[2] = OPTIONAL_SCRATCH_SIZE_NOT_SET;
+}
+
+
+void AlgorithmConfigProto::Clear() {
+// @@protoc_insertion_point(message_clear_start:stream_executor.dnn.AlgorithmConfigProto)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  clear_optional_algorithm();
+  clear_optional_algorithm_no_scratch();
+  clear_optional_scratch_size();
+  _internal_metadata_.Clear();
+}
+
+bool AlgorithmConfigProto::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:stream_executor.dnn.AlgorithmConfigProto)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // .stream_executor.dnn.AlgorithmProto algorithm = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_algorithm()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .stream_executor.dnn.AlgorithmProto algorithm_no_scratch = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_algorithm_no_scratch()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int64 scratch_size = 3;
+      case 3: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
+          clear_optional_scratch_size();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 input, &optional_scratch_size_.scratch_size_)));
+          set_has_scratch_size();
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:stream_executor.dnn.AlgorithmConfigProto)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:stream_executor.dnn.AlgorithmConfigProto)
+  return false;
+#undef DO_
+}
+
+void AlgorithmConfigProto::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:stream_executor.dnn.AlgorithmConfigProto)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .stream_executor.dnn.AlgorithmProto algorithm = 1;
+  if (has_algorithm()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      1, this->_internal_algorithm(), output);
+  }
+
+  // .stream_executor.dnn.AlgorithmProto algorithm_no_scratch = 2;
+  if (has_algorithm_no_scratch()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      2, this->_internal_algorithm_no_scratch(), output);
+  }
+
+  // int64 scratch_size = 3;
+  if (has_scratch_size()) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt64(3, this->scratch_size(), output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:stream_executor.dnn.AlgorithmConfigProto)
+}
+
+::google::protobuf::uint8* AlgorithmConfigProto::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:stream_executor.dnn.AlgorithmConfigProto)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .stream_executor.dnn.AlgorithmProto algorithm = 1;
+  if (has_algorithm()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        1, this->_internal_algorithm(), deterministic, target);
+  }
+
+  // .stream_executor.dnn.AlgorithmProto algorithm_no_scratch = 2;
+  if (has_algorithm_no_scratch()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        2, this->_internal_algorithm_no_scratch(), deterministic, target);
+  }
+
+  // int64 scratch_size = 3;
+  if (has_scratch_size()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(3, this->scratch_size(), target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:stream_executor.dnn.AlgorithmConfigProto)
+  return target;
+}
+
+size_t AlgorithmConfigProto::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:stream_executor.dnn.AlgorithmConfigProto)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  switch (optional_algorithm_case()) {
+    // .stream_executor.dnn.AlgorithmProto algorithm = 1;
+    case kAlgorithm: {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          *optional_algorithm_.algorithm_);
+      break;
+    }
+    case OPTIONAL_ALGORITHM_NOT_SET: {
+      break;
+    }
+  }
+  switch (optional_algorithm_no_scratch_case()) {
+    // .stream_executor.dnn.AlgorithmProto algorithm_no_scratch = 2;
+    case kAlgorithmNoScratch: {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          *optional_algorithm_no_scratch_.algorithm_no_scratch_);
+      break;
+    }
+    case OPTIONAL_ALGORITHM_NO_SCRATCH_NOT_SET: {
+      break;
+    }
+  }
+  switch (optional_scratch_size_case()) {
+    // int64 scratch_size = 3;
+    case kScratchSize: {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int64Size(
+          this->scratch_size());
+      break;
+    }
+    case OPTIONAL_SCRATCH_SIZE_NOT_SET: {
+      break;
+    }
+  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void AlgorithmConfigProto::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:stream_executor.dnn.AlgorithmConfigProto)
+  GOOGLE_DCHECK_NE(&from, this);
+  const AlgorithmConfigProto* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const AlgorithmConfigProto>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:stream_executor.dnn.AlgorithmConfigProto)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:stream_executor.dnn.AlgorithmConfigProto)
+    MergeFrom(*source);
+  }
+}
+
+void AlgorithmConfigProto::MergeFrom(const AlgorithmConfigProto& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:stream_executor.dnn.AlgorithmConfigProto)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  switch (from.optional_algorithm_case()) {
+    case kAlgorithm: {
+      mutable_algorithm()->::stream_executor::dnn::AlgorithmProto::MergeFrom(from.algorithm());
+      break;
+    }
+    case OPTIONAL_ALGORITHM_NOT_SET: {
+      break;
+    }
+  }
+  switch (from.optional_algorithm_no_scratch_case()) {
+    case kAlgorithmNoScratch: {
+      mutable_algorithm_no_scratch()->::stream_executor::dnn::AlgorithmProto::MergeFrom(from.algorithm_no_scratch());
+      break;
+    }
+    case OPTIONAL_ALGORITHM_NO_SCRATCH_NOT_SET: {
+      break;
+    }
+  }
+  switch (from.optional_scratch_size_case()) {
+    case kScratchSize: {
+      set_scratch_size(from.scratch_size());
+      break;
+    }
+    case OPTIONAL_SCRATCH_SIZE_NOT_SET: {
+      break;
+    }
+  }
+}
+
+void AlgorithmConfigProto::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:stream_executor.dnn.AlgorithmConfigProto)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void AlgorithmConfigProto::CopyFrom(const AlgorithmConfigProto& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:stream_executor.dnn.AlgorithmConfigProto)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool AlgorithmConfigProto::IsInitialized() const {
+  return true;
+}
+
+void AlgorithmConfigProto::Swap(AlgorithmConfigProto* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void AlgorithmConfigProto::InternalSwap(AlgorithmConfigProto* other) {
+  using std::swap;
+  swap(optional_algorithm_, other->optional_algorithm_);
+  swap(_oneof_case_[0], other->_oneof_case_[0]);
+  swap(optional_algorithm_no_scratch_, other->optional_algorithm_no_scratch_);
+  swap(_oneof_case_[1], other->_oneof_case_[1]);
+  swap(optional_scratch_size_, other->optional_scratch_size_);
+  swap(_oneof_case_[2], other->_oneof_case_[2]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata AlgorithmConfigProto::GetMetadata() const {
   protobuf_tensorflow_2fstream_5fexecutor_2fdnn_2eproto::protobuf_AssignDescriptorsOnce();
   return ::protobuf_tensorflow_2fstream_5fexecutor_2fdnn_2eproto::file_level_metadata[kIndexInFileMessages];
 }
@@ -1578,8 +2358,14 @@ namespace protobuf {
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::stream_executor::dnn::TensorDescriptorProto* Arena::CreateMaybeMessage< ::stream_executor::dnn::TensorDescriptorProto >(Arena* arena) {
   return Arena::CreateInternal< ::stream_executor::dnn::TensorDescriptorProto >(arena);
 }
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::stream_executor::dnn::AlgorithmProto_TuningKnobsEntry_DoNotUse* Arena::CreateMaybeMessage< ::stream_executor::dnn::AlgorithmProto_TuningKnobsEntry_DoNotUse >(Arena* arena) {
+  return Arena::CreateInternal< ::stream_executor::dnn::AlgorithmProto_TuningKnobsEntry_DoNotUse >(arena);
+}
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::stream_executor::dnn::AlgorithmProto* Arena::CreateMaybeMessage< ::stream_executor::dnn::AlgorithmProto >(Arena* arena) {
   return Arena::CreateInternal< ::stream_executor::dnn::AlgorithmProto >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::stream_executor::dnn::AlgorithmConfigProto* Arena::CreateMaybeMessage< ::stream_executor::dnn::AlgorithmConfigProto >(Arena* arena) {
+  return Arena::CreateInternal< ::stream_executor::dnn::AlgorithmConfigProto >(arena);
 }
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::stream_executor::dnn::ConvolutionDescriptorProto* Arena::CreateMaybeMessage< ::stream_executor::dnn::ConvolutionDescriptorProto >(Arena* arena) {
   return Arena::CreateInternal< ::stream_executor::dnn::ConvolutionDescriptorProto >(arena);

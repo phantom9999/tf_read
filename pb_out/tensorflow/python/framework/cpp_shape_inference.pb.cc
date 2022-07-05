@@ -19,12 +19,15 @@
 #endif
 // @@protoc_insertion_point(includes)
 
+namespace protobuf_tensorflow_2fcore_2fframework_2ffull_5ftype_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fframework_2ffull_5ftype_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_FullTypeDef;
+}  // namespace protobuf_tensorflow_2fcore_2fframework_2ffull_5ftype_2eproto
 namespace protobuf_tensorflow_2fcore_2fframework_2ftensor_5fshape_2eproto {
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fframework_2ftensor_5fshape_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_TensorShapeProto;
 }  // namespace protobuf_tensorflow_2fcore_2fframework_2ftensor_5fshape_2eproto
 namespace protobuf_tensorflow_2fpython_2fframework_2fcpp_5fshape_5finference_2eproto {
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fpython_2fframework_2fcpp_5fshape_5finference_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_CppShapeInferenceResult_HandleData;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fpython_2fframework_2fcpp_5fshape_5finference_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_CppShapeInferenceResult_HandleShapeAndType;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fpython_2fframework_2fcpp_5fshape_5finference_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_CppShapeInferenceResult_HandleShapeAndType;
 }  // namespace protobuf_tensorflow_2fpython_2fframework_2fcpp_5fshape_5finference_2eproto
 namespace tensorflow {
 class CppShapeInferenceResult_HandleShapeAndTypeDefaultTypeInternal {
@@ -60,9 +63,10 @@ static void InitDefaultsCppShapeInferenceResult_HandleShapeAndType() {
   ::tensorflow::CppShapeInferenceResult_HandleShapeAndType::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_CppShapeInferenceResult_HandleShapeAndType =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsCppShapeInferenceResult_HandleShapeAndType}, {
-      &protobuf_tensorflow_2fcore_2fframework_2ftensor_5fshape_2eproto::scc_info_TensorShapeProto.base,}};
+::google::protobuf::internal::SCCInfo<2> scc_info_CppShapeInferenceResult_HandleShapeAndType =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsCppShapeInferenceResult_HandleShapeAndType}, {
+      &protobuf_tensorflow_2fcore_2fframework_2ftensor_5fshape_2eproto::scc_info_TensorShapeProto.base,
+      &protobuf_tensorflow_2fcore_2fframework_2ffull_5ftype_2eproto::scc_info_FullTypeDef.base,}};
 
 static void InitDefaultsCppShapeInferenceResult_HandleData() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -126,6 +130,7 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   ~0u,  // no _weak_field_map_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::CppShapeInferenceResult_HandleShapeAndType, shape_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::CppShapeInferenceResult_HandleShapeAndType, dtype_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::CppShapeInferenceResult_HandleShapeAndType, type_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::CppShapeInferenceResult_HandleData, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -150,9 +155,9 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::tensorflow::CppShapeInferenceResult_HandleShapeAndType)},
-  { 7, -1, sizeof(::tensorflow::CppShapeInferenceResult_HandleData)},
-  { 14, -1, sizeof(::tensorflow::CppShapeInferenceResult)},
-  { 21, -1, sizeof(::tensorflow::CppShapeInferenceInputsNeeded)},
+  { 8, -1, sizeof(::tensorflow::CppShapeInferenceResult_HandleData)},
+  { 15, -1, sizeof(::tensorflow::CppShapeInferenceResult)},
+  { 22, -1, sizeof(::tensorflow::CppShapeInferenceInputsNeeded)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
@@ -184,28 +189,34 @@ void AddDescriptorsImpl() {
   InitDefaults();
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n5tensorflow/python/framework/cpp_shape_"
-      "inference.proto\022\ntensorflow\032%tensorflow/"
-      "core/framework/types.proto\032,tensorflow/c"
-      "ore/framework/tensor_shape.proto\"\355\002\n\027Cpp"
-      "ShapeInferenceResult\022+\n\005shape\030\001 \001(\0132\034.te"
-      "nsorflow.TensorShapeProto\022C\n\013handle_data"
-      "\030\004 \001(\0132..tensorflow.CppShapeInferenceRes"
-      "ult.HandleData\032f\n\022HandleShapeAndType\022+\n\005"
-      "shape\030\001 \001(\0132\034.tensorflow.TensorShapeProt"
-      "o\022#\n\005dtype\030\002 \001(\0162\024.tensorflow.DataType\032l"
-      "\n\nHandleData\022\016\n\006is_set\030\001 \001(\010\022N\n\016shape_an"
-      "d_type\030\002 \003(\01326.tensorflow.CppShapeInfere"
-      "nceResult.HandleShapeAndTypeJ\004\010\002\020\003J\004\010\003\020\004"
-      "\"e\n\035CppShapeInferenceInputsNeeded\022\034\n\024inp"
-      "ut_tensors_needed\030\001 \003(\005\022&\n\036input_tensors"
-      "_as_shapes_needed\030\002 \003(\005B\003\370\001\001b\006proto3"
+      "inference.proto\022\ntensorflow\032)tensorflow/"
+      "core/framework/full_type.proto\032,tensorfl"
+      "ow/core/framework/tensor_shape.proto\032%te"
+      "nsorflow/core/framework/types.proto\"\233\003\n\027"
+      "CppShapeInferenceResult\022+\n\005shape\030\001 \001(\0132\034"
+      ".tensorflow.TensorShapeProto\022C\n\013handle_d"
+      "ata\030\004 \001(\0132..tensorflow.CppShapeInference"
+      "Result.HandleData\032\223\001\n\022HandleShapeAndType"
+      "\022+\n\005shape\030\001 \001(\0132\034.tensorflow.TensorShape"
+      "Proto\022#\n\005dtype\030\002 \001(\0162\024.tensorflow.DataTy"
+      "pe\022%\n\004type\030\004 \001(\0132\027.tensorflow.FullTypeDe"
+      "fJ\004\010\003\020\004\032l\n\nHandleData\022\016\n\006is_set\030\001 \001(\010\022N\n"
+      "\016shape_and_type\030\002 \003(\01326.tensorflow.CppSh"
+      "apeInferenceResult.HandleShapeAndTypeJ\004\010"
+      "\002\020\003J\004\010\003\020\004\"e\n\035CppShapeInferenceInputsNeed"
+      "ed\022\034\n\024input_tensors_needed\030\001 \003(\005\022&\n\036inpu"
+      "t_tensors_as_shapes_needed\030\002 \003(\005BaZ\\gith"
+      "ub.com/tensorflow/tensorflow/tensorflow/"
+      "go/python/framework/cpp_shape_inference_"
+      "go_proto\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 636);
+      descriptor, 819);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/python/framework/cpp_shape_inference.proto", &protobuf_RegisterTypes);
-  ::protobuf_tensorflow_2fcore_2fframework_2ftypes_2eproto::AddDescriptors();
+  ::protobuf_tensorflow_2fcore_2fframework_2ffull_5ftype_2eproto::AddDescriptors();
   ::protobuf_tensorflow_2fcore_2fframework_2ftensor_5fshape_2eproto::AddDescriptors();
+  ::protobuf_tensorflow_2fcore_2fframework_2ftypes_2eproto::AddDescriptors();
 }
 
 void AddDescriptors() {
@@ -226,6 +237,8 @@ namespace tensorflow {
 void CppShapeInferenceResult_HandleShapeAndType::InitAsDefaultInstance() {
   ::tensorflow::_CppShapeInferenceResult_HandleShapeAndType_default_instance_._instance.get_mutable()->shape_ = const_cast< ::tensorflow::TensorShapeProto*>(
       ::tensorflow::TensorShapeProto::internal_default_instance());
+  ::tensorflow::_CppShapeInferenceResult_HandleShapeAndType_default_instance_._instance.get_mutable()->type_ = const_cast< ::tensorflow::FullTypeDef*>(
+      ::tensorflow::FullTypeDef::internal_default_instance());
 }
 void CppShapeInferenceResult_HandleShapeAndType::unsafe_arena_set_allocated_shape(
     ::tensorflow::TensorShapeProto* shape) {
@@ -246,9 +259,29 @@ void CppShapeInferenceResult_HandleShapeAndType::clear_shape() {
   }
   shape_ = NULL;
 }
+void CppShapeInferenceResult_HandleShapeAndType::unsafe_arena_set_allocated_type(
+    ::tensorflow::FullTypeDef* type) {
+  if (GetArenaNoVirtual() == NULL) {
+    delete type_;
+  }
+  type_ = type;
+  if (type) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.CppShapeInferenceResult.HandleShapeAndType.type)
+}
+void CppShapeInferenceResult_HandleShapeAndType::clear_type() {
+  if (GetArenaNoVirtual() == NULL && type_ != NULL) {
+    delete type_;
+  }
+  type_ = NULL;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CppShapeInferenceResult_HandleShapeAndType::kShapeFieldNumber;
 const int CppShapeInferenceResult_HandleShapeAndType::kDtypeFieldNumber;
+const int CppShapeInferenceResult_HandleShapeAndType::kTypeFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CppShapeInferenceResult_HandleShapeAndType::CppShapeInferenceResult_HandleShapeAndType()
@@ -275,6 +308,11 @@ CppShapeInferenceResult_HandleShapeAndType::CppShapeInferenceResult_HandleShapeA
   } else {
     shape_ = NULL;
   }
+  if (from.has_type()) {
+    type_ = new ::tensorflow::FullTypeDef(*from.type_);
+  } else {
+    type_ = NULL;
+  }
   dtype_ = from.dtype_;
   // @@protoc_insertion_point(copy_constructor:tensorflow.CppShapeInferenceResult.HandleShapeAndType)
 }
@@ -293,6 +331,7 @@ CppShapeInferenceResult_HandleShapeAndType::~CppShapeInferenceResult_HandleShape
 void CppShapeInferenceResult_HandleShapeAndType::SharedDtor() {
   GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
   if (this != internal_default_instance()) delete shape_;
+  if (this != internal_default_instance()) delete type_;
 }
 
 void CppShapeInferenceResult_HandleShapeAndType::ArenaDtor(void* object) {
@@ -325,6 +364,10 @@ void CppShapeInferenceResult_HandleShapeAndType::Clear() {
     delete shape_;
   }
   shape_ = NULL;
+  if (GetArenaNoVirtual() == NULL && type_ != NULL) {
+    delete type_;
+  }
+  type_ = NULL;
   dtype_ = 0;
   _internal_metadata_.Clear();
 }
@@ -360,6 +403,18 @@ bool CppShapeInferenceResult_HandleShapeAndType::MergePartialFromCodedStream(
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
                  input, &value)));
           set_dtype(static_cast< ::tensorflow::DataType >(value));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .tensorflow.FullTypeDef type = 4;
+      case 4: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_type()));
         } else {
           goto handle_unusual;
         }
@@ -404,6 +459,12 @@ void CppShapeInferenceResult_HandleShapeAndType::SerializeWithCachedSizes(
       2, this->dtype(), output);
   }
 
+  // .tensorflow.FullTypeDef type = 4;
+  if (this->has_type()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      4, this->_internal_type(), output);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -431,6 +492,13 @@ void CppShapeInferenceResult_HandleShapeAndType::SerializeWithCachedSizes(
       2, this->dtype(), target);
   }
 
+  // .tensorflow.FullTypeDef type = 4;
+  if (this->has_type()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        4, this->_internal_type(), deterministic, target);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
@@ -453,6 +521,13 @@ size_t CppShapeInferenceResult_HandleShapeAndType::ByteSizeLong() const {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *shape_);
+  }
+
+  // .tensorflow.FullTypeDef type = 4;
+  if (this->has_type()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *type_);
   }
 
   // .tensorflow.DataType dtype = 2;
@@ -490,6 +565,9 @@ void CppShapeInferenceResult_HandleShapeAndType::MergeFrom(const CppShapeInferen
 
   if (from.has_shape()) {
     mutable_shape()->::tensorflow::TensorShapeProto::MergeFrom(from.shape());
+  }
+  if (from.has_type()) {
+    mutable_type()->::tensorflow::FullTypeDef::MergeFrom(from.type());
   }
   if (from.dtype() != 0) {
     set_dtype(from.dtype());
@@ -536,6 +614,7 @@ void CppShapeInferenceResult_HandleShapeAndType::UnsafeArenaSwap(CppShapeInferen
 void CppShapeInferenceResult_HandleShapeAndType::InternalSwap(CppShapeInferenceResult_HandleShapeAndType* other) {
   using std::swap;
   swap(shape_, other->shape_);
+  swap(type_, other->type_);
   swap(dtype_, other->dtype_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }

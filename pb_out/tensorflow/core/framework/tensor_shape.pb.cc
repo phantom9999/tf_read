@@ -122,13 +122,14 @@ void AddDescriptorsImpl() {
       ".proto\022\ntensorflow\"z\n\020TensorShapeProto\022-"
       "\n\003dim\030\002 \003(\0132 .tensorflow.TensorShapeProt"
       "o.Dim\022\024\n\014unknown_rank\030\003 \001(\010\032!\n\003Dim\022\014\n\004si"
-      "ze\030\001 \001(\003\022\014\n\004name\030\002 \001(\tBq\n\030org.tensorflow"
-      ".frameworkB\021TensorShapeProtosP\001Z=github."
-      "com/tensorflow/tensorflow/tensorflow/go/"
-      "core/framework\370\001\001b\006proto3"
+      "ze\030\001 \001(\003\022\014\n\004name\030\002 \001(\tB\207\001\n\030org.tensorflo"
+      "w.frameworkB\021TensorShapeProtosP\001ZSgithub"
+      ".com/tensorflow/tensorflow/tensorflow/go"
+      "/core/framework/tensor_shape_go_proto\370\001\001"
+      "b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 305);
+      descriptor, 328);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/framework/tensor_shape.proto", &protobuf_RegisterTypes);
 }

@@ -185,6 +185,7 @@ void InitDefaults() {
 }
 
 ::google::protobuf::Metadata file_level_metadata[7];
+const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[1];
 
 const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::InputArrayShape, _has_bits_),
@@ -193,7 +194,9 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::InputArrayShape, dims_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::InputArrayShape, unknown_rank_),
   ~0u,
+  0,
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::InputArray, _has_bits_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::InputArray, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -268,6 +271,7 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   ~0u,  // no _weak_field_map_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::ModelFlags, input_arrays_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::ModelFlags, output_arrays_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::ModelFlags, control_output_arrays_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::ModelFlags, variable_batch_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::ModelFlags, rnn_states_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::ModelFlags, model_checks_),
@@ -275,24 +279,37 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::ModelFlags, allow_nonascii_arrays_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::ModelFlags, arrays_extra_info_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::ModelFlags, change_concat_input_ranges_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::ModelFlags, saved_model_dir_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::ModelFlags, saved_model_version_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::ModelFlags, saved_model_tags_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::ModelFlags, saved_model_exported_names_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::ModelFlags, use_hlo_import_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::ModelFlags, hlo_file_type_),
   ~0u,
   ~0u,
-  1,
   ~0u,
-  ~0u,
-  2,
   3,
-  0,
+  ~0u,
+  ~0u,
   4,
+  5,
+  1,
+  8,
+  0,
+  7,
+  ~0u,
+  ~0u,
+  6,
+  2,
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 6, sizeof(::toco::InputArrayShape)},
-  { 7, 17, sizeof(::toco::InputArray)},
-  { 22, 32, sizeof(::toco::RnnState)},
-  { 37, 49, sizeof(::toco::ArraysExtraInfo_Entry)},
-  { 56, 62, sizeof(::toco::ArraysExtraInfo)},
-  { 63, 71, sizeof(::toco::ModelFlags_ModelCheck)},
-  { 74, 88, sizeof(::toco::ModelFlags)},
+  { 0, 7, sizeof(::toco::InputArrayShape)},
+  { 9, 19, sizeof(::toco::InputArray)},
+  { 24, 34, sizeof(::toco::RnnState)},
+  { 39, 51, sizeof(::toco::ArraysExtraInfo_Entry)},
+  { 58, 64, sizeof(::toco::ArraysExtraInfo)},
+  { 65, 73, sizeof(::toco::ModelFlags_ModelCheck)},
+  { 76, 97, sizeof(::toco::ModelFlags)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
@@ -309,7 +326,7 @@ void protobuf_AssignDescriptors() {
   AddDescriptors();
   AssignDescriptors(
       "tensorflow/lite/toco/model_flags.proto", schemas, file_default_instances, TableStruct::offsets,
-      file_level_metadata, NULL, NULL);
+      file_level_metadata, file_level_enum_descriptors, NULL);
 }
 
 void protobuf_AssignDescriptorsOnce() {
@@ -328,34 +345,41 @@ void AddDescriptorsImpl() {
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n&tensorflow/lite/toco/model_flags.proto"
       "\022\004toco\032 tensorflow/lite/toco/types.proto"
-      "\"\037\n\017InputArrayShape\022\014\n\004dims\030\002 \003(\005\"\217\001\n\nIn"
-      "putArray\022\014\n\004name\030\001 \001(\t\022$\n\005shape\030\006 \001(\0132\025."
-      "toco.InputArrayShape\022\022\n\nmean_value\030\003 \001(\002"
-      "\022\024\n\tstd_value\030\004 \001(\002:\0011\022#\n\tdata_type\030\005 \001("
-      "\0162\020.toco.IODataType\"t\n\010RnnState\022\023\n\013state"
-      "_array\030\001 \001(\t\022\036\n\026back_edge_source_array\030\002"
-      " \001(\t\022\023\n\013discardable\030\005 \001(\010\022\014\n\004size\030\003 \001(\005\022"
-      "\020\n\010num_dims\030\004 \001(\005\"\357\001\n\017ArraysExtraInfo\022,\n"
-      "\007entries\030\001 \003(\0132\033.toco.ArraysExtraInfo.En"
-      "try\032\255\001\n\005Entry\022\014\n\004name\030\001 \001(\t\022\023\n\013name_rege"
-      "xp\030\007 \001(\t\022\013\n\003min\030\002 \001(\001\022\013\n\003max\030\003 \001(\001\022#\n\tda"
-      "ta_type\030\004 \001(\0162\020.toco.IODataType\022$\n\005shape"
-      "\030\005 \001(\0132\025.toco.InputArrayShape\022\034\n\024constan"
-      "t_float_value\030\006 \001(\002\"\255\003\n\nModelFlags\022&\n\014in"
-      "put_arrays\030\001 \003(\0132\020.toco.InputArray\022\025\n\rou"
-      "tput_arrays\030\002 \003(\t\022\026\n\016variable_batch\030\n \001("
-      "\010\022\"\n\nrnn_states\030\014 \003(\0132\016.toco.RnnState\0221\n"
-      "\014model_checks\030\016 \003(\0132\033.toco.ModelFlags.Mo"
-      "delCheck\022 \n\030allow_nonexistent_arrays\030\020 \001"
-      "(\010\022\035\n\025allow_nonascii_arrays\030\021 \001(\010\0220\n\021arr"
-      "ays_extra_info\030\022 \001(\0132\025.toco.ArraysExtraI"
-      "nfo\022(\n\032change_concat_input_ranges\030\023 \001(\010:"
-      "\004true\032T\n\nModelCheck\022\030\n\ncount_type\030\001 \001(\t:"
-      "\004None\022\025\n\tcount_min\030\002 \001(\005:\002-1\022\025\n\tcount_ma"
-      "x\030\003 \001(\005:\002-1"
+      "\"5\n\017InputArrayShape\022\014\n\004dims\030\002 \003(\005\022\024\n\014unk"
+      "nown_rank\030\003 \001(\010\"\217\001\n\nInputArray\022\014\n\004name\030\001"
+      " \001(\t\022$\n\005shape\030\006 \001(\0132\025.toco.InputArraySha"
+      "pe\022\022\n\nmean_value\030\003 \001(\002\022\024\n\tstd_value\030\004 \001("
+      "\002:\0011\022#\n\tdata_type\030\005 \001(\0162\020.toco.IODataTyp"
+      "e\"t\n\010RnnState\022\023\n\013state_array\030\001 \001(\t\022\036\n\026ba"
+      "ck_edge_source_array\030\002 \001(\t\022\023\n\013discardabl"
+      "e\030\005 \001(\010\022\014\n\004size\030\003 \001(\005\022\020\n\010num_dims\030\004 \001(\005\""
+      "\357\001\n\017ArraysExtraInfo\022,\n\007entries\030\001 \003(\0132\033.t"
+      "oco.ArraysExtraInfo.Entry\032\255\001\n\005Entry\022\014\n\004n"
+      "ame\030\001 \001(\t\022\023\n\013name_regexp\030\007 \001(\t\022\013\n\003min\030\002 "
+      "\001(\001\022\013\n\003max\030\003 \001(\001\022#\n\tdata_type\030\004 \001(\0162\020.to"
+      "co.IODataType\022$\n\005shape\030\005 \001(\0132\025.toco.Inpu"
+      "tArrayShape\022\034\n\024constant_float_value\030\006 \001("
+      "\002\"\306\005\n\nModelFlags\022&\n\014input_arrays\030\001 \003(\0132\020"
+      ".toco.InputArray\022\025\n\routput_arrays\030\002 \003(\t\022"
+      "\035\n\025control_output_arrays\030\030 \003(\t\022\026\n\016variab"
+      "le_batch\030\n \001(\010\022\"\n\nrnn_states\030\014 \003(\0132\016.toc"
+      "o.RnnState\0221\n\014model_checks\030\016 \003(\0132\033.toco."
+      "ModelFlags.ModelCheck\022 \n\030allow_nonexiste"
+      "nt_arrays\030\020 \001(\010\022\035\n\025allow_nonascii_arrays"
+      "\030\021 \001(\010\0220\n\021arrays_extra_info\030\022 \001(\0132\025.toco"
+      ".ArraysExtraInfo\022(\n\032change_concat_input_"
+      "ranges\030\023 \001(\010:\004true\022\027\n\017saved_model_dir\030\024 "
+      "\001(\t\022\033\n\023saved_model_version\030\025 \001(\005\022\030\n\020save"
+      "d_model_tags\030\026 \003(\t\022\"\n\032saved_model_export"
+      "ed_names\030\027 \003(\t\022\026\n\016use_hlo_import\030\031 \001(\010\0223"
+      "\n\rhlo_file_type\030\032 \001(\0162\034.toco.ModelFlags."
+      "HloFileType\032T\n\nModelCheck\022\030\n\ncount_type\030"
+      "\001 \001(\t:\004None\022\025\n\tcount_min\030\002 \001(\005:\002-1\022\025\n\tco"
+      "unt_max\030\003 \001(\005:\002-1\"7\n\013HloFileType\022\013\n\007UNKN"
+      "OWN\020\000\022\014\n\010HLO_TEXT\020\001\022\r\n\tHLO_PROTO\020\002"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 1051);
+      descriptor, 1354);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/lite/toco/model_flags.proto", &protobuf_RegisterTypes);
   ::protobuf_tensorflow_2flite_2ftoco_2ftypes_2eproto::AddDescriptors();
@@ -373,6 +397,29 @@ struct StaticDescriptorInitializer {
 } static_descriptor_initializer;
 }  // namespace protobuf_tensorflow_2flite_2ftoco_2fmodel_5fflags_2eproto
 namespace toco {
+const ::google::protobuf::EnumDescriptor* ModelFlags_HloFileType_descriptor() {
+  protobuf_tensorflow_2flite_2ftoco_2fmodel_5fflags_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_tensorflow_2flite_2ftoco_2fmodel_5fflags_2eproto::file_level_enum_descriptors[0];
+}
+bool ModelFlags_HloFileType_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+      return true;
+    default:
+      return false;
+  }
+}
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const ModelFlags_HloFileType ModelFlags::UNKNOWN;
+const ModelFlags_HloFileType ModelFlags::HLO_TEXT;
+const ModelFlags_HloFileType ModelFlags::HLO_PROTO;
+const ModelFlags_HloFileType ModelFlags::HloFileType_MIN;
+const ModelFlags_HloFileType ModelFlags::HloFileType_MAX;
+const int ModelFlags::HloFileType_ARRAYSIZE;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 // ===================================================================
 
@@ -380,6 +427,7 @@ void InputArrayShape::InitAsDefaultInstance() {
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int InputArrayShape::kDimsFieldNumber;
+const int InputArrayShape::kUnknownRankFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 InputArrayShape::InputArrayShape()
@@ -395,10 +443,12 @@ InputArrayShape::InputArrayShape(const InputArrayShape& from)
       _has_bits_(from._has_bits_),
       dims_(from.dims_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
+  unknown_rank_ = from.unknown_rank_;
   // @@protoc_insertion_point(copy_constructor:toco.InputArrayShape)
 }
 
 void InputArrayShape::SharedCtor() {
+  unknown_rank_ = false;
 }
 
 InputArrayShape::~InputArrayShape() {
@@ -430,6 +480,7 @@ void InputArrayShape::Clear() {
   (void) cached_has_bits;
 
   dims_.Clear();
+  unknown_rank_ = false;
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
@@ -457,6 +508,20 @@ bool InputArrayShape::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, this->mutable_dims())));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // optional bool unknown_rank = 3;
+      case 3: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
+          set_has_unknown_rank();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &unknown_rank_)));
         } else {
           goto handle_unusual;
         }
@@ -495,6 +560,12 @@ void InputArrayShape::SerializeWithCachedSizes(
       2, this->dims(i), output);
   }
 
+  cached_has_bits = _has_bits_[0];
+  // optional bool unknown_rank = 3;
+  if (cached_has_bits & 0x00000001u) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(3, this->unknown_rank(), output);
+  }
+
   if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
@@ -512,6 +583,12 @@ void InputArrayShape::SerializeWithCachedSizes(
   // repeated int32 dims = 2;
   target = ::google::protobuf::internal::WireFormatLite::
     WriteInt32ToArray(2, this->dims_, target);
+
+  cached_has_bits = _has_bits_[0];
+  // optional bool unknown_rank = 3;
+  if (cached_has_bits & 0x00000001u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(3, this->unknown_rank(), target);
+  }
 
   if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
@@ -537,6 +614,11 @@ size_t InputArrayShape::ByteSizeLong() const {
     total_size += 1 *
                   ::google::protobuf::internal::FromIntSize(this->dims_size());
     total_size += data_size;
+  }
+
+  // optional bool unknown_rank = 3;
+  if (has_unknown_rank()) {
+    total_size += 1 + 1;
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -567,6 +649,9 @@ void InputArrayShape::MergeFrom(const InputArrayShape& from) {
   (void) cached_has_bits;
 
   dims_.MergeFrom(from.dims_);
+  if (from.has_unknown_rank()) {
+    set_unknown_rank(from.unknown_rank());
+  }
 }
 
 void InputArrayShape::CopyFrom(const ::google::protobuf::Message& from) {
@@ -594,6 +679,7 @@ void InputArrayShape::Swap(InputArrayShape* other) {
 void InputArrayShape::InternalSwap(InputArrayShape* other) {
   using std::swap;
   dims_.InternalSwap(&other->dims_);
+  swap(unknown_rank_, other->unknown_rank_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
@@ -2572,6 +2658,7 @@ void ModelFlags::InitAsDefaultInstance() {
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int ModelFlags::kInputArraysFieldNumber;
 const int ModelFlags::kOutputArraysFieldNumber;
+const int ModelFlags::kControlOutputArraysFieldNumber;
 const int ModelFlags::kVariableBatchFieldNumber;
 const int ModelFlags::kRnnStatesFieldNumber;
 const int ModelFlags::kModelChecksFieldNumber;
@@ -2579,6 +2666,12 @@ const int ModelFlags::kAllowNonexistentArraysFieldNumber;
 const int ModelFlags::kAllowNonasciiArraysFieldNumber;
 const int ModelFlags::kArraysExtraInfoFieldNumber;
 const int ModelFlags::kChangeConcatInputRangesFieldNumber;
+const int ModelFlags::kSavedModelDirFieldNumber;
+const int ModelFlags::kSavedModelVersionFieldNumber;
+const int ModelFlags::kSavedModelTagsFieldNumber;
+const int ModelFlags::kSavedModelExportedNamesFieldNumber;
+const int ModelFlags::kUseHloImportFieldNumber;
+const int ModelFlags::kHloFileTypeFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 ModelFlags::ModelFlags()
@@ -2595,23 +2688,31 @@ ModelFlags::ModelFlags(const ModelFlags& from)
       input_arrays_(from.input_arrays_),
       output_arrays_(from.output_arrays_),
       rnn_states_(from.rnn_states_),
-      model_checks_(from.model_checks_) {
+      model_checks_(from.model_checks_),
+      saved_model_tags_(from.saved_model_tags_),
+      saved_model_exported_names_(from.saved_model_exported_names_),
+      control_output_arrays_(from.control_output_arrays_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
+  saved_model_dir_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.has_saved_model_dir()) {
+    saved_model_dir_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.saved_model_dir_);
+  }
   if (from.has_arrays_extra_info()) {
     arrays_extra_info_ = new ::toco::ArraysExtraInfo(*from.arrays_extra_info_);
   } else {
     arrays_extra_info_ = NULL;
   }
-  ::memcpy(&variable_batch_, &from.variable_batch_,
+  ::memcpy(&hlo_file_type_, &from.hlo_file_type_,
     static_cast<size_t>(reinterpret_cast<char*>(&change_concat_input_ranges_) -
-    reinterpret_cast<char*>(&variable_batch_)) + sizeof(change_concat_input_ranges_));
+    reinterpret_cast<char*>(&hlo_file_type_)) + sizeof(change_concat_input_ranges_));
   // @@protoc_insertion_point(copy_constructor:toco.ModelFlags)
 }
 
 void ModelFlags::SharedCtor() {
+  saved_model_dir_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&arrays_extra_info_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&allow_nonascii_arrays_) -
-      reinterpret_cast<char*>(&arrays_extra_info_)) + sizeof(allow_nonascii_arrays_));
+      reinterpret_cast<char*>(&saved_model_version_) -
+      reinterpret_cast<char*>(&arrays_extra_info_)) + sizeof(saved_model_version_));
   change_concat_input_ranges_ = true;
 }
 
@@ -2621,6 +2722,7 @@ ModelFlags::~ModelFlags() {
 }
 
 void ModelFlags::SharedDtor() {
+  saved_model_dir_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete arrays_extra_info_;
 }
 
@@ -2648,14 +2750,24 @@ void ModelFlags::Clear() {
   output_arrays_.Clear();
   rnn_states_.Clear();
   model_checks_.Clear();
+  saved_model_tags_.Clear();
+  saved_model_exported_names_.Clear();
+  control_output_arrays_.Clear();
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(arrays_extra_info_ != NULL);
-    arrays_extra_info_->Clear();
+  if (cached_has_bits & 3u) {
+    if (cached_has_bits & 0x00000001u) {
+      saved_model_dir_.ClearNonDefaultToEmptyNoArena();
+    }
+    if (cached_has_bits & 0x00000002u) {
+      GOOGLE_DCHECK(arrays_extra_info_ != NULL);
+      arrays_extra_info_->Clear();
+    }
   }
-  ::memset(&variable_batch_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&allow_nonascii_arrays_) -
-      reinterpret_cast<char*>(&variable_batch_)) + sizeof(allow_nonascii_arrays_));
+  if (cached_has_bits & 252u) {
+    ::memset(&hlo_file_type_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&saved_model_version_) -
+        reinterpret_cast<char*>(&hlo_file_type_)) + sizeof(saved_model_version_));
+  }
   change_concat_input_ranges_ = true;
   _has_bits_.Clear();
   _internal_metadata_.Clear();
@@ -2792,6 +2904,121 @@ bool ModelFlags::MergePartialFromCodedStream(
         break;
       }
 
+      // optional string saved_model_dir = 20;
+      case 20: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(162u /* 162 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_saved_model_dir()));
+          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+            this->saved_model_dir().data(), static_cast<int>(this->saved_model_dir().length()),
+            ::google::protobuf::internal::WireFormat::PARSE,
+            "toco.ModelFlags.saved_model_dir");
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // optional int32 saved_model_version = 21;
+      case 21: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(168u /* 168 & 0xFF */)) {
+          set_has_saved_model_version();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &saved_model_version_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated string saved_model_tags = 22;
+      case 22: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(178u /* 178 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->add_saved_model_tags()));
+          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+            this->saved_model_tags(this->saved_model_tags_size() - 1).data(),
+            static_cast<int>(this->saved_model_tags(this->saved_model_tags_size() - 1).length()),
+            ::google::protobuf::internal::WireFormat::PARSE,
+            "toco.ModelFlags.saved_model_tags");
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated string saved_model_exported_names = 23;
+      case 23: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(186u /* 186 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->add_saved_model_exported_names()));
+          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+            this->saved_model_exported_names(this->saved_model_exported_names_size() - 1).data(),
+            static_cast<int>(this->saved_model_exported_names(this->saved_model_exported_names_size() - 1).length()),
+            ::google::protobuf::internal::WireFormat::PARSE,
+            "toco.ModelFlags.saved_model_exported_names");
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated string control_output_arrays = 24;
+      case 24: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(194u /* 194 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->add_control_output_arrays()));
+          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+            this->control_output_arrays(this->control_output_arrays_size() - 1).data(),
+            static_cast<int>(this->control_output_arrays(this->control_output_arrays_size() - 1).length()),
+            ::google::protobuf::internal::WireFormat::PARSE,
+            "toco.ModelFlags.control_output_arrays");
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // optional bool use_hlo_import = 25;
+      case 25: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(200u /* 200 & 0xFF */)) {
+          set_has_use_hlo_import();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &use_hlo_import_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // optional .toco.ModelFlags.HloFileType hlo_file_type = 26;
+      case 26: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(208u /* 208 & 0xFF */)) {
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          if (::toco::ModelFlags_HloFileType_IsValid(value)) {
+            set_hlo_file_type(static_cast< ::toco::ModelFlags_HloFileType >(value));
+          } else {
+            mutable_unknown_fields()->AddVarint(
+                26, static_cast< ::google::protobuf::uint64>(value));
+          }
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -2839,7 +3066,7 @@ void ModelFlags::SerializeWithCachedSizes(
 
   cached_has_bits = _has_bits_[0];
   // optional bool variable_batch = 10;
-  if (cached_has_bits & 0x00000002u) {
+  if (cached_has_bits & 0x00000008u) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(10, this->variable_batch(), output);
   }
 
@@ -2862,24 +3089,80 @@ void ModelFlags::SerializeWithCachedSizes(
   }
 
   // optional bool allow_nonexistent_arrays = 16;
-  if (cached_has_bits & 0x00000004u) {
+  if (cached_has_bits & 0x00000010u) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(16, this->allow_nonexistent_arrays(), output);
   }
 
   // optional bool allow_nonascii_arrays = 17;
-  if (cached_has_bits & 0x00000008u) {
+  if (cached_has_bits & 0x00000020u) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(17, this->allow_nonascii_arrays(), output);
   }
 
   // optional .toco.ArraysExtraInfo arrays_extra_info = 18;
-  if (cached_has_bits & 0x00000001u) {
+  if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       18, this->_internal_arrays_extra_info(), output);
   }
 
   // optional bool change_concat_input_ranges = 19 [default = true];
-  if (cached_has_bits & 0x00000010u) {
+  if (cached_has_bits & 0x00000100u) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(19, this->change_concat_input_ranges(), output);
+  }
+
+  // optional string saved_model_dir = 20;
+  if (cached_has_bits & 0x00000001u) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->saved_model_dir().data(), static_cast<int>(this->saved_model_dir().length()),
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "toco.ModelFlags.saved_model_dir");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      20, this->saved_model_dir(), output);
+  }
+
+  // optional int32 saved_model_version = 21;
+  if (cached_has_bits & 0x00000080u) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(21, this->saved_model_version(), output);
+  }
+
+  // repeated string saved_model_tags = 22;
+  for (int i = 0, n = this->saved_model_tags_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->saved_model_tags(i).data(), static_cast<int>(this->saved_model_tags(i).length()),
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "toco.ModelFlags.saved_model_tags");
+    ::google::protobuf::internal::WireFormatLite::WriteString(
+      22, this->saved_model_tags(i), output);
+  }
+
+  // repeated string saved_model_exported_names = 23;
+  for (int i = 0, n = this->saved_model_exported_names_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->saved_model_exported_names(i).data(), static_cast<int>(this->saved_model_exported_names(i).length()),
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "toco.ModelFlags.saved_model_exported_names");
+    ::google::protobuf::internal::WireFormatLite::WriteString(
+      23, this->saved_model_exported_names(i), output);
+  }
+
+  // repeated string control_output_arrays = 24;
+  for (int i = 0, n = this->control_output_arrays_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->control_output_arrays(i).data(), static_cast<int>(this->control_output_arrays(i).length()),
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "toco.ModelFlags.control_output_arrays");
+    ::google::protobuf::internal::WireFormatLite::WriteString(
+      24, this->control_output_arrays(i), output);
+  }
+
+  // optional bool use_hlo_import = 25;
+  if (cached_has_bits & 0x00000040u) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(25, this->use_hlo_import(), output);
+  }
+
+  // optional .toco.ModelFlags.HloFileType hlo_file_type = 26;
+  if (cached_has_bits & 0x00000004u) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      26, this->hlo_file_type(), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -2916,7 +3199,7 @@ void ModelFlags::SerializeWithCachedSizes(
 
   cached_has_bits = _has_bits_[0];
   // optional bool variable_batch = 10;
-  if (cached_has_bits & 0x00000002u) {
+  if (cached_has_bits & 0x00000008u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(10, this->variable_batch(), target);
   }
 
@@ -2937,25 +3220,82 @@ void ModelFlags::SerializeWithCachedSizes(
   }
 
   // optional bool allow_nonexistent_arrays = 16;
-  if (cached_has_bits & 0x00000004u) {
+  if (cached_has_bits & 0x00000010u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(16, this->allow_nonexistent_arrays(), target);
   }
 
   // optional bool allow_nonascii_arrays = 17;
-  if (cached_has_bits & 0x00000008u) {
+  if (cached_has_bits & 0x00000020u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(17, this->allow_nonascii_arrays(), target);
   }
 
   // optional .toco.ArraysExtraInfo arrays_extra_info = 18;
-  if (cached_has_bits & 0x00000001u) {
+  if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
         18, this->_internal_arrays_extra_info(), deterministic, target);
   }
 
   // optional bool change_concat_input_ranges = 19 [default = true];
-  if (cached_has_bits & 0x00000010u) {
+  if (cached_has_bits & 0x00000100u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(19, this->change_concat_input_ranges(), target);
+  }
+
+  // optional string saved_model_dir = 20;
+  if (cached_has_bits & 0x00000001u) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->saved_model_dir().data(), static_cast<int>(this->saved_model_dir().length()),
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "toco.ModelFlags.saved_model_dir");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        20, this->saved_model_dir(), target);
+  }
+
+  // optional int32 saved_model_version = 21;
+  if (cached_has_bits & 0x00000080u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(21, this->saved_model_version(), target);
+  }
+
+  // repeated string saved_model_tags = 22;
+  for (int i = 0, n = this->saved_model_tags_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->saved_model_tags(i).data(), static_cast<int>(this->saved_model_tags(i).length()),
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "toco.ModelFlags.saved_model_tags");
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteStringToArray(22, this->saved_model_tags(i), target);
+  }
+
+  // repeated string saved_model_exported_names = 23;
+  for (int i = 0, n = this->saved_model_exported_names_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->saved_model_exported_names(i).data(), static_cast<int>(this->saved_model_exported_names(i).length()),
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "toco.ModelFlags.saved_model_exported_names");
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteStringToArray(23, this->saved_model_exported_names(i), target);
+  }
+
+  // repeated string control_output_arrays = 24;
+  for (int i = 0, n = this->control_output_arrays_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->control_output_arrays(i).data(), static_cast<int>(this->control_output_arrays(i).length()),
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "toco.ModelFlags.control_output_arrays");
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteStringToArray(24, this->control_output_arrays(i), target);
+  }
+
+  // optional bool use_hlo_import = 25;
+  if (cached_has_bits & 0x00000040u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(25, this->use_hlo_import(), target);
+  }
+
+  // optional .toco.ModelFlags.HloFileType hlo_file_type = 26;
+  if (cached_has_bits & 0x00000004u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      26, this->hlo_file_type(), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -3016,12 +3356,49 @@ size_t ModelFlags::ByteSizeLong() const {
     }
   }
 
-  if (_has_bits_[0 / 32] & 31u) {
+  // repeated string saved_model_tags = 22;
+  total_size += 2 *
+      ::google::protobuf::internal::FromIntSize(this->saved_model_tags_size());
+  for (int i = 0, n = this->saved_model_tags_size(); i < n; i++) {
+    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
+      this->saved_model_tags(i));
+  }
+
+  // repeated string saved_model_exported_names = 23;
+  total_size += 2 *
+      ::google::protobuf::internal::FromIntSize(this->saved_model_exported_names_size());
+  for (int i = 0, n = this->saved_model_exported_names_size(); i < n; i++) {
+    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
+      this->saved_model_exported_names(i));
+  }
+
+  // repeated string control_output_arrays = 24;
+  total_size += 2 *
+      ::google::protobuf::internal::FromIntSize(this->control_output_arrays_size());
+  for (int i = 0, n = this->control_output_arrays_size(); i < n; i++) {
+    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
+      this->control_output_arrays(i));
+  }
+
+  if (_has_bits_[0 / 32] & 255u) {
+    // optional string saved_model_dir = 20;
+    if (has_saved_model_dir()) {
+      total_size += 2 +
+        ::google::protobuf::internal::WireFormatLite::StringSize(
+          this->saved_model_dir());
+    }
+
     // optional .toco.ArraysExtraInfo arrays_extra_info = 18;
     if (has_arrays_extra_info()) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *arrays_extra_info_);
+    }
+
+    // optional .toco.ModelFlags.HloFileType hlo_file_type = 26;
+    if (has_hlo_file_type()) {
+      total_size += 2 +
+        ::google::protobuf::internal::WireFormatLite::EnumSize(this->hlo_file_type());
     }
 
     // optional bool variable_batch = 10;
@@ -3039,12 +3416,24 @@ size_t ModelFlags::ByteSizeLong() const {
       total_size += 2 + 1;
     }
 
-    // optional bool change_concat_input_ranges = 19 [default = true];
-    if (has_change_concat_input_ranges()) {
+    // optional bool use_hlo_import = 25;
+    if (has_use_hlo_import()) {
       total_size += 2 + 1;
     }
 
+    // optional int32 saved_model_version = 21;
+    if (has_saved_model_version()) {
+      total_size += 2 +
+        ::google::protobuf::internal::WireFormatLite::Int32Size(
+          this->saved_model_version());
+    }
+
   }
+  // optional bool change_concat_input_ranges = 19 [default = true];
+  if (has_change_concat_input_ranges()) {
+    total_size += 2 + 1;
+  }
+
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -3076,24 +3465,40 @@ void ModelFlags::MergeFrom(const ModelFlags& from) {
   output_arrays_.MergeFrom(from.output_arrays_);
   rnn_states_.MergeFrom(from.rnn_states_);
   model_checks_.MergeFrom(from.model_checks_);
+  saved_model_tags_.MergeFrom(from.saved_model_tags_);
+  saved_model_exported_names_.MergeFrom(from.saved_model_exported_names_);
+  control_output_arrays_.MergeFrom(from.control_output_arrays_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 31u) {
+  if (cached_has_bits & 255u) {
     if (cached_has_bits & 0x00000001u) {
-      mutable_arrays_extra_info()->::toco::ArraysExtraInfo::MergeFrom(from.arrays_extra_info());
+      set_has_saved_model_dir();
+      saved_model_dir_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.saved_model_dir_);
     }
     if (cached_has_bits & 0x00000002u) {
-      variable_batch_ = from.variable_batch_;
+      mutable_arrays_extra_info()->::toco::ArraysExtraInfo::MergeFrom(from.arrays_extra_info());
     }
     if (cached_has_bits & 0x00000004u) {
-      allow_nonexistent_arrays_ = from.allow_nonexistent_arrays_;
+      hlo_file_type_ = from.hlo_file_type_;
     }
     if (cached_has_bits & 0x00000008u) {
-      allow_nonascii_arrays_ = from.allow_nonascii_arrays_;
+      variable_batch_ = from.variable_batch_;
     }
     if (cached_has_bits & 0x00000010u) {
-      change_concat_input_ranges_ = from.change_concat_input_ranges_;
+      allow_nonexistent_arrays_ = from.allow_nonexistent_arrays_;
+    }
+    if (cached_has_bits & 0x00000020u) {
+      allow_nonascii_arrays_ = from.allow_nonascii_arrays_;
+    }
+    if (cached_has_bits & 0x00000040u) {
+      use_hlo_import_ = from.use_hlo_import_;
+    }
+    if (cached_has_bits & 0x00000080u) {
+      saved_model_version_ = from.saved_model_version_;
     }
     _has_bits_[0] |= cached_has_bits;
+  }
+  if (cached_has_bits & 0x00000100u) {
+    set_change_concat_input_ranges(from.change_concat_input_ranges());
   }
 }
 
@@ -3125,10 +3530,18 @@ void ModelFlags::InternalSwap(ModelFlags* other) {
   output_arrays_.InternalSwap(CastToBase(&other->output_arrays_));
   CastToBase(&rnn_states_)->InternalSwap(CastToBase(&other->rnn_states_));
   CastToBase(&model_checks_)->InternalSwap(CastToBase(&other->model_checks_));
+  saved_model_tags_.InternalSwap(CastToBase(&other->saved_model_tags_));
+  saved_model_exported_names_.InternalSwap(CastToBase(&other->saved_model_exported_names_));
+  control_output_arrays_.InternalSwap(CastToBase(&other->control_output_arrays_));
+  saved_model_dir_.Swap(&other->saved_model_dir_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
   swap(arrays_extra_info_, other->arrays_extra_info_);
+  swap(hlo_file_type_, other->hlo_file_type_);
   swap(variable_batch_, other->variable_batch_);
   swap(allow_nonexistent_arrays_, other->allow_nonexistent_arrays_);
   swap(allow_nonascii_arrays_, other->allow_nonascii_arrays_);
+  swap(use_hlo_import_, other->use_hlo_import_);
+  swap(saved_model_version_, other->saved_model_version_);
   swap(change_concat_input_ranges_, other->change_concat_input_ranges_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);

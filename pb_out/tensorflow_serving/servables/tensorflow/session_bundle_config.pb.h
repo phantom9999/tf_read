@@ -371,6 +371,12 @@ class SessionBundleConfig : public ::google::protobuf::Message /* @@protoc_inser
   ::google::protobuf::uint64 experimental_transient_ram_bytes_during_load() const;
   void set_experimental_transient_ram_bytes_during_load(::google::protobuf::uint64 value);
 
+  // int32 num_tflite_pools = 787;
+  void clear_num_tflite_pools();
+  static const int kNumTflitePoolsFieldNumber = 787;
+  ::google::protobuf::int32 num_tflite_pools() const;
+  void set_num_tflite_pools(::google::protobuf::int32 value);
+
   // bool enable_model_warmup = 779;
   void clear_enable_model_warmup();
   static const int kEnableModelWarmupFieldNumber = 779;
@@ -389,11 +395,35 @@ class SessionBundleConfig : public ::google::protobuf::Message /* @@protoc_inser
   bool remove_unused_fields_from_bundle_metagraph() const;
   void set_remove_unused_fields_from_bundle_metagraph(bool value);
 
-  // bool use_tflite_model = 783;
-  void clear_use_tflite_model();
-  static const int kUseTfliteModelFieldNumber = 783;
-  bool use_tflite_model() const;
-  void set_use_tflite_model(bool value);
+  // bool prefer_tflite_model = 783;
+  void clear_prefer_tflite_model();
+  static const int kPreferTfliteModelFieldNumber = 783;
+  bool prefer_tflite_model() const;
+  void set_prefer_tflite_model(bool value);
+
+  // int32 num_tflite_interpreters = 785 [deprecated = true];
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR void clear_num_tflite_interpreters();
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR static const int kNumTfliteInterpretersFieldNumber = 785;
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR ::google::protobuf::int32 num_tflite_interpreters() const;
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR void set_num_tflite_interpreters(::google::protobuf::int32 value);
+
+  // int32 num_tflite_interpreters_per_pool = 786;
+  void clear_num_tflite_interpreters_per_pool();
+  static const int kNumTfliteInterpretersPerPoolFieldNumber = 786;
+  ::google::protobuf::int32 num_tflite_interpreters_per_pool() const;
+  void set_num_tflite_interpreters_per_pool(::google::protobuf::int32 value);
+
+  // bool resource_estimation_uses_validation_result = 784;
+  void clear_resource_estimation_uses_validation_result();
+  static const int kResourceEstimationUsesValidationResultFieldNumber = 784;
+  bool resource_estimation_uses_validation_result() const;
+  void set_resource_estimation_uses_validation_result(bool value);
+
+  // bool wrap_session_with_no_threading_params = 788;
+  void clear_wrap_session_with_no_threading_params();
+  static const int kWrapSessionWithNoThreadingParamsFieldNumber = 788;
+  bool wrap_session_with_no_threading_params() const;
+  void set_wrap_session_with_no_threading_params(bool value);
 
   // @@protoc_insertion_point(class_scope:tensorflow.serving.SessionBundleConfig)
  private:
@@ -407,10 +437,15 @@ class SessionBundleConfig : public ::google::protobuf::Message /* @@protoc_inser
   ::google::protobuf::Int32Value* session_run_load_threadpool_index_;
   ::tensorflow::serving::ModelWarmupOptions* model_warmup_options_;
   ::google::protobuf::uint64 experimental_transient_ram_bytes_during_load_;
+  ::google::protobuf::int32 num_tflite_pools_;
   bool enable_model_warmup_;
   bool enable_session_metadata_;
   bool remove_unused_fields_from_bundle_metagraph_;
-  bool use_tflite_model_;
+  bool prefer_tflite_model_;
+  ::google::protobuf::int32 num_tflite_interpreters_;
+  ::google::protobuf::int32 num_tflite_interpreters_per_pool_;
+  bool resource_estimation_uses_validation_result_;
+  bool wrap_session_with_no_threading_params_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_5fserving_2fservables_2ftensorflow_2fsession_5fbundle_5fconfig_2eproto::TableStruct;
 };
@@ -575,6 +610,30 @@ class BatchingParameters : public ::google::protobuf::Message /* @@protoc_insert
   ::google::protobuf::StringValue* mutable_thread_pool_name();
   void set_allocated_thread_pool_name(::google::protobuf::StringValue* thread_pool_name);
 
+  // .google.protobuf.BoolValue enable_large_batch_splitting = 8;
+  bool has_enable_large_batch_splitting() const;
+  void clear_enable_large_batch_splitting();
+  static const int kEnableLargeBatchSplittingFieldNumber = 8;
+  private:
+  const ::google::protobuf::BoolValue& _internal_enable_large_batch_splitting() const;
+  public:
+  const ::google::protobuf::BoolValue& enable_large_batch_splitting() const;
+  ::google::protobuf::BoolValue* release_enable_large_batch_splitting();
+  ::google::protobuf::BoolValue* mutable_enable_large_batch_splitting();
+  void set_allocated_enable_large_batch_splitting(::google::protobuf::BoolValue* enable_large_batch_splitting);
+
+  // .google.protobuf.Int64Value max_execution_batch_size = 9;
+  bool has_max_execution_batch_size() const;
+  void clear_max_execution_batch_size();
+  static const int kMaxExecutionBatchSizeFieldNumber = 9;
+  private:
+  const ::google::protobuf::Int64Value& _internal_max_execution_batch_size() const;
+  public:
+  const ::google::protobuf::Int64Value& max_execution_batch_size() const;
+  ::google::protobuf::Int64Value* release_max_execution_batch_size();
+  ::google::protobuf::Int64Value* mutable_max_execution_batch_size();
+  void set_allocated_max_execution_batch_size(::google::protobuf::Int64Value* max_execution_batch_size);
+
   // bool pad_variable_length_inputs = 7;
   void clear_pad_variable_length_inputs();
   static const int kPadVariableLengthInputsFieldNumber = 7;
@@ -592,6 +651,8 @@ class BatchingParameters : public ::google::protobuf::Message /* @@protoc_insert
   ::google::protobuf::Int64Value* max_enqueued_batches_;
   ::google::protobuf::Int64Value* num_batch_threads_;
   ::google::protobuf::StringValue* thread_pool_name_;
+  ::google::protobuf::BoolValue* enable_large_batch_splitting_;
+  ::google::protobuf::Int64Value* max_execution_batch_size_;
   bool pad_variable_length_inputs_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_5fserving_2fservables_2ftensorflow_2fsession_5fbundle_5fconfig_2eproto::TableStruct;
@@ -1071,18 +1132,88 @@ inline void SessionBundleConfig::set_remove_unused_fields_from_bundle_metagraph(
   // @@protoc_insertion_point(field_set:tensorflow.serving.SessionBundleConfig.remove_unused_fields_from_bundle_metagraph)
 }
 
-// bool use_tflite_model = 783;
-inline void SessionBundleConfig::clear_use_tflite_model() {
-  use_tflite_model_ = false;
+// bool prefer_tflite_model = 783;
+inline void SessionBundleConfig::clear_prefer_tflite_model() {
+  prefer_tflite_model_ = false;
 }
-inline bool SessionBundleConfig::use_tflite_model() const {
-  // @@protoc_insertion_point(field_get:tensorflow.serving.SessionBundleConfig.use_tflite_model)
-  return use_tflite_model_;
+inline bool SessionBundleConfig::prefer_tflite_model() const {
+  // @@protoc_insertion_point(field_get:tensorflow.serving.SessionBundleConfig.prefer_tflite_model)
+  return prefer_tflite_model_;
 }
-inline void SessionBundleConfig::set_use_tflite_model(bool value) {
+inline void SessionBundleConfig::set_prefer_tflite_model(bool value) {
   
-  use_tflite_model_ = value;
-  // @@protoc_insertion_point(field_set:tensorflow.serving.SessionBundleConfig.use_tflite_model)
+  prefer_tflite_model_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.serving.SessionBundleConfig.prefer_tflite_model)
+}
+
+// bool resource_estimation_uses_validation_result = 784;
+inline void SessionBundleConfig::clear_resource_estimation_uses_validation_result() {
+  resource_estimation_uses_validation_result_ = false;
+}
+inline bool SessionBundleConfig::resource_estimation_uses_validation_result() const {
+  // @@protoc_insertion_point(field_get:tensorflow.serving.SessionBundleConfig.resource_estimation_uses_validation_result)
+  return resource_estimation_uses_validation_result_;
+}
+inline void SessionBundleConfig::set_resource_estimation_uses_validation_result(bool value) {
+  
+  resource_estimation_uses_validation_result_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.serving.SessionBundleConfig.resource_estimation_uses_validation_result)
+}
+
+// int32 num_tflite_interpreters = 785 [deprecated = true];
+inline void SessionBundleConfig::clear_num_tflite_interpreters() {
+  num_tflite_interpreters_ = 0;
+}
+inline ::google::protobuf::int32 SessionBundleConfig::num_tflite_interpreters() const {
+  // @@protoc_insertion_point(field_get:tensorflow.serving.SessionBundleConfig.num_tflite_interpreters)
+  return num_tflite_interpreters_;
+}
+inline void SessionBundleConfig::set_num_tflite_interpreters(::google::protobuf::int32 value) {
+  
+  num_tflite_interpreters_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.serving.SessionBundleConfig.num_tflite_interpreters)
+}
+
+// int32 num_tflite_interpreters_per_pool = 786;
+inline void SessionBundleConfig::clear_num_tflite_interpreters_per_pool() {
+  num_tflite_interpreters_per_pool_ = 0;
+}
+inline ::google::protobuf::int32 SessionBundleConfig::num_tflite_interpreters_per_pool() const {
+  // @@protoc_insertion_point(field_get:tensorflow.serving.SessionBundleConfig.num_tflite_interpreters_per_pool)
+  return num_tflite_interpreters_per_pool_;
+}
+inline void SessionBundleConfig::set_num_tflite_interpreters_per_pool(::google::protobuf::int32 value) {
+  
+  num_tflite_interpreters_per_pool_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.serving.SessionBundleConfig.num_tflite_interpreters_per_pool)
+}
+
+// int32 num_tflite_pools = 787;
+inline void SessionBundleConfig::clear_num_tflite_pools() {
+  num_tflite_pools_ = 0;
+}
+inline ::google::protobuf::int32 SessionBundleConfig::num_tflite_pools() const {
+  // @@protoc_insertion_point(field_get:tensorflow.serving.SessionBundleConfig.num_tflite_pools)
+  return num_tflite_pools_;
+}
+inline void SessionBundleConfig::set_num_tflite_pools(::google::protobuf::int32 value) {
+  
+  num_tflite_pools_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.serving.SessionBundleConfig.num_tflite_pools)
+}
+
+// bool wrap_session_with_no_threading_params = 788;
+inline void SessionBundleConfig::clear_wrap_session_with_no_threading_params() {
+  wrap_session_with_no_threading_params_ = false;
+}
+inline bool SessionBundleConfig::wrap_session_with_no_threading_params() const {
+  // @@protoc_insertion_point(field_get:tensorflow.serving.SessionBundleConfig.wrap_session_with_no_threading_params)
+  return wrap_session_with_no_threading_params_;
+}
+inline void SessionBundleConfig::set_wrap_session_with_no_threading_params(bool value) {
+  
+  wrap_session_with_no_threading_params_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.serving.SessionBundleConfig.wrap_session_with_no_threading_params)
 }
 
 // -------------------------------------------------------------------
@@ -1332,6 +1463,104 @@ inline void BatchingParameters::set_allocated_thread_pool_name(::google::protobu
   }
   thread_pool_name_ = thread_pool_name;
   // @@protoc_insertion_point(field_set_allocated:tensorflow.serving.BatchingParameters.thread_pool_name)
+}
+
+// .google.protobuf.BoolValue enable_large_batch_splitting = 8;
+inline bool BatchingParameters::has_enable_large_batch_splitting() const {
+  return this != internal_default_instance() && enable_large_batch_splitting_ != NULL;
+}
+inline const ::google::protobuf::BoolValue& BatchingParameters::_internal_enable_large_batch_splitting() const {
+  return *enable_large_batch_splitting_;
+}
+inline const ::google::protobuf::BoolValue& BatchingParameters::enable_large_batch_splitting() const {
+  const ::google::protobuf::BoolValue* p = enable_large_batch_splitting_;
+  // @@protoc_insertion_point(field_get:tensorflow.serving.BatchingParameters.enable_large_batch_splitting)
+  return p != NULL ? *p : *reinterpret_cast<const ::google::protobuf::BoolValue*>(
+      &::google::protobuf::_BoolValue_default_instance_);
+}
+inline ::google::protobuf::BoolValue* BatchingParameters::release_enable_large_batch_splitting() {
+  // @@protoc_insertion_point(field_release:tensorflow.serving.BatchingParameters.enable_large_batch_splitting)
+  
+  ::google::protobuf::BoolValue* temp = enable_large_batch_splitting_;
+  enable_large_batch_splitting_ = NULL;
+  return temp;
+}
+inline ::google::protobuf::BoolValue* BatchingParameters::mutable_enable_large_batch_splitting() {
+  
+  if (enable_large_batch_splitting_ == NULL) {
+    auto* p = CreateMaybeMessage<::google::protobuf::BoolValue>(GetArenaNoVirtual());
+    enable_large_batch_splitting_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:tensorflow.serving.BatchingParameters.enable_large_batch_splitting)
+  return enable_large_batch_splitting_;
+}
+inline void BatchingParameters::set_allocated_enable_large_batch_splitting(::google::protobuf::BoolValue* enable_large_batch_splitting) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete reinterpret_cast< ::google::protobuf::MessageLite*>(enable_large_batch_splitting_);
+  }
+  if (enable_large_batch_splitting) {
+    ::google::protobuf::Arena* submessage_arena =
+      reinterpret_cast<::google::protobuf::MessageLite*>(enable_large_batch_splitting)->GetArena();
+    if (message_arena != submessage_arena) {
+      enable_large_batch_splitting = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, enable_large_batch_splitting, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  enable_large_batch_splitting_ = enable_large_batch_splitting;
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.serving.BatchingParameters.enable_large_batch_splitting)
+}
+
+// .google.protobuf.Int64Value max_execution_batch_size = 9;
+inline bool BatchingParameters::has_max_execution_batch_size() const {
+  return this != internal_default_instance() && max_execution_batch_size_ != NULL;
+}
+inline const ::google::protobuf::Int64Value& BatchingParameters::_internal_max_execution_batch_size() const {
+  return *max_execution_batch_size_;
+}
+inline const ::google::protobuf::Int64Value& BatchingParameters::max_execution_batch_size() const {
+  const ::google::protobuf::Int64Value* p = max_execution_batch_size_;
+  // @@protoc_insertion_point(field_get:tensorflow.serving.BatchingParameters.max_execution_batch_size)
+  return p != NULL ? *p : *reinterpret_cast<const ::google::protobuf::Int64Value*>(
+      &::google::protobuf::_Int64Value_default_instance_);
+}
+inline ::google::protobuf::Int64Value* BatchingParameters::release_max_execution_batch_size() {
+  // @@protoc_insertion_point(field_release:tensorflow.serving.BatchingParameters.max_execution_batch_size)
+  
+  ::google::protobuf::Int64Value* temp = max_execution_batch_size_;
+  max_execution_batch_size_ = NULL;
+  return temp;
+}
+inline ::google::protobuf::Int64Value* BatchingParameters::mutable_max_execution_batch_size() {
+  
+  if (max_execution_batch_size_ == NULL) {
+    auto* p = CreateMaybeMessage<::google::protobuf::Int64Value>(GetArenaNoVirtual());
+    max_execution_batch_size_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:tensorflow.serving.BatchingParameters.max_execution_batch_size)
+  return max_execution_batch_size_;
+}
+inline void BatchingParameters::set_allocated_max_execution_batch_size(::google::protobuf::Int64Value* max_execution_batch_size) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete reinterpret_cast< ::google::protobuf::MessageLite*>(max_execution_batch_size_);
+  }
+  if (max_execution_batch_size) {
+    ::google::protobuf::Arena* submessage_arena =
+      reinterpret_cast<::google::protobuf::MessageLite*>(max_execution_batch_size)->GetArena();
+    if (message_arena != submessage_arena) {
+      max_execution_batch_size = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, max_execution_batch_size, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  max_execution_batch_size_ = max_execution_batch_size;
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.serving.BatchingParameters.max_execution_batch_size)
 }
 
 // repeated int64 allowed_batch_sizes = 6;

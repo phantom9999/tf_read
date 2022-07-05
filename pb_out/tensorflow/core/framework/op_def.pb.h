@@ -31,6 +31,8 @@
 #include <google/protobuf/extension_set.h>  // IWYU pragma: export
 #include <google/protobuf/unknown_field_set.h>
 #include "tensorflow/core/framework/attr_value.pb.h"
+#include "tensorflow/core/framework/full_type.pb.h"
+#include "tensorflow/core/framework/resource_handle.pb.h"
 #include "tensorflow/core/framework/types.pb.h"
 // @@protoc_insertion_point(includes)
 #define PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fframework_2fop_5fdef_2eproto 
@@ -176,6 +178,18 @@ class OpDef_ArgDef : public ::google::protobuf::Message /* @@protoc_insertion_po
 
   // accessors -------------------------------------------------------
 
+  // repeated .tensorflow.ResourceHandleProto.DtypeAndShape handle_data = 7;
+  int handle_data_size() const;
+  void clear_handle_data();
+  static const int kHandleDataFieldNumber = 7;
+  ::tensorflow::ResourceHandleProto_DtypeAndShape* mutable_handle_data(int index);
+  ::google::protobuf::RepeatedPtrField< ::tensorflow::ResourceHandleProto_DtypeAndShape >*
+      mutable_handle_data();
+  const ::tensorflow::ResourceHandleProto_DtypeAndShape& handle_data(int index) const;
+  ::tensorflow::ResourceHandleProto_DtypeAndShape* add_handle_data();
+  const ::google::protobuf::RepeatedPtrField< ::tensorflow::ResourceHandleProto_DtypeAndShape >&
+      handle_data() const;
+
   // string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
@@ -291,6 +305,21 @@ class OpDef_ArgDef : public ::google::protobuf::Message /* @@protoc_insertion_po
   void unsafe_arena_set_allocated_type_list_attr(
       ::std::string* type_list_attr);
 
+  // .tensorflow.FullTypeDef experimental_full_type = 17;
+  bool has_experimental_full_type() const;
+  void clear_experimental_full_type();
+  static const int kExperimentalFullTypeFieldNumber = 17;
+  private:
+  const ::tensorflow::FullTypeDef& _internal_experimental_full_type() const;
+  public:
+  const ::tensorflow::FullTypeDef& experimental_full_type() const;
+  ::tensorflow::FullTypeDef* release_experimental_full_type();
+  ::tensorflow::FullTypeDef* mutable_experimental_full_type();
+  void set_allocated_experimental_full_type(::tensorflow::FullTypeDef* experimental_full_type);
+  void unsafe_arena_set_allocated_experimental_full_type(
+      ::tensorflow::FullTypeDef* experimental_full_type);
+  ::tensorflow::FullTypeDef* unsafe_arena_release_experimental_full_type();
+
   // .tensorflow.DataType type = 3;
   void clear_type();
   static const int kTypeFieldNumber = 3;
@@ -310,11 +339,13 @@ class OpDef_ArgDef : public ::google::protobuf::Message /* @@protoc_insertion_po
   template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
+  ::google::protobuf::RepeatedPtrField< ::tensorflow::ResourceHandleProto_DtypeAndShape > handle_data_;
   ::google::protobuf::internal::ArenaStringPtr name_;
   ::google::protobuf::internal::ArenaStringPtr description_;
   ::google::protobuf::internal::ArenaStringPtr type_attr_;
   ::google::protobuf::internal::ArenaStringPtr number_attr_;
   ::google::protobuf::internal::ArenaStringPtr type_list_attr_;
+  ::tensorflow::FullTypeDef* experimental_full_type_;
   int type_;
   bool is_ref_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
@@ -819,6 +850,12 @@ class OpDef : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   bool allows_uninitialized_input() const;
   void set_allows_uninitialized_input(bool value);
 
+  // bool is_distributed_communication = 21;
+  void clear_is_distributed_communication();
+  static const int kIsDistributedCommunicationFieldNumber = 21;
+  bool is_distributed_communication() const;
+  void set_is_distributed_communication(bool value);
+
   // @@protoc_insertion_point(class_scope:tensorflow.OpDef)
  private:
 
@@ -838,6 +875,7 @@ class OpDef : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   bool is_aggregate_;
   bool is_stateful_;
   bool allows_uninitialized_input_;
+  bool is_distributed_communication_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcore_2fframework_2fop_5fdef_2eproto::TableStruct;
 };
@@ -1507,6 +1545,33 @@ inline void OpDef_ArgDef::unsafe_arena_set_allocated_type_list_attr(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.OpDef.ArgDef.type_list_attr)
 }
 
+// repeated .tensorflow.ResourceHandleProto.DtypeAndShape handle_data = 7;
+inline int OpDef_ArgDef::handle_data_size() const {
+  return handle_data_.size();
+}
+inline ::tensorflow::ResourceHandleProto_DtypeAndShape* OpDef_ArgDef::mutable_handle_data(int index) {
+  // @@protoc_insertion_point(field_mutable:tensorflow.OpDef.ArgDef.handle_data)
+  return handle_data_.Mutable(index);
+}
+inline ::google::protobuf::RepeatedPtrField< ::tensorflow::ResourceHandleProto_DtypeAndShape >*
+OpDef_ArgDef::mutable_handle_data() {
+  // @@protoc_insertion_point(field_mutable_list:tensorflow.OpDef.ArgDef.handle_data)
+  return &handle_data_;
+}
+inline const ::tensorflow::ResourceHandleProto_DtypeAndShape& OpDef_ArgDef::handle_data(int index) const {
+  // @@protoc_insertion_point(field_get:tensorflow.OpDef.ArgDef.handle_data)
+  return handle_data_.Get(index);
+}
+inline ::tensorflow::ResourceHandleProto_DtypeAndShape* OpDef_ArgDef::add_handle_data() {
+  // @@protoc_insertion_point(field_add:tensorflow.OpDef.ArgDef.handle_data)
+  return handle_data_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::tensorflow::ResourceHandleProto_DtypeAndShape >&
+OpDef_ArgDef::handle_data() const {
+  // @@protoc_insertion_point(field_list:tensorflow.OpDef.ArgDef.handle_data)
+  return handle_data_;
+}
+
 // bool is_ref = 16;
 inline void OpDef_ArgDef::clear_is_ref() {
   is_ref_ = false;
@@ -1519,6 +1584,65 @@ inline void OpDef_ArgDef::set_is_ref(bool value) {
   
   is_ref_ = value;
   // @@protoc_insertion_point(field_set:tensorflow.OpDef.ArgDef.is_ref)
+}
+
+// .tensorflow.FullTypeDef experimental_full_type = 17;
+inline bool OpDef_ArgDef::has_experimental_full_type() const {
+  return this != internal_default_instance() && experimental_full_type_ != NULL;
+}
+inline const ::tensorflow::FullTypeDef& OpDef_ArgDef::_internal_experimental_full_type() const {
+  return *experimental_full_type_;
+}
+inline const ::tensorflow::FullTypeDef& OpDef_ArgDef::experimental_full_type() const {
+  const ::tensorflow::FullTypeDef* p = experimental_full_type_;
+  // @@protoc_insertion_point(field_get:tensorflow.OpDef.ArgDef.experimental_full_type)
+  return p != NULL ? *p : *reinterpret_cast<const ::tensorflow::FullTypeDef*>(
+      &::tensorflow::_FullTypeDef_default_instance_);
+}
+inline ::tensorflow::FullTypeDef* OpDef_ArgDef::release_experimental_full_type() {
+  // @@protoc_insertion_point(field_release:tensorflow.OpDef.ArgDef.experimental_full_type)
+  
+  ::tensorflow::FullTypeDef* temp = experimental_full_type_;
+  if (GetArenaNoVirtual() != NULL) {
+    temp = ::google::protobuf::internal::DuplicateIfNonNull(temp);
+  }
+  experimental_full_type_ = NULL;
+  return temp;
+}
+inline ::tensorflow::FullTypeDef* OpDef_ArgDef::unsafe_arena_release_experimental_full_type() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:tensorflow.OpDef.ArgDef.experimental_full_type)
+  
+  ::tensorflow::FullTypeDef* temp = experimental_full_type_;
+  experimental_full_type_ = NULL;
+  return temp;
+}
+inline ::tensorflow::FullTypeDef* OpDef_ArgDef::mutable_experimental_full_type() {
+  
+  if (experimental_full_type_ == NULL) {
+    auto* p = CreateMaybeMessage<::tensorflow::FullTypeDef>(GetArenaNoVirtual());
+    experimental_full_type_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:tensorflow.OpDef.ArgDef.experimental_full_type)
+  return experimental_full_type_;
+}
+inline void OpDef_ArgDef::set_allocated_experimental_full_type(::tensorflow::FullTypeDef* experimental_full_type) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete reinterpret_cast< ::google::protobuf::MessageLite*>(experimental_full_type_);
+  }
+  if (experimental_full_type) {
+    ::google::protobuf::Arena* submessage_arena =
+      reinterpret_cast<::google::protobuf::MessageLite*>(experimental_full_type)->GetArena();
+    if (message_arena != submessage_arena) {
+      experimental_full_type = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, experimental_full_type, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  experimental_full_type_ = experimental_full_type;
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.OpDef.ArgDef.experimental_full_type)
 }
 
 // -------------------------------------------------------------------
@@ -2403,6 +2527,20 @@ inline void OpDef::set_allows_uninitialized_input(bool value) {
   
   allows_uninitialized_input_ = value;
   // @@protoc_insertion_point(field_set:tensorflow.OpDef.allows_uninitialized_input)
+}
+
+// bool is_distributed_communication = 21;
+inline void OpDef::clear_is_distributed_communication() {
+  is_distributed_communication_ = false;
+}
+inline bool OpDef::is_distributed_communication() const {
+  // @@protoc_insertion_point(field_get:tensorflow.OpDef.is_distributed_communication)
+  return is_distributed_communication_;
+}
+inline void OpDef::set_is_distributed_communication(bool value) {
+  
+  is_distributed_communication_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.OpDef.is_distributed_communication)
 }
 
 // -------------------------------------------------------------------

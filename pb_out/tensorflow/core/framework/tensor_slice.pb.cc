@@ -123,13 +123,14 @@ void AddDescriptorsImpl() {
       ".proto\022\ntensorflow\"\200\001\n\020TensorSliceProto\022"
       "3\n\006extent\030\001 \003(\0132#.tensorflow.TensorSlice"
       "Proto.Extent\0327\n\006Extent\022\r\n\005start\030\001 \001(\003\022\020\n"
-      "\006length\030\002 \001(\003H\000B\014\n\nhas_lengthBq\n\030org.ten"
-      "sorflow.frameworkB\021TensorSliceProtosP\001Z="
-      "github.com/tensorflow/tensorflow/tensorf"
-      "low/go/core/framework\370\001\001b\006proto3"
+      "\006length\030\002 \001(\003H\000B\014\n\nhas_lengthB\207\001\n\030org.te"
+      "nsorflow.frameworkB\021TensorSliceProtosP\001Z"
+      "Sgithub.com/tensorflow/tensorflow/tensor"
+      "flow/go/core/framework/tensor_slice_go_p"
+      "roto\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 312);
+      descriptor, 335);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/framework/tensor_slice.proto", &protobuf_RegisterTypes);
 }

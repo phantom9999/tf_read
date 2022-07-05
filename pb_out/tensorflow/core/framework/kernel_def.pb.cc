@@ -165,13 +165,14 @@ void AddDescriptorsImpl() {
       "\005 \001(\t\022\020\n\010priority\030\006 \001(\005\032M\n\016AttrConstrain"
       "t\022\014\n\004name\030\001 \001(\t\022-\n\016allowed_values\030\002 \001(\0132"
       "\025.tensorflow.AttrValue\"3\n\nKernelList\022%\n\006"
-      "kernel\030\001 \003(\0132\025.tensorflow.KernelDefBo\n\030o"
-      "rg.tensorflow.frameworkB\017KernelDefProtos"
-      "P\001Z=github.com/tensorflow/tensorflow/ten"
-      "sorflow/go/core/framework\370\001\001b\006proto3"
+      "kernel\030\001 \003(\0132\025.tensorflow.KernelDefB\203\001\n\030"
+      "org.tensorflow.frameworkB\017KernelDefProto"
+      "sP\001ZQgithub.com/tensorflow/tensorflow/te"
+      "nsorflow/go/core/framework/kernel_def_go"
+      "_proto\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 516);
+      descriptor, 537);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/framework/kernel_def.proto", &protobuf_RegisterTypes);
   ::protobuf_tensorflow_2fcore_2fframework_2fattr_5fvalue_2eproto::AddDescriptors();

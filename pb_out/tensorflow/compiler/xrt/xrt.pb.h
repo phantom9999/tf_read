@@ -29,6 +29,7 @@
 #include <google/protobuf/message.h>
 #include <google/protobuf/repeated_field.h>  // IWYU pragma: export
 #include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/generated_enum_reflection.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "tensorflow/compiler/tf2xla/host_compute_metadata.pb.h"
 #include "tensorflow/compiler/xla/service/hlo.pb.h"
@@ -42,7 +43,7 @@ namespace protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto {
 struct TableStruct {
   static const ::google::protobuf::internal::ParseTableField entries[];
   static const ::google::protobuf::internal::AuxillaryParseTableField aux[];
-  static const ::google::protobuf::internal::ParseTable schema[13];
+  static const ::google::protobuf::internal::ParseTable schema[22];
   static const ::google::protobuf::internal::FieldMetadata field_metadata[];
   static const ::google::protobuf::internal::SerializationTable serialization_table[];
   static const ::google::protobuf::uint32 offsets[];
@@ -50,6 +51,9 @@ struct TableStruct {
 void AddDescriptors();
 }  // namespace protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto
 namespace xrt {
+class CommonExecutionConfig;
+class CommonExecutionConfigDefaultTypeInternal;
+extern CommonExecutionConfigDefaultTypeInternal _CommonExecutionConfig_default_instance_;
 class DeviceAssignment;
 class DeviceAssignmentDefaultTypeInternal;
 extern DeviceAssignmentDefaultTypeInternal _DeviceAssignment_default_instance_;
@@ -59,6 +63,21 @@ extern DeviceAssignment_ComputationDeviceDefaultTypeInternal _DeviceAssignment_C
 class DeviceAssignment_ComputationDevice_DeviceMeshCoordinates;
 class DeviceAssignment_ComputationDevice_DeviceMeshCoordinatesDefaultTypeInternal;
 extern DeviceAssignment_ComputationDevice_DeviceMeshCoordinatesDefaultTypeInternal _DeviceAssignment_ComputationDevice_DeviceMeshCoordinates_default_instance_;
+class MemoryInfo;
+class MemoryInfoDefaultTypeInternal;
+extern MemoryInfoDefaultTypeInternal _MemoryInfo_default_instance_;
+class MetricValues;
+class MetricValuesDefaultTypeInternal;
+extern MetricValuesDefaultTypeInternal _MetricValues_default_instance_;
+class MetricsReport;
+class MetricsReportDefaultTypeInternal;
+extern MetricsReportDefaultTypeInternal _MetricsReport_default_instance_;
+class Percentiles;
+class PercentilesDefaultTypeInternal;
+extern PercentilesDefaultTypeInternal _Percentiles_default_instance_;
+class Percentiles_Point;
+class Percentiles_PointDefaultTypeInternal;
+extern Percentiles_PointDefaultTypeInternal _Percentiles_Point_default_instance_;
 class XLAAllocation;
 class XLAAllocationDefaultTypeInternal;
 extern XLAAllocationDefaultTypeInternal _XLAAllocation_default_instance_;
@@ -68,6 +87,12 @@ extern XLAComputationDefaultTypeInternal _XLAComputation_default_instance_;
 class XLAComputationConfig;
 class XLAComputationConfigDefaultTypeInternal;
 extern XLAComputationConfigDefaultTypeInternal _XLAComputationConfig_default_instance_;
+class XLAComputationConfig_Experimental;
+class XLAComputationConfig_ExperimentalDefaultTypeInternal;
+extern XLAComputationConfig_ExperimentalDefaultTypeInternal _XLAComputationConfig_Experimental_default_instance_;
+class XLAComputationConfig_Experimental_UpdateIndexPair;
+class XLAComputationConfig_Experimental_UpdateIndexPairDefaultTypeInternal;
+extern XLAComputationConfig_Experimental_UpdateIndexPairDefaultTypeInternal _XLAComputationConfig_Experimental_UpdateIndexPair_default_instance_;
 class XLATupleNode;
 class XLATupleNodeDefaultTypeInternal;
 extern XLATupleNodeDefaultTypeInternal _XLATupleNode_default_instance_;
@@ -89,15 +114,26 @@ extern XRTChainedExecutePlanDefaultTypeInternal _XRTChainedExecutePlan_default_i
 class XRTExecutionConfig;
 class XRTExecutionConfigDefaultTypeInternal;
 extern XRTExecutionConfigDefaultTypeInternal _XRTExecutionConfig_default_instance_;
+class XRTMetricsCollect;
+class XRTMetricsCollectDefaultTypeInternal;
+extern XRTMetricsCollectDefaultTypeInternal _XRTMetricsCollect_default_instance_;
 }  // namespace xrt
 namespace google {
 namespace protobuf {
+template<> ::xrt::CommonExecutionConfig* Arena::CreateMaybeMessage<::xrt::CommonExecutionConfig>(Arena*);
 template<> ::xrt::DeviceAssignment* Arena::CreateMaybeMessage<::xrt::DeviceAssignment>(Arena*);
 template<> ::xrt::DeviceAssignment_ComputationDevice* Arena::CreateMaybeMessage<::xrt::DeviceAssignment_ComputationDevice>(Arena*);
 template<> ::xrt::DeviceAssignment_ComputationDevice_DeviceMeshCoordinates* Arena::CreateMaybeMessage<::xrt::DeviceAssignment_ComputationDevice_DeviceMeshCoordinates>(Arena*);
+template<> ::xrt::MemoryInfo* Arena::CreateMaybeMessage<::xrt::MemoryInfo>(Arena*);
+template<> ::xrt::MetricValues* Arena::CreateMaybeMessage<::xrt::MetricValues>(Arena*);
+template<> ::xrt::MetricsReport* Arena::CreateMaybeMessage<::xrt::MetricsReport>(Arena*);
+template<> ::xrt::Percentiles* Arena::CreateMaybeMessage<::xrt::Percentiles>(Arena*);
+template<> ::xrt::Percentiles_Point* Arena::CreateMaybeMessage<::xrt::Percentiles_Point>(Arena*);
 template<> ::xrt::XLAAllocation* Arena::CreateMaybeMessage<::xrt::XLAAllocation>(Arena*);
 template<> ::xrt::XLAComputation* Arena::CreateMaybeMessage<::xrt::XLAComputation>(Arena*);
 template<> ::xrt::XLAComputationConfig* Arena::CreateMaybeMessage<::xrt::XLAComputationConfig>(Arena*);
+template<> ::xrt::XLAComputationConfig_Experimental* Arena::CreateMaybeMessage<::xrt::XLAComputationConfig_Experimental>(Arena*);
+template<> ::xrt::XLAComputationConfig_Experimental_UpdateIndexPair* Arena::CreateMaybeMessage<::xrt::XLAComputationConfig_Experimental_UpdateIndexPair>(Arena*);
 template<> ::xrt::XLATupleNode* Arena::CreateMaybeMessage<::xrt::XLATupleNode>(Arena*);
 template<> ::xrt::XRTChainedExecuteConfig* Arena::CreateMaybeMessage<::xrt::XRTChainedExecuteConfig>(Arena*);
 template<> ::xrt::XRTChainedExecuteOp* Arena::CreateMaybeMessage<::xrt::XRTChainedExecuteOp>(Arena*);
@@ -105,10 +141,34 @@ template<> ::xrt::XRTChainedExecuteOp_Input* Arena::CreateMaybeMessage<::xrt::XR
 template<> ::xrt::XRTChainedExecuteOp_Output* Arena::CreateMaybeMessage<::xrt::XRTChainedExecuteOp_Output>(Arena*);
 template<> ::xrt::XRTChainedExecutePlan* Arena::CreateMaybeMessage<::xrt::XRTChainedExecutePlan>(Arena*);
 template<> ::xrt::XRTExecutionConfig* Arena::CreateMaybeMessage<::xrt::XRTExecutionConfig>(Arena*);
+template<> ::xrt::XRTMetricsCollect* Arena::CreateMaybeMessage<::xrt::XRTMetricsCollect>(Arena*);
 }  // namespace protobuf
 }  // namespace google
 namespace xrt {
 
+enum MetricValues_UnitOfMeasure {
+  MetricValues_UnitOfMeasure_INVALID = 0,
+  MetricValues_UnitOfMeasure_NUMBER = 1,
+  MetricValues_UnitOfMeasure_TIME = 2,
+  MetricValues_UnitOfMeasure_BYTES = 3,
+  MetricValues_UnitOfMeasure_MetricValues_UnitOfMeasure_INT_MIN_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32min,
+  MetricValues_UnitOfMeasure_MetricValues_UnitOfMeasure_INT_MAX_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32max
+};
+bool MetricValues_UnitOfMeasure_IsValid(int value);
+const MetricValues_UnitOfMeasure MetricValues_UnitOfMeasure_UnitOfMeasure_MIN = MetricValues_UnitOfMeasure_INVALID;
+const MetricValues_UnitOfMeasure MetricValues_UnitOfMeasure_UnitOfMeasure_MAX = MetricValues_UnitOfMeasure_BYTES;
+const int MetricValues_UnitOfMeasure_UnitOfMeasure_ARRAYSIZE = MetricValues_UnitOfMeasure_UnitOfMeasure_MAX + 1;
+
+const ::google::protobuf::EnumDescriptor* MetricValues_UnitOfMeasure_descriptor();
+inline const ::std::string& MetricValues_UnitOfMeasure_Name(MetricValues_UnitOfMeasure value) {
+  return ::google::protobuf::internal::NameOfEnum(
+    MetricValues_UnitOfMeasure_descriptor(), value);
+}
+inline bool MetricValues_UnitOfMeasure_Parse(
+    const ::std::string& name, MetricValues_UnitOfMeasure* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<MetricValues_UnitOfMeasure>(
+    MetricValues_UnitOfMeasure_descriptor(), name, value);
+}
 // ===================================================================
 
 class DeviceAssignment_ComputationDevice_DeviceMeshCoordinates : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:xrt.DeviceAssignment.ComputationDevice.DeviceMeshCoordinates) */ {
@@ -443,6 +503,227 @@ class DeviceAssignment : public ::google::protobuf::Message /* @@protoc_insertio
 };
 // -------------------------------------------------------------------
 
+class XLAComputationConfig_Experimental_UpdateIndexPair : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:xrt.XLAComputationConfig.Experimental.UpdateIndexPair) */ {
+ public:
+  XLAComputationConfig_Experimental_UpdateIndexPair();
+  virtual ~XLAComputationConfig_Experimental_UpdateIndexPair();
+
+  XLAComputationConfig_Experimental_UpdateIndexPair(const XLAComputationConfig_Experimental_UpdateIndexPair& from);
+
+  inline XLAComputationConfig_Experimental_UpdateIndexPair& operator=(const XLAComputationConfig_Experimental_UpdateIndexPair& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  XLAComputationConfig_Experimental_UpdateIndexPair(XLAComputationConfig_Experimental_UpdateIndexPair&& from) noexcept
+    : XLAComputationConfig_Experimental_UpdateIndexPair() {
+    *this = ::std::move(from);
+  }
+
+  inline XLAComputationConfig_Experimental_UpdateIndexPair& operator=(XLAComputationConfig_Experimental_UpdateIndexPair&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const XLAComputationConfig_Experimental_UpdateIndexPair& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const XLAComputationConfig_Experimental_UpdateIndexPair* internal_default_instance() {
+    return reinterpret_cast<const XLAComputationConfig_Experimental_UpdateIndexPair*>(
+               &_XLAComputationConfig_Experimental_UpdateIndexPair_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    3;
+
+  void Swap(XLAComputationConfig_Experimental_UpdateIndexPair* other);
+  friend void swap(XLAComputationConfig_Experimental_UpdateIndexPair& a, XLAComputationConfig_Experimental_UpdateIndexPair& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline XLAComputationConfig_Experimental_UpdateIndexPair* New() const final {
+    return CreateMaybeMessage<XLAComputationConfig_Experimental_UpdateIndexPair>(NULL);
+  }
+
+  XLAComputationConfig_Experimental_UpdateIndexPair* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<XLAComputationConfig_Experimental_UpdateIndexPair>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const XLAComputationConfig_Experimental_UpdateIndexPair& from);
+  void MergeFrom(const XLAComputationConfig_Experimental_UpdateIndexPair& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(XLAComputationConfig_Experimental_UpdateIndexPair* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // int32 index = 1;
+  void clear_index();
+  static const int kIndexFieldNumber = 1;
+  ::google::protobuf::int32 index() const;
+  void set_index(::google::protobuf::int32 value);
+
+  // bool updated = 2;
+  void clear_updated();
+  static const int kUpdatedFieldNumber = 2;
+  bool updated() const;
+  void set_updated(bool value);
+
+  // @@protoc_insertion_point(class_scope:xrt.XLAComputationConfig.Experimental.UpdateIndexPair)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::int32 index_;
+  bool updated_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
+class XLAComputationConfig_Experimental : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:xrt.XLAComputationConfig.Experimental) */ {
+ public:
+  XLAComputationConfig_Experimental();
+  virtual ~XLAComputationConfig_Experimental();
+
+  XLAComputationConfig_Experimental(const XLAComputationConfig_Experimental& from);
+
+  inline XLAComputationConfig_Experimental& operator=(const XLAComputationConfig_Experimental& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  XLAComputationConfig_Experimental(XLAComputationConfig_Experimental&& from) noexcept
+    : XLAComputationConfig_Experimental() {
+    *this = ::std::move(from);
+  }
+
+  inline XLAComputationConfig_Experimental& operator=(XLAComputationConfig_Experimental&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const XLAComputationConfig_Experimental& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const XLAComputationConfig_Experimental* internal_default_instance() {
+    return reinterpret_cast<const XLAComputationConfig_Experimental*>(
+               &_XLAComputationConfig_Experimental_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    4;
+
+  void Swap(XLAComputationConfig_Experimental* other);
+  friend void swap(XLAComputationConfig_Experimental& a, XLAComputationConfig_Experimental& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline XLAComputationConfig_Experimental* New() const final {
+    return CreateMaybeMessage<XLAComputationConfig_Experimental>(NULL);
+  }
+
+  XLAComputationConfig_Experimental* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<XLAComputationConfig_Experimental>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const XLAComputationConfig_Experimental& from);
+  void MergeFrom(const XLAComputationConfig_Experimental& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(XLAComputationConfig_Experimental* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  typedef XLAComputationConfig_Experimental_UpdateIndexPair UpdateIndexPair;
+
+  // accessors -------------------------------------------------------
+
+  // repeated .xrt.XLAComputationConfig.Experimental.UpdateIndexPair stateful_input_indices = 1;
+  int stateful_input_indices_size() const;
+  void clear_stateful_input_indices();
+  static const int kStatefulInputIndicesFieldNumber = 1;
+  ::xrt::XLAComputationConfig_Experimental_UpdateIndexPair* mutable_stateful_input_indices(int index);
+  ::google::protobuf::RepeatedPtrField< ::xrt::XLAComputationConfig_Experimental_UpdateIndexPair >*
+      mutable_stateful_input_indices();
+  const ::xrt::XLAComputationConfig_Experimental_UpdateIndexPair& stateful_input_indices(int index) const;
+  ::xrt::XLAComputationConfig_Experimental_UpdateIndexPair* add_stateful_input_indices();
+  const ::google::protobuf::RepeatedPtrField< ::xrt::XLAComputationConfig_Experimental_UpdateIndexPair >&
+      stateful_input_indices() const;
+
+  // @@protoc_insertion_point(class_scope:xrt.XLAComputationConfig.Experimental)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::RepeatedPtrField< ::xrt::XLAComputationConfig_Experimental_UpdateIndexPair > stateful_input_indices_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
 class XLAComputationConfig : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:xrt.XLAComputationConfig) */ {
  public:
   XLAComputationConfig();
@@ -478,7 +759,7 @@ class XLAComputationConfig : public ::google::protobuf::Message /* @@protoc_inse
                &_XLAComputationConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    3;
+    5;
 
   void Swap(XLAComputationConfig* other);
   friend void swap(XLAComputationConfig& a, XLAComputationConfig& b) {
@@ -527,6 +808,8 @@ class XLAComputationConfig : public ::google::protobuf::Message /* @@protoc_inse
   ::google::protobuf::Metadata GetMetadata() const final;
 
   // nested types ----------------------------------------------------
+
+  typedef XLAComputationConfig_Experimental Experimental;
 
   // accessors -------------------------------------------------------
 
@@ -590,6 +873,18 @@ class XLAComputationConfig : public ::google::protobuf::Message /* @@protoc_inse
   ::xla::DebugOptions* mutable_debug_options();
   void set_allocated_debug_options(::xla::DebugOptions* debug_options);
 
+  // .xrt.XLAComputationConfig.Experimental experimental = 8;
+  bool has_experimental() const;
+  void clear_experimental();
+  static const int kExperimentalFieldNumber = 8;
+  private:
+  const ::xrt::XLAComputationConfig_Experimental& _internal_experimental() const;
+  public:
+  const ::xrt::XLAComputationConfig_Experimental& experimental() const;
+  ::xrt::XLAComputationConfig_Experimental* release_experimental();
+  ::xrt::XLAComputationConfig_Experimental* mutable_experimental();
+  void set_allocated_experimental(::xrt::XLAComputationConfig_Experimental* experimental);
+
   // int32 num_replicas = 1;
   void clear_num_replicas();
   static const int kNumReplicasFieldNumber = 1;
@@ -611,6 +906,7 @@ class XLAComputationConfig : public ::google::protobuf::Message /* @@protoc_inse
   ::xla::ProgramShapeProto* program_shape_;
   ::xrt::DeviceAssignment* device_assignment_;
   ::xla::DebugOptions* debug_options_;
+  ::xrt::XLAComputationConfig_Experimental* experimental_;
   ::google::protobuf::int32 num_replicas_;
   ::google::protobuf::int32 num_cores_per_replica_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
@@ -653,7 +949,7 @@ class XLAComputation : public ::google::protobuf::Message /* @@protoc_insertion_
                &_XLAComputation_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    4;
+    6;
 
   void Swap(XLAComputation* other);
   friend void swap(XLAComputation& a, XLAComputation& b) {
@@ -775,7 +1071,7 @@ class XLAAllocation : public ::google::protobuf::Message /* @@protoc_insertion_p
                &_XLAAllocation_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    5;
+    7;
 
   void Swap(XLAAllocation* other);
   friend void swap(XLAAllocation& a, XLAAllocation& b) {
@@ -884,7 +1180,7 @@ class XLATupleNode : public ::google::protobuf::Message /* @@protoc_insertion_po
                &_XLATupleNode_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    6;
+    8;
 
   void Swap(XLATupleNode* other);
   friend void swap(XLATupleNode& a, XLATupleNode& b) {
@@ -972,6 +1268,130 @@ class XLATupleNode : public ::google::protobuf::Message /* @@protoc_insertion_po
 };
 // -------------------------------------------------------------------
 
+class CommonExecutionConfig : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:xrt.CommonExecutionConfig) */ {
+ public:
+  CommonExecutionConfig();
+  virtual ~CommonExecutionConfig();
+
+  CommonExecutionConfig(const CommonExecutionConfig& from);
+
+  inline CommonExecutionConfig& operator=(const CommonExecutionConfig& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  CommonExecutionConfig(CommonExecutionConfig&& from) noexcept
+    : CommonExecutionConfig() {
+    *this = ::std::move(from);
+  }
+
+  inline CommonExecutionConfig& operator=(CommonExecutionConfig&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const CommonExecutionConfig& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const CommonExecutionConfig* internal_default_instance() {
+    return reinterpret_cast<const CommonExecutionConfig*>(
+               &_CommonExecutionConfig_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    9;
+
+  void Swap(CommonExecutionConfig* other);
+  friend void swap(CommonExecutionConfig& a, CommonExecutionConfig& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline CommonExecutionConfig* New() const final {
+    return CreateMaybeMessage<CommonExecutionConfig>(NULL);
+  }
+
+  CommonExecutionConfig* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<CommonExecutionConfig>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const CommonExecutionConfig& from);
+  void MergeFrom(const CommonExecutionConfig& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CommonExecutionConfig* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // repeated int32 local_replica_mapping = 2;
+  int local_replica_mapping_size() const;
+  void clear_local_replica_mapping();
+  static const int kLocalReplicaMappingFieldNumber = 2;
+  ::google::protobuf::int32 local_replica_mapping(int index) const;
+  void set_local_replica_mapping(int index, ::google::protobuf::int32 value);
+  void add_local_replica_mapping(::google::protobuf::int32 value);
+  const ::google::protobuf::RepeatedField< ::google::protobuf::int32 >&
+      local_replica_mapping() const;
+  ::google::protobuf::RepeatedField< ::google::protobuf::int32 >*
+      mutable_local_replica_mapping();
+
+  // int64 run_id = 3;
+  void clear_run_id();
+  static const int kRunIdFieldNumber = 3;
+  ::google::protobuf::int64 run_id() const;
+  void set_run_id(::google::protobuf::int64 value);
+
+  // int32 replica_id = 1;
+  void clear_replica_id();
+  static const int kReplicaIdFieldNumber = 1;
+  ::google::protobuf::int32 replica_id() const;
+  void set_replica_id(::google::protobuf::int32 value);
+
+  // @@protoc_insertion_point(class_scope:xrt.CommonExecutionConfig)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::RepeatedField< ::google::protobuf::int32 > local_replica_mapping_;
+  mutable int _local_replica_mapping_cached_byte_size_;
+  ::google::protobuf::int64 run_id_;
+  ::google::protobuf::int32 replica_id_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
 class XRTExecutionConfig : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:xrt.XRTExecutionConfig) */ {
  public:
   XRTExecutionConfig();
@@ -1007,7 +1427,7 @@ class XRTExecutionConfig : public ::google::protobuf::Message /* @@protoc_insert
                &_XRTExecutionConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    7;
+    10;
 
   void Swap(XRTExecutionConfig* other);
   friend void swap(XRTExecutionConfig& a, XRTExecutionConfig& b) {
@@ -1073,6 +1493,18 @@ class XRTExecutionConfig : public ::google::protobuf::Message /* @@protoc_insert
   ::std::string* release_execution_instance_key();
   void set_allocated_execution_instance_key(::std::string* execution_instance_key);
 
+  // .xrt.CommonExecutionConfig common_config = 9;
+  bool has_common_config() const;
+  void clear_common_config();
+  static const int kCommonConfigFieldNumber = 9;
+  private:
+  const ::xrt::CommonExecutionConfig& _internal_common_config() const;
+  public:
+  const ::xrt::CommonExecutionConfig& common_config() const;
+  ::xrt::CommonExecutionConfig* release_common_config();
+  ::xrt::CommonExecutionConfig* mutable_common_config();
+  void set_allocated_common_config(::xrt::CommonExecutionConfig* common_config);
+
   // int32 device_ordinal = 1;
   void clear_device_ordinal();
   static const int kDeviceOrdinalFieldNumber = 1;
@@ -1114,6 +1546,7 @@ class XRTExecutionConfig : public ::google::protobuf::Message /* @@protoc_insert
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
   ::google::protobuf::internal::ArenaStringPtr execution_instance_key_;
+  ::xrt::CommonExecutionConfig* common_config_;
   ::google::protobuf::int32 device_ordinal_;
   ::google::protobuf::int32 core_index_in_replica_;
   ::google::protobuf::uint32 rng_seed_;
@@ -1160,7 +1593,7 @@ class XRTChainedExecuteConfig : public ::google::protobuf::Message /* @@protoc_i
                &_XRTChainedExecuteConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    8;
+    11;
 
   void Swap(XRTChainedExecuteConfig* other);
   friend void swap(XRTChainedExecuteConfig& a, XRTChainedExecuteConfig& b) {
@@ -1226,6 +1659,18 @@ class XRTChainedExecuteConfig : public ::google::protobuf::Message /* @@protoc_i
   ::std::string* release_execution_instance_key();
   void set_allocated_execution_instance_key(::std::string* execution_instance_key);
 
+  // .xrt.CommonExecutionConfig common_config = 5;
+  bool has_common_config() const;
+  void clear_common_config();
+  static const int kCommonConfigFieldNumber = 5;
+  private:
+  const ::xrt::CommonExecutionConfig& _internal_common_config() const;
+  public:
+  const ::xrt::CommonExecutionConfig& common_config() const;
+  ::xrt::CommonExecutionConfig* release_common_config();
+  ::xrt::CommonExecutionConfig* mutable_common_config();
+  void set_allocated_common_config(::xrt::CommonExecutionConfig* common_config);
+
   // uint32 rng_seed = 1;
   void clear_rng_seed();
   static const int kRngSeedFieldNumber = 1;
@@ -1243,6 +1688,7 @@ class XRTChainedExecuteConfig : public ::google::protobuf::Message /* @@protoc_i
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
   ::google::protobuf::internal::ArenaStringPtr execution_instance_key_;
+  ::xrt::CommonExecutionConfig* common_config_;
   ::google::protobuf::uint32 rng_seed_;
   ::google::protobuf::int32 core_index_in_replica_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
@@ -1285,7 +1731,7 @@ class XRTChainedExecuteOp_Input : public ::google::protobuf::Message /* @@protoc
                &_XRTChainedExecuteOp_Input_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    9;
+    12;
 
   void Swap(XRTChainedExecuteOp_Input* other);
   friend void swap(XRTChainedExecuteOp_Input& a, XRTChainedExecuteOp_Input& b) {
@@ -1395,7 +1841,7 @@ class XRTChainedExecuteOp_Output : public ::google::protobuf::Message /* @@proto
                &_XRTChainedExecuteOp_Output_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    10;
+    13;
 
   void Swap(XRTChainedExecuteOp_Output* other);
   friend void swap(XRTChainedExecuteOp_Output& a, XRTChainedExecuteOp_Output& b) {
@@ -1511,7 +1957,7 @@ class XRTChainedExecuteOp : public ::google::protobuf::Message /* @@protoc_inser
                &_XRTChainedExecuteOp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    11;
+    14;
 
   void Swap(XRTChainedExecuteOp* other);
   friend void swap(XRTChainedExecuteOp& a, XRTChainedExecuteOp& b) {
@@ -1668,7 +2114,7 @@ class XRTChainedExecutePlan : public ::google::protobuf::Message /* @@protoc_ins
                &_XRTChainedExecutePlan_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    12;
+    15;
 
   void Swap(XRTChainedExecutePlan* other);
   friend void swap(XRTChainedExecutePlan& a, XRTChainedExecutePlan& b) {
@@ -1737,6 +2183,817 @@ class XRTChainedExecutePlan : public ::google::protobuf::Message /* @@protoc_ins
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
   ::google::protobuf::RepeatedPtrField< ::xrt::XRTChainedExecuteOp > ops_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
+class XRTMetricsCollect : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:xrt.XRTMetricsCollect) */ {
+ public:
+  XRTMetricsCollect();
+  virtual ~XRTMetricsCollect();
+
+  XRTMetricsCollect(const XRTMetricsCollect& from);
+
+  inline XRTMetricsCollect& operator=(const XRTMetricsCollect& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  XRTMetricsCollect(XRTMetricsCollect&& from) noexcept
+    : XRTMetricsCollect() {
+    *this = ::std::move(from);
+  }
+
+  inline XRTMetricsCollect& operator=(XRTMetricsCollect&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const XRTMetricsCollect& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const XRTMetricsCollect* internal_default_instance() {
+    return reinterpret_cast<const XRTMetricsCollect*>(
+               &_XRTMetricsCollect_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    16;
+
+  void Swap(XRTMetricsCollect* other);
+  friend void swap(XRTMetricsCollect& a, XRTMetricsCollect& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline XRTMetricsCollect* New() const final {
+    return CreateMaybeMessage<XRTMetricsCollect>(NULL);
+  }
+
+  XRTMetricsCollect* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<XRTMetricsCollect>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const XRTMetricsCollect& from);
+  void MergeFrom(const XRTMetricsCollect& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(XRTMetricsCollect* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // repeated string metrics_regex = 1;
+  int metrics_regex_size() const;
+  void clear_metrics_regex();
+  static const int kMetricsRegexFieldNumber = 1;
+  const ::std::string& metrics_regex(int index) const;
+  ::std::string* mutable_metrics_regex(int index);
+  void set_metrics_regex(int index, const ::std::string& value);
+  #if LANG_CXX11
+  void set_metrics_regex(int index, ::std::string&& value);
+  #endif
+  void set_metrics_regex(int index, const char* value);
+  void set_metrics_regex(int index, const char* value, size_t size);
+  ::std::string* add_metrics_regex();
+  void add_metrics_regex(const ::std::string& value);
+  #if LANG_CXX11
+  void add_metrics_regex(::std::string&& value);
+  #endif
+  void add_metrics_regex(const char* value);
+  void add_metrics_regex(const char* value, size_t size);
+  const ::google::protobuf::RepeatedPtrField< ::std::string>& metrics_regex() const;
+  ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_metrics_regex();
+
+  // @@protoc_insertion_point(class_scope:xrt.XRTMetricsCollect)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::RepeatedPtrField< ::std::string> metrics_regex_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
+class Percentiles_Point : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:xrt.Percentiles.Point) */ {
+ public:
+  Percentiles_Point();
+  virtual ~Percentiles_Point();
+
+  Percentiles_Point(const Percentiles_Point& from);
+
+  inline Percentiles_Point& operator=(const Percentiles_Point& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  Percentiles_Point(Percentiles_Point&& from) noexcept
+    : Percentiles_Point() {
+    *this = ::std::move(from);
+  }
+
+  inline Percentiles_Point& operator=(Percentiles_Point&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const Percentiles_Point& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const Percentiles_Point* internal_default_instance() {
+    return reinterpret_cast<const Percentiles_Point*>(
+               &_Percentiles_Point_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    17;
+
+  void Swap(Percentiles_Point* other);
+  friend void swap(Percentiles_Point& a, Percentiles_Point& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline Percentiles_Point* New() const final {
+    return CreateMaybeMessage<Percentiles_Point>(NULL);
+  }
+
+  Percentiles_Point* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<Percentiles_Point>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const Percentiles_Point& from);
+  void MergeFrom(const Percentiles_Point& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(Percentiles_Point* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // double percentile = 1;
+  void clear_percentile();
+  static const int kPercentileFieldNumber = 1;
+  double percentile() const;
+  void set_percentile(double value);
+
+  // double value = 2;
+  void clear_value();
+  static const int kValueFieldNumber = 2;
+  double value() const;
+  void set_value(double value);
+
+  // @@protoc_insertion_point(class_scope:xrt.Percentiles.Point)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  double percentile_;
+  double value_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
+class Percentiles : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:xrt.Percentiles) */ {
+ public:
+  Percentiles();
+  virtual ~Percentiles();
+
+  Percentiles(const Percentiles& from);
+
+  inline Percentiles& operator=(const Percentiles& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  Percentiles(Percentiles&& from) noexcept
+    : Percentiles() {
+    *this = ::std::move(from);
+  }
+
+  inline Percentiles& operator=(Percentiles&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const Percentiles& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const Percentiles* internal_default_instance() {
+    return reinterpret_cast<const Percentiles*>(
+               &_Percentiles_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    18;
+
+  void Swap(Percentiles* other);
+  friend void swap(Percentiles& a, Percentiles& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline Percentiles* New() const final {
+    return CreateMaybeMessage<Percentiles>(NULL);
+  }
+
+  Percentiles* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<Percentiles>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const Percentiles& from);
+  void MergeFrom(const Percentiles& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(Percentiles* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  typedef Percentiles_Point Point;
+
+  // accessors -------------------------------------------------------
+
+  // repeated .xrt.Percentiles.Point points = 10;
+  int points_size() const;
+  void clear_points();
+  static const int kPointsFieldNumber = 10;
+  ::xrt::Percentiles_Point* mutable_points(int index);
+  ::google::protobuf::RepeatedPtrField< ::xrt::Percentiles_Point >*
+      mutable_points();
+  const ::xrt::Percentiles_Point& points(int index) const;
+  ::xrt::Percentiles_Point* add_points();
+  const ::google::protobuf::RepeatedPtrField< ::xrt::Percentiles_Point >&
+      points() const;
+
+  // uint64 start_nstime = 1;
+  void clear_start_nstime();
+  static const int kStartNstimeFieldNumber = 1;
+  ::google::protobuf::uint64 start_nstime() const;
+  void set_start_nstime(::google::protobuf::uint64 value);
+
+  // uint64 end_nstime = 2;
+  void clear_end_nstime();
+  static const int kEndNstimeFieldNumber = 2;
+  ::google::protobuf::uint64 end_nstime() const;
+  void set_end_nstime(::google::protobuf::uint64 value);
+
+  // double min_value = 3;
+  void clear_min_value();
+  static const int kMinValueFieldNumber = 3;
+  double min_value() const;
+  void set_min_value(double value);
+
+  // double max_value = 4;
+  void clear_max_value();
+  static const int kMaxValueFieldNumber = 4;
+  double max_value() const;
+  void set_max_value(double value);
+
+  // double mean = 5;
+  void clear_mean();
+  static const int kMeanFieldNumber = 5;
+  double mean() const;
+  void set_mean(double value);
+
+  // double stddev = 6;
+  void clear_stddev();
+  static const int kStddevFieldNumber = 6;
+  double stddev() const;
+  void set_stddev(double value);
+
+  // uint64 num_samples = 7;
+  void clear_num_samples();
+  static const int kNumSamplesFieldNumber = 7;
+  ::google::protobuf::uint64 num_samples() const;
+  void set_num_samples(::google::protobuf::uint64 value);
+
+  // uint64 total_samples = 8;
+  void clear_total_samples();
+  static const int kTotalSamplesFieldNumber = 8;
+  ::google::protobuf::uint64 total_samples() const;
+  void set_total_samples(::google::protobuf::uint64 value);
+
+  // double accumulator = 9;
+  void clear_accumulator();
+  static const int kAccumulatorFieldNumber = 9;
+  double accumulator() const;
+  void set_accumulator(double value);
+
+  // @@protoc_insertion_point(class_scope:xrt.Percentiles)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::RepeatedPtrField< ::xrt::Percentiles_Point > points_;
+  ::google::protobuf::uint64 start_nstime_;
+  ::google::protobuf::uint64 end_nstime_;
+  double min_value_;
+  double max_value_;
+  double mean_;
+  double stddev_;
+  ::google::protobuf::uint64 num_samples_;
+  ::google::protobuf::uint64 total_samples_;
+  double accumulator_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
+class MetricValues : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:xrt.MetricValues) */ {
+ public:
+  MetricValues();
+  virtual ~MetricValues();
+
+  MetricValues(const MetricValues& from);
+
+  inline MetricValues& operator=(const MetricValues& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  MetricValues(MetricValues&& from) noexcept
+    : MetricValues() {
+    *this = ::std::move(from);
+  }
+
+  inline MetricValues& operator=(MetricValues&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const MetricValues& default_instance();
+
+  enum ValuesOneofCase {
+    kPercentilesValue = 2,
+    kInt64Value = 3,
+    VALUES_ONEOF_NOT_SET = 0,
+  };
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const MetricValues* internal_default_instance() {
+    return reinterpret_cast<const MetricValues*>(
+               &_MetricValues_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    19;
+
+  void Swap(MetricValues* other);
+  friend void swap(MetricValues& a, MetricValues& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MetricValues* New() const final {
+    return CreateMaybeMessage<MetricValues>(NULL);
+  }
+
+  MetricValues* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<MetricValues>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const MetricValues& from);
+  void MergeFrom(const MetricValues& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MetricValues* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  typedef MetricValues_UnitOfMeasure UnitOfMeasure;
+  static const UnitOfMeasure INVALID =
+    MetricValues_UnitOfMeasure_INVALID;
+  static const UnitOfMeasure NUMBER =
+    MetricValues_UnitOfMeasure_NUMBER;
+  static const UnitOfMeasure TIME =
+    MetricValues_UnitOfMeasure_TIME;
+  static const UnitOfMeasure BYTES =
+    MetricValues_UnitOfMeasure_BYTES;
+  static inline bool UnitOfMeasure_IsValid(int value) {
+    return MetricValues_UnitOfMeasure_IsValid(value);
+  }
+  static const UnitOfMeasure UnitOfMeasure_MIN =
+    MetricValues_UnitOfMeasure_UnitOfMeasure_MIN;
+  static const UnitOfMeasure UnitOfMeasure_MAX =
+    MetricValues_UnitOfMeasure_UnitOfMeasure_MAX;
+  static const int UnitOfMeasure_ARRAYSIZE =
+    MetricValues_UnitOfMeasure_UnitOfMeasure_ARRAYSIZE;
+  static inline const ::google::protobuf::EnumDescriptor*
+  UnitOfMeasure_descriptor() {
+    return MetricValues_UnitOfMeasure_descriptor();
+  }
+  static inline const ::std::string& UnitOfMeasure_Name(UnitOfMeasure value) {
+    return MetricValues_UnitOfMeasure_Name(value);
+  }
+  static inline bool UnitOfMeasure_Parse(const ::std::string& name,
+      UnitOfMeasure* value) {
+    return MetricValues_UnitOfMeasure_Parse(name, value);
+  }
+
+  // accessors -------------------------------------------------------
+
+  // string name = 1;
+  void clear_name();
+  static const int kNameFieldNumber = 1;
+  const ::std::string& name() const;
+  void set_name(const ::std::string& value);
+  #if LANG_CXX11
+  void set_name(::std::string&& value);
+  #endif
+  void set_name(const char* value);
+  void set_name(const char* value, size_t size);
+  ::std::string* mutable_name();
+  ::std::string* release_name();
+  void set_allocated_name(::std::string* name);
+
+  // .xrt.MetricValues.UnitOfMeasure unit_of_measure = 4;
+  void clear_unit_of_measure();
+  static const int kUnitOfMeasureFieldNumber = 4;
+  ::xrt::MetricValues_UnitOfMeasure unit_of_measure() const;
+  void set_unit_of_measure(::xrt::MetricValues_UnitOfMeasure value);
+
+  // .xrt.Percentiles percentiles_value = 2;
+  bool has_percentiles_value() const;
+  void clear_percentiles_value();
+  static const int kPercentilesValueFieldNumber = 2;
+  private:
+  const ::xrt::Percentiles& _internal_percentiles_value() const;
+  public:
+  const ::xrt::Percentiles& percentiles_value() const;
+  ::xrt::Percentiles* release_percentiles_value();
+  ::xrt::Percentiles* mutable_percentiles_value();
+  void set_allocated_percentiles_value(::xrt::Percentiles* percentiles_value);
+
+  // int64 int64_value = 3;
+  private:
+  bool has_int64_value() const;
+  public:
+  void clear_int64_value();
+  static const int kInt64ValueFieldNumber = 3;
+  ::google::protobuf::int64 int64_value() const;
+  void set_int64_value(::google::protobuf::int64 value);
+
+  void clear_values_oneof();
+  ValuesOneofCase values_oneof_case() const;
+  // @@protoc_insertion_point(class_scope:xrt.MetricValues)
+ private:
+  void set_has_percentiles_value();
+  void set_has_int64_value();
+
+  inline bool has_values_oneof() const;
+  inline void clear_has_values_oneof();
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::internal::ArenaStringPtr name_;
+  int unit_of_measure_;
+  union ValuesOneofUnion {
+    ValuesOneofUnion() {}
+    ::xrt::Percentiles* percentiles_value_;
+    ::google::protobuf::int64 int64_value_;
+  } values_oneof_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  ::google::protobuf::uint32 _oneof_case_[1];
+
+  friend struct ::protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
+class MetricsReport : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:xrt.MetricsReport) */ {
+ public:
+  MetricsReport();
+  virtual ~MetricsReport();
+
+  MetricsReport(const MetricsReport& from);
+
+  inline MetricsReport& operator=(const MetricsReport& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  MetricsReport(MetricsReport&& from) noexcept
+    : MetricsReport() {
+    *this = ::std::move(from);
+  }
+
+  inline MetricsReport& operator=(MetricsReport&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const MetricsReport& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const MetricsReport* internal_default_instance() {
+    return reinterpret_cast<const MetricsReport*>(
+               &_MetricsReport_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    20;
+
+  void Swap(MetricsReport* other);
+  friend void swap(MetricsReport& a, MetricsReport& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MetricsReport* New() const final {
+    return CreateMaybeMessage<MetricsReport>(NULL);
+  }
+
+  MetricsReport* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<MetricsReport>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const MetricsReport& from);
+  void MergeFrom(const MetricsReport& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MetricsReport* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // repeated .xrt.MetricValues metrics = 1;
+  int metrics_size() const;
+  void clear_metrics();
+  static const int kMetricsFieldNumber = 1;
+  ::xrt::MetricValues* mutable_metrics(int index);
+  ::google::protobuf::RepeatedPtrField< ::xrt::MetricValues >*
+      mutable_metrics();
+  const ::xrt::MetricValues& metrics(int index) const;
+  ::xrt::MetricValues* add_metrics();
+  const ::google::protobuf::RepeatedPtrField< ::xrt::MetricValues >&
+      metrics() const;
+
+  // @@protoc_insertion_point(class_scope:xrt.MetricsReport)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::RepeatedPtrField< ::xrt::MetricValues > metrics_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
+class MemoryInfo : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:xrt.MemoryInfo) */ {
+ public:
+  MemoryInfo();
+  virtual ~MemoryInfo();
+
+  MemoryInfo(const MemoryInfo& from);
+
+  inline MemoryInfo& operator=(const MemoryInfo& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  MemoryInfo(MemoryInfo&& from) noexcept
+    : MemoryInfo() {
+    *this = ::std::move(from);
+  }
+
+  inline MemoryInfo& operator=(MemoryInfo&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const MemoryInfo& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const MemoryInfo* internal_default_instance() {
+    return reinterpret_cast<const MemoryInfo*>(
+               &_MemoryInfo_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    21;
+
+  void Swap(MemoryInfo* other);
+  friend void swap(MemoryInfo& a, MemoryInfo& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MemoryInfo* New() const final {
+    return CreateMaybeMessage<MemoryInfo>(NULL);
+  }
+
+  MemoryInfo* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<MemoryInfo>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const MemoryInfo& from);
+  void MergeFrom(const MemoryInfo& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MemoryInfo* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // int64 kb_total = 1;
+  void clear_kb_total();
+  static const int kKbTotalFieldNumber = 1;
+  ::google::protobuf::int64 kb_total() const;
+  void set_kb_total(::google::protobuf::int64 value);
+
+  // int64 kb_free = 2;
+  void clear_kb_free();
+  static const int kKbFreeFieldNumber = 2;
+  ::google::protobuf::int64 kb_free() const;
+  void set_kb_free(::google::protobuf::int64 value);
+
+  // @@protoc_insertion_point(class_scope:xrt.MemoryInfo)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::int64 kb_total_;
+  ::google::protobuf::int64 kb_free_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::TableStruct;
 };
@@ -1847,6 +3104,72 @@ inline const ::google::protobuf::RepeatedPtrField< ::xrt::DeviceAssignment_Compu
 DeviceAssignment::computation_devices() const {
   // @@protoc_insertion_point(field_list:xrt.DeviceAssignment.computation_devices)
   return computation_devices_;
+}
+
+// -------------------------------------------------------------------
+
+// XLAComputationConfig_Experimental_UpdateIndexPair
+
+// int32 index = 1;
+inline void XLAComputationConfig_Experimental_UpdateIndexPair::clear_index() {
+  index_ = 0;
+}
+inline ::google::protobuf::int32 XLAComputationConfig_Experimental_UpdateIndexPair::index() const {
+  // @@protoc_insertion_point(field_get:xrt.XLAComputationConfig.Experimental.UpdateIndexPair.index)
+  return index_;
+}
+inline void XLAComputationConfig_Experimental_UpdateIndexPair::set_index(::google::protobuf::int32 value) {
+  
+  index_ = value;
+  // @@protoc_insertion_point(field_set:xrt.XLAComputationConfig.Experimental.UpdateIndexPair.index)
+}
+
+// bool updated = 2;
+inline void XLAComputationConfig_Experimental_UpdateIndexPair::clear_updated() {
+  updated_ = false;
+}
+inline bool XLAComputationConfig_Experimental_UpdateIndexPair::updated() const {
+  // @@protoc_insertion_point(field_get:xrt.XLAComputationConfig.Experimental.UpdateIndexPair.updated)
+  return updated_;
+}
+inline void XLAComputationConfig_Experimental_UpdateIndexPair::set_updated(bool value) {
+  
+  updated_ = value;
+  // @@protoc_insertion_point(field_set:xrt.XLAComputationConfig.Experimental.UpdateIndexPair.updated)
+}
+
+// -------------------------------------------------------------------
+
+// XLAComputationConfig_Experimental
+
+// repeated .xrt.XLAComputationConfig.Experimental.UpdateIndexPair stateful_input_indices = 1;
+inline int XLAComputationConfig_Experimental::stateful_input_indices_size() const {
+  return stateful_input_indices_.size();
+}
+inline void XLAComputationConfig_Experimental::clear_stateful_input_indices() {
+  stateful_input_indices_.Clear();
+}
+inline ::xrt::XLAComputationConfig_Experimental_UpdateIndexPair* XLAComputationConfig_Experimental::mutable_stateful_input_indices(int index) {
+  // @@protoc_insertion_point(field_mutable:xrt.XLAComputationConfig.Experimental.stateful_input_indices)
+  return stateful_input_indices_.Mutable(index);
+}
+inline ::google::protobuf::RepeatedPtrField< ::xrt::XLAComputationConfig_Experimental_UpdateIndexPair >*
+XLAComputationConfig_Experimental::mutable_stateful_input_indices() {
+  // @@protoc_insertion_point(field_mutable_list:xrt.XLAComputationConfig.Experimental.stateful_input_indices)
+  return &stateful_input_indices_;
+}
+inline const ::xrt::XLAComputationConfig_Experimental_UpdateIndexPair& XLAComputationConfig_Experimental::stateful_input_indices(int index) const {
+  // @@protoc_insertion_point(field_get:xrt.XLAComputationConfig.Experimental.stateful_input_indices)
+  return stateful_input_indices_.Get(index);
+}
+inline ::xrt::XLAComputationConfig_Experimental_UpdateIndexPair* XLAComputationConfig_Experimental::add_stateful_input_indices() {
+  // @@protoc_insertion_point(field_add:xrt.XLAComputationConfig.Experimental.stateful_input_indices)
+  return stateful_input_indices_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::xrt::XLAComputationConfig_Experimental_UpdateIndexPair >&
+XLAComputationConfig_Experimental::stateful_input_indices() const {
+  // @@protoc_insertion_point(field_list:xrt.XLAComputationConfig.Experimental.stateful_input_indices)
+  return stateful_input_indices_;
 }
 
 // -------------------------------------------------------------------
@@ -2108,6 +3431,60 @@ inline void XLAComputationConfig::set_allocated_debug_options(::xla::DebugOption
   // @@protoc_insertion_point(field_set_allocated:xrt.XLAComputationConfig.debug_options)
 }
 
+// .xrt.XLAComputationConfig.Experimental experimental = 8;
+inline bool XLAComputationConfig::has_experimental() const {
+  return this != internal_default_instance() && experimental_ != NULL;
+}
+inline void XLAComputationConfig::clear_experimental() {
+  if (GetArenaNoVirtual() == NULL && experimental_ != NULL) {
+    delete experimental_;
+  }
+  experimental_ = NULL;
+}
+inline const ::xrt::XLAComputationConfig_Experimental& XLAComputationConfig::_internal_experimental() const {
+  return *experimental_;
+}
+inline const ::xrt::XLAComputationConfig_Experimental& XLAComputationConfig::experimental() const {
+  const ::xrt::XLAComputationConfig_Experimental* p = experimental_;
+  // @@protoc_insertion_point(field_get:xrt.XLAComputationConfig.experimental)
+  return p != NULL ? *p : *reinterpret_cast<const ::xrt::XLAComputationConfig_Experimental*>(
+      &::xrt::_XLAComputationConfig_Experimental_default_instance_);
+}
+inline ::xrt::XLAComputationConfig_Experimental* XLAComputationConfig::release_experimental() {
+  // @@protoc_insertion_point(field_release:xrt.XLAComputationConfig.experimental)
+  
+  ::xrt::XLAComputationConfig_Experimental* temp = experimental_;
+  experimental_ = NULL;
+  return temp;
+}
+inline ::xrt::XLAComputationConfig_Experimental* XLAComputationConfig::mutable_experimental() {
+  
+  if (experimental_ == NULL) {
+    auto* p = CreateMaybeMessage<::xrt::XLAComputationConfig_Experimental>(GetArenaNoVirtual());
+    experimental_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:xrt.XLAComputationConfig.experimental)
+  return experimental_;
+}
+inline void XLAComputationConfig::set_allocated_experimental(::xrt::XLAComputationConfig_Experimental* experimental) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete experimental_;
+  }
+  if (experimental) {
+    ::google::protobuf::Arena* submessage_arena = NULL;
+    if (message_arena != submessage_arena) {
+      experimental = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, experimental, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  experimental_ = experimental;
+  // @@protoc_insertion_point(field_set_allocated:xrt.XLAComputationConfig.experimental)
+}
+
 // -------------------------------------------------------------------
 
 // XLAComputation
@@ -2332,6 +3709,68 @@ XLATupleNode::tuples() const {
 
 // -------------------------------------------------------------------
 
+// CommonExecutionConfig
+
+// int32 replica_id = 1;
+inline void CommonExecutionConfig::clear_replica_id() {
+  replica_id_ = 0;
+}
+inline ::google::protobuf::int32 CommonExecutionConfig::replica_id() const {
+  // @@protoc_insertion_point(field_get:xrt.CommonExecutionConfig.replica_id)
+  return replica_id_;
+}
+inline void CommonExecutionConfig::set_replica_id(::google::protobuf::int32 value) {
+  
+  replica_id_ = value;
+  // @@protoc_insertion_point(field_set:xrt.CommonExecutionConfig.replica_id)
+}
+
+// repeated int32 local_replica_mapping = 2;
+inline int CommonExecutionConfig::local_replica_mapping_size() const {
+  return local_replica_mapping_.size();
+}
+inline void CommonExecutionConfig::clear_local_replica_mapping() {
+  local_replica_mapping_.Clear();
+}
+inline ::google::protobuf::int32 CommonExecutionConfig::local_replica_mapping(int index) const {
+  // @@protoc_insertion_point(field_get:xrt.CommonExecutionConfig.local_replica_mapping)
+  return local_replica_mapping_.Get(index);
+}
+inline void CommonExecutionConfig::set_local_replica_mapping(int index, ::google::protobuf::int32 value) {
+  local_replica_mapping_.Set(index, value);
+  // @@protoc_insertion_point(field_set:xrt.CommonExecutionConfig.local_replica_mapping)
+}
+inline void CommonExecutionConfig::add_local_replica_mapping(::google::protobuf::int32 value) {
+  local_replica_mapping_.Add(value);
+  // @@protoc_insertion_point(field_add:xrt.CommonExecutionConfig.local_replica_mapping)
+}
+inline const ::google::protobuf::RepeatedField< ::google::protobuf::int32 >&
+CommonExecutionConfig::local_replica_mapping() const {
+  // @@protoc_insertion_point(field_list:xrt.CommonExecutionConfig.local_replica_mapping)
+  return local_replica_mapping_;
+}
+inline ::google::protobuf::RepeatedField< ::google::protobuf::int32 >*
+CommonExecutionConfig::mutable_local_replica_mapping() {
+  // @@protoc_insertion_point(field_mutable_list:xrt.CommonExecutionConfig.local_replica_mapping)
+  return &local_replica_mapping_;
+}
+
+// int64 run_id = 3;
+inline void CommonExecutionConfig::clear_run_id() {
+  run_id_ = GOOGLE_LONGLONG(0);
+}
+inline ::google::protobuf::int64 CommonExecutionConfig::run_id() const {
+  // @@protoc_insertion_point(field_get:xrt.CommonExecutionConfig.run_id)
+  return run_id_;
+}
+inline void CommonExecutionConfig::set_run_id(::google::protobuf::int64 value) {
+  
+  run_id_ = value;
+  // @@protoc_insertion_point(field_set:xrt.CommonExecutionConfig.run_id)
+}
+
+// -------------------------------------------------------------------
+
 // XRTExecutionConfig
 
 // int32 device_ordinal = 1;
@@ -2471,6 +3910,60 @@ inline void XRTExecutionConfig::set_return_exploded_tuple(bool value) {
   // @@protoc_insertion_point(field_set:xrt.XRTExecutionConfig.return_exploded_tuple)
 }
 
+// .xrt.CommonExecutionConfig common_config = 9;
+inline bool XRTExecutionConfig::has_common_config() const {
+  return this != internal_default_instance() && common_config_ != NULL;
+}
+inline void XRTExecutionConfig::clear_common_config() {
+  if (GetArenaNoVirtual() == NULL && common_config_ != NULL) {
+    delete common_config_;
+  }
+  common_config_ = NULL;
+}
+inline const ::xrt::CommonExecutionConfig& XRTExecutionConfig::_internal_common_config() const {
+  return *common_config_;
+}
+inline const ::xrt::CommonExecutionConfig& XRTExecutionConfig::common_config() const {
+  const ::xrt::CommonExecutionConfig* p = common_config_;
+  // @@protoc_insertion_point(field_get:xrt.XRTExecutionConfig.common_config)
+  return p != NULL ? *p : *reinterpret_cast<const ::xrt::CommonExecutionConfig*>(
+      &::xrt::_CommonExecutionConfig_default_instance_);
+}
+inline ::xrt::CommonExecutionConfig* XRTExecutionConfig::release_common_config() {
+  // @@protoc_insertion_point(field_release:xrt.XRTExecutionConfig.common_config)
+  
+  ::xrt::CommonExecutionConfig* temp = common_config_;
+  common_config_ = NULL;
+  return temp;
+}
+inline ::xrt::CommonExecutionConfig* XRTExecutionConfig::mutable_common_config() {
+  
+  if (common_config_ == NULL) {
+    auto* p = CreateMaybeMessage<::xrt::CommonExecutionConfig>(GetArenaNoVirtual());
+    common_config_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:xrt.XRTExecutionConfig.common_config)
+  return common_config_;
+}
+inline void XRTExecutionConfig::set_allocated_common_config(::xrt::CommonExecutionConfig* common_config) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete common_config_;
+  }
+  if (common_config) {
+    ::google::protobuf::Arena* submessage_arena = NULL;
+    if (message_arena != submessage_arena) {
+      common_config = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, common_config, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  common_config_ = common_config;
+  // @@protoc_insertion_point(field_set_allocated:xrt.XRTExecutionConfig.common_config)
+}
+
 // -------------------------------------------------------------------
 
 // XRTChainedExecuteConfig
@@ -2554,6 +4047,60 @@ inline void XRTChainedExecuteConfig::set_allocated_execution_instance_key(::std:
   }
   execution_instance_key_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), execution_instance_key);
   // @@protoc_insertion_point(field_set_allocated:xrt.XRTChainedExecuteConfig.execution_instance_key)
+}
+
+// .xrt.CommonExecutionConfig common_config = 5;
+inline bool XRTChainedExecuteConfig::has_common_config() const {
+  return this != internal_default_instance() && common_config_ != NULL;
+}
+inline void XRTChainedExecuteConfig::clear_common_config() {
+  if (GetArenaNoVirtual() == NULL && common_config_ != NULL) {
+    delete common_config_;
+  }
+  common_config_ = NULL;
+}
+inline const ::xrt::CommonExecutionConfig& XRTChainedExecuteConfig::_internal_common_config() const {
+  return *common_config_;
+}
+inline const ::xrt::CommonExecutionConfig& XRTChainedExecuteConfig::common_config() const {
+  const ::xrt::CommonExecutionConfig* p = common_config_;
+  // @@protoc_insertion_point(field_get:xrt.XRTChainedExecuteConfig.common_config)
+  return p != NULL ? *p : *reinterpret_cast<const ::xrt::CommonExecutionConfig*>(
+      &::xrt::_CommonExecutionConfig_default_instance_);
+}
+inline ::xrt::CommonExecutionConfig* XRTChainedExecuteConfig::release_common_config() {
+  // @@protoc_insertion_point(field_release:xrt.XRTChainedExecuteConfig.common_config)
+  
+  ::xrt::CommonExecutionConfig* temp = common_config_;
+  common_config_ = NULL;
+  return temp;
+}
+inline ::xrt::CommonExecutionConfig* XRTChainedExecuteConfig::mutable_common_config() {
+  
+  if (common_config_ == NULL) {
+    auto* p = CreateMaybeMessage<::xrt::CommonExecutionConfig>(GetArenaNoVirtual());
+    common_config_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:xrt.XRTChainedExecuteConfig.common_config)
+  return common_config_;
+}
+inline void XRTChainedExecuteConfig::set_allocated_common_config(::xrt::CommonExecutionConfig* common_config) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete common_config_;
+  }
+  if (common_config) {
+    ::google::protobuf::Arena* submessage_arena = NULL;
+    if (message_arena != submessage_arena) {
+      common_config = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, common_config, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  common_config_ = common_config;
+  // @@protoc_insertion_point(field_set_allocated:xrt.XRTChainedExecuteConfig.common_config)
 }
 
 // -------------------------------------------------------------------
@@ -2785,9 +4332,511 @@ XRTChainedExecutePlan::ops() const {
   return ops_;
 }
 
+// -------------------------------------------------------------------
+
+// XRTMetricsCollect
+
+// repeated string metrics_regex = 1;
+inline int XRTMetricsCollect::metrics_regex_size() const {
+  return metrics_regex_.size();
+}
+inline void XRTMetricsCollect::clear_metrics_regex() {
+  metrics_regex_.Clear();
+}
+inline const ::std::string& XRTMetricsCollect::metrics_regex(int index) const {
+  // @@protoc_insertion_point(field_get:xrt.XRTMetricsCollect.metrics_regex)
+  return metrics_regex_.Get(index);
+}
+inline ::std::string* XRTMetricsCollect::mutable_metrics_regex(int index) {
+  // @@protoc_insertion_point(field_mutable:xrt.XRTMetricsCollect.metrics_regex)
+  return metrics_regex_.Mutable(index);
+}
+inline void XRTMetricsCollect::set_metrics_regex(int index, const ::std::string& value) {
+  // @@protoc_insertion_point(field_set:xrt.XRTMetricsCollect.metrics_regex)
+  metrics_regex_.Mutable(index)->assign(value);
+}
+#if LANG_CXX11
+inline void XRTMetricsCollect::set_metrics_regex(int index, ::std::string&& value) {
+  // @@protoc_insertion_point(field_set:xrt.XRTMetricsCollect.metrics_regex)
+  metrics_regex_.Mutable(index)->assign(std::move(value));
+}
+#endif
+inline void XRTMetricsCollect::set_metrics_regex(int index, const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  metrics_regex_.Mutable(index)->assign(value);
+  // @@protoc_insertion_point(field_set_char:xrt.XRTMetricsCollect.metrics_regex)
+}
+inline void XRTMetricsCollect::set_metrics_regex(int index, const char* value, size_t size) {
+  metrics_regex_.Mutable(index)->assign(
+    reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_set_pointer:xrt.XRTMetricsCollect.metrics_regex)
+}
+inline ::std::string* XRTMetricsCollect::add_metrics_regex() {
+  // @@protoc_insertion_point(field_add_mutable:xrt.XRTMetricsCollect.metrics_regex)
+  return metrics_regex_.Add();
+}
+inline void XRTMetricsCollect::add_metrics_regex(const ::std::string& value) {
+  metrics_regex_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add:xrt.XRTMetricsCollect.metrics_regex)
+}
+#if LANG_CXX11
+inline void XRTMetricsCollect::add_metrics_regex(::std::string&& value) {
+  metrics_regex_.Add(std::move(value));
+  // @@protoc_insertion_point(field_add:xrt.XRTMetricsCollect.metrics_regex)
+}
+#endif
+inline void XRTMetricsCollect::add_metrics_regex(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  metrics_regex_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add_char:xrt.XRTMetricsCollect.metrics_regex)
+}
+inline void XRTMetricsCollect::add_metrics_regex(const char* value, size_t size) {
+  metrics_regex_.Add()->assign(reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_add_pointer:xrt.XRTMetricsCollect.metrics_regex)
+}
+inline const ::google::protobuf::RepeatedPtrField< ::std::string>&
+XRTMetricsCollect::metrics_regex() const {
+  // @@protoc_insertion_point(field_list:xrt.XRTMetricsCollect.metrics_regex)
+  return metrics_regex_;
+}
+inline ::google::protobuf::RepeatedPtrField< ::std::string>*
+XRTMetricsCollect::mutable_metrics_regex() {
+  // @@protoc_insertion_point(field_mutable_list:xrt.XRTMetricsCollect.metrics_regex)
+  return &metrics_regex_;
+}
+
+// -------------------------------------------------------------------
+
+// Percentiles_Point
+
+// double percentile = 1;
+inline void Percentiles_Point::clear_percentile() {
+  percentile_ = 0;
+}
+inline double Percentiles_Point::percentile() const {
+  // @@protoc_insertion_point(field_get:xrt.Percentiles.Point.percentile)
+  return percentile_;
+}
+inline void Percentiles_Point::set_percentile(double value) {
+  
+  percentile_ = value;
+  // @@protoc_insertion_point(field_set:xrt.Percentiles.Point.percentile)
+}
+
+// double value = 2;
+inline void Percentiles_Point::clear_value() {
+  value_ = 0;
+}
+inline double Percentiles_Point::value() const {
+  // @@protoc_insertion_point(field_get:xrt.Percentiles.Point.value)
+  return value_;
+}
+inline void Percentiles_Point::set_value(double value) {
+  
+  value_ = value;
+  // @@protoc_insertion_point(field_set:xrt.Percentiles.Point.value)
+}
+
+// -------------------------------------------------------------------
+
+// Percentiles
+
+// uint64 start_nstime = 1;
+inline void Percentiles::clear_start_nstime() {
+  start_nstime_ = GOOGLE_ULONGLONG(0);
+}
+inline ::google::protobuf::uint64 Percentiles::start_nstime() const {
+  // @@protoc_insertion_point(field_get:xrt.Percentiles.start_nstime)
+  return start_nstime_;
+}
+inline void Percentiles::set_start_nstime(::google::protobuf::uint64 value) {
+  
+  start_nstime_ = value;
+  // @@protoc_insertion_point(field_set:xrt.Percentiles.start_nstime)
+}
+
+// uint64 end_nstime = 2;
+inline void Percentiles::clear_end_nstime() {
+  end_nstime_ = GOOGLE_ULONGLONG(0);
+}
+inline ::google::protobuf::uint64 Percentiles::end_nstime() const {
+  // @@protoc_insertion_point(field_get:xrt.Percentiles.end_nstime)
+  return end_nstime_;
+}
+inline void Percentiles::set_end_nstime(::google::protobuf::uint64 value) {
+  
+  end_nstime_ = value;
+  // @@protoc_insertion_point(field_set:xrt.Percentiles.end_nstime)
+}
+
+// double min_value = 3;
+inline void Percentiles::clear_min_value() {
+  min_value_ = 0;
+}
+inline double Percentiles::min_value() const {
+  // @@protoc_insertion_point(field_get:xrt.Percentiles.min_value)
+  return min_value_;
+}
+inline void Percentiles::set_min_value(double value) {
+  
+  min_value_ = value;
+  // @@protoc_insertion_point(field_set:xrt.Percentiles.min_value)
+}
+
+// double max_value = 4;
+inline void Percentiles::clear_max_value() {
+  max_value_ = 0;
+}
+inline double Percentiles::max_value() const {
+  // @@protoc_insertion_point(field_get:xrt.Percentiles.max_value)
+  return max_value_;
+}
+inline void Percentiles::set_max_value(double value) {
+  
+  max_value_ = value;
+  // @@protoc_insertion_point(field_set:xrt.Percentiles.max_value)
+}
+
+// double mean = 5;
+inline void Percentiles::clear_mean() {
+  mean_ = 0;
+}
+inline double Percentiles::mean() const {
+  // @@protoc_insertion_point(field_get:xrt.Percentiles.mean)
+  return mean_;
+}
+inline void Percentiles::set_mean(double value) {
+  
+  mean_ = value;
+  // @@protoc_insertion_point(field_set:xrt.Percentiles.mean)
+}
+
+// double stddev = 6;
+inline void Percentiles::clear_stddev() {
+  stddev_ = 0;
+}
+inline double Percentiles::stddev() const {
+  // @@protoc_insertion_point(field_get:xrt.Percentiles.stddev)
+  return stddev_;
+}
+inline void Percentiles::set_stddev(double value) {
+  
+  stddev_ = value;
+  // @@protoc_insertion_point(field_set:xrt.Percentiles.stddev)
+}
+
+// uint64 num_samples = 7;
+inline void Percentiles::clear_num_samples() {
+  num_samples_ = GOOGLE_ULONGLONG(0);
+}
+inline ::google::protobuf::uint64 Percentiles::num_samples() const {
+  // @@protoc_insertion_point(field_get:xrt.Percentiles.num_samples)
+  return num_samples_;
+}
+inline void Percentiles::set_num_samples(::google::protobuf::uint64 value) {
+  
+  num_samples_ = value;
+  // @@protoc_insertion_point(field_set:xrt.Percentiles.num_samples)
+}
+
+// uint64 total_samples = 8;
+inline void Percentiles::clear_total_samples() {
+  total_samples_ = GOOGLE_ULONGLONG(0);
+}
+inline ::google::protobuf::uint64 Percentiles::total_samples() const {
+  // @@protoc_insertion_point(field_get:xrt.Percentiles.total_samples)
+  return total_samples_;
+}
+inline void Percentiles::set_total_samples(::google::protobuf::uint64 value) {
+  
+  total_samples_ = value;
+  // @@protoc_insertion_point(field_set:xrt.Percentiles.total_samples)
+}
+
+// double accumulator = 9;
+inline void Percentiles::clear_accumulator() {
+  accumulator_ = 0;
+}
+inline double Percentiles::accumulator() const {
+  // @@protoc_insertion_point(field_get:xrt.Percentiles.accumulator)
+  return accumulator_;
+}
+inline void Percentiles::set_accumulator(double value) {
+  
+  accumulator_ = value;
+  // @@protoc_insertion_point(field_set:xrt.Percentiles.accumulator)
+}
+
+// repeated .xrt.Percentiles.Point points = 10;
+inline int Percentiles::points_size() const {
+  return points_.size();
+}
+inline void Percentiles::clear_points() {
+  points_.Clear();
+}
+inline ::xrt::Percentiles_Point* Percentiles::mutable_points(int index) {
+  // @@protoc_insertion_point(field_mutable:xrt.Percentiles.points)
+  return points_.Mutable(index);
+}
+inline ::google::protobuf::RepeatedPtrField< ::xrt::Percentiles_Point >*
+Percentiles::mutable_points() {
+  // @@protoc_insertion_point(field_mutable_list:xrt.Percentiles.points)
+  return &points_;
+}
+inline const ::xrt::Percentiles_Point& Percentiles::points(int index) const {
+  // @@protoc_insertion_point(field_get:xrt.Percentiles.points)
+  return points_.Get(index);
+}
+inline ::xrt::Percentiles_Point* Percentiles::add_points() {
+  // @@protoc_insertion_point(field_add:xrt.Percentiles.points)
+  return points_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::xrt::Percentiles_Point >&
+Percentiles::points() const {
+  // @@protoc_insertion_point(field_list:xrt.Percentiles.points)
+  return points_;
+}
+
+// -------------------------------------------------------------------
+
+// MetricValues
+
+// string name = 1;
+inline void MetricValues::clear_name() {
+  name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline const ::std::string& MetricValues::name() const {
+  // @@protoc_insertion_point(field_get:xrt.MetricValues.name)
+  return name_.GetNoArena();
+}
+inline void MetricValues::set_name(const ::std::string& value) {
+  
+  name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:xrt.MetricValues.name)
+}
+#if LANG_CXX11
+inline void MetricValues::set_name(::std::string&& value) {
+  
+  name_.SetNoArena(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:xrt.MetricValues.name)
+}
+#endif
+inline void MetricValues::set_name(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  
+  name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:xrt.MetricValues.name)
+}
+inline void MetricValues::set_name(const char* value, size_t size) {
+  
+  name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:xrt.MetricValues.name)
+}
+inline ::std::string* MetricValues::mutable_name() {
+  
+  // @@protoc_insertion_point(field_mutable:xrt.MetricValues.name)
+  return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* MetricValues::release_name() {
+  // @@protoc_insertion_point(field_release:xrt.MetricValues.name)
+  
+  return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void MetricValues::set_allocated_name(::std::string* name) {
+  if (name != NULL) {
+    
+  } else {
+    
+  }
+  name_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), name);
+  // @@protoc_insertion_point(field_set_allocated:xrt.MetricValues.name)
+}
+
+// .xrt.Percentiles percentiles_value = 2;
+inline bool MetricValues::has_percentiles_value() const {
+  return values_oneof_case() == kPercentilesValue;
+}
+inline void MetricValues::set_has_percentiles_value() {
+  _oneof_case_[0] = kPercentilesValue;
+}
+inline void MetricValues::clear_percentiles_value() {
+  if (has_percentiles_value()) {
+    delete values_oneof_.percentiles_value_;
+    clear_has_values_oneof();
+  }
+}
+inline const ::xrt::Percentiles& MetricValues::_internal_percentiles_value() const {
+  return *values_oneof_.percentiles_value_;
+}
+inline ::xrt::Percentiles* MetricValues::release_percentiles_value() {
+  // @@protoc_insertion_point(field_release:xrt.MetricValues.percentiles_value)
+  if (has_percentiles_value()) {
+    clear_has_values_oneof();
+      ::xrt::Percentiles* temp = values_oneof_.percentiles_value_;
+    values_oneof_.percentiles_value_ = NULL;
+    return temp;
+  } else {
+    return NULL;
+  }
+}
+inline const ::xrt::Percentiles& MetricValues::percentiles_value() const {
+  // @@protoc_insertion_point(field_get:xrt.MetricValues.percentiles_value)
+  return has_percentiles_value()
+      ? *values_oneof_.percentiles_value_
+      : *reinterpret_cast< ::xrt::Percentiles*>(&::xrt::_Percentiles_default_instance_);
+}
+inline ::xrt::Percentiles* MetricValues::mutable_percentiles_value() {
+  if (!has_percentiles_value()) {
+    clear_values_oneof();
+    set_has_percentiles_value();
+    values_oneof_.percentiles_value_ = CreateMaybeMessage< ::xrt::Percentiles >(
+        GetArenaNoVirtual());
+  }
+  // @@protoc_insertion_point(field_mutable:xrt.MetricValues.percentiles_value)
+  return values_oneof_.percentiles_value_;
+}
+
+// int64 int64_value = 3;
+inline bool MetricValues::has_int64_value() const {
+  return values_oneof_case() == kInt64Value;
+}
+inline void MetricValues::set_has_int64_value() {
+  _oneof_case_[0] = kInt64Value;
+}
+inline void MetricValues::clear_int64_value() {
+  if (has_int64_value()) {
+    values_oneof_.int64_value_ = GOOGLE_LONGLONG(0);
+    clear_has_values_oneof();
+  }
+}
+inline ::google::protobuf::int64 MetricValues::int64_value() const {
+  // @@protoc_insertion_point(field_get:xrt.MetricValues.int64_value)
+  if (has_int64_value()) {
+    return values_oneof_.int64_value_;
+  }
+  return GOOGLE_LONGLONG(0);
+}
+inline void MetricValues::set_int64_value(::google::protobuf::int64 value) {
+  if (!has_int64_value()) {
+    clear_values_oneof();
+    set_has_int64_value();
+  }
+  values_oneof_.int64_value_ = value;
+  // @@protoc_insertion_point(field_set:xrt.MetricValues.int64_value)
+}
+
+// .xrt.MetricValues.UnitOfMeasure unit_of_measure = 4;
+inline void MetricValues::clear_unit_of_measure() {
+  unit_of_measure_ = 0;
+}
+inline ::xrt::MetricValues_UnitOfMeasure MetricValues::unit_of_measure() const {
+  // @@protoc_insertion_point(field_get:xrt.MetricValues.unit_of_measure)
+  return static_cast< ::xrt::MetricValues_UnitOfMeasure >(unit_of_measure_);
+}
+inline void MetricValues::set_unit_of_measure(::xrt::MetricValues_UnitOfMeasure value) {
+  
+  unit_of_measure_ = value;
+  // @@protoc_insertion_point(field_set:xrt.MetricValues.unit_of_measure)
+}
+
+inline bool MetricValues::has_values_oneof() const {
+  return values_oneof_case() != VALUES_ONEOF_NOT_SET;
+}
+inline void MetricValues::clear_has_values_oneof() {
+  _oneof_case_[0] = VALUES_ONEOF_NOT_SET;
+}
+inline MetricValues::ValuesOneofCase MetricValues::values_oneof_case() const {
+  return MetricValues::ValuesOneofCase(_oneof_case_[0]);
+}
+// -------------------------------------------------------------------
+
+// MetricsReport
+
+// repeated .xrt.MetricValues metrics = 1;
+inline int MetricsReport::metrics_size() const {
+  return metrics_.size();
+}
+inline void MetricsReport::clear_metrics() {
+  metrics_.Clear();
+}
+inline ::xrt::MetricValues* MetricsReport::mutable_metrics(int index) {
+  // @@protoc_insertion_point(field_mutable:xrt.MetricsReport.metrics)
+  return metrics_.Mutable(index);
+}
+inline ::google::protobuf::RepeatedPtrField< ::xrt::MetricValues >*
+MetricsReport::mutable_metrics() {
+  // @@protoc_insertion_point(field_mutable_list:xrt.MetricsReport.metrics)
+  return &metrics_;
+}
+inline const ::xrt::MetricValues& MetricsReport::metrics(int index) const {
+  // @@protoc_insertion_point(field_get:xrt.MetricsReport.metrics)
+  return metrics_.Get(index);
+}
+inline ::xrt::MetricValues* MetricsReport::add_metrics() {
+  // @@protoc_insertion_point(field_add:xrt.MetricsReport.metrics)
+  return metrics_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::xrt::MetricValues >&
+MetricsReport::metrics() const {
+  // @@protoc_insertion_point(field_list:xrt.MetricsReport.metrics)
+  return metrics_;
+}
+
+// -------------------------------------------------------------------
+
+// MemoryInfo
+
+// int64 kb_total = 1;
+inline void MemoryInfo::clear_kb_total() {
+  kb_total_ = GOOGLE_LONGLONG(0);
+}
+inline ::google::protobuf::int64 MemoryInfo::kb_total() const {
+  // @@protoc_insertion_point(field_get:xrt.MemoryInfo.kb_total)
+  return kb_total_;
+}
+inline void MemoryInfo::set_kb_total(::google::protobuf::int64 value) {
+  
+  kb_total_ = value;
+  // @@protoc_insertion_point(field_set:xrt.MemoryInfo.kb_total)
+}
+
+// int64 kb_free = 2;
+inline void MemoryInfo::clear_kb_free() {
+  kb_free_ = GOOGLE_LONGLONG(0);
+}
+inline ::google::protobuf::int64 MemoryInfo::kb_free() const {
+  // @@protoc_insertion_point(field_get:xrt.MemoryInfo.kb_free)
+  return kb_free_;
+}
+inline void MemoryInfo::set_kb_free(::google::protobuf::int64 value) {
+  
+  kb_free_ = value;
+  // @@protoc_insertion_point(field_set:xrt.MemoryInfo.kb_free)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
@@ -2816,6 +4865,18 @@ XRTChainedExecutePlan::ops() const {
 // @@protoc_insertion_point(namespace_scope)
 
 }  // namespace xrt
+
+namespace google {
+namespace protobuf {
+
+template <> struct is_proto_enum< ::xrt::MetricValues_UnitOfMeasure> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::xrt::MetricValues_UnitOfMeasure>() {
+  return ::xrt::MetricValues_UnitOfMeasure_descriptor();
+}
+
+}  // namespace protobuf
+}  // namespace google
 
 // @@protoc_insertion_point(global_scope)
 

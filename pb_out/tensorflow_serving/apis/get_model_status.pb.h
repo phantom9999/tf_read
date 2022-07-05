@@ -32,7 +32,7 @@
 #include <google/protobuf/generated_enum_reflection.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "tensorflow_serving/apis/model.pb.h"
-#include "tensorflow_serving/util/status.pb.h"
+#include "tensorflow_serving/apis/status.pb.h"
 // @@protoc_insertion_point(includes)
 #define PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_5fserving_2fapis_2fget_5fmodel_5fstatus_2eproto 
 

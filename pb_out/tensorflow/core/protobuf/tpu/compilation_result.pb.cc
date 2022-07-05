@@ -52,6 +52,7 @@ void InitDefaults() {
 }
 
 ::google::protobuf::Metadata file_level_metadata[1];
+const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[1];
 
 const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
@@ -62,6 +63,7 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::CompilationResultProto, status_code_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::CompilationResultProto, status_error_message_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::CompilationResultProto, hlo_protos_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::CompilationResultProto, error_code_),
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::tensorflow::tpu::CompilationResultProto)},
@@ -75,7 +77,7 @@ void protobuf_AssignDescriptors() {
   AddDescriptors();
   AssignDescriptors(
       "tensorflow/core/protobuf/tpu/compilation_result.proto", schemas, file_default_instances, TableStruct::offsets,
-      file_level_metadata, NULL, NULL);
+      file_level_metadata, file_level_enum_descriptors, NULL);
 }
 
 void protobuf_AssignDescriptorsOnce() {
@@ -95,18 +97,21 @@ void AddDescriptorsImpl() {
       "\n5tensorflow/core/protobuf/tpu/compilati"
       "on_result.proto\022\016tensorflow.tpu\032)tensorf"
       "low/compiler/xla/service/hlo.proto\032*tens"
-      "orflow/core/lib/core/error_codes.proto\"\206"
+      "orflow/core/protobuf/error_codes.proto\"\371"
       "\001\n\026CompilationResultProto\022+\n\013status_code"
       "\030\001 \001(\0162\026.tensorflow.error.Code\022\034\n\024status"
       "_error_message\030\002 \001(\t\022!\n\nhlo_protos\030\003 \003(\013"
-      "2\r.xla.HloProtoB\003\370\001\001b\006proto3"
+      "2\r.xla.HloProto\022D\n\nerror_code\030\004 \001(\01620.te"
+      "nsorflow.tpu.CompilationResultProto.Erro"
+      "rCode\"+\n\tErrorCode\022\013\n\007UNKNOWN\020\000\022\021\n\rOUT_O"
+      "F_MEMORY\020\001B\003\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 308);
+      descriptor, 423);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/protobuf/tpu/compilation_result.proto", &protobuf_RegisterTypes);
   ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::AddDescriptors();
-  ::protobuf_tensorflow_2fcore_2flib_2fcore_2ferror_5fcodes_2eproto::AddDescriptors();
+  ::protobuf_tensorflow_2fcore_2fprotobuf_2ferror_5fcodes_2eproto::AddDescriptors();
 }
 
 void AddDescriptors() {
@@ -122,6 +127,27 @@ struct StaticDescriptorInitializer {
 }  // namespace protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2fcompilation_5fresult_2eproto
 namespace tensorflow {
 namespace tpu {
+const ::google::protobuf::EnumDescriptor* CompilationResultProto_ErrorCode_descriptor() {
+  protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2fcompilation_5fresult_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2fcompilation_5fresult_2eproto::file_level_enum_descriptors[0];
+}
+bool CompilationResultProto_ErrorCode_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+      return true;
+    default:
+      return false;
+  }
+}
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const CompilationResultProto_ErrorCode CompilationResultProto::UNKNOWN;
+const CompilationResultProto_ErrorCode CompilationResultProto::OUT_OF_MEMORY;
+const CompilationResultProto_ErrorCode CompilationResultProto::ErrorCode_MIN;
+const CompilationResultProto_ErrorCode CompilationResultProto::ErrorCode_MAX;
+const int CompilationResultProto::ErrorCode_ARRAYSIZE;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 // ===================================================================
 
@@ -134,6 +160,7 @@ void CompilationResultProto::clear_hlo_protos() {
 const int CompilationResultProto::kStatusCodeFieldNumber;
 const int CompilationResultProto::kStatusErrorMessageFieldNumber;
 const int CompilationResultProto::kHloProtosFieldNumber;
+const int CompilationResultProto::kErrorCodeFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CompilationResultProto::CompilationResultProto()
@@ -162,13 +189,17 @@ CompilationResultProto::CompilationResultProto(const CompilationResultProto& fro
     status_error_message_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.status_error_message(),
       GetArenaNoVirtual());
   }
-  status_code_ = from.status_code_;
+  ::memcpy(&status_code_, &from.status_code_,
+    static_cast<size_t>(reinterpret_cast<char*>(&error_code_) -
+    reinterpret_cast<char*>(&status_code_)) + sizeof(error_code_));
   // @@protoc_insertion_point(copy_constructor:tensorflow.tpu.CompilationResultProto)
 }
 
 void CompilationResultProto::SharedCtor() {
   status_error_message_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  status_code_ = 0;
+  ::memset(&status_code_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&error_code_) -
+      reinterpret_cast<char*>(&status_code_)) + sizeof(error_code_));
 }
 
 CompilationResultProto::~CompilationResultProto() {
@@ -209,7 +240,9 @@ void CompilationResultProto::Clear() {
 
   hlo_protos_.Clear();
   status_error_message_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  status_code_ = 0;
+  ::memset(&status_code_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&error_code_) -
+      reinterpret_cast<char*>(&status_code_)) + sizeof(error_code_));
   _internal_metadata_.Clear();
 }
 
@@ -260,6 +293,21 @@ bool CompilationResultProto::MergePartialFromCodedStream(
             static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                 input, add_hlo_protos()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .tensorflow.tpu.CompilationResultProto.ErrorCode error_code = 4;
+      case 4: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_error_code(static_cast< ::tensorflow::tpu::CompilationResultProto_ErrorCode >(value));
         } else {
           goto handle_unusual;
         }
@@ -317,6 +365,12 @@ void CompilationResultProto::SerializeWithCachedSizes(
       output);
   }
 
+  // .tensorflow.tpu.CompilationResultProto.ErrorCode error_code = 4;
+  if (this->error_code() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      4, this->error_code(), output);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -354,6 +408,12 @@ void CompilationResultProto::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
         3, this->hlo_protos(static_cast<int>(i)), deterministic, target);
+  }
+
+  // .tensorflow.tpu.CompilationResultProto.ErrorCode error_code = 4;
+  if (this->error_code() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      4, this->error_code(), target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -397,6 +457,12 @@ size_t CompilationResultProto::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormatLite::EnumSize(this->status_code());
   }
 
+  // .tensorflow.tpu.CompilationResultProto.ErrorCode error_code = 4;
+  if (this->error_code() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->error_code());
+  }
+
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -430,6 +496,9 @@ void CompilationResultProto::MergeFrom(const CompilationResultProto& from) {
   }
   if (from.status_code() != 0) {
     set_status_code(from.status_code());
+  }
+  if (from.error_code() != 0) {
+    set_error_code(from.error_code());
   }
 }
 
@@ -476,6 +545,7 @@ void CompilationResultProto::InternalSwap(CompilationResultProto* other) {
   status_error_message_.Swap(&other->status_error_message_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(status_code_, other->status_code_);
+  swap(error_code_, other->error_code_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 

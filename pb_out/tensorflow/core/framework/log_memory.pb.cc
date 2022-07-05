@@ -263,13 +263,14 @@ void AddDescriptorsImpl() {
       "ocator_name\030\006 \001(\t\"\177\n\030MemoryLogRawDealloc"
       "ation\022\017\n\007step_id\030\001 \001(\003\022\021\n\toperation\030\002 \001("
       "\t\022\025\n\rallocation_id\030\003 \001(\003\022\026\n\016allocator_na"
-      "me\030\004 \001(\t\022\020\n\010deferred\030\005 \001(\010Bo\n\030org.tensor"
-      "flow.frameworkB\017LogMemoryProtosP\001Z=githu"
-      "b.com/tensorflow/tensorflow/tensorflow/g"
-      "o/core/framework\370\001\001b\006proto3"
+      "me\030\004 \001(\t\022\020\n\010deferred\030\005 \001(\010B\203\001\n\030org.tenso"
+      "rflow.frameworkB\017LogMemoryProtosP\001ZQgith"
+      "ub.com/tensorflow/tensorflow/tensorflow/"
+      "go/core/framework/log_memory_go_proto\370\001\001"
+      "b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 867);
+      descriptor, 888);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/framework/log_memory.proto", &protobuf_RegisterTypes);
   ::protobuf_tensorflow_2fcore_2fframework_2ftensor_5fdescription_2eproto::AddDescriptors();

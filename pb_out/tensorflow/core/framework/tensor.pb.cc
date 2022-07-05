@@ -152,13 +152,13 @@ void AddDescriptorsImpl() {
       "\020 \003(\rB\002\020\001\022\026\n\nuint64_val\030\021 \003(\004B\002\020\001\"g\n\026Var"
       "iantTensorDataProto\022\021\n\ttype_name\030\001 \001(\t\022\020"
       "\n\010metadata\030\002 \001(\014\022(\n\007tensors\030\003 \003(\0132\027.tens"
-      "orflow.TensorProtoBl\n\030org.tensorflow.fra"
-      "meworkB\014TensorProtosP\001Z=github.com/tenso"
+      "orflow.TensorProtoB|\n\030org.tensorflow.fra"
+      "meworkB\014TensorProtosP\001ZMgithub.com/tenso"
       "rflow/tensorflow/tensorflow/go/core/fram"
-      "ework\370\001\001b\006proto3"
+      "ework/tensor_go_proto\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 936);
+      descriptor, 952);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/framework/tensor.proto", &protobuf_RegisterTypes);
   ::protobuf_tensorflow_2fcore_2fframework_2fresource_5fhandle_2eproto::AddDescriptors();

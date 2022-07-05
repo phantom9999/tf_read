@@ -148,13 +148,13 @@ void AddDescriptorsImpl() {
       "on\022\035\n\031VARIABLE_AGGREGATION_NONE\020\000\022\034\n\030VAR"
       "IABLE_AGGREGATION_SUM\020\001\022\035\n\031VARIABLE_AGGR"
       "EGATION_MEAN\020\002\022+\n\'VARIABLE_AGGREGATION_O"
-      "NLY_FIRST_REPLICA\020\003Bn\n\030org.tensorflow.fr"
-      "ameworkB\016VariableProtosP\001Z=github.com/te"
-      "nsorflow/tensorflow/tensorflow/go/core/f"
-      "ramework\370\001\001b\006proto3"
+      "NLY_FIRST_REPLICA\020\003B\200\001\n\030org.tensorflow.f"
+      "rameworkB\016VariableProtosP\001ZOgithub.com/t"
+      "ensorflow/tensorflow/tensorflow/go/core/"
+      "framework/variable_go_proto\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 939);
+      descriptor, 958);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/framework/variable.proto", &protobuf_RegisterTypes);
 }

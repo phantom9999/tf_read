@@ -353,14 +353,14 @@ void AddDescriptorsImpl() {
       "_info\030\006 \003(\0132,.tensorflow.GraphTransferGr"
       "aphOutputNodeInfo\022>\n\013destination\030\007 \001(\0162)"
       ".tensorflow.GraphTransferInfo.Destinatio"
-      "n\"#\n\013Destination\022\007\n\003NOP\020\000\022\013\n\007HEXAGON\020\001Bv"
-      "\n\030org.tensorflow.frameworkB\026GraphTransfe"
-      "rInfoProtoP\001Z=github.com/tensorflow/tens"
-      "orflow/tensorflow/go/core/framework\370\001\001b\006"
-      "proto3"
+      "n\"#\n\013Destination\022\007\n\003NOP\020\000\022\013\n\007HEXAGON\020\001B\223"
+      "\001\n\030org.tensorflow.frameworkB\026GraphTransf"
+      "erInfoProtoP\001ZZgithub.com/tensorflow/ten"
+      "sorflow/tensorflow/go/core/framework/gra"
+      "ph_transfer_info_go_proto\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 1486);
+      descriptor, 1516);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/framework/graph_transfer_info.proto", &protobuf_RegisterTypes);
   ::protobuf_tensorflow_2fcore_2fframework_2ftypes_2eproto::AddDescriptors();

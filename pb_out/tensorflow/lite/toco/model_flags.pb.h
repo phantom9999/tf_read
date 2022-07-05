@@ -29,6 +29,7 @@
 #include <google/protobuf/message.h>
 #include <google/protobuf/repeated_field.h>  // IWYU pragma: export
 #include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/generated_enum_reflection.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "tensorflow/lite/toco/types.pb.h"
 // @@protoc_insertion_point(includes)
@@ -82,6 +83,26 @@ template<> ::toco::RnnState* Arena::CreateMaybeMessage<::toco::RnnState>(Arena*)
 }  // namespace google
 namespace toco {
 
+enum ModelFlags_HloFileType {
+  ModelFlags_HloFileType_UNKNOWN = 0,
+  ModelFlags_HloFileType_HLO_TEXT = 1,
+  ModelFlags_HloFileType_HLO_PROTO = 2
+};
+bool ModelFlags_HloFileType_IsValid(int value);
+const ModelFlags_HloFileType ModelFlags_HloFileType_HloFileType_MIN = ModelFlags_HloFileType_UNKNOWN;
+const ModelFlags_HloFileType ModelFlags_HloFileType_HloFileType_MAX = ModelFlags_HloFileType_HLO_PROTO;
+const int ModelFlags_HloFileType_HloFileType_ARRAYSIZE = ModelFlags_HloFileType_HloFileType_MAX + 1;
+
+const ::google::protobuf::EnumDescriptor* ModelFlags_HloFileType_descriptor();
+inline const ::std::string& ModelFlags_HloFileType_Name(ModelFlags_HloFileType value) {
+  return ::google::protobuf::internal::NameOfEnum(
+    ModelFlags_HloFileType_descriptor(), value);
+}
+inline bool ModelFlags_HloFileType_Parse(
+    const ::std::string& name, ModelFlags_HloFileType* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<ModelFlags_HloFileType>(
+    ModelFlags_HloFileType_descriptor(), name, value);
+}
 // ===================================================================
 
 class InputArrayShape : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:toco.InputArrayShape) */ {
@@ -190,13 +211,23 @@ class InputArrayShape : public ::google::protobuf::Message /* @@protoc_insertion
   ::google::protobuf::RepeatedField< ::google::protobuf::int32 >*
       mutable_dims();
 
+  // optional bool unknown_rank = 3;
+  bool has_unknown_rank() const;
+  void clear_unknown_rank();
+  static const int kUnknownRankFieldNumber = 3;
+  bool unknown_rank() const;
+  void set_unknown_rank(bool value);
+
   // @@protoc_insertion_point(class_scope:toco.InputArrayShape)
  private:
+  void set_has_unknown_rank();
+  void clear_has_unknown_rank();
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
   ::google::protobuf::internal::HasBits<1> _has_bits_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   ::google::protobuf::RepeatedField< ::google::protobuf::int32 > dims_;
+  bool unknown_rank_;
   friend struct ::protobuf_tensorflow_2flite_2ftoco_2fmodel_5fflags_2eproto::TableStruct;
 };
 // -------------------------------------------------------------------
@@ -1091,6 +1122,34 @@ class ModelFlags : public ::google::protobuf::Message /* @@protoc_insertion_poin
 
   typedef ModelFlags_ModelCheck ModelCheck;
 
+  typedef ModelFlags_HloFileType HloFileType;
+  static const HloFileType UNKNOWN =
+    ModelFlags_HloFileType_UNKNOWN;
+  static const HloFileType HLO_TEXT =
+    ModelFlags_HloFileType_HLO_TEXT;
+  static const HloFileType HLO_PROTO =
+    ModelFlags_HloFileType_HLO_PROTO;
+  static inline bool HloFileType_IsValid(int value) {
+    return ModelFlags_HloFileType_IsValid(value);
+  }
+  static const HloFileType HloFileType_MIN =
+    ModelFlags_HloFileType_HloFileType_MIN;
+  static const HloFileType HloFileType_MAX =
+    ModelFlags_HloFileType_HloFileType_MAX;
+  static const int HloFileType_ARRAYSIZE =
+    ModelFlags_HloFileType_HloFileType_ARRAYSIZE;
+  static inline const ::google::protobuf::EnumDescriptor*
+  HloFileType_descriptor() {
+    return ModelFlags_HloFileType_descriptor();
+  }
+  static inline const ::std::string& HloFileType_Name(HloFileType value) {
+    return ModelFlags_HloFileType_Name(value);
+  }
+  static inline bool HloFileType_Parse(const ::std::string& name,
+      HloFileType* value) {
+    return ModelFlags_HloFileType_Parse(name, value);
+  }
+
   // accessors -------------------------------------------------------
 
   // repeated .toco.InputArray input_arrays = 1;
@@ -1151,6 +1210,87 @@ class ModelFlags : public ::google::protobuf::Message /* @@protoc_insertion_poin
   const ::google::protobuf::RepeatedPtrField< ::toco::ModelFlags_ModelCheck >&
       model_checks() const;
 
+  // repeated string saved_model_tags = 22;
+  int saved_model_tags_size() const;
+  void clear_saved_model_tags();
+  static const int kSavedModelTagsFieldNumber = 22;
+  const ::std::string& saved_model_tags(int index) const;
+  ::std::string* mutable_saved_model_tags(int index);
+  void set_saved_model_tags(int index, const ::std::string& value);
+  #if LANG_CXX11
+  void set_saved_model_tags(int index, ::std::string&& value);
+  #endif
+  void set_saved_model_tags(int index, const char* value);
+  void set_saved_model_tags(int index, const char* value, size_t size);
+  ::std::string* add_saved_model_tags();
+  void add_saved_model_tags(const ::std::string& value);
+  #if LANG_CXX11
+  void add_saved_model_tags(::std::string&& value);
+  #endif
+  void add_saved_model_tags(const char* value);
+  void add_saved_model_tags(const char* value, size_t size);
+  const ::google::protobuf::RepeatedPtrField< ::std::string>& saved_model_tags() const;
+  ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_saved_model_tags();
+
+  // repeated string saved_model_exported_names = 23;
+  int saved_model_exported_names_size() const;
+  void clear_saved_model_exported_names();
+  static const int kSavedModelExportedNamesFieldNumber = 23;
+  const ::std::string& saved_model_exported_names(int index) const;
+  ::std::string* mutable_saved_model_exported_names(int index);
+  void set_saved_model_exported_names(int index, const ::std::string& value);
+  #if LANG_CXX11
+  void set_saved_model_exported_names(int index, ::std::string&& value);
+  #endif
+  void set_saved_model_exported_names(int index, const char* value);
+  void set_saved_model_exported_names(int index, const char* value, size_t size);
+  ::std::string* add_saved_model_exported_names();
+  void add_saved_model_exported_names(const ::std::string& value);
+  #if LANG_CXX11
+  void add_saved_model_exported_names(::std::string&& value);
+  #endif
+  void add_saved_model_exported_names(const char* value);
+  void add_saved_model_exported_names(const char* value, size_t size);
+  const ::google::protobuf::RepeatedPtrField< ::std::string>& saved_model_exported_names() const;
+  ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_saved_model_exported_names();
+
+  // repeated string control_output_arrays = 24;
+  int control_output_arrays_size() const;
+  void clear_control_output_arrays();
+  static const int kControlOutputArraysFieldNumber = 24;
+  const ::std::string& control_output_arrays(int index) const;
+  ::std::string* mutable_control_output_arrays(int index);
+  void set_control_output_arrays(int index, const ::std::string& value);
+  #if LANG_CXX11
+  void set_control_output_arrays(int index, ::std::string&& value);
+  #endif
+  void set_control_output_arrays(int index, const char* value);
+  void set_control_output_arrays(int index, const char* value, size_t size);
+  ::std::string* add_control_output_arrays();
+  void add_control_output_arrays(const ::std::string& value);
+  #if LANG_CXX11
+  void add_control_output_arrays(::std::string&& value);
+  #endif
+  void add_control_output_arrays(const char* value);
+  void add_control_output_arrays(const char* value, size_t size);
+  const ::google::protobuf::RepeatedPtrField< ::std::string>& control_output_arrays() const;
+  ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_control_output_arrays();
+
+  // optional string saved_model_dir = 20;
+  bool has_saved_model_dir() const;
+  void clear_saved_model_dir();
+  static const int kSavedModelDirFieldNumber = 20;
+  const ::std::string& saved_model_dir() const;
+  void set_saved_model_dir(const ::std::string& value);
+  #if LANG_CXX11
+  void set_saved_model_dir(::std::string&& value);
+  #endif
+  void set_saved_model_dir(const char* value);
+  void set_saved_model_dir(const char* value, size_t size);
+  ::std::string* mutable_saved_model_dir();
+  ::std::string* release_saved_model_dir();
+  void set_allocated_saved_model_dir(::std::string* saved_model_dir);
+
   // optional .toco.ArraysExtraInfo arrays_extra_info = 18;
   bool has_arrays_extra_info() const;
   void clear_arrays_extra_info();
@@ -1162,6 +1302,13 @@ class ModelFlags : public ::google::protobuf::Message /* @@protoc_insertion_poin
   ::toco::ArraysExtraInfo* release_arrays_extra_info();
   ::toco::ArraysExtraInfo* mutable_arrays_extra_info();
   void set_allocated_arrays_extra_info(::toco::ArraysExtraInfo* arrays_extra_info);
+
+  // optional .toco.ModelFlags.HloFileType hlo_file_type = 26;
+  bool has_hlo_file_type() const;
+  void clear_hlo_file_type();
+  static const int kHloFileTypeFieldNumber = 26;
+  ::toco::ModelFlags_HloFileType hlo_file_type() const;
+  void set_hlo_file_type(::toco::ModelFlags_HloFileType value);
 
   // optional bool variable_batch = 10;
   bool has_variable_batch() const;
@@ -1184,6 +1331,20 @@ class ModelFlags : public ::google::protobuf::Message /* @@protoc_insertion_poin
   bool allow_nonascii_arrays() const;
   void set_allow_nonascii_arrays(bool value);
 
+  // optional bool use_hlo_import = 25;
+  bool has_use_hlo_import() const;
+  void clear_use_hlo_import();
+  static const int kUseHloImportFieldNumber = 25;
+  bool use_hlo_import() const;
+  void set_use_hlo_import(bool value);
+
+  // optional int32 saved_model_version = 21;
+  bool has_saved_model_version() const;
+  void clear_saved_model_version();
+  static const int kSavedModelVersionFieldNumber = 21;
+  ::google::protobuf::int32 saved_model_version() const;
+  void set_saved_model_version(::google::protobuf::int32 value);
+
   // optional bool change_concat_input_ranges = 19 [default = true];
   bool has_change_concat_input_ranges() const;
   void clear_change_concat_input_ranges();
@@ -1203,6 +1364,14 @@ class ModelFlags : public ::google::protobuf::Message /* @@protoc_insertion_poin
   void clear_has_arrays_extra_info();
   void set_has_change_concat_input_ranges();
   void clear_has_change_concat_input_ranges();
+  void set_has_saved_model_dir();
+  void clear_has_saved_model_dir();
+  void set_has_saved_model_version();
+  void clear_has_saved_model_version();
+  void set_has_use_hlo_import();
+  void clear_has_use_hlo_import();
+  void set_has_hlo_file_type();
+  void clear_has_hlo_file_type();
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
   ::google::protobuf::internal::HasBits<1> _has_bits_;
@@ -1211,10 +1380,17 @@ class ModelFlags : public ::google::protobuf::Message /* @@protoc_insertion_poin
   ::google::protobuf::RepeatedPtrField< ::std::string> output_arrays_;
   ::google::protobuf::RepeatedPtrField< ::toco::RnnState > rnn_states_;
   ::google::protobuf::RepeatedPtrField< ::toco::ModelFlags_ModelCheck > model_checks_;
+  ::google::protobuf::RepeatedPtrField< ::std::string> saved_model_tags_;
+  ::google::protobuf::RepeatedPtrField< ::std::string> saved_model_exported_names_;
+  ::google::protobuf::RepeatedPtrField< ::std::string> control_output_arrays_;
+  ::google::protobuf::internal::ArenaStringPtr saved_model_dir_;
   ::toco::ArraysExtraInfo* arrays_extra_info_;
+  int hlo_file_type_;
   bool variable_batch_;
   bool allow_nonexistent_arrays_;
   bool allow_nonascii_arrays_;
+  bool use_hlo_import_;
+  ::google::protobuf::int32 saved_model_version_;
   bool change_concat_input_ranges_;
   friend struct ::protobuf_tensorflow_2flite_2ftoco_2fmodel_5fflags_2eproto::TableStruct;
 };
@@ -1257,6 +1433,30 @@ inline ::google::protobuf::RepeatedField< ::google::protobuf::int32 >*
 InputArrayShape::mutable_dims() {
   // @@protoc_insertion_point(field_mutable_list:toco.InputArrayShape.dims)
   return &dims_;
+}
+
+// optional bool unknown_rank = 3;
+inline bool InputArrayShape::has_unknown_rank() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void InputArrayShape::set_has_unknown_rank() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void InputArrayShape::clear_has_unknown_rank() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void InputArrayShape::clear_unknown_rank() {
+  unknown_rank_ = false;
+  clear_has_unknown_rank();
+}
+inline bool InputArrayShape::unknown_rank() const {
+  // @@protoc_insertion_point(field_get:toco.InputArrayShape.unknown_rank)
+  return unknown_rank_;
+}
+inline void InputArrayShape::set_unknown_rank(bool value) {
+  set_has_unknown_rank();
+  unknown_rank_ = value;
+  // @@protoc_insertion_point(field_set:toco.InputArrayShape.unknown_rank)
 }
 
 // -------------------------------------------------------------------
@@ -2214,15 +2414,84 @@ ModelFlags::mutable_output_arrays() {
   return &output_arrays_;
 }
 
+// repeated string control_output_arrays = 24;
+inline int ModelFlags::control_output_arrays_size() const {
+  return control_output_arrays_.size();
+}
+inline void ModelFlags::clear_control_output_arrays() {
+  control_output_arrays_.Clear();
+}
+inline const ::std::string& ModelFlags::control_output_arrays(int index) const {
+  // @@protoc_insertion_point(field_get:toco.ModelFlags.control_output_arrays)
+  return control_output_arrays_.Get(index);
+}
+inline ::std::string* ModelFlags::mutable_control_output_arrays(int index) {
+  // @@protoc_insertion_point(field_mutable:toco.ModelFlags.control_output_arrays)
+  return control_output_arrays_.Mutable(index);
+}
+inline void ModelFlags::set_control_output_arrays(int index, const ::std::string& value) {
+  // @@protoc_insertion_point(field_set:toco.ModelFlags.control_output_arrays)
+  control_output_arrays_.Mutable(index)->assign(value);
+}
+#if LANG_CXX11
+inline void ModelFlags::set_control_output_arrays(int index, ::std::string&& value) {
+  // @@protoc_insertion_point(field_set:toco.ModelFlags.control_output_arrays)
+  control_output_arrays_.Mutable(index)->assign(std::move(value));
+}
+#endif
+inline void ModelFlags::set_control_output_arrays(int index, const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  control_output_arrays_.Mutable(index)->assign(value);
+  // @@protoc_insertion_point(field_set_char:toco.ModelFlags.control_output_arrays)
+}
+inline void ModelFlags::set_control_output_arrays(int index, const char* value, size_t size) {
+  control_output_arrays_.Mutable(index)->assign(
+    reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_set_pointer:toco.ModelFlags.control_output_arrays)
+}
+inline ::std::string* ModelFlags::add_control_output_arrays() {
+  // @@protoc_insertion_point(field_add_mutable:toco.ModelFlags.control_output_arrays)
+  return control_output_arrays_.Add();
+}
+inline void ModelFlags::add_control_output_arrays(const ::std::string& value) {
+  control_output_arrays_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add:toco.ModelFlags.control_output_arrays)
+}
+#if LANG_CXX11
+inline void ModelFlags::add_control_output_arrays(::std::string&& value) {
+  control_output_arrays_.Add(std::move(value));
+  // @@protoc_insertion_point(field_add:toco.ModelFlags.control_output_arrays)
+}
+#endif
+inline void ModelFlags::add_control_output_arrays(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  control_output_arrays_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add_char:toco.ModelFlags.control_output_arrays)
+}
+inline void ModelFlags::add_control_output_arrays(const char* value, size_t size) {
+  control_output_arrays_.Add()->assign(reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_add_pointer:toco.ModelFlags.control_output_arrays)
+}
+inline const ::google::protobuf::RepeatedPtrField< ::std::string>&
+ModelFlags::control_output_arrays() const {
+  // @@protoc_insertion_point(field_list:toco.ModelFlags.control_output_arrays)
+  return control_output_arrays_;
+}
+inline ::google::protobuf::RepeatedPtrField< ::std::string>*
+ModelFlags::mutable_control_output_arrays() {
+  // @@protoc_insertion_point(field_mutable_list:toco.ModelFlags.control_output_arrays)
+  return &control_output_arrays_;
+}
+
 // optional bool variable_batch = 10;
 inline bool ModelFlags::has_variable_batch() const {
-  return (_has_bits_[0] & 0x00000002u) != 0;
+  return (_has_bits_[0] & 0x00000008u) != 0;
 }
 inline void ModelFlags::set_has_variable_batch() {
-  _has_bits_[0] |= 0x00000002u;
+  _has_bits_[0] |= 0x00000008u;
 }
 inline void ModelFlags::clear_has_variable_batch() {
-  _has_bits_[0] &= ~0x00000002u;
+  _has_bits_[0] &= ~0x00000008u;
 }
 inline void ModelFlags::clear_variable_batch() {
   variable_batch_ = false;
@@ -2300,13 +2569,13 @@ ModelFlags::model_checks() const {
 
 // optional bool allow_nonexistent_arrays = 16;
 inline bool ModelFlags::has_allow_nonexistent_arrays() const {
-  return (_has_bits_[0] & 0x00000004u) != 0;
+  return (_has_bits_[0] & 0x00000010u) != 0;
 }
 inline void ModelFlags::set_has_allow_nonexistent_arrays() {
-  _has_bits_[0] |= 0x00000004u;
+  _has_bits_[0] |= 0x00000010u;
 }
 inline void ModelFlags::clear_has_allow_nonexistent_arrays() {
-  _has_bits_[0] &= ~0x00000004u;
+  _has_bits_[0] &= ~0x00000010u;
 }
 inline void ModelFlags::clear_allow_nonexistent_arrays() {
   allow_nonexistent_arrays_ = false;
@@ -2324,13 +2593,13 @@ inline void ModelFlags::set_allow_nonexistent_arrays(bool value) {
 
 // optional bool allow_nonascii_arrays = 17;
 inline bool ModelFlags::has_allow_nonascii_arrays() const {
-  return (_has_bits_[0] & 0x00000008u) != 0;
+  return (_has_bits_[0] & 0x00000020u) != 0;
 }
 inline void ModelFlags::set_has_allow_nonascii_arrays() {
-  _has_bits_[0] |= 0x00000008u;
+  _has_bits_[0] |= 0x00000020u;
 }
 inline void ModelFlags::clear_has_allow_nonascii_arrays() {
-  _has_bits_[0] &= ~0x00000008u;
+  _has_bits_[0] &= ~0x00000020u;
 }
 inline void ModelFlags::clear_allow_nonascii_arrays() {
   allow_nonascii_arrays_ = false;
@@ -2348,13 +2617,13 @@ inline void ModelFlags::set_allow_nonascii_arrays(bool value) {
 
 // optional .toco.ArraysExtraInfo arrays_extra_info = 18;
 inline bool ModelFlags::has_arrays_extra_info() const {
-  return (_has_bits_[0] & 0x00000001u) != 0;
+  return (_has_bits_[0] & 0x00000002u) != 0;
 }
 inline void ModelFlags::set_has_arrays_extra_info() {
-  _has_bits_[0] |= 0x00000001u;
+  _has_bits_[0] |= 0x00000002u;
 }
 inline void ModelFlags::clear_has_arrays_extra_info() {
-  _has_bits_[0] &= ~0x00000001u;
+  _has_bits_[0] &= ~0x00000002u;
 }
 inline void ModelFlags::clear_arrays_extra_info() {
   if (arrays_extra_info_ != NULL) arrays_extra_info_->Clear();
@@ -2406,13 +2675,13 @@ inline void ModelFlags::set_allocated_arrays_extra_info(::toco::ArraysExtraInfo*
 
 // optional bool change_concat_input_ranges = 19 [default = true];
 inline bool ModelFlags::has_change_concat_input_ranges() const {
-  return (_has_bits_[0] & 0x00000010u) != 0;
+  return (_has_bits_[0] & 0x00000100u) != 0;
 }
 inline void ModelFlags::set_has_change_concat_input_ranges() {
-  _has_bits_[0] |= 0x00000010u;
+  _has_bits_[0] |= 0x00000100u;
 }
 inline void ModelFlags::clear_has_change_concat_input_ranges() {
-  _has_bits_[0] &= ~0x00000010u;
+  _has_bits_[0] &= ~0x00000100u;
 }
 inline void ModelFlags::clear_change_concat_input_ranges() {
   change_concat_input_ranges_ = true;
@@ -2426,6 +2695,283 @@ inline void ModelFlags::set_change_concat_input_ranges(bool value) {
   set_has_change_concat_input_ranges();
   change_concat_input_ranges_ = value;
   // @@protoc_insertion_point(field_set:toco.ModelFlags.change_concat_input_ranges)
+}
+
+// optional string saved_model_dir = 20;
+inline bool ModelFlags::has_saved_model_dir() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void ModelFlags::set_has_saved_model_dir() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void ModelFlags::clear_has_saved_model_dir() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void ModelFlags::clear_saved_model_dir() {
+  saved_model_dir_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  clear_has_saved_model_dir();
+}
+inline const ::std::string& ModelFlags::saved_model_dir() const {
+  // @@protoc_insertion_point(field_get:toco.ModelFlags.saved_model_dir)
+  return saved_model_dir_.GetNoArena();
+}
+inline void ModelFlags::set_saved_model_dir(const ::std::string& value) {
+  set_has_saved_model_dir();
+  saved_model_dir_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:toco.ModelFlags.saved_model_dir)
+}
+#if LANG_CXX11
+inline void ModelFlags::set_saved_model_dir(::std::string&& value) {
+  set_has_saved_model_dir();
+  saved_model_dir_.SetNoArena(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:toco.ModelFlags.saved_model_dir)
+}
+#endif
+inline void ModelFlags::set_saved_model_dir(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  set_has_saved_model_dir();
+  saved_model_dir_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:toco.ModelFlags.saved_model_dir)
+}
+inline void ModelFlags::set_saved_model_dir(const char* value, size_t size) {
+  set_has_saved_model_dir();
+  saved_model_dir_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:toco.ModelFlags.saved_model_dir)
+}
+inline ::std::string* ModelFlags::mutable_saved_model_dir() {
+  set_has_saved_model_dir();
+  // @@protoc_insertion_point(field_mutable:toco.ModelFlags.saved_model_dir)
+  return saved_model_dir_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* ModelFlags::release_saved_model_dir() {
+  // @@protoc_insertion_point(field_release:toco.ModelFlags.saved_model_dir)
+  if (!has_saved_model_dir()) {
+    return NULL;
+  }
+  clear_has_saved_model_dir();
+  return saved_model_dir_.ReleaseNonDefaultNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void ModelFlags::set_allocated_saved_model_dir(::std::string* saved_model_dir) {
+  if (saved_model_dir != NULL) {
+    set_has_saved_model_dir();
+  } else {
+    clear_has_saved_model_dir();
+  }
+  saved_model_dir_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), saved_model_dir);
+  // @@protoc_insertion_point(field_set_allocated:toco.ModelFlags.saved_model_dir)
+}
+
+// optional int32 saved_model_version = 21;
+inline bool ModelFlags::has_saved_model_version() const {
+  return (_has_bits_[0] & 0x00000080u) != 0;
+}
+inline void ModelFlags::set_has_saved_model_version() {
+  _has_bits_[0] |= 0x00000080u;
+}
+inline void ModelFlags::clear_has_saved_model_version() {
+  _has_bits_[0] &= ~0x00000080u;
+}
+inline void ModelFlags::clear_saved_model_version() {
+  saved_model_version_ = 0;
+  clear_has_saved_model_version();
+}
+inline ::google::protobuf::int32 ModelFlags::saved_model_version() const {
+  // @@protoc_insertion_point(field_get:toco.ModelFlags.saved_model_version)
+  return saved_model_version_;
+}
+inline void ModelFlags::set_saved_model_version(::google::protobuf::int32 value) {
+  set_has_saved_model_version();
+  saved_model_version_ = value;
+  // @@protoc_insertion_point(field_set:toco.ModelFlags.saved_model_version)
+}
+
+// repeated string saved_model_tags = 22;
+inline int ModelFlags::saved_model_tags_size() const {
+  return saved_model_tags_.size();
+}
+inline void ModelFlags::clear_saved_model_tags() {
+  saved_model_tags_.Clear();
+}
+inline const ::std::string& ModelFlags::saved_model_tags(int index) const {
+  // @@protoc_insertion_point(field_get:toco.ModelFlags.saved_model_tags)
+  return saved_model_tags_.Get(index);
+}
+inline ::std::string* ModelFlags::mutable_saved_model_tags(int index) {
+  // @@protoc_insertion_point(field_mutable:toco.ModelFlags.saved_model_tags)
+  return saved_model_tags_.Mutable(index);
+}
+inline void ModelFlags::set_saved_model_tags(int index, const ::std::string& value) {
+  // @@protoc_insertion_point(field_set:toco.ModelFlags.saved_model_tags)
+  saved_model_tags_.Mutable(index)->assign(value);
+}
+#if LANG_CXX11
+inline void ModelFlags::set_saved_model_tags(int index, ::std::string&& value) {
+  // @@protoc_insertion_point(field_set:toco.ModelFlags.saved_model_tags)
+  saved_model_tags_.Mutable(index)->assign(std::move(value));
+}
+#endif
+inline void ModelFlags::set_saved_model_tags(int index, const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  saved_model_tags_.Mutable(index)->assign(value);
+  // @@protoc_insertion_point(field_set_char:toco.ModelFlags.saved_model_tags)
+}
+inline void ModelFlags::set_saved_model_tags(int index, const char* value, size_t size) {
+  saved_model_tags_.Mutable(index)->assign(
+    reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_set_pointer:toco.ModelFlags.saved_model_tags)
+}
+inline ::std::string* ModelFlags::add_saved_model_tags() {
+  // @@protoc_insertion_point(field_add_mutable:toco.ModelFlags.saved_model_tags)
+  return saved_model_tags_.Add();
+}
+inline void ModelFlags::add_saved_model_tags(const ::std::string& value) {
+  saved_model_tags_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add:toco.ModelFlags.saved_model_tags)
+}
+#if LANG_CXX11
+inline void ModelFlags::add_saved_model_tags(::std::string&& value) {
+  saved_model_tags_.Add(std::move(value));
+  // @@protoc_insertion_point(field_add:toco.ModelFlags.saved_model_tags)
+}
+#endif
+inline void ModelFlags::add_saved_model_tags(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  saved_model_tags_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add_char:toco.ModelFlags.saved_model_tags)
+}
+inline void ModelFlags::add_saved_model_tags(const char* value, size_t size) {
+  saved_model_tags_.Add()->assign(reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_add_pointer:toco.ModelFlags.saved_model_tags)
+}
+inline const ::google::protobuf::RepeatedPtrField< ::std::string>&
+ModelFlags::saved_model_tags() const {
+  // @@protoc_insertion_point(field_list:toco.ModelFlags.saved_model_tags)
+  return saved_model_tags_;
+}
+inline ::google::protobuf::RepeatedPtrField< ::std::string>*
+ModelFlags::mutable_saved_model_tags() {
+  // @@protoc_insertion_point(field_mutable_list:toco.ModelFlags.saved_model_tags)
+  return &saved_model_tags_;
+}
+
+// repeated string saved_model_exported_names = 23;
+inline int ModelFlags::saved_model_exported_names_size() const {
+  return saved_model_exported_names_.size();
+}
+inline void ModelFlags::clear_saved_model_exported_names() {
+  saved_model_exported_names_.Clear();
+}
+inline const ::std::string& ModelFlags::saved_model_exported_names(int index) const {
+  // @@protoc_insertion_point(field_get:toco.ModelFlags.saved_model_exported_names)
+  return saved_model_exported_names_.Get(index);
+}
+inline ::std::string* ModelFlags::mutable_saved_model_exported_names(int index) {
+  // @@protoc_insertion_point(field_mutable:toco.ModelFlags.saved_model_exported_names)
+  return saved_model_exported_names_.Mutable(index);
+}
+inline void ModelFlags::set_saved_model_exported_names(int index, const ::std::string& value) {
+  // @@protoc_insertion_point(field_set:toco.ModelFlags.saved_model_exported_names)
+  saved_model_exported_names_.Mutable(index)->assign(value);
+}
+#if LANG_CXX11
+inline void ModelFlags::set_saved_model_exported_names(int index, ::std::string&& value) {
+  // @@protoc_insertion_point(field_set:toco.ModelFlags.saved_model_exported_names)
+  saved_model_exported_names_.Mutable(index)->assign(std::move(value));
+}
+#endif
+inline void ModelFlags::set_saved_model_exported_names(int index, const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  saved_model_exported_names_.Mutable(index)->assign(value);
+  // @@protoc_insertion_point(field_set_char:toco.ModelFlags.saved_model_exported_names)
+}
+inline void ModelFlags::set_saved_model_exported_names(int index, const char* value, size_t size) {
+  saved_model_exported_names_.Mutable(index)->assign(
+    reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_set_pointer:toco.ModelFlags.saved_model_exported_names)
+}
+inline ::std::string* ModelFlags::add_saved_model_exported_names() {
+  // @@protoc_insertion_point(field_add_mutable:toco.ModelFlags.saved_model_exported_names)
+  return saved_model_exported_names_.Add();
+}
+inline void ModelFlags::add_saved_model_exported_names(const ::std::string& value) {
+  saved_model_exported_names_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add:toco.ModelFlags.saved_model_exported_names)
+}
+#if LANG_CXX11
+inline void ModelFlags::add_saved_model_exported_names(::std::string&& value) {
+  saved_model_exported_names_.Add(std::move(value));
+  // @@protoc_insertion_point(field_add:toco.ModelFlags.saved_model_exported_names)
+}
+#endif
+inline void ModelFlags::add_saved_model_exported_names(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  saved_model_exported_names_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add_char:toco.ModelFlags.saved_model_exported_names)
+}
+inline void ModelFlags::add_saved_model_exported_names(const char* value, size_t size) {
+  saved_model_exported_names_.Add()->assign(reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_add_pointer:toco.ModelFlags.saved_model_exported_names)
+}
+inline const ::google::protobuf::RepeatedPtrField< ::std::string>&
+ModelFlags::saved_model_exported_names() const {
+  // @@protoc_insertion_point(field_list:toco.ModelFlags.saved_model_exported_names)
+  return saved_model_exported_names_;
+}
+inline ::google::protobuf::RepeatedPtrField< ::std::string>*
+ModelFlags::mutable_saved_model_exported_names() {
+  // @@protoc_insertion_point(field_mutable_list:toco.ModelFlags.saved_model_exported_names)
+  return &saved_model_exported_names_;
+}
+
+// optional bool use_hlo_import = 25;
+inline bool ModelFlags::has_use_hlo_import() const {
+  return (_has_bits_[0] & 0x00000040u) != 0;
+}
+inline void ModelFlags::set_has_use_hlo_import() {
+  _has_bits_[0] |= 0x00000040u;
+}
+inline void ModelFlags::clear_has_use_hlo_import() {
+  _has_bits_[0] &= ~0x00000040u;
+}
+inline void ModelFlags::clear_use_hlo_import() {
+  use_hlo_import_ = false;
+  clear_has_use_hlo_import();
+}
+inline bool ModelFlags::use_hlo_import() const {
+  // @@protoc_insertion_point(field_get:toco.ModelFlags.use_hlo_import)
+  return use_hlo_import_;
+}
+inline void ModelFlags::set_use_hlo_import(bool value) {
+  set_has_use_hlo_import();
+  use_hlo_import_ = value;
+  // @@protoc_insertion_point(field_set:toco.ModelFlags.use_hlo_import)
+}
+
+// optional .toco.ModelFlags.HloFileType hlo_file_type = 26;
+inline bool ModelFlags::has_hlo_file_type() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void ModelFlags::set_has_hlo_file_type() {
+  _has_bits_[0] |= 0x00000004u;
+}
+inline void ModelFlags::clear_has_hlo_file_type() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline void ModelFlags::clear_hlo_file_type() {
+  hlo_file_type_ = 0;
+  clear_has_hlo_file_type();
+}
+inline ::toco::ModelFlags_HloFileType ModelFlags::hlo_file_type() const {
+  // @@protoc_insertion_point(field_get:toco.ModelFlags.hlo_file_type)
+  return static_cast< ::toco::ModelFlags_HloFileType >(hlo_file_type_);
+}
+inline void ModelFlags::set_hlo_file_type(::toco::ModelFlags_HloFileType value) {
+  assert(::toco::ModelFlags_HloFileType_IsValid(value));
+  set_has_hlo_file_type();
+  hlo_file_type_ = value;
+  // @@protoc_insertion_point(field_set:toco.ModelFlags.hlo_file_type)
 }
 
 #ifdef __GNUC__
@@ -2447,6 +2993,18 @@ inline void ModelFlags::set_change_concat_input_ranges(bool value) {
 // @@protoc_insertion_point(namespace_scope)
 
 }  // namespace toco
+
+namespace google {
+namespace protobuf {
+
+template <> struct is_proto_enum< ::toco::ModelFlags_HloFileType> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::toco::ModelFlags_HloFileType>() {
+  return ::toco::ModelFlags_HloFileType_descriptor();
+}
+
+}  // namespace protobuf
+}  // namespace google
 
 // @@protoc_insertion_point(global_scope)
 

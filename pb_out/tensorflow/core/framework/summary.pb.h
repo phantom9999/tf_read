@@ -29,6 +29,7 @@
 #include <google/protobuf/message.h>
 #include <google/protobuf/repeated_field.h>  // IWYU pragma: export
 #include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/generated_enum_reflection.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "tensorflow/core/framework/tensor.pb.h"
 // @@protoc_insertion_point(includes)
@@ -86,6 +87,29 @@ template<> ::tensorflow::Summary_Value* Arena::CreateMaybeMessage<::tensorflow::
 }  // namespace google
 namespace tensorflow {
 
+enum DataClass {
+  DATA_CLASS_UNKNOWN = 0,
+  DATA_CLASS_SCALAR = 1,
+  DATA_CLASS_TENSOR = 2,
+  DATA_CLASS_BLOB_SEQUENCE = 3,
+  DataClass_INT_MIN_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32min,
+  DataClass_INT_MAX_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32max
+};
+bool DataClass_IsValid(int value);
+const DataClass DataClass_MIN = DATA_CLASS_UNKNOWN;
+const DataClass DataClass_MAX = DATA_CLASS_BLOB_SEQUENCE;
+const int DataClass_ARRAYSIZE = DataClass_MAX + 1;
+
+const ::google::protobuf::EnumDescriptor* DataClass_descriptor();
+inline const ::std::string& DataClass_Name(DataClass value) {
+  return ::google::protobuf::internal::NameOfEnum(
+    DataClass_descriptor(), value);
+}
+inline bool DataClass_Parse(
+    const ::std::string& name, DataClass* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<DataClass>(
+    DataClass_descriptor(), name, value);
+}
 // ===================================================================
 
 class SummaryDescription : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.SummaryDescription) */ {
@@ -718,6 +742,12 @@ class SummaryMetadata : public ::google::protobuf::Message /* @@protoc_insertion
       ::tensorflow::SummaryMetadata_PluginData* plugin_data);
   ::tensorflow::SummaryMetadata_PluginData* unsafe_arena_release_plugin_data();
 
+  // .tensorflow.DataClass data_class = 4;
+  void clear_data_class();
+  static const int kDataClassFieldNumber = 4;
+  ::tensorflow::DataClass data_class() const;
+  void set_data_class(::tensorflow::DataClass value);
+
   // @@protoc_insertion_point(class_scope:tensorflow.SummaryMetadata)
  private:
 
@@ -728,6 +758,7 @@ class SummaryMetadata : public ::google::protobuf::Message /* @@protoc_insertion
   ::google::protobuf::internal::ArenaStringPtr display_name_;
   ::google::protobuf::internal::ArenaStringPtr summary_description_;
   ::tensorflow::SummaryMetadata_PluginData* plugin_data_;
+  int data_class_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcore_2fframework_2fsummary_2eproto::TableStruct;
 };
@@ -2090,6 +2121,20 @@ inline void SummaryMetadata::unsafe_arena_set_allocated_summary_description(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.SummaryMetadata.summary_description)
 }
 
+// .tensorflow.DataClass data_class = 4;
+inline void SummaryMetadata::clear_data_class() {
+  data_class_ = 0;
+}
+inline ::tensorflow::DataClass SummaryMetadata::data_class() const {
+  // @@protoc_insertion_point(field_get:tensorflow.SummaryMetadata.data_class)
+  return static_cast< ::tensorflow::DataClass >(data_class_);
+}
+inline void SummaryMetadata::set_data_class(::tensorflow::DataClass value) {
+  
+  data_class_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.SummaryMetadata.data_class)
+}
+
 // -------------------------------------------------------------------
 
 // Summary_Image
@@ -3107,6 +3152,18 @@ Summary::value() const {
 // @@protoc_insertion_point(namespace_scope)
 
 }  // namespace tensorflow
+
+namespace google {
+namespace protobuf {
+
+template <> struct is_proto_enum< ::tensorflow::DataClass> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::tensorflow::DataClass>() {
+  return ::tensorflow::DataClass_descriptor();
+}
+
+}  // namespace protobuf
+}  // namespace google
 
 // @@protoc_insertion_point(global_scope)
 

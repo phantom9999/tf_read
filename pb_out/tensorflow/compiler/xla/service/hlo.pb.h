@@ -43,7 +43,7 @@ namespace protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto {
 struct TableStruct {
   static const ::google::protobuf::internal::ParseTableField entries[];
   static const ::google::protobuf::internal::AuxillaryParseTableField aux[];
-  static const ::google::protobuf::internal::ParseTable schema[22];
+  static const ::google::protobuf::internal::ParseTable schema[30];
   static const ::google::protobuf::internal::FieldMetadata field_metadata[];
   static const ::google::protobuf::internal::SerializationTable serialization_table[];
   static const ::google::protobuf::uint32 offsets[];
@@ -63,12 +63,27 @@ extern BufferAssignmentProtoDefaultTypeInternal _BufferAssignmentProto_default_i
 class BufferAssignmentProto_BufferAlias;
 class BufferAssignmentProto_BufferAliasDefaultTypeInternal;
 extern BufferAssignmentProto_BufferAliasDefaultTypeInternal _BufferAssignmentProto_BufferAlias_default_instance_;
+class CrossProgramPrefetch;
+class CrossProgramPrefetchDefaultTypeInternal;
+extern CrossProgramPrefetchDefaultTypeInternal _CrossProgramPrefetch_default_instance_;
 class DynamicParameterBindingProto;
 class DynamicParameterBindingProtoDefaultTypeInternal;
 extern DynamicParameterBindingProtoDefaultTypeInternal _DynamicParameterBindingProto_default_instance_;
 class DynamicParameterBindingProto_Binding;
 class DynamicParameterBindingProto_BindingDefaultTypeInternal;
 extern DynamicParameterBindingProto_BindingDefaultTypeInternal _DynamicParameterBindingProto_Binding_default_instance_;
+class EntryFunctionAttributes;
+class EntryFunctionAttributesDefaultTypeInternal;
+extern EntryFunctionAttributesDefaultTypeInternal _EntryFunctionAttributes_default_instance_;
+class EntryFunctionAttributes_BufferParameterAttributes;
+class EntryFunctionAttributes_BufferParameterAttributesDefaultTypeInternal;
+extern EntryFunctionAttributes_BufferParameterAttributesDefaultTypeInternal _EntryFunctionAttributes_BufferParameterAttributes_default_instance_;
+class EntryFunctionAttributes_ShapeIndex;
+class EntryFunctionAttributes_ShapeIndexDefaultTypeInternal;
+extern EntryFunctionAttributes_ShapeIndexDefaultTypeInternal _EntryFunctionAttributes_ShapeIndex_default_instance_;
+class GpuBefExecutableProto;
+class GpuBefExecutableProtoDefaultTypeInternal;
+extern GpuBefExecutableProtoDefaultTypeInternal _GpuBefExecutableProto_default_instance_;
 class HeapSimulatorTrace;
 class HeapSimulatorTraceDefaultTypeInternal;
 extern HeapSimulatorTraceDefaultTypeInternal _HeapSimulatorTrace_default_instance_;
@@ -93,9 +108,18 @@ extern HloInstructionProto_SliceDimensionsDefaultTypeInternal _HloInstructionPro
 class HloModuleGroupProto;
 class HloModuleGroupProtoDefaultTypeInternal;
 extern HloModuleGroupProtoDefaultTypeInternal _HloModuleGroupProto_default_instance_;
+class HloModuleMetadataProto;
+class HloModuleMetadataProtoDefaultTypeInternal;
+extern HloModuleMetadataProtoDefaultTypeInternal _HloModuleMetadataProto_default_instance_;
 class HloModuleProto;
 class HloModuleProtoDefaultTypeInternal;
 extern HloModuleProtoDefaultTypeInternal _HloModuleProto_default_instance_;
+class HloModuleProto_ProfileInfo;
+class HloModuleProto_ProfileInfoDefaultTypeInternal;
+extern HloModuleProto_ProfileInfoDefaultTypeInternal _HloModuleProto_ProfileInfo_default_instance_;
+class HloPassMetadata;
+class HloPassMetadataDefaultTypeInternal;
+extern HloPassMetadataDefaultTypeInternal _HloPassMetadata_default_instance_;
 class HloProto;
 class HloProtoDefaultTypeInternal;
 extern HloProtoDefaultTypeInternal _HloProto_default_instance_;
@@ -124,8 +148,13 @@ template<> ::xla::BufferAllocationProto* Arena::CreateMaybeMessage<::xla::Buffer
 template<> ::xla::BufferAllocationProto_Assigned* Arena::CreateMaybeMessage<::xla::BufferAllocationProto_Assigned>(Arena*);
 template<> ::xla::BufferAssignmentProto* Arena::CreateMaybeMessage<::xla::BufferAssignmentProto>(Arena*);
 template<> ::xla::BufferAssignmentProto_BufferAlias* Arena::CreateMaybeMessage<::xla::BufferAssignmentProto_BufferAlias>(Arena*);
+template<> ::xla::CrossProgramPrefetch* Arena::CreateMaybeMessage<::xla::CrossProgramPrefetch>(Arena*);
 template<> ::xla::DynamicParameterBindingProto* Arena::CreateMaybeMessage<::xla::DynamicParameterBindingProto>(Arena*);
 template<> ::xla::DynamicParameterBindingProto_Binding* Arena::CreateMaybeMessage<::xla::DynamicParameterBindingProto_Binding>(Arena*);
+template<> ::xla::EntryFunctionAttributes* Arena::CreateMaybeMessage<::xla::EntryFunctionAttributes>(Arena*);
+template<> ::xla::EntryFunctionAttributes_BufferParameterAttributes* Arena::CreateMaybeMessage<::xla::EntryFunctionAttributes_BufferParameterAttributes>(Arena*);
+template<> ::xla::EntryFunctionAttributes_ShapeIndex* Arena::CreateMaybeMessage<::xla::EntryFunctionAttributes_ShapeIndex>(Arena*);
+template<> ::xla::GpuBefExecutableProto* Arena::CreateMaybeMessage<::xla::GpuBefExecutableProto>(Arena*);
 template<> ::xla::HeapSimulatorTrace* Arena::CreateMaybeMessage<::xla::HeapSimulatorTrace>(Arena*);
 template<> ::xla::HeapSimulatorTrace_Event* Arena::CreateMaybeMessage<::xla::HeapSimulatorTrace_Event>(Arena*);
 template<> ::xla::HloComputationProto* Arena::CreateMaybeMessage<::xla::HloComputationProto>(Arena*);
@@ -134,7 +163,10 @@ template<> ::xla::HloInputOutputAliasProto_AliasEntryProto* Arena::CreateMaybeMe
 template<> ::xla::HloInstructionProto* Arena::CreateMaybeMessage<::xla::HloInstructionProto>(Arena*);
 template<> ::xla::HloInstructionProto_SliceDimensions* Arena::CreateMaybeMessage<::xla::HloInstructionProto_SliceDimensions>(Arena*);
 template<> ::xla::HloModuleGroupProto* Arena::CreateMaybeMessage<::xla::HloModuleGroupProto>(Arena*);
+template<> ::xla::HloModuleMetadataProto* Arena::CreateMaybeMessage<::xla::HloModuleMetadataProto>(Arena*);
 template<> ::xla::HloModuleProto* Arena::CreateMaybeMessage<::xla::HloModuleProto>(Arena*);
+template<> ::xla::HloModuleProto_ProfileInfo* Arena::CreateMaybeMessage<::xla::HloModuleProto_ProfileInfo>(Arena*);
+template<> ::xla::HloPassMetadata* Arena::CreateMaybeMessage<::xla::HloPassMetadata>(Arena*);
 template<> ::xla::HloProto* Arena::CreateMaybeMessage<::xla::HloProto>(Arena*);
 template<> ::xla::HloScheduleProto* Arena::CreateMaybeMessage<::xla::HloScheduleProto>(Arena*);
 template<> ::xla::HloScheduleProto_InstructionSequence* Arena::CreateMaybeMessage<::xla::HloScheduleProto_InstructionSequence>(Arena*);
@@ -146,27 +178,28 @@ template<> ::xla::LogicalBufferProto_Location* Arena::CreateMaybeMessage<::xla::
 }  // namespace google
 namespace xla {
 
-enum HloInputOutputAliasProto_Kind {
-  HloInputOutputAliasProto_Kind_UNDEFINED_ALIAS = 0,
-  HloInputOutputAliasProto_Kind_USER_ALIAS = 1,
-  HloInputOutputAliasProto_Kind_SYSTEM_ALIAS = 2,
-  HloInputOutputAliasProto_Kind_HloInputOutputAliasProto_Kind_INT_MIN_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32min,
-  HloInputOutputAliasProto_Kind_HloInputOutputAliasProto_Kind_INT_MAX_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32max
+enum HloModuleProto_ProfileType {
+  HloModuleProto_ProfileType_INVALID = 0,
+  HloModuleProto_ProfileType_FLAG = 1,
+  HloModuleProto_ProfileType_FUSION = 2,
+  HloModuleProto_ProfileType_LAYOUT = 3,
+  HloModuleProto_ProfileType_HloModuleProto_ProfileType_INT_MIN_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32min,
+  HloModuleProto_ProfileType_HloModuleProto_ProfileType_INT_MAX_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32max
 };
-bool HloInputOutputAliasProto_Kind_IsValid(int value);
-const HloInputOutputAliasProto_Kind HloInputOutputAliasProto_Kind_Kind_MIN = HloInputOutputAliasProto_Kind_UNDEFINED_ALIAS;
-const HloInputOutputAliasProto_Kind HloInputOutputAliasProto_Kind_Kind_MAX = HloInputOutputAliasProto_Kind_SYSTEM_ALIAS;
-const int HloInputOutputAliasProto_Kind_Kind_ARRAYSIZE = HloInputOutputAliasProto_Kind_Kind_MAX + 1;
+bool HloModuleProto_ProfileType_IsValid(int value);
+const HloModuleProto_ProfileType HloModuleProto_ProfileType_ProfileType_MIN = HloModuleProto_ProfileType_INVALID;
+const HloModuleProto_ProfileType HloModuleProto_ProfileType_ProfileType_MAX = HloModuleProto_ProfileType_LAYOUT;
+const int HloModuleProto_ProfileType_ProfileType_ARRAYSIZE = HloModuleProto_ProfileType_ProfileType_MAX + 1;
 
-const ::google::protobuf::EnumDescriptor* HloInputOutputAliasProto_Kind_descriptor();
-inline const ::std::string& HloInputOutputAliasProto_Kind_Name(HloInputOutputAliasProto_Kind value) {
+const ::google::protobuf::EnumDescriptor* HloModuleProto_ProfileType_descriptor();
+inline const ::std::string& HloModuleProto_ProfileType_Name(HloModuleProto_ProfileType value) {
   return ::google::protobuf::internal::NameOfEnum(
-    HloInputOutputAliasProto_Kind_descriptor(), value);
+    HloModuleProto_ProfileType_descriptor(), value);
 }
-inline bool HloInputOutputAliasProto_Kind_Parse(
-    const ::std::string& name, HloInputOutputAliasProto_Kind* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<HloInputOutputAliasProto_Kind>(
-    HloInputOutputAliasProto_Kind_descriptor(), name, value);
+inline bool HloModuleProto_ProfileType_Parse(
+    const ::std::string& name, HloModuleProto_ProfileType* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<HloModuleProto_ProfileType>(
+    HloModuleProto_ProfileType_descriptor(), name, value);
 }
 enum HeapSimulatorTrace_Event_Kind {
   HeapSimulatorTrace_Event_Kind_ALLOC = 0,
@@ -189,6 +222,72 @@ inline bool HeapSimulatorTrace_Event_Kind_Parse(
     const ::std::string& name, HeapSimulatorTrace_Event_Kind* value) {
   return ::google::protobuf::internal::ParseNamedEnum<HeapSimulatorTrace_Event_Kind>(
     HeapSimulatorTrace_Event_Kind_descriptor(), name, value);
+}
+enum CustomCallSchedule {
+  SCHEDULE_NONE = 0,
+  SCHEDULE_LATEST = 1,
+  SCHEDULE_EARLIEST = 2,
+  CustomCallSchedule_INT_MIN_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32min,
+  CustomCallSchedule_INT_MAX_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32max
+};
+bool CustomCallSchedule_IsValid(int value);
+const CustomCallSchedule CustomCallSchedule_MIN = SCHEDULE_NONE;
+const CustomCallSchedule CustomCallSchedule_MAX = SCHEDULE_EARLIEST;
+const int CustomCallSchedule_ARRAYSIZE = CustomCallSchedule_MAX + 1;
+
+const ::google::protobuf::EnumDescriptor* CustomCallSchedule_descriptor();
+inline const ::std::string& CustomCallSchedule_Name(CustomCallSchedule value) {
+  return ::google::protobuf::internal::NameOfEnum(
+    CustomCallSchedule_descriptor(), value);
+}
+inline bool CustomCallSchedule_Parse(
+    const ::std::string& name, CustomCallSchedule* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<CustomCallSchedule>(
+    CustomCallSchedule_descriptor(), name, value);
+}
+enum CustomCallApiVersion {
+  API_VERSION_UNSPECIFIED = 0,
+  API_VERSION_ORIGINAL = 1,
+  API_VERSION_STATUS_RETURNING = 2,
+  CustomCallApiVersion_INT_MIN_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32min,
+  CustomCallApiVersion_INT_MAX_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32max
+};
+bool CustomCallApiVersion_IsValid(int value);
+const CustomCallApiVersion CustomCallApiVersion_MIN = API_VERSION_UNSPECIFIED;
+const CustomCallApiVersion CustomCallApiVersion_MAX = API_VERSION_STATUS_RETURNING;
+const int CustomCallApiVersion_ARRAYSIZE = CustomCallApiVersion_MAX + 1;
+
+const ::google::protobuf::EnumDescriptor* CustomCallApiVersion_descriptor();
+inline const ::std::string& CustomCallApiVersion_Name(CustomCallApiVersion value) {
+  return ::google::protobuf::internal::NameOfEnum(
+    CustomCallApiVersion_descriptor(), value);
+}
+inline bool CustomCallApiVersion_Parse(
+    const ::std::string& name, CustomCallApiVersion* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<CustomCallApiVersion>(
+    CustomCallApiVersion_descriptor(), name, value);
+}
+enum Kind {
+  UNDEFINED_ALIAS = 0,
+  MAY_ALIAS = 1,
+  MUST_ALIAS = 2,
+  Kind_INT_MIN_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32min,
+  Kind_INT_MAX_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32max
+};
+bool Kind_IsValid(int value);
+const Kind Kind_MIN = UNDEFINED_ALIAS;
+const Kind Kind_MAX = MUST_ALIAS;
+const int Kind_ARRAYSIZE = Kind_MAX + 1;
+
+const ::google::protobuf::EnumDescriptor* Kind_descriptor();
+inline const ::std::string& Kind_Name(Kind value) {
+  return ::google::protobuf::internal::NameOfEnum(
+    Kind_descriptor(), value);
+}
+inline bool Kind_Parse(
+    const ::std::string& name, Kind* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<Kind>(
+    Kind_descriptor(), name, value);
 }
 // ===================================================================
 
@@ -569,6 +668,18 @@ class HloInstructionProto : public ::google::protobuf::Message /* @@protoc_inser
   ::google::protobuf::RepeatedField< ::google::protobuf::int64 >*
       mutable_outer_dimension_partitions();
 
+  // repeated .xla.CustomCallOutputOperandAliasing custom_call_output_operand_aliasing = 74;
+  int custom_call_output_operand_aliasing_size() const;
+  void clear_custom_call_output_operand_aliasing();
+  static const int kCustomCallOutputOperandAliasingFieldNumber = 74;
+  ::xla::CustomCallOutputOperandAliasing* mutable_custom_call_output_operand_aliasing(int index);
+  ::google::protobuf::RepeatedPtrField< ::xla::CustomCallOutputOperandAliasing >*
+      mutable_custom_call_output_operand_aliasing();
+  const ::xla::CustomCallOutputOperandAliasing& custom_call_output_operand_aliasing(int index) const;
+  ::xla::CustomCallOutputOperandAliasing* add_custom_call_output_operand_aliasing();
+  const ::google::protobuf::RepeatedPtrField< ::xla::CustomCallOutputOperandAliasing >&
+      custom_call_output_operand_aliasing() const;
+
   // string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
@@ -730,7 +841,7 @@ class HloInstructionProto : public ::google::protobuf::Message /* @@protoc_inser
   void unsafe_arena_set_allocated_channel_name(
       ::std::string* channel_name);
 
-  // string backend_config = 43;
+  // bytes backend_config = 43;
   void clear_backend_config();
   static const int kBackendConfigFieldNumber = 43;
   const ::std::string& backend_config() const;
@@ -739,7 +850,7 @@ class HloInstructionProto : public ::google::protobuf::Message /* @@protoc_inser
   void set_backend_config(::std::string&& value);
   #endif
   void set_backend_config(const char* value);
-  void set_backend_config(const char* value, size_t size);
+  void set_backend_config(const void* value, size_t size);
   ::std::string* mutable_backend_config();
   ::std::string* release_backend_config();
   void set_allocated_backend_config(::std::string* backend_config);
@@ -775,6 +886,29 @@ class HloInstructionProto : public ::google::protobuf::Message /* @@protoc_inser
   "    future release.")
   void unsafe_arena_set_allocated_comparison_direction(
       ::std::string* comparison_direction);
+
+  // string comparison_type = 72;
+  void clear_comparison_type();
+  static const int kComparisonTypeFieldNumber = 72;
+  const ::std::string& comparison_type() const;
+  void set_comparison_type(const ::std::string& value);
+  #if LANG_CXX11
+  void set_comparison_type(::std::string&& value);
+  #endif
+  void set_comparison_type(const char* value);
+  void set_comparison_type(const char* value, size_t size);
+  ::std::string* mutable_comparison_type();
+  ::std::string* release_comparison_type();
+  void set_allocated_comparison_type(::std::string* comparison_type);
+  PROTOBUF_RUNTIME_DEPRECATED("The unsafe_arena_ accessors for"
+  "    string fields are deprecated and will be removed in a"
+  "    future release.")
+  ::std::string* unsafe_arena_release_comparison_type();
+  PROTOBUF_RUNTIME_DEPRECATED("The unsafe_arena_ accessors for"
+  "    string fields are deprecated and will be removed in a"
+  "    future release.")
+  void unsafe_arena_set_allocated_comparison_type(
+      ::std::string* comparison_type);
 
   // .xla.ShapeProto shape = 3;
   bool has_shape() const;
@@ -1031,6 +1165,21 @@ class HloInstructionProto : public ::google::protobuf::Message /* @@protoc_inser
       ::xla::CholeskyOptions* cholesky_options);
   ::xla::CholeskyOptions* unsafe_arena_release_cholesky_options();
 
+  // .xla.FrontendAttributes frontend_attributes = 68;
+  bool has_frontend_attributes() const;
+  void clear_frontend_attributes();
+  static const int kFrontendAttributesFieldNumber = 68;
+  private:
+  const ::xla::FrontendAttributes& _internal_frontend_attributes() const;
+  public:
+  const ::xla::FrontendAttributes& frontend_attributes() const;
+  ::xla::FrontendAttributes* release_frontend_attributes();
+  ::xla::FrontendAttributes* mutable_frontend_attributes();
+  void set_allocated_frontend_attributes(::xla::FrontendAttributes* frontend_attributes);
+  void unsafe_arena_set_allocated_frontend_attributes(
+      ::xla::FrontendAttributes* frontend_attributes);
+  ::xla::FrontendAttributes* unsafe_arena_release_frontend_attributes();
+
   // int64 parameter_number = 9;
   void clear_parameter_number();
   static const int kParameterNumberFieldNumber = 9;
@@ -1109,6 +1258,12 @@ class HloInstructionProto : public ::google::protobuf::Message /* @@protoc_inser
   ::xla::FftType fft_type() const;
   void set_fft_type(::xla::FftType value);
 
+  // bool use_global_device_ids = 71;
+  void clear_use_global_device_ids();
+  static const int kUseGlobalDeviceIdsFieldNumber = 71;
+  bool use_global_device_ids() const;
+  void set_use_global_device_ids(bool value);
+
   // bool is_host_transfer = 47;
   void clear_is_host_transfer();
   static const int kIsHostTransferFieldNumber = 47;
@@ -1127,17 +1282,23 @@ class HloInstructionProto : public ::google::protobuf::Message /* @@protoc_inser
   bool constrain_layout() const;
   void set_constrain_layout(bool value);
 
-  // bool custom_call_has_side_effect = 65;
-  void clear_custom_call_has_side_effect();
-  static const int kCustomCallHasSideEffectFieldNumber = 65;
-  bool custom_call_has_side_effect() const;
-  void set_custom_call_has_side_effect(bool value);
-
   // int64 batch_group_count = 58;
   void clear_batch_group_count();
   static const int kBatchGroupCountFieldNumber = 58;
   ::google::protobuf::int64 batch_group_count() const;
   void set_batch_group_count(::google::protobuf::int64 value);
+
+  // int64 delta = 66;
+  void clear_delta();
+  static const int kDeltaFieldNumber = 66;
+  ::google::protobuf::int64 delta() const;
+  void set_delta(::google::protobuf::int64 value);
+
+  // bool custom_call_has_side_effect = 65;
+  void clear_custom_call_has_side_effect();
+  static const int kCustomCallHasSideEffectFieldNumber = 65;
+  bool custom_call_has_side_effect() const;
+  void set_custom_call_has_side_effect(bool value);
 
   // bool indices_are_sorted = 67;
   void clear_indices_are_sorted();
@@ -1145,11 +1306,41 @@ class HloInstructionProto : public ::google::protobuf::Message /* @@protoc_inser
   bool indices_are_sorted() const;
   void set_indices_are_sorted(bool value);
 
-  // int64 delta = 66;
-  void clear_delta();
-  static const int kDeltaFieldNumber = 66;
-  ::google::protobuf::int64 delta() const;
-  void set_delta(::google::protobuf::int64 value);
+  // bool unique_indices = 69;
+  void clear_unique_indices();
+  static const int kUniqueIndicesFieldNumber = 69;
+  bool unique_indices() const;
+  void set_unique_indices(bool value);
+
+  // bool is_cross_program_prefetch = 73;
+  void clear_is_cross_program_prefetch();
+  static const int kIsCrossProgramPrefetchFieldNumber = 73;
+  bool is_cross_program_prefetch() const;
+  void set_is_cross_program_prefetch(bool value);
+
+  // .xla.RandomAlgorithm rng_algorithm = 70;
+  void clear_rng_algorithm();
+  static const int kRngAlgorithmFieldNumber = 70;
+  ::xla::RandomAlgorithm rng_algorithm() const;
+  void set_rng_algorithm(::xla::RandomAlgorithm value);
+
+  // .xla.CustomCallApiVersion custom_call_api_version = 77;
+  void clear_custom_call_api_version();
+  static const int kCustomCallApiVersionFieldNumber = 77;
+  ::xla::CustomCallApiVersion custom_call_api_version() const;
+  void set_custom_call_api_version(::xla::CustomCallApiVersion value);
+
+  // .xla.PaddingType padding_type = 75;
+  void clear_padding_type();
+  static const int kPaddingTypeFieldNumber = 75;
+  ::xla::PaddingType padding_type() const;
+  void set_padding_type(::xla::PaddingType value);
+
+  // .xla.CustomCallSchedule custom_call_schedule = 76;
+  void clear_custom_call_schedule();
+  static const int kCustomCallScheduleFieldNumber = 76;
+  ::xla::CustomCallSchedule custom_call_schedule() const;
+  void set_custom_call_schedule(::xla::CustomCallSchedule value);
 
   // @@protoc_insertion_point(class_scope:xla.HloInstructionProto)
  private:
@@ -1178,6 +1369,7 @@ class HloInstructionProto : public ::google::protobuf::Message /* @@protoc_inser
   ::google::protobuf::RepeatedPtrField< ::xla::ShapeProto > operand_shapes_with_layout_;
   ::google::protobuf::RepeatedField< ::google::protobuf::int64 > outer_dimension_partitions_;
   mutable int _outer_dimension_partitions_cached_byte_size_;
+  ::google::protobuf::RepeatedPtrField< ::xla::CustomCallOutputOperandAliasing > custom_call_output_operand_aliasing_;
   ::google::protobuf::internal::ArenaStringPtr name_;
   ::google::protobuf::internal::ArenaStringPtr opcode_;
   ::google::protobuf::internal::ArenaStringPtr fusion_kind_;
@@ -1187,6 +1379,7 @@ class HloInstructionProto : public ::google::protobuf::Message /* @@protoc_inser
   ::google::protobuf::internal::ArenaStringPtr channel_name_;
   ::google::protobuf::internal::ArenaStringPtr backend_config_;
   ::google::protobuf::internal::ArenaStringPtr comparison_direction_;
+  ::google::protobuf::internal::ArenaStringPtr comparison_type_;
   ::xla::ShapeProto* shape_;
   ::xla::OpMetadata* metadata_;
   ::xla::LiteralProto* literal_;
@@ -1204,6 +1397,7 @@ class HloInstructionProto : public ::google::protobuf::Message /* @@protoc_inser
   ::xla::TriangularSolveOptions* triangular_solve_options_;
   ::xla::ParameterReplication* parameter_replication_;
   ::xla::CholeskyOptions* cholesky_options_;
+  ::xla::FrontendAttributes* frontend_attributes_;
   ::google::protobuf::int64 parameter_number_;
   ::google::protobuf::int64 tuple_index_;
   ::google::protobuf::int32 exponent_bits_;
@@ -1217,13 +1411,20 @@ class HloInstructionProto : public ::google::protobuf::Message /* @@protoc_inser
   ::google::protobuf::int64 all_reduce_id_;
   ::google::protobuf::int64 feature_group_count_;
   int fft_type_;
+  bool use_global_device_ids_;
   bool is_host_transfer_;
   bool is_stable_;
   bool constrain_layout_;
-  bool custom_call_has_side_effect_;
   ::google::protobuf::int64 batch_group_count_;
-  bool indices_are_sorted_;
   ::google::protobuf::int64 delta_;
+  bool custom_call_has_side_effect_;
+  bool indices_are_sorted_;
+  bool unique_indices_;
+  bool is_cross_program_prefetch_;
+  int rng_algorithm_;
+  int custom_call_api_version_;
+  int padding_type_;
+  int custom_call_schedule_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::TableStruct;
 };
@@ -1390,6 +1591,12 @@ class HloComputationProto : public ::google::protobuf::Message /* @@protoc_inser
   ::google::protobuf::int64 root_id() const;
   void set_root_id(::google::protobuf::int64 value);
 
+  // bool is_fusion_computation = 7;
+  void clear_is_fusion_computation();
+  static const int kIsFusionComputationFieldNumber = 7;
+  bool is_fusion_computation() const;
+  void set_is_fusion_computation(bool value);
+
   // @@protoc_insertion_point(class_scope:xla.HloComputationProto)
  private:
 
@@ -1402,6 +1609,7 @@ class HloComputationProto : public ::google::protobuf::Message /* @@protoc_inser
   ::xla::ProgramShapeProto* program_shape_;
   ::google::protobuf::int64 id_;
   ::google::protobuf::int64 root_id_;
+  bool is_fusion_computation_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::TableStruct;
 };
@@ -1810,11 +2018,11 @@ class HloInputOutputAliasProto_AliasEntryProto : public ::google::protobuf::Mess
   ::google::protobuf::int64 parameter_number() const;
   void set_parameter_number(::google::protobuf::int64 value);
 
-  // .xla.HloInputOutputAliasProto.Kind kind = 4;
+  // .xla.Kind kind = 4;
   void clear_kind();
   static const int kKindFieldNumber = 4;
-  ::xla::HloInputOutputAliasProto_Kind kind() const;
-  void set_kind(::xla::HloInputOutputAliasProto_Kind value);
+  ::xla::Kind kind() const;
+  void set_kind(::xla::Kind value);
 
   // @@protoc_insertion_point(class_scope:xla.HloInputOutputAliasProto.AliasEntryProto)
  private:
@@ -1932,34 +2140,6 @@ class HloInputOutputAliasProto : public ::google::protobuf::Message /* @@protoc_
   // nested types ----------------------------------------------------
 
   typedef HloInputOutputAliasProto_AliasEntryProto AliasEntryProto;
-
-  typedef HloInputOutputAliasProto_Kind Kind;
-  static const Kind UNDEFINED_ALIAS =
-    HloInputOutputAliasProto_Kind_UNDEFINED_ALIAS;
-  static const Kind USER_ALIAS =
-    HloInputOutputAliasProto_Kind_USER_ALIAS;
-  static const Kind SYSTEM_ALIAS =
-    HloInputOutputAliasProto_Kind_SYSTEM_ALIAS;
-  static inline bool Kind_IsValid(int value) {
-    return HloInputOutputAliasProto_Kind_IsValid(value);
-  }
-  static const Kind Kind_MIN =
-    HloInputOutputAliasProto_Kind_Kind_MIN;
-  static const Kind Kind_MAX =
-    HloInputOutputAliasProto_Kind_Kind_MAX;
-  static const int Kind_ARRAYSIZE =
-    HloInputOutputAliasProto_Kind_Kind_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  Kind_descriptor() {
-    return HloInputOutputAliasProto_Kind_descriptor();
-  }
-  static inline const ::std::string& Kind_Name(Kind value) {
-    return HloInputOutputAliasProto_Kind_Name(value);
-  }
-  static inline bool Kind_Parse(const ::std::string& name,
-      Kind* value) {
-    return HloInputOutputAliasProto_Kind_Parse(name, value);
-  }
 
   // accessors -------------------------------------------------------
 
@@ -2274,6 +2454,277 @@ class DynamicParameterBindingProto : public ::google::protobuf::Message /* @@pro
 };
 // -------------------------------------------------------------------
 
+class CrossProgramPrefetch : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:xla.CrossProgramPrefetch) */ {
+ public:
+  CrossProgramPrefetch();
+  virtual ~CrossProgramPrefetch();
+
+  CrossProgramPrefetch(const CrossProgramPrefetch& from);
+
+  inline CrossProgramPrefetch& operator=(const CrossProgramPrefetch& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  CrossProgramPrefetch(CrossProgramPrefetch&& from) noexcept
+    : CrossProgramPrefetch() {
+    *this = ::std::move(from);
+  }
+
+  inline CrossProgramPrefetch& operator=(CrossProgramPrefetch&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  inline ::google::protobuf::Arena* GetArena() const final {
+    return GetArenaNoVirtual();
+  }
+  inline void* GetMaybeArenaPointer() const final {
+    return MaybeArenaPtr();
+  }
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const CrossProgramPrefetch& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const CrossProgramPrefetch* internal_default_instance() {
+    return reinterpret_cast<const CrossProgramPrefetch*>(
+               &_CrossProgramPrefetch_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    10;
+
+  void UnsafeArenaSwap(CrossProgramPrefetch* other);
+  void Swap(CrossProgramPrefetch* other);
+  friend void swap(CrossProgramPrefetch& a, CrossProgramPrefetch& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline CrossProgramPrefetch* New() const final {
+    return CreateMaybeMessage<CrossProgramPrefetch>(NULL);
+  }
+
+  CrossProgramPrefetch* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<CrossProgramPrefetch>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const CrossProgramPrefetch& from);
+  void MergeFrom(const CrossProgramPrefetch& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CrossProgramPrefetch* other);
+  protected:
+  explicit CrossProgramPrefetch(::google::protobuf::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::google::protobuf::Arena* arena);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return _internal_metadata_.arena();
+  }
+  inline void* MaybeArenaPtr() const {
+    return _internal_metadata_.raw_arena_ptr();
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // repeated int64 index = 2;
+  int index_size() const;
+  void clear_index();
+  static const int kIndexFieldNumber = 2;
+  ::google::protobuf::int64 index(int index) const;
+  void set_index(int index, ::google::protobuf::int64 value);
+  void add_index(::google::protobuf::int64 value);
+  const ::google::protobuf::RepeatedField< ::google::protobuf::int64 >&
+      index() const;
+  ::google::protobuf::RepeatedField< ::google::protobuf::int64 >*
+      mutable_index();
+
+  // int64 parameter = 1;
+  void clear_parameter();
+  static const int kParameterFieldNumber = 1;
+  ::google::protobuf::int64 parameter() const;
+  void set_parameter(::google::protobuf::int64 value);
+
+  // @@protoc_insertion_point(class_scope:xla.CrossProgramPrefetch)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::google::protobuf::RepeatedField< ::google::protobuf::int64 > index_;
+  mutable int _index_cached_byte_size_;
+  ::google::protobuf::int64 parameter_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
+class HloModuleProto_ProfileInfo : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:xla.HloModuleProto.ProfileInfo) */ {
+ public:
+  HloModuleProto_ProfileInfo();
+  virtual ~HloModuleProto_ProfileInfo();
+
+  HloModuleProto_ProfileInfo(const HloModuleProto_ProfileInfo& from);
+
+  inline HloModuleProto_ProfileInfo& operator=(const HloModuleProto_ProfileInfo& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  HloModuleProto_ProfileInfo(HloModuleProto_ProfileInfo&& from) noexcept
+    : HloModuleProto_ProfileInfo() {
+    *this = ::std::move(from);
+  }
+
+  inline HloModuleProto_ProfileInfo& operator=(HloModuleProto_ProfileInfo&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  inline ::google::protobuf::Arena* GetArena() const final {
+    return GetArenaNoVirtual();
+  }
+  inline void* GetMaybeArenaPointer() const final {
+    return MaybeArenaPtr();
+  }
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const HloModuleProto_ProfileInfo& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const HloModuleProto_ProfileInfo* internal_default_instance() {
+    return reinterpret_cast<const HloModuleProto_ProfileInfo*>(
+               &_HloModuleProto_ProfileInfo_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    11;
+
+  void UnsafeArenaSwap(HloModuleProto_ProfileInfo* other);
+  void Swap(HloModuleProto_ProfileInfo* other);
+  friend void swap(HloModuleProto_ProfileInfo& a, HloModuleProto_ProfileInfo& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline HloModuleProto_ProfileInfo* New() const final {
+    return CreateMaybeMessage<HloModuleProto_ProfileInfo>(NULL);
+  }
+
+  HloModuleProto_ProfileInfo* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<HloModuleProto_ProfileInfo>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const HloModuleProto_ProfileInfo& from);
+  void MergeFrom(const HloModuleProto_ProfileInfo& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(HloModuleProto_ProfileInfo* other);
+  protected:
+  explicit HloModuleProto_ProfileInfo(::google::protobuf::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::google::protobuf::Arena* arena);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return _internal_metadata_.arena();
+  }
+  inline void* MaybeArenaPtr() const {
+    return _internal_metadata_.raw_arena_ptr();
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // double relative_speedup = 2;
+  void clear_relative_speedup();
+  static const int kRelativeSpeedupFieldNumber = 2;
+  double relative_speedup() const;
+  void set_relative_speedup(double value);
+
+  // .xla.HloModuleProto.ProfileType profile_type = 1;
+  void clear_profile_type();
+  static const int kProfileTypeFieldNumber = 1;
+  ::xla::HloModuleProto_ProfileType profile_type() const;
+  void set_profile_type(::xla::HloModuleProto_ProfileType value);
+
+  // .xla.ProfileSource profile_source = 3;
+  void clear_profile_source();
+  static const int kProfileSourceFieldNumber = 3;
+  ::xla::ProfileSource profile_source() const;
+  void set_profile_source(::xla::ProfileSource value);
+
+  // .xla.CompilationEvent compilation_event = 4;
+  void clear_compilation_event();
+  static const int kCompilationEventFieldNumber = 4;
+  ::xla::CompilationEvent compilation_event() const;
+  void set_compilation_event(::xla::CompilationEvent value);
+
+  // @@protoc_insertion_point(class_scope:xla.HloModuleProto.ProfileInfo)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  double relative_speedup_;
+  int profile_type_;
+  int profile_source_;
+  int compilation_event_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
 class HloModuleProto : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:xla.HloModuleProto) */ {
  public:
   HloModuleProto();
@@ -2315,7 +2766,7 @@ class HloModuleProto : public ::google::protobuf::Message /* @@protoc_insertion_
                &_HloModuleProto_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    10;
+    12;
 
   void UnsafeArenaSwap(HloModuleProto* other);
   void Swap(HloModuleProto* other);
@@ -2371,6 +2822,38 @@ class HloModuleProto : public ::google::protobuf::Message /* @@protoc_insertion_
 
   // nested types ----------------------------------------------------
 
+  typedef HloModuleProto_ProfileInfo ProfileInfo;
+
+  typedef HloModuleProto_ProfileType ProfileType;
+  static const ProfileType INVALID =
+    HloModuleProto_ProfileType_INVALID;
+  static const ProfileType FLAG =
+    HloModuleProto_ProfileType_FLAG;
+  static const ProfileType FUSION =
+    HloModuleProto_ProfileType_FUSION;
+  static const ProfileType LAYOUT =
+    HloModuleProto_ProfileType_LAYOUT;
+  static inline bool ProfileType_IsValid(int value) {
+    return HloModuleProto_ProfileType_IsValid(value);
+  }
+  static const ProfileType ProfileType_MIN =
+    HloModuleProto_ProfileType_ProfileType_MIN;
+  static const ProfileType ProfileType_MAX =
+    HloModuleProto_ProfileType_ProfileType_MAX;
+  static const int ProfileType_ARRAYSIZE =
+    HloModuleProto_ProfileType_ProfileType_ARRAYSIZE;
+  static inline const ::google::protobuf::EnumDescriptor*
+  ProfileType_descriptor() {
+    return HloModuleProto_ProfileType_descriptor();
+  }
+  static inline const ::std::string& ProfileType_Name(ProfileType value) {
+    return HloModuleProto_ProfileType_Name(value);
+  }
+  static inline bool ProfileType_Parse(const ::std::string& name,
+      ProfileType* value) {
+    return HloModuleProto_ProfileType_Parse(name, value);
+  }
+
   // accessors -------------------------------------------------------
 
   // repeated .xla.HloComputationProto computations = 3;
@@ -2384,6 +2867,42 @@ class HloModuleProto : public ::google::protobuf::Message /* @@protoc_insertion_
   ::xla::HloComputationProto* add_computations();
   const ::google::protobuf::RepeatedPtrField< ::xla::HloComputationProto >&
       computations() const;
+
+  // repeated .xla.CrossProgramPrefetch cross_program_prefetches = 10;
+  int cross_program_prefetches_size() const;
+  void clear_cross_program_prefetches();
+  static const int kCrossProgramPrefetchesFieldNumber = 10;
+  ::xla::CrossProgramPrefetch* mutable_cross_program_prefetches(int index);
+  ::google::protobuf::RepeatedPtrField< ::xla::CrossProgramPrefetch >*
+      mutable_cross_program_prefetches();
+  const ::xla::CrossProgramPrefetch& cross_program_prefetches(int index) const;
+  ::xla::CrossProgramPrefetch* add_cross_program_prefetches();
+  const ::google::protobuf::RepeatedPtrField< ::xla::CrossProgramPrefetch >&
+      cross_program_prefetches() const;
+
+  // repeated .xla.HloModuleProto.ProfileInfo profile_info = 13;
+  int profile_info_size() const;
+  void clear_profile_info();
+  static const int kProfileInfoFieldNumber = 13;
+  ::xla::HloModuleProto_ProfileInfo* mutable_profile_info(int index);
+  ::google::protobuf::RepeatedPtrField< ::xla::HloModuleProto_ProfileInfo >*
+      mutable_profile_info();
+  const ::xla::HloModuleProto_ProfileInfo& profile_info(int index) const;
+  ::xla::HloModuleProto_ProfileInfo* add_profile_info();
+  const ::google::protobuf::RepeatedPtrField< ::xla::HloModuleProto_ProfileInfo >&
+      profile_info() const;
+
+  // repeated .xla.OpSharding spmd_parameters_shardings = 14;
+  int spmd_parameters_shardings_size() const;
+  void clear_spmd_parameters_shardings();
+  static const int kSpmdParametersShardingsFieldNumber = 14;
+  ::xla::OpSharding* mutable_spmd_parameters_shardings(int index);
+  ::google::protobuf::RepeatedPtrField< ::xla::OpSharding >*
+      mutable_spmd_parameters_shardings();
+  const ::xla::OpSharding& spmd_parameters_shardings(int index) const;
+  ::xla::OpSharding* add_spmd_parameters_shardings();
+  const ::google::protobuf::RepeatedPtrField< ::xla::OpSharding >&
+      spmd_parameters_shardings() const;
 
   // string name = 1;
   void clear_name();
@@ -2491,6 +3010,21 @@ class HloModuleProto : public ::google::protobuf::Message /* @@protoc_insertion_
       ::xla::DynamicParameterBindingProto* dynamic_parameter_binding);
   ::xla::DynamicParameterBindingProto* unsafe_arena_release_dynamic_parameter_binding();
 
+  // .xla.OpSharding spmd_output_sharding = 12;
+  bool has_spmd_output_sharding() const;
+  void clear_spmd_output_sharding();
+  static const int kSpmdOutputShardingFieldNumber = 12;
+  private:
+  const ::xla::OpSharding& _internal_spmd_output_sharding() const;
+  public:
+  const ::xla::OpSharding& spmd_output_sharding() const;
+  ::xla::OpSharding* release_spmd_output_sharding();
+  ::xla::OpSharding* mutable_spmd_output_sharding();
+  void set_allocated_spmd_output_sharding(::xla::OpSharding* spmd_output_sharding);
+  void unsafe_arena_set_allocated_spmd_output_sharding(
+      ::xla::OpSharding* spmd_output_sharding);
+  ::xla::OpSharding* unsafe_arena_release_spmd_output_sharding();
+
   // int64 id = 5;
   void clear_id();
   static const int kIdFieldNumber = 5;
@@ -2503,6 +3037,12 @@ class HloModuleProto : public ::google::protobuf::Message /* @@protoc_insertion_
   ::google::protobuf::int64 entry_computation_id() const;
   void set_entry_computation_id(::google::protobuf::int64 value);
 
+  // bool is_dynamic = 11;
+  void clear_is_dynamic();
+  static const int kIsDynamicFieldNumber = 11;
+  bool is_dynamic() const;
+  void set_is_dynamic(bool value);
+
   // @@protoc_insertion_point(class_scope:xla.HloModuleProto)
  private:
 
@@ -2511,14 +3051,19 @@ class HloModuleProto : public ::google::protobuf::Message /* @@protoc_insertion_
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::google::protobuf::RepeatedPtrField< ::xla::HloComputationProto > computations_;
+  ::google::protobuf::RepeatedPtrField< ::xla::CrossProgramPrefetch > cross_program_prefetches_;
+  ::google::protobuf::RepeatedPtrField< ::xla::HloModuleProto_ProfileInfo > profile_info_;
+  ::google::protobuf::RepeatedPtrField< ::xla::OpSharding > spmd_parameters_shardings_;
   ::google::protobuf::internal::ArenaStringPtr name_;
   ::google::protobuf::internal::ArenaStringPtr entry_computation_name_;
   ::xla::ProgramShapeProto* host_program_shape_;
   ::xla::HloScheduleProto* schedule_;
   ::xla::HloInputOutputAliasProto* input_output_alias_;
   ::xla::DynamicParameterBindingProto* dynamic_parameter_binding_;
+  ::xla::OpSharding* spmd_output_sharding_;
   ::google::protobuf::int64 id_;
   ::google::protobuf::int64 entry_computation_id_;
+  bool is_dynamic_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::TableStruct;
 };
@@ -2565,7 +3110,7 @@ class LogicalBufferProto_Location : public ::google::protobuf::Message /* @@prot
                &_LogicalBufferProto_Location_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    11;
+    13;
 
   void UnsafeArenaSwap(LogicalBufferProto_Location* other);
   void Swap(LogicalBufferProto_Location* other);
@@ -2738,7 +3283,7 @@ class LogicalBufferProto : public ::google::protobuf::Message /* @@protoc_insert
                &_LogicalBufferProto_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    12;
+    14;
 
   void UnsafeArenaSwap(LogicalBufferProto* other);
   void Swap(LogicalBufferProto* other);
@@ -2888,7 +3433,7 @@ class BufferAllocationProto_Assigned : public ::google::protobuf::Message /* @@p
                &_BufferAllocationProto_Assigned_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    13;
+    15;
 
   void UnsafeArenaSwap(BufferAllocationProto_Assigned* other);
   void Swap(BufferAllocationProto_Assigned* other);
@@ -3020,7 +3565,7 @@ class BufferAllocationProto : public ::google::protobuf::Message /* @@protoc_ins
                &_BufferAllocationProto_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    14;
+    16;
 
   void UnsafeArenaSwap(BufferAllocationProto* other);
   void Swap(BufferAllocationProto* other);
@@ -3223,7 +3768,7 @@ class HeapSimulatorTrace_Event : public ::google::protobuf::Message /* @@protoc_
                &_HeapSimulatorTrace_Event_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    15;
+    17;
 
   void UnsafeArenaSwap(HeapSimulatorTrace_Event* other);
   void Swap(HeapSimulatorTrace_Event* other);
@@ -3431,7 +3976,7 @@ class HeapSimulatorTrace : public ::google::protobuf::Message /* @@protoc_insert
                &_HeapSimulatorTrace_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    16;
+    18;
 
   void UnsafeArenaSwap(HeapSimulatorTrace* other);
   void Swap(HeapSimulatorTrace* other);
@@ -3503,6 +4048,12 @@ class HeapSimulatorTrace : public ::google::protobuf::Message /* @@protoc_insert
   const ::google::protobuf::RepeatedPtrField< ::xla::HeapSimulatorTrace_Event >&
       events() const;
 
+  // int64 buffer_allocation_index = 3;
+  void clear_buffer_allocation_index();
+  static const int kBufferAllocationIndexFieldNumber = 3;
+  ::google::protobuf::int64 buffer_allocation_index() const;
+  void set_buffer_allocation_index(::google::protobuf::int64 value);
+
   // bool whole_module_simulation = 2;
   void clear_whole_module_simulation();
   static const int kWholeModuleSimulationFieldNumber = 2;
@@ -3517,6 +4068,7 @@ class HeapSimulatorTrace : public ::google::protobuf::Message /* @@protoc_insert
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::google::protobuf::RepeatedPtrField< ::xla::HeapSimulatorTrace_Event > events_;
+  ::google::protobuf::int64 buffer_allocation_index_;
   bool whole_module_simulation_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::TableStruct;
@@ -3564,7 +4116,7 @@ class HloModuleGroupProto : public ::google::protobuf::Message /* @@protoc_inser
                &_HloModuleGroupProto_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    17;
+    19;
 
   void UnsafeArenaSwap(HloModuleGroupProto* other);
   void Swap(HloModuleGroupProto* other);
@@ -3712,7 +4264,7 @@ class BufferAssignmentProto_BufferAlias : public ::google::protobuf::Message /* 
                &_BufferAssignmentProto_BufferAlias_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    18;
+    20;
 
   void UnsafeArenaSwap(BufferAssignmentProto_BufferAlias* other);
   void Swap(BufferAssignmentProto_BufferAlias* other);
@@ -3846,7 +4398,7 @@ class BufferAssignmentProto : public ::google::protobuf::Message /* @@protoc_ins
                &_BufferAssignmentProto_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    19;
+    21;
 
   void UnsafeArenaSwap(BufferAssignmentProto* other);
   void Swap(BufferAssignmentProto* other);
@@ -4011,7 +4563,7 @@ class HloProto : public ::google::protobuf::Message /* @@protoc_insertion_point(
                &_HloProto_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    20;
+    22;
 
   void UnsafeArenaSwap(HloProto* other);
   void Swap(HloProto* other);
@@ -4154,7 +4706,7 @@ class HloSnapshot : public ::google::protobuf::Message /* @@protoc_insertion_poi
                &_HloSnapshot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    21;
+    23;
 
   void UnsafeArenaSwap(HloSnapshot* other);
   void Swap(HloSnapshot* other);
@@ -4288,6 +4840,1044 @@ class HloSnapshot : public ::google::protobuf::Message /* @@protoc_insertion_poi
   ::google::protobuf::internal::ArenaStringPtr execution_platform_;
   ::xla::HloProto* hlo_;
   ::xla::LiteralProto* result_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
+class HloModuleMetadataProto : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:xla.HloModuleMetadataProto) */ {
+ public:
+  HloModuleMetadataProto();
+  virtual ~HloModuleMetadataProto();
+
+  HloModuleMetadataProto(const HloModuleMetadataProto& from);
+
+  inline HloModuleMetadataProto& operator=(const HloModuleMetadataProto& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  HloModuleMetadataProto(HloModuleMetadataProto&& from) noexcept
+    : HloModuleMetadataProto() {
+    *this = ::std::move(from);
+  }
+
+  inline HloModuleMetadataProto& operator=(HloModuleMetadataProto&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  inline ::google::protobuf::Arena* GetArena() const final {
+    return GetArenaNoVirtual();
+  }
+  inline void* GetMaybeArenaPointer() const final {
+    return MaybeArenaPtr();
+  }
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const HloModuleMetadataProto& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const HloModuleMetadataProto* internal_default_instance() {
+    return reinterpret_cast<const HloModuleMetadataProto*>(
+               &_HloModuleMetadataProto_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    24;
+
+  void UnsafeArenaSwap(HloModuleMetadataProto* other);
+  void Swap(HloModuleMetadataProto* other);
+  friend void swap(HloModuleMetadataProto& a, HloModuleMetadataProto& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline HloModuleMetadataProto* New() const final {
+    return CreateMaybeMessage<HloModuleMetadataProto>(NULL);
+  }
+
+  HloModuleMetadataProto* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<HloModuleMetadataProto>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const HloModuleMetadataProto& from);
+  void MergeFrom(const HloModuleMetadataProto& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(HloModuleMetadataProto* other);
+  protected:
+  explicit HloModuleMetadataProto(::google::protobuf::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::google::protobuf::Arena* arena);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return _internal_metadata_.arena();
+  }
+  inline void* MaybeArenaPtr() const {
+    return _internal_metadata_.raw_arena_ptr();
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // repeated int64 partitioned_module_ids = 4;
+  int partitioned_module_ids_size() const;
+  void clear_partitioned_module_ids();
+  static const int kPartitionedModuleIdsFieldNumber = 4;
+  ::google::protobuf::int64 partitioned_module_ids(int index) const;
+  void set_partitioned_module_ids(int index, ::google::protobuf::int64 value);
+  void add_partitioned_module_ids(::google::protobuf::int64 value);
+  const ::google::protobuf::RepeatedField< ::google::protobuf::int64 >&
+      partitioned_module_ids() const;
+  ::google::protobuf::RepeatedField< ::google::protobuf::int64 >*
+      mutable_partitioned_module_ids();
+
+  // repeated .xla.HloPassMetadata pass_metadata = 5;
+  int pass_metadata_size() const;
+  void clear_pass_metadata();
+  static const int kPassMetadataFieldNumber = 5;
+  ::xla::HloPassMetadata* mutable_pass_metadata(int index);
+  ::google::protobuf::RepeatedPtrField< ::xla::HloPassMetadata >*
+      mutable_pass_metadata();
+  const ::xla::HloPassMetadata& pass_metadata(int index) const;
+  ::xla::HloPassMetadata* add_pass_metadata();
+  const ::google::protobuf::RepeatedPtrField< ::xla::HloPassMetadata >&
+      pass_metadata() const;
+
+  // string module_group_name = 2;
+  void clear_module_group_name();
+  static const int kModuleGroupNameFieldNumber = 2;
+  const ::std::string& module_group_name() const;
+  void set_module_group_name(const ::std::string& value);
+  #if LANG_CXX11
+  void set_module_group_name(::std::string&& value);
+  #endif
+  void set_module_group_name(const char* value);
+  void set_module_group_name(const char* value, size_t size);
+  ::std::string* mutable_module_group_name();
+  ::std::string* release_module_group_name();
+  void set_allocated_module_group_name(::std::string* module_group_name);
+  PROTOBUF_RUNTIME_DEPRECATED("The unsafe_arena_ accessors for"
+  "    string fields are deprecated and will be removed in a"
+  "    future release.")
+  ::std::string* unsafe_arena_release_module_group_name();
+  PROTOBUF_RUNTIME_DEPRECATED("The unsafe_arena_ accessors for"
+  "    string fields are deprecated and will be removed in a"
+  "    future release.")
+  void unsafe_arena_set_allocated_module_group_name(
+      ::std::string* module_group_name);
+
+  // int64 canonical_module_id = 1;
+  void clear_canonical_module_id();
+  static const int kCanonicalModuleIdFieldNumber = 1;
+  ::google::protobuf::int64 canonical_module_id() const;
+  void set_canonical_module_id(::google::protobuf::int64 value);
+
+  // int64 original_module_id = 3;
+  void clear_original_module_id();
+  static const int kOriginalModuleIdFieldNumber = 3;
+  ::google::protobuf::int64 original_module_id() const;
+  void set_original_module_id(::google::protobuf::int64 value);
+
+  // @@protoc_insertion_point(class_scope:xla.HloModuleMetadataProto)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::google::protobuf::RepeatedField< ::google::protobuf::int64 > partitioned_module_ids_;
+  mutable int _partitioned_module_ids_cached_byte_size_;
+  ::google::protobuf::RepeatedPtrField< ::xla::HloPassMetadata > pass_metadata_;
+  ::google::protobuf::internal::ArenaStringPtr module_group_name_;
+  ::google::protobuf::int64 canonical_module_id_;
+  ::google::protobuf::int64 original_module_id_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
+class HloPassMetadata : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:xla.HloPassMetadata) */ {
+ public:
+  HloPassMetadata();
+  virtual ~HloPassMetadata();
+
+  HloPassMetadata(const HloPassMetadata& from);
+
+  inline HloPassMetadata& operator=(const HloPassMetadata& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  HloPassMetadata(HloPassMetadata&& from) noexcept
+    : HloPassMetadata() {
+    *this = ::std::move(from);
+  }
+
+  inline HloPassMetadata& operator=(HloPassMetadata&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  inline ::google::protobuf::Arena* GetArena() const final {
+    return GetArenaNoVirtual();
+  }
+  inline void* GetMaybeArenaPointer() const final {
+    return MaybeArenaPtr();
+  }
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const HloPassMetadata& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const HloPassMetadata* internal_default_instance() {
+    return reinterpret_cast<const HloPassMetadata*>(
+               &_HloPassMetadata_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    25;
+
+  void UnsafeArenaSwap(HloPassMetadata* other);
+  void Swap(HloPassMetadata* other);
+  friend void swap(HloPassMetadata& a, HloPassMetadata& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline HloPassMetadata* New() const final {
+    return CreateMaybeMessage<HloPassMetadata>(NULL);
+  }
+
+  HloPassMetadata* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<HloPassMetadata>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const HloPassMetadata& from);
+  void MergeFrom(const HloPassMetadata& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(HloPassMetadata* other);
+  protected:
+  explicit HloPassMetadata(::google::protobuf::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::google::protobuf::Arena* arena);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return _internal_metadata_.arena();
+  }
+  inline void* MaybeArenaPtr() const {
+    return _internal_metadata_.raw_arena_ptr();
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // repeated string dump_filenames = 4;
+  int dump_filenames_size() const;
+  void clear_dump_filenames();
+  static const int kDumpFilenamesFieldNumber = 4;
+  const ::std::string& dump_filenames(int index) const;
+  ::std::string* mutable_dump_filenames(int index);
+  void set_dump_filenames(int index, const ::std::string& value);
+  #if LANG_CXX11
+  void set_dump_filenames(int index, ::std::string&& value);
+  #endif
+  void set_dump_filenames(int index, const char* value);
+  void set_dump_filenames(int index, const char* value, size_t size);
+  ::std::string* add_dump_filenames();
+  void add_dump_filenames(const ::std::string& value);
+  #if LANG_CXX11
+  void add_dump_filenames(::std::string&& value);
+  #endif
+  void add_dump_filenames(const char* value);
+  void add_dump_filenames(const char* value, size_t size);
+  const ::google::protobuf::RepeatedPtrField< ::std::string>& dump_filenames() const;
+  ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_dump_filenames();
+
+  // repeated int64 module_group_module_ids = 7;
+  int module_group_module_ids_size() const;
+  void clear_module_group_module_ids();
+  static const int kModuleGroupModuleIdsFieldNumber = 7;
+  ::google::protobuf::int64 module_group_module_ids(int index) const;
+  void set_module_group_module_ids(int index, ::google::protobuf::int64 value);
+  void add_module_group_module_ids(::google::protobuf::int64 value);
+  const ::google::protobuf::RepeatedField< ::google::protobuf::int64 >&
+      module_group_module_ids() const;
+  ::google::protobuf::RepeatedField< ::google::protobuf::int64 >*
+      mutable_module_group_module_ids();
+
+  // string pass_name = 2;
+  void clear_pass_name();
+  static const int kPassNameFieldNumber = 2;
+  const ::std::string& pass_name() const;
+  void set_pass_name(const ::std::string& value);
+  #if LANG_CXX11
+  void set_pass_name(::std::string&& value);
+  #endif
+  void set_pass_name(const char* value);
+  void set_pass_name(const char* value, size_t size);
+  ::std::string* mutable_pass_name();
+  ::std::string* release_pass_name();
+  void set_allocated_pass_name(::std::string* pass_name);
+  PROTOBUF_RUNTIME_DEPRECATED("The unsafe_arena_ accessors for"
+  "    string fields are deprecated and will be removed in a"
+  "    future release.")
+  ::std::string* unsafe_arena_release_pass_name();
+  PROTOBUF_RUNTIME_DEPRECATED("The unsafe_arena_ accessors for"
+  "    string fields are deprecated and will be removed in a"
+  "    future release.")
+  void unsafe_arena_set_allocated_pass_name(
+      ::std::string* pass_name);
+
+  // string pipeline_name = 3;
+  void clear_pipeline_name();
+  static const int kPipelineNameFieldNumber = 3;
+  const ::std::string& pipeline_name() const;
+  void set_pipeline_name(const ::std::string& value);
+  #if LANG_CXX11
+  void set_pipeline_name(::std::string&& value);
+  #endif
+  void set_pipeline_name(const char* value);
+  void set_pipeline_name(const char* value, size_t size);
+  ::std::string* mutable_pipeline_name();
+  ::std::string* release_pipeline_name();
+  void set_allocated_pipeline_name(::std::string* pipeline_name);
+  PROTOBUF_RUNTIME_DEPRECATED("The unsafe_arena_ accessors for"
+  "    string fields are deprecated and will be removed in a"
+  "    future release.")
+  ::std::string* unsafe_arena_release_pipeline_name();
+  PROTOBUF_RUNTIME_DEPRECATED("The unsafe_arena_ accessors for"
+  "    string fields are deprecated and will be removed in a"
+  "    future release.")
+  void unsafe_arena_set_allocated_pipeline_name(
+      ::std::string* pipeline_name);
+
+  // int64 pass_id = 1;
+  void clear_pass_id();
+  static const int kPassIdFieldNumber = 1;
+  ::google::protobuf::int64 pass_id() const;
+  void set_pass_id(::google::protobuf::int64 value);
+
+  // int64 module_id = 6;
+  void clear_module_id();
+  static const int kModuleIdFieldNumber = 6;
+  ::google::protobuf::int64 module_id() const;
+  void set_module_id(::google::protobuf::int64 value);
+
+  // int64 start_timestamp_usec = 8;
+  void clear_start_timestamp_usec();
+  static const int kStartTimestampUsecFieldNumber = 8;
+  ::google::protobuf::int64 start_timestamp_usec() const;
+  void set_start_timestamp_usec(::google::protobuf::int64 value);
+
+  // int64 end_timestamp_usec = 9;
+  void clear_end_timestamp_usec();
+  static const int kEndTimestampUsecFieldNumber = 9;
+  ::google::protobuf::int64 end_timestamp_usec() const;
+  void set_end_timestamp_usec(::google::protobuf::int64 value);
+
+  // bool module_changed = 5;
+  void clear_module_changed();
+  static const int kModuleChangedFieldNumber = 5;
+  bool module_changed() const;
+  void set_module_changed(bool value);
+
+  // @@protoc_insertion_point(class_scope:xla.HloPassMetadata)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::google::protobuf::RepeatedPtrField< ::std::string> dump_filenames_;
+  ::google::protobuf::RepeatedField< ::google::protobuf::int64 > module_group_module_ids_;
+  mutable int _module_group_module_ids_cached_byte_size_;
+  ::google::protobuf::internal::ArenaStringPtr pass_name_;
+  ::google::protobuf::internal::ArenaStringPtr pipeline_name_;
+  ::google::protobuf::int64 pass_id_;
+  ::google::protobuf::int64 module_id_;
+  ::google::protobuf::int64 start_timestamp_usec_;
+  ::google::protobuf::int64 end_timestamp_usec_;
+  bool module_changed_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
+class EntryFunctionAttributes_ShapeIndex : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:xla.EntryFunctionAttributes.ShapeIndex) */ {
+ public:
+  EntryFunctionAttributes_ShapeIndex();
+  virtual ~EntryFunctionAttributes_ShapeIndex();
+
+  EntryFunctionAttributes_ShapeIndex(const EntryFunctionAttributes_ShapeIndex& from);
+
+  inline EntryFunctionAttributes_ShapeIndex& operator=(const EntryFunctionAttributes_ShapeIndex& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  EntryFunctionAttributes_ShapeIndex(EntryFunctionAttributes_ShapeIndex&& from) noexcept
+    : EntryFunctionAttributes_ShapeIndex() {
+    *this = ::std::move(from);
+  }
+
+  inline EntryFunctionAttributes_ShapeIndex& operator=(EntryFunctionAttributes_ShapeIndex&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  inline ::google::protobuf::Arena* GetArena() const final {
+    return GetArenaNoVirtual();
+  }
+  inline void* GetMaybeArenaPointer() const final {
+    return MaybeArenaPtr();
+  }
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const EntryFunctionAttributes_ShapeIndex& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const EntryFunctionAttributes_ShapeIndex* internal_default_instance() {
+    return reinterpret_cast<const EntryFunctionAttributes_ShapeIndex*>(
+               &_EntryFunctionAttributes_ShapeIndex_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    26;
+
+  void UnsafeArenaSwap(EntryFunctionAttributes_ShapeIndex* other);
+  void Swap(EntryFunctionAttributes_ShapeIndex* other);
+  friend void swap(EntryFunctionAttributes_ShapeIndex& a, EntryFunctionAttributes_ShapeIndex& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline EntryFunctionAttributes_ShapeIndex* New() const final {
+    return CreateMaybeMessage<EntryFunctionAttributes_ShapeIndex>(NULL);
+  }
+
+  EntryFunctionAttributes_ShapeIndex* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<EntryFunctionAttributes_ShapeIndex>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const EntryFunctionAttributes_ShapeIndex& from);
+  void MergeFrom(const EntryFunctionAttributes_ShapeIndex& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(EntryFunctionAttributes_ShapeIndex* other);
+  protected:
+  explicit EntryFunctionAttributes_ShapeIndex(::google::protobuf::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::google::protobuf::Arena* arena);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return _internal_metadata_.arena();
+  }
+  inline void* MaybeArenaPtr() const {
+    return _internal_metadata_.raw_arena_ptr();
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // repeated int64 indices = 1;
+  int indices_size() const;
+  void clear_indices();
+  static const int kIndicesFieldNumber = 1;
+  ::google::protobuf::int64 indices(int index) const;
+  void set_indices(int index, ::google::protobuf::int64 value);
+  void add_indices(::google::protobuf::int64 value);
+  const ::google::protobuf::RepeatedField< ::google::protobuf::int64 >&
+      indices() const;
+  ::google::protobuf::RepeatedField< ::google::protobuf::int64 >*
+      mutable_indices();
+
+  // @@protoc_insertion_point(class_scope:xla.EntryFunctionAttributes.ShapeIndex)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::google::protobuf::RepeatedField< ::google::protobuf::int64 > indices_;
+  mutable int _indices_cached_byte_size_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
+class EntryFunctionAttributes_BufferParameterAttributes : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:xla.EntryFunctionAttributes.BufferParameterAttributes) */ {
+ public:
+  EntryFunctionAttributes_BufferParameterAttributes();
+  virtual ~EntryFunctionAttributes_BufferParameterAttributes();
+
+  EntryFunctionAttributes_BufferParameterAttributes(const EntryFunctionAttributes_BufferParameterAttributes& from);
+
+  inline EntryFunctionAttributes_BufferParameterAttributes& operator=(const EntryFunctionAttributes_BufferParameterAttributes& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  EntryFunctionAttributes_BufferParameterAttributes(EntryFunctionAttributes_BufferParameterAttributes&& from) noexcept
+    : EntryFunctionAttributes_BufferParameterAttributes() {
+    *this = ::std::move(from);
+  }
+
+  inline EntryFunctionAttributes_BufferParameterAttributes& operator=(EntryFunctionAttributes_BufferParameterAttributes&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  inline ::google::protobuf::Arena* GetArena() const final {
+    return GetArenaNoVirtual();
+  }
+  inline void* GetMaybeArenaPointer() const final {
+    return MaybeArenaPtr();
+  }
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const EntryFunctionAttributes_BufferParameterAttributes& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const EntryFunctionAttributes_BufferParameterAttributes* internal_default_instance() {
+    return reinterpret_cast<const EntryFunctionAttributes_BufferParameterAttributes*>(
+               &_EntryFunctionAttributes_BufferParameterAttributes_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    27;
+
+  void UnsafeArenaSwap(EntryFunctionAttributes_BufferParameterAttributes* other);
+  void Swap(EntryFunctionAttributes_BufferParameterAttributes* other);
+  friend void swap(EntryFunctionAttributes_BufferParameterAttributes& a, EntryFunctionAttributes_BufferParameterAttributes& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline EntryFunctionAttributes_BufferParameterAttributes* New() const final {
+    return CreateMaybeMessage<EntryFunctionAttributes_BufferParameterAttributes>(NULL);
+  }
+
+  EntryFunctionAttributes_BufferParameterAttributes* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<EntryFunctionAttributes_BufferParameterAttributes>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const EntryFunctionAttributes_BufferParameterAttributes& from);
+  void MergeFrom(const EntryFunctionAttributes_BufferParameterAttributes& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(EntryFunctionAttributes_BufferParameterAttributes* other);
+  protected:
+  explicit EntryFunctionAttributes_BufferParameterAttributes(::google::protobuf::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::google::protobuf::Arena* arena);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return _internal_metadata_.arena();
+  }
+  inline void* MaybeArenaPtr() const {
+    return _internal_metadata_.raw_arena_ptr();
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // string lmhlo_constant_name = 3;
+  void clear_lmhlo_constant_name();
+  static const int kLmhloConstantNameFieldNumber = 3;
+  const ::std::string& lmhlo_constant_name() const;
+  void set_lmhlo_constant_name(const ::std::string& value);
+  #if LANG_CXX11
+  void set_lmhlo_constant_name(::std::string&& value);
+  #endif
+  void set_lmhlo_constant_name(const char* value);
+  void set_lmhlo_constant_name(const char* value, size_t size);
+  ::std::string* mutable_lmhlo_constant_name();
+  ::std::string* release_lmhlo_constant_name();
+  void set_allocated_lmhlo_constant_name(::std::string* lmhlo_constant_name);
+  PROTOBUF_RUNTIME_DEPRECATED("The unsafe_arena_ accessors for"
+  "    string fields are deprecated and will be removed in a"
+  "    future release.")
+  ::std::string* unsafe_arena_release_lmhlo_constant_name();
+  PROTOBUF_RUNTIME_DEPRECATED("The unsafe_arena_ accessors for"
+  "    string fields are deprecated and will be removed in a"
+  "    future release.")
+  void unsafe_arena_set_allocated_lmhlo_constant_name(
+      ::std::string* lmhlo_constant_name);
+
+  // .xla.EntryFunctionAttributes.ShapeIndex lmhlo_param_shape_index = 2;
+  bool has_lmhlo_param_shape_index() const;
+  void clear_lmhlo_param_shape_index();
+  static const int kLmhloParamShapeIndexFieldNumber = 2;
+  private:
+  const ::xla::EntryFunctionAttributes_ShapeIndex& _internal_lmhlo_param_shape_index() const;
+  public:
+  const ::xla::EntryFunctionAttributes_ShapeIndex& lmhlo_param_shape_index() const;
+  ::xla::EntryFunctionAttributes_ShapeIndex* release_lmhlo_param_shape_index();
+  ::xla::EntryFunctionAttributes_ShapeIndex* mutable_lmhlo_param_shape_index();
+  void set_allocated_lmhlo_param_shape_index(::xla::EntryFunctionAttributes_ShapeIndex* lmhlo_param_shape_index);
+  void unsafe_arena_set_allocated_lmhlo_param_shape_index(
+      ::xla::EntryFunctionAttributes_ShapeIndex* lmhlo_param_shape_index);
+  ::xla::EntryFunctionAttributes_ShapeIndex* unsafe_arena_release_lmhlo_param_shape_index();
+
+  // .xla.EntryFunctionAttributes.ShapeIndex lmhlo_output_index = 5;
+  bool has_lmhlo_output_index() const;
+  void clear_lmhlo_output_index();
+  static const int kLmhloOutputIndexFieldNumber = 5;
+  private:
+  const ::xla::EntryFunctionAttributes_ShapeIndex& _internal_lmhlo_output_index() const;
+  public:
+  const ::xla::EntryFunctionAttributes_ShapeIndex& lmhlo_output_index() const;
+  ::xla::EntryFunctionAttributes_ShapeIndex* release_lmhlo_output_index();
+  ::xla::EntryFunctionAttributes_ShapeIndex* mutable_lmhlo_output_index();
+  void set_allocated_lmhlo_output_index(::xla::EntryFunctionAttributes_ShapeIndex* lmhlo_output_index);
+  void unsafe_arena_set_allocated_lmhlo_output_index(
+      ::xla::EntryFunctionAttributes_ShapeIndex* lmhlo_output_index);
+  ::xla::EntryFunctionAttributes_ShapeIndex* unsafe_arena_release_lmhlo_output_index();
+
+  // int64 lmhlo_params = 1;
+  void clear_lmhlo_params();
+  static const int kLmhloParamsFieldNumber = 1;
+  ::google::protobuf::int64 lmhlo_params() const;
+  void set_lmhlo_params(::google::protobuf::int64 value);
+
+  // bool lmhlo_params_present = 6;
+  void clear_lmhlo_params_present();
+  static const int kLmhloParamsPresentFieldNumber = 6;
+  bool lmhlo_params_present() const;
+  void set_lmhlo_params_present(bool value);
+
+  // bool lmhlo_must_alias = 4;
+  void clear_lmhlo_must_alias();
+  static const int kLmhloMustAliasFieldNumber = 4;
+  bool lmhlo_must_alias() const;
+  void set_lmhlo_must_alias(bool value);
+
+  // @@protoc_insertion_point(class_scope:xla.EntryFunctionAttributes.BufferParameterAttributes)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::google::protobuf::internal::ArenaStringPtr lmhlo_constant_name_;
+  ::xla::EntryFunctionAttributes_ShapeIndex* lmhlo_param_shape_index_;
+  ::xla::EntryFunctionAttributes_ShapeIndex* lmhlo_output_index_;
+  ::google::protobuf::int64 lmhlo_params_;
+  bool lmhlo_params_present_;
+  bool lmhlo_must_alias_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
+class EntryFunctionAttributes : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:xla.EntryFunctionAttributes) */ {
+ public:
+  EntryFunctionAttributes();
+  virtual ~EntryFunctionAttributes();
+
+  EntryFunctionAttributes(const EntryFunctionAttributes& from);
+
+  inline EntryFunctionAttributes& operator=(const EntryFunctionAttributes& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  EntryFunctionAttributes(EntryFunctionAttributes&& from) noexcept
+    : EntryFunctionAttributes() {
+    *this = ::std::move(from);
+  }
+
+  inline EntryFunctionAttributes& operator=(EntryFunctionAttributes&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  inline ::google::protobuf::Arena* GetArena() const final {
+    return GetArenaNoVirtual();
+  }
+  inline void* GetMaybeArenaPointer() const final {
+    return MaybeArenaPtr();
+  }
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const EntryFunctionAttributes& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const EntryFunctionAttributes* internal_default_instance() {
+    return reinterpret_cast<const EntryFunctionAttributes*>(
+               &_EntryFunctionAttributes_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    28;
+
+  void UnsafeArenaSwap(EntryFunctionAttributes* other);
+  void Swap(EntryFunctionAttributes* other);
+  friend void swap(EntryFunctionAttributes& a, EntryFunctionAttributes& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline EntryFunctionAttributes* New() const final {
+    return CreateMaybeMessage<EntryFunctionAttributes>(NULL);
+  }
+
+  EntryFunctionAttributes* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<EntryFunctionAttributes>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const EntryFunctionAttributes& from);
+  void MergeFrom(const EntryFunctionAttributes& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(EntryFunctionAttributes* other);
+  protected:
+  explicit EntryFunctionAttributes(::google::protobuf::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::google::protobuf::Arena* arena);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return _internal_metadata_.arena();
+  }
+  inline void* MaybeArenaPtr() const {
+    return _internal_metadata_.raw_arena_ptr();
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  typedef EntryFunctionAttributes_ShapeIndex ShapeIndex;
+  typedef EntryFunctionAttributes_BufferParameterAttributes BufferParameterAttributes;
+
+  // accessors -------------------------------------------------------
+
+  // repeated .xla.EntryFunctionAttributes.BufferParameterAttributes buffers = 1;
+  int buffers_size() const;
+  void clear_buffers();
+  static const int kBuffersFieldNumber = 1;
+  ::xla::EntryFunctionAttributes_BufferParameterAttributes* mutable_buffers(int index);
+  ::google::protobuf::RepeatedPtrField< ::xla::EntryFunctionAttributes_BufferParameterAttributes >*
+      mutable_buffers();
+  const ::xla::EntryFunctionAttributes_BufferParameterAttributes& buffers(int index) const;
+  ::xla::EntryFunctionAttributes_BufferParameterAttributes* add_buffers();
+  const ::google::protobuf::RepeatedPtrField< ::xla::EntryFunctionAttributes_BufferParameterAttributes >&
+      buffers() const;
+
+  // string result_xla_shape = 2;
+  void clear_result_xla_shape();
+  static const int kResultXlaShapeFieldNumber = 2;
+  const ::std::string& result_xla_shape() const;
+  void set_result_xla_shape(const ::std::string& value);
+  #if LANG_CXX11
+  void set_result_xla_shape(::std::string&& value);
+  #endif
+  void set_result_xla_shape(const char* value);
+  void set_result_xla_shape(const char* value, size_t size);
+  ::std::string* mutable_result_xla_shape();
+  ::std::string* release_result_xla_shape();
+  void set_allocated_result_xla_shape(::std::string* result_xla_shape);
+  PROTOBUF_RUNTIME_DEPRECATED("The unsafe_arena_ accessors for"
+  "    string fields are deprecated and will be removed in a"
+  "    future release.")
+  ::std::string* unsafe_arena_release_result_xla_shape();
+  PROTOBUF_RUNTIME_DEPRECATED("The unsafe_arena_ accessors for"
+  "    string fields are deprecated and will be removed in a"
+  "    future release.")
+  void unsafe_arena_set_allocated_result_xla_shape(
+      ::std::string* result_xla_shape);
+
+  // @@protoc_insertion_point(class_scope:xla.EntryFunctionAttributes)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::google::protobuf::RepeatedPtrField< ::xla::EntryFunctionAttributes_BufferParameterAttributes > buffers_;
+  ::google::protobuf::internal::ArenaStringPtr result_xla_shape_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
+class GpuBefExecutableProto : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:xla.GpuBefExecutableProto) */ {
+ public:
+  GpuBefExecutableProto();
+  virtual ~GpuBefExecutableProto();
+
+  GpuBefExecutableProto(const GpuBefExecutableProto& from);
+
+  inline GpuBefExecutableProto& operator=(const GpuBefExecutableProto& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  GpuBefExecutableProto(GpuBefExecutableProto&& from) noexcept
+    : GpuBefExecutableProto() {
+    *this = ::std::move(from);
+  }
+
+  inline GpuBefExecutableProto& operator=(GpuBefExecutableProto&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  inline ::google::protobuf::Arena* GetArena() const final {
+    return GetArenaNoVirtual();
+  }
+  inline void* GetMaybeArenaPointer() const final {
+    return MaybeArenaPtr();
+  }
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const GpuBefExecutableProto& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const GpuBefExecutableProto* internal_default_instance() {
+    return reinterpret_cast<const GpuBefExecutableProto*>(
+               &_GpuBefExecutableProto_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    29;
+
+  void UnsafeArenaSwap(GpuBefExecutableProto* other);
+  void Swap(GpuBefExecutableProto* other);
+  friend void swap(GpuBefExecutableProto& a, GpuBefExecutableProto& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline GpuBefExecutableProto* New() const final {
+    return CreateMaybeMessage<GpuBefExecutableProto>(NULL);
+  }
+
+  GpuBefExecutableProto* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<GpuBefExecutableProto>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const GpuBefExecutableProto& from);
+  void MergeFrom(const GpuBefExecutableProto& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(GpuBefExecutableProto* other);
+  protected:
+  explicit GpuBefExecutableProto(::google::protobuf::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::google::protobuf::Arena* arena);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return _internal_metadata_.arena();
+  }
+  inline void* MaybeArenaPtr() const {
+    return _internal_metadata_.raw_arena_ptr();
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // bytes bef = 2;
+  void clear_bef();
+  static const int kBefFieldNumber = 2;
+  const ::std::string& bef() const;
+  void set_bef(const ::std::string& value);
+  #if LANG_CXX11
+  void set_bef(::std::string&& value);
+  #endif
+  void set_bef(const char* value);
+  void set_bef(const void* value, size_t size);
+  ::std::string* mutable_bef();
+  ::std::string* release_bef();
+  void set_allocated_bef(::std::string* bef);
+  PROTOBUF_RUNTIME_DEPRECATED("The unsafe_arena_ accessors for"
+  "    string fields are deprecated and will be removed in a"
+  "    future release.")
+  ::std::string* unsafe_arena_release_bef();
+  PROTOBUF_RUNTIME_DEPRECATED("The unsafe_arena_ accessors for"
+  "    string fields are deprecated and will be removed in a"
+  "    future release.")
+  void unsafe_arena_set_allocated_bef(
+      ::std::string* bef);
+
+  // .xla.HloModuleProto hlo_module_proto = 1;
+  bool has_hlo_module_proto() const;
+  void clear_hlo_module_proto();
+  static const int kHloModuleProtoFieldNumber = 1;
+  private:
+  const ::xla::HloModuleProto& _internal_hlo_module_proto() const;
+  public:
+  const ::xla::HloModuleProto& hlo_module_proto() const;
+  ::xla::HloModuleProto* release_hlo_module_proto();
+  ::xla::HloModuleProto* mutable_hlo_module_proto();
+  void set_allocated_hlo_module_proto(::xla::HloModuleProto* hlo_module_proto);
+  void unsafe_arena_set_allocated_hlo_module_proto(
+      ::xla::HloModuleProto* hlo_module_proto);
+  ::xla::HloModuleProto* unsafe_arena_release_hlo_module_proto();
+
+  // .xla.EntryFunctionAttributes entry_func_attrs = 3;
+  bool has_entry_func_attrs() const;
+  void clear_entry_func_attrs();
+  static const int kEntryFuncAttrsFieldNumber = 3;
+  private:
+  const ::xla::EntryFunctionAttributes& _internal_entry_func_attrs() const;
+  public:
+  const ::xla::EntryFunctionAttributes& entry_func_attrs() const;
+  ::xla::EntryFunctionAttributes* release_entry_func_attrs();
+  ::xla::EntryFunctionAttributes* mutable_entry_func_attrs();
+  void set_allocated_entry_func_attrs(::xla::EntryFunctionAttributes* entry_func_attrs);
+  void unsafe_arena_set_allocated_entry_func_attrs(
+      ::xla::EntryFunctionAttributes* entry_func_attrs);
+  ::xla::EntryFunctionAttributes* unsafe_arena_release_entry_func_attrs();
+
+  // @@protoc_insertion_point(class_scope:xla.GpuBefExecutableProto)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::google::protobuf::internal::ArenaStringPtr bef_;
+  ::xla::HloModuleProto* hlo_module_proto_;
+  ::xla::EntryFunctionAttributes* entry_func_attrs_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::TableStruct;
 };
@@ -5960,7 +7550,7 @@ inline void HloInstructionProto::set_allocated_sharding(::xla::OpSharding* shard
   // @@protoc_insertion_point(field_set_allocated:xla.HloInstructionProto.sharding)
 }
 
-// string backend_config = 43;
+// bytes backend_config = 43;
 inline void HloInstructionProto::clear_backend_config() {
   backend_config_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
@@ -5988,7 +7578,7 @@ inline void HloInstructionProto::set_backend_config(const char* value) {
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:xla.HloInstructionProto.backend_config)
 }
-inline void HloInstructionProto::set_backend_config(const char* value,
+inline void HloInstructionProto::set_backend_config(const void* value,
     size_t size) {
   
   backend_config_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
@@ -6074,6 +7664,20 @@ inline void HloInstructionProto::set_all_reduce_id(::google::protobuf::int64 val
   
   all_reduce_id_ = value;
   // @@protoc_insertion_point(field_set:xla.HloInstructionProto.all_reduce_id)
+}
+
+// bool use_global_device_ids = 71;
+inline void HloInstructionProto::clear_use_global_device_ids() {
+  use_global_device_ids_ = false;
+}
+inline bool HloInstructionProto::use_global_device_ids() const {
+  // @@protoc_insertion_point(field_get:xla.HloInstructionProto.use_global_device_ids)
+  return use_global_device_ids_;
+}
+inline void HloInstructionProto::set_use_global_device_ids(bool value) {
+  
+  use_global_device_ids_ = value;
+  // @@protoc_insertion_point(field_set:xla.HloInstructionProto.use_global_device_ids)
 }
 
 // bool is_host_transfer = 47;
@@ -6629,6 +8233,47 @@ inline void HloInstructionProto::set_custom_call_has_side_effect(bool value) {
   // @@protoc_insertion_point(field_set:xla.HloInstructionProto.custom_call_has_side_effect)
 }
 
+// repeated .xla.CustomCallOutputOperandAliasing custom_call_output_operand_aliasing = 74;
+inline int HloInstructionProto::custom_call_output_operand_aliasing_size() const {
+  return custom_call_output_operand_aliasing_.size();
+}
+inline ::xla::CustomCallOutputOperandAliasing* HloInstructionProto::mutable_custom_call_output_operand_aliasing(int index) {
+  // @@protoc_insertion_point(field_mutable:xla.HloInstructionProto.custom_call_output_operand_aliasing)
+  return custom_call_output_operand_aliasing_.Mutable(index);
+}
+inline ::google::protobuf::RepeatedPtrField< ::xla::CustomCallOutputOperandAliasing >*
+HloInstructionProto::mutable_custom_call_output_operand_aliasing() {
+  // @@protoc_insertion_point(field_mutable_list:xla.HloInstructionProto.custom_call_output_operand_aliasing)
+  return &custom_call_output_operand_aliasing_;
+}
+inline const ::xla::CustomCallOutputOperandAliasing& HloInstructionProto::custom_call_output_operand_aliasing(int index) const {
+  // @@protoc_insertion_point(field_get:xla.HloInstructionProto.custom_call_output_operand_aliasing)
+  return custom_call_output_operand_aliasing_.Get(index);
+}
+inline ::xla::CustomCallOutputOperandAliasing* HloInstructionProto::add_custom_call_output_operand_aliasing() {
+  // @@protoc_insertion_point(field_add:xla.HloInstructionProto.custom_call_output_operand_aliasing)
+  return custom_call_output_operand_aliasing_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::xla::CustomCallOutputOperandAliasing >&
+HloInstructionProto::custom_call_output_operand_aliasing() const {
+  // @@protoc_insertion_point(field_list:xla.HloInstructionProto.custom_call_output_operand_aliasing)
+  return custom_call_output_operand_aliasing_;
+}
+
+// .xla.CustomCallSchedule custom_call_schedule = 76;
+inline void HloInstructionProto::clear_custom_call_schedule() {
+  custom_call_schedule_ = 0;
+}
+inline ::xla::CustomCallSchedule HloInstructionProto::custom_call_schedule() const {
+  // @@protoc_insertion_point(field_get:xla.HloInstructionProto.custom_call_schedule)
+  return static_cast< ::xla::CustomCallSchedule >(custom_call_schedule_);
+}
+inline void HloInstructionProto::set_custom_call_schedule(::xla::CustomCallSchedule value) {
+  
+  custom_call_schedule_ = value;
+  // @@protoc_insertion_point(field_set:xla.HloInstructionProto.custom_call_schedule)
+}
+
 // int64 delta = 66;
 inline void HloInstructionProto::clear_delta() {
   delta_ = GOOGLE_LONGLONG(0);
@@ -6655,6 +8300,210 @@ inline void HloInstructionProto::set_indices_are_sorted(bool value) {
   
   indices_are_sorted_ = value;
   // @@protoc_insertion_point(field_set:xla.HloInstructionProto.indices_are_sorted)
+}
+
+// .xla.FrontendAttributes frontend_attributes = 68;
+inline bool HloInstructionProto::has_frontend_attributes() const {
+  return this != internal_default_instance() && frontend_attributes_ != NULL;
+}
+inline const ::xla::FrontendAttributes& HloInstructionProto::_internal_frontend_attributes() const {
+  return *frontend_attributes_;
+}
+inline const ::xla::FrontendAttributes& HloInstructionProto::frontend_attributes() const {
+  const ::xla::FrontendAttributes* p = frontend_attributes_;
+  // @@protoc_insertion_point(field_get:xla.HloInstructionProto.frontend_attributes)
+  return p != NULL ? *p : *reinterpret_cast<const ::xla::FrontendAttributes*>(
+      &::xla::_FrontendAttributes_default_instance_);
+}
+inline ::xla::FrontendAttributes* HloInstructionProto::release_frontend_attributes() {
+  // @@protoc_insertion_point(field_release:xla.HloInstructionProto.frontend_attributes)
+  
+  ::xla::FrontendAttributes* temp = frontend_attributes_;
+  if (GetArenaNoVirtual() != NULL) {
+    temp = ::google::protobuf::internal::DuplicateIfNonNull(temp);
+  }
+  frontend_attributes_ = NULL;
+  return temp;
+}
+inline ::xla::FrontendAttributes* HloInstructionProto::unsafe_arena_release_frontend_attributes() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:xla.HloInstructionProto.frontend_attributes)
+  
+  ::xla::FrontendAttributes* temp = frontend_attributes_;
+  frontend_attributes_ = NULL;
+  return temp;
+}
+inline ::xla::FrontendAttributes* HloInstructionProto::mutable_frontend_attributes() {
+  
+  if (frontend_attributes_ == NULL) {
+    auto* p = CreateMaybeMessage<::xla::FrontendAttributes>(GetArenaNoVirtual());
+    frontend_attributes_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:xla.HloInstructionProto.frontend_attributes)
+  return frontend_attributes_;
+}
+inline void HloInstructionProto::set_allocated_frontend_attributes(::xla::FrontendAttributes* frontend_attributes) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete reinterpret_cast< ::google::protobuf::MessageLite*>(frontend_attributes_);
+  }
+  if (frontend_attributes) {
+    ::google::protobuf::Arena* submessage_arena =
+      reinterpret_cast<::google::protobuf::MessageLite*>(frontend_attributes)->GetArena();
+    if (message_arena != submessage_arena) {
+      frontend_attributes = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, frontend_attributes, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  frontend_attributes_ = frontend_attributes;
+  // @@protoc_insertion_point(field_set_allocated:xla.HloInstructionProto.frontend_attributes)
+}
+
+// bool unique_indices = 69;
+inline void HloInstructionProto::clear_unique_indices() {
+  unique_indices_ = false;
+}
+inline bool HloInstructionProto::unique_indices() const {
+  // @@protoc_insertion_point(field_get:xla.HloInstructionProto.unique_indices)
+  return unique_indices_;
+}
+inline void HloInstructionProto::set_unique_indices(bool value) {
+  
+  unique_indices_ = value;
+  // @@protoc_insertion_point(field_set:xla.HloInstructionProto.unique_indices)
+}
+
+// .xla.RandomAlgorithm rng_algorithm = 70;
+inline void HloInstructionProto::clear_rng_algorithm() {
+  rng_algorithm_ = 0;
+}
+inline ::xla::RandomAlgorithm HloInstructionProto::rng_algorithm() const {
+  // @@protoc_insertion_point(field_get:xla.HloInstructionProto.rng_algorithm)
+  return static_cast< ::xla::RandomAlgorithm >(rng_algorithm_);
+}
+inline void HloInstructionProto::set_rng_algorithm(::xla::RandomAlgorithm value) {
+  
+  rng_algorithm_ = value;
+  // @@protoc_insertion_point(field_set:xla.HloInstructionProto.rng_algorithm)
+}
+
+// string comparison_type = 72;
+inline void HloInstructionProto::clear_comparison_type() {
+  comparison_type_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+inline const ::std::string& HloInstructionProto::comparison_type() const {
+  // @@protoc_insertion_point(field_get:xla.HloInstructionProto.comparison_type)
+  return comparison_type_.Get();
+}
+inline void HloInstructionProto::set_comparison_type(const ::std::string& value) {
+  
+  comparison_type_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set:xla.HloInstructionProto.comparison_type)
+}
+#if LANG_CXX11
+inline void HloInstructionProto::set_comparison_type(::std::string&& value) {
+  
+  comparison_type_.Set(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_rvalue:xla.HloInstructionProto.comparison_type)
+}
+#endif
+inline void HloInstructionProto::set_comparison_type(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  
+  comparison_type_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
+              GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_char:xla.HloInstructionProto.comparison_type)
+}
+inline void HloInstructionProto::set_comparison_type(const char* value,
+    size_t size) {
+  
+  comparison_type_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_pointer:xla.HloInstructionProto.comparison_type)
+}
+inline ::std::string* HloInstructionProto::mutable_comparison_type() {
+  
+  // @@protoc_insertion_point(field_mutable:xla.HloInstructionProto.comparison_type)
+  return comparison_type_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+inline ::std::string* HloInstructionProto::release_comparison_type() {
+  // @@protoc_insertion_point(field_release:xla.HloInstructionProto.comparison_type)
+  
+  return comparison_type_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+inline void HloInstructionProto::set_allocated_comparison_type(::std::string* comparison_type) {
+  if (comparison_type != NULL) {
+    
+  } else {
+    
+  }
+  comparison_type_.SetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), comparison_type,
+      GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_allocated:xla.HloInstructionProto.comparison_type)
+}
+inline ::std::string* HloInstructionProto::unsafe_arena_release_comparison_type() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:xla.HloInstructionProto.comparison_type)
+  GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
+  
+  return comparison_type_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      GetArenaNoVirtual());
+}
+inline void HloInstructionProto::unsafe_arena_set_allocated_comparison_type(
+    ::std::string* comparison_type) {
+  GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
+  if (comparison_type != NULL) {
+    
+  } else {
+    
+  }
+  comparison_type_.UnsafeArenaSetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      comparison_type, GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:xla.HloInstructionProto.comparison_type)
+}
+
+// bool is_cross_program_prefetch = 73;
+inline void HloInstructionProto::clear_is_cross_program_prefetch() {
+  is_cross_program_prefetch_ = false;
+}
+inline bool HloInstructionProto::is_cross_program_prefetch() const {
+  // @@protoc_insertion_point(field_get:xla.HloInstructionProto.is_cross_program_prefetch)
+  return is_cross_program_prefetch_;
+}
+inline void HloInstructionProto::set_is_cross_program_prefetch(bool value) {
+  
+  is_cross_program_prefetch_ = value;
+  // @@protoc_insertion_point(field_set:xla.HloInstructionProto.is_cross_program_prefetch)
+}
+
+// .xla.PaddingType padding_type = 75;
+inline void HloInstructionProto::clear_padding_type() {
+  padding_type_ = 0;
+}
+inline ::xla::PaddingType HloInstructionProto::padding_type() const {
+  // @@protoc_insertion_point(field_get:xla.HloInstructionProto.padding_type)
+  return static_cast< ::xla::PaddingType >(padding_type_);
+}
+inline void HloInstructionProto::set_padding_type(::xla::PaddingType value) {
+  
+  padding_type_ = value;
+  // @@protoc_insertion_point(field_set:xla.HloInstructionProto.padding_type)
+}
+
+// .xla.CustomCallApiVersion custom_call_api_version = 77;
+inline void HloInstructionProto::clear_custom_call_api_version() {
+  custom_call_api_version_ = 0;
+}
+inline ::xla::CustomCallApiVersion HloInstructionProto::custom_call_api_version() const {
+  // @@protoc_insertion_point(field_get:xla.HloInstructionProto.custom_call_api_version)
+  return static_cast< ::xla::CustomCallApiVersion >(custom_call_api_version_);
+}
+inline void HloInstructionProto::set_custom_call_api_version(::xla::CustomCallApiVersion value) {
+  
+  custom_call_api_version_ = value;
+  // @@protoc_insertion_point(field_set:xla.HloInstructionProto.custom_call_api_version)
 }
 
 // -------------------------------------------------------------------
@@ -6853,6 +8702,20 @@ inline void HloComputationProto::set_root_id(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:xla.HloComputationProto.root_id)
 }
 
+// bool is_fusion_computation = 7;
+inline void HloComputationProto::clear_is_fusion_computation() {
+  is_fusion_computation_ = false;
+}
+inline bool HloComputationProto::is_fusion_computation() const {
+  // @@protoc_insertion_point(field_get:xla.HloComputationProto.is_fusion_computation)
+  return is_fusion_computation_;
+}
+inline void HloComputationProto::set_is_fusion_computation(bool value) {
+  
+  is_fusion_computation_ = value;
+  // @@protoc_insertion_point(field_set:xla.HloComputationProto.is_fusion_computation)
+}
+
 // -------------------------------------------------------------------
 
 // HloScheduleProto_InstructionSequence
@@ -6989,15 +8852,15 @@ HloInputOutputAliasProto_AliasEntryProto::mutable_parameter_shape_index() {
   return &parameter_shape_index_;
 }
 
-// .xla.HloInputOutputAliasProto.Kind kind = 4;
+// .xla.Kind kind = 4;
 inline void HloInputOutputAliasProto_AliasEntryProto::clear_kind() {
   kind_ = 0;
 }
-inline ::xla::HloInputOutputAliasProto_Kind HloInputOutputAliasProto_AliasEntryProto::kind() const {
+inline ::xla::Kind HloInputOutputAliasProto_AliasEntryProto::kind() const {
   // @@protoc_insertion_point(field_get:xla.HloInputOutputAliasProto.AliasEntryProto.kind)
-  return static_cast< ::xla::HloInputOutputAliasProto_Kind >(kind_);
+  return static_cast< ::xla::Kind >(kind_);
 }
-inline void HloInputOutputAliasProto_AliasEntryProto::set_kind(::xla::HloInputOutputAliasProto_Kind value) {
+inline void HloInputOutputAliasProto_AliasEntryProto::set_kind(::xla::Kind value) {
   
   kind_ = value;
   // @@protoc_insertion_point(field_set:xla.HloInputOutputAliasProto.AliasEntryProto.kind)
@@ -7175,6 +9038,114 @@ inline const ::google::protobuf::RepeatedPtrField< ::xla::DynamicParameterBindin
 DynamicParameterBindingProto::entries() const {
   // @@protoc_insertion_point(field_list:xla.DynamicParameterBindingProto.entries)
   return entries_;
+}
+
+// -------------------------------------------------------------------
+
+// CrossProgramPrefetch
+
+// int64 parameter = 1;
+inline void CrossProgramPrefetch::clear_parameter() {
+  parameter_ = GOOGLE_LONGLONG(0);
+}
+inline ::google::protobuf::int64 CrossProgramPrefetch::parameter() const {
+  // @@protoc_insertion_point(field_get:xla.CrossProgramPrefetch.parameter)
+  return parameter_;
+}
+inline void CrossProgramPrefetch::set_parameter(::google::protobuf::int64 value) {
+  
+  parameter_ = value;
+  // @@protoc_insertion_point(field_set:xla.CrossProgramPrefetch.parameter)
+}
+
+// repeated int64 index = 2;
+inline int CrossProgramPrefetch::index_size() const {
+  return index_.size();
+}
+inline void CrossProgramPrefetch::clear_index() {
+  index_.Clear();
+}
+inline ::google::protobuf::int64 CrossProgramPrefetch::index(int index) const {
+  // @@protoc_insertion_point(field_get:xla.CrossProgramPrefetch.index)
+  return index_.Get(index);
+}
+inline void CrossProgramPrefetch::set_index(int index, ::google::protobuf::int64 value) {
+  index_.Set(index, value);
+  // @@protoc_insertion_point(field_set:xla.CrossProgramPrefetch.index)
+}
+inline void CrossProgramPrefetch::add_index(::google::protobuf::int64 value) {
+  index_.Add(value);
+  // @@protoc_insertion_point(field_add:xla.CrossProgramPrefetch.index)
+}
+inline const ::google::protobuf::RepeatedField< ::google::protobuf::int64 >&
+CrossProgramPrefetch::index() const {
+  // @@protoc_insertion_point(field_list:xla.CrossProgramPrefetch.index)
+  return index_;
+}
+inline ::google::protobuf::RepeatedField< ::google::protobuf::int64 >*
+CrossProgramPrefetch::mutable_index() {
+  // @@protoc_insertion_point(field_mutable_list:xla.CrossProgramPrefetch.index)
+  return &index_;
+}
+
+// -------------------------------------------------------------------
+
+// HloModuleProto_ProfileInfo
+
+// .xla.HloModuleProto.ProfileType profile_type = 1;
+inline void HloModuleProto_ProfileInfo::clear_profile_type() {
+  profile_type_ = 0;
+}
+inline ::xla::HloModuleProto_ProfileType HloModuleProto_ProfileInfo::profile_type() const {
+  // @@protoc_insertion_point(field_get:xla.HloModuleProto.ProfileInfo.profile_type)
+  return static_cast< ::xla::HloModuleProto_ProfileType >(profile_type_);
+}
+inline void HloModuleProto_ProfileInfo::set_profile_type(::xla::HloModuleProto_ProfileType value) {
+  
+  profile_type_ = value;
+  // @@protoc_insertion_point(field_set:xla.HloModuleProto.ProfileInfo.profile_type)
+}
+
+// double relative_speedup = 2;
+inline void HloModuleProto_ProfileInfo::clear_relative_speedup() {
+  relative_speedup_ = 0;
+}
+inline double HloModuleProto_ProfileInfo::relative_speedup() const {
+  // @@protoc_insertion_point(field_get:xla.HloModuleProto.ProfileInfo.relative_speedup)
+  return relative_speedup_;
+}
+inline void HloModuleProto_ProfileInfo::set_relative_speedup(double value) {
+  
+  relative_speedup_ = value;
+  // @@protoc_insertion_point(field_set:xla.HloModuleProto.ProfileInfo.relative_speedup)
+}
+
+// .xla.ProfileSource profile_source = 3;
+inline void HloModuleProto_ProfileInfo::clear_profile_source() {
+  profile_source_ = 0;
+}
+inline ::xla::ProfileSource HloModuleProto_ProfileInfo::profile_source() const {
+  // @@protoc_insertion_point(field_get:xla.HloModuleProto.ProfileInfo.profile_source)
+  return static_cast< ::xla::ProfileSource >(profile_source_);
+}
+inline void HloModuleProto_ProfileInfo::set_profile_source(::xla::ProfileSource value) {
+  
+  profile_source_ = value;
+  // @@protoc_insertion_point(field_set:xla.HloModuleProto.ProfileInfo.profile_source)
+}
+
+// .xla.CompilationEvent compilation_event = 4;
+inline void HloModuleProto_ProfileInfo::clear_compilation_event() {
+  compilation_event_ = 0;
+}
+inline ::xla::CompilationEvent HloModuleProto_ProfileInfo::compilation_event() const {
+  // @@protoc_insertion_point(field_get:xla.HloModuleProto.ProfileInfo.compilation_event)
+  return static_cast< ::xla::CompilationEvent >(compilation_event_);
+}
+inline void HloModuleProto_ProfileInfo::set_compilation_event(::xla::CompilationEvent value) {
+  
+  compilation_event_ = value;
+  // @@protoc_insertion_point(field_set:xla.HloModuleProto.ProfileInfo.compilation_event)
 }
 
 // -------------------------------------------------------------------
@@ -7641,6 +9612,166 @@ inline void HloModuleProto::set_allocated_dynamic_parameter_binding(::xla::Dynam
   }
   dynamic_parameter_binding_ = dynamic_parameter_binding;
   // @@protoc_insertion_point(field_set_allocated:xla.HloModuleProto.dynamic_parameter_binding)
+}
+
+// repeated .xla.CrossProgramPrefetch cross_program_prefetches = 10;
+inline int HloModuleProto::cross_program_prefetches_size() const {
+  return cross_program_prefetches_.size();
+}
+inline void HloModuleProto::clear_cross_program_prefetches() {
+  cross_program_prefetches_.Clear();
+}
+inline ::xla::CrossProgramPrefetch* HloModuleProto::mutable_cross_program_prefetches(int index) {
+  // @@protoc_insertion_point(field_mutable:xla.HloModuleProto.cross_program_prefetches)
+  return cross_program_prefetches_.Mutable(index);
+}
+inline ::google::protobuf::RepeatedPtrField< ::xla::CrossProgramPrefetch >*
+HloModuleProto::mutable_cross_program_prefetches() {
+  // @@protoc_insertion_point(field_mutable_list:xla.HloModuleProto.cross_program_prefetches)
+  return &cross_program_prefetches_;
+}
+inline const ::xla::CrossProgramPrefetch& HloModuleProto::cross_program_prefetches(int index) const {
+  // @@protoc_insertion_point(field_get:xla.HloModuleProto.cross_program_prefetches)
+  return cross_program_prefetches_.Get(index);
+}
+inline ::xla::CrossProgramPrefetch* HloModuleProto::add_cross_program_prefetches() {
+  // @@protoc_insertion_point(field_add:xla.HloModuleProto.cross_program_prefetches)
+  return cross_program_prefetches_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::xla::CrossProgramPrefetch >&
+HloModuleProto::cross_program_prefetches() const {
+  // @@protoc_insertion_point(field_list:xla.HloModuleProto.cross_program_prefetches)
+  return cross_program_prefetches_;
+}
+
+// bool is_dynamic = 11;
+inline void HloModuleProto::clear_is_dynamic() {
+  is_dynamic_ = false;
+}
+inline bool HloModuleProto::is_dynamic() const {
+  // @@protoc_insertion_point(field_get:xla.HloModuleProto.is_dynamic)
+  return is_dynamic_;
+}
+inline void HloModuleProto::set_is_dynamic(bool value) {
+  
+  is_dynamic_ = value;
+  // @@protoc_insertion_point(field_set:xla.HloModuleProto.is_dynamic)
+}
+
+// .xla.OpSharding spmd_output_sharding = 12;
+inline bool HloModuleProto::has_spmd_output_sharding() const {
+  return this != internal_default_instance() && spmd_output_sharding_ != NULL;
+}
+inline const ::xla::OpSharding& HloModuleProto::_internal_spmd_output_sharding() const {
+  return *spmd_output_sharding_;
+}
+inline const ::xla::OpSharding& HloModuleProto::spmd_output_sharding() const {
+  const ::xla::OpSharding* p = spmd_output_sharding_;
+  // @@protoc_insertion_point(field_get:xla.HloModuleProto.spmd_output_sharding)
+  return p != NULL ? *p : *reinterpret_cast<const ::xla::OpSharding*>(
+      &::xla::_OpSharding_default_instance_);
+}
+inline ::xla::OpSharding* HloModuleProto::release_spmd_output_sharding() {
+  // @@protoc_insertion_point(field_release:xla.HloModuleProto.spmd_output_sharding)
+  
+  ::xla::OpSharding* temp = spmd_output_sharding_;
+  if (GetArenaNoVirtual() != NULL) {
+    temp = ::google::protobuf::internal::DuplicateIfNonNull(temp);
+  }
+  spmd_output_sharding_ = NULL;
+  return temp;
+}
+inline ::xla::OpSharding* HloModuleProto::unsafe_arena_release_spmd_output_sharding() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:xla.HloModuleProto.spmd_output_sharding)
+  
+  ::xla::OpSharding* temp = spmd_output_sharding_;
+  spmd_output_sharding_ = NULL;
+  return temp;
+}
+inline ::xla::OpSharding* HloModuleProto::mutable_spmd_output_sharding() {
+  
+  if (spmd_output_sharding_ == NULL) {
+    auto* p = CreateMaybeMessage<::xla::OpSharding>(GetArenaNoVirtual());
+    spmd_output_sharding_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:xla.HloModuleProto.spmd_output_sharding)
+  return spmd_output_sharding_;
+}
+inline void HloModuleProto::set_allocated_spmd_output_sharding(::xla::OpSharding* spmd_output_sharding) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete reinterpret_cast< ::google::protobuf::MessageLite*>(spmd_output_sharding_);
+  }
+  if (spmd_output_sharding) {
+    ::google::protobuf::Arena* submessage_arena =
+      reinterpret_cast<::google::protobuf::MessageLite*>(spmd_output_sharding)->GetArena();
+    if (message_arena != submessage_arena) {
+      spmd_output_sharding = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, spmd_output_sharding, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  spmd_output_sharding_ = spmd_output_sharding;
+  // @@protoc_insertion_point(field_set_allocated:xla.HloModuleProto.spmd_output_sharding)
+}
+
+// repeated .xla.OpSharding spmd_parameters_shardings = 14;
+inline int HloModuleProto::spmd_parameters_shardings_size() const {
+  return spmd_parameters_shardings_.size();
+}
+inline ::xla::OpSharding* HloModuleProto::mutable_spmd_parameters_shardings(int index) {
+  // @@protoc_insertion_point(field_mutable:xla.HloModuleProto.spmd_parameters_shardings)
+  return spmd_parameters_shardings_.Mutable(index);
+}
+inline ::google::protobuf::RepeatedPtrField< ::xla::OpSharding >*
+HloModuleProto::mutable_spmd_parameters_shardings() {
+  // @@protoc_insertion_point(field_mutable_list:xla.HloModuleProto.spmd_parameters_shardings)
+  return &spmd_parameters_shardings_;
+}
+inline const ::xla::OpSharding& HloModuleProto::spmd_parameters_shardings(int index) const {
+  // @@protoc_insertion_point(field_get:xla.HloModuleProto.spmd_parameters_shardings)
+  return spmd_parameters_shardings_.Get(index);
+}
+inline ::xla::OpSharding* HloModuleProto::add_spmd_parameters_shardings() {
+  // @@protoc_insertion_point(field_add:xla.HloModuleProto.spmd_parameters_shardings)
+  return spmd_parameters_shardings_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::xla::OpSharding >&
+HloModuleProto::spmd_parameters_shardings() const {
+  // @@protoc_insertion_point(field_list:xla.HloModuleProto.spmd_parameters_shardings)
+  return spmd_parameters_shardings_;
+}
+
+// repeated .xla.HloModuleProto.ProfileInfo profile_info = 13;
+inline int HloModuleProto::profile_info_size() const {
+  return profile_info_.size();
+}
+inline void HloModuleProto::clear_profile_info() {
+  profile_info_.Clear();
+}
+inline ::xla::HloModuleProto_ProfileInfo* HloModuleProto::mutable_profile_info(int index) {
+  // @@protoc_insertion_point(field_mutable:xla.HloModuleProto.profile_info)
+  return profile_info_.Mutable(index);
+}
+inline ::google::protobuf::RepeatedPtrField< ::xla::HloModuleProto_ProfileInfo >*
+HloModuleProto::mutable_profile_info() {
+  // @@protoc_insertion_point(field_mutable_list:xla.HloModuleProto.profile_info)
+  return &profile_info_;
+}
+inline const ::xla::HloModuleProto_ProfileInfo& HloModuleProto::profile_info(int index) const {
+  // @@protoc_insertion_point(field_get:xla.HloModuleProto.profile_info)
+  return profile_info_.Get(index);
+}
+inline ::xla::HloModuleProto_ProfileInfo* HloModuleProto::add_profile_info() {
+  // @@protoc_insertion_point(field_add:xla.HloModuleProto.profile_info)
+  return profile_info_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::xla::HloModuleProto_ProfileInfo >&
+HloModuleProto::profile_info() const {
+  // @@protoc_insertion_point(field_list:xla.HloModuleProto.profile_info)
+  return profile_info_;
 }
 
 // -------------------------------------------------------------------
@@ -8418,6 +10549,20 @@ inline void HeapSimulatorTrace::set_whole_module_simulation(bool value) {
   // @@protoc_insertion_point(field_set:xla.HeapSimulatorTrace.whole_module_simulation)
 }
 
+// int64 buffer_allocation_index = 3;
+inline void HeapSimulatorTrace::clear_buffer_allocation_index() {
+  buffer_allocation_index_ = GOOGLE_LONGLONG(0);
+}
+inline ::google::protobuf::int64 HeapSimulatorTrace::buffer_allocation_index() const {
+  // @@protoc_insertion_point(field_get:xla.HeapSimulatorTrace.buffer_allocation_index)
+  return buffer_allocation_index_;
+}
+inline void HeapSimulatorTrace::set_buffer_allocation_index(::google::protobuf::int64 value) {
+  
+  buffer_allocation_index_ = value;
+  // @@protoc_insertion_point(field_set:xla.HeapSimulatorTrace.buffer_allocation_index)
+}
+
 // -------------------------------------------------------------------
 
 // HloModuleGroupProto
@@ -9098,9 +11243,1118 @@ inline void HloSnapshot::unsafe_arena_set_allocated_execution_platform(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:xla.HloSnapshot.execution_platform)
 }
 
+// -------------------------------------------------------------------
+
+// HloModuleMetadataProto
+
+// int64 canonical_module_id = 1;
+inline void HloModuleMetadataProto::clear_canonical_module_id() {
+  canonical_module_id_ = GOOGLE_LONGLONG(0);
+}
+inline ::google::protobuf::int64 HloModuleMetadataProto::canonical_module_id() const {
+  // @@protoc_insertion_point(field_get:xla.HloModuleMetadataProto.canonical_module_id)
+  return canonical_module_id_;
+}
+inline void HloModuleMetadataProto::set_canonical_module_id(::google::protobuf::int64 value) {
+  
+  canonical_module_id_ = value;
+  // @@protoc_insertion_point(field_set:xla.HloModuleMetadataProto.canonical_module_id)
+}
+
+// string module_group_name = 2;
+inline void HloModuleMetadataProto::clear_module_group_name() {
+  module_group_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+inline const ::std::string& HloModuleMetadataProto::module_group_name() const {
+  // @@protoc_insertion_point(field_get:xla.HloModuleMetadataProto.module_group_name)
+  return module_group_name_.Get();
+}
+inline void HloModuleMetadataProto::set_module_group_name(const ::std::string& value) {
+  
+  module_group_name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set:xla.HloModuleMetadataProto.module_group_name)
+}
+#if LANG_CXX11
+inline void HloModuleMetadataProto::set_module_group_name(::std::string&& value) {
+  
+  module_group_name_.Set(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_rvalue:xla.HloModuleMetadataProto.module_group_name)
+}
+#endif
+inline void HloModuleMetadataProto::set_module_group_name(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  
+  module_group_name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
+              GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_char:xla.HloModuleMetadataProto.module_group_name)
+}
+inline void HloModuleMetadataProto::set_module_group_name(const char* value,
+    size_t size) {
+  
+  module_group_name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_pointer:xla.HloModuleMetadataProto.module_group_name)
+}
+inline ::std::string* HloModuleMetadataProto::mutable_module_group_name() {
+  
+  // @@protoc_insertion_point(field_mutable:xla.HloModuleMetadataProto.module_group_name)
+  return module_group_name_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+inline ::std::string* HloModuleMetadataProto::release_module_group_name() {
+  // @@protoc_insertion_point(field_release:xla.HloModuleMetadataProto.module_group_name)
+  
+  return module_group_name_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+inline void HloModuleMetadataProto::set_allocated_module_group_name(::std::string* module_group_name) {
+  if (module_group_name != NULL) {
+    
+  } else {
+    
+  }
+  module_group_name_.SetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), module_group_name,
+      GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_allocated:xla.HloModuleMetadataProto.module_group_name)
+}
+inline ::std::string* HloModuleMetadataProto::unsafe_arena_release_module_group_name() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:xla.HloModuleMetadataProto.module_group_name)
+  GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
+  
+  return module_group_name_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      GetArenaNoVirtual());
+}
+inline void HloModuleMetadataProto::unsafe_arena_set_allocated_module_group_name(
+    ::std::string* module_group_name) {
+  GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
+  if (module_group_name != NULL) {
+    
+  } else {
+    
+  }
+  module_group_name_.UnsafeArenaSetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      module_group_name, GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:xla.HloModuleMetadataProto.module_group_name)
+}
+
+// int64 original_module_id = 3;
+inline void HloModuleMetadataProto::clear_original_module_id() {
+  original_module_id_ = GOOGLE_LONGLONG(0);
+}
+inline ::google::protobuf::int64 HloModuleMetadataProto::original_module_id() const {
+  // @@protoc_insertion_point(field_get:xla.HloModuleMetadataProto.original_module_id)
+  return original_module_id_;
+}
+inline void HloModuleMetadataProto::set_original_module_id(::google::protobuf::int64 value) {
+  
+  original_module_id_ = value;
+  // @@protoc_insertion_point(field_set:xla.HloModuleMetadataProto.original_module_id)
+}
+
+// repeated int64 partitioned_module_ids = 4;
+inline int HloModuleMetadataProto::partitioned_module_ids_size() const {
+  return partitioned_module_ids_.size();
+}
+inline void HloModuleMetadataProto::clear_partitioned_module_ids() {
+  partitioned_module_ids_.Clear();
+}
+inline ::google::protobuf::int64 HloModuleMetadataProto::partitioned_module_ids(int index) const {
+  // @@protoc_insertion_point(field_get:xla.HloModuleMetadataProto.partitioned_module_ids)
+  return partitioned_module_ids_.Get(index);
+}
+inline void HloModuleMetadataProto::set_partitioned_module_ids(int index, ::google::protobuf::int64 value) {
+  partitioned_module_ids_.Set(index, value);
+  // @@protoc_insertion_point(field_set:xla.HloModuleMetadataProto.partitioned_module_ids)
+}
+inline void HloModuleMetadataProto::add_partitioned_module_ids(::google::protobuf::int64 value) {
+  partitioned_module_ids_.Add(value);
+  // @@protoc_insertion_point(field_add:xla.HloModuleMetadataProto.partitioned_module_ids)
+}
+inline const ::google::protobuf::RepeatedField< ::google::protobuf::int64 >&
+HloModuleMetadataProto::partitioned_module_ids() const {
+  // @@protoc_insertion_point(field_list:xla.HloModuleMetadataProto.partitioned_module_ids)
+  return partitioned_module_ids_;
+}
+inline ::google::protobuf::RepeatedField< ::google::protobuf::int64 >*
+HloModuleMetadataProto::mutable_partitioned_module_ids() {
+  // @@protoc_insertion_point(field_mutable_list:xla.HloModuleMetadataProto.partitioned_module_ids)
+  return &partitioned_module_ids_;
+}
+
+// repeated .xla.HloPassMetadata pass_metadata = 5;
+inline int HloModuleMetadataProto::pass_metadata_size() const {
+  return pass_metadata_.size();
+}
+inline void HloModuleMetadataProto::clear_pass_metadata() {
+  pass_metadata_.Clear();
+}
+inline ::xla::HloPassMetadata* HloModuleMetadataProto::mutable_pass_metadata(int index) {
+  // @@protoc_insertion_point(field_mutable:xla.HloModuleMetadataProto.pass_metadata)
+  return pass_metadata_.Mutable(index);
+}
+inline ::google::protobuf::RepeatedPtrField< ::xla::HloPassMetadata >*
+HloModuleMetadataProto::mutable_pass_metadata() {
+  // @@protoc_insertion_point(field_mutable_list:xla.HloModuleMetadataProto.pass_metadata)
+  return &pass_metadata_;
+}
+inline const ::xla::HloPassMetadata& HloModuleMetadataProto::pass_metadata(int index) const {
+  // @@protoc_insertion_point(field_get:xla.HloModuleMetadataProto.pass_metadata)
+  return pass_metadata_.Get(index);
+}
+inline ::xla::HloPassMetadata* HloModuleMetadataProto::add_pass_metadata() {
+  // @@protoc_insertion_point(field_add:xla.HloModuleMetadataProto.pass_metadata)
+  return pass_metadata_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::xla::HloPassMetadata >&
+HloModuleMetadataProto::pass_metadata() const {
+  // @@protoc_insertion_point(field_list:xla.HloModuleMetadataProto.pass_metadata)
+  return pass_metadata_;
+}
+
+// -------------------------------------------------------------------
+
+// HloPassMetadata
+
+// int64 pass_id = 1;
+inline void HloPassMetadata::clear_pass_id() {
+  pass_id_ = GOOGLE_LONGLONG(0);
+}
+inline ::google::protobuf::int64 HloPassMetadata::pass_id() const {
+  // @@protoc_insertion_point(field_get:xla.HloPassMetadata.pass_id)
+  return pass_id_;
+}
+inline void HloPassMetadata::set_pass_id(::google::protobuf::int64 value) {
+  
+  pass_id_ = value;
+  // @@protoc_insertion_point(field_set:xla.HloPassMetadata.pass_id)
+}
+
+// string pass_name = 2;
+inline void HloPassMetadata::clear_pass_name() {
+  pass_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+inline const ::std::string& HloPassMetadata::pass_name() const {
+  // @@protoc_insertion_point(field_get:xla.HloPassMetadata.pass_name)
+  return pass_name_.Get();
+}
+inline void HloPassMetadata::set_pass_name(const ::std::string& value) {
+  
+  pass_name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set:xla.HloPassMetadata.pass_name)
+}
+#if LANG_CXX11
+inline void HloPassMetadata::set_pass_name(::std::string&& value) {
+  
+  pass_name_.Set(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_rvalue:xla.HloPassMetadata.pass_name)
+}
+#endif
+inline void HloPassMetadata::set_pass_name(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  
+  pass_name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
+              GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_char:xla.HloPassMetadata.pass_name)
+}
+inline void HloPassMetadata::set_pass_name(const char* value,
+    size_t size) {
+  
+  pass_name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_pointer:xla.HloPassMetadata.pass_name)
+}
+inline ::std::string* HloPassMetadata::mutable_pass_name() {
+  
+  // @@protoc_insertion_point(field_mutable:xla.HloPassMetadata.pass_name)
+  return pass_name_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+inline ::std::string* HloPassMetadata::release_pass_name() {
+  // @@protoc_insertion_point(field_release:xla.HloPassMetadata.pass_name)
+  
+  return pass_name_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+inline void HloPassMetadata::set_allocated_pass_name(::std::string* pass_name) {
+  if (pass_name != NULL) {
+    
+  } else {
+    
+  }
+  pass_name_.SetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), pass_name,
+      GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_allocated:xla.HloPassMetadata.pass_name)
+}
+inline ::std::string* HloPassMetadata::unsafe_arena_release_pass_name() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:xla.HloPassMetadata.pass_name)
+  GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
+  
+  return pass_name_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      GetArenaNoVirtual());
+}
+inline void HloPassMetadata::unsafe_arena_set_allocated_pass_name(
+    ::std::string* pass_name) {
+  GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
+  if (pass_name != NULL) {
+    
+  } else {
+    
+  }
+  pass_name_.UnsafeArenaSetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      pass_name, GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:xla.HloPassMetadata.pass_name)
+}
+
+// string pipeline_name = 3;
+inline void HloPassMetadata::clear_pipeline_name() {
+  pipeline_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+inline const ::std::string& HloPassMetadata::pipeline_name() const {
+  // @@protoc_insertion_point(field_get:xla.HloPassMetadata.pipeline_name)
+  return pipeline_name_.Get();
+}
+inline void HloPassMetadata::set_pipeline_name(const ::std::string& value) {
+  
+  pipeline_name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set:xla.HloPassMetadata.pipeline_name)
+}
+#if LANG_CXX11
+inline void HloPassMetadata::set_pipeline_name(::std::string&& value) {
+  
+  pipeline_name_.Set(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_rvalue:xla.HloPassMetadata.pipeline_name)
+}
+#endif
+inline void HloPassMetadata::set_pipeline_name(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  
+  pipeline_name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
+              GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_char:xla.HloPassMetadata.pipeline_name)
+}
+inline void HloPassMetadata::set_pipeline_name(const char* value,
+    size_t size) {
+  
+  pipeline_name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_pointer:xla.HloPassMetadata.pipeline_name)
+}
+inline ::std::string* HloPassMetadata::mutable_pipeline_name() {
+  
+  // @@protoc_insertion_point(field_mutable:xla.HloPassMetadata.pipeline_name)
+  return pipeline_name_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+inline ::std::string* HloPassMetadata::release_pipeline_name() {
+  // @@protoc_insertion_point(field_release:xla.HloPassMetadata.pipeline_name)
+  
+  return pipeline_name_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+inline void HloPassMetadata::set_allocated_pipeline_name(::std::string* pipeline_name) {
+  if (pipeline_name != NULL) {
+    
+  } else {
+    
+  }
+  pipeline_name_.SetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), pipeline_name,
+      GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_allocated:xla.HloPassMetadata.pipeline_name)
+}
+inline ::std::string* HloPassMetadata::unsafe_arena_release_pipeline_name() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:xla.HloPassMetadata.pipeline_name)
+  GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
+  
+  return pipeline_name_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      GetArenaNoVirtual());
+}
+inline void HloPassMetadata::unsafe_arena_set_allocated_pipeline_name(
+    ::std::string* pipeline_name) {
+  GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
+  if (pipeline_name != NULL) {
+    
+  } else {
+    
+  }
+  pipeline_name_.UnsafeArenaSetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      pipeline_name, GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:xla.HloPassMetadata.pipeline_name)
+}
+
+// repeated string dump_filenames = 4;
+inline int HloPassMetadata::dump_filenames_size() const {
+  return dump_filenames_.size();
+}
+inline void HloPassMetadata::clear_dump_filenames() {
+  dump_filenames_.Clear();
+}
+inline const ::std::string& HloPassMetadata::dump_filenames(int index) const {
+  // @@protoc_insertion_point(field_get:xla.HloPassMetadata.dump_filenames)
+  return dump_filenames_.Get(index);
+}
+inline ::std::string* HloPassMetadata::mutable_dump_filenames(int index) {
+  // @@protoc_insertion_point(field_mutable:xla.HloPassMetadata.dump_filenames)
+  return dump_filenames_.Mutable(index);
+}
+inline void HloPassMetadata::set_dump_filenames(int index, const ::std::string& value) {
+  // @@protoc_insertion_point(field_set:xla.HloPassMetadata.dump_filenames)
+  dump_filenames_.Mutable(index)->assign(value);
+}
+#if LANG_CXX11
+inline void HloPassMetadata::set_dump_filenames(int index, ::std::string&& value) {
+  // @@protoc_insertion_point(field_set:xla.HloPassMetadata.dump_filenames)
+  dump_filenames_.Mutable(index)->assign(std::move(value));
+}
+#endif
+inline void HloPassMetadata::set_dump_filenames(int index, const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  dump_filenames_.Mutable(index)->assign(value);
+  // @@protoc_insertion_point(field_set_char:xla.HloPassMetadata.dump_filenames)
+}
+inline void HloPassMetadata::set_dump_filenames(int index, const char* value, size_t size) {
+  dump_filenames_.Mutable(index)->assign(
+    reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_set_pointer:xla.HloPassMetadata.dump_filenames)
+}
+inline ::std::string* HloPassMetadata::add_dump_filenames() {
+  // @@protoc_insertion_point(field_add_mutable:xla.HloPassMetadata.dump_filenames)
+  return dump_filenames_.Add();
+}
+inline void HloPassMetadata::add_dump_filenames(const ::std::string& value) {
+  dump_filenames_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add:xla.HloPassMetadata.dump_filenames)
+}
+#if LANG_CXX11
+inline void HloPassMetadata::add_dump_filenames(::std::string&& value) {
+  dump_filenames_.Add(std::move(value));
+  // @@protoc_insertion_point(field_add:xla.HloPassMetadata.dump_filenames)
+}
+#endif
+inline void HloPassMetadata::add_dump_filenames(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  dump_filenames_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add_char:xla.HloPassMetadata.dump_filenames)
+}
+inline void HloPassMetadata::add_dump_filenames(const char* value, size_t size) {
+  dump_filenames_.Add()->assign(reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_add_pointer:xla.HloPassMetadata.dump_filenames)
+}
+inline const ::google::protobuf::RepeatedPtrField< ::std::string>&
+HloPassMetadata::dump_filenames() const {
+  // @@protoc_insertion_point(field_list:xla.HloPassMetadata.dump_filenames)
+  return dump_filenames_;
+}
+inline ::google::protobuf::RepeatedPtrField< ::std::string>*
+HloPassMetadata::mutable_dump_filenames() {
+  // @@protoc_insertion_point(field_mutable_list:xla.HloPassMetadata.dump_filenames)
+  return &dump_filenames_;
+}
+
+// bool module_changed = 5;
+inline void HloPassMetadata::clear_module_changed() {
+  module_changed_ = false;
+}
+inline bool HloPassMetadata::module_changed() const {
+  // @@protoc_insertion_point(field_get:xla.HloPassMetadata.module_changed)
+  return module_changed_;
+}
+inline void HloPassMetadata::set_module_changed(bool value) {
+  
+  module_changed_ = value;
+  // @@protoc_insertion_point(field_set:xla.HloPassMetadata.module_changed)
+}
+
+// int64 module_id = 6;
+inline void HloPassMetadata::clear_module_id() {
+  module_id_ = GOOGLE_LONGLONG(0);
+}
+inline ::google::protobuf::int64 HloPassMetadata::module_id() const {
+  // @@protoc_insertion_point(field_get:xla.HloPassMetadata.module_id)
+  return module_id_;
+}
+inline void HloPassMetadata::set_module_id(::google::protobuf::int64 value) {
+  
+  module_id_ = value;
+  // @@protoc_insertion_point(field_set:xla.HloPassMetadata.module_id)
+}
+
+// repeated int64 module_group_module_ids = 7;
+inline int HloPassMetadata::module_group_module_ids_size() const {
+  return module_group_module_ids_.size();
+}
+inline void HloPassMetadata::clear_module_group_module_ids() {
+  module_group_module_ids_.Clear();
+}
+inline ::google::protobuf::int64 HloPassMetadata::module_group_module_ids(int index) const {
+  // @@protoc_insertion_point(field_get:xla.HloPassMetadata.module_group_module_ids)
+  return module_group_module_ids_.Get(index);
+}
+inline void HloPassMetadata::set_module_group_module_ids(int index, ::google::protobuf::int64 value) {
+  module_group_module_ids_.Set(index, value);
+  // @@protoc_insertion_point(field_set:xla.HloPassMetadata.module_group_module_ids)
+}
+inline void HloPassMetadata::add_module_group_module_ids(::google::protobuf::int64 value) {
+  module_group_module_ids_.Add(value);
+  // @@protoc_insertion_point(field_add:xla.HloPassMetadata.module_group_module_ids)
+}
+inline const ::google::protobuf::RepeatedField< ::google::protobuf::int64 >&
+HloPassMetadata::module_group_module_ids() const {
+  // @@protoc_insertion_point(field_list:xla.HloPassMetadata.module_group_module_ids)
+  return module_group_module_ids_;
+}
+inline ::google::protobuf::RepeatedField< ::google::protobuf::int64 >*
+HloPassMetadata::mutable_module_group_module_ids() {
+  // @@protoc_insertion_point(field_mutable_list:xla.HloPassMetadata.module_group_module_ids)
+  return &module_group_module_ids_;
+}
+
+// int64 start_timestamp_usec = 8;
+inline void HloPassMetadata::clear_start_timestamp_usec() {
+  start_timestamp_usec_ = GOOGLE_LONGLONG(0);
+}
+inline ::google::protobuf::int64 HloPassMetadata::start_timestamp_usec() const {
+  // @@protoc_insertion_point(field_get:xla.HloPassMetadata.start_timestamp_usec)
+  return start_timestamp_usec_;
+}
+inline void HloPassMetadata::set_start_timestamp_usec(::google::protobuf::int64 value) {
+  
+  start_timestamp_usec_ = value;
+  // @@protoc_insertion_point(field_set:xla.HloPassMetadata.start_timestamp_usec)
+}
+
+// int64 end_timestamp_usec = 9;
+inline void HloPassMetadata::clear_end_timestamp_usec() {
+  end_timestamp_usec_ = GOOGLE_LONGLONG(0);
+}
+inline ::google::protobuf::int64 HloPassMetadata::end_timestamp_usec() const {
+  // @@protoc_insertion_point(field_get:xla.HloPassMetadata.end_timestamp_usec)
+  return end_timestamp_usec_;
+}
+inline void HloPassMetadata::set_end_timestamp_usec(::google::protobuf::int64 value) {
+  
+  end_timestamp_usec_ = value;
+  // @@protoc_insertion_point(field_set:xla.HloPassMetadata.end_timestamp_usec)
+}
+
+// -------------------------------------------------------------------
+
+// EntryFunctionAttributes_ShapeIndex
+
+// repeated int64 indices = 1;
+inline int EntryFunctionAttributes_ShapeIndex::indices_size() const {
+  return indices_.size();
+}
+inline void EntryFunctionAttributes_ShapeIndex::clear_indices() {
+  indices_.Clear();
+}
+inline ::google::protobuf::int64 EntryFunctionAttributes_ShapeIndex::indices(int index) const {
+  // @@protoc_insertion_point(field_get:xla.EntryFunctionAttributes.ShapeIndex.indices)
+  return indices_.Get(index);
+}
+inline void EntryFunctionAttributes_ShapeIndex::set_indices(int index, ::google::protobuf::int64 value) {
+  indices_.Set(index, value);
+  // @@protoc_insertion_point(field_set:xla.EntryFunctionAttributes.ShapeIndex.indices)
+}
+inline void EntryFunctionAttributes_ShapeIndex::add_indices(::google::protobuf::int64 value) {
+  indices_.Add(value);
+  // @@protoc_insertion_point(field_add:xla.EntryFunctionAttributes.ShapeIndex.indices)
+}
+inline const ::google::protobuf::RepeatedField< ::google::protobuf::int64 >&
+EntryFunctionAttributes_ShapeIndex::indices() const {
+  // @@protoc_insertion_point(field_list:xla.EntryFunctionAttributes.ShapeIndex.indices)
+  return indices_;
+}
+inline ::google::protobuf::RepeatedField< ::google::protobuf::int64 >*
+EntryFunctionAttributes_ShapeIndex::mutable_indices() {
+  // @@protoc_insertion_point(field_mutable_list:xla.EntryFunctionAttributes.ShapeIndex.indices)
+  return &indices_;
+}
+
+// -------------------------------------------------------------------
+
+// EntryFunctionAttributes_BufferParameterAttributes
+
+// int64 lmhlo_params = 1;
+inline void EntryFunctionAttributes_BufferParameterAttributes::clear_lmhlo_params() {
+  lmhlo_params_ = GOOGLE_LONGLONG(0);
+}
+inline ::google::protobuf::int64 EntryFunctionAttributes_BufferParameterAttributes::lmhlo_params() const {
+  // @@protoc_insertion_point(field_get:xla.EntryFunctionAttributes.BufferParameterAttributes.lmhlo_params)
+  return lmhlo_params_;
+}
+inline void EntryFunctionAttributes_BufferParameterAttributes::set_lmhlo_params(::google::protobuf::int64 value) {
+  
+  lmhlo_params_ = value;
+  // @@protoc_insertion_point(field_set:xla.EntryFunctionAttributes.BufferParameterAttributes.lmhlo_params)
+}
+
+// bool lmhlo_params_present = 6;
+inline void EntryFunctionAttributes_BufferParameterAttributes::clear_lmhlo_params_present() {
+  lmhlo_params_present_ = false;
+}
+inline bool EntryFunctionAttributes_BufferParameterAttributes::lmhlo_params_present() const {
+  // @@protoc_insertion_point(field_get:xla.EntryFunctionAttributes.BufferParameterAttributes.lmhlo_params_present)
+  return lmhlo_params_present_;
+}
+inline void EntryFunctionAttributes_BufferParameterAttributes::set_lmhlo_params_present(bool value) {
+  
+  lmhlo_params_present_ = value;
+  // @@protoc_insertion_point(field_set:xla.EntryFunctionAttributes.BufferParameterAttributes.lmhlo_params_present)
+}
+
+// .xla.EntryFunctionAttributes.ShapeIndex lmhlo_param_shape_index = 2;
+inline bool EntryFunctionAttributes_BufferParameterAttributes::has_lmhlo_param_shape_index() const {
+  return this != internal_default_instance() && lmhlo_param_shape_index_ != NULL;
+}
+inline void EntryFunctionAttributes_BufferParameterAttributes::clear_lmhlo_param_shape_index() {
+  if (GetArenaNoVirtual() == NULL && lmhlo_param_shape_index_ != NULL) {
+    delete lmhlo_param_shape_index_;
+  }
+  lmhlo_param_shape_index_ = NULL;
+}
+inline const ::xla::EntryFunctionAttributes_ShapeIndex& EntryFunctionAttributes_BufferParameterAttributes::_internal_lmhlo_param_shape_index() const {
+  return *lmhlo_param_shape_index_;
+}
+inline const ::xla::EntryFunctionAttributes_ShapeIndex& EntryFunctionAttributes_BufferParameterAttributes::lmhlo_param_shape_index() const {
+  const ::xla::EntryFunctionAttributes_ShapeIndex* p = lmhlo_param_shape_index_;
+  // @@protoc_insertion_point(field_get:xla.EntryFunctionAttributes.BufferParameterAttributes.lmhlo_param_shape_index)
+  return p != NULL ? *p : *reinterpret_cast<const ::xla::EntryFunctionAttributes_ShapeIndex*>(
+      &::xla::_EntryFunctionAttributes_ShapeIndex_default_instance_);
+}
+inline ::xla::EntryFunctionAttributes_ShapeIndex* EntryFunctionAttributes_BufferParameterAttributes::release_lmhlo_param_shape_index() {
+  // @@protoc_insertion_point(field_release:xla.EntryFunctionAttributes.BufferParameterAttributes.lmhlo_param_shape_index)
+  
+  ::xla::EntryFunctionAttributes_ShapeIndex* temp = lmhlo_param_shape_index_;
+  if (GetArenaNoVirtual() != NULL) {
+    temp = ::google::protobuf::internal::DuplicateIfNonNull(temp);
+  }
+  lmhlo_param_shape_index_ = NULL;
+  return temp;
+}
+inline ::xla::EntryFunctionAttributes_ShapeIndex* EntryFunctionAttributes_BufferParameterAttributes::unsafe_arena_release_lmhlo_param_shape_index() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:xla.EntryFunctionAttributes.BufferParameterAttributes.lmhlo_param_shape_index)
+  
+  ::xla::EntryFunctionAttributes_ShapeIndex* temp = lmhlo_param_shape_index_;
+  lmhlo_param_shape_index_ = NULL;
+  return temp;
+}
+inline ::xla::EntryFunctionAttributes_ShapeIndex* EntryFunctionAttributes_BufferParameterAttributes::mutable_lmhlo_param_shape_index() {
+  
+  if (lmhlo_param_shape_index_ == NULL) {
+    auto* p = CreateMaybeMessage<::xla::EntryFunctionAttributes_ShapeIndex>(GetArenaNoVirtual());
+    lmhlo_param_shape_index_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:xla.EntryFunctionAttributes.BufferParameterAttributes.lmhlo_param_shape_index)
+  return lmhlo_param_shape_index_;
+}
+inline void EntryFunctionAttributes_BufferParameterAttributes::set_allocated_lmhlo_param_shape_index(::xla::EntryFunctionAttributes_ShapeIndex* lmhlo_param_shape_index) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete lmhlo_param_shape_index_;
+  }
+  if (lmhlo_param_shape_index) {
+    ::google::protobuf::Arena* submessage_arena =
+      ::google::protobuf::Arena::GetArena(lmhlo_param_shape_index);
+    if (message_arena != submessage_arena) {
+      lmhlo_param_shape_index = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, lmhlo_param_shape_index, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  lmhlo_param_shape_index_ = lmhlo_param_shape_index;
+  // @@protoc_insertion_point(field_set_allocated:xla.EntryFunctionAttributes.BufferParameterAttributes.lmhlo_param_shape_index)
+}
+
+// string lmhlo_constant_name = 3;
+inline void EntryFunctionAttributes_BufferParameterAttributes::clear_lmhlo_constant_name() {
+  lmhlo_constant_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+inline const ::std::string& EntryFunctionAttributes_BufferParameterAttributes::lmhlo_constant_name() const {
+  // @@protoc_insertion_point(field_get:xla.EntryFunctionAttributes.BufferParameterAttributes.lmhlo_constant_name)
+  return lmhlo_constant_name_.Get();
+}
+inline void EntryFunctionAttributes_BufferParameterAttributes::set_lmhlo_constant_name(const ::std::string& value) {
+  
+  lmhlo_constant_name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set:xla.EntryFunctionAttributes.BufferParameterAttributes.lmhlo_constant_name)
+}
+#if LANG_CXX11
+inline void EntryFunctionAttributes_BufferParameterAttributes::set_lmhlo_constant_name(::std::string&& value) {
+  
+  lmhlo_constant_name_.Set(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_rvalue:xla.EntryFunctionAttributes.BufferParameterAttributes.lmhlo_constant_name)
+}
+#endif
+inline void EntryFunctionAttributes_BufferParameterAttributes::set_lmhlo_constant_name(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  
+  lmhlo_constant_name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
+              GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_char:xla.EntryFunctionAttributes.BufferParameterAttributes.lmhlo_constant_name)
+}
+inline void EntryFunctionAttributes_BufferParameterAttributes::set_lmhlo_constant_name(const char* value,
+    size_t size) {
+  
+  lmhlo_constant_name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_pointer:xla.EntryFunctionAttributes.BufferParameterAttributes.lmhlo_constant_name)
+}
+inline ::std::string* EntryFunctionAttributes_BufferParameterAttributes::mutable_lmhlo_constant_name() {
+  
+  // @@protoc_insertion_point(field_mutable:xla.EntryFunctionAttributes.BufferParameterAttributes.lmhlo_constant_name)
+  return lmhlo_constant_name_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+inline ::std::string* EntryFunctionAttributes_BufferParameterAttributes::release_lmhlo_constant_name() {
+  // @@protoc_insertion_point(field_release:xla.EntryFunctionAttributes.BufferParameterAttributes.lmhlo_constant_name)
+  
+  return lmhlo_constant_name_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+inline void EntryFunctionAttributes_BufferParameterAttributes::set_allocated_lmhlo_constant_name(::std::string* lmhlo_constant_name) {
+  if (lmhlo_constant_name != NULL) {
+    
+  } else {
+    
+  }
+  lmhlo_constant_name_.SetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), lmhlo_constant_name,
+      GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_allocated:xla.EntryFunctionAttributes.BufferParameterAttributes.lmhlo_constant_name)
+}
+inline ::std::string* EntryFunctionAttributes_BufferParameterAttributes::unsafe_arena_release_lmhlo_constant_name() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:xla.EntryFunctionAttributes.BufferParameterAttributes.lmhlo_constant_name)
+  GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
+  
+  return lmhlo_constant_name_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      GetArenaNoVirtual());
+}
+inline void EntryFunctionAttributes_BufferParameterAttributes::unsafe_arena_set_allocated_lmhlo_constant_name(
+    ::std::string* lmhlo_constant_name) {
+  GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
+  if (lmhlo_constant_name != NULL) {
+    
+  } else {
+    
+  }
+  lmhlo_constant_name_.UnsafeArenaSetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      lmhlo_constant_name, GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:xla.EntryFunctionAttributes.BufferParameterAttributes.lmhlo_constant_name)
+}
+
+// bool lmhlo_must_alias = 4;
+inline void EntryFunctionAttributes_BufferParameterAttributes::clear_lmhlo_must_alias() {
+  lmhlo_must_alias_ = false;
+}
+inline bool EntryFunctionAttributes_BufferParameterAttributes::lmhlo_must_alias() const {
+  // @@protoc_insertion_point(field_get:xla.EntryFunctionAttributes.BufferParameterAttributes.lmhlo_must_alias)
+  return lmhlo_must_alias_;
+}
+inline void EntryFunctionAttributes_BufferParameterAttributes::set_lmhlo_must_alias(bool value) {
+  
+  lmhlo_must_alias_ = value;
+  // @@protoc_insertion_point(field_set:xla.EntryFunctionAttributes.BufferParameterAttributes.lmhlo_must_alias)
+}
+
+// .xla.EntryFunctionAttributes.ShapeIndex lmhlo_output_index = 5;
+inline bool EntryFunctionAttributes_BufferParameterAttributes::has_lmhlo_output_index() const {
+  return this != internal_default_instance() && lmhlo_output_index_ != NULL;
+}
+inline void EntryFunctionAttributes_BufferParameterAttributes::clear_lmhlo_output_index() {
+  if (GetArenaNoVirtual() == NULL && lmhlo_output_index_ != NULL) {
+    delete lmhlo_output_index_;
+  }
+  lmhlo_output_index_ = NULL;
+}
+inline const ::xla::EntryFunctionAttributes_ShapeIndex& EntryFunctionAttributes_BufferParameterAttributes::_internal_lmhlo_output_index() const {
+  return *lmhlo_output_index_;
+}
+inline const ::xla::EntryFunctionAttributes_ShapeIndex& EntryFunctionAttributes_BufferParameterAttributes::lmhlo_output_index() const {
+  const ::xla::EntryFunctionAttributes_ShapeIndex* p = lmhlo_output_index_;
+  // @@protoc_insertion_point(field_get:xla.EntryFunctionAttributes.BufferParameterAttributes.lmhlo_output_index)
+  return p != NULL ? *p : *reinterpret_cast<const ::xla::EntryFunctionAttributes_ShapeIndex*>(
+      &::xla::_EntryFunctionAttributes_ShapeIndex_default_instance_);
+}
+inline ::xla::EntryFunctionAttributes_ShapeIndex* EntryFunctionAttributes_BufferParameterAttributes::release_lmhlo_output_index() {
+  // @@protoc_insertion_point(field_release:xla.EntryFunctionAttributes.BufferParameterAttributes.lmhlo_output_index)
+  
+  ::xla::EntryFunctionAttributes_ShapeIndex* temp = lmhlo_output_index_;
+  if (GetArenaNoVirtual() != NULL) {
+    temp = ::google::protobuf::internal::DuplicateIfNonNull(temp);
+  }
+  lmhlo_output_index_ = NULL;
+  return temp;
+}
+inline ::xla::EntryFunctionAttributes_ShapeIndex* EntryFunctionAttributes_BufferParameterAttributes::unsafe_arena_release_lmhlo_output_index() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:xla.EntryFunctionAttributes.BufferParameterAttributes.lmhlo_output_index)
+  
+  ::xla::EntryFunctionAttributes_ShapeIndex* temp = lmhlo_output_index_;
+  lmhlo_output_index_ = NULL;
+  return temp;
+}
+inline ::xla::EntryFunctionAttributes_ShapeIndex* EntryFunctionAttributes_BufferParameterAttributes::mutable_lmhlo_output_index() {
+  
+  if (lmhlo_output_index_ == NULL) {
+    auto* p = CreateMaybeMessage<::xla::EntryFunctionAttributes_ShapeIndex>(GetArenaNoVirtual());
+    lmhlo_output_index_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:xla.EntryFunctionAttributes.BufferParameterAttributes.lmhlo_output_index)
+  return lmhlo_output_index_;
+}
+inline void EntryFunctionAttributes_BufferParameterAttributes::set_allocated_lmhlo_output_index(::xla::EntryFunctionAttributes_ShapeIndex* lmhlo_output_index) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete lmhlo_output_index_;
+  }
+  if (lmhlo_output_index) {
+    ::google::protobuf::Arena* submessage_arena =
+      ::google::protobuf::Arena::GetArena(lmhlo_output_index);
+    if (message_arena != submessage_arena) {
+      lmhlo_output_index = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, lmhlo_output_index, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  lmhlo_output_index_ = lmhlo_output_index;
+  // @@protoc_insertion_point(field_set_allocated:xla.EntryFunctionAttributes.BufferParameterAttributes.lmhlo_output_index)
+}
+
+// -------------------------------------------------------------------
+
+// EntryFunctionAttributes
+
+// repeated .xla.EntryFunctionAttributes.BufferParameterAttributes buffers = 1;
+inline int EntryFunctionAttributes::buffers_size() const {
+  return buffers_.size();
+}
+inline void EntryFunctionAttributes::clear_buffers() {
+  buffers_.Clear();
+}
+inline ::xla::EntryFunctionAttributes_BufferParameterAttributes* EntryFunctionAttributes::mutable_buffers(int index) {
+  // @@protoc_insertion_point(field_mutable:xla.EntryFunctionAttributes.buffers)
+  return buffers_.Mutable(index);
+}
+inline ::google::protobuf::RepeatedPtrField< ::xla::EntryFunctionAttributes_BufferParameterAttributes >*
+EntryFunctionAttributes::mutable_buffers() {
+  // @@protoc_insertion_point(field_mutable_list:xla.EntryFunctionAttributes.buffers)
+  return &buffers_;
+}
+inline const ::xla::EntryFunctionAttributes_BufferParameterAttributes& EntryFunctionAttributes::buffers(int index) const {
+  // @@protoc_insertion_point(field_get:xla.EntryFunctionAttributes.buffers)
+  return buffers_.Get(index);
+}
+inline ::xla::EntryFunctionAttributes_BufferParameterAttributes* EntryFunctionAttributes::add_buffers() {
+  // @@protoc_insertion_point(field_add:xla.EntryFunctionAttributes.buffers)
+  return buffers_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::xla::EntryFunctionAttributes_BufferParameterAttributes >&
+EntryFunctionAttributes::buffers() const {
+  // @@protoc_insertion_point(field_list:xla.EntryFunctionAttributes.buffers)
+  return buffers_;
+}
+
+// string result_xla_shape = 2;
+inline void EntryFunctionAttributes::clear_result_xla_shape() {
+  result_xla_shape_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+inline const ::std::string& EntryFunctionAttributes::result_xla_shape() const {
+  // @@protoc_insertion_point(field_get:xla.EntryFunctionAttributes.result_xla_shape)
+  return result_xla_shape_.Get();
+}
+inline void EntryFunctionAttributes::set_result_xla_shape(const ::std::string& value) {
+  
+  result_xla_shape_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set:xla.EntryFunctionAttributes.result_xla_shape)
+}
+#if LANG_CXX11
+inline void EntryFunctionAttributes::set_result_xla_shape(::std::string&& value) {
+  
+  result_xla_shape_.Set(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_rvalue:xla.EntryFunctionAttributes.result_xla_shape)
+}
+#endif
+inline void EntryFunctionAttributes::set_result_xla_shape(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  
+  result_xla_shape_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
+              GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_char:xla.EntryFunctionAttributes.result_xla_shape)
+}
+inline void EntryFunctionAttributes::set_result_xla_shape(const char* value,
+    size_t size) {
+  
+  result_xla_shape_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_pointer:xla.EntryFunctionAttributes.result_xla_shape)
+}
+inline ::std::string* EntryFunctionAttributes::mutable_result_xla_shape() {
+  
+  // @@protoc_insertion_point(field_mutable:xla.EntryFunctionAttributes.result_xla_shape)
+  return result_xla_shape_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+inline ::std::string* EntryFunctionAttributes::release_result_xla_shape() {
+  // @@protoc_insertion_point(field_release:xla.EntryFunctionAttributes.result_xla_shape)
+  
+  return result_xla_shape_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+inline void EntryFunctionAttributes::set_allocated_result_xla_shape(::std::string* result_xla_shape) {
+  if (result_xla_shape != NULL) {
+    
+  } else {
+    
+  }
+  result_xla_shape_.SetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), result_xla_shape,
+      GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_allocated:xla.EntryFunctionAttributes.result_xla_shape)
+}
+inline ::std::string* EntryFunctionAttributes::unsafe_arena_release_result_xla_shape() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:xla.EntryFunctionAttributes.result_xla_shape)
+  GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
+  
+  return result_xla_shape_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      GetArenaNoVirtual());
+}
+inline void EntryFunctionAttributes::unsafe_arena_set_allocated_result_xla_shape(
+    ::std::string* result_xla_shape) {
+  GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
+  if (result_xla_shape != NULL) {
+    
+  } else {
+    
+  }
+  result_xla_shape_.UnsafeArenaSetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      result_xla_shape, GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:xla.EntryFunctionAttributes.result_xla_shape)
+}
+
+// -------------------------------------------------------------------
+
+// GpuBefExecutableProto
+
+// .xla.HloModuleProto hlo_module_proto = 1;
+inline bool GpuBefExecutableProto::has_hlo_module_proto() const {
+  return this != internal_default_instance() && hlo_module_proto_ != NULL;
+}
+inline void GpuBefExecutableProto::clear_hlo_module_proto() {
+  if (GetArenaNoVirtual() == NULL && hlo_module_proto_ != NULL) {
+    delete hlo_module_proto_;
+  }
+  hlo_module_proto_ = NULL;
+}
+inline const ::xla::HloModuleProto& GpuBefExecutableProto::_internal_hlo_module_proto() const {
+  return *hlo_module_proto_;
+}
+inline const ::xla::HloModuleProto& GpuBefExecutableProto::hlo_module_proto() const {
+  const ::xla::HloModuleProto* p = hlo_module_proto_;
+  // @@protoc_insertion_point(field_get:xla.GpuBefExecutableProto.hlo_module_proto)
+  return p != NULL ? *p : *reinterpret_cast<const ::xla::HloModuleProto*>(
+      &::xla::_HloModuleProto_default_instance_);
+}
+inline ::xla::HloModuleProto* GpuBefExecutableProto::release_hlo_module_proto() {
+  // @@protoc_insertion_point(field_release:xla.GpuBefExecutableProto.hlo_module_proto)
+  
+  ::xla::HloModuleProto* temp = hlo_module_proto_;
+  if (GetArenaNoVirtual() != NULL) {
+    temp = ::google::protobuf::internal::DuplicateIfNonNull(temp);
+  }
+  hlo_module_proto_ = NULL;
+  return temp;
+}
+inline ::xla::HloModuleProto* GpuBefExecutableProto::unsafe_arena_release_hlo_module_proto() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:xla.GpuBefExecutableProto.hlo_module_proto)
+  
+  ::xla::HloModuleProto* temp = hlo_module_proto_;
+  hlo_module_proto_ = NULL;
+  return temp;
+}
+inline ::xla::HloModuleProto* GpuBefExecutableProto::mutable_hlo_module_proto() {
+  
+  if (hlo_module_proto_ == NULL) {
+    auto* p = CreateMaybeMessage<::xla::HloModuleProto>(GetArenaNoVirtual());
+    hlo_module_proto_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:xla.GpuBefExecutableProto.hlo_module_proto)
+  return hlo_module_proto_;
+}
+inline void GpuBefExecutableProto::set_allocated_hlo_module_proto(::xla::HloModuleProto* hlo_module_proto) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete hlo_module_proto_;
+  }
+  if (hlo_module_proto) {
+    ::google::protobuf::Arena* submessage_arena =
+      ::google::protobuf::Arena::GetArena(hlo_module_proto);
+    if (message_arena != submessage_arena) {
+      hlo_module_proto = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, hlo_module_proto, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  hlo_module_proto_ = hlo_module_proto;
+  // @@protoc_insertion_point(field_set_allocated:xla.GpuBefExecutableProto.hlo_module_proto)
+}
+
+// bytes bef = 2;
+inline void GpuBefExecutableProto::clear_bef() {
+  bef_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+inline const ::std::string& GpuBefExecutableProto::bef() const {
+  // @@protoc_insertion_point(field_get:xla.GpuBefExecutableProto.bef)
+  return bef_.Get();
+}
+inline void GpuBefExecutableProto::set_bef(const ::std::string& value) {
+  
+  bef_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set:xla.GpuBefExecutableProto.bef)
+}
+#if LANG_CXX11
+inline void GpuBefExecutableProto::set_bef(::std::string&& value) {
+  
+  bef_.Set(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_rvalue:xla.GpuBefExecutableProto.bef)
+}
+#endif
+inline void GpuBefExecutableProto::set_bef(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  
+  bef_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
+              GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_char:xla.GpuBefExecutableProto.bef)
+}
+inline void GpuBefExecutableProto::set_bef(const void* value,
+    size_t size) {
+  
+  bef_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_pointer:xla.GpuBefExecutableProto.bef)
+}
+inline ::std::string* GpuBefExecutableProto::mutable_bef() {
+  
+  // @@protoc_insertion_point(field_mutable:xla.GpuBefExecutableProto.bef)
+  return bef_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+inline ::std::string* GpuBefExecutableProto::release_bef() {
+  // @@protoc_insertion_point(field_release:xla.GpuBefExecutableProto.bef)
+  
+  return bef_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+inline void GpuBefExecutableProto::set_allocated_bef(::std::string* bef) {
+  if (bef != NULL) {
+    
+  } else {
+    
+  }
+  bef_.SetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), bef,
+      GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_allocated:xla.GpuBefExecutableProto.bef)
+}
+inline ::std::string* GpuBefExecutableProto::unsafe_arena_release_bef() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:xla.GpuBefExecutableProto.bef)
+  GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
+  
+  return bef_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      GetArenaNoVirtual());
+}
+inline void GpuBefExecutableProto::unsafe_arena_set_allocated_bef(
+    ::std::string* bef) {
+  GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
+  if (bef != NULL) {
+    
+  } else {
+    
+  }
+  bef_.UnsafeArenaSetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      bef, GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:xla.GpuBefExecutableProto.bef)
+}
+
+// .xla.EntryFunctionAttributes entry_func_attrs = 3;
+inline bool GpuBefExecutableProto::has_entry_func_attrs() const {
+  return this != internal_default_instance() && entry_func_attrs_ != NULL;
+}
+inline void GpuBefExecutableProto::clear_entry_func_attrs() {
+  if (GetArenaNoVirtual() == NULL && entry_func_attrs_ != NULL) {
+    delete entry_func_attrs_;
+  }
+  entry_func_attrs_ = NULL;
+}
+inline const ::xla::EntryFunctionAttributes& GpuBefExecutableProto::_internal_entry_func_attrs() const {
+  return *entry_func_attrs_;
+}
+inline const ::xla::EntryFunctionAttributes& GpuBefExecutableProto::entry_func_attrs() const {
+  const ::xla::EntryFunctionAttributes* p = entry_func_attrs_;
+  // @@protoc_insertion_point(field_get:xla.GpuBefExecutableProto.entry_func_attrs)
+  return p != NULL ? *p : *reinterpret_cast<const ::xla::EntryFunctionAttributes*>(
+      &::xla::_EntryFunctionAttributes_default_instance_);
+}
+inline ::xla::EntryFunctionAttributes* GpuBefExecutableProto::release_entry_func_attrs() {
+  // @@protoc_insertion_point(field_release:xla.GpuBefExecutableProto.entry_func_attrs)
+  
+  ::xla::EntryFunctionAttributes* temp = entry_func_attrs_;
+  if (GetArenaNoVirtual() != NULL) {
+    temp = ::google::protobuf::internal::DuplicateIfNonNull(temp);
+  }
+  entry_func_attrs_ = NULL;
+  return temp;
+}
+inline ::xla::EntryFunctionAttributes* GpuBefExecutableProto::unsafe_arena_release_entry_func_attrs() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:xla.GpuBefExecutableProto.entry_func_attrs)
+  
+  ::xla::EntryFunctionAttributes* temp = entry_func_attrs_;
+  entry_func_attrs_ = NULL;
+  return temp;
+}
+inline ::xla::EntryFunctionAttributes* GpuBefExecutableProto::mutable_entry_func_attrs() {
+  
+  if (entry_func_attrs_ == NULL) {
+    auto* p = CreateMaybeMessage<::xla::EntryFunctionAttributes>(GetArenaNoVirtual());
+    entry_func_attrs_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:xla.GpuBefExecutableProto.entry_func_attrs)
+  return entry_func_attrs_;
+}
+inline void GpuBefExecutableProto::set_allocated_entry_func_attrs(::xla::EntryFunctionAttributes* entry_func_attrs) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete entry_func_attrs_;
+  }
+  if (entry_func_attrs) {
+    ::google::protobuf::Arena* submessage_arena =
+      ::google::protobuf::Arena::GetArena(entry_func_attrs);
+    if (message_arena != submessage_arena) {
+      entry_func_attrs = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, entry_func_attrs, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  entry_func_attrs_ = entry_func_attrs;
+  // @@protoc_insertion_point(field_set_allocated:xla.GpuBefExecutableProto.entry_func_attrs)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
@@ -9151,15 +12405,30 @@ inline void HloSnapshot::unsafe_arena_set_allocated_execution_platform(
 namespace google {
 namespace protobuf {
 
-template <> struct is_proto_enum< ::xla::HloInputOutputAliasProto_Kind> : ::std::true_type {};
+template <> struct is_proto_enum< ::xla::HloModuleProto_ProfileType> : ::std::true_type {};
 template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::xla::HloInputOutputAliasProto_Kind>() {
-  return ::xla::HloInputOutputAliasProto_Kind_descriptor();
+inline const EnumDescriptor* GetEnumDescriptor< ::xla::HloModuleProto_ProfileType>() {
+  return ::xla::HloModuleProto_ProfileType_descriptor();
 }
 template <> struct is_proto_enum< ::xla::HeapSimulatorTrace_Event_Kind> : ::std::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::xla::HeapSimulatorTrace_Event_Kind>() {
   return ::xla::HeapSimulatorTrace_Event_Kind_descriptor();
+}
+template <> struct is_proto_enum< ::xla::CustomCallSchedule> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::xla::CustomCallSchedule>() {
+  return ::xla::CustomCallSchedule_descriptor();
+}
+template <> struct is_proto_enum< ::xla::CustomCallApiVersion> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::xla::CustomCallApiVersion>() {
+  return ::xla::CustomCallApiVersion_descriptor();
+}
+template <> struct is_proto_enum< ::xla::Kind> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::xla::Kind>() {
+  return ::xla::Kind_descriptor();
 }
 
 }  // namespace protobuf

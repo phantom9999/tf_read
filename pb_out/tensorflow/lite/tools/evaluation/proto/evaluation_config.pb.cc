@@ -475,6 +475,9 @@ void EvaluationStageConfig::CopyFrom(const EvaluationStageConfig& from) {
 }
 
 bool EvaluationStageConfig::IsInitialized() const {
+  if (has_specification()) {
+    if (!this->specification_->IsInitialized()) return false;
+  }
   return true;
 }
 

@@ -254,23 +254,23 @@ class HloProfilePrinterData_HloInstructionInfo : public ::google::protobuf::Mess
   float transcendental_count() const;
   void set_transcendental_count(float value);
 
-  // float bytes_accessed = 6;
+  // int64 profile_index = 8;
+  void clear_profile_index();
+  static const int kProfileIndexFieldNumber = 8;
+  ::google::protobuf::int64 profile_index() const;
+  void set_profile_index(::google::protobuf::int64 value);
+
+  // int64 bytes_accessed = 9;
   void clear_bytes_accessed();
-  static const int kBytesAccessedFieldNumber = 6;
-  float bytes_accessed() const;
-  void set_bytes_accessed(float value);
+  static const int kBytesAccessedFieldNumber = 9;
+  ::google::protobuf::int64 bytes_accessed() const;
+  void set_bytes_accessed(::google::protobuf::int64 value);
 
   // float optimal_seconds = 7;
   void clear_optimal_seconds();
   static const int kOptimalSecondsFieldNumber = 7;
   float optimal_seconds() const;
   void set_optimal_seconds(float value);
-
-  // int64 profile_index = 8;
-  void clear_profile_index();
-  static const int kProfileIndexFieldNumber = 8;
-  ::google::protobuf::int64 profile_index() const;
-  void set_profile_index(::google::protobuf::int64 value);
 
   // @@protoc_insertion_point(class_scope:xla.HloProfilePrinterData.HloInstructionInfo)
  private:
@@ -284,9 +284,9 @@ class HloProfilePrinterData_HloInstructionInfo : public ::google::protobuf::Mess
   ::google::protobuf::internal::ArenaStringPtr category_;
   float flop_count_;
   float transcendental_count_;
-  float bytes_accessed_;
-  float optimal_seconds_;
   ::google::protobuf::int64 profile_index_;
+  ::google::protobuf::int64 bytes_accessed_;
+  float optimal_seconds_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_5fprofile_5fprinter_5fdata_2eproto::TableStruct;
 };
@@ -903,15 +903,15 @@ inline void HloProfilePrinterData_HloInstructionInfo::set_transcendental_count(f
   // @@protoc_insertion_point(field_set:xla.HloProfilePrinterData.HloInstructionInfo.transcendental_count)
 }
 
-// float bytes_accessed = 6;
+// int64 bytes_accessed = 9;
 inline void HloProfilePrinterData_HloInstructionInfo::clear_bytes_accessed() {
-  bytes_accessed_ = 0;
+  bytes_accessed_ = GOOGLE_LONGLONG(0);
 }
-inline float HloProfilePrinterData_HloInstructionInfo::bytes_accessed() const {
+inline ::google::protobuf::int64 HloProfilePrinterData_HloInstructionInfo::bytes_accessed() const {
   // @@protoc_insertion_point(field_get:xla.HloProfilePrinterData.HloInstructionInfo.bytes_accessed)
   return bytes_accessed_;
 }
-inline void HloProfilePrinterData_HloInstructionInfo::set_bytes_accessed(float value) {
+inline void HloProfilePrinterData_HloInstructionInfo::set_bytes_accessed(::google::protobuf::int64 value) {
   
   bytes_accessed_ = value;
   // @@protoc_insertion_point(field_set:xla.HloProfilePrinterData.HloInstructionInfo.bytes_accessed)

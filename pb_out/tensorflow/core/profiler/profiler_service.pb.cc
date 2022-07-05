@@ -19,27 +19,18 @@
 #endif
 // @@protoc_insertion_point(includes)
 
-namespace protobuf_tensorflow_2fcore_2fframework_2fgraph_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fframework_2fgraph_2eproto ::google::protobuf::internal::SCCInfo<3> scc_info_GraphDef;
-}  // namespace protobuf_tensorflow_2fcore_2fframework_2fgraph_2eproto
-namespace protobuf_tensorflow_2fcore_2fprofiler_2fop_5fprofile_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprofiler_2fop_5fprofile_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_Profile;
-}  // namespace protobuf_tensorflow_2fcore_2fprofiler_2fop_5fprofile_2eproto
+namespace protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5foptions_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5foptions_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ProfileOptions;
+}  // namespace protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5foptions_2eproto
 namespace protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ProfileOptions;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ProfileToolData;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ToolRequestOptions;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_ProfileRequest_ToolOptionsEntry_DoNotUse;
 }  // namespace protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_2eproto
-namespace protobuf_tensorflow_2fcore_2fprotobuf_2fconfig_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2fconfig_2eproto ::google::protobuf::internal::SCCInfo<4> scc_info_RunMetadata;
-}  // namespace protobuf_tensorflow_2fcore_2fprotobuf_2fconfig_2eproto
+namespace protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_5fmonitor_5fresult_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_5fmonitor_5fresult_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ProfilerServiceMonitorResult;
+}  // namespace protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_5fmonitor_5fresult_2eproto
 namespace tensorflow {
-class ProfileOptionsDefaultTypeInternal {
- public:
-  ::google::protobuf::internal::ExplicitlyConstructed<ProfileOptions>
-      _instance;
-} _ProfileOptions_default_instance_;
 class ToolRequestOptionsDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<ToolRequestOptions>
@@ -65,6 +56,16 @@ class ProfileResponseDefaultTypeInternal {
   ::google::protobuf::internal::ExplicitlyConstructed<ProfileResponse>
       _instance;
 } _ProfileResponse_default_instance_;
+class TerminateRequestDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<TerminateRequest>
+      _instance;
+} _TerminateRequest_default_instance_;
+class TerminateResponseDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<TerminateResponse>
+      _instance;
+} _TerminateResponse_default_instance_;
 class MonitorRequestDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<MonitorRequest>
@@ -77,20 +78,6 @@ class MonitorResponseDefaultTypeInternal {
 } _MonitorResponse_default_instance_;
 }  // namespace tensorflow
 namespace protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_2eproto {
-static void InitDefaultsProfileOptions() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::tensorflow::_ProfileOptions_default_instance_;
-    new (ptr) ::tensorflow::ProfileOptions();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::tensorflow::ProfileOptions::InitAsDefaultInstance();
-}
-
-::google::protobuf::internal::SCCInfo<0> scc_info_ProfileOptions =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProfileOptions}, {}};
-
 static void InitDefaultsToolRequestOptions() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -133,7 +120,7 @@ static void InitDefaultsProfileRequest() {
 ::google::protobuf::internal::SCCInfo<2> scc_info_ProfileRequest =
     {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsProfileRequest}, {
       &protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_2eproto::scc_info_ProfileRequest_ToolOptionsEntry_DoNotUse.base,
-      &protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_2eproto::scc_info_ProfileOptions.base,}};
+      &protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5foptions_2eproto::scc_info_ProfileOptions.base,}};
 
 static void InitDefaultsProfileToolData() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -160,12 +147,37 @@ static void InitDefaultsProfileResponse() {
   ::tensorflow::ProfileResponse::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<4> scc_info_ProfileResponse =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 4, InitDefaultsProfileResponse}, {
-      &protobuf_tensorflow_2fcore_2fframework_2fgraph_2eproto::scc_info_GraphDef.base,
-      &protobuf_tensorflow_2fcore_2fprotobuf_2fconfig_2eproto::scc_info_RunMetadata.base,
-      &protobuf_tensorflow_2fcore_2fprofiler_2fop_5fprofile_2eproto::scc_info_Profile.base,
+::google::protobuf::internal::SCCInfo<1> scc_info_ProfileResponse =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsProfileResponse}, {
       &protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_2eproto::scc_info_ProfileToolData.base,}};
+
+static void InitDefaultsTerminateRequest() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::tensorflow::_TerminateRequest_default_instance_;
+    new (ptr) ::tensorflow::TerminateRequest();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::tensorflow::TerminateRequest::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<0> scc_info_TerminateRequest =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTerminateRequest}, {}};
+
+static void InitDefaultsTerminateResponse() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::tensorflow::_TerminateResponse_default_instance_;
+    new (ptr) ::tensorflow::TerminateResponse();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::tensorflow::TerminateResponse::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<0> scc_info_TerminateResponse =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTerminateResponse}, {}};
 
 static void InitDefaultsMonitorRequest() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -192,29 +204,25 @@ static void InitDefaultsMonitorResponse() {
   ::tensorflow::MonitorResponse::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_MonitorResponse =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsMonitorResponse}, {}};
+::google::protobuf::internal::SCCInfo<1> scc_info_MonitorResponse =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsMonitorResponse}, {
+      &protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_5fmonitor_5fresult_2eproto::scc_info_ProfilerServiceMonitorResult.base,}};
 
 void InitDefaults() {
-  ::google::protobuf::internal::InitSCC(&scc_info_ProfileOptions.base);
   ::google::protobuf::internal::InitSCC(&scc_info_ToolRequestOptions.base);
   ::google::protobuf::internal::InitSCC(&scc_info_ProfileRequest_ToolOptionsEntry_DoNotUse.base);
   ::google::protobuf::internal::InitSCC(&scc_info_ProfileRequest.base);
   ::google::protobuf::internal::InitSCC(&scc_info_ProfileToolData.base);
   ::google::protobuf::internal::InitSCC(&scc_info_ProfileResponse.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TerminateRequest.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TerminateResponse.base);
   ::google::protobuf::internal::InitSCC(&scc_info_MonitorRequest.base);
   ::google::protobuf::internal::InitSCC(&scc_info_MonitorResponse.base);
 }
 
-::google::protobuf::Metadata file_level_metadata[8];
+::google::protobuf::Metadata file_level_metadata[9];
 
 const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::ProfileOptions, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::ProfileOptions, include_dataset_ops_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::ToolRequestOptions, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -256,12 +264,19 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::ProfileResponse, computation_graph_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::ProfileResponse, hlo_metadata_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::ProfileResponse, encoded_trace_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::ProfileResponse, op_profile_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::ProfileResponse, tool_data_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::ProfileResponse, empty_trace_),
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::TerminateRequest, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::TerminateRequest, session_id_),
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::TerminateResponse, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::MonitorRequest, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -276,25 +291,28 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::MonitorResponse, data_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::MonitorResponse, monitor_result_),
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::tensorflow::ProfileOptions)},
-  { 6, -1, sizeof(::tensorflow::ToolRequestOptions)},
-  { 13, 20, sizeof(::tensorflow::ProfileRequest_ToolOptionsEntry_DoNotUse)},
-  { 22, -1, sizeof(::tensorflow::ProfileRequest)},
-  { 35, -1, sizeof(::tensorflow::ProfileToolData)},
-  { 42, -1, sizeof(::tensorflow::ProfileResponse)},
-  { 53, -1, sizeof(::tensorflow::MonitorRequest)},
-  { 61, -1, sizeof(::tensorflow::MonitorResponse)},
+  { 0, -1, sizeof(::tensorflow::ToolRequestOptions)},
+  { 7, 14, sizeof(::tensorflow::ProfileRequest_ToolOptionsEntry_DoNotUse)},
+  { 16, -1, sizeof(::tensorflow::ProfileRequest)},
+  { 29, -1, sizeof(::tensorflow::ProfileToolData)},
+  { 36, -1, sizeof(::tensorflow::ProfileResponse)},
+  { 43, -1, sizeof(::tensorflow::TerminateRequest)},
+  { 49, -1, sizeof(::tensorflow::TerminateResponse)},
+  { 54, -1, sizeof(::tensorflow::MonitorRequest)},
+  { 62, -1, sizeof(::tensorflow::MonitorResponse)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::_ProfileOptions_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::_ToolRequestOptions_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::_ProfileRequest_ToolOptionsEntry_DoNotUse_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::_ProfileRequest_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::_ProfileToolData_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::_ProfileResponse_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::_TerminateRequest_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::_TerminateResponse_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::_MonitorRequest_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::_MonitorResponse_default_instance_),
 };
@@ -314,51 +332,51 @@ void protobuf_AssignDescriptorsOnce() {
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 8);
+  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 9);
 }
 
 void AddDescriptorsImpl() {
   InitDefaults();
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n/tensorflow/core/profiler/profiler_serv"
-      "ice.proto\022\ntensorflow\032%tensorflow/core/f"
-      "ramework/graph.proto\032)tensorflow/core/pr"
-      "ofiler/op_profile.proto\032%tensorflow/core"
-      "/protobuf/config.proto\"-\n\016ProfileOptions"
-      "\022\033\n\023include_dataset_ops\030\001 \001(\010\"B\n\022ToolReq"
-      "uestOptions\022\026\n\016output_formats\030\002 \001(\t\022\024\n\014s"
-      "ave_to_repo\030\003 \001(\010\"\311\002\n\016ProfileRequest\022\023\n\013"
-      "duration_ms\030\001 \001(\004\022\022\n\nmax_events\030\002 \001(\004\022\r\n"
-      "\005tools\030\003 \003(\t\022A\n\014tool_options\030\010 \003(\0132+.ten"
-      "sorflow.ProfileRequest.ToolOptionsEntry\022"
-      "(\n\004opts\030\004 \001(\0132\032.tensorflow.ProfileOption"
-      "s\022\027\n\017repository_root\030\005 \001(\t\022\022\n\nsession_id"
-      "\030\006 \001(\t\022\021\n\thost_name\030\007 \001(\t\032R\n\020ToolOptions"
-      "Entry\022\013\n\003key\030\001 \001(\t\022-\n\005value\030\002 \001(\0132\036.tens"
-      "orflow.ToolRequestOptions:\0028\001\"-\n\017Profile"
-      "ToolData\022\014\n\004name\030\001 \001(\t\022\014\n\004data\030\002 \001(\014\"\220\002\n"
-      "\017ProfileResponse\022/\n\021computation_graph\030\002 "
-      "\003(\0132\024.tensorflow.GraphDef\022-\n\014hlo_metadat"
-      "a\030\005 \001(\0132\027.tensorflow.RunMetadata\022\025\n\renco"
-      "ded_trace\030\003 \001(\014\022;\n\nop_profile\030\004 \001(\0132\'.te"
-      "nsorflow.profiler.op_profile.Profile\022.\n\t"
-      "tool_data\030\006 \003(\0132\033.tensorflow.ProfileTool"
-      "Data\022\023\n\013empty_trace\030\007 \001(\010J\004\010\001\020\002\"R\n\016Monit"
-      "orRequest\022\023\n\013duration_ms\030\001 \001(\004\022\030\n\020monito"
-      "ring_level\030\002 \001(\005\022\021\n\ttimestamp\030\003 \001(\010\"\037\n\017M"
-      "onitorResponse\022\014\n\004data\030\001 \001(\t2\235\001\n\017Profile"
-      "rService\022D\n\007Profile\022\032.tensorflow.Profile"
-      "Request\032\033.tensorflow.ProfileResponse\"\000\022D"
+      "ice.proto\022\ntensorflow\032/tensorflow/core/p"
+      "rofiler/profiler_options.proto\032>tensorfl"
+      "ow/core/profiler/profiler_service_monito"
+      "r_result.proto\"B\n\022ToolRequestOptions\022\026\n\016"
+      "output_formats\030\002 \001(\t\022\024\n\014save_to_repo\030\003 \001"
+      "(\010\"\311\002\n\016ProfileRequest\022\023\n\013duration_ms\030\001 \001"
+      "(\004\022\022\n\nmax_events\030\002 \001(\004\022\r\n\005tools\030\003 \003(\t\022A\n"
+      "\014tool_options\030\010 \003(\0132+.tensorflow.Profile"
+      "Request.ToolOptionsEntry\022(\n\004opts\030\004 \001(\0132\032"
+      ".tensorflow.ProfileOptions\022\027\n\017repository"
+      "_root\030\005 \001(\t\022\022\n\nsession_id\030\006 \001(\t\022\021\n\thost_"
+      "name\030\007 \001(\t\032R\n\020ToolOptionsEntry\022\013\n\003key\030\001 "
+      "\001(\t\022-\n\005value\030\002 \001(\0132\036.tensorflow.ToolRequ"
+      "estOptions:\0028\001\"-\n\017ProfileToolData\022\014\n\004nam"
+      "e\030\001 \001(\t\022\014\n\004data\030\002 \001(\014\"t\n\017ProfileResponse"
+      "\022.\n\ttool_data\030\006 \003(\0132\033.tensorflow.Profile"
+      "ToolData\022\023\n\013empty_trace\030\007 \001(\010J\004\010\001\020\002J\004\010\002\020"
+      "\003J\004\010\003\020\004J\004\010\004\020\005J\004\010\005\020\006\"&\n\020TerminateRequest\022"
+      "\022\n\nsession_id\030\001 \001(\t\"\023\n\021TerminateResponse"
+      "\"R\n\016MonitorRequest\022\023\n\013duration_ms\030\001 \001(\004\022"
+      "\030\n\020monitoring_level\030\002 \001(\005\022\021\n\ttimestamp\030\003"
+      " \001(\010\"\221\001\n\017MonitorResponse\022\014\n\004data\030\001 \001(\t\022@"
+      "\n\016monitor_result\030\n \001(\0132(.tensorflow.Prof"
+      "ilerServiceMonitorResultJ\004\010\002\020\003J\004\010\003\020\004J\004\010\004"
+      "\020\005J\004\010\005\020\006J\004\010\006\020\007J\004\010\007\020\010J\004\010\010\020\tJ\004\010\t\020\n2\351\001\n\017Pro"
+      "filerService\022D\n\007Profile\022\032.tensorflow.Pro"
+      "fileRequest\032\033.tensorflow.ProfileResponse"
+      "\"\000\022J\n\tTerminate\022\034.tensorflow.TerminateRe"
+      "quest\032\035.tensorflow.TerminateResponse\"\000\022D"
       "\n\007Monitor\022\032.tensorflow.MonitorRequest\032\033."
       "tensorflow.MonitorResponse\"\000b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 1236);
+      descriptor, 1276);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/profiler/profiler_service.proto", &protobuf_RegisterTypes);
-  ::protobuf_tensorflow_2fcore_2fframework_2fgraph_2eproto::AddDescriptors();
-  ::protobuf_tensorflow_2fcore_2fprofiler_2fop_5fprofile_2eproto::AddDescriptors();
-  ::protobuf_tensorflow_2fcore_2fprotobuf_2fconfig_2eproto::AddDescriptors();
+  ::protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5foptions_2eproto::AddDescriptors();
+  ::protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_5fmonitor_5fresult_2eproto::AddDescriptors();
 }
 
 void AddDescriptors() {
@@ -373,227 +391,6 @@ struct StaticDescriptorInitializer {
 } static_descriptor_initializer;
 }  // namespace protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_2eproto
 namespace tensorflow {
-
-// ===================================================================
-
-void ProfileOptions::InitAsDefaultInstance() {
-}
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int ProfileOptions::kIncludeDatasetOpsFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-ProfileOptions::ProfileOptions()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_2eproto::scc_info_ProfileOptions.base);
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.ProfileOptions)
-}
-ProfileOptions::ProfileOptions(const ProfileOptions& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  include_dataset_ops_ = from.include_dataset_ops_;
-  // @@protoc_insertion_point(copy_constructor:tensorflow.ProfileOptions)
-}
-
-void ProfileOptions::SharedCtor() {
-  include_dataset_ops_ = false;
-}
-
-ProfileOptions::~ProfileOptions() {
-  // @@protoc_insertion_point(destructor:tensorflow.ProfileOptions)
-  SharedDtor();
-}
-
-void ProfileOptions::SharedDtor() {
-}
-
-void ProfileOptions::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
-}
-const ::google::protobuf::Descriptor* ProfileOptions::descriptor() {
-  ::protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
-const ProfileOptions& ProfileOptions::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_2eproto::scc_info_ProfileOptions.base);
-  return *internal_default_instance();
-}
-
-
-void ProfileOptions::Clear() {
-// @@protoc_insertion_point(message_clear_start:tensorflow.ProfileOptions)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  include_dataset_ops_ = false;
-  _internal_metadata_.Clear();
-}
-
-bool ProfileOptions::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.ProfileOptions)
-  for (;;) {
-    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // bool include_dataset_ops = 1;
-      case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, &include_dataset_ops_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::google::protobuf::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.ProfileOptions)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.ProfileOptions)
-  return false;
-#undef DO_
-}
-
-void ProfileOptions::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.ProfileOptions)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // bool include_dataset_ops = 1;
-  if (this->include_dataset_ops() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteBool(1, this->include_dataset_ops(), output);
-  }
-
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.ProfileOptions)
-}
-
-::google::protobuf::uint8* ProfileOptions::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
-  // @@protoc_insertion_point(serialize_to_array_start:tensorflow.ProfileOptions)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // bool include_dataset_ops = 1;
-  if (this->include_dataset_ops() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(1, this->include_dataset_ops(), target);
-  }
-
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
-  }
-  // @@protoc_insertion_point(serialize_to_array_end:tensorflow.ProfileOptions)
-  return target;
-}
-
-size_t ProfileOptions::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:tensorflow.ProfileOptions)
-  size_t total_size = 0;
-
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
-  }
-  // bool include_dataset_ops = 1;
-  if (this->include_dataset_ops() != 0) {
-    total_size += 1 + 1;
-  }
-
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
-}
-
-void ProfileOptions::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:tensorflow.ProfileOptions)
-  GOOGLE_DCHECK_NE(&from, this);
-  const ProfileOptions* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const ProfileOptions>(
-          &from);
-  if (source == NULL) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:tensorflow.ProfileOptions)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:tensorflow.ProfileOptions)
-    MergeFrom(*source);
-  }
-}
-
-void ProfileOptions::MergeFrom(const ProfileOptions& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.ProfileOptions)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  if (from.include_dataset_ops() != 0) {
-    set_include_dataset_ops(from.include_dataset_ops());
-  }
-}
-
-void ProfileOptions::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:tensorflow.ProfileOptions)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void ProfileOptions::CopyFrom(const ProfileOptions& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:tensorflow.ProfileOptions)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool ProfileOptions::IsInitialized() const {
-  return true;
-}
-
-void ProfileOptions::Swap(ProfileOptions* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void ProfileOptions::InternalSwap(ProfileOptions* other) {
-  using std::swap;
-  swap(include_dataset_ops_, other->include_dataset_ops_);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-}
-
-::google::protobuf::Metadata ProfileOptions::GetMetadata() const {
-  protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_2eproto::file_level_metadata[kIndexInFileMessages];
-}
-
 
 // ===================================================================
 
@@ -883,7 +680,7 @@ void ProfileRequest_ToolOptionsEntry_DoNotUse::MergeFrom(const ProfileRequest_To
 }
 ::google::protobuf::Metadata ProfileRequest_ToolOptionsEntry_DoNotUse::GetMetadata() const {
   ::protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_2eproto::file_level_metadata[2];
+  return ::protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_2eproto::file_level_metadata[1];
 }
 void ProfileRequest_ToolOptionsEntry_DoNotUse::MergeFrom(
     const ::google::protobuf::Message& other) {
@@ -896,6 +693,12 @@ void ProfileRequest_ToolOptionsEntry_DoNotUse::MergeFrom(
 void ProfileRequest::InitAsDefaultInstance() {
   ::tensorflow::_ProfileRequest_default_instance_._instance.get_mutable()->opts_ = const_cast< ::tensorflow::ProfileOptions*>(
       ::tensorflow::ProfileOptions::internal_default_instance());
+}
+void ProfileRequest::clear_opts() {
+  if (GetArenaNoVirtual() == NULL && opts_ != NULL) {
+    delete opts_;
+  }
+  opts_ = NULL;
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int ProfileRequest::kDurationMsFieldNumber;
@@ -1864,31 +1667,8 @@ void ProfileToolData::InternalSwap(ProfileToolData* other) {
 // ===================================================================
 
 void ProfileResponse::InitAsDefaultInstance() {
-  ::tensorflow::_ProfileResponse_default_instance_._instance.get_mutable()->hlo_metadata_ = const_cast< ::tensorflow::RunMetadata*>(
-      ::tensorflow::RunMetadata::internal_default_instance());
-  ::tensorflow::_ProfileResponse_default_instance_._instance.get_mutable()->op_profile_ = const_cast< ::tensorflow::profiler::op_profile::Profile*>(
-      ::tensorflow::profiler::op_profile::Profile::internal_default_instance());
-}
-void ProfileResponse::clear_computation_graph() {
-  computation_graph_.Clear();
-}
-void ProfileResponse::clear_hlo_metadata() {
-  if (GetArenaNoVirtual() == NULL && hlo_metadata_ != NULL) {
-    delete hlo_metadata_;
-  }
-  hlo_metadata_ = NULL;
-}
-void ProfileResponse::clear_op_profile() {
-  if (GetArenaNoVirtual() == NULL && op_profile_ != NULL) {
-    delete op_profile_;
-  }
-  op_profile_ = NULL;
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int ProfileResponse::kComputationGraphFieldNumber;
-const int ProfileResponse::kHloMetadataFieldNumber;
-const int ProfileResponse::kEncodedTraceFieldNumber;
-const int ProfileResponse::kOpProfileFieldNumber;
 const int ProfileResponse::kToolDataFieldNumber;
 const int ProfileResponse::kEmptyTraceFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
@@ -1903,32 +1683,14 @@ ProfileResponse::ProfileResponse()
 ProfileResponse::ProfileResponse(const ProfileResponse& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL),
-      computation_graph_(from.computation_graph_),
       tool_data_(from.tool_data_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  encoded_trace_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.encoded_trace().size() > 0) {
-    encoded_trace_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.encoded_trace_);
-  }
-  if (from.has_op_profile()) {
-    op_profile_ = new ::tensorflow::profiler::op_profile::Profile(*from.op_profile_);
-  } else {
-    op_profile_ = NULL;
-  }
-  if (from.has_hlo_metadata()) {
-    hlo_metadata_ = new ::tensorflow::RunMetadata(*from.hlo_metadata_);
-  } else {
-    hlo_metadata_ = NULL;
-  }
   empty_trace_ = from.empty_trace_;
   // @@protoc_insertion_point(copy_constructor:tensorflow.ProfileResponse)
 }
 
 void ProfileResponse::SharedCtor() {
-  encoded_trace_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&op_profile_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&empty_trace_) -
-      reinterpret_cast<char*>(&op_profile_)) + sizeof(empty_trace_));
+  empty_trace_ = false;
 }
 
 ProfileResponse::~ProfileResponse() {
@@ -1937,9 +1699,6 @@ ProfileResponse::~ProfileResponse() {
 }
 
 void ProfileResponse::SharedDtor() {
-  encoded_trace_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) delete op_profile_;
-  if (this != internal_default_instance()) delete hlo_metadata_;
 }
 
 void ProfileResponse::SetCachedSize(int size) const {
@@ -1962,17 +1721,7 @@ void ProfileResponse::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  computation_graph_.Clear();
   tool_data_.Clear();
-  encoded_trace_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && op_profile_ != NULL) {
-    delete op_profile_;
-  }
-  op_profile_ = NULL;
-  if (GetArenaNoVirtual() == NULL && hlo_metadata_ != NULL) {
-    delete hlo_metadata_;
-  }
-  hlo_metadata_ = NULL;
   empty_trace_ = false;
   _internal_metadata_.Clear();
 }
@@ -1987,54 +1736,6 @@ bool ProfileResponse::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // repeated .tensorflow.GraphDef computation_graph = 2;
-      case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
-                input, add_computation_graph()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // bytes encoded_trace = 3;
-      case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
-                input, this->mutable_encoded_trace()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.profiler.op_profile.Profile op_profile = 4;
-      case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
-               input, mutable_op_profile()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.RunMetadata hlo_metadata = 5;
-      case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
-               input, mutable_hlo_metadata()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
       // repeated .tensorflow.ProfileToolData tool_data = 6;
       case 6: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
@@ -2087,33 +1788,6 @@ void ProfileResponse::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // repeated .tensorflow.GraphDef computation_graph = 2;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->computation_graph_size()); i < n; i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2,
-      this->computation_graph(static_cast<int>(i)),
-      output);
-  }
-
-  // bytes encoded_trace = 3;
-  if (this->encoded_trace().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
-      3, this->encoded_trace(), output);
-  }
-
-  // .tensorflow.profiler.op_profile.Profile op_profile = 4;
-  if (this->has_op_profile()) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      4, this->_internal_op_profile(), output);
-  }
-
-  // .tensorflow.RunMetadata hlo_metadata = 5;
-  if (this->has_hlo_metadata()) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      5, this->_internal_hlo_metadata(), output);
-  }
-
   // repeated .tensorflow.ProfileToolData tool_data = 6;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->tool_data_size()); i < n; i++) {
@@ -2141,35 +1815,6 @@ void ProfileResponse::SerializeWithCachedSizes(
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.ProfileResponse)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
-
-  // repeated .tensorflow.GraphDef computation_graph = 2;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->computation_graph_size()); i < n; i++) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        2, this->computation_graph(static_cast<int>(i)), deterministic, target);
-  }
-
-  // bytes encoded_trace = 3;
-  if (this->encoded_trace().size() > 0) {
-    target =
-      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
-        3, this->encoded_trace(), target);
-  }
-
-  // .tensorflow.profiler.op_profile.Profile op_profile = 4;
-  if (this->has_op_profile()) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        4, this->_internal_op_profile(), deterministic, target);
-  }
-
-  // .tensorflow.RunMetadata hlo_metadata = 5;
-  if (this->has_hlo_metadata()) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        5, this->_internal_hlo_metadata(), deterministic, target);
-  }
 
   // repeated .tensorflow.ProfileToolData tool_data = 6;
   for (unsigned int i = 0,
@@ -2201,17 +1846,6 @@ size_t ProfileResponse::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
-  // repeated .tensorflow.GraphDef computation_graph = 2;
-  {
-    unsigned int count = static_cast<unsigned int>(this->computation_graph_size());
-    total_size += 1UL * count;
-    for (unsigned int i = 0; i < count; i++) {
-      total_size +=
-        ::google::protobuf::internal::WireFormatLite::MessageSize(
-          this->computation_graph(static_cast<int>(i)));
-    }
-  }
-
   // repeated .tensorflow.ProfileToolData tool_data = 6;
   {
     unsigned int count = static_cast<unsigned int>(this->tool_data_size());
@@ -2221,27 +1855,6 @@ size_t ProfileResponse::ByteSizeLong() const {
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           this->tool_data(static_cast<int>(i)));
     }
-  }
-
-  // bytes encoded_trace = 3;
-  if (this->encoded_trace().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::BytesSize(
-        this->encoded_trace());
-  }
-
-  // .tensorflow.profiler.op_profile.Profile op_profile = 4;
-  if (this->has_op_profile()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *op_profile_);
-  }
-
-  // .tensorflow.RunMetadata hlo_metadata = 5;
-  if (this->has_hlo_metadata()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *hlo_metadata_);
   }
 
   // bool empty_trace = 7;
@@ -2276,18 +1889,7 @@ void ProfileResponse::MergeFrom(const ProfileResponse& from) {
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  computation_graph_.MergeFrom(from.computation_graph_);
   tool_data_.MergeFrom(from.tool_data_);
-  if (from.encoded_trace().size() > 0) {
-
-    encoded_trace_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.encoded_trace_);
-  }
-  if (from.has_op_profile()) {
-    mutable_op_profile()->::tensorflow::profiler::op_profile::Profile::MergeFrom(from.op_profile());
-  }
-  if (from.has_hlo_metadata()) {
-    mutable_hlo_metadata()->::tensorflow::RunMetadata::MergeFrom(from.hlo_metadata());
-  }
   if (from.empty_trace() != 0) {
     set_empty_trace(from.empty_trace());
   }
@@ -2317,17 +1919,433 @@ void ProfileResponse::Swap(ProfileResponse* other) {
 }
 void ProfileResponse::InternalSwap(ProfileResponse* other) {
   using std::swap;
-  CastToBase(&computation_graph_)->InternalSwap(CastToBase(&other->computation_graph_));
   CastToBase(&tool_data_)->InternalSwap(CastToBase(&other->tool_data_));
-  encoded_trace_.Swap(&other->encoded_trace_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  swap(op_profile_, other->op_profile_);
-  swap(hlo_metadata_, other->hlo_metadata_);
   swap(empty_trace_, other->empty_trace_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata ProfileResponse::GetMetadata() const {
+  protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void TerminateRequest::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int TerminateRequest::kSessionIdFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+TerminateRequest::TerminateRequest()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_2eproto::scc_info_TerminateRequest.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:tensorflow.TerminateRequest)
+}
+TerminateRequest::TerminateRequest(const TerminateRequest& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  session_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.session_id().size() > 0) {
+    session_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.session_id_);
+  }
+  // @@protoc_insertion_point(copy_constructor:tensorflow.TerminateRequest)
+}
+
+void TerminateRequest::SharedCtor() {
+  session_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+
+TerminateRequest::~TerminateRequest() {
+  // @@protoc_insertion_point(destructor:tensorflow.TerminateRequest)
+  SharedDtor();
+}
+
+void TerminateRequest::SharedDtor() {
+  session_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+
+void TerminateRequest::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* TerminateRequest::descriptor() {
+  ::protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const TerminateRequest& TerminateRequest::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_2eproto::scc_info_TerminateRequest.base);
+  return *internal_default_instance();
+}
+
+
+void TerminateRequest::Clear() {
+// @@protoc_insertion_point(message_clear_start:tensorflow.TerminateRequest)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  session_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _internal_metadata_.Clear();
+}
+
+bool TerminateRequest::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:tensorflow.TerminateRequest)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string session_id = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_session_id()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->session_id().data(), static_cast<int>(this->session_id().length()),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "tensorflow.TerminateRequest.session_id"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:tensorflow.TerminateRequest)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:tensorflow.TerminateRequest)
+  return false;
+#undef DO_
+}
+
+void TerminateRequest::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:tensorflow.TerminateRequest)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string session_id = 1;
+  if (this->session_id().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->session_id().data(), static_cast<int>(this->session_id().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "tensorflow.TerminateRequest.session_id");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->session_id(), output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:tensorflow.TerminateRequest)
+}
+
+::google::protobuf::uint8* TerminateRequest::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:tensorflow.TerminateRequest)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string session_id = 1;
+  if (this->session_id().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->session_id().data(), static_cast<int>(this->session_id().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "tensorflow.TerminateRequest.session_id");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        1, this->session_id(), target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:tensorflow.TerminateRequest)
+  return target;
+}
+
+size_t TerminateRequest::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:tensorflow.TerminateRequest)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // string session_id = 1;
+  if (this->session_id().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->session_id());
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void TerminateRequest::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:tensorflow.TerminateRequest)
+  GOOGLE_DCHECK_NE(&from, this);
+  const TerminateRequest* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const TerminateRequest>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:tensorflow.TerminateRequest)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:tensorflow.TerminateRequest)
+    MergeFrom(*source);
+  }
+}
+
+void TerminateRequest::MergeFrom(const TerminateRequest& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.TerminateRequest)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.session_id().size() > 0) {
+
+    session_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.session_id_);
+  }
+}
+
+void TerminateRequest::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:tensorflow.TerminateRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void TerminateRequest::CopyFrom(const TerminateRequest& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:tensorflow.TerminateRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool TerminateRequest::IsInitialized() const {
+  return true;
+}
+
+void TerminateRequest::Swap(TerminateRequest* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void TerminateRequest::InternalSwap(TerminateRequest* other) {
+  using std::swap;
+  session_id_.Swap(&other->session_id_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata TerminateRequest::GetMetadata() const {
+  protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void TerminateResponse::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+TerminateResponse::TerminateResponse()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_2eproto::scc_info_TerminateResponse.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:tensorflow.TerminateResponse)
+}
+TerminateResponse::TerminateResponse(const TerminateResponse& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:tensorflow.TerminateResponse)
+}
+
+void TerminateResponse::SharedCtor() {
+}
+
+TerminateResponse::~TerminateResponse() {
+  // @@protoc_insertion_point(destructor:tensorflow.TerminateResponse)
+  SharedDtor();
+}
+
+void TerminateResponse::SharedDtor() {
+}
+
+void TerminateResponse::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* TerminateResponse::descriptor() {
+  ::protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const TerminateResponse& TerminateResponse::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_2eproto::scc_info_TerminateResponse.base);
+  return *internal_default_instance();
+}
+
+
+void TerminateResponse::Clear() {
+// @@protoc_insertion_point(message_clear_start:tensorflow.TerminateResponse)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _internal_metadata_.Clear();
+}
+
+bool TerminateResponse::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:tensorflow.TerminateResponse)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+  handle_unusual:
+    if (tag == 0) {
+      goto success;
+    }
+    DO_(::google::protobuf::internal::WireFormat::SkipField(
+          input, tag, _internal_metadata_.mutable_unknown_fields()));
+  }
+success:
+  // @@protoc_insertion_point(parse_success:tensorflow.TerminateResponse)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:tensorflow.TerminateResponse)
+  return false;
+#undef DO_
+}
+
+void TerminateResponse::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:tensorflow.TerminateResponse)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:tensorflow.TerminateResponse)
+}
+
+::google::protobuf::uint8* TerminateResponse::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:tensorflow.TerminateResponse)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:tensorflow.TerminateResponse)
+  return target;
+}
+
+size_t TerminateResponse::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:tensorflow.TerminateResponse)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void TerminateResponse::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:tensorflow.TerminateResponse)
+  GOOGLE_DCHECK_NE(&from, this);
+  const TerminateResponse* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const TerminateResponse>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:tensorflow.TerminateResponse)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:tensorflow.TerminateResponse)
+    MergeFrom(*source);
+  }
+}
+
+void TerminateResponse::MergeFrom(const TerminateResponse& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.TerminateResponse)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+}
+
+void TerminateResponse::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:tensorflow.TerminateResponse)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void TerminateResponse::CopyFrom(const TerminateResponse& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:tensorflow.TerminateResponse)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool TerminateResponse::IsInitialized() const {
+  return true;
+}
+
+void TerminateResponse::Swap(TerminateResponse* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void TerminateResponse::InternalSwap(TerminateResponse* other) {
+  using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata TerminateResponse::GetMetadata() const {
   protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_2eproto::protobuf_AssignDescriptorsOnce();
   return ::protobuf_tensorflow_2fcore_2fprofiler_2fprofiler_5fservice_2eproto::file_level_metadata[kIndexInFileMessages];
 }
@@ -2635,9 +2653,18 @@ void MonitorRequest::InternalSwap(MonitorRequest* other) {
 // ===================================================================
 
 void MonitorResponse::InitAsDefaultInstance() {
+  ::tensorflow::_MonitorResponse_default_instance_._instance.get_mutable()->monitor_result_ = const_cast< ::tensorflow::ProfilerServiceMonitorResult*>(
+      ::tensorflow::ProfilerServiceMonitorResult::internal_default_instance());
+}
+void MonitorResponse::clear_monitor_result() {
+  if (GetArenaNoVirtual() == NULL && monitor_result_ != NULL) {
+    delete monitor_result_;
+  }
+  monitor_result_ = NULL;
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int MonitorResponse::kDataFieldNumber;
+const int MonitorResponse::kMonitorResultFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 MonitorResponse::MonitorResponse()
@@ -2655,11 +2682,17 @@ MonitorResponse::MonitorResponse(const MonitorResponse& from)
   if (from.data().size() > 0) {
     data_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.data_);
   }
+  if (from.has_monitor_result()) {
+    monitor_result_ = new ::tensorflow::ProfilerServiceMonitorResult(*from.monitor_result_);
+  } else {
+    monitor_result_ = NULL;
+  }
   // @@protoc_insertion_point(copy_constructor:tensorflow.MonitorResponse)
 }
 
 void MonitorResponse::SharedCtor() {
   data_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  monitor_result_ = NULL;
 }
 
 MonitorResponse::~MonitorResponse() {
@@ -2669,6 +2702,7 @@ MonitorResponse::~MonitorResponse() {
 
 void MonitorResponse::SharedDtor() {
   data_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (this != internal_default_instance()) delete monitor_result_;
 }
 
 void MonitorResponse::SetCachedSize(int size) const {
@@ -2692,6 +2726,10 @@ void MonitorResponse::Clear() {
   (void) cached_has_bits;
 
   data_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (GetArenaNoVirtual() == NULL && monitor_result_ != NULL) {
+    delete monitor_result_;
+  }
+  monitor_result_ = NULL;
   _internal_metadata_.Clear();
 }
 
@@ -2715,6 +2753,18 @@ bool MonitorResponse::MergePartialFromCodedStream(
             this->data().data(), static_cast<int>(this->data().length()),
             ::google::protobuf::internal::WireFormatLite::PARSE,
             "tensorflow.MonitorResponse.data"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .tensorflow.ProfilerServiceMonitorResult monitor_result = 10;
+      case 10: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(82u /* 82 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_monitor_result()));
         } else {
           goto handle_unusual;
         }
@@ -2757,6 +2807,12 @@ void MonitorResponse::SerializeWithCachedSizes(
       1, this->data(), output);
   }
 
+  // .tensorflow.ProfilerServiceMonitorResult monitor_result = 10;
+  if (this->has_monitor_result()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      10, this->_internal_monitor_result(), output);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -2782,6 +2838,13 @@ void MonitorResponse::SerializeWithCachedSizes(
         1, this->data(), target);
   }
 
+  // .tensorflow.ProfilerServiceMonitorResult monitor_result = 10;
+  if (this->has_monitor_result()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        10, this->_internal_monitor_result(), deterministic, target);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
@@ -2804,6 +2867,13 @@ size_t MonitorResponse::ByteSizeLong() const {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->data());
+  }
+
+  // .tensorflow.ProfilerServiceMonitorResult monitor_result = 10;
+  if (this->has_monitor_result()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *monitor_result_);
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -2837,6 +2907,9 @@ void MonitorResponse::MergeFrom(const MonitorResponse& from) {
 
     data_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.data_);
   }
+  if (from.has_monitor_result()) {
+    mutable_monitor_result()->::tensorflow::ProfilerServiceMonitorResult::MergeFrom(from.monitor_result());
+  }
 }
 
 void MonitorResponse::CopyFrom(const ::google::protobuf::Message& from) {
@@ -2865,6 +2938,7 @@ void MonitorResponse::InternalSwap(MonitorResponse* other) {
   using std::swap;
   data_.Swap(&other->data_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
+  swap(monitor_result_, other->monitor_result_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
@@ -2878,9 +2952,6 @@ void MonitorResponse::InternalSwap(MonitorResponse* other) {
 }  // namespace tensorflow
 namespace google {
 namespace protobuf {
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::ProfileOptions* Arena::CreateMaybeMessage< ::tensorflow::ProfileOptions >(Arena* arena) {
-  return Arena::CreateInternal< ::tensorflow::ProfileOptions >(arena);
-}
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::ToolRequestOptions* Arena::CreateMaybeMessage< ::tensorflow::ToolRequestOptions >(Arena* arena) {
   return Arena::CreateInternal< ::tensorflow::ToolRequestOptions >(arena);
 }
@@ -2895,6 +2966,12 @@ template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::ProfileToolData* Are
 }
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::ProfileResponse* Arena::CreateMaybeMessage< ::tensorflow::ProfileResponse >(Arena* arena) {
   return Arena::CreateInternal< ::tensorflow::ProfileResponse >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::TerminateRequest* Arena::CreateMaybeMessage< ::tensorflow::TerminateRequest >(Arena* arena) {
+  return Arena::CreateInternal< ::tensorflow::TerminateRequest >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::TerminateResponse* Arena::CreateMaybeMessage< ::tensorflow::TerminateResponse >(Arena* arena) {
+  return Arena::CreateInternal< ::tensorflow::TerminateResponse >(arena);
 }
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::MonitorRequest* Arena::CreateMaybeMessage< ::tensorflow::MonitorRequest >(Arena* arena) {
   return Arena::CreateInternal< ::tensorflow::MonitorRequest >(arena);

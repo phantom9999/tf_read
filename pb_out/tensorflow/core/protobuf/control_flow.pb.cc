@@ -231,13 +231,13 @@ void AddDescriptorsImpl() {
       "\001(\0132\025.tensorflow.ValuesDef\022\037\n\027maximum_it"
       "erations_name\030\013 \001(\t\022:\n\017nested_contexts\030\014"
       " \003(\0132!.tensorflow.ControlFlowContextDefB"
-      "p\n\030org.tensorflow.frameworkB\021ControlFlow"
-      "ProtosP\001Z<github.com/tensorflow/tensorfl"
-      "ow/tensorflow/go/core/protobuf\370\001\001b\006proto"
-      "3"
+      "\211\001\n\030org.tensorflow.frameworkB\021ControlFlo"
+      "wProtosP\001ZUgithub.com/tensorflow/tensorf"
+      "low/tensorflow/go/core/protobuf/for_core"
+      "_protos_go_proto\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 1041);
+      descriptor, 1067);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/protobuf/control_flow.proto", &protobuf_RegisterTypes);
 }

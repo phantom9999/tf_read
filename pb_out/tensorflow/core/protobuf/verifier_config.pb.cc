@@ -91,13 +91,14 @@ void AddDescriptorsImpl() {
       "\"\n\032verification_timeout_in_ms\030\001 \001(\003\022=\n\022s"
       "tructure_verifier\030\002 \001(\0162!.tensorflow.Ver"
       "ifierConfig.Toggle\"&\n\006Toggle\022\013\n\007DEFAULT\020"
-      "\000\022\006\n\002ON\020\001\022\007\n\003OFF\020\002Bs\n\030org.tensorflow.fra"
-      "meworkB\024VerifierConfigProtosP\001Z<github.c"
-      "om/tensorflow/tensorflow/tensorflow/go/c"
-      "ore/protobuf\370\001\001b\006proto3"
+      "\000\022\006\n\002ON\020\001\022\007\n\003OFF\020\002B\214\001\n\030org.tensorflow.fr"
+      "ameworkB\024VerifierConfigProtosP\001ZUgithub."
+      "com/tensorflow/tensorflow/tensorflow/go/"
+      "core/protobuf/for_core_protos_go_proto\370\001"
+      "\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 343);
+      descriptor, 369);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/protobuf/verifier_config.proto", &protobuf_RegisterTypes);
 }

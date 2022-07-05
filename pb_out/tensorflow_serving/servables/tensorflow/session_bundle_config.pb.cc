@@ -20,6 +20,7 @@
 // @@protoc_insertion_point(includes)
 
 namespace protobuf_google_2fprotobuf_2fwrappers_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_google_2fprotobuf_2fwrappers_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_BoolValue;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_google_2fprotobuf_2fwrappers_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_Int32Value;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_google_2fprotobuf_2fwrappers_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_Int64Value;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_google_2fprotobuf_2fwrappers_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_StringValue;
@@ -32,7 +33,7 @@ extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2fnamed_5f
 }  // namespace protobuf_tensorflow_2fcore_2fprotobuf_2fnamed_5ftensor_2eproto
 namespace protobuf_tensorflow_5fserving_2fservables_2ftensorflow_2fsession_5fbundle_5fconfig_2eproto {
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_5fserving_2fservables_2ftensorflow_2fsession_5fbundle_5fconfig_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_ModelWarmupOptions;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_5fserving_2fservables_2ftensorflow_2fsession_5fbundle_5fconfig_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_BatchingParameters;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_5fserving_2fservables_2ftensorflow_2fsession_5fbundle_5fconfig_2eproto ::google::protobuf::internal::SCCInfo<3> scc_info_BatchingParameters;
 }  // namespace protobuf_tensorflow_5fserving_2fservables_2ftensorflow_2fsession_5fbundle_5fconfig_2eproto
 namespace tensorflow {
 namespace serving {
@@ -99,10 +100,11 @@ static void InitDefaultsBatchingParameters() {
   ::tensorflow::serving::BatchingParameters::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<2> scc_info_BatchingParameters =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsBatchingParameters}, {
+::google::protobuf::internal::SCCInfo<3> scc_info_BatchingParameters =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 3, InitDefaultsBatchingParameters}, {
       &protobuf_google_2fprotobuf_2fwrappers_2eproto::scc_info_Int64Value.base,
-      &protobuf_google_2fprotobuf_2fwrappers_2eproto::scc_info_StringValue.base,}};
+      &protobuf_google_2fprotobuf_2fwrappers_2eproto::scc_info_StringValue.base,
+      &protobuf_google_2fprotobuf_2fwrappers_2eproto::scc_info_BoolValue.base,}};
 
 void InitDefaults() {
   ::google::protobuf::internal::InitSCC(&scc_info_ModelWarmupOptions.base);
@@ -135,7 +137,12 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::serving::SessionBundleConfig, model_warmup_options_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::serving::SessionBundleConfig, enable_session_metadata_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::serving::SessionBundleConfig, remove_unused_fields_from_bundle_metagraph_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::serving::SessionBundleConfig, use_tflite_model_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::serving::SessionBundleConfig, prefer_tflite_model_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::serving::SessionBundleConfig, resource_estimation_uses_validation_result_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::serving::SessionBundleConfig, num_tflite_interpreters_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::serving::SessionBundleConfig, num_tflite_interpreters_per_pool_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::serving::SessionBundleConfig, num_tflite_pools_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::serving::SessionBundleConfig, wrap_session_with_no_threading_params_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::serving::BatchingParameters, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -146,13 +153,15 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::serving::BatchingParameters, max_enqueued_batches_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::serving::BatchingParameters, num_batch_threads_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::serving::BatchingParameters, thread_pool_name_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::serving::BatchingParameters, enable_large_batch_splitting_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::serving::BatchingParameters, max_execution_batch_size_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::serving::BatchingParameters, allowed_batch_sizes_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::serving::BatchingParameters, pad_variable_length_inputs_),
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::tensorflow::serving::ModelWarmupOptions)},
   { 6, -1, sizeof(::tensorflow::serving::SessionBundleConfig)},
-  { 23, -1, sizeof(::tensorflow::serving::BatchingParameters)},
+  { 28, -1, sizeof(::tensorflow::serving::BatchingParameters)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
@@ -189,7 +198,7 @@ void AddDescriptorsImpl() {
       "\032+tensorflow/core/protobuf/named_tensor."
       "proto\"Q\n\022ModelWarmupOptions\022;\n\026num_reque"
       "st_iterations\030\001 \001(\0132\033.google.protobuf.In"
-      "t32Value\"\333\004\n\023SessionBundleConfig\022\026\n\016sess"
+      "t32Value\"\257\006\n\023SessionBundleConfig\022\026\n\016sess"
       "ion_target\030\001 \001(\t\022/\n\016session_config\030\002 \001(\013"
       "2\027.tensorflow.ConfigProto\022C\n\023batching_pa"
       "rameters\030\003 \001(\0132&.tensorflow.serving.Batc"
@@ -203,20 +212,29 @@ void AddDescriptorsImpl() {
       "armup_options\030\214\006 \001(\0132&.tensorflow.servin"
       "g.ModelWarmupOptions\022 \n\027enable_session_m"
       "etadata\030\215\006 \001(\010\0223\n*remove_unused_fields_f"
-      "rom_bundle_metagraph\030\216\006 \001(\010\022\031\n\020use_tflit"
-      "e_model\030\217\006 \001(\010\"\360\002\n\022BatchingParameters\0223\n"
-      "\016max_batch_size\030\001 \001(\0132\033.google.protobuf."
-      "Int64Value\0229\n\024batch_timeout_micros\030\002 \001(\013"
-      "2\033.google.protobuf.Int64Value\0229\n\024max_enq"
-      "ueued_batches\030\003 \001(\0132\033.google.protobuf.In"
-      "t64Value\0226\n\021num_batch_threads\030\004 \001(\0132\033.go"
-      "ogle.protobuf.Int64Value\0226\n\020thread_pool_"
-      "name\030\005 \001(\0132\034.google.protobuf.StringValue"
-      "\022\033\n\023allowed_batch_sizes\030\006 \003(\003\022\"\n\032pad_var"
-      "iable_length_inputs\030\007 \001(\010b\006proto3"
+      "rom_bundle_metagraph\030\216\006 \001(\010\022\034\n\023prefer_tf"
+      "lite_model\030\217\006 \001(\010\0223\n*resource_estimation"
+      "_uses_validation_result\030\220\006 \001(\010\022$\n\027num_tf"
+      "lite_interpreters\030\221\006 \001(\005B\002\030\001\022)\n num_tfli"
+      "te_interpreters_per_pool\030\222\006 \001(\005\022\031\n\020num_t"
+      "flite_pools\030\223\006 \001(\005\022.\n%wrap_session_with_"
+      "no_threading_params\030\224\006 \001(\010\"\361\003\n\022BatchingP"
+      "arameters\0223\n\016max_batch_size\030\001 \001(\0132\033.goog"
+      "le.protobuf.Int64Value\0229\n\024batch_timeout_"
+      "micros\030\002 \001(\0132\033.google.protobuf.Int64Valu"
+      "e\0229\n\024max_enqueued_batches\030\003 \001(\0132\033.google"
+      ".protobuf.Int64Value\0226\n\021num_batch_thread"
+      "s\030\004 \001(\0132\033.google.protobuf.Int64Value\0226\n\020"
+      "thread_pool_name\030\005 \001(\0132\034.google.protobuf"
+      ".StringValue\022@\n\034enable_large_batch_split"
+      "ting\030\010 \001(\0132\032.google.protobuf.BoolValue\022="
+      "\n\030max_execution_batch_size\030\t \001(\0132\033.googl"
+      "e.protobuf.Int64Value\022\033\n\023allowed_batch_s"
+      "izes\030\006 \003(\003\022\"\n\032pad_variable_length_inputs"
+      "\030\007 \001(\010b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 1273);
+      descriptor, 1614);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow_serving/servables/tensorflow/session_bundle_config.proto", &protobuf_RegisterTypes);
   ::protobuf_google_2fprotobuf_2fwrappers_2eproto::AddDescriptors();
@@ -517,7 +535,12 @@ const int SessionBundleConfig::kEnableModelWarmupFieldNumber;
 const int SessionBundleConfig::kModelWarmupOptionsFieldNumber;
 const int SessionBundleConfig::kEnableSessionMetadataFieldNumber;
 const int SessionBundleConfig::kRemoveUnusedFieldsFromBundleMetagraphFieldNumber;
-const int SessionBundleConfig::kUseTfliteModelFieldNumber;
+const int SessionBundleConfig::kPreferTfliteModelFieldNumber;
+const int SessionBundleConfig::kResourceEstimationUsesValidationResultFieldNumber;
+const int SessionBundleConfig::kNumTfliteInterpretersFieldNumber;
+const int SessionBundleConfig::kNumTfliteInterpretersPerPoolFieldNumber;
+const int SessionBundleConfig::kNumTflitePoolsFieldNumber;
+const int SessionBundleConfig::kWrapSessionWithNoThreadingParamsFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 SessionBundleConfig::SessionBundleConfig()
@@ -558,16 +581,16 @@ SessionBundleConfig::SessionBundleConfig(const SessionBundleConfig& from)
     model_warmup_options_ = NULL;
   }
   ::memcpy(&experimental_transient_ram_bytes_during_load_, &from.experimental_transient_ram_bytes_during_load_,
-    static_cast<size_t>(reinterpret_cast<char*>(&use_tflite_model_) -
-    reinterpret_cast<char*>(&experimental_transient_ram_bytes_during_load_)) + sizeof(use_tflite_model_));
+    static_cast<size_t>(reinterpret_cast<char*>(&wrap_session_with_no_threading_params_) -
+    reinterpret_cast<char*>(&experimental_transient_ram_bytes_during_load_)) + sizeof(wrap_session_with_no_threading_params_));
   // @@protoc_insertion_point(copy_constructor:tensorflow.serving.SessionBundleConfig)
 }
 
 void SessionBundleConfig::SharedCtor() {
   session_target_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&session_config_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&use_tflite_model_) -
-      reinterpret_cast<char*>(&session_config_)) + sizeof(use_tflite_model_));
+      reinterpret_cast<char*>(&wrap_session_with_no_threading_params_) -
+      reinterpret_cast<char*>(&session_config_)) + sizeof(wrap_session_with_no_threading_params_));
 }
 
 SessionBundleConfig::~SessionBundleConfig() {
@@ -623,8 +646,8 @@ void SessionBundleConfig::Clear() {
   }
   model_warmup_options_ = NULL;
   ::memset(&experimental_transient_ram_bytes_during_load_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&use_tflite_model_) -
-      reinterpret_cast<char*>(&experimental_transient_ram_bytes_during_load_)) + sizeof(use_tflite_model_));
+      reinterpret_cast<char*>(&wrap_session_with_no_threading_params_) -
+      reinterpret_cast<char*>(&experimental_transient_ram_bytes_during_load_)) + sizeof(wrap_session_with_no_threading_params_));
   _internal_metadata_.Clear();
 }
 
@@ -787,14 +810,84 @@ bool SessionBundleConfig::MergePartialFromCodedStream(
         break;
       }
 
-      // bool use_tflite_model = 783;
+      // bool prefer_tflite_model = 783;
       case 783: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(120u /* 6264 & 0xFF */)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, &use_tflite_model_)));
+                 input, &prefer_tflite_model_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool resource_estimation_uses_validation_result = 784;
+      case 784: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(128u /* 6272 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &resource_estimation_uses_validation_result_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int32 num_tflite_interpreters = 785 [deprecated = true];
+      case 785: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(136u /* 6280 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &num_tflite_interpreters_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int32 num_tflite_interpreters_per_pool = 786;
+      case 786: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(144u /* 6288 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &num_tflite_interpreters_per_pool_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int32 num_tflite_pools = 787;
+      case 787: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(152u /* 6296 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &num_tflite_pools_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool wrap_session_with_no_threading_params = 788;
+      case 788: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(160u /* 6304 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &wrap_session_with_no_threading_params_)));
         } else {
           goto handle_unusual;
         }
@@ -900,9 +993,34 @@ void SessionBundleConfig::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteBool(782, this->remove_unused_fields_from_bundle_metagraph(), output);
   }
 
-  // bool use_tflite_model = 783;
-  if (this->use_tflite_model() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteBool(783, this->use_tflite_model(), output);
+  // bool prefer_tflite_model = 783;
+  if (this->prefer_tflite_model() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(783, this->prefer_tflite_model(), output);
+  }
+
+  // bool resource_estimation_uses_validation_result = 784;
+  if (this->resource_estimation_uses_validation_result() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(784, this->resource_estimation_uses_validation_result(), output);
+  }
+
+  // int32 num_tflite_interpreters = 785 [deprecated = true];
+  if (this->num_tflite_interpreters() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(785, this->num_tflite_interpreters(), output);
+  }
+
+  // int32 num_tflite_interpreters_per_pool = 786;
+  if (this->num_tflite_interpreters_per_pool() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(786, this->num_tflite_interpreters_per_pool(), output);
+  }
+
+  // int32 num_tflite_pools = 787;
+  if (this->num_tflite_pools() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(787, this->num_tflite_pools(), output);
+  }
+
+  // bool wrap_session_with_no_threading_params = 788;
+  if (this->wrap_session_with_no_threading_params() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(788, this->wrap_session_with_no_threading_params(), output);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -996,9 +1114,34 @@ void SessionBundleConfig::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(782, this->remove_unused_fields_from_bundle_metagraph(), target);
   }
 
-  // bool use_tflite_model = 783;
-  if (this->use_tflite_model() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(783, this->use_tflite_model(), target);
+  // bool prefer_tflite_model = 783;
+  if (this->prefer_tflite_model() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(783, this->prefer_tflite_model(), target);
+  }
+
+  // bool resource_estimation_uses_validation_result = 784;
+  if (this->resource_estimation_uses_validation_result() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(784, this->resource_estimation_uses_validation_result(), target);
+  }
+
+  // int32 num_tflite_interpreters = 785 [deprecated = true];
+  if (this->num_tflite_interpreters() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(785, this->num_tflite_interpreters(), target);
+  }
+
+  // int32 num_tflite_interpreters_per_pool = 786;
+  if (this->num_tflite_interpreters_per_pool() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(786, this->num_tflite_interpreters_per_pool(), target);
+  }
+
+  // int32 num_tflite_pools = 787;
+  if (this->num_tflite_pools() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(787, this->num_tflite_pools(), target);
+  }
+
+  // bool wrap_session_with_no_threading_params = 788;
+  if (this->wrap_session_with_no_threading_params() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(788, this->wrap_session_with_no_threading_params(), target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -1079,6 +1222,13 @@ size_t SessionBundleConfig::ByteSizeLong() const {
         this->experimental_transient_ram_bytes_during_load());
   }
 
+  // int32 num_tflite_pools = 787;
+  if (this->num_tflite_pools() != 0) {
+    total_size += 2 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->num_tflite_pools());
+  }
+
   // bool enable_model_warmup = 779;
   if (this->enable_model_warmup() != 0) {
     total_size += 2 + 1;
@@ -1094,8 +1244,32 @@ size_t SessionBundleConfig::ByteSizeLong() const {
     total_size += 2 + 1;
   }
 
-  // bool use_tflite_model = 783;
-  if (this->use_tflite_model() != 0) {
+  // bool prefer_tflite_model = 783;
+  if (this->prefer_tflite_model() != 0) {
+    total_size += 2 + 1;
+  }
+
+  // int32 num_tflite_interpreters = 785 [deprecated = true];
+  if (this->num_tflite_interpreters() != 0) {
+    total_size += 2 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->num_tflite_interpreters());
+  }
+
+  // int32 num_tflite_interpreters_per_pool = 786;
+  if (this->num_tflite_interpreters_per_pool() != 0) {
+    total_size += 2 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->num_tflite_interpreters_per_pool());
+  }
+
+  // bool resource_estimation_uses_validation_result = 784;
+  if (this->resource_estimation_uses_validation_result() != 0) {
+    total_size += 2 + 1;
+  }
+
+  // bool wrap_session_with_no_threading_params = 788;
+  if (this->wrap_session_with_no_threading_params() != 0) {
     total_size += 2 + 1;
   }
 
@@ -1147,6 +1321,9 @@ void SessionBundleConfig::MergeFrom(const SessionBundleConfig& from) {
   if (from.experimental_transient_ram_bytes_during_load() != 0) {
     set_experimental_transient_ram_bytes_during_load(from.experimental_transient_ram_bytes_during_load());
   }
+  if (from.num_tflite_pools() != 0) {
+    set_num_tflite_pools(from.num_tflite_pools());
+  }
   if (from.enable_model_warmup() != 0) {
     set_enable_model_warmup(from.enable_model_warmup());
   }
@@ -1156,8 +1333,20 @@ void SessionBundleConfig::MergeFrom(const SessionBundleConfig& from) {
   if (from.remove_unused_fields_from_bundle_metagraph() != 0) {
     set_remove_unused_fields_from_bundle_metagraph(from.remove_unused_fields_from_bundle_metagraph());
   }
-  if (from.use_tflite_model() != 0) {
-    set_use_tflite_model(from.use_tflite_model());
+  if (from.prefer_tflite_model() != 0) {
+    set_prefer_tflite_model(from.prefer_tflite_model());
+  }
+  if (from.num_tflite_interpreters() != 0) {
+    set_num_tflite_interpreters(from.num_tflite_interpreters());
+  }
+  if (from.num_tflite_interpreters_per_pool() != 0) {
+    set_num_tflite_interpreters_per_pool(from.num_tflite_interpreters_per_pool());
+  }
+  if (from.resource_estimation_uses_validation_result() != 0) {
+    set_resource_estimation_uses_validation_result(from.resource_estimation_uses_validation_result());
+  }
+  if (from.wrap_session_with_no_threading_params() != 0) {
+    set_wrap_session_with_no_threading_params(from.wrap_session_with_no_threading_params());
   }
 }
 
@@ -1194,10 +1383,15 @@ void SessionBundleConfig::InternalSwap(SessionBundleConfig* other) {
   swap(session_run_load_threadpool_index_, other->session_run_load_threadpool_index_);
   swap(model_warmup_options_, other->model_warmup_options_);
   swap(experimental_transient_ram_bytes_during_load_, other->experimental_transient_ram_bytes_during_load_);
+  swap(num_tflite_pools_, other->num_tflite_pools_);
   swap(enable_model_warmup_, other->enable_model_warmup_);
   swap(enable_session_metadata_, other->enable_session_metadata_);
   swap(remove_unused_fields_from_bundle_metagraph_, other->remove_unused_fields_from_bundle_metagraph_);
-  swap(use_tflite_model_, other->use_tflite_model_);
+  swap(prefer_tflite_model_, other->prefer_tflite_model_);
+  swap(num_tflite_interpreters_, other->num_tflite_interpreters_);
+  swap(num_tflite_interpreters_per_pool_, other->num_tflite_interpreters_per_pool_);
+  swap(resource_estimation_uses_validation_result_, other->resource_estimation_uses_validation_result_);
+  swap(wrap_session_with_no_threading_params_, other->wrap_session_with_no_threading_params_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
@@ -1220,6 +1414,10 @@ void BatchingParameters::InitAsDefaultInstance() {
       ::google::protobuf::Int64Value::internal_default_instance());
   ::tensorflow::serving::_BatchingParameters_default_instance_._instance.get_mutable()->thread_pool_name_ = const_cast< ::google::protobuf::StringValue*>(
       ::google::protobuf::StringValue::internal_default_instance());
+  ::tensorflow::serving::_BatchingParameters_default_instance_._instance.get_mutable()->enable_large_batch_splitting_ = const_cast< ::google::protobuf::BoolValue*>(
+      ::google::protobuf::BoolValue::internal_default_instance());
+  ::tensorflow::serving::_BatchingParameters_default_instance_._instance.get_mutable()->max_execution_batch_size_ = const_cast< ::google::protobuf::Int64Value*>(
+      ::google::protobuf::Int64Value::internal_default_instance());
 }
 void BatchingParameters::clear_max_batch_size() {
   if (GetArenaNoVirtual() == NULL && max_batch_size_ != NULL) {
@@ -1251,12 +1449,26 @@ void BatchingParameters::clear_thread_pool_name() {
   }
   thread_pool_name_ = NULL;
 }
+void BatchingParameters::clear_enable_large_batch_splitting() {
+  if (GetArenaNoVirtual() == NULL && enable_large_batch_splitting_ != NULL) {
+    delete enable_large_batch_splitting_;
+  }
+  enable_large_batch_splitting_ = NULL;
+}
+void BatchingParameters::clear_max_execution_batch_size() {
+  if (GetArenaNoVirtual() == NULL && max_execution_batch_size_ != NULL) {
+    delete max_execution_batch_size_;
+  }
+  max_execution_batch_size_ = NULL;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int BatchingParameters::kMaxBatchSizeFieldNumber;
 const int BatchingParameters::kBatchTimeoutMicrosFieldNumber;
 const int BatchingParameters::kMaxEnqueuedBatchesFieldNumber;
 const int BatchingParameters::kNumBatchThreadsFieldNumber;
 const int BatchingParameters::kThreadPoolNameFieldNumber;
+const int BatchingParameters::kEnableLargeBatchSplittingFieldNumber;
+const int BatchingParameters::kMaxExecutionBatchSizeFieldNumber;
 const int BatchingParameters::kAllowedBatchSizesFieldNumber;
 const int BatchingParameters::kPadVariableLengthInputsFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
@@ -1298,6 +1510,16 @@ BatchingParameters::BatchingParameters(const BatchingParameters& from)
   } else {
     thread_pool_name_ = NULL;
   }
+  if (from.has_enable_large_batch_splitting()) {
+    enable_large_batch_splitting_ = new ::google::protobuf::BoolValue(*from.enable_large_batch_splitting_);
+  } else {
+    enable_large_batch_splitting_ = NULL;
+  }
+  if (from.has_max_execution_batch_size()) {
+    max_execution_batch_size_ = new ::google::protobuf::Int64Value(*from.max_execution_batch_size_);
+  } else {
+    max_execution_batch_size_ = NULL;
+  }
   pad_variable_length_inputs_ = from.pad_variable_length_inputs_;
   // @@protoc_insertion_point(copy_constructor:tensorflow.serving.BatchingParameters)
 }
@@ -1319,6 +1541,8 @@ void BatchingParameters::SharedDtor() {
   if (this != internal_default_instance()) delete max_enqueued_batches_;
   if (this != internal_default_instance()) delete num_batch_threads_;
   if (this != internal_default_instance()) delete thread_pool_name_;
+  if (this != internal_default_instance()) delete enable_large_batch_splitting_;
+  if (this != internal_default_instance()) delete max_execution_batch_size_;
 }
 
 void BatchingParameters::SetCachedSize(int size) const {
@@ -1362,6 +1586,14 @@ void BatchingParameters::Clear() {
     delete thread_pool_name_;
   }
   thread_pool_name_ = NULL;
+  if (GetArenaNoVirtual() == NULL && enable_large_batch_splitting_ != NULL) {
+    delete enable_large_batch_splitting_;
+  }
+  enable_large_batch_splitting_ = NULL;
+  if (GetArenaNoVirtual() == NULL && max_execution_batch_size_ != NULL) {
+    delete max_execution_batch_size_;
+  }
+  max_execution_batch_size_ = NULL;
   pad_variable_length_inputs_ = false;
   _internal_metadata_.Clear();
 }
@@ -1469,6 +1701,30 @@ bool BatchingParameters::MergePartialFromCodedStream(
         break;
       }
 
+      // .google.protobuf.BoolValue enable_large_batch_splitting = 8;
+      case 8: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(66u /* 66 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_enable_large_batch_splitting()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .google.protobuf.Int64Value max_execution_batch_size = 9;
+      case 9: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(74u /* 74 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_max_execution_batch_size()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -1541,6 +1797,18 @@ void BatchingParameters::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteBool(7, this->pad_variable_length_inputs(), output);
   }
 
+  // .google.protobuf.BoolValue enable_large_batch_splitting = 8;
+  if (this->has_enable_large_batch_splitting()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      8, this->_internal_enable_large_batch_splitting(), output);
+  }
+
+  // .google.protobuf.Int64Value max_execution_batch_size = 9;
+  if (this->has_max_execution_batch_size()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      9, this->_internal_max_execution_batch_size(), output);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -1606,6 +1874,20 @@ void BatchingParameters::SerializeWithCachedSizes(
   // bool pad_variable_length_inputs = 7;
   if (this->pad_variable_length_inputs() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(7, this->pad_variable_length_inputs(), target);
+  }
+
+  // .google.protobuf.BoolValue enable_large_batch_splitting = 8;
+  if (this->has_enable_large_batch_splitting()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        8, this->_internal_enable_large_batch_splitting(), deterministic, target);
+  }
+
+  // .google.protobuf.Int64Value max_execution_batch_size = 9;
+  if (this->has_max_execution_batch_size()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        9, this->_internal_max_execution_batch_size(), deterministic, target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -1676,6 +1958,20 @@ size_t BatchingParameters::ByteSizeLong() const {
         *thread_pool_name_);
   }
 
+  // .google.protobuf.BoolValue enable_large_batch_splitting = 8;
+  if (this->has_enable_large_batch_splitting()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *enable_large_batch_splitting_);
+  }
+
+  // .google.protobuf.Int64Value max_execution_batch_size = 9;
+  if (this->has_max_execution_batch_size()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *max_execution_batch_size_);
+  }
+
   // bool pad_variable_length_inputs = 7;
   if (this->pad_variable_length_inputs() != 0) {
     total_size += 1 + 1;
@@ -1724,6 +2020,12 @@ void BatchingParameters::MergeFrom(const BatchingParameters& from) {
   if (from.has_thread_pool_name()) {
     mutable_thread_pool_name()->::google::protobuf::StringValue::MergeFrom(from.thread_pool_name());
   }
+  if (from.has_enable_large_batch_splitting()) {
+    mutable_enable_large_batch_splitting()->::google::protobuf::BoolValue::MergeFrom(from.enable_large_batch_splitting());
+  }
+  if (from.has_max_execution_batch_size()) {
+    mutable_max_execution_batch_size()->::google::protobuf::Int64Value::MergeFrom(from.max_execution_batch_size());
+  }
   if (from.pad_variable_length_inputs() != 0) {
     set_pad_variable_length_inputs(from.pad_variable_length_inputs());
   }
@@ -1759,6 +2061,8 @@ void BatchingParameters::InternalSwap(BatchingParameters* other) {
   swap(max_enqueued_batches_, other->max_enqueued_batches_);
   swap(num_batch_threads_, other->num_batch_threads_);
   swap(thread_pool_name_, other->thread_pool_name_);
+  swap(enable_large_batch_splitting_, other->enable_large_batch_splitting_);
+  swap(max_execution_batch_size_, other->max_execution_batch_size_);
   swap(pad_variable_length_inputs_, other->pad_variable_length_inputs_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }

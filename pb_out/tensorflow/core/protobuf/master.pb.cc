@@ -675,9 +675,9 @@ void AddDescriptorsImpl() {
       "\ntensorflow\0321tensorflow/core/framework/d"
       "evice_attributes.proto\032%tensorflow/core/"
       "framework/graph.proto\032&tensorflow/core/f"
-      "ramework/tensor.proto\032*tensorflow/core/l"
-      "ib/core/error_codes.proto\032%tensorflow/co"
-      "re/protobuf/config.proto\032+tensorflow/cor"
+      "ramework/tensor.proto\032%tensorflow/core/p"
+      "rotobuf/config.proto\032*tensorflow/core/pr"
+      "otobuf/error_codes.proto\032+tensorflow/cor"
       "e/protobuf/named_tensor.proto\"x\n\024CreateS"
       "essionRequest\022\'\n\tgraph_def\030\001 \001(\0132\024.tenso"
       "rflow.GraphDef\022\'\n\006config\030\002 \001(\0132\027.tensorf"
@@ -722,20 +722,21 @@ void AddDescriptorsImpl() {
       "w.TensorProto\022)\n\010metadata\030\002 \001(\0132\027.tensor"
       "flow.RunMetadata\"@\n\026ReleaseCallableReque"
       "st\022\026\n\016session_handle\030\001 \001(\t\022\016\n\006handle\030\002 \001"
-      "(\003\"\031\n\027ReleaseCallableResponseBy\n\032org.ten"
-      "sorflow.distruntimeB\030DistributedRuntimeP"
-      "rotosP\001Z<github.com/tensorflow/tensorflo"
-      "w/tensorflow/go/core/protobuf\370\001\001b\006proto3"
+      "(\003\"\031\n\027ReleaseCallableResponseB\222\001\n\032org.te"
+      "nsorflow.distruntimeB\030DistributedRuntime"
+      "ProtosP\001ZUgithub.com/tensorflow/tensorfl"
+      "ow/tensorflow/go/core/protobuf/for_core_"
+      "protos_go_proto\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 2200);
+      descriptor, 2226);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/protobuf/master.proto", &protobuf_RegisterTypes);
   ::protobuf_tensorflow_2fcore_2fframework_2fdevice_5fattributes_2eproto::AddDescriptors();
   ::protobuf_tensorflow_2fcore_2fframework_2fgraph_2eproto::AddDescriptors();
   ::protobuf_tensorflow_2fcore_2fframework_2ftensor_2eproto::AddDescriptors();
-  ::protobuf_tensorflow_2fcore_2flib_2fcore_2ferror_5fcodes_2eproto::AddDescriptors();
   ::protobuf_tensorflow_2fcore_2fprotobuf_2fconfig_2eproto::AddDescriptors();
+  ::protobuf_tensorflow_2fcore_2fprotobuf_2ferror_5fcodes_2eproto::AddDescriptors();
   ::protobuf_tensorflow_2fcore_2fprotobuf_2fnamed_5ftensor_2eproto::AddDescriptors();
 }
 

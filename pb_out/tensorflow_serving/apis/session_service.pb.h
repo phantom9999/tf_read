@@ -30,9 +30,9 @@
 #include <google/protobuf/repeated_field.h>  // IWYU pragma: export
 #include <google/protobuf/extension_set.h>  // IWYU pragma: export
 #include <google/protobuf/unknown_field_set.h>
-#include "tensorflow_serving/apis/model.pb.h"
 #include "tensorflow/core/protobuf/config.pb.h"
 #include "tensorflow/core/protobuf/named_tensor.pb.h"
+#include "tensorflow_serving/apis/model.pb.h"
 // @@protoc_insertion_point(includes)
 #define PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_5fserving_2fapis_2fsession_5fservice_2eproto 
 
@@ -254,6 +254,12 @@ class SessionRunRequest : public ::google::protobuf::Message /* @@protoc_inserti
       ::tensorflow::RunOptions* options);
   ::tensorflow::RunOptions* unsafe_arena_release_options();
 
+  // bool tensor_name_is_alias = 6;
+  void clear_tensor_name_is_alias();
+  static const int kTensorNameIsAliasFieldNumber = 6;
+  bool tensor_name_is_alias() const;
+  void set_tensor_name_is_alias(bool value);
+
   // @@protoc_insertion_point(class_scope:tensorflow.serving.SessionRunRequest)
  private:
 
@@ -266,6 +272,7 @@ class SessionRunRequest : public ::google::protobuf::Message /* @@protoc_inserti
   ::google::protobuf::RepeatedPtrField< ::std::string> target_;
   ::tensorflow::serving::ModelSpec* model_spec_;
   ::tensorflow::RunOptions* options_;
+  bool tensor_name_is_alias_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_5fserving_2fapis_2fsession_5fservice_2eproto::TableStruct;
 };
@@ -658,6 +665,20 @@ inline ::google::protobuf::RepeatedPtrField< ::std::string>*
 SessionRunRequest::mutable_target() {
   // @@protoc_insertion_point(field_mutable_list:tensorflow.serving.SessionRunRequest.target)
   return &target_;
+}
+
+// bool tensor_name_is_alias = 6;
+inline void SessionRunRequest::clear_tensor_name_is_alias() {
+  tensor_name_is_alias_ = false;
+}
+inline bool SessionRunRequest::tensor_name_is_alias() const {
+  // @@protoc_insertion_point(field_get:tensorflow.serving.SessionRunRequest.tensor_name_is_alias)
+  return tensor_name_is_alias_;
+}
+inline void SessionRunRequest::set_tensor_name_is_alias(bool value) {
+  
+  tensor_name_is_alias_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.serving.SessionRunRequest.tensor_name_is_alias)
 }
 
 // .tensorflow.RunOptions options = 5;

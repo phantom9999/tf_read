@@ -35,8 +35,8 @@
 #include <google/protobuf/generated_enum_reflection.h>
 #include <google/protobuf/unknown_field_set.h>
 #include <google/protobuf/any.pb.h>
+#include "tensorflow_serving/config/file_system_storage_path_source.pb.h"
 #include "tensorflow_serving/config/logging_config.pb.h"
-#include "tensorflow_serving/sources/storage_path/file_system_storage_path_source.pb.h"
 // @@protoc_insertion_point(includes)
 #define PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_5fserving_2fconfig_2fmodel_5fserver_5fconfig_2eproto 
 

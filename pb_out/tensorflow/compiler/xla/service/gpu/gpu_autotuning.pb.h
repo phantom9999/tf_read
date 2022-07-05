@@ -50,26 +50,26 @@ void AddDescriptors();
 }  // namespace protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fgpu_2fgpu_5fautotuning_2eproto
 namespace xla {
 namespace gpu {
-class AlgorithmBlacklist;
-class AlgorithmBlacklistDefaultTypeInternal;
-extern AlgorithmBlacklistDefaultTypeInternal _AlgorithmBlacklist_default_instance_;
-class AlgorithmBlacklistEntry;
-class AlgorithmBlacklistEntryDefaultTypeInternal;
-extern AlgorithmBlacklistEntryDefaultTypeInternal _AlgorithmBlacklistEntry_default_instance_;
-class BlacklistedAlgorithm;
-class BlacklistedAlgorithmDefaultTypeInternal;
-extern BlacklistedAlgorithmDefaultTypeInternal _BlacklistedAlgorithm_default_instance_;
+class AlgorithmDenylist;
+class AlgorithmDenylistDefaultTypeInternal;
+extern AlgorithmDenylistDefaultTypeInternal _AlgorithmDenylist_default_instance_;
+class AlgorithmDenylistEntry;
+class AlgorithmDenylistEntryDefaultTypeInternal;
+extern AlgorithmDenylistEntryDefaultTypeInternal _AlgorithmDenylistEntry_default_instance_;
 class ConvInstructionLog;
 class ConvInstructionLogDefaultTypeInternal;
 extern ConvInstructionLogDefaultTypeInternal _ConvInstructionLog_default_instance_;
+class DenylistedAlgorithm;
+class DenylistedAlgorithmDefaultTypeInternal;
+extern DenylistedAlgorithmDefaultTypeInternal _DenylistedAlgorithm_default_instance_;
 }  // namespace gpu
 }  // namespace xla
 namespace google {
 namespace protobuf {
-template<> ::xla::gpu::AlgorithmBlacklist* Arena::CreateMaybeMessage<::xla::gpu::AlgorithmBlacklist>(Arena*);
-template<> ::xla::gpu::AlgorithmBlacklistEntry* Arena::CreateMaybeMessage<::xla::gpu::AlgorithmBlacklistEntry>(Arena*);
-template<> ::xla::gpu::BlacklistedAlgorithm* Arena::CreateMaybeMessage<::xla::gpu::BlacklistedAlgorithm>(Arena*);
+template<> ::xla::gpu::AlgorithmDenylist* Arena::CreateMaybeMessage<::xla::gpu::AlgorithmDenylist>(Arena*);
+template<> ::xla::gpu::AlgorithmDenylistEntry* Arena::CreateMaybeMessage<::xla::gpu::AlgorithmDenylistEntry>(Arena*);
 template<> ::xla::gpu::ConvInstructionLog* Arena::CreateMaybeMessage<::xla::gpu::ConvInstructionLog>(Arena*);
+template<> ::xla::gpu::DenylistedAlgorithm* Arena::CreateMaybeMessage<::xla::gpu::DenylistedAlgorithm>(Arena*);
 }  // namespace protobuf
 }  // namespace google
 namespace xla {
@@ -220,24 +220,24 @@ class ConvInstructionLog : public ::google::protobuf::Message /* @@protoc_insert
 };
 // -------------------------------------------------------------------
 
-class BlacklistedAlgorithm : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:xla.gpu.BlacklistedAlgorithm) */ {
+class DenylistedAlgorithm : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:xla.gpu.DenylistedAlgorithm) */ {
  public:
-  BlacklistedAlgorithm();
-  virtual ~BlacklistedAlgorithm();
+  DenylistedAlgorithm();
+  virtual ~DenylistedAlgorithm();
 
-  BlacklistedAlgorithm(const BlacklistedAlgorithm& from);
+  DenylistedAlgorithm(const DenylistedAlgorithm& from);
 
-  inline BlacklistedAlgorithm& operator=(const BlacklistedAlgorithm& from) {
+  inline DenylistedAlgorithm& operator=(const DenylistedAlgorithm& from) {
     CopyFrom(from);
     return *this;
   }
   #if LANG_CXX11
-  BlacklistedAlgorithm(BlacklistedAlgorithm&& from) noexcept
-    : BlacklistedAlgorithm() {
+  DenylistedAlgorithm(DenylistedAlgorithm&& from) noexcept
+    : DenylistedAlgorithm() {
     *this = ::std::move(from);
   }
 
-  inline BlacklistedAlgorithm& operator=(BlacklistedAlgorithm&& from) noexcept {
+  inline DenylistedAlgorithm& operator=(DenylistedAlgorithm&& from) noexcept {
     if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
       if (this != &from) InternalSwap(&from);
     } else {
@@ -247,34 +247,34 @@ class BlacklistedAlgorithm : public ::google::protobuf::Message /* @@protoc_inse
   }
   #endif
   static const ::google::protobuf::Descriptor* descriptor();
-  static const BlacklistedAlgorithm& default_instance();
+  static const DenylistedAlgorithm& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
-  static inline const BlacklistedAlgorithm* internal_default_instance() {
-    return reinterpret_cast<const BlacklistedAlgorithm*>(
-               &_BlacklistedAlgorithm_default_instance_);
+  static inline const DenylistedAlgorithm* internal_default_instance() {
+    return reinterpret_cast<const DenylistedAlgorithm*>(
+               &_DenylistedAlgorithm_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     1;
 
-  void Swap(BlacklistedAlgorithm* other);
-  friend void swap(BlacklistedAlgorithm& a, BlacklistedAlgorithm& b) {
+  void Swap(DenylistedAlgorithm* other);
+  friend void swap(DenylistedAlgorithm& a, DenylistedAlgorithm& b) {
     a.Swap(&b);
   }
 
   // implements Message ----------------------------------------------
 
-  inline BlacklistedAlgorithm* New() const final {
-    return CreateMaybeMessage<BlacklistedAlgorithm>(NULL);
+  inline DenylistedAlgorithm* New() const final {
+    return CreateMaybeMessage<DenylistedAlgorithm>(NULL);
   }
 
-  BlacklistedAlgorithm* New(::google::protobuf::Arena* arena) const final {
-    return CreateMaybeMessage<BlacklistedAlgorithm>(arena);
+  DenylistedAlgorithm* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<DenylistedAlgorithm>(arena);
   }
   void CopyFrom(const ::google::protobuf::Message& from) final;
   void MergeFrom(const ::google::protobuf::Message& from) final;
-  void CopyFrom(const BlacklistedAlgorithm& from);
-  void MergeFrom(const BlacklistedAlgorithm& from);
+  void CopyFrom(const DenylistedAlgorithm& from);
+  void MergeFrom(const DenylistedAlgorithm& from);
   void Clear() final;
   bool IsInitialized() const final;
 
@@ -291,7 +291,7 @@ class BlacklistedAlgorithm : public ::google::protobuf::Message /* @@protoc_inse
   void SharedCtor();
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(BlacklistedAlgorithm* other);
+  void InternalSwap(DenylistedAlgorithm* other);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
@@ -319,7 +319,7 @@ class BlacklistedAlgorithm : public ::google::protobuf::Message /* @@protoc_inse
   bool tensor_ops() const;
   void set_tensor_ops(bool value);
 
-  // @@protoc_insertion_point(class_scope:xla.gpu.BlacklistedAlgorithm)
+  // @@protoc_insertion_point(class_scope:xla.gpu.DenylistedAlgorithm)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
@@ -330,24 +330,24 @@ class BlacklistedAlgorithm : public ::google::protobuf::Message /* @@protoc_inse
 };
 // -------------------------------------------------------------------
 
-class AlgorithmBlacklistEntry : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:xla.gpu.AlgorithmBlacklistEntry) */ {
+class AlgorithmDenylistEntry : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:xla.gpu.AlgorithmDenylistEntry) */ {
  public:
-  AlgorithmBlacklistEntry();
-  virtual ~AlgorithmBlacklistEntry();
+  AlgorithmDenylistEntry();
+  virtual ~AlgorithmDenylistEntry();
 
-  AlgorithmBlacklistEntry(const AlgorithmBlacklistEntry& from);
+  AlgorithmDenylistEntry(const AlgorithmDenylistEntry& from);
 
-  inline AlgorithmBlacklistEntry& operator=(const AlgorithmBlacklistEntry& from) {
+  inline AlgorithmDenylistEntry& operator=(const AlgorithmDenylistEntry& from) {
     CopyFrom(from);
     return *this;
   }
   #if LANG_CXX11
-  AlgorithmBlacklistEntry(AlgorithmBlacklistEntry&& from) noexcept
-    : AlgorithmBlacklistEntry() {
+  AlgorithmDenylistEntry(AlgorithmDenylistEntry&& from) noexcept
+    : AlgorithmDenylistEntry() {
     *this = ::std::move(from);
   }
 
-  inline AlgorithmBlacklistEntry& operator=(AlgorithmBlacklistEntry&& from) noexcept {
+  inline AlgorithmDenylistEntry& operator=(AlgorithmDenylistEntry&& from) noexcept {
     if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
       if (this != &from) InternalSwap(&from);
     } else {
@@ -357,34 +357,34 @@ class AlgorithmBlacklistEntry : public ::google::protobuf::Message /* @@protoc_i
   }
   #endif
   static const ::google::protobuf::Descriptor* descriptor();
-  static const AlgorithmBlacklistEntry& default_instance();
+  static const AlgorithmDenylistEntry& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
-  static inline const AlgorithmBlacklistEntry* internal_default_instance() {
-    return reinterpret_cast<const AlgorithmBlacklistEntry*>(
-               &_AlgorithmBlacklistEntry_default_instance_);
+  static inline const AlgorithmDenylistEntry* internal_default_instance() {
+    return reinterpret_cast<const AlgorithmDenylistEntry*>(
+               &_AlgorithmDenylistEntry_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     2;
 
-  void Swap(AlgorithmBlacklistEntry* other);
-  friend void swap(AlgorithmBlacklistEntry& a, AlgorithmBlacklistEntry& b) {
+  void Swap(AlgorithmDenylistEntry* other);
+  friend void swap(AlgorithmDenylistEntry& a, AlgorithmDenylistEntry& b) {
     a.Swap(&b);
   }
 
   // implements Message ----------------------------------------------
 
-  inline AlgorithmBlacklistEntry* New() const final {
-    return CreateMaybeMessage<AlgorithmBlacklistEntry>(NULL);
+  inline AlgorithmDenylistEntry* New() const final {
+    return CreateMaybeMessage<AlgorithmDenylistEntry>(NULL);
   }
 
-  AlgorithmBlacklistEntry* New(::google::protobuf::Arena* arena) const final {
-    return CreateMaybeMessage<AlgorithmBlacklistEntry>(arena);
+  AlgorithmDenylistEntry* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<AlgorithmDenylistEntry>(arena);
   }
   void CopyFrom(const ::google::protobuf::Message& from) final;
   void MergeFrom(const ::google::protobuf::Message& from) final;
-  void CopyFrom(const AlgorithmBlacklistEntry& from);
-  void MergeFrom(const AlgorithmBlacklistEntry& from);
+  void CopyFrom(const AlgorithmDenylistEntry& from);
+  void MergeFrom(const AlgorithmDenylistEntry& from);
   void Clear() final;
   bool IsInitialized() const final;
 
@@ -401,7 +401,7 @@ class AlgorithmBlacklistEntry : public ::google::protobuf::Message /* @@protoc_i
   void SharedCtor();
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(AlgorithmBlacklistEntry* other);
+  void InternalSwap(AlgorithmDenylistEntry* other);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
@@ -417,16 +417,16 @@ class AlgorithmBlacklistEntry : public ::google::protobuf::Message /* @@protoc_i
 
   // accessors -------------------------------------------------------
 
-  // repeated .xla.gpu.BlacklistedAlgorithm algos = 4;
+  // repeated .xla.gpu.DenylistedAlgorithm algos = 4;
   int algos_size() const;
   void clear_algos();
   static const int kAlgosFieldNumber = 4;
-  ::xla::gpu::BlacklistedAlgorithm* mutable_algos(int index);
-  ::google::protobuf::RepeatedPtrField< ::xla::gpu::BlacklistedAlgorithm >*
+  ::xla::gpu::DenylistedAlgorithm* mutable_algos(int index);
+  ::google::protobuf::RepeatedPtrField< ::xla::gpu::DenylistedAlgorithm >*
       mutable_algos();
-  const ::xla::gpu::BlacklistedAlgorithm& algos(int index) const;
-  ::xla::gpu::BlacklistedAlgorithm* add_algos();
-  const ::google::protobuf::RepeatedPtrField< ::xla::gpu::BlacklistedAlgorithm >&
+  const ::xla::gpu::DenylistedAlgorithm& algos(int index) const;
+  ::xla::gpu::DenylistedAlgorithm* add_algos();
+  const ::google::protobuf::RepeatedPtrField< ::xla::gpu::DenylistedAlgorithm >&
       algos() const;
 
   // string hlo = 1;
@@ -481,11 +481,11 @@ class AlgorithmBlacklistEntry : public ::google::protobuf::Message /* @@protoc_i
   ::tensorflow::CudnnVersion* mutable_cudnn_version();
   void set_allocated_cudnn_version(::tensorflow::CudnnVersion* cudnn_version);
 
-  // @@protoc_insertion_point(class_scope:xla.gpu.AlgorithmBlacklistEntry)
+  // @@protoc_insertion_point(class_scope:xla.gpu.AlgorithmDenylistEntry)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::RepeatedPtrField< ::xla::gpu::BlacklistedAlgorithm > algos_;
+  ::google::protobuf::RepeatedPtrField< ::xla::gpu::DenylistedAlgorithm > algos_;
   ::google::protobuf::internal::ArenaStringPtr hlo_;
   ::google::protobuf::internal::ArenaStringPtr blas_version_;
   ::tensorflow::ComputeCapability* cc_;
@@ -495,24 +495,24 @@ class AlgorithmBlacklistEntry : public ::google::protobuf::Message /* @@protoc_i
 };
 // -------------------------------------------------------------------
 
-class AlgorithmBlacklist : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:xla.gpu.AlgorithmBlacklist) */ {
+class AlgorithmDenylist : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:xla.gpu.AlgorithmDenylist) */ {
  public:
-  AlgorithmBlacklist();
-  virtual ~AlgorithmBlacklist();
+  AlgorithmDenylist();
+  virtual ~AlgorithmDenylist();
 
-  AlgorithmBlacklist(const AlgorithmBlacklist& from);
+  AlgorithmDenylist(const AlgorithmDenylist& from);
 
-  inline AlgorithmBlacklist& operator=(const AlgorithmBlacklist& from) {
+  inline AlgorithmDenylist& operator=(const AlgorithmDenylist& from) {
     CopyFrom(from);
     return *this;
   }
   #if LANG_CXX11
-  AlgorithmBlacklist(AlgorithmBlacklist&& from) noexcept
-    : AlgorithmBlacklist() {
+  AlgorithmDenylist(AlgorithmDenylist&& from) noexcept
+    : AlgorithmDenylist() {
     *this = ::std::move(from);
   }
 
-  inline AlgorithmBlacklist& operator=(AlgorithmBlacklist&& from) noexcept {
+  inline AlgorithmDenylist& operator=(AlgorithmDenylist&& from) noexcept {
     if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
       if (this != &from) InternalSwap(&from);
     } else {
@@ -522,34 +522,34 @@ class AlgorithmBlacklist : public ::google::protobuf::Message /* @@protoc_insert
   }
   #endif
   static const ::google::protobuf::Descriptor* descriptor();
-  static const AlgorithmBlacklist& default_instance();
+  static const AlgorithmDenylist& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
-  static inline const AlgorithmBlacklist* internal_default_instance() {
-    return reinterpret_cast<const AlgorithmBlacklist*>(
-               &_AlgorithmBlacklist_default_instance_);
+  static inline const AlgorithmDenylist* internal_default_instance() {
+    return reinterpret_cast<const AlgorithmDenylist*>(
+               &_AlgorithmDenylist_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     3;
 
-  void Swap(AlgorithmBlacklist* other);
-  friend void swap(AlgorithmBlacklist& a, AlgorithmBlacklist& b) {
+  void Swap(AlgorithmDenylist* other);
+  friend void swap(AlgorithmDenylist& a, AlgorithmDenylist& b) {
     a.Swap(&b);
   }
 
   // implements Message ----------------------------------------------
 
-  inline AlgorithmBlacklist* New() const final {
-    return CreateMaybeMessage<AlgorithmBlacklist>(NULL);
+  inline AlgorithmDenylist* New() const final {
+    return CreateMaybeMessage<AlgorithmDenylist>(NULL);
   }
 
-  AlgorithmBlacklist* New(::google::protobuf::Arena* arena) const final {
-    return CreateMaybeMessage<AlgorithmBlacklist>(arena);
+  AlgorithmDenylist* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<AlgorithmDenylist>(arena);
   }
   void CopyFrom(const ::google::protobuf::Message& from) final;
   void MergeFrom(const ::google::protobuf::Message& from) final;
-  void CopyFrom(const AlgorithmBlacklist& from);
-  void MergeFrom(const AlgorithmBlacklist& from);
+  void CopyFrom(const AlgorithmDenylist& from);
+  void MergeFrom(const AlgorithmDenylist& from);
   void Clear() final;
   bool IsInitialized() const final;
 
@@ -566,7 +566,7 @@ class AlgorithmBlacklist : public ::google::protobuf::Message /* @@protoc_insert
   void SharedCtor();
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(AlgorithmBlacklist* other);
+  void InternalSwap(AlgorithmDenylist* other);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
@@ -582,23 +582,23 @@ class AlgorithmBlacklist : public ::google::protobuf::Message /* @@protoc_insert
 
   // accessors -------------------------------------------------------
 
-  // repeated .xla.gpu.AlgorithmBlacklistEntry entries = 1;
+  // repeated .xla.gpu.AlgorithmDenylistEntry entries = 1;
   int entries_size() const;
   void clear_entries();
   static const int kEntriesFieldNumber = 1;
-  ::xla::gpu::AlgorithmBlacklistEntry* mutable_entries(int index);
-  ::google::protobuf::RepeatedPtrField< ::xla::gpu::AlgorithmBlacklistEntry >*
+  ::xla::gpu::AlgorithmDenylistEntry* mutable_entries(int index);
+  ::google::protobuf::RepeatedPtrField< ::xla::gpu::AlgorithmDenylistEntry >*
       mutable_entries();
-  const ::xla::gpu::AlgorithmBlacklistEntry& entries(int index) const;
-  ::xla::gpu::AlgorithmBlacklistEntry* add_entries();
-  const ::google::protobuf::RepeatedPtrField< ::xla::gpu::AlgorithmBlacklistEntry >&
+  const ::xla::gpu::AlgorithmDenylistEntry& entries(int index) const;
+  ::xla::gpu::AlgorithmDenylistEntry* add_entries();
+  const ::google::protobuf::RepeatedPtrField< ::xla::gpu::AlgorithmDenylistEntry >&
       entries() const;
 
-  // @@protoc_insertion_point(class_scope:xla.gpu.AlgorithmBlacklist)
+  // @@protoc_insertion_point(class_scope:xla.gpu.AlgorithmDenylist)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::RepeatedPtrField< ::xla::gpu::AlgorithmBlacklistEntry > entries_;
+  ::google::protobuf::RepeatedPtrField< ::xla::gpu::AlgorithmDenylistEntry > entries_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fgpu_2fgpu_5fautotuning_2eproto::TableStruct;
 };
@@ -735,123 +735,123 @@ ConvInstructionLog::mutable_operand_addresses() {
 
 // -------------------------------------------------------------------
 
-// BlacklistedAlgorithm
+// DenylistedAlgorithm
 
 // int64 id = 1;
-inline void BlacklistedAlgorithm::clear_id() {
+inline void DenylistedAlgorithm::clear_id() {
   id_ = GOOGLE_LONGLONG(0);
 }
-inline ::google::protobuf::int64 BlacklistedAlgorithm::id() const {
-  // @@protoc_insertion_point(field_get:xla.gpu.BlacklistedAlgorithm.id)
+inline ::google::protobuf::int64 DenylistedAlgorithm::id() const {
+  // @@protoc_insertion_point(field_get:xla.gpu.DenylistedAlgorithm.id)
   return id_;
 }
-inline void BlacklistedAlgorithm::set_id(::google::protobuf::int64 value) {
+inline void DenylistedAlgorithm::set_id(::google::protobuf::int64 value) {
   
   id_ = value;
-  // @@protoc_insertion_point(field_set:xla.gpu.BlacklistedAlgorithm.id)
+  // @@protoc_insertion_point(field_set:xla.gpu.DenylistedAlgorithm.id)
 }
 
 // bool tensor_ops = 2;
-inline void BlacklistedAlgorithm::clear_tensor_ops() {
+inline void DenylistedAlgorithm::clear_tensor_ops() {
   tensor_ops_ = false;
 }
-inline bool BlacklistedAlgorithm::tensor_ops() const {
-  // @@protoc_insertion_point(field_get:xla.gpu.BlacklistedAlgorithm.tensor_ops)
+inline bool DenylistedAlgorithm::tensor_ops() const {
+  // @@protoc_insertion_point(field_get:xla.gpu.DenylistedAlgorithm.tensor_ops)
   return tensor_ops_;
 }
-inline void BlacklistedAlgorithm::set_tensor_ops(bool value) {
+inline void DenylistedAlgorithm::set_tensor_ops(bool value) {
   
   tensor_ops_ = value;
-  // @@protoc_insertion_point(field_set:xla.gpu.BlacklistedAlgorithm.tensor_ops)
+  // @@protoc_insertion_point(field_set:xla.gpu.DenylistedAlgorithm.tensor_ops)
 }
 
 // -------------------------------------------------------------------
 
-// AlgorithmBlacklistEntry
+// AlgorithmDenylistEntry
 
 // string hlo = 1;
-inline void AlgorithmBlacklistEntry::clear_hlo() {
+inline void AlgorithmDenylistEntry::clear_hlo() {
   hlo_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline const ::std::string& AlgorithmBlacklistEntry::hlo() const {
-  // @@protoc_insertion_point(field_get:xla.gpu.AlgorithmBlacklistEntry.hlo)
+inline const ::std::string& AlgorithmDenylistEntry::hlo() const {
+  // @@protoc_insertion_point(field_get:xla.gpu.AlgorithmDenylistEntry.hlo)
   return hlo_.GetNoArena();
 }
-inline void AlgorithmBlacklistEntry::set_hlo(const ::std::string& value) {
+inline void AlgorithmDenylistEntry::set_hlo(const ::std::string& value) {
   
   hlo_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:xla.gpu.AlgorithmBlacklistEntry.hlo)
+  // @@protoc_insertion_point(field_set:xla.gpu.AlgorithmDenylistEntry.hlo)
 }
 #if LANG_CXX11
-inline void AlgorithmBlacklistEntry::set_hlo(::std::string&& value) {
+inline void AlgorithmDenylistEntry::set_hlo(::std::string&& value) {
   
   hlo_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:xla.gpu.AlgorithmBlacklistEntry.hlo)
+  // @@protoc_insertion_point(field_set_rvalue:xla.gpu.AlgorithmDenylistEntry.hlo)
 }
 #endif
-inline void AlgorithmBlacklistEntry::set_hlo(const char* value) {
+inline void AlgorithmDenylistEntry::set_hlo(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   
   hlo_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:xla.gpu.AlgorithmBlacklistEntry.hlo)
+  // @@protoc_insertion_point(field_set_char:xla.gpu.AlgorithmDenylistEntry.hlo)
 }
-inline void AlgorithmBlacklistEntry::set_hlo(const char* value, size_t size) {
+inline void AlgorithmDenylistEntry::set_hlo(const char* value, size_t size) {
   
   hlo_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:xla.gpu.AlgorithmBlacklistEntry.hlo)
+  // @@protoc_insertion_point(field_set_pointer:xla.gpu.AlgorithmDenylistEntry.hlo)
 }
-inline ::std::string* AlgorithmBlacklistEntry::mutable_hlo() {
+inline ::std::string* AlgorithmDenylistEntry::mutable_hlo() {
   
-  // @@protoc_insertion_point(field_mutable:xla.gpu.AlgorithmBlacklistEntry.hlo)
+  // @@protoc_insertion_point(field_mutable:xla.gpu.AlgorithmDenylistEntry.hlo)
   return hlo_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline ::std::string* AlgorithmBlacklistEntry::release_hlo() {
-  // @@protoc_insertion_point(field_release:xla.gpu.AlgorithmBlacklistEntry.hlo)
+inline ::std::string* AlgorithmDenylistEntry::release_hlo() {
+  // @@protoc_insertion_point(field_release:xla.gpu.AlgorithmDenylistEntry.hlo)
   
   return hlo_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline void AlgorithmBlacklistEntry::set_allocated_hlo(::std::string* hlo) {
+inline void AlgorithmDenylistEntry::set_allocated_hlo(::std::string* hlo) {
   if (hlo != NULL) {
     
   } else {
     
   }
   hlo_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), hlo);
-  // @@protoc_insertion_point(field_set_allocated:xla.gpu.AlgorithmBlacklistEntry.hlo)
+  // @@protoc_insertion_point(field_set_allocated:xla.gpu.AlgorithmDenylistEntry.hlo)
 }
 
 // .tensorflow.ComputeCapability cc = 2;
-inline bool AlgorithmBlacklistEntry::has_cc() const {
+inline bool AlgorithmDenylistEntry::has_cc() const {
   return this != internal_default_instance() && cc_ != NULL;
 }
-inline const ::tensorflow::ComputeCapability& AlgorithmBlacklistEntry::_internal_cc() const {
+inline const ::tensorflow::ComputeCapability& AlgorithmDenylistEntry::_internal_cc() const {
   return *cc_;
 }
-inline const ::tensorflow::ComputeCapability& AlgorithmBlacklistEntry::cc() const {
+inline const ::tensorflow::ComputeCapability& AlgorithmDenylistEntry::cc() const {
   const ::tensorflow::ComputeCapability* p = cc_;
-  // @@protoc_insertion_point(field_get:xla.gpu.AlgorithmBlacklistEntry.cc)
+  // @@protoc_insertion_point(field_get:xla.gpu.AlgorithmDenylistEntry.cc)
   return p != NULL ? *p : *reinterpret_cast<const ::tensorflow::ComputeCapability*>(
       &::tensorflow::_ComputeCapability_default_instance_);
 }
-inline ::tensorflow::ComputeCapability* AlgorithmBlacklistEntry::release_cc() {
-  // @@protoc_insertion_point(field_release:xla.gpu.AlgorithmBlacklistEntry.cc)
+inline ::tensorflow::ComputeCapability* AlgorithmDenylistEntry::release_cc() {
+  // @@protoc_insertion_point(field_release:xla.gpu.AlgorithmDenylistEntry.cc)
   
   ::tensorflow::ComputeCapability* temp = cc_;
   cc_ = NULL;
   return temp;
 }
-inline ::tensorflow::ComputeCapability* AlgorithmBlacklistEntry::mutable_cc() {
+inline ::tensorflow::ComputeCapability* AlgorithmDenylistEntry::mutable_cc() {
   
   if (cc_ == NULL) {
     auto* p = CreateMaybeMessage<::tensorflow::ComputeCapability>(GetArenaNoVirtual());
     cc_ = p;
   }
-  // @@protoc_insertion_point(field_mutable:xla.gpu.AlgorithmBlacklistEntry.cc)
+  // @@protoc_insertion_point(field_mutable:xla.gpu.AlgorithmDenylistEntry.cc)
   return cc_;
 }
-inline void AlgorithmBlacklistEntry::set_allocated_cc(::tensorflow::ComputeCapability* cc) {
+inline void AlgorithmDenylistEntry::set_allocated_cc(::tensorflow::ComputeCapability* cc) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete reinterpret_cast< ::google::protobuf::MessageLite*>(cc_);
@@ -867,39 +867,39 @@ inline void AlgorithmBlacklistEntry::set_allocated_cc(::tensorflow::ComputeCapab
     
   }
   cc_ = cc;
-  // @@protoc_insertion_point(field_set_allocated:xla.gpu.AlgorithmBlacklistEntry.cc)
+  // @@protoc_insertion_point(field_set_allocated:xla.gpu.AlgorithmDenylistEntry.cc)
 }
 
 // .tensorflow.CudnnVersion cudnn_version = 3;
-inline bool AlgorithmBlacklistEntry::has_cudnn_version() const {
+inline bool AlgorithmDenylistEntry::has_cudnn_version() const {
   return this != internal_default_instance() && cudnn_version_ != NULL;
 }
-inline const ::tensorflow::CudnnVersion& AlgorithmBlacklistEntry::_internal_cudnn_version() const {
+inline const ::tensorflow::CudnnVersion& AlgorithmDenylistEntry::_internal_cudnn_version() const {
   return *cudnn_version_;
 }
-inline const ::tensorflow::CudnnVersion& AlgorithmBlacklistEntry::cudnn_version() const {
+inline const ::tensorflow::CudnnVersion& AlgorithmDenylistEntry::cudnn_version() const {
   const ::tensorflow::CudnnVersion* p = cudnn_version_;
-  // @@protoc_insertion_point(field_get:xla.gpu.AlgorithmBlacklistEntry.cudnn_version)
+  // @@protoc_insertion_point(field_get:xla.gpu.AlgorithmDenylistEntry.cudnn_version)
   return p != NULL ? *p : *reinterpret_cast<const ::tensorflow::CudnnVersion*>(
       &::tensorflow::_CudnnVersion_default_instance_);
 }
-inline ::tensorflow::CudnnVersion* AlgorithmBlacklistEntry::release_cudnn_version() {
-  // @@protoc_insertion_point(field_release:xla.gpu.AlgorithmBlacklistEntry.cudnn_version)
+inline ::tensorflow::CudnnVersion* AlgorithmDenylistEntry::release_cudnn_version() {
+  // @@protoc_insertion_point(field_release:xla.gpu.AlgorithmDenylistEntry.cudnn_version)
   
   ::tensorflow::CudnnVersion* temp = cudnn_version_;
   cudnn_version_ = NULL;
   return temp;
 }
-inline ::tensorflow::CudnnVersion* AlgorithmBlacklistEntry::mutable_cudnn_version() {
+inline ::tensorflow::CudnnVersion* AlgorithmDenylistEntry::mutable_cudnn_version() {
   
   if (cudnn_version_ == NULL) {
     auto* p = CreateMaybeMessage<::tensorflow::CudnnVersion>(GetArenaNoVirtual());
     cudnn_version_ = p;
   }
-  // @@protoc_insertion_point(field_mutable:xla.gpu.AlgorithmBlacklistEntry.cudnn_version)
+  // @@protoc_insertion_point(field_mutable:xla.gpu.AlgorithmDenylistEntry.cudnn_version)
   return cudnn_version_;
 }
-inline void AlgorithmBlacklistEntry::set_allocated_cudnn_version(::tensorflow::CudnnVersion* cudnn_version) {
+inline void AlgorithmDenylistEntry::set_allocated_cudnn_version(::tensorflow::CudnnVersion* cudnn_version) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete reinterpret_cast< ::google::protobuf::MessageLite*>(cudnn_version_);
@@ -915,123 +915,123 @@ inline void AlgorithmBlacklistEntry::set_allocated_cudnn_version(::tensorflow::C
     
   }
   cudnn_version_ = cudnn_version;
-  // @@protoc_insertion_point(field_set_allocated:xla.gpu.AlgorithmBlacklistEntry.cudnn_version)
+  // @@protoc_insertion_point(field_set_allocated:xla.gpu.AlgorithmDenylistEntry.cudnn_version)
 }
 
 // string blas_version = 5;
-inline void AlgorithmBlacklistEntry::clear_blas_version() {
+inline void AlgorithmDenylistEntry::clear_blas_version() {
   blas_version_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline const ::std::string& AlgorithmBlacklistEntry::blas_version() const {
-  // @@protoc_insertion_point(field_get:xla.gpu.AlgorithmBlacklistEntry.blas_version)
+inline const ::std::string& AlgorithmDenylistEntry::blas_version() const {
+  // @@protoc_insertion_point(field_get:xla.gpu.AlgorithmDenylistEntry.blas_version)
   return blas_version_.GetNoArena();
 }
-inline void AlgorithmBlacklistEntry::set_blas_version(const ::std::string& value) {
+inline void AlgorithmDenylistEntry::set_blas_version(const ::std::string& value) {
   
   blas_version_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:xla.gpu.AlgorithmBlacklistEntry.blas_version)
+  // @@protoc_insertion_point(field_set:xla.gpu.AlgorithmDenylistEntry.blas_version)
 }
 #if LANG_CXX11
-inline void AlgorithmBlacklistEntry::set_blas_version(::std::string&& value) {
+inline void AlgorithmDenylistEntry::set_blas_version(::std::string&& value) {
   
   blas_version_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:xla.gpu.AlgorithmBlacklistEntry.blas_version)
+  // @@protoc_insertion_point(field_set_rvalue:xla.gpu.AlgorithmDenylistEntry.blas_version)
 }
 #endif
-inline void AlgorithmBlacklistEntry::set_blas_version(const char* value) {
+inline void AlgorithmDenylistEntry::set_blas_version(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   
   blas_version_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:xla.gpu.AlgorithmBlacklistEntry.blas_version)
+  // @@protoc_insertion_point(field_set_char:xla.gpu.AlgorithmDenylistEntry.blas_version)
 }
-inline void AlgorithmBlacklistEntry::set_blas_version(const char* value, size_t size) {
+inline void AlgorithmDenylistEntry::set_blas_version(const char* value, size_t size) {
   
   blas_version_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:xla.gpu.AlgorithmBlacklistEntry.blas_version)
+  // @@protoc_insertion_point(field_set_pointer:xla.gpu.AlgorithmDenylistEntry.blas_version)
 }
-inline ::std::string* AlgorithmBlacklistEntry::mutable_blas_version() {
+inline ::std::string* AlgorithmDenylistEntry::mutable_blas_version() {
   
-  // @@protoc_insertion_point(field_mutable:xla.gpu.AlgorithmBlacklistEntry.blas_version)
+  // @@protoc_insertion_point(field_mutable:xla.gpu.AlgorithmDenylistEntry.blas_version)
   return blas_version_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline ::std::string* AlgorithmBlacklistEntry::release_blas_version() {
-  // @@protoc_insertion_point(field_release:xla.gpu.AlgorithmBlacklistEntry.blas_version)
+inline ::std::string* AlgorithmDenylistEntry::release_blas_version() {
+  // @@protoc_insertion_point(field_release:xla.gpu.AlgorithmDenylistEntry.blas_version)
   
   return blas_version_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline void AlgorithmBlacklistEntry::set_allocated_blas_version(::std::string* blas_version) {
+inline void AlgorithmDenylistEntry::set_allocated_blas_version(::std::string* blas_version) {
   if (blas_version != NULL) {
     
   } else {
     
   }
   blas_version_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), blas_version);
-  // @@protoc_insertion_point(field_set_allocated:xla.gpu.AlgorithmBlacklistEntry.blas_version)
+  // @@protoc_insertion_point(field_set_allocated:xla.gpu.AlgorithmDenylistEntry.blas_version)
 }
 
-// repeated .xla.gpu.BlacklistedAlgorithm algos = 4;
-inline int AlgorithmBlacklistEntry::algos_size() const {
+// repeated .xla.gpu.DenylistedAlgorithm algos = 4;
+inline int AlgorithmDenylistEntry::algos_size() const {
   return algos_.size();
 }
-inline void AlgorithmBlacklistEntry::clear_algos() {
+inline void AlgorithmDenylistEntry::clear_algos() {
   algos_.Clear();
 }
-inline ::xla::gpu::BlacklistedAlgorithm* AlgorithmBlacklistEntry::mutable_algos(int index) {
-  // @@protoc_insertion_point(field_mutable:xla.gpu.AlgorithmBlacklistEntry.algos)
+inline ::xla::gpu::DenylistedAlgorithm* AlgorithmDenylistEntry::mutable_algos(int index) {
+  // @@protoc_insertion_point(field_mutable:xla.gpu.AlgorithmDenylistEntry.algos)
   return algos_.Mutable(index);
 }
-inline ::google::protobuf::RepeatedPtrField< ::xla::gpu::BlacklistedAlgorithm >*
-AlgorithmBlacklistEntry::mutable_algos() {
-  // @@protoc_insertion_point(field_mutable_list:xla.gpu.AlgorithmBlacklistEntry.algos)
+inline ::google::protobuf::RepeatedPtrField< ::xla::gpu::DenylistedAlgorithm >*
+AlgorithmDenylistEntry::mutable_algos() {
+  // @@protoc_insertion_point(field_mutable_list:xla.gpu.AlgorithmDenylistEntry.algos)
   return &algos_;
 }
-inline const ::xla::gpu::BlacklistedAlgorithm& AlgorithmBlacklistEntry::algos(int index) const {
-  // @@protoc_insertion_point(field_get:xla.gpu.AlgorithmBlacklistEntry.algos)
+inline const ::xla::gpu::DenylistedAlgorithm& AlgorithmDenylistEntry::algos(int index) const {
+  // @@protoc_insertion_point(field_get:xla.gpu.AlgorithmDenylistEntry.algos)
   return algos_.Get(index);
 }
-inline ::xla::gpu::BlacklistedAlgorithm* AlgorithmBlacklistEntry::add_algos() {
-  // @@protoc_insertion_point(field_add:xla.gpu.AlgorithmBlacklistEntry.algos)
+inline ::xla::gpu::DenylistedAlgorithm* AlgorithmDenylistEntry::add_algos() {
+  // @@protoc_insertion_point(field_add:xla.gpu.AlgorithmDenylistEntry.algos)
   return algos_.Add();
 }
-inline const ::google::protobuf::RepeatedPtrField< ::xla::gpu::BlacklistedAlgorithm >&
-AlgorithmBlacklistEntry::algos() const {
-  // @@protoc_insertion_point(field_list:xla.gpu.AlgorithmBlacklistEntry.algos)
+inline const ::google::protobuf::RepeatedPtrField< ::xla::gpu::DenylistedAlgorithm >&
+AlgorithmDenylistEntry::algos() const {
+  // @@protoc_insertion_point(field_list:xla.gpu.AlgorithmDenylistEntry.algos)
   return algos_;
 }
 
 // -------------------------------------------------------------------
 
-// AlgorithmBlacklist
+// AlgorithmDenylist
 
-// repeated .xla.gpu.AlgorithmBlacklistEntry entries = 1;
-inline int AlgorithmBlacklist::entries_size() const {
+// repeated .xla.gpu.AlgorithmDenylistEntry entries = 1;
+inline int AlgorithmDenylist::entries_size() const {
   return entries_.size();
 }
-inline void AlgorithmBlacklist::clear_entries() {
+inline void AlgorithmDenylist::clear_entries() {
   entries_.Clear();
 }
-inline ::xla::gpu::AlgorithmBlacklistEntry* AlgorithmBlacklist::mutable_entries(int index) {
-  // @@protoc_insertion_point(field_mutable:xla.gpu.AlgorithmBlacklist.entries)
+inline ::xla::gpu::AlgorithmDenylistEntry* AlgorithmDenylist::mutable_entries(int index) {
+  // @@protoc_insertion_point(field_mutable:xla.gpu.AlgorithmDenylist.entries)
   return entries_.Mutable(index);
 }
-inline ::google::protobuf::RepeatedPtrField< ::xla::gpu::AlgorithmBlacklistEntry >*
-AlgorithmBlacklist::mutable_entries() {
-  // @@protoc_insertion_point(field_mutable_list:xla.gpu.AlgorithmBlacklist.entries)
+inline ::google::protobuf::RepeatedPtrField< ::xla::gpu::AlgorithmDenylistEntry >*
+AlgorithmDenylist::mutable_entries() {
+  // @@protoc_insertion_point(field_mutable_list:xla.gpu.AlgorithmDenylist.entries)
   return &entries_;
 }
-inline const ::xla::gpu::AlgorithmBlacklistEntry& AlgorithmBlacklist::entries(int index) const {
-  // @@protoc_insertion_point(field_get:xla.gpu.AlgorithmBlacklist.entries)
+inline const ::xla::gpu::AlgorithmDenylistEntry& AlgorithmDenylist::entries(int index) const {
+  // @@protoc_insertion_point(field_get:xla.gpu.AlgorithmDenylist.entries)
   return entries_.Get(index);
 }
-inline ::xla::gpu::AlgorithmBlacklistEntry* AlgorithmBlacklist::add_entries() {
-  // @@protoc_insertion_point(field_add:xla.gpu.AlgorithmBlacklist.entries)
+inline ::xla::gpu::AlgorithmDenylistEntry* AlgorithmDenylist::add_entries() {
+  // @@protoc_insertion_point(field_add:xla.gpu.AlgorithmDenylist.entries)
   return entries_.Add();
 }
-inline const ::google::protobuf::RepeatedPtrField< ::xla::gpu::AlgorithmBlacklistEntry >&
-AlgorithmBlacklist::entries() const {
-  // @@protoc_insertion_point(field_list:xla.gpu.AlgorithmBlacklist.entries)
+inline const ::google::protobuf::RepeatedPtrField< ::xla::gpu::AlgorithmDenylistEntry >&
+AlgorithmDenylist::entries() const {
+  // @@protoc_insertion_point(field_list:xla.gpu.AlgorithmDenylist.entries)
   return entries_;
 }
 

@@ -191,26 +191,26 @@ void AddDescriptorsImpl() {
   InitDefaults();
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n>tensorflow/compiler/xla/service/hlo_pr"
-      "ofile_printer_data.proto\022\003xla\"\345\004\n\025HloPro"
+      "ofile_printer_data.proto\022\003xla\"\353\004\n\025HloPro"
       "filePrinterData\022H\n\021computation_infos\030\001 \003"
       "(\0132-.xla.HloProfilePrinterData.HloComput"
       "ationInfo\022\035\n\025profile_counters_size\030\002 \001(\003"
       "\022C\n\rextra_metrics\030\003 \003(\0132,.xla.HloProfile"
       "PrinterData.ExtraMetricsEntry\022\031\n\021entry_c"
-      "omputation\030\004 \001(\t\032\307\001\n\022HloInstructionInfo\022"
+      "omputation\030\004 \001(\t\032\315\001\n\022HloInstructionInfo\022"
       "\021\n\tlong_name\030\001 \001(\t\022\022\n\nshort_name\030\002 \001(\t\022\020"
       "\n\010category\030\003 \001(\t\022\022\n\nflop_count\030\004 \001(\002\022\034\n\024"
       "transcendental_count\030\005 \001(\002\022\026\n\016bytes_acce"
-      "ssed\030\006 \001(\002\022\027\n\017optimal_seconds\030\007 \001(\002\022\025\n\rp"
-      "rofile_index\030\010 \001(\003\032\203\001\n\022HloComputationInf"
-      "o\022\014\n\004name\030\001 \001(\t\022\025\n\rprofile_index\030\002 \001(\003\022H"
-      "\n\021instruction_infos\030\003 \003(\0132-.xla.HloProfi"
-      "lePrinterData.HloInstructionInfo\0323\n\021Extr"
-      "aMetricsEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001("
-      "\003:\0028\001B\003\370\001\001b\006proto3"
+      "ssed\030\t \001(\003\022\027\n\017optimal_seconds\030\007 \001(\002\022\025\n\rp"
+      "rofile_index\030\010 \001(\003J\004\010\006\020\007\032\203\001\n\022HloComputat"
+      "ionInfo\022\014\n\004name\030\001 \001(\t\022\025\n\rprofile_index\030\002"
+      " \001(\003\022H\n\021instruction_infos\030\003 \003(\0132-.xla.Hl"
+      "oProfilePrinterData.HloInstructionInfo\0323"
+      "\n\021ExtraMetricsEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005valu"
+      "e\030\002 \001(\003:\0028\001B\003\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 698);
+      descriptor, 704);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/compiler/xla/service/hlo_profile_printer_data.proto", &protobuf_RegisterTypes);
 }
@@ -278,8 +278,8 @@ HloProfilePrinterData_HloInstructionInfo::HloProfilePrinterData_HloInstructionIn
       GetArenaNoVirtual());
   }
   ::memcpy(&flop_count_, &from.flop_count_,
-    static_cast<size_t>(reinterpret_cast<char*>(&profile_index_) -
-    reinterpret_cast<char*>(&flop_count_)) + sizeof(profile_index_));
+    static_cast<size_t>(reinterpret_cast<char*>(&optimal_seconds_) -
+    reinterpret_cast<char*>(&flop_count_)) + sizeof(optimal_seconds_));
   // @@protoc_insertion_point(copy_constructor:xla.HloProfilePrinterData.HloInstructionInfo)
 }
 
@@ -288,8 +288,8 @@ void HloProfilePrinterData_HloInstructionInfo::SharedCtor() {
   short_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   category_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&flop_count_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&profile_index_) -
-      reinterpret_cast<char*>(&flop_count_)) + sizeof(profile_index_));
+      reinterpret_cast<char*>(&optimal_seconds_) -
+      reinterpret_cast<char*>(&flop_count_)) + sizeof(optimal_seconds_));
 }
 
 HloProfilePrinterData_HloInstructionInfo::~HloProfilePrinterData_HloInstructionInfo() {
@@ -334,8 +334,8 @@ void HloProfilePrinterData_HloInstructionInfo::Clear() {
   short_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
   category_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
   ::memset(&flop_count_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&profile_index_) -
-      reinterpret_cast<char*>(&flop_count_)) + sizeof(profile_index_));
+      reinterpret_cast<char*>(&optimal_seconds_) -
+      reinterpret_cast<char*>(&flop_count_)) + sizeof(optimal_seconds_));
   _internal_metadata_.Clear();
 }
 
@@ -425,20 +425,6 @@ bool HloProfilePrinterData_HloInstructionInfo::MergePartialFromCodedStream(
         break;
       }
 
-      // float bytes_accessed = 6;
-      case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(53u /* 53 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
-                 input, &bytes_accessed_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
       // float optimal_seconds = 7;
       case 7: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
@@ -461,6 +447,20 @@ bool HloProfilePrinterData_HloInstructionInfo::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
                  input, &profile_index_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int64 bytes_accessed = 9;
+      case 9: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(72u /* 72 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 input, &bytes_accessed_)));
         } else {
           goto handle_unusual;
         }
@@ -533,11 +533,6 @@ void HloProfilePrinterData_HloInstructionInfo::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteFloat(5, this->transcendental_count(), output);
   }
 
-  // float bytes_accessed = 6;
-  if (this->bytes_accessed() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteFloat(6, this->bytes_accessed(), output);
-  }
-
   // float optimal_seconds = 7;
   if (this->optimal_seconds() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteFloat(7, this->optimal_seconds(), output);
@@ -546,6 +541,11 @@ void HloProfilePrinterData_HloInstructionInfo::SerializeWithCachedSizes(
   // int64 profile_index = 8;
   if (this->profile_index() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(8, this->profile_index(), output);
+  }
+
+  // int64 bytes_accessed = 9;
+  if (this->bytes_accessed() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt64(9, this->bytes_accessed(), output);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -605,11 +605,6 @@ void HloProfilePrinterData_HloInstructionInfo::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(5, this->transcendental_count(), target);
   }
 
-  // float bytes_accessed = 6;
-  if (this->bytes_accessed() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(6, this->bytes_accessed(), target);
-  }
-
   // float optimal_seconds = 7;
   if (this->optimal_seconds() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(7, this->optimal_seconds(), target);
@@ -618,6 +613,11 @@ void HloProfilePrinterData_HloInstructionInfo::SerializeWithCachedSizes(
   // int64 profile_index = 8;
   if (this->profile_index() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(8, this->profile_index(), target);
+  }
+
+  // int64 bytes_accessed = 9;
+  if (this->bytes_accessed() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(9, this->bytes_accessed(), target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -668,21 +668,23 @@ size_t HloProfilePrinterData_HloInstructionInfo::ByteSizeLong() const {
     total_size += 1 + 4;
   }
 
-  // float bytes_accessed = 6;
-  if (this->bytes_accessed() != 0) {
-    total_size += 1 + 4;
-  }
-
-  // float optimal_seconds = 7;
-  if (this->optimal_seconds() != 0) {
-    total_size += 1 + 4;
-  }
-
   // int64 profile_index = 8;
   if (this->profile_index() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int64Size(
         this->profile_index());
+  }
+
+  // int64 bytes_accessed = 9;
+  if (this->bytes_accessed() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int64Size(
+        this->bytes_accessed());
+  }
+
+  // float optimal_seconds = 7;
+  if (this->optimal_seconds() != 0) {
+    total_size += 1 + 4;
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -727,14 +729,14 @@ void HloProfilePrinterData_HloInstructionInfo::MergeFrom(const HloProfilePrinter
   if (from.transcendental_count() != 0) {
     set_transcendental_count(from.transcendental_count());
   }
+  if (from.profile_index() != 0) {
+    set_profile_index(from.profile_index());
+  }
   if (from.bytes_accessed() != 0) {
     set_bytes_accessed(from.bytes_accessed());
   }
   if (from.optimal_seconds() != 0) {
     set_optimal_seconds(from.optimal_seconds());
-  }
-  if (from.profile_index() != 0) {
-    set_profile_index(from.profile_index());
   }
 }
 
@@ -785,9 +787,9 @@ void HloProfilePrinterData_HloInstructionInfo::InternalSwap(HloProfilePrinterDat
     GetArenaNoVirtual());
   swap(flop_count_, other->flop_count_);
   swap(transcendental_count_, other->transcendental_count_);
+  swap(profile_index_, other->profile_index_);
   swap(bytes_accessed_, other->bytes_accessed_);
   swap(optimal_seconds_, other->optimal_seconds_);
-  swap(profile_index_, other->profile_index_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 

@@ -26,7 +26,8 @@ namespace protobuf_tensorflow_2fcore_2fframework_2fdevice_5fattributes_2eproto {
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fframework_2fdevice_5fattributes_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_DeviceAttributes;
 }  // namespace protobuf_tensorflow_2fcore_2fframework_2fdevice_5fattributes_2eproto
 namespace protobuf_tensorflow_2fcore_2fframework_2ffunction_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fframework_2ffunction_2eproto ::google::protobuf::internal::SCCInfo<6> scc_info_FunctionDef;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fframework_2ffunction_2eproto ::google::protobuf::internal::SCCInfo<3> scc_info_FunctionDefLibrary;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fframework_2ffunction_2eproto ::google::protobuf::internal::SCCInfo<7> scc_info_FunctionDef;
 }  // namespace protobuf_tensorflow_2fcore_2fframework_2ffunction_2eproto
 namespace protobuf_tensorflow_2fcore_2fframework_2ftensor_2eproto {
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fframework_2ftensor_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_TensorProto;
@@ -38,23 +39,34 @@ namespace protobuf_tensorflow_2fcore_2fframework_2fversions_2eproto {
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fframework_2fversions_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_VersionDef;
 }  // namespace protobuf_tensorflow_2fcore_2fframework_2fversions_2eproto
 namespace protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_RemoteTensorHandle;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CleanupFunctionOp;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_SyncRemoteExecutorForStream;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_Operation_AttrsEntry_DoNotUse;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_QueueResponse;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_SendPackedHandleOp;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_SendPackedHandleOp_LocalTensorHandle;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_SendTensorOp;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_Operation;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto ::google::protobuf::internal::SCCInfo<3> scc_info_QueueItem;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_Operation_Input;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_QueueResponse;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_RegisterFunctionOp;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_SendPackedHandleOp_Handle;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto ::google::protobuf::internal::SCCInfo<7> scc_info_QueueItem;
 }  // namespace protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto
+namespace protobuf_tensorflow_2fcore_2fprotobuf_2fremote_5ftensor_5fhandle_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2fremote_5ftensor_5fhandle_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_RemoteTensorHandle;
+}  // namespace protobuf_tensorflow_2fcore_2fprotobuf_2fremote_5ftensor_5fhandle_2eproto
 namespace protobuf_tensorflow_2fcore_2fprotobuf_2ftensorflow_5fserver_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftensorflow_5fserver_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_ServerDef;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftensorflow_5fserver_2eproto ::google::protobuf::internal::SCCInfo<3> scc_info_ServerDef;
 }  // namespace protobuf_tensorflow_2fcore_2fprotobuf_2ftensorflow_5fserver_2eproto
 namespace tensorflow {
 namespace eager {
-class RemoteTensorHandleDefaultTypeInternal {
+class Operation_InputDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<RemoteTensorHandle>
+  ::google::protobuf::internal::ExplicitlyConstructed<Operation_Input>
       _instance;
-} _RemoteTensorHandle_default_instance_;
+  const ::tensorflow::eager::RemoteTensorHandle* remote_handle_;
+  const ::tensorflow::TensorProto* tensor_;
+} _Operation_Input_default_instance_;
 class Operation_AttrsEntry_DoNotUseDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<Operation_AttrsEntry_DoNotUse>
@@ -72,6 +84,10 @@ class QueueItemDefaultTypeInternal {
   const ::tensorflow::eager::RemoteTensorHandle* handle_to_decref_;
   const ::tensorflow::eager::Operation* operation_;
   const ::tensorflow::eager::SendTensorOp* send_tensor_;
+  const ::tensorflow::eager::RegisterFunctionOp* register_function_;
+  const ::tensorflow::eager::CleanupFunctionOp* cleanup_function_;
+  const ::tensorflow::eager::SyncRemoteExecutorForStream* sync_remote_executor_for_stream_;
+  const ::tensorflow::eager::SendPackedHandleOp* send_packed_handle_;
 } _QueueItem_default_instance_;
 class QueueResponseDefaultTypeInternal {
  public:
@@ -88,6 +104,16 @@ class CreateContextResponseDefaultTypeInternal {
   ::google::protobuf::internal::ExplicitlyConstructed<CreateContextResponse>
       _instance;
 } _CreateContextResponse_default_instance_;
+class UpdateContextRequestDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<UpdateContextRequest>
+      _instance;
+} _UpdateContextRequest_default_instance_;
+class UpdateContextResponseDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<UpdateContextResponse>
+      _instance;
+} _UpdateContextResponse_default_instance_;
 class EnqueueRequestDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<EnqueueRequest>
@@ -108,6 +134,16 @@ class WaitQueueDoneResponseDefaultTypeInternal {
   ::google::protobuf::internal::ExplicitlyConstructed<WaitQueueDoneResponse>
       _instance;
 } _WaitQueueDoneResponse_default_instance_;
+class RunComponentFunctionRequestDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<RunComponentFunctionRequest>
+      _instance;
+} _RunComponentFunctionRequest_default_instance_;
+class RunComponentFunctionResponseDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<RunComponentFunctionResponse>
+      _instance;
+} _RunComponentFunctionResponse_default_instance_;
 class KeepAliveRequestDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<KeepAliveRequest>
@@ -128,47 +164,61 @@ class CloseContextResponseDefaultTypeInternal {
   ::google::protobuf::internal::ExplicitlyConstructed<CloseContextResponse>
       _instance;
 } _CloseContextResponse_default_instance_;
-class RegisterFunctionRequestDefaultTypeInternal {
+class RegisterFunctionOpDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<RegisterFunctionRequest>
+  ::google::protobuf::internal::ExplicitlyConstructed<RegisterFunctionOp>
       _instance;
-} _RegisterFunctionRequest_default_instance_;
-class RegisterFunctionResponseDefaultTypeInternal {
+} _RegisterFunctionOp_default_instance_;
+class CleanupFunctionOpDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<RegisterFunctionResponse>
+  ::google::protobuf::internal::ExplicitlyConstructed<CleanupFunctionOp>
       _instance;
-} _RegisterFunctionResponse_default_instance_;
+} _CleanupFunctionOp_default_instance_;
+class SyncRemoteExecutorForStreamDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<SyncRemoteExecutorForStream>
+      _instance;
+} _SyncRemoteExecutorForStream_default_instance_;
 class SendTensorOpDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<SendTensorOp>
       _instance;
 } _SendTensorOp_default_instance_;
-class SendTensorRequestDefaultTypeInternal {
+class SendPackedHandleOp_LocalTensorHandleDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<SendTensorRequest>
+  ::google::protobuf::internal::ExplicitlyConstructed<SendPackedHandleOp_LocalTensorHandle>
       _instance;
-} _SendTensorRequest_default_instance_;
-class SendTensorResponseDefaultTypeInternal {
+} _SendPackedHandleOp_LocalTensorHandle_default_instance_;
+class SendPackedHandleOp_HandleDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<SendTensorResponse>
+  ::google::protobuf::internal::ExplicitlyConstructed<SendPackedHandleOp_Handle>
       _instance;
-} _SendTensorResponse_default_instance_;
+  const ::tensorflow::eager::SendPackedHandleOp_LocalTensorHandle* local_handle_;
+  const ::tensorflow::eager::RemoteTensorHandle* remote_handle_;
+} _SendPackedHandleOp_Handle_default_instance_;
+class SendPackedHandleOpDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<SendPackedHandleOp>
+      _instance;
+} _SendPackedHandleOp_default_instance_;
 }  // namespace eager
 }  // namespace tensorflow
 namespace protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto {
-static void InitDefaultsRemoteTensorHandle() {
+static void InitDefaultsOperation_Input() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::tensorflow::eager::_RemoteTensorHandle_default_instance_;
-    new (ptr) ::tensorflow::eager::RemoteTensorHandle();
+    void* ptr = &::tensorflow::eager::_Operation_Input_default_instance_;
+    new (ptr) ::tensorflow::eager::Operation_Input();
     ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::tensorflow::eager::RemoteTensorHandle::InitAsDefaultInstance();
+  ::tensorflow::eager::Operation_Input::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_RemoteTensorHandle =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsRemoteTensorHandle}, {}};
+::google::protobuf::internal::SCCInfo<2> scc_info_Operation_Input =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsOperation_Input}, {
+      &protobuf_tensorflow_2fcore_2fprotobuf_2fremote_5ftensor_5fhandle_2eproto::scc_info_RemoteTensorHandle.base,
+      &protobuf_tensorflow_2fcore_2fframework_2ftensor_2eproto::scc_info_TensorProto.base,}};
 
 static void InitDefaultsOperation_AttrsEntry_DoNotUse() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -197,7 +247,7 @@ static void InitDefaultsOperation() {
 
 ::google::protobuf::internal::SCCInfo<2> scc_info_Operation =
     {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsOperation}, {
-      &protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_RemoteTensorHandle.base,
+      &protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_Operation_Input.base,
       &protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_Operation_AttrsEntry_DoNotUse.base,}};
 
 static void InitDefaultsQueueItem() {
@@ -211,11 +261,15 @@ static void InitDefaultsQueueItem() {
   ::tensorflow::eager::QueueItem::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<3> scc_info_QueueItem =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 3, InitDefaultsQueueItem}, {
-      &protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_RemoteTensorHandle.base,
+::google::protobuf::internal::SCCInfo<7> scc_info_QueueItem =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 7, InitDefaultsQueueItem}, {
+      &protobuf_tensorflow_2fcore_2fprotobuf_2fremote_5ftensor_5fhandle_2eproto::scc_info_RemoteTensorHandle.base,
       &protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_Operation.base,
-      &protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_SendTensorOp.base,}};
+      &protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_SendTensorOp.base,
+      &protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_RegisterFunctionOp.base,
+      &protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_CleanupFunctionOp.base,
+      &protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_SyncRemoteExecutorForStream.base,
+      &protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_SendPackedHandleOp.base,}};
 
 static void InitDefaultsQueueResponse() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -228,9 +282,10 @@ static void InitDefaultsQueueResponse() {
   ::tensorflow::eager::QueueResponse::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_QueueResponse =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsQueueResponse}, {
-      &protobuf_tensorflow_2fcore_2fframework_2ftensor_5fshape_2eproto::scc_info_TensorShapeProto.base,}};
+::google::protobuf::internal::SCCInfo<2> scc_info_QueueResponse =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsQueueResponse}, {
+      &protobuf_tensorflow_2fcore_2fframework_2ftensor_5fshape_2eproto::scc_info_TensorShapeProto.base,
+      &protobuf_tensorflow_2fcore_2fframework_2ftensor_2eproto::scc_info_TensorProto.base,}};
 
 static void InitDefaultsCreateContextRequest() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -262,6 +317,37 @@ static void InitDefaultsCreateContextResponse() {
 
 ::google::protobuf::internal::SCCInfo<1> scc_info_CreateContextResponse =
     {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsCreateContextResponse}, {
+      &protobuf_tensorflow_2fcore_2fframework_2fdevice_5fattributes_2eproto::scc_info_DeviceAttributes.base,}};
+
+static void InitDefaultsUpdateContextRequest() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::tensorflow::eager::_UpdateContextRequest_default_instance_;
+    new (ptr) ::tensorflow::eager::UpdateContextRequest();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::tensorflow::eager::UpdateContextRequest::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<2> scc_info_UpdateContextRequest =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsUpdateContextRequest}, {
+      &protobuf_tensorflow_2fcore_2fprotobuf_2ftensorflow_5fserver_2eproto::scc_info_ServerDef.base,
+      &protobuf_tensorflow_2fcore_2fframework_2fdevice_5fattributes_2eproto::scc_info_DeviceAttributes.base,}};
+
+static void InitDefaultsUpdateContextResponse() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::tensorflow::eager::_UpdateContextResponse_default_instance_;
+    new (ptr) ::tensorflow::eager::UpdateContextResponse();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::tensorflow::eager::UpdateContextResponse::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<1> scc_info_UpdateContextResponse =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsUpdateContextResponse}, {
       &protobuf_tensorflow_2fcore_2fframework_2fdevice_5fattributes_2eproto::scc_info_DeviceAttributes.base,}};
 
 static void InitDefaultsEnqueueRequest() {
@@ -322,6 +408,37 @@ static void InitDefaultsWaitQueueDoneResponse() {
 ::google::protobuf::internal::SCCInfo<0> scc_info_WaitQueueDoneResponse =
     {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsWaitQueueDoneResponse}, {}};
 
+static void InitDefaultsRunComponentFunctionRequest() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::tensorflow::eager::_RunComponentFunctionRequest_default_instance_;
+    new (ptr) ::tensorflow::eager::RunComponentFunctionRequest();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::tensorflow::eager::RunComponentFunctionRequest::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<1> scc_info_RunComponentFunctionRequest =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsRunComponentFunctionRequest}, {
+      &protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_Operation.base,}};
+
+static void InitDefaultsRunComponentFunctionResponse() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::tensorflow::eager::_RunComponentFunctionResponse_default_instance_;
+    new (ptr) ::tensorflow::eager::RunComponentFunctionResponse();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::tensorflow::eager::RunComponentFunctionResponse::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<2> scc_info_RunComponentFunctionResponse =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsRunComponentFunctionResponse}, {
+      &protobuf_tensorflow_2fcore_2fframework_2ftensor_5fshape_2eproto::scc_info_TensorShapeProto.base,
+      &protobuf_tensorflow_2fcore_2fframework_2ftensor_2eproto::scc_info_TensorProto.base,}};
+
 static void InitDefaultsKeepAliveRequest() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -378,34 +495,49 @@ static void InitDefaultsCloseContextResponse() {
 ::google::protobuf::internal::SCCInfo<0> scc_info_CloseContextResponse =
     {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCloseContextResponse}, {}};
 
-static void InitDefaultsRegisterFunctionRequest() {
+static void InitDefaultsRegisterFunctionOp() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::tensorflow::eager::_RegisterFunctionRequest_default_instance_;
-    new (ptr) ::tensorflow::eager::RegisterFunctionRequest();
+    void* ptr = &::tensorflow::eager::_RegisterFunctionOp_default_instance_;
+    new (ptr) ::tensorflow::eager::RegisterFunctionOp();
     ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::tensorflow::eager::RegisterFunctionRequest::InitAsDefaultInstance();
+  ::tensorflow::eager::RegisterFunctionOp::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_RegisterFunctionRequest =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsRegisterFunctionRequest}, {
-      &protobuf_tensorflow_2fcore_2fframework_2ffunction_2eproto::scc_info_FunctionDef.base,}};
+::google::protobuf::internal::SCCInfo<2> scc_info_RegisterFunctionOp =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsRegisterFunctionOp}, {
+      &protobuf_tensorflow_2fcore_2fframework_2ffunction_2eproto::scc_info_FunctionDef.base,
+      &protobuf_tensorflow_2fcore_2fframework_2ffunction_2eproto::scc_info_FunctionDefLibrary.base,}};
 
-static void InitDefaultsRegisterFunctionResponse() {
+static void InitDefaultsCleanupFunctionOp() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::tensorflow::eager::_RegisterFunctionResponse_default_instance_;
-    new (ptr) ::tensorflow::eager::RegisterFunctionResponse();
+    void* ptr = &::tensorflow::eager::_CleanupFunctionOp_default_instance_;
+    new (ptr) ::tensorflow::eager::CleanupFunctionOp();
     ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::tensorflow::eager::RegisterFunctionResponse::InitAsDefaultInstance();
+  ::tensorflow::eager::CleanupFunctionOp::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_RegisterFunctionResponse =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsRegisterFunctionResponse}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CleanupFunctionOp =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCleanupFunctionOp}, {}};
+
+static void InitDefaultsSyncRemoteExecutorForStream() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::tensorflow::eager::_SyncRemoteExecutorForStream_default_instance_;
+    new (ptr) ::tensorflow::eager::SyncRemoteExecutorForStream();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::tensorflow::eager::SyncRemoteExecutorForStream::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<0> scc_info_SyncRemoteExecutorForStream =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsSyncRemoteExecutorForStream}, {}};
 
 static void InitDefaultsSendTensorOp() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -422,71 +554,92 @@ static void InitDefaultsSendTensorOp() {
     {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsSendTensorOp}, {
       &protobuf_tensorflow_2fcore_2fframework_2ftensor_2eproto::scc_info_TensorProto.base,}};
 
-static void InitDefaultsSendTensorRequest() {
+static void InitDefaultsSendPackedHandleOp_LocalTensorHandle() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::tensorflow::eager::_SendTensorRequest_default_instance_;
-    new (ptr) ::tensorflow::eager::SendTensorRequest();
+    void* ptr = &::tensorflow::eager::_SendPackedHandleOp_LocalTensorHandle_default_instance_;
+    new (ptr) ::tensorflow::eager::SendPackedHandleOp_LocalTensorHandle();
     ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::tensorflow::eager::SendTensorRequest::InitAsDefaultInstance();
+  ::tensorflow::eager::SendPackedHandleOp_LocalTensorHandle::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_SendTensorRequest =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsSendTensorRequest}, {
+::google::protobuf::internal::SCCInfo<1> scc_info_SendPackedHandleOp_LocalTensorHandle =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsSendPackedHandleOp_LocalTensorHandle}, {
       &protobuf_tensorflow_2fcore_2fframework_2ftensor_2eproto::scc_info_TensorProto.base,}};
 
-static void InitDefaultsSendTensorResponse() {
+static void InitDefaultsSendPackedHandleOp_Handle() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::tensorflow::eager::_SendTensorResponse_default_instance_;
-    new (ptr) ::tensorflow::eager::SendTensorResponse();
+    void* ptr = &::tensorflow::eager::_SendPackedHandleOp_Handle_default_instance_;
+    new (ptr) ::tensorflow::eager::SendPackedHandleOp_Handle();
     ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::tensorflow::eager::SendTensorResponse::InitAsDefaultInstance();
+  ::tensorflow::eager::SendPackedHandleOp_Handle::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_SendTensorResponse =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsSendTensorResponse}, {}};
+::google::protobuf::internal::SCCInfo<2> scc_info_SendPackedHandleOp_Handle =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsSendPackedHandleOp_Handle}, {
+      &protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_SendPackedHandleOp_LocalTensorHandle.base,
+      &protobuf_tensorflow_2fcore_2fprotobuf_2fremote_5ftensor_5fhandle_2eproto::scc_info_RemoteTensorHandle.base,}};
+
+static void InitDefaultsSendPackedHandleOp() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::tensorflow::eager::_SendPackedHandleOp_default_instance_;
+    new (ptr) ::tensorflow::eager::SendPackedHandleOp();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::tensorflow::eager::SendPackedHandleOp::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<1> scc_info_SendPackedHandleOp =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsSendPackedHandleOp}, {
+      &protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_SendPackedHandleOp_Handle.base,}};
 
 void InitDefaults() {
-  ::google::protobuf::internal::InitSCC(&scc_info_RemoteTensorHandle.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_Operation_Input.base);
   ::google::protobuf::internal::InitSCC(&scc_info_Operation_AttrsEntry_DoNotUse.base);
   ::google::protobuf::internal::InitSCC(&scc_info_Operation.base);
   ::google::protobuf::internal::InitSCC(&scc_info_QueueItem.base);
   ::google::protobuf::internal::InitSCC(&scc_info_QueueResponse.base);
   ::google::protobuf::internal::InitSCC(&scc_info_CreateContextRequest.base);
   ::google::protobuf::internal::InitSCC(&scc_info_CreateContextResponse.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_UpdateContextRequest.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_UpdateContextResponse.base);
   ::google::protobuf::internal::InitSCC(&scc_info_EnqueueRequest.base);
   ::google::protobuf::internal::InitSCC(&scc_info_EnqueueResponse.base);
   ::google::protobuf::internal::InitSCC(&scc_info_WaitQueueDoneRequest.base);
   ::google::protobuf::internal::InitSCC(&scc_info_WaitQueueDoneResponse.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_RunComponentFunctionRequest.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_RunComponentFunctionResponse.base);
   ::google::protobuf::internal::InitSCC(&scc_info_KeepAliveRequest.base);
   ::google::protobuf::internal::InitSCC(&scc_info_KeepAliveResponse.base);
   ::google::protobuf::internal::InitSCC(&scc_info_CloseContextRequest.base);
   ::google::protobuf::internal::InitSCC(&scc_info_CloseContextResponse.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_RegisterFunctionRequest.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_RegisterFunctionResponse.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_RegisterFunctionOp.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CleanupFunctionOp.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_SyncRemoteExecutorForStream.base);
   ::google::protobuf::internal::InitSCC(&scc_info_SendTensorOp.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_SendTensorRequest.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_SendTensorResponse.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_SendPackedHandleOp_LocalTensorHandle.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_SendPackedHandleOp_Handle.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_SendPackedHandleOp.base);
 }
 
-::google::protobuf::Metadata file_level_metadata[20];
+::google::protobuf::Metadata file_level_metadata[26];
 
 const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::RemoteTensorHandle, _internal_metadata_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::Operation_Input, _internal_metadata_),
   ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::Operation_Input, _oneof_case_[0]),
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::RemoteTensorHandle, op_id_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::RemoteTensorHandle, output_num_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::RemoteTensorHandle, device_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::RemoteTensorHandle, op_device_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::RemoteTensorHandle, dtype_),
+  offsetof(::tensorflow::eager::Operation_InputDefaultTypeInternal, remote_handle_),
+  offsetof(::tensorflow::eager::Operation_InputDefaultTypeInternal, tensor_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::Operation_Input, item_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::Operation_AttrsEntry_DoNotUse, _has_bits_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::Operation_AttrsEntry_DoNotUse, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -503,10 +656,13 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   ~0u,  // no _weak_field_map_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::Operation, id_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::Operation, name_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::Operation, inputs_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::Operation, op_inputs_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::Operation, control_op_ids_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::Operation, attrs_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::Operation, device_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::Operation, is_component_function_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::Operation, func_step_id_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::Operation, is_function_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::QueueItem, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -515,6 +671,10 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   offsetof(::tensorflow::eager::QueueItemDefaultTypeInternal, handle_to_decref_),
   offsetof(::tensorflow::eager::QueueItemDefaultTypeInternal, operation_),
   offsetof(::tensorflow::eager::QueueItemDefaultTypeInternal, send_tensor_),
+  offsetof(::tensorflow::eager::QueueItemDefaultTypeInternal, register_function_),
+  offsetof(::tensorflow::eager::QueueItemDefaultTypeInternal, cleanup_function_),
+  offsetof(::tensorflow::eager::QueueItemDefaultTypeInternal, sync_remote_executor_for_stream_),
+  offsetof(::tensorflow::eager::QueueItemDefaultTypeInternal, send_packed_handle_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::QueueItem, item_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::QueueResponse, _internal_metadata_),
@@ -522,6 +682,8 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::QueueResponse, shape_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::QueueResponse, device_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::QueueResponse, tensor_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::CreateContextRequest, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -533,12 +695,29 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::CreateContextRequest, version_def_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::CreateContextRequest, cluster_device_attributes_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::CreateContextRequest, context_id_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::CreateContextRequest, context_view_id_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::CreateContextRequest, lazy_copy_remote_function_inputs_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::CreateContextResponse, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::CreateContextResponse, device_attributes_),
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::UpdateContextRequest, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::UpdateContextRequest, server_def_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::UpdateContextRequest, cluster_device_attributes_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::UpdateContextRequest, context_id_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::UpdateContextRequest, context_view_id_),
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::UpdateContextResponse, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::UpdateContextResponse, device_attributes_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::EnqueueRequest, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -565,6 +744,21 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::RunComponentFunctionRequest, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::RunComponentFunctionRequest, context_id_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::RunComponentFunctionRequest, operation_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::RunComponentFunctionRequest, output_num_),
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::RunComponentFunctionResponse, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::RunComponentFunctionResponse, shape_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::RunComponentFunctionResponse, tensor_),
+  ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::KeepAliveRequest, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
@@ -575,26 +769,35 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::KeepAliveResponse, context_view_id_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::CloseContextRequest, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::CloseContextRequest, context_id_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::CloseContextRequest, context_view_id_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::CloseContextResponse, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::RegisterFunctionRequest, _internal_metadata_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::RegisterFunctionOp, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::RegisterFunctionRequest, context_id_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::RegisterFunctionRequest, function_def_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::RegisterFunctionOp, function_def_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::RegisterFunctionOp, is_component_function_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::RegisterFunctionOp, library_),
   ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::RegisterFunctionResponse, _internal_metadata_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::CleanupFunctionOp, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::CleanupFunctionOp, step_id_),
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::SyncRemoteExecutorForStream, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
@@ -607,64 +810,85 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::SendTensorOp, tensors_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::SendTensorOp, device_name_),
   ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::SendTensorRequest, _internal_metadata_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::SendPackedHandleOp_LocalTensorHandle, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::SendTensorRequest, context_id_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::SendTensorRequest, op_id_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::SendTensorRequest, tensors_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::SendTensorRequest, device_name_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::SendPackedHandleOp_LocalTensorHandle, tensor_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::SendPackedHandleOp_LocalTensorHandle, device_),
   ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::SendTensorResponse, _internal_metadata_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::SendPackedHandleOp_Handle, _internal_metadata_),
+  ~0u,  // no _extensions_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::SendPackedHandleOp_Handle, _oneof_case_[0]),
+  ~0u,  // no _weak_field_map_
+  offsetof(::tensorflow::eager::SendPackedHandleOp_HandleDefaultTypeInternal, local_handle_),
+  offsetof(::tensorflow::eager::SendPackedHandleOp_HandleDefaultTypeInternal, remote_handle_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::SendPackedHandleOp_Handle, item_),
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::SendPackedHandleOp, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::SendPackedHandleOp, op_id_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::SendPackedHandleOp, handles_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::eager::SendPackedHandleOp, device_name_),
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::tensorflow::eager::RemoteTensorHandle)},
-  { 10, 17, sizeof(::tensorflow::eager::Operation_AttrsEntry_DoNotUse)},
-  { 19, -1, sizeof(::tensorflow::eager::Operation)},
-  { 30, -1, sizeof(::tensorflow::eager::QueueItem)},
-  { 39, -1, sizeof(::tensorflow::eager::QueueResponse)},
-  { 45, -1, sizeof(::tensorflow::eager::CreateContextRequest)},
-  { 56, -1, sizeof(::tensorflow::eager::CreateContextResponse)},
-  { 62, -1, sizeof(::tensorflow::eager::EnqueueRequest)},
-  { 69, -1, sizeof(::tensorflow::eager::EnqueueResponse)},
-  { 75, -1, sizeof(::tensorflow::eager::WaitQueueDoneRequest)},
-  { 82, -1, sizeof(::tensorflow::eager::WaitQueueDoneResponse)},
-  { 87, -1, sizeof(::tensorflow::eager::KeepAliveRequest)},
-  { 93, -1, sizeof(::tensorflow::eager::KeepAliveResponse)},
-  { 98, -1, sizeof(::tensorflow::eager::CloseContextRequest)},
-  { 104, -1, sizeof(::tensorflow::eager::CloseContextResponse)},
-  { 109, -1, sizeof(::tensorflow::eager::RegisterFunctionRequest)},
-  { 116, -1, sizeof(::tensorflow::eager::RegisterFunctionResponse)},
-  { 121, -1, sizeof(::tensorflow::eager::SendTensorOp)},
-  { 129, -1, sizeof(::tensorflow::eager::SendTensorRequest)},
-  { 138, -1, sizeof(::tensorflow::eager::SendTensorResponse)},
+  { 0, -1, sizeof(::tensorflow::eager::Operation_Input)},
+  { 8, 15, sizeof(::tensorflow::eager::Operation_AttrsEntry_DoNotUse)},
+  { 17, -1, sizeof(::tensorflow::eager::Operation)},
+  { 31, -1, sizeof(::tensorflow::eager::QueueItem)},
+  { 44, -1, sizeof(::tensorflow::eager::QueueResponse)},
+  { 52, -1, sizeof(::tensorflow::eager::CreateContextRequest)},
+  { 65, -1, sizeof(::tensorflow::eager::CreateContextResponse)},
+  { 71, -1, sizeof(::tensorflow::eager::UpdateContextRequest)},
+  { 80, -1, sizeof(::tensorflow::eager::UpdateContextResponse)},
+  { 86, -1, sizeof(::tensorflow::eager::EnqueueRequest)},
+  { 93, -1, sizeof(::tensorflow::eager::EnqueueResponse)},
+  { 99, -1, sizeof(::tensorflow::eager::WaitQueueDoneRequest)},
+  { 106, -1, sizeof(::tensorflow::eager::WaitQueueDoneResponse)},
+  { 111, -1, sizeof(::tensorflow::eager::RunComponentFunctionRequest)},
+  { 119, -1, sizeof(::tensorflow::eager::RunComponentFunctionResponse)},
+  { 126, -1, sizeof(::tensorflow::eager::KeepAliveRequest)},
+  { 132, -1, sizeof(::tensorflow::eager::KeepAliveResponse)},
+  { 138, -1, sizeof(::tensorflow::eager::CloseContextRequest)},
+  { 145, -1, sizeof(::tensorflow::eager::CloseContextResponse)},
+  { 150, -1, sizeof(::tensorflow::eager::RegisterFunctionOp)},
+  { 158, -1, sizeof(::tensorflow::eager::CleanupFunctionOp)},
+  { 164, -1, sizeof(::tensorflow::eager::SyncRemoteExecutorForStream)},
+  { 169, -1, sizeof(::tensorflow::eager::SendTensorOp)},
+  { 177, -1, sizeof(::tensorflow::eager::SendPackedHandleOp_LocalTensorHandle)},
+  { 184, -1, sizeof(::tensorflow::eager::SendPackedHandleOp_Handle)},
+  { 192, -1, sizeof(::tensorflow::eager::SendPackedHandleOp)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::eager::_RemoteTensorHandle_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::eager::_Operation_Input_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::eager::_Operation_AttrsEntry_DoNotUse_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::eager::_Operation_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::eager::_QueueItem_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::eager::_QueueResponse_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::eager::_CreateContextRequest_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::eager::_CreateContextResponse_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::eager::_UpdateContextRequest_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::eager::_UpdateContextResponse_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::eager::_EnqueueRequest_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::eager::_EnqueueResponse_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::eager::_WaitQueueDoneRequest_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::eager::_WaitQueueDoneResponse_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::eager::_RunComponentFunctionRequest_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::eager::_RunComponentFunctionResponse_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::eager::_KeepAliveRequest_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::eager::_KeepAliveResponse_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::eager::_CloseContextRequest_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::eager::_CloseContextResponse_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::eager::_RegisterFunctionRequest_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::eager::_RegisterFunctionResponse_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::eager::_RegisterFunctionOp_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::eager::_CleanupFunctionOp_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::eager::_SyncRemoteExecutorForStream_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::eager::_SendTensorOp_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::eager::_SendTensorRequest_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::eager::_SendTensorResponse_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::eager::_SendPackedHandleOp_LocalTensorHandle_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::eager::_SendPackedHandleOp_Handle_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::eager::_SendPackedHandleOp_default_instance_),
 };
 
 void protobuf_AssignDescriptors() {
@@ -682,7 +906,7 @@ void protobuf_AssignDescriptorsOnce() {
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 20);
+  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 26);
 }
 
 void AddDescriptorsImpl() {
@@ -695,75 +919,112 @@ void AddDescriptorsImpl() {
       "(tensorflow/core/framework/function.prot"
       "o\032&tensorflow/core/framework/tensor.prot"
       "o\032,tensorflow/core/framework/tensor_shap"
-      "e.proto\032%tensorflow/core/framework/types"
-      ".proto\032(tensorflow/core/framework/versio"
-      "ns.proto\0320tensorflow/core/protobuf/tenso"
-      "rflow_server.proto\"\177\n\022RemoteTensorHandle"
-      "\022\r\n\005op_id\030\001 \001(\003\022\022\n\noutput_num\030\002 \001(\005\022\016\n\006d"
-      "evice\030\003 \001(\t\022\021\n\top_device\030\004 \001(\t\022#\n\005dtype\030"
-      "\005 \001(\0162\024.tensorflow.DataType\"\377\001\n\tOperatio"
-      "n\022\n\n\002id\030\001 \001(\003\022\014\n\004name\030\002 \001(\t\0224\n\006inputs\030\003 "
-      "\003(\0132$.tensorflow.eager.RemoteTensorHandl"
-      "e\022\026\n\016control_op_ids\030\004 \003(\003\0225\n\005attrs\030\005 \003(\013"
-      "2&.tensorflow.eager.Operation.AttrsEntry"
-      "\022\016\n\006device\030\006 \001(\t\032C\n\nAttrsEntry\022\013\n\003key\030\001 "
-      "\001(\t\022$\n\005value\030\002 \001(\0132\025.tensorflow.AttrValu"
-      "e:\0028\001\"\276\001\n\tQueueItem\022@\n\020handle_to_decref\030"
-      "\001 \001(\0132$.tensorflow.eager.RemoteTensorHan"
-      "dleH\000\0220\n\toperation\030\002 \001(\0132\033.tensorflow.ea"
-      "ger.OperationH\000\0225\n\013send_tensor\030\003 \001(\0132\036.t"
-      "ensorflow.eager.SendTensorOpH\000B\006\n\004item\"<"
-      "\n\rQueueResponse\022+\n\005shape\030\001 \003(\0132\034.tensorf"
-      "low.TensorShapeProto\"\361\001\n\024CreateContextRe"
-      "quest\022)\n\nserver_def\030\001 \001(\0132\025.tensorflow.S"
-      "erverDef\022\r\n\005async\030\002 \001(\010\022\027\n\017keep_alive_se"
-      "cs\030\003 \001(\003\022+\n\013version_def\030\004 \001(\0132\026.tensorfl"
-      "ow.VersionDef\022\?\n\031cluster_device_attribut"
-      "es\030\006 \003(\0132\034.tensorflow.DeviceAttributes\022\022"
-      "\n\ncontext_id\030\007 \001(\006J\004\010\005\020\006\"V\n\025CreateContex"
-      "tResponse\0227\n\021device_attributes\030\002 \003(\0132\034.t"
-      "ensorflow.DeviceAttributesJ\004\010\001\020\002\"P\n\016Enqu"
-      "eueRequest\022\022\n\ncontext_id\030\001 \001(\006\022*\n\005queue\030"
-      "\003 \003(\0132\033.tensorflow.eager.QueueItem\"J\n\017En"
-      "queueResponse\0227\n\016queue_response\030\001 \003(\0132\037."
-      "tensorflow.eager.QueueResponse\"9\n\024WaitQu"
-      "eueDoneRequest\022\022\n\ncontext_id\030\001 \001(\006\022\r\n\005op"
-      "_id\030\002 \003(\003\"\027\n\025WaitQueueDoneResponse\"&\n\020Ke"
-      "epAliveRequest\022\022\n\ncontext_id\030\001 \001(\006\"\023\n\021Ke"
-      "epAliveResponse\")\n\023CloseContextRequest\022\022"
-      "\n\ncontext_id\030\001 \001(\006\"\026\n\024CloseContextRespon"
-      "se\"\\\n\027RegisterFunctionRequest\022\022\n\ncontext"
-      "_id\030\001 \001(\006\022-\n\014function_def\030\002 \001(\0132\027.tensor"
-      "flow.FunctionDef\"\032\n\030RegisterFunctionResp"
-      "onse\"\\\n\014SendTensorOp\022\r\n\005op_id\030\001 \001(\003\022(\n\007t"
-      "ensors\030\002 \003(\0132\027.tensorflow.TensorProto\022\023\n"
-      "\013device_name\030\003 \001(\t\"u\n\021SendTensorRequest\022"
-      "\022\n\ncontext_id\030\001 \001(\006\022\r\n\005op_id\030\002 \001(\003\022(\n\007te"
-      "nsors\030\003 \003(\0132\027.tensorflow.TensorProto\022\023\n\013"
-      "device_name\030\004 \001(\t\"\024\n\022SendTensorResponse2"
-      "\375\005\n\014EagerService\022`\n\rCreateContext\022&.tens"
-      "orflow.eager.CreateContextRequest\032\'.tens"
-      "orflow.eager.CreateContextResponse\022N\n\007En"
-      "queue\022 .tensorflow.eager.EnqueueRequest\032"
-      "!.tensorflow.eager.EnqueueResponse\022[\n\020St"
-      "reamingEnqueue\022 .tensorflow.eager.Enqueu"
-      "eRequest\032!.tensorflow.eager.EnqueueRespo"
-      "nse(\0010\001\022`\n\rWaitQueueDone\022&.tensorflow.ea"
-      "ger.WaitQueueDoneRequest\032\'.tensorflow.ea"
-      "ger.WaitQueueDoneResponse\022T\n\tKeepAlive\022\""
-      ".tensorflow.eager.KeepAliveRequest\032#.ten"
-      "sorflow.eager.KeepAliveResponse\022]\n\014Close"
-      "Context\022%.tensorflow.eager.CloseContextR"
-      "equest\032&.tensorflow.eager.CloseContextRe"
-      "sponse\022i\n\020RegisterFunction\022).tensorflow."
-      "eager.RegisterFunctionRequest\032*.tensorfl"
-      "ow.eager.RegisterFunctionResponse\022\\\n\nSen"
-      "dTensor\022#.tensorflow.eager.SendTensorReq"
-      "uest\032$.tensorflow.eager.SendTensorRespon"
-      "se\"\003\210\002\001b\006proto3"
+      "e.proto\032(tensorflow/core/framework/versi"
+      "ons.proto\0323tensorflow/core/protobuf/remo"
+      "te_tensor_handle.proto\0320tensorflow/core/"
+      "protobuf/tensorflow_server.proto\"\312\003\n\tOpe"
+      "ration\022\n\n\002id\030\001 \001(\003\022\014\n\004name\030\002 \001(\t\0224\n\top_i"
+      "nputs\030\n \003(\0132!.tensorflow.eager.Operation"
+      ".Input\022\026\n\016control_op_ids\030\004 \003(\003\0225\n\005attrs\030"
+      "\005 \003(\0132&.tensorflow.eager.Operation.Attrs"
+      "Entry\022\016\n\006device\030\006 \001(\t\022\035\n\025is_component_fu"
+      "nction\030\007 \001(\010\022\024\n\014func_step_id\030\010 \001(\003\022\023\n\013is"
+      "_function\030\t \001(\010\032y\n\005Input\022=\n\rremote_handl"
+      "e\030\001 \001(\0132$.tensorflow.eager.RemoteTensorH"
+      "andleH\000\022)\n\006tensor\030\002 \001(\0132\027.tensorflow.Ten"
+      "sorProtoH\000B\006\n\004item\032C\n\nAttrsEntry\022\013\n\003key\030"
+      "\001 \001(\t\022$\n\005value\030\002 \001(\0132\025.tensorflow.AttrVa"
+      "lue:\0028\001J\004\010\003\020\004\"\340\003\n\tQueueItem\022@\n\020handle_to"
+      "_decref\030\001 \001(\0132$.tensorflow.eager.RemoteT"
+      "ensorHandleH\000\0220\n\toperation\030\002 \001(\0132\033.tenso"
+      "rflow.eager.OperationH\000\0225\n\013send_tensor\030\003"
+      " \001(\0132\036.tensorflow.eager.SendTensorOpH\000\022A"
+      "\n\021register_function\030\004 \001(\0132$.tensorflow.e"
+      "ager.RegisterFunctionOpH\000\022\?\n\020cleanup_fun"
+      "ction\030\005 \001(\0132#.tensorflow.eager.CleanupFu"
+      "nctionOpH\000\022X\n\037sync_remote_executor_for_s"
+      "tream\030\006 \001(\0132-.tensorflow.eager.SyncRemot"
+      "eExecutorForStreamH\000\022B\n\022send_packed_hand"
+      "le\030\007 \001(\0132$.tensorflow.eager.SendPackedHa"
+      "ndleOpH\000B\006\n\004item\"u\n\rQueueResponse\022+\n\005sha"
+      "pe\030\001 \003(\0132\034.tensorflow.TensorShapeProto\022\016"
+      "\n\006device\030\003 \003(\t\022\'\n\006tensor\030\002 \003(\0132\027.tensorf"
+      "low.TensorProto\"\264\002\n\024CreateContextRequest"
+      "\022)\n\nserver_def\030\001 \001(\0132\025.tensorflow.Server"
+      "Def\022\r\n\005async\030\002 \001(\010\022\027\n\017keep_alive_secs\030\003 "
+      "\001(\003\022+\n\013version_def\030\004 \001(\0132\026.tensorflow.Ve"
+      "rsionDef\022\?\n\031cluster_device_attributes\030\006 "
+      "\003(\0132\034.tensorflow.DeviceAttributes\022\022\n\ncon"
+      "text_id\030\007 \001(\006\022\027\n\017context_view_id\030\010 \001(\006\022("
+      "\n lazy_copy_remote_function_inputs\030\t \001(\010"
+      "J\004\010\005\020\006\"V\n\025CreateContextResponse\0227\n\021devic"
+      "e_attributes\030\002 \003(\0132\034.tensorflow.DeviceAt"
+      "tributesJ\004\010\001\020\002\"\257\001\n\024UpdateContextRequest\022"
+      ")\n\nserver_def\030\001 \001(\0132\025.tensorflow.ServerD"
+      "ef\022\?\n\031cluster_device_attributes\030\002 \003(\0132\034."
+      "tensorflow.DeviceAttributes\022\022\n\ncontext_i"
+      "d\030\003 \001(\006\022\027\n\017context_view_id\030\004 \001(\006\"P\n\025Upda"
+      "teContextResponse\0227\n\021device_attributes\030\001"
+      " \003(\0132\034.tensorflow.DeviceAttributes\"P\n\016En"
+      "queueRequest\022\022\n\ncontext_id\030\001 \001(\006\022*\n\005queu"
+      "e\030\003 \003(\0132\033.tensorflow.eager.QueueItem\"J\n\017"
+      "EnqueueResponse\0227\n\016queue_response\030\001 \003(\0132"
+      "\037.tensorflow.eager.QueueResponse\"9\n\024Wait"
+      "QueueDoneRequest\022\022\n\ncontext_id\030\001 \001(\006\022\r\n\005"
+      "op_id\030\002 \003(\003\"\027\n\025WaitQueueDoneResponse\"u\n\033"
+      "RunComponentFunctionRequest\022\022\n\ncontext_i"
+      "d\030\001 \001(\006\022.\n\toperation\030\002 \001(\0132\033.tensorflow."
+      "eager.Operation\022\022\n\noutput_num\030\003 \003(\005\"t\n\034R"
+      "unComponentFunctionResponse\022+\n\005shape\030\001 \003"
+      "(\0132\034.tensorflow.TensorShapeProto\022\'\n\006tens"
+      "or\030\002 \003(\0132\027.tensorflow.TensorProto\"&\n\020Kee"
+      "pAliveRequest\022\022\n\ncontext_id\030\001 \001(\006\",\n\021Kee"
+      "pAliveResponse\022\027\n\017context_view_id\030\001 \001(\006\""
+      "B\n\023CloseContextRequest\022\022\n\ncontext_id\030\001 \001"
+      "(\006\022\027\n\017context_view_id\030\002 \001(\006\"\026\n\024CloseCont"
+      "extResponse\"\223\001\n\022RegisterFunctionOp\022-\n\014fu"
+      "nction_def\030\001 \001(\0132\027.tensorflow.FunctionDe"
+      "f\022\035\n\025is_component_function\030\002 \001(\010\022/\n\007libr"
+      "ary\030\003 \001(\0132\036.tensorflow.FunctionDefLibrar"
+      "y\"$\n\021CleanupFunctionOp\022\017\n\007step_id\030\001 \001(\003\""
+      "\035\n\033SyncRemoteExecutorForStream\"\\\n\014SendTe"
+      "nsorOp\022\r\n\005op_id\030\001 \001(\003\022(\n\007tensors\030\002 \003(\0132\027"
+      ".tensorflow.TensorProto\022\023\n\013device_name\030\003"
+      " \001(\t\"\346\002\n\022SendPackedHandleOp\022\r\n\005op_id\030\001 \001"
+      "(\003\022<\n\007handles\030\002 \003(\0132+.tensorflow.eager.S"
+      "endPackedHandleOp.Handle\022\023\n\013device_name\030"
+      "\003 \001(\t\032L\n\021LocalTensorHandle\022\'\n\006tensor\030\001 \001"
+      "(\0132\027.tensorflow.TensorProto\022\016\n\006device\030\002 "
+      "\001(\t\032\237\001\n\006Handle\022N\n\014local_handle\030\001 \001(\01326.t"
+      "ensorflow.eager.SendPackedHandleOp.Local"
+      "TensorHandleH\000\022=\n\rremote_handle\030\002 \001(\0132$."
+      "tensorflow.eager.RemoteTensorHandleH\000B\006\n"
+      "\004item2\215\006\n\014EagerService\022`\n\rCreateContext\022"
+      "&.tensorflow.eager.CreateContextRequest\032"
+      "\'.tensorflow.eager.CreateContextResponse"
+      "\022`\n\rUpdateContext\022&.tensorflow.eager.Upd"
+      "ateContextRequest\032\'.tensorflow.eager.Upd"
+      "ateContextResponse\022N\n\007Enqueue\022 .tensorfl"
+      "ow.eager.EnqueueRequest\032!.tensorflow.eag"
+      "er.EnqueueResponse\022[\n\020StreamingEnqueue\022 "
+      ".tensorflow.eager.EnqueueRequest\032!.tenso"
+      "rflow.eager.EnqueueResponse(\0010\001\022`\n\rWaitQ"
+      "ueueDone\022&.tensorflow.eager.WaitQueueDon"
+      "eRequest\032\'.tensorflow.eager.WaitQueueDon"
+      "eResponse\022u\n\024RunComponentFunction\022-.tens"
+      "orflow.eager.RunComponentFunctionRequest"
+      "\032..tensorflow.eager.RunComponentFunction"
+      "Response\022T\n\tKeepAlive\022\".tensorflow.eager"
+      ".KeepAliveRequest\032#.tensorflow.eager.Kee"
+      "pAliveResponse\022]\n\014CloseContext\022%.tensorf"
+      "low.eager.CloseContextRequest\032&.tensorfl"
+      "ow.eager.CloseContextResponseBWZUgithub."
+      "com/tensorflow/tensorflow/tensorflow/go/"
+      "core/protobuf/for_core_protos_go_protob\006"
+      "proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 2895);
+      descriptor, 4366);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/protobuf/eager_service.proto", &protobuf_RegisterTypes);
   ::protobuf_tensorflow_2fcore_2fframework_2fattr_5fvalue_2eproto::AddDescriptors();
@@ -771,8 +1032,8 @@ void AddDescriptorsImpl() {
   ::protobuf_tensorflow_2fcore_2fframework_2ffunction_2eproto::AddDescriptors();
   ::protobuf_tensorflow_2fcore_2fframework_2ftensor_2eproto::AddDescriptors();
   ::protobuf_tensorflow_2fcore_2fframework_2ftensor_5fshape_2eproto::AddDescriptors();
-  ::protobuf_tensorflow_2fcore_2fframework_2ftypes_2eproto::AddDescriptors();
   ::protobuf_tensorflow_2fcore_2fframework_2fversions_2eproto::AddDescriptors();
+  ::protobuf_tensorflow_2fcore_2fprotobuf_2fremote_5ftensor_5fhandle_2eproto::AddDescriptors();
   ::protobuf_tensorflow_2fcore_2fprotobuf_2ftensorflow_5fserver_2eproto::AddDescriptors();
 }
 
@@ -792,166 +1053,173 @@ namespace eager {
 
 // ===================================================================
 
-void RemoteTensorHandle::InitAsDefaultInstance() {
+void Operation_Input::InitAsDefaultInstance() {
+  ::tensorflow::eager::_Operation_Input_default_instance_.remote_handle_ = const_cast< ::tensorflow::eager::RemoteTensorHandle*>(
+      ::tensorflow::eager::RemoteTensorHandle::internal_default_instance());
+  ::tensorflow::eager::_Operation_Input_default_instance_.tensor_ = const_cast< ::tensorflow::TensorProto*>(
+      ::tensorflow::TensorProto::internal_default_instance());
+}
+void Operation_Input::set_allocated_remote_handle(::tensorflow::eager::RemoteTensorHandle* remote_handle) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  clear_item();
+  if (remote_handle) {
+    ::google::protobuf::Arena* submessage_arena =
+      reinterpret_cast<::google::protobuf::MessageLite*>(remote_handle)->GetArena();
+    if (message_arena != submessage_arena) {
+      remote_handle = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, remote_handle, submessage_arena);
+    }
+    set_has_remote_handle();
+    item_.remote_handle_ = remote_handle;
+  }
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.eager.Operation.Input.remote_handle)
+}
+void Operation_Input::clear_remote_handle() {
+  if (has_remote_handle()) {
+    delete item_.remote_handle_;
+    clear_has_item();
+  }
+}
+void Operation_Input::set_allocated_tensor(::tensorflow::TensorProto* tensor) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  clear_item();
+  if (tensor) {
+    ::google::protobuf::Arena* submessage_arena =
+      reinterpret_cast<::google::protobuf::MessageLite*>(tensor)->GetArena();
+    if (message_arena != submessage_arena) {
+      tensor = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, tensor, submessage_arena);
+    }
+    set_has_tensor();
+    item_.tensor_ = tensor;
+  }
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.eager.Operation.Input.tensor)
+}
+void Operation_Input::clear_tensor() {
+  if (has_tensor()) {
+    delete item_.tensor_;
+    clear_has_item();
+  }
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int RemoteTensorHandle::kOpIdFieldNumber;
-const int RemoteTensorHandle::kOutputNumFieldNumber;
-const int RemoteTensorHandle::kDeviceFieldNumber;
-const int RemoteTensorHandle::kOpDeviceFieldNumber;
-const int RemoteTensorHandle::kDtypeFieldNumber;
+const int Operation_Input::kRemoteHandleFieldNumber;
+const int Operation_Input::kTensorFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
-RemoteTensorHandle::RemoteTensorHandle()
+Operation_Input::Operation_Input()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
   ::google::protobuf::internal::InitSCC(
-      &protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_RemoteTensorHandle.base);
+      &protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_Operation_Input.base);
   SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.eager.RemoteTensorHandle)
+  // @@protoc_insertion_point(constructor:tensorflow.eager.Operation.Input)
 }
-RemoteTensorHandle::RemoteTensorHandle(const RemoteTensorHandle& from)
+Operation_Input::Operation_Input(const Operation_Input& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  device_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.device().size() > 0) {
-    device_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.device_);
+  clear_has_item();
+  switch (from.item_case()) {
+    case kRemoteHandle: {
+      mutable_remote_handle()->::tensorflow::eager::RemoteTensorHandle::MergeFrom(from.remote_handle());
+      break;
+    }
+    case kTensor: {
+      mutable_tensor()->::tensorflow::TensorProto::MergeFrom(from.tensor());
+      break;
+    }
+    case ITEM_NOT_SET: {
+      break;
+    }
   }
-  op_device_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.op_device().size() > 0) {
-    op_device_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.op_device_);
-  }
-  ::memcpy(&op_id_, &from.op_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&dtype_) -
-    reinterpret_cast<char*>(&op_id_)) + sizeof(dtype_));
-  // @@protoc_insertion_point(copy_constructor:tensorflow.eager.RemoteTensorHandle)
+  // @@protoc_insertion_point(copy_constructor:tensorflow.eager.Operation.Input)
 }
 
-void RemoteTensorHandle::SharedCtor() {
-  device_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  op_device_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&op_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&dtype_) -
-      reinterpret_cast<char*>(&op_id_)) + sizeof(dtype_));
+void Operation_Input::SharedCtor() {
+  clear_has_item();
 }
 
-RemoteTensorHandle::~RemoteTensorHandle() {
-  // @@protoc_insertion_point(destructor:tensorflow.eager.RemoteTensorHandle)
+Operation_Input::~Operation_Input() {
+  // @@protoc_insertion_point(destructor:tensorflow.eager.Operation.Input)
   SharedDtor();
 }
 
-void RemoteTensorHandle::SharedDtor() {
-  device_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  op_device_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+void Operation_Input::SharedDtor() {
+  if (has_item()) {
+    clear_item();
+  }
 }
 
-void RemoteTensorHandle::SetCachedSize(int size) const {
+void Operation_Input::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* RemoteTensorHandle::descriptor() {
+const ::google::protobuf::Descriptor* Operation_Input::descriptor() {
   ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::protobuf_AssignDescriptorsOnce();
   return ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
-const RemoteTensorHandle& RemoteTensorHandle::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_RemoteTensorHandle.base);
+const Operation_Input& Operation_Input::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_Operation_Input.base);
   return *internal_default_instance();
 }
 
 
-void RemoteTensorHandle::Clear() {
-// @@protoc_insertion_point(message_clear_start:tensorflow.eager.RemoteTensorHandle)
+void Operation_Input::clear_item() {
+// @@protoc_insertion_point(one_of_clear_start:tensorflow.eager.Operation.Input)
+  switch (item_case()) {
+    case kRemoteHandle: {
+      delete item_.remote_handle_;
+      break;
+    }
+    case kTensor: {
+      delete item_.tensor_;
+      break;
+    }
+    case ITEM_NOT_SET: {
+      break;
+    }
+  }
+  _oneof_case_[0] = ITEM_NOT_SET;
+}
+
+
+void Operation_Input::Clear() {
+// @@protoc_insertion_point(message_clear_start:tensorflow.eager.Operation.Input)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  device_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  op_device_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&op_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&dtype_) -
-      reinterpret_cast<char*>(&op_id_)) + sizeof(dtype_));
+  clear_item();
   _internal_metadata_.Clear();
 }
 
-bool RemoteTensorHandle::MergePartialFromCodedStream(
+bool Operation_Input::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
 #define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.eager.RemoteTensorHandle)
+  // @@protoc_insertion_point(parse_start:tensorflow.eager.Operation.Input)
   for (;;) {
     ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // int64 op_id = 1;
+      // .tensorflow.eager.RemoteTensorHandle remote_handle = 1;
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
-                 input, &op_id_)));
+            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_remote_handle()));
         } else {
           goto handle_unusual;
         }
         break;
       }
 
-      // int32 output_num = 2;
+      // .tensorflow.TensorProto tensor = 2;
       case 2: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
-                 input, &output_num_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // string device = 3;
-      case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
-                input, this->mutable_device()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-            this->device().data(), static_cast<int>(this->device().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
-            "tensorflow.eager.RemoteTensorHandle.device"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // string op_device = 4;
-      case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
-                input, this->mutable_op_device()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-            this->op_device().data(), static_cast<int>(this->op_device().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
-            "tensorflow.eager.RemoteTensorHandle.op_device"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.DataType dtype = 5;
-      case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
-          int value;
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          set_dtype(static_cast< ::tensorflow::DataType >(value));
+            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_tensor()));
         } else {
           goto handle_unusual;
         }
@@ -970,118 +1238,70 @@ bool RemoteTensorHandle::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:tensorflow.eager.RemoteTensorHandle)
+  // @@protoc_insertion_point(parse_success:tensorflow.eager.Operation.Input)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.eager.RemoteTensorHandle)
+  // @@protoc_insertion_point(parse_failure:tensorflow.eager.Operation.Input)
   return false;
 #undef DO_
 }
 
-void RemoteTensorHandle::SerializeWithCachedSizes(
+void Operation_Input::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.eager.RemoteTensorHandle)
+  // @@protoc_insertion_point(serialize_start:tensorflow.eager.Operation.Input)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int64 op_id = 1;
-  if (this->op_id() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteInt64(1, this->op_id(), output);
+  // .tensorflow.eager.RemoteTensorHandle remote_handle = 1;
+  if (has_remote_handle()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      1, this->_internal_remote_handle(), output);
   }
 
-  // int32 output_num = 2;
-  if (this->output_num() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteInt32(2, this->output_num(), output);
-  }
-
-  // string device = 3;
-  if (this->device().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->device().data(), static_cast<int>(this->device().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.eager.RemoteTensorHandle.device");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
-      3, this->device(), output);
-  }
-
-  // string op_device = 4;
-  if (this->op_device().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->op_device().data(), static_cast<int>(this->op_device().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.eager.RemoteTensorHandle.op_device");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
-      4, this->op_device(), output);
-  }
-
-  // .tensorflow.DataType dtype = 5;
-  if (this->dtype() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      5, this->dtype(), output);
+  // .tensorflow.TensorProto tensor = 2;
+  if (has_tensor()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      2, this->_internal_tensor(), output);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
   }
-  // @@protoc_insertion_point(serialize_end:tensorflow.eager.RemoteTensorHandle)
+  // @@protoc_insertion_point(serialize_end:tensorflow.eager.Operation.Input)
 }
 
-::google::protobuf::uint8* RemoteTensorHandle::InternalSerializeWithCachedSizesToArray(
+::google::protobuf::uint8* Operation_Input::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
-  // @@protoc_insertion_point(serialize_to_array_start:tensorflow.eager.RemoteTensorHandle)
+  // @@protoc_insertion_point(serialize_to_array_start:tensorflow.eager.Operation.Input)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int64 op_id = 1;
-  if (this->op_id() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(1, this->op_id(), target);
+  // .tensorflow.eager.RemoteTensorHandle remote_handle = 1;
+  if (has_remote_handle()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        1, this->_internal_remote_handle(), deterministic, target);
   }
 
-  // int32 output_num = 2;
-  if (this->output_num() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(2, this->output_num(), target);
-  }
-
-  // string device = 3;
-  if (this->device().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->device().data(), static_cast<int>(this->device().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.eager.RemoteTensorHandle.device");
-    target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
-        3, this->device(), target);
-  }
-
-  // string op_device = 4;
-  if (this->op_device().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->op_device().data(), static_cast<int>(this->op_device().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.eager.RemoteTensorHandle.op_device");
-    target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
-        4, this->op_device(), target);
-  }
-
-  // .tensorflow.DataType dtype = 5;
-  if (this->dtype() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      5, this->dtype(), target);
+  // .tensorflow.TensorProto tensor = 2;
+  if (has_tensor()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        2, this->_internal_tensor(), deterministic, target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:tensorflow.eager.RemoteTensorHandle)
+  // @@protoc_insertion_point(serialize_to_array_end:tensorflow.eager.Operation.Input)
   return target;
 }
 
-size_t RemoteTensorHandle::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:tensorflow.eager.RemoteTensorHandle)
+size_t Operation_Input::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:tensorflow.eager.Operation.Input)
   size_t total_size = 0;
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -1089,121 +1309,97 @@ size_t RemoteTensorHandle::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
-  // string device = 3;
-  if (this->device().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->device());
+  switch (item_case()) {
+    // .tensorflow.eager.RemoteTensorHandle remote_handle = 1;
+    case kRemoteHandle: {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          *item_.remote_handle_);
+      break;
+    }
+    // .tensorflow.TensorProto tensor = 2;
+    case kTensor: {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          *item_.tensor_);
+      break;
+    }
+    case ITEM_NOT_SET: {
+      break;
+    }
   }
-
-  // string op_device = 4;
-  if (this->op_device().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->op_device());
-  }
-
-  // int64 op_id = 1;
-  if (this->op_id() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int64Size(
-        this->op_id());
-  }
-
-  // int32 output_num = 2;
-  if (this->output_num() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int32Size(
-        this->output_num());
-  }
-
-  // .tensorflow.DataType dtype = 5;
-  if (this->dtype() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->dtype());
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
-void RemoteTensorHandle::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:tensorflow.eager.RemoteTensorHandle)
+void Operation_Input::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:tensorflow.eager.Operation.Input)
   GOOGLE_DCHECK_NE(&from, this);
-  const RemoteTensorHandle* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const RemoteTensorHandle>(
+  const Operation_Input* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const Operation_Input>(
           &from);
   if (source == NULL) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:tensorflow.eager.RemoteTensorHandle)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:tensorflow.eager.Operation.Input)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:tensorflow.eager.RemoteTensorHandle)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:tensorflow.eager.Operation.Input)
     MergeFrom(*source);
   }
 }
 
-void RemoteTensorHandle::MergeFrom(const RemoteTensorHandle& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.eager.RemoteTensorHandle)
+void Operation_Input::MergeFrom(const Operation_Input& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.eager.Operation.Input)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.device().size() > 0) {
-
-    device_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.device_);
-  }
-  if (from.op_device().size() > 0) {
-
-    op_device_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.op_device_);
-  }
-  if (from.op_id() != 0) {
-    set_op_id(from.op_id());
-  }
-  if (from.output_num() != 0) {
-    set_output_num(from.output_num());
-  }
-  if (from.dtype() != 0) {
-    set_dtype(from.dtype());
+  switch (from.item_case()) {
+    case kRemoteHandle: {
+      mutable_remote_handle()->::tensorflow::eager::RemoteTensorHandle::MergeFrom(from.remote_handle());
+      break;
+    }
+    case kTensor: {
+      mutable_tensor()->::tensorflow::TensorProto::MergeFrom(from.tensor());
+      break;
+    }
+    case ITEM_NOT_SET: {
+      break;
+    }
   }
 }
 
-void RemoteTensorHandle::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:tensorflow.eager.RemoteTensorHandle)
+void Operation_Input::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:tensorflow.eager.Operation.Input)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-void RemoteTensorHandle::CopyFrom(const RemoteTensorHandle& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:tensorflow.eager.RemoteTensorHandle)
+void Operation_Input::CopyFrom(const Operation_Input& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:tensorflow.eager.Operation.Input)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool RemoteTensorHandle::IsInitialized() const {
+bool Operation_Input::IsInitialized() const {
   return true;
 }
 
-void RemoteTensorHandle::Swap(RemoteTensorHandle* other) {
+void Operation_Input::Swap(Operation_Input* other) {
   if (other == this) return;
   InternalSwap(other);
 }
-void RemoteTensorHandle::InternalSwap(RemoteTensorHandle* other) {
+void Operation_Input::InternalSwap(Operation_Input* other) {
   using std::swap;
-  device_.Swap(&other->device_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  op_device_.Swap(&other->op_device_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  swap(op_id_, other->op_id_);
-  swap(output_num_, other->output_num_);
-  swap(dtype_, other->dtype_);
+  swap(item_, other->item_);
+  swap(_oneof_case_[0], other->_oneof_case_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
-::google::protobuf::Metadata RemoteTensorHandle::GetMetadata() const {
+::google::protobuf::Metadata Operation_Input::GetMetadata() const {
   protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::protobuf_AssignDescriptorsOnce();
   return ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::file_level_metadata[kIndexInFileMessages];
 }
@@ -1236,10 +1432,13 @@ void Operation::clear_attrs() {
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Operation::kIdFieldNumber;
 const int Operation::kNameFieldNumber;
-const int Operation::kInputsFieldNumber;
+const int Operation::kOpInputsFieldNumber;
 const int Operation::kControlOpIdsFieldNumber;
 const int Operation::kAttrsFieldNumber;
 const int Operation::kDeviceFieldNumber;
+const int Operation::kIsComponentFunctionFieldNumber;
+const int Operation::kFuncStepIdFieldNumber;
+const int Operation::kIsFunctionFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 Operation::Operation()
@@ -1252,8 +1451,8 @@ Operation::Operation()
 Operation::Operation(const Operation& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL),
-      inputs_(from.inputs_),
-      control_op_ids_(from.control_op_ids_) {
+      control_op_ids_(from.control_op_ids_),
+      op_inputs_(from.op_inputs_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   attrs_.MergeFrom(from.attrs_);
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -1264,14 +1463,18 @@ Operation::Operation(const Operation& from)
   if (from.device().size() > 0) {
     device_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.device_);
   }
-  id_ = from.id_;
+  ::memcpy(&id_, &from.id_,
+    static_cast<size_t>(reinterpret_cast<char*>(&is_function_) -
+    reinterpret_cast<char*>(&id_)) + sizeof(is_function_));
   // @@protoc_insertion_point(copy_constructor:tensorflow.eager.Operation)
 }
 
 void Operation::SharedCtor() {
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   device_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  id_ = GOOGLE_LONGLONG(0);
+  ::memset(&id_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&is_function_) -
+      reinterpret_cast<char*>(&id_)) + sizeof(is_function_));
 }
 
 Operation::~Operation() {
@@ -1304,12 +1507,14 @@ void Operation::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  inputs_.Clear();
   control_op_ids_.Clear();
   attrs_.Clear();
+  op_inputs_.Clear();
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   device_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  id_ = GOOGLE_LONGLONG(0);
+  ::memset(&id_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&is_function_) -
+      reinterpret_cast<char*>(&id_)) + sizeof(is_function_));
   _internal_metadata_.Clear();
 }
 
@@ -1347,18 +1552,6 @@ bool Operation::MergePartialFromCodedStream(
             this->name().data(), static_cast<int>(this->name().length()),
             ::google::protobuf::internal::WireFormatLite::PARSE,
             "tensorflow.eager.Operation.name"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // repeated .tensorflow.eager.RemoteTensorHandle inputs = 3;
-      case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
-                input, add_inputs()));
         } else {
           goto handle_unusual;
         }
@@ -1423,6 +1616,60 @@ bool Operation::MergePartialFromCodedStream(
         break;
       }
 
+      // bool is_component_function = 7;
+      case 7: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(56u /* 56 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &is_component_function_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int64 func_step_id = 8;
+      case 8: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(64u /* 64 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 input, &func_step_id_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool is_function = 9;
+      case 9: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(72u /* 72 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &is_function_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated .tensorflow.eager.Operation.Input op_inputs = 10;
+      case 10: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(82u /* 82 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+                input, add_op_inputs()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -1462,15 +1709,6 @@ void Operation::SerializeWithCachedSizes(
       "tensorflow.eager.Operation.name");
     ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       2, this->name(), output);
-  }
-
-  // repeated .tensorflow.eager.RemoteTensorHandle inputs = 3;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->inputs_size()); i < n; i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3,
-      this->inputs(static_cast<int>(i)),
-      output);
   }
 
   // repeated int64 control_op_ids = 4;
@@ -1543,6 +1781,30 @@ void Operation::SerializeWithCachedSizes(
       6, this->device(), output);
   }
 
+  // bool is_component_function = 7;
+  if (this->is_component_function() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(7, this->is_component_function(), output);
+  }
+
+  // int64 func_step_id = 8;
+  if (this->func_step_id() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt64(8, this->func_step_id(), output);
+  }
+
+  // bool is_function = 9;
+  if (this->is_function() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(9, this->is_function(), output);
+  }
+
+  // repeated .tensorflow.eager.Operation.Input op_inputs = 10;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->op_inputs_size()); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      10,
+      this->op_inputs(static_cast<int>(i)),
+      output);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -1571,14 +1833,6 @@ void Operation::SerializeWithCachedSizes(
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         2, this->name(), target);
-  }
-
-  // repeated .tensorflow.eager.RemoteTensorHandle inputs = 3;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->inputs_size()); i < n; i++) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        3, this->inputs(static_cast<int>(i)), deterministic, target);
   }
 
   // repeated int64 control_op_ids = 4;
@@ -1658,6 +1912,29 @@ void Operation::SerializeWithCachedSizes(
         6, this->device(), target);
   }
 
+  // bool is_component_function = 7;
+  if (this->is_component_function() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(7, this->is_component_function(), target);
+  }
+
+  // int64 func_step_id = 8;
+  if (this->func_step_id() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(8, this->func_step_id(), target);
+  }
+
+  // bool is_function = 9;
+  if (this->is_function() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(9, this->is_function(), target);
+  }
+
+  // repeated .tensorflow.eager.Operation.Input op_inputs = 10;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->op_inputs_size()); i < n; i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        10, this->op_inputs(static_cast<int>(i)), deterministic, target);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
@@ -1675,17 +1952,6 @@ size_t Operation::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
-  // repeated .tensorflow.eager.RemoteTensorHandle inputs = 3;
-  {
-    unsigned int count = static_cast<unsigned int>(this->inputs_size());
-    total_size += 1UL * count;
-    for (unsigned int i = 0; i < count; i++) {
-      total_size +=
-        ::google::protobuf::internal::WireFormatLite::MessageSize(
-          this->inputs(static_cast<int>(i)));
-    }
-  }
-
   // repeated int64 control_op_ids = 4;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -1716,6 +1982,17 @@ size_t Operation::ByteSizeLong() const {
     }
   }
 
+  // repeated .tensorflow.eager.Operation.Input op_inputs = 10;
+  {
+    unsigned int count = static_cast<unsigned int>(this->op_inputs_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          this->op_inputs(static_cast<int>(i)));
+    }
+  }
+
   // string name = 2;
   if (this->name().size() > 0) {
     total_size += 1 +
@@ -1735,6 +2012,23 @@ size_t Operation::ByteSizeLong() const {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int64Size(
         this->id());
+  }
+
+  // int64 func_step_id = 8;
+  if (this->func_step_id() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int64Size(
+        this->func_step_id());
+  }
+
+  // bool is_component_function = 7;
+  if (this->is_component_function() != 0) {
+    total_size += 1 + 1;
+  }
+
+  // bool is_function = 9;
+  if (this->is_function() != 0) {
+    total_size += 1 + 1;
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -1764,9 +2058,9 @@ void Operation::MergeFrom(const Operation& from) {
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  inputs_.MergeFrom(from.inputs_);
   control_op_ids_.MergeFrom(from.control_op_ids_);
   attrs_.MergeFrom(from.attrs_);
+  op_inputs_.MergeFrom(from.op_inputs_);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -1777,6 +2071,15 @@ void Operation::MergeFrom(const Operation& from) {
   }
   if (from.id() != 0) {
     set_id(from.id());
+  }
+  if (from.func_step_id() != 0) {
+    set_func_step_id(from.func_step_id());
+  }
+  if (from.is_component_function() != 0) {
+    set_is_component_function(from.is_component_function());
+  }
+  if (from.is_function() != 0) {
+    set_is_function(from.is_function());
   }
 }
 
@@ -1804,14 +2107,17 @@ void Operation::Swap(Operation* other) {
 }
 void Operation::InternalSwap(Operation* other) {
   using std::swap;
-  CastToBase(&inputs_)->InternalSwap(CastToBase(&other->inputs_));
   control_op_ids_.InternalSwap(&other->control_op_ids_);
   attrs_.Swap(&other->attrs_);
+  CastToBase(&op_inputs_)->InternalSwap(CastToBase(&other->op_inputs_));
   name_.Swap(&other->name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   device_.Swap(&other->device_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(id_, other->id_);
+  swap(func_step_id_, other->func_step_id_);
+  swap(is_component_function_, other->is_component_function_);
+  swap(is_function_, other->is_function_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
@@ -1830,12 +2136,21 @@ void QueueItem::InitAsDefaultInstance() {
       ::tensorflow::eager::Operation::internal_default_instance());
   ::tensorflow::eager::_QueueItem_default_instance_.send_tensor_ = const_cast< ::tensorflow::eager::SendTensorOp*>(
       ::tensorflow::eager::SendTensorOp::internal_default_instance());
+  ::tensorflow::eager::_QueueItem_default_instance_.register_function_ = const_cast< ::tensorflow::eager::RegisterFunctionOp*>(
+      ::tensorflow::eager::RegisterFunctionOp::internal_default_instance());
+  ::tensorflow::eager::_QueueItem_default_instance_.cleanup_function_ = const_cast< ::tensorflow::eager::CleanupFunctionOp*>(
+      ::tensorflow::eager::CleanupFunctionOp::internal_default_instance());
+  ::tensorflow::eager::_QueueItem_default_instance_.sync_remote_executor_for_stream_ = const_cast< ::tensorflow::eager::SyncRemoteExecutorForStream*>(
+      ::tensorflow::eager::SyncRemoteExecutorForStream::internal_default_instance());
+  ::tensorflow::eager::_QueueItem_default_instance_.send_packed_handle_ = const_cast< ::tensorflow::eager::SendPackedHandleOp*>(
+      ::tensorflow::eager::SendPackedHandleOp::internal_default_instance());
 }
 void QueueItem::set_allocated_handle_to_decref(::tensorflow::eager::RemoteTensorHandle* handle_to_decref) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   clear_item();
   if (handle_to_decref) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::google::protobuf::Arena* submessage_arena =
+      reinterpret_cast<::google::protobuf::MessageLite*>(handle_to_decref)->GetArena();
     if (message_arena != submessage_arena) {
       handle_to_decref = ::google::protobuf::internal::GetOwnedMessage(
           message_arena, handle_to_decref, submessage_arena);
@@ -1844,6 +2159,12 @@ void QueueItem::set_allocated_handle_to_decref(::tensorflow::eager::RemoteTensor
     item_.handle_to_decref_ = handle_to_decref;
   }
   // @@protoc_insertion_point(field_set_allocated:tensorflow.eager.QueueItem.handle_to_decref)
+}
+void QueueItem::clear_handle_to_decref() {
+  if (has_handle_to_decref()) {
+    delete item_.handle_to_decref_;
+    clear_has_item();
+  }
 }
 void QueueItem::set_allocated_operation(::tensorflow::eager::Operation* operation) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
@@ -1873,10 +2194,70 @@ void QueueItem::set_allocated_send_tensor(::tensorflow::eager::SendTensorOp* sen
   }
   // @@protoc_insertion_point(field_set_allocated:tensorflow.eager.QueueItem.send_tensor)
 }
+void QueueItem::set_allocated_register_function(::tensorflow::eager::RegisterFunctionOp* register_function) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  clear_item();
+  if (register_function) {
+    ::google::protobuf::Arena* submessage_arena = NULL;
+    if (message_arena != submessage_arena) {
+      register_function = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, register_function, submessage_arena);
+    }
+    set_has_register_function();
+    item_.register_function_ = register_function;
+  }
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.eager.QueueItem.register_function)
+}
+void QueueItem::set_allocated_cleanup_function(::tensorflow::eager::CleanupFunctionOp* cleanup_function) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  clear_item();
+  if (cleanup_function) {
+    ::google::protobuf::Arena* submessage_arena = NULL;
+    if (message_arena != submessage_arena) {
+      cleanup_function = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, cleanup_function, submessage_arena);
+    }
+    set_has_cleanup_function();
+    item_.cleanup_function_ = cleanup_function;
+  }
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.eager.QueueItem.cleanup_function)
+}
+void QueueItem::set_allocated_sync_remote_executor_for_stream(::tensorflow::eager::SyncRemoteExecutorForStream* sync_remote_executor_for_stream) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  clear_item();
+  if (sync_remote_executor_for_stream) {
+    ::google::protobuf::Arena* submessage_arena = NULL;
+    if (message_arena != submessage_arena) {
+      sync_remote_executor_for_stream = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, sync_remote_executor_for_stream, submessage_arena);
+    }
+    set_has_sync_remote_executor_for_stream();
+    item_.sync_remote_executor_for_stream_ = sync_remote_executor_for_stream;
+  }
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.eager.QueueItem.sync_remote_executor_for_stream)
+}
+void QueueItem::set_allocated_send_packed_handle(::tensorflow::eager::SendPackedHandleOp* send_packed_handle) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  clear_item();
+  if (send_packed_handle) {
+    ::google::protobuf::Arena* submessage_arena = NULL;
+    if (message_arena != submessage_arena) {
+      send_packed_handle = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, send_packed_handle, submessage_arena);
+    }
+    set_has_send_packed_handle();
+    item_.send_packed_handle_ = send_packed_handle;
+  }
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.eager.QueueItem.send_packed_handle)
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int QueueItem::kHandleToDecrefFieldNumber;
 const int QueueItem::kOperationFieldNumber;
 const int QueueItem::kSendTensorFieldNumber;
+const int QueueItem::kRegisterFunctionFieldNumber;
+const int QueueItem::kCleanupFunctionFieldNumber;
+const int QueueItem::kSyncRemoteExecutorForStreamFieldNumber;
+const int QueueItem::kSendPackedHandleFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 QueueItem::QueueItem()
@@ -1902,6 +2283,22 @@ QueueItem::QueueItem(const QueueItem& from)
     }
     case kSendTensor: {
       mutable_send_tensor()->::tensorflow::eager::SendTensorOp::MergeFrom(from.send_tensor());
+      break;
+    }
+    case kRegisterFunction: {
+      mutable_register_function()->::tensorflow::eager::RegisterFunctionOp::MergeFrom(from.register_function());
+      break;
+    }
+    case kCleanupFunction: {
+      mutable_cleanup_function()->::tensorflow::eager::CleanupFunctionOp::MergeFrom(from.cleanup_function());
+      break;
+    }
+    case kSyncRemoteExecutorForStream: {
+      mutable_sync_remote_executor_for_stream()->::tensorflow::eager::SyncRemoteExecutorForStream::MergeFrom(from.sync_remote_executor_for_stream());
+      break;
+    }
+    case kSendPackedHandle: {
+      mutable_send_packed_handle()->::tensorflow::eager::SendPackedHandleOp::MergeFrom(from.send_packed_handle());
       break;
     }
     case ITEM_NOT_SET: {
@@ -1953,6 +2350,22 @@ void QueueItem::clear_item() {
     }
     case kSendTensor: {
       delete item_.send_tensor_;
+      break;
+    }
+    case kRegisterFunction: {
+      delete item_.register_function_;
+      break;
+    }
+    case kCleanupFunction: {
+      delete item_.cleanup_function_;
+      break;
+    }
+    case kSyncRemoteExecutorForStream: {
+      delete item_.sync_remote_executor_for_stream_;
+      break;
+    }
+    case kSendPackedHandle: {
+      delete item_.send_packed_handle_;
       break;
     }
     case ITEM_NOT_SET: {
@@ -2019,6 +2432,54 @@ bool QueueItem::MergePartialFromCodedStream(
         break;
       }
 
+      // .tensorflow.eager.RegisterFunctionOp register_function = 4;
+      case 4: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_register_function()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .tensorflow.eager.CleanupFunctionOp cleanup_function = 5;
+      case 5: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_cleanup_function()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .tensorflow.eager.SyncRemoteExecutorForStream sync_remote_executor_for_stream = 6;
+      case 6: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_sync_remote_executor_for_stream()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .tensorflow.eager.SendPackedHandleOp send_packed_handle = 7;
+      case 7: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(58u /* 58 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_send_packed_handle()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -2063,6 +2524,30 @@ void QueueItem::SerializeWithCachedSizes(
       3, this->_internal_send_tensor(), output);
   }
 
+  // .tensorflow.eager.RegisterFunctionOp register_function = 4;
+  if (has_register_function()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      4, this->_internal_register_function(), output);
+  }
+
+  // .tensorflow.eager.CleanupFunctionOp cleanup_function = 5;
+  if (has_cleanup_function()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      5, this->_internal_cleanup_function(), output);
+  }
+
+  // .tensorflow.eager.SyncRemoteExecutorForStream sync_remote_executor_for_stream = 6;
+  if (has_sync_remote_executor_for_stream()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      6, this->_internal_sync_remote_executor_for_stream(), output);
+  }
+
+  // .tensorflow.eager.SendPackedHandleOp send_packed_handle = 7;
+  if (has_send_packed_handle()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      7, this->_internal_send_packed_handle(), output);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -2096,6 +2581,34 @@ void QueueItem::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
         3, this->_internal_send_tensor(), deterministic, target);
+  }
+
+  // .tensorflow.eager.RegisterFunctionOp register_function = 4;
+  if (has_register_function()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        4, this->_internal_register_function(), deterministic, target);
+  }
+
+  // .tensorflow.eager.CleanupFunctionOp cleanup_function = 5;
+  if (has_cleanup_function()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        5, this->_internal_cleanup_function(), deterministic, target);
+  }
+
+  // .tensorflow.eager.SyncRemoteExecutorForStream sync_remote_executor_for_stream = 6;
+  if (has_sync_remote_executor_for_stream()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        6, this->_internal_sync_remote_executor_for_stream(), deterministic, target);
+  }
+
+  // .tensorflow.eager.SendPackedHandleOp send_packed_handle = 7;
+  if (has_send_packed_handle()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        7, this->_internal_send_packed_handle(), deterministic, target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -2135,6 +2648,34 @@ size_t QueueItem::ByteSizeLong() const {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *item_.send_tensor_);
+      break;
+    }
+    // .tensorflow.eager.RegisterFunctionOp register_function = 4;
+    case kRegisterFunction: {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          *item_.register_function_);
+      break;
+    }
+    // .tensorflow.eager.CleanupFunctionOp cleanup_function = 5;
+    case kCleanupFunction: {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          *item_.cleanup_function_);
+      break;
+    }
+    // .tensorflow.eager.SyncRemoteExecutorForStream sync_remote_executor_for_stream = 6;
+    case kSyncRemoteExecutorForStream: {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          *item_.sync_remote_executor_for_stream_);
+      break;
+    }
+    // .tensorflow.eager.SendPackedHandleOp send_packed_handle = 7;
+    case kSendPackedHandle: {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          *item_.send_packed_handle_);
       break;
     }
     case ITEM_NOT_SET: {
@@ -2179,6 +2720,22 @@ void QueueItem::MergeFrom(const QueueItem& from) {
     }
     case kSendTensor: {
       mutable_send_tensor()->::tensorflow::eager::SendTensorOp::MergeFrom(from.send_tensor());
+      break;
+    }
+    case kRegisterFunction: {
+      mutable_register_function()->::tensorflow::eager::RegisterFunctionOp::MergeFrom(from.register_function());
+      break;
+    }
+    case kCleanupFunction: {
+      mutable_cleanup_function()->::tensorflow::eager::CleanupFunctionOp::MergeFrom(from.cleanup_function());
+      break;
+    }
+    case kSyncRemoteExecutorForStream: {
+      mutable_sync_remote_executor_for_stream()->::tensorflow::eager::SyncRemoteExecutorForStream::MergeFrom(from.sync_remote_executor_for_stream());
+      break;
+    }
+    case kSendPackedHandle: {
+      mutable_send_packed_handle()->::tensorflow::eager::SendPackedHandleOp::MergeFrom(from.send_packed_handle());
       break;
     }
     case ITEM_NOT_SET: {
@@ -2229,8 +2786,13 @@ void QueueResponse::InitAsDefaultInstance() {
 void QueueResponse::clear_shape() {
   shape_.Clear();
 }
+void QueueResponse::clear_tensor() {
+  tensor_.Clear();
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int QueueResponse::kShapeFieldNumber;
+const int QueueResponse::kDeviceFieldNumber;
+const int QueueResponse::kTensorFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 QueueResponse::QueueResponse()
@@ -2243,7 +2805,9 @@ QueueResponse::QueueResponse()
 QueueResponse::QueueResponse(const QueueResponse& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL),
-      shape_(from.shape_) {
+      shape_(from.shape_),
+      tensor_(from.tensor_),
+      device_(from.device_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:tensorflow.eager.QueueResponse)
 }
@@ -2280,6 +2844,8 @@ void QueueResponse::Clear() {
   (void) cached_has_bits;
 
   shape_.Clear();
+  tensor_.Clear();
+  device_.Clear();
   _internal_metadata_.Clear();
 }
 
@@ -2299,6 +2865,35 @@ bool QueueResponse::MergePartialFromCodedStream(
             static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                 input, add_shape()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated .tensorflow.TensorProto tensor = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+                input, add_tensor()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated string device = 3;
+      case 3: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->add_device()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->device(this->device_size() - 1).data(),
+            static_cast<int>(this->device(this->device_size() - 1).length()),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "tensorflow.eager.QueueResponse.device"));
         } else {
           goto handle_unusual;
         }
@@ -2340,6 +2935,25 @@ void QueueResponse::SerializeWithCachedSizes(
       output);
   }
 
+  // repeated .tensorflow.TensorProto tensor = 2;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->tensor_size()); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      2,
+      this->tensor(static_cast<int>(i)),
+      output);
+  }
+
+  // repeated string device = 3;
+  for (int i = 0, n = this->device_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->device(i).data(), static_cast<int>(this->device(i).length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "tensorflow.eager.QueueResponse.device");
+    ::google::protobuf::internal::WireFormatLite::WriteString(
+      3, this->device(i), output);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -2360,6 +2974,24 @@ void QueueResponse::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
         1, this->shape(static_cast<int>(i)), deterministic, target);
+  }
+
+  // repeated .tensorflow.TensorProto tensor = 2;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->tensor_size()); i < n; i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        2, this->tensor(static_cast<int>(i)), deterministic, target);
+  }
+
+  // repeated string device = 3;
+  for (int i = 0, n = this->device_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->device(i).data(), static_cast<int>(this->device(i).length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "tensorflow.eager.QueueResponse.device");
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteStringToArray(3, this->device(i), target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -2390,6 +3022,25 @@ size_t QueueResponse::ByteSizeLong() const {
     }
   }
 
+  // repeated .tensorflow.TensorProto tensor = 2;
+  {
+    unsigned int count = static_cast<unsigned int>(this->tensor_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          this->tensor(static_cast<int>(i)));
+    }
+  }
+
+  // repeated string device = 3;
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->device_size());
+  for (int i = 0, n = this->device_size(); i < n; i++) {
+    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
+      this->device(i));
+  }
+
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -2418,6 +3069,8 @@ void QueueResponse::MergeFrom(const QueueResponse& from) {
   (void) cached_has_bits;
 
   shape_.MergeFrom(from.shape_);
+  tensor_.MergeFrom(from.tensor_);
+  device_.MergeFrom(from.device_);
 }
 
 void QueueResponse::CopyFrom(const ::google::protobuf::Message& from) {
@@ -2445,6 +3098,8 @@ void QueueResponse::Swap(QueueResponse* other) {
 void QueueResponse::InternalSwap(QueueResponse* other) {
   using std::swap;
   CastToBase(&shape_)->InternalSwap(CastToBase(&other->shape_));
+  CastToBase(&tensor_)->InternalSwap(CastToBase(&other->tensor_));
+  device_.InternalSwap(CastToBase(&other->device_));
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
@@ -2484,6 +3139,8 @@ const int CreateContextRequest::kKeepAliveSecsFieldNumber;
 const int CreateContextRequest::kVersionDefFieldNumber;
 const int CreateContextRequest::kClusterDeviceAttributesFieldNumber;
 const int CreateContextRequest::kContextIdFieldNumber;
+const int CreateContextRequest::kContextViewIdFieldNumber;
+const int CreateContextRequest::kLazyCopyRemoteFunctionInputsFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CreateContextRequest::CreateContextRequest()
@@ -2509,15 +3166,15 @@ CreateContextRequest::CreateContextRequest(const CreateContextRequest& from)
     version_def_ = NULL;
   }
   ::memcpy(&keep_alive_secs_, &from.keep_alive_secs_,
-    static_cast<size_t>(reinterpret_cast<char*>(&async_) -
-    reinterpret_cast<char*>(&keep_alive_secs_)) + sizeof(async_));
+    static_cast<size_t>(reinterpret_cast<char*>(&lazy_copy_remote_function_inputs_) -
+    reinterpret_cast<char*>(&keep_alive_secs_)) + sizeof(lazy_copy_remote_function_inputs_));
   // @@protoc_insertion_point(copy_constructor:tensorflow.eager.CreateContextRequest)
 }
 
 void CreateContextRequest::SharedCtor() {
   ::memset(&server_def_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&async_) -
-      reinterpret_cast<char*>(&server_def_)) + sizeof(async_));
+      reinterpret_cast<char*>(&lazy_copy_remote_function_inputs_) -
+      reinterpret_cast<char*>(&server_def_)) + sizeof(lazy_copy_remote_function_inputs_));
 }
 
 CreateContextRequest::~CreateContextRequest() {
@@ -2560,8 +3217,8 @@ void CreateContextRequest::Clear() {
   }
   version_def_ = NULL;
   ::memset(&keep_alive_secs_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&async_) -
-      reinterpret_cast<char*>(&keep_alive_secs_)) + sizeof(async_));
+      reinterpret_cast<char*>(&lazy_copy_remote_function_inputs_) -
+      reinterpret_cast<char*>(&keep_alive_secs_)) + sizeof(lazy_copy_remote_function_inputs_));
   _internal_metadata_.Clear();
 }
 
@@ -2653,6 +3310,34 @@ bool CreateContextRequest::MergePartialFromCodedStream(
         break;
       }
 
+      // fixed64 context_view_id = 8;
+      case 8: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(65u /* 65 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_FIXED64>(
+                 input, &context_view_id_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool lazy_copy_remote_function_inputs = 9;
+      case 9: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(72u /* 72 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &lazy_copy_remote_function_inputs_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -2715,6 +3400,16 @@ void CreateContextRequest::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteFixed64(7, this->context_id(), output);
   }
 
+  // fixed64 context_view_id = 8;
+  if (this->context_view_id() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteFixed64(8, this->context_view_id(), output);
+  }
+
+  // bool lazy_copy_remote_function_inputs = 9;
+  if (this->lazy_copy_remote_function_inputs() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(9, this->lazy_copy_remote_function_inputs(), output);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -2764,6 +3459,16 @@ void CreateContextRequest::SerializeWithCachedSizes(
   // fixed64 context_id = 7;
   if (this->context_id() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFixed64ToArray(7, this->context_id(), target);
+  }
+
+  // fixed64 context_view_id = 8;
+  if (this->context_view_id() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteFixed64ToArray(8, this->context_view_id(), target);
+  }
+
+  // bool lazy_copy_remote_function_inputs = 9;
+  if (this->lazy_copy_remote_function_inputs() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(9, this->lazy_copy_remote_function_inputs(), target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -2820,8 +3525,18 @@ size_t CreateContextRequest::ByteSizeLong() const {
     total_size += 1 + 8;
   }
 
+  // fixed64 context_view_id = 8;
+  if (this->context_view_id() != 0) {
+    total_size += 1 + 8;
+  }
+
   // bool async = 2;
   if (this->async() != 0) {
+    total_size += 1 + 1;
+  }
+
+  // bool lazy_copy_remote_function_inputs = 9;
+  if (this->lazy_copy_remote_function_inputs() != 0) {
     total_size += 1 + 1;
   }
 
@@ -2865,8 +3580,14 @@ void CreateContextRequest::MergeFrom(const CreateContextRequest& from) {
   if (from.context_id() != 0) {
     set_context_id(from.context_id());
   }
+  if (from.context_view_id() != 0) {
+    set_context_view_id(from.context_view_id());
+  }
   if (from.async() != 0) {
     set_async(from.async());
+  }
+  if (from.lazy_copy_remote_function_inputs() != 0) {
+    set_lazy_copy_remote_function_inputs(from.lazy_copy_remote_function_inputs());
   }
 }
 
@@ -2899,7 +3620,9 @@ void CreateContextRequest::InternalSwap(CreateContextRequest* other) {
   swap(version_def_, other->version_def_);
   swap(keep_alive_secs_, other->keep_alive_secs_);
   swap(context_id_, other->context_id_);
+  swap(context_view_id_, other->context_view_id_);
   swap(async_, other->async_);
+  swap(lazy_copy_remote_function_inputs_, other->lazy_copy_remote_function_inputs_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
@@ -3136,6 +3859,602 @@ void CreateContextResponse::InternalSwap(CreateContextResponse* other) {
 }
 
 ::google::protobuf::Metadata CreateContextResponse::GetMetadata() const {
+  protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void UpdateContextRequest::InitAsDefaultInstance() {
+  ::tensorflow::eager::_UpdateContextRequest_default_instance_._instance.get_mutable()->server_def_ = const_cast< ::tensorflow::ServerDef*>(
+      ::tensorflow::ServerDef::internal_default_instance());
+}
+void UpdateContextRequest::clear_server_def() {
+  if (GetArenaNoVirtual() == NULL && server_def_ != NULL) {
+    delete server_def_;
+  }
+  server_def_ = NULL;
+}
+void UpdateContextRequest::clear_cluster_device_attributes() {
+  cluster_device_attributes_.Clear();
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int UpdateContextRequest::kServerDefFieldNumber;
+const int UpdateContextRequest::kClusterDeviceAttributesFieldNumber;
+const int UpdateContextRequest::kContextIdFieldNumber;
+const int UpdateContextRequest::kContextViewIdFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+UpdateContextRequest::UpdateContextRequest()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_UpdateContextRequest.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:tensorflow.eager.UpdateContextRequest)
+}
+UpdateContextRequest::UpdateContextRequest(const UpdateContextRequest& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      cluster_device_attributes_(from.cluster_device_attributes_) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (from.has_server_def()) {
+    server_def_ = new ::tensorflow::ServerDef(*from.server_def_);
+  } else {
+    server_def_ = NULL;
+  }
+  ::memcpy(&context_id_, &from.context_id_,
+    static_cast<size_t>(reinterpret_cast<char*>(&context_view_id_) -
+    reinterpret_cast<char*>(&context_id_)) + sizeof(context_view_id_));
+  // @@protoc_insertion_point(copy_constructor:tensorflow.eager.UpdateContextRequest)
+}
+
+void UpdateContextRequest::SharedCtor() {
+  ::memset(&server_def_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&context_view_id_) -
+      reinterpret_cast<char*>(&server_def_)) + sizeof(context_view_id_));
+}
+
+UpdateContextRequest::~UpdateContextRequest() {
+  // @@protoc_insertion_point(destructor:tensorflow.eager.UpdateContextRequest)
+  SharedDtor();
+}
+
+void UpdateContextRequest::SharedDtor() {
+  if (this != internal_default_instance()) delete server_def_;
+}
+
+void UpdateContextRequest::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* UpdateContextRequest::descriptor() {
+  ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const UpdateContextRequest& UpdateContextRequest::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_UpdateContextRequest.base);
+  return *internal_default_instance();
+}
+
+
+void UpdateContextRequest::Clear() {
+// @@protoc_insertion_point(message_clear_start:tensorflow.eager.UpdateContextRequest)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cluster_device_attributes_.Clear();
+  if (GetArenaNoVirtual() == NULL && server_def_ != NULL) {
+    delete server_def_;
+  }
+  server_def_ = NULL;
+  ::memset(&context_id_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&context_view_id_) -
+      reinterpret_cast<char*>(&context_id_)) + sizeof(context_view_id_));
+  _internal_metadata_.Clear();
+}
+
+bool UpdateContextRequest::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:tensorflow.eager.UpdateContextRequest)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // .tensorflow.ServerDef server_def = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_server_def()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated .tensorflow.DeviceAttributes cluster_device_attributes = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+                input, add_cluster_device_attributes()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // fixed64 context_id = 3;
+      case 3: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(25u /* 25 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_FIXED64>(
+                 input, &context_id_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // fixed64 context_view_id = 4;
+      case 4: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(33u /* 33 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_FIXED64>(
+                 input, &context_view_id_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:tensorflow.eager.UpdateContextRequest)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:tensorflow.eager.UpdateContextRequest)
+  return false;
+#undef DO_
+}
+
+void UpdateContextRequest::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:tensorflow.eager.UpdateContextRequest)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .tensorflow.ServerDef server_def = 1;
+  if (this->has_server_def()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      1, this->_internal_server_def(), output);
+  }
+
+  // repeated .tensorflow.DeviceAttributes cluster_device_attributes = 2;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->cluster_device_attributes_size()); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      2,
+      this->cluster_device_attributes(static_cast<int>(i)),
+      output);
+  }
+
+  // fixed64 context_id = 3;
+  if (this->context_id() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteFixed64(3, this->context_id(), output);
+  }
+
+  // fixed64 context_view_id = 4;
+  if (this->context_view_id() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteFixed64(4, this->context_view_id(), output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:tensorflow.eager.UpdateContextRequest)
+}
+
+::google::protobuf::uint8* UpdateContextRequest::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:tensorflow.eager.UpdateContextRequest)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .tensorflow.ServerDef server_def = 1;
+  if (this->has_server_def()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        1, this->_internal_server_def(), deterministic, target);
+  }
+
+  // repeated .tensorflow.DeviceAttributes cluster_device_attributes = 2;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->cluster_device_attributes_size()); i < n; i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        2, this->cluster_device_attributes(static_cast<int>(i)), deterministic, target);
+  }
+
+  // fixed64 context_id = 3;
+  if (this->context_id() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteFixed64ToArray(3, this->context_id(), target);
+  }
+
+  // fixed64 context_view_id = 4;
+  if (this->context_view_id() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteFixed64ToArray(4, this->context_view_id(), target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:tensorflow.eager.UpdateContextRequest)
+  return target;
+}
+
+size_t UpdateContextRequest::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:tensorflow.eager.UpdateContextRequest)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // repeated .tensorflow.DeviceAttributes cluster_device_attributes = 2;
+  {
+    unsigned int count = static_cast<unsigned int>(this->cluster_device_attributes_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          this->cluster_device_attributes(static_cast<int>(i)));
+    }
+  }
+
+  // .tensorflow.ServerDef server_def = 1;
+  if (this->has_server_def()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *server_def_);
+  }
+
+  // fixed64 context_id = 3;
+  if (this->context_id() != 0) {
+    total_size += 1 + 8;
+  }
+
+  // fixed64 context_view_id = 4;
+  if (this->context_view_id() != 0) {
+    total_size += 1 + 8;
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void UpdateContextRequest::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:tensorflow.eager.UpdateContextRequest)
+  GOOGLE_DCHECK_NE(&from, this);
+  const UpdateContextRequest* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const UpdateContextRequest>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:tensorflow.eager.UpdateContextRequest)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:tensorflow.eager.UpdateContextRequest)
+    MergeFrom(*source);
+  }
+}
+
+void UpdateContextRequest::MergeFrom(const UpdateContextRequest& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.eager.UpdateContextRequest)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cluster_device_attributes_.MergeFrom(from.cluster_device_attributes_);
+  if (from.has_server_def()) {
+    mutable_server_def()->::tensorflow::ServerDef::MergeFrom(from.server_def());
+  }
+  if (from.context_id() != 0) {
+    set_context_id(from.context_id());
+  }
+  if (from.context_view_id() != 0) {
+    set_context_view_id(from.context_view_id());
+  }
+}
+
+void UpdateContextRequest::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:tensorflow.eager.UpdateContextRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void UpdateContextRequest::CopyFrom(const UpdateContextRequest& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:tensorflow.eager.UpdateContextRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool UpdateContextRequest::IsInitialized() const {
+  return true;
+}
+
+void UpdateContextRequest::Swap(UpdateContextRequest* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void UpdateContextRequest::InternalSwap(UpdateContextRequest* other) {
+  using std::swap;
+  CastToBase(&cluster_device_attributes_)->InternalSwap(CastToBase(&other->cluster_device_attributes_));
+  swap(server_def_, other->server_def_);
+  swap(context_id_, other->context_id_);
+  swap(context_view_id_, other->context_view_id_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata UpdateContextRequest::GetMetadata() const {
+  protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void UpdateContextResponse::InitAsDefaultInstance() {
+}
+void UpdateContextResponse::clear_device_attributes() {
+  device_attributes_.Clear();
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int UpdateContextResponse::kDeviceAttributesFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+UpdateContextResponse::UpdateContextResponse()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_UpdateContextResponse.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:tensorflow.eager.UpdateContextResponse)
+}
+UpdateContextResponse::UpdateContextResponse(const UpdateContextResponse& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      device_attributes_(from.device_attributes_) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:tensorflow.eager.UpdateContextResponse)
+}
+
+void UpdateContextResponse::SharedCtor() {
+}
+
+UpdateContextResponse::~UpdateContextResponse() {
+  // @@protoc_insertion_point(destructor:tensorflow.eager.UpdateContextResponse)
+  SharedDtor();
+}
+
+void UpdateContextResponse::SharedDtor() {
+}
+
+void UpdateContextResponse::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* UpdateContextResponse::descriptor() {
+  ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const UpdateContextResponse& UpdateContextResponse::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_UpdateContextResponse.base);
+  return *internal_default_instance();
+}
+
+
+void UpdateContextResponse::Clear() {
+// @@protoc_insertion_point(message_clear_start:tensorflow.eager.UpdateContextResponse)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  device_attributes_.Clear();
+  _internal_metadata_.Clear();
+}
+
+bool UpdateContextResponse::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:tensorflow.eager.UpdateContextResponse)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // repeated .tensorflow.DeviceAttributes device_attributes = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+                input, add_device_attributes()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:tensorflow.eager.UpdateContextResponse)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:tensorflow.eager.UpdateContextResponse)
+  return false;
+#undef DO_
+}
+
+void UpdateContextResponse::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:tensorflow.eager.UpdateContextResponse)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated .tensorflow.DeviceAttributes device_attributes = 1;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->device_attributes_size()); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      1,
+      this->device_attributes(static_cast<int>(i)),
+      output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:tensorflow.eager.UpdateContextResponse)
+}
+
+::google::protobuf::uint8* UpdateContextResponse::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:tensorflow.eager.UpdateContextResponse)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated .tensorflow.DeviceAttributes device_attributes = 1;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->device_attributes_size()); i < n; i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        1, this->device_attributes(static_cast<int>(i)), deterministic, target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:tensorflow.eager.UpdateContextResponse)
+  return target;
+}
+
+size_t UpdateContextResponse::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:tensorflow.eager.UpdateContextResponse)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // repeated .tensorflow.DeviceAttributes device_attributes = 1;
+  {
+    unsigned int count = static_cast<unsigned int>(this->device_attributes_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          this->device_attributes(static_cast<int>(i)));
+    }
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void UpdateContextResponse::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:tensorflow.eager.UpdateContextResponse)
+  GOOGLE_DCHECK_NE(&from, this);
+  const UpdateContextResponse* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const UpdateContextResponse>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:tensorflow.eager.UpdateContextResponse)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:tensorflow.eager.UpdateContextResponse)
+    MergeFrom(*source);
+  }
+}
+
+void UpdateContextResponse::MergeFrom(const UpdateContextResponse& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.eager.UpdateContextResponse)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  device_attributes_.MergeFrom(from.device_attributes_);
+}
+
+void UpdateContextResponse::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:tensorflow.eager.UpdateContextResponse)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void UpdateContextResponse::CopyFrom(const UpdateContextResponse& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:tensorflow.eager.UpdateContextResponse)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool UpdateContextResponse::IsInitialized() const {
+  return true;
+}
+
+void UpdateContextResponse::Swap(UpdateContextResponse* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void UpdateContextResponse::InternalSwap(UpdateContextResponse* other) {
+  using std::swap;
+  CastToBase(&device_attributes_)->InternalSwap(CastToBase(&other->device_attributes_));
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata UpdateContextResponse::GetMetadata() const {
   protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::protobuf_AssignDescriptorsOnce();
   return ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::file_level_metadata[kIndexInFileMessages];
 }
@@ -4102,6 +5421,622 @@ void WaitQueueDoneResponse::InternalSwap(WaitQueueDoneResponse* other) {
 
 // ===================================================================
 
+void RunComponentFunctionRequest::InitAsDefaultInstance() {
+  ::tensorflow::eager::_RunComponentFunctionRequest_default_instance_._instance.get_mutable()->operation_ = const_cast< ::tensorflow::eager::Operation*>(
+      ::tensorflow::eager::Operation::internal_default_instance());
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int RunComponentFunctionRequest::kContextIdFieldNumber;
+const int RunComponentFunctionRequest::kOperationFieldNumber;
+const int RunComponentFunctionRequest::kOutputNumFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+RunComponentFunctionRequest::RunComponentFunctionRequest()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_RunComponentFunctionRequest.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:tensorflow.eager.RunComponentFunctionRequest)
+}
+RunComponentFunctionRequest::RunComponentFunctionRequest(const RunComponentFunctionRequest& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      output_num_(from.output_num_) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (from.has_operation()) {
+    operation_ = new ::tensorflow::eager::Operation(*from.operation_);
+  } else {
+    operation_ = NULL;
+  }
+  context_id_ = from.context_id_;
+  // @@protoc_insertion_point(copy_constructor:tensorflow.eager.RunComponentFunctionRequest)
+}
+
+void RunComponentFunctionRequest::SharedCtor() {
+  ::memset(&operation_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&context_id_) -
+      reinterpret_cast<char*>(&operation_)) + sizeof(context_id_));
+}
+
+RunComponentFunctionRequest::~RunComponentFunctionRequest() {
+  // @@protoc_insertion_point(destructor:tensorflow.eager.RunComponentFunctionRequest)
+  SharedDtor();
+}
+
+void RunComponentFunctionRequest::SharedDtor() {
+  if (this != internal_default_instance()) delete operation_;
+}
+
+void RunComponentFunctionRequest::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* RunComponentFunctionRequest::descriptor() {
+  ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const RunComponentFunctionRequest& RunComponentFunctionRequest::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_RunComponentFunctionRequest.base);
+  return *internal_default_instance();
+}
+
+
+void RunComponentFunctionRequest::Clear() {
+// @@protoc_insertion_point(message_clear_start:tensorflow.eager.RunComponentFunctionRequest)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  output_num_.Clear();
+  if (GetArenaNoVirtual() == NULL && operation_ != NULL) {
+    delete operation_;
+  }
+  operation_ = NULL;
+  context_id_ = GOOGLE_ULONGLONG(0);
+  _internal_metadata_.Clear();
+}
+
+bool RunComponentFunctionRequest::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:tensorflow.eager.RunComponentFunctionRequest)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // fixed64 context_id = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(9u /* 9 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_FIXED64>(
+                 input, &context_id_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .tensorflow.eager.Operation operation = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_operation()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated int32 output_num = 3;
+      case 3: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, this->mutable_output_num())));
+        } else if (
+            static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 1, 26u, input, this->mutable_output_num())));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:tensorflow.eager.RunComponentFunctionRequest)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:tensorflow.eager.RunComponentFunctionRequest)
+  return false;
+#undef DO_
+}
+
+void RunComponentFunctionRequest::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:tensorflow.eager.RunComponentFunctionRequest)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // fixed64 context_id = 1;
+  if (this->context_id() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteFixed64(1, this->context_id(), output);
+  }
+
+  // .tensorflow.eager.Operation operation = 2;
+  if (this->has_operation()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      2, this->_internal_operation(), output);
+  }
+
+  // repeated int32 output_num = 3;
+  if (this->output_num_size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteTag(3, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
+    output->WriteVarint32(static_cast< ::google::protobuf::uint32>(
+        _output_num_cached_byte_size_));
+  }
+  for (int i = 0, n = this->output_num_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32NoTag(
+      this->output_num(i), output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:tensorflow.eager.RunComponentFunctionRequest)
+}
+
+::google::protobuf::uint8* RunComponentFunctionRequest::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:tensorflow.eager.RunComponentFunctionRequest)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // fixed64 context_id = 1;
+  if (this->context_id() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteFixed64ToArray(1, this->context_id(), target);
+  }
+
+  // .tensorflow.eager.Operation operation = 2;
+  if (this->has_operation()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        2, this->_internal_operation(), deterministic, target);
+  }
+
+  // repeated int32 output_num = 3;
+  if (this->output_num_size() > 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
+      3,
+      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
+      target);
+    target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
+        static_cast< ::google::protobuf::int32>(
+            _output_num_cached_byte_size_), target);
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteInt32NoTagToArray(this->output_num_, target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:tensorflow.eager.RunComponentFunctionRequest)
+  return target;
+}
+
+size_t RunComponentFunctionRequest::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:tensorflow.eager.RunComponentFunctionRequest)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // repeated int32 output_num = 3;
+  {
+    size_t data_size = ::google::protobuf::internal::WireFormatLite::
+      Int32Size(this->output_num_);
+    if (data_size > 0) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int32Size(
+            static_cast< ::google::protobuf::int32>(data_size));
+    }
+    int cached_size = ::google::protobuf::internal::ToCachedSize(data_size);
+    GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+    _output_num_cached_byte_size_ = cached_size;
+    GOOGLE_SAFE_CONCURRENT_WRITES_END();
+    total_size += data_size;
+  }
+
+  // .tensorflow.eager.Operation operation = 2;
+  if (this->has_operation()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *operation_);
+  }
+
+  // fixed64 context_id = 1;
+  if (this->context_id() != 0) {
+    total_size += 1 + 8;
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void RunComponentFunctionRequest::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:tensorflow.eager.RunComponentFunctionRequest)
+  GOOGLE_DCHECK_NE(&from, this);
+  const RunComponentFunctionRequest* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const RunComponentFunctionRequest>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:tensorflow.eager.RunComponentFunctionRequest)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:tensorflow.eager.RunComponentFunctionRequest)
+    MergeFrom(*source);
+  }
+}
+
+void RunComponentFunctionRequest::MergeFrom(const RunComponentFunctionRequest& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.eager.RunComponentFunctionRequest)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  output_num_.MergeFrom(from.output_num_);
+  if (from.has_operation()) {
+    mutable_operation()->::tensorflow::eager::Operation::MergeFrom(from.operation());
+  }
+  if (from.context_id() != 0) {
+    set_context_id(from.context_id());
+  }
+}
+
+void RunComponentFunctionRequest::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:tensorflow.eager.RunComponentFunctionRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void RunComponentFunctionRequest::CopyFrom(const RunComponentFunctionRequest& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:tensorflow.eager.RunComponentFunctionRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool RunComponentFunctionRequest::IsInitialized() const {
+  return true;
+}
+
+void RunComponentFunctionRequest::Swap(RunComponentFunctionRequest* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void RunComponentFunctionRequest::InternalSwap(RunComponentFunctionRequest* other) {
+  using std::swap;
+  output_num_.InternalSwap(&other->output_num_);
+  swap(operation_, other->operation_);
+  swap(context_id_, other->context_id_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata RunComponentFunctionRequest::GetMetadata() const {
+  protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void RunComponentFunctionResponse::InitAsDefaultInstance() {
+}
+void RunComponentFunctionResponse::clear_shape() {
+  shape_.Clear();
+}
+void RunComponentFunctionResponse::clear_tensor() {
+  tensor_.Clear();
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int RunComponentFunctionResponse::kShapeFieldNumber;
+const int RunComponentFunctionResponse::kTensorFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+RunComponentFunctionResponse::RunComponentFunctionResponse()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_RunComponentFunctionResponse.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:tensorflow.eager.RunComponentFunctionResponse)
+}
+RunComponentFunctionResponse::RunComponentFunctionResponse(const RunComponentFunctionResponse& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      shape_(from.shape_),
+      tensor_(from.tensor_) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:tensorflow.eager.RunComponentFunctionResponse)
+}
+
+void RunComponentFunctionResponse::SharedCtor() {
+}
+
+RunComponentFunctionResponse::~RunComponentFunctionResponse() {
+  // @@protoc_insertion_point(destructor:tensorflow.eager.RunComponentFunctionResponse)
+  SharedDtor();
+}
+
+void RunComponentFunctionResponse::SharedDtor() {
+}
+
+void RunComponentFunctionResponse::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* RunComponentFunctionResponse::descriptor() {
+  ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const RunComponentFunctionResponse& RunComponentFunctionResponse::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_RunComponentFunctionResponse.base);
+  return *internal_default_instance();
+}
+
+
+void RunComponentFunctionResponse::Clear() {
+// @@protoc_insertion_point(message_clear_start:tensorflow.eager.RunComponentFunctionResponse)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  shape_.Clear();
+  tensor_.Clear();
+  _internal_metadata_.Clear();
+}
+
+bool RunComponentFunctionResponse::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:tensorflow.eager.RunComponentFunctionResponse)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // repeated .tensorflow.TensorShapeProto shape = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+                input, add_shape()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated .tensorflow.TensorProto tensor = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+                input, add_tensor()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:tensorflow.eager.RunComponentFunctionResponse)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:tensorflow.eager.RunComponentFunctionResponse)
+  return false;
+#undef DO_
+}
+
+void RunComponentFunctionResponse::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:tensorflow.eager.RunComponentFunctionResponse)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated .tensorflow.TensorShapeProto shape = 1;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->shape_size()); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      1,
+      this->shape(static_cast<int>(i)),
+      output);
+  }
+
+  // repeated .tensorflow.TensorProto tensor = 2;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->tensor_size()); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      2,
+      this->tensor(static_cast<int>(i)),
+      output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:tensorflow.eager.RunComponentFunctionResponse)
+}
+
+::google::protobuf::uint8* RunComponentFunctionResponse::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:tensorflow.eager.RunComponentFunctionResponse)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated .tensorflow.TensorShapeProto shape = 1;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->shape_size()); i < n; i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        1, this->shape(static_cast<int>(i)), deterministic, target);
+  }
+
+  // repeated .tensorflow.TensorProto tensor = 2;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->tensor_size()); i < n; i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        2, this->tensor(static_cast<int>(i)), deterministic, target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:tensorflow.eager.RunComponentFunctionResponse)
+  return target;
+}
+
+size_t RunComponentFunctionResponse::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:tensorflow.eager.RunComponentFunctionResponse)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // repeated .tensorflow.TensorShapeProto shape = 1;
+  {
+    unsigned int count = static_cast<unsigned int>(this->shape_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          this->shape(static_cast<int>(i)));
+    }
+  }
+
+  // repeated .tensorflow.TensorProto tensor = 2;
+  {
+    unsigned int count = static_cast<unsigned int>(this->tensor_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          this->tensor(static_cast<int>(i)));
+    }
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void RunComponentFunctionResponse::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:tensorflow.eager.RunComponentFunctionResponse)
+  GOOGLE_DCHECK_NE(&from, this);
+  const RunComponentFunctionResponse* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const RunComponentFunctionResponse>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:tensorflow.eager.RunComponentFunctionResponse)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:tensorflow.eager.RunComponentFunctionResponse)
+    MergeFrom(*source);
+  }
+}
+
+void RunComponentFunctionResponse::MergeFrom(const RunComponentFunctionResponse& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.eager.RunComponentFunctionResponse)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  shape_.MergeFrom(from.shape_);
+  tensor_.MergeFrom(from.tensor_);
+}
+
+void RunComponentFunctionResponse::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:tensorflow.eager.RunComponentFunctionResponse)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void RunComponentFunctionResponse::CopyFrom(const RunComponentFunctionResponse& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:tensorflow.eager.RunComponentFunctionResponse)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool RunComponentFunctionResponse::IsInitialized() const {
+  return true;
+}
+
+void RunComponentFunctionResponse::Swap(RunComponentFunctionResponse* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void RunComponentFunctionResponse::InternalSwap(RunComponentFunctionResponse* other) {
+  using std::swap;
+  CastToBase(&shape_)->InternalSwap(CastToBase(&other->shape_));
+  CastToBase(&tensor_)->InternalSwap(CastToBase(&other->tensor_));
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata RunComponentFunctionResponse::GetMetadata() const {
+  protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
 void KeepAliveRequest::InitAsDefaultInstance() {
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
@@ -4326,6 +6261,7 @@ void KeepAliveRequest::InternalSwap(KeepAliveRequest* other) {
 void KeepAliveResponse::InitAsDefaultInstance() {
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int KeepAliveResponse::kContextViewIdFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 KeepAliveResponse::KeepAliveResponse()
@@ -4339,10 +6275,12 @@ KeepAliveResponse::KeepAliveResponse(const KeepAliveResponse& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
+  context_view_id_ = from.context_view_id_;
   // @@protoc_insertion_point(copy_constructor:tensorflow.eager.KeepAliveResponse)
 }
 
 void KeepAliveResponse::SharedCtor() {
+  context_view_id_ = GOOGLE_ULONGLONG(0);
 }
 
 KeepAliveResponse::~KeepAliveResponse() {
@@ -4373,6 +6311,7 @@ void KeepAliveResponse::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  context_view_id_ = GOOGLE_ULONGLONG(0);
   _internal_metadata_.Clear();
 }
 
@@ -4385,12 +6324,31 @@ bool KeepAliveResponse::MergePartialFromCodedStream(
     ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
-  handle_unusual:
-    if (tag == 0) {
-      goto success;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // fixed64 context_view_id = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(9u /* 9 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_FIXED64>(
+                 input, &context_view_id_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
     }
-    DO_(::google::protobuf::internal::WireFormat::SkipField(
-          input, tag, _internal_metadata_.mutable_unknown_fields()));
   }
 success:
   // @@protoc_insertion_point(parse_success:tensorflow.eager.KeepAliveResponse)
@@ -4407,6 +6365,11 @@ void KeepAliveResponse::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
+  // fixed64 context_view_id = 1;
+  if (this->context_view_id() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteFixed64(1, this->context_view_id(), output);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -4420,6 +6383,11 @@ void KeepAliveResponse::SerializeWithCachedSizes(
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.eager.KeepAliveResponse)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
+
+  // fixed64 context_view_id = 1;
+  if (this->context_view_id() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteFixed64ToArray(1, this->context_view_id(), target);
+  }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
@@ -4438,6 +6406,11 @@ size_t KeepAliveResponse::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
+  // fixed64 context_view_id = 1;
+  if (this->context_view_id() != 0) {
+    total_size += 1 + 8;
+  }
+
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -4465,6 +6438,9 @@ void KeepAliveResponse::MergeFrom(const KeepAliveResponse& from) {
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
+  if (from.context_view_id() != 0) {
+    set_context_view_id(from.context_view_id());
+  }
 }
 
 void KeepAliveResponse::CopyFrom(const ::google::protobuf::Message& from) {
@@ -4491,6 +6467,7 @@ void KeepAliveResponse::Swap(KeepAliveResponse* other) {
 }
 void KeepAliveResponse::InternalSwap(KeepAliveResponse* other) {
   using std::swap;
+  swap(context_view_id_, other->context_view_id_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
@@ -4506,6 +6483,7 @@ void CloseContextRequest::InitAsDefaultInstance() {
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CloseContextRequest::kContextIdFieldNumber;
+const int CloseContextRequest::kContextViewIdFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CloseContextRequest::CloseContextRequest()
@@ -4519,12 +6497,16 @@ CloseContextRequest::CloseContextRequest(const CloseContextRequest& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  context_id_ = from.context_id_;
+  ::memcpy(&context_id_, &from.context_id_,
+    static_cast<size_t>(reinterpret_cast<char*>(&context_view_id_) -
+    reinterpret_cast<char*>(&context_id_)) + sizeof(context_view_id_));
   // @@protoc_insertion_point(copy_constructor:tensorflow.eager.CloseContextRequest)
 }
 
 void CloseContextRequest::SharedCtor() {
-  context_id_ = GOOGLE_ULONGLONG(0);
+  ::memset(&context_id_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&context_view_id_) -
+      reinterpret_cast<char*>(&context_id_)) + sizeof(context_view_id_));
 }
 
 CloseContextRequest::~CloseContextRequest() {
@@ -4555,7 +6537,9 @@ void CloseContextRequest::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  context_id_ = GOOGLE_ULONGLONG(0);
+  ::memset(&context_id_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&context_view_id_) -
+      reinterpret_cast<char*>(&context_id_)) + sizeof(context_view_id_));
   _internal_metadata_.Clear();
 }
 
@@ -4577,6 +6561,20 @@ bool CloseContextRequest::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_FIXED64>(
                  input, &context_id_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // fixed64 context_view_id = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(17u /* 17 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_FIXED64>(
+                 input, &context_view_id_)));
         } else {
           goto handle_unusual;
         }
@@ -4614,6 +6612,11 @@ void CloseContextRequest::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteFixed64(1, this->context_id(), output);
   }
 
+  // fixed64 context_view_id = 2;
+  if (this->context_view_id() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteFixed64(2, this->context_view_id(), output);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -4631,6 +6634,11 @@ void CloseContextRequest::SerializeWithCachedSizes(
   // fixed64 context_id = 1;
   if (this->context_id() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFixed64ToArray(1, this->context_id(), target);
+  }
+
+  // fixed64 context_view_id = 2;
+  if (this->context_view_id() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteFixed64ToArray(2, this->context_view_id(), target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -4652,6 +6660,11 @@ size_t CloseContextRequest::ByteSizeLong() const {
   }
   // fixed64 context_id = 1;
   if (this->context_id() != 0) {
+    total_size += 1 + 8;
+  }
+
+  // fixed64 context_view_id = 2;
+  if (this->context_view_id() != 0) {
     total_size += 1 + 8;
   }
 
@@ -4685,6 +6698,9 @@ void CloseContextRequest::MergeFrom(const CloseContextRequest& from) {
   if (from.context_id() != 0) {
     set_context_id(from.context_id());
   }
+  if (from.context_view_id() != 0) {
+    set_context_view_id(from.context_view_id());
+  }
 }
 
 void CloseContextRequest::CopyFrom(const ::google::protobuf::Message& from) {
@@ -4712,6 +6728,7 @@ void CloseContextRequest::Swap(CloseContextRequest* other) {
 void CloseContextRequest::InternalSwap(CloseContextRequest* other) {
   using std::swap;
   swap(context_id_, other->context_id_);
+  swap(context_view_id_, other->context_view_id_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
@@ -4902,29 +6919,38 @@ void CloseContextResponse::InternalSwap(CloseContextResponse* other) {
 
 // ===================================================================
 
-void RegisterFunctionRequest::InitAsDefaultInstance() {
-  ::tensorflow::eager::_RegisterFunctionRequest_default_instance_._instance.get_mutable()->function_def_ = const_cast< ::tensorflow::FunctionDef*>(
+void RegisterFunctionOp::InitAsDefaultInstance() {
+  ::tensorflow::eager::_RegisterFunctionOp_default_instance_._instance.get_mutable()->function_def_ = const_cast< ::tensorflow::FunctionDef*>(
       ::tensorflow::FunctionDef::internal_default_instance());
+  ::tensorflow::eager::_RegisterFunctionOp_default_instance_._instance.get_mutable()->library_ = const_cast< ::tensorflow::FunctionDefLibrary*>(
+      ::tensorflow::FunctionDefLibrary::internal_default_instance());
 }
-void RegisterFunctionRequest::clear_function_def() {
+void RegisterFunctionOp::clear_function_def() {
   if (GetArenaNoVirtual() == NULL && function_def_ != NULL) {
     delete function_def_;
   }
   function_def_ = NULL;
 }
+void RegisterFunctionOp::clear_library() {
+  if (GetArenaNoVirtual() == NULL && library_ != NULL) {
+    delete library_;
+  }
+  library_ = NULL;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int RegisterFunctionRequest::kContextIdFieldNumber;
-const int RegisterFunctionRequest::kFunctionDefFieldNumber;
+const int RegisterFunctionOp::kFunctionDefFieldNumber;
+const int RegisterFunctionOp::kIsComponentFunctionFieldNumber;
+const int RegisterFunctionOp::kLibraryFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
-RegisterFunctionRequest::RegisterFunctionRequest()
+RegisterFunctionOp::RegisterFunctionOp()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
   ::google::protobuf::internal::InitSCC(
-      &protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_RegisterFunctionRequest.base);
+      &protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_RegisterFunctionOp.base);
   SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.eager.RegisterFunctionRequest)
+  // @@protoc_insertion_point(constructor:tensorflow.eager.RegisterFunctionOp)
 }
-RegisterFunctionRequest::RegisterFunctionRequest(const RegisterFunctionRequest& from)
+RegisterFunctionOp::RegisterFunctionOp(const RegisterFunctionOp& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -4933,41 +6959,47 @@ RegisterFunctionRequest::RegisterFunctionRequest(const RegisterFunctionRequest& 
   } else {
     function_def_ = NULL;
   }
-  context_id_ = from.context_id_;
-  // @@protoc_insertion_point(copy_constructor:tensorflow.eager.RegisterFunctionRequest)
+  if (from.has_library()) {
+    library_ = new ::tensorflow::FunctionDefLibrary(*from.library_);
+  } else {
+    library_ = NULL;
+  }
+  is_component_function_ = from.is_component_function_;
+  // @@protoc_insertion_point(copy_constructor:tensorflow.eager.RegisterFunctionOp)
 }
 
-void RegisterFunctionRequest::SharedCtor() {
+void RegisterFunctionOp::SharedCtor() {
   ::memset(&function_def_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&context_id_) -
-      reinterpret_cast<char*>(&function_def_)) + sizeof(context_id_));
+      reinterpret_cast<char*>(&is_component_function_) -
+      reinterpret_cast<char*>(&function_def_)) + sizeof(is_component_function_));
 }
 
-RegisterFunctionRequest::~RegisterFunctionRequest() {
-  // @@protoc_insertion_point(destructor:tensorflow.eager.RegisterFunctionRequest)
+RegisterFunctionOp::~RegisterFunctionOp() {
+  // @@protoc_insertion_point(destructor:tensorflow.eager.RegisterFunctionOp)
   SharedDtor();
 }
 
-void RegisterFunctionRequest::SharedDtor() {
+void RegisterFunctionOp::SharedDtor() {
   if (this != internal_default_instance()) delete function_def_;
+  if (this != internal_default_instance()) delete library_;
 }
 
-void RegisterFunctionRequest::SetCachedSize(int size) const {
+void RegisterFunctionOp::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* RegisterFunctionRequest::descriptor() {
+const ::google::protobuf::Descriptor* RegisterFunctionOp::descriptor() {
   ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::protobuf_AssignDescriptorsOnce();
   return ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
-const RegisterFunctionRequest& RegisterFunctionRequest::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_RegisterFunctionRequest.base);
+const RegisterFunctionOp& RegisterFunctionOp::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_RegisterFunctionOp.base);
   return *internal_default_instance();
 }
 
 
-void RegisterFunctionRequest::Clear() {
-// @@protoc_insertion_point(message_clear_start:tensorflow.eager.RegisterFunctionRequest)
+void RegisterFunctionOp::Clear() {
+// @@protoc_insertion_point(message_clear_start:tensorflow.eager.RegisterFunctionOp)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -4976,40 +7008,56 @@ void RegisterFunctionRequest::Clear() {
     delete function_def_;
   }
   function_def_ = NULL;
-  context_id_ = GOOGLE_ULONGLONG(0);
+  if (GetArenaNoVirtual() == NULL && library_ != NULL) {
+    delete library_;
+  }
+  library_ = NULL;
+  is_component_function_ = false;
   _internal_metadata_.Clear();
 }
 
-bool RegisterFunctionRequest::MergePartialFromCodedStream(
+bool RegisterFunctionOp::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
 #define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.eager.RegisterFunctionRequest)
+  // @@protoc_insertion_point(parse_start:tensorflow.eager.RegisterFunctionOp)
   for (;;) {
     ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // fixed64 context_id = 1;
+      // .tensorflow.FunctionDef function_def = 1;
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(9u /* 9 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_FIXED64>(
-                 input, &context_id_)));
+            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_function_def()));
         } else {
           goto handle_unusual;
         }
         break;
       }
 
-      // .tensorflow.FunctionDef function_def = 2;
+      // bool is_component_function = 2;
       case 2: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &is_component_function_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .tensorflow.FunctionDefLibrary library = 3;
+      case 3: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
-               input, mutable_function_def()));
+               input, mutable_library()));
         } else {
           goto handle_unusual;
         }
@@ -5028,67 +7076,80 @@ bool RegisterFunctionRequest::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:tensorflow.eager.RegisterFunctionRequest)
+  // @@protoc_insertion_point(parse_success:tensorflow.eager.RegisterFunctionOp)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.eager.RegisterFunctionRequest)
+  // @@protoc_insertion_point(parse_failure:tensorflow.eager.RegisterFunctionOp)
   return false;
 #undef DO_
 }
 
-void RegisterFunctionRequest::SerializeWithCachedSizes(
+void RegisterFunctionOp::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.eager.RegisterFunctionRequest)
+  // @@protoc_insertion_point(serialize_start:tensorflow.eager.RegisterFunctionOp)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // fixed64 context_id = 1;
-  if (this->context_id() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteFixed64(1, this->context_id(), output);
-  }
-
-  // .tensorflow.FunctionDef function_def = 2;
+  // .tensorflow.FunctionDef function_def = 1;
   if (this->has_function_def()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->_internal_function_def(), output);
+      1, this->_internal_function_def(), output);
+  }
+
+  // bool is_component_function = 2;
+  if (this->is_component_function() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(2, this->is_component_function(), output);
+  }
+
+  // .tensorflow.FunctionDefLibrary library = 3;
+  if (this->has_library()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      3, this->_internal_library(), output);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
   }
-  // @@protoc_insertion_point(serialize_end:tensorflow.eager.RegisterFunctionRequest)
+  // @@protoc_insertion_point(serialize_end:tensorflow.eager.RegisterFunctionOp)
 }
 
-::google::protobuf::uint8* RegisterFunctionRequest::InternalSerializeWithCachedSizesToArray(
+::google::protobuf::uint8* RegisterFunctionOp::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
-  // @@protoc_insertion_point(serialize_to_array_start:tensorflow.eager.RegisterFunctionRequest)
+  // @@protoc_insertion_point(serialize_to_array_start:tensorflow.eager.RegisterFunctionOp)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // fixed64 context_id = 1;
-  if (this->context_id() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteFixed64ToArray(1, this->context_id(), target);
-  }
-
-  // .tensorflow.FunctionDef function_def = 2;
+  // .tensorflow.FunctionDef function_def = 1;
   if (this->has_function_def()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        2, this->_internal_function_def(), deterministic, target);
+        1, this->_internal_function_def(), deterministic, target);
+  }
+
+  // bool is_component_function = 2;
+  if (this->is_component_function() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(2, this->is_component_function(), target);
+  }
+
+  // .tensorflow.FunctionDefLibrary library = 3;
+  if (this->has_library()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        3, this->_internal_library(), deterministic, target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:tensorflow.eager.RegisterFunctionRequest)
+  // @@protoc_insertion_point(serialize_to_array_end:tensorflow.eager.RegisterFunctionOp)
   return target;
 }
 
-size_t RegisterFunctionRequest::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:tensorflow.eager.RegisterFunctionRequest)
+size_t RegisterFunctionOp::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:tensorflow.eager.RegisterFunctionOp)
   size_t total_size = 0;
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -5096,16 +7157,23 @@ size_t RegisterFunctionRequest::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
-  // .tensorflow.FunctionDef function_def = 2;
+  // .tensorflow.FunctionDef function_def = 1;
   if (this->has_function_def()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *function_def_);
   }
 
-  // fixed64 context_id = 1;
-  if (this->context_id() != 0) {
-    total_size += 1 + 8;
+  // .tensorflow.FunctionDefLibrary library = 3;
+  if (this->has_library()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *library_);
+  }
+
+  // bool is_component_function = 2;
+  if (this->is_component_function() != 0) {
+    total_size += 1 + 1;
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -5113,23 +7181,23 @@ size_t RegisterFunctionRequest::ByteSizeLong() const {
   return total_size;
 }
 
-void RegisterFunctionRequest::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:tensorflow.eager.RegisterFunctionRequest)
+void RegisterFunctionOp::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:tensorflow.eager.RegisterFunctionOp)
   GOOGLE_DCHECK_NE(&from, this);
-  const RegisterFunctionRequest* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const RegisterFunctionRequest>(
+  const RegisterFunctionOp* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const RegisterFunctionOp>(
           &from);
   if (source == NULL) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:tensorflow.eager.RegisterFunctionRequest)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:tensorflow.eager.RegisterFunctionOp)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:tensorflow.eager.RegisterFunctionRequest)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:tensorflow.eager.RegisterFunctionOp)
     MergeFrom(*source);
   }
 }
 
-void RegisterFunctionRequest::MergeFrom(const RegisterFunctionRequest& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.eager.RegisterFunctionRequest)
+void RegisterFunctionOp::MergeFrom(const RegisterFunctionOp& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.eager.RegisterFunctionOp)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
@@ -5138,41 +7206,45 @@ void RegisterFunctionRequest::MergeFrom(const RegisterFunctionRequest& from) {
   if (from.has_function_def()) {
     mutable_function_def()->::tensorflow::FunctionDef::MergeFrom(from.function_def());
   }
-  if (from.context_id() != 0) {
-    set_context_id(from.context_id());
+  if (from.has_library()) {
+    mutable_library()->::tensorflow::FunctionDefLibrary::MergeFrom(from.library());
+  }
+  if (from.is_component_function() != 0) {
+    set_is_component_function(from.is_component_function());
   }
 }
 
-void RegisterFunctionRequest::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:tensorflow.eager.RegisterFunctionRequest)
+void RegisterFunctionOp::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:tensorflow.eager.RegisterFunctionOp)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-void RegisterFunctionRequest::CopyFrom(const RegisterFunctionRequest& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:tensorflow.eager.RegisterFunctionRequest)
+void RegisterFunctionOp::CopyFrom(const RegisterFunctionOp& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:tensorflow.eager.RegisterFunctionOp)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool RegisterFunctionRequest::IsInitialized() const {
+bool RegisterFunctionOp::IsInitialized() const {
   return true;
 }
 
-void RegisterFunctionRequest::Swap(RegisterFunctionRequest* other) {
+void RegisterFunctionOp::Swap(RegisterFunctionOp* other) {
   if (other == this) return;
   InternalSwap(other);
 }
-void RegisterFunctionRequest::InternalSwap(RegisterFunctionRequest* other) {
+void RegisterFunctionOp::InternalSwap(RegisterFunctionOp* other) {
   using std::swap;
   swap(function_def_, other->function_def_);
-  swap(context_id_, other->context_id_);
+  swap(library_, other->library_);
+  swap(is_component_function_, other->is_component_function_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
-::google::protobuf::Metadata RegisterFunctionRequest::GetMetadata() const {
+::google::protobuf::Metadata RegisterFunctionOp::GetMetadata() const {
   protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::protobuf_AssignDescriptorsOnce();
   return ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::file_level_metadata[kIndexInFileMessages];
 }
@@ -5180,52 +7252,275 @@ void RegisterFunctionRequest::InternalSwap(RegisterFunctionRequest* other) {
 
 // ===================================================================
 
-void RegisterFunctionResponse::InitAsDefaultInstance() {
+void CleanupFunctionOp::InitAsDefaultInstance() {
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int CleanupFunctionOp::kStepIdFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
-RegisterFunctionResponse::RegisterFunctionResponse()
+CleanupFunctionOp::CleanupFunctionOp()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
   ::google::protobuf::internal::InitSCC(
-      &protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_RegisterFunctionResponse.base);
+      &protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_CleanupFunctionOp.base);
   SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.eager.RegisterFunctionResponse)
+  // @@protoc_insertion_point(constructor:tensorflow.eager.CleanupFunctionOp)
 }
-RegisterFunctionResponse::RegisterFunctionResponse(const RegisterFunctionResponse& from)
+CleanupFunctionOp::CleanupFunctionOp(const CleanupFunctionOp& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  // @@protoc_insertion_point(copy_constructor:tensorflow.eager.RegisterFunctionResponse)
+  step_id_ = from.step_id_;
+  // @@protoc_insertion_point(copy_constructor:tensorflow.eager.CleanupFunctionOp)
 }
 
-void RegisterFunctionResponse::SharedCtor() {
+void CleanupFunctionOp::SharedCtor() {
+  step_id_ = GOOGLE_LONGLONG(0);
 }
 
-RegisterFunctionResponse::~RegisterFunctionResponse() {
-  // @@protoc_insertion_point(destructor:tensorflow.eager.RegisterFunctionResponse)
+CleanupFunctionOp::~CleanupFunctionOp() {
+  // @@protoc_insertion_point(destructor:tensorflow.eager.CleanupFunctionOp)
   SharedDtor();
 }
 
-void RegisterFunctionResponse::SharedDtor() {
+void CleanupFunctionOp::SharedDtor() {
 }
 
-void RegisterFunctionResponse::SetCachedSize(int size) const {
+void CleanupFunctionOp::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* RegisterFunctionResponse::descriptor() {
+const ::google::protobuf::Descriptor* CleanupFunctionOp::descriptor() {
   ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::protobuf_AssignDescriptorsOnce();
   return ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
-const RegisterFunctionResponse& RegisterFunctionResponse::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_RegisterFunctionResponse.base);
+const CleanupFunctionOp& CleanupFunctionOp::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_CleanupFunctionOp.base);
   return *internal_default_instance();
 }
 
 
-void RegisterFunctionResponse::Clear() {
-// @@protoc_insertion_point(message_clear_start:tensorflow.eager.RegisterFunctionResponse)
+void CleanupFunctionOp::Clear() {
+// @@protoc_insertion_point(message_clear_start:tensorflow.eager.CleanupFunctionOp)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  step_id_ = GOOGLE_LONGLONG(0);
+  _internal_metadata_.Clear();
+}
+
+bool CleanupFunctionOp::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:tensorflow.eager.CleanupFunctionOp)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // int64 step_id = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 input, &step_id_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:tensorflow.eager.CleanupFunctionOp)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:tensorflow.eager.CleanupFunctionOp)
+  return false;
+#undef DO_
+}
+
+void CleanupFunctionOp::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:tensorflow.eager.CleanupFunctionOp)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int64 step_id = 1;
+  if (this->step_id() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt64(1, this->step_id(), output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:tensorflow.eager.CleanupFunctionOp)
+}
+
+::google::protobuf::uint8* CleanupFunctionOp::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:tensorflow.eager.CleanupFunctionOp)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int64 step_id = 1;
+  if (this->step_id() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(1, this->step_id(), target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:tensorflow.eager.CleanupFunctionOp)
+  return target;
+}
+
+size_t CleanupFunctionOp::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:tensorflow.eager.CleanupFunctionOp)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // int64 step_id = 1;
+  if (this->step_id() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int64Size(
+        this->step_id());
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void CleanupFunctionOp::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:tensorflow.eager.CleanupFunctionOp)
+  GOOGLE_DCHECK_NE(&from, this);
+  const CleanupFunctionOp* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const CleanupFunctionOp>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:tensorflow.eager.CleanupFunctionOp)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:tensorflow.eager.CleanupFunctionOp)
+    MergeFrom(*source);
+  }
+}
+
+void CleanupFunctionOp::MergeFrom(const CleanupFunctionOp& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.eager.CleanupFunctionOp)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.step_id() != 0) {
+    set_step_id(from.step_id());
+  }
+}
+
+void CleanupFunctionOp::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:tensorflow.eager.CleanupFunctionOp)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void CleanupFunctionOp::CopyFrom(const CleanupFunctionOp& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:tensorflow.eager.CleanupFunctionOp)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool CleanupFunctionOp::IsInitialized() const {
+  return true;
+}
+
+void CleanupFunctionOp::Swap(CleanupFunctionOp* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void CleanupFunctionOp::InternalSwap(CleanupFunctionOp* other) {
+  using std::swap;
+  swap(step_id_, other->step_id_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata CleanupFunctionOp::GetMetadata() const {
+  protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void SyncRemoteExecutorForStream::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+SyncRemoteExecutorForStream::SyncRemoteExecutorForStream()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_SyncRemoteExecutorForStream.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:tensorflow.eager.SyncRemoteExecutorForStream)
+}
+SyncRemoteExecutorForStream::SyncRemoteExecutorForStream(const SyncRemoteExecutorForStream& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:tensorflow.eager.SyncRemoteExecutorForStream)
+}
+
+void SyncRemoteExecutorForStream::SharedCtor() {
+}
+
+SyncRemoteExecutorForStream::~SyncRemoteExecutorForStream() {
+  // @@protoc_insertion_point(destructor:tensorflow.eager.SyncRemoteExecutorForStream)
+  SharedDtor();
+}
+
+void SyncRemoteExecutorForStream::SharedDtor() {
+}
+
+void SyncRemoteExecutorForStream::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* SyncRemoteExecutorForStream::descriptor() {
+  ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const SyncRemoteExecutorForStream& SyncRemoteExecutorForStream::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_SyncRemoteExecutorForStream.base);
+  return *internal_default_instance();
+}
+
+
+void SyncRemoteExecutorForStream::Clear() {
+// @@protoc_insertion_point(message_clear_start:tensorflow.eager.SyncRemoteExecutorForStream)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -5233,11 +7528,11 @@ void RegisterFunctionResponse::Clear() {
   _internal_metadata_.Clear();
 }
 
-bool RegisterFunctionResponse::MergePartialFromCodedStream(
+bool SyncRemoteExecutorForStream::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
 #define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.eager.RegisterFunctionResponse)
+  // @@protoc_insertion_point(parse_start:tensorflow.eager.SyncRemoteExecutorForStream)
   for (;;) {
     ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
@@ -5250,17 +7545,17 @@ bool RegisterFunctionResponse::MergePartialFromCodedStream(
           input, tag, _internal_metadata_.mutable_unknown_fields()));
   }
 success:
-  // @@protoc_insertion_point(parse_success:tensorflow.eager.RegisterFunctionResponse)
+  // @@protoc_insertion_point(parse_success:tensorflow.eager.SyncRemoteExecutorForStream)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.eager.RegisterFunctionResponse)
+  // @@protoc_insertion_point(parse_failure:tensorflow.eager.SyncRemoteExecutorForStream)
   return false;
 #undef DO_
 }
 
-void RegisterFunctionResponse::SerializeWithCachedSizes(
+void SyncRemoteExecutorForStream::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.eager.RegisterFunctionResponse)
+  // @@protoc_insertion_point(serialize_start:tensorflow.eager.SyncRemoteExecutorForStream)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -5268,13 +7563,13 @@ void RegisterFunctionResponse::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
   }
-  // @@protoc_insertion_point(serialize_end:tensorflow.eager.RegisterFunctionResponse)
+  // @@protoc_insertion_point(serialize_end:tensorflow.eager.SyncRemoteExecutorForStream)
 }
 
-::google::protobuf::uint8* RegisterFunctionResponse::InternalSerializeWithCachedSizesToArray(
+::google::protobuf::uint8* SyncRemoteExecutorForStream::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
-  // @@protoc_insertion_point(serialize_to_array_start:tensorflow.eager.RegisterFunctionResponse)
+  // @@protoc_insertion_point(serialize_to_array_start:tensorflow.eager.SyncRemoteExecutorForStream)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -5282,12 +7577,12 @@ void RegisterFunctionResponse::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:tensorflow.eager.RegisterFunctionResponse)
+  // @@protoc_insertion_point(serialize_to_array_end:tensorflow.eager.SyncRemoteExecutorForStream)
   return target;
 }
 
-size_t RegisterFunctionResponse::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:tensorflow.eager.RegisterFunctionResponse)
+size_t SyncRemoteExecutorForStream::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:tensorflow.eager.SyncRemoteExecutorForStream)
   size_t total_size = 0;
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -5300,23 +7595,23 @@ size_t RegisterFunctionResponse::ByteSizeLong() const {
   return total_size;
 }
 
-void RegisterFunctionResponse::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:tensorflow.eager.RegisterFunctionResponse)
+void SyncRemoteExecutorForStream::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:tensorflow.eager.SyncRemoteExecutorForStream)
   GOOGLE_DCHECK_NE(&from, this);
-  const RegisterFunctionResponse* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const RegisterFunctionResponse>(
+  const SyncRemoteExecutorForStream* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const SyncRemoteExecutorForStream>(
           &from);
   if (source == NULL) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:tensorflow.eager.RegisterFunctionResponse)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:tensorflow.eager.SyncRemoteExecutorForStream)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:tensorflow.eager.RegisterFunctionResponse)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:tensorflow.eager.SyncRemoteExecutorForStream)
     MergeFrom(*source);
   }
 }
 
-void RegisterFunctionResponse::MergeFrom(const RegisterFunctionResponse& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.eager.RegisterFunctionResponse)
+void SyncRemoteExecutorForStream::MergeFrom(const SyncRemoteExecutorForStream& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.eager.SyncRemoteExecutorForStream)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
@@ -5324,34 +7619,34 @@ void RegisterFunctionResponse::MergeFrom(const RegisterFunctionResponse& from) {
 
 }
 
-void RegisterFunctionResponse::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:tensorflow.eager.RegisterFunctionResponse)
+void SyncRemoteExecutorForStream::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:tensorflow.eager.SyncRemoteExecutorForStream)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-void RegisterFunctionResponse::CopyFrom(const RegisterFunctionResponse& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:tensorflow.eager.RegisterFunctionResponse)
+void SyncRemoteExecutorForStream::CopyFrom(const SyncRemoteExecutorForStream& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:tensorflow.eager.SyncRemoteExecutorForStream)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool RegisterFunctionResponse::IsInitialized() const {
+bool SyncRemoteExecutorForStream::IsInitialized() const {
   return true;
 }
 
-void RegisterFunctionResponse::Swap(RegisterFunctionResponse* other) {
+void SyncRemoteExecutorForStream::Swap(SyncRemoteExecutorForStream* other) {
   if (other == this) return;
   InternalSwap(other);
 }
-void RegisterFunctionResponse::InternalSwap(RegisterFunctionResponse* other) {
+void SyncRemoteExecutorForStream::InternalSwap(SyncRemoteExecutorForStream* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
-::google::protobuf::Metadata RegisterFunctionResponse::GetMetadata() const {
+::google::protobuf::Metadata SyncRemoteExecutorForStream::GetMetadata() const {
   protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::protobuf_AssignDescriptorsOnce();
   return ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::file_level_metadata[kIndexInFileMessages];
 }
@@ -5688,144 +7983,119 @@ void SendTensorOp::InternalSwap(SendTensorOp* other) {
 
 // ===================================================================
 
-void SendTensorRequest::InitAsDefaultInstance() {
+void SendPackedHandleOp_LocalTensorHandle::InitAsDefaultInstance() {
+  ::tensorflow::eager::_SendPackedHandleOp_LocalTensorHandle_default_instance_._instance.get_mutable()->tensor_ = const_cast< ::tensorflow::TensorProto*>(
+      ::tensorflow::TensorProto::internal_default_instance());
 }
-void SendTensorRequest::clear_tensors() {
-  tensors_.Clear();
+void SendPackedHandleOp_LocalTensorHandle::clear_tensor() {
+  if (GetArenaNoVirtual() == NULL && tensor_ != NULL) {
+    delete tensor_;
+  }
+  tensor_ = NULL;
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int SendTensorRequest::kContextIdFieldNumber;
-const int SendTensorRequest::kOpIdFieldNumber;
-const int SendTensorRequest::kTensorsFieldNumber;
-const int SendTensorRequest::kDeviceNameFieldNumber;
+const int SendPackedHandleOp_LocalTensorHandle::kTensorFieldNumber;
+const int SendPackedHandleOp_LocalTensorHandle::kDeviceFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
-SendTensorRequest::SendTensorRequest()
+SendPackedHandleOp_LocalTensorHandle::SendPackedHandleOp_LocalTensorHandle()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
   ::google::protobuf::internal::InitSCC(
-      &protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_SendTensorRequest.base);
+      &protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_SendPackedHandleOp_LocalTensorHandle.base);
   SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.eager.SendTensorRequest)
+  // @@protoc_insertion_point(constructor:tensorflow.eager.SendPackedHandleOp.LocalTensorHandle)
 }
-SendTensorRequest::SendTensorRequest(const SendTensorRequest& from)
+SendPackedHandleOp_LocalTensorHandle::SendPackedHandleOp_LocalTensorHandle(const SendPackedHandleOp_LocalTensorHandle& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      tensors_(from.tensors_) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  device_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.device_name().size() > 0) {
-    device_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.device_name_);
+  device_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.device().size() > 0) {
+    device_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.device_);
   }
-  ::memcpy(&context_id_, &from.context_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&op_id_) -
-    reinterpret_cast<char*>(&context_id_)) + sizeof(op_id_));
-  // @@protoc_insertion_point(copy_constructor:tensorflow.eager.SendTensorRequest)
+  if (from.has_tensor()) {
+    tensor_ = new ::tensorflow::TensorProto(*from.tensor_);
+  } else {
+    tensor_ = NULL;
+  }
+  // @@protoc_insertion_point(copy_constructor:tensorflow.eager.SendPackedHandleOp.LocalTensorHandle)
 }
 
-void SendTensorRequest::SharedCtor() {
-  device_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&context_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&op_id_) -
-      reinterpret_cast<char*>(&context_id_)) + sizeof(op_id_));
+void SendPackedHandleOp_LocalTensorHandle::SharedCtor() {
+  device_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  tensor_ = NULL;
 }
 
-SendTensorRequest::~SendTensorRequest() {
-  // @@protoc_insertion_point(destructor:tensorflow.eager.SendTensorRequest)
+SendPackedHandleOp_LocalTensorHandle::~SendPackedHandleOp_LocalTensorHandle() {
+  // @@protoc_insertion_point(destructor:tensorflow.eager.SendPackedHandleOp.LocalTensorHandle)
   SharedDtor();
 }
 
-void SendTensorRequest::SharedDtor() {
-  device_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+void SendPackedHandleOp_LocalTensorHandle::SharedDtor() {
+  device_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (this != internal_default_instance()) delete tensor_;
 }
 
-void SendTensorRequest::SetCachedSize(int size) const {
+void SendPackedHandleOp_LocalTensorHandle::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* SendTensorRequest::descriptor() {
+const ::google::protobuf::Descriptor* SendPackedHandleOp_LocalTensorHandle::descriptor() {
   ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::protobuf_AssignDescriptorsOnce();
   return ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
-const SendTensorRequest& SendTensorRequest::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_SendTensorRequest.base);
+const SendPackedHandleOp_LocalTensorHandle& SendPackedHandleOp_LocalTensorHandle::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_SendPackedHandleOp_LocalTensorHandle.base);
   return *internal_default_instance();
 }
 
 
-void SendTensorRequest::Clear() {
-// @@protoc_insertion_point(message_clear_start:tensorflow.eager.SendTensorRequest)
+void SendPackedHandleOp_LocalTensorHandle::Clear() {
+// @@protoc_insertion_point(message_clear_start:tensorflow.eager.SendPackedHandleOp.LocalTensorHandle)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  tensors_.Clear();
-  device_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&context_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&op_id_) -
-      reinterpret_cast<char*>(&context_id_)) + sizeof(op_id_));
+  device_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (GetArenaNoVirtual() == NULL && tensor_ != NULL) {
+    delete tensor_;
+  }
+  tensor_ = NULL;
   _internal_metadata_.Clear();
 }
 
-bool SendTensorRequest::MergePartialFromCodedStream(
+bool SendPackedHandleOp_LocalTensorHandle::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
 #define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.eager.SendTensorRequest)
+  // @@protoc_insertion_point(parse_start:tensorflow.eager.SendPackedHandleOp.LocalTensorHandle)
   for (;;) {
     ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // fixed64 context_id = 1;
+      // .tensorflow.TensorProto tensor = 1;
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(9u /* 9 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_FIXED64>(
-                 input, &context_id_)));
+            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_tensor()));
         } else {
           goto handle_unusual;
         }
         break;
       }
 
-      // int64 op_id = 2;
+      // string device = 2;
       case 2: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
-                 input, &op_id_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // repeated .tensorflow.TensorProto tensors = 3;
-      case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
-                input, add_tensors()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // string device_name = 4;
-      case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
-                input, this->mutable_device_name()));
+                input, this->mutable_device()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-            this->device_name().data(), static_cast<int>(this->device_name().length()),
+            this->device().data(), static_cast<int>(this->device().length()),
             ::google::protobuf::internal::WireFormatLite::PARSE,
-            "tensorflow.eager.SendTensorRequest.device_name"));
+            "tensorflow.eager.SendPackedHandleOp.LocalTensorHandle.device"));
         } else {
           goto handle_unusual;
         }
@@ -5844,102 +8114,78 @@ bool SendTensorRequest::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:tensorflow.eager.SendTensorRequest)
+  // @@protoc_insertion_point(parse_success:tensorflow.eager.SendPackedHandleOp.LocalTensorHandle)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.eager.SendTensorRequest)
+  // @@protoc_insertion_point(parse_failure:tensorflow.eager.SendPackedHandleOp.LocalTensorHandle)
   return false;
 #undef DO_
 }
 
-void SendTensorRequest::SerializeWithCachedSizes(
+void SendPackedHandleOp_LocalTensorHandle::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.eager.SendTensorRequest)
+  // @@protoc_insertion_point(serialize_start:tensorflow.eager.SendPackedHandleOp.LocalTensorHandle)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // fixed64 context_id = 1;
-  if (this->context_id() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteFixed64(1, this->context_id(), output);
-  }
-
-  // int64 op_id = 2;
-  if (this->op_id() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteInt64(2, this->op_id(), output);
-  }
-
-  // repeated .tensorflow.TensorProto tensors = 3;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->tensors_size()); i < n; i++) {
+  // .tensorflow.TensorProto tensor = 1;
+  if (this->has_tensor()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3,
-      this->tensors(static_cast<int>(i)),
-      output);
+      1, this->_internal_tensor(), output);
   }
 
-  // string device_name = 4;
-  if (this->device_name().size() > 0) {
+  // string device = 2;
+  if (this->device().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->device_name().data(), static_cast<int>(this->device_name().length()),
+      this->device().data(), static_cast<int>(this->device().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.eager.SendTensorRequest.device_name");
+      "tensorflow.eager.SendPackedHandleOp.LocalTensorHandle.device");
     ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
-      4, this->device_name(), output);
+      2, this->device(), output);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
   }
-  // @@protoc_insertion_point(serialize_end:tensorflow.eager.SendTensorRequest)
+  // @@protoc_insertion_point(serialize_end:tensorflow.eager.SendPackedHandleOp.LocalTensorHandle)
 }
 
-::google::protobuf::uint8* SendTensorRequest::InternalSerializeWithCachedSizesToArray(
+::google::protobuf::uint8* SendPackedHandleOp_LocalTensorHandle::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
-  // @@protoc_insertion_point(serialize_to_array_start:tensorflow.eager.SendTensorRequest)
+  // @@protoc_insertion_point(serialize_to_array_start:tensorflow.eager.SendPackedHandleOp.LocalTensorHandle)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // fixed64 context_id = 1;
-  if (this->context_id() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteFixed64ToArray(1, this->context_id(), target);
-  }
-
-  // int64 op_id = 2;
-  if (this->op_id() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(2, this->op_id(), target);
-  }
-
-  // repeated .tensorflow.TensorProto tensors = 3;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->tensors_size()); i < n; i++) {
+  // .tensorflow.TensorProto tensor = 1;
+  if (this->has_tensor()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        3, this->tensors(static_cast<int>(i)), deterministic, target);
+        1, this->_internal_tensor(), deterministic, target);
   }
 
-  // string device_name = 4;
-  if (this->device_name().size() > 0) {
+  // string device = 2;
+  if (this->device().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->device_name().data(), static_cast<int>(this->device_name().length()),
+      this->device().data(), static_cast<int>(this->device().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.eager.SendTensorRequest.device_name");
+      "tensorflow.eager.SendPackedHandleOp.LocalTensorHandle.device");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
-        4, this->device_name(), target);
+        2, this->device(), target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:tensorflow.eager.SendTensorRequest)
+  // @@protoc_insertion_point(serialize_to_array_end:tensorflow.eager.SendPackedHandleOp.LocalTensorHandle)
   return target;
 }
 
-size_t SendTensorRequest::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:tensorflow.eager.SendTensorRequest)
+size_t SendPackedHandleOp_LocalTensorHandle::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:tensorflow.eager.SendPackedHandleOp.LocalTensorHandle)
   size_t total_size = 0;
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -5947,30 +8193,685 @@ size_t SendTensorRequest::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
-  // repeated .tensorflow.TensorProto tensors = 3;
+  // string device = 2;
+  if (this->device().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->device());
+  }
+
+  // .tensorflow.TensorProto tensor = 1;
+  if (this->has_tensor()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *tensor_);
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void SendPackedHandleOp_LocalTensorHandle::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:tensorflow.eager.SendPackedHandleOp.LocalTensorHandle)
+  GOOGLE_DCHECK_NE(&from, this);
+  const SendPackedHandleOp_LocalTensorHandle* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const SendPackedHandleOp_LocalTensorHandle>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:tensorflow.eager.SendPackedHandleOp.LocalTensorHandle)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:tensorflow.eager.SendPackedHandleOp.LocalTensorHandle)
+    MergeFrom(*source);
+  }
+}
+
+void SendPackedHandleOp_LocalTensorHandle::MergeFrom(const SendPackedHandleOp_LocalTensorHandle& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.eager.SendPackedHandleOp.LocalTensorHandle)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.device().size() > 0) {
+
+    device_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.device_);
+  }
+  if (from.has_tensor()) {
+    mutable_tensor()->::tensorflow::TensorProto::MergeFrom(from.tensor());
+  }
+}
+
+void SendPackedHandleOp_LocalTensorHandle::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:tensorflow.eager.SendPackedHandleOp.LocalTensorHandle)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void SendPackedHandleOp_LocalTensorHandle::CopyFrom(const SendPackedHandleOp_LocalTensorHandle& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:tensorflow.eager.SendPackedHandleOp.LocalTensorHandle)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool SendPackedHandleOp_LocalTensorHandle::IsInitialized() const {
+  return true;
+}
+
+void SendPackedHandleOp_LocalTensorHandle::Swap(SendPackedHandleOp_LocalTensorHandle* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void SendPackedHandleOp_LocalTensorHandle::InternalSwap(SendPackedHandleOp_LocalTensorHandle* other) {
+  using std::swap;
+  device_.Swap(&other->device_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  swap(tensor_, other->tensor_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata SendPackedHandleOp_LocalTensorHandle::GetMetadata() const {
+  protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void SendPackedHandleOp_Handle::InitAsDefaultInstance() {
+  ::tensorflow::eager::_SendPackedHandleOp_Handle_default_instance_.local_handle_ = const_cast< ::tensorflow::eager::SendPackedHandleOp_LocalTensorHandle*>(
+      ::tensorflow::eager::SendPackedHandleOp_LocalTensorHandle::internal_default_instance());
+  ::tensorflow::eager::_SendPackedHandleOp_Handle_default_instance_.remote_handle_ = const_cast< ::tensorflow::eager::RemoteTensorHandle*>(
+      ::tensorflow::eager::RemoteTensorHandle::internal_default_instance());
+}
+void SendPackedHandleOp_Handle::set_allocated_local_handle(::tensorflow::eager::SendPackedHandleOp_LocalTensorHandle* local_handle) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  clear_item();
+  if (local_handle) {
+    ::google::protobuf::Arena* submessage_arena = NULL;
+    if (message_arena != submessage_arena) {
+      local_handle = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, local_handle, submessage_arena);
+    }
+    set_has_local_handle();
+    item_.local_handle_ = local_handle;
+  }
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.eager.SendPackedHandleOp.Handle.local_handle)
+}
+void SendPackedHandleOp_Handle::set_allocated_remote_handle(::tensorflow::eager::RemoteTensorHandle* remote_handle) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  clear_item();
+  if (remote_handle) {
+    ::google::protobuf::Arena* submessage_arena =
+      reinterpret_cast<::google::protobuf::MessageLite*>(remote_handle)->GetArena();
+    if (message_arena != submessage_arena) {
+      remote_handle = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, remote_handle, submessage_arena);
+    }
+    set_has_remote_handle();
+    item_.remote_handle_ = remote_handle;
+  }
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.eager.SendPackedHandleOp.Handle.remote_handle)
+}
+void SendPackedHandleOp_Handle::clear_remote_handle() {
+  if (has_remote_handle()) {
+    delete item_.remote_handle_;
+    clear_has_item();
+  }
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int SendPackedHandleOp_Handle::kLocalHandleFieldNumber;
+const int SendPackedHandleOp_Handle::kRemoteHandleFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+SendPackedHandleOp_Handle::SendPackedHandleOp_Handle()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_SendPackedHandleOp_Handle.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:tensorflow.eager.SendPackedHandleOp.Handle)
+}
+SendPackedHandleOp_Handle::SendPackedHandleOp_Handle(const SendPackedHandleOp_Handle& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  clear_has_item();
+  switch (from.item_case()) {
+    case kLocalHandle: {
+      mutable_local_handle()->::tensorflow::eager::SendPackedHandleOp_LocalTensorHandle::MergeFrom(from.local_handle());
+      break;
+    }
+    case kRemoteHandle: {
+      mutable_remote_handle()->::tensorflow::eager::RemoteTensorHandle::MergeFrom(from.remote_handle());
+      break;
+    }
+    case ITEM_NOT_SET: {
+      break;
+    }
+  }
+  // @@protoc_insertion_point(copy_constructor:tensorflow.eager.SendPackedHandleOp.Handle)
+}
+
+void SendPackedHandleOp_Handle::SharedCtor() {
+  clear_has_item();
+}
+
+SendPackedHandleOp_Handle::~SendPackedHandleOp_Handle() {
+  // @@protoc_insertion_point(destructor:tensorflow.eager.SendPackedHandleOp.Handle)
+  SharedDtor();
+}
+
+void SendPackedHandleOp_Handle::SharedDtor() {
+  if (has_item()) {
+    clear_item();
+  }
+}
+
+void SendPackedHandleOp_Handle::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* SendPackedHandleOp_Handle::descriptor() {
+  ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const SendPackedHandleOp_Handle& SendPackedHandleOp_Handle::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_SendPackedHandleOp_Handle.base);
+  return *internal_default_instance();
+}
+
+
+void SendPackedHandleOp_Handle::clear_item() {
+// @@protoc_insertion_point(one_of_clear_start:tensorflow.eager.SendPackedHandleOp.Handle)
+  switch (item_case()) {
+    case kLocalHandle: {
+      delete item_.local_handle_;
+      break;
+    }
+    case kRemoteHandle: {
+      delete item_.remote_handle_;
+      break;
+    }
+    case ITEM_NOT_SET: {
+      break;
+    }
+  }
+  _oneof_case_[0] = ITEM_NOT_SET;
+}
+
+
+void SendPackedHandleOp_Handle::Clear() {
+// @@protoc_insertion_point(message_clear_start:tensorflow.eager.SendPackedHandleOp.Handle)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  clear_item();
+  _internal_metadata_.Clear();
+}
+
+bool SendPackedHandleOp_Handle::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:tensorflow.eager.SendPackedHandleOp.Handle)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // .tensorflow.eager.SendPackedHandleOp.LocalTensorHandle local_handle = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_local_handle()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .tensorflow.eager.RemoteTensorHandle remote_handle = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_remote_handle()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:tensorflow.eager.SendPackedHandleOp.Handle)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:tensorflow.eager.SendPackedHandleOp.Handle)
+  return false;
+#undef DO_
+}
+
+void SendPackedHandleOp_Handle::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:tensorflow.eager.SendPackedHandleOp.Handle)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .tensorflow.eager.SendPackedHandleOp.LocalTensorHandle local_handle = 1;
+  if (has_local_handle()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      1, this->_internal_local_handle(), output);
+  }
+
+  // .tensorflow.eager.RemoteTensorHandle remote_handle = 2;
+  if (has_remote_handle()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      2, this->_internal_remote_handle(), output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:tensorflow.eager.SendPackedHandleOp.Handle)
+}
+
+::google::protobuf::uint8* SendPackedHandleOp_Handle::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:tensorflow.eager.SendPackedHandleOp.Handle)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .tensorflow.eager.SendPackedHandleOp.LocalTensorHandle local_handle = 1;
+  if (has_local_handle()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        1, this->_internal_local_handle(), deterministic, target);
+  }
+
+  // .tensorflow.eager.RemoteTensorHandle remote_handle = 2;
+  if (has_remote_handle()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        2, this->_internal_remote_handle(), deterministic, target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:tensorflow.eager.SendPackedHandleOp.Handle)
+  return target;
+}
+
+size_t SendPackedHandleOp_Handle::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:tensorflow.eager.SendPackedHandleOp.Handle)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  switch (item_case()) {
+    // .tensorflow.eager.SendPackedHandleOp.LocalTensorHandle local_handle = 1;
+    case kLocalHandle: {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          *item_.local_handle_);
+      break;
+    }
+    // .tensorflow.eager.RemoteTensorHandle remote_handle = 2;
+    case kRemoteHandle: {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          *item_.remote_handle_);
+      break;
+    }
+    case ITEM_NOT_SET: {
+      break;
+    }
+  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void SendPackedHandleOp_Handle::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:tensorflow.eager.SendPackedHandleOp.Handle)
+  GOOGLE_DCHECK_NE(&from, this);
+  const SendPackedHandleOp_Handle* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const SendPackedHandleOp_Handle>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:tensorflow.eager.SendPackedHandleOp.Handle)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:tensorflow.eager.SendPackedHandleOp.Handle)
+    MergeFrom(*source);
+  }
+}
+
+void SendPackedHandleOp_Handle::MergeFrom(const SendPackedHandleOp_Handle& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.eager.SendPackedHandleOp.Handle)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  switch (from.item_case()) {
+    case kLocalHandle: {
+      mutable_local_handle()->::tensorflow::eager::SendPackedHandleOp_LocalTensorHandle::MergeFrom(from.local_handle());
+      break;
+    }
+    case kRemoteHandle: {
+      mutable_remote_handle()->::tensorflow::eager::RemoteTensorHandle::MergeFrom(from.remote_handle());
+      break;
+    }
+    case ITEM_NOT_SET: {
+      break;
+    }
+  }
+}
+
+void SendPackedHandleOp_Handle::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:tensorflow.eager.SendPackedHandleOp.Handle)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void SendPackedHandleOp_Handle::CopyFrom(const SendPackedHandleOp_Handle& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:tensorflow.eager.SendPackedHandleOp.Handle)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool SendPackedHandleOp_Handle::IsInitialized() const {
+  return true;
+}
+
+void SendPackedHandleOp_Handle::Swap(SendPackedHandleOp_Handle* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void SendPackedHandleOp_Handle::InternalSwap(SendPackedHandleOp_Handle* other) {
+  using std::swap;
+  swap(item_, other->item_);
+  swap(_oneof_case_[0], other->_oneof_case_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata SendPackedHandleOp_Handle::GetMetadata() const {
+  protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void SendPackedHandleOp::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int SendPackedHandleOp::kOpIdFieldNumber;
+const int SendPackedHandleOp::kHandlesFieldNumber;
+const int SendPackedHandleOp::kDeviceNameFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+SendPackedHandleOp::SendPackedHandleOp()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_SendPackedHandleOp.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:tensorflow.eager.SendPackedHandleOp)
+}
+SendPackedHandleOp::SendPackedHandleOp(const SendPackedHandleOp& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      handles_(from.handles_) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  device_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.device_name().size() > 0) {
+    device_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.device_name_);
+  }
+  op_id_ = from.op_id_;
+  // @@protoc_insertion_point(copy_constructor:tensorflow.eager.SendPackedHandleOp)
+}
+
+void SendPackedHandleOp::SharedCtor() {
+  device_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  op_id_ = GOOGLE_LONGLONG(0);
+}
+
+SendPackedHandleOp::~SendPackedHandleOp() {
+  // @@protoc_insertion_point(destructor:tensorflow.eager.SendPackedHandleOp)
+  SharedDtor();
+}
+
+void SendPackedHandleOp::SharedDtor() {
+  device_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+
+void SendPackedHandleOp::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* SendPackedHandleOp::descriptor() {
+  ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const SendPackedHandleOp& SendPackedHandleOp::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_SendPackedHandleOp.base);
+  return *internal_default_instance();
+}
+
+
+void SendPackedHandleOp::Clear() {
+// @@protoc_insertion_point(message_clear_start:tensorflow.eager.SendPackedHandleOp)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  handles_.Clear();
+  device_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  op_id_ = GOOGLE_LONGLONG(0);
+  _internal_metadata_.Clear();
+}
+
+bool SendPackedHandleOp::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:tensorflow.eager.SendPackedHandleOp)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // int64 op_id = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 input, &op_id_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated .tensorflow.eager.SendPackedHandleOp.Handle handles = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+                input, add_handles()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string device_name = 3;
+      case 3: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_device_name()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->device_name().data(), static_cast<int>(this->device_name().length()),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "tensorflow.eager.SendPackedHandleOp.device_name"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:tensorflow.eager.SendPackedHandleOp)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:tensorflow.eager.SendPackedHandleOp)
+  return false;
+#undef DO_
+}
+
+void SendPackedHandleOp::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:tensorflow.eager.SendPackedHandleOp)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int64 op_id = 1;
+  if (this->op_id() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt64(1, this->op_id(), output);
+  }
+
+  // repeated .tensorflow.eager.SendPackedHandleOp.Handle handles = 2;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->handles_size()); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      2,
+      this->handles(static_cast<int>(i)),
+      output);
+  }
+
+  // string device_name = 3;
+  if (this->device_name().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->device_name().data(), static_cast<int>(this->device_name().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "tensorflow.eager.SendPackedHandleOp.device_name");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      3, this->device_name(), output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:tensorflow.eager.SendPackedHandleOp)
+}
+
+::google::protobuf::uint8* SendPackedHandleOp::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:tensorflow.eager.SendPackedHandleOp)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int64 op_id = 1;
+  if (this->op_id() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(1, this->op_id(), target);
+  }
+
+  // repeated .tensorflow.eager.SendPackedHandleOp.Handle handles = 2;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->handles_size()); i < n; i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        2, this->handles(static_cast<int>(i)), deterministic, target);
+  }
+
+  // string device_name = 3;
+  if (this->device_name().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->device_name().data(), static_cast<int>(this->device_name().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "tensorflow.eager.SendPackedHandleOp.device_name");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        3, this->device_name(), target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:tensorflow.eager.SendPackedHandleOp)
+  return target;
+}
+
+size_t SendPackedHandleOp::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:tensorflow.eager.SendPackedHandleOp)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // repeated .tensorflow.eager.SendPackedHandleOp.Handle handles = 2;
   {
-    unsigned int count = static_cast<unsigned int>(this->tensors_size());
+    unsigned int count = static_cast<unsigned int>(this->handles_size());
     total_size += 1UL * count;
     for (unsigned int i = 0; i < count; i++) {
       total_size +=
         ::google::protobuf::internal::WireFormatLite::MessageSize(
-          this->tensors(static_cast<int>(i)));
+          this->handles(static_cast<int>(i)));
     }
   }
 
-  // string device_name = 4;
+  // string device_name = 3;
   if (this->device_name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->device_name());
   }
 
-  // fixed64 context_id = 1;
-  if (this->context_id() != 0) {
-    total_size += 1 + 8;
-  }
-
-  // int64 op_id = 2;
+  // int64 op_id = 1;
   if (this->op_id() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int64Size(
@@ -5982,253 +8883,70 @@ size_t SendTensorRequest::ByteSizeLong() const {
   return total_size;
 }
 
-void SendTensorRequest::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:tensorflow.eager.SendTensorRequest)
+void SendPackedHandleOp::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:tensorflow.eager.SendPackedHandleOp)
   GOOGLE_DCHECK_NE(&from, this);
-  const SendTensorRequest* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const SendTensorRequest>(
+  const SendPackedHandleOp* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const SendPackedHandleOp>(
           &from);
   if (source == NULL) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:tensorflow.eager.SendTensorRequest)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:tensorflow.eager.SendPackedHandleOp)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:tensorflow.eager.SendTensorRequest)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:tensorflow.eager.SendPackedHandleOp)
     MergeFrom(*source);
   }
 }
 
-void SendTensorRequest::MergeFrom(const SendTensorRequest& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.eager.SendTensorRequest)
+void SendPackedHandleOp::MergeFrom(const SendPackedHandleOp& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.eager.SendPackedHandleOp)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  tensors_.MergeFrom(from.tensors_);
+  handles_.MergeFrom(from.handles_);
   if (from.device_name().size() > 0) {
 
     device_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.device_name_);
-  }
-  if (from.context_id() != 0) {
-    set_context_id(from.context_id());
   }
   if (from.op_id() != 0) {
     set_op_id(from.op_id());
   }
 }
 
-void SendTensorRequest::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:tensorflow.eager.SendTensorRequest)
+void SendPackedHandleOp::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:tensorflow.eager.SendPackedHandleOp)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-void SendTensorRequest::CopyFrom(const SendTensorRequest& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:tensorflow.eager.SendTensorRequest)
+void SendPackedHandleOp::CopyFrom(const SendPackedHandleOp& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:tensorflow.eager.SendPackedHandleOp)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool SendTensorRequest::IsInitialized() const {
+bool SendPackedHandleOp::IsInitialized() const {
   return true;
 }
 
-void SendTensorRequest::Swap(SendTensorRequest* other) {
+void SendPackedHandleOp::Swap(SendPackedHandleOp* other) {
   if (other == this) return;
   InternalSwap(other);
 }
-void SendTensorRequest::InternalSwap(SendTensorRequest* other) {
+void SendPackedHandleOp::InternalSwap(SendPackedHandleOp* other) {
   using std::swap;
-  CastToBase(&tensors_)->InternalSwap(CastToBase(&other->tensors_));
+  CastToBase(&handles_)->InternalSwap(CastToBase(&other->handles_));
   device_name_.Swap(&other->device_name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(context_id_, other->context_id_);
   swap(op_id_, other->op_id_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
-::google::protobuf::Metadata SendTensorRequest::GetMetadata() const {
-  protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::file_level_metadata[kIndexInFileMessages];
-}
-
-
-// ===================================================================
-
-void SendTensorResponse::InitAsDefaultInstance() {
-}
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-SendTensorResponse::SendTensorResponse()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_SendTensorResponse.base);
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.eager.SendTensorResponse)
-}
-SendTensorResponse::SendTensorResponse(const SendTensorResponse& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  // @@protoc_insertion_point(copy_constructor:tensorflow.eager.SendTensorResponse)
-}
-
-void SendTensorResponse::SharedCtor() {
-}
-
-SendTensorResponse::~SendTensorResponse() {
-  // @@protoc_insertion_point(destructor:tensorflow.eager.SendTensorResponse)
-  SharedDtor();
-}
-
-void SendTensorResponse::SharedDtor() {
-}
-
-void SendTensorResponse::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
-}
-const ::google::protobuf::Descriptor* SendTensorResponse::descriptor() {
-  ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
-const SendTensorResponse& SendTensorResponse::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::scc_info_SendTensorResponse.base);
-  return *internal_default_instance();
-}
-
-
-void SendTensorResponse::Clear() {
-// @@protoc_insertion_point(message_clear_start:tensorflow.eager.SendTensorResponse)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  _internal_metadata_.Clear();
-}
-
-bool SendTensorResponse::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.eager.SendTensorResponse)
-  for (;;) {
-    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-  handle_unusual:
-    if (tag == 0) {
-      goto success;
-    }
-    DO_(::google::protobuf::internal::WireFormat::SkipField(
-          input, tag, _internal_metadata_.mutable_unknown_fields()));
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.eager.SendTensorResponse)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.eager.SendTensorResponse)
-  return false;
-#undef DO_
-}
-
-void SendTensorResponse::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.eager.SendTensorResponse)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.eager.SendTensorResponse)
-}
-
-::google::protobuf::uint8* SendTensorResponse::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
-  // @@protoc_insertion_point(serialize_to_array_start:tensorflow.eager.SendTensorResponse)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
-  }
-  // @@protoc_insertion_point(serialize_to_array_end:tensorflow.eager.SendTensorResponse)
-  return target;
-}
-
-size_t SendTensorResponse::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:tensorflow.eager.SendTensorResponse)
-  size_t total_size = 0;
-
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
-  }
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
-}
-
-void SendTensorResponse::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:tensorflow.eager.SendTensorResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  const SendTensorResponse* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const SendTensorResponse>(
-          &from);
-  if (source == NULL) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:tensorflow.eager.SendTensorResponse)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:tensorflow.eager.SendTensorResponse)
-    MergeFrom(*source);
-  }
-}
-
-void SendTensorResponse::MergeFrom(const SendTensorResponse& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.eager.SendTensorResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-}
-
-void SendTensorResponse::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:tensorflow.eager.SendTensorResponse)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void SendTensorResponse::CopyFrom(const SendTensorResponse& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:tensorflow.eager.SendTensorResponse)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool SendTensorResponse::IsInitialized() const {
-  return true;
-}
-
-void SendTensorResponse::Swap(SendTensorResponse* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void SendTensorResponse::InternalSwap(SendTensorResponse* other) {
-  using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-}
-
-::google::protobuf::Metadata SendTensorResponse::GetMetadata() const {
+::google::protobuf::Metadata SendPackedHandleOp::GetMetadata() const {
   protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::protobuf_AssignDescriptorsOnce();
   return ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::file_level_metadata[kIndexInFileMessages];
 }
@@ -6239,8 +8957,8 @@ void SendTensorResponse::InternalSwap(SendTensorResponse* other) {
 }  // namespace tensorflow
 namespace google {
 namespace protobuf {
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::eager::RemoteTensorHandle* Arena::CreateMaybeMessage< ::tensorflow::eager::RemoteTensorHandle >(Arena* arena) {
-  return Arena::CreateInternal< ::tensorflow::eager::RemoteTensorHandle >(arena);
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::eager::Operation_Input* Arena::CreateMaybeMessage< ::tensorflow::eager::Operation_Input >(Arena* arena) {
+  return Arena::CreateInternal< ::tensorflow::eager::Operation_Input >(arena);
 }
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::eager::Operation_AttrsEntry_DoNotUse* Arena::CreateMaybeMessage< ::tensorflow::eager::Operation_AttrsEntry_DoNotUse >(Arena* arena) {
   return Arena::CreateInternal< ::tensorflow::eager::Operation_AttrsEntry_DoNotUse >(arena);
@@ -6260,6 +8978,12 @@ template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::eager::CreateContext
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::eager::CreateContextResponse* Arena::CreateMaybeMessage< ::tensorflow::eager::CreateContextResponse >(Arena* arena) {
   return Arena::CreateInternal< ::tensorflow::eager::CreateContextResponse >(arena);
 }
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::eager::UpdateContextRequest* Arena::CreateMaybeMessage< ::tensorflow::eager::UpdateContextRequest >(Arena* arena) {
+  return Arena::CreateInternal< ::tensorflow::eager::UpdateContextRequest >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::eager::UpdateContextResponse* Arena::CreateMaybeMessage< ::tensorflow::eager::UpdateContextResponse >(Arena* arena) {
+  return Arena::CreateInternal< ::tensorflow::eager::UpdateContextResponse >(arena);
+}
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::eager::EnqueueRequest* Arena::CreateMaybeMessage< ::tensorflow::eager::EnqueueRequest >(Arena* arena) {
   return Arena::CreateInternal< ::tensorflow::eager::EnqueueRequest >(arena);
 }
@@ -6271,6 +8995,12 @@ template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::eager::WaitQueueDone
 }
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::eager::WaitQueueDoneResponse* Arena::CreateMaybeMessage< ::tensorflow::eager::WaitQueueDoneResponse >(Arena* arena) {
   return Arena::CreateInternal< ::tensorflow::eager::WaitQueueDoneResponse >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::eager::RunComponentFunctionRequest* Arena::CreateMaybeMessage< ::tensorflow::eager::RunComponentFunctionRequest >(Arena* arena) {
+  return Arena::CreateInternal< ::tensorflow::eager::RunComponentFunctionRequest >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::eager::RunComponentFunctionResponse* Arena::CreateMaybeMessage< ::tensorflow::eager::RunComponentFunctionResponse >(Arena* arena) {
+  return Arena::CreateInternal< ::tensorflow::eager::RunComponentFunctionResponse >(arena);
 }
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::eager::KeepAliveRequest* Arena::CreateMaybeMessage< ::tensorflow::eager::KeepAliveRequest >(Arena* arena) {
   return Arena::CreateInternal< ::tensorflow::eager::KeepAliveRequest >(arena);
@@ -6284,20 +9014,26 @@ template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::eager::CloseContextR
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::eager::CloseContextResponse* Arena::CreateMaybeMessage< ::tensorflow::eager::CloseContextResponse >(Arena* arena) {
   return Arena::CreateInternal< ::tensorflow::eager::CloseContextResponse >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::eager::RegisterFunctionRequest* Arena::CreateMaybeMessage< ::tensorflow::eager::RegisterFunctionRequest >(Arena* arena) {
-  return Arena::CreateInternal< ::tensorflow::eager::RegisterFunctionRequest >(arena);
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::eager::RegisterFunctionOp* Arena::CreateMaybeMessage< ::tensorflow::eager::RegisterFunctionOp >(Arena* arena) {
+  return Arena::CreateInternal< ::tensorflow::eager::RegisterFunctionOp >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::eager::RegisterFunctionResponse* Arena::CreateMaybeMessage< ::tensorflow::eager::RegisterFunctionResponse >(Arena* arena) {
-  return Arena::CreateInternal< ::tensorflow::eager::RegisterFunctionResponse >(arena);
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::eager::CleanupFunctionOp* Arena::CreateMaybeMessage< ::tensorflow::eager::CleanupFunctionOp >(Arena* arena) {
+  return Arena::CreateInternal< ::tensorflow::eager::CleanupFunctionOp >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::eager::SyncRemoteExecutorForStream* Arena::CreateMaybeMessage< ::tensorflow::eager::SyncRemoteExecutorForStream >(Arena* arena) {
+  return Arena::CreateInternal< ::tensorflow::eager::SyncRemoteExecutorForStream >(arena);
 }
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::eager::SendTensorOp* Arena::CreateMaybeMessage< ::tensorflow::eager::SendTensorOp >(Arena* arena) {
   return Arena::CreateInternal< ::tensorflow::eager::SendTensorOp >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::eager::SendTensorRequest* Arena::CreateMaybeMessage< ::tensorflow::eager::SendTensorRequest >(Arena* arena) {
-  return Arena::CreateInternal< ::tensorflow::eager::SendTensorRequest >(arena);
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::eager::SendPackedHandleOp_LocalTensorHandle* Arena::CreateMaybeMessage< ::tensorflow::eager::SendPackedHandleOp_LocalTensorHandle >(Arena* arena) {
+  return Arena::CreateInternal< ::tensorflow::eager::SendPackedHandleOp_LocalTensorHandle >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::eager::SendTensorResponse* Arena::CreateMaybeMessage< ::tensorflow::eager::SendTensorResponse >(Arena* arena) {
-  return Arena::CreateInternal< ::tensorflow::eager::SendTensorResponse >(arena);
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::eager::SendPackedHandleOp_Handle* Arena::CreateMaybeMessage< ::tensorflow::eager::SendPackedHandleOp_Handle >(Arena* arena) {
+  return Arena::CreateInternal< ::tensorflow::eager::SendPackedHandleOp_Handle >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::eager::SendPackedHandleOp* Arena::CreateMaybeMessage< ::tensorflow::eager::SendPackedHandleOp >(Arena* arena) {
+  return Arena::CreateInternal< ::tensorflow::eager::SendPackedHandleOp >(arena);
 }
 }  // namespace protobuf
 }  // namespace google

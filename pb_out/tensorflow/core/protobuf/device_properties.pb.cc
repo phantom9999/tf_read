@@ -174,13 +174,13 @@ void AddDescriptorsImpl() {
       "ndwidth\030\r \001(\003\0322\n\020EnvironmentEntry\022\013\n\003key"
       "\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001\"M\n\013NamedDevice"
       "\022\014\n\004name\030\001 \001(\t\0220\n\nproperties\030\002 \001(\0132\034.ten"
-      "sorflow.DevicePropertiesBYB\026DeviceProper"
-      "tiesProtosZ<github.com/tensorflow/tensor"
-      "flow/tensorflow/go/core/protobuf\370\001\001b\006pro"
-      "to3"
+      "sorflow.DevicePropertiesBrB\026DeviceProper"
+      "tiesProtosZUgithub.com/tensorflow/tensor"
+      "flow/tensorflow/go/core/protobuf/for_cor"
+      "e_protos_go_proto\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 643);
+      descriptor, 668);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/protobuf/device_properties.proto", &protobuf_RegisterTypes);
 }

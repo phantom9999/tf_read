@@ -93,13 +93,13 @@ void AddDescriptorsImpl() {
       "proto\022\ntensorflow\032&tensorflow/core/frame"
       "work/tensor.proto\"I\n\020NamedTensorProto\022\014\n"
       "\004name\030\001 \001(\t\022\'\n\006tensor\030\002 \001(\0132\027.tensorflow"
-      ".TensorProtoBp\n\030org.tensorflow.framework"
-      "B\021NamedTensorProtosP\001Z<github.com/tensor"
-      "flow/tensorflow/tensorflow/go/core/proto"
-      "buf\370\001\001b\006proto3"
+      ".TensorProtoB\211\001\n\030org.tensorflow.framewor"
+      "kB\021NamedTensorProtosP\001ZUgithub.com/tenso"
+      "rflow/tensorflow/tensorflow/go/core/prot"
+      "obuf/for_core_protos_go_proto\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 294);
+      descriptor, 320);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/protobuf/named_tensor.proto", &protobuf_RegisterTypes);
   ::protobuf_tensorflow_2fcore_2fframework_2ftensor_2eproto::AddDescriptors();

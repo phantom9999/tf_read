@@ -94,14 +94,14 @@ void AddDescriptorsImpl() {
       "ionDescription\022\027\n\017requested_bytes\030\001 \001(\003\022"
       "\027\n\017allocated_bytes\030\002 \001(\003\022\026\n\016allocator_na"
       "me\030\003 \001(\t\022\025\n\rallocation_id\030\004 \001(\003\022\034\n\024has_s"
-      "ingle_reference\030\005 \001(\010\022\013\n\003ptr\030\006 \001(\004B{\n\030or"
-      "g.tensorflow.frameworkB\033AllocationDescri"
-      "ptionProtosP\001Z=github.com/tensorflow/ten"
-      "sorflow/tensorflow/go/core/framework\370\001\001b"
-      "\006proto3"
+      "ingle_reference\030\005 \001(\010\022\013\n\003ptr\030\006 \001(\004B\233\001\n\030o"
+      "rg.tensorflow.frameworkB\033AllocationDescr"
+      "iptionProtosP\001Z]github.com/tensorflow/te"
+      "nsorflow/tensorflow/go/core/framework/al"
+      "location_description_go_proto\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 367);
+      descriptor, 400);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/framework/allocation_description.proto", &protobuf_RegisterTypes);
 }

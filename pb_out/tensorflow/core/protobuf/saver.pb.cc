@@ -99,13 +99,13 @@ void AddDescriptorsImpl() {
       "t_every_n_hours\030\006 \001(\002\022=\n\007version\030\007 \001(\0162,"
       ".tensorflow.SaverDef.CheckpointFormatVer"
       "sion\"5\n\027CheckpointFormatVersion\022\n\n\006LEGAC"
-      "Y\020\000\022\006\n\002V1\020\001\022\006\n\002V2\020\002Be\n\023org.tensorflow.ut"
-      "ilB\013SaverProtosP\001Z<github.com/tensorflow"
-      "/tensorflow/tensorflow/go/core/protobuf\370"
-      "\001\001b\006proto3"
+      "Y\020\000\022\006\n\002V1\020\001\022\006\n\002V2\020\002B~\n\023org.tensorflow.ut"
+      "ilB\013SaverProtosP\001ZUgithub.com/tensorflow"
+      "/tensorflow/tensorflow/go/core/protobuf/"
+      "for_core_protos_go_proto\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 450);
+      descriptor, 475);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/protobuf/saver.proto", &protobuf_RegisterTypes);
 }

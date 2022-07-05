@@ -19,11 +19,15 @@
 #endif
 // @@protoc_insertion_point(includes)
 
+namespace protobuf_google_2fprotobuf_2fwrappers_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_google_2fprotobuf_2fwrappers_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_BoolValue;
+}  // namespace protobuf_google_2fprotobuf_2fwrappers_2eproto
 namespace protobuf_tensorflow_2fcore_2fprotobuf_2ftrackable_5fobject_5fgraph_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftrackable_5fobject_5fgraph_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_RegisteredSaver;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftrackable_5fobject_5fgraph_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TrackableObjectGraph_TrackableObject_ObjectReference;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftrackable_5fobject_5fgraph_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TrackableObjectGraph_TrackableObject_SerializedTensor;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftrackable_5fobject_5fgraph_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TrackableObjectGraph_TrackableObject_SlotVariableReference;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftrackable_5fobject_5fgraph_2eproto ::google::protobuf::internal::SCCInfo<3> scc_info_TrackableObjectGraph_TrackableObject;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftrackable_5fobject_5fgraph_2eproto ::google::protobuf::internal::SCCInfo<5> scc_info_TrackableObjectGraph_TrackableObject;
 }  // namespace protobuf_tensorflow_2fcore_2fprotobuf_2ftrackable_5fobject_5fgraph_2eproto
 namespace tensorflow {
 class TrackableObjectGraph_TrackableObject_ObjectReferenceDefaultTypeInternal {
@@ -51,6 +55,11 @@ class TrackableObjectGraphDefaultTypeInternal {
   ::google::protobuf::internal::ExplicitlyConstructed<TrackableObjectGraph>
       _instance;
 } _TrackableObjectGraph_default_instance_;
+class RegisteredSaverDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<RegisteredSaver>
+      _instance;
+} _RegisteredSaver_default_instance_;
 }  // namespace tensorflow
 namespace protobuf_tensorflow_2fcore_2fprotobuf_2ftrackable_5fobject_5fgraph_2eproto {
 static void InitDefaultsTrackableObjectGraph_TrackableObject_ObjectReference() {
@@ -106,11 +115,13 @@ static void InitDefaultsTrackableObjectGraph_TrackableObject() {
   ::tensorflow::TrackableObjectGraph_TrackableObject::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<3> scc_info_TrackableObjectGraph_TrackableObject =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 3, InitDefaultsTrackableObjectGraph_TrackableObject}, {
+::google::protobuf::internal::SCCInfo<5> scc_info_TrackableObjectGraph_TrackableObject =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 5, InitDefaultsTrackableObjectGraph_TrackableObject}, {
       &protobuf_tensorflow_2fcore_2fprotobuf_2ftrackable_5fobject_5fgraph_2eproto::scc_info_TrackableObjectGraph_TrackableObject_ObjectReference.base,
       &protobuf_tensorflow_2fcore_2fprotobuf_2ftrackable_5fobject_5fgraph_2eproto::scc_info_TrackableObjectGraph_TrackableObject_SerializedTensor.base,
-      &protobuf_tensorflow_2fcore_2fprotobuf_2ftrackable_5fobject_5fgraph_2eproto::scc_info_TrackableObjectGraph_TrackableObject_SlotVariableReference.base,}};
+      &protobuf_tensorflow_2fcore_2fprotobuf_2ftrackable_5fobject_5fgraph_2eproto::scc_info_TrackableObjectGraph_TrackableObject_SlotVariableReference.base,
+      &protobuf_tensorflow_2fcore_2fprotobuf_2ftrackable_5fobject_5fgraph_2eproto::scc_info_RegisteredSaver.base,
+      &protobuf_google_2fprotobuf_2fwrappers_2eproto::scc_info_BoolValue.base,}};
 
 static void InitDefaultsTrackableObjectGraph() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -127,15 +138,30 @@ static void InitDefaultsTrackableObjectGraph() {
     {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsTrackableObjectGraph}, {
       &protobuf_tensorflow_2fcore_2fprotobuf_2ftrackable_5fobject_5fgraph_2eproto::scc_info_TrackableObjectGraph_TrackableObject.base,}};
 
+static void InitDefaultsRegisteredSaver() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::tensorflow::_RegisteredSaver_default_instance_;
+    new (ptr) ::tensorflow::RegisteredSaver();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::tensorflow::RegisteredSaver::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<0> scc_info_RegisteredSaver =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsRegisteredSaver}, {}};
+
 void InitDefaults() {
   ::google::protobuf::internal::InitSCC(&scc_info_TrackableObjectGraph_TrackableObject_ObjectReference.base);
   ::google::protobuf::internal::InitSCC(&scc_info_TrackableObjectGraph_TrackableObject_SerializedTensor.base);
   ::google::protobuf::internal::InitSCC(&scc_info_TrackableObjectGraph_TrackableObject_SlotVariableReference.base);
   ::google::protobuf::internal::InitSCC(&scc_info_TrackableObjectGraph_TrackableObject.base);
   ::google::protobuf::internal::InitSCC(&scc_info_TrackableObjectGraph.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_RegisteredSaver.base);
 }
 
-::google::protobuf::Metadata file_level_metadata[5];
+::google::protobuf::Metadata file_level_metadata[6];
 
 const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
@@ -153,7 +179,6 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::TrackableObjectGraph_TrackableObject_SerializedTensor, name_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::TrackableObjectGraph_TrackableObject_SerializedTensor, full_name_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::TrackableObjectGraph_TrackableObject_SerializedTensor, checkpoint_key_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::TrackableObjectGraph_TrackableObject_SerializedTensor, optional_restore_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::TrackableObjectGraph_TrackableObject_SlotVariableReference, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -170,19 +195,29 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::TrackableObjectGraph_TrackableObject, children_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::TrackableObjectGraph_TrackableObject, attributes_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::TrackableObjectGraph_TrackableObject, slot_variables_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::TrackableObjectGraph_TrackableObject, registered_saver_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::TrackableObjectGraph_TrackableObject, has_checkpoint_values_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::TrackableObjectGraph, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::TrackableObjectGraph, nodes_),
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::RegisteredSaver, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::RegisteredSaver, name_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::RegisteredSaver, object_name_),
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::tensorflow::TrackableObjectGraph_TrackableObject_ObjectReference)},
   { 7, -1, sizeof(::tensorflow::TrackableObjectGraph_TrackableObject_SerializedTensor)},
-  { 16, -1, sizeof(::tensorflow::TrackableObjectGraph_TrackableObject_SlotVariableReference)},
-  { 24, -1, sizeof(::tensorflow::TrackableObjectGraph_TrackableObject)},
-  { 32, -1, sizeof(::tensorflow::TrackableObjectGraph)},
+  { 15, -1, sizeof(::tensorflow::TrackableObjectGraph_TrackableObject_SlotVariableReference)},
+  { 23, -1, sizeof(::tensorflow::TrackableObjectGraph_TrackableObject)},
+  { 33, -1, sizeof(::tensorflow::TrackableObjectGraph)},
+  { 39, -1, sizeof(::tensorflow::RegisteredSaver)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
@@ -191,6 +226,7 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::_TrackableObjectGraph_TrackableObject_SlotVariableReference_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::_TrackableObjectGraph_TrackableObject_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::_TrackableObjectGraph_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::_RegisteredSaver_default_instance_),
 };
 
 void protobuf_AssignDescriptors() {
@@ -208,36 +244,44 @@ void protobuf_AssignDescriptorsOnce() {
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 5);
+  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 6);
 }
 
 void AddDescriptorsImpl() {
   InitDefaults();
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n5tensorflow/core/protobuf/trackable_obj"
-      "ect_graph.proto\022\ntensorflow\"\203\005\n\024Trackabl"
-      "eObjectGraph\022\?\n\005nodes\030\001 \003(\01320.tensorflow"
-      ".TrackableObjectGraph.TrackableObject\032\251\004"
-      "\n\017TrackableObject\022R\n\010children\030\001 \003(\0132@.te"
-      "nsorflow.TrackableObjectGraph.TrackableO"
-      "bject.ObjectReference\022U\n\nattributes\030\002 \003("
-      "\0132A.tensorflow.TrackableObjectGraph.Trac"
-      "kableObject.SerializedTensor\022^\n\016slot_var"
-      "iables\030\003 \003(\0132F.tensorflow.TrackableObjec"
-      "tGraph.TrackableObject.SlotVariableRefer"
-      "ence\0326\n\017ObjectReference\022\017\n\007node_id\030\001 \001(\005"
-      "\022\022\n\nlocal_name\030\002 \001(\t\032e\n\020SerializedTensor"
-      "\022\014\n\004name\030\001 \001(\t\022\021\n\tfull_name\030\002 \001(\t\022\026\n\016che"
-      "ckpoint_key\030\003 \001(\t\022\030\n\020optional_restore\030\004 "
-      "\001(\010\032l\n\025SlotVariableReference\022!\n\031original"
-      "_variable_node_id\030\001 \001(\005\022\021\n\tslot_name\030\002 \001"
-      "(\t\022\035\n\025slot_variable_node_id\030\003 \001(\005B\003\370\001\001b\006"
-      "proto3"
+      "ect_graph.proto\022\ntensorflow\032\036google/prot"
+      "obuf/wrappers.proto\"\363\005\n\024TrackableObjectG"
+      "raph\022\?\n\005nodes\030\001 \003(\01320.tensorflow.Trackab"
+      "leObjectGraph.TrackableObject\032\231\005\n\017Tracka"
+      "bleObject\022R\n\010children\030\001 \003(\0132@.tensorflow"
+      ".TrackableObjectGraph.TrackableObject.Ob"
+      "jectReference\022U\n\nattributes\030\002 \003(\0132A.tens"
+      "orflow.TrackableObjectGraph.TrackableObj"
+      "ect.SerializedTensor\022^\n\016slot_variables\030\003"
+      " \003(\0132F.tensorflow.TrackableObjectGraph.T"
+      "rackableObject.SlotVariableReference\0225\n\020"
+      "registered_saver\030\004 \001(\0132\033.tensorflow.Regi"
+      "steredSaver\0229\n\025has_checkpoint_values\030\005 \001"
+      "(\0132\032.google.protobuf.BoolValue\0326\n\017Object"
+      "Reference\022\017\n\007node_id\030\001 \001(\005\022\022\n\nlocal_name"
+      "\030\002 \001(\t\032c\n\020SerializedTensor\022\014\n\004name\030\001 \001(\t"
+      "\022\021\n\tfull_name\030\002 \001(\t\022\026\n\016checkpoint_key\030\003 "
+      "\001(\tJ\004\010\004\020\005R\020optional_restore\032l\n\025SlotVaria"
+      "bleReference\022!\n\031original_variable_node_i"
+      "d\030\001 \001(\005\022\021\n\tslot_name\030\002 \001(\t\022\035\n\025slot_varia"
+      "ble_node_id\030\003 \001(\005\"4\n\017RegisteredSaver\022\014\n\004"
+      "name\030\001 \001(\t\022\023\n\013object_name\030\002 \001(\tBZZUgithu"
+      "b.com/tensorflow/tensorflow/tensorflow/g"
+      "o/core/protobuf/for_core_protos_go_proto"
+      "\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 726);
+      descriptor, 1011);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/protobuf/trackable_object_graph.proto", &protobuf_RegisterTypes);
+  ::protobuf_google_2fprotobuf_2fwrappers_2eproto::AddDescriptors();
 }
 
 void AddDescriptors() {
@@ -572,7 +616,6 @@ void TrackableObjectGraph_TrackableObject_SerializedTensor::InitAsDefaultInstanc
 const int TrackableObjectGraph_TrackableObject_SerializedTensor::kNameFieldNumber;
 const int TrackableObjectGraph_TrackableObject_SerializedTensor::kFullNameFieldNumber;
 const int TrackableObjectGraph_TrackableObject_SerializedTensor::kCheckpointKeyFieldNumber;
-const int TrackableObjectGraph_TrackableObject_SerializedTensor::kOptionalRestoreFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TrackableObjectGraph_TrackableObject_SerializedTensor::TrackableObjectGraph_TrackableObject_SerializedTensor()
@@ -609,7 +652,6 @@ TrackableObjectGraph_TrackableObject_SerializedTensor::TrackableObjectGraph_Trac
     checkpoint_key_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.checkpoint_key(),
       GetArenaNoVirtual());
   }
-  optional_restore_ = from.optional_restore_;
   // @@protoc_insertion_point(copy_constructor:tensorflow.TrackableObjectGraph.TrackableObject.SerializedTensor)
 }
 
@@ -617,7 +659,6 @@ void TrackableObjectGraph_TrackableObject_SerializedTensor::SharedCtor() {
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   full_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   checkpoint_key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  optional_restore_ = false;
 }
 
 TrackableObjectGraph_TrackableObject_SerializedTensor::~TrackableObjectGraph_TrackableObject_SerializedTensor() {
@@ -661,7 +702,6 @@ void TrackableObjectGraph_TrackableObject_SerializedTensor::Clear() {
   name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
   full_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
   checkpoint_key_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  optional_restore_ = false;
   _internal_metadata_.Clear();
 }
 
@@ -717,20 +757,6 @@ bool TrackableObjectGraph_TrackableObject_SerializedTensor::MergePartialFromCode
             this->checkpoint_key().data(), static_cast<int>(this->checkpoint_key().length()),
             ::google::protobuf::internal::WireFormatLite::PARSE,
             "tensorflow.TrackableObjectGraph.TrackableObject.SerializedTensor.checkpoint_key"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // bool optional_restore = 4;
-      case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, &optional_restore_)));
         } else {
           goto handle_unusual;
         }
@@ -793,11 +819,6 @@ void TrackableObjectGraph_TrackableObject_SerializedTensor::SerializeWithCachedS
       3, this->checkpoint_key(), output);
   }
 
-  // bool optional_restore = 4;
-  if (this->optional_restore() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteBool(4, this->optional_restore(), output);
-  }
-
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -845,11 +866,6 @@ void TrackableObjectGraph_TrackableObject_SerializedTensor::SerializeWithCachedS
         3, this->checkpoint_key(), target);
   }
 
-  // bool optional_restore = 4;
-  if (this->optional_restore() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(4, this->optional_restore(), target);
-  }
-
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
@@ -888,11 +904,6 @@ size_t TrackableObjectGraph_TrackableObject_SerializedTensor::ByteSizeLong() con
         this->checkpoint_key());
   }
 
-  // bool optional_restore = 4;
-  if (this->optional_restore() != 0) {
-    total_size += 1 + 1;
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -928,9 +939,6 @@ void TrackableObjectGraph_TrackableObject_SerializedTensor::MergeFrom(const Trac
   }
   if (from.checkpoint_key().size() > 0) {
     set_checkpoint_key(from.checkpoint_key());
-  }
-  if (from.optional_restore() != 0) {
-    set_optional_restore(from.optional_restore());
   }
 }
 
@@ -979,7 +987,6 @@ void TrackableObjectGraph_TrackableObject_SerializedTensor::InternalSwap(Trackab
     GetArenaNoVirtual());
   checkpoint_key_.Swap(&other->checkpoint_key_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(optional_restore_, other->optional_restore_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
@@ -1345,11 +1352,49 @@ void TrackableObjectGraph_TrackableObject_SlotVariableReference::InternalSwap(Tr
 // ===================================================================
 
 void TrackableObjectGraph_TrackableObject::InitAsDefaultInstance() {
+  ::tensorflow::_TrackableObjectGraph_TrackableObject_default_instance_._instance.get_mutable()->registered_saver_ = const_cast< ::tensorflow::RegisteredSaver*>(
+      ::tensorflow::RegisteredSaver::internal_default_instance());
+  ::tensorflow::_TrackableObjectGraph_TrackableObject_default_instance_._instance.get_mutable()->has_checkpoint_values_ = const_cast< ::google::protobuf::BoolValue*>(
+      ::google::protobuf::BoolValue::internal_default_instance());
+}
+void TrackableObjectGraph_TrackableObject::unsafe_arena_set_allocated_registered_saver(
+    ::tensorflow::RegisteredSaver* registered_saver) {
+  if (GetArenaNoVirtual() == NULL) {
+    delete registered_saver_;
+  }
+  registered_saver_ = registered_saver;
+  if (registered_saver) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.TrackableObjectGraph.TrackableObject.registered_saver)
+}
+void TrackableObjectGraph_TrackableObject::unsafe_arena_set_allocated_has_checkpoint_values(
+    ::google::protobuf::BoolValue* has_checkpoint_values) {
+  if (GetArenaNoVirtual() == NULL) {
+    delete has_checkpoint_values_;
+  }
+  has_checkpoint_values_ = has_checkpoint_values;
+  if (has_checkpoint_values) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.TrackableObjectGraph.TrackableObject.has_checkpoint_values)
+}
+void TrackableObjectGraph_TrackableObject::clear_has_checkpoint_values() {
+  if (GetArenaNoVirtual() == NULL && has_checkpoint_values_ != NULL) {
+    delete has_checkpoint_values_;
+  }
+  has_checkpoint_values_ = NULL;
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TrackableObjectGraph_TrackableObject::kChildrenFieldNumber;
 const int TrackableObjectGraph_TrackableObject::kAttributesFieldNumber;
 const int TrackableObjectGraph_TrackableObject::kSlotVariablesFieldNumber;
+const int TrackableObjectGraph_TrackableObject::kRegisteredSaverFieldNumber;
+const int TrackableObjectGraph_TrackableObject::kHasCheckpointValuesFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TrackableObjectGraph_TrackableObject::TrackableObjectGraph_TrackableObject()
@@ -1377,10 +1422,23 @@ TrackableObjectGraph_TrackableObject::TrackableObjectGraph_TrackableObject(const
       attributes_(from.attributes_),
       slot_variables_(from.slot_variables_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (from.has_registered_saver()) {
+    registered_saver_ = new ::tensorflow::RegisteredSaver(*from.registered_saver_);
+  } else {
+    registered_saver_ = NULL;
+  }
+  if (from.has_has_checkpoint_values()) {
+    has_checkpoint_values_ = new ::google::protobuf::BoolValue(*from.has_checkpoint_values_);
+  } else {
+    has_checkpoint_values_ = NULL;
+  }
   // @@protoc_insertion_point(copy_constructor:tensorflow.TrackableObjectGraph.TrackableObject)
 }
 
 void TrackableObjectGraph_TrackableObject::SharedCtor() {
+  ::memset(&registered_saver_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&has_checkpoint_values_) -
+      reinterpret_cast<char*>(&registered_saver_)) + sizeof(has_checkpoint_values_));
 }
 
 TrackableObjectGraph_TrackableObject::~TrackableObjectGraph_TrackableObject() {
@@ -1390,6 +1448,8 @@ TrackableObjectGraph_TrackableObject::~TrackableObjectGraph_TrackableObject() {
 
 void TrackableObjectGraph_TrackableObject::SharedDtor() {
   GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
+  if (this != internal_default_instance()) delete registered_saver_;
+  if (this != internal_default_instance()) delete has_checkpoint_values_;
 }
 
 void TrackableObjectGraph_TrackableObject::ArenaDtor(void* object) {
@@ -1421,6 +1481,14 @@ void TrackableObjectGraph_TrackableObject::Clear() {
   children_.Clear();
   attributes_.Clear();
   slot_variables_.Clear();
+  if (GetArenaNoVirtual() == NULL && registered_saver_ != NULL) {
+    delete registered_saver_;
+  }
+  registered_saver_ = NULL;
+  if (GetArenaNoVirtual() == NULL && has_checkpoint_values_ != NULL) {
+    delete has_checkpoint_values_;
+  }
+  has_checkpoint_values_ = NULL;
   _internal_metadata_.Clear();
 }
 
@@ -1464,6 +1532,30 @@ bool TrackableObjectGraph_TrackableObject::MergePartialFromCodedStream(
             static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                 input, add_slot_variables()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .tensorflow.RegisteredSaver registered_saver = 4;
+      case 4: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_registered_saver()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .google.protobuf.BoolValue has_checkpoint_values = 5;
+      case 5: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_has_checkpoint_values()));
         } else {
           goto handle_unusual;
         }
@@ -1523,6 +1615,18 @@ void TrackableObjectGraph_TrackableObject::SerializeWithCachedSizes(
       output);
   }
 
+  // .tensorflow.RegisteredSaver registered_saver = 4;
+  if (this->has_registered_saver()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      4, this->_internal_registered_saver(), output);
+  }
+
+  // .google.protobuf.BoolValue has_checkpoint_values = 5;
+  if (this->has_has_checkpoint_values()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      5, this->_internal_has_checkpoint_values(), output);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -1559,6 +1663,20 @@ void TrackableObjectGraph_TrackableObject::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
         3, this->slot_variables(static_cast<int>(i)), deterministic, target);
+  }
+
+  // .tensorflow.RegisteredSaver registered_saver = 4;
+  if (this->has_registered_saver()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        4, this->_internal_registered_saver(), deterministic, target);
+  }
+
+  // .google.protobuf.BoolValue has_checkpoint_values = 5;
+  if (this->has_has_checkpoint_values()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        5, this->_internal_has_checkpoint_values(), deterministic, target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -1611,6 +1729,20 @@ size_t TrackableObjectGraph_TrackableObject::ByteSizeLong() const {
     }
   }
 
+  // .tensorflow.RegisteredSaver registered_saver = 4;
+  if (this->has_registered_saver()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *registered_saver_);
+  }
+
+  // .google.protobuf.BoolValue has_checkpoint_values = 5;
+  if (this->has_has_checkpoint_values()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *has_checkpoint_values_);
+  }
+
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -1641,6 +1773,12 @@ void TrackableObjectGraph_TrackableObject::MergeFrom(const TrackableObjectGraph_
   children_.MergeFrom(from.children_);
   attributes_.MergeFrom(from.attributes_);
   slot_variables_.MergeFrom(from.slot_variables_);
+  if (from.has_registered_saver()) {
+    mutable_registered_saver()->::tensorflow::RegisteredSaver::MergeFrom(from.registered_saver());
+  }
+  if (from.has_has_checkpoint_values()) {
+    mutable_has_checkpoint_values()->::google::protobuf::BoolValue::MergeFrom(from.has_checkpoint_values());
+  }
 }
 
 void TrackableObjectGraph_TrackableObject::CopyFrom(const ::google::protobuf::Message& from) {
@@ -1685,6 +1823,8 @@ void TrackableObjectGraph_TrackableObject::InternalSwap(TrackableObjectGraph_Tra
   CastToBase(&children_)->InternalSwap(CastToBase(&other->children_));
   CastToBase(&attributes_)->InternalSwap(CastToBase(&other->attributes_));
   CastToBase(&slot_variables_)->InternalSwap(CastToBase(&other->slot_variables_));
+  swap(registered_saver_, other->registered_saver_);
+  swap(has_checkpoint_values_, other->has_checkpoint_values_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
@@ -1954,6 +2094,336 @@ void TrackableObjectGraph::InternalSwap(TrackableObjectGraph* other) {
 }
 
 
+// ===================================================================
+
+void RegisteredSaver::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int RegisteredSaver::kNameFieldNumber;
+const int RegisteredSaver::kObjectNameFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+RegisteredSaver::RegisteredSaver()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fcore_2fprotobuf_2ftrackable_5fobject_5fgraph_2eproto::scc_info_RegisteredSaver.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:tensorflow.RegisteredSaver)
+}
+RegisteredSaver::RegisteredSaver(::google::protobuf::Arena* arena)
+  : ::google::protobuf::Message(),
+  _internal_metadata_(arena) {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcore_2fprotobuf_2ftrackable_5fobject_5fgraph_2eproto::scc_info_RegisteredSaver.base);
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:tensorflow.RegisteredSaver)
+}
+RegisteredSaver::RegisteredSaver(const RegisteredSaver& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.name().size() > 0) {
+    name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name(),
+      GetArenaNoVirtual());
+  }
+  object_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.object_name().size() > 0) {
+    object_name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.object_name(),
+      GetArenaNoVirtual());
+  }
+  // @@protoc_insertion_point(copy_constructor:tensorflow.RegisteredSaver)
+}
+
+void RegisteredSaver::SharedCtor() {
+  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  object_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+
+RegisteredSaver::~RegisteredSaver() {
+  // @@protoc_insertion_point(destructor:tensorflow.RegisteredSaver)
+  SharedDtor();
+}
+
+void RegisteredSaver::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
+  name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  object_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+
+void RegisteredSaver::ArenaDtor(void* object) {
+  RegisteredSaver* _this = reinterpret_cast< RegisteredSaver* >(object);
+  (void)_this;
+}
+void RegisteredSaver::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+}
+void RegisteredSaver::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* RegisteredSaver::descriptor() {
+  ::protobuf_tensorflow_2fcore_2fprotobuf_2ftrackable_5fobject_5fgraph_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcore_2fprotobuf_2ftrackable_5fobject_5fgraph_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const RegisteredSaver& RegisteredSaver::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcore_2fprotobuf_2ftrackable_5fobject_5fgraph_2eproto::scc_info_RegisteredSaver.base);
+  return *internal_default_instance();
+}
+
+
+void RegisteredSaver::Clear() {
+// @@protoc_insertion_point(message_clear_start:tensorflow.RegisteredSaver)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  object_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  _internal_metadata_.Clear();
+}
+
+bool RegisteredSaver::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:tensorflow.RegisteredSaver)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string name = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_name()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->name().data(), static_cast<int>(this->name().length()),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "tensorflow.RegisteredSaver.name"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string object_name = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_object_name()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->object_name().data(), static_cast<int>(this->object_name().length()),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "tensorflow.RegisteredSaver.object_name"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:tensorflow.RegisteredSaver)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:tensorflow.RegisteredSaver)
+  return false;
+#undef DO_
+}
+
+void RegisteredSaver::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:tensorflow.RegisteredSaver)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string name = 1;
+  if (this->name().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->name().data(), static_cast<int>(this->name().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "tensorflow.RegisteredSaver.name");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->name(), output);
+  }
+
+  // string object_name = 2;
+  if (this->object_name().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->object_name().data(), static_cast<int>(this->object_name().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "tensorflow.RegisteredSaver.object_name");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->object_name(), output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:tensorflow.RegisteredSaver)
+}
+
+::google::protobuf::uint8* RegisteredSaver::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:tensorflow.RegisteredSaver)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string name = 1;
+  if (this->name().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->name().data(), static_cast<int>(this->name().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "tensorflow.RegisteredSaver.name");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        1, this->name(), target);
+  }
+
+  // string object_name = 2;
+  if (this->object_name().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->object_name().data(), static_cast<int>(this->object_name().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "tensorflow.RegisteredSaver.object_name");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        2, this->object_name(), target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:tensorflow.RegisteredSaver)
+  return target;
+}
+
+size_t RegisteredSaver::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:tensorflow.RegisteredSaver)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // string name = 1;
+  if (this->name().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->name());
+  }
+
+  // string object_name = 2;
+  if (this->object_name().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->object_name());
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void RegisteredSaver::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:tensorflow.RegisteredSaver)
+  GOOGLE_DCHECK_NE(&from, this);
+  const RegisteredSaver* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const RegisteredSaver>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:tensorflow.RegisteredSaver)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:tensorflow.RegisteredSaver)
+    MergeFrom(*source);
+  }
+}
+
+void RegisteredSaver::MergeFrom(const RegisteredSaver& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.RegisteredSaver)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.name().size() > 0) {
+    set_name(from.name());
+  }
+  if (from.object_name().size() > 0) {
+    set_object_name(from.object_name());
+  }
+}
+
+void RegisteredSaver::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:tensorflow.RegisteredSaver)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void RegisteredSaver::CopyFrom(const RegisteredSaver& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:tensorflow.RegisteredSaver)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool RegisteredSaver::IsInitialized() const {
+  return true;
+}
+
+void RegisteredSaver::Swap(RegisteredSaver* other) {
+  if (other == this) return;
+  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
+    InternalSwap(other);
+  } else {
+    RegisteredSaver* temp = New(GetArenaNoVirtual());
+    temp->MergeFrom(*other);
+    other->CopyFrom(*this);
+    InternalSwap(temp);
+    if (GetArenaNoVirtual() == NULL) {
+      delete temp;
+    }
+  }
+}
+void RegisteredSaver::UnsafeArenaSwap(RegisteredSaver* other) {
+  if (other == this) return;
+  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
+  InternalSwap(other);
+}
+void RegisteredSaver::InternalSwap(RegisteredSaver* other) {
+  using std::swap;
+  name_.Swap(&other->name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  object_name_.Swap(&other->object_name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata RegisteredSaver::GetMetadata() const {
+  protobuf_tensorflow_2fcore_2fprotobuf_2ftrackable_5fobject_5fgraph_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcore_2fprotobuf_2ftrackable_5fobject_5fgraph_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace tensorflow
 namespace google {
@@ -1972,6 +2442,9 @@ template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::TrackableObjectGraph
 }
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::TrackableObjectGraph* Arena::CreateMaybeMessage< ::tensorflow::TrackableObjectGraph >(Arena* arena) {
   return Arena::CreateMessageInternal< ::tensorflow::TrackableObjectGraph >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::RegisteredSaver* Arena::CreateMaybeMessage< ::tensorflow::RegisteredSaver >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::tensorflow::RegisteredSaver >(arena);
 }
 }  // namespace protobuf
 }  // namespace google

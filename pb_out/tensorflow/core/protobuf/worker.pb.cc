@@ -23,7 +23,7 @@ namespace protobuf_google_2fprotobuf_2fany_2eproto {
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_google_2fprotobuf_2fany_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_Any;
 }  // namespace protobuf_google_2fprotobuf_2fany_2eproto
 namespace protobuf_tensorflow_2fcore_2fframework_2fcost_5fgraph_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fframework_2fcost_5fgraph_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_CostGraphDef;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fframework_2fcost_5fgraph_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_CostGraphDef;
 }  // namespace protobuf_tensorflow_2fcore_2fframework_2fcost_5fgraph_2eproto
 namespace protobuf_tensorflow_2fcore_2fframework_2fdevice_5fattributes_2eproto {
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fframework_2fdevice_5fattributes_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_DeviceAttributes;
@@ -43,6 +43,7 @@ extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fframework_2ftensor_
 }  // namespace protobuf_tensorflow_2fcore_2fframework_2ftensor_5fshape_2eproto
 namespace protobuf_tensorflow_2fcore_2fprotobuf_2fconfig_2eproto {
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2fconfig_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_GraphOptions;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2fconfig_2eproto ::google::protobuf::internal::SCCInfo<7> scc_info_ConfigProto;
 }  // namespace protobuf_tensorflow_2fcore_2fprotobuf_2fconfig_2eproto
 namespace protobuf_tensorflow_2fcore_2fprotobuf_2fdebug_2eproto {
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2fdebug_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_DebugOptions;
@@ -51,7 +52,7 @@ namespace protobuf_tensorflow_2fcore_2fprotobuf_2fnamed_5ftensor_2eproto {
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2fnamed_5ftensor_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_NamedTensorProto;
 }  // namespace protobuf_tensorflow_2fcore_2fprotobuf_2fnamed_5ftensor_2eproto
 namespace protobuf_tensorflow_2fcore_2fprotobuf_2ftensorflow_5fserver_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftensorflow_5fserver_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_ServerDef;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftensorflow_5fserver_2eproto ::google::protobuf::internal::SCCInfo<3> scc_info_ServerDef;
 }  // namespace protobuf_tensorflow_2fcore_2fprotobuf_2ftensorflow_5fserver_2eproto
 namespace protobuf_tensorflow_2fcore_2fprotobuf_2fworker_2eproto {
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2fworker_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ExecutorOpts;
@@ -340,11 +341,12 @@ static void InitDefaultsRegisterGraphRequest() {
   ::tensorflow::RegisterGraphRequest::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<3> scc_info_RegisterGraphRequest =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 3, InitDefaultsRegisterGraphRequest}, {
+::google::protobuf::internal::SCCInfo<4> scc_info_RegisterGraphRequest =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 4, InitDefaultsRegisterGraphRequest}, {
       &protobuf_tensorflow_2fcore_2fframework_2fgraph_2eproto::scc_info_GraphDef.base,
       &protobuf_tensorflow_2fcore_2fprotobuf_2fconfig_2eproto::scc_info_GraphOptions.base,
-      &protobuf_tensorflow_2fcore_2fprotobuf_2fdebug_2eproto::scc_info_DebugOptions.base,}};
+      &protobuf_tensorflow_2fcore_2fprotobuf_2fdebug_2eproto::scc_info_DebugOptions.base,
+      &protobuf_tensorflow_2fcore_2fprotobuf_2fconfig_2eproto::scc_info_ConfigProto.base,}};
 
 static void InitDefaultsRegisterGraphResponse() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -681,8 +683,9 @@ static void InitDefaultsCompleteGroupRequest() {
   ::tensorflow::CompleteGroupRequest::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CompleteGroupRequest =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCompleteGroupRequest}, {}};
+::google::protobuf::internal::SCCInfo<1> scc_info_CompleteGroupRequest =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsCompleteGroupRequest}, {
+      &protobuf_tensorflow_2fcore_2fframework_2fdevice_5fattributes_2eproto::scc_info_DeviceAttributes.base,}};
 
 static void InitDefaultsCompleteGroupResponse() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -695,8 +698,9 @@ static void InitDefaultsCompleteGroupResponse() {
   ::tensorflow::CompleteGroupResponse::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CompleteGroupResponse =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCompleteGroupResponse}, {}};
+::google::protobuf::internal::SCCInfo<1> scc_info_CompleteGroupResponse =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsCompleteGroupResponse}, {
+      &protobuf_tensorflow_2fcore_2fframework_2fdevice_5fattributes_2eproto::scc_info_DeviceAttributes.base,}};
 
 static void InitDefaultsCompleteInstanceRequest() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -832,6 +836,8 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::CreateWorkerSessionRequest, server_def_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::CreateWorkerSessionRequest, isolate_session_state_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::CreateWorkerSessionRequest, cluster_device_attributes_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::CreateWorkerSessionRequest, master_task_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::CreateWorkerSessionRequest, master_incarnation_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::CreateWorkerSessionResponse, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -860,6 +866,7 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::RegisterGraphRequest, graph_options_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::RegisterGraphRequest, debug_options_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::RegisterGraphRequest, collective_graph_key_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::RegisterGraphRequest, config_proto_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::RegisterGraphResponse, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -1049,8 +1056,8 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::CompleteGroupRequest, group_key_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::CompleteGroupRequest, group_size_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::CompleteGroupRequest, device_type_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::CompleteGroupRequest, device_name_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::CompleteGroupRequest, collective_type_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::CompleteGroupRequest, device_attributes_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::CompleteGroupResponse, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -1060,9 +1067,8 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::CompleteGroupResponse, group_size_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::CompleteGroupResponse, device_type_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::CompleteGroupResponse, num_tasks_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::CompleteGroupResponse, device_name_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::CompleteGroupResponse, task_name_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::CompleteGroupResponse, communicator_key_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::CompleteGroupResponse, device_attributes_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::CompleteInstanceRequest, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -1110,39 +1116,39 @@ static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROT
   { 0, -1, sizeof(::tensorflow::GetStatusRequest)},
   { 5, -1, sizeof(::tensorflow::GetStatusResponse)},
   { 11, -1, sizeof(::tensorflow::CreateWorkerSessionRequest)},
-  { 20, -1, sizeof(::tensorflow::CreateWorkerSessionResponse)},
-  { 25, -1, sizeof(::tensorflow::DeleteWorkerSessionRequest)},
-  { 31, -1, sizeof(::tensorflow::DeleteWorkerSessionResponse)},
-  { 36, -1, sizeof(::tensorflow::RegisterGraphRequest)},
-  { 48, -1, sizeof(::tensorflow::RegisterGraphResponse)},
-  { 54, -1, sizeof(::tensorflow::DeregisterGraphRequest)},
-  { 62, -1, sizeof(::tensorflow::DeregisterGraphResponse)},
-  { 67, -1, sizeof(::tensorflow::CleanupAllRequest)},
-  { 73, -1, sizeof(::tensorflow::CleanupAllResponse)},
-  { 78, -1, sizeof(::tensorflow::ExecutorOpts)},
-  { 87, -1, sizeof(::tensorflow::RunGraphRequest)},
-  { 103, -1, sizeof(::tensorflow::RunGraphResponse)},
-  { 114, -1, sizeof(::tensorflow::CleanupGraphRequest)},
-  { 120, -1, sizeof(::tensorflow::CleanupGraphResponse)},
-  { 125, -1, sizeof(::tensorflow::RecvTensorRequest)},
-  { 137, -1, sizeof(::tensorflow::RecvTensorResponse)},
-  { 147, -1, sizeof(::tensorflow::MarkRecvFinishedRequest)},
-  { 153, -1, sizeof(::tensorflow::MarkRecvFinishedResponse)},
-  { 158, -1, sizeof(::tensorflow::LoggingRequest)},
-  { 167, -1, sizeof(::tensorflow::LabeledStepStats)},
-  { 174, -1, sizeof(::tensorflow::LoggingResponse)},
-  { 180, -1, sizeof(::tensorflow::TraceOpts)},
-  { 191, -1, sizeof(::tensorflow::TracingRequest)},
-  { 197, -1, sizeof(::tensorflow::TracingResponse)},
-  { 202, -1, sizeof(::tensorflow::RecvBufRequest)},
-  { 218, -1, sizeof(::tensorflow::RecvBufResponse)},
-  { 229, -1, sizeof(::tensorflow::CompleteGroupRequest)},
-  { 239, -1, sizeof(::tensorflow::CompleteGroupResponse)},
-  { 251, -1, sizeof(::tensorflow::CompleteInstanceRequest)},
-  { 267, -1, sizeof(::tensorflow::CompleteInstanceResponse)},
-  { 274, -1, sizeof(::tensorflow::GetStepSequenceRequest)},
-  { 280, -1, sizeof(::tensorflow::StepSequence)},
-  { 287, -1, sizeof(::tensorflow::GetStepSequenceResponse)},
+  { 22, -1, sizeof(::tensorflow::CreateWorkerSessionResponse)},
+  { 27, -1, sizeof(::tensorflow::DeleteWorkerSessionRequest)},
+  { 33, -1, sizeof(::tensorflow::DeleteWorkerSessionResponse)},
+  { 38, -1, sizeof(::tensorflow::RegisterGraphRequest)},
+  { 51, -1, sizeof(::tensorflow::RegisterGraphResponse)},
+  { 57, -1, sizeof(::tensorflow::DeregisterGraphRequest)},
+  { 65, -1, sizeof(::tensorflow::DeregisterGraphResponse)},
+  { 70, -1, sizeof(::tensorflow::CleanupAllRequest)},
+  { 76, -1, sizeof(::tensorflow::CleanupAllResponse)},
+  { 81, -1, sizeof(::tensorflow::ExecutorOpts)},
+  { 90, -1, sizeof(::tensorflow::RunGraphRequest)},
+  { 106, -1, sizeof(::tensorflow::RunGraphResponse)},
+  { 117, -1, sizeof(::tensorflow::CleanupGraphRequest)},
+  { 123, -1, sizeof(::tensorflow::CleanupGraphResponse)},
+  { 128, -1, sizeof(::tensorflow::RecvTensorRequest)},
+  { 140, -1, sizeof(::tensorflow::RecvTensorResponse)},
+  { 150, -1, sizeof(::tensorflow::MarkRecvFinishedRequest)},
+  { 156, -1, sizeof(::tensorflow::MarkRecvFinishedResponse)},
+  { 161, -1, sizeof(::tensorflow::LoggingRequest)},
+  { 170, -1, sizeof(::tensorflow::LabeledStepStats)},
+  { 177, -1, sizeof(::tensorflow::LoggingResponse)},
+  { 183, -1, sizeof(::tensorflow::TraceOpts)},
+  { 194, -1, sizeof(::tensorflow::TracingRequest)},
+  { 200, -1, sizeof(::tensorflow::TracingResponse)},
+  { 205, -1, sizeof(::tensorflow::RecvBufRequest)},
+  { 221, -1, sizeof(::tensorflow::RecvBufResponse)},
+  { 232, -1, sizeof(::tensorflow::CompleteGroupRequest)},
+  { 242, -1, sizeof(::tensorflow::CompleteGroupResponse)},
+  { 253, -1, sizeof(::tensorflow::CompleteInstanceRequest)},
+  { 269, -1, sizeof(::tensorflow::CompleteInstanceResponse)},
+  { 276, -1, sizeof(::tensorflow::GetStepSequenceRequest)},
+  { 282, -1, sizeof(::tensorflow::StepSequence)},
+  { 289, -1, sizeof(::tensorflow::GetStepSequenceResponse)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
@@ -1214,121 +1220,126 @@ void AddDescriptorsImpl() {
       "step_stats.proto\032&tensorflow/core/framew"
       "ork/tensor.proto\032,tensorflow/core/framew"
       "ork/tensor_shape.proto\032%tensorflow/core/"
-      "framework/types.proto\032*tensorflow/core/l"
-      "ib/core/error_codes.proto\032%tensorflow/co"
-      "re/protobuf/config.proto\032$tensorflow/cor"
-      "e/protobuf/debug.proto\032+tensorflow/core/"
+      "framework/types.proto\032%tensorflow/core/p"
+      "rotobuf/config.proto\032$tensorflow/core/pr"
+      "otobuf/debug.proto\032*tensorflow/core/prot"
+      "obuf/error_codes.proto\032+tensorflow/core/"
       "protobuf/named_tensor.proto\0320tensorflow/"
       "core/protobuf/tensorflow_server.proto\"\022\n"
       "\020GetStatusRequest\"L\n\021GetStatusResponse\0227"
       "\n\021device_attributes\030\001 \003(\0132\034.tensorflow.D"
-      "eviceAttributes\"\277\001\n\032CreateWorkerSessionR"
+      "eviceAttributes\"\366\001\n\032CreateWorkerSessionR"
       "equest\022\026\n\016session_handle\030\001 \001(\t\022)\n\nserver"
       "_def\030\002 \001(\0132\025.tensorflow.ServerDef\022\035\n\025iso"
       "late_session_state\030\003 \001(\010\022\?\n\031cluster_devi"
       "ce_attributes\030\004 \003(\0132\034.tensorflow.DeviceA"
-      "ttributes\"\035\n\033CreateWorkerSessionResponse"
-      "\"4\n\032DeleteWorkerSessionRequest\022\026\n\016sessio"
-      "n_handle\030\001 \001(\t\"\035\n\033DeleteWorkerSessionRes"
-      "ponse\"\233\002\n\024RegisterGraphRequest\022\026\n\016sessio"
-      "n_handle\030\001 \001(\t\022$\n\034create_worker_session_"
-      "called\030\006 \001(\010\022\'\n\tgraph_def\030\002 \001(\0132\024.tensor"
-      "flow.GraphDef\022\034\n\020has_control_flow\030\003 \001(\010B"
-      "\002\030\001\022/\n\rgraph_options\030\004 \001(\0132\030.tensorflow."
-      "GraphOptions\022/\n\rdebug_options\030\005 \001(\0132\030.te"
-      "nsorflow.DebugOptions\022\034\n\024collective_grap"
-      "h_key\030\007 \001(\003\"-\n\025RegisterGraphResponse\022\024\n\014"
-      "graph_handle\030\001 \001(\t\"l\n\026DeregisterGraphReq"
-      "uest\022\026\n\016session_handle\030\002 \001(\t\022$\n\034create_w"
-      "orker_session_called\030\003 \001(\010\022\024\n\014graph_hand"
-      "le\030\001 \001(\t\"\031\n\027DeregisterGraphResponse\"&\n\021C"
-      "leanupAllRequest\022\021\n\tcontainer\030\001 \003(\t\"\024\n\022C"
-      "leanupAllResponse\"\212\001\n\014ExecutorOpts\022\024\n\014re"
-      "cord_costs\030\001 \001(\010\022\027\n\017record_timeline\030\003 \001("
-      "\010\022\037\n\027record_partition_graphs\030\004 \001(\010\022*\n\"re"
-      "port_tensor_allocations_upon_oom\030\005 \001(\010\"\315"
-      "\002\n\017RunGraphRequest\022\026\n\016session_handle\030\010 \001"
-      "(\t\022$\n\034create_worker_session_called\030\n \001(\010"
-      "\022\024\n\014graph_handle\030\001 \001(\t\022\017\n\007step_id\030\002 \001(\003\022"
-      "+\n\texec_opts\030\005 \001(\0132\030.tensorflow.Executor"
-      "Opts\022*\n\004send\030\003 \003(\0132\034.tensorflow.NamedTen"
-      "sorProto\022\020\n\010recv_key\030\004 \003(\t\022\022\n\nis_partial"
-      "\030\006 \001(\010\022\033\n\023is_last_partial_run\030\007 \001(\010\022%\n\035s"
-      "tore_errors_in_response_body\030\t \001(\010\022\022\n\nre"
-      "quest_id\030\013 \001(\003\"\221\002\n\020RunGraphResponse\022*\n\004r"
-      "ecv\030\001 \003(\0132\034.tensorflow.NamedTensorProto\022"
-      ")\n\nstep_stats\030\002 \001(\0132\025.tensorflow.StepSta"
-      "ts\022,\n\ncost_graph\030\003 \001(\0132\030.tensorflow.Cost"
-      "GraphDef\022-\n\017partition_graph\030\004 \003(\0132\024.tens"
-      "orflow.GraphDef\022+\n\013status_code\030\005 \001(\0162\026.t"
-      "ensorflow.error.Code\022\034\n\024status_error_mes"
-      "sage\030\006 \001(\t\"&\n\023CleanupGraphRequest\022\017\n\007ste"
-      "p_id\030\001 \001(\003\"\026\n\024CleanupGraphResponse\"\373\001\n\021R"
-      "ecvTensorRequest\022\017\n\007step_id\030\001 \001(\003\022\026\n\016ren"
-      "dezvous_key\030\002 \001(\t\022\016\n\006dma_ok\030\003 \001(\010\0223\n\017cli"
-      "ent_locality\030\004 \001(\0132\032.tensorflow.DeviceLo"
-      "cality\0223\n\017server_locality\030\005 \001(\0132\032.tensor"
-      "flow.DeviceLocality\022/\n\021transport_options"
-      "\030\006 \001(\0132\024.google.protobuf.Any\022\022\n\nrequest_"
-      "id\030\007 \001(\003\"\257\001\n\022RecvTensorResponse\022\'\n\006tenso"
-      "r\030\001 \001(\0132\027.tensorflow.TensorProto\022\017\n\007is_d"
-      "ead\030\002 \001(\010\022\031\n\021send_start_micros\030\003 \001(\003\022/\n\021"
-      "transport_options\030\004 \001(\0132\024.google.protobu"
-      "f.Any\022\023\n\013require_ack\030\005 \001(\010\"-\n\027MarkRecvFi"
-      "nishedRequest\022\022\n\nrequest_id\030\001 \001(\003\"\032\n\030Mar"
-      "kRecvFinishedResponse\"o\n\016LoggingRequest\022"
-      "\032\n\022enable_rpc_logging\030\001 \001(\010\022\033\n\023disable_r"
-      "pc_logging\030\004 \001(\010\022\r\n\005clear\030\002 \001(\010\022\025\n\rfetch"
-      "_step_id\030\003 \003(\003\"N\n\020LabeledStepStats\022\017\n\007st"
-      "ep_id\030\001 \001(\003\022)\n\nstep_stats\030\002 \001(\0132\025.tensor"
-      "flow.StepStats\"=\n\017LoggingResponse\022*\n\004ste"
-      "p\030\001 \003(\0132\034.tensorflow.LabeledStepStats\"\253\001"
-      "\n\tTraceOpts\022\020\n\010duration\030\001 \001(\001\022\031\n\021use_ste"
-      "p_profiler\030\002 \001(\010\022\033\n\023use_kernel_profiler\030"
-      "\003 \001(\010\022\035\n\025use_extended_profiler\030\004 \001(\010\022\030\n\020"
-      "use_gpu_profiler\030\005 \001(\010\022\033\n\023use_sample_pro"
-      "filer\030\006 \001(\010\"8\n\016TracingRequest\022&\n\007options"
-      "\030\001 \001(\0132\025.tensorflow.TraceOpts\"\021\n\017Tracing"
-      "Response\"\321\002\n\016RecvBufRequest\022\017\n\007step_id\030\001"
-      " \001(\003\022\032\n\022buf_rendezvous_key\030\002 \001(\t\022\021\n\tnum_"
-      "bytes\030\003 \001(\003\022\017\n\007buf_ptr\030\004 \001(\006\0223\n\017client_l"
+      "ttributes\022\023\n\013master_task\030\005 \001(\t\022\032\n\022master"
+      "_incarnation\030\006 \001(\003J\004\010\007\020\010\"\035\n\033CreateWorker"
+      "SessionResponse\"4\n\032DeleteWorkerSessionRe"
+      "quest\022\026\n\016session_handle\030\001 \001(\t\"\035\n\033DeleteW"
+      "orkerSessionResponse\"\312\002\n\024RegisterGraphRe"
+      "quest\022\026\n\016session_handle\030\001 \001(\t\022$\n\034create_"
+      "worker_session_called\030\006 \001(\010\022\'\n\tgraph_def"
+      "\030\002 \001(\0132\024.tensorflow.GraphDef\022\034\n\020has_cont"
+      "rol_flow\030\003 \001(\010B\002\030\001\022/\n\rgraph_options\030\004 \001("
+      "\0132\030.tensorflow.GraphOptions\022/\n\rdebug_opt"
+      "ions\030\005 \001(\0132\030.tensorflow.DebugOptions\022\034\n\024"
+      "collective_graph_key\030\007 \001(\003\022-\n\014config_pro"
+      "to\030\010 \001(\0132\027.tensorflow.ConfigProto\"-\n\025Reg"
+      "isterGraphResponse\022\024\n\014graph_handle\030\001 \001(\t"
+      "\"l\n\026DeregisterGraphRequest\022\026\n\016session_ha"
+      "ndle\030\002 \001(\t\022$\n\034create_worker_session_call"
+      "ed\030\003 \001(\010\022\024\n\014graph_handle\030\001 \001(\t\"\031\n\027Deregi"
+      "sterGraphResponse\"&\n\021CleanupAllRequest\022\021"
+      "\n\tcontainer\030\001 \003(\t\"\024\n\022CleanupAllResponse\""
+      "\212\001\n\014ExecutorOpts\022\024\n\014record_costs\030\001 \001(\010\022\027"
+      "\n\017record_timeline\030\003 \001(\010\022\037\n\027record_partit"
+      "ion_graphs\030\004 \001(\010\022*\n\"report_tensor_alloca"
+      "tions_upon_oom\030\005 \001(\010\"\315\002\n\017RunGraphRequest"
+      "\022\026\n\016session_handle\030\010 \001(\t\022$\n\034create_worke"
+      "r_session_called\030\n \001(\010\022\024\n\014graph_handle\030\001"
+      " \001(\t\022\017\n\007step_id\030\002 \001(\003\022+\n\texec_opts\030\005 \001(\013"
+      "2\030.tensorflow.ExecutorOpts\022*\n\004send\030\003 \003(\013"
+      "2\034.tensorflow.NamedTensorProto\022\020\n\010recv_k"
+      "ey\030\004 \003(\t\022\022\n\nis_partial\030\006 \001(\010\022\033\n\023is_last_"
+      "partial_run\030\007 \001(\010\022%\n\035store_errors_in_res"
+      "ponse_body\030\t \001(\010\022\022\n\nrequest_id\030\013 \001(\003\"\221\002\n"
+      "\020RunGraphResponse\022*\n\004recv\030\001 \003(\0132\034.tensor"
+      "flow.NamedTensorProto\022)\n\nstep_stats\030\002 \001("
+      "\0132\025.tensorflow.StepStats\022,\n\ncost_graph\030\003"
+      " \001(\0132\030.tensorflow.CostGraphDef\022-\n\017partit"
+      "ion_graph\030\004 \003(\0132\024.tensorflow.GraphDef\022+\n"
+      "\013status_code\030\005 \001(\0162\026.tensorflow.error.Co"
+      "de\022\034\n\024status_error_message\030\006 \001(\t\"&\n\023Clea"
+      "nupGraphRequest\022\017\n\007step_id\030\001 \001(\003\"\026\n\024Clea"
+      "nupGraphResponse\"\373\001\n\021RecvTensorRequest\022\017"
+      "\n\007step_id\030\001 \001(\003\022\026\n\016rendezvous_key\030\002 \001(\t\022"
+      "\016\n\006dma_ok\030\003 \001(\010\0223\n\017client_locality\030\004 \001(\013"
+      "2\032.tensorflow.DeviceLocality\0223\n\017server_l"
       "ocality\030\005 \001(\0132\032.tensorflow.DeviceLocalit"
-      "y\0223\n\017server_locality\030\006 \001(\0132\032.tensorflow."
-      "DeviceLocality\022/\n\021transport_options\030\007 \001("
-      "\0132\024.google.protobuf.Any\022\022\n\nsrc_device\030\010 "
-      "\001(\t\022\022\n\ndst_device\030\t \001(\t\022\022\n\nrequest_id\030\n "
-      "\001(\003\022\027\n\017src_incarnation\030\013 \001(\004\"\247\001\n\017RecvBuf"
-      "Response\022\017\n\007buf_ptr\030\001 \001(\006\022\021\n\tnum_bytes\030\002"
-      " \001(\003\022\017\n\007is_dead\030\003 \001(\010\022/\n\021transport_optio"
-      "ns\030\004 \001(\0132\024.google.protobuf.Any\022\031\n\021send_s"
-      "tart_micros\030\005 \001(\003\022\023\n\013require_ack\030\006 \001(\010\"\200"
-      "\001\n\024CompleteGroupRequest\022\021\n\tgroup_key\030\001 \001"
-      "(\005\022\022\n\ngroup_size\030\002 \001(\005\022\023\n\013device_type\030\003 "
-      "\001(\t\022\023\n\013device_name\030\004 \003(\t\022\027\n\017collective_t"
-      "ype\030\005 \001(\005\"\250\001\n\025CompleteGroupResponse\022\021\n\tg"
-      "roup_key\030\001 \001(\005\022\022\n\ngroup_size\030\002 \001(\005\022\023\n\013de"
-      "vice_type\030\003 \001(\t\022\021\n\tnum_tasks\030\004 \001(\005\022\023\n\013de"
-      "vice_name\030\005 \003(\t\022\021\n\ttask_name\030\006 \003(\t\022\030\n\020co"
-      "mmunicator_key\030\007 \001(\014\"\227\002\n\027CompleteInstanc"
-      "eRequest\022\014\n\004name\030\001 \001(\t\022\014\n\004type\030\002 \001(\005\022\'\n\t"
-      "data_type\030\003 \001(\0162\024.tensorflow.DataType\022+\n"
-      "\005shape\030\004 \001(\0132\034.tensorflow.TensorShapePro"
-      "to\022\021\n\tgroup_key\030\005 \001(\005\022\022\n\ngroup_size\030\006 \001("
-      "\005\022\024\n\014instance_key\030\007 \001(\005\022\023\n\013device_type\030\010"
-      " \001(\t\022\025\n\rsubdiv_offset\030\t \003(\005\022\016\n\006device\030\n "
-      "\001(\t\022\021\n\tis_source\030\013 \001(\010\"K\n\030CompleteInstan"
-      "ceResponse\022\024\n\014instance_key\030\001 \001(\005\022\023\n\013sour"
-      "ce_rank\030\002 \001(\005J\004\010\003\020\004\"+\n\026GetStepSequenceRe"
-      "quest\022\021\n\tgraph_key\030\001 \003(\003\"7\n\014StepSequence"
-      "\022\021\n\tgraph_key\030\001 \001(\003\022\024\n\014next_step_id\030\002 \001("
-      "\003\"J\n\027GetStepSequenceResponse\022/\n\rstep_seq"
-      "uence\030\001 \003(\0132\030.tensorflow.StepSequenceBm\n"
-      "\032org.tensorflow.distruntimeB\014WorkerProto"
-      "sP\001Z<github.com/tensorflow/tensorflow/te"
-      "nsorflow/go/core/protobuf\370\001\001b\006proto3"
+      "y\022/\n\021transport_options\030\006 \001(\0132\024.google.pr"
+      "otobuf.Any\022\022\n\nrequest_id\030\007 \001(\003\"\257\001\n\022RecvT"
+      "ensorResponse\022\'\n\006tensor\030\001 \001(\0132\027.tensorfl"
+      "ow.TensorProto\022\017\n\007is_dead\030\002 \001(\010\022\031\n\021send_"
+      "start_micros\030\003 \001(\003\022/\n\021transport_options\030"
+      "\004 \001(\0132\024.google.protobuf.Any\022\023\n\013require_a"
+      "ck\030\005 \001(\010\"-\n\027MarkRecvFinishedRequest\022\022\n\nr"
+      "equest_id\030\001 \001(\003\"\032\n\030MarkRecvFinishedRespo"
+      "nse\"o\n\016LoggingRequest\022\032\n\022enable_rpc_logg"
+      "ing\030\001 \001(\010\022\033\n\023disable_rpc_logging\030\004 \001(\010\022\r"
+      "\n\005clear\030\002 \001(\010\022\025\n\rfetch_step_id\030\003 \003(\003\"N\n\020"
+      "LabeledStepStats\022\017\n\007step_id\030\001 \001(\003\022)\n\nste"
+      "p_stats\030\002 \001(\0132\025.tensorflow.StepStats\"=\n\017"
+      "LoggingResponse\022*\n\004step\030\001 \003(\0132\034.tensorfl"
+      "ow.LabeledStepStats\"\253\001\n\tTraceOpts\022\020\n\010dur"
+      "ation\030\001 \001(\001\022\031\n\021use_step_profiler\030\002 \001(\010\022\033"
+      "\n\023use_kernel_profiler\030\003 \001(\010\022\035\n\025use_exten"
+      "ded_profiler\030\004 \001(\010\022\030\n\020use_gpu_profiler\030\005"
+      " \001(\010\022\033\n\023use_sample_profiler\030\006 \001(\010\"8\n\016Tra"
+      "cingRequest\022&\n\007options\030\001 \001(\0132\025.tensorflo"
+      "w.TraceOpts\"\021\n\017TracingResponse\"\321\002\n\016RecvB"
+      "ufRequest\022\017\n\007step_id\030\001 \001(\003\022\032\n\022buf_rendez"
+      "vous_key\030\002 \001(\t\022\021\n\tnum_bytes\030\003 \001(\003\022\017\n\007buf"
+      "_ptr\030\004 \001(\006\0223\n\017client_locality\030\005 \001(\0132\032.te"
+      "nsorflow.DeviceLocality\0223\n\017server_locali"
+      "ty\030\006 \001(\0132\032.tensorflow.DeviceLocality\022/\n\021"
+      "transport_options\030\007 \001(\0132\024.google.protobu"
+      "f.Any\022\022\n\nsrc_device\030\010 \001(\t\022\022\n\ndst_device\030"
+      "\t \001(\t\022\022\n\nrequest_id\030\n \001(\003\022\027\n\017src_incarna"
+      "tion\030\013 \001(\004\"\247\001\n\017RecvBufResponse\022\017\n\007buf_pt"
+      "r\030\001 \001(\006\022\021\n\tnum_bytes\030\002 \001(\003\022\017\n\007is_dead\030\003 "
+      "\001(\010\022/\n\021transport_options\030\004 \001(\0132\024.google."
+      "protobuf.Any\022\031\n\021send_start_micros\030\005 \001(\003\022"
+      "\023\n\013require_ack\030\006 \001(\010\"\252\001\n\024CompleteGroupRe"
+      "quest\022\021\n\tgroup_key\030\001 \001(\005\022\022\n\ngroup_size\030\002"
+      " \001(\005\022\023\n\013device_type\030\003 \001(\t\022\027\n\017collective_"
+      "type\030\005 \001(\005\0227\n\021device_attributes\030\006 \001(\0132\034."
+      "tensorflow.DeviceAttributesJ\004\010\004\020\005\"\305\001\n\025Co"
+      "mpleteGroupResponse\022\021\n\tgroup_key\030\001 \001(\005\022\022"
+      "\n\ngroup_size\030\002 \001(\005\022\023\n\013device_type\030\003 \001(\t\022"
+      "\021\n\tnum_tasks\030\004 \001(\005\022\030\n\020communicator_key\030\007"
+      " \001(\014\0227\n\021device_attributes\030\010 \003(\0132\034.tensor"
+      "flow.DeviceAttributesJ\004\010\005\020\006J\004\010\006\020\007\"\227\002\n\027Co"
+      "mpleteInstanceRequest\022\014\n\004name\030\001 \001(\t\022\014\n\004t"
+      "ype\030\002 \001(\005\022\'\n\tdata_type\030\003 \001(\0162\024.tensorflo"
+      "w.DataType\022+\n\005shape\030\004 \001(\0132\034.tensorflow.T"
+      "ensorShapeProto\022\021\n\tgroup_key\030\005 \001(\005\022\022\n\ngr"
+      "oup_size\030\006 \001(\005\022\024\n\014instance_key\030\007 \001(\005\022\023\n\013"
+      "device_type\030\010 \001(\t\022\025\n\rsubdiv_offset\030\t \003(\005"
+      "\022\016\n\006device\030\n \001(\t\022\021\n\tis_source\030\013 \001(\010\"K\n\030C"
+      "ompleteInstanceResponse\022\024\n\014instance_key\030"
+      "\001 \001(\005\022\023\n\013source_rank\030\002 \001(\005J\004\010\003\020\004\"+\n\026GetS"
+      "tepSequenceRequest\022\021\n\tgraph_key\030\001 \003(\003\"7\n"
+      "\014StepSequence\022\021\n\tgraph_key\030\001 \001(\003\022\024\n\014next"
+      "_step_id\030\002 \001(\003\"J\n\027GetStepSequenceRespons"
+      "e\022/\n\rstep_sequence\030\001 \003(\0132\030.tensorflow.St"
+      "epSequenceB\206\001\n\032org.tensorflow.distruntim"
+      "eB\014WorkerProtosP\001ZUgithub.com/tensorflow"
+      "/tensorflow/tensorflow/go/core/protobuf/"
+      "for_core_protos_go_proto\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 4836);
+      descriptor, 5035);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/protobuf/worker.proto", &protobuf_RegisterTypes);
   ::protobuf_google_2fprotobuf_2fany_2eproto::AddDescriptors();
@@ -1339,9 +1350,9 @@ void AddDescriptorsImpl() {
   ::protobuf_tensorflow_2fcore_2fframework_2ftensor_2eproto::AddDescriptors();
   ::protobuf_tensorflow_2fcore_2fframework_2ftensor_5fshape_2eproto::AddDescriptors();
   ::protobuf_tensorflow_2fcore_2fframework_2ftypes_2eproto::AddDescriptors();
-  ::protobuf_tensorflow_2fcore_2flib_2fcore_2ferror_5fcodes_2eproto::AddDescriptors();
   ::protobuf_tensorflow_2fcore_2fprotobuf_2fconfig_2eproto::AddDescriptors();
   ::protobuf_tensorflow_2fcore_2fprotobuf_2fdebug_2eproto::AddDescriptors();
+  ::protobuf_tensorflow_2fcore_2fprotobuf_2ferror_5fcodes_2eproto::AddDescriptors();
   ::protobuf_tensorflow_2fcore_2fprotobuf_2fnamed_5ftensor_2eproto::AddDescriptors();
   ::protobuf_tensorflow_2fcore_2fprotobuf_2ftensorflow_5fserver_2eproto::AddDescriptors();
 }
@@ -1864,6 +1875,8 @@ const int CreateWorkerSessionRequest::kSessionHandleFieldNumber;
 const int CreateWorkerSessionRequest::kServerDefFieldNumber;
 const int CreateWorkerSessionRequest::kIsolateSessionStateFieldNumber;
 const int CreateWorkerSessionRequest::kClusterDeviceAttributesFieldNumber;
+const int CreateWorkerSessionRequest::kMasterTaskFieldNumber;
+const int CreateWorkerSessionRequest::kMasterIncarnationFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CreateWorkerSessionRequest::CreateWorkerSessionRequest()
@@ -1892,17 +1905,25 @@ CreateWorkerSessionRequest::CreateWorkerSessionRequest(const CreateWorkerSession
     session_handle_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.session_handle(),
       GetArenaNoVirtual());
   }
+  master_task_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.master_task().size() > 0) {
+    master_task_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.master_task(),
+      GetArenaNoVirtual());
+  }
   if (from.has_server_def()) {
     server_def_ = new ::tensorflow::ServerDef(*from.server_def_);
   } else {
     server_def_ = NULL;
   }
-  isolate_session_state_ = from.isolate_session_state_;
+  ::memcpy(&master_incarnation_, &from.master_incarnation_,
+    static_cast<size_t>(reinterpret_cast<char*>(&isolate_session_state_) -
+    reinterpret_cast<char*>(&master_incarnation_)) + sizeof(isolate_session_state_));
   // @@protoc_insertion_point(copy_constructor:tensorflow.CreateWorkerSessionRequest)
 }
 
 void CreateWorkerSessionRequest::SharedCtor() {
   session_handle_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  master_task_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&server_def_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&isolate_session_state_) -
       reinterpret_cast<char*>(&server_def_)) + sizeof(isolate_session_state_));
@@ -1916,6 +1937,7 @@ CreateWorkerSessionRequest::~CreateWorkerSessionRequest() {
 void CreateWorkerSessionRequest::SharedDtor() {
   GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
   session_handle_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  master_task_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete server_def_;
 }
 
@@ -1947,11 +1969,14 @@ void CreateWorkerSessionRequest::Clear() {
 
   cluster_device_attributes_.Clear();
   session_handle_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  master_task_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
   if (GetArenaNoVirtual() == NULL && server_def_ != NULL) {
     delete server_def_;
   }
   server_def_ = NULL;
-  isolate_session_state_ = false;
+  ::memset(&master_incarnation_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&isolate_session_state_) -
+      reinterpret_cast<char*>(&master_incarnation_)) + sizeof(isolate_session_state_));
   _internal_metadata_.Clear();
 }
 
@@ -2019,6 +2044,36 @@ bool CreateWorkerSessionRequest::MergePartialFromCodedStream(
         break;
       }
 
+      // string master_task = 5;
+      case 5: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_master_task()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->master_task().data(), static_cast<int>(this->master_task().length()),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "tensorflow.CreateWorkerSessionRequest.master_task"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int64 master_incarnation = 6;
+      case 6: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(48u /* 48 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 input, &master_incarnation_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -2075,6 +2130,21 @@ void CreateWorkerSessionRequest::SerializeWithCachedSizes(
       output);
   }
 
+  // string master_task = 5;
+  if (this->master_task().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->master_task().data(), static_cast<int>(this->master_task().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "tensorflow.CreateWorkerSessionRequest.master_task");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      5, this->master_task(), output);
+  }
+
+  // int64 master_incarnation = 6;
+  if (this->master_incarnation() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt64(6, this->master_incarnation(), output);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -2120,6 +2190,22 @@ void CreateWorkerSessionRequest::SerializeWithCachedSizes(
         4, this->cluster_device_attributes(static_cast<int>(i)), deterministic, target);
   }
 
+  // string master_task = 5;
+  if (this->master_task().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->master_task().data(), static_cast<int>(this->master_task().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "tensorflow.CreateWorkerSessionRequest.master_task");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        5, this->master_task(), target);
+  }
+
+  // int64 master_incarnation = 6;
+  if (this->master_incarnation() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(6, this->master_incarnation(), target);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
@@ -2155,11 +2241,25 @@ size_t CreateWorkerSessionRequest::ByteSizeLong() const {
         this->session_handle());
   }
 
+  // string master_task = 5;
+  if (this->master_task().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->master_task());
+  }
+
   // .tensorflow.ServerDef server_def = 2;
   if (this->has_server_def()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *server_def_);
+  }
+
+  // int64 master_incarnation = 6;
+  if (this->master_incarnation() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int64Size(
+        this->master_incarnation());
   }
 
   // bool isolate_session_state = 3;
@@ -2198,8 +2298,14 @@ void CreateWorkerSessionRequest::MergeFrom(const CreateWorkerSessionRequest& fro
   if (from.session_handle().size() > 0) {
     set_session_handle(from.session_handle());
   }
+  if (from.master_task().size() > 0) {
+    set_master_task(from.master_task());
+  }
   if (from.has_server_def()) {
     mutable_server_def()->::tensorflow::ServerDef::MergeFrom(from.server_def());
+  }
+  if (from.master_incarnation() != 0) {
+    set_master_incarnation(from.master_incarnation());
   }
   if (from.isolate_session_state() != 0) {
     set_isolate_session_state(from.isolate_session_state());
@@ -2248,7 +2354,10 @@ void CreateWorkerSessionRequest::InternalSwap(CreateWorkerSessionRequest* other)
   CastToBase(&cluster_device_attributes_)->InternalSwap(CastToBase(&other->cluster_device_attributes_));
   session_handle_.Swap(&other->session_handle_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
+  master_task_.Swap(&other->master_task_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
   swap(server_def_, other->server_def_);
+  swap(master_incarnation_, other->master_incarnation_);
   swap(isolate_session_state_, other->isolate_session_state_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
@@ -2958,6 +3067,8 @@ void RegisterGraphRequest::InitAsDefaultInstance() {
       ::tensorflow::GraphOptions::internal_default_instance());
   ::tensorflow::_RegisterGraphRequest_default_instance_._instance.get_mutable()->debug_options_ = const_cast< ::tensorflow::DebugOptions*>(
       ::tensorflow::DebugOptions::internal_default_instance());
+  ::tensorflow::_RegisterGraphRequest_default_instance_._instance.get_mutable()->config_proto_ = const_cast< ::tensorflow::ConfigProto*>(
+      ::tensorflow::ConfigProto::internal_default_instance());
 }
 void RegisterGraphRequest::unsafe_arena_set_allocated_graph_def(
     ::tensorflow::GraphDef* graph_def) {
@@ -3016,6 +3127,25 @@ void RegisterGraphRequest::clear_debug_options() {
   }
   debug_options_ = NULL;
 }
+void RegisterGraphRequest::unsafe_arena_set_allocated_config_proto(
+    ::tensorflow::ConfigProto* config_proto) {
+  if (GetArenaNoVirtual() == NULL) {
+    delete config_proto_;
+  }
+  config_proto_ = config_proto;
+  if (config_proto) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.RegisterGraphRequest.config_proto)
+}
+void RegisterGraphRequest::clear_config_proto() {
+  if (GetArenaNoVirtual() == NULL && config_proto_ != NULL) {
+    delete config_proto_;
+  }
+  config_proto_ = NULL;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int RegisterGraphRequest::kSessionHandleFieldNumber;
 const int RegisterGraphRequest::kCreateWorkerSessionCalledFieldNumber;
@@ -3024,6 +3154,7 @@ const int RegisterGraphRequest::kHasControlFlowFieldNumber;
 const int RegisterGraphRequest::kGraphOptionsFieldNumber;
 const int RegisterGraphRequest::kDebugOptionsFieldNumber;
 const int RegisterGraphRequest::kCollectiveGraphKeyFieldNumber;
+const int RegisterGraphRequest::kConfigProtoFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 RegisterGraphRequest::RegisterGraphRequest()
@@ -3065,6 +3196,11 @@ RegisterGraphRequest::RegisterGraphRequest(const RegisterGraphRequest& from)
   } else {
     debug_options_ = NULL;
   }
+  if (from.has_config_proto()) {
+    config_proto_ = new ::tensorflow::ConfigProto(*from.config_proto_);
+  } else {
+    config_proto_ = NULL;
+  }
   ::memcpy(&collective_graph_key_, &from.collective_graph_key_,
     static_cast<size_t>(reinterpret_cast<char*>(&has_control_flow_) -
     reinterpret_cast<char*>(&collective_graph_key_)) + sizeof(has_control_flow_));
@@ -3089,6 +3225,7 @@ void RegisterGraphRequest::SharedDtor() {
   if (this != internal_default_instance()) delete graph_def_;
   if (this != internal_default_instance()) delete graph_options_;
   if (this != internal_default_instance()) delete debug_options_;
+  if (this != internal_default_instance()) delete config_proto_;
 }
 
 void RegisterGraphRequest::ArenaDtor(void* object) {
@@ -3130,6 +3267,10 @@ void RegisterGraphRequest::Clear() {
     delete debug_options_;
   }
   debug_options_ = NULL;
+  if (GetArenaNoVirtual() == NULL && config_proto_ != NULL) {
+    delete config_proto_;
+  }
+  config_proto_ = NULL;
   ::memset(&collective_graph_key_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&has_control_flow_) -
       reinterpret_cast<char*>(&collective_graph_key_)) + sizeof(has_control_flow_));
@@ -3240,6 +3381,18 @@ bool RegisterGraphRequest::MergePartialFromCodedStream(
         break;
       }
 
+      // .tensorflow.ConfigProto config_proto = 8;
+      case 8: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(66u /* 66 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_config_proto()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -3309,6 +3462,12 @@ void RegisterGraphRequest::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteInt64(7, this->collective_graph_key(), output);
   }
 
+  // .tensorflow.ConfigProto config_proto = 8;
+  if (this->has_config_proto()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      8, this->_internal_config_proto(), output);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -3370,6 +3529,13 @@ void RegisterGraphRequest::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(7, this->collective_graph_key(), target);
   }
 
+  // .tensorflow.ConfigProto config_proto = 8;
+  if (this->has_config_proto()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        8, this->_internal_config_proto(), deterministic, target);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
@@ -3413,6 +3579,13 @@ size_t RegisterGraphRequest::ByteSizeLong() const {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *debug_options_);
+  }
+
+  // .tensorflow.ConfigProto config_proto = 8;
+  if (this->has_config_proto()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *config_proto_);
   }
 
   // int64 collective_graph_key = 7;
@@ -3471,6 +3644,9 @@ void RegisterGraphRequest::MergeFrom(const RegisterGraphRequest& from) {
   if (from.has_debug_options()) {
     mutable_debug_options()->::tensorflow::DebugOptions::MergeFrom(from.debug_options());
   }
+  if (from.has_config_proto()) {
+    mutable_config_proto()->::tensorflow::ConfigProto::MergeFrom(from.config_proto());
+  }
   if (from.collective_graph_key() != 0) {
     set_collective_graph_key(from.collective_graph_key());
   }
@@ -3526,6 +3702,7 @@ void RegisterGraphRequest::InternalSwap(RegisterGraphRequest* other) {
   swap(graph_def_, other->graph_def_);
   swap(graph_options_, other->graph_options_);
   swap(debug_options_, other->debug_options_);
+  swap(config_proto_, other->config_proto_);
   swap(collective_graph_key_, other->collective_graph_key_);
   swap(create_worker_session_called_, other->create_worker_session_called_);
   swap(has_control_flow_, other->has_control_flow_);
@@ -11588,13 +11765,34 @@ void RecvBufResponse::InternalSwap(RecvBufResponse* other) {
 // ===================================================================
 
 void CompleteGroupRequest::InitAsDefaultInstance() {
+  ::tensorflow::_CompleteGroupRequest_default_instance_._instance.get_mutable()->device_attributes_ = const_cast< ::tensorflow::DeviceAttributes*>(
+      ::tensorflow::DeviceAttributes::internal_default_instance());
+}
+void CompleteGroupRequest::unsafe_arena_set_allocated_device_attributes(
+    ::tensorflow::DeviceAttributes* device_attributes) {
+  if (GetArenaNoVirtual() == NULL) {
+    delete device_attributes_;
+  }
+  device_attributes_ = device_attributes;
+  if (device_attributes) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.CompleteGroupRequest.device_attributes)
+}
+void CompleteGroupRequest::clear_device_attributes() {
+  if (GetArenaNoVirtual() == NULL && device_attributes_ != NULL) {
+    delete device_attributes_;
+  }
+  device_attributes_ = NULL;
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CompleteGroupRequest::kGroupKeyFieldNumber;
 const int CompleteGroupRequest::kGroupSizeFieldNumber;
 const int CompleteGroupRequest::kDeviceTypeFieldNumber;
-const int CompleteGroupRequest::kDeviceNameFieldNumber;
 const int CompleteGroupRequest::kCollectiveTypeFieldNumber;
+const int CompleteGroupRequest::kDeviceAttributesFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CompleteGroupRequest::CompleteGroupRequest()
@@ -11606,8 +11804,7 @@ CompleteGroupRequest::CompleteGroupRequest()
 }
 CompleteGroupRequest::CompleteGroupRequest(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
-  _internal_metadata_(arena),
-  device_name_(arena) {
+  _internal_metadata_(arena) {
   ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcore_2fprotobuf_2fworker_2eproto::scc_info_CompleteGroupRequest.base);
   SharedCtor();
   RegisterArenaDtor(arena);
@@ -11615,13 +11812,17 @@ CompleteGroupRequest::CompleteGroupRequest(::google::protobuf::Arena* arena)
 }
 CompleteGroupRequest::CompleteGroupRequest(const CompleteGroupRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      device_name_(from.device_name_) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   device_type_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.device_type().size() > 0) {
     device_type_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.device_type(),
       GetArenaNoVirtual());
+  }
+  if (from.has_device_attributes()) {
+    device_attributes_ = new ::tensorflow::DeviceAttributes(*from.device_attributes_);
+  } else {
+    device_attributes_ = NULL;
   }
   ::memcpy(&group_key_, &from.group_key_,
     static_cast<size_t>(reinterpret_cast<char*>(&collective_type_) -
@@ -11631,9 +11832,9 @@ CompleteGroupRequest::CompleteGroupRequest(const CompleteGroupRequest& from)
 
 void CompleteGroupRequest::SharedCtor() {
   device_type_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&group_key_, 0, static_cast<size_t>(
+  ::memset(&device_attributes_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&collective_type_) -
-      reinterpret_cast<char*>(&group_key_)) + sizeof(collective_type_));
+      reinterpret_cast<char*>(&device_attributes_)) + sizeof(collective_type_));
 }
 
 CompleteGroupRequest::~CompleteGroupRequest() {
@@ -11644,6 +11845,7 @@ CompleteGroupRequest::~CompleteGroupRequest() {
 void CompleteGroupRequest::SharedDtor() {
   GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
   device_type_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (this != internal_default_instance()) delete device_attributes_;
 }
 
 void CompleteGroupRequest::ArenaDtor(void* object) {
@@ -11672,8 +11874,11 @@ void CompleteGroupRequest::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  device_name_.Clear();
   device_type_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  if (GetArenaNoVirtual() == NULL && device_attributes_ != NULL) {
+    delete device_attributes_;
+  }
+  device_attributes_ = NULL;
   ::memset(&group_key_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&collective_type_) -
       reinterpret_cast<char*>(&group_key_)) + sizeof(collective_type_));
@@ -11734,23 +11939,6 @@ bool CompleteGroupRequest::MergePartialFromCodedStream(
         break;
       }
 
-      // repeated string device_name = 4;
-      case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
-                input, this->add_device_name()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-            this->device_name(this->device_name_size() - 1).data(),
-            static_cast<int>(this->device_name(this->device_name_size() - 1).length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
-            "tensorflow.CompleteGroupRequest.device_name"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
       // int32 collective_type = 5;
       case 5: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
@@ -11759,6 +11947,18 @@ bool CompleteGroupRequest::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &collective_type_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .tensorflow.DeviceAttributes device_attributes = 6;
+      case 6: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_device_attributes()));
         } else {
           goto handle_unusual;
         }
@@ -11811,19 +12011,15 @@ void CompleteGroupRequest::SerializeWithCachedSizes(
       3, this->device_type(), output);
   }
 
-  // repeated string device_name = 4;
-  for (int i = 0, n = this->device_name_size(); i < n; i++) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->device_name(i).data(), static_cast<int>(this->device_name(i).length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.CompleteGroupRequest.device_name");
-    ::google::protobuf::internal::WireFormatLite::WriteString(
-      4, this->device_name(i), output);
-  }
-
   // int32 collective_type = 5;
   if (this->collective_type() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(5, this->collective_type(), output);
+  }
+
+  // .tensorflow.DeviceAttributes device_attributes = 6;
+  if (this->has_device_attributes()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      6, this->_internal_device_attributes(), output);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -11861,19 +12057,16 @@ void CompleteGroupRequest::SerializeWithCachedSizes(
         3, this->device_type(), target);
   }
 
-  // repeated string device_name = 4;
-  for (int i = 0, n = this->device_name_size(); i < n; i++) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->device_name(i).data(), static_cast<int>(this->device_name(i).length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.CompleteGroupRequest.device_name");
-    target = ::google::protobuf::internal::WireFormatLite::
-      WriteStringToArray(4, this->device_name(i), target);
-  }
-
   // int32 collective_type = 5;
   if (this->collective_type() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(5, this->collective_type(), target);
+  }
+
+  // .tensorflow.DeviceAttributes device_attributes = 6;
+  if (this->has_device_attributes()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        6, this->_internal_device_attributes(), deterministic, target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -11893,19 +12086,18 @@ size_t CompleteGroupRequest::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
-  // repeated string device_name = 4;
-  total_size += 1 *
-      ::google::protobuf::internal::FromIntSize(this->device_name_size());
-  for (int i = 0, n = this->device_name_size(); i < n; i++) {
-    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
-      this->device_name(i));
-  }
-
   // string device_type = 3;
   if (this->device_type().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->device_type());
+  }
+
+  // .tensorflow.DeviceAttributes device_attributes = 6;
+  if (this->has_device_attributes()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *device_attributes_);
   }
 
   // int32 group_key = 1;
@@ -11956,9 +12148,11 @@ void CompleteGroupRequest::MergeFrom(const CompleteGroupRequest& from) {
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  device_name_.MergeFrom(from.device_name_);
   if (from.device_type().size() > 0) {
     set_device_type(from.device_type());
+  }
+  if (from.has_device_attributes()) {
+    mutable_device_attributes()->::tensorflow::DeviceAttributes::MergeFrom(from.device_attributes());
   }
   if (from.group_key() != 0) {
     set_group_key(from.group_key());
@@ -12010,9 +12204,9 @@ void CompleteGroupRequest::UnsafeArenaSwap(CompleteGroupRequest* other) {
 }
 void CompleteGroupRequest::InternalSwap(CompleteGroupRequest* other) {
   using std::swap;
-  device_name_.InternalSwap(CastToBase(&other->device_name_));
   device_type_.Swap(&other->device_type_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
+  swap(device_attributes_, other->device_attributes_);
   swap(group_key_, other->group_key_);
   swap(group_size_, other->group_size_);
   swap(collective_type_, other->collective_type_);
@@ -12029,14 +12223,16 @@ void CompleteGroupRequest::InternalSwap(CompleteGroupRequest* other) {
 
 void CompleteGroupResponse::InitAsDefaultInstance() {
 }
+void CompleteGroupResponse::clear_device_attributes() {
+  device_attributes_.Clear();
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CompleteGroupResponse::kGroupKeyFieldNumber;
 const int CompleteGroupResponse::kGroupSizeFieldNumber;
 const int CompleteGroupResponse::kDeviceTypeFieldNumber;
 const int CompleteGroupResponse::kNumTasksFieldNumber;
-const int CompleteGroupResponse::kDeviceNameFieldNumber;
-const int CompleteGroupResponse::kTaskNameFieldNumber;
 const int CompleteGroupResponse::kCommunicatorKeyFieldNumber;
+const int CompleteGroupResponse::kDeviceAttributesFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CompleteGroupResponse::CompleteGroupResponse()
@@ -12049,8 +12245,7 @@ CompleteGroupResponse::CompleteGroupResponse()
 CompleteGroupResponse::CompleteGroupResponse(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
-  device_name_(arena),
-  task_name_(arena) {
+  device_attributes_(arena) {
   ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcore_2fprotobuf_2fworker_2eproto::scc_info_CompleteGroupResponse.base);
   SharedCtor();
   RegisterArenaDtor(arena);
@@ -12059,8 +12254,7 @@ CompleteGroupResponse::CompleteGroupResponse(::google::protobuf::Arena* arena)
 CompleteGroupResponse::CompleteGroupResponse(const CompleteGroupResponse& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL),
-      device_name_(from.device_name_),
-      task_name_(from.task_name_) {
+      device_attributes_(from.device_attributes_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   device_type_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.device_type().size() > 0) {
@@ -12123,8 +12317,7 @@ void CompleteGroupResponse::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  device_name_.Clear();
-  task_name_.Clear();
+  device_attributes_.Clear();
   device_type_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
   communicator_key_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
   ::memset(&group_key_, 0, static_cast<size_t>(
@@ -12201,46 +12394,24 @@ bool CompleteGroupResponse::MergePartialFromCodedStream(
         break;
       }
 
-      // repeated string device_name = 5;
-      case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
-                input, this->add_device_name()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-            this->device_name(this->device_name_size() - 1).data(),
-            static_cast<int>(this->device_name(this->device_name_size() - 1).length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
-            "tensorflow.CompleteGroupResponse.device_name"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // repeated string task_name = 6;
-      case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
-                input, this->add_task_name()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-            this->task_name(this->task_name_size() - 1).data(),
-            static_cast<int>(this->task_name(this->task_name_size() - 1).length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
-            "tensorflow.CompleteGroupResponse.task_name"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
       // bytes communicator_key = 7;
       case 7: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(58u /* 58 & 0xFF */)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_communicator_key()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated .tensorflow.DeviceAttributes device_attributes = 8;
+      case 8: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(66u /* 66 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+                input, add_device_attributes()));
         } else {
           goto handle_unusual;
         }
@@ -12298,30 +12469,19 @@ void CompleteGroupResponse::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteInt32(4, this->num_tasks(), output);
   }
 
-  // repeated string device_name = 5;
-  for (int i = 0, n = this->device_name_size(); i < n; i++) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->device_name(i).data(), static_cast<int>(this->device_name(i).length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.CompleteGroupResponse.device_name");
-    ::google::protobuf::internal::WireFormatLite::WriteString(
-      5, this->device_name(i), output);
-  }
-
-  // repeated string task_name = 6;
-  for (int i = 0, n = this->task_name_size(); i < n; i++) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->task_name(i).data(), static_cast<int>(this->task_name(i).length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.CompleteGroupResponse.task_name");
-    ::google::protobuf::internal::WireFormatLite::WriteString(
-      6, this->task_name(i), output);
-  }
-
   // bytes communicator_key = 7;
   if (this->communicator_key().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
       7, this->communicator_key(), output);
+  }
+
+  // repeated .tensorflow.DeviceAttributes device_attributes = 8;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->device_attributes_size()); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      8,
+      this->device_attributes(static_cast<int>(i)),
+      output);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -12364,31 +12524,19 @@ void CompleteGroupResponse::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(4, this->num_tasks(), target);
   }
 
-  // repeated string device_name = 5;
-  for (int i = 0, n = this->device_name_size(); i < n; i++) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->device_name(i).data(), static_cast<int>(this->device_name(i).length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.CompleteGroupResponse.device_name");
-    target = ::google::protobuf::internal::WireFormatLite::
-      WriteStringToArray(5, this->device_name(i), target);
-  }
-
-  // repeated string task_name = 6;
-  for (int i = 0, n = this->task_name_size(); i < n; i++) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->task_name(i).data(), static_cast<int>(this->task_name(i).length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.CompleteGroupResponse.task_name");
-    target = ::google::protobuf::internal::WireFormatLite::
-      WriteStringToArray(6, this->task_name(i), target);
-  }
-
   // bytes communicator_key = 7;
   if (this->communicator_key().size() > 0) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
         7, this->communicator_key(), target);
+  }
+
+  // repeated .tensorflow.DeviceAttributes device_attributes = 8;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->device_attributes_size()); i < n; i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        8, this->device_attributes(static_cast<int>(i)), deterministic, target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -12408,20 +12556,15 @@ size_t CompleteGroupResponse::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
-  // repeated string device_name = 5;
-  total_size += 1 *
-      ::google::protobuf::internal::FromIntSize(this->device_name_size());
-  for (int i = 0, n = this->device_name_size(); i < n; i++) {
-    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
-      this->device_name(i));
-  }
-
-  // repeated string task_name = 6;
-  total_size += 1 *
-      ::google::protobuf::internal::FromIntSize(this->task_name_size());
-  for (int i = 0, n = this->task_name_size(); i < n; i++) {
-    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
-      this->task_name(i));
+  // repeated .tensorflow.DeviceAttributes device_attributes = 8;
+  {
+    unsigned int count = static_cast<unsigned int>(this->device_attributes_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          this->device_attributes(static_cast<int>(i)));
+    }
   }
 
   // string device_type = 3;
@@ -12486,8 +12629,7 @@ void CompleteGroupResponse::MergeFrom(const CompleteGroupResponse& from) {
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  device_name_.MergeFrom(from.device_name_);
-  task_name_.MergeFrom(from.task_name_);
+  device_attributes_.MergeFrom(from.device_attributes_);
   if (from.device_type().size() > 0) {
     set_device_type(from.device_type());
   }
@@ -12544,8 +12686,7 @@ void CompleteGroupResponse::UnsafeArenaSwap(CompleteGroupResponse* other) {
 }
 void CompleteGroupResponse::InternalSwap(CompleteGroupResponse* other) {
   using std::swap;
-  device_name_.InternalSwap(CastToBase(&other->device_name_));
-  task_name_.InternalSwap(CastToBase(&other->task_name_));
+  CastToBase(&device_attributes_)->InternalSwap(CastToBase(&other->device_attributes_));
   device_type_.Swap(&other->device_type_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   communicator_key_.Swap(&other->communicator_key_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),

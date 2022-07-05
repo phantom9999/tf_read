@@ -58,12 +58,22 @@ enum IODataType {
   QUANTIZED_INT16 = 6,
   BOOL = 7,
   COMPLEX64 = 8,
-  INT8 = 9,
-  FLOAT16 = 10
+  QUANTIZED_INT8 = 9,
+  FLOAT16 = 10,
+  FLOAT64 = 11,
+  COMPLEX128 = 12,
+  UINT64 = 13,
+  RESOURCE = 14,
+  VARIANT = 15,
+  UINT32 = 16,
+  UINT8 = 17,
+  INT8 = 18,
+  INT16 = 19,
+  UINT16 = 20
 };
 bool IODataType_IsValid(int value);
 const IODataType IODataType_MIN = IO_DATA_TYPE_UNKNOWN;
-const IODataType IODataType_MAX = FLOAT16;
+const IODataType IODataType_MAX = UINT16;
 const int IODataType_ARRAYSIZE = IODataType_MAX + 1;
 
 const ::google::protobuf::EnumDescriptor* IODataType_descriptor();

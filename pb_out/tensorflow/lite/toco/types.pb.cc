@@ -51,14 +51,17 @@ void AddDescriptorsImpl() {
   InitDefaults();
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n tensorflow/lite/toco/types.proto\022\004toco"
-      "*\255\001\n\nIODataType\022\030\n\024IO_DATA_TYPE_UNKNOWN\020"
+      "*\263\002\n\nIODataType\022\030\n\024IO_DATA_TYPE_UNKNOWN\020"
       "\000\022\t\n\005FLOAT\020\001\022\023\n\017QUANTIZED_UINT8\020\002\022\t\n\005INT"
       "32\020\003\022\t\n\005INT64\020\004\022\n\n\006STRING\020\005\022\023\n\017QUANTIZED"
-      "_INT16\020\006\022\010\n\004BOOL\020\007\022\r\n\tCOMPLEX64\020\010\022\010\n\004INT"
-      "8\020\t\022\013\n\007FLOAT16\020\n"
+      "_INT16\020\006\022\010\n\004BOOL\020\007\022\r\n\tCOMPLEX64\020\010\022\022\n\016QUA"
+      "NTIZED_INT8\020\t\022\013\n\007FLOAT16\020\n\022\013\n\007FLOAT64\020\013\022"
+      "\016\n\nCOMPLEX128\020\014\022\n\n\006UINT64\020\r\022\014\n\010RESOURCE\020"
+      "\016\022\013\n\007VARIANT\020\017\022\n\n\006UINT32\020\020\022\t\n\005UINT8\020\021\022\010\n"
+      "\004INT8\020\022\022\t\n\005INT16\020\023\022\n\n\006UINT16\020\024"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 216);
+      descriptor, 350);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/lite/toco/types.proto", &protobuf_RegisterTypes);
 }
@@ -92,6 +95,16 @@ bool IODataType_IsValid(int value) {
     case 8:
     case 9:
     case 10:
+    case 11:
+    case 12:
+    case 13:
+    case 14:
+    case 15:
+    case 16:
+    case 17:
+    case 18:
+    case 19:
+    case 20:
       return true;
     default:
       return false;

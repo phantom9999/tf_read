@@ -148,13 +148,14 @@ void AddDescriptorsImpl() {
       " \001(\0132\034.tensorflow.TensorShapeProto\022\020\n\010sh"
       "ard_id\030\003 \001(\005\022\016\n\006offset\030\004 \001(\003\022\014\n\004size\030\005 \001"
       "(\003\022\016\n\006crc32c\030\006 \001(\007\022,\n\006slices\030\007 \003(\0132\034.ten"
-      "sorflow.TensorSliceProtoBl\n\023org.tensorfl"
-      "ow.utilB\022TensorBundleProtosP\001Z<github.co"
-      "m/tensorflow/tensorflow/tensorflow/go/co"
-      "re/protobuf\370\001\001b\006proto3"
+      "sorflow.TensorSliceProtoB\205\001\n\023org.tensorf"
+      "low.utilB\022TensorBundleProtosP\001ZUgithub.c"
+      "om/tensorflow/tensorflow/tensorflow/go/c"
+      "ore/protobuf/for_core_protos_go_proto\370\001\001"
+      "b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 742);
+      descriptor, 768);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/protobuf/tensor_bundle.proto", &protobuf_RegisterTypes);
   ::protobuf_tensorflow_2fcore_2fframework_2ftensor_5fshape_2eproto::AddDescriptors();

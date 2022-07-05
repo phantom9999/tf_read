@@ -22,27 +22,34 @@
 namespace protobuf_google_2fprotobuf_2fwrappers_2eproto {
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_google_2fprotobuf_2fwrappers_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_FloatValue;
 }  // namespace protobuf_google_2fprotobuf_2fwrappers_2eproto
+namespace protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto ::google::protobuf::internal::SCCInfo<8> scc_info_HloModuleProto;
+}  // namespace protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto
 namespace protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto {
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_AdadeltaParameters;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_AdagradMomentumParameters;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_AdagradParameters;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_AdamParameters;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_AssignParameters;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_BoundedAdagradParameters;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CenteredRmsPropParameters;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_DynamicLearningRate;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_FrequencyEstimatorParameters;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_FtrlParameters;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_HotIdReplicationConfiguration;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_MdlAdagradLightParameters;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_MomentumParameters;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_OnlineYogiParameters_SignActivation;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_OnlineYogiParameters_TanhActivation;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_OnlineYogiParameters;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ProximalAdagradParameters;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ProximalYogiParameters;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_RmsPropParameters;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_StateVariableSpecification_FillWithConstant;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_StateVariableSpecification_UserDefined;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_StochasticGradientDescentParameters;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_ClippingLimits;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_LearningRate;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_OnlineYogiParameters;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_SimulatedQuantization;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_UserDefinedProgramParameters;
 }  // namespace protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto
 namespace tensorflow {
 namespace tpu {
@@ -51,6 +58,11 @@ class ClippingLimitsDefaultTypeInternal {
   ::google::protobuf::internal::ExplicitlyConstructed<ClippingLimits>
       _instance;
 } _ClippingLimits_default_instance_;
+class SimulatedQuantizationDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<SimulatedQuantization>
+      _instance;
+} _SimulatedQuantization_default_instance_;
 class DynamicLearningRateDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<DynamicLearningRate>
@@ -68,6 +80,11 @@ class AdagradParametersDefaultTypeInternal {
   ::google::protobuf::internal::ExplicitlyConstructed<AdagradParameters>
       _instance;
 } _AdagradParameters_default_instance_;
+class AdagradMomentumParametersDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<AdagradMomentumParameters>
+      _instance;
+} _AdagradMomentumParameters_default_instance_;
 class BoundedAdagradParametersDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<BoundedAdagradParameters>
@@ -118,28 +135,41 @@ class ProximalAdagradParametersDefaultTypeInternal {
   ::google::protobuf::internal::ExplicitlyConstructed<ProximalAdagradParameters>
       _instance;
 } _ProximalAdagradParameters_default_instance_;
-class OnlineYogiParameters_SignActivationDefaultTypeInternal {
- public:
-  ::google::protobuf::internal::ExplicitlyConstructed<OnlineYogiParameters_SignActivation>
-      _instance;
-} _OnlineYogiParameters_SignActivation_default_instance_;
-class OnlineYogiParameters_TanhActivationDefaultTypeInternal {
- public:
-  ::google::protobuf::internal::ExplicitlyConstructed<OnlineYogiParameters_TanhActivation>
-      _instance;
-} _OnlineYogiParameters_TanhActivation_default_instance_;
 class OnlineYogiParametersDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<OnlineYogiParameters>
       _instance;
-  const ::tensorflow::tpu::OnlineYogiParameters_SignActivation* sign_;
-  const ::tensorflow::tpu::OnlineYogiParameters_TanhActivation* tanh_;
 } _OnlineYogiParameters_default_instance_;
+class ProximalYogiParametersDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<ProximalYogiParameters>
+      _instance;
+} _ProximalYogiParameters_default_instance_;
+class FrequencyEstimatorParametersDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<FrequencyEstimatorParameters>
+      _instance;
+} _FrequencyEstimatorParameters_default_instance_;
+class UserDefinedProgramParametersDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<UserDefinedProgramParameters>
+      _instance;
+} _UserDefinedProgramParameters_default_instance_;
+class AssignParametersDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<AssignParameters>
+      _instance;
+} _AssignParameters_default_instance_;
 class GradientAccumulationStatusDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<GradientAccumulationStatus>
       _instance;
 } _GradientAccumulationStatus_default_instance_;
+class LowDimensionalPackingStatusDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<LowDimensionalPackingStatus>
+      _instance;
+} _LowDimensionalPackingStatus_default_instance_;
 class HotIdReplicationConfigurationDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<HotIdReplicationConfiguration>
@@ -150,6 +180,7 @@ class OptimizationParametersDefaultTypeInternal {
   ::google::protobuf::internal::ExplicitlyConstructed<OptimizationParameters>
       _instance;
   const ::tensorflow::tpu::AdagradParameters* adagrad_;
+  const ::tensorflow::tpu::AdagradMomentumParameters* adagrad_momentum_;
   const ::tensorflow::tpu::BoundedAdagradParameters* bounded_adagrad_;
   const ::tensorflow::tpu::StochasticGradientDescentParameters* stochastic_gradient_descent_;
   const ::tensorflow::tpu::FtrlParameters* ftrl_;
@@ -161,6 +192,10 @@ class OptimizationParametersDefaultTypeInternal {
   const ::tensorflow::tpu::AdadeltaParameters* adadelta_;
   const ::tensorflow::tpu::ProximalAdagradParameters* proximal_adagrad_;
   const ::tensorflow::tpu::OnlineYogiParameters* online_yogi_;
+  const ::tensorflow::tpu::ProximalYogiParameters* proximal_yogi_;
+  const ::tensorflow::tpu::FrequencyEstimatorParameters* frequency_estimator_;
+  const ::tensorflow::tpu::UserDefinedProgramParameters* user_defined_program_;
+  const ::tensorflow::tpu::AssignParameters* assign_;
 } _OptimizationParameters_default_instance_;
 class StateVariableSpecification_UserDefinedDefaultTypeInternal {
  public:
@@ -196,6 +231,21 @@ static void InitDefaultsClippingLimits() {
 ::google::protobuf::internal::SCCInfo<1> scc_info_ClippingLimits =
     {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsClippingLimits}, {
       &protobuf_google_2fprotobuf_2fwrappers_2eproto::scc_info_FloatValue.base,}};
+
+static void InitDefaultsSimulatedQuantization() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::tensorflow::tpu::_SimulatedQuantization_default_instance_;
+    new (ptr) ::tensorflow::tpu::SimulatedQuantization();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::tensorflow::tpu::SimulatedQuantization::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<1> scc_info_SimulatedQuantization =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsSimulatedQuantization}, {
+      &protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_ClippingLimits.base,}};
 
 static void InitDefaultsDynamicLearningRate() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -239,6 +289,20 @@ static void InitDefaultsAdagradParameters() {
 
 ::google::protobuf::internal::SCCInfo<0> scc_info_AdagradParameters =
     {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsAdagradParameters}, {}};
+
+static void InitDefaultsAdagradMomentumParameters() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::tensorflow::tpu::_AdagradMomentumParameters_default_instance_;
+    new (ptr) ::tensorflow::tpu::AdagradMomentumParameters();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::tensorflow::tpu::AdagradMomentumParameters::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<0> scc_info_AdagradMomentumParameters =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsAdagradMomentumParameters}, {}};
 
 static void InitDefaultsBoundedAdagradParameters() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -380,34 +444,6 @@ static void InitDefaultsProximalAdagradParameters() {
 ::google::protobuf::internal::SCCInfo<0> scc_info_ProximalAdagradParameters =
     {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProximalAdagradParameters}, {}};
 
-static void InitDefaultsOnlineYogiParameters_SignActivation() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::tensorflow::tpu::_OnlineYogiParameters_SignActivation_default_instance_;
-    new (ptr) ::tensorflow::tpu::OnlineYogiParameters_SignActivation();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::tensorflow::tpu::OnlineYogiParameters_SignActivation::InitAsDefaultInstance();
-}
-
-::google::protobuf::internal::SCCInfo<0> scc_info_OnlineYogiParameters_SignActivation =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsOnlineYogiParameters_SignActivation}, {}};
-
-static void InitDefaultsOnlineYogiParameters_TanhActivation() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::tensorflow::tpu::_OnlineYogiParameters_TanhActivation_default_instance_;
-    new (ptr) ::tensorflow::tpu::OnlineYogiParameters_TanhActivation();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::tensorflow::tpu::OnlineYogiParameters_TanhActivation::InitAsDefaultInstance();
-}
-
-::google::protobuf::internal::SCCInfo<0> scc_info_OnlineYogiParameters_TanhActivation =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsOnlineYogiParameters_TanhActivation}, {}};
-
 static void InitDefaultsOnlineYogiParameters() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -419,10 +455,65 @@ static void InitDefaultsOnlineYogiParameters() {
   ::tensorflow::tpu::OnlineYogiParameters::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<2> scc_info_OnlineYogiParameters =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsOnlineYogiParameters}, {
-      &protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_OnlineYogiParameters_SignActivation.base,
-      &protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_OnlineYogiParameters_TanhActivation.base,}};
+::google::protobuf::internal::SCCInfo<0> scc_info_OnlineYogiParameters =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsOnlineYogiParameters}, {}};
+
+static void InitDefaultsProximalYogiParameters() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::tensorflow::tpu::_ProximalYogiParameters_default_instance_;
+    new (ptr) ::tensorflow::tpu::ProximalYogiParameters();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::tensorflow::tpu::ProximalYogiParameters::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<0> scc_info_ProximalYogiParameters =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProximalYogiParameters}, {}};
+
+static void InitDefaultsFrequencyEstimatorParameters() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::tensorflow::tpu::_FrequencyEstimatorParameters_default_instance_;
+    new (ptr) ::tensorflow::tpu::FrequencyEstimatorParameters();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::tensorflow::tpu::FrequencyEstimatorParameters::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<0> scc_info_FrequencyEstimatorParameters =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsFrequencyEstimatorParameters}, {}};
+
+static void InitDefaultsUserDefinedProgramParameters() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::tensorflow::tpu::_UserDefinedProgramParameters_default_instance_;
+    new (ptr) ::tensorflow::tpu::UserDefinedProgramParameters();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::tensorflow::tpu::UserDefinedProgramParameters::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<1> scc_info_UserDefinedProgramParameters =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsUserDefinedProgramParameters}, {
+      &protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_HloModuleProto.base,}};
+
+static void InitDefaultsAssignParameters() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::tensorflow::tpu::_AssignParameters_default_instance_;
+    new (ptr) ::tensorflow::tpu::AssignParameters();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::tensorflow::tpu::AssignParameters::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<0> scc_info_AssignParameters =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsAssignParameters}, {}};
 
 static void InitDefaultsGradientAccumulationStatus() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -437,6 +528,20 @@ static void InitDefaultsGradientAccumulationStatus() {
 
 ::google::protobuf::internal::SCCInfo<0> scc_info_GradientAccumulationStatus =
     {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsGradientAccumulationStatus}, {}};
+
+static void InitDefaultsLowDimensionalPackingStatus() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::tensorflow::tpu::_LowDimensionalPackingStatus_default_instance_;
+    new (ptr) ::tensorflow::tpu::LowDimensionalPackingStatus();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::tensorflow::tpu::LowDimensionalPackingStatus::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<0> scc_info_LowDimensionalPackingStatus =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsLowDimensionalPackingStatus}, {}};
 
 static void InitDefaultsHotIdReplicationConfiguration() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -463,12 +568,14 @@ static void InitDefaultsOptimizationParameters() {
   ::tensorflow::tpu::OptimizationParameters::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<15> scc_info_OptimizationParameters =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 15, InitDefaultsOptimizationParameters}, {
+::google::protobuf::internal::SCCInfo<21> scc_info_OptimizationParameters =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 21, InitDefaultsOptimizationParameters}, {
       &protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_LearningRate.base,
       &protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_ClippingLimits.base,
+      &protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_SimulatedQuantization.base,
       &protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_HotIdReplicationConfiguration.base,
       &protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_AdagradParameters.base,
+      &protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_AdagradMomentumParameters.base,
       &protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_BoundedAdagradParameters.base,
       &protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_StochasticGradientDescentParameters.base,
       &protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_FtrlParameters.base,
@@ -479,7 +586,11 @@ static void InitDefaultsOptimizationParameters() {
       &protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_MdlAdagradLightParameters.base,
       &protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_AdadeltaParameters.base,
       &protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_ProximalAdagradParameters.base,
-      &protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_OnlineYogiParameters.base,}};
+      &protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_OnlineYogiParameters.base,
+      &protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_ProximalYogiParameters.base,
+      &protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_FrequencyEstimatorParameters.base,
+      &protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_UserDefinedProgramParameters.base,
+      &protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_AssignParameters.base,}};
 
 static void InitDefaultsStateVariableSpecification_UserDefined() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -527,9 +638,11 @@ static void InitDefaultsStateVariableSpecification() {
 
 void InitDefaults() {
   ::google::protobuf::internal::InitSCC(&scc_info_ClippingLimits.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_SimulatedQuantization.base);
   ::google::protobuf::internal::InitSCC(&scc_info_DynamicLearningRate.base);
   ::google::protobuf::internal::InitSCC(&scc_info_LearningRate.base);
   ::google::protobuf::internal::InitSCC(&scc_info_AdagradParameters.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_AdagradMomentumParameters.base);
   ::google::protobuf::internal::InitSCC(&scc_info_BoundedAdagradParameters.base);
   ::google::protobuf::internal::InitSCC(&scc_info_StochasticGradientDescentParameters.base);
   ::google::protobuf::internal::InitSCC(&scc_info_FtrlParameters.base);
@@ -540,10 +653,13 @@ void InitDefaults() {
   ::google::protobuf::internal::InitSCC(&scc_info_MdlAdagradLightParameters.base);
   ::google::protobuf::internal::InitSCC(&scc_info_AdadeltaParameters.base);
   ::google::protobuf::internal::InitSCC(&scc_info_ProximalAdagradParameters.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_OnlineYogiParameters_SignActivation.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_OnlineYogiParameters_TanhActivation.base);
   ::google::protobuf::internal::InitSCC(&scc_info_OnlineYogiParameters.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_ProximalYogiParameters.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_FrequencyEstimatorParameters.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_UserDefinedProgramParameters.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_AssignParameters.base);
   ::google::protobuf::internal::InitSCC(&scc_info_GradientAccumulationStatus.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_LowDimensionalPackingStatus.base);
   ::google::protobuf::internal::InitSCC(&scc_info_HotIdReplicationConfiguration.base);
   ::google::protobuf::internal::InitSCC(&scc_info_OptimizationParameters.base);
   ::google::protobuf::internal::InitSCC(&scc_info_StateVariableSpecification_UserDefined.base);
@@ -551,8 +667,8 @@ void InitDefaults() {
   ::google::protobuf::internal::InitSCC(&scc_info_StateVariableSpecification.base);
 }
 
-::google::protobuf::Metadata file_level_metadata[23];
-const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[2];
+::google::protobuf::Metadata file_level_metadata[28];
+const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[3];
 
 const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
@@ -562,6 +678,14 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   ~0u,  // no _weak_field_map_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::ClippingLimits, lower_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::ClippingLimits, upper_),
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::SimulatedQuantization, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::SimulatedQuantization, enabled_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::SimulatedQuantization, clipping_limits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::SimulatedQuantization, num_buckets_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::DynamicLearningRate, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -581,7 +705,16 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::AdagradParameters, initial_accumulator_),
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::AdagradMomentumParameters, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::AdagradMomentumParameters, momentum_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::AdagradMomentumParameters, use_nesterov_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::AdagradMomentumParameters, exponent_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::AdagradMomentumParameters, beta2_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::AdagradMomentumParameters, epsilon_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::BoundedAdagradParameters, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -603,8 +736,9 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::FtrlParameters, l1_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::FtrlParameters, l2_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::FtrlParameters, lr_power_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::FtrlParameters, initial_accum_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::FtrlParameters, initial_linear_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::FtrlParameters, beta_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::FtrlParameters, multiply_linear_by_lr_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::FtrlParameters, allow_zero_accumulator_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::AdamParameters, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -613,8 +747,6 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::AdamParameters, beta1_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::AdamParameters, beta2_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::AdamParameters, epsilon_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::AdamParameters, initial_m_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::AdamParameters, initial_v_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::AdamParameters, use_non_lazy_adam_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::AdamParameters, use_sum_inside_sqrt_),
   ~0u,  // no _has_bits_
@@ -624,7 +756,6 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   ~0u,  // no _weak_field_map_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::MomentumParameters, momentum_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::MomentumParameters, use_nesterov_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::MomentumParameters, initial_accum_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::RmsPropParameters, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -633,8 +764,6 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::RmsPropParameters, rho_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::RmsPropParameters, momentum_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::RmsPropParameters, epsilon_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::RmsPropParameters, initial_ms_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::RmsPropParameters, initial_mom_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::CenteredRmsPropParameters, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -643,9 +772,6 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::CenteredRmsPropParameters, rho_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::CenteredRmsPropParameters, momentum_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::CenteredRmsPropParameters, epsilon_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::CenteredRmsPropParameters, initial_ms_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::CenteredRmsPropParameters, initial_mom_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::CenteredRmsPropParameters, initial_mg_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::MdlAdagradLightParameters, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -663,9 +789,6 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::MdlAdagradLightParameters, mdl_hard_limit_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::MdlAdagradLightParameters, hard_limit_min_benefit_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::MdlAdagradLightParameters, mdl_regularize_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::MdlAdagradLightParameters, initial_accumulator_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::MdlAdagradLightParameters, initial_weight_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::MdlAdagradLightParameters, initial_benefit_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::AdadeltaParameters, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -673,8 +796,6 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   ~0u,  // no _weak_field_map_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::AdadeltaParameters, rho_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::AdadeltaParameters, epsilon_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::AdadeltaParameters, initial_accumulator_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::AdadeltaParameters, initial_update_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::ProximalAdagradParameters, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -682,32 +803,51 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   ~0u,  // no _weak_field_map_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::ProximalAdagradParameters, l1_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::ProximalAdagradParameters, l2_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::ProximalAdagradParameters, initial_accumulator_),
-  ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::OnlineYogiParameters_SignActivation, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::OnlineYogiParameters_TanhActivation, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::OnlineYogiParameters, _internal_metadata_),
   ~0u,  // no _extensions_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::OnlineYogiParameters, _oneof_case_[0]),
+  ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::OnlineYogiParameters, l1_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::OnlineYogiParameters, l2_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::OnlineYogiParameters, beta2_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::OnlineYogiParameters, initial_v_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::OnlineYogiParameters, initial_linear_),
-  offsetof(::tensorflow::tpu::OnlineYogiParametersDefaultTypeInternal, sign_),
-  offsetof(::tensorflow::tpu::OnlineYogiParametersDefaultTypeInternal, tanh_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::OnlineYogiParameters, activation_),
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::ProximalYogiParameters, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::ProximalYogiParameters, l1_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::ProximalYogiParameters, l2_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::ProximalYogiParameters, beta1_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::ProximalYogiParameters, beta2_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::ProximalYogiParameters, epsilon_),
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::FrequencyEstimatorParameters, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::FrequencyEstimatorParameters, tau_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::FrequencyEstimatorParameters, max_delta_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::FrequencyEstimatorParameters, outlier_threshold_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::FrequencyEstimatorParameters, weight_exponent_),
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::UserDefinedProgramParameters, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::UserDefinedProgramParameters, program_),
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::AssignParameters, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::GradientAccumulationStatus, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::LowDimensionalPackingStatus, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
@@ -726,9 +866,13 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::OptimizationParameters, clipping_limits_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::OptimizationParameters, gradient_clipping_limits_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::OptimizationParameters, weight_decay_factor_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::OptimizationParameters, multiply_weight_decay_factor_by_learning_rate_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::OptimizationParameters, simulated_quantization_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::OptimizationParameters, gradient_accumulation_status_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::OptimizationParameters, low_dimensional_packing_status_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::OptimizationParameters, hot_id_replication_configuration_),
   offsetof(::tensorflow::tpu::OptimizationParametersDefaultTypeInternal, adagrad_),
+  offsetof(::tensorflow::tpu::OptimizationParametersDefaultTypeInternal, adagrad_momentum_),
   offsetof(::tensorflow::tpu::OptimizationParametersDefaultTypeInternal, bounded_adagrad_),
   offsetof(::tensorflow::tpu::OptimizationParametersDefaultTypeInternal, stochastic_gradient_descent_),
   offsetof(::tensorflow::tpu::OptimizationParametersDefaultTypeInternal, ftrl_),
@@ -740,13 +884,16 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   offsetof(::tensorflow::tpu::OptimizationParametersDefaultTypeInternal, adadelta_),
   offsetof(::tensorflow::tpu::OptimizationParametersDefaultTypeInternal, proximal_adagrad_),
   offsetof(::tensorflow::tpu::OptimizationParametersDefaultTypeInternal, online_yogi_),
+  offsetof(::tensorflow::tpu::OptimizationParametersDefaultTypeInternal, proximal_yogi_),
+  offsetof(::tensorflow::tpu::OptimizationParametersDefaultTypeInternal, frequency_estimator_),
+  offsetof(::tensorflow::tpu::OptimizationParametersDefaultTypeInternal, user_defined_program_),
+  offsetof(::tensorflow::tpu::OptimizationParametersDefaultTypeInternal, assign_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::OptimizationParameters, parameters_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::StateVariableSpecification_UserDefined, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::StateVariableSpecification_UserDefined, padding_initial_value_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::StateVariableSpecification_FillWithConstant, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -765,35 +912,42 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::tensorflow::tpu::ClippingLimits)},
-  { 7, -1, sizeof(::tensorflow::tpu::DynamicLearningRate)},
-  { 13, -1, sizeof(::tensorflow::tpu::LearningRate)},
-  { 21, -1, sizeof(::tensorflow::tpu::AdagradParameters)},
-  { 27, -1, sizeof(::tensorflow::tpu::BoundedAdagradParameters)},
-  { 35, -1, sizeof(::tensorflow::tpu::StochasticGradientDescentParameters)},
-  { 40, -1, sizeof(::tensorflow::tpu::FtrlParameters)},
-  { 50, -1, sizeof(::tensorflow::tpu::AdamParameters)},
-  { 62, -1, sizeof(::tensorflow::tpu::MomentumParameters)},
-  { 70, -1, sizeof(::tensorflow::tpu::RmsPropParameters)},
-  { 80, -1, sizeof(::tensorflow::tpu::CenteredRmsPropParameters)},
-  { 91, -1, sizeof(::tensorflow::tpu::MdlAdagradLightParameters)},
-  { 111, -1, sizeof(::tensorflow::tpu::AdadeltaParameters)},
-  { 120, -1, sizeof(::tensorflow::tpu::ProximalAdagradParameters)},
-  { 128, -1, sizeof(::tensorflow::tpu::OnlineYogiParameters_SignActivation)},
-  { 133, -1, sizeof(::tensorflow::tpu::OnlineYogiParameters_TanhActivation)},
-  { 138, -1, sizeof(::tensorflow::tpu::OnlineYogiParameters)},
-  { 151, -1, sizeof(::tensorflow::tpu::GradientAccumulationStatus)},
-  { 156, -1, sizeof(::tensorflow::tpu::HotIdReplicationConfiguration)},
-  { 162, -1, sizeof(::tensorflow::tpu::OptimizationParameters)},
-  { 186, -1, sizeof(::tensorflow::tpu::StateVariableSpecification_UserDefined)},
-  { 192, -1, sizeof(::tensorflow::tpu::StateVariableSpecification_FillWithConstant)},
-  { 198, -1, sizeof(::tensorflow::tpu::StateVariableSpecification)},
+  { 7, -1, sizeof(::tensorflow::tpu::SimulatedQuantization)},
+  { 15, -1, sizeof(::tensorflow::tpu::DynamicLearningRate)},
+  { 21, -1, sizeof(::tensorflow::tpu::LearningRate)},
+  { 29, -1, sizeof(::tensorflow::tpu::AdagradParameters)},
+  { 34, -1, sizeof(::tensorflow::tpu::AdagradMomentumParameters)},
+  { 44, -1, sizeof(::tensorflow::tpu::BoundedAdagradParameters)},
+  { 52, -1, sizeof(::tensorflow::tpu::StochasticGradientDescentParameters)},
+  { 57, -1, sizeof(::tensorflow::tpu::FtrlParameters)},
+  { 68, -1, sizeof(::tensorflow::tpu::AdamParameters)},
+  { 78, -1, sizeof(::tensorflow::tpu::MomentumParameters)},
+  { 85, -1, sizeof(::tensorflow::tpu::RmsPropParameters)},
+  { 93, -1, sizeof(::tensorflow::tpu::CenteredRmsPropParameters)},
+  { 101, -1, sizeof(::tensorflow::tpu::MdlAdagradLightParameters)},
+  { 118, -1, sizeof(::tensorflow::tpu::AdadeltaParameters)},
+  { 125, -1, sizeof(::tensorflow::tpu::ProximalAdagradParameters)},
+  { 132, -1, sizeof(::tensorflow::tpu::OnlineYogiParameters)},
+  { 140, -1, sizeof(::tensorflow::tpu::ProximalYogiParameters)},
+  { 150, -1, sizeof(::tensorflow::tpu::FrequencyEstimatorParameters)},
+  { 159, -1, sizeof(::tensorflow::tpu::UserDefinedProgramParameters)},
+  { 165, -1, sizeof(::tensorflow::tpu::AssignParameters)},
+  { 170, -1, sizeof(::tensorflow::tpu::GradientAccumulationStatus)},
+  { 175, -1, sizeof(::tensorflow::tpu::LowDimensionalPackingStatus)},
+  { 180, -1, sizeof(::tensorflow::tpu::HotIdReplicationConfiguration)},
+  { 186, -1, sizeof(::tensorflow::tpu::OptimizationParameters)},
+  { 218, -1, sizeof(::tensorflow::tpu::StateVariableSpecification_UserDefined)},
+  { 223, -1, sizeof(::tensorflow::tpu::StateVariableSpecification_FillWithConstant)},
+  { 229, -1, sizeof(::tensorflow::tpu::StateVariableSpecification)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::tpu::_ClippingLimits_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::tpu::_SimulatedQuantization_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::tpu::_DynamicLearningRate_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::tpu::_LearningRate_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::tpu::_AdagradParameters_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::tpu::_AdagradMomentumParameters_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::tpu::_BoundedAdagradParameters_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::tpu::_StochasticGradientDescentParameters_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::tpu::_FtrlParameters_default_instance_),
@@ -804,10 +958,13 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::tpu::_MdlAdagradLightParameters_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::tpu::_AdadeltaParameters_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::tpu::_ProximalAdagradParameters_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::tpu::_OnlineYogiParameters_SignActivation_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::tpu::_OnlineYogiParameters_TanhActivation_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::tpu::_OnlineYogiParameters_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::tpu::_ProximalYogiParameters_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::tpu::_FrequencyEstimatorParameters_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::tpu::_UserDefinedProgramParameters_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::tpu::_AssignParameters_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::tpu::_GradientAccumulationStatus_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::tpu::_LowDimensionalPackingStatus_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::tpu::_HotIdReplicationConfiguration_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::tpu::_OptimizationParameters_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::tpu::_StateVariableSpecification_UserDefined_default_instance_),
@@ -830,7 +987,7 @@ void protobuf_AssignDescriptorsOnce() {
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 23);
+  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 28);
 }
 
 void AddDescriptorsImpl() {
@@ -838,106 +995,133 @@ void AddDescriptorsImpl() {
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n:tensorflow/core/protobuf/tpu/optimizat"
       "ion_parameters.proto\022\016tensorflow.tpu\032\036go"
-      "ogle/protobuf/wrappers.proto\"h\n\016Clipping"
-      "Limits\022*\n\005lower\030\001 \001(\0132\033.google.protobuf."
-      "FloatValue\022*\n\005upper\030\002 \001(\0132\033.google.proto"
-      "buf.FloatValue\"\"\n\023DynamicLearningRate\022\013\n"
-      "\003tag\030\001 \001(\005\"k\n\014LearningRate\022\022\n\010constant\030\001"
-      " \001(\002H\000\0226\n\007dynamic\030\002 \001(\0132#.tensorflow.tpu"
-      ".DynamicLearningRateH\000B\017\n\rlearning_rate\""
-      "0\n\021AdagradParameters\022\033\n\023initial_accumula"
-      "tor\030\001 \001(\002\"m\n\030BoundedAdagradParameters\022 \n"
+      "ogle/protobuf/wrappers.proto\032)tensorflow"
+      "/compiler/xla/service/hlo.proto\"h\n\016Clipp"
+      "ingLimits\022*\n\005lower\030\001 \001(\0132\033.google.protob"
+      "uf.FloatValue\022*\n\005upper\030\002 \001(\0132\033.google.pr"
+      "otobuf.FloatValue\"v\n\025SimulatedQuantizati"
+      "on\022\017\n\007enabled\030\001 \001(\010\0227\n\017clipping_limits\030\002"
+      " \001(\0132\036.tensorflow.tpu.ClippingLimits\022\023\n\013"
+      "num_buckets\030\003 \001(\005\"\"\n\023DynamicLearningRate"
+      "\022\013\n\003tag\030\001 \001(\005\"k\n\014LearningRate\022\022\n\010constan"
+      "t\030\001 \001(\002H\000\0226\n\007dynamic\030\002 \001(\0132#.tensorflow."
+      "tpu.DynamicLearningRateH\000B\017\n\rlearning_ra"
+      "te\".\n\021AdagradParametersJ\004\010\001\020\002R\023initial_a"
+      "ccumulator\"u\n\031AdagradMomentumParameters\022"
+      "\020\n\010momentum\030\001 \001(\002\022\024\n\014use_nesterov\030\002 \001(\010\022"
+      "\020\n\010exponent\030\003 \001(\002\022\r\n\005beta2\030\004 \001(\002\022\017\n\007epsi"
+      "lon\030\005 \001(\002\"m\n\030BoundedAdagradParameters\022 \n"
       "\030update_accumulator_first\030\001 \001(\010\022\026\n\016max_v"
       "ar_update\030\002 \001(\002\022\027\n\017max_accumulator\030\003 \001(\002"
       "\"%\n#StochasticGradientDescentParameters\""
-      "i\n\016FtrlParameters\022\n\n\002l1\030\001 \001(\002\022\n\n\002l2\030\002 \001("
-      "\002\022\020\n\010lr_power\030\003 \001(\002\022\025\n\rinitial_accum\030\004 \001"
-      "(\002\022\026\n\016initial_linear\030\005 \001(\002\"\235\001\n\016AdamParam"
-      "eters\022\r\n\005beta1\030\003 \001(\002\022\r\n\005beta2\030\004 \001(\002\022\017\n\007e"
-      "psilon\030\005 \001(\002\022\021\n\tinitial_m\030\006 \001(\002\022\021\n\tiniti"
-      "al_v\030\007 \001(\002\022\031\n\021use_non_lazy_adam\030\010 \001(\010\022\033\n"
-      "\023use_sum_inside_sqrt\030\n \001(\010\"S\n\022MomentumPa"
-      "rameters\022\020\n\010momentum\030\001 \001(\002\022\024\n\014use_nester"
-      "ov\030\002 \001(\010\022\025\n\rinitial_accum\030\003 \001(\002\"l\n\021RmsPr"
-      "opParameters\022\013\n\003rho\030\001 \001(\002\022\020\n\010momentum\030\002 "
-      "\001(\002\022\017\n\007epsilon\030\003 \001(\002\022\022\n\ninitial_ms\030\004 \001(\002"
-      "\022\023\n\013initial_mom\030\005 \001(\002\"\210\001\n\031CenteredRmsPro"
-      "pParameters\022\013\n\003rho\030\001 \001(\002\022\020\n\010momentum\030\002 \001"
-      "(\002\022\017\n\007epsilon\030\003 \001(\002\022\022\n\ninitial_ms\030\004 \001(\002\022"
-      "\023\n\013initial_mom\030\005 \001(\002\022\022\n\ninitial_mg\030\006 \001(\002"
-      "\"\243\003\n\031MdlAdagradLightParameters\022\n\n\002l2\030\001 \001"
-      "(\002\022\020\n\010lr_power\030\002 \001(\002\022 \n\030min_servable_mdl"
-      "_benefit\030\003 \001(\002\022\031\n\021mdl_mix_in_margin\030\004 \001("
-      "\002\022 \n\030mdl_benefit_rampup_coeff\030\005 \001(\002\022\026\n\016m"
-      "dl_min_weight\030\006 \001(\002\022\035\n\025benefit_revisit_s"
-      "cale\030\007 \001(\002\022\031\n\021max_event_benefit\030\010 \001(\002\022\031\n"
-      "\021max_total_benefit\030\t \001(\002\022\026\n\016mdl_hard_lim"
-      "it\030\n \001(\002\022\036\n\026hard_limit_min_benefit\030\013 \001(\010"
-      "\022\026\n\016mdl_regularize\030\014 \001(\010\022\033\n\023initial_accu"
-      "mulator\030\r \001(\002\022\026\n\016initial_weight\030\016 \001(\002\022\027\n"
-      "\017initial_benefit\030\017 \001(\002\"g\n\022AdadeltaParame"
-      "ters\022\013\n\003rho\030\001 \001(\002\022\017\n\007epsilon\030\002 \001(\002\022\033\n\023in"
-      "itial_accumulator\030\003 \001(\002\022\026\n\016initial_updat"
-      "e\030\004 \001(\002\"P\n\031ProximalAdagradParameters\022\n\n\002"
-      "l1\030\001 \001(\002\022\n\n\002l2\030\002 \001(\002\022\033\n\023initial_accumula"
-      "tor\030\003 \001(\002\"\244\002\n\024OnlineYogiParameters\022\n\n\002l1"
-      "\030\001 \001(\002\022\n\n\002l2\030\002 \001(\002\022\r\n\005beta2\030\003 \001(\002\022\021\n\tini"
-      "tial_v\030\004 \001(\002\022\026\n\016initial_linear\030\005 \001(\002\022C\n\004"
-      "sign\030\006 \001(\01323.tensorflow.tpu.OnlineYogiPa"
-      "rameters.SignActivationH\000\022C\n\004tanh\030\007 \001(\0132"
-      "3.tensorflow.tpu.OnlineYogiParameters.Ta"
-      "nhActivationH\000\032\020\n\016SignActivation\032\020\n\016Tanh"
-      "ActivationB\014\n\nactivation\"R\n\032GradientAccu"
-      "mulationStatus\"4\n\006Status\022\017\n\013UNSPECIFIED\020"
-      "\000\022\013\n\007ENABLED\020\001\022\014\n\010DISABLED\020\002\"\233\001\n\035HotIdRe"
-      "plicationConfiguration\022D\n\006status\030\001 \001(\01624"
-      ".tensorflow.tpu.HotIdReplicationConfigur"
-      "ation.Status\"4\n\006Status\022\017\n\013UNSPECIFIED\020\000\022"
-      "\013\n\007ENABLED\020\001\022\014\n\010DISABLED\020\002\"\243\t\n\026Optimizat"
-      "ionParameters\0223\n\rlearning_rate\030\r \001(\0132\034.t"
-      "ensorflow.tpu.LearningRate\0227\n\017clipping_l"
-      "imits\030\002 \001(\0132\036.tensorflow.tpu.ClippingLim"
-      "its\022@\n\030gradient_clipping_limits\030\007 \001(\0132\036."
-      "tensorflow.tpu.ClippingLimits\022\033\n\023weight_"
-      "decay_factor\030\020 \001(\002\022W\n\034gradient_accumulat"
-      "ion_status\030\021 \001(\01621.tensorflow.tpu.Gradie"
-      "ntAccumulationStatus.Status\022W\n hot_id_re"
-      "plication_configuration\030\022 \001(\0132-.tensorfl"
-      "ow.tpu.HotIdReplicationConfiguration\0224\n\007"
-      "adagrad\030\003 \001(\0132!.tensorflow.tpu.AdagradPa"
-      "rametersH\000\022C\n\017bounded_adagrad\030\023 \001(\0132(.te"
-      "nsorflow.tpu.BoundedAdagradParametersH\000\022"
-      "Z\n\033stochastic_gradient_descent\030\004 \001(\01323.t"
-      "ensorflow.tpu.StochasticGradientDescentP"
-      "arametersH\000\022.\n\004ftrl\030\005 \001(\0132\036.tensorflow.t"
-      "pu.FtrlParametersH\000\022.\n\004adam\030\006 \001(\0132\036.tens"
-      "orflow.tpu.AdamParametersH\000\0226\n\010momentum\030"
-      "\010 \001(\0132\".tensorflow.tpu.MomentumParameter"
-      "sH\000\0225\n\010rms_prop\030\t \001(\0132!.tensorflow.tpu.R"
-      "msPropParametersH\000\022F\n\021centered_rms_prop\030"
-      "\n \001(\0132).tensorflow.tpu.CenteredRmsPropPa"
-      "rametersH\000\022F\n\021mdl_adagrad_light\030\013 \001(\0132)."
-      "tensorflow.tpu.MdlAdagradLightParameters"
-      "H\000\0226\n\010adadelta\030\014 \001(\0132\".tensorflow.tpu.Ad"
-      "adeltaParametersH\000\022E\n\020proximal_adagrad\030\016"
-      " \001(\0132).tensorflow.tpu.ProximalAdagradPar"
-      "ametersH\000\022;\n\013online_yogi\030\024 \001(\0132$.tensorf"
-      "low.tpu.OnlineYogiParametersH\000B\014\n\nparame"
-      "tersJ\004\010\001\020\002J\004\010\017\020\020\"\267\002\n\032StateVariableSpecif"
-      "ication\022\014\n\004name\030\001 \001(\t\022N\n\014user_defined\030\002 "
-      "\001(\01326.tensorflow.tpu.StateVariableSpecif"
-      "ication.UserDefinedH\000\022Y\n\022fill_with_const"
-      "ant\030\003 \001(\0132;.tensorflow.tpu.StateVariable"
-      "Specification.FillWithConstantH\000\032,\n\013User"
-      "Defined\022\035\n\025padding_initial_value\030\001 \001(\001\032)"
-      "\n\020FillWithConstant\022\025\n\rinitial_value\030\001 \001("
-      "\001B\007\n\005usageb\006proto3"
+      "\266\001\n\016FtrlParameters\022\n\n\002l1\030\001 \001(\002\022\n\n\002l2\030\002 \001"
+      "(\002\022\020\n\010lr_power\030\003 \001(\002\022\014\n\004beta\030\007 \001(\002\022\035\n\025mu"
+      "ltiply_linear_by_lr\030\006 \001(\010\022\"\n\026allow_zero_"
+      "accumulator\030\010 \001(\010B\002\030\001J\004\010\004\020\005J\004\010\005\020\006R\riniti"
+      "al_accumR\016initial_linear\"\231\001\n\016AdamParamet"
+      "ers\022\r\n\005beta1\030\003 \001(\002\022\r\n\005beta2\030\004 \001(\002\022\017\n\007eps"
+      "ilon\030\005 \001(\002\022\031\n\021use_non_lazy_adam\030\010 \001(\010\022\033\n"
+      "\023use_sum_inside_sqrt\030\n \001(\010J\004\010\006\020\007J\004\010\007\020\010R\t"
+      "initial_mR\tinitial_v\"Q\n\022MomentumParamete"
+      "rs\022\020\n\010momentum\030\001 \001(\002\022\024\n\014use_nesterov\030\002 \001"
+      "(\010J\004\010\003\020\004R\rinitial_accum\"h\n\021RmsPropParame"
+      "ters\022\013\n\003rho\030\001 \001(\002\022\020\n\010momentum\030\002 \001(\002\022\017\n\007e"
+      "psilon\030\003 \001(\002J\004\010\004\020\005J\004\010\005\020\006R\ninitial_msR\013in"
+      "itial_mom\"\202\001\n\031CenteredRmsPropParameters\022"
+      "\013\n\003rho\030\001 \001(\002\022\020\n\010momentum\030\002 \001(\002\022\017\n\007epsilo"
+      "n\030\003 \001(\002J\004\010\004\020\005J\004\010\005\020\006J\004\010\006\020\007R\ninitial_msR\013i"
+      "nitial_momR\ninitial_mg\"\235\003\n\031MdlAdagradLig"
+      "htParameters\022\n\n\002l2\030\001 \001(\002\022\020\n\010lr_power\030\002 \001"
+      "(\002\022 \n\030min_servable_mdl_benefit\030\003 \001(\002\022\031\n\021"
+      "mdl_mix_in_margin\030\004 \001(\002\022 \n\030mdl_benefit_r"
+      "ampup_coeff\030\005 \001(\002\022\026\n\016mdl_min_weight\030\006 \001("
+      "\002\022\035\n\025benefit_revisit_scale\030\007 \001(\002\022\031\n\021max_"
+      "event_benefit\030\010 \001(\002\022\031\n\021max_total_benefit"
+      "\030\t \001(\002\022\026\n\016mdl_hard_limit\030\n \001(\002\022\036\n\026hard_l"
+      "imit_min_benefit\030\013 \001(\010\022\026\n\016mdl_regularize"
+      "\030\014 \001(\010J\004\010\r\020\016J\004\010\016\020\017J\004\010\017\020\020R\023initial_accumu"
+      "latorR\016initial_weightR\017initial_benefit\"c"
+      "\n\022AdadeltaParameters\022\013\n\003rho\030\001 \001(\002\022\017\n\007eps"
+      "ilon\030\002 \001(\002J\004\010\003\020\004J\004\010\004\020\005R\023initial_accumula"
+      "torR\016initial_update\"N\n\031ProximalAdagradPa"
+      "rameters\022\n\n\002l1\030\001 \001(\002\022\n\n\002l2\030\002 \001(\002J\004\010\003\020\004R\023"
+      "initial_accumulator\"I\n\024OnlineYogiParamet"
+      "ers\022\n\n\002l1\030\001 \001(\002\022\n\n\002l2\030\002 \001(\002\022\r\n\005beta2\030\003 \001"
+      "(\002J\004\010\006\020\007J\004\010\007\020\010\"k\n\026ProximalYogiParameters"
+      "\022\n\n\002l1\030\001 \001(\002\022\n\n\002l2\030\002 \001(\002\022\r\n\005beta1\030\003 \001(\002\022"
+      "\r\n\005beta2\030\004 \001(\002\022\017\n\007epsilon\030\005 \001(\002J\004\010\010\020\tJ\004\010"
+      "\t\020\n\"r\n\034FrequencyEstimatorParameters\022\013\n\003t"
+      "au\030\001 \001(\002\022\021\n\tmax_delta\030\002 \001(\002\022\031\n\021outlier_t"
+      "hreshold\030\003 \001(\002\022\027\n\017weight_exponent\030\004 \001(\002\""
+      "J\n\034UserDefinedProgramParameters\022$\n\007progr"
+      "am\030\001 \001(\0132\023.xla.HloModuleProtoJ\004\010\002\020\003\"\022\n\020A"
+      "ssignParameters\"R\n\032GradientAccumulationS"
+      "tatus\"4\n\006Status\022\017\n\013UNSPECIFIED\020\000\022\013\n\007ENAB"
+      "LED\020\001\022\014\n\010DISABLED\020\002\"S\n\033LowDimensionalPac"
+      "kingStatus\"4\n\006Status\022\017\n\013UNSPECIFIED\020\000\022\013\n"
+      "\007ENABLED\020\001\022\014\n\010DISABLED\020\002\"\233\001\n\035HotIdReplic"
+      "ationConfiguration\022D\n\006status\030\001 \001(\01624.ten"
+      "sorflow.tpu.HotIdReplicationConfiguratio"
+      "n.Status\"4\n\006Status\022\017\n\013UNSPECIFIED\020\000\022\013\n\007E"
+      "NABLED\020\001\022\014\n\010DISABLED\020\002\"\324\r\n\026OptimizationP"
+      "arameters\0223\n\rlearning_rate\030\r \001(\0132\034.tenso"
+      "rflow.tpu.LearningRate\0227\n\017clipping_limit"
+      "s\030\002 \001(\0132\036.tensorflow.tpu.ClippingLimits\022"
+      "@\n\030gradient_clipping_limits\030\007 \001(\0132\036.tens"
+      "orflow.tpu.ClippingLimits\022\033\n\023weight_deca"
+      "y_factor\030\020 \001(\002\0225\n-multiply_weight_decay_"
+      "factor_by_learning_rate\030\026 \001(\010\022E\n\026simulat"
+      "ed_quantization\030\033 \001(\0132%.tensorflow.tpu.S"
+      "imulatedQuantization\022W\n\034gradient_accumul"
+      "ation_status\030\021 \001(\01621.tensorflow.tpu.Grad"
+      "ientAccumulationStatus.Status\022Z\n\036low_dim"
+      "ensional_packing_status\030\034 \001(\01622.tensorfl"
+      "ow.tpu.LowDimensionalPackingStatus.Statu"
+      "s\022W\n hot_id_replication_configuration\030\022 "
+      "\001(\0132-.tensorflow.tpu.HotIdReplicationCon"
+      "figuration\0224\n\007adagrad\030\003 \001(\0132!.tensorflow"
+      ".tpu.AdagradParametersH\000\022E\n\020adagrad_mome"
+      "ntum\030\032 \001(\0132).tensorflow.tpu.AdagradMomen"
+      "tumParametersH\000\022C\n\017bounded_adagrad\030\023 \001(\013"
+      "2(.tensorflow.tpu.BoundedAdagradParamete"
+      "rsH\000\022Z\n\033stochastic_gradient_descent\030\004 \001("
+      "\01323.tensorflow.tpu.StochasticGradientDes"
+      "centParametersH\000\022.\n\004ftrl\030\005 \001(\0132\036.tensorf"
+      "low.tpu.FtrlParametersH\000\022.\n\004adam\030\006 \001(\0132\036"
+      ".tensorflow.tpu.AdamParametersH\000\0226\n\010mome"
+      "ntum\030\010 \001(\0132\".tensorflow.tpu.MomentumPara"
+      "metersH\000\0225\n\010rms_prop\030\t \001(\0132!.tensorflow."
+      "tpu.RmsPropParametersH\000\022F\n\021centered_rms_"
+      "prop\030\n \001(\0132).tensorflow.tpu.CenteredRmsP"
+      "ropParametersH\000\022F\n\021mdl_adagrad_light\030\013 \001"
+      "(\0132).tensorflow.tpu.MdlAdagradLightParam"
+      "etersH\000\0226\n\010adadelta\030\014 \001(\0132\".tensorflow.t"
+      "pu.AdadeltaParametersH\000\022E\n\020proximal_adag"
+      "rad\030\016 \001(\0132).tensorflow.tpu.ProximalAdagr"
+      "adParametersH\000\022;\n\013online_yogi\030\024 \001(\0132$.te"
+      "nsorflow.tpu.OnlineYogiParametersH\000\022\?\n\rp"
+      "roximal_yogi\030\025 \001(\0132&.tensorflow.tpu.Prox"
+      "imalYogiParametersH\000\022K\n\023frequency_estima"
+      "tor\030\027 \001(\0132,.tensorflow.tpu.FrequencyEsti"
+      "matorParametersH\000\022L\n\024user_defined_progra"
+      "m\030\030 \001(\0132,.tensorflow.tpu.UserDefinedProg"
+      "ramParametersH\000\0222\n\006assign\030\031 \001(\0132 .tensor"
+      "flow.tpu.AssignParametersH\000B\014\n\nparameter"
+      "sJ\004\010\001\020\002J\004\010\017\020\020\"\236\002\n\032StateVariableSpecifica"
+      "tion\022\014\n\004name\030\001 \001(\t\022N\n\014user_defined\030\002 \001(\013"
+      "26.tensorflow.tpu.StateVariableSpecifica"
+      "tion.UserDefinedH\000\022Y\n\022fill_with_constant"
+      "\030\003 \001(\0132;.tensorflow.tpu.StateVariableSpe"
+      "cification.FillWithConstantH\000\032\023\n\013UserDef"
+      "inedJ\004\010\001\020\002\032)\n\020FillWithConstant\022\025\n\rinitia"
+      "l_value\030\001 \001(\001B\007\n\005usageb\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 3818);
+      descriptor, 4870);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/protobuf/tpu/optimization_parameters.proto", &protobuf_RegisterTypes);
   ::protobuf_google_2fprotobuf_2fwrappers_2eproto::AddDescriptors();
+  ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::AddDescriptors();
 }
 
 void AddDescriptors() {
@@ -976,9 +1160,32 @@ const GradientAccumulationStatus_Status GradientAccumulationStatus::Status_MIN;
 const GradientAccumulationStatus_Status GradientAccumulationStatus::Status_MAX;
 const int GradientAccumulationStatus::Status_ARRAYSIZE;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-const ::google::protobuf::EnumDescriptor* HotIdReplicationConfiguration_Status_descriptor() {
+const ::google::protobuf::EnumDescriptor* LowDimensionalPackingStatus_Status_descriptor() {
   protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::protobuf_AssignDescriptorsOnce();
   return protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::file_level_enum_descriptors[1];
+}
+bool LowDimensionalPackingStatus_Status_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+      return true;
+    default:
+      return false;
+  }
+}
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const LowDimensionalPackingStatus_Status LowDimensionalPackingStatus::UNSPECIFIED;
+const LowDimensionalPackingStatus_Status LowDimensionalPackingStatus::ENABLED;
+const LowDimensionalPackingStatus_Status LowDimensionalPackingStatus::DISABLED;
+const LowDimensionalPackingStatus_Status LowDimensionalPackingStatus::Status_MIN;
+const LowDimensionalPackingStatus_Status LowDimensionalPackingStatus::Status_MAX;
+const int LowDimensionalPackingStatus::Status_ARRAYSIZE;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+const ::google::protobuf::EnumDescriptor* HotIdReplicationConfiguration_Status_descriptor() {
+  protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::file_level_enum_descriptors[2];
 }
 bool HotIdReplicationConfiguration_Status_IsValid(int value) {
   switch (value) {
@@ -1292,6 +1499,318 @@ void ClippingLimits::InternalSwap(ClippingLimits* other) {
 }
 
 ::google::protobuf::Metadata ClippingLimits::GetMetadata() const {
+  protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void SimulatedQuantization::InitAsDefaultInstance() {
+  ::tensorflow::tpu::_SimulatedQuantization_default_instance_._instance.get_mutable()->clipping_limits_ = const_cast< ::tensorflow::tpu::ClippingLimits*>(
+      ::tensorflow::tpu::ClippingLimits::internal_default_instance());
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int SimulatedQuantization::kEnabledFieldNumber;
+const int SimulatedQuantization::kClippingLimitsFieldNumber;
+const int SimulatedQuantization::kNumBucketsFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+SimulatedQuantization::SimulatedQuantization()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_SimulatedQuantization.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:tensorflow.tpu.SimulatedQuantization)
+}
+SimulatedQuantization::SimulatedQuantization(const SimulatedQuantization& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (from.has_clipping_limits()) {
+    clipping_limits_ = new ::tensorflow::tpu::ClippingLimits(*from.clipping_limits_);
+  } else {
+    clipping_limits_ = NULL;
+  }
+  ::memcpy(&enabled_, &from.enabled_,
+    static_cast<size_t>(reinterpret_cast<char*>(&num_buckets_) -
+    reinterpret_cast<char*>(&enabled_)) + sizeof(num_buckets_));
+  // @@protoc_insertion_point(copy_constructor:tensorflow.tpu.SimulatedQuantization)
+}
+
+void SimulatedQuantization::SharedCtor() {
+  ::memset(&clipping_limits_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&num_buckets_) -
+      reinterpret_cast<char*>(&clipping_limits_)) + sizeof(num_buckets_));
+}
+
+SimulatedQuantization::~SimulatedQuantization() {
+  // @@protoc_insertion_point(destructor:tensorflow.tpu.SimulatedQuantization)
+  SharedDtor();
+}
+
+void SimulatedQuantization::SharedDtor() {
+  if (this != internal_default_instance()) delete clipping_limits_;
+}
+
+void SimulatedQuantization::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* SimulatedQuantization::descriptor() {
+  ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const SimulatedQuantization& SimulatedQuantization::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_SimulatedQuantization.base);
+  return *internal_default_instance();
+}
+
+
+void SimulatedQuantization::Clear() {
+// @@protoc_insertion_point(message_clear_start:tensorflow.tpu.SimulatedQuantization)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (GetArenaNoVirtual() == NULL && clipping_limits_ != NULL) {
+    delete clipping_limits_;
+  }
+  clipping_limits_ = NULL;
+  ::memset(&enabled_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&num_buckets_) -
+      reinterpret_cast<char*>(&enabled_)) + sizeof(num_buckets_));
+  _internal_metadata_.Clear();
+}
+
+bool SimulatedQuantization::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:tensorflow.tpu.SimulatedQuantization)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // bool enabled = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &enabled_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .tensorflow.tpu.ClippingLimits clipping_limits = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_clipping_limits()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int32 num_buckets = 3;
+      case 3: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &num_buckets_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:tensorflow.tpu.SimulatedQuantization)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:tensorflow.tpu.SimulatedQuantization)
+  return false;
+#undef DO_
+}
+
+void SimulatedQuantization::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:tensorflow.tpu.SimulatedQuantization)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // bool enabled = 1;
+  if (this->enabled() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(1, this->enabled(), output);
+  }
+
+  // .tensorflow.tpu.ClippingLimits clipping_limits = 2;
+  if (this->has_clipping_limits()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      2, this->_internal_clipping_limits(), output);
+  }
+
+  // int32 num_buckets = 3;
+  if (this->num_buckets() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(3, this->num_buckets(), output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:tensorflow.tpu.SimulatedQuantization)
+}
+
+::google::protobuf::uint8* SimulatedQuantization::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:tensorflow.tpu.SimulatedQuantization)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // bool enabled = 1;
+  if (this->enabled() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(1, this->enabled(), target);
+  }
+
+  // .tensorflow.tpu.ClippingLimits clipping_limits = 2;
+  if (this->has_clipping_limits()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        2, this->_internal_clipping_limits(), deterministic, target);
+  }
+
+  // int32 num_buckets = 3;
+  if (this->num_buckets() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(3, this->num_buckets(), target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:tensorflow.tpu.SimulatedQuantization)
+  return target;
+}
+
+size_t SimulatedQuantization::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:tensorflow.tpu.SimulatedQuantization)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // .tensorflow.tpu.ClippingLimits clipping_limits = 2;
+  if (this->has_clipping_limits()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *clipping_limits_);
+  }
+
+  // bool enabled = 1;
+  if (this->enabled() != 0) {
+    total_size += 1 + 1;
+  }
+
+  // int32 num_buckets = 3;
+  if (this->num_buckets() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->num_buckets());
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void SimulatedQuantization::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:tensorflow.tpu.SimulatedQuantization)
+  GOOGLE_DCHECK_NE(&from, this);
+  const SimulatedQuantization* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const SimulatedQuantization>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:tensorflow.tpu.SimulatedQuantization)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:tensorflow.tpu.SimulatedQuantization)
+    MergeFrom(*source);
+  }
+}
+
+void SimulatedQuantization::MergeFrom(const SimulatedQuantization& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.tpu.SimulatedQuantization)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.has_clipping_limits()) {
+    mutable_clipping_limits()->::tensorflow::tpu::ClippingLimits::MergeFrom(from.clipping_limits());
+  }
+  if (from.enabled() != 0) {
+    set_enabled(from.enabled());
+  }
+  if (from.num_buckets() != 0) {
+    set_num_buckets(from.num_buckets());
+  }
+}
+
+void SimulatedQuantization::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:tensorflow.tpu.SimulatedQuantization)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void SimulatedQuantization::CopyFrom(const SimulatedQuantization& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:tensorflow.tpu.SimulatedQuantization)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool SimulatedQuantization::IsInitialized() const {
+  return true;
+}
+
+void SimulatedQuantization::Swap(SimulatedQuantization* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void SimulatedQuantization::InternalSwap(SimulatedQuantization* other) {
+  using std::swap;
+  swap(clipping_limits_, other->clipping_limits_);
+  swap(enabled_, other->enabled_);
+  swap(num_buckets_, other->num_buckets_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata SimulatedQuantization::GetMetadata() const {
   protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::protobuf_AssignDescriptorsOnce();
   return ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::file_level_metadata[kIndexInFileMessages];
 }
@@ -1848,7 +2367,6 @@ void LearningRate::InternalSwap(LearningRate* other) {
 void AdagradParameters::InitAsDefaultInstance() {
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int AdagradParameters::kInitialAccumulatorFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 AdagradParameters::AdagradParameters()
@@ -1862,12 +2380,10 @@ AdagradParameters::AdagradParameters(const AdagradParameters& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  initial_accumulator_ = from.initial_accumulator_;
   // @@protoc_insertion_point(copy_constructor:tensorflow.tpu.AdagradParameters)
 }
 
 void AdagradParameters::SharedCtor() {
-  initial_accumulator_ = 0;
 }
 
 AdagradParameters::~AdagradParameters() {
@@ -1898,7 +2414,6 @@ void AdagradParameters::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  initial_accumulator_ = 0;
   _internal_metadata_.Clear();
 }
 
@@ -1911,31 +2426,12 @@ bool AdagradParameters::MergePartialFromCodedStream(
     ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // float initial_accumulator = 1;
-      case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(13u /* 13 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
-                 input, &initial_accumulator_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::google::protobuf::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
+  handle_unusual:
+    if (tag == 0) {
+      goto success;
     }
+    DO_(::google::protobuf::internal::WireFormat::SkipField(
+          input, tag, _internal_metadata_.mutable_unknown_fields()));
   }
 success:
   // @@protoc_insertion_point(parse_success:tensorflow.tpu.AdagradParameters)
@@ -1952,11 +2448,6 @@ void AdagradParameters::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // float initial_accumulator = 1;
-  if (this->initial_accumulator() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteFloat(1, this->initial_accumulator(), output);
-  }
-
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -1970,11 +2461,6 @@ void AdagradParameters::SerializeWithCachedSizes(
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.tpu.AdagradParameters)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
-
-  // float initial_accumulator = 1;
-  if (this->initial_accumulator() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(1, this->initial_accumulator(), target);
-  }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
@@ -1993,11 +2479,6 @@ size_t AdagradParameters::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
-  // float initial_accumulator = 1;
-  if (this->initial_accumulator() != 0) {
-    total_size += 1 + 4;
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -2025,9 +2506,6 @@ void AdagradParameters::MergeFrom(const AdagradParameters& from) {
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.initial_accumulator() != 0) {
-    set_initial_accumulator(from.initial_accumulator());
-  }
 }
 
 void AdagradParameters::CopyFrom(const ::google::protobuf::Message& from) {
@@ -2054,11 +2532,373 @@ void AdagradParameters::Swap(AdagradParameters* other) {
 }
 void AdagradParameters::InternalSwap(AdagradParameters* other) {
   using std::swap;
-  swap(initial_accumulator_, other->initial_accumulator_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata AdagradParameters::GetMetadata() const {
+  protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void AdagradMomentumParameters::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int AdagradMomentumParameters::kMomentumFieldNumber;
+const int AdagradMomentumParameters::kUseNesterovFieldNumber;
+const int AdagradMomentumParameters::kExponentFieldNumber;
+const int AdagradMomentumParameters::kBeta2FieldNumber;
+const int AdagradMomentumParameters::kEpsilonFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+AdagradMomentumParameters::AdagradMomentumParameters()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_AdagradMomentumParameters.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:tensorflow.tpu.AdagradMomentumParameters)
+}
+AdagradMomentumParameters::AdagradMomentumParameters(const AdagradMomentumParameters& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::memcpy(&momentum_, &from.momentum_,
+    static_cast<size_t>(reinterpret_cast<char*>(&epsilon_) -
+    reinterpret_cast<char*>(&momentum_)) + sizeof(epsilon_));
+  // @@protoc_insertion_point(copy_constructor:tensorflow.tpu.AdagradMomentumParameters)
+}
+
+void AdagradMomentumParameters::SharedCtor() {
+  ::memset(&momentum_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&epsilon_) -
+      reinterpret_cast<char*>(&momentum_)) + sizeof(epsilon_));
+}
+
+AdagradMomentumParameters::~AdagradMomentumParameters() {
+  // @@protoc_insertion_point(destructor:tensorflow.tpu.AdagradMomentumParameters)
+  SharedDtor();
+}
+
+void AdagradMomentumParameters::SharedDtor() {
+}
+
+void AdagradMomentumParameters::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* AdagradMomentumParameters::descriptor() {
+  ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const AdagradMomentumParameters& AdagradMomentumParameters::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_AdagradMomentumParameters.base);
+  return *internal_default_instance();
+}
+
+
+void AdagradMomentumParameters::Clear() {
+// @@protoc_insertion_point(message_clear_start:tensorflow.tpu.AdagradMomentumParameters)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&momentum_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&epsilon_) -
+      reinterpret_cast<char*>(&momentum_)) + sizeof(epsilon_));
+  _internal_metadata_.Clear();
+}
+
+bool AdagradMomentumParameters::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:tensorflow.tpu.AdagradMomentumParameters)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // float momentum = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(13u /* 13 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
+                 input, &momentum_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool use_nesterov = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &use_nesterov_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // float exponent = 3;
+      case 3: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(29u /* 29 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
+                 input, &exponent_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // float beta2 = 4;
+      case 4: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(37u /* 37 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
+                 input, &beta2_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // float epsilon = 5;
+      case 5: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(45u /* 45 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
+                 input, &epsilon_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:tensorflow.tpu.AdagradMomentumParameters)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:tensorflow.tpu.AdagradMomentumParameters)
+  return false;
+#undef DO_
+}
+
+void AdagradMomentumParameters::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:tensorflow.tpu.AdagradMomentumParameters)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // float momentum = 1;
+  if (this->momentum() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteFloat(1, this->momentum(), output);
+  }
+
+  // bool use_nesterov = 2;
+  if (this->use_nesterov() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(2, this->use_nesterov(), output);
+  }
+
+  // float exponent = 3;
+  if (this->exponent() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteFloat(3, this->exponent(), output);
+  }
+
+  // float beta2 = 4;
+  if (this->beta2() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteFloat(4, this->beta2(), output);
+  }
+
+  // float epsilon = 5;
+  if (this->epsilon() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteFloat(5, this->epsilon(), output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:tensorflow.tpu.AdagradMomentumParameters)
+}
+
+::google::protobuf::uint8* AdagradMomentumParameters::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:tensorflow.tpu.AdagradMomentumParameters)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // float momentum = 1;
+  if (this->momentum() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(1, this->momentum(), target);
+  }
+
+  // bool use_nesterov = 2;
+  if (this->use_nesterov() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(2, this->use_nesterov(), target);
+  }
+
+  // float exponent = 3;
+  if (this->exponent() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(3, this->exponent(), target);
+  }
+
+  // float beta2 = 4;
+  if (this->beta2() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(4, this->beta2(), target);
+  }
+
+  // float epsilon = 5;
+  if (this->epsilon() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(5, this->epsilon(), target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:tensorflow.tpu.AdagradMomentumParameters)
+  return target;
+}
+
+size_t AdagradMomentumParameters::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:tensorflow.tpu.AdagradMomentumParameters)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // float momentum = 1;
+  if (this->momentum() != 0) {
+    total_size += 1 + 4;
+  }
+
+  // bool use_nesterov = 2;
+  if (this->use_nesterov() != 0) {
+    total_size += 1 + 1;
+  }
+
+  // float exponent = 3;
+  if (this->exponent() != 0) {
+    total_size += 1 + 4;
+  }
+
+  // float beta2 = 4;
+  if (this->beta2() != 0) {
+    total_size += 1 + 4;
+  }
+
+  // float epsilon = 5;
+  if (this->epsilon() != 0) {
+    total_size += 1 + 4;
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void AdagradMomentumParameters::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:tensorflow.tpu.AdagradMomentumParameters)
+  GOOGLE_DCHECK_NE(&from, this);
+  const AdagradMomentumParameters* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const AdagradMomentumParameters>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:tensorflow.tpu.AdagradMomentumParameters)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:tensorflow.tpu.AdagradMomentumParameters)
+    MergeFrom(*source);
+  }
+}
+
+void AdagradMomentumParameters::MergeFrom(const AdagradMomentumParameters& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.tpu.AdagradMomentumParameters)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.momentum() != 0) {
+    set_momentum(from.momentum());
+  }
+  if (from.use_nesterov() != 0) {
+    set_use_nesterov(from.use_nesterov());
+  }
+  if (from.exponent() != 0) {
+    set_exponent(from.exponent());
+  }
+  if (from.beta2() != 0) {
+    set_beta2(from.beta2());
+  }
+  if (from.epsilon() != 0) {
+    set_epsilon(from.epsilon());
+  }
+}
+
+void AdagradMomentumParameters::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:tensorflow.tpu.AdagradMomentumParameters)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void AdagradMomentumParameters::CopyFrom(const AdagradMomentumParameters& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:tensorflow.tpu.AdagradMomentumParameters)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool AdagradMomentumParameters::IsInitialized() const {
+  return true;
+}
+
+void AdagradMomentumParameters::Swap(AdagradMomentumParameters* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void AdagradMomentumParameters::InternalSwap(AdagradMomentumParameters* other) {
+  using std::swap;
+  swap(momentum_, other->momentum_);
+  swap(use_nesterov_, other->use_nesterov_);
+  swap(exponent_, other->exponent_);
+  swap(beta2_, other->beta2_);
+  swap(epsilon_, other->epsilon_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata AdagradMomentumParameters::GetMetadata() const {
   protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::protobuf_AssignDescriptorsOnce();
   return ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::file_level_metadata[kIndexInFileMessages];
 }
@@ -2546,8 +3386,9 @@ void FtrlParameters::InitAsDefaultInstance() {
 const int FtrlParameters::kL1FieldNumber;
 const int FtrlParameters::kL2FieldNumber;
 const int FtrlParameters::kLrPowerFieldNumber;
-const int FtrlParameters::kInitialAccumFieldNumber;
-const int FtrlParameters::kInitialLinearFieldNumber;
+const int FtrlParameters::kBetaFieldNumber;
+const int FtrlParameters::kMultiplyLinearByLrFieldNumber;
+const int FtrlParameters::kAllowZeroAccumulatorFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 FtrlParameters::FtrlParameters()
@@ -2562,15 +3403,15 @@ FtrlParameters::FtrlParameters(const FtrlParameters& from)
       _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&l1_, &from.l1_,
-    static_cast<size_t>(reinterpret_cast<char*>(&initial_linear_) -
-    reinterpret_cast<char*>(&l1_)) + sizeof(initial_linear_));
+    static_cast<size_t>(reinterpret_cast<char*>(&allow_zero_accumulator_) -
+    reinterpret_cast<char*>(&l1_)) + sizeof(allow_zero_accumulator_));
   // @@protoc_insertion_point(copy_constructor:tensorflow.tpu.FtrlParameters)
 }
 
 void FtrlParameters::SharedCtor() {
   ::memset(&l1_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&initial_linear_) -
-      reinterpret_cast<char*>(&l1_)) + sizeof(initial_linear_));
+      reinterpret_cast<char*>(&allow_zero_accumulator_) -
+      reinterpret_cast<char*>(&l1_)) + sizeof(allow_zero_accumulator_));
 }
 
 FtrlParameters::~FtrlParameters() {
@@ -2602,8 +3443,8 @@ void FtrlParameters::Clear() {
   (void) cached_has_bits;
 
   ::memset(&l1_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&initial_linear_) -
-      reinterpret_cast<char*>(&l1_)) + sizeof(initial_linear_));
+      reinterpret_cast<char*>(&allow_zero_accumulator_) -
+      reinterpret_cast<char*>(&l1_)) + sizeof(allow_zero_accumulator_));
   _internal_metadata_.Clear();
 }
 
@@ -2659,28 +3500,42 @@ bool FtrlParameters::MergePartialFromCodedStream(
         break;
       }
 
-      // float initial_accum = 4;
-      case 4: {
+      // bool multiply_linear_by_lr = 6;
+      case 6: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(37u /* 37 & 0xFF */)) {
+            static_cast< ::google::protobuf::uint8>(48u /* 48 & 0xFF */)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
-                 input, &initial_accum_)));
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &multiply_linear_by_lr_)));
         } else {
           goto handle_unusual;
         }
         break;
       }
 
-      // float initial_linear = 5;
-      case 5: {
+      // float beta = 7;
+      case 7: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(45u /* 45 & 0xFF */)) {
+            static_cast< ::google::protobuf::uint8>(61u /* 61 & 0xFF */)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
-                 input, &initial_linear_)));
+                 input, &beta_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool allow_zero_accumulator = 8 [deprecated = true];
+      case 8: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(64u /* 64 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &allow_zero_accumulator_)));
         } else {
           goto handle_unusual;
         }
@@ -2728,14 +3583,19 @@ void FtrlParameters::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteFloat(3, this->lr_power(), output);
   }
 
-  // float initial_accum = 4;
-  if (this->initial_accum() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteFloat(4, this->initial_accum(), output);
+  // bool multiply_linear_by_lr = 6;
+  if (this->multiply_linear_by_lr() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(6, this->multiply_linear_by_lr(), output);
   }
 
-  // float initial_linear = 5;
-  if (this->initial_linear() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteFloat(5, this->initial_linear(), output);
+  // float beta = 7;
+  if (this->beta() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteFloat(7, this->beta(), output);
+  }
+
+  // bool allow_zero_accumulator = 8 [deprecated = true];
+  if (this->allow_zero_accumulator() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(8, this->allow_zero_accumulator(), output);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -2767,14 +3627,19 @@ void FtrlParameters::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(3, this->lr_power(), target);
   }
 
-  // float initial_accum = 4;
-  if (this->initial_accum() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(4, this->initial_accum(), target);
+  // bool multiply_linear_by_lr = 6;
+  if (this->multiply_linear_by_lr() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(6, this->multiply_linear_by_lr(), target);
   }
 
-  // float initial_linear = 5;
-  if (this->initial_linear() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(5, this->initial_linear(), target);
+  // float beta = 7;
+  if (this->beta() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(7, this->beta(), target);
+  }
+
+  // bool allow_zero_accumulator = 8 [deprecated = true];
+  if (this->allow_zero_accumulator() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(8, this->allow_zero_accumulator(), target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -2809,14 +3674,19 @@ size_t FtrlParameters::ByteSizeLong() const {
     total_size += 1 + 4;
   }
 
-  // float initial_accum = 4;
-  if (this->initial_accum() != 0) {
+  // float beta = 7;
+  if (this->beta() != 0) {
     total_size += 1 + 4;
   }
 
-  // float initial_linear = 5;
-  if (this->initial_linear() != 0) {
-    total_size += 1 + 4;
+  // bool multiply_linear_by_lr = 6;
+  if (this->multiply_linear_by_lr() != 0) {
+    total_size += 1 + 1;
+  }
+
+  // bool allow_zero_accumulator = 8 [deprecated = true];
+  if (this->allow_zero_accumulator() != 0) {
+    total_size += 1 + 1;
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -2855,11 +3725,14 @@ void FtrlParameters::MergeFrom(const FtrlParameters& from) {
   if (from.lr_power() != 0) {
     set_lr_power(from.lr_power());
   }
-  if (from.initial_accum() != 0) {
-    set_initial_accum(from.initial_accum());
+  if (from.beta() != 0) {
+    set_beta(from.beta());
   }
-  if (from.initial_linear() != 0) {
-    set_initial_linear(from.initial_linear());
+  if (from.multiply_linear_by_lr() != 0) {
+    set_multiply_linear_by_lr(from.multiply_linear_by_lr());
+  }
+  if (from.allow_zero_accumulator() != 0) {
+    set_allow_zero_accumulator(from.allow_zero_accumulator());
   }
 }
 
@@ -2890,8 +3763,9 @@ void FtrlParameters::InternalSwap(FtrlParameters* other) {
   swap(l1_, other->l1_);
   swap(l2_, other->l2_);
   swap(lr_power_, other->lr_power_);
-  swap(initial_accum_, other->initial_accum_);
-  swap(initial_linear_, other->initial_linear_);
+  swap(beta_, other->beta_);
+  swap(multiply_linear_by_lr_, other->multiply_linear_by_lr_);
+  swap(allow_zero_accumulator_, other->allow_zero_accumulator_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
@@ -2909,8 +3783,6 @@ void AdamParameters::InitAsDefaultInstance() {
 const int AdamParameters::kBeta1FieldNumber;
 const int AdamParameters::kBeta2FieldNumber;
 const int AdamParameters::kEpsilonFieldNumber;
-const int AdamParameters::kInitialMFieldNumber;
-const int AdamParameters::kInitialVFieldNumber;
 const int AdamParameters::kUseNonLazyAdamFieldNumber;
 const int AdamParameters::kUseSumInsideSqrtFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
@@ -3024,34 +3896,6 @@ bool AdamParameters::MergePartialFromCodedStream(
         break;
       }
 
-      // float initial_m = 6;
-      case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(53u /* 53 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
-                 input, &initial_m_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // float initial_v = 7;
-      case 7: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(61u /* 61 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
-                 input, &initial_v_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
       // bool use_non_lazy_adam = 8;
       case 8: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
@@ -3121,16 +3965,6 @@ void AdamParameters::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteFloat(5, this->epsilon(), output);
   }
 
-  // float initial_m = 6;
-  if (this->initial_m() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteFloat(6, this->initial_m(), output);
-  }
-
-  // float initial_v = 7;
-  if (this->initial_v() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteFloat(7, this->initial_v(), output);
-  }
-
   // bool use_non_lazy_adam = 8;
   if (this->use_non_lazy_adam() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(8, this->use_non_lazy_adam(), output);
@@ -3168,16 +4002,6 @@ void AdamParameters::SerializeWithCachedSizes(
   // float epsilon = 5;
   if (this->epsilon() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(5, this->epsilon(), target);
-  }
-
-  // float initial_m = 6;
-  if (this->initial_m() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(6, this->initial_m(), target);
-  }
-
-  // float initial_v = 7;
-  if (this->initial_v() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(7, this->initial_v(), target);
   }
 
   // bool use_non_lazy_adam = 8;
@@ -3219,16 +4043,6 @@ size_t AdamParameters::ByteSizeLong() const {
 
   // float epsilon = 5;
   if (this->epsilon() != 0) {
-    total_size += 1 + 4;
-  }
-
-  // float initial_m = 6;
-  if (this->initial_m() != 0) {
-    total_size += 1 + 4;
-  }
-
-  // float initial_v = 7;
-  if (this->initial_v() != 0) {
     total_size += 1 + 4;
   }
 
@@ -3278,12 +4092,6 @@ void AdamParameters::MergeFrom(const AdamParameters& from) {
   if (from.epsilon() != 0) {
     set_epsilon(from.epsilon());
   }
-  if (from.initial_m() != 0) {
-    set_initial_m(from.initial_m());
-  }
-  if (from.initial_v() != 0) {
-    set_initial_v(from.initial_v());
-  }
   if (from.use_non_lazy_adam() != 0) {
     set_use_non_lazy_adam(from.use_non_lazy_adam());
   }
@@ -3319,8 +4127,6 @@ void AdamParameters::InternalSwap(AdamParameters* other) {
   swap(beta1_, other->beta1_);
   swap(beta2_, other->beta2_);
   swap(epsilon_, other->epsilon_);
-  swap(initial_m_, other->initial_m_);
-  swap(initial_v_, other->initial_v_);
   swap(use_non_lazy_adam_, other->use_non_lazy_adam_);
   swap(use_sum_inside_sqrt_, other->use_sum_inside_sqrt_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -3339,7 +4145,6 @@ void MomentumParameters::InitAsDefaultInstance() {
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int MomentumParameters::kMomentumFieldNumber;
 const int MomentumParameters::kUseNesterovFieldNumber;
-const int MomentumParameters::kInitialAccumFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 MomentumParameters::MomentumParameters()
@@ -3354,15 +4159,15 @@ MomentumParameters::MomentumParameters(const MomentumParameters& from)
       _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&momentum_, &from.momentum_,
-    static_cast<size_t>(reinterpret_cast<char*>(&initial_accum_) -
-    reinterpret_cast<char*>(&momentum_)) + sizeof(initial_accum_));
+    static_cast<size_t>(reinterpret_cast<char*>(&use_nesterov_) -
+    reinterpret_cast<char*>(&momentum_)) + sizeof(use_nesterov_));
   // @@protoc_insertion_point(copy_constructor:tensorflow.tpu.MomentumParameters)
 }
 
 void MomentumParameters::SharedCtor() {
   ::memset(&momentum_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&initial_accum_) -
-      reinterpret_cast<char*>(&momentum_)) + sizeof(initial_accum_));
+      reinterpret_cast<char*>(&use_nesterov_) -
+      reinterpret_cast<char*>(&momentum_)) + sizeof(use_nesterov_));
 }
 
 MomentumParameters::~MomentumParameters() {
@@ -3394,8 +4199,8 @@ void MomentumParameters::Clear() {
   (void) cached_has_bits;
 
   ::memset(&momentum_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&initial_accum_) -
-      reinterpret_cast<char*>(&momentum_)) + sizeof(initial_accum_));
+      reinterpret_cast<char*>(&use_nesterov_) -
+      reinterpret_cast<char*>(&momentum_)) + sizeof(use_nesterov_));
   _internal_metadata_.Clear();
 }
 
@@ -3431,20 +4236,6 @@ bool MomentumParameters::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &use_nesterov_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // float initial_accum = 3;
-      case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(29u /* 29 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
-                 input, &initial_accum_)));
         } else {
           goto handle_unusual;
         }
@@ -3487,11 +4278,6 @@ void MomentumParameters::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteBool(2, this->use_nesterov(), output);
   }
 
-  // float initial_accum = 3;
-  if (this->initial_accum() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteFloat(3, this->initial_accum(), output);
-  }
-
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -3514,11 +4300,6 @@ void MomentumParameters::SerializeWithCachedSizes(
   // bool use_nesterov = 2;
   if (this->use_nesterov() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(2, this->use_nesterov(), target);
-  }
-
-  // float initial_accum = 3;
-  if (this->initial_accum() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(3, this->initial_accum(), target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -3546,11 +4327,6 @@ size_t MomentumParameters::ByteSizeLong() const {
   // bool use_nesterov = 2;
   if (this->use_nesterov() != 0) {
     total_size += 1 + 1;
-  }
-
-  // float initial_accum = 3;
-  if (this->initial_accum() != 0) {
-    total_size += 1 + 4;
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -3586,9 +4362,6 @@ void MomentumParameters::MergeFrom(const MomentumParameters& from) {
   if (from.use_nesterov() != 0) {
     set_use_nesterov(from.use_nesterov());
   }
-  if (from.initial_accum() != 0) {
-    set_initial_accum(from.initial_accum());
-  }
 }
 
 void MomentumParameters::CopyFrom(const ::google::protobuf::Message& from) {
@@ -3617,7 +4390,6 @@ void MomentumParameters::InternalSwap(MomentumParameters* other) {
   using std::swap;
   swap(momentum_, other->momentum_);
   swap(use_nesterov_, other->use_nesterov_);
-  swap(initial_accum_, other->initial_accum_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
@@ -3635,8 +4407,6 @@ void RmsPropParameters::InitAsDefaultInstance() {
 const int RmsPropParameters::kRhoFieldNumber;
 const int RmsPropParameters::kMomentumFieldNumber;
 const int RmsPropParameters::kEpsilonFieldNumber;
-const int RmsPropParameters::kInitialMsFieldNumber;
-const int RmsPropParameters::kInitialMomFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 RmsPropParameters::RmsPropParameters()
@@ -3651,15 +4421,15 @@ RmsPropParameters::RmsPropParameters(const RmsPropParameters& from)
       _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&rho_, &from.rho_,
-    static_cast<size_t>(reinterpret_cast<char*>(&initial_mom_) -
-    reinterpret_cast<char*>(&rho_)) + sizeof(initial_mom_));
+    static_cast<size_t>(reinterpret_cast<char*>(&epsilon_) -
+    reinterpret_cast<char*>(&rho_)) + sizeof(epsilon_));
   // @@protoc_insertion_point(copy_constructor:tensorflow.tpu.RmsPropParameters)
 }
 
 void RmsPropParameters::SharedCtor() {
   ::memset(&rho_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&initial_mom_) -
-      reinterpret_cast<char*>(&rho_)) + sizeof(initial_mom_));
+      reinterpret_cast<char*>(&epsilon_) -
+      reinterpret_cast<char*>(&rho_)) + sizeof(epsilon_));
 }
 
 RmsPropParameters::~RmsPropParameters() {
@@ -3691,8 +4461,8 @@ void RmsPropParameters::Clear() {
   (void) cached_has_bits;
 
   ::memset(&rho_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&initial_mom_) -
-      reinterpret_cast<char*>(&rho_)) + sizeof(initial_mom_));
+      reinterpret_cast<char*>(&epsilon_) -
+      reinterpret_cast<char*>(&rho_)) + sizeof(epsilon_));
   _internal_metadata_.Clear();
 }
 
@@ -3748,34 +4518,6 @@ bool RmsPropParameters::MergePartialFromCodedStream(
         break;
       }
 
-      // float initial_ms = 4;
-      case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(37u /* 37 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
-                 input, &initial_ms_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // float initial_mom = 5;
-      case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(45u /* 45 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
-                 input, &initial_mom_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -3817,16 +4559,6 @@ void RmsPropParameters::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteFloat(3, this->epsilon(), output);
   }
 
-  // float initial_ms = 4;
-  if (this->initial_ms() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteFloat(4, this->initial_ms(), output);
-  }
-
-  // float initial_mom = 5;
-  if (this->initial_mom() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteFloat(5, this->initial_mom(), output);
-  }
-
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -3854,16 +4586,6 @@ void RmsPropParameters::SerializeWithCachedSizes(
   // float epsilon = 3;
   if (this->epsilon() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(3, this->epsilon(), target);
-  }
-
-  // float initial_ms = 4;
-  if (this->initial_ms() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(4, this->initial_ms(), target);
-  }
-
-  // float initial_mom = 5;
-  if (this->initial_mom() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(5, this->initial_mom(), target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -3895,16 +4617,6 @@ size_t RmsPropParameters::ByteSizeLong() const {
 
   // float epsilon = 3;
   if (this->epsilon() != 0) {
-    total_size += 1 + 4;
-  }
-
-  // float initial_ms = 4;
-  if (this->initial_ms() != 0) {
-    total_size += 1 + 4;
-  }
-
-  // float initial_mom = 5;
-  if (this->initial_mom() != 0) {
     total_size += 1 + 4;
   }
 
@@ -3944,12 +4656,6 @@ void RmsPropParameters::MergeFrom(const RmsPropParameters& from) {
   if (from.epsilon() != 0) {
     set_epsilon(from.epsilon());
   }
-  if (from.initial_ms() != 0) {
-    set_initial_ms(from.initial_ms());
-  }
-  if (from.initial_mom() != 0) {
-    set_initial_mom(from.initial_mom());
-  }
 }
 
 void RmsPropParameters::CopyFrom(const ::google::protobuf::Message& from) {
@@ -3979,8 +4685,6 @@ void RmsPropParameters::InternalSwap(RmsPropParameters* other) {
   swap(rho_, other->rho_);
   swap(momentum_, other->momentum_);
   swap(epsilon_, other->epsilon_);
-  swap(initial_ms_, other->initial_ms_);
-  swap(initial_mom_, other->initial_mom_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
@@ -3998,9 +4702,6 @@ void CenteredRmsPropParameters::InitAsDefaultInstance() {
 const int CenteredRmsPropParameters::kRhoFieldNumber;
 const int CenteredRmsPropParameters::kMomentumFieldNumber;
 const int CenteredRmsPropParameters::kEpsilonFieldNumber;
-const int CenteredRmsPropParameters::kInitialMsFieldNumber;
-const int CenteredRmsPropParameters::kInitialMomFieldNumber;
-const int CenteredRmsPropParameters::kInitialMgFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CenteredRmsPropParameters::CenteredRmsPropParameters()
@@ -4015,15 +4716,15 @@ CenteredRmsPropParameters::CenteredRmsPropParameters(const CenteredRmsPropParame
       _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&rho_, &from.rho_,
-    static_cast<size_t>(reinterpret_cast<char*>(&initial_mg_) -
-    reinterpret_cast<char*>(&rho_)) + sizeof(initial_mg_));
+    static_cast<size_t>(reinterpret_cast<char*>(&epsilon_) -
+    reinterpret_cast<char*>(&rho_)) + sizeof(epsilon_));
   // @@protoc_insertion_point(copy_constructor:tensorflow.tpu.CenteredRmsPropParameters)
 }
 
 void CenteredRmsPropParameters::SharedCtor() {
   ::memset(&rho_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&initial_mg_) -
-      reinterpret_cast<char*>(&rho_)) + sizeof(initial_mg_));
+      reinterpret_cast<char*>(&epsilon_) -
+      reinterpret_cast<char*>(&rho_)) + sizeof(epsilon_));
 }
 
 CenteredRmsPropParameters::~CenteredRmsPropParameters() {
@@ -4055,8 +4756,8 @@ void CenteredRmsPropParameters::Clear() {
   (void) cached_has_bits;
 
   ::memset(&rho_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&initial_mg_) -
-      reinterpret_cast<char*>(&rho_)) + sizeof(initial_mg_));
+      reinterpret_cast<char*>(&epsilon_) -
+      reinterpret_cast<char*>(&rho_)) + sizeof(epsilon_));
   _internal_metadata_.Clear();
 }
 
@@ -4112,48 +4813,6 @@ bool CenteredRmsPropParameters::MergePartialFromCodedStream(
         break;
       }
 
-      // float initial_ms = 4;
-      case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(37u /* 37 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
-                 input, &initial_ms_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // float initial_mom = 5;
-      case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(45u /* 45 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
-                 input, &initial_mom_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // float initial_mg = 6;
-      case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(53u /* 53 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
-                 input, &initial_mg_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -4195,21 +4854,6 @@ void CenteredRmsPropParameters::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteFloat(3, this->epsilon(), output);
   }
 
-  // float initial_ms = 4;
-  if (this->initial_ms() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteFloat(4, this->initial_ms(), output);
-  }
-
-  // float initial_mom = 5;
-  if (this->initial_mom() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteFloat(5, this->initial_mom(), output);
-  }
-
-  // float initial_mg = 6;
-  if (this->initial_mg() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteFloat(6, this->initial_mg(), output);
-  }
-
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -4237,21 +4881,6 @@ void CenteredRmsPropParameters::SerializeWithCachedSizes(
   // float epsilon = 3;
   if (this->epsilon() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(3, this->epsilon(), target);
-  }
-
-  // float initial_ms = 4;
-  if (this->initial_ms() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(4, this->initial_ms(), target);
-  }
-
-  // float initial_mom = 5;
-  if (this->initial_mom() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(5, this->initial_mom(), target);
-  }
-
-  // float initial_mg = 6;
-  if (this->initial_mg() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(6, this->initial_mg(), target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -4283,21 +4912,6 @@ size_t CenteredRmsPropParameters::ByteSizeLong() const {
 
   // float epsilon = 3;
   if (this->epsilon() != 0) {
-    total_size += 1 + 4;
-  }
-
-  // float initial_ms = 4;
-  if (this->initial_ms() != 0) {
-    total_size += 1 + 4;
-  }
-
-  // float initial_mom = 5;
-  if (this->initial_mom() != 0) {
-    total_size += 1 + 4;
-  }
-
-  // float initial_mg = 6;
-  if (this->initial_mg() != 0) {
     total_size += 1 + 4;
   }
 
@@ -4337,15 +4951,6 @@ void CenteredRmsPropParameters::MergeFrom(const CenteredRmsPropParameters& from)
   if (from.epsilon() != 0) {
     set_epsilon(from.epsilon());
   }
-  if (from.initial_ms() != 0) {
-    set_initial_ms(from.initial_ms());
-  }
-  if (from.initial_mom() != 0) {
-    set_initial_mom(from.initial_mom());
-  }
-  if (from.initial_mg() != 0) {
-    set_initial_mg(from.initial_mg());
-  }
 }
 
 void CenteredRmsPropParameters::CopyFrom(const ::google::protobuf::Message& from) {
@@ -4375,9 +4980,6 @@ void CenteredRmsPropParameters::InternalSwap(CenteredRmsPropParameters* other) {
   swap(rho_, other->rho_);
   swap(momentum_, other->momentum_);
   swap(epsilon_, other->epsilon_);
-  swap(initial_ms_, other->initial_ms_);
-  swap(initial_mom_, other->initial_mom_);
-  swap(initial_mg_, other->initial_mg_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
@@ -4404,9 +5006,6 @@ const int MdlAdagradLightParameters::kMaxTotalBenefitFieldNumber;
 const int MdlAdagradLightParameters::kMdlHardLimitFieldNumber;
 const int MdlAdagradLightParameters::kHardLimitMinBenefitFieldNumber;
 const int MdlAdagradLightParameters::kMdlRegularizeFieldNumber;
-const int MdlAdagradLightParameters::kInitialAccumulatorFieldNumber;
-const int MdlAdagradLightParameters::kInitialWeightFieldNumber;
-const int MdlAdagradLightParameters::kInitialBenefitFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 MdlAdagradLightParameters::MdlAdagradLightParameters()
@@ -4421,15 +5020,15 @@ MdlAdagradLightParameters::MdlAdagradLightParameters(const MdlAdagradLightParame
       _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&l2_, &from.l2_,
-    static_cast<size_t>(reinterpret_cast<char*>(&initial_benefit_) -
-    reinterpret_cast<char*>(&l2_)) + sizeof(initial_benefit_));
+    static_cast<size_t>(reinterpret_cast<char*>(&mdl_regularize_) -
+    reinterpret_cast<char*>(&l2_)) + sizeof(mdl_regularize_));
   // @@protoc_insertion_point(copy_constructor:tensorflow.tpu.MdlAdagradLightParameters)
 }
 
 void MdlAdagradLightParameters::SharedCtor() {
   ::memset(&l2_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&initial_benefit_) -
-      reinterpret_cast<char*>(&l2_)) + sizeof(initial_benefit_));
+      reinterpret_cast<char*>(&mdl_regularize_) -
+      reinterpret_cast<char*>(&l2_)) + sizeof(mdl_regularize_));
 }
 
 MdlAdagradLightParameters::~MdlAdagradLightParameters() {
@@ -4461,8 +5060,8 @@ void MdlAdagradLightParameters::Clear() {
   (void) cached_has_bits;
 
   ::memset(&l2_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&initial_benefit_) -
-      reinterpret_cast<char*>(&l2_)) + sizeof(initial_benefit_));
+      reinterpret_cast<char*>(&mdl_regularize_) -
+      reinterpret_cast<char*>(&l2_)) + sizeof(mdl_regularize_));
   _internal_metadata_.Clear();
 }
 
@@ -4644,48 +5243,6 @@ bool MdlAdagradLightParameters::MergePartialFromCodedStream(
         break;
       }
 
-      // float initial_accumulator = 13;
-      case 13: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(109u /* 109 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
-                 input, &initial_accumulator_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // float initial_weight = 14;
-      case 14: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(117u /* 117 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
-                 input, &initial_weight_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // float initial_benefit = 15;
-      case 15: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(125u /* 125 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
-                 input, &initial_benefit_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -4772,21 +5329,6 @@ void MdlAdagradLightParameters::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteBool(12, this->mdl_regularize(), output);
   }
 
-  // float initial_accumulator = 13;
-  if (this->initial_accumulator() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteFloat(13, this->initial_accumulator(), output);
-  }
-
-  // float initial_weight = 14;
-  if (this->initial_weight() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteFloat(14, this->initial_weight(), output);
-  }
-
-  // float initial_benefit = 15;
-  if (this->initial_benefit() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteFloat(15, this->initial_benefit(), output);
-  }
-
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -4859,21 +5401,6 @@ void MdlAdagradLightParameters::SerializeWithCachedSizes(
   // bool mdl_regularize = 12;
   if (this->mdl_regularize() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(12, this->mdl_regularize(), target);
-  }
-
-  // float initial_accumulator = 13;
-  if (this->initial_accumulator() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(13, this->initial_accumulator(), target);
-  }
-
-  // float initial_weight = 14;
-  if (this->initial_weight() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(14, this->initial_weight(), target);
-  }
-
-  // float initial_benefit = 15;
-  if (this->initial_benefit() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(15, this->initial_benefit(), target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -4953,21 +5480,6 @@ size_t MdlAdagradLightParameters::ByteSizeLong() const {
     total_size += 1 + 1;
   }
 
-  // float initial_accumulator = 13;
-  if (this->initial_accumulator() != 0) {
-    total_size += 1 + 4;
-  }
-
-  // float initial_weight = 14;
-  if (this->initial_weight() != 0) {
-    total_size += 1 + 4;
-  }
-
-  // float initial_benefit = 15;
-  if (this->initial_benefit() != 0) {
-    total_size += 1 + 4;
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -5031,15 +5543,6 @@ void MdlAdagradLightParameters::MergeFrom(const MdlAdagradLightParameters& from)
   if (from.mdl_regularize() != 0) {
     set_mdl_regularize(from.mdl_regularize());
   }
-  if (from.initial_accumulator() != 0) {
-    set_initial_accumulator(from.initial_accumulator());
-  }
-  if (from.initial_weight() != 0) {
-    set_initial_weight(from.initial_weight());
-  }
-  if (from.initial_benefit() != 0) {
-    set_initial_benefit(from.initial_benefit());
-  }
 }
 
 void MdlAdagradLightParameters::CopyFrom(const ::google::protobuf::Message& from) {
@@ -5078,9 +5581,6 @@ void MdlAdagradLightParameters::InternalSwap(MdlAdagradLightParameters* other) {
   swap(mdl_hard_limit_, other->mdl_hard_limit_);
   swap(hard_limit_min_benefit_, other->hard_limit_min_benefit_);
   swap(mdl_regularize_, other->mdl_regularize_);
-  swap(initial_accumulator_, other->initial_accumulator_);
-  swap(initial_weight_, other->initial_weight_);
-  swap(initial_benefit_, other->initial_benefit_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
@@ -5097,8 +5597,6 @@ void AdadeltaParameters::InitAsDefaultInstance() {
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int AdadeltaParameters::kRhoFieldNumber;
 const int AdadeltaParameters::kEpsilonFieldNumber;
-const int AdadeltaParameters::kInitialAccumulatorFieldNumber;
-const int AdadeltaParameters::kInitialUpdateFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 AdadeltaParameters::AdadeltaParameters()
@@ -5113,15 +5611,15 @@ AdadeltaParameters::AdadeltaParameters(const AdadeltaParameters& from)
       _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&rho_, &from.rho_,
-    static_cast<size_t>(reinterpret_cast<char*>(&initial_update_) -
-    reinterpret_cast<char*>(&rho_)) + sizeof(initial_update_));
+    static_cast<size_t>(reinterpret_cast<char*>(&epsilon_) -
+    reinterpret_cast<char*>(&rho_)) + sizeof(epsilon_));
   // @@protoc_insertion_point(copy_constructor:tensorflow.tpu.AdadeltaParameters)
 }
 
 void AdadeltaParameters::SharedCtor() {
   ::memset(&rho_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&initial_update_) -
-      reinterpret_cast<char*>(&rho_)) + sizeof(initial_update_));
+      reinterpret_cast<char*>(&epsilon_) -
+      reinterpret_cast<char*>(&rho_)) + sizeof(epsilon_));
 }
 
 AdadeltaParameters::~AdadeltaParameters() {
@@ -5153,8 +5651,8 @@ void AdadeltaParameters::Clear() {
   (void) cached_has_bits;
 
   ::memset(&rho_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&initial_update_) -
-      reinterpret_cast<char*>(&rho_)) + sizeof(initial_update_));
+      reinterpret_cast<char*>(&epsilon_) -
+      reinterpret_cast<char*>(&rho_)) + sizeof(epsilon_));
   _internal_metadata_.Clear();
 }
 
@@ -5190,34 +5688,6 @@ bool AdadeltaParameters::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &epsilon_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // float initial_accumulator = 3;
-      case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(29u /* 29 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
-                 input, &initial_accumulator_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // float initial_update = 4;
-      case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(37u /* 37 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
-                 input, &initial_update_)));
         } else {
           goto handle_unusual;
         }
@@ -5260,16 +5730,6 @@ void AdadeltaParameters::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteFloat(2, this->epsilon(), output);
   }
 
-  // float initial_accumulator = 3;
-  if (this->initial_accumulator() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteFloat(3, this->initial_accumulator(), output);
-  }
-
-  // float initial_update = 4;
-  if (this->initial_update() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteFloat(4, this->initial_update(), output);
-  }
-
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -5292,16 +5752,6 @@ void AdadeltaParameters::SerializeWithCachedSizes(
   // float epsilon = 2;
   if (this->epsilon() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(2, this->epsilon(), target);
-  }
-
-  // float initial_accumulator = 3;
-  if (this->initial_accumulator() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(3, this->initial_accumulator(), target);
-  }
-
-  // float initial_update = 4;
-  if (this->initial_update() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(4, this->initial_update(), target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -5328,16 +5778,6 @@ size_t AdadeltaParameters::ByteSizeLong() const {
 
   // float epsilon = 2;
   if (this->epsilon() != 0) {
-    total_size += 1 + 4;
-  }
-
-  // float initial_accumulator = 3;
-  if (this->initial_accumulator() != 0) {
-    total_size += 1 + 4;
-  }
-
-  // float initial_update = 4;
-  if (this->initial_update() != 0) {
     total_size += 1 + 4;
   }
 
@@ -5374,12 +5814,6 @@ void AdadeltaParameters::MergeFrom(const AdadeltaParameters& from) {
   if (from.epsilon() != 0) {
     set_epsilon(from.epsilon());
   }
-  if (from.initial_accumulator() != 0) {
-    set_initial_accumulator(from.initial_accumulator());
-  }
-  if (from.initial_update() != 0) {
-    set_initial_update(from.initial_update());
-  }
 }
 
 void AdadeltaParameters::CopyFrom(const ::google::protobuf::Message& from) {
@@ -5408,8 +5842,6 @@ void AdadeltaParameters::InternalSwap(AdadeltaParameters* other) {
   using std::swap;
   swap(rho_, other->rho_);
   swap(epsilon_, other->epsilon_);
-  swap(initial_accumulator_, other->initial_accumulator_);
-  swap(initial_update_, other->initial_update_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
@@ -5426,7 +5858,6 @@ void ProximalAdagradParameters::InitAsDefaultInstance() {
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int ProximalAdagradParameters::kL1FieldNumber;
 const int ProximalAdagradParameters::kL2FieldNumber;
-const int ProximalAdagradParameters::kInitialAccumulatorFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 ProximalAdagradParameters::ProximalAdagradParameters()
@@ -5441,15 +5872,15 @@ ProximalAdagradParameters::ProximalAdagradParameters(const ProximalAdagradParame
       _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&l1_, &from.l1_,
-    static_cast<size_t>(reinterpret_cast<char*>(&initial_accumulator_) -
-    reinterpret_cast<char*>(&l1_)) + sizeof(initial_accumulator_));
+    static_cast<size_t>(reinterpret_cast<char*>(&l2_) -
+    reinterpret_cast<char*>(&l1_)) + sizeof(l2_));
   // @@protoc_insertion_point(copy_constructor:tensorflow.tpu.ProximalAdagradParameters)
 }
 
 void ProximalAdagradParameters::SharedCtor() {
   ::memset(&l1_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&initial_accumulator_) -
-      reinterpret_cast<char*>(&l1_)) + sizeof(initial_accumulator_));
+      reinterpret_cast<char*>(&l2_) -
+      reinterpret_cast<char*>(&l1_)) + sizeof(l2_));
 }
 
 ProximalAdagradParameters::~ProximalAdagradParameters() {
@@ -5481,8 +5912,8 @@ void ProximalAdagradParameters::Clear() {
   (void) cached_has_bits;
 
   ::memset(&l1_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&initial_accumulator_) -
-      reinterpret_cast<char*>(&l1_)) + sizeof(initial_accumulator_));
+      reinterpret_cast<char*>(&l2_) -
+      reinterpret_cast<char*>(&l1_)) + sizeof(l2_));
   _internal_metadata_.Clear();
 }
 
@@ -5518,20 +5949,6 @@ bool ProximalAdagradParameters::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &l2_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // float initial_accumulator = 3;
-      case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(29u /* 29 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
-                 input, &initial_accumulator_)));
         } else {
           goto handle_unusual;
         }
@@ -5574,11 +5991,6 @@ void ProximalAdagradParameters::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteFloat(2, this->l2(), output);
   }
 
-  // float initial_accumulator = 3;
-  if (this->initial_accumulator() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteFloat(3, this->initial_accumulator(), output);
-  }
-
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -5601,11 +6013,6 @@ void ProximalAdagradParameters::SerializeWithCachedSizes(
   // float l2 = 2;
   if (this->l2() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(2, this->l2(), target);
-  }
-
-  // float initial_accumulator = 3;
-  if (this->initial_accumulator() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(3, this->initial_accumulator(), target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -5632,11 +6039,6 @@ size_t ProximalAdagradParameters::ByteSizeLong() const {
 
   // float l2 = 2;
   if (this->l2() != 0) {
-    total_size += 1 + 4;
-  }
-
-  // float initial_accumulator = 3;
-  if (this->initial_accumulator() != 0) {
     total_size += 1 + 4;
   }
 
@@ -5673,9 +6075,6 @@ void ProximalAdagradParameters::MergeFrom(const ProximalAdagradParameters& from)
   if (from.l2() != 0) {
     set_l2(from.l2());
   }
-  if (from.initial_accumulator() != 0) {
-    set_initial_accumulator(from.initial_accumulator());
-  }
 }
 
 void ProximalAdagradParameters::CopyFrom(const ::google::protobuf::Message& from) {
@@ -5704,7 +6103,6 @@ void ProximalAdagradParameters::InternalSwap(ProximalAdagradParameters* other) {
   using std::swap;
   swap(l1_, other->l1_);
   swap(l2_, other->l2_);
-  swap(initial_accumulator_, other->initial_accumulator_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
@@ -5716,406 +6114,12 @@ void ProximalAdagradParameters::InternalSwap(ProximalAdagradParameters* other) {
 
 // ===================================================================
 
-void OnlineYogiParameters_SignActivation::InitAsDefaultInstance() {
-}
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-OnlineYogiParameters_SignActivation::OnlineYogiParameters_SignActivation()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_OnlineYogiParameters_SignActivation.base);
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.tpu.OnlineYogiParameters.SignActivation)
-}
-OnlineYogiParameters_SignActivation::OnlineYogiParameters_SignActivation(const OnlineYogiParameters_SignActivation& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  // @@protoc_insertion_point(copy_constructor:tensorflow.tpu.OnlineYogiParameters.SignActivation)
-}
-
-void OnlineYogiParameters_SignActivation::SharedCtor() {
-}
-
-OnlineYogiParameters_SignActivation::~OnlineYogiParameters_SignActivation() {
-  // @@protoc_insertion_point(destructor:tensorflow.tpu.OnlineYogiParameters.SignActivation)
-  SharedDtor();
-}
-
-void OnlineYogiParameters_SignActivation::SharedDtor() {
-}
-
-void OnlineYogiParameters_SignActivation::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
-}
-const ::google::protobuf::Descriptor* OnlineYogiParameters_SignActivation::descriptor() {
-  ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
-const OnlineYogiParameters_SignActivation& OnlineYogiParameters_SignActivation::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_OnlineYogiParameters_SignActivation.base);
-  return *internal_default_instance();
-}
-
-
-void OnlineYogiParameters_SignActivation::Clear() {
-// @@protoc_insertion_point(message_clear_start:tensorflow.tpu.OnlineYogiParameters.SignActivation)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  _internal_metadata_.Clear();
-}
-
-bool OnlineYogiParameters_SignActivation::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.tpu.OnlineYogiParameters.SignActivation)
-  for (;;) {
-    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-  handle_unusual:
-    if (tag == 0) {
-      goto success;
-    }
-    DO_(::google::protobuf::internal::WireFormat::SkipField(
-          input, tag, _internal_metadata_.mutable_unknown_fields()));
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.tpu.OnlineYogiParameters.SignActivation)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.tpu.OnlineYogiParameters.SignActivation)
-  return false;
-#undef DO_
-}
-
-void OnlineYogiParameters_SignActivation::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.tpu.OnlineYogiParameters.SignActivation)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.tpu.OnlineYogiParameters.SignActivation)
-}
-
-::google::protobuf::uint8* OnlineYogiParameters_SignActivation::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
-  // @@protoc_insertion_point(serialize_to_array_start:tensorflow.tpu.OnlineYogiParameters.SignActivation)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
-  }
-  // @@protoc_insertion_point(serialize_to_array_end:tensorflow.tpu.OnlineYogiParameters.SignActivation)
-  return target;
-}
-
-size_t OnlineYogiParameters_SignActivation::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:tensorflow.tpu.OnlineYogiParameters.SignActivation)
-  size_t total_size = 0;
-
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
-  }
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
-}
-
-void OnlineYogiParameters_SignActivation::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:tensorflow.tpu.OnlineYogiParameters.SignActivation)
-  GOOGLE_DCHECK_NE(&from, this);
-  const OnlineYogiParameters_SignActivation* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const OnlineYogiParameters_SignActivation>(
-          &from);
-  if (source == NULL) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:tensorflow.tpu.OnlineYogiParameters.SignActivation)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:tensorflow.tpu.OnlineYogiParameters.SignActivation)
-    MergeFrom(*source);
-  }
-}
-
-void OnlineYogiParameters_SignActivation::MergeFrom(const OnlineYogiParameters_SignActivation& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.tpu.OnlineYogiParameters.SignActivation)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-}
-
-void OnlineYogiParameters_SignActivation::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:tensorflow.tpu.OnlineYogiParameters.SignActivation)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void OnlineYogiParameters_SignActivation::CopyFrom(const OnlineYogiParameters_SignActivation& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:tensorflow.tpu.OnlineYogiParameters.SignActivation)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool OnlineYogiParameters_SignActivation::IsInitialized() const {
-  return true;
-}
-
-void OnlineYogiParameters_SignActivation::Swap(OnlineYogiParameters_SignActivation* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void OnlineYogiParameters_SignActivation::InternalSwap(OnlineYogiParameters_SignActivation* other) {
-  using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-}
-
-::google::protobuf::Metadata OnlineYogiParameters_SignActivation::GetMetadata() const {
-  protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::file_level_metadata[kIndexInFileMessages];
-}
-
-
-// ===================================================================
-
-void OnlineYogiParameters_TanhActivation::InitAsDefaultInstance() {
-}
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-OnlineYogiParameters_TanhActivation::OnlineYogiParameters_TanhActivation()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_OnlineYogiParameters_TanhActivation.base);
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.tpu.OnlineYogiParameters.TanhActivation)
-}
-OnlineYogiParameters_TanhActivation::OnlineYogiParameters_TanhActivation(const OnlineYogiParameters_TanhActivation& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  // @@protoc_insertion_point(copy_constructor:tensorflow.tpu.OnlineYogiParameters.TanhActivation)
-}
-
-void OnlineYogiParameters_TanhActivation::SharedCtor() {
-}
-
-OnlineYogiParameters_TanhActivation::~OnlineYogiParameters_TanhActivation() {
-  // @@protoc_insertion_point(destructor:tensorflow.tpu.OnlineYogiParameters.TanhActivation)
-  SharedDtor();
-}
-
-void OnlineYogiParameters_TanhActivation::SharedDtor() {
-}
-
-void OnlineYogiParameters_TanhActivation::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
-}
-const ::google::protobuf::Descriptor* OnlineYogiParameters_TanhActivation::descriptor() {
-  ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
-const OnlineYogiParameters_TanhActivation& OnlineYogiParameters_TanhActivation::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_OnlineYogiParameters_TanhActivation.base);
-  return *internal_default_instance();
-}
-
-
-void OnlineYogiParameters_TanhActivation::Clear() {
-// @@protoc_insertion_point(message_clear_start:tensorflow.tpu.OnlineYogiParameters.TanhActivation)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  _internal_metadata_.Clear();
-}
-
-bool OnlineYogiParameters_TanhActivation::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.tpu.OnlineYogiParameters.TanhActivation)
-  for (;;) {
-    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-  handle_unusual:
-    if (tag == 0) {
-      goto success;
-    }
-    DO_(::google::protobuf::internal::WireFormat::SkipField(
-          input, tag, _internal_metadata_.mutable_unknown_fields()));
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.tpu.OnlineYogiParameters.TanhActivation)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.tpu.OnlineYogiParameters.TanhActivation)
-  return false;
-#undef DO_
-}
-
-void OnlineYogiParameters_TanhActivation::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.tpu.OnlineYogiParameters.TanhActivation)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.tpu.OnlineYogiParameters.TanhActivation)
-}
-
-::google::protobuf::uint8* OnlineYogiParameters_TanhActivation::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
-  // @@protoc_insertion_point(serialize_to_array_start:tensorflow.tpu.OnlineYogiParameters.TanhActivation)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
-  }
-  // @@protoc_insertion_point(serialize_to_array_end:tensorflow.tpu.OnlineYogiParameters.TanhActivation)
-  return target;
-}
-
-size_t OnlineYogiParameters_TanhActivation::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:tensorflow.tpu.OnlineYogiParameters.TanhActivation)
-  size_t total_size = 0;
-
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
-  }
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
-}
-
-void OnlineYogiParameters_TanhActivation::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:tensorflow.tpu.OnlineYogiParameters.TanhActivation)
-  GOOGLE_DCHECK_NE(&from, this);
-  const OnlineYogiParameters_TanhActivation* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const OnlineYogiParameters_TanhActivation>(
-          &from);
-  if (source == NULL) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:tensorflow.tpu.OnlineYogiParameters.TanhActivation)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:tensorflow.tpu.OnlineYogiParameters.TanhActivation)
-    MergeFrom(*source);
-  }
-}
-
-void OnlineYogiParameters_TanhActivation::MergeFrom(const OnlineYogiParameters_TanhActivation& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.tpu.OnlineYogiParameters.TanhActivation)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-}
-
-void OnlineYogiParameters_TanhActivation::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:tensorflow.tpu.OnlineYogiParameters.TanhActivation)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void OnlineYogiParameters_TanhActivation::CopyFrom(const OnlineYogiParameters_TanhActivation& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:tensorflow.tpu.OnlineYogiParameters.TanhActivation)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool OnlineYogiParameters_TanhActivation::IsInitialized() const {
-  return true;
-}
-
-void OnlineYogiParameters_TanhActivation::Swap(OnlineYogiParameters_TanhActivation* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void OnlineYogiParameters_TanhActivation::InternalSwap(OnlineYogiParameters_TanhActivation* other) {
-  using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-}
-
-::google::protobuf::Metadata OnlineYogiParameters_TanhActivation::GetMetadata() const {
-  protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::file_level_metadata[kIndexInFileMessages];
-}
-
-
-// ===================================================================
-
 void OnlineYogiParameters::InitAsDefaultInstance() {
-  ::tensorflow::tpu::_OnlineYogiParameters_default_instance_.sign_ = const_cast< ::tensorflow::tpu::OnlineYogiParameters_SignActivation*>(
-      ::tensorflow::tpu::OnlineYogiParameters_SignActivation::internal_default_instance());
-  ::tensorflow::tpu::_OnlineYogiParameters_default_instance_.tanh_ = const_cast< ::tensorflow::tpu::OnlineYogiParameters_TanhActivation*>(
-      ::tensorflow::tpu::OnlineYogiParameters_TanhActivation::internal_default_instance());
-}
-void OnlineYogiParameters::set_allocated_sign(::tensorflow::tpu::OnlineYogiParameters_SignActivation* sign) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
-  clear_activation();
-  if (sign) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
-    if (message_arena != submessage_arena) {
-      sign = ::google::protobuf::internal::GetOwnedMessage(
-          message_arena, sign, submessage_arena);
-    }
-    set_has_sign();
-    activation_.sign_ = sign;
-  }
-  // @@protoc_insertion_point(field_set_allocated:tensorflow.tpu.OnlineYogiParameters.sign)
-}
-void OnlineYogiParameters::set_allocated_tanh(::tensorflow::tpu::OnlineYogiParameters_TanhActivation* tanh) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
-  clear_activation();
-  if (tanh) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
-    if (message_arena != submessage_arena) {
-      tanh = ::google::protobuf::internal::GetOwnedMessage(
-          message_arena, tanh, submessage_arena);
-    }
-    set_has_tanh();
-    activation_.tanh_ = tanh;
-  }
-  // @@protoc_insertion_point(field_set_allocated:tensorflow.tpu.OnlineYogiParameters.tanh)
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int OnlineYogiParameters::kL1FieldNumber;
 const int OnlineYogiParameters::kL2FieldNumber;
 const int OnlineYogiParameters::kBeta2FieldNumber;
-const int OnlineYogiParameters::kInitialVFieldNumber;
-const int OnlineYogiParameters::kInitialLinearFieldNumber;
-const int OnlineYogiParameters::kSignFieldNumber;
-const int OnlineYogiParameters::kTanhFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 OnlineYogiParameters::OnlineYogiParameters()
@@ -6130,30 +6134,15 @@ OnlineYogiParameters::OnlineYogiParameters(const OnlineYogiParameters& from)
       _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&l1_, &from.l1_,
-    static_cast<size_t>(reinterpret_cast<char*>(&initial_linear_) -
-    reinterpret_cast<char*>(&l1_)) + sizeof(initial_linear_));
-  clear_has_activation();
-  switch (from.activation_case()) {
-    case kSign: {
-      mutable_sign()->::tensorflow::tpu::OnlineYogiParameters_SignActivation::MergeFrom(from.sign());
-      break;
-    }
-    case kTanh: {
-      mutable_tanh()->::tensorflow::tpu::OnlineYogiParameters_TanhActivation::MergeFrom(from.tanh());
-      break;
-    }
-    case ACTIVATION_NOT_SET: {
-      break;
-    }
-  }
+    static_cast<size_t>(reinterpret_cast<char*>(&beta2_) -
+    reinterpret_cast<char*>(&l1_)) + sizeof(beta2_));
   // @@protoc_insertion_point(copy_constructor:tensorflow.tpu.OnlineYogiParameters)
 }
 
 void OnlineYogiParameters::SharedCtor() {
   ::memset(&l1_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&initial_linear_) -
-      reinterpret_cast<char*>(&l1_)) + sizeof(initial_linear_));
-  clear_has_activation();
+      reinterpret_cast<char*>(&beta2_) -
+      reinterpret_cast<char*>(&l1_)) + sizeof(beta2_));
 }
 
 OnlineYogiParameters::~OnlineYogiParameters() {
@@ -6162,9 +6151,6 @@ OnlineYogiParameters::~OnlineYogiParameters() {
 }
 
 void OnlineYogiParameters::SharedDtor() {
-  if (has_activation()) {
-    clear_activation();
-  }
 }
 
 void OnlineYogiParameters::SetCachedSize(int size) const {
@@ -6181,25 +6167,6 @@ const OnlineYogiParameters& OnlineYogiParameters::default_instance() {
 }
 
 
-void OnlineYogiParameters::clear_activation() {
-// @@protoc_insertion_point(one_of_clear_start:tensorflow.tpu.OnlineYogiParameters)
-  switch (activation_case()) {
-    case kSign: {
-      delete activation_.sign_;
-      break;
-    }
-    case kTanh: {
-      delete activation_.tanh_;
-      break;
-    }
-    case ACTIVATION_NOT_SET: {
-      break;
-    }
-  }
-  _oneof_case_[0] = ACTIVATION_NOT_SET;
-}
-
-
 void OnlineYogiParameters::Clear() {
 // @@protoc_insertion_point(message_clear_start:tensorflow.tpu.OnlineYogiParameters)
   ::google::protobuf::uint32 cached_has_bits = 0;
@@ -6207,9 +6174,8 @@ void OnlineYogiParameters::Clear() {
   (void) cached_has_bits;
 
   ::memset(&l1_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&initial_linear_) -
-      reinterpret_cast<char*>(&l1_)) + sizeof(initial_linear_));
-  clear_activation();
+      reinterpret_cast<char*>(&beta2_) -
+      reinterpret_cast<char*>(&l1_)) + sizeof(beta2_));
   _internal_metadata_.Clear();
 }
 
@@ -6265,58 +6231,6 @@ bool OnlineYogiParameters::MergePartialFromCodedStream(
         break;
       }
 
-      // float initial_v = 4;
-      case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(37u /* 37 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
-                 input, &initial_v_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // float initial_linear = 5;
-      case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(45u /* 45 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
-                 input, &initial_linear_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.tpu.OnlineYogiParameters.SignActivation sign = 6;
-      case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
-               input, mutable_sign()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.tpu.OnlineYogiParameters.TanhActivation tanh = 7;
-      case 7: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(58u /* 58 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
-               input, mutable_tanh()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -6358,28 +6272,6 @@ void OnlineYogiParameters::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteFloat(3, this->beta2(), output);
   }
 
-  // float initial_v = 4;
-  if (this->initial_v() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteFloat(4, this->initial_v(), output);
-  }
-
-  // float initial_linear = 5;
-  if (this->initial_linear() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteFloat(5, this->initial_linear(), output);
-  }
-
-  // .tensorflow.tpu.OnlineYogiParameters.SignActivation sign = 6;
-  if (has_sign()) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      6, this->_internal_sign(), output);
-  }
-
-  // .tensorflow.tpu.OnlineYogiParameters.TanhActivation tanh = 7;
-  if (has_tanh()) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      7, this->_internal_tanh(), output);
-  }
-
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -6407,30 +6299,6 @@ void OnlineYogiParameters::SerializeWithCachedSizes(
   // float beta2 = 3;
   if (this->beta2() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(3, this->beta2(), target);
-  }
-
-  // float initial_v = 4;
-  if (this->initial_v() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(4, this->initial_v(), target);
-  }
-
-  // float initial_linear = 5;
-  if (this->initial_linear() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(5, this->initial_linear(), target);
-  }
-
-  // .tensorflow.tpu.OnlineYogiParameters.SignActivation sign = 6;
-  if (has_sign()) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        6, this->_internal_sign(), deterministic, target);
-  }
-
-  // .tensorflow.tpu.OnlineYogiParameters.TanhActivation tanh = 7;
-  if (has_tanh()) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        7, this->_internal_tanh(), deterministic, target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -6465,35 +6333,6 @@ size_t OnlineYogiParameters::ByteSizeLong() const {
     total_size += 1 + 4;
   }
 
-  // float initial_v = 4;
-  if (this->initial_v() != 0) {
-    total_size += 1 + 4;
-  }
-
-  // float initial_linear = 5;
-  if (this->initial_linear() != 0) {
-    total_size += 1 + 4;
-  }
-
-  switch (activation_case()) {
-    // .tensorflow.tpu.OnlineYogiParameters.SignActivation sign = 6;
-    case kSign: {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::MessageSize(
-          *activation_.sign_);
-      break;
-    }
-    // .tensorflow.tpu.OnlineYogiParameters.TanhActivation tanh = 7;
-    case kTanh: {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::MessageSize(
-          *activation_.tanh_);
-      break;
-    }
-    case ACTIVATION_NOT_SET: {
-      break;
-    }
-  }
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -6530,25 +6369,6 @@ void OnlineYogiParameters::MergeFrom(const OnlineYogiParameters& from) {
   if (from.beta2() != 0) {
     set_beta2(from.beta2());
   }
-  if (from.initial_v() != 0) {
-    set_initial_v(from.initial_v());
-  }
-  if (from.initial_linear() != 0) {
-    set_initial_linear(from.initial_linear());
-  }
-  switch (from.activation_case()) {
-    case kSign: {
-      mutable_sign()->::tensorflow::tpu::OnlineYogiParameters_SignActivation::MergeFrom(from.sign());
-      break;
-    }
-    case kTanh: {
-      mutable_tanh()->::tensorflow::tpu::OnlineYogiParameters_TanhActivation::MergeFrom(from.tanh());
-      break;
-    }
-    case ACTIVATION_NOT_SET: {
-      break;
-    }
-  }
 }
 
 void OnlineYogiParameters::CopyFrom(const ::google::protobuf::Message& from) {
@@ -6578,14 +6398,1121 @@ void OnlineYogiParameters::InternalSwap(OnlineYogiParameters* other) {
   swap(l1_, other->l1_);
   swap(l2_, other->l2_);
   swap(beta2_, other->beta2_);
-  swap(initial_v_, other->initial_v_);
-  swap(initial_linear_, other->initial_linear_);
-  swap(activation_, other->activation_);
-  swap(_oneof_case_[0], other->_oneof_case_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata OnlineYogiParameters::GetMetadata() const {
+  protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void ProximalYogiParameters::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int ProximalYogiParameters::kL1FieldNumber;
+const int ProximalYogiParameters::kL2FieldNumber;
+const int ProximalYogiParameters::kBeta1FieldNumber;
+const int ProximalYogiParameters::kBeta2FieldNumber;
+const int ProximalYogiParameters::kEpsilonFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+ProximalYogiParameters::ProximalYogiParameters()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_ProximalYogiParameters.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:tensorflow.tpu.ProximalYogiParameters)
+}
+ProximalYogiParameters::ProximalYogiParameters(const ProximalYogiParameters& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::memcpy(&l1_, &from.l1_,
+    static_cast<size_t>(reinterpret_cast<char*>(&epsilon_) -
+    reinterpret_cast<char*>(&l1_)) + sizeof(epsilon_));
+  // @@protoc_insertion_point(copy_constructor:tensorflow.tpu.ProximalYogiParameters)
+}
+
+void ProximalYogiParameters::SharedCtor() {
+  ::memset(&l1_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&epsilon_) -
+      reinterpret_cast<char*>(&l1_)) + sizeof(epsilon_));
+}
+
+ProximalYogiParameters::~ProximalYogiParameters() {
+  // @@protoc_insertion_point(destructor:tensorflow.tpu.ProximalYogiParameters)
+  SharedDtor();
+}
+
+void ProximalYogiParameters::SharedDtor() {
+}
+
+void ProximalYogiParameters::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* ProximalYogiParameters::descriptor() {
+  ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const ProximalYogiParameters& ProximalYogiParameters::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_ProximalYogiParameters.base);
+  return *internal_default_instance();
+}
+
+
+void ProximalYogiParameters::Clear() {
+// @@protoc_insertion_point(message_clear_start:tensorflow.tpu.ProximalYogiParameters)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&l1_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&epsilon_) -
+      reinterpret_cast<char*>(&l1_)) + sizeof(epsilon_));
+  _internal_metadata_.Clear();
+}
+
+bool ProximalYogiParameters::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:tensorflow.tpu.ProximalYogiParameters)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // float l1 = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(13u /* 13 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
+                 input, &l1_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // float l2 = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(21u /* 21 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
+                 input, &l2_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // float beta1 = 3;
+      case 3: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(29u /* 29 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
+                 input, &beta1_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // float beta2 = 4;
+      case 4: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(37u /* 37 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
+                 input, &beta2_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // float epsilon = 5;
+      case 5: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(45u /* 45 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
+                 input, &epsilon_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:tensorflow.tpu.ProximalYogiParameters)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:tensorflow.tpu.ProximalYogiParameters)
+  return false;
+#undef DO_
+}
+
+void ProximalYogiParameters::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:tensorflow.tpu.ProximalYogiParameters)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // float l1 = 1;
+  if (this->l1() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteFloat(1, this->l1(), output);
+  }
+
+  // float l2 = 2;
+  if (this->l2() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteFloat(2, this->l2(), output);
+  }
+
+  // float beta1 = 3;
+  if (this->beta1() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteFloat(3, this->beta1(), output);
+  }
+
+  // float beta2 = 4;
+  if (this->beta2() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteFloat(4, this->beta2(), output);
+  }
+
+  // float epsilon = 5;
+  if (this->epsilon() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteFloat(5, this->epsilon(), output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:tensorflow.tpu.ProximalYogiParameters)
+}
+
+::google::protobuf::uint8* ProximalYogiParameters::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:tensorflow.tpu.ProximalYogiParameters)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // float l1 = 1;
+  if (this->l1() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(1, this->l1(), target);
+  }
+
+  // float l2 = 2;
+  if (this->l2() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(2, this->l2(), target);
+  }
+
+  // float beta1 = 3;
+  if (this->beta1() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(3, this->beta1(), target);
+  }
+
+  // float beta2 = 4;
+  if (this->beta2() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(4, this->beta2(), target);
+  }
+
+  // float epsilon = 5;
+  if (this->epsilon() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(5, this->epsilon(), target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:tensorflow.tpu.ProximalYogiParameters)
+  return target;
+}
+
+size_t ProximalYogiParameters::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:tensorflow.tpu.ProximalYogiParameters)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // float l1 = 1;
+  if (this->l1() != 0) {
+    total_size += 1 + 4;
+  }
+
+  // float l2 = 2;
+  if (this->l2() != 0) {
+    total_size += 1 + 4;
+  }
+
+  // float beta1 = 3;
+  if (this->beta1() != 0) {
+    total_size += 1 + 4;
+  }
+
+  // float beta2 = 4;
+  if (this->beta2() != 0) {
+    total_size += 1 + 4;
+  }
+
+  // float epsilon = 5;
+  if (this->epsilon() != 0) {
+    total_size += 1 + 4;
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void ProximalYogiParameters::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:tensorflow.tpu.ProximalYogiParameters)
+  GOOGLE_DCHECK_NE(&from, this);
+  const ProximalYogiParameters* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const ProximalYogiParameters>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:tensorflow.tpu.ProximalYogiParameters)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:tensorflow.tpu.ProximalYogiParameters)
+    MergeFrom(*source);
+  }
+}
+
+void ProximalYogiParameters::MergeFrom(const ProximalYogiParameters& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.tpu.ProximalYogiParameters)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.l1() != 0) {
+    set_l1(from.l1());
+  }
+  if (from.l2() != 0) {
+    set_l2(from.l2());
+  }
+  if (from.beta1() != 0) {
+    set_beta1(from.beta1());
+  }
+  if (from.beta2() != 0) {
+    set_beta2(from.beta2());
+  }
+  if (from.epsilon() != 0) {
+    set_epsilon(from.epsilon());
+  }
+}
+
+void ProximalYogiParameters::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:tensorflow.tpu.ProximalYogiParameters)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void ProximalYogiParameters::CopyFrom(const ProximalYogiParameters& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:tensorflow.tpu.ProximalYogiParameters)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool ProximalYogiParameters::IsInitialized() const {
+  return true;
+}
+
+void ProximalYogiParameters::Swap(ProximalYogiParameters* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void ProximalYogiParameters::InternalSwap(ProximalYogiParameters* other) {
+  using std::swap;
+  swap(l1_, other->l1_);
+  swap(l2_, other->l2_);
+  swap(beta1_, other->beta1_);
+  swap(beta2_, other->beta2_);
+  swap(epsilon_, other->epsilon_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata ProximalYogiParameters::GetMetadata() const {
+  protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void FrequencyEstimatorParameters::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int FrequencyEstimatorParameters::kTauFieldNumber;
+const int FrequencyEstimatorParameters::kMaxDeltaFieldNumber;
+const int FrequencyEstimatorParameters::kOutlierThresholdFieldNumber;
+const int FrequencyEstimatorParameters::kWeightExponentFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+FrequencyEstimatorParameters::FrequencyEstimatorParameters()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_FrequencyEstimatorParameters.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:tensorflow.tpu.FrequencyEstimatorParameters)
+}
+FrequencyEstimatorParameters::FrequencyEstimatorParameters(const FrequencyEstimatorParameters& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::memcpy(&tau_, &from.tau_,
+    static_cast<size_t>(reinterpret_cast<char*>(&weight_exponent_) -
+    reinterpret_cast<char*>(&tau_)) + sizeof(weight_exponent_));
+  // @@protoc_insertion_point(copy_constructor:tensorflow.tpu.FrequencyEstimatorParameters)
+}
+
+void FrequencyEstimatorParameters::SharedCtor() {
+  ::memset(&tau_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&weight_exponent_) -
+      reinterpret_cast<char*>(&tau_)) + sizeof(weight_exponent_));
+}
+
+FrequencyEstimatorParameters::~FrequencyEstimatorParameters() {
+  // @@protoc_insertion_point(destructor:tensorflow.tpu.FrequencyEstimatorParameters)
+  SharedDtor();
+}
+
+void FrequencyEstimatorParameters::SharedDtor() {
+}
+
+void FrequencyEstimatorParameters::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* FrequencyEstimatorParameters::descriptor() {
+  ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const FrequencyEstimatorParameters& FrequencyEstimatorParameters::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_FrequencyEstimatorParameters.base);
+  return *internal_default_instance();
+}
+
+
+void FrequencyEstimatorParameters::Clear() {
+// @@protoc_insertion_point(message_clear_start:tensorflow.tpu.FrequencyEstimatorParameters)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&tau_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&weight_exponent_) -
+      reinterpret_cast<char*>(&tau_)) + sizeof(weight_exponent_));
+  _internal_metadata_.Clear();
+}
+
+bool FrequencyEstimatorParameters::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:tensorflow.tpu.FrequencyEstimatorParameters)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // float tau = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(13u /* 13 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
+                 input, &tau_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // float max_delta = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(21u /* 21 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
+                 input, &max_delta_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // float outlier_threshold = 3;
+      case 3: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(29u /* 29 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
+                 input, &outlier_threshold_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // float weight_exponent = 4;
+      case 4: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(37u /* 37 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
+                 input, &weight_exponent_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:tensorflow.tpu.FrequencyEstimatorParameters)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:tensorflow.tpu.FrequencyEstimatorParameters)
+  return false;
+#undef DO_
+}
+
+void FrequencyEstimatorParameters::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:tensorflow.tpu.FrequencyEstimatorParameters)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // float tau = 1;
+  if (this->tau() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteFloat(1, this->tau(), output);
+  }
+
+  // float max_delta = 2;
+  if (this->max_delta() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteFloat(2, this->max_delta(), output);
+  }
+
+  // float outlier_threshold = 3;
+  if (this->outlier_threshold() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteFloat(3, this->outlier_threshold(), output);
+  }
+
+  // float weight_exponent = 4;
+  if (this->weight_exponent() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteFloat(4, this->weight_exponent(), output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:tensorflow.tpu.FrequencyEstimatorParameters)
+}
+
+::google::protobuf::uint8* FrequencyEstimatorParameters::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:tensorflow.tpu.FrequencyEstimatorParameters)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // float tau = 1;
+  if (this->tau() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(1, this->tau(), target);
+  }
+
+  // float max_delta = 2;
+  if (this->max_delta() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(2, this->max_delta(), target);
+  }
+
+  // float outlier_threshold = 3;
+  if (this->outlier_threshold() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(3, this->outlier_threshold(), target);
+  }
+
+  // float weight_exponent = 4;
+  if (this->weight_exponent() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(4, this->weight_exponent(), target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:tensorflow.tpu.FrequencyEstimatorParameters)
+  return target;
+}
+
+size_t FrequencyEstimatorParameters::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:tensorflow.tpu.FrequencyEstimatorParameters)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // float tau = 1;
+  if (this->tau() != 0) {
+    total_size += 1 + 4;
+  }
+
+  // float max_delta = 2;
+  if (this->max_delta() != 0) {
+    total_size += 1 + 4;
+  }
+
+  // float outlier_threshold = 3;
+  if (this->outlier_threshold() != 0) {
+    total_size += 1 + 4;
+  }
+
+  // float weight_exponent = 4;
+  if (this->weight_exponent() != 0) {
+    total_size += 1 + 4;
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void FrequencyEstimatorParameters::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:tensorflow.tpu.FrequencyEstimatorParameters)
+  GOOGLE_DCHECK_NE(&from, this);
+  const FrequencyEstimatorParameters* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const FrequencyEstimatorParameters>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:tensorflow.tpu.FrequencyEstimatorParameters)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:tensorflow.tpu.FrequencyEstimatorParameters)
+    MergeFrom(*source);
+  }
+}
+
+void FrequencyEstimatorParameters::MergeFrom(const FrequencyEstimatorParameters& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.tpu.FrequencyEstimatorParameters)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.tau() != 0) {
+    set_tau(from.tau());
+  }
+  if (from.max_delta() != 0) {
+    set_max_delta(from.max_delta());
+  }
+  if (from.outlier_threshold() != 0) {
+    set_outlier_threshold(from.outlier_threshold());
+  }
+  if (from.weight_exponent() != 0) {
+    set_weight_exponent(from.weight_exponent());
+  }
+}
+
+void FrequencyEstimatorParameters::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:tensorflow.tpu.FrequencyEstimatorParameters)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void FrequencyEstimatorParameters::CopyFrom(const FrequencyEstimatorParameters& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:tensorflow.tpu.FrequencyEstimatorParameters)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool FrequencyEstimatorParameters::IsInitialized() const {
+  return true;
+}
+
+void FrequencyEstimatorParameters::Swap(FrequencyEstimatorParameters* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void FrequencyEstimatorParameters::InternalSwap(FrequencyEstimatorParameters* other) {
+  using std::swap;
+  swap(tau_, other->tau_);
+  swap(max_delta_, other->max_delta_);
+  swap(outlier_threshold_, other->outlier_threshold_);
+  swap(weight_exponent_, other->weight_exponent_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata FrequencyEstimatorParameters::GetMetadata() const {
+  protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void UserDefinedProgramParameters::InitAsDefaultInstance() {
+  ::tensorflow::tpu::_UserDefinedProgramParameters_default_instance_._instance.get_mutable()->program_ = const_cast< ::xla::HloModuleProto*>(
+      ::xla::HloModuleProto::internal_default_instance());
+}
+void UserDefinedProgramParameters::clear_program() {
+  if (GetArenaNoVirtual() == NULL && program_ != NULL) {
+    delete program_;
+  }
+  program_ = NULL;
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int UserDefinedProgramParameters::kProgramFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+UserDefinedProgramParameters::UserDefinedProgramParameters()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_UserDefinedProgramParameters.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:tensorflow.tpu.UserDefinedProgramParameters)
+}
+UserDefinedProgramParameters::UserDefinedProgramParameters(const UserDefinedProgramParameters& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (from.has_program()) {
+    program_ = new ::xla::HloModuleProto(*from.program_);
+  } else {
+    program_ = NULL;
+  }
+  // @@protoc_insertion_point(copy_constructor:tensorflow.tpu.UserDefinedProgramParameters)
+}
+
+void UserDefinedProgramParameters::SharedCtor() {
+  program_ = NULL;
+}
+
+UserDefinedProgramParameters::~UserDefinedProgramParameters() {
+  // @@protoc_insertion_point(destructor:tensorflow.tpu.UserDefinedProgramParameters)
+  SharedDtor();
+}
+
+void UserDefinedProgramParameters::SharedDtor() {
+  if (this != internal_default_instance()) delete program_;
+}
+
+void UserDefinedProgramParameters::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* UserDefinedProgramParameters::descriptor() {
+  ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const UserDefinedProgramParameters& UserDefinedProgramParameters::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_UserDefinedProgramParameters.base);
+  return *internal_default_instance();
+}
+
+
+void UserDefinedProgramParameters::Clear() {
+// @@protoc_insertion_point(message_clear_start:tensorflow.tpu.UserDefinedProgramParameters)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (GetArenaNoVirtual() == NULL && program_ != NULL) {
+    delete program_;
+  }
+  program_ = NULL;
+  _internal_metadata_.Clear();
+}
+
+bool UserDefinedProgramParameters::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:tensorflow.tpu.UserDefinedProgramParameters)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // .xla.HloModuleProto program = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_program()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:tensorflow.tpu.UserDefinedProgramParameters)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:tensorflow.tpu.UserDefinedProgramParameters)
+  return false;
+#undef DO_
+}
+
+void UserDefinedProgramParameters::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:tensorflow.tpu.UserDefinedProgramParameters)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .xla.HloModuleProto program = 1;
+  if (this->has_program()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      1, this->_internal_program(), output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:tensorflow.tpu.UserDefinedProgramParameters)
+}
+
+::google::protobuf::uint8* UserDefinedProgramParameters::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:tensorflow.tpu.UserDefinedProgramParameters)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .xla.HloModuleProto program = 1;
+  if (this->has_program()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        1, this->_internal_program(), deterministic, target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:tensorflow.tpu.UserDefinedProgramParameters)
+  return target;
+}
+
+size_t UserDefinedProgramParameters::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:tensorflow.tpu.UserDefinedProgramParameters)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // .xla.HloModuleProto program = 1;
+  if (this->has_program()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *program_);
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void UserDefinedProgramParameters::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:tensorflow.tpu.UserDefinedProgramParameters)
+  GOOGLE_DCHECK_NE(&from, this);
+  const UserDefinedProgramParameters* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const UserDefinedProgramParameters>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:tensorflow.tpu.UserDefinedProgramParameters)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:tensorflow.tpu.UserDefinedProgramParameters)
+    MergeFrom(*source);
+  }
+}
+
+void UserDefinedProgramParameters::MergeFrom(const UserDefinedProgramParameters& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.tpu.UserDefinedProgramParameters)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.has_program()) {
+    mutable_program()->::xla::HloModuleProto::MergeFrom(from.program());
+  }
+}
+
+void UserDefinedProgramParameters::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:tensorflow.tpu.UserDefinedProgramParameters)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void UserDefinedProgramParameters::CopyFrom(const UserDefinedProgramParameters& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:tensorflow.tpu.UserDefinedProgramParameters)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool UserDefinedProgramParameters::IsInitialized() const {
+  return true;
+}
+
+void UserDefinedProgramParameters::Swap(UserDefinedProgramParameters* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void UserDefinedProgramParameters::InternalSwap(UserDefinedProgramParameters* other) {
+  using std::swap;
+  swap(program_, other->program_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata UserDefinedProgramParameters::GetMetadata() const {
+  protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void AssignParameters::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+AssignParameters::AssignParameters()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_AssignParameters.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:tensorflow.tpu.AssignParameters)
+}
+AssignParameters::AssignParameters(const AssignParameters& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:tensorflow.tpu.AssignParameters)
+}
+
+void AssignParameters::SharedCtor() {
+}
+
+AssignParameters::~AssignParameters() {
+  // @@protoc_insertion_point(destructor:tensorflow.tpu.AssignParameters)
+  SharedDtor();
+}
+
+void AssignParameters::SharedDtor() {
+}
+
+void AssignParameters::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* AssignParameters::descriptor() {
+  ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const AssignParameters& AssignParameters::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_AssignParameters.base);
+  return *internal_default_instance();
+}
+
+
+void AssignParameters::Clear() {
+// @@protoc_insertion_point(message_clear_start:tensorflow.tpu.AssignParameters)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _internal_metadata_.Clear();
+}
+
+bool AssignParameters::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:tensorflow.tpu.AssignParameters)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+  handle_unusual:
+    if (tag == 0) {
+      goto success;
+    }
+    DO_(::google::protobuf::internal::WireFormat::SkipField(
+          input, tag, _internal_metadata_.mutable_unknown_fields()));
+  }
+success:
+  // @@protoc_insertion_point(parse_success:tensorflow.tpu.AssignParameters)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:tensorflow.tpu.AssignParameters)
+  return false;
+#undef DO_
+}
+
+void AssignParameters::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:tensorflow.tpu.AssignParameters)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:tensorflow.tpu.AssignParameters)
+}
+
+::google::protobuf::uint8* AssignParameters::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:tensorflow.tpu.AssignParameters)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:tensorflow.tpu.AssignParameters)
+  return target;
+}
+
+size_t AssignParameters::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:tensorflow.tpu.AssignParameters)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void AssignParameters::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:tensorflow.tpu.AssignParameters)
+  GOOGLE_DCHECK_NE(&from, this);
+  const AssignParameters* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const AssignParameters>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:tensorflow.tpu.AssignParameters)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:tensorflow.tpu.AssignParameters)
+    MergeFrom(*source);
+  }
+}
+
+void AssignParameters::MergeFrom(const AssignParameters& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.tpu.AssignParameters)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+}
+
+void AssignParameters::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:tensorflow.tpu.AssignParameters)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void AssignParameters::CopyFrom(const AssignParameters& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:tensorflow.tpu.AssignParameters)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool AssignParameters::IsInitialized() const {
+  return true;
+}
+
+void AssignParameters::Swap(AssignParameters* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void AssignParameters::InternalSwap(AssignParameters* other) {
+  using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata AssignParameters::GetMetadata() const {
   protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::protobuf_AssignDescriptorsOnce();
   return ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::file_level_metadata[kIndexInFileMessages];
 }
@@ -6765,6 +7692,185 @@ void GradientAccumulationStatus::InternalSwap(GradientAccumulationStatus* other)
 }
 
 ::google::protobuf::Metadata GradientAccumulationStatus::GetMetadata() const {
+  protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void LowDimensionalPackingStatus::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+LowDimensionalPackingStatus::LowDimensionalPackingStatus()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_LowDimensionalPackingStatus.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:tensorflow.tpu.LowDimensionalPackingStatus)
+}
+LowDimensionalPackingStatus::LowDimensionalPackingStatus(const LowDimensionalPackingStatus& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:tensorflow.tpu.LowDimensionalPackingStatus)
+}
+
+void LowDimensionalPackingStatus::SharedCtor() {
+}
+
+LowDimensionalPackingStatus::~LowDimensionalPackingStatus() {
+  // @@protoc_insertion_point(destructor:tensorflow.tpu.LowDimensionalPackingStatus)
+  SharedDtor();
+}
+
+void LowDimensionalPackingStatus::SharedDtor() {
+}
+
+void LowDimensionalPackingStatus::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* LowDimensionalPackingStatus::descriptor() {
+  ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const LowDimensionalPackingStatus& LowDimensionalPackingStatus::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::scc_info_LowDimensionalPackingStatus.base);
+  return *internal_default_instance();
+}
+
+
+void LowDimensionalPackingStatus::Clear() {
+// @@protoc_insertion_point(message_clear_start:tensorflow.tpu.LowDimensionalPackingStatus)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _internal_metadata_.Clear();
+}
+
+bool LowDimensionalPackingStatus::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:tensorflow.tpu.LowDimensionalPackingStatus)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+  handle_unusual:
+    if (tag == 0) {
+      goto success;
+    }
+    DO_(::google::protobuf::internal::WireFormat::SkipField(
+          input, tag, _internal_metadata_.mutable_unknown_fields()));
+  }
+success:
+  // @@protoc_insertion_point(parse_success:tensorflow.tpu.LowDimensionalPackingStatus)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:tensorflow.tpu.LowDimensionalPackingStatus)
+  return false;
+#undef DO_
+}
+
+void LowDimensionalPackingStatus::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:tensorflow.tpu.LowDimensionalPackingStatus)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:tensorflow.tpu.LowDimensionalPackingStatus)
+}
+
+::google::protobuf::uint8* LowDimensionalPackingStatus::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:tensorflow.tpu.LowDimensionalPackingStatus)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:tensorflow.tpu.LowDimensionalPackingStatus)
+  return target;
+}
+
+size_t LowDimensionalPackingStatus::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:tensorflow.tpu.LowDimensionalPackingStatus)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void LowDimensionalPackingStatus::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:tensorflow.tpu.LowDimensionalPackingStatus)
+  GOOGLE_DCHECK_NE(&from, this);
+  const LowDimensionalPackingStatus* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const LowDimensionalPackingStatus>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:tensorflow.tpu.LowDimensionalPackingStatus)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:tensorflow.tpu.LowDimensionalPackingStatus)
+    MergeFrom(*source);
+  }
+}
+
+void LowDimensionalPackingStatus::MergeFrom(const LowDimensionalPackingStatus& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.tpu.LowDimensionalPackingStatus)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+}
+
+void LowDimensionalPackingStatus::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:tensorflow.tpu.LowDimensionalPackingStatus)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void LowDimensionalPackingStatus::CopyFrom(const LowDimensionalPackingStatus& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:tensorflow.tpu.LowDimensionalPackingStatus)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool LowDimensionalPackingStatus::IsInitialized() const {
+  return true;
+}
+
+void LowDimensionalPackingStatus::Swap(LowDimensionalPackingStatus* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void LowDimensionalPackingStatus::InternalSwap(LowDimensionalPackingStatus* other) {
+  using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata LowDimensionalPackingStatus::GetMetadata() const {
   protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::protobuf_AssignDescriptorsOnce();
   return ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::file_level_metadata[kIndexInFileMessages];
 }
@@ -7004,10 +8110,14 @@ void OptimizationParameters::InitAsDefaultInstance() {
       ::tensorflow::tpu::ClippingLimits::internal_default_instance());
   ::tensorflow::tpu::_OptimizationParameters_default_instance_._instance.get_mutable()->gradient_clipping_limits_ = const_cast< ::tensorflow::tpu::ClippingLimits*>(
       ::tensorflow::tpu::ClippingLimits::internal_default_instance());
+  ::tensorflow::tpu::_OptimizationParameters_default_instance_._instance.get_mutable()->simulated_quantization_ = const_cast< ::tensorflow::tpu::SimulatedQuantization*>(
+      ::tensorflow::tpu::SimulatedQuantization::internal_default_instance());
   ::tensorflow::tpu::_OptimizationParameters_default_instance_._instance.get_mutable()->hot_id_replication_configuration_ = const_cast< ::tensorflow::tpu::HotIdReplicationConfiguration*>(
       ::tensorflow::tpu::HotIdReplicationConfiguration::internal_default_instance());
   ::tensorflow::tpu::_OptimizationParameters_default_instance_.adagrad_ = const_cast< ::tensorflow::tpu::AdagradParameters*>(
       ::tensorflow::tpu::AdagradParameters::internal_default_instance());
+  ::tensorflow::tpu::_OptimizationParameters_default_instance_.adagrad_momentum_ = const_cast< ::tensorflow::tpu::AdagradMomentumParameters*>(
+      ::tensorflow::tpu::AdagradMomentumParameters::internal_default_instance());
   ::tensorflow::tpu::_OptimizationParameters_default_instance_.bounded_adagrad_ = const_cast< ::tensorflow::tpu::BoundedAdagradParameters*>(
       ::tensorflow::tpu::BoundedAdagradParameters::internal_default_instance());
   ::tensorflow::tpu::_OptimizationParameters_default_instance_.stochastic_gradient_descent_ = const_cast< ::tensorflow::tpu::StochasticGradientDescentParameters*>(
@@ -7030,6 +8140,14 @@ void OptimizationParameters::InitAsDefaultInstance() {
       ::tensorflow::tpu::ProximalAdagradParameters::internal_default_instance());
   ::tensorflow::tpu::_OptimizationParameters_default_instance_.online_yogi_ = const_cast< ::tensorflow::tpu::OnlineYogiParameters*>(
       ::tensorflow::tpu::OnlineYogiParameters::internal_default_instance());
+  ::tensorflow::tpu::_OptimizationParameters_default_instance_.proximal_yogi_ = const_cast< ::tensorflow::tpu::ProximalYogiParameters*>(
+      ::tensorflow::tpu::ProximalYogiParameters::internal_default_instance());
+  ::tensorflow::tpu::_OptimizationParameters_default_instance_.frequency_estimator_ = const_cast< ::tensorflow::tpu::FrequencyEstimatorParameters*>(
+      ::tensorflow::tpu::FrequencyEstimatorParameters::internal_default_instance());
+  ::tensorflow::tpu::_OptimizationParameters_default_instance_.user_defined_program_ = const_cast< ::tensorflow::tpu::UserDefinedProgramParameters*>(
+      ::tensorflow::tpu::UserDefinedProgramParameters::internal_default_instance());
+  ::tensorflow::tpu::_OptimizationParameters_default_instance_.assign_ = const_cast< ::tensorflow::tpu::AssignParameters*>(
+      ::tensorflow::tpu::AssignParameters::internal_default_instance());
 }
 void OptimizationParameters::set_allocated_adagrad(::tensorflow::tpu::AdagradParameters* adagrad) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
@@ -7044,6 +8162,20 @@ void OptimizationParameters::set_allocated_adagrad(::tensorflow::tpu::AdagradPar
     parameters_.adagrad_ = adagrad;
   }
   // @@protoc_insertion_point(field_set_allocated:tensorflow.tpu.OptimizationParameters.adagrad)
+}
+void OptimizationParameters::set_allocated_adagrad_momentum(::tensorflow::tpu::AdagradMomentumParameters* adagrad_momentum) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  clear_parameters();
+  if (adagrad_momentum) {
+    ::google::protobuf::Arena* submessage_arena = NULL;
+    if (message_arena != submessage_arena) {
+      adagrad_momentum = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, adagrad_momentum, submessage_arena);
+    }
+    set_has_adagrad_momentum();
+    parameters_.adagrad_momentum_ = adagrad_momentum;
+  }
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.tpu.OptimizationParameters.adagrad_momentum)
 }
 void OptimizationParameters::set_allocated_bounded_adagrad(::tensorflow::tpu::BoundedAdagradParameters* bounded_adagrad) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
@@ -7199,14 +8331,74 @@ void OptimizationParameters::set_allocated_online_yogi(::tensorflow::tpu::Online
   }
   // @@protoc_insertion_point(field_set_allocated:tensorflow.tpu.OptimizationParameters.online_yogi)
 }
+void OptimizationParameters::set_allocated_proximal_yogi(::tensorflow::tpu::ProximalYogiParameters* proximal_yogi) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  clear_parameters();
+  if (proximal_yogi) {
+    ::google::protobuf::Arena* submessage_arena = NULL;
+    if (message_arena != submessage_arena) {
+      proximal_yogi = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, proximal_yogi, submessage_arena);
+    }
+    set_has_proximal_yogi();
+    parameters_.proximal_yogi_ = proximal_yogi;
+  }
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.tpu.OptimizationParameters.proximal_yogi)
+}
+void OptimizationParameters::set_allocated_frequency_estimator(::tensorflow::tpu::FrequencyEstimatorParameters* frequency_estimator) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  clear_parameters();
+  if (frequency_estimator) {
+    ::google::protobuf::Arena* submessage_arena = NULL;
+    if (message_arena != submessage_arena) {
+      frequency_estimator = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, frequency_estimator, submessage_arena);
+    }
+    set_has_frequency_estimator();
+    parameters_.frequency_estimator_ = frequency_estimator;
+  }
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.tpu.OptimizationParameters.frequency_estimator)
+}
+void OptimizationParameters::set_allocated_user_defined_program(::tensorflow::tpu::UserDefinedProgramParameters* user_defined_program) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  clear_parameters();
+  if (user_defined_program) {
+    ::google::protobuf::Arena* submessage_arena = NULL;
+    if (message_arena != submessage_arena) {
+      user_defined_program = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, user_defined_program, submessage_arena);
+    }
+    set_has_user_defined_program();
+    parameters_.user_defined_program_ = user_defined_program;
+  }
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.tpu.OptimizationParameters.user_defined_program)
+}
+void OptimizationParameters::set_allocated_assign(::tensorflow::tpu::AssignParameters* assign) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  clear_parameters();
+  if (assign) {
+    ::google::protobuf::Arena* submessage_arena = NULL;
+    if (message_arena != submessage_arena) {
+      assign = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, assign, submessage_arena);
+    }
+    set_has_assign();
+    parameters_.assign_ = assign;
+  }
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.tpu.OptimizationParameters.assign)
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int OptimizationParameters::kLearningRateFieldNumber;
 const int OptimizationParameters::kClippingLimitsFieldNumber;
 const int OptimizationParameters::kGradientClippingLimitsFieldNumber;
 const int OptimizationParameters::kWeightDecayFactorFieldNumber;
+const int OptimizationParameters::kMultiplyWeightDecayFactorByLearningRateFieldNumber;
+const int OptimizationParameters::kSimulatedQuantizationFieldNumber;
 const int OptimizationParameters::kGradientAccumulationStatusFieldNumber;
+const int OptimizationParameters::kLowDimensionalPackingStatusFieldNumber;
 const int OptimizationParameters::kHotIdReplicationConfigurationFieldNumber;
 const int OptimizationParameters::kAdagradFieldNumber;
+const int OptimizationParameters::kAdagradMomentumFieldNumber;
 const int OptimizationParameters::kBoundedAdagradFieldNumber;
 const int OptimizationParameters::kStochasticGradientDescentFieldNumber;
 const int OptimizationParameters::kFtrlFieldNumber;
@@ -7218,6 +8410,10 @@ const int OptimizationParameters::kMdlAdagradLightFieldNumber;
 const int OptimizationParameters::kAdadeltaFieldNumber;
 const int OptimizationParameters::kProximalAdagradFieldNumber;
 const int OptimizationParameters::kOnlineYogiFieldNumber;
+const int OptimizationParameters::kProximalYogiFieldNumber;
+const int OptimizationParameters::kFrequencyEstimatorFieldNumber;
+const int OptimizationParameters::kUserDefinedProgramFieldNumber;
+const int OptimizationParameters::kAssignFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 OptimizationParameters::OptimizationParameters()
@@ -7251,13 +8447,22 @@ OptimizationParameters::OptimizationParameters(const OptimizationParameters& fro
   } else {
     hot_id_replication_configuration_ = NULL;
   }
+  if (from.has_simulated_quantization()) {
+    simulated_quantization_ = new ::tensorflow::tpu::SimulatedQuantization(*from.simulated_quantization_);
+  } else {
+    simulated_quantization_ = NULL;
+  }
   ::memcpy(&weight_decay_factor_, &from.weight_decay_factor_,
-    static_cast<size_t>(reinterpret_cast<char*>(&gradient_accumulation_status_) -
-    reinterpret_cast<char*>(&weight_decay_factor_)) + sizeof(gradient_accumulation_status_));
+    static_cast<size_t>(reinterpret_cast<char*>(&low_dimensional_packing_status_) -
+    reinterpret_cast<char*>(&weight_decay_factor_)) + sizeof(low_dimensional_packing_status_));
   clear_has_parameters();
   switch (from.parameters_case()) {
     case kAdagrad: {
       mutable_adagrad()->::tensorflow::tpu::AdagradParameters::MergeFrom(from.adagrad());
+      break;
+    }
+    case kAdagradMomentum: {
+      mutable_adagrad_momentum()->::tensorflow::tpu::AdagradMomentumParameters::MergeFrom(from.adagrad_momentum());
       break;
     }
     case kBoundedAdagrad: {
@@ -7304,6 +8509,22 @@ OptimizationParameters::OptimizationParameters(const OptimizationParameters& fro
       mutable_online_yogi()->::tensorflow::tpu::OnlineYogiParameters::MergeFrom(from.online_yogi());
       break;
     }
+    case kProximalYogi: {
+      mutable_proximal_yogi()->::tensorflow::tpu::ProximalYogiParameters::MergeFrom(from.proximal_yogi());
+      break;
+    }
+    case kFrequencyEstimator: {
+      mutable_frequency_estimator()->::tensorflow::tpu::FrequencyEstimatorParameters::MergeFrom(from.frequency_estimator());
+      break;
+    }
+    case kUserDefinedProgram: {
+      mutable_user_defined_program()->::tensorflow::tpu::UserDefinedProgramParameters::MergeFrom(from.user_defined_program());
+      break;
+    }
+    case kAssign: {
+      mutable_assign()->::tensorflow::tpu::AssignParameters::MergeFrom(from.assign());
+      break;
+    }
     case PARAMETERS_NOT_SET: {
       break;
     }
@@ -7313,8 +8534,8 @@ OptimizationParameters::OptimizationParameters(const OptimizationParameters& fro
 
 void OptimizationParameters::SharedCtor() {
   ::memset(&clipping_limits_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&gradient_accumulation_status_) -
-      reinterpret_cast<char*>(&clipping_limits_)) + sizeof(gradient_accumulation_status_));
+      reinterpret_cast<char*>(&low_dimensional_packing_status_) -
+      reinterpret_cast<char*>(&clipping_limits_)) + sizeof(low_dimensional_packing_status_));
   clear_has_parameters();
 }
 
@@ -7328,6 +8549,7 @@ void OptimizationParameters::SharedDtor() {
   if (this != internal_default_instance()) delete gradient_clipping_limits_;
   if (this != internal_default_instance()) delete learning_rate_;
   if (this != internal_default_instance()) delete hot_id_replication_configuration_;
+  if (this != internal_default_instance()) delete simulated_quantization_;
   if (has_parameters()) {
     clear_parameters();
   }
@@ -7352,6 +8574,10 @@ void OptimizationParameters::clear_parameters() {
   switch (parameters_case()) {
     case kAdagrad: {
       delete parameters_.adagrad_;
+      break;
+    }
+    case kAdagradMomentum: {
+      delete parameters_.adagrad_momentum_;
       break;
     }
     case kBoundedAdagrad: {
@@ -7398,6 +8624,22 @@ void OptimizationParameters::clear_parameters() {
       delete parameters_.online_yogi_;
       break;
     }
+    case kProximalYogi: {
+      delete parameters_.proximal_yogi_;
+      break;
+    }
+    case kFrequencyEstimator: {
+      delete parameters_.frequency_estimator_;
+      break;
+    }
+    case kUserDefinedProgram: {
+      delete parameters_.user_defined_program_;
+      break;
+    }
+    case kAssign: {
+      delete parameters_.assign_;
+      break;
+    }
     case PARAMETERS_NOT_SET: {
       break;
     }
@@ -7428,9 +8670,13 @@ void OptimizationParameters::Clear() {
     delete hot_id_replication_configuration_;
   }
   hot_id_replication_configuration_ = NULL;
+  if (GetArenaNoVirtual() == NULL && simulated_quantization_ != NULL) {
+    delete simulated_quantization_;
+  }
+  simulated_quantization_ = NULL;
   ::memset(&weight_decay_factor_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&gradient_accumulation_status_) -
-      reinterpret_cast<char*>(&weight_decay_factor_)) + sizeof(gradient_accumulation_status_));
+      reinterpret_cast<char*>(&low_dimensional_packing_status_) -
+      reinterpret_cast<char*>(&weight_decay_factor_)) + sizeof(low_dimensional_packing_status_));
   clear_parameters();
   _internal_metadata_.Clear();
 }
@@ -7666,6 +8912,107 @@ bool OptimizationParameters::MergePartialFromCodedStream(
         break;
       }
 
+      // .tensorflow.tpu.ProximalYogiParameters proximal_yogi = 21;
+      case 21: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(170u /* 170 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_proximal_yogi()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool multiply_weight_decay_factor_by_learning_rate = 22;
+      case 22: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(176u /* 176 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &multiply_weight_decay_factor_by_learning_rate_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .tensorflow.tpu.FrequencyEstimatorParameters frequency_estimator = 23;
+      case 23: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(186u /* 186 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_frequency_estimator()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .tensorflow.tpu.UserDefinedProgramParameters user_defined_program = 24;
+      case 24: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(194u /* 194 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_user_defined_program()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .tensorflow.tpu.AssignParameters assign = 25;
+      case 25: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(202u /* 202 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_assign()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .tensorflow.tpu.AdagradMomentumParameters adagrad_momentum = 26;
+      case 26: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(210u /* 210 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_adagrad_momentum()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .tensorflow.tpu.SimulatedQuantization simulated_quantization = 27;
+      case 27: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(218u /* 218 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_simulated_quantization()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .tensorflow.tpu.LowDimensionalPackingStatus.Status low_dimensional_packing_status = 28;
+      case 28: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(224u /* 224 & 0xFF */)) {
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_low_dimensional_packing_status(static_cast< ::tensorflow::tpu::LowDimensionalPackingStatus_Status >(value));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -7797,6 +9144,53 @@ void OptimizationParameters::SerializeWithCachedSizes(
   if (has_online_yogi()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       20, this->_internal_online_yogi(), output);
+  }
+
+  // .tensorflow.tpu.ProximalYogiParameters proximal_yogi = 21;
+  if (has_proximal_yogi()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      21, this->_internal_proximal_yogi(), output);
+  }
+
+  // bool multiply_weight_decay_factor_by_learning_rate = 22;
+  if (this->multiply_weight_decay_factor_by_learning_rate() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(22, this->multiply_weight_decay_factor_by_learning_rate(), output);
+  }
+
+  // .tensorflow.tpu.FrequencyEstimatorParameters frequency_estimator = 23;
+  if (has_frequency_estimator()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      23, this->_internal_frequency_estimator(), output);
+  }
+
+  // .tensorflow.tpu.UserDefinedProgramParameters user_defined_program = 24;
+  if (has_user_defined_program()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      24, this->_internal_user_defined_program(), output);
+  }
+
+  // .tensorflow.tpu.AssignParameters assign = 25;
+  if (has_assign()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      25, this->_internal_assign(), output);
+  }
+
+  // .tensorflow.tpu.AdagradMomentumParameters adagrad_momentum = 26;
+  if (has_adagrad_momentum()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      26, this->_internal_adagrad_momentum(), output);
+  }
+
+  // .tensorflow.tpu.SimulatedQuantization simulated_quantization = 27;
+  if (this->has_simulated_quantization()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      27, this->_internal_simulated_quantization(), output);
+  }
+
+  // .tensorflow.tpu.LowDimensionalPackingStatus.Status low_dimensional_packing_status = 28;
+  if (this->low_dimensional_packing_status() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      28, this->low_dimensional_packing_status(), output);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -7936,6 +9330,59 @@ void OptimizationParameters::SerializeWithCachedSizes(
         20, this->_internal_online_yogi(), deterministic, target);
   }
 
+  // .tensorflow.tpu.ProximalYogiParameters proximal_yogi = 21;
+  if (has_proximal_yogi()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        21, this->_internal_proximal_yogi(), deterministic, target);
+  }
+
+  // bool multiply_weight_decay_factor_by_learning_rate = 22;
+  if (this->multiply_weight_decay_factor_by_learning_rate() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(22, this->multiply_weight_decay_factor_by_learning_rate(), target);
+  }
+
+  // .tensorflow.tpu.FrequencyEstimatorParameters frequency_estimator = 23;
+  if (has_frequency_estimator()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        23, this->_internal_frequency_estimator(), deterministic, target);
+  }
+
+  // .tensorflow.tpu.UserDefinedProgramParameters user_defined_program = 24;
+  if (has_user_defined_program()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        24, this->_internal_user_defined_program(), deterministic, target);
+  }
+
+  // .tensorflow.tpu.AssignParameters assign = 25;
+  if (has_assign()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        25, this->_internal_assign(), deterministic, target);
+  }
+
+  // .tensorflow.tpu.AdagradMomentumParameters adagrad_momentum = 26;
+  if (has_adagrad_momentum()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        26, this->_internal_adagrad_momentum(), deterministic, target);
+  }
+
+  // .tensorflow.tpu.SimulatedQuantization simulated_quantization = 27;
+  if (this->has_simulated_quantization()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        27, this->_internal_simulated_quantization(), deterministic, target);
+  }
+
+  // .tensorflow.tpu.LowDimensionalPackingStatus.Status low_dimensional_packing_status = 28;
+  if (this->low_dimensional_packing_status() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      28, this->low_dimensional_packing_status(), target);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
@@ -7981,6 +9428,13 @@ size_t OptimizationParameters::ByteSizeLong() const {
         *hot_id_replication_configuration_);
   }
 
+  // .tensorflow.tpu.SimulatedQuantization simulated_quantization = 27;
+  if (this->has_simulated_quantization()) {
+    total_size += 2 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *simulated_quantization_);
+  }
+
   // float weight_decay_factor = 16;
   if (this->weight_decay_factor() != 0) {
     total_size += 2 + 4;
@@ -7992,12 +9446,30 @@ size_t OptimizationParameters::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormatLite::EnumSize(this->gradient_accumulation_status());
   }
 
+  // bool multiply_weight_decay_factor_by_learning_rate = 22;
+  if (this->multiply_weight_decay_factor_by_learning_rate() != 0) {
+    total_size += 2 + 1;
+  }
+
+  // .tensorflow.tpu.LowDimensionalPackingStatus.Status low_dimensional_packing_status = 28;
+  if (this->low_dimensional_packing_status() != 0) {
+    total_size += 2 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->low_dimensional_packing_status());
+  }
+
   switch (parameters_case()) {
     // .tensorflow.tpu.AdagradParameters adagrad = 3;
     case kAdagrad: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *parameters_.adagrad_);
+      break;
+    }
+    // .tensorflow.tpu.AdagradMomentumParameters adagrad_momentum = 26;
+    case kAdagradMomentum: {
+      total_size += 2 +
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          *parameters_.adagrad_momentum_);
       break;
     }
     // .tensorflow.tpu.BoundedAdagradParameters bounded_adagrad = 19;
@@ -8077,6 +9549,34 @@ size_t OptimizationParameters::ByteSizeLong() const {
           *parameters_.online_yogi_);
       break;
     }
+    // .tensorflow.tpu.ProximalYogiParameters proximal_yogi = 21;
+    case kProximalYogi: {
+      total_size += 2 +
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          *parameters_.proximal_yogi_);
+      break;
+    }
+    // .tensorflow.tpu.FrequencyEstimatorParameters frequency_estimator = 23;
+    case kFrequencyEstimator: {
+      total_size += 2 +
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          *parameters_.frequency_estimator_);
+      break;
+    }
+    // .tensorflow.tpu.UserDefinedProgramParameters user_defined_program = 24;
+    case kUserDefinedProgram: {
+      total_size += 2 +
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          *parameters_.user_defined_program_);
+      break;
+    }
+    // .tensorflow.tpu.AssignParameters assign = 25;
+    case kAssign: {
+      total_size += 2 +
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          *parameters_.assign_);
+      break;
+    }
     case PARAMETERS_NOT_SET: {
       break;
     }
@@ -8120,15 +9620,28 @@ void OptimizationParameters::MergeFrom(const OptimizationParameters& from) {
   if (from.has_hot_id_replication_configuration()) {
     mutable_hot_id_replication_configuration()->::tensorflow::tpu::HotIdReplicationConfiguration::MergeFrom(from.hot_id_replication_configuration());
   }
+  if (from.has_simulated_quantization()) {
+    mutable_simulated_quantization()->::tensorflow::tpu::SimulatedQuantization::MergeFrom(from.simulated_quantization());
+  }
   if (from.weight_decay_factor() != 0) {
     set_weight_decay_factor(from.weight_decay_factor());
   }
   if (from.gradient_accumulation_status() != 0) {
     set_gradient_accumulation_status(from.gradient_accumulation_status());
   }
+  if (from.multiply_weight_decay_factor_by_learning_rate() != 0) {
+    set_multiply_weight_decay_factor_by_learning_rate(from.multiply_weight_decay_factor_by_learning_rate());
+  }
+  if (from.low_dimensional_packing_status() != 0) {
+    set_low_dimensional_packing_status(from.low_dimensional_packing_status());
+  }
   switch (from.parameters_case()) {
     case kAdagrad: {
       mutable_adagrad()->::tensorflow::tpu::AdagradParameters::MergeFrom(from.adagrad());
+      break;
+    }
+    case kAdagradMomentum: {
+      mutable_adagrad_momentum()->::tensorflow::tpu::AdagradMomentumParameters::MergeFrom(from.adagrad_momentum());
       break;
     }
     case kBoundedAdagrad: {
@@ -8175,6 +9688,22 @@ void OptimizationParameters::MergeFrom(const OptimizationParameters& from) {
       mutable_online_yogi()->::tensorflow::tpu::OnlineYogiParameters::MergeFrom(from.online_yogi());
       break;
     }
+    case kProximalYogi: {
+      mutable_proximal_yogi()->::tensorflow::tpu::ProximalYogiParameters::MergeFrom(from.proximal_yogi());
+      break;
+    }
+    case kFrequencyEstimator: {
+      mutable_frequency_estimator()->::tensorflow::tpu::FrequencyEstimatorParameters::MergeFrom(from.frequency_estimator());
+      break;
+    }
+    case kUserDefinedProgram: {
+      mutable_user_defined_program()->::tensorflow::tpu::UserDefinedProgramParameters::MergeFrom(from.user_defined_program());
+      break;
+    }
+    case kAssign: {
+      mutable_assign()->::tensorflow::tpu::AssignParameters::MergeFrom(from.assign());
+      break;
+    }
     case PARAMETERS_NOT_SET: {
       break;
     }
@@ -8209,8 +9738,11 @@ void OptimizationParameters::InternalSwap(OptimizationParameters* other) {
   swap(gradient_clipping_limits_, other->gradient_clipping_limits_);
   swap(learning_rate_, other->learning_rate_);
   swap(hot_id_replication_configuration_, other->hot_id_replication_configuration_);
+  swap(simulated_quantization_, other->simulated_quantization_);
   swap(weight_decay_factor_, other->weight_decay_factor_);
   swap(gradient_accumulation_status_, other->gradient_accumulation_status_);
+  swap(multiply_weight_decay_factor_by_learning_rate_, other->multiply_weight_decay_factor_by_learning_rate_);
+  swap(low_dimensional_packing_status_, other->low_dimensional_packing_status_);
   swap(parameters_, other->parameters_);
   swap(_oneof_case_[0], other->_oneof_case_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -8227,7 +9759,6 @@ void OptimizationParameters::InternalSwap(OptimizationParameters* other) {
 void StateVariableSpecification_UserDefined::InitAsDefaultInstance() {
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int StateVariableSpecification_UserDefined::kPaddingInitialValueFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 StateVariableSpecification_UserDefined::StateVariableSpecification_UserDefined()
@@ -8241,12 +9772,10 @@ StateVariableSpecification_UserDefined::StateVariableSpecification_UserDefined(c
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  padding_initial_value_ = from.padding_initial_value_;
   // @@protoc_insertion_point(copy_constructor:tensorflow.tpu.StateVariableSpecification.UserDefined)
 }
 
 void StateVariableSpecification_UserDefined::SharedCtor() {
-  padding_initial_value_ = 0;
 }
 
 StateVariableSpecification_UserDefined::~StateVariableSpecification_UserDefined() {
@@ -8277,7 +9806,6 @@ void StateVariableSpecification_UserDefined::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  padding_initial_value_ = 0;
   _internal_metadata_.Clear();
 }
 
@@ -8290,31 +9818,12 @@ bool StateVariableSpecification_UserDefined::MergePartialFromCodedStream(
     ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // double padding_initial_value = 1;
-      case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(9u /* 9 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &padding_initial_value_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::google::protobuf::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
+  handle_unusual:
+    if (tag == 0) {
+      goto success;
     }
+    DO_(::google::protobuf::internal::WireFormat::SkipField(
+          input, tag, _internal_metadata_.mutable_unknown_fields()));
   }
 success:
   // @@protoc_insertion_point(parse_success:tensorflow.tpu.StateVariableSpecification.UserDefined)
@@ -8331,11 +9840,6 @@ void StateVariableSpecification_UserDefined::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // double padding_initial_value = 1;
-  if (this->padding_initial_value() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteDouble(1, this->padding_initial_value(), output);
-  }
-
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -8349,11 +9853,6 @@ void StateVariableSpecification_UserDefined::SerializeWithCachedSizes(
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.tpu.StateVariableSpecification.UserDefined)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
-
-  // double padding_initial_value = 1;
-  if (this->padding_initial_value() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(1, this->padding_initial_value(), target);
-  }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
@@ -8372,11 +9871,6 @@ size_t StateVariableSpecification_UserDefined::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
-  // double padding_initial_value = 1;
-  if (this->padding_initial_value() != 0) {
-    total_size += 1 + 8;
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -8404,9 +9898,6 @@ void StateVariableSpecification_UserDefined::MergeFrom(const StateVariableSpecif
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.padding_initial_value() != 0) {
-    set_padding_initial_value(from.padding_initial_value());
-  }
 }
 
 void StateVariableSpecification_UserDefined::CopyFrom(const ::google::protobuf::Message& from) {
@@ -8433,7 +9924,6 @@ void StateVariableSpecification_UserDefined::Swap(StateVariableSpecification_Use
 }
 void StateVariableSpecification_UserDefined::InternalSwap(StateVariableSpecification_UserDefined* other) {
   using std::swap;
-  swap(padding_initial_value_, other->padding_initial_value_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
@@ -9070,6 +10560,9 @@ namespace protobuf {
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::tpu::ClippingLimits* Arena::CreateMaybeMessage< ::tensorflow::tpu::ClippingLimits >(Arena* arena) {
   return Arena::CreateInternal< ::tensorflow::tpu::ClippingLimits >(arena);
 }
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::tpu::SimulatedQuantization* Arena::CreateMaybeMessage< ::tensorflow::tpu::SimulatedQuantization >(Arena* arena) {
+  return Arena::CreateInternal< ::tensorflow::tpu::SimulatedQuantization >(arena);
+}
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::tpu::DynamicLearningRate* Arena::CreateMaybeMessage< ::tensorflow::tpu::DynamicLearningRate >(Arena* arena) {
   return Arena::CreateInternal< ::tensorflow::tpu::DynamicLearningRate >(arena);
 }
@@ -9078,6 +10571,9 @@ template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::tpu::LearningRate* A
 }
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::tpu::AdagradParameters* Arena::CreateMaybeMessage< ::tensorflow::tpu::AdagradParameters >(Arena* arena) {
   return Arena::CreateInternal< ::tensorflow::tpu::AdagradParameters >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::tpu::AdagradMomentumParameters* Arena::CreateMaybeMessage< ::tensorflow::tpu::AdagradMomentumParameters >(Arena* arena) {
+  return Arena::CreateInternal< ::tensorflow::tpu::AdagradMomentumParameters >(arena);
 }
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::tpu::BoundedAdagradParameters* Arena::CreateMaybeMessage< ::tensorflow::tpu::BoundedAdagradParameters >(Arena* arena) {
   return Arena::CreateInternal< ::tensorflow::tpu::BoundedAdagradParameters >(arena);
@@ -9109,17 +10605,26 @@ template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::tpu::AdadeltaParamet
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::tpu::ProximalAdagradParameters* Arena::CreateMaybeMessage< ::tensorflow::tpu::ProximalAdagradParameters >(Arena* arena) {
   return Arena::CreateInternal< ::tensorflow::tpu::ProximalAdagradParameters >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::tpu::OnlineYogiParameters_SignActivation* Arena::CreateMaybeMessage< ::tensorflow::tpu::OnlineYogiParameters_SignActivation >(Arena* arena) {
-  return Arena::CreateInternal< ::tensorflow::tpu::OnlineYogiParameters_SignActivation >(arena);
-}
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::tpu::OnlineYogiParameters_TanhActivation* Arena::CreateMaybeMessage< ::tensorflow::tpu::OnlineYogiParameters_TanhActivation >(Arena* arena) {
-  return Arena::CreateInternal< ::tensorflow::tpu::OnlineYogiParameters_TanhActivation >(arena);
-}
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::tpu::OnlineYogiParameters* Arena::CreateMaybeMessage< ::tensorflow::tpu::OnlineYogiParameters >(Arena* arena) {
   return Arena::CreateInternal< ::tensorflow::tpu::OnlineYogiParameters >(arena);
 }
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::tpu::ProximalYogiParameters* Arena::CreateMaybeMessage< ::tensorflow::tpu::ProximalYogiParameters >(Arena* arena) {
+  return Arena::CreateInternal< ::tensorflow::tpu::ProximalYogiParameters >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::tpu::FrequencyEstimatorParameters* Arena::CreateMaybeMessage< ::tensorflow::tpu::FrequencyEstimatorParameters >(Arena* arena) {
+  return Arena::CreateInternal< ::tensorflow::tpu::FrequencyEstimatorParameters >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::tpu::UserDefinedProgramParameters* Arena::CreateMaybeMessage< ::tensorflow::tpu::UserDefinedProgramParameters >(Arena* arena) {
+  return Arena::CreateInternal< ::tensorflow::tpu::UserDefinedProgramParameters >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::tpu::AssignParameters* Arena::CreateMaybeMessage< ::tensorflow::tpu::AssignParameters >(Arena* arena) {
+  return Arena::CreateInternal< ::tensorflow::tpu::AssignParameters >(arena);
+}
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::tpu::GradientAccumulationStatus* Arena::CreateMaybeMessage< ::tensorflow::tpu::GradientAccumulationStatus >(Arena* arena) {
   return Arena::CreateInternal< ::tensorflow::tpu::GradientAccumulationStatus >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::tpu::LowDimensionalPackingStatus* Arena::CreateMaybeMessage< ::tensorflow::tpu::LowDimensionalPackingStatus >(Arena* arena) {
+  return Arena::CreateInternal< ::tensorflow::tpu::LowDimensionalPackingStatus >(arena);
 }
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::tpu::HotIdReplicationConfiguration* Arena::CreateMaybeMessage< ::tensorflow::tpu::HotIdReplicationConfiguration >(Arena* arena) {
   return Arena::CreateInternal< ::tensorflow::tpu::HotIdReplicationConfiguration >(arena);

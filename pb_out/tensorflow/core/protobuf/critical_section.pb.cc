@@ -118,13 +118,14 @@ void AddDescriptorsImpl() {
       "Def\022\035\n\025critical_section_name\030\001 \001(\t\"j\n\033Cr"
       "iticalSectionExecutionDef\022(\n execute_in_"
       "critical_section_name\030\001 \001(\t\022!\n\031exclusive"
-      "_resource_access\030\002 \001(\010Bt\n\030org.tensorflow"
-      ".frameworkB\025CriticalSectionProtosP\001Z<git"
-      "hub.com/tensorflow/tensorflow/tensorflow"
-      "/go/core/protobuf\370\001\001b\006proto3"
+      "_resource_access\030\002 \001(\010B\215\001\n\030org.tensorflo"
+      "w.frameworkB\025CriticalSectionProtosP\001ZUgi"
+      "thub.com/tensorflow/tensorflow/tensorflo"
+      "w/go/core/protobuf/for_core_protos_go_pr"
+      "oto\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 348);
+      descriptor, 374);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/protobuf/critical_section.proto", &protobuf_RegisterTypes);
 }

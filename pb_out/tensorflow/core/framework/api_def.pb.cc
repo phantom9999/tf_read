@@ -252,12 +252,13 @@ void AddDescriptorsImpl() {
       " \001(\t\"G\n\nVisibility\022\026\n\022DEFAULT_VISIBILITY"
       "\020\000\022\013\n\007VISIBLE\020\001\022\010\n\004SKIP\020\002\022\n\n\006HIDDEN\020\003\")\n"
       "\007ApiDefs\022\036\n\002op\030\001 \003(\0132\022.tensorflow.ApiDef"
-      "Bl\n\030org.tensorflow.frameworkB\014ApiDefProt"
-      "osP\001Z=github.com/tensorflow/tensorflow/t"
-      "ensorflow/go/core/framework\370\001\001b\006proto3"
+      "B}\n\030org.tensorflow.frameworkB\014ApiDefProt"
+      "osP\001ZNgithub.com/tensorflow/tensorflow/t"
+      "ensorflow/go/core/framework/api_def_go_p"
+      "roto\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 998);
+      descriptor, 1015);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/framework/api_def.proto", &protobuf_RegisterTypes);
   ::protobuf_tensorflow_2fcore_2fframework_2fattr_5fvalue_2eproto::AddDescriptors();

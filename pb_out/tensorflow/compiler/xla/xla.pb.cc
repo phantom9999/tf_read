@@ -20,12 +20,11 @@
 // @@protoc_insertion_point(includes)
 
 namespace protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto ::google::protobuf::internal::SCCInfo<5> scc_info_HloModuleProto;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto ::google::protobuf::internal::SCCInfo<8> scc_info_HloModuleProto;
 }  // namespace protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto
 namespace protobuf_tensorflow_2fcompiler_2fxla_2fxla_2eproto {
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fxla_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_DebugOptions_XlaBackendExtraOptionsEntry_DoNotUse;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fxla_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_HloReducePrecisionOptions;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fxla_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_DebugOptions;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fxla_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_DebugOptions;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fxla_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_ExecuteResponse;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fxla_2eproto ::google::protobuf::internal::SCCInfo<3> scc_info_ExecuteGraphRequest;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fxla_2eproto ::google::protobuf::internal::SCCInfo<4> scc_info_ExecutionOptions;
@@ -43,11 +42,6 @@ extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdat
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_ShapeProto;
 }  // namespace protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto
 namespace xla {
-class HloReducePrecisionOptionsDefaultTypeInternal {
- public:
-  ::google::protobuf::internal::ExplicitlyConstructed<HloReducePrecisionOptions>
-      _instance;
-} _HloReducePrecisionOptions_default_instance_;
 class DebugOptions_XlaBackendExtraOptionsEntry_DoNotUseDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<DebugOptions_XlaBackendExtraOptionsEntry_DoNotUse>
@@ -250,20 +244,6 @@ class UnpackResponseDefaultTypeInternal {
 } _UnpackResponse_default_instance_;
 }  // namespace xla
 namespace protobuf_tensorflow_2fcompiler_2fxla_2fxla_2eproto {
-static void InitDefaultsHloReducePrecisionOptions() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::xla::_HloReducePrecisionOptions_default_instance_;
-    new (ptr) ::xla::HloReducePrecisionOptions();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::xla::HloReducePrecisionOptions::InitAsDefaultInstance();
-}
-
-::google::protobuf::internal::SCCInfo<0> scc_info_HloReducePrecisionOptions =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsHloReducePrecisionOptions}, {}};
-
 static void InitDefaultsDebugOptions_XlaBackendExtraOptionsEntry_DoNotUse() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -288,9 +268,8 @@ static void InitDefaultsDebugOptions() {
   ::xla::DebugOptions::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<2> scc_info_DebugOptions =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsDebugOptions}, {
-      &protobuf_tensorflow_2fcompiler_2fxla_2fxla_2eproto::scc_info_HloReducePrecisionOptions.base,
+::google::protobuf::internal::SCCInfo<1> scc_info_DebugOptions =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsDebugOptions}, {
       &protobuf_tensorflow_2fcompiler_2fxla_2fxla_2eproto::scc_info_DebugOptions_XlaBackendExtraOptionsEntry_DoNotUse.base,}};
 
 static void InitDefaultsExecutionOptions() {
@@ -876,7 +855,6 @@ static void InitDefaultsUnpackResponse() {
       &protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto::scc_info_GlobalDataHandle.base,}};
 
 void InitDefaults() {
-  ::google::protobuf::internal::InitSCC(&scc_info_HloReducePrecisionOptions.base);
   ::google::protobuf::internal::InitSCC(&scc_info_DebugOptions_XlaBackendExtraOptionsEntry_DoNotUse.base);
   ::google::protobuf::internal::InitSCC(&scc_info_DebugOptions.base);
   ::google::protobuf::internal::InitSCC(&scc_info_ExecutionOptions.base);
@@ -919,20 +897,10 @@ void InitDefaults() {
   ::google::protobuf::internal::InitSCC(&scc_info_UnpackResponse.base);
 }
 
-::google::protobuf::Metadata file_level_metadata[41];
-const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[2];
+::google::protobuf::Metadata file_level_metadata[40];
+const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[1];
 
 const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloReducePrecisionOptions, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloReducePrecisionOptions, location_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloReducePrecisionOptions, exponent_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloReducePrecisionOptions, mantissa_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloReducePrecisionOptions, opcodes_to_suffix_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloReducePrecisionOptions, opname_substrings_to_suffix_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions_XlaBackendExtraOptionsEntry_DoNotUse, _has_bits_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions_XlaBackendExtraOptionsEntry_DoNotUse, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -959,15 +927,14 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_gpu_cuda_data_dir_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_gpu_ftz_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_gpu_disable_multi_streaming_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_gpu_use_random_streams_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_llvm_enable_alias_scope_metadata_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_llvm_enable_noalias_metadata_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_llvm_enable_invariant_load_metadata_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_llvm_disable_expensive_passes_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, hlo_reduce_precision_options_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_test_all_output_layouts_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_test_all_input_layouts_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_hlo_graph_sharding_color_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_gpu_use_cudnn_batchnorm_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_cpu_use_mkl_dnn_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_gpu_max_kernel_unroll_factor_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_cpu_enable_fast_math_),
@@ -975,12 +942,13 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_cpu_fast_math_honor_infs_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_cpu_fast_math_honor_division_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_cpu_fast_math_honor_functions_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_cpu_enable_fast_min_max_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_gpu_enable_fast_min_max_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_allow_excess_precision_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_gpu_crash_on_verification_failures_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_gpu_disable_autotune_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_gpu_autotune_level_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_force_host_platform_device_count_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_gpu_disable_ptxas_optimizations_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_gpu_disable_gpuasm_optimizations_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_hlo_evaluator_use_fast_path_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_allow_scalar_index_dynamic_ops_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_step_marker_location_),
@@ -992,10 +960,41 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_dump_hlo_as_dot_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_dump_hlo_as_url_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_dump_hlo_as_html_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_dump_fusion_visualization_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_dump_hlo_snapshots_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_dump_include_timestamp_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_dump_max_hlo_modules_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_dump_module_metadata_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_dump_compress_protos_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_dump_hlo_as_long_text_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_gpu_force_conv_nchw_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_gpu_force_conv_nhwc_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_gpu_ptx_file_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_gpu_algorithm_blacklist_path_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_gpu_dump_llvmir_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_gpu_algorithm_denylist_path_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_tpu_detect_nan_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_tpu_detect_inf_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_cpu_enable_xprof_traceme_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_gpu_unsafe_fallback_to_driver_on_ptxas_not_found_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_gpu_asm_extra_flags_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_multiheap_size_constraint_per_heap_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_detailed_logging_and_dumping_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_gpu_force_compilation_parallelism_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_gpu_deterministic_ops_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_gpu_llvm_ir_file_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_gpu_enable_async_all_reduce_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_gpu_all_reduce_combine_threshold_bytes_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_gpu_all_reduce_contiguous_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_gpu_all_reduce_blueconnect_num_devices_per_host_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_gpu_enable_cudnn_frontend_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_dump_disable_metadata_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_dump_hlo_pipeline_re_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_gpu_strict_conv_algorithm_picker_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_gpu_bef_executable_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_gpu_bef_thunk_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_gpu_nccl_termination_timeout_seconds_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_gpu_enable_shared_constants_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_gpu_redzone_scratch_max_megabytes_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DebugOptions, xla_backend_extra_options_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::ExecutionOptions, _internal_metadata_),
@@ -1008,6 +1007,13 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::ExecutionOptions, device_handles_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::ExecutionOptions, num_replicas_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::ExecutionOptions, device_assignment_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::ExecutionOptions, alias_passthrough_params_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::ExecutionOptions, num_partitions_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::ExecutionOptions, launch_id_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::ExecutionOptions, use_spmd_partitioning_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::ExecutionOptions, use_auto_spmd_partitioning_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::ExecutionOptions, deduplicate_hlo_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::ExecutionOptions, allow_spmd_sharding_propagation_to_output_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::GetDeviceHandlesRequest, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -1253,51 +1259,49 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::UnpackResponse, tied_data_),
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::xla::HloReducePrecisionOptions)},
-  { 10, 17, sizeof(::xla::DebugOptions_XlaBackendExtraOptionsEntry_DoNotUse)},
-  { 19, -1, sizeof(::xla::DebugOptions)},
-  { 74, -1, sizeof(::xla::ExecutionOptions)},
-  { 85, -1, sizeof(::xla::GetDeviceHandlesRequest)},
-  { 91, -1, sizeof(::xla::GetDeviceHandlesResponse)},
-  { 97, -1, sizeof(::xla::TransferToClientRequest)},
-  { 104, -1, sizeof(::xla::TransferToClientResponse)},
-  { 110, -1, sizeof(::xla::TransferToServerRequest)},
-  { 117, -1, sizeof(::xla::TransferToServerResponse)},
-  { 123, -1, sizeof(::xla::TransferToInfeedRequest)},
-  { 131, -1, sizeof(::xla::TransferToInfeedResponse)},
-  { 136, -1, sizeof(::xla::TransferFromOutfeedRequest)},
-  { 144, -1, sizeof(::xla::TransferFromOutfeedResponse)},
-  { 150, -1, sizeof(::xla::ResetDeviceRequest)},
-  { 156, -1, sizeof(::xla::ResetDeviceResponse)},
-  { 161, -1, sizeof(::xla::ComputationGraphStatsRequest)},
-  { 168, -1, sizeof(::xla::ComputationStatsResponse)},
-  { 174, -1, sizeof(::xla::CreateChannelHandleRequest)},
-  { 180, -1, sizeof(::xla::CreateChannelHandleResponse)},
-  { 186, -1, sizeof(::xla::UnregisterRequest)},
-  { 192, -1, sizeof(::xla::UnregisterResponse)},
-  { 197, -1, sizeof(::xla::CompileRequest)},
-  { 205, -1, sizeof(::xla::CompileResponse)},
-  { 211, -1, sizeof(::xla::ExecuteRequest)},
-  { 218, -1, sizeof(::xla::ExecuteGraphRequest)},
-  { 226, -1, sizeof(::xla::ExecuteGraphParallelRequest)},
-  { 232, -1, sizeof(::xla::ExecuteResponse)},
-  { 239, -1, sizeof(::xla::ExecuteParallelResponse)},
-  { 245, -1, sizeof(::xla::WaitForExecutionRequest)},
-  { 251, -1, sizeof(::xla::WaitForExecutionResponse)},
-  { 258, -1, sizeof(::xla::ComputeConstantGraphRequest)},
-  { 265, -1, sizeof(::xla::ComputeConstantResponse)},
-  { 271, -1, sizeof(::xla::DeconstructTupleRequest)},
-  { 277, -1, sizeof(::xla::DeconstructTupleResponse)},
-  { 283, -1, sizeof(::xla::LoadDataRequest)},
-  { 294, -1, sizeof(::xla::LoadDataResponse)},
-  { 304, -1, sizeof(::xla::GetShapeRequest)},
-  { 310, -1, sizeof(::xla::GetShapeResponse)},
-  { 316, -1, sizeof(::xla::UnpackRequest)},
-  { 322, -1, sizeof(::xla::UnpackResponse)},
+  { 0, 7, sizeof(::xla::DebugOptions_XlaBackendExtraOptionsEntry_DoNotUse)},
+  { 9, -1, sizeof(::xla::DebugOptions)},
+  { 95, -1, sizeof(::xla::ExecutionOptions)},
+  { 113, -1, sizeof(::xla::GetDeviceHandlesRequest)},
+  { 119, -1, sizeof(::xla::GetDeviceHandlesResponse)},
+  { 125, -1, sizeof(::xla::TransferToClientRequest)},
+  { 132, -1, sizeof(::xla::TransferToClientResponse)},
+  { 138, -1, sizeof(::xla::TransferToServerRequest)},
+  { 145, -1, sizeof(::xla::TransferToServerResponse)},
+  { 151, -1, sizeof(::xla::TransferToInfeedRequest)},
+  { 159, -1, sizeof(::xla::TransferToInfeedResponse)},
+  { 164, -1, sizeof(::xla::TransferFromOutfeedRequest)},
+  { 172, -1, sizeof(::xla::TransferFromOutfeedResponse)},
+  { 178, -1, sizeof(::xla::ResetDeviceRequest)},
+  { 184, -1, sizeof(::xla::ResetDeviceResponse)},
+  { 189, -1, sizeof(::xla::ComputationGraphStatsRequest)},
+  { 196, -1, sizeof(::xla::ComputationStatsResponse)},
+  { 202, -1, sizeof(::xla::CreateChannelHandleRequest)},
+  { 208, -1, sizeof(::xla::CreateChannelHandleResponse)},
+  { 214, -1, sizeof(::xla::UnregisterRequest)},
+  { 220, -1, sizeof(::xla::UnregisterResponse)},
+  { 225, -1, sizeof(::xla::CompileRequest)},
+  { 233, -1, sizeof(::xla::CompileResponse)},
+  { 239, -1, sizeof(::xla::ExecuteRequest)},
+  { 246, -1, sizeof(::xla::ExecuteGraphRequest)},
+  { 254, -1, sizeof(::xla::ExecuteGraphParallelRequest)},
+  { 260, -1, sizeof(::xla::ExecuteResponse)},
+  { 267, -1, sizeof(::xla::ExecuteParallelResponse)},
+  { 273, -1, sizeof(::xla::WaitForExecutionRequest)},
+  { 279, -1, sizeof(::xla::WaitForExecutionResponse)},
+  { 286, -1, sizeof(::xla::ComputeConstantGraphRequest)},
+  { 293, -1, sizeof(::xla::ComputeConstantResponse)},
+  { 299, -1, sizeof(::xla::DeconstructTupleRequest)},
+  { 305, -1, sizeof(::xla::DeconstructTupleResponse)},
+  { 311, -1, sizeof(::xla::LoadDataRequest)},
+  { 322, -1, sizeof(::xla::LoadDataResponse)},
+  { 332, -1, sizeof(::xla::GetShapeRequest)},
+  { 338, -1, sizeof(::xla::GetShapeResponse)},
+  { 344, -1, sizeof(::xla::UnpackRequest)},
+  { 350, -1, sizeof(::xla::UnpackResponse)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::google::protobuf::Message*>(&::xla::_HloReducePrecisionOptions_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::xla::_DebugOptions_XlaBackendExtraOptionsEntry_DoNotUse_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::xla::_DebugOptions_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::xla::_ExecutionOptions_default_instance_),
@@ -1355,7 +1359,7 @@ void protobuf_AssignDescriptorsOnce() {
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 41);
+  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 40);
 }
 
 void AddDescriptorsImpl() {
@@ -1364,48 +1368,39 @@ void AddDescriptorsImpl() {
       "\n!tensorflow/compiler/xla/xla.proto\022\003xla"
       "\032)tensorflow/compiler/xla/service/hlo.pr"
       "oto\032&tensorflow/compiler/xla/xla_data.pr"
-      "oto\"\304\002\n\031HloReducePrecisionOptions\0229\n\010loc"
-      "ation\030\001 \001(\0162\'.xla.HloReducePrecisionOpti"
-      "ons.Location\022\025\n\rexponent_bits\030\002 \001(\r\022\025\n\rm"
-      "antissa_bits\030\003 \001(\r\022\031\n\021opcodes_to_suffix\030"
-      "\004 \003(\r\022#\n\033opname_substrings_to_suffix\030\005 \003"
-      "(\t\"~\n\010Location\022\r\n\tOP_INPUTS\020\000\022\016\n\nOP_OUTP"
-      "UTS\020\001\022\026\n\022UNFUSED_OP_OUTPUTS\020\002\022\034\n\030FUSION_"
-      "INPUTS_BY_CONTENT\020\003\022\035\n\031FUSION_OUTPUTS_BY"
-      "_CONTENT\020\004\"\375\020\n\014DebugOptions\022\037\n\027xla_hlo_g"
-      "raph_addresses\030\002 \001(\010\022\027\n\017xla_hlo_profile\030"
-      "\t \001(\010\022\036\n\026xla_disable_hlo_passes\030\036 \003(\t\022\"\n"
-      "\032xla_enable_hlo_passes_only\030| \003(\t\022\"\n\032xla"
-      "_disable_all_hlo_passes\030h \001(\010\022&\n\036xla_bac"
-      "kend_optimization_level\030\037 \001(\005\022\"\n\032xla_emb"
-      "ed_ir_in_executable\030! \001(\010\022,\n$xla_elimina"
-      "te_hlo_implicit_broadcast\030# \001(\010\022\"\n\032xla_c"
-      "pu_multi_thread_eigen\030< \001(\010\022\035\n\025xla_gpu_c"
-      "uda_data_dir\030= \001(\t\022\023\n\013xla_gpu_ftz\030> \001(\010\022"
-      "\'\n\037xla_gpu_disable_multi_streaming\030\? \001(\010"
-      "\022,\n$xla_llvm_enable_alias_scope_metadata"
-      "\030F \001(\010\022(\n xla_llvm_enable_noalias_metada"
-      "ta\030G \001(\010\022/\n\'xla_llvm_enable_invariant_lo"
-      "ad_metadata\030H \001(\010\022)\n!xla_llvm_disable_ex"
-      "pensive_passes\030I \001(\010\022D\n\034hlo_reduce_preci"
-      "sion_options\030P \003(\0132\036.xla.HloReducePrecis"
-      "ionOptions\022#\n\033xla_test_all_output_layout"
+      "oto\"\327\032\n\014DebugOptions\022\037\n\027xla_hlo_graph_ad"
+      "dresses\030\002 \001(\010\022\027\n\017xla_hlo_profile\030\t \001(\010\022\036"
+      "\n\026xla_disable_hlo_passes\030\036 \003(\t\022\"\n\032xla_en"
+      "able_hlo_passes_only\030| \003(\t\022\"\n\032xla_disabl"
+      "e_all_hlo_passes\030h \001(\010\022&\n\036xla_backend_op"
+      "timization_level\030\037 \001(\005\022\"\n\032xla_embed_ir_i"
+      "n_executable\030! \001(\010\022,\n$xla_eliminate_hlo_"
+      "implicit_broadcast\030# \001(\010\022\"\n\032xla_cpu_mult"
+      "i_thread_eigen\030< \001(\010\022\035\n\025xla_gpu_cuda_dat"
+      "a_dir\030= \001(\t\022\023\n\013xla_gpu_ftz\030> \001(\010\022\'\n\037xla_"
+      "gpu_disable_multi_streaming\030\? \001(\010\022#\n\032xla"
+      "_gpu_use_random_streams\030\206\001 \001(\010\022,\n$xla_ll"
+      "vm_enable_alias_scope_metadata\030F \001(\010\022(\n "
+      "xla_llvm_enable_noalias_metadata\030G \001(\010\022/"
+      "\n\'xla_llvm_enable_invariant_load_metadat"
+      "a\030H \001(\010\022)\n!xla_llvm_disable_expensive_pa"
+      "sses\030I \001(\010\022#\n\033xla_test_all_output_layout"
       "s\030Z \001(\010\022\"\n\032xla_test_all_input_layouts\030[ "
       "\001(\010\022$\n\034xla_hlo_graph_sharding_color\030\\ \001("
-      "\010\022#\n\033xla_gpu_use_cudnn_batchnorm\030^ \001(\010\022\033"
-      "\n\023xla_cpu_use_mkl_dnn\030a \001(\010\022(\n xla_gpu_m"
-      "ax_kernel_unroll_factor\030b \001(\005\022 \n\030xla_cpu"
-      "_enable_fast_math\030c \001(\010\022$\n\034xla_cpu_fast_"
-      "math_honor_nans\030x \001(\010\022$\n\034xla_cpu_fast_ma"
-      "th_honor_infs\030y \001(\010\022(\n xla_cpu_fast_math"
-      "_honor_division\030~ \001(\010\022*\n!xla_cpu_fast_ma"
-      "th_honor_functions\030\201\001 \001(\010\022#\n\033xla_gpu_ena"
-      "ble_fast_min_max\030d \001(\010\022\"\n\032xla_allow_exce"
-      "ss_precision\030z \001(\010\022.\n&xla_gpu_crash_on_v"
-      "erification_failures\030e \001(\010\022 \n\030xla_gpu_di"
-      "sable_autotune\030{ \001(\010\022,\n$xla_force_host_p"
-      "latform_device_count\030f \001(\005\022+\n#xla_gpu_di"
-      "sable_ptxas_optimizations\030g \001(\010\022\'\n\037xla_h"
+      "\010\022\033\n\023xla_cpu_use_mkl_dnn\030a \001(\010\022(\n xla_gp"
+      "u_max_kernel_unroll_factor\030b \001(\005\022 \n\030xla_"
+      "cpu_enable_fast_math\030c \001(\010\022$\n\034xla_cpu_fa"
+      "st_math_honor_nans\030x \001(\010\022$\n\034xla_cpu_fast"
+      "_math_honor_infs\030y \001(\010\022(\n xla_cpu_fast_m"
+      "ath_honor_division\030~ \001(\010\022*\n!xla_cpu_fast"
+      "_math_honor_functions\030\201\001 \001(\010\022$\n\033xla_cpu_"
+      "enable_fast_min_max\030\214\001 \001(\010\022#\n\033xla_gpu_en"
+      "able_fast_min_max\030d \001(\010\022\"\n\032xla_allow_exc"
+      "ess_precision\030z \001(\010\022.\n&xla_gpu_crash_on_"
+      "verification_failures\030e \001(\010\022\036\n\026xla_gpu_a"
+      "utotune_level\030{ \001(\005\022,\n$xla_force_host_pl"
+      "atform_device_count\030f \001(\005\022,\n$xla_gpu_dis"
+      "able_gpuasm_optimizations\030g \001(\010\022\'\n\037xla_h"
       "lo_evaluator_use_fast_path\030j \001(\010\022*\n\"xla_"
       "allow_scalar_index_dynamic_ops\030k \001(\010\022F\n\030"
       "xla_step_marker_location\030l \001(\0162$.xla.Deb"
@@ -1415,104 +1410,142 @@ void AddDescriptorsImpl() {
       "ump_hlo_as_text\030p \001(\010\022\035\n\025xla_dump_hlo_as"
       "_proto\030q \001(\010\022\033\n\023xla_dump_hlo_as_dot\030r \001("
       "\010\022\033\n\023xla_dump_hlo_as_url\030s \001(\010\022\034\n\024xla_du"
-      "mp_hlo_as_html\030t \001(\010\022\036\n\026xla_dump_hlo_sna"
-      "pshots\030v \001(\010\022\037\n\027xla_gpu_force_conv_nchw\030"
-      "} \001(\010\022\030\n\020xla_gpu_ptx_file\030\177 \003(\t\022)\n xla_g"
-      "pu_algorithm_blacklist_path\030\200\001 \001(\t\022Q\n\031xl"
-      "a_backend_extra_options\030\364\003 \003(\0132-.xla.Deb"
-      "ugOptions.XlaBackendExtraOptionsEntry\032=\n"
-      "\033XlaBackendExtraOptionsEntry\022\013\n\003key\030\001 \001("
-      "\t\022\r\n\005value\030\002 \001(\t:\0028\001\"\221\001\n\022StepMarkerLocat"
-      "ion\022\026\n\022STEP_MARK_AT_ENTRY\020\000\022%\n!STEP_MARK"
-      "_AT_TOP_LEVEL_WHILE_LOOP\020\001\022(\n$STEP_MARK_"
-      "AT_SECOND_LEVEL_WHILE_LOOP\020\003\022\022\n\016STEP_MAR"
-      "K_NONE\020\002J\004\010]\020^J\004\010u\020vJ\004\010\005\020\006\"\365\001\n\020Execution"
-      "Options\0221\n\030shape_with_output_layout\030\002 \001("
-      "\0132\017.xla.ShapeProto\022\014\n\004seed\030\003 \001(\004\022(\n\rdebu"
-      "g_options\030\004 \001(\0132\021.xla.DebugOptions\022)\n\016de"
-      "vice_handles\030\005 \003(\0132\021.xla.DeviceHandle\022\024\n"
-      "\014num_replicas\030\006 \001(\005\0225\n\021device_assignment"
-      "\030\007 \001(\0132\032.xla.DeviceAssignmentProto\"/\n\027Ge"
-      "tDeviceHandlesRequest\022\024\n\014device_count\030\001 "
-      "\001(\003\"E\n\030GetDeviceHandlesResponse\022)\n\016devic"
-      "e_handles\030\001 \003(\0132\021.xla.DeviceHandle\"j\n\027Tr"
-      "ansferToClientRequest\022#\n\004data\030\001 \001(\0132\025.xl"
-      "a.GlobalDataHandle\022*\n\021shape_with_layout\030"
-      "\002 \001(\0132\017.xla.ShapeProto\">\n\030TransferToClie"
-      "ntResponse\022\"\n\007literal\030\001 \001(\0132\021.xla.Litera"
-      "lProto\"g\n\027TransferToServerRequest\022\"\n\007lit"
-      "eral\030\001 \001(\0132\021.xla.LiteralProto\022(\n\rdevice_"
-      "handle\030\002 \001(\0132\021.xla.DeviceHandle\"\?\n\030Trans"
-      "ferToServerResponse\022#\n\004data\030\001 \001(\0132\025.xla."
-      "GlobalDataHandle\"{\n\027TransferToInfeedRequ"
-      "est\022\"\n\007literal\030\001 \001(\0132\021.xla.LiteralProto\022"
-      "\022\n\nreplica_id\030\002 \001(\003\022(\n\rdevice_handle\030\003 \001"
-      "(\0132\021.xla.DeviceHandle\"\032\n\030TransferToInfee"
-      "dResponse\"\206\001\n\032TransferFromOutfeedRequest"
-      "\022*\n\021shape_with_layout\030\001 \001(\0132\017.xla.ShapeP"
-      "roto\022\022\n\nreplica_id\030\002 \001(\003\022(\n\rdevice_handl"
-      "e\030\003 \001(\0132\021.xla.DeviceHandle\"A\n\033TransferFr"
-      "omOutfeedResponse\022\"\n\007literal\030\001 \001(\0132\021.xla"
-      ".LiteralProto\">\n\022ResetDeviceRequest\022(\n\rd"
-      "evice_handle\030\001 \001(\0132\021.xla.DeviceHandle\"\025\n"
-      "\023ResetDeviceResponse\"r\n\034ComputationGraph"
-      "StatsRequest\022(\n\013computation\030\001 \001(\0132\023.xla."
-      "HloModuleProto\022(\n\rdebug_options\030\002 \001(\0132\021."
-      "xla.DebugOptions\"@\n\030ComputationStatsResp"
-      "onse\022$\n\005stats\030\001 \001(\0132\025.xla.ComputationSta"
-      "ts\"R\n\032CreateChannelHandleRequest\0224\n\014chan"
-      "nel_type\030\001 \001(\0162\036.xla.ChannelHandle.Chann"
-      "elType\"B\n\033CreateChannelHandleResponse\022#\n"
-      "\007channel\030\001 \001(\0132\022.xla.ChannelHandle\"8\n\021Un"
-      "registerRequest\022#\n\004data\030\001 \003(\0132\025.xla.Glob"
-      "alDataHandle\"\024\n\022UnregisterResponse\"\236\001\n\016C"
-      "ompileRequest\022(\n\013computation\030\001 \001(\0132\023.xla"
-      ".HloModuleProto\0220\n\021execution_options\030\002 \001"
-      "(\0132\025.xla.ExecutionOptions\0220\n\027input_shape"
-      "_with_layout\030\003 \003(\0132\017.xla.ShapeProto\"7\n\017C"
-      "ompileResponse\022$\n\006handle\030\001 \001(\0132\024.xla.Exe"
-      "cutionHandle\"`\n\016ExecuteRequest\022$\n\006handle"
-      "\030\001 \001(\0132\024.xla.ExecutionHandle\022(\n\targument"
-      "s\030\002 \003(\0132\025.xla.GlobalDataHandle\"\233\001\n\023Execu"
-      "teGraphRequest\022(\n\013computation\030\001 \001(\0132\023.xl"
-      "a.HloModuleProto\022(\n\targuments\030\002 \003(\0132\025.xl"
-      "a.GlobalDataHandle\0220\n\021execution_options\030"
-      "\003 \001(\0132\025.xla.ExecutionOptions\"I\n\033ExecuteG"
-      "raphParallelRequest\022*\n\010requests\030\001 \003(\0132\030."
-      "xla.ExecuteGraphRequest\"`\n\017ExecuteRespon"
-      "se\022%\n\006output\030\001 \001(\0132\025.xla.GlobalDataHandl"
-      "e\022&\n\007profile\030\002 \001(\0132\025.xla.ExecutionProfil"
-      "e\"B\n\027ExecuteParallelResponse\022\'\n\tresponse"
-      "s\030\001 \003(\0132\024.xla.ExecuteResponse\"B\n\027WaitFor"
-      "ExecutionRequest\022\'\n\texecution\030\001 \001(\0132\024.xl"
-      "a.ExecutionHandle\"i\n\030WaitForExecutionRes"
-      "ponse\022%\n\006output\030\001 \001(\0132\025.xla.GlobalDataHa"
-      "ndle\022&\n\007profile\030\002 \001(\0132\025.xla.ExecutionPro"
-      "file\"p\n\033ComputeConstantGraphRequest\022(\n\013c"
-      "omputation\030\001 \001(\0132\023.xla.HloModuleProto\022\'\n"
-      "\routput_layout\030\002 \001(\0132\020.xla.LayoutProto\"="
-      "\n\027ComputeConstantResponse\022\"\n\007literal\030\001 \001"
-      "(\0132\021.xla.LiteralProto\"F\n\027DeconstructTupl"
-      "eRequest\022+\n\014tuple_handle\030\002 \001(\0132\025.xla.Glo"
-      "balDataHandle\"J\n\030DeconstructTupleRespons"
-      "e\022.\n\017element_handles\030\001 \003(\0132\025.xla.GlobalD"
-      "ataHandle\"\233\001\n\017LoadDataRequest\022\034\n\024columni"
-      "o_tablet_path\030\001 \001(\t\022\026\n\016columnio_field\030\002 "
-      "\001(\t\022&\n\relement_shape\030\003 \001(\0132\017.xla.ShapePr"
-      "oto\022\016\n\006offset\030\004 \001(\003\022\r\n\005limit\030\005 \001(\003\022\013\n\003zi"
-      "p\030\006 \001(\010\"\236\001\n\020LoadDataResponse\022#\n\004data\030\001 \001"
-      "(\0132\025.xla.GlobalDataHandle\022#\n\ndata_shape\030"
-      "\002 \001(\0132\017.xla.ShapeProto\022\026\n\016available_rows"
-      "\030\003 \001(\003\022\023\n\013rows_loaded\030\004 \001(\003\022\023\n\013nanosecon"
-      "ds\030\005 \001(\003\"6\n\017GetShapeRequest\022#\n\004data\030\001 \001("
-      "\0132\025.xla.GlobalDataHandle\"2\n\020GetShapeResp"
-      "onse\022\036\n\005shape\030\001 \001(\0132\017.xla.ShapeProto\"4\n\r"
-      "UnpackRequest\022#\n\004data\030\001 \001(\0132\025.xla.Global"
-      "DataHandle\":\n\016UnpackResponse\022(\n\ttied_dat"
-      "a\030\001 \003(\0132\025.xla.GlobalDataHandleb\006proto3"
+      "mp_hlo_as_html\030t \001(\010\022&\n\035xla_dump_fusion_"
+      "visualization\030\225\001 \001(\010\022\036\n\026xla_dump_hlo_sna"
+      "pshots\030v \001(\010\022#\n\032xla_dump_include_timesta"
+      "mp\030\203\001 \001(\010\022!\n\030xla_dump_max_hlo_modules\030\204\001"
+      " \001(\005\022!\n\030xla_dump_module_metadata\030\220\001 \001(\010\022"
+      "!\n\030xla_dump_compress_protos\030\227\001 \001(\010\022\"\n\031xl"
+      "a_dump_hlo_as_long_text\030\244\001 \001(\010\022\037\n\027xla_gp"
+      "u_force_conv_nchw\030} \001(\010\022 \n\027xla_gpu_force"
+      "_conv_nhwc\030\222\001 \001(\010\022\030\n\020xla_gpu_ptx_file\030\177 "
+      "\003(\t\022\034\n\023xla_gpu_dump_llvmir\030\233\001 \001(\010\022(\n\037xla"
+      "_gpu_algorithm_denylist_path\030\200\001 \001(\t\022\033\n\022x"
+      "la_tpu_detect_nan\030\207\001 \001(\010\022\033\n\022xla_tpu_dete"
+      "ct_inf\030\210\001 \001(\010\022%\n\034xla_cpu_enable_xprof_tr"
+      "aceme\030\211\001 \001(\010\022=\n4xla_gpu_unsafe_fallback_"
+      "to_driver_on_ptxas_not_found\030\212\001 \001(\010\022 \n\027x"
+      "la_gpu_asm_extra_flags\030\215\001 \001(\t\022/\n&xla_mul"
+      "tiheap_size_constraint_per_heap\030\216\001 \001(\005\022)"
+      "\n xla_detailed_logging_and_dumping\030\217\001 \001("
+      "\010\022.\n%xla_gpu_force_compilation_paralleli"
+      "sm\030\223\001 \001(\005\022\"\n\031xla_gpu_deterministic_ops\030\224"
+      "\001 \001(\010\022\035\n\024xla_gpu_llvm_ir_file\030\226\001 \003(\t\022(\n\037"
+      "xla_gpu_enable_async_all_reduce\030\230\001 \001(\010\0223"
+      "\n*xla_gpu_all_reduce_combine_threshold_b"
+      "ytes\030\235\001 \001(\003\022&\n\035xla_gpu_all_reduce_contig"
+      "uous\030\236\001 \001(\010\022<\n3xla_gpu_all_reduce_blueco"
+      "nnect_num_devices_per_host\030\237\001 \001(\005\022&\n\035xla"
+      "_gpu_enable_cudnn_frontend\030\240\001 \001(\010\022\"\n\031xla"
+      "_dump_disable_metadata\030\231\001 \001(\010\022!\n\030xla_dum"
+      "p_hlo_pipeline_re\030\232\001 \001(\t\022-\n$xla_gpu_stri"
+      "ct_conv_algorithm_picker\030\234\001 \001(\010\022\037\n\026xla_g"
+      "pu_bef_executable\030\241\001 \001(\010\022\032\n\021xla_gpu_bef_"
+      "thunk\030\242\001 \001(\010\0221\n(xla_gpu_nccl_termination"
+      "_timeout_seconds\030\243\001 \001(\003\022(\n\037xla_gpu_enabl"
+      "e_shared_constants\030\245\001 \001(\010\022.\n%xla_gpu_red"
+      "zone_scratch_max_megabytes\030\247\001 \001(\003\022Q\n\031xla"
+      "_backend_extra_options\030\364\003 \003(\0132-.xla.Debu"
+      "gOptions.XlaBackendExtraOptionsEntry\032=\n\033"
+      "XlaBackendExtraOptionsEntry\022\013\n\003key\030\001 \001(\t"
+      "\022\r\n\005value\030\002 \001(\t:\0028\001\"\221\001\n\022StepMarkerLocati"
+      "on\022\026\n\022STEP_MARK_AT_ENTRY\020\000\022%\n!STEP_MARK_"
+      "AT_TOP_LEVEL_WHILE_LOOP\020\001\022(\n$STEP_MARK_A"
+      "T_SECOND_LEVEL_WHILE_LOOP\020\003\022\022\n\016STEP_MARK"
+      "_NONE\020\002J\004\010P\020QJ\004\010]\020^J\004\010^\020_J\006\010\202\001\020\203\001J\004\010\005\020\006J"
+      "\004\010u\020vJ\006\010\205\001\020\206\001J\006\010\213\001\020\214\001\"\327\003\n\020ExecutionOptio"
+      "ns\0221\n\030shape_with_output_layout\030\002 \001(\0132\017.x"
+      "la.ShapeProto\022\014\n\004seed\030\003 \001(\004\022(\n\rdebug_opt"
+      "ions\030\004 \001(\0132\021.xla.DebugOptions\022)\n\016device_"
+      "handles\030\005 \003(\0132\021.xla.DeviceHandle\022\024\n\014num_"
+      "replicas\030\006 \001(\005\0225\n\021device_assignment\030\007 \001("
+      "\0132\032.xla.DeviceAssignmentProto\022 \n\030alias_p"
+      "assthrough_params\030\010 \001(\010\022\026\n\016num_partition"
+      "s\030\t \001(\005\022\021\n\tlaunch_id\030\n \001(\005\022\035\n\025use_spmd_p"
+      "artitioning\030\013 \001(\010\022\"\n\032use_auto_spmd_parti"
+      "tioning\030\017 \001(\010\022\027\n\017deduplicate_hlo\030\014 \001(\010\0221"
+      "\n)allow_spmd_sharding_propagation_to_out"
+      "put\030\016 \001(\010J\004\010\r\020\016\"/\n\027GetDeviceHandlesReque"
+      "st\022\024\n\014device_count\030\001 \001(\003\"E\n\030GetDeviceHan"
+      "dlesResponse\022)\n\016device_handles\030\001 \003(\0132\021.x"
+      "la.DeviceHandle\"j\n\027TransferToClientReque"
+      "st\022#\n\004data\030\001 \001(\0132\025.xla.GlobalDataHandle\022"
+      "*\n\021shape_with_layout\030\002 \001(\0132\017.xla.ShapePr"
+      "oto\">\n\030TransferToClientResponse\022\"\n\007liter"
+      "al\030\001 \001(\0132\021.xla.LiteralProto\"g\n\027TransferT"
+      "oServerRequest\022\"\n\007literal\030\001 \001(\0132\021.xla.Li"
+      "teralProto\022(\n\rdevice_handle\030\002 \001(\0132\021.xla."
+      "DeviceHandle\"\?\n\030TransferToServerResponse"
+      "\022#\n\004data\030\001 \001(\0132\025.xla.GlobalDataHandle\"{\n"
+      "\027TransferToInfeedRequest\022\"\n\007literal\030\001 \001("
+      "\0132\021.xla.LiteralProto\022\022\n\nreplica_id\030\002 \001(\003"
+      "\022(\n\rdevice_handle\030\003 \001(\0132\021.xla.DeviceHand"
+      "le\"\032\n\030TransferToInfeedResponse\"\206\001\n\032Trans"
+      "ferFromOutfeedRequest\022*\n\021shape_with_layo"
+      "ut\030\001 \001(\0132\017.xla.ShapeProto\022\022\n\nreplica_id\030"
+      "\002 \001(\003\022(\n\rdevice_handle\030\003 \001(\0132\021.xla.Devic"
+      "eHandle\"A\n\033TransferFromOutfeedResponse\022\""
+      "\n\007literal\030\001 \001(\0132\021.xla.LiteralProto\">\n\022Re"
+      "setDeviceRequest\022(\n\rdevice_handle\030\001 \001(\0132"
+      "\021.xla.DeviceHandle\"\025\n\023ResetDeviceRespons"
+      "e\"r\n\034ComputationGraphStatsRequest\022(\n\013com"
+      "putation\030\001 \001(\0132\023.xla.HloModuleProto\022(\n\rd"
+      "ebug_options\030\002 \001(\0132\021.xla.DebugOptions\"@\n"
+      "\030ComputationStatsResponse\022$\n\005stats\030\001 \001(\013"
+      "2\025.xla.ComputationStats\"R\n\032CreateChannel"
+      "HandleRequest\0224\n\014channel_type\030\001 \001(\0162\036.xl"
+      "a.ChannelHandle.ChannelType\"B\n\033CreateCha"
+      "nnelHandleResponse\022#\n\007channel\030\001 \001(\0132\022.xl"
+      "a.ChannelHandle\"8\n\021UnregisterRequest\022#\n\004"
+      "data\030\001 \003(\0132\025.xla.GlobalDataHandle\"\024\n\022Unr"
+      "egisterResponse\"\236\001\n\016CompileRequest\022(\n\013co"
+      "mputation\030\001 \001(\0132\023.xla.HloModuleProto\0220\n\021"
+      "execution_options\030\002 \001(\0132\025.xla.ExecutionO"
+      "ptions\0220\n\027input_shape_with_layout\030\003 \003(\0132"
+      "\017.xla.ShapeProto\"7\n\017CompileResponse\022$\n\006h"
+      "andle\030\001 \001(\0132\024.xla.ExecutionHandle\"`\n\016Exe"
+      "cuteRequest\022$\n\006handle\030\001 \001(\0132\024.xla.Execut"
+      "ionHandle\022(\n\targuments\030\002 \003(\0132\025.xla.Globa"
+      "lDataHandle\"\233\001\n\023ExecuteGraphRequest\022(\n\013c"
+      "omputation\030\001 \001(\0132\023.xla.HloModuleProto\022(\n"
+      "\targuments\030\002 \003(\0132\025.xla.GlobalDataHandle\022"
+      "0\n\021execution_options\030\003 \001(\0132\025.xla.Executi"
+      "onOptions\"I\n\033ExecuteGraphParallelRequest"
+      "\022*\n\010requests\030\001 \003(\0132\030.xla.ExecuteGraphReq"
+      "uest\"`\n\017ExecuteResponse\022%\n\006output\030\001 \001(\0132"
+      "\025.xla.GlobalDataHandle\022&\n\007profile\030\002 \001(\0132"
+      "\025.xla.ExecutionProfile\"B\n\027ExecuteParalle"
+      "lResponse\022\'\n\tresponses\030\001 \003(\0132\024.xla.Execu"
+      "teResponse\"B\n\027WaitForExecutionRequest\022\'\n"
+      "\texecution\030\001 \001(\0132\024.xla.ExecutionHandle\"i"
+      "\n\030WaitForExecutionResponse\022%\n\006output\030\001 \001"
+      "(\0132\025.xla.GlobalDataHandle\022&\n\007profile\030\002 \001"
+      "(\0132\025.xla.ExecutionProfile\"p\n\033ComputeCons"
+      "tantGraphRequest\022(\n\013computation\030\001 \001(\0132\023."
+      "xla.HloModuleProto\022\'\n\routput_layout\030\002 \001("
+      "\0132\020.xla.LayoutProto\"=\n\027ComputeConstantRe"
+      "sponse\022\"\n\007literal\030\001 \001(\0132\021.xla.LiteralPro"
+      "to\"F\n\027DeconstructTupleRequest\022+\n\014tuple_h"
+      "andle\030\002 \001(\0132\025.xla.GlobalDataHandle\"J\n\030De"
+      "constructTupleResponse\022.\n\017element_handle"
+      "s\030\001 \003(\0132\025.xla.GlobalDataHandle\"\233\001\n\017LoadD"
+      "ataRequest\022\034\n\024columnio_tablet_path\030\001 \001(\t"
+      "\022\026\n\016columnio_field\030\002 \001(\t\022&\n\relement_shap"
+      "e\030\003 \001(\0132\017.xla.ShapeProto\022\016\n\006offset\030\004 \001(\003"
+      "\022\r\n\005limit\030\005 \001(\003\022\013\n\003zip\030\006 \001(\010\"\236\001\n\020LoadDat"
+      "aResponse\022#\n\004data\030\001 \001(\0132\025.xla.GlobalData"
+      "Handle\022#\n\ndata_shape\030\002 \001(\0132\017.xla.ShapePr"
+      "oto\022\026\n\016available_rows\030\003 \001(\003\022\023\n\013rows_load"
+      "ed\030\004 \001(\003\022\023\n\013nanoseconds\030\005 \001(\003\"6\n\017GetShap"
+      "eRequest\022#\n\004data\030\001 \001(\0132\025.xla.GlobalDataH"
+      "andle\"2\n\020GetShapeResponse\022\036\n\005shape\030\001 \001(\013"
+      "2\017.xla.ShapeProto\"4\n\rUnpackRequest\022#\n\004da"
+      "ta\030\001 \001(\0132\025.xla.GlobalDataHandle\":\n\016Unpac"
+      "kResponse\022(\n\ttied_data\030\001 \003(\0132\025.xla.Globa"
+      "lDataHandleb\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 5958);
+      descriptor, 7099);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/compiler/xla/xla.proto", &protobuf_RegisterTypes);
   ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::AddDescriptors();
@@ -1531,36 +1564,9 @@ struct StaticDescriptorInitializer {
 } static_descriptor_initializer;
 }  // namespace protobuf_tensorflow_2fcompiler_2fxla_2fxla_2eproto
 namespace xla {
-const ::google::protobuf::EnumDescriptor* HloReducePrecisionOptions_Location_descriptor() {
-  protobuf_tensorflow_2fcompiler_2fxla_2fxla_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_tensorflow_2fcompiler_2fxla_2fxla_2eproto::file_level_enum_descriptors[0];
-}
-bool HloReducePrecisionOptions_Location_IsValid(int value) {
-  switch (value) {
-    case 0:
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const HloReducePrecisionOptions_Location HloReducePrecisionOptions::OP_INPUTS;
-const HloReducePrecisionOptions_Location HloReducePrecisionOptions::OP_OUTPUTS;
-const HloReducePrecisionOptions_Location HloReducePrecisionOptions::UNFUSED_OP_OUTPUTS;
-const HloReducePrecisionOptions_Location HloReducePrecisionOptions::FUSION_INPUTS_BY_CONTENT;
-const HloReducePrecisionOptions_Location HloReducePrecisionOptions::FUSION_OUTPUTS_BY_CONTENT;
-const HloReducePrecisionOptions_Location HloReducePrecisionOptions::Location_MIN;
-const HloReducePrecisionOptions_Location HloReducePrecisionOptions::Location_MAX;
-const int HloReducePrecisionOptions::Location_ARRAYSIZE;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 const ::google::protobuf::EnumDescriptor* DebugOptions_StepMarkerLocation_descriptor() {
   protobuf_tensorflow_2fcompiler_2fxla_2fxla_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_tensorflow_2fcompiler_2fxla_2fxla_2eproto::file_level_enum_descriptors[1];
+  return protobuf_tensorflow_2fcompiler_2fxla_2fxla_2eproto::file_level_enum_descriptors[0];
 }
 bool DebugOptions_StepMarkerLocation_IsValid(int value) {
   switch (value) {
@@ -1586,423 +1592,6 @@ const int DebugOptions::StepMarkerLocation_ARRAYSIZE;
 
 // ===================================================================
 
-void HloReducePrecisionOptions::InitAsDefaultInstance() {
-}
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int HloReducePrecisionOptions::kLocationFieldNumber;
-const int HloReducePrecisionOptions::kExponentBitsFieldNumber;
-const int HloReducePrecisionOptions::kMantissaBitsFieldNumber;
-const int HloReducePrecisionOptions::kOpcodesToSuffixFieldNumber;
-const int HloReducePrecisionOptions::kOpnameSubstringsToSuffixFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-HloReducePrecisionOptions::HloReducePrecisionOptions()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_tensorflow_2fcompiler_2fxla_2fxla_2eproto::scc_info_HloReducePrecisionOptions.base);
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:xla.HloReducePrecisionOptions)
-}
-HloReducePrecisionOptions::HloReducePrecisionOptions(const HloReducePrecisionOptions& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      opcodes_to_suffix_(from.opcodes_to_suffix_),
-      opname_substrings_to_suffix_(from.opname_substrings_to_suffix_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::memcpy(&location_, &from.location_,
-    static_cast<size_t>(reinterpret_cast<char*>(&mantissa_bits_) -
-    reinterpret_cast<char*>(&location_)) + sizeof(mantissa_bits_));
-  // @@protoc_insertion_point(copy_constructor:xla.HloReducePrecisionOptions)
-}
-
-void HloReducePrecisionOptions::SharedCtor() {
-  ::memset(&location_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&mantissa_bits_) -
-      reinterpret_cast<char*>(&location_)) + sizeof(mantissa_bits_));
-}
-
-HloReducePrecisionOptions::~HloReducePrecisionOptions() {
-  // @@protoc_insertion_point(destructor:xla.HloReducePrecisionOptions)
-  SharedDtor();
-}
-
-void HloReducePrecisionOptions::SharedDtor() {
-}
-
-void HloReducePrecisionOptions::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
-}
-const ::google::protobuf::Descriptor* HloReducePrecisionOptions::descriptor() {
-  ::protobuf_tensorflow_2fcompiler_2fxla_2fxla_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_tensorflow_2fcompiler_2fxla_2fxla_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
-const HloReducePrecisionOptions& HloReducePrecisionOptions::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcompiler_2fxla_2fxla_2eproto::scc_info_HloReducePrecisionOptions.base);
-  return *internal_default_instance();
-}
-
-
-void HloReducePrecisionOptions::Clear() {
-// @@protoc_insertion_point(message_clear_start:xla.HloReducePrecisionOptions)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  opcodes_to_suffix_.Clear();
-  opname_substrings_to_suffix_.Clear();
-  ::memset(&location_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&mantissa_bits_) -
-      reinterpret_cast<char*>(&location_)) + sizeof(mantissa_bits_));
-  _internal_metadata_.Clear();
-}
-
-bool HloReducePrecisionOptions::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:xla.HloReducePrecisionOptions)
-  for (;;) {
-    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .xla.HloReducePrecisionOptions.Location location = 1;
-      case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          int value;
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          set_location(static_cast< ::xla::HloReducePrecisionOptions_Location >(value));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // uint32 exponent_bits = 2;
-      case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &exponent_bits_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // uint32 mantissa_bits = 3;
-      case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &mantissa_bits_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // repeated uint32 opcodes_to_suffix = 4;
-      case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
-                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
-                 input, this->mutable_opcodes_to_suffix())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
-                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
-                 1, 34u, input, this->mutable_opcodes_to_suffix())));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // repeated string opname_substrings_to_suffix = 5;
-      case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
-                input, this->add_opname_substrings_to_suffix()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-            this->opname_substrings_to_suffix(this->opname_substrings_to_suffix_size() - 1).data(),
-            static_cast<int>(this->opname_substrings_to_suffix(this->opname_substrings_to_suffix_size() - 1).length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
-            "xla.HloReducePrecisionOptions.opname_substrings_to_suffix"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::google::protobuf::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:xla.HloReducePrecisionOptions)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:xla.HloReducePrecisionOptions)
-  return false;
-#undef DO_
-}
-
-void HloReducePrecisionOptions::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:xla.HloReducePrecisionOptions)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // .xla.HloReducePrecisionOptions.Location location = 1;
-  if (this->location() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->location(), output);
-  }
-
-  // uint32 exponent_bits = 2;
-  if (this->exponent_bits() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->exponent_bits(), output);
-  }
-
-  // uint32 mantissa_bits = 3;
-  if (this->mantissa_bits() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt32(3, this->mantissa_bits(), output);
-  }
-
-  // repeated uint32 opcodes_to_suffix = 4;
-  if (this->opcodes_to_suffix_size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteTag(4, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(static_cast< ::google::protobuf::uint32>(
-        _opcodes_to_suffix_cached_byte_size_));
-  }
-  for (int i = 0, n = this->opcodes_to_suffix_size(); i < n; i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt32NoTag(
-      this->opcodes_to_suffix(i), output);
-  }
-
-  // repeated string opname_substrings_to_suffix = 5;
-  for (int i = 0, n = this->opname_substrings_to_suffix_size(); i < n; i++) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->opname_substrings_to_suffix(i).data(), static_cast<int>(this->opname_substrings_to_suffix(i).length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "xla.HloReducePrecisionOptions.opname_substrings_to_suffix");
-    ::google::protobuf::internal::WireFormatLite::WriteString(
-      5, this->opname_substrings_to_suffix(i), output);
-  }
-
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
-  }
-  // @@protoc_insertion_point(serialize_end:xla.HloReducePrecisionOptions)
-}
-
-::google::protobuf::uint8* HloReducePrecisionOptions::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
-  // @@protoc_insertion_point(serialize_to_array_start:xla.HloReducePrecisionOptions)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // .xla.HloReducePrecisionOptions.Location location = 1;
-  if (this->location() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->location(), target);
-  }
-
-  // uint32 exponent_bits = 2;
-  if (this->exponent_bits() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->exponent_bits(), target);
-  }
-
-  // uint32 mantissa_bits = 3;
-  if (this->mantissa_bits() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(3, this->mantissa_bits(), target);
-  }
-
-  // repeated uint32 opcodes_to_suffix = 4;
-  if (this->opcodes_to_suffix_size() > 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
-      4,
-      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
-      target);
-    target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-        static_cast< ::google::protobuf::int32>(
-            _opcodes_to_suffix_cached_byte_size_), target);
-    target = ::google::protobuf::internal::WireFormatLite::
-      WriteUInt32NoTagToArray(this->opcodes_to_suffix_, target);
-  }
-
-  // repeated string opname_substrings_to_suffix = 5;
-  for (int i = 0, n = this->opname_substrings_to_suffix_size(); i < n; i++) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->opname_substrings_to_suffix(i).data(), static_cast<int>(this->opname_substrings_to_suffix(i).length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "xla.HloReducePrecisionOptions.opname_substrings_to_suffix");
-    target = ::google::protobuf::internal::WireFormatLite::
-      WriteStringToArray(5, this->opname_substrings_to_suffix(i), target);
-  }
-
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
-  }
-  // @@protoc_insertion_point(serialize_to_array_end:xla.HloReducePrecisionOptions)
-  return target;
-}
-
-size_t HloReducePrecisionOptions::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:xla.HloReducePrecisionOptions)
-  size_t total_size = 0;
-
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
-  }
-  // repeated uint32 opcodes_to_suffix = 4;
-  {
-    size_t data_size = ::google::protobuf::internal::WireFormatLite::
-      UInt32Size(this->opcodes_to_suffix_);
-    if (data_size > 0) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(
-            static_cast< ::google::protobuf::int32>(data_size));
-    }
-    int cached_size = ::google::protobuf::internal::ToCachedSize(data_size);
-    GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _opcodes_to_suffix_cached_byte_size_ = cached_size;
-    GOOGLE_SAFE_CONCURRENT_WRITES_END();
-    total_size += data_size;
-  }
-
-  // repeated string opname_substrings_to_suffix = 5;
-  total_size += 1 *
-      ::google::protobuf::internal::FromIntSize(this->opname_substrings_to_suffix_size());
-  for (int i = 0, n = this->opname_substrings_to_suffix_size(); i < n; i++) {
-    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
-      this->opname_substrings_to_suffix(i));
-  }
-
-  // .xla.HloReducePrecisionOptions.Location location = 1;
-  if (this->location() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->location());
-  }
-
-  // uint32 exponent_bits = 2;
-  if (this->exponent_bits() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->exponent_bits());
-  }
-
-  // uint32 mantissa_bits = 3;
-  if (this->mantissa_bits() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->mantissa_bits());
-  }
-
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
-}
-
-void HloReducePrecisionOptions::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:xla.HloReducePrecisionOptions)
-  GOOGLE_DCHECK_NE(&from, this);
-  const HloReducePrecisionOptions* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const HloReducePrecisionOptions>(
-          &from);
-  if (source == NULL) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:xla.HloReducePrecisionOptions)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:xla.HloReducePrecisionOptions)
-    MergeFrom(*source);
-  }
-}
-
-void HloReducePrecisionOptions::MergeFrom(const HloReducePrecisionOptions& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:xla.HloReducePrecisionOptions)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  opcodes_to_suffix_.MergeFrom(from.opcodes_to_suffix_);
-  opname_substrings_to_suffix_.MergeFrom(from.opname_substrings_to_suffix_);
-  if (from.location() != 0) {
-    set_location(from.location());
-  }
-  if (from.exponent_bits() != 0) {
-    set_exponent_bits(from.exponent_bits());
-  }
-  if (from.mantissa_bits() != 0) {
-    set_mantissa_bits(from.mantissa_bits());
-  }
-}
-
-void HloReducePrecisionOptions::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:xla.HloReducePrecisionOptions)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void HloReducePrecisionOptions::CopyFrom(const HloReducePrecisionOptions& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:xla.HloReducePrecisionOptions)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool HloReducePrecisionOptions::IsInitialized() const {
-  return true;
-}
-
-void HloReducePrecisionOptions::Swap(HloReducePrecisionOptions* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void HloReducePrecisionOptions::InternalSwap(HloReducePrecisionOptions* other) {
-  using std::swap;
-  opcodes_to_suffix_.InternalSwap(&other->opcodes_to_suffix_);
-  opname_substrings_to_suffix_.InternalSwap(CastToBase(&other->opname_substrings_to_suffix_));
-  swap(location_, other->location_);
-  swap(exponent_bits_, other->exponent_bits_);
-  swap(mantissa_bits_, other->mantissa_bits_);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-}
-
-::google::protobuf::Metadata HloReducePrecisionOptions::GetMetadata() const {
-  protobuf_tensorflow_2fcompiler_2fxla_2fxla_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_tensorflow_2fcompiler_2fxla_2fxla_2eproto::file_level_metadata[kIndexInFileMessages];
-}
-
-
-// ===================================================================
-
 DebugOptions_XlaBackendExtraOptionsEntry_DoNotUse::DebugOptions_XlaBackendExtraOptionsEntry_DoNotUse() {}
 DebugOptions_XlaBackendExtraOptionsEntry_DoNotUse::DebugOptions_XlaBackendExtraOptionsEntry_DoNotUse(::google::protobuf::Arena* arena) : SuperType(arena) {}
 void DebugOptions_XlaBackendExtraOptionsEntry_DoNotUse::MergeFrom(const DebugOptions_XlaBackendExtraOptionsEntry_DoNotUse& other) {
@@ -2010,7 +1599,7 @@ void DebugOptions_XlaBackendExtraOptionsEntry_DoNotUse::MergeFrom(const DebugOpt
 }
 ::google::protobuf::Metadata DebugOptions_XlaBackendExtraOptionsEntry_DoNotUse::GetMetadata() const {
   ::protobuf_tensorflow_2fcompiler_2fxla_2fxla_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_tensorflow_2fcompiler_2fxla_2fxla_2eproto::file_level_metadata[1];
+  return ::protobuf_tensorflow_2fcompiler_2fxla_2fxla_2eproto::file_level_metadata[0];
 }
 void DebugOptions_XlaBackendExtraOptionsEntry_DoNotUse::MergeFrom(
     const ::google::protobuf::Message& other) {
@@ -2035,15 +1624,14 @@ const int DebugOptions::kXlaCpuMultiThreadEigenFieldNumber;
 const int DebugOptions::kXlaGpuCudaDataDirFieldNumber;
 const int DebugOptions::kXlaGpuFtzFieldNumber;
 const int DebugOptions::kXlaGpuDisableMultiStreamingFieldNumber;
+const int DebugOptions::kXlaGpuUseRandomStreamsFieldNumber;
 const int DebugOptions::kXlaLlvmEnableAliasScopeMetadataFieldNumber;
 const int DebugOptions::kXlaLlvmEnableNoaliasMetadataFieldNumber;
 const int DebugOptions::kXlaLlvmEnableInvariantLoadMetadataFieldNumber;
 const int DebugOptions::kXlaLlvmDisableExpensivePassesFieldNumber;
-const int DebugOptions::kHloReducePrecisionOptionsFieldNumber;
 const int DebugOptions::kXlaTestAllOutputLayoutsFieldNumber;
 const int DebugOptions::kXlaTestAllInputLayoutsFieldNumber;
 const int DebugOptions::kXlaHloGraphShardingColorFieldNumber;
-const int DebugOptions::kXlaGpuUseCudnnBatchnormFieldNumber;
 const int DebugOptions::kXlaCpuUseMklDnnFieldNumber;
 const int DebugOptions::kXlaGpuMaxKernelUnrollFactorFieldNumber;
 const int DebugOptions::kXlaCpuEnableFastMathFieldNumber;
@@ -2051,12 +1639,13 @@ const int DebugOptions::kXlaCpuFastMathHonorNansFieldNumber;
 const int DebugOptions::kXlaCpuFastMathHonorInfsFieldNumber;
 const int DebugOptions::kXlaCpuFastMathHonorDivisionFieldNumber;
 const int DebugOptions::kXlaCpuFastMathHonorFunctionsFieldNumber;
+const int DebugOptions::kXlaCpuEnableFastMinMaxFieldNumber;
 const int DebugOptions::kXlaGpuEnableFastMinMaxFieldNumber;
 const int DebugOptions::kXlaAllowExcessPrecisionFieldNumber;
 const int DebugOptions::kXlaGpuCrashOnVerificationFailuresFieldNumber;
-const int DebugOptions::kXlaGpuDisableAutotuneFieldNumber;
+const int DebugOptions::kXlaGpuAutotuneLevelFieldNumber;
 const int DebugOptions::kXlaForceHostPlatformDeviceCountFieldNumber;
-const int DebugOptions::kXlaGpuDisablePtxasOptimizationsFieldNumber;
+const int DebugOptions::kXlaGpuDisableGpuasmOptimizationsFieldNumber;
 const int DebugOptions::kXlaHloEvaluatorUseFastPathFieldNumber;
 const int DebugOptions::kXlaAllowScalarIndexDynamicOpsFieldNumber;
 const int DebugOptions::kXlaStepMarkerLocationFieldNumber;
@@ -2068,10 +1657,41 @@ const int DebugOptions::kXlaDumpHloAsProtoFieldNumber;
 const int DebugOptions::kXlaDumpHloAsDotFieldNumber;
 const int DebugOptions::kXlaDumpHloAsUrlFieldNumber;
 const int DebugOptions::kXlaDumpHloAsHtmlFieldNumber;
+const int DebugOptions::kXlaDumpFusionVisualizationFieldNumber;
 const int DebugOptions::kXlaDumpHloSnapshotsFieldNumber;
+const int DebugOptions::kXlaDumpIncludeTimestampFieldNumber;
+const int DebugOptions::kXlaDumpMaxHloModulesFieldNumber;
+const int DebugOptions::kXlaDumpModuleMetadataFieldNumber;
+const int DebugOptions::kXlaDumpCompressProtosFieldNumber;
+const int DebugOptions::kXlaDumpHloAsLongTextFieldNumber;
 const int DebugOptions::kXlaGpuForceConvNchwFieldNumber;
+const int DebugOptions::kXlaGpuForceConvNhwcFieldNumber;
 const int DebugOptions::kXlaGpuPtxFileFieldNumber;
-const int DebugOptions::kXlaGpuAlgorithmBlacklistPathFieldNumber;
+const int DebugOptions::kXlaGpuDumpLlvmirFieldNumber;
+const int DebugOptions::kXlaGpuAlgorithmDenylistPathFieldNumber;
+const int DebugOptions::kXlaTpuDetectNanFieldNumber;
+const int DebugOptions::kXlaTpuDetectInfFieldNumber;
+const int DebugOptions::kXlaCpuEnableXprofTracemeFieldNumber;
+const int DebugOptions::kXlaGpuUnsafeFallbackToDriverOnPtxasNotFoundFieldNumber;
+const int DebugOptions::kXlaGpuAsmExtraFlagsFieldNumber;
+const int DebugOptions::kXlaMultiheapSizeConstraintPerHeapFieldNumber;
+const int DebugOptions::kXlaDetailedLoggingAndDumpingFieldNumber;
+const int DebugOptions::kXlaGpuForceCompilationParallelismFieldNumber;
+const int DebugOptions::kXlaGpuDeterministicOpsFieldNumber;
+const int DebugOptions::kXlaGpuLlvmIrFileFieldNumber;
+const int DebugOptions::kXlaGpuEnableAsyncAllReduceFieldNumber;
+const int DebugOptions::kXlaGpuAllReduceCombineThresholdBytesFieldNumber;
+const int DebugOptions::kXlaGpuAllReduceContiguousFieldNumber;
+const int DebugOptions::kXlaGpuAllReduceBlueconnectNumDevicesPerHostFieldNumber;
+const int DebugOptions::kXlaGpuEnableCudnnFrontendFieldNumber;
+const int DebugOptions::kXlaDumpDisableMetadataFieldNumber;
+const int DebugOptions::kXlaDumpHloPipelineReFieldNumber;
+const int DebugOptions::kXlaGpuStrictConvAlgorithmPickerFieldNumber;
+const int DebugOptions::kXlaGpuBefExecutableFieldNumber;
+const int DebugOptions::kXlaGpuBefThunkFieldNumber;
+const int DebugOptions::kXlaGpuNcclTerminationTimeoutSecondsFieldNumber;
+const int DebugOptions::kXlaGpuEnableSharedConstantsFieldNumber;
+const int DebugOptions::kXlaGpuRedzoneScratchMaxMegabytesFieldNumber;
 const int DebugOptions::kXlaBackendExtraOptionsFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
@@ -2086,9 +1706,9 @@ DebugOptions::DebugOptions(const DebugOptions& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL),
       xla_disable_hlo_passes_(from.xla_disable_hlo_passes_),
-      hlo_reduce_precision_options_(from.hlo_reduce_precision_options_),
       xla_enable_hlo_passes_only_(from.xla_enable_hlo_passes_only_),
-      xla_gpu_ptx_file_(from.xla_gpu_ptx_file_) {
+      xla_gpu_ptx_file_(from.xla_gpu_ptx_file_),
+      xla_gpu_llvm_ir_file_(from.xla_gpu_llvm_ir_file_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   xla_backend_extra_options_.MergeFrom(from.xla_backend_extra_options_);
   xla_gpu_cuda_data_dir_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -2107,13 +1727,21 @@ DebugOptions::DebugOptions(const DebugOptions& from)
   if (from.xla_dump_hlo_pass_re().size() > 0) {
     xla_dump_hlo_pass_re_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.xla_dump_hlo_pass_re_);
   }
-  xla_gpu_algorithm_blacklist_path_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.xla_gpu_algorithm_blacklist_path().size() > 0) {
-    xla_gpu_algorithm_blacklist_path_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.xla_gpu_algorithm_blacklist_path_);
+  xla_gpu_algorithm_denylist_path_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.xla_gpu_algorithm_denylist_path().size() > 0) {
+    xla_gpu_algorithm_denylist_path_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.xla_gpu_algorithm_denylist_path_);
+  }
+  xla_gpu_asm_extra_flags_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.xla_gpu_asm_extra_flags().size() > 0) {
+    xla_gpu_asm_extra_flags_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.xla_gpu_asm_extra_flags_);
+  }
+  xla_dump_hlo_pipeline_re_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.xla_dump_hlo_pipeline_re().size() > 0) {
+    xla_dump_hlo_pipeline_re_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.xla_dump_hlo_pipeline_re_);
   }
   ::memcpy(&xla_backend_optimization_level_, &from.xla_backend_optimization_level_,
-    static_cast<size_t>(reinterpret_cast<char*>(&xla_gpu_force_conv_nchw_) -
-    reinterpret_cast<char*>(&xla_backend_optimization_level_)) + sizeof(xla_gpu_force_conv_nchw_));
+    static_cast<size_t>(reinterpret_cast<char*>(&xla_gpu_redzone_scratch_max_megabytes_) -
+    reinterpret_cast<char*>(&xla_backend_optimization_level_)) + sizeof(xla_gpu_redzone_scratch_max_megabytes_));
   // @@protoc_insertion_point(copy_constructor:xla.DebugOptions)
 }
 
@@ -2122,10 +1750,12 @@ void DebugOptions::SharedCtor() {
   xla_dump_to_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   xla_dump_hlo_module_re_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   xla_dump_hlo_pass_re_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  xla_gpu_algorithm_blacklist_path_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  xla_gpu_algorithm_denylist_path_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  xla_gpu_asm_extra_flags_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  xla_dump_hlo_pipeline_re_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&xla_backend_optimization_level_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&xla_gpu_force_conv_nchw_) -
-      reinterpret_cast<char*>(&xla_backend_optimization_level_)) + sizeof(xla_gpu_force_conv_nchw_));
+      reinterpret_cast<char*>(&xla_gpu_redzone_scratch_max_megabytes_) -
+      reinterpret_cast<char*>(&xla_backend_optimization_level_)) + sizeof(xla_gpu_redzone_scratch_max_megabytes_));
 }
 
 DebugOptions::~DebugOptions() {
@@ -2138,7 +1768,9 @@ void DebugOptions::SharedDtor() {
   xla_dump_to_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   xla_dump_hlo_module_re_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   xla_dump_hlo_pass_re_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  xla_gpu_algorithm_blacklist_path_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  xla_gpu_algorithm_denylist_path_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  xla_gpu_asm_extra_flags_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  xla_dump_hlo_pipeline_re_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
 void DebugOptions::SetCachedSize(int size) const {
@@ -2162,18 +1794,20 @@ void DebugOptions::Clear() {
   (void) cached_has_bits;
 
   xla_disable_hlo_passes_.Clear();
-  hlo_reduce_precision_options_.Clear();
   xla_enable_hlo_passes_only_.Clear();
   xla_gpu_ptx_file_.Clear();
+  xla_gpu_llvm_ir_file_.Clear();
   xla_backend_extra_options_.Clear();
   xla_gpu_cuda_data_dir_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   xla_dump_to_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   xla_dump_hlo_module_re_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   xla_dump_hlo_pass_re_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  xla_gpu_algorithm_blacklist_path_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  xla_gpu_algorithm_denylist_path_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  xla_gpu_asm_extra_flags_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  xla_dump_hlo_pipeline_re_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&xla_backend_optimization_level_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&xla_gpu_force_conv_nchw_) -
-      reinterpret_cast<char*>(&xla_backend_optimization_level_)) + sizeof(xla_gpu_force_conv_nchw_));
+      reinterpret_cast<char*>(&xla_gpu_redzone_scratch_max_megabytes_) -
+      reinterpret_cast<char*>(&xla_backend_optimization_level_)) + sizeof(xla_gpu_redzone_scratch_max_megabytes_));
   _internal_metadata_.Clear();
 }
 
@@ -2388,18 +2022,6 @@ bool DebugOptions::MergePartialFromCodedStream(
         break;
       }
 
-      // repeated .xla.HloReducePrecisionOptions hlo_reduce_precision_options = 80;
-      case 80: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(130u /* 642 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
-                input, add_hlo_reduce_precision_options()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
       // bool xla_test_all_output_layouts = 90;
       case 90: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
@@ -2436,20 +2058,6 @@ bool DebugOptions::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &xla_hlo_graph_sharding_color_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // bool xla_gpu_use_cudnn_batchnorm = 94;
-      case 94: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(240u /* 752 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, &xla_gpu_use_cudnn_batchnorm_)));
         } else {
           goto handle_unusual;
         }
@@ -2540,14 +2148,14 @@ bool DebugOptions::MergePartialFromCodedStream(
         break;
       }
 
-      // bool xla_gpu_disable_ptxas_optimizations = 103;
+      // bool xla_gpu_disable_gpuasm_optimizations = 103;
       case 103: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(56u /* 824 & 0xFF */)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, &xla_gpu_disable_ptxas_optimizations_)));
+                 input, &xla_gpu_disable_gpuasm_optimizations_)));
         } else {
           goto handle_unusual;
         }
@@ -2785,14 +2393,14 @@ bool DebugOptions::MergePartialFromCodedStream(
         break;
       }
 
-      // bool xla_gpu_disable_autotune = 123;
+      // int32 xla_gpu_autotune_level = 123;
       case 123: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(216u /* 984 & 0xFF */)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, &xla_gpu_disable_autotune_)));
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &xla_gpu_autotune_level_)));
         } else {
           goto handle_unusual;
         }
@@ -2861,16 +2469,16 @@ bool DebugOptions::MergePartialFromCodedStream(
         break;
       }
 
-      // string xla_gpu_algorithm_blacklist_path = 128;
+      // string xla_gpu_algorithm_denylist_path = 128;
       case 128: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(2u /* 1026 & 0xFF */)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
-                input, this->mutable_xla_gpu_algorithm_blacklist_path()));
+                input, this->mutable_xla_gpu_algorithm_denylist_path()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-            this->xla_gpu_algorithm_blacklist_path().data(), static_cast<int>(this->xla_gpu_algorithm_blacklist_path().length()),
+            this->xla_gpu_algorithm_denylist_path().data(), static_cast<int>(this->xla_gpu_algorithm_denylist_path().length()),
             ::google::protobuf::internal::WireFormatLite::PARSE,
-            "xla.DebugOptions.xla_gpu_algorithm_blacklist_path"));
+            "xla.DebugOptions.xla_gpu_algorithm_denylist_path"));
         } else {
           goto handle_unusual;
         }
@@ -2885,6 +2493,475 @@ bool DebugOptions::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &xla_cpu_fast_math_honor_functions_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool xla_dump_include_timestamp = 131;
+      case 131: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(24u /* 1048 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &xla_dump_include_timestamp_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int32 xla_dump_max_hlo_modules = 132;
+      case 132: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(32u /* 1056 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &xla_dump_max_hlo_modules_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool xla_gpu_use_random_streams = 134;
+      case 134: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(48u /* 1072 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &xla_gpu_use_random_streams_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool xla_tpu_detect_nan = 135;
+      case 135: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(56u /* 1080 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &xla_tpu_detect_nan_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool xla_tpu_detect_inf = 136;
+      case 136: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(64u /* 1088 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &xla_tpu_detect_inf_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool xla_cpu_enable_xprof_traceme = 137;
+      case 137: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(72u /* 1096 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &xla_cpu_enable_xprof_traceme_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool xla_gpu_unsafe_fallback_to_driver_on_ptxas_not_found = 138;
+      case 138: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(80u /* 1104 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &xla_gpu_unsafe_fallback_to_driver_on_ptxas_not_found_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool xla_cpu_enable_fast_min_max = 140;
+      case 140: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(96u /* 1120 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &xla_cpu_enable_fast_min_max_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string xla_gpu_asm_extra_flags = 141;
+      case 141: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(106u /* 1130 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_xla_gpu_asm_extra_flags()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->xla_gpu_asm_extra_flags().data(), static_cast<int>(this->xla_gpu_asm_extra_flags().length()),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "xla.DebugOptions.xla_gpu_asm_extra_flags"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int32 xla_multiheap_size_constraint_per_heap = 142;
+      case 142: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(112u /* 1136 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &xla_multiheap_size_constraint_per_heap_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool xla_detailed_logging_and_dumping = 143;
+      case 143: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(120u /* 1144 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &xla_detailed_logging_and_dumping_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool xla_dump_module_metadata = 144;
+      case 144: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(128u /* 1152 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &xla_dump_module_metadata_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool xla_gpu_force_conv_nhwc = 146;
+      case 146: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(144u /* 1168 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &xla_gpu_force_conv_nhwc_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int32 xla_gpu_force_compilation_parallelism = 147;
+      case 147: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(152u /* 1176 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &xla_gpu_force_compilation_parallelism_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool xla_gpu_deterministic_ops = 148;
+      case 148: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(160u /* 1184 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &xla_gpu_deterministic_ops_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool xla_dump_fusion_visualization = 149;
+      case 149: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(168u /* 1192 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &xla_dump_fusion_visualization_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated string xla_gpu_llvm_ir_file = 150;
+      case 150: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(178u /* 1202 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->add_xla_gpu_llvm_ir_file()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->xla_gpu_llvm_ir_file(this->xla_gpu_llvm_ir_file_size() - 1).data(),
+            static_cast<int>(this->xla_gpu_llvm_ir_file(this->xla_gpu_llvm_ir_file_size() - 1).length()),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "xla.DebugOptions.xla_gpu_llvm_ir_file"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool xla_dump_compress_protos = 151;
+      case 151: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(184u /* 1208 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &xla_dump_compress_protos_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool xla_gpu_enable_async_all_reduce = 152;
+      case 152: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(192u /* 1216 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &xla_gpu_enable_async_all_reduce_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool xla_dump_disable_metadata = 153;
+      case 153: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(200u /* 1224 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &xla_dump_disable_metadata_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string xla_dump_hlo_pipeline_re = 154;
+      case 154: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(210u /* 1234 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_xla_dump_hlo_pipeline_re()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->xla_dump_hlo_pipeline_re().data(), static_cast<int>(this->xla_dump_hlo_pipeline_re().length()),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "xla.DebugOptions.xla_dump_hlo_pipeline_re"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool xla_gpu_dump_llvmir = 155;
+      case 155: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(216u /* 1240 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &xla_gpu_dump_llvmir_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool xla_gpu_strict_conv_algorithm_picker = 156;
+      case 156: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(224u /* 1248 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &xla_gpu_strict_conv_algorithm_picker_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int64 xla_gpu_all_reduce_combine_threshold_bytes = 157;
+      case 157: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(232u /* 1256 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 input, &xla_gpu_all_reduce_combine_threshold_bytes_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool xla_gpu_all_reduce_contiguous = 158;
+      case 158: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(240u /* 1264 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &xla_gpu_all_reduce_contiguous_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int32 xla_gpu_all_reduce_blueconnect_num_devices_per_host = 159;
+      case 159: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(248u /* 1272 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &xla_gpu_all_reduce_blueconnect_num_devices_per_host_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool xla_gpu_enable_cudnn_frontend = 160;
+      case 160: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(0u /* 1280 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &xla_gpu_enable_cudnn_frontend_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool xla_gpu_bef_executable = 161;
+      case 161: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(8u /* 1288 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &xla_gpu_bef_executable_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool xla_gpu_bef_thunk = 162;
+      case 162: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(16u /* 1296 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &xla_gpu_bef_thunk_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int64 xla_gpu_nccl_termination_timeout_seconds = 163;
+      case 163: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(24u /* 1304 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 input, &xla_gpu_nccl_termination_timeout_seconds_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool xla_dump_hlo_as_long_text = 164;
+      case 164: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(32u /* 1312 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &xla_dump_hlo_as_long_text_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool xla_gpu_enable_shared_constants = 165;
+      case 165: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(40u /* 1320 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &xla_gpu_enable_shared_constants_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int64 xla_gpu_redzone_scratch_max_megabytes = 167;
+      case 167: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(56u /* 1336 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 input, &xla_gpu_redzone_scratch_max_megabytes_)));
         } else {
           goto handle_unusual;
         }
@@ -3024,15 +3101,6 @@ void DebugOptions::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteBool(73, this->xla_llvm_disable_expensive_passes(), output);
   }
 
-  // repeated .xla.HloReducePrecisionOptions hlo_reduce_precision_options = 80;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->hlo_reduce_precision_options_size()); i < n; i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      80,
-      this->hlo_reduce_precision_options(static_cast<int>(i)),
-      output);
-  }
-
   // bool xla_test_all_output_layouts = 90;
   if (this->xla_test_all_output_layouts() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(90, this->xla_test_all_output_layouts(), output);
@@ -3046,11 +3114,6 @@ void DebugOptions::SerializeWithCachedSizes(
   // bool xla_hlo_graph_sharding_color = 92;
   if (this->xla_hlo_graph_sharding_color() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(92, this->xla_hlo_graph_sharding_color(), output);
-  }
-
-  // bool xla_gpu_use_cudnn_batchnorm = 94;
-  if (this->xla_gpu_use_cudnn_batchnorm() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteBool(94, this->xla_gpu_use_cudnn_batchnorm(), output);
   }
 
   // bool xla_cpu_use_mkl_dnn = 97;
@@ -3083,9 +3146,9 @@ void DebugOptions::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteInt32(102, this->xla_force_host_platform_device_count(), output);
   }
 
-  // bool xla_gpu_disable_ptxas_optimizations = 103;
-  if (this->xla_gpu_disable_ptxas_optimizations() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteBool(103, this->xla_gpu_disable_ptxas_optimizations(), output);
+  // bool xla_gpu_disable_gpuasm_optimizations = 103;
+  if (this->xla_gpu_disable_gpuasm_optimizations() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(103, this->xla_gpu_disable_gpuasm_optimizations(), output);
   }
 
   // bool xla_disable_all_hlo_passes = 104;
@@ -3184,9 +3247,9 @@ void DebugOptions::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteBool(122, this->xla_allow_excess_precision(), output);
   }
 
-  // bool xla_gpu_disable_autotune = 123;
-  if (this->xla_gpu_disable_autotune() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteBool(123, this->xla_gpu_disable_autotune(), output);
+  // int32 xla_gpu_autotune_level = 123;
+  if (this->xla_gpu_autotune_level() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(123, this->xla_gpu_autotune_level(), output);
   }
 
   // repeated string xla_enable_hlo_passes_only = 124;
@@ -3219,19 +3282,199 @@ void DebugOptions::SerializeWithCachedSizes(
       127, this->xla_gpu_ptx_file(i), output);
   }
 
-  // string xla_gpu_algorithm_blacklist_path = 128;
-  if (this->xla_gpu_algorithm_blacklist_path().size() > 0) {
+  // string xla_gpu_algorithm_denylist_path = 128;
+  if (this->xla_gpu_algorithm_denylist_path().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->xla_gpu_algorithm_blacklist_path().data(), static_cast<int>(this->xla_gpu_algorithm_blacklist_path().length()),
+      this->xla_gpu_algorithm_denylist_path().data(), static_cast<int>(this->xla_gpu_algorithm_denylist_path().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "xla.DebugOptions.xla_gpu_algorithm_blacklist_path");
+      "xla.DebugOptions.xla_gpu_algorithm_denylist_path");
     ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
-      128, this->xla_gpu_algorithm_blacklist_path(), output);
+      128, this->xla_gpu_algorithm_denylist_path(), output);
   }
 
   // bool xla_cpu_fast_math_honor_functions = 129;
   if (this->xla_cpu_fast_math_honor_functions() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(129, this->xla_cpu_fast_math_honor_functions(), output);
+  }
+
+  // bool xla_dump_include_timestamp = 131;
+  if (this->xla_dump_include_timestamp() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(131, this->xla_dump_include_timestamp(), output);
+  }
+
+  // int32 xla_dump_max_hlo_modules = 132;
+  if (this->xla_dump_max_hlo_modules() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(132, this->xla_dump_max_hlo_modules(), output);
+  }
+
+  // bool xla_gpu_use_random_streams = 134;
+  if (this->xla_gpu_use_random_streams() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(134, this->xla_gpu_use_random_streams(), output);
+  }
+
+  // bool xla_tpu_detect_nan = 135;
+  if (this->xla_tpu_detect_nan() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(135, this->xla_tpu_detect_nan(), output);
+  }
+
+  // bool xla_tpu_detect_inf = 136;
+  if (this->xla_tpu_detect_inf() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(136, this->xla_tpu_detect_inf(), output);
+  }
+
+  // bool xla_cpu_enable_xprof_traceme = 137;
+  if (this->xla_cpu_enable_xprof_traceme() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(137, this->xla_cpu_enable_xprof_traceme(), output);
+  }
+
+  // bool xla_gpu_unsafe_fallback_to_driver_on_ptxas_not_found = 138;
+  if (this->xla_gpu_unsafe_fallback_to_driver_on_ptxas_not_found() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(138, this->xla_gpu_unsafe_fallback_to_driver_on_ptxas_not_found(), output);
+  }
+
+  // bool xla_cpu_enable_fast_min_max = 140;
+  if (this->xla_cpu_enable_fast_min_max() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(140, this->xla_cpu_enable_fast_min_max(), output);
+  }
+
+  // string xla_gpu_asm_extra_flags = 141;
+  if (this->xla_gpu_asm_extra_flags().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->xla_gpu_asm_extra_flags().data(), static_cast<int>(this->xla_gpu_asm_extra_flags().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "xla.DebugOptions.xla_gpu_asm_extra_flags");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      141, this->xla_gpu_asm_extra_flags(), output);
+  }
+
+  // int32 xla_multiheap_size_constraint_per_heap = 142;
+  if (this->xla_multiheap_size_constraint_per_heap() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(142, this->xla_multiheap_size_constraint_per_heap(), output);
+  }
+
+  // bool xla_detailed_logging_and_dumping = 143;
+  if (this->xla_detailed_logging_and_dumping() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(143, this->xla_detailed_logging_and_dumping(), output);
+  }
+
+  // bool xla_dump_module_metadata = 144;
+  if (this->xla_dump_module_metadata() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(144, this->xla_dump_module_metadata(), output);
+  }
+
+  // bool xla_gpu_force_conv_nhwc = 146;
+  if (this->xla_gpu_force_conv_nhwc() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(146, this->xla_gpu_force_conv_nhwc(), output);
+  }
+
+  // int32 xla_gpu_force_compilation_parallelism = 147;
+  if (this->xla_gpu_force_compilation_parallelism() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(147, this->xla_gpu_force_compilation_parallelism(), output);
+  }
+
+  // bool xla_gpu_deterministic_ops = 148;
+  if (this->xla_gpu_deterministic_ops() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(148, this->xla_gpu_deterministic_ops(), output);
+  }
+
+  // bool xla_dump_fusion_visualization = 149;
+  if (this->xla_dump_fusion_visualization() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(149, this->xla_dump_fusion_visualization(), output);
+  }
+
+  // repeated string xla_gpu_llvm_ir_file = 150;
+  for (int i = 0, n = this->xla_gpu_llvm_ir_file_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->xla_gpu_llvm_ir_file(i).data(), static_cast<int>(this->xla_gpu_llvm_ir_file(i).length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "xla.DebugOptions.xla_gpu_llvm_ir_file");
+    ::google::protobuf::internal::WireFormatLite::WriteString(
+      150, this->xla_gpu_llvm_ir_file(i), output);
+  }
+
+  // bool xla_dump_compress_protos = 151;
+  if (this->xla_dump_compress_protos() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(151, this->xla_dump_compress_protos(), output);
+  }
+
+  // bool xla_gpu_enable_async_all_reduce = 152;
+  if (this->xla_gpu_enable_async_all_reduce() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(152, this->xla_gpu_enable_async_all_reduce(), output);
+  }
+
+  // bool xla_dump_disable_metadata = 153;
+  if (this->xla_dump_disable_metadata() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(153, this->xla_dump_disable_metadata(), output);
+  }
+
+  // string xla_dump_hlo_pipeline_re = 154;
+  if (this->xla_dump_hlo_pipeline_re().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->xla_dump_hlo_pipeline_re().data(), static_cast<int>(this->xla_dump_hlo_pipeline_re().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "xla.DebugOptions.xla_dump_hlo_pipeline_re");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      154, this->xla_dump_hlo_pipeline_re(), output);
+  }
+
+  // bool xla_gpu_dump_llvmir = 155;
+  if (this->xla_gpu_dump_llvmir() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(155, this->xla_gpu_dump_llvmir(), output);
+  }
+
+  // bool xla_gpu_strict_conv_algorithm_picker = 156;
+  if (this->xla_gpu_strict_conv_algorithm_picker() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(156, this->xla_gpu_strict_conv_algorithm_picker(), output);
+  }
+
+  // int64 xla_gpu_all_reduce_combine_threshold_bytes = 157;
+  if (this->xla_gpu_all_reduce_combine_threshold_bytes() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt64(157, this->xla_gpu_all_reduce_combine_threshold_bytes(), output);
+  }
+
+  // bool xla_gpu_all_reduce_contiguous = 158;
+  if (this->xla_gpu_all_reduce_contiguous() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(158, this->xla_gpu_all_reduce_contiguous(), output);
+  }
+
+  // int32 xla_gpu_all_reduce_blueconnect_num_devices_per_host = 159;
+  if (this->xla_gpu_all_reduce_blueconnect_num_devices_per_host() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(159, this->xla_gpu_all_reduce_blueconnect_num_devices_per_host(), output);
+  }
+
+  // bool xla_gpu_enable_cudnn_frontend = 160;
+  if (this->xla_gpu_enable_cudnn_frontend() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(160, this->xla_gpu_enable_cudnn_frontend(), output);
+  }
+
+  // bool xla_gpu_bef_executable = 161;
+  if (this->xla_gpu_bef_executable() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(161, this->xla_gpu_bef_executable(), output);
+  }
+
+  // bool xla_gpu_bef_thunk = 162;
+  if (this->xla_gpu_bef_thunk() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(162, this->xla_gpu_bef_thunk(), output);
+  }
+
+  // int64 xla_gpu_nccl_termination_timeout_seconds = 163;
+  if (this->xla_gpu_nccl_termination_timeout_seconds() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt64(163, this->xla_gpu_nccl_termination_timeout_seconds(), output);
+  }
+
+  // bool xla_dump_hlo_as_long_text = 164;
+  if (this->xla_dump_hlo_as_long_text() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(164, this->xla_dump_hlo_as_long_text(), output);
+  }
+
+  // bool xla_gpu_enable_shared_constants = 165;
+  if (this->xla_gpu_enable_shared_constants() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(165, this->xla_gpu_enable_shared_constants(), output);
+  }
+
+  // int64 xla_gpu_redzone_scratch_max_megabytes = 167;
+  if (this->xla_gpu_redzone_scratch_max_megabytes() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt64(167, this->xla_gpu_redzone_scratch_max_megabytes(), output);
   }
 
   // map<string, string> xla_backend_extra_options = 500;
@@ -3382,14 +3625,6 @@ void DebugOptions::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(73, this->xla_llvm_disable_expensive_passes(), target);
   }
 
-  // repeated .xla.HloReducePrecisionOptions hlo_reduce_precision_options = 80;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->hlo_reduce_precision_options_size()); i < n; i++) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        80, this->hlo_reduce_precision_options(static_cast<int>(i)), deterministic, target);
-  }
-
   // bool xla_test_all_output_layouts = 90;
   if (this->xla_test_all_output_layouts() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(90, this->xla_test_all_output_layouts(), target);
@@ -3403,11 +3638,6 @@ void DebugOptions::SerializeWithCachedSizes(
   // bool xla_hlo_graph_sharding_color = 92;
   if (this->xla_hlo_graph_sharding_color() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(92, this->xla_hlo_graph_sharding_color(), target);
-  }
-
-  // bool xla_gpu_use_cudnn_batchnorm = 94;
-  if (this->xla_gpu_use_cudnn_batchnorm() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(94, this->xla_gpu_use_cudnn_batchnorm(), target);
   }
 
   // bool xla_cpu_use_mkl_dnn = 97;
@@ -3440,9 +3670,9 @@ void DebugOptions::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(102, this->xla_force_host_platform_device_count(), target);
   }
 
-  // bool xla_gpu_disable_ptxas_optimizations = 103;
-  if (this->xla_gpu_disable_ptxas_optimizations() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(103, this->xla_gpu_disable_ptxas_optimizations(), target);
+  // bool xla_gpu_disable_gpuasm_optimizations = 103;
+  if (this->xla_gpu_disable_gpuasm_optimizations() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(103, this->xla_gpu_disable_gpuasm_optimizations(), target);
   }
 
   // bool xla_disable_all_hlo_passes = 104;
@@ -3544,9 +3774,9 @@ void DebugOptions::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(122, this->xla_allow_excess_precision(), target);
   }
 
-  // bool xla_gpu_disable_autotune = 123;
-  if (this->xla_gpu_disable_autotune() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(123, this->xla_gpu_disable_autotune(), target);
+  // int32 xla_gpu_autotune_level = 123;
+  if (this->xla_gpu_autotune_level() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(123, this->xla_gpu_autotune_level(), target);
   }
 
   // repeated string xla_enable_hlo_passes_only = 124;
@@ -3579,20 +3809,202 @@ void DebugOptions::SerializeWithCachedSizes(
       WriteStringToArray(127, this->xla_gpu_ptx_file(i), target);
   }
 
-  // string xla_gpu_algorithm_blacklist_path = 128;
-  if (this->xla_gpu_algorithm_blacklist_path().size() > 0) {
+  // string xla_gpu_algorithm_denylist_path = 128;
+  if (this->xla_gpu_algorithm_denylist_path().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->xla_gpu_algorithm_blacklist_path().data(), static_cast<int>(this->xla_gpu_algorithm_blacklist_path().length()),
+      this->xla_gpu_algorithm_denylist_path().data(), static_cast<int>(this->xla_gpu_algorithm_denylist_path().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "xla.DebugOptions.xla_gpu_algorithm_blacklist_path");
+      "xla.DebugOptions.xla_gpu_algorithm_denylist_path");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
-        128, this->xla_gpu_algorithm_blacklist_path(), target);
+        128, this->xla_gpu_algorithm_denylist_path(), target);
   }
 
   // bool xla_cpu_fast_math_honor_functions = 129;
   if (this->xla_cpu_fast_math_honor_functions() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(129, this->xla_cpu_fast_math_honor_functions(), target);
+  }
+
+  // bool xla_dump_include_timestamp = 131;
+  if (this->xla_dump_include_timestamp() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(131, this->xla_dump_include_timestamp(), target);
+  }
+
+  // int32 xla_dump_max_hlo_modules = 132;
+  if (this->xla_dump_max_hlo_modules() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(132, this->xla_dump_max_hlo_modules(), target);
+  }
+
+  // bool xla_gpu_use_random_streams = 134;
+  if (this->xla_gpu_use_random_streams() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(134, this->xla_gpu_use_random_streams(), target);
+  }
+
+  // bool xla_tpu_detect_nan = 135;
+  if (this->xla_tpu_detect_nan() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(135, this->xla_tpu_detect_nan(), target);
+  }
+
+  // bool xla_tpu_detect_inf = 136;
+  if (this->xla_tpu_detect_inf() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(136, this->xla_tpu_detect_inf(), target);
+  }
+
+  // bool xla_cpu_enable_xprof_traceme = 137;
+  if (this->xla_cpu_enable_xprof_traceme() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(137, this->xla_cpu_enable_xprof_traceme(), target);
+  }
+
+  // bool xla_gpu_unsafe_fallback_to_driver_on_ptxas_not_found = 138;
+  if (this->xla_gpu_unsafe_fallback_to_driver_on_ptxas_not_found() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(138, this->xla_gpu_unsafe_fallback_to_driver_on_ptxas_not_found(), target);
+  }
+
+  // bool xla_cpu_enable_fast_min_max = 140;
+  if (this->xla_cpu_enable_fast_min_max() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(140, this->xla_cpu_enable_fast_min_max(), target);
+  }
+
+  // string xla_gpu_asm_extra_flags = 141;
+  if (this->xla_gpu_asm_extra_flags().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->xla_gpu_asm_extra_flags().data(), static_cast<int>(this->xla_gpu_asm_extra_flags().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "xla.DebugOptions.xla_gpu_asm_extra_flags");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        141, this->xla_gpu_asm_extra_flags(), target);
+  }
+
+  // int32 xla_multiheap_size_constraint_per_heap = 142;
+  if (this->xla_multiheap_size_constraint_per_heap() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(142, this->xla_multiheap_size_constraint_per_heap(), target);
+  }
+
+  // bool xla_detailed_logging_and_dumping = 143;
+  if (this->xla_detailed_logging_and_dumping() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(143, this->xla_detailed_logging_and_dumping(), target);
+  }
+
+  // bool xla_dump_module_metadata = 144;
+  if (this->xla_dump_module_metadata() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(144, this->xla_dump_module_metadata(), target);
+  }
+
+  // bool xla_gpu_force_conv_nhwc = 146;
+  if (this->xla_gpu_force_conv_nhwc() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(146, this->xla_gpu_force_conv_nhwc(), target);
+  }
+
+  // int32 xla_gpu_force_compilation_parallelism = 147;
+  if (this->xla_gpu_force_compilation_parallelism() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(147, this->xla_gpu_force_compilation_parallelism(), target);
+  }
+
+  // bool xla_gpu_deterministic_ops = 148;
+  if (this->xla_gpu_deterministic_ops() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(148, this->xla_gpu_deterministic_ops(), target);
+  }
+
+  // bool xla_dump_fusion_visualization = 149;
+  if (this->xla_dump_fusion_visualization() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(149, this->xla_dump_fusion_visualization(), target);
+  }
+
+  // repeated string xla_gpu_llvm_ir_file = 150;
+  for (int i = 0, n = this->xla_gpu_llvm_ir_file_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->xla_gpu_llvm_ir_file(i).data(), static_cast<int>(this->xla_gpu_llvm_ir_file(i).length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "xla.DebugOptions.xla_gpu_llvm_ir_file");
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteStringToArray(150, this->xla_gpu_llvm_ir_file(i), target);
+  }
+
+  // bool xla_dump_compress_protos = 151;
+  if (this->xla_dump_compress_protos() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(151, this->xla_dump_compress_protos(), target);
+  }
+
+  // bool xla_gpu_enable_async_all_reduce = 152;
+  if (this->xla_gpu_enable_async_all_reduce() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(152, this->xla_gpu_enable_async_all_reduce(), target);
+  }
+
+  // bool xla_dump_disable_metadata = 153;
+  if (this->xla_dump_disable_metadata() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(153, this->xla_dump_disable_metadata(), target);
+  }
+
+  // string xla_dump_hlo_pipeline_re = 154;
+  if (this->xla_dump_hlo_pipeline_re().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->xla_dump_hlo_pipeline_re().data(), static_cast<int>(this->xla_dump_hlo_pipeline_re().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "xla.DebugOptions.xla_dump_hlo_pipeline_re");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        154, this->xla_dump_hlo_pipeline_re(), target);
+  }
+
+  // bool xla_gpu_dump_llvmir = 155;
+  if (this->xla_gpu_dump_llvmir() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(155, this->xla_gpu_dump_llvmir(), target);
+  }
+
+  // bool xla_gpu_strict_conv_algorithm_picker = 156;
+  if (this->xla_gpu_strict_conv_algorithm_picker() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(156, this->xla_gpu_strict_conv_algorithm_picker(), target);
+  }
+
+  // int64 xla_gpu_all_reduce_combine_threshold_bytes = 157;
+  if (this->xla_gpu_all_reduce_combine_threshold_bytes() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(157, this->xla_gpu_all_reduce_combine_threshold_bytes(), target);
+  }
+
+  // bool xla_gpu_all_reduce_contiguous = 158;
+  if (this->xla_gpu_all_reduce_contiguous() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(158, this->xla_gpu_all_reduce_contiguous(), target);
+  }
+
+  // int32 xla_gpu_all_reduce_blueconnect_num_devices_per_host = 159;
+  if (this->xla_gpu_all_reduce_blueconnect_num_devices_per_host() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(159, this->xla_gpu_all_reduce_blueconnect_num_devices_per_host(), target);
+  }
+
+  // bool xla_gpu_enable_cudnn_frontend = 160;
+  if (this->xla_gpu_enable_cudnn_frontend() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(160, this->xla_gpu_enable_cudnn_frontend(), target);
+  }
+
+  // bool xla_gpu_bef_executable = 161;
+  if (this->xla_gpu_bef_executable() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(161, this->xla_gpu_bef_executable(), target);
+  }
+
+  // bool xla_gpu_bef_thunk = 162;
+  if (this->xla_gpu_bef_thunk() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(162, this->xla_gpu_bef_thunk(), target);
+  }
+
+  // int64 xla_gpu_nccl_termination_timeout_seconds = 163;
+  if (this->xla_gpu_nccl_termination_timeout_seconds() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(163, this->xla_gpu_nccl_termination_timeout_seconds(), target);
+  }
+
+  // bool xla_dump_hlo_as_long_text = 164;
+  if (this->xla_dump_hlo_as_long_text() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(164, this->xla_dump_hlo_as_long_text(), target);
+  }
+
+  // bool xla_gpu_enable_shared_constants = 165;
+  if (this->xla_gpu_enable_shared_constants() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(165, this->xla_gpu_enable_shared_constants(), target);
+  }
+
+  // int64 xla_gpu_redzone_scratch_max_megabytes = 167;
+  if (this->xla_gpu_redzone_scratch_max_megabytes() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(167, this->xla_gpu_redzone_scratch_max_megabytes(), target);
   }
 
   // map<string, string> xla_backend_extra_options = 500;
@@ -3677,17 +4089,6 @@ size_t DebugOptions::ByteSizeLong() const {
       this->xla_disable_hlo_passes(i));
   }
 
-  // repeated .xla.HloReducePrecisionOptions hlo_reduce_precision_options = 80;
-  {
-    unsigned int count = static_cast<unsigned int>(this->hlo_reduce_precision_options_size());
-    total_size += 2UL * count;
-    for (unsigned int i = 0; i < count; i++) {
-      total_size +=
-        ::google::protobuf::internal::WireFormatLite::MessageSize(
-          this->hlo_reduce_precision_options(static_cast<int>(i)));
-    }
-  }
-
   // repeated string xla_enable_hlo_passes_only = 124;
   total_size += 2 *
       ::google::protobuf::internal::FromIntSize(this->xla_enable_hlo_passes_only_size());
@@ -3702,6 +4103,14 @@ size_t DebugOptions::ByteSizeLong() const {
   for (int i = 0, n = this->xla_gpu_ptx_file_size(); i < n; i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->xla_gpu_ptx_file(i));
+  }
+
+  // repeated string xla_gpu_llvm_ir_file = 150;
+  total_size += 2 *
+      ::google::protobuf::internal::FromIntSize(this->xla_gpu_llvm_ir_file_size());
+  for (int i = 0, n = this->xla_gpu_llvm_ir_file_size(); i < n; i++) {
+    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
+      this->xla_gpu_llvm_ir_file(i));
   }
 
   // map<string, string> xla_backend_extra_options = 500;
@@ -3746,11 +4155,25 @@ size_t DebugOptions::ByteSizeLong() const {
         this->xla_dump_hlo_pass_re());
   }
 
-  // string xla_gpu_algorithm_blacklist_path = 128;
-  if (this->xla_gpu_algorithm_blacklist_path().size() > 0) {
+  // string xla_gpu_algorithm_denylist_path = 128;
+  if (this->xla_gpu_algorithm_denylist_path().size() > 0) {
     total_size += 2 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->xla_gpu_algorithm_blacklist_path());
+        this->xla_gpu_algorithm_denylist_path());
+  }
+
+  // string xla_gpu_asm_extra_flags = 141;
+  if (this->xla_gpu_asm_extra_flags().size() > 0) {
+    total_size += 2 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->xla_gpu_asm_extra_flags());
+  }
+
+  // string xla_dump_hlo_pipeline_re = 154;
+  if (this->xla_dump_hlo_pipeline_re().size() > 0) {
+    total_size += 2 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->xla_dump_hlo_pipeline_re());
   }
 
   // int32 xla_backend_optimization_level = 31;
@@ -3780,26 +4203,6 @@ size_t DebugOptions::ByteSizeLong() const {
     total_size += 2 + 1;
   }
 
-  // bool xla_cpu_fast_math_honor_division = 126;
-  if (this->xla_cpu_fast_math_honor_division() != 0) {
-    total_size += 2 + 1;
-  }
-
-  // bool xla_cpu_fast_math_honor_functions = 129;
-  if (this->xla_cpu_fast_math_honor_functions() != 0) {
-    total_size += 2 + 1;
-  }
-
-  // bool xla_gpu_enable_fast_min_max = 100;
-  if (this->xla_gpu_enable_fast_min_max() != 0) {
-    total_size += 2 + 1;
-  }
-
-  // bool xla_allow_excess_precision = 122;
-  if (this->xla_allow_excess_precision() != 0) {
-    total_size += 2 + 1;
-  }
-
   // bool xla_eliminate_hlo_implicit_broadcast = 35;
   if (this->xla_eliminate_hlo_implicit_broadcast() != 0) {
     total_size += 2 + 1;
@@ -3817,21 +4220,6 @@ size_t DebugOptions::ByteSizeLong() const {
 
   // bool xla_gpu_disable_multi_streaming = 63;
   if (this->xla_gpu_disable_multi_streaming() != 0) {
-    total_size += 2 + 1;
-  }
-
-  // bool xla_llvm_enable_alias_scope_metadata = 70;
-  if (this->xla_llvm_enable_alias_scope_metadata() != 0) {
-    total_size += 2 + 1;
-  }
-
-  // bool xla_llvm_enable_noalias_metadata = 71;
-  if (this->xla_llvm_enable_noalias_metadata() != 0) {
-    total_size += 2 + 1;
-  }
-
-  // bool xla_llvm_enable_invariant_load_metadata = 72;
-  if (this->xla_llvm_enable_invariant_load_metadata() != 0) {
     total_size += 2 + 1;
   }
 
@@ -3855,8 +4243,23 @@ size_t DebugOptions::ByteSizeLong() const {
     total_size += 2 + 1;
   }
 
-  // bool xla_gpu_use_cudnn_batchnorm = 94;
-  if (this->xla_gpu_use_cudnn_batchnorm() != 0) {
+  // bool xla_gpu_use_random_streams = 134;
+  if (this->xla_gpu_use_random_streams() != 0) {
+    total_size += 2 + 1;
+  }
+
+  // bool xla_llvm_enable_alias_scope_metadata = 70;
+  if (this->xla_llvm_enable_alias_scope_metadata() != 0) {
+    total_size += 2 + 1;
+  }
+
+  // bool xla_llvm_enable_noalias_metadata = 71;
+  if (this->xla_llvm_enable_noalias_metadata() != 0) {
+    total_size += 2 + 1;
+  }
+
+  // bool xla_llvm_enable_invariant_load_metadata = 72;
+  if (this->xla_llvm_enable_invariant_load_metadata() != 0) {
     total_size += 2 + 1;
   }
 
@@ -3880,18 +4283,18 @@ size_t DebugOptions::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormatLite::EnumSize(this->xla_step_marker_location());
   }
 
+  // bool xla_allow_excess_precision = 122;
+  if (this->xla_allow_excess_precision() != 0) {
+    total_size += 2 + 1;
+  }
+
   // bool xla_gpu_crash_on_verification_failures = 101;
   if (this->xla_gpu_crash_on_verification_failures() != 0) {
     total_size += 2 + 1;
   }
 
-  // bool xla_gpu_disable_autotune = 123;
-  if (this->xla_gpu_disable_autotune() != 0) {
-    total_size += 2 + 1;
-  }
-
-  // bool xla_gpu_disable_ptxas_optimizations = 103;
-  if (this->xla_gpu_disable_ptxas_optimizations() != 0) {
+  // bool xla_gpu_disable_gpuasm_optimizations = 103;
+  if (this->xla_gpu_disable_gpuasm_optimizations() != 0) {
     total_size += 2 + 1;
   }
 
@@ -3940,6 +4343,33 @@ size_t DebugOptions::ByteSizeLong() const {
     total_size += 2 + 1;
   }
 
+  // int32 xla_gpu_autotune_level = 123;
+  if (this->xla_gpu_autotune_level() != 0) {
+    total_size += 2 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->xla_gpu_autotune_level());
+  }
+
+  // bool xla_cpu_fast_math_honor_division = 126;
+  if (this->xla_cpu_fast_math_honor_division() != 0) {
+    total_size += 2 + 1;
+  }
+
+  // bool xla_cpu_fast_math_honor_functions = 129;
+  if (this->xla_cpu_fast_math_honor_functions() != 0) {
+    total_size += 2 + 1;
+  }
+
+  // bool xla_cpu_enable_fast_min_max = 140;
+  if (this->xla_cpu_enable_fast_min_max() != 0) {
+    total_size += 2 + 1;
+  }
+
+  // bool xla_gpu_enable_fast_min_max = 100;
+  if (this->xla_gpu_enable_fast_min_max() != 0) {
+    total_size += 2 + 1;
+  }
+
   // bool xla_dump_hlo_as_url = 115;
   if (this->xla_dump_hlo_as_url() != 0) {
     total_size += 2 + 1;
@@ -3950,14 +4380,168 @@ size_t DebugOptions::ByteSizeLong() const {
     total_size += 2 + 1;
   }
 
+  // bool xla_dump_fusion_visualization = 149;
+  if (this->xla_dump_fusion_visualization() != 0) {
+    total_size += 2 + 1;
+  }
+
   // bool xla_dump_hlo_snapshots = 118;
   if (this->xla_dump_hlo_snapshots() != 0) {
+    total_size += 2 + 1;
+  }
+
+  // int32 xla_dump_max_hlo_modules = 132;
+  if (this->xla_dump_max_hlo_modules() != 0) {
+    total_size += 2 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->xla_dump_max_hlo_modules());
+  }
+
+  // bool xla_tpu_detect_inf = 136;
+  if (this->xla_tpu_detect_inf() != 0) {
+    total_size += 2 + 1;
+  }
+
+  // bool xla_cpu_enable_xprof_traceme = 137;
+  if (this->xla_cpu_enable_xprof_traceme() != 0) {
+    total_size += 2 + 1;
+  }
+
+  // bool xla_gpu_unsafe_fallback_to_driver_on_ptxas_not_found = 138;
+  if (this->xla_gpu_unsafe_fallback_to_driver_on_ptxas_not_found() != 0) {
+    total_size += 2 + 1;
+  }
+
+  // bool xla_detailed_logging_and_dumping = 143;
+  if (this->xla_detailed_logging_and_dumping() != 0) {
     total_size += 2 + 1;
   }
 
   // bool xla_gpu_force_conv_nchw = 125;
   if (this->xla_gpu_force_conv_nchw() != 0) {
     total_size += 2 + 1;
+  }
+
+  // bool xla_gpu_force_conv_nhwc = 146;
+  if (this->xla_gpu_force_conv_nhwc() != 0) {
+    total_size += 2 + 1;
+  }
+
+  // bool xla_gpu_dump_llvmir = 155;
+  if (this->xla_gpu_dump_llvmir() != 0) {
+    total_size += 2 + 1;
+  }
+
+  // bool xla_tpu_detect_nan = 135;
+  if (this->xla_tpu_detect_nan() != 0) {
+    total_size += 2 + 1;
+  }
+
+  // int32 xla_multiheap_size_constraint_per_heap = 142;
+  if (this->xla_multiheap_size_constraint_per_heap() != 0) {
+    total_size += 2 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->xla_multiheap_size_constraint_per_heap());
+  }
+
+  // int32 xla_gpu_force_compilation_parallelism = 147;
+  if (this->xla_gpu_force_compilation_parallelism() != 0) {
+    total_size += 2 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->xla_gpu_force_compilation_parallelism());
+  }
+
+  // bool xla_dump_include_timestamp = 131;
+  if (this->xla_dump_include_timestamp() != 0) {
+    total_size += 2 + 1;
+  }
+
+  // bool xla_dump_module_metadata = 144;
+  if (this->xla_dump_module_metadata() != 0) {
+    total_size += 2 + 1;
+  }
+
+  // bool xla_dump_compress_protos = 151;
+  if (this->xla_dump_compress_protos() != 0) {
+    total_size += 2 + 1;
+  }
+
+  // bool xla_dump_hlo_as_long_text = 164;
+  if (this->xla_dump_hlo_as_long_text() != 0) {
+    total_size += 2 + 1;
+  }
+
+  // bool xla_gpu_deterministic_ops = 148;
+  if (this->xla_gpu_deterministic_ops() != 0) {
+    total_size += 2 + 1;
+  }
+
+  // bool xla_gpu_enable_async_all_reduce = 152;
+  if (this->xla_gpu_enable_async_all_reduce() != 0) {
+    total_size += 2 + 1;
+  }
+
+  // bool xla_gpu_all_reduce_contiguous = 158;
+  if (this->xla_gpu_all_reduce_contiguous() != 0) {
+    total_size += 2 + 1;
+  }
+
+  // bool xla_gpu_enable_cudnn_frontend = 160;
+  if (this->xla_gpu_enable_cudnn_frontend() != 0) {
+    total_size += 2 + 1;
+  }
+
+  // bool xla_dump_disable_metadata = 153;
+  if (this->xla_dump_disable_metadata() != 0) {
+    total_size += 2 + 1;
+  }
+
+  // bool xla_gpu_strict_conv_algorithm_picker = 156;
+  if (this->xla_gpu_strict_conv_algorithm_picker() != 0) {
+    total_size += 2 + 1;
+  }
+
+  // bool xla_gpu_bef_executable = 161;
+  if (this->xla_gpu_bef_executable() != 0) {
+    total_size += 2 + 1;
+  }
+
+  // bool xla_gpu_bef_thunk = 162;
+  if (this->xla_gpu_bef_thunk() != 0) {
+    total_size += 2 + 1;
+  }
+
+  // int64 xla_gpu_all_reduce_combine_threshold_bytes = 157;
+  if (this->xla_gpu_all_reduce_combine_threshold_bytes() != 0) {
+    total_size += 2 +
+      ::google::protobuf::internal::WireFormatLite::Int64Size(
+        this->xla_gpu_all_reduce_combine_threshold_bytes());
+  }
+
+  // int32 xla_gpu_all_reduce_blueconnect_num_devices_per_host = 159;
+  if (this->xla_gpu_all_reduce_blueconnect_num_devices_per_host() != 0) {
+    total_size += 2 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->xla_gpu_all_reduce_blueconnect_num_devices_per_host());
+  }
+
+  // bool xla_gpu_enable_shared_constants = 165;
+  if (this->xla_gpu_enable_shared_constants() != 0) {
+    total_size += 2 + 1;
+  }
+
+  // int64 xla_gpu_nccl_termination_timeout_seconds = 163;
+  if (this->xla_gpu_nccl_termination_timeout_seconds() != 0) {
+    total_size += 2 +
+      ::google::protobuf::internal::WireFormatLite::Int64Size(
+        this->xla_gpu_nccl_termination_timeout_seconds());
+  }
+
+  // int64 xla_gpu_redzone_scratch_max_megabytes = 167;
+  if (this->xla_gpu_redzone_scratch_max_megabytes() != 0) {
+    total_size += 2 +
+      ::google::protobuf::internal::WireFormatLite::Int64Size(
+        this->xla_gpu_redzone_scratch_max_megabytes());
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -3988,9 +4572,9 @@ void DebugOptions::MergeFrom(const DebugOptions& from) {
   (void) cached_has_bits;
 
   xla_disable_hlo_passes_.MergeFrom(from.xla_disable_hlo_passes_);
-  hlo_reduce_precision_options_.MergeFrom(from.hlo_reduce_precision_options_);
   xla_enable_hlo_passes_only_.MergeFrom(from.xla_enable_hlo_passes_only_);
   xla_gpu_ptx_file_.MergeFrom(from.xla_gpu_ptx_file_);
+  xla_gpu_llvm_ir_file_.MergeFrom(from.xla_gpu_llvm_ir_file_);
   xla_backend_extra_options_.MergeFrom(from.xla_backend_extra_options_);
   if (from.xla_gpu_cuda_data_dir().size() > 0) {
 
@@ -4008,9 +4592,17 @@ void DebugOptions::MergeFrom(const DebugOptions& from) {
 
     xla_dump_hlo_pass_re_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.xla_dump_hlo_pass_re_);
   }
-  if (from.xla_gpu_algorithm_blacklist_path().size() > 0) {
+  if (from.xla_gpu_algorithm_denylist_path().size() > 0) {
 
-    xla_gpu_algorithm_blacklist_path_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.xla_gpu_algorithm_blacklist_path_);
+    xla_gpu_algorithm_denylist_path_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.xla_gpu_algorithm_denylist_path_);
+  }
+  if (from.xla_gpu_asm_extra_flags().size() > 0) {
+
+    xla_gpu_asm_extra_flags_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.xla_gpu_asm_extra_flags_);
+  }
+  if (from.xla_dump_hlo_pipeline_re().size() > 0) {
+
+    xla_dump_hlo_pipeline_re_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.xla_dump_hlo_pipeline_re_);
   }
   if (from.xla_backend_optimization_level() != 0) {
     set_xla_backend_optimization_level(from.xla_backend_optimization_level());
@@ -4027,18 +4619,6 @@ void DebugOptions::MergeFrom(const DebugOptions& from) {
   if (from.xla_embed_ir_in_executable() != 0) {
     set_xla_embed_ir_in_executable(from.xla_embed_ir_in_executable());
   }
-  if (from.xla_cpu_fast_math_honor_division() != 0) {
-    set_xla_cpu_fast_math_honor_division(from.xla_cpu_fast_math_honor_division());
-  }
-  if (from.xla_cpu_fast_math_honor_functions() != 0) {
-    set_xla_cpu_fast_math_honor_functions(from.xla_cpu_fast_math_honor_functions());
-  }
-  if (from.xla_gpu_enable_fast_min_max() != 0) {
-    set_xla_gpu_enable_fast_min_max(from.xla_gpu_enable_fast_min_max());
-  }
-  if (from.xla_allow_excess_precision() != 0) {
-    set_xla_allow_excess_precision(from.xla_allow_excess_precision());
-  }
   if (from.xla_eliminate_hlo_implicit_broadcast() != 0) {
     set_xla_eliminate_hlo_implicit_broadcast(from.xla_eliminate_hlo_implicit_broadcast());
   }
@@ -4050,15 +4630,6 @@ void DebugOptions::MergeFrom(const DebugOptions& from) {
   }
   if (from.xla_gpu_disable_multi_streaming() != 0) {
     set_xla_gpu_disable_multi_streaming(from.xla_gpu_disable_multi_streaming());
-  }
-  if (from.xla_llvm_enable_alias_scope_metadata() != 0) {
-    set_xla_llvm_enable_alias_scope_metadata(from.xla_llvm_enable_alias_scope_metadata());
-  }
-  if (from.xla_llvm_enable_noalias_metadata() != 0) {
-    set_xla_llvm_enable_noalias_metadata(from.xla_llvm_enable_noalias_metadata());
-  }
-  if (from.xla_llvm_enable_invariant_load_metadata() != 0) {
-    set_xla_llvm_enable_invariant_load_metadata(from.xla_llvm_enable_invariant_load_metadata());
   }
   if (from.xla_llvm_disable_expensive_passes() != 0) {
     set_xla_llvm_disable_expensive_passes(from.xla_llvm_disable_expensive_passes());
@@ -4072,8 +4643,17 @@ void DebugOptions::MergeFrom(const DebugOptions& from) {
   if (from.xla_hlo_graph_sharding_color() != 0) {
     set_xla_hlo_graph_sharding_color(from.xla_hlo_graph_sharding_color());
   }
-  if (from.xla_gpu_use_cudnn_batchnorm() != 0) {
-    set_xla_gpu_use_cudnn_batchnorm(from.xla_gpu_use_cudnn_batchnorm());
+  if (from.xla_gpu_use_random_streams() != 0) {
+    set_xla_gpu_use_random_streams(from.xla_gpu_use_random_streams());
+  }
+  if (from.xla_llvm_enable_alias_scope_metadata() != 0) {
+    set_xla_llvm_enable_alias_scope_metadata(from.xla_llvm_enable_alias_scope_metadata());
+  }
+  if (from.xla_llvm_enable_noalias_metadata() != 0) {
+    set_xla_llvm_enable_noalias_metadata(from.xla_llvm_enable_noalias_metadata());
+  }
+  if (from.xla_llvm_enable_invariant_load_metadata() != 0) {
+    set_xla_llvm_enable_invariant_load_metadata(from.xla_llvm_enable_invariant_load_metadata());
   }
   if (from.xla_gpu_max_kernel_unroll_factor() != 0) {
     set_xla_gpu_max_kernel_unroll_factor(from.xla_gpu_max_kernel_unroll_factor());
@@ -4084,14 +4664,14 @@ void DebugOptions::MergeFrom(const DebugOptions& from) {
   if (from.xla_step_marker_location() != 0) {
     set_xla_step_marker_location(from.xla_step_marker_location());
   }
+  if (from.xla_allow_excess_precision() != 0) {
+    set_xla_allow_excess_precision(from.xla_allow_excess_precision());
+  }
   if (from.xla_gpu_crash_on_verification_failures() != 0) {
     set_xla_gpu_crash_on_verification_failures(from.xla_gpu_crash_on_verification_failures());
   }
-  if (from.xla_gpu_disable_autotune() != 0) {
-    set_xla_gpu_disable_autotune(from.xla_gpu_disable_autotune());
-  }
-  if (from.xla_gpu_disable_ptxas_optimizations() != 0) {
-    set_xla_gpu_disable_ptxas_optimizations(from.xla_gpu_disable_ptxas_optimizations());
+  if (from.xla_gpu_disable_gpuasm_optimizations() != 0) {
+    set_xla_gpu_disable_gpuasm_optimizations(from.xla_gpu_disable_gpuasm_optimizations());
   }
   if (from.xla_hlo_evaluator_use_fast_path() != 0) {
     set_xla_hlo_evaluator_use_fast_path(from.xla_hlo_evaluator_use_fast_path());
@@ -4120,17 +4700,116 @@ void DebugOptions::MergeFrom(const DebugOptions& from) {
   if (from.xla_dump_hlo_as_dot() != 0) {
     set_xla_dump_hlo_as_dot(from.xla_dump_hlo_as_dot());
   }
+  if (from.xla_gpu_autotune_level() != 0) {
+    set_xla_gpu_autotune_level(from.xla_gpu_autotune_level());
+  }
+  if (from.xla_cpu_fast_math_honor_division() != 0) {
+    set_xla_cpu_fast_math_honor_division(from.xla_cpu_fast_math_honor_division());
+  }
+  if (from.xla_cpu_fast_math_honor_functions() != 0) {
+    set_xla_cpu_fast_math_honor_functions(from.xla_cpu_fast_math_honor_functions());
+  }
+  if (from.xla_cpu_enable_fast_min_max() != 0) {
+    set_xla_cpu_enable_fast_min_max(from.xla_cpu_enable_fast_min_max());
+  }
+  if (from.xla_gpu_enable_fast_min_max() != 0) {
+    set_xla_gpu_enable_fast_min_max(from.xla_gpu_enable_fast_min_max());
+  }
   if (from.xla_dump_hlo_as_url() != 0) {
     set_xla_dump_hlo_as_url(from.xla_dump_hlo_as_url());
   }
   if (from.xla_dump_hlo_as_html() != 0) {
     set_xla_dump_hlo_as_html(from.xla_dump_hlo_as_html());
   }
+  if (from.xla_dump_fusion_visualization() != 0) {
+    set_xla_dump_fusion_visualization(from.xla_dump_fusion_visualization());
+  }
   if (from.xla_dump_hlo_snapshots() != 0) {
     set_xla_dump_hlo_snapshots(from.xla_dump_hlo_snapshots());
   }
+  if (from.xla_dump_max_hlo_modules() != 0) {
+    set_xla_dump_max_hlo_modules(from.xla_dump_max_hlo_modules());
+  }
+  if (from.xla_tpu_detect_inf() != 0) {
+    set_xla_tpu_detect_inf(from.xla_tpu_detect_inf());
+  }
+  if (from.xla_cpu_enable_xprof_traceme() != 0) {
+    set_xla_cpu_enable_xprof_traceme(from.xla_cpu_enable_xprof_traceme());
+  }
+  if (from.xla_gpu_unsafe_fallback_to_driver_on_ptxas_not_found() != 0) {
+    set_xla_gpu_unsafe_fallback_to_driver_on_ptxas_not_found(from.xla_gpu_unsafe_fallback_to_driver_on_ptxas_not_found());
+  }
+  if (from.xla_detailed_logging_and_dumping() != 0) {
+    set_xla_detailed_logging_and_dumping(from.xla_detailed_logging_and_dumping());
+  }
   if (from.xla_gpu_force_conv_nchw() != 0) {
     set_xla_gpu_force_conv_nchw(from.xla_gpu_force_conv_nchw());
+  }
+  if (from.xla_gpu_force_conv_nhwc() != 0) {
+    set_xla_gpu_force_conv_nhwc(from.xla_gpu_force_conv_nhwc());
+  }
+  if (from.xla_gpu_dump_llvmir() != 0) {
+    set_xla_gpu_dump_llvmir(from.xla_gpu_dump_llvmir());
+  }
+  if (from.xla_tpu_detect_nan() != 0) {
+    set_xla_tpu_detect_nan(from.xla_tpu_detect_nan());
+  }
+  if (from.xla_multiheap_size_constraint_per_heap() != 0) {
+    set_xla_multiheap_size_constraint_per_heap(from.xla_multiheap_size_constraint_per_heap());
+  }
+  if (from.xla_gpu_force_compilation_parallelism() != 0) {
+    set_xla_gpu_force_compilation_parallelism(from.xla_gpu_force_compilation_parallelism());
+  }
+  if (from.xla_dump_include_timestamp() != 0) {
+    set_xla_dump_include_timestamp(from.xla_dump_include_timestamp());
+  }
+  if (from.xla_dump_module_metadata() != 0) {
+    set_xla_dump_module_metadata(from.xla_dump_module_metadata());
+  }
+  if (from.xla_dump_compress_protos() != 0) {
+    set_xla_dump_compress_protos(from.xla_dump_compress_protos());
+  }
+  if (from.xla_dump_hlo_as_long_text() != 0) {
+    set_xla_dump_hlo_as_long_text(from.xla_dump_hlo_as_long_text());
+  }
+  if (from.xla_gpu_deterministic_ops() != 0) {
+    set_xla_gpu_deterministic_ops(from.xla_gpu_deterministic_ops());
+  }
+  if (from.xla_gpu_enable_async_all_reduce() != 0) {
+    set_xla_gpu_enable_async_all_reduce(from.xla_gpu_enable_async_all_reduce());
+  }
+  if (from.xla_gpu_all_reduce_contiguous() != 0) {
+    set_xla_gpu_all_reduce_contiguous(from.xla_gpu_all_reduce_contiguous());
+  }
+  if (from.xla_gpu_enable_cudnn_frontend() != 0) {
+    set_xla_gpu_enable_cudnn_frontend(from.xla_gpu_enable_cudnn_frontend());
+  }
+  if (from.xla_dump_disable_metadata() != 0) {
+    set_xla_dump_disable_metadata(from.xla_dump_disable_metadata());
+  }
+  if (from.xla_gpu_strict_conv_algorithm_picker() != 0) {
+    set_xla_gpu_strict_conv_algorithm_picker(from.xla_gpu_strict_conv_algorithm_picker());
+  }
+  if (from.xla_gpu_bef_executable() != 0) {
+    set_xla_gpu_bef_executable(from.xla_gpu_bef_executable());
+  }
+  if (from.xla_gpu_bef_thunk() != 0) {
+    set_xla_gpu_bef_thunk(from.xla_gpu_bef_thunk());
+  }
+  if (from.xla_gpu_all_reduce_combine_threshold_bytes() != 0) {
+    set_xla_gpu_all_reduce_combine_threshold_bytes(from.xla_gpu_all_reduce_combine_threshold_bytes());
+  }
+  if (from.xla_gpu_all_reduce_blueconnect_num_devices_per_host() != 0) {
+    set_xla_gpu_all_reduce_blueconnect_num_devices_per_host(from.xla_gpu_all_reduce_blueconnect_num_devices_per_host());
+  }
+  if (from.xla_gpu_enable_shared_constants() != 0) {
+    set_xla_gpu_enable_shared_constants(from.xla_gpu_enable_shared_constants());
+  }
+  if (from.xla_gpu_nccl_termination_timeout_seconds() != 0) {
+    set_xla_gpu_nccl_termination_timeout_seconds(from.xla_gpu_nccl_termination_timeout_seconds());
+  }
+  if (from.xla_gpu_redzone_scratch_max_megabytes() != 0) {
+    set_xla_gpu_redzone_scratch_max_megabytes(from.xla_gpu_redzone_scratch_max_megabytes());
   }
 }
 
@@ -4159,9 +4838,9 @@ void DebugOptions::Swap(DebugOptions* other) {
 void DebugOptions::InternalSwap(DebugOptions* other) {
   using std::swap;
   xla_disable_hlo_passes_.InternalSwap(CastToBase(&other->xla_disable_hlo_passes_));
-  CastToBase(&hlo_reduce_precision_options_)->InternalSwap(CastToBase(&other->hlo_reduce_precision_options_));
   xla_enable_hlo_passes_only_.InternalSwap(CastToBase(&other->xla_enable_hlo_passes_only_));
   xla_gpu_ptx_file_.InternalSwap(CastToBase(&other->xla_gpu_ptx_file_));
+  xla_gpu_llvm_ir_file_.InternalSwap(CastToBase(&other->xla_gpu_llvm_ir_file_));
   xla_backend_extra_options_.Swap(&other->xla_backend_extra_options_);
   xla_gpu_cuda_data_dir_.Swap(&other->xla_gpu_cuda_data_dir_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
@@ -4171,35 +4850,35 @@ void DebugOptions::InternalSwap(DebugOptions* other) {
     GetArenaNoVirtual());
   xla_dump_hlo_pass_re_.Swap(&other->xla_dump_hlo_pass_re_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  xla_gpu_algorithm_blacklist_path_.Swap(&other->xla_gpu_algorithm_blacklist_path_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  xla_gpu_algorithm_denylist_path_.Swap(&other->xla_gpu_algorithm_denylist_path_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  xla_gpu_asm_extra_flags_.Swap(&other->xla_gpu_asm_extra_flags_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  xla_dump_hlo_pipeline_re_.Swap(&other->xla_dump_hlo_pipeline_re_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(xla_backend_optimization_level_, other->xla_backend_optimization_level_);
   swap(xla_hlo_graph_addresses_, other->xla_hlo_graph_addresses_);
   swap(xla_hlo_profile_, other->xla_hlo_profile_);
   swap(xla_disable_all_hlo_passes_, other->xla_disable_all_hlo_passes_);
   swap(xla_embed_ir_in_executable_, other->xla_embed_ir_in_executable_);
-  swap(xla_cpu_fast_math_honor_division_, other->xla_cpu_fast_math_honor_division_);
-  swap(xla_cpu_fast_math_honor_functions_, other->xla_cpu_fast_math_honor_functions_);
-  swap(xla_gpu_enable_fast_min_max_, other->xla_gpu_enable_fast_min_max_);
-  swap(xla_allow_excess_precision_, other->xla_allow_excess_precision_);
   swap(xla_eliminate_hlo_implicit_broadcast_, other->xla_eliminate_hlo_implicit_broadcast_);
   swap(xla_cpu_multi_thread_eigen_, other->xla_cpu_multi_thread_eigen_);
   swap(xla_gpu_ftz_, other->xla_gpu_ftz_);
   swap(xla_gpu_disable_multi_streaming_, other->xla_gpu_disable_multi_streaming_);
-  swap(xla_llvm_enable_alias_scope_metadata_, other->xla_llvm_enable_alias_scope_metadata_);
-  swap(xla_llvm_enable_noalias_metadata_, other->xla_llvm_enable_noalias_metadata_);
-  swap(xla_llvm_enable_invariant_load_metadata_, other->xla_llvm_enable_invariant_load_metadata_);
   swap(xla_llvm_disable_expensive_passes_, other->xla_llvm_disable_expensive_passes_);
   swap(xla_test_all_output_layouts_, other->xla_test_all_output_layouts_);
   swap(xla_test_all_input_layouts_, other->xla_test_all_input_layouts_);
   swap(xla_hlo_graph_sharding_color_, other->xla_hlo_graph_sharding_color_);
-  swap(xla_gpu_use_cudnn_batchnorm_, other->xla_gpu_use_cudnn_batchnorm_);
+  swap(xla_gpu_use_random_streams_, other->xla_gpu_use_random_streams_);
+  swap(xla_llvm_enable_alias_scope_metadata_, other->xla_llvm_enable_alias_scope_metadata_);
+  swap(xla_llvm_enable_noalias_metadata_, other->xla_llvm_enable_noalias_metadata_);
+  swap(xla_llvm_enable_invariant_load_metadata_, other->xla_llvm_enable_invariant_load_metadata_);
   swap(xla_gpu_max_kernel_unroll_factor_, other->xla_gpu_max_kernel_unroll_factor_);
   swap(xla_force_host_platform_device_count_, other->xla_force_host_platform_device_count_);
   swap(xla_step_marker_location_, other->xla_step_marker_location_);
+  swap(xla_allow_excess_precision_, other->xla_allow_excess_precision_);
   swap(xla_gpu_crash_on_verification_failures_, other->xla_gpu_crash_on_verification_failures_);
-  swap(xla_gpu_disable_autotune_, other->xla_gpu_disable_autotune_);
-  swap(xla_gpu_disable_ptxas_optimizations_, other->xla_gpu_disable_ptxas_optimizations_);
+  swap(xla_gpu_disable_gpuasm_optimizations_, other->xla_gpu_disable_gpuasm_optimizations_);
   swap(xla_hlo_evaluator_use_fast_path_, other->xla_hlo_evaluator_use_fast_path_);
   swap(xla_cpu_use_mkl_dnn_, other->xla_cpu_use_mkl_dnn_);
   swap(xla_cpu_enable_fast_math_, other->xla_cpu_enable_fast_math_);
@@ -4209,10 +4888,43 @@ void DebugOptions::InternalSwap(DebugOptions* other) {
   swap(xla_dump_hlo_as_text_, other->xla_dump_hlo_as_text_);
   swap(xla_dump_hlo_as_proto_, other->xla_dump_hlo_as_proto_);
   swap(xla_dump_hlo_as_dot_, other->xla_dump_hlo_as_dot_);
+  swap(xla_gpu_autotune_level_, other->xla_gpu_autotune_level_);
+  swap(xla_cpu_fast_math_honor_division_, other->xla_cpu_fast_math_honor_division_);
+  swap(xla_cpu_fast_math_honor_functions_, other->xla_cpu_fast_math_honor_functions_);
+  swap(xla_cpu_enable_fast_min_max_, other->xla_cpu_enable_fast_min_max_);
+  swap(xla_gpu_enable_fast_min_max_, other->xla_gpu_enable_fast_min_max_);
   swap(xla_dump_hlo_as_url_, other->xla_dump_hlo_as_url_);
   swap(xla_dump_hlo_as_html_, other->xla_dump_hlo_as_html_);
+  swap(xla_dump_fusion_visualization_, other->xla_dump_fusion_visualization_);
   swap(xla_dump_hlo_snapshots_, other->xla_dump_hlo_snapshots_);
+  swap(xla_dump_max_hlo_modules_, other->xla_dump_max_hlo_modules_);
+  swap(xla_tpu_detect_inf_, other->xla_tpu_detect_inf_);
+  swap(xla_cpu_enable_xprof_traceme_, other->xla_cpu_enable_xprof_traceme_);
+  swap(xla_gpu_unsafe_fallback_to_driver_on_ptxas_not_found_, other->xla_gpu_unsafe_fallback_to_driver_on_ptxas_not_found_);
+  swap(xla_detailed_logging_and_dumping_, other->xla_detailed_logging_and_dumping_);
   swap(xla_gpu_force_conv_nchw_, other->xla_gpu_force_conv_nchw_);
+  swap(xla_gpu_force_conv_nhwc_, other->xla_gpu_force_conv_nhwc_);
+  swap(xla_gpu_dump_llvmir_, other->xla_gpu_dump_llvmir_);
+  swap(xla_tpu_detect_nan_, other->xla_tpu_detect_nan_);
+  swap(xla_multiheap_size_constraint_per_heap_, other->xla_multiheap_size_constraint_per_heap_);
+  swap(xla_gpu_force_compilation_parallelism_, other->xla_gpu_force_compilation_parallelism_);
+  swap(xla_dump_include_timestamp_, other->xla_dump_include_timestamp_);
+  swap(xla_dump_module_metadata_, other->xla_dump_module_metadata_);
+  swap(xla_dump_compress_protos_, other->xla_dump_compress_protos_);
+  swap(xla_dump_hlo_as_long_text_, other->xla_dump_hlo_as_long_text_);
+  swap(xla_gpu_deterministic_ops_, other->xla_gpu_deterministic_ops_);
+  swap(xla_gpu_enable_async_all_reduce_, other->xla_gpu_enable_async_all_reduce_);
+  swap(xla_gpu_all_reduce_contiguous_, other->xla_gpu_all_reduce_contiguous_);
+  swap(xla_gpu_enable_cudnn_frontend_, other->xla_gpu_enable_cudnn_frontend_);
+  swap(xla_dump_disable_metadata_, other->xla_dump_disable_metadata_);
+  swap(xla_gpu_strict_conv_algorithm_picker_, other->xla_gpu_strict_conv_algorithm_picker_);
+  swap(xla_gpu_bef_executable_, other->xla_gpu_bef_executable_);
+  swap(xla_gpu_bef_thunk_, other->xla_gpu_bef_thunk_);
+  swap(xla_gpu_all_reduce_combine_threshold_bytes_, other->xla_gpu_all_reduce_combine_threshold_bytes_);
+  swap(xla_gpu_all_reduce_blueconnect_num_devices_per_host_, other->xla_gpu_all_reduce_blueconnect_num_devices_per_host_);
+  swap(xla_gpu_enable_shared_constants_, other->xla_gpu_enable_shared_constants_);
+  swap(xla_gpu_nccl_termination_timeout_seconds_, other->xla_gpu_nccl_termination_timeout_seconds_);
+  swap(xla_gpu_redzone_scratch_max_megabytes_, other->xla_gpu_redzone_scratch_max_megabytes_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
@@ -4254,6 +4966,13 @@ const int ExecutionOptions::kDebugOptionsFieldNumber;
 const int ExecutionOptions::kDeviceHandlesFieldNumber;
 const int ExecutionOptions::kNumReplicasFieldNumber;
 const int ExecutionOptions::kDeviceAssignmentFieldNumber;
+const int ExecutionOptions::kAliasPassthroughParamsFieldNumber;
+const int ExecutionOptions::kNumPartitionsFieldNumber;
+const int ExecutionOptions::kLaunchIdFieldNumber;
+const int ExecutionOptions::kUseSpmdPartitioningFieldNumber;
+const int ExecutionOptions::kUseAutoSpmdPartitioningFieldNumber;
+const int ExecutionOptions::kDeduplicateHloFieldNumber;
+const int ExecutionOptions::kAllowSpmdShardingPropagationToOutputFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 ExecutionOptions::ExecutionOptions()
@@ -4284,15 +5003,15 @@ ExecutionOptions::ExecutionOptions(const ExecutionOptions& from)
     device_assignment_ = NULL;
   }
   ::memcpy(&seed_, &from.seed_,
-    static_cast<size_t>(reinterpret_cast<char*>(&num_replicas_) -
-    reinterpret_cast<char*>(&seed_)) + sizeof(num_replicas_));
+    static_cast<size_t>(reinterpret_cast<char*>(&allow_spmd_sharding_propagation_to_output_) -
+    reinterpret_cast<char*>(&seed_)) + sizeof(allow_spmd_sharding_propagation_to_output_));
   // @@protoc_insertion_point(copy_constructor:xla.ExecutionOptions)
 }
 
 void ExecutionOptions::SharedCtor() {
   ::memset(&shape_with_output_layout_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&num_replicas_) -
-      reinterpret_cast<char*>(&shape_with_output_layout_)) + sizeof(num_replicas_));
+      reinterpret_cast<char*>(&allow_spmd_sharding_propagation_to_output_) -
+      reinterpret_cast<char*>(&shape_with_output_layout_)) + sizeof(allow_spmd_sharding_propagation_to_output_));
 }
 
 ExecutionOptions::~ExecutionOptions() {
@@ -4340,8 +5059,8 @@ void ExecutionOptions::Clear() {
   }
   device_assignment_ = NULL;
   ::memset(&seed_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&num_replicas_) -
-      reinterpret_cast<char*>(&seed_)) + sizeof(num_replicas_));
+      reinterpret_cast<char*>(&allow_spmd_sharding_propagation_to_output_) -
+      reinterpret_cast<char*>(&seed_)) + sizeof(allow_spmd_sharding_propagation_to_output_));
   _internal_metadata_.Clear();
 }
 
@@ -4431,6 +5150,104 @@ bool ExecutionOptions::MergePartialFromCodedStream(
         break;
       }
 
+      // bool alias_passthrough_params = 8;
+      case 8: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(64u /* 64 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &alias_passthrough_params_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int32 num_partitions = 9;
+      case 9: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(72u /* 72 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &num_partitions_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int32 launch_id = 10;
+      case 10: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(80u /* 80 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &launch_id_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool use_spmd_partitioning = 11;
+      case 11: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(88u /* 88 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &use_spmd_partitioning_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool deduplicate_hlo = 12;
+      case 12: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(96u /* 96 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &deduplicate_hlo_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool allow_spmd_sharding_propagation_to_output = 14;
+      case 14: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(112u /* 112 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &allow_spmd_sharding_propagation_to_output_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool use_auto_spmd_partitioning = 15;
+      case 15: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(120u /* 120 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &use_auto_spmd_partitioning_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -4494,6 +5311,41 @@ void ExecutionOptions::SerializeWithCachedSizes(
       7, this->_internal_device_assignment(), output);
   }
 
+  // bool alias_passthrough_params = 8;
+  if (this->alias_passthrough_params() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(8, this->alias_passthrough_params(), output);
+  }
+
+  // int32 num_partitions = 9;
+  if (this->num_partitions() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(9, this->num_partitions(), output);
+  }
+
+  // int32 launch_id = 10;
+  if (this->launch_id() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(10, this->launch_id(), output);
+  }
+
+  // bool use_spmd_partitioning = 11;
+  if (this->use_spmd_partitioning() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(11, this->use_spmd_partitioning(), output);
+  }
+
+  // bool deduplicate_hlo = 12;
+  if (this->deduplicate_hlo() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(12, this->deduplicate_hlo(), output);
+  }
+
+  // bool allow_spmd_sharding_propagation_to_output = 14;
+  if (this->allow_spmd_sharding_propagation_to_output() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(14, this->allow_spmd_sharding_propagation_to_output(), output);
+  }
+
+  // bool use_auto_spmd_partitioning = 15;
+  if (this->use_auto_spmd_partitioning() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(15, this->use_auto_spmd_partitioning(), output);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -4545,6 +5397,41 @@ void ExecutionOptions::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
         7, this->_internal_device_assignment(), deterministic, target);
+  }
+
+  // bool alias_passthrough_params = 8;
+  if (this->alias_passthrough_params() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(8, this->alias_passthrough_params(), target);
+  }
+
+  // int32 num_partitions = 9;
+  if (this->num_partitions() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(9, this->num_partitions(), target);
+  }
+
+  // int32 launch_id = 10;
+  if (this->launch_id() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(10, this->launch_id(), target);
+  }
+
+  // bool use_spmd_partitioning = 11;
+  if (this->use_spmd_partitioning() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(11, this->use_spmd_partitioning(), target);
+  }
+
+  // bool deduplicate_hlo = 12;
+  if (this->deduplicate_hlo() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(12, this->deduplicate_hlo(), target);
+  }
+
+  // bool allow_spmd_sharding_propagation_to_output = 14;
+  if (this->allow_spmd_sharding_propagation_to_output() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(14, this->allow_spmd_sharding_propagation_to_output(), target);
+  }
+
+  // bool use_auto_spmd_partitioning = 15;
+  if (this->use_auto_spmd_partitioning() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(15, this->use_auto_spmd_partitioning(), target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -4610,6 +5497,45 @@ size_t ExecutionOptions::ByteSizeLong() const {
         this->num_replicas());
   }
 
+  // int32 num_partitions = 9;
+  if (this->num_partitions() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->num_partitions());
+  }
+
+  // int32 launch_id = 10;
+  if (this->launch_id() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->launch_id());
+  }
+
+  // bool alias_passthrough_params = 8;
+  if (this->alias_passthrough_params() != 0) {
+    total_size += 1 + 1;
+  }
+
+  // bool use_spmd_partitioning = 11;
+  if (this->use_spmd_partitioning() != 0) {
+    total_size += 1 + 1;
+  }
+
+  // bool use_auto_spmd_partitioning = 15;
+  if (this->use_auto_spmd_partitioning() != 0) {
+    total_size += 1 + 1;
+  }
+
+  // bool deduplicate_hlo = 12;
+  if (this->deduplicate_hlo() != 0) {
+    total_size += 1 + 1;
+  }
+
+  // bool allow_spmd_sharding_propagation_to_output = 14;
+  if (this->allow_spmd_sharding_propagation_to_output() != 0) {
+    total_size += 1 + 1;
+  }
+
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -4653,6 +5579,27 @@ void ExecutionOptions::MergeFrom(const ExecutionOptions& from) {
   if (from.num_replicas() != 0) {
     set_num_replicas(from.num_replicas());
   }
+  if (from.num_partitions() != 0) {
+    set_num_partitions(from.num_partitions());
+  }
+  if (from.launch_id() != 0) {
+    set_launch_id(from.launch_id());
+  }
+  if (from.alias_passthrough_params() != 0) {
+    set_alias_passthrough_params(from.alias_passthrough_params());
+  }
+  if (from.use_spmd_partitioning() != 0) {
+    set_use_spmd_partitioning(from.use_spmd_partitioning());
+  }
+  if (from.use_auto_spmd_partitioning() != 0) {
+    set_use_auto_spmd_partitioning(from.use_auto_spmd_partitioning());
+  }
+  if (from.deduplicate_hlo() != 0) {
+    set_deduplicate_hlo(from.deduplicate_hlo());
+  }
+  if (from.allow_spmd_sharding_propagation_to_output() != 0) {
+    set_allow_spmd_sharding_propagation_to_output(from.allow_spmd_sharding_propagation_to_output());
+  }
 }
 
 void ExecutionOptions::CopyFrom(const ::google::protobuf::Message& from) {
@@ -4685,6 +5632,13 @@ void ExecutionOptions::InternalSwap(ExecutionOptions* other) {
   swap(device_assignment_, other->device_assignment_);
   swap(seed_, other->seed_);
   swap(num_replicas_, other->num_replicas_);
+  swap(num_partitions_, other->num_partitions_);
+  swap(launch_id_, other->launch_id_);
+  swap(alias_passthrough_params_, other->alias_passthrough_params_);
+  swap(use_spmd_partitioning_, other->use_spmd_partitioning_);
+  swap(use_auto_spmd_partitioning_, other->use_auto_spmd_partitioning_);
+  swap(deduplicate_hlo_, other->deduplicate_hlo_);
+  swap(allow_spmd_sharding_propagation_to_output_, other->allow_spmd_sharding_propagation_to_output_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
@@ -14482,9 +15436,6 @@ void UnpackResponse::InternalSwap(UnpackResponse* other) {
 }  // namespace xla
 namespace google {
 namespace protobuf {
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xla::HloReducePrecisionOptions* Arena::CreateMaybeMessage< ::xla::HloReducePrecisionOptions >(Arena* arena) {
-  return Arena::CreateInternal< ::xla::HloReducePrecisionOptions >(arena);
-}
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xla::DebugOptions_XlaBackendExtraOptionsEntry_DoNotUse* Arena::CreateMaybeMessage< ::xla::DebugOptions_XlaBackendExtraOptionsEntry_DoNotUse >(Arena* arena) {
   return Arena::CreateInternal< ::xla::DebugOptions_XlaBackendExtraOptionsEntry_DoNotUse >(arena);
 }

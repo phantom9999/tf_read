@@ -40,7 +40,7 @@ namespace protobuf_tensorflow_2fcore_2futil_2fevent_2eproto {
 struct TableStruct {
   static const ::google::protobuf::internal::ParseTableField entries[];
   static const ::google::protobuf::internal::AuxillaryParseTableField aux[];
-  static const ::google::protobuf::internal::ParseTable schema[7];
+  static const ::google::protobuf::internal::ParseTable schema[8];
   static const ::google::protobuf::internal::FieldMetadata field_metadata[];
   static const ::google::protobuf::internal::SerializationTable serialization_table[];
   static const ::google::protobuf::uint32 offsets[];
@@ -54,6 +54,9 @@ extern EventDefaultTypeInternal _Event_default_instance_;
 class LogMessage;
 class LogMessageDefaultTypeInternal;
 extern LogMessageDefaultTypeInternal _LogMessage_default_instance_;
+class RequestedExitCode;
+class RequestedExitCodeDefaultTypeInternal;
+extern RequestedExitCodeDefaultTypeInternal _RequestedExitCode_default_instance_;
 class SessionLog;
 class SessionLogDefaultTypeInternal;
 extern SessionLogDefaultTypeInternal _SessionLog_default_instance_;
@@ -74,6 +77,7 @@ namespace google {
 namespace protobuf {
 template<> ::tensorflow::Event* Arena::CreateMaybeMessage<::tensorflow::Event>(Arena*);
 template<> ::tensorflow::LogMessage* Arena::CreateMaybeMessage<::tensorflow::LogMessage>(Arena*);
+template<> ::tensorflow::RequestedExitCode* Arena::CreateMaybeMessage<::tensorflow::RequestedExitCode>(Arena*);
 template<> ::tensorflow::SessionLog* Arena::CreateMaybeMessage<::tensorflow::SessionLog>(Arena*);
 template<> ::tensorflow::TaggedRunMetadata* Arena::CreateMaybeMessage<::tensorflow::TaggedRunMetadata>(Arena*);
 template<> ::tensorflow::WatchdogConfig* Arena::CreateMaybeMessage<::tensorflow::WatchdogConfig>(Arena*);
@@ -368,20 +372,20 @@ class Event : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
       ::tensorflow::Summary* summary);
   ::tensorflow::Summary* unsafe_arena_release_summary();
 
-  // .tensorflow.LogMessage log_message = 6;
-  bool has_log_message() const;
-  void clear_log_message();
-  static const int kLogMessageFieldNumber = 6;
+  // .tensorflow.LogMessage log_message = 6 [deprecated = true];
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR bool has_log_message() const;
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR void clear_log_message();
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR static const int kLogMessageFieldNumber = 6;
   private:
   const ::tensorflow::LogMessage& _internal_log_message() const;
   public:
-  const ::tensorflow::LogMessage& log_message() const;
-  ::tensorflow::LogMessage* release_log_message();
-  ::tensorflow::LogMessage* mutable_log_message();
-  void set_allocated_log_message(::tensorflow::LogMessage* log_message);
-  void unsafe_arena_set_allocated_log_message(
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR const ::tensorflow::LogMessage& log_message() const;
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR ::tensorflow::LogMessage* release_log_message();
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR ::tensorflow::LogMessage* mutable_log_message();
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR void set_allocated_log_message(::tensorflow::LogMessage* log_message);
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR void unsafe_arena_set_allocated_log_message(
       ::tensorflow::LogMessage* log_message);
-  ::tensorflow::LogMessage* unsafe_arena_release_log_message();
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR ::tensorflow::LogMessage* unsafe_arena_release_log_message();
 
   // .tensorflow.SessionLog session_log = 7;
   bool has_session_log() const;
@@ -1126,6 +1130,124 @@ class WatchdogConfig : public ::google::protobuf::Message /* @@protoc_insertion_
 };
 // -------------------------------------------------------------------
 
+class RequestedExitCode : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.RequestedExitCode) */ {
+ public:
+  RequestedExitCode();
+  virtual ~RequestedExitCode();
+
+  RequestedExitCode(const RequestedExitCode& from);
+
+  inline RequestedExitCode& operator=(const RequestedExitCode& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  RequestedExitCode(RequestedExitCode&& from) noexcept
+    : RequestedExitCode() {
+    *this = ::std::move(from);
+  }
+
+  inline RequestedExitCode& operator=(RequestedExitCode&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  inline ::google::protobuf::Arena* GetArena() const final {
+    return GetArenaNoVirtual();
+  }
+  inline void* GetMaybeArenaPointer() const final {
+    return MaybeArenaPtr();
+  }
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const RequestedExitCode& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const RequestedExitCode* internal_default_instance() {
+    return reinterpret_cast<const RequestedExitCode*>(
+               &_RequestedExitCode_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    5;
+
+  void UnsafeArenaSwap(RequestedExitCode* other);
+  void Swap(RequestedExitCode* other);
+  friend void swap(RequestedExitCode& a, RequestedExitCode& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline RequestedExitCode* New() const final {
+    return CreateMaybeMessage<RequestedExitCode>(NULL);
+  }
+
+  RequestedExitCode* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<RequestedExitCode>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const RequestedExitCode& from);
+  void MergeFrom(const RequestedExitCode& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(RequestedExitCode* other);
+  protected:
+  explicit RequestedExitCode(::google::protobuf::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::google::protobuf::Arena* arena);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return _internal_metadata_.arena();
+  }
+  inline void* MaybeArenaPtr() const {
+    return _internal_metadata_.raw_arena_ptr();
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // int32 exit_code = 1;
+  void clear_exit_code();
+  static const int kExitCodeFieldNumber = 1;
+  ::google::protobuf::int32 exit_code() const;
+  void set_exit_code(::google::protobuf::int32 value);
+
+  // @@protoc_insertion_point(class_scope:tensorflow.RequestedExitCode)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::google::protobuf::int32 exit_code_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fcore_2futil_2fevent_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
 class WorkerHeartbeatRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.WorkerHeartbeatRequest) */ {
  public:
   WorkerHeartbeatRequest();
@@ -1167,7 +1289,7 @@ class WorkerHeartbeatRequest : public ::google::protobuf::Message /* @@protoc_in
                &_WorkerHeartbeatRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    5;
+    6;
 
   void UnsafeArenaSwap(WorkerHeartbeatRequest* other);
   void Swap(WorkerHeartbeatRequest* other);
@@ -1240,6 +1362,21 @@ class WorkerHeartbeatRequest : public ::google::protobuf::Message /* @@protoc_in
       ::tensorflow::WatchdogConfig* watchdog_config);
   ::tensorflow::WatchdogConfig* unsafe_arena_release_watchdog_config();
 
+  // .tensorflow.RequestedExitCode exit_code = 3;
+  bool has_exit_code() const;
+  void clear_exit_code();
+  static const int kExitCodeFieldNumber = 3;
+  private:
+  const ::tensorflow::RequestedExitCode& _internal_exit_code() const;
+  public:
+  const ::tensorflow::RequestedExitCode& exit_code() const;
+  ::tensorflow::RequestedExitCode* release_exit_code();
+  ::tensorflow::RequestedExitCode* mutable_exit_code();
+  void set_allocated_exit_code(::tensorflow::RequestedExitCode* exit_code);
+  void unsafe_arena_set_allocated_exit_code(
+      ::tensorflow::RequestedExitCode* exit_code);
+  ::tensorflow::RequestedExitCode* unsafe_arena_release_exit_code();
+
   // .tensorflow.WorkerShutdownMode shutdown_mode = 1;
   void clear_shutdown_mode();
   static const int kShutdownModeFieldNumber = 1;
@@ -1254,6 +1391,7 @@ class WorkerHeartbeatRequest : public ::google::protobuf::Message /* @@protoc_in
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::tensorflow::WatchdogConfig* watchdog_config_;
+  ::tensorflow::RequestedExitCode* exit_code_;
   int shutdown_mode_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcore_2futil_2fevent_2eproto::TableStruct;
@@ -1301,7 +1439,7 @@ class WorkerHeartbeatResponse : public ::google::protobuf::Message /* @@protoc_i
                &_WorkerHeartbeatResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    6;
+    7;
 
   void UnsafeArenaSwap(WorkerHeartbeatResponse* other);
   void Swap(WorkerHeartbeatResponse* other);
@@ -1760,7 +1898,7 @@ inline ::tensorflow::Summary* Event::mutable_summary() {
   return what_.summary_;
 }
 
-// .tensorflow.LogMessage log_message = 6;
+// .tensorflow.LogMessage log_message = 6 [deprecated = true];
 inline bool Event::has_log_message() const {
   return what_case() == kLogMessage;
 }
@@ -2532,6 +2670,24 @@ inline void WatchdogConfig::set_timeout_ms(::google::protobuf::int64 value) {
 
 // -------------------------------------------------------------------
 
+// RequestedExitCode
+
+// int32 exit_code = 1;
+inline void RequestedExitCode::clear_exit_code() {
+  exit_code_ = 0;
+}
+inline ::google::protobuf::int32 RequestedExitCode::exit_code() const {
+  // @@protoc_insertion_point(field_get:tensorflow.RequestedExitCode.exit_code)
+  return exit_code_;
+}
+inline void RequestedExitCode::set_exit_code(::google::protobuf::int32 value) {
+  
+  exit_code_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.RequestedExitCode.exit_code)
+}
+
+// -------------------------------------------------------------------
+
 // WorkerHeartbeatRequest
 
 // .tensorflow.WorkerShutdownMode shutdown_mode = 1;
@@ -2611,6 +2767,71 @@ inline void WorkerHeartbeatRequest::set_allocated_watchdog_config(::tensorflow::
   }
   watchdog_config_ = watchdog_config;
   // @@protoc_insertion_point(field_set_allocated:tensorflow.WorkerHeartbeatRequest.watchdog_config)
+}
+
+// .tensorflow.RequestedExitCode exit_code = 3;
+inline bool WorkerHeartbeatRequest::has_exit_code() const {
+  return this != internal_default_instance() && exit_code_ != NULL;
+}
+inline void WorkerHeartbeatRequest::clear_exit_code() {
+  if (GetArenaNoVirtual() == NULL && exit_code_ != NULL) {
+    delete exit_code_;
+  }
+  exit_code_ = NULL;
+}
+inline const ::tensorflow::RequestedExitCode& WorkerHeartbeatRequest::_internal_exit_code() const {
+  return *exit_code_;
+}
+inline const ::tensorflow::RequestedExitCode& WorkerHeartbeatRequest::exit_code() const {
+  const ::tensorflow::RequestedExitCode* p = exit_code_;
+  // @@protoc_insertion_point(field_get:tensorflow.WorkerHeartbeatRequest.exit_code)
+  return p != NULL ? *p : *reinterpret_cast<const ::tensorflow::RequestedExitCode*>(
+      &::tensorflow::_RequestedExitCode_default_instance_);
+}
+inline ::tensorflow::RequestedExitCode* WorkerHeartbeatRequest::release_exit_code() {
+  // @@protoc_insertion_point(field_release:tensorflow.WorkerHeartbeatRequest.exit_code)
+  
+  ::tensorflow::RequestedExitCode* temp = exit_code_;
+  if (GetArenaNoVirtual() != NULL) {
+    temp = ::google::protobuf::internal::DuplicateIfNonNull(temp);
+  }
+  exit_code_ = NULL;
+  return temp;
+}
+inline ::tensorflow::RequestedExitCode* WorkerHeartbeatRequest::unsafe_arena_release_exit_code() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:tensorflow.WorkerHeartbeatRequest.exit_code)
+  
+  ::tensorflow::RequestedExitCode* temp = exit_code_;
+  exit_code_ = NULL;
+  return temp;
+}
+inline ::tensorflow::RequestedExitCode* WorkerHeartbeatRequest::mutable_exit_code() {
+  
+  if (exit_code_ == NULL) {
+    auto* p = CreateMaybeMessage<::tensorflow::RequestedExitCode>(GetArenaNoVirtual());
+    exit_code_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:tensorflow.WorkerHeartbeatRequest.exit_code)
+  return exit_code_;
+}
+inline void WorkerHeartbeatRequest::set_allocated_exit_code(::tensorflow::RequestedExitCode* exit_code) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete exit_code_;
+  }
+  if (exit_code) {
+    ::google::protobuf::Arena* submessage_arena =
+      ::google::protobuf::Arena::GetArena(exit_code);
+    if (message_arena != submessage_arena) {
+      exit_code = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, exit_code, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  exit_code_ = exit_code;
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.WorkerHeartbeatRequest.exit_code)
 }
 
 // -------------------------------------------------------------------
@@ -2739,6 +2960,8 @@ inline void WorkerHeartbeatResponse::unsafe_arena_set_allocated_hostname(
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

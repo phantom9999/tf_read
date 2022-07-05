@@ -149,6 +149,7 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::DeviceAttributes, locality_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::DeviceAttributes, incarnation_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::DeviceAttributes, physical_device_desc_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::DeviceAttributes, xla_global_id_),
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::tensorflow::InterconnectLink)},
@@ -192,17 +193,18 @@ void AddDescriptorsImpl() {
       "(\0132\034.tensorflow.InterconnectLink\"Z\n\016Devi"
       "ceLocality\022\016\n\006bus_id\030\001 \001(\005\022\021\n\tnuma_node\030"
       "\002 \001(\005\022%\n\005links\030\003 \001(\0132\026.tensorflow.LocalL"
-      "inks\"\254\001\n\020DeviceAttributes\022\014\n\004name\030\001 \001(\t\022"
+      "inks\"\303\001\n\020DeviceAttributes\022\014\n\004name\030\001 \001(\t\022"
       "\023\n\013device_type\030\002 \001(\t\022\024\n\014memory_limit\030\004 \001"
       "(\003\022,\n\010locality\030\005 \001(\0132\032.tensorflow.Device"
       "Locality\022\023\n\013incarnation\030\006 \001(\006\022\034\n\024physica"
-      "l_device_desc\030\007 \001(\tBv\n\030org.tensorflow.fr"
-      "ameworkB\026DeviceAttributesProtosP\001Z=githu"
-      "b.com/tensorflow/tensorflow/tensorflow/g"
-      "o/core/framework\370\001\001b\006proto3"
+      "l_device_desc\030\007 \001(\t\022\025\n\rxla_global_id\030\010 \001"
+      "(\003B\221\001\n\030org.tensorflow.frameworkB\026DeviceA"
+      "ttributesProtosP\001ZXgithub.com/tensorflow"
+      "/tensorflow/tensorflow/go/core/framework"
+      "/device_attributes_go_proto\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 587);
+      descriptor, 638);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/framework/device_attributes.proto", &protobuf_RegisterTypes);
 }
@@ -1216,6 +1218,7 @@ const int DeviceAttributes::kMemoryLimitFieldNumber;
 const int DeviceAttributes::kLocalityFieldNumber;
 const int DeviceAttributes::kIncarnationFieldNumber;
 const int DeviceAttributes::kPhysicalDeviceDescFieldNumber;
+const int DeviceAttributes::kXlaGlobalIdFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 DeviceAttributes::DeviceAttributes()
@@ -1258,8 +1261,8 @@ DeviceAttributes::DeviceAttributes(const DeviceAttributes& from)
     locality_ = NULL;
   }
   ::memcpy(&memory_limit_, &from.memory_limit_,
-    static_cast<size_t>(reinterpret_cast<char*>(&incarnation_) -
-    reinterpret_cast<char*>(&memory_limit_)) + sizeof(incarnation_));
+    static_cast<size_t>(reinterpret_cast<char*>(&xla_global_id_) -
+    reinterpret_cast<char*>(&memory_limit_)) + sizeof(xla_global_id_));
   // @@protoc_insertion_point(copy_constructor:tensorflow.DeviceAttributes)
 }
 
@@ -1268,8 +1271,8 @@ void DeviceAttributes::SharedCtor() {
   device_type_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   physical_device_desc_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&locality_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&incarnation_) -
-      reinterpret_cast<char*>(&locality_)) + sizeof(incarnation_));
+      reinterpret_cast<char*>(&xla_global_id_) -
+      reinterpret_cast<char*>(&locality_)) + sizeof(xla_global_id_));
 }
 
 DeviceAttributes::~DeviceAttributes() {
@@ -1319,8 +1322,8 @@ void DeviceAttributes::Clear() {
   }
   locality_ = NULL;
   ::memset(&memory_limit_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&incarnation_) -
-      reinterpret_cast<char*>(&memory_limit_)) + sizeof(incarnation_));
+      reinterpret_cast<char*>(&xla_global_id_) -
+      reinterpret_cast<char*>(&memory_limit_)) + sizeof(xla_global_id_));
   _internal_metadata_.Clear();
 }
 
@@ -1422,6 +1425,20 @@ bool DeviceAttributes::MergePartialFromCodedStream(
         break;
       }
 
+      // int64 xla_global_id = 8;
+      case 8: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(64u /* 64 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 input, &xla_global_id_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -1494,6 +1511,11 @@ void DeviceAttributes::SerializeWithCachedSizes(
       7, this->physical_device_desc(), output);
   }
 
+  // int64 xla_global_id = 8;
+  if (this->xla_global_id() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt64(8, this->xla_global_id(), output);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -1558,6 +1580,11 @@ void DeviceAttributes::SerializeWithCachedSizes(
         7, this->physical_device_desc(), target);
   }
 
+  // int64 xla_global_id = 8;
+  if (this->xla_global_id() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(8, this->xla_global_id(), target);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
@@ -1615,6 +1642,13 @@ size_t DeviceAttributes::ByteSizeLong() const {
     total_size += 1 + 8;
   }
 
+  // int64 xla_global_id = 8;
+  if (this->xla_global_id() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int64Size(
+        this->xla_global_id());
+  }
+
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -1659,6 +1693,9 @@ void DeviceAttributes::MergeFrom(const DeviceAttributes& from) {
   }
   if (from.incarnation() != 0) {
     set_incarnation(from.incarnation());
+  }
+  if (from.xla_global_id() != 0) {
+    set_xla_global_id(from.xla_global_id());
   }
 }
 
@@ -1710,6 +1747,7 @@ void DeviceAttributes::InternalSwap(DeviceAttributes* other) {
   swap(locality_, other->locality_);
   swap(memory_limit_, other->memory_limit_);
   swap(incarnation_, other->incarnation_);
+  swap(xla_global_id_, other->xla_global_id_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 

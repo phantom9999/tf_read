@@ -30,8 +30,8 @@
 #include <google/protobuf/repeated_field.h>  // IWYU pragma: export
 #include <google/protobuf/extension_set.h>  // IWYU pragma: export
 #include <google/protobuf/unknown_field_set.h>
+#include "tensorflow_serving/apis/status.pb.h"
 #include "tensorflow_serving/config/model_server_config.pb.h"
-#include "tensorflow_serving/util/status.pb.h"
 // @@protoc_insertion_point(includes)
 #define PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_5fserving_2fapis_2fmodel_5fmanagement_2eproto 
 

@@ -30,8 +30,9 @@
 #include <google/protobuf/repeated_field.h>  // IWYU pragma: export
 #include <google/protobuf/extension_set.h>  // IWYU pragma: export
 #include <google/protobuf/unknown_field_set.h>
-#include "tensorflow/core/framework/types.pb.h"
+#include "tensorflow/core/framework/full_type.pb.h"
 #include "tensorflow/core/framework/tensor_shape.pb.h"
+#include "tensorflow/core/framework/types.pb.h"
 // @@protoc_insertion_point(includes)
 #define PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fpython_2fframework_2fcpp_5fshape_5finference_2eproto 
 
@@ -187,6 +188,21 @@ class CppShapeInferenceResult_HandleShapeAndType : public ::google::protobuf::Me
       ::tensorflow::TensorShapeProto* shape);
   ::tensorflow::TensorShapeProto* unsafe_arena_release_shape();
 
+  // .tensorflow.FullTypeDef type = 4;
+  bool has_type() const;
+  void clear_type();
+  static const int kTypeFieldNumber = 4;
+  private:
+  const ::tensorflow::FullTypeDef& _internal_type() const;
+  public:
+  const ::tensorflow::FullTypeDef& type() const;
+  ::tensorflow::FullTypeDef* release_type();
+  ::tensorflow::FullTypeDef* mutable_type();
+  void set_allocated_type(::tensorflow::FullTypeDef* type);
+  void unsafe_arena_set_allocated_type(
+      ::tensorflow::FullTypeDef* type);
+  ::tensorflow::FullTypeDef* unsafe_arena_release_type();
+
   // .tensorflow.DataType dtype = 2;
   void clear_dtype();
   static const int kDtypeFieldNumber = 2;
@@ -201,6 +217,7 @@ class CppShapeInferenceResult_HandleShapeAndType : public ::google::protobuf::Me
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::tensorflow::TensorShapeProto* shape_;
+  ::tensorflow::FullTypeDef* type_;
   int dtype_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fpython_2fframework_2fcpp_5fshape_5finference_2eproto::TableStruct;
@@ -703,6 +720,65 @@ inline void CppShapeInferenceResult_HandleShapeAndType::set_dtype(::tensorflow::
   
   dtype_ = value;
   // @@protoc_insertion_point(field_set:tensorflow.CppShapeInferenceResult.HandleShapeAndType.dtype)
+}
+
+// .tensorflow.FullTypeDef type = 4;
+inline bool CppShapeInferenceResult_HandleShapeAndType::has_type() const {
+  return this != internal_default_instance() && type_ != NULL;
+}
+inline const ::tensorflow::FullTypeDef& CppShapeInferenceResult_HandleShapeAndType::_internal_type() const {
+  return *type_;
+}
+inline const ::tensorflow::FullTypeDef& CppShapeInferenceResult_HandleShapeAndType::type() const {
+  const ::tensorflow::FullTypeDef* p = type_;
+  // @@protoc_insertion_point(field_get:tensorflow.CppShapeInferenceResult.HandleShapeAndType.type)
+  return p != NULL ? *p : *reinterpret_cast<const ::tensorflow::FullTypeDef*>(
+      &::tensorflow::_FullTypeDef_default_instance_);
+}
+inline ::tensorflow::FullTypeDef* CppShapeInferenceResult_HandleShapeAndType::release_type() {
+  // @@protoc_insertion_point(field_release:tensorflow.CppShapeInferenceResult.HandleShapeAndType.type)
+  
+  ::tensorflow::FullTypeDef* temp = type_;
+  if (GetArenaNoVirtual() != NULL) {
+    temp = ::google::protobuf::internal::DuplicateIfNonNull(temp);
+  }
+  type_ = NULL;
+  return temp;
+}
+inline ::tensorflow::FullTypeDef* CppShapeInferenceResult_HandleShapeAndType::unsafe_arena_release_type() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:tensorflow.CppShapeInferenceResult.HandleShapeAndType.type)
+  
+  ::tensorflow::FullTypeDef* temp = type_;
+  type_ = NULL;
+  return temp;
+}
+inline ::tensorflow::FullTypeDef* CppShapeInferenceResult_HandleShapeAndType::mutable_type() {
+  
+  if (type_ == NULL) {
+    auto* p = CreateMaybeMessage<::tensorflow::FullTypeDef>(GetArenaNoVirtual());
+    type_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:tensorflow.CppShapeInferenceResult.HandleShapeAndType.type)
+  return type_;
+}
+inline void CppShapeInferenceResult_HandleShapeAndType::set_allocated_type(::tensorflow::FullTypeDef* type) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete reinterpret_cast< ::google::protobuf::MessageLite*>(type_);
+  }
+  if (type) {
+    ::google::protobuf::Arena* submessage_arena =
+      reinterpret_cast<::google::protobuf::MessageLite*>(type)->GetArena();
+    if (message_arena != submessage_arena) {
+      type = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, type, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  type_ = type;
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.CppShapeInferenceResult.HandleShapeAndType.type)
 }
 
 // -------------------------------------------------------------------

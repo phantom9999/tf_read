@@ -20,7 +20,6 @@
 // @@protoc_insertion_point(includes)
 
 namespace protobuf_tensorflow_2fcompiler_2ftf2xla_2ftf2xla_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2ftf2xla_2ftf2xla_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ConversionOptions;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2ftf2xla_2ftf2xla_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TensorId;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2ftf2xla_2ftf2xla_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_Variable;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2ftf2xla_2ftf2xla_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_Feed;
@@ -51,11 +50,6 @@ class VariableDefaultTypeInternal {
   ::google::protobuf::internal::ExplicitlyConstructed<Variable>
       _instance;
 } _Variable_default_instance_;
-class ConversionOptionsDefaultTypeInternal {
- public:
-  ::google::protobuf::internal::ExplicitlyConstructed<ConversionOptions>
-      _instance;
-} _ConversionOptions_default_instance_;
 class ConfigDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<Config>
@@ -125,20 +119,6 @@ static void InitDefaultsVariable() {
     {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsVariable}, {
       &protobuf_tensorflow_2fcore_2fframework_2ftensor_5fshape_2eproto::scc_info_TensorShapeProto.base,}};
 
-static void InitDefaultsConversionOptions() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::tensorflow::tf2xla::_ConversionOptions_default_instance_;
-    new (ptr) ::tensorflow::tf2xla::ConversionOptions();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::tensorflow::tf2xla::ConversionOptions::InitAsDefaultInstance();
-}
-
-::google::protobuf::internal::SCCInfo<0> scc_info_ConversionOptions =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsConversionOptions}, {}};
-
 static void InitDefaultsConfig() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -150,23 +130,21 @@ static void InitDefaultsConfig() {
   ::tensorflow::tf2xla::Config::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<4> scc_info_Config =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 4, InitDefaultsConfig}, {
+::google::protobuf::internal::SCCInfo<3> scc_info_Config =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 3, InitDefaultsConfig}, {
       &protobuf_tensorflow_2fcompiler_2ftf2xla_2ftf2xla_2eproto::scc_info_Feed.base,
       &protobuf_tensorflow_2fcompiler_2ftf2xla_2ftf2xla_2eproto::scc_info_Fetch.base,
-      &protobuf_tensorflow_2fcompiler_2ftf2xla_2ftf2xla_2eproto::scc_info_Variable.base,
-      &protobuf_tensorflow_2fcompiler_2ftf2xla_2ftf2xla_2eproto::scc_info_ConversionOptions.base,}};
+      &protobuf_tensorflow_2fcompiler_2ftf2xla_2ftf2xla_2eproto::scc_info_Variable.base,}};
 
 void InitDefaults() {
   ::google::protobuf::internal::InitSCC(&scc_info_TensorId.base);
   ::google::protobuf::internal::InitSCC(&scc_info_Feed.base);
   ::google::protobuf::internal::InitSCC(&scc_info_Fetch.base);
   ::google::protobuf::internal::InitSCC(&scc_info_Variable.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_ConversionOptions.base);
   ::google::protobuf::internal::InitSCC(&scc_info_Config.base);
 }
 
-::google::protobuf::Metadata file_level_metadata[6];
+::google::protobuf::Metadata file_level_metadata[5];
 
 const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
@@ -205,12 +183,6 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tf2xla::Variable, type_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tf2xla::Variable, readonly_),
   ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tf2xla::ConversionOptions, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tf2xla::ConversionOptions, custom_fake_quant_op_calls_),
-  ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tf2xla::Config, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
@@ -218,15 +190,13 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tf2xla::Config, feed_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tf2xla::Config, fetch_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tf2xla::Config, variable_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tf2xla::Config, conversion_options_),
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::tensorflow::tf2xla::TensorId)},
   { 7, -1, sizeof(::tensorflow::tf2xla::Feed)},
   { 16, -1, sizeof(::tensorflow::tf2xla::Fetch)},
   { 25, -1, sizeof(::tensorflow::tf2xla::Variable)},
-  { 35, -1, sizeof(::tensorflow::tf2xla::ConversionOptions)},
-  { 41, -1, sizeof(::tensorflow::tf2xla::Config)},
+  { 35, -1, sizeof(::tensorflow::tf2xla::Config)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
@@ -234,7 +204,6 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::tf2xla::_Feed_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::tf2xla::_Fetch_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::tf2xla::_Variable_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::tf2xla::_ConversionOptions_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::tf2xla::_Config_default_instance_),
 };
 
@@ -253,7 +222,7 @@ void protobuf_AssignDescriptorsOnce() {
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 6);
+  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 5);
 }
 
 void AddDescriptorsImpl() {
@@ -274,18 +243,15 @@ void AddDescriptorsImpl() {
       ".DataType\"\216\001\n\010Variable\022\021\n\tnode_name\030\001 \001("
       "\t\022\014\n\004name\030\002 \001(\t\022+\n\005shape\030\003 \001(\0132\034.tensorf"
       "low.TensorShapeProto\022\"\n\004type\030\004 \001(\0162\024.ten"
-      "sorflow.DataType\022\020\n\010readonly\030\005 \001(\010\"7\n\021Co"
-      "nversionOptions\022\"\n\032custom_fake_quant_op_"
-      "calls\030\001 \001(\010\"\311\001\n\006Config\022%\n\004feed\030\001 \003(\0132\027.t"
-      "ensorflow.tf2xla.Feed\022\'\n\005fetch\030\002 \003(\0132\030.t"
-      "ensorflow.tf2xla.Fetch\022-\n\010variable\030\003 \003(\013"
-      "2\033.tensorflow.tf2xla.Variable\022@\n\022convers"
-      "ion_options\030\004 \001(\0132$.tensorflow.tf2xla.Co"
-      "nversionOptionsB*\n\025org.tensorflow.tf2xla"
-      "B\014Tf2XlaProtosP\001\370\001\001b\006proto3"
+      "sorflow.DataType\022\020\n\010readonly\030\005 \001(\010\"\207\001\n\006C"
+      "onfig\022%\n\004feed\030\001 \003(\0132\027.tensorflow.tf2xla."
+      "Feed\022\'\n\005fetch\030\002 \003(\0132\030.tensorflow.tf2xla."
+      "Fetch\022-\n\010variable\030\003 \003(\0132\033.tensorflow.tf2"
+      "xla.VariableB*\n\025org.tensorflow.tf2xlaB\014T"
+      "f2XlaProtosP\001\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 947);
+      descriptor, 824);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/compiler/tf2xla/tf2xla.proto", &protobuf_RegisterTypes);
   ::protobuf_tensorflow_2fcore_2fframework_2ftensor_5fshape_2eproto::AddDescriptors();
@@ -1988,279 +1954,12 @@ void Variable::InternalSwap(Variable* other) {
 
 // ===================================================================
 
-void ConversionOptions::InitAsDefaultInstance() {
-}
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int ConversionOptions::kCustomFakeQuantOpCallsFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-ConversionOptions::ConversionOptions()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_tensorflow_2fcompiler_2ftf2xla_2ftf2xla_2eproto::scc_info_ConversionOptions.base);
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.tf2xla.ConversionOptions)
-}
-ConversionOptions::ConversionOptions(::google::protobuf::Arena* arena)
-  : ::google::protobuf::Message(),
-  _internal_metadata_(arena) {
-  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcompiler_2ftf2xla_2ftf2xla_2eproto::scc_info_ConversionOptions.base);
-  SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:tensorflow.tf2xla.ConversionOptions)
-}
-ConversionOptions::ConversionOptions(const ConversionOptions& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  custom_fake_quant_op_calls_ = from.custom_fake_quant_op_calls_;
-  // @@protoc_insertion_point(copy_constructor:tensorflow.tf2xla.ConversionOptions)
-}
-
-void ConversionOptions::SharedCtor() {
-  custom_fake_quant_op_calls_ = false;
-}
-
-ConversionOptions::~ConversionOptions() {
-  // @@protoc_insertion_point(destructor:tensorflow.tf2xla.ConversionOptions)
-  SharedDtor();
-}
-
-void ConversionOptions::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
-}
-
-void ConversionOptions::ArenaDtor(void* object) {
-  ConversionOptions* _this = reinterpret_cast< ConversionOptions* >(object);
-  (void)_this;
-}
-void ConversionOptions::RegisterArenaDtor(::google::protobuf::Arena* arena) {
-}
-void ConversionOptions::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
-}
-const ::google::protobuf::Descriptor* ConversionOptions::descriptor() {
-  ::protobuf_tensorflow_2fcompiler_2ftf2xla_2ftf2xla_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_tensorflow_2fcompiler_2ftf2xla_2ftf2xla_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
-const ConversionOptions& ConversionOptions::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcompiler_2ftf2xla_2ftf2xla_2eproto::scc_info_ConversionOptions.base);
-  return *internal_default_instance();
-}
-
-
-void ConversionOptions::Clear() {
-// @@protoc_insertion_point(message_clear_start:tensorflow.tf2xla.ConversionOptions)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  custom_fake_quant_op_calls_ = false;
-  _internal_metadata_.Clear();
-}
-
-bool ConversionOptions::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.tf2xla.ConversionOptions)
-  for (;;) {
-    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // bool custom_fake_quant_op_calls = 1;
-      case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, &custom_fake_quant_op_calls_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::google::protobuf::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.tf2xla.ConversionOptions)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.tf2xla.ConversionOptions)
-  return false;
-#undef DO_
-}
-
-void ConversionOptions::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.tf2xla.ConversionOptions)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // bool custom_fake_quant_op_calls = 1;
-  if (this->custom_fake_quant_op_calls() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteBool(1, this->custom_fake_quant_op_calls(), output);
-  }
-
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.tf2xla.ConversionOptions)
-}
-
-::google::protobuf::uint8* ConversionOptions::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
-  // @@protoc_insertion_point(serialize_to_array_start:tensorflow.tf2xla.ConversionOptions)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // bool custom_fake_quant_op_calls = 1;
-  if (this->custom_fake_quant_op_calls() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(1, this->custom_fake_quant_op_calls(), target);
-  }
-
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
-  }
-  // @@protoc_insertion_point(serialize_to_array_end:tensorflow.tf2xla.ConversionOptions)
-  return target;
-}
-
-size_t ConversionOptions::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:tensorflow.tf2xla.ConversionOptions)
-  size_t total_size = 0;
-
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
-  }
-  // bool custom_fake_quant_op_calls = 1;
-  if (this->custom_fake_quant_op_calls() != 0) {
-    total_size += 1 + 1;
-  }
-
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
-}
-
-void ConversionOptions::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:tensorflow.tf2xla.ConversionOptions)
-  GOOGLE_DCHECK_NE(&from, this);
-  const ConversionOptions* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const ConversionOptions>(
-          &from);
-  if (source == NULL) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:tensorflow.tf2xla.ConversionOptions)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:tensorflow.tf2xla.ConversionOptions)
-    MergeFrom(*source);
-  }
-}
-
-void ConversionOptions::MergeFrom(const ConversionOptions& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.tf2xla.ConversionOptions)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  if (from.custom_fake_quant_op_calls() != 0) {
-    set_custom_fake_quant_op_calls(from.custom_fake_quant_op_calls());
-  }
-}
-
-void ConversionOptions::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:tensorflow.tf2xla.ConversionOptions)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void ConversionOptions::CopyFrom(const ConversionOptions& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:tensorflow.tf2xla.ConversionOptions)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool ConversionOptions::IsInitialized() const {
-  return true;
-}
-
-void ConversionOptions::Swap(ConversionOptions* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    ConversionOptions* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
-  }
-}
-void ConversionOptions::UnsafeArenaSwap(ConversionOptions* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
-void ConversionOptions::InternalSwap(ConversionOptions* other) {
-  using std::swap;
-  swap(custom_fake_quant_op_calls_, other->custom_fake_quant_op_calls_);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-}
-
-::google::protobuf::Metadata ConversionOptions::GetMetadata() const {
-  protobuf_tensorflow_2fcompiler_2ftf2xla_2ftf2xla_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_tensorflow_2fcompiler_2ftf2xla_2ftf2xla_2eproto::file_level_metadata[kIndexInFileMessages];
-}
-
-
-// ===================================================================
-
 void Config::InitAsDefaultInstance() {
-  ::tensorflow::tf2xla::_Config_default_instance_._instance.get_mutable()->conversion_options_ = const_cast< ::tensorflow::tf2xla::ConversionOptions*>(
-      ::tensorflow::tf2xla::ConversionOptions::internal_default_instance());
-}
-void Config::unsafe_arena_set_allocated_conversion_options(
-    ::tensorflow::tf2xla::ConversionOptions* conversion_options) {
-  if (GetArenaNoVirtual() == NULL) {
-    delete conversion_options_;
-  }
-  conversion_options_ = conversion_options;
-  if (conversion_options) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.tf2xla.Config.conversion_options)
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Config::kFeedFieldNumber;
 const int Config::kFetchFieldNumber;
 const int Config::kVariableFieldNumber;
-const int Config::kConversionOptionsFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 Config::Config()
@@ -2288,16 +1987,10 @@ Config::Config(const Config& from)
       fetch_(from.fetch_),
       variable_(from.variable_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_conversion_options()) {
-    conversion_options_ = new ::tensorflow::tf2xla::ConversionOptions(*from.conversion_options_);
-  } else {
-    conversion_options_ = NULL;
-  }
   // @@protoc_insertion_point(copy_constructor:tensorflow.tf2xla.Config)
 }
 
 void Config::SharedCtor() {
-  conversion_options_ = NULL;
 }
 
 Config::~Config() {
@@ -2307,7 +2000,6 @@ Config::~Config() {
 
 void Config::SharedDtor() {
   GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
-  if (this != internal_default_instance()) delete conversion_options_;
 }
 
 void Config::ArenaDtor(void* object) {
@@ -2339,10 +2031,6 @@ void Config::Clear() {
   feed_.Clear();
   fetch_.Clear();
   variable_.Clear();
-  if (GetArenaNoVirtual() == NULL && conversion_options_ != NULL) {
-    delete conversion_options_;
-  }
-  conversion_options_ = NULL;
   _internal_metadata_.Clear();
 }
 
@@ -2386,18 +2074,6 @@ bool Config::MergePartialFromCodedStream(
             static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                 input, add_variable()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.tf2xla.ConversionOptions conversion_options = 4;
-      case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
-               input, mutable_conversion_options()));
         } else {
           goto handle_unusual;
         }
@@ -2457,12 +2133,6 @@ void Config::SerializeWithCachedSizes(
       output);
   }
 
-  // .tensorflow.tf2xla.ConversionOptions conversion_options = 4;
-  if (this->has_conversion_options()) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      4, this->_internal_conversion_options(), output);
-  }
-
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -2499,13 +2169,6 @@ void Config::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
         3, this->variable(static_cast<int>(i)), deterministic, target);
-  }
-
-  // .tensorflow.tf2xla.ConversionOptions conversion_options = 4;
-  if (this->has_conversion_options()) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        4, this->_internal_conversion_options(), deterministic, target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -2558,13 +2221,6 @@ size_t Config::ByteSizeLong() const {
     }
   }
 
-  // .tensorflow.tf2xla.ConversionOptions conversion_options = 4;
-  if (this->has_conversion_options()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *conversion_options_);
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -2595,9 +2251,6 @@ void Config::MergeFrom(const Config& from) {
   feed_.MergeFrom(from.feed_);
   fetch_.MergeFrom(from.fetch_);
   variable_.MergeFrom(from.variable_);
-  if (from.has_conversion_options()) {
-    mutable_conversion_options()->::tensorflow::tf2xla::ConversionOptions::MergeFrom(from.conversion_options());
-  }
 }
 
 void Config::CopyFrom(const ::google::protobuf::Message& from) {
@@ -2642,7 +2295,6 @@ void Config::InternalSwap(Config* other) {
   CastToBase(&feed_)->InternalSwap(CastToBase(&other->feed_));
   CastToBase(&fetch_)->InternalSwap(CastToBase(&other->fetch_));
   CastToBase(&variable_)->InternalSwap(CastToBase(&other->variable_));
-  swap(conversion_options_, other->conversion_options_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
@@ -2668,9 +2320,6 @@ template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::tf2xla::Fetch* Arena
 }
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::tf2xla::Variable* Arena::CreateMaybeMessage< ::tensorflow::tf2xla::Variable >(Arena* arena) {
   return Arena::CreateMessageInternal< ::tensorflow::tf2xla::Variable >(arena);
-}
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::tf2xla::ConversionOptions* Arena::CreateMaybeMessage< ::tensorflow::tf2xla::ConversionOptions >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::tensorflow::tf2xla::ConversionOptions >(arena);
 }
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::tf2xla::Config* Arena::CreateMaybeMessage< ::tensorflow::tf2xla::Config >(Arena* arena) {
   return Arena::CreateMessageInternal< ::tensorflow::tf2xla::Config >(arena);

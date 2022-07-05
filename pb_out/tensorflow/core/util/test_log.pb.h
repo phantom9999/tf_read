@@ -44,7 +44,7 @@ namespace protobuf_tensorflow_2fcore_2futil_2ftest_5flog_2eproto {
 struct TableStruct {
   static const ::google::protobuf::internal::ParseTableField entries[];
   static const ::google::protobuf::internal::AuxillaryParseTableField aux[];
-  static const ::google::protobuf::internal::ParseTable schema[16];
+  static const ::google::protobuf::internal::ParseTable schema[17];
   static const ::google::protobuf::internal::FieldMetadata field_metadata[];
   static const ::google::protobuf::internal::SerializationTable serialization_table[];
   static const ::google::protobuf::uint32 offsets[];
@@ -97,6 +97,9 @@ extern PlatformInfoDefaultTypeInternal _PlatformInfo_default_instance_;
 class RunConfiguration;
 class RunConfigurationDefaultTypeInternal;
 extern RunConfigurationDefaultTypeInternal _RunConfiguration_default_instance_;
+class RunConfiguration_EnvVarsEntry_DoNotUse;
+class RunConfiguration_EnvVarsEntry_DoNotUseDefaultTypeInternal;
+extern RunConfiguration_EnvVarsEntry_DoNotUseDefaultTypeInternal _RunConfiguration_EnvVarsEntry_DoNotUse_default_instance_;
 class TestResults;
 class TestResultsDefaultTypeInternal;
 extern TestResultsDefaultTypeInternal _TestResults_default_instance_;
@@ -118,6 +121,7 @@ template<> ::tensorflow::MemoryInfo* Arena::CreateMaybeMessage<::tensorflow::Mem
 template<> ::tensorflow::MetricEntry* Arena::CreateMaybeMessage<::tensorflow::MetricEntry>(Arena*);
 template<> ::tensorflow::PlatformInfo* Arena::CreateMaybeMessage<::tensorflow::PlatformInfo>(Arena*);
 template<> ::tensorflow::RunConfiguration* Arena::CreateMaybeMessage<::tensorflow::RunConfiguration>(Arena*);
+template<> ::tensorflow::RunConfiguration_EnvVarsEntry_DoNotUse* Arena::CreateMaybeMessage<::tensorflow::RunConfiguration_EnvVarsEntry_DoNotUse>(Arena*);
 template<> ::tensorflow::TestResults* Arena::CreateMaybeMessage<::tensorflow::TestResults>(Arena*);
 }  // namespace protobuf
 }  // namespace google
@@ -128,12 +132,14 @@ enum TestResults_BenchmarkType {
   TestResults_BenchmarkType_CPP_MICROBENCHMARK = 1,
   TestResults_BenchmarkType_PYTHON_BENCHMARK = 2,
   TestResults_BenchmarkType_ANDROID_BENCHMARK = 3,
+  TestResults_BenchmarkType_EDGE_BENCHMARK = 4,
+  TestResults_BenchmarkType_IOS_BENCHMARK = 5,
   TestResults_BenchmarkType_TestResults_BenchmarkType_INT_MIN_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32min,
   TestResults_BenchmarkType_TestResults_BenchmarkType_INT_MAX_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32max
 };
 bool TestResults_BenchmarkType_IsValid(int value);
 const TestResults_BenchmarkType TestResults_BenchmarkType_BenchmarkType_MIN = TestResults_BenchmarkType_UNKNOWN;
-const TestResults_BenchmarkType TestResults_BenchmarkType_BenchmarkType_MAX = TestResults_BenchmarkType_ANDROID_BENCHMARK;
+const TestResults_BenchmarkType TestResults_BenchmarkType_BenchmarkType_MAX = TestResults_BenchmarkType_IOS_BENCHMARK;
 const int TestResults_BenchmarkType_BenchmarkType_ARRAYSIZE = TestResults_BenchmarkType_BenchmarkType_MAX + 1;
 
 const ::google::protobuf::EnumDescriptor* TestResults_BenchmarkType_descriptor();
@@ -2406,6 +2412,27 @@ class MachineConfiguration : public ::google::protobuf::Message /* @@protoc_inse
 };
 // -------------------------------------------------------------------
 
+class RunConfiguration_EnvVarsEntry_DoNotUse : public ::google::protobuf::internal::MapEntry<RunConfiguration_EnvVarsEntry_DoNotUse, 
+    ::std::string, ::std::string,
+    ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
+    ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
+    0 > {
+public:
+  typedef ::google::protobuf::internal::MapEntry<RunConfiguration_EnvVarsEntry_DoNotUse, 
+    ::std::string, ::std::string,
+    ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
+    ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
+    0 > SuperType;
+  RunConfiguration_EnvVarsEntry_DoNotUse();
+  RunConfiguration_EnvVarsEntry_DoNotUse(::google::protobuf::Arena* arena);
+  void MergeFrom(const RunConfiguration_EnvVarsEntry_DoNotUse& other);
+  static const RunConfiguration_EnvVarsEntry_DoNotUse* internal_default_instance() { return reinterpret_cast<const RunConfiguration_EnvVarsEntry_DoNotUse*>(&_RunConfiguration_EnvVarsEntry_DoNotUse_default_instance_); }
+  void MergeFrom(const ::google::protobuf::Message& other) final;
+  ::google::protobuf::Metadata GetMetadata() const;
+};
+
+// -------------------------------------------------------------------
+
 class RunConfiguration : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.RunConfiguration) */ {
  public:
   RunConfiguration();
@@ -2447,7 +2474,7 @@ class RunConfiguration : public ::google::protobuf::Message /* @@protoc_insertio
                &_RunConfiguration_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    14;
+    15;
 
   void UnsafeArenaSwap(RunConfiguration* other);
   void Swap(RunConfiguration* other);
@@ -2503,6 +2530,7 @@ class RunConfiguration : public ::google::protobuf::Message /* @@protoc_insertio
 
   // nested types ----------------------------------------------------
 
+
   // accessors -------------------------------------------------------
 
   // repeated string argument = 1;
@@ -2527,6 +2555,15 @@ class RunConfiguration : public ::google::protobuf::Message /* @@protoc_insertio
   const ::google::protobuf::RepeatedPtrField< ::std::string>& argument() const;
   ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_argument();
 
+  // map<string, string> env_vars = 2;
+  int env_vars_size() const;
+  void clear_env_vars();
+  static const int kEnvVarsFieldNumber = 2;
+  const ::google::protobuf::Map< ::std::string, ::std::string >&
+      env_vars() const;
+  ::google::protobuf::Map< ::std::string, ::std::string >*
+      mutable_env_vars();
+
   // @@protoc_insertion_point(class_scope:tensorflow.RunConfiguration)
  private:
 
@@ -2535,6 +2572,12 @@ class RunConfiguration : public ::google::protobuf::Message /* @@protoc_insertio
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::google::protobuf::RepeatedPtrField< ::std::string> argument_;
+  ::google::protobuf::internal::MapField<
+      RunConfiguration_EnvVarsEntry_DoNotUse,
+      ::std::string, ::std::string,
+      ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
+      ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
+      0 > env_vars_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcore_2futil_2ftest_5flog_2eproto::TableStruct;
 };
@@ -2581,7 +2624,7 @@ class TestResults : public ::google::protobuf::Message /* @@protoc_insertion_poi
                &_TestResults_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    15;
+    16;
 
   void UnsafeArenaSwap(TestResults* other);
   void Swap(TestResults* other);
@@ -2646,6 +2689,10 @@ class TestResults : public ::google::protobuf::Message /* @@protoc_insertion_poi
     TestResults_BenchmarkType_PYTHON_BENCHMARK;
   static const BenchmarkType ANDROID_BENCHMARK =
     TestResults_BenchmarkType_ANDROID_BENCHMARK;
+  static const BenchmarkType EDGE_BENCHMARK =
+    TestResults_BenchmarkType_EDGE_BENCHMARK;
+  static const BenchmarkType IOS_BENCHMARK =
+    TestResults_BenchmarkType_IOS_BENCHMARK;
   static inline bool BenchmarkType_IsValid(int value) {
     return TestResults_BenchmarkType_IsValid(value);
   }
@@ -5533,6 +5580,8 @@ inline void MachineConfiguration::set_allocated_memory_info(::tensorflow::Memory
 
 // -------------------------------------------------------------------
 
+// -------------------------------------------------------------------
+
 // RunConfiguration
 
 // repeated string argument = 1;
@@ -5602,6 +5651,24 @@ inline ::google::protobuf::RepeatedPtrField< ::std::string>*
 RunConfiguration::mutable_argument() {
   // @@protoc_insertion_point(field_mutable_list:tensorflow.RunConfiguration.argument)
   return &argument_;
+}
+
+// map<string, string> env_vars = 2;
+inline int RunConfiguration::env_vars_size() const {
+  return env_vars_.size();
+}
+inline void RunConfiguration::clear_env_vars() {
+  env_vars_.Clear();
+}
+inline const ::google::protobuf::Map< ::std::string, ::std::string >&
+RunConfiguration::env_vars() const {
+  // @@protoc_insertion_point(field_map:tensorflow.RunConfiguration.env_vars)
+  return env_vars_.GetMap();
+}
+inline ::google::protobuf::Map< ::std::string, ::std::string >*
+RunConfiguration::mutable_env_vars() {
+  // @@protoc_insertion_point(field_mutable_map:tensorflow.RunConfiguration.env_vars)
+  return env_vars_.MutableMap();
 }
 
 // -------------------------------------------------------------------
@@ -6278,6 +6345,8 @@ inline void TestResults::unsafe_arena_set_allocated_tf_version(
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

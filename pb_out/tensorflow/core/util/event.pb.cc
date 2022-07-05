@@ -24,6 +24,7 @@ extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fframework_2fsummary
 }  // namespace protobuf_tensorflow_2fcore_2fframework_2fsummary_2eproto
 namespace protobuf_tensorflow_2fcore_2futil_2fevent_2eproto {
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2futil_2fevent_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_LogMessage;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2futil_2fevent_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_RequestedExitCode;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2futil_2fevent_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_SessionLog;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2futil_2fevent_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TaggedRunMetadata;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2futil_2fevent_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_WatchdogConfig;
@@ -62,6 +63,11 @@ class WatchdogConfigDefaultTypeInternal {
   ::google::protobuf::internal::ExplicitlyConstructed<WatchdogConfig>
       _instance;
 } _WatchdogConfig_default_instance_;
+class RequestedExitCodeDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<RequestedExitCode>
+      _instance;
+} _RequestedExitCode_default_instance_;
 class WorkerHeartbeatRequestDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<WorkerHeartbeatRequest>
@@ -148,6 +154,20 @@ static void InitDefaultsWatchdogConfig() {
 ::google::protobuf::internal::SCCInfo<0> scc_info_WatchdogConfig =
     {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsWatchdogConfig}, {}};
 
+static void InitDefaultsRequestedExitCode() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::tensorflow::_RequestedExitCode_default_instance_;
+    new (ptr) ::tensorflow::RequestedExitCode();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::tensorflow::RequestedExitCode::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<0> scc_info_RequestedExitCode =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsRequestedExitCode}, {}};
+
 static void InitDefaultsWorkerHeartbeatRequest() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -159,9 +179,10 @@ static void InitDefaultsWorkerHeartbeatRequest() {
   ::tensorflow::WorkerHeartbeatRequest::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_WorkerHeartbeatRequest =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsWorkerHeartbeatRequest}, {
-      &protobuf_tensorflow_2fcore_2futil_2fevent_2eproto::scc_info_WatchdogConfig.base,}};
+::google::protobuf::internal::SCCInfo<2> scc_info_WorkerHeartbeatRequest =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsWorkerHeartbeatRequest}, {
+      &protobuf_tensorflow_2fcore_2futil_2fevent_2eproto::scc_info_WatchdogConfig.base,
+      &protobuf_tensorflow_2fcore_2futil_2fevent_2eproto::scc_info_RequestedExitCode.base,}};
 
 static void InitDefaultsWorkerHeartbeatResponse() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -184,11 +205,12 @@ void InitDefaults() {
   ::google::protobuf::internal::InitSCC(&scc_info_SessionLog.base);
   ::google::protobuf::internal::InitSCC(&scc_info_TaggedRunMetadata.base);
   ::google::protobuf::internal::InitSCC(&scc_info_WatchdogConfig.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_RequestedExitCode.base);
   ::google::protobuf::internal::InitSCC(&scc_info_WorkerHeartbeatRequest.base);
   ::google::protobuf::internal::InitSCC(&scc_info_WorkerHeartbeatResponse.base);
 }
 
-::google::protobuf::Metadata file_level_metadata[7];
+::google::protobuf::Metadata file_level_metadata[8];
 const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[4];
 
 const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
@@ -236,12 +258,19 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   ~0u,  // no _weak_field_map_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::WatchdogConfig, timeout_ms_),
   ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::RequestedExitCode, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::RequestedExitCode, exit_code_),
+  ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::WorkerHeartbeatRequest, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::WorkerHeartbeatRequest, shutdown_mode_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::WorkerHeartbeatRequest, watchdog_config_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::WorkerHeartbeatRequest, exit_code_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::WorkerHeartbeatResponse, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -257,8 +286,9 @@ static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROT
   { 22, -1, sizeof(::tensorflow::SessionLog)},
   { 30, -1, sizeof(::tensorflow::TaggedRunMetadata)},
   { 37, -1, sizeof(::tensorflow::WatchdogConfig)},
-  { 43, -1, sizeof(::tensorflow::WorkerHeartbeatRequest)},
-  { 50, -1, sizeof(::tensorflow::WorkerHeartbeatResponse)},
+  { 43, -1, sizeof(::tensorflow::RequestedExitCode)},
+  { 49, -1, sizeof(::tensorflow::WorkerHeartbeatRequest)},
+  { 57, -1, sizeof(::tensorflow::WorkerHeartbeatResponse)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
@@ -267,6 +297,7 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::_SessionLog_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::_TaggedRunMetadata_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::_WatchdogConfig_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::_RequestedExitCode_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::_WorkerHeartbeatRequest_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::_WorkerHeartbeatResponse_default_instance_),
 };
@@ -286,7 +317,7 @@ void protobuf_AssignDescriptorsOnce() {
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 7);
+  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 8);
 }
 
 void AddDescriptorsImpl() {
@@ -294,41 +325,46 @@ void AddDescriptorsImpl() {
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n tensorflow/core/util/event.proto\022\ntens"
       "orflow\032\'tensorflow/core/framework/summar"
-      "y.proto\"\273\002\n\005Event\022\021\n\twall_time\030\001 \001(\001\022\014\n\004"
+      "y.proto\"\277\002\n\005Event\022\021\n\twall_time\030\001 \001(\001\022\014\n\004"
       "step\030\002 \001(\003\022\026\n\014file_version\030\003 \001(\tH\000\022\023\n\tgr"
       "aph_def\030\004 \001(\014H\000\022&\n\007summary\030\005 \001(\0132\023.tenso"
-      "rflow.SummaryH\000\022-\n\013log_message\030\006 \001(\0132\026.t"
-      "ensorflow.LogMessageH\000\022-\n\013session_log\030\007 "
-      "\001(\0132\026.tensorflow.SessionLogH\000\022<\n\023tagged_"
-      "run_metadata\030\010 \001(\0132\035.tensorflow.TaggedRu"
-      "nMetadataH\000\022\030\n\016meta_graph_def\030\t \001(\014H\000B\006\n"
-      "\004what\"\231\001\n\nLogMessage\022+\n\005level\030\001 \001(\0162\034.te"
-      "nsorflow.LogMessage.Level\022\017\n\007message\030\002 \001"
-      "(\t\"M\n\005Level\022\013\n\007UNKNOWN\020\000\022\r\n\tDEBUGGING\020\n\022"
-      "\010\n\004INFO\020\024\022\010\n\004WARN\020\036\022\t\n\005ERROR\020(\022\t\n\005FATAL\020"
-      "2\"\266\001\n\nSessionLog\0224\n\006status\030\001 \001(\0162$.tenso"
-      "rflow.SessionLog.SessionStatus\022\027\n\017checkp"
-      "oint_path\030\002 \001(\t\022\013\n\003msg\030\003 \001(\t\"L\n\rSessionS"
-      "tatus\022\026\n\022STATUS_UNSPECIFIED\020\000\022\t\n\005START\020\001"
-      "\022\010\n\004STOP\020\002\022\016\n\nCHECKPOINT\020\003\"6\n\021TaggedRunM"
-      "etadata\022\013\n\003tag\030\001 \001(\t\022\024\n\014run_metadata\030\002 \001"
-      "(\014\"$\n\016WatchdogConfig\022\022\n\ntimeout_ms\030\001 \001(\003"
-      "\"\204\001\n\026WorkerHeartbeatRequest\0225\n\rshutdown_"
-      "mode\030\001 \001(\0162\036.tensorflow.WorkerShutdownMo"
-      "de\0223\n\017watchdog_config\030\002 \001(\0132\032.tensorflow"
-      ".WatchdogConfig\"\203\001\n\027WorkerHeartbeatRespo"
-      "nse\022/\n\rhealth_status\030\001 \001(\0162\030.tensorflow."
-      "WorkerHealth\022%\n\nworker_log\030\002 \003(\0132\021.tenso"
-      "rflow.Event\022\020\n\010hostname\030\003 \001(\t*[\n\014WorkerH"
-      "ealth\022\006\n\002OK\020\000\022\034\n\030RECEIVED_SHUTDOWN_SIGNA"
-      "L\020\001\022\022\n\016INTERNAL_ERROR\020\002\022\021\n\rSHUTTING_DOWN"
-      "\020\003*k\n\022WorkerShutdownMode\022\013\n\007DEFAULT\020\000\022\022\n"
-      "\016NOT_CONFIGURED\020\001\022\030\n\024WAIT_FOR_COORDINATO"
-      "R\020\002\022\032\n\026SHUTDOWN_AFTER_TIMEOUT\020\003B\'\n\023org.t"
-      "ensorflow.utilB\013EventProtosP\001\370\001\001b\006proto3"
+      "rflow.SummaryH\000\0221\n\013log_message\030\006 \001(\0132\026.t"
+      "ensorflow.LogMessageB\002\030\001H\000\022-\n\013session_lo"
+      "g\030\007 \001(\0132\026.tensorflow.SessionLogH\000\022<\n\023tag"
+      "ged_run_metadata\030\010 \001(\0132\035.tensorflow.Tagg"
+      "edRunMetadataH\000\022\030\n\016meta_graph_def\030\t \001(\014H"
+      "\000B\006\n\004what\"\241\001\n\nLogMessage\022+\n\005level\030\001 \001(\0162"
+      "\034.tensorflow.LogMessage.Level\022\017\n\007message"
+      "\030\002 \001(\t\"Q\n\005Level\022\013\n\007UNKNOWN\020\000\022\r\n\tDEBUGGIN"
+      "G\020\n\022\010\n\004INFO\020\024\022\010\n\004WARN\020\036\022\t\n\005ERROR\020(\022\t\n\005FA"
+      "TAL\0202\032\002\030\001:\002\030\001\"\266\001\n\nSessionLog\0224\n\006status\030\001"
+      " \001(\0162$.tensorflow.SessionLog.SessionStat"
+      "us\022\027\n\017checkpoint_path\030\002 \001(\t\022\013\n\003msg\030\003 \001(\t"
+      "\"L\n\rSessionStatus\022\026\n\022STATUS_UNSPECIFIED\020"
+      "\000\022\t\n\005START\020\001\022\010\n\004STOP\020\002\022\016\n\nCHECKPOINT\020\003\"6"
+      "\n\021TaggedRunMetadata\022\013\n\003tag\030\001 \001(\t\022\024\n\014run_"
+      "metadata\030\002 \001(\014\"$\n\016WatchdogConfig\022\022\n\ntime"
+      "out_ms\030\001 \001(\003\"&\n\021RequestedExitCode\022\021\n\texi"
+      "t_code\030\001 \001(\005\"\266\001\n\026WorkerHeartbeatRequest\022"
+      "5\n\rshutdown_mode\030\001 \001(\0162\036.tensorflow.Work"
+      "erShutdownMode\0223\n\017watchdog_config\030\002 \001(\0132"
+      "\032.tensorflow.WatchdogConfig\0220\n\texit_code"
+      "\030\003 \001(\0132\035.tensorflow.RequestedExitCode\"\203\001"
+      "\n\027WorkerHeartbeatResponse\022/\n\rhealth_stat"
+      "us\030\001 \001(\0162\030.tensorflow.WorkerHealth\022%\n\nwo"
+      "rker_log\030\002 \003(\0132\021.tensorflow.Event\022\020\n\010hos"
+      "tname\030\003 \001(\t*[\n\014WorkerHealth\022\006\n\002OK\020\000\022\034\n\030R"
+      "ECEIVED_SHUTDOWN_SIGNAL\020\001\022\022\n\016INTERNAL_ER"
+      "ROR\020\002\022\021\n\rSHUTTING_DOWN\020\003*k\n\022WorkerShutdo"
+      "wnMode\022\013\n\007DEFAULT\020\000\022\022\n\016NOT_CONFIGURED\020\001\022"
+      "\030\n\024WAIT_FOR_COORDINATOR\020\002\022\032\n\026SHUTDOWN_AF"
+      "TER_TIMEOUT\020\003Bp\n\023org.tensorflow.utilB\013Ev"
+      "entProtosP\001ZGgithub.com/tensorflow/tenso"
+      "rflow/tensorflow/go/core/util/event_go_p"
+      "roto\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 1360);
+      descriptor, 1535);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/util/event.proto", &protobuf_RegisterTypes);
   ::protobuf_tensorflow_2fcore_2fframework_2fsummary_2eproto::AddDescriptors();
@@ -770,7 +806,7 @@ bool Event::MergePartialFromCodedStream(
         break;
       }
 
-      // .tensorflow.LogMessage log_message = 6;
+      // .tensorflow.LogMessage log_message = 6 [deprecated = true];
       case 6: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
@@ -876,7 +912,7 @@ void Event::SerializeWithCachedSizes(
       5, this->_internal_summary(), output);
   }
 
-  // .tensorflow.LogMessage log_message = 6;
+  // .tensorflow.LogMessage log_message = 6 [deprecated = true];
   if (has_log_message()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       6, this->_internal_log_message(), output);
@@ -949,7 +985,7 @@ void Event::SerializeWithCachedSizes(
         5, this->_internal_summary(), deterministic, target);
   }
 
-  // .tensorflow.LogMessage log_message = 6;
+  // .tensorflow.LogMessage log_message = 6 [deprecated = true];
   if (has_log_message()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
@@ -1028,7 +1064,7 @@ size_t Event::ByteSizeLong() const {
           *what_.summary_);
       break;
     }
-    // .tensorflow.LogMessage log_message = 6;
+    // .tensorflow.LogMessage log_message = 6 [deprecated = true];
     case kLogMessage: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
@@ -2437,9 +2473,264 @@ void WatchdogConfig::InternalSwap(WatchdogConfig* other) {
 
 // ===================================================================
 
+void RequestedExitCode::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int RequestedExitCode::kExitCodeFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+RequestedExitCode::RequestedExitCode()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fcore_2futil_2fevent_2eproto::scc_info_RequestedExitCode.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:tensorflow.RequestedExitCode)
+}
+RequestedExitCode::RequestedExitCode(::google::protobuf::Arena* arena)
+  : ::google::protobuf::Message(),
+  _internal_metadata_(arena) {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcore_2futil_2fevent_2eproto::scc_info_RequestedExitCode.base);
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:tensorflow.RequestedExitCode)
+}
+RequestedExitCode::RequestedExitCode(const RequestedExitCode& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  exit_code_ = from.exit_code_;
+  // @@protoc_insertion_point(copy_constructor:tensorflow.RequestedExitCode)
+}
+
+void RequestedExitCode::SharedCtor() {
+  exit_code_ = 0;
+}
+
+RequestedExitCode::~RequestedExitCode() {
+  // @@protoc_insertion_point(destructor:tensorflow.RequestedExitCode)
+  SharedDtor();
+}
+
+void RequestedExitCode::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
+}
+
+void RequestedExitCode::ArenaDtor(void* object) {
+  RequestedExitCode* _this = reinterpret_cast< RequestedExitCode* >(object);
+  (void)_this;
+}
+void RequestedExitCode::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+}
+void RequestedExitCode::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* RequestedExitCode::descriptor() {
+  ::protobuf_tensorflow_2fcore_2futil_2fevent_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcore_2futil_2fevent_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const RequestedExitCode& RequestedExitCode::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcore_2futil_2fevent_2eproto::scc_info_RequestedExitCode.base);
+  return *internal_default_instance();
+}
+
+
+void RequestedExitCode::Clear() {
+// @@protoc_insertion_point(message_clear_start:tensorflow.RequestedExitCode)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  exit_code_ = 0;
+  _internal_metadata_.Clear();
+}
+
+bool RequestedExitCode::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:tensorflow.RequestedExitCode)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // int32 exit_code = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &exit_code_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:tensorflow.RequestedExitCode)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:tensorflow.RequestedExitCode)
+  return false;
+#undef DO_
+}
+
+void RequestedExitCode::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:tensorflow.RequestedExitCode)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 exit_code = 1;
+  if (this->exit_code() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->exit_code(), output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:tensorflow.RequestedExitCode)
+}
+
+::google::protobuf::uint8* RequestedExitCode::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:tensorflow.RequestedExitCode)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 exit_code = 1;
+  if (this->exit_code() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(1, this->exit_code(), target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:tensorflow.RequestedExitCode)
+  return target;
+}
+
+size_t RequestedExitCode::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:tensorflow.RequestedExitCode)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // int32 exit_code = 1;
+  if (this->exit_code() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->exit_code());
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void RequestedExitCode::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:tensorflow.RequestedExitCode)
+  GOOGLE_DCHECK_NE(&from, this);
+  const RequestedExitCode* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const RequestedExitCode>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:tensorflow.RequestedExitCode)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:tensorflow.RequestedExitCode)
+    MergeFrom(*source);
+  }
+}
+
+void RequestedExitCode::MergeFrom(const RequestedExitCode& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.RequestedExitCode)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.exit_code() != 0) {
+    set_exit_code(from.exit_code());
+  }
+}
+
+void RequestedExitCode::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:tensorflow.RequestedExitCode)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void RequestedExitCode::CopyFrom(const RequestedExitCode& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:tensorflow.RequestedExitCode)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool RequestedExitCode::IsInitialized() const {
+  return true;
+}
+
+void RequestedExitCode::Swap(RequestedExitCode* other) {
+  if (other == this) return;
+  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
+    InternalSwap(other);
+  } else {
+    RequestedExitCode* temp = New(GetArenaNoVirtual());
+    temp->MergeFrom(*other);
+    other->CopyFrom(*this);
+    InternalSwap(temp);
+    if (GetArenaNoVirtual() == NULL) {
+      delete temp;
+    }
+  }
+}
+void RequestedExitCode::UnsafeArenaSwap(RequestedExitCode* other) {
+  if (other == this) return;
+  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
+  InternalSwap(other);
+}
+void RequestedExitCode::InternalSwap(RequestedExitCode* other) {
+  using std::swap;
+  swap(exit_code_, other->exit_code_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata RequestedExitCode::GetMetadata() const {
+  protobuf_tensorflow_2fcore_2futil_2fevent_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcore_2futil_2fevent_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
 void WorkerHeartbeatRequest::InitAsDefaultInstance() {
   ::tensorflow::_WorkerHeartbeatRequest_default_instance_._instance.get_mutable()->watchdog_config_ = const_cast< ::tensorflow::WatchdogConfig*>(
       ::tensorflow::WatchdogConfig::internal_default_instance());
+  ::tensorflow::_WorkerHeartbeatRequest_default_instance_._instance.get_mutable()->exit_code_ = const_cast< ::tensorflow::RequestedExitCode*>(
+      ::tensorflow::RequestedExitCode::internal_default_instance());
 }
 void WorkerHeartbeatRequest::unsafe_arena_set_allocated_watchdog_config(
     ::tensorflow::WatchdogConfig* watchdog_config) {
@@ -2454,9 +2745,23 @@ void WorkerHeartbeatRequest::unsafe_arena_set_allocated_watchdog_config(
   }
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.WorkerHeartbeatRequest.watchdog_config)
 }
+void WorkerHeartbeatRequest::unsafe_arena_set_allocated_exit_code(
+    ::tensorflow::RequestedExitCode* exit_code) {
+  if (GetArenaNoVirtual() == NULL) {
+    delete exit_code_;
+  }
+  exit_code_ = exit_code;
+  if (exit_code) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.WorkerHeartbeatRequest.exit_code)
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int WorkerHeartbeatRequest::kShutdownModeFieldNumber;
 const int WorkerHeartbeatRequest::kWatchdogConfigFieldNumber;
+const int WorkerHeartbeatRequest::kExitCodeFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 WorkerHeartbeatRequest::WorkerHeartbeatRequest()
@@ -2483,6 +2788,11 @@ WorkerHeartbeatRequest::WorkerHeartbeatRequest(const WorkerHeartbeatRequest& fro
   } else {
     watchdog_config_ = NULL;
   }
+  if (from.has_exit_code()) {
+    exit_code_ = new ::tensorflow::RequestedExitCode(*from.exit_code_);
+  } else {
+    exit_code_ = NULL;
+  }
   shutdown_mode_ = from.shutdown_mode_;
   // @@protoc_insertion_point(copy_constructor:tensorflow.WorkerHeartbeatRequest)
 }
@@ -2501,6 +2811,7 @@ WorkerHeartbeatRequest::~WorkerHeartbeatRequest() {
 void WorkerHeartbeatRequest::SharedDtor() {
   GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
   if (this != internal_default_instance()) delete watchdog_config_;
+  if (this != internal_default_instance()) delete exit_code_;
 }
 
 void WorkerHeartbeatRequest::ArenaDtor(void* object) {
@@ -2533,6 +2844,10 @@ void WorkerHeartbeatRequest::Clear() {
     delete watchdog_config_;
   }
   watchdog_config_ = NULL;
+  if (GetArenaNoVirtual() == NULL && exit_code_ != NULL) {
+    delete exit_code_;
+  }
+  exit_code_ = NULL;
   shutdown_mode_ = 0;
   _internal_metadata_.Clear();
 }
@@ -2568,6 +2883,18 @@ bool WorkerHeartbeatRequest::MergePartialFromCodedStream(
             static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_watchdog_config()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .tensorflow.RequestedExitCode exit_code = 3;
+      case 3: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_exit_code()));
         } else {
           goto handle_unusual;
         }
@@ -2612,6 +2939,12 @@ void WorkerHeartbeatRequest::SerializeWithCachedSizes(
       2, this->_internal_watchdog_config(), output);
   }
 
+  // .tensorflow.RequestedExitCode exit_code = 3;
+  if (this->has_exit_code()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      3, this->_internal_exit_code(), output);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -2639,6 +2972,13 @@ void WorkerHeartbeatRequest::SerializeWithCachedSizes(
         2, this->_internal_watchdog_config(), deterministic, target);
   }
 
+  // .tensorflow.RequestedExitCode exit_code = 3;
+  if (this->has_exit_code()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        3, this->_internal_exit_code(), deterministic, target);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
@@ -2661,6 +3001,13 @@ size_t WorkerHeartbeatRequest::ByteSizeLong() const {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *watchdog_config_);
+  }
+
+  // .tensorflow.RequestedExitCode exit_code = 3;
+  if (this->has_exit_code()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *exit_code_);
   }
 
   // .tensorflow.WorkerShutdownMode shutdown_mode = 1;
@@ -2698,6 +3045,9 @@ void WorkerHeartbeatRequest::MergeFrom(const WorkerHeartbeatRequest& from) {
 
   if (from.has_watchdog_config()) {
     mutable_watchdog_config()->::tensorflow::WatchdogConfig::MergeFrom(from.watchdog_config());
+  }
+  if (from.has_exit_code()) {
+    mutable_exit_code()->::tensorflow::RequestedExitCode::MergeFrom(from.exit_code());
   }
   if (from.shutdown_mode() != 0) {
     set_shutdown_mode(from.shutdown_mode());
@@ -2744,6 +3094,7 @@ void WorkerHeartbeatRequest::UnsafeArenaSwap(WorkerHeartbeatRequest* other) {
 void WorkerHeartbeatRequest::InternalSwap(WorkerHeartbeatRequest* other) {
   using std::swap;
   swap(watchdog_config_, other->watchdog_config_);
+  swap(exit_code_, other->exit_code_);
   swap(shutdown_mode_, other->shutdown_mode_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
@@ -3131,6 +3482,9 @@ template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::TaggedRunMetadata* A
 }
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::WatchdogConfig* Arena::CreateMaybeMessage< ::tensorflow::WatchdogConfig >(Arena* arena) {
   return Arena::CreateMessageInternal< ::tensorflow::WatchdogConfig >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::RequestedExitCode* Arena::CreateMaybeMessage< ::tensorflow::RequestedExitCode >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::tensorflow::RequestedExitCode >(arena);
 }
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::WorkerHeartbeatRequest* Arena::CreateMaybeMessage< ::tensorflow::WorkerHeartbeatRequest >(Arena* arena) {
   return Arena::CreateMessageInternal< ::tensorflow::WorkerHeartbeatRequest >(arena);

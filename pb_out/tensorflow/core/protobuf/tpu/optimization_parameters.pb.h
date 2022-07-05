@@ -32,6 +32,7 @@
 #include <google/protobuf/generated_enum_reflection.h>
 #include <google/protobuf/unknown_field_set.h>
 #include <google/protobuf/wrappers.pb.h>
+#include "tensorflow/compiler/xla/service/hlo.pb.h"
 // @@protoc_insertion_point(includes)
 #define PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto 
 
@@ -40,7 +41,7 @@ namespace protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameter
 struct TableStruct {
   static const ::google::protobuf::internal::ParseTableField entries[];
   static const ::google::protobuf::internal::AuxillaryParseTableField aux[];
-  static const ::google::protobuf::internal::ParseTable schema[23];
+  static const ::google::protobuf::internal::ParseTable schema[28];
   static const ::google::protobuf::internal::FieldMetadata field_metadata[];
   static const ::google::protobuf::internal::SerializationTable serialization_table[];
   static const ::google::protobuf::uint32 offsets[];
@@ -52,12 +53,18 @@ namespace tpu {
 class AdadeltaParameters;
 class AdadeltaParametersDefaultTypeInternal;
 extern AdadeltaParametersDefaultTypeInternal _AdadeltaParameters_default_instance_;
+class AdagradMomentumParameters;
+class AdagradMomentumParametersDefaultTypeInternal;
+extern AdagradMomentumParametersDefaultTypeInternal _AdagradMomentumParameters_default_instance_;
 class AdagradParameters;
 class AdagradParametersDefaultTypeInternal;
 extern AdagradParametersDefaultTypeInternal _AdagradParameters_default_instance_;
 class AdamParameters;
 class AdamParametersDefaultTypeInternal;
 extern AdamParametersDefaultTypeInternal _AdamParameters_default_instance_;
+class AssignParameters;
+class AssignParametersDefaultTypeInternal;
+extern AssignParametersDefaultTypeInternal _AssignParameters_default_instance_;
 class BoundedAdagradParameters;
 class BoundedAdagradParametersDefaultTypeInternal;
 extern BoundedAdagradParametersDefaultTypeInternal _BoundedAdagradParameters_default_instance_;
@@ -70,6 +77,9 @@ extern ClippingLimitsDefaultTypeInternal _ClippingLimits_default_instance_;
 class DynamicLearningRate;
 class DynamicLearningRateDefaultTypeInternal;
 extern DynamicLearningRateDefaultTypeInternal _DynamicLearningRate_default_instance_;
+class FrequencyEstimatorParameters;
+class FrequencyEstimatorParametersDefaultTypeInternal;
+extern FrequencyEstimatorParametersDefaultTypeInternal _FrequencyEstimatorParameters_default_instance_;
 class FtrlParameters;
 class FtrlParametersDefaultTypeInternal;
 extern FtrlParametersDefaultTypeInternal _FtrlParameters_default_instance_;
@@ -82,6 +92,9 @@ extern HotIdReplicationConfigurationDefaultTypeInternal _HotIdReplicationConfigu
 class LearningRate;
 class LearningRateDefaultTypeInternal;
 extern LearningRateDefaultTypeInternal _LearningRate_default_instance_;
+class LowDimensionalPackingStatus;
+class LowDimensionalPackingStatusDefaultTypeInternal;
+extern LowDimensionalPackingStatusDefaultTypeInternal _LowDimensionalPackingStatus_default_instance_;
 class MdlAdagradLightParameters;
 class MdlAdagradLightParametersDefaultTypeInternal;
 extern MdlAdagradLightParametersDefaultTypeInternal _MdlAdagradLightParameters_default_instance_;
@@ -91,21 +104,21 @@ extern MomentumParametersDefaultTypeInternal _MomentumParameters_default_instanc
 class OnlineYogiParameters;
 class OnlineYogiParametersDefaultTypeInternal;
 extern OnlineYogiParametersDefaultTypeInternal _OnlineYogiParameters_default_instance_;
-class OnlineYogiParameters_SignActivation;
-class OnlineYogiParameters_SignActivationDefaultTypeInternal;
-extern OnlineYogiParameters_SignActivationDefaultTypeInternal _OnlineYogiParameters_SignActivation_default_instance_;
-class OnlineYogiParameters_TanhActivation;
-class OnlineYogiParameters_TanhActivationDefaultTypeInternal;
-extern OnlineYogiParameters_TanhActivationDefaultTypeInternal _OnlineYogiParameters_TanhActivation_default_instance_;
 class OptimizationParameters;
 class OptimizationParametersDefaultTypeInternal;
 extern OptimizationParametersDefaultTypeInternal _OptimizationParameters_default_instance_;
 class ProximalAdagradParameters;
 class ProximalAdagradParametersDefaultTypeInternal;
 extern ProximalAdagradParametersDefaultTypeInternal _ProximalAdagradParameters_default_instance_;
+class ProximalYogiParameters;
+class ProximalYogiParametersDefaultTypeInternal;
+extern ProximalYogiParametersDefaultTypeInternal _ProximalYogiParameters_default_instance_;
 class RmsPropParameters;
 class RmsPropParametersDefaultTypeInternal;
 extern RmsPropParametersDefaultTypeInternal _RmsPropParameters_default_instance_;
+class SimulatedQuantization;
+class SimulatedQuantizationDefaultTypeInternal;
+extern SimulatedQuantizationDefaultTypeInternal _SimulatedQuantization_default_instance_;
 class StateVariableSpecification;
 class StateVariableSpecificationDefaultTypeInternal;
 extern StateVariableSpecificationDefaultTypeInternal _StateVariableSpecification_default_instance_;
@@ -118,33 +131,41 @@ extern StateVariableSpecification_UserDefinedDefaultTypeInternal _StateVariableS
 class StochasticGradientDescentParameters;
 class StochasticGradientDescentParametersDefaultTypeInternal;
 extern StochasticGradientDescentParametersDefaultTypeInternal _StochasticGradientDescentParameters_default_instance_;
+class UserDefinedProgramParameters;
+class UserDefinedProgramParametersDefaultTypeInternal;
+extern UserDefinedProgramParametersDefaultTypeInternal _UserDefinedProgramParameters_default_instance_;
 }  // namespace tpu
 }  // namespace tensorflow
 namespace google {
 namespace protobuf {
 template<> ::tensorflow::tpu::AdadeltaParameters* Arena::CreateMaybeMessage<::tensorflow::tpu::AdadeltaParameters>(Arena*);
+template<> ::tensorflow::tpu::AdagradMomentumParameters* Arena::CreateMaybeMessage<::tensorflow::tpu::AdagradMomentumParameters>(Arena*);
 template<> ::tensorflow::tpu::AdagradParameters* Arena::CreateMaybeMessage<::tensorflow::tpu::AdagradParameters>(Arena*);
 template<> ::tensorflow::tpu::AdamParameters* Arena::CreateMaybeMessage<::tensorflow::tpu::AdamParameters>(Arena*);
+template<> ::tensorflow::tpu::AssignParameters* Arena::CreateMaybeMessage<::tensorflow::tpu::AssignParameters>(Arena*);
 template<> ::tensorflow::tpu::BoundedAdagradParameters* Arena::CreateMaybeMessage<::tensorflow::tpu::BoundedAdagradParameters>(Arena*);
 template<> ::tensorflow::tpu::CenteredRmsPropParameters* Arena::CreateMaybeMessage<::tensorflow::tpu::CenteredRmsPropParameters>(Arena*);
 template<> ::tensorflow::tpu::ClippingLimits* Arena::CreateMaybeMessage<::tensorflow::tpu::ClippingLimits>(Arena*);
 template<> ::tensorflow::tpu::DynamicLearningRate* Arena::CreateMaybeMessage<::tensorflow::tpu::DynamicLearningRate>(Arena*);
+template<> ::tensorflow::tpu::FrequencyEstimatorParameters* Arena::CreateMaybeMessage<::tensorflow::tpu::FrequencyEstimatorParameters>(Arena*);
 template<> ::tensorflow::tpu::FtrlParameters* Arena::CreateMaybeMessage<::tensorflow::tpu::FtrlParameters>(Arena*);
 template<> ::tensorflow::tpu::GradientAccumulationStatus* Arena::CreateMaybeMessage<::tensorflow::tpu::GradientAccumulationStatus>(Arena*);
 template<> ::tensorflow::tpu::HotIdReplicationConfiguration* Arena::CreateMaybeMessage<::tensorflow::tpu::HotIdReplicationConfiguration>(Arena*);
 template<> ::tensorflow::tpu::LearningRate* Arena::CreateMaybeMessage<::tensorflow::tpu::LearningRate>(Arena*);
+template<> ::tensorflow::tpu::LowDimensionalPackingStatus* Arena::CreateMaybeMessage<::tensorflow::tpu::LowDimensionalPackingStatus>(Arena*);
 template<> ::tensorflow::tpu::MdlAdagradLightParameters* Arena::CreateMaybeMessage<::tensorflow::tpu::MdlAdagradLightParameters>(Arena*);
 template<> ::tensorflow::tpu::MomentumParameters* Arena::CreateMaybeMessage<::tensorflow::tpu::MomentumParameters>(Arena*);
 template<> ::tensorflow::tpu::OnlineYogiParameters* Arena::CreateMaybeMessage<::tensorflow::tpu::OnlineYogiParameters>(Arena*);
-template<> ::tensorflow::tpu::OnlineYogiParameters_SignActivation* Arena::CreateMaybeMessage<::tensorflow::tpu::OnlineYogiParameters_SignActivation>(Arena*);
-template<> ::tensorflow::tpu::OnlineYogiParameters_TanhActivation* Arena::CreateMaybeMessage<::tensorflow::tpu::OnlineYogiParameters_TanhActivation>(Arena*);
 template<> ::tensorflow::tpu::OptimizationParameters* Arena::CreateMaybeMessage<::tensorflow::tpu::OptimizationParameters>(Arena*);
 template<> ::tensorflow::tpu::ProximalAdagradParameters* Arena::CreateMaybeMessage<::tensorflow::tpu::ProximalAdagradParameters>(Arena*);
+template<> ::tensorflow::tpu::ProximalYogiParameters* Arena::CreateMaybeMessage<::tensorflow::tpu::ProximalYogiParameters>(Arena*);
 template<> ::tensorflow::tpu::RmsPropParameters* Arena::CreateMaybeMessage<::tensorflow::tpu::RmsPropParameters>(Arena*);
+template<> ::tensorflow::tpu::SimulatedQuantization* Arena::CreateMaybeMessage<::tensorflow::tpu::SimulatedQuantization>(Arena*);
 template<> ::tensorflow::tpu::StateVariableSpecification* Arena::CreateMaybeMessage<::tensorflow::tpu::StateVariableSpecification>(Arena*);
 template<> ::tensorflow::tpu::StateVariableSpecification_FillWithConstant* Arena::CreateMaybeMessage<::tensorflow::tpu::StateVariableSpecification_FillWithConstant>(Arena*);
 template<> ::tensorflow::tpu::StateVariableSpecification_UserDefined* Arena::CreateMaybeMessage<::tensorflow::tpu::StateVariableSpecification_UserDefined>(Arena*);
 template<> ::tensorflow::tpu::StochasticGradientDescentParameters* Arena::CreateMaybeMessage<::tensorflow::tpu::StochasticGradientDescentParameters>(Arena*);
+template<> ::tensorflow::tpu::UserDefinedProgramParameters* Arena::CreateMaybeMessage<::tensorflow::tpu::UserDefinedProgramParameters>(Arena*);
 }  // namespace protobuf
 }  // namespace google
 namespace tensorflow {
@@ -171,6 +192,28 @@ inline bool GradientAccumulationStatus_Status_Parse(
     const ::std::string& name, GradientAccumulationStatus_Status* value) {
   return ::google::protobuf::internal::ParseNamedEnum<GradientAccumulationStatus_Status>(
     GradientAccumulationStatus_Status_descriptor(), name, value);
+}
+enum LowDimensionalPackingStatus_Status {
+  LowDimensionalPackingStatus_Status_UNSPECIFIED = 0,
+  LowDimensionalPackingStatus_Status_ENABLED = 1,
+  LowDimensionalPackingStatus_Status_DISABLED = 2,
+  LowDimensionalPackingStatus_Status_LowDimensionalPackingStatus_Status_INT_MIN_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32min,
+  LowDimensionalPackingStatus_Status_LowDimensionalPackingStatus_Status_INT_MAX_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32max
+};
+bool LowDimensionalPackingStatus_Status_IsValid(int value);
+const LowDimensionalPackingStatus_Status LowDimensionalPackingStatus_Status_Status_MIN = LowDimensionalPackingStatus_Status_UNSPECIFIED;
+const LowDimensionalPackingStatus_Status LowDimensionalPackingStatus_Status_Status_MAX = LowDimensionalPackingStatus_Status_DISABLED;
+const int LowDimensionalPackingStatus_Status_Status_ARRAYSIZE = LowDimensionalPackingStatus_Status_Status_MAX + 1;
+
+const ::google::protobuf::EnumDescriptor* LowDimensionalPackingStatus_Status_descriptor();
+inline const ::std::string& LowDimensionalPackingStatus_Status_Name(LowDimensionalPackingStatus_Status value) {
+  return ::google::protobuf::internal::NameOfEnum(
+    LowDimensionalPackingStatus_Status_descriptor(), value);
+}
+inline bool LowDimensionalPackingStatus_Status_Parse(
+    const ::std::string& name, LowDimensionalPackingStatus_Status* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<LowDimensionalPackingStatus_Status>(
+    LowDimensionalPackingStatus_Status_descriptor(), name, value);
 }
 enum HotIdReplicationConfiguration_Status {
   HotIdReplicationConfiguration_Status_UNSPECIFIED = 0,
@@ -318,6 +361,129 @@ class ClippingLimits : public ::google::protobuf::Message /* @@protoc_insertion_
 };
 // -------------------------------------------------------------------
 
+class SimulatedQuantization : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.tpu.SimulatedQuantization) */ {
+ public:
+  SimulatedQuantization();
+  virtual ~SimulatedQuantization();
+
+  SimulatedQuantization(const SimulatedQuantization& from);
+
+  inline SimulatedQuantization& operator=(const SimulatedQuantization& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  SimulatedQuantization(SimulatedQuantization&& from) noexcept
+    : SimulatedQuantization() {
+    *this = ::std::move(from);
+  }
+
+  inline SimulatedQuantization& operator=(SimulatedQuantization&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const SimulatedQuantization& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const SimulatedQuantization* internal_default_instance() {
+    return reinterpret_cast<const SimulatedQuantization*>(
+               &_SimulatedQuantization_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    1;
+
+  void Swap(SimulatedQuantization* other);
+  friend void swap(SimulatedQuantization& a, SimulatedQuantization& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline SimulatedQuantization* New() const final {
+    return CreateMaybeMessage<SimulatedQuantization>(NULL);
+  }
+
+  SimulatedQuantization* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<SimulatedQuantization>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const SimulatedQuantization& from);
+  void MergeFrom(const SimulatedQuantization& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(SimulatedQuantization* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // .tensorflow.tpu.ClippingLimits clipping_limits = 2;
+  bool has_clipping_limits() const;
+  void clear_clipping_limits();
+  static const int kClippingLimitsFieldNumber = 2;
+  private:
+  const ::tensorflow::tpu::ClippingLimits& _internal_clipping_limits() const;
+  public:
+  const ::tensorflow::tpu::ClippingLimits& clipping_limits() const;
+  ::tensorflow::tpu::ClippingLimits* release_clipping_limits();
+  ::tensorflow::tpu::ClippingLimits* mutable_clipping_limits();
+  void set_allocated_clipping_limits(::tensorflow::tpu::ClippingLimits* clipping_limits);
+
+  // bool enabled = 1;
+  void clear_enabled();
+  static const int kEnabledFieldNumber = 1;
+  bool enabled() const;
+  void set_enabled(bool value);
+
+  // int32 num_buckets = 3;
+  void clear_num_buckets();
+  static const int kNumBucketsFieldNumber = 3;
+  ::google::protobuf::int32 num_buckets() const;
+  void set_num_buckets(::google::protobuf::int32 value);
+
+  // @@protoc_insertion_point(class_scope:tensorflow.tpu.SimulatedQuantization)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::tensorflow::tpu::ClippingLimits* clipping_limits_;
+  bool enabled_;
+  ::google::protobuf::int32 num_buckets_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
 class DynamicLearningRate : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.tpu.DynamicLearningRate) */ {
  public:
   DynamicLearningRate();
@@ -353,7 +519,7 @@ class DynamicLearningRate : public ::google::protobuf::Message /* @@protoc_inser
                &_DynamicLearningRate_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    1;
+    2;
 
   void Swap(DynamicLearningRate* other);
   friend void swap(DynamicLearningRate& a, DynamicLearningRate& b) {
@@ -462,7 +628,7 @@ class LearningRate : public ::google::protobuf::Message /* @@protoc_insertion_po
                &_LearningRate_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    2;
+    3;
 
   void Swap(LearningRate* other);
   friend void swap(LearningRate& a, LearningRate& b) {
@@ -593,7 +759,7 @@ class AdagradParameters : public ::google::protobuf::Message /* @@protoc_inserti
                &_AdagradParameters_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    3;
+    4;
 
   void Swap(AdagradParameters* other);
   friend void swap(AdagradParameters& a, AdagradParameters& b) {
@@ -645,17 +811,141 @@ class AdagradParameters : public ::google::protobuf::Message /* @@protoc_inserti
 
   // accessors -------------------------------------------------------
 
-  // float initial_accumulator = 1;
-  void clear_initial_accumulator();
-  static const int kInitialAccumulatorFieldNumber = 1;
-  float initial_accumulator() const;
-  void set_initial_accumulator(float value);
-
   // @@protoc_insertion_point(class_scope:tensorflow.tpu.AdagradParameters)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  float initial_accumulator_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
+class AdagradMomentumParameters : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.tpu.AdagradMomentumParameters) */ {
+ public:
+  AdagradMomentumParameters();
+  virtual ~AdagradMomentumParameters();
+
+  AdagradMomentumParameters(const AdagradMomentumParameters& from);
+
+  inline AdagradMomentumParameters& operator=(const AdagradMomentumParameters& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  AdagradMomentumParameters(AdagradMomentumParameters&& from) noexcept
+    : AdagradMomentumParameters() {
+    *this = ::std::move(from);
+  }
+
+  inline AdagradMomentumParameters& operator=(AdagradMomentumParameters&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const AdagradMomentumParameters& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const AdagradMomentumParameters* internal_default_instance() {
+    return reinterpret_cast<const AdagradMomentumParameters*>(
+               &_AdagradMomentumParameters_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    5;
+
+  void Swap(AdagradMomentumParameters* other);
+  friend void swap(AdagradMomentumParameters& a, AdagradMomentumParameters& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline AdagradMomentumParameters* New() const final {
+    return CreateMaybeMessage<AdagradMomentumParameters>(NULL);
+  }
+
+  AdagradMomentumParameters* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<AdagradMomentumParameters>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const AdagradMomentumParameters& from);
+  void MergeFrom(const AdagradMomentumParameters& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(AdagradMomentumParameters* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // float momentum = 1;
+  void clear_momentum();
+  static const int kMomentumFieldNumber = 1;
+  float momentum() const;
+  void set_momentum(float value);
+
+  // bool use_nesterov = 2;
+  void clear_use_nesterov();
+  static const int kUseNesterovFieldNumber = 2;
+  bool use_nesterov() const;
+  void set_use_nesterov(bool value);
+
+  // float exponent = 3;
+  void clear_exponent();
+  static const int kExponentFieldNumber = 3;
+  float exponent() const;
+  void set_exponent(float value);
+
+  // float beta2 = 4;
+  void clear_beta2();
+  static const int kBeta2FieldNumber = 4;
+  float beta2() const;
+  void set_beta2(float value);
+
+  // float epsilon = 5;
+  void clear_epsilon();
+  static const int kEpsilonFieldNumber = 5;
+  float epsilon() const;
+  void set_epsilon(float value);
+
+  // @@protoc_insertion_point(class_scope:tensorflow.tpu.AdagradMomentumParameters)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  float momentum_;
+  bool use_nesterov_;
+  float exponent_;
+  float beta2_;
+  float epsilon_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::TableStruct;
 };
@@ -696,7 +986,7 @@ class BoundedAdagradParameters : public ::google::protobuf::Message /* @@protoc_
                &_BoundedAdagradParameters_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    4;
+    6;
 
   void Swap(BoundedAdagradParameters* other);
   friend void swap(BoundedAdagradParameters& a, BoundedAdagradParameters& b) {
@@ -813,7 +1103,7 @@ class StochasticGradientDescentParameters : public ::google::protobuf::Message /
                &_StochasticGradientDescentParameters_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    5;
+    7;
 
   void Swap(StochasticGradientDescentParameters* other);
   friend void swap(StochasticGradientDescentParameters& a, StochasticGradientDescentParameters& b) {
@@ -909,7 +1199,7 @@ class FtrlParameters : public ::google::protobuf::Message /* @@protoc_insertion_
                &_FtrlParameters_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    6;
+    8;
 
   void Swap(FtrlParameters* other);
   friend void swap(FtrlParameters& a, FtrlParameters& b) {
@@ -979,17 +1269,23 @@ class FtrlParameters : public ::google::protobuf::Message /* @@protoc_insertion_
   float lr_power() const;
   void set_lr_power(float value);
 
-  // float initial_accum = 4;
-  void clear_initial_accum();
-  static const int kInitialAccumFieldNumber = 4;
-  float initial_accum() const;
-  void set_initial_accum(float value);
+  // float beta = 7;
+  void clear_beta();
+  static const int kBetaFieldNumber = 7;
+  float beta() const;
+  void set_beta(float value);
 
-  // float initial_linear = 5;
-  void clear_initial_linear();
-  static const int kInitialLinearFieldNumber = 5;
-  float initial_linear() const;
-  void set_initial_linear(float value);
+  // bool multiply_linear_by_lr = 6;
+  void clear_multiply_linear_by_lr();
+  static const int kMultiplyLinearByLrFieldNumber = 6;
+  bool multiply_linear_by_lr() const;
+  void set_multiply_linear_by_lr(bool value);
+
+  // bool allow_zero_accumulator = 8 [deprecated = true];
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR void clear_allow_zero_accumulator();
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR static const int kAllowZeroAccumulatorFieldNumber = 8;
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR bool allow_zero_accumulator() const;
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR void set_allow_zero_accumulator(bool value);
 
   // @@protoc_insertion_point(class_scope:tensorflow.tpu.FtrlParameters)
  private:
@@ -998,8 +1294,9 @@ class FtrlParameters : public ::google::protobuf::Message /* @@protoc_insertion_
   float l1_;
   float l2_;
   float lr_power_;
-  float initial_accum_;
-  float initial_linear_;
+  float beta_;
+  bool multiply_linear_by_lr_;
+  bool allow_zero_accumulator_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::TableStruct;
 };
@@ -1040,7 +1337,7 @@ class AdamParameters : public ::google::protobuf::Message /* @@protoc_insertion_
                &_AdamParameters_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    7;
+    9;
 
   void Swap(AdamParameters* other);
   friend void swap(AdamParameters& a, AdamParameters& b) {
@@ -1110,18 +1407,6 @@ class AdamParameters : public ::google::protobuf::Message /* @@protoc_insertion_
   float epsilon() const;
   void set_epsilon(float value);
 
-  // float initial_m = 6;
-  void clear_initial_m();
-  static const int kInitialMFieldNumber = 6;
-  float initial_m() const;
-  void set_initial_m(float value);
-
-  // float initial_v = 7;
-  void clear_initial_v();
-  static const int kInitialVFieldNumber = 7;
-  float initial_v() const;
-  void set_initial_v(float value);
-
   // bool use_non_lazy_adam = 8;
   void clear_use_non_lazy_adam();
   static const int kUseNonLazyAdamFieldNumber = 8;
@@ -1141,8 +1426,6 @@ class AdamParameters : public ::google::protobuf::Message /* @@protoc_insertion_
   float beta1_;
   float beta2_;
   float epsilon_;
-  float initial_m_;
-  float initial_v_;
   bool use_non_lazy_adam_;
   bool use_sum_inside_sqrt_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
@@ -1185,7 +1468,7 @@ class MomentumParameters : public ::google::protobuf::Message /* @@protoc_insert
                &_MomentumParameters_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    8;
+    10;
 
   void Swap(MomentumParameters* other);
   friend void swap(MomentumParameters& a, MomentumParameters& b) {
@@ -1249,19 +1532,12 @@ class MomentumParameters : public ::google::protobuf::Message /* @@protoc_insert
   bool use_nesterov() const;
   void set_use_nesterov(bool value);
 
-  // float initial_accum = 3;
-  void clear_initial_accum();
-  static const int kInitialAccumFieldNumber = 3;
-  float initial_accum() const;
-  void set_initial_accum(float value);
-
   // @@protoc_insertion_point(class_scope:tensorflow.tpu.MomentumParameters)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
   float momentum_;
   bool use_nesterov_;
-  float initial_accum_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::TableStruct;
 };
@@ -1302,7 +1578,7 @@ class RmsPropParameters : public ::google::protobuf::Message /* @@protoc_inserti
                &_RmsPropParameters_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    9;
+    11;
 
   void Swap(RmsPropParameters* other);
   friend void swap(RmsPropParameters& a, RmsPropParameters& b) {
@@ -1372,18 +1648,6 @@ class RmsPropParameters : public ::google::protobuf::Message /* @@protoc_inserti
   float epsilon() const;
   void set_epsilon(float value);
 
-  // float initial_ms = 4;
-  void clear_initial_ms();
-  static const int kInitialMsFieldNumber = 4;
-  float initial_ms() const;
-  void set_initial_ms(float value);
-
-  // float initial_mom = 5;
-  void clear_initial_mom();
-  static const int kInitialMomFieldNumber = 5;
-  float initial_mom() const;
-  void set_initial_mom(float value);
-
   // @@protoc_insertion_point(class_scope:tensorflow.tpu.RmsPropParameters)
  private:
 
@@ -1391,8 +1655,6 @@ class RmsPropParameters : public ::google::protobuf::Message /* @@protoc_inserti
   float rho_;
   float momentum_;
   float epsilon_;
-  float initial_ms_;
-  float initial_mom_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::TableStruct;
 };
@@ -1433,7 +1695,7 @@ class CenteredRmsPropParameters : public ::google::protobuf::Message /* @@protoc
                &_CenteredRmsPropParameters_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    10;
+    12;
 
   void Swap(CenteredRmsPropParameters* other);
   friend void swap(CenteredRmsPropParameters& a, CenteredRmsPropParameters& b) {
@@ -1503,24 +1765,6 @@ class CenteredRmsPropParameters : public ::google::protobuf::Message /* @@protoc
   float epsilon() const;
   void set_epsilon(float value);
 
-  // float initial_ms = 4;
-  void clear_initial_ms();
-  static const int kInitialMsFieldNumber = 4;
-  float initial_ms() const;
-  void set_initial_ms(float value);
-
-  // float initial_mom = 5;
-  void clear_initial_mom();
-  static const int kInitialMomFieldNumber = 5;
-  float initial_mom() const;
-  void set_initial_mom(float value);
-
-  // float initial_mg = 6;
-  void clear_initial_mg();
-  static const int kInitialMgFieldNumber = 6;
-  float initial_mg() const;
-  void set_initial_mg(float value);
-
   // @@protoc_insertion_point(class_scope:tensorflow.tpu.CenteredRmsPropParameters)
  private:
 
@@ -1528,9 +1772,6 @@ class CenteredRmsPropParameters : public ::google::protobuf::Message /* @@protoc
   float rho_;
   float momentum_;
   float epsilon_;
-  float initial_ms_;
-  float initial_mom_;
-  float initial_mg_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::TableStruct;
 };
@@ -1571,7 +1812,7 @@ class MdlAdagradLightParameters : public ::google::protobuf::Message /* @@protoc
                &_MdlAdagradLightParameters_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    11;
+    13;
 
   void Swap(MdlAdagradLightParameters* other);
   friend void swap(MdlAdagradLightParameters& a, MdlAdagradLightParameters& b) {
@@ -1695,24 +1936,6 @@ class MdlAdagradLightParameters : public ::google::protobuf::Message /* @@protoc
   bool mdl_regularize() const;
   void set_mdl_regularize(bool value);
 
-  // float initial_accumulator = 13;
-  void clear_initial_accumulator();
-  static const int kInitialAccumulatorFieldNumber = 13;
-  float initial_accumulator() const;
-  void set_initial_accumulator(float value);
-
-  // float initial_weight = 14;
-  void clear_initial_weight();
-  static const int kInitialWeightFieldNumber = 14;
-  float initial_weight() const;
-  void set_initial_weight(float value);
-
-  // float initial_benefit = 15;
-  void clear_initial_benefit();
-  static const int kInitialBenefitFieldNumber = 15;
-  float initial_benefit() const;
-  void set_initial_benefit(float value);
-
   // @@protoc_insertion_point(class_scope:tensorflow.tpu.MdlAdagradLightParameters)
  private:
 
@@ -1729,9 +1952,6 @@ class MdlAdagradLightParameters : public ::google::protobuf::Message /* @@protoc
   float mdl_hard_limit_;
   bool hard_limit_min_benefit_;
   bool mdl_regularize_;
-  float initial_accumulator_;
-  float initial_weight_;
-  float initial_benefit_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::TableStruct;
 };
@@ -1772,7 +1992,7 @@ class AdadeltaParameters : public ::google::protobuf::Message /* @@protoc_insert
                &_AdadeltaParameters_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    12;
+    14;
 
   void Swap(AdadeltaParameters* other);
   friend void swap(AdadeltaParameters& a, AdadeltaParameters& b) {
@@ -1836,26 +2056,12 @@ class AdadeltaParameters : public ::google::protobuf::Message /* @@protoc_insert
   float epsilon() const;
   void set_epsilon(float value);
 
-  // float initial_accumulator = 3;
-  void clear_initial_accumulator();
-  static const int kInitialAccumulatorFieldNumber = 3;
-  float initial_accumulator() const;
-  void set_initial_accumulator(float value);
-
-  // float initial_update = 4;
-  void clear_initial_update();
-  static const int kInitialUpdateFieldNumber = 4;
-  float initial_update() const;
-  void set_initial_update(float value);
-
   // @@protoc_insertion_point(class_scope:tensorflow.tpu.AdadeltaParameters)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
   float rho_;
   float epsilon_;
-  float initial_accumulator_;
-  float initial_update_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::TableStruct;
 };
@@ -1896,7 +2102,7 @@ class ProximalAdagradParameters : public ::google::protobuf::Message /* @@protoc
                &_ProximalAdagradParameters_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    13;
+    15;
 
   void Swap(ProximalAdagradParameters* other);
   friend void swap(ProximalAdagradParameters& a, ProximalAdagradParameters& b) {
@@ -1960,211 +2166,12 @@ class ProximalAdagradParameters : public ::google::protobuf::Message /* @@protoc
   float l2() const;
   void set_l2(float value);
 
-  // float initial_accumulator = 3;
-  void clear_initial_accumulator();
-  static const int kInitialAccumulatorFieldNumber = 3;
-  float initial_accumulator() const;
-  void set_initial_accumulator(float value);
-
   // @@protoc_insertion_point(class_scope:tensorflow.tpu.ProximalAdagradParameters)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
   float l1_;
   float l2_;
-  float initial_accumulator_;
-  mutable ::google::protobuf::internal::CachedSize _cached_size_;
-  friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::TableStruct;
-};
-// -------------------------------------------------------------------
-
-class OnlineYogiParameters_SignActivation : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.tpu.OnlineYogiParameters.SignActivation) */ {
- public:
-  OnlineYogiParameters_SignActivation();
-  virtual ~OnlineYogiParameters_SignActivation();
-
-  OnlineYogiParameters_SignActivation(const OnlineYogiParameters_SignActivation& from);
-
-  inline OnlineYogiParameters_SignActivation& operator=(const OnlineYogiParameters_SignActivation& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  #if LANG_CXX11
-  OnlineYogiParameters_SignActivation(OnlineYogiParameters_SignActivation&& from) noexcept
-    : OnlineYogiParameters_SignActivation() {
-    *this = ::std::move(from);
-  }
-
-  inline OnlineYogiParameters_SignActivation& operator=(OnlineYogiParameters_SignActivation&& from) noexcept {
-    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
-      if (this != &from) InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-  #endif
-  static const ::google::protobuf::Descriptor* descriptor();
-  static const OnlineYogiParameters_SignActivation& default_instance();
-
-  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
-  static inline const OnlineYogiParameters_SignActivation* internal_default_instance() {
-    return reinterpret_cast<const OnlineYogiParameters_SignActivation*>(
-               &_OnlineYogiParameters_SignActivation_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    14;
-
-  void Swap(OnlineYogiParameters_SignActivation* other);
-  friend void swap(OnlineYogiParameters_SignActivation& a, OnlineYogiParameters_SignActivation& b) {
-    a.Swap(&b);
-  }
-
-  // implements Message ----------------------------------------------
-
-  inline OnlineYogiParameters_SignActivation* New() const final {
-    return CreateMaybeMessage<OnlineYogiParameters_SignActivation>(NULL);
-  }
-
-  OnlineYogiParameters_SignActivation* New(::google::protobuf::Arena* arena) const final {
-    return CreateMaybeMessage<OnlineYogiParameters_SignActivation>(arena);
-  }
-  void CopyFrom(const ::google::protobuf::Message& from) final;
-  void MergeFrom(const ::google::protobuf::Message& from) final;
-  void CopyFrom(const OnlineYogiParameters_SignActivation& from);
-  void MergeFrom(const OnlineYogiParameters_SignActivation& from);
-  void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) final;
-  void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const final;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  void SharedCtor();
-  void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(OnlineYogiParameters_SignActivation* other);
-  private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
-  }
-  inline void* MaybeArenaPtr() const {
-    return NULL;
-  }
-  public:
-
-  ::google::protobuf::Metadata GetMetadata() const final;
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  // @@protoc_insertion_point(class_scope:tensorflow.tpu.OnlineYogiParameters.SignActivation)
- private:
-
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  mutable ::google::protobuf::internal::CachedSize _cached_size_;
-  friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::TableStruct;
-};
-// -------------------------------------------------------------------
-
-class OnlineYogiParameters_TanhActivation : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.tpu.OnlineYogiParameters.TanhActivation) */ {
- public:
-  OnlineYogiParameters_TanhActivation();
-  virtual ~OnlineYogiParameters_TanhActivation();
-
-  OnlineYogiParameters_TanhActivation(const OnlineYogiParameters_TanhActivation& from);
-
-  inline OnlineYogiParameters_TanhActivation& operator=(const OnlineYogiParameters_TanhActivation& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  #if LANG_CXX11
-  OnlineYogiParameters_TanhActivation(OnlineYogiParameters_TanhActivation&& from) noexcept
-    : OnlineYogiParameters_TanhActivation() {
-    *this = ::std::move(from);
-  }
-
-  inline OnlineYogiParameters_TanhActivation& operator=(OnlineYogiParameters_TanhActivation&& from) noexcept {
-    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
-      if (this != &from) InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-  #endif
-  static const ::google::protobuf::Descriptor* descriptor();
-  static const OnlineYogiParameters_TanhActivation& default_instance();
-
-  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
-  static inline const OnlineYogiParameters_TanhActivation* internal_default_instance() {
-    return reinterpret_cast<const OnlineYogiParameters_TanhActivation*>(
-               &_OnlineYogiParameters_TanhActivation_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    15;
-
-  void Swap(OnlineYogiParameters_TanhActivation* other);
-  friend void swap(OnlineYogiParameters_TanhActivation& a, OnlineYogiParameters_TanhActivation& b) {
-    a.Swap(&b);
-  }
-
-  // implements Message ----------------------------------------------
-
-  inline OnlineYogiParameters_TanhActivation* New() const final {
-    return CreateMaybeMessage<OnlineYogiParameters_TanhActivation>(NULL);
-  }
-
-  OnlineYogiParameters_TanhActivation* New(::google::protobuf::Arena* arena) const final {
-    return CreateMaybeMessage<OnlineYogiParameters_TanhActivation>(arena);
-  }
-  void CopyFrom(const ::google::protobuf::Message& from) final;
-  void MergeFrom(const ::google::protobuf::Message& from) final;
-  void CopyFrom(const OnlineYogiParameters_TanhActivation& from);
-  void MergeFrom(const OnlineYogiParameters_TanhActivation& from);
-  void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) final;
-  void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const final;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  void SharedCtor();
-  void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(OnlineYogiParameters_TanhActivation* other);
-  private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
-  }
-  inline void* MaybeArenaPtr() const {
-    return NULL;
-  }
-  public:
-
-  ::google::protobuf::Metadata GetMetadata() const final;
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  // @@protoc_insertion_point(class_scope:tensorflow.tpu.OnlineYogiParameters.TanhActivation)
- private:
-
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::TableStruct;
 };
@@ -2198,12 +2205,6 @@ class OnlineYogiParameters : public ::google::protobuf::Message /* @@protoc_inse
   #endif
   static const ::google::protobuf::Descriptor* descriptor();
   static const OnlineYogiParameters& default_instance();
-
-  enum ActivationCase {
-    kSign = 6,
-    kTanh = 7,
-    ACTIVATION_NOT_SET = 0,
-  };
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
   static inline const OnlineYogiParameters* internal_default_instance() {
@@ -2261,9 +2262,6 @@ class OnlineYogiParameters : public ::google::protobuf::Message /* @@protoc_inse
 
   // nested types ----------------------------------------------------
 
-  typedef OnlineYogiParameters_SignActivation SignActivation;
-  typedef OnlineYogiParameters_TanhActivation TanhActivation;
-
   // accessors -------------------------------------------------------
 
   // float l1 = 1;
@@ -2284,66 +2282,474 @@ class OnlineYogiParameters : public ::google::protobuf::Message /* @@protoc_inse
   float beta2() const;
   void set_beta2(float value);
 
-  // float initial_v = 4;
-  void clear_initial_v();
-  static const int kInitialVFieldNumber = 4;
-  float initial_v() const;
-  void set_initial_v(float value);
-
-  // float initial_linear = 5;
-  void clear_initial_linear();
-  static const int kInitialLinearFieldNumber = 5;
-  float initial_linear() const;
-  void set_initial_linear(float value);
-
-  // .tensorflow.tpu.OnlineYogiParameters.SignActivation sign = 6;
-  bool has_sign() const;
-  void clear_sign();
-  static const int kSignFieldNumber = 6;
-  private:
-  const ::tensorflow::tpu::OnlineYogiParameters_SignActivation& _internal_sign() const;
-  public:
-  const ::tensorflow::tpu::OnlineYogiParameters_SignActivation& sign() const;
-  ::tensorflow::tpu::OnlineYogiParameters_SignActivation* release_sign();
-  ::tensorflow::tpu::OnlineYogiParameters_SignActivation* mutable_sign();
-  void set_allocated_sign(::tensorflow::tpu::OnlineYogiParameters_SignActivation* sign);
-
-  // .tensorflow.tpu.OnlineYogiParameters.TanhActivation tanh = 7;
-  bool has_tanh() const;
-  void clear_tanh();
-  static const int kTanhFieldNumber = 7;
-  private:
-  const ::tensorflow::tpu::OnlineYogiParameters_TanhActivation& _internal_tanh() const;
-  public:
-  const ::tensorflow::tpu::OnlineYogiParameters_TanhActivation& tanh() const;
-  ::tensorflow::tpu::OnlineYogiParameters_TanhActivation* release_tanh();
-  ::tensorflow::tpu::OnlineYogiParameters_TanhActivation* mutable_tanh();
-  void set_allocated_tanh(::tensorflow::tpu::OnlineYogiParameters_TanhActivation* tanh);
-
-  void clear_activation();
-  ActivationCase activation_case() const;
   // @@protoc_insertion_point(class_scope:tensorflow.tpu.OnlineYogiParameters)
  private:
-  void set_has_sign();
-  void set_has_tanh();
-
-  inline bool has_activation() const;
-  inline void clear_has_activation();
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
   float l1_;
   float l2_;
   float beta2_;
-  float initial_v_;
-  float initial_linear_;
-  union ActivationUnion {
-    ActivationUnion() {}
-    ::tensorflow::tpu::OnlineYogiParameters_SignActivation* sign_;
-    ::tensorflow::tpu::OnlineYogiParameters_TanhActivation* tanh_;
-  } activation_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
-  ::google::protobuf::uint32 _oneof_case_[1];
+  friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
 
+class ProximalYogiParameters : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.tpu.ProximalYogiParameters) */ {
+ public:
+  ProximalYogiParameters();
+  virtual ~ProximalYogiParameters();
+
+  ProximalYogiParameters(const ProximalYogiParameters& from);
+
+  inline ProximalYogiParameters& operator=(const ProximalYogiParameters& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  ProximalYogiParameters(ProximalYogiParameters&& from) noexcept
+    : ProximalYogiParameters() {
+    *this = ::std::move(from);
+  }
+
+  inline ProximalYogiParameters& operator=(ProximalYogiParameters&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const ProximalYogiParameters& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const ProximalYogiParameters* internal_default_instance() {
+    return reinterpret_cast<const ProximalYogiParameters*>(
+               &_ProximalYogiParameters_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    17;
+
+  void Swap(ProximalYogiParameters* other);
+  friend void swap(ProximalYogiParameters& a, ProximalYogiParameters& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ProximalYogiParameters* New() const final {
+    return CreateMaybeMessage<ProximalYogiParameters>(NULL);
+  }
+
+  ProximalYogiParameters* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<ProximalYogiParameters>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const ProximalYogiParameters& from);
+  void MergeFrom(const ProximalYogiParameters& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ProximalYogiParameters* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // float l1 = 1;
+  void clear_l1();
+  static const int kL1FieldNumber = 1;
+  float l1() const;
+  void set_l1(float value);
+
+  // float l2 = 2;
+  void clear_l2();
+  static const int kL2FieldNumber = 2;
+  float l2() const;
+  void set_l2(float value);
+
+  // float beta1 = 3;
+  void clear_beta1();
+  static const int kBeta1FieldNumber = 3;
+  float beta1() const;
+  void set_beta1(float value);
+
+  // float beta2 = 4;
+  void clear_beta2();
+  static const int kBeta2FieldNumber = 4;
+  float beta2() const;
+  void set_beta2(float value);
+
+  // float epsilon = 5;
+  void clear_epsilon();
+  static const int kEpsilonFieldNumber = 5;
+  float epsilon() const;
+  void set_epsilon(float value);
+
+  // @@protoc_insertion_point(class_scope:tensorflow.tpu.ProximalYogiParameters)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  float l1_;
+  float l2_;
+  float beta1_;
+  float beta2_;
+  float epsilon_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
+class FrequencyEstimatorParameters : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.tpu.FrequencyEstimatorParameters) */ {
+ public:
+  FrequencyEstimatorParameters();
+  virtual ~FrequencyEstimatorParameters();
+
+  FrequencyEstimatorParameters(const FrequencyEstimatorParameters& from);
+
+  inline FrequencyEstimatorParameters& operator=(const FrequencyEstimatorParameters& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  FrequencyEstimatorParameters(FrequencyEstimatorParameters&& from) noexcept
+    : FrequencyEstimatorParameters() {
+    *this = ::std::move(from);
+  }
+
+  inline FrequencyEstimatorParameters& operator=(FrequencyEstimatorParameters&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const FrequencyEstimatorParameters& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const FrequencyEstimatorParameters* internal_default_instance() {
+    return reinterpret_cast<const FrequencyEstimatorParameters*>(
+               &_FrequencyEstimatorParameters_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    18;
+
+  void Swap(FrequencyEstimatorParameters* other);
+  friend void swap(FrequencyEstimatorParameters& a, FrequencyEstimatorParameters& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline FrequencyEstimatorParameters* New() const final {
+    return CreateMaybeMessage<FrequencyEstimatorParameters>(NULL);
+  }
+
+  FrequencyEstimatorParameters* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<FrequencyEstimatorParameters>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const FrequencyEstimatorParameters& from);
+  void MergeFrom(const FrequencyEstimatorParameters& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(FrequencyEstimatorParameters* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // float tau = 1;
+  void clear_tau();
+  static const int kTauFieldNumber = 1;
+  float tau() const;
+  void set_tau(float value);
+
+  // float max_delta = 2;
+  void clear_max_delta();
+  static const int kMaxDeltaFieldNumber = 2;
+  float max_delta() const;
+  void set_max_delta(float value);
+
+  // float outlier_threshold = 3;
+  void clear_outlier_threshold();
+  static const int kOutlierThresholdFieldNumber = 3;
+  float outlier_threshold() const;
+  void set_outlier_threshold(float value);
+
+  // float weight_exponent = 4;
+  void clear_weight_exponent();
+  static const int kWeightExponentFieldNumber = 4;
+  float weight_exponent() const;
+  void set_weight_exponent(float value);
+
+  // @@protoc_insertion_point(class_scope:tensorflow.tpu.FrequencyEstimatorParameters)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  float tau_;
+  float max_delta_;
+  float outlier_threshold_;
+  float weight_exponent_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
+class UserDefinedProgramParameters : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.tpu.UserDefinedProgramParameters) */ {
+ public:
+  UserDefinedProgramParameters();
+  virtual ~UserDefinedProgramParameters();
+
+  UserDefinedProgramParameters(const UserDefinedProgramParameters& from);
+
+  inline UserDefinedProgramParameters& operator=(const UserDefinedProgramParameters& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  UserDefinedProgramParameters(UserDefinedProgramParameters&& from) noexcept
+    : UserDefinedProgramParameters() {
+    *this = ::std::move(from);
+  }
+
+  inline UserDefinedProgramParameters& operator=(UserDefinedProgramParameters&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const UserDefinedProgramParameters& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const UserDefinedProgramParameters* internal_default_instance() {
+    return reinterpret_cast<const UserDefinedProgramParameters*>(
+               &_UserDefinedProgramParameters_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    19;
+
+  void Swap(UserDefinedProgramParameters* other);
+  friend void swap(UserDefinedProgramParameters& a, UserDefinedProgramParameters& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline UserDefinedProgramParameters* New() const final {
+    return CreateMaybeMessage<UserDefinedProgramParameters>(NULL);
+  }
+
+  UserDefinedProgramParameters* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<UserDefinedProgramParameters>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const UserDefinedProgramParameters& from);
+  void MergeFrom(const UserDefinedProgramParameters& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(UserDefinedProgramParameters* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // .xla.HloModuleProto program = 1;
+  bool has_program() const;
+  void clear_program();
+  static const int kProgramFieldNumber = 1;
+  private:
+  const ::xla::HloModuleProto& _internal_program() const;
+  public:
+  const ::xla::HloModuleProto& program() const;
+  ::xla::HloModuleProto* release_program();
+  ::xla::HloModuleProto* mutable_program();
+  void set_allocated_program(::xla::HloModuleProto* program);
+
+  // @@protoc_insertion_point(class_scope:tensorflow.tpu.UserDefinedProgramParameters)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::xla::HloModuleProto* program_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
+class AssignParameters : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.tpu.AssignParameters) */ {
+ public:
+  AssignParameters();
+  virtual ~AssignParameters();
+
+  AssignParameters(const AssignParameters& from);
+
+  inline AssignParameters& operator=(const AssignParameters& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  AssignParameters(AssignParameters&& from) noexcept
+    : AssignParameters() {
+    *this = ::std::move(from);
+  }
+
+  inline AssignParameters& operator=(AssignParameters&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const AssignParameters& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const AssignParameters* internal_default_instance() {
+    return reinterpret_cast<const AssignParameters*>(
+               &_AssignParameters_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    20;
+
+  void Swap(AssignParameters* other);
+  friend void swap(AssignParameters& a, AssignParameters& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline AssignParameters* New() const final {
+    return CreateMaybeMessage<AssignParameters>(NULL);
+  }
+
+  AssignParameters* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<AssignParameters>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const AssignParameters& from);
+  void MergeFrom(const AssignParameters& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(AssignParameters* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // @@protoc_insertion_point(class_scope:tensorflow.tpu.AssignParameters)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::TableStruct;
 };
 // -------------------------------------------------------------------
@@ -2383,7 +2789,7 @@ class GradientAccumulationStatus : public ::google::protobuf::Message /* @@proto
                &_GradientAccumulationStatus_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    17;
+    21;
 
   void Swap(GradientAccumulationStatus* other);
   friend void swap(GradientAccumulationStatus& a, GradientAccumulationStatus& b) {
@@ -2472,6 +2878,130 @@ class GradientAccumulationStatus : public ::google::protobuf::Message /* @@proto
 };
 // -------------------------------------------------------------------
 
+class LowDimensionalPackingStatus : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.tpu.LowDimensionalPackingStatus) */ {
+ public:
+  LowDimensionalPackingStatus();
+  virtual ~LowDimensionalPackingStatus();
+
+  LowDimensionalPackingStatus(const LowDimensionalPackingStatus& from);
+
+  inline LowDimensionalPackingStatus& operator=(const LowDimensionalPackingStatus& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  LowDimensionalPackingStatus(LowDimensionalPackingStatus&& from) noexcept
+    : LowDimensionalPackingStatus() {
+    *this = ::std::move(from);
+  }
+
+  inline LowDimensionalPackingStatus& operator=(LowDimensionalPackingStatus&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const LowDimensionalPackingStatus& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const LowDimensionalPackingStatus* internal_default_instance() {
+    return reinterpret_cast<const LowDimensionalPackingStatus*>(
+               &_LowDimensionalPackingStatus_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    22;
+
+  void Swap(LowDimensionalPackingStatus* other);
+  friend void swap(LowDimensionalPackingStatus& a, LowDimensionalPackingStatus& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline LowDimensionalPackingStatus* New() const final {
+    return CreateMaybeMessage<LowDimensionalPackingStatus>(NULL);
+  }
+
+  LowDimensionalPackingStatus* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<LowDimensionalPackingStatus>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const LowDimensionalPackingStatus& from);
+  void MergeFrom(const LowDimensionalPackingStatus& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(LowDimensionalPackingStatus* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  typedef LowDimensionalPackingStatus_Status Status;
+  static const Status UNSPECIFIED =
+    LowDimensionalPackingStatus_Status_UNSPECIFIED;
+  static const Status ENABLED =
+    LowDimensionalPackingStatus_Status_ENABLED;
+  static const Status DISABLED =
+    LowDimensionalPackingStatus_Status_DISABLED;
+  static inline bool Status_IsValid(int value) {
+    return LowDimensionalPackingStatus_Status_IsValid(value);
+  }
+  static const Status Status_MIN =
+    LowDimensionalPackingStatus_Status_Status_MIN;
+  static const Status Status_MAX =
+    LowDimensionalPackingStatus_Status_Status_MAX;
+  static const int Status_ARRAYSIZE =
+    LowDimensionalPackingStatus_Status_Status_ARRAYSIZE;
+  static inline const ::google::protobuf::EnumDescriptor*
+  Status_descriptor() {
+    return LowDimensionalPackingStatus_Status_descriptor();
+  }
+  static inline const ::std::string& Status_Name(Status value) {
+    return LowDimensionalPackingStatus_Status_Name(value);
+  }
+  static inline bool Status_Parse(const ::std::string& name,
+      Status* value) {
+    return LowDimensionalPackingStatus_Status_Parse(name, value);
+  }
+
+  // accessors -------------------------------------------------------
+
+  // @@protoc_insertion_point(class_scope:tensorflow.tpu.LowDimensionalPackingStatus)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
 class HotIdReplicationConfiguration : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.tpu.HotIdReplicationConfiguration) */ {
  public:
   HotIdReplicationConfiguration();
@@ -2507,7 +3037,7 @@ class HotIdReplicationConfiguration : public ::google::protobuf::Message /* @@pr
                &_HotIdReplicationConfiguration_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    18;
+    23;
 
   void Swap(HotIdReplicationConfiguration* other);
   friend void swap(HotIdReplicationConfiguration& a, HotIdReplicationConfiguration& b) {
@@ -2634,6 +3164,7 @@ class OptimizationParameters : public ::google::protobuf::Message /* @@protoc_in
 
   enum ParametersCase {
     kAdagrad = 3,
+    kAdagradMomentum = 26,
     kBoundedAdagrad = 19,
     kStochasticGradientDescent = 4,
     kFtrl = 5,
@@ -2645,6 +3176,10 @@ class OptimizationParameters : public ::google::protobuf::Message /* @@protoc_in
     kAdadelta = 12,
     kProximalAdagrad = 14,
     kOnlineYogi = 20,
+    kProximalYogi = 21,
+    kFrequencyEstimator = 23,
+    kUserDefinedProgram = 24,
+    kAssign = 25,
     PARAMETERS_NOT_SET = 0,
   };
 
@@ -2654,7 +3189,7 @@ class OptimizationParameters : public ::google::protobuf::Message /* @@protoc_in
                &_OptimizationParameters_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    19;
+    24;
 
   void Swap(OptimizationParameters* other);
   friend void swap(OptimizationParameters& a, OptimizationParameters& b) {
@@ -2754,6 +3289,18 @@ class OptimizationParameters : public ::google::protobuf::Message /* @@protoc_in
   ::tensorflow::tpu::HotIdReplicationConfiguration* mutable_hot_id_replication_configuration();
   void set_allocated_hot_id_replication_configuration(::tensorflow::tpu::HotIdReplicationConfiguration* hot_id_replication_configuration);
 
+  // .tensorflow.tpu.SimulatedQuantization simulated_quantization = 27;
+  bool has_simulated_quantization() const;
+  void clear_simulated_quantization();
+  static const int kSimulatedQuantizationFieldNumber = 27;
+  private:
+  const ::tensorflow::tpu::SimulatedQuantization& _internal_simulated_quantization() const;
+  public:
+  const ::tensorflow::tpu::SimulatedQuantization& simulated_quantization() const;
+  ::tensorflow::tpu::SimulatedQuantization* release_simulated_quantization();
+  ::tensorflow::tpu::SimulatedQuantization* mutable_simulated_quantization();
+  void set_allocated_simulated_quantization(::tensorflow::tpu::SimulatedQuantization* simulated_quantization);
+
   // float weight_decay_factor = 16;
   void clear_weight_decay_factor();
   static const int kWeightDecayFactorFieldNumber = 16;
@@ -2766,6 +3313,18 @@ class OptimizationParameters : public ::google::protobuf::Message /* @@protoc_in
   ::tensorflow::tpu::GradientAccumulationStatus_Status gradient_accumulation_status() const;
   void set_gradient_accumulation_status(::tensorflow::tpu::GradientAccumulationStatus_Status value);
 
+  // bool multiply_weight_decay_factor_by_learning_rate = 22;
+  void clear_multiply_weight_decay_factor_by_learning_rate();
+  static const int kMultiplyWeightDecayFactorByLearningRateFieldNumber = 22;
+  bool multiply_weight_decay_factor_by_learning_rate() const;
+  void set_multiply_weight_decay_factor_by_learning_rate(bool value);
+
+  // .tensorflow.tpu.LowDimensionalPackingStatus.Status low_dimensional_packing_status = 28;
+  void clear_low_dimensional_packing_status();
+  static const int kLowDimensionalPackingStatusFieldNumber = 28;
+  ::tensorflow::tpu::LowDimensionalPackingStatus_Status low_dimensional_packing_status() const;
+  void set_low_dimensional_packing_status(::tensorflow::tpu::LowDimensionalPackingStatus_Status value);
+
   // .tensorflow.tpu.AdagradParameters adagrad = 3;
   bool has_adagrad() const;
   void clear_adagrad();
@@ -2777,6 +3336,18 @@ class OptimizationParameters : public ::google::protobuf::Message /* @@protoc_in
   ::tensorflow::tpu::AdagradParameters* release_adagrad();
   ::tensorflow::tpu::AdagradParameters* mutable_adagrad();
   void set_allocated_adagrad(::tensorflow::tpu::AdagradParameters* adagrad);
+
+  // .tensorflow.tpu.AdagradMomentumParameters adagrad_momentum = 26;
+  bool has_adagrad_momentum() const;
+  void clear_adagrad_momentum();
+  static const int kAdagradMomentumFieldNumber = 26;
+  private:
+  const ::tensorflow::tpu::AdagradMomentumParameters& _internal_adagrad_momentum() const;
+  public:
+  const ::tensorflow::tpu::AdagradMomentumParameters& adagrad_momentum() const;
+  ::tensorflow::tpu::AdagradMomentumParameters* release_adagrad_momentum();
+  ::tensorflow::tpu::AdagradMomentumParameters* mutable_adagrad_momentum();
+  void set_allocated_adagrad_momentum(::tensorflow::tpu::AdagradMomentumParameters* adagrad_momentum);
 
   // .tensorflow.tpu.BoundedAdagradParameters bounded_adagrad = 19;
   bool has_bounded_adagrad() const;
@@ -2910,11 +3481,60 @@ class OptimizationParameters : public ::google::protobuf::Message /* @@protoc_in
   ::tensorflow::tpu::OnlineYogiParameters* mutable_online_yogi();
   void set_allocated_online_yogi(::tensorflow::tpu::OnlineYogiParameters* online_yogi);
 
+  // .tensorflow.tpu.ProximalYogiParameters proximal_yogi = 21;
+  bool has_proximal_yogi() const;
+  void clear_proximal_yogi();
+  static const int kProximalYogiFieldNumber = 21;
+  private:
+  const ::tensorflow::tpu::ProximalYogiParameters& _internal_proximal_yogi() const;
+  public:
+  const ::tensorflow::tpu::ProximalYogiParameters& proximal_yogi() const;
+  ::tensorflow::tpu::ProximalYogiParameters* release_proximal_yogi();
+  ::tensorflow::tpu::ProximalYogiParameters* mutable_proximal_yogi();
+  void set_allocated_proximal_yogi(::tensorflow::tpu::ProximalYogiParameters* proximal_yogi);
+
+  // .tensorflow.tpu.FrequencyEstimatorParameters frequency_estimator = 23;
+  bool has_frequency_estimator() const;
+  void clear_frequency_estimator();
+  static const int kFrequencyEstimatorFieldNumber = 23;
+  private:
+  const ::tensorflow::tpu::FrequencyEstimatorParameters& _internal_frequency_estimator() const;
+  public:
+  const ::tensorflow::tpu::FrequencyEstimatorParameters& frequency_estimator() const;
+  ::tensorflow::tpu::FrequencyEstimatorParameters* release_frequency_estimator();
+  ::tensorflow::tpu::FrequencyEstimatorParameters* mutable_frequency_estimator();
+  void set_allocated_frequency_estimator(::tensorflow::tpu::FrequencyEstimatorParameters* frequency_estimator);
+
+  // .tensorflow.tpu.UserDefinedProgramParameters user_defined_program = 24;
+  bool has_user_defined_program() const;
+  void clear_user_defined_program();
+  static const int kUserDefinedProgramFieldNumber = 24;
+  private:
+  const ::tensorflow::tpu::UserDefinedProgramParameters& _internal_user_defined_program() const;
+  public:
+  const ::tensorflow::tpu::UserDefinedProgramParameters& user_defined_program() const;
+  ::tensorflow::tpu::UserDefinedProgramParameters* release_user_defined_program();
+  ::tensorflow::tpu::UserDefinedProgramParameters* mutable_user_defined_program();
+  void set_allocated_user_defined_program(::tensorflow::tpu::UserDefinedProgramParameters* user_defined_program);
+
+  // .tensorflow.tpu.AssignParameters assign = 25;
+  bool has_assign() const;
+  void clear_assign();
+  static const int kAssignFieldNumber = 25;
+  private:
+  const ::tensorflow::tpu::AssignParameters& _internal_assign() const;
+  public:
+  const ::tensorflow::tpu::AssignParameters& assign() const;
+  ::tensorflow::tpu::AssignParameters* release_assign();
+  ::tensorflow::tpu::AssignParameters* mutable_assign();
+  void set_allocated_assign(::tensorflow::tpu::AssignParameters* assign);
+
   void clear_parameters();
   ParametersCase parameters_case() const;
   // @@protoc_insertion_point(class_scope:tensorflow.tpu.OptimizationParameters)
  private:
   void set_has_adagrad();
+  void set_has_adagrad_momentum();
   void set_has_bounded_adagrad();
   void set_has_stochastic_gradient_descent();
   void set_has_ftrl();
@@ -2926,6 +3546,10 @@ class OptimizationParameters : public ::google::protobuf::Message /* @@protoc_in
   void set_has_adadelta();
   void set_has_proximal_adagrad();
   void set_has_online_yogi();
+  void set_has_proximal_yogi();
+  void set_has_frequency_estimator();
+  void set_has_user_defined_program();
+  void set_has_assign();
 
   inline bool has_parameters() const;
   inline void clear_has_parameters();
@@ -2935,11 +3559,15 @@ class OptimizationParameters : public ::google::protobuf::Message /* @@protoc_in
   ::tensorflow::tpu::ClippingLimits* gradient_clipping_limits_;
   ::tensorflow::tpu::LearningRate* learning_rate_;
   ::tensorflow::tpu::HotIdReplicationConfiguration* hot_id_replication_configuration_;
+  ::tensorflow::tpu::SimulatedQuantization* simulated_quantization_;
   float weight_decay_factor_;
   int gradient_accumulation_status_;
+  bool multiply_weight_decay_factor_by_learning_rate_;
+  int low_dimensional_packing_status_;
   union ParametersUnion {
     ParametersUnion() {}
     ::tensorflow::tpu::AdagradParameters* adagrad_;
+    ::tensorflow::tpu::AdagradMomentumParameters* adagrad_momentum_;
     ::tensorflow::tpu::BoundedAdagradParameters* bounded_adagrad_;
     ::tensorflow::tpu::StochasticGradientDescentParameters* stochastic_gradient_descent_;
     ::tensorflow::tpu::FtrlParameters* ftrl_;
@@ -2951,6 +3579,10 @@ class OptimizationParameters : public ::google::protobuf::Message /* @@protoc_in
     ::tensorflow::tpu::AdadeltaParameters* adadelta_;
     ::tensorflow::tpu::ProximalAdagradParameters* proximal_adagrad_;
     ::tensorflow::tpu::OnlineYogiParameters* online_yogi_;
+    ::tensorflow::tpu::ProximalYogiParameters* proximal_yogi_;
+    ::tensorflow::tpu::FrequencyEstimatorParameters* frequency_estimator_;
+    ::tensorflow::tpu::UserDefinedProgramParameters* user_defined_program_;
+    ::tensorflow::tpu::AssignParameters* assign_;
   } parameters_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   ::google::protobuf::uint32 _oneof_case_[1];
@@ -2994,7 +3626,7 @@ class StateVariableSpecification_UserDefined : public ::google::protobuf::Messag
                &_StateVariableSpecification_UserDefined_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    20;
+    25;
 
   void Swap(StateVariableSpecification_UserDefined* other);
   friend void swap(StateVariableSpecification_UserDefined& a, StateVariableSpecification_UserDefined& b) {
@@ -3046,17 +3678,10 @@ class StateVariableSpecification_UserDefined : public ::google::protobuf::Messag
 
   // accessors -------------------------------------------------------
 
-  // double padding_initial_value = 1;
-  void clear_padding_initial_value();
-  static const int kPaddingInitialValueFieldNumber = 1;
-  double padding_initial_value() const;
-  void set_padding_initial_value(double value);
-
   // @@protoc_insertion_point(class_scope:tensorflow.tpu.StateVariableSpecification.UserDefined)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  double padding_initial_value_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2foptimization_5fparameters_2eproto::TableStruct;
 };
@@ -3097,7 +3722,7 @@ class StateVariableSpecification_FillWithConstant : public ::google::protobuf::M
                &_StateVariableSpecification_FillWithConstant_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    21;
+    26;
 
   void Swap(StateVariableSpecification_FillWithConstant* other);
   friend void swap(StateVariableSpecification_FillWithConstant& a, StateVariableSpecification_FillWithConstant& b) {
@@ -3206,7 +3831,7 @@ class StateVariableSpecification : public ::google::protobuf::Message /* @@proto
                &_StateVariableSpecification_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    22;
+    27;
 
   void Swap(StateVariableSpecification* other);
   friend void swap(StateVariableSpecification& a, StateVariableSpecification& b) {
@@ -3432,6 +4057,92 @@ inline void ClippingLimits::set_allocated_upper(::google::protobuf::FloatValue* 
 
 // -------------------------------------------------------------------
 
+// SimulatedQuantization
+
+// bool enabled = 1;
+inline void SimulatedQuantization::clear_enabled() {
+  enabled_ = false;
+}
+inline bool SimulatedQuantization::enabled() const {
+  // @@protoc_insertion_point(field_get:tensorflow.tpu.SimulatedQuantization.enabled)
+  return enabled_;
+}
+inline void SimulatedQuantization::set_enabled(bool value) {
+  
+  enabled_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.tpu.SimulatedQuantization.enabled)
+}
+
+// .tensorflow.tpu.ClippingLimits clipping_limits = 2;
+inline bool SimulatedQuantization::has_clipping_limits() const {
+  return this != internal_default_instance() && clipping_limits_ != NULL;
+}
+inline void SimulatedQuantization::clear_clipping_limits() {
+  if (GetArenaNoVirtual() == NULL && clipping_limits_ != NULL) {
+    delete clipping_limits_;
+  }
+  clipping_limits_ = NULL;
+}
+inline const ::tensorflow::tpu::ClippingLimits& SimulatedQuantization::_internal_clipping_limits() const {
+  return *clipping_limits_;
+}
+inline const ::tensorflow::tpu::ClippingLimits& SimulatedQuantization::clipping_limits() const {
+  const ::tensorflow::tpu::ClippingLimits* p = clipping_limits_;
+  // @@protoc_insertion_point(field_get:tensorflow.tpu.SimulatedQuantization.clipping_limits)
+  return p != NULL ? *p : *reinterpret_cast<const ::tensorflow::tpu::ClippingLimits*>(
+      &::tensorflow::tpu::_ClippingLimits_default_instance_);
+}
+inline ::tensorflow::tpu::ClippingLimits* SimulatedQuantization::release_clipping_limits() {
+  // @@protoc_insertion_point(field_release:tensorflow.tpu.SimulatedQuantization.clipping_limits)
+  
+  ::tensorflow::tpu::ClippingLimits* temp = clipping_limits_;
+  clipping_limits_ = NULL;
+  return temp;
+}
+inline ::tensorflow::tpu::ClippingLimits* SimulatedQuantization::mutable_clipping_limits() {
+  
+  if (clipping_limits_ == NULL) {
+    auto* p = CreateMaybeMessage<::tensorflow::tpu::ClippingLimits>(GetArenaNoVirtual());
+    clipping_limits_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:tensorflow.tpu.SimulatedQuantization.clipping_limits)
+  return clipping_limits_;
+}
+inline void SimulatedQuantization::set_allocated_clipping_limits(::tensorflow::tpu::ClippingLimits* clipping_limits) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete clipping_limits_;
+  }
+  if (clipping_limits) {
+    ::google::protobuf::Arena* submessage_arena = NULL;
+    if (message_arena != submessage_arena) {
+      clipping_limits = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, clipping_limits, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  clipping_limits_ = clipping_limits;
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.tpu.SimulatedQuantization.clipping_limits)
+}
+
+// int32 num_buckets = 3;
+inline void SimulatedQuantization::clear_num_buckets() {
+  num_buckets_ = 0;
+}
+inline ::google::protobuf::int32 SimulatedQuantization::num_buckets() const {
+  // @@protoc_insertion_point(field_get:tensorflow.tpu.SimulatedQuantization.num_buckets)
+  return num_buckets_;
+}
+inline void SimulatedQuantization::set_num_buckets(::google::protobuf::int32 value) {
+  
+  num_buckets_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.tpu.SimulatedQuantization.num_buckets)
+}
+
+// -------------------------------------------------------------------
+
 // DynamicLearningRate
 
 // int32 tag = 1;
@@ -3538,18 +4249,78 @@ inline LearningRate::LearningRateCase LearningRate::learning_rate_case() const {
 
 // AdagradParameters
 
-// float initial_accumulator = 1;
-inline void AdagradParameters::clear_initial_accumulator() {
-  initial_accumulator_ = 0;
+// -------------------------------------------------------------------
+
+// AdagradMomentumParameters
+
+// float momentum = 1;
+inline void AdagradMomentumParameters::clear_momentum() {
+  momentum_ = 0;
 }
-inline float AdagradParameters::initial_accumulator() const {
-  // @@protoc_insertion_point(field_get:tensorflow.tpu.AdagradParameters.initial_accumulator)
-  return initial_accumulator_;
+inline float AdagradMomentumParameters::momentum() const {
+  // @@protoc_insertion_point(field_get:tensorflow.tpu.AdagradMomentumParameters.momentum)
+  return momentum_;
 }
-inline void AdagradParameters::set_initial_accumulator(float value) {
+inline void AdagradMomentumParameters::set_momentum(float value) {
   
-  initial_accumulator_ = value;
-  // @@protoc_insertion_point(field_set:tensorflow.tpu.AdagradParameters.initial_accumulator)
+  momentum_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.tpu.AdagradMomentumParameters.momentum)
+}
+
+// bool use_nesterov = 2;
+inline void AdagradMomentumParameters::clear_use_nesterov() {
+  use_nesterov_ = false;
+}
+inline bool AdagradMomentumParameters::use_nesterov() const {
+  // @@protoc_insertion_point(field_get:tensorflow.tpu.AdagradMomentumParameters.use_nesterov)
+  return use_nesterov_;
+}
+inline void AdagradMomentumParameters::set_use_nesterov(bool value) {
+  
+  use_nesterov_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.tpu.AdagradMomentumParameters.use_nesterov)
+}
+
+// float exponent = 3;
+inline void AdagradMomentumParameters::clear_exponent() {
+  exponent_ = 0;
+}
+inline float AdagradMomentumParameters::exponent() const {
+  // @@protoc_insertion_point(field_get:tensorflow.tpu.AdagradMomentumParameters.exponent)
+  return exponent_;
+}
+inline void AdagradMomentumParameters::set_exponent(float value) {
+  
+  exponent_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.tpu.AdagradMomentumParameters.exponent)
+}
+
+// float beta2 = 4;
+inline void AdagradMomentumParameters::clear_beta2() {
+  beta2_ = 0;
+}
+inline float AdagradMomentumParameters::beta2() const {
+  // @@protoc_insertion_point(field_get:tensorflow.tpu.AdagradMomentumParameters.beta2)
+  return beta2_;
+}
+inline void AdagradMomentumParameters::set_beta2(float value) {
+  
+  beta2_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.tpu.AdagradMomentumParameters.beta2)
+}
+
+// float epsilon = 5;
+inline void AdagradMomentumParameters::clear_epsilon() {
+  epsilon_ = 0;
+}
+inline float AdagradMomentumParameters::epsilon() const {
+  // @@protoc_insertion_point(field_get:tensorflow.tpu.AdagradMomentumParameters.epsilon)
+  return epsilon_;
+}
+inline void AdagradMomentumParameters::set_epsilon(float value) {
+  
+  epsilon_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.tpu.AdagradMomentumParameters.epsilon)
 }
 
 // -------------------------------------------------------------------
@@ -3648,32 +4419,46 @@ inline void FtrlParameters::set_lr_power(float value) {
   // @@protoc_insertion_point(field_set:tensorflow.tpu.FtrlParameters.lr_power)
 }
 
-// float initial_accum = 4;
-inline void FtrlParameters::clear_initial_accum() {
-  initial_accum_ = 0;
+// float beta = 7;
+inline void FtrlParameters::clear_beta() {
+  beta_ = 0;
 }
-inline float FtrlParameters::initial_accum() const {
-  // @@protoc_insertion_point(field_get:tensorflow.tpu.FtrlParameters.initial_accum)
-  return initial_accum_;
+inline float FtrlParameters::beta() const {
+  // @@protoc_insertion_point(field_get:tensorflow.tpu.FtrlParameters.beta)
+  return beta_;
 }
-inline void FtrlParameters::set_initial_accum(float value) {
+inline void FtrlParameters::set_beta(float value) {
   
-  initial_accum_ = value;
-  // @@protoc_insertion_point(field_set:tensorflow.tpu.FtrlParameters.initial_accum)
+  beta_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.tpu.FtrlParameters.beta)
 }
 
-// float initial_linear = 5;
-inline void FtrlParameters::clear_initial_linear() {
-  initial_linear_ = 0;
+// bool multiply_linear_by_lr = 6;
+inline void FtrlParameters::clear_multiply_linear_by_lr() {
+  multiply_linear_by_lr_ = false;
 }
-inline float FtrlParameters::initial_linear() const {
-  // @@protoc_insertion_point(field_get:tensorflow.tpu.FtrlParameters.initial_linear)
-  return initial_linear_;
+inline bool FtrlParameters::multiply_linear_by_lr() const {
+  // @@protoc_insertion_point(field_get:tensorflow.tpu.FtrlParameters.multiply_linear_by_lr)
+  return multiply_linear_by_lr_;
 }
-inline void FtrlParameters::set_initial_linear(float value) {
+inline void FtrlParameters::set_multiply_linear_by_lr(bool value) {
   
-  initial_linear_ = value;
-  // @@protoc_insertion_point(field_set:tensorflow.tpu.FtrlParameters.initial_linear)
+  multiply_linear_by_lr_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.tpu.FtrlParameters.multiply_linear_by_lr)
+}
+
+// bool allow_zero_accumulator = 8 [deprecated = true];
+inline void FtrlParameters::clear_allow_zero_accumulator() {
+  allow_zero_accumulator_ = false;
+}
+inline bool FtrlParameters::allow_zero_accumulator() const {
+  // @@protoc_insertion_point(field_get:tensorflow.tpu.FtrlParameters.allow_zero_accumulator)
+  return allow_zero_accumulator_;
+}
+inline void FtrlParameters::set_allow_zero_accumulator(bool value) {
+  
+  allow_zero_accumulator_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.tpu.FtrlParameters.allow_zero_accumulator)
 }
 
 // -------------------------------------------------------------------
@@ -3720,34 +4505,6 @@ inline void AdamParameters::set_epsilon(float value) {
   
   epsilon_ = value;
   // @@protoc_insertion_point(field_set:tensorflow.tpu.AdamParameters.epsilon)
-}
-
-// float initial_m = 6;
-inline void AdamParameters::clear_initial_m() {
-  initial_m_ = 0;
-}
-inline float AdamParameters::initial_m() const {
-  // @@protoc_insertion_point(field_get:tensorflow.tpu.AdamParameters.initial_m)
-  return initial_m_;
-}
-inline void AdamParameters::set_initial_m(float value) {
-  
-  initial_m_ = value;
-  // @@protoc_insertion_point(field_set:tensorflow.tpu.AdamParameters.initial_m)
-}
-
-// float initial_v = 7;
-inline void AdamParameters::clear_initial_v() {
-  initial_v_ = 0;
-}
-inline float AdamParameters::initial_v() const {
-  // @@protoc_insertion_point(field_get:tensorflow.tpu.AdamParameters.initial_v)
-  return initial_v_;
-}
-inline void AdamParameters::set_initial_v(float value) {
-  
-  initial_v_ = value;
-  // @@protoc_insertion_point(field_set:tensorflow.tpu.AdamParameters.initial_v)
 }
 
 // bool use_non_lazy_adam = 8;
@@ -3810,20 +4567,6 @@ inline void MomentumParameters::set_use_nesterov(bool value) {
   // @@protoc_insertion_point(field_set:tensorflow.tpu.MomentumParameters.use_nesterov)
 }
 
-// float initial_accum = 3;
-inline void MomentumParameters::clear_initial_accum() {
-  initial_accum_ = 0;
-}
-inline float MomentumParameters::initial_accum() const {
-  // @@protoc_insertion_point(field_get:tensorflow.tpu.MomentumParameters.initial_accum)
-  return initial_accum_;
-}
-inline void MomentumParameters::set_initial_accum(float value) {
-  
-  initial_accum_ = value;
-  // @@protoc_insertion_point(field_set:tensorflow.tpu.MomentumParameters.initial_accum)
-}
-
 // -------------------------------------------------------------------
 
 // RmsPropParameters
@@ -3870,34 +4613,6 @@ inline void RmsPropParameters::set_epsilon(float value) {
   // @@protoc_insertion_point(field_set:tensorflow.tpu.RmsPropParameters.epsilon)
 }
 
-// float initial_ms = 4;
-inline void RmsPropParameters::clear_initial_ms() {
-  initial_ms_ = 0;
-}
-inline float RmsPropParameters::initial_ms() const {
-  // @@protoc_insertion_point(field_get:tensorflow.tpu.RmsPropParameters.initial_ms)
-  return initial_ms_;
-}
-inline void RmsPropParameters::set_initial_ms(float value) {
-  
-  initial_ms_ = value;
-  // @@protoc_insertion_point(field_set:tensorflow.tpu.RmsPropParameters.initial_ms)
-}
-
-// float initial_mom = 5;
-inline void RmsPropParameters::clear_initial_mom() {
-  initial_mom_ = 0;
-}
-inline float RmsPropParameters::initial_mom() const {
-  // @@protoc_insertion_point(field_get:tensorflow.tpu.RmsPropParameters.initial_mom)
-  return initial_mom_;
-}
-inline void RmsPropParameters::set_initial_mom(float value) {
-  
-  initial_mom_ = value;
-  // @@protoc_insertion_point(field_set:tensorflow.tpu.RmsPropParameters.initial_mom)
-}
-
 // -------------------------------------------------------------------
 
 // CenteredRmsPropParameters
@@ -3942,48 +4657,6 @@ inline void CenteredRmsPropParameters::set_epsilon(float value) {
   
   epsilon_ = value;
   // @@protoc_insertion_point(field_set:tensorflow.tpu.CenteredRmsPropParameters.epsilon)
-}
-
-// float initial_ms = 4;
-inline void CenteredRmsPropParameters::clear_initial_ms() {
-  initial_ms_ = 0;
-}
-inline float CenteredRmsPropParameters::initial_ms() const {
-  // @@protoc_insertion_point(field_get:tensorflow.tpu.CenteredRmsPropParameters.initial_ms)
-  return initial_ms_;
-}
-inline void CenteredRmsPropParameters::set_initial_ms(float value) {
-  
-  initial_ms_ = value;
-  // @@protoc_insertion_point(field_set:tensorflow.tpu.CenteredRmsPropParameters.initial_ms)
-}
-
-// float initial_mom = 5;
-inline void CenteredRmsPropParameters::clear_initial_mom() {
-  initial_mom_ = 0;
-}
-inline float CenteredRmsPropParameters::initial_mom() const {
-  // @@protoc_insertion_point(field_get:tensorflow.tpu.CenteredRmsPropParameters.initial_mom)
-  return initial_mom_;
-}
-inline void CenteredRmsPropParameters::set_initial_mom(float value) {
-  
-  initial_mom_ = value;
-  // @@protoc_insertion_point(field_set:tensorflow.tpu.CenteredRmsPropParameters.initial_mom)
-}
-
-// float initial_mg = 6;
-inline void CenteredRmsPropParameters::clear_initial_mg() {
-  initial_mg_ = 0;
-}
-inline float CenteredRmsPropParameters::initial_mg() const {
-  // @@protoc_insertion_point(field_get:tensorflow.tpu.CenteredRmsPropParameters.initial_mg)
-  return initial_mg_;
-}
-inline void CenteredRmsPropParameters::set_initial_mg(float value) {
-  
-  initial_mg_ = value;
-  // @@protoc_insertion_point(field_set:tensorflow.tpu.CenteredRmsPropParameters.initial_mg)
 }
 
 // -------------------------------------------------------------------
@@ -4158,48 +4831,6 @@ inline void MdlAdagradLightParameters::set_mdl_regularize(bool value) {
   // @@protoc_insertion_point(field_set:tensorflow.tpu.MdlAdagradLightParameters.mdl_regularize)
 }
 
-// float initial_accumulator = 13;
-inline void MdlAdagradLightParameters::clear_initial_accumulator() {
-  initial_accumulator_ = 0;
-}
-inline float MdlAdagradLightParameters::initial_accumulator() const {
-  // @@protoc_insertion_point(field_get:tensorflow.tpu.MdlAdagradLightParameters.initial_accumulator)
-  return initial_accumulator_;
-}
-inline void MdlAdagradLightParameters::set_initial_accumulator(float value) {
-  
-  initial_accumulator_ = value;
-  // @@protoc_insertion_point(field_set:tensorflow.tpu.MdlAdagradLightParameters.initial_accumulator)
-}
-
-// float initial_weight = 14;
-inline void MdlAdagradLightParameters::clear_initial_weight() {
-  initial_weight_ = 0;
-}
-inline float MdlAdagradLightParameters::initial_weight() const {
-  // @@protoc_insertion_point(field_get:tensorflow.tpu.MdlAdagradLightParameters.initial_weight)
-  return initial_weight_;
-}
-inline void MdlAdagradLightParameters::set_initial_weight(float value) {
-  
-  initial_weight_ = value;
-  // @@protoc_insertion_point(field_set:tensorflow.tpu.MdlAdagradLightParameters.initial_weight)
-}
-
-// float initial_benefit = 15;
-inline void MdlAdagradLightParameters::clear_initial_benefit() {
-  initial_benefit_ = 0;
-}
-inline float MdlAdagradLightParameters::initial_benefit() const {
-  // @@protoc_insertion_point(field_get:tensorflow.tpu.MdlAdagradLightParameters.initial_benefit)
-  return initial_benefit_;
-}
-inline void MdlAdagradLightParameters::set_initial_benefit(float value) {
-  
-  initial_benefit_ = value;
-  // @@protoc_insertion_point(field_set:tensorflow.tpu.MdlAdagradLightParameters.initial_benefit)
-}
-
 // -------------------------------------------------------------------
 
 // AdadeltaParameters
@@ -4230,34 +4861,6 @@ inline void AdadeltaParameters::set_epsilon(float value) {
   
   epsilon_ = value;
   // @@protoc_insertion_point(field_set:tensorflow.tpu.AdadeltaParameters.epsilon)
-}
-
-// float initial_accumulator = 3;
-inline void AdadeltaParameters::clear_initial_accumulator() {
-  initial_accumulator_ = 0;
-}
-inline float AdadeltaParameters::initial_accumulator() const {
-  // @@protoc_insertion_point(field_get:tensorflow.tpu.AdadeltaParameters.initial_accumulator)
-  return initial_accumulator_;
-}
-inline void AdadeltaParameters::set_initial_accumulator(float value) {
-  
-  initial_accumulator_ = value;
-  // @@protoc_insertion_point(field_set:tensorflow.tpu.AdadeltaParameters.initial_accumulator)
-}
-
-// float initial_update = 4;
-inline void AdadeltaParameters::clear_initial_update() {
-  initial_update_ = 0;
-}
-inline float AdadeltaParameters::initial_update() const {
-  // @@protoc_insertion_point(field_get:tensorflow.tpu.AdadeltaParameters.initial_update)
-  return initial_update_;
-}
-inline void AdadeltaParameters::set_initial_update(float value) {
-  
-  initial_update_ = value;
-  // @@protoc_insertion_point(field_set:tensorflow.tpu.AdadeltaParameters.initial_update)
 }
 
 // -------------------------------------------------------------------
@@ -4291,28 +4894,6 @@ inline void ProximalAdagradParameters::set_l2(float value) {
   l2_ = value;
   // @@protoc_insertion_point(field_set:tensorflow.tpu.ProximalAdagradParameters.l2)
 }
-
-// float initial_accumulator = 3;
-inline void ProximalAdagradParameters::clear_initial_accumulator() {
-  initial_accumulator_ = 0;
-}
-inline float ProximalAdagradParameters::initial_accumulator() const {
-  // @@protoc_insertion_point(field_get:tensorflow.tpu.ProximalAdagradParameters.initial_accumulator)
-  return initial_accumulator_;
-}
-inline void ProximalAdagradParameters::set_initial_accumulator(float value) {
-  
-  initial_accumulator_ = value;
-  // @@protoc_insertion_point(field_set:tensorflow.tpu.ProximalAdagradParameters.initial_accumulator)
-}
-
-// -------------------------------------------------------------------
-
-// OnlineYogiParameters_SignActivation
-
-// -------------------------------------------------------------------
-
-// OnlineYogiParameters_TanhActivation
 
 // -------------------------------------------------------------------
 
@@ -4360,134 +4941,204 @@ inline void OnlineYogiParameters::set_beta2(float value) {
   // @@protoc_insertion_point(field_set:tensorflow.tpu.OnlineYogiParameters.beta2)
 }
 
-// float initial_v = 4;
-inline void OnlineYogiParameters::clear_initial_v() {
-  initial_v_ = 0;
+// -------------------------------------------------------------------
+
+// ProximalYogiParameters
+
+// float l1 = 1;
+inline void ProximalYogiParameters::clear_l1() {
+  l1_ = 0;
 }
-inline float OnlineYogiParameters::initial_v() const {
-  // @@protoc_insertion_point(field_get:tensorflow.tpu.OnlineYogiParameters.initial_v)
-  return initial_v_;
+inline float ProximalYogiParameters::l1() const {
+  // @@protoc_insertion_point(field_get:tensorflow.tpu.ProximalYogiParameters.l1)
+  return l1_;
 }
-inline void OnlineYogiParameters::set_initial_v(float value) {
+inline void ProximalYogiParameters::set_l1(float value) {
   
-  initial_v_ = value;
-  // @@protoc_insertion_point(field_set:tensorflow.tpu.OnlineYogiParameters.initial_v)
+  l1_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.tpu.ProximalYogiParameters.l1)
 }
 
-// float initial_linear = 5;
-inline void OnlineYogiParameters::clear_initial_linear() {
-  initial_linear_ = 0;
+// float l2 = 2;
+inline void ProximalYogiParameters::clear_l2() {
+  l2_ = 0;
 }
-inline float OnlineYogiParameters::initial_linear() const {
-  // @@protoc_insertion_point(field_get:tensorflow.tpu.OnlineYogiParameters.initial_linear)
-  return initial_linear_;
+inline float ProximalYogiParameters::l2() const {
+  // @@protoc_insertion_point(field_get:tensorflow.tpu.ProximalYogiParameters.l2)
+  return l2_;
 }
-inline void OnlineYogiParameters::set_initial_linear(float value) {
+inline void ProximalYogiParameters::set_l2(float value) {
   
-  initial_linear_ = value;
-  // @@protoc_insertion_point(field_set:tensorflow.tpu.OnlineYogiParameters.initial_linear)
+  l2_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.tpu.ProximalYogiParameters.l2)
 }
 
-// .tensorflow.tpu.OnlineYogiParameters.SignActivation sign = 6;
-inline bool OnlineYogiParameters::has_sign() const {
-  return activation_case() == kSign;
+// float beta1 = 3;
+inline void ProximalYogiParameters::clear_beta1() {
+  beta1_ = 0;
 }
-inline void OnlineYogiParameters::set_has_sign() {
-  _oneof_case_[0] = kSign;
+inline float ProximalYogiParameters::beta1() const {
+  // @@protoc_insertion_point(field_get:tensorflow.tpu.ProximalYogiParameters.beta1)
+  return beta1_;
 }
-inline void OnlineYogiParameters::clear_sign() {
-  if (has_sign()) {
-    delete activation_.sign_;
-    clear_has_activation();
+inline void ProximalYogiParameters::set_beta1(float value) {
+  
+  beta1_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.tpu.ProximalYogiParameters.beta1)
+}
+
+// float beta2 = 4;
+inline void ProximalYogiParameters::clear_beta2() {
+  beta2_ = 0;
+}
+inline float ProximalYogiParameters::beta2() const {
+  // @@protoc_insertion_point(field_get:tensorflow.tpu.ProximalYogiParameters.beta2)
+  return beta2_;
+}
+inline void ProximalYogiParameters::set_beta2(float value) {
+  
+  beta2_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.tpu.ProximalYogiParameters.beta2)
+}
+
+// float epsilon = 5;
+inline void ProximalYogiParameters::clear_epsilon() {
+  epsilon_ = 0;
+}
+inline float ProximalYogiParameters::epsilon() const {
+  // @@protoc_insertion_point(field_get:tensorflow.tpu.ProximalYogiParameters.epsilon)
+  return epsilon_;
+}
+inline void ProximalYogiParameters::set_epsilon(float value) {
+  
+  epsilon_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.tpu.ProximalYogiParameters.epsilon)
+}
+
+// -------------------------------------------------------------------
+
+// FrequencyEstimatorParameters
+
+// float tau = 1;
+inline void FrequencyEstimatorParameters::clear_tau() {
+  tau_ = 0;
+}
+inline float FrequencyEstimatorParameters::tau() const {
+  // @@protoc_insertion_point(field_get:tensorflow.tpu.FrequencyEstimatorParameters.tau)
+  return tau_;
+}
+inline void FrequencyEstimatorParameters::set_tau(float value) {
+  
+  tau_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.tpu.FrequencyEstimatorParameters.tau)
+}
+
+// float max_delta = 2;
+inline void FrequencyEstimatorParameters::clear_max_delta() {
+  max_delta_ = 0;
+}
+inline float FrequencyEstimatorParameters::max_delta() const {
+  // @@protoc_insertion_point(field_get:tensorflow.tpu.FrequencyEstimatorParameters.max_delta)
+  return max_delta_;
+}
+inline void FrequencyEstimatorParameters::set_max_delta(float value) {
+  
+  max_delta_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.tpu.FrequencyEstimatorParameters.max_delta)
+}
+
+// float outlier_threshold = 3;
+inline void FrequencyEstimatorParameters::clear_outlier_threshold() {
+  outlier_threshold_ = 0;
+}
+inline float FrequencyEstimatorParameters::outlier_threshold() const {
+  // @@protoc_insertion_point(field_get:tensorflow.tpu.FrequencyEstimatorParameters.outlier_threshold)
+  return outlier_threshold_;
+}
+inline void FrequencyEstimatorParameters::set_outlier_threshold(float value) {
+  
+  outlier_threshold_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.tpu.FrequencyEstimatorParameters.outlier_threshold)
+}
+
+// float weight_exponent = 4;
+inline void FrequencyEstimatorParameters::clear_weight_exponent() {
+  weight_exponent_ = 0;
+}
+inline float FrequencyEstimatorParameters::weight_exponent() const {
+  // @@protoc_insertion_point(field_get:tensorflow.tpu.FrequencyEstimatorParameters.weight_exponent)
+  return weight_exponent_;
+}
+inline void FrequencyEstimatorParameters::set_weight_exponent(float value) {
+  
+  weight_exponent_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.tpu.FrequencyEstimatorParameters.weight_exponent)
+}
+
+// -------------------------------------------------------------------
+
+// UserDefinedProgramParameters
+
+// .xla.HloModuleProto program = 1;
+inline bool UserDefinedProgramParameters::has_program() const {
+  return this != internal_default_instance() && program_ != NULL;
+}
+inline const ::xla::HloModuleProto& UserDefinedProgramParameters::_internal_program() const {
+  return *program_;
+}
+inline const ::xla::HloModuleProto& UserDefinedProgramParameters::program() const {
+  const ::xla::HloModuleProto* p = program_;
+  // @@protoc_insertion_point(field_get:tensorflow.tpu.UserDefinedProgramParameters.program)
+  return p != NULL ? *p : *reinterpret_cast<const ::xla::HloModuleProto*>(
+      &::xla::_HloModuleProto_default_instance_);
+}
+inline ::xla::HloModuleProto* UserDefinedProgramParameters::release_program() {
+  // @@protoc_insertion_point(field_release:tensorflow.tpu.UserDefinedProgramParameters.program)
+  
+  ::xla::HloModuleProto* temp = program_;
+  program_ = NULL;
+  return temp;
+}
+inline ::xla::HloModuleProto* UserDefinedProgramParameters::mutable_program() {
+  
+  if (program_ == NULL) {
+    auto* p = CreateMaybeMessage<::xla::HloModuleProto>(GetArenaNoVirtual());
+    program_ = p;
   }
+  // @@protoc_insertion_point(field_mutable:tensorflow.tpu.UserDefinedProgramParameters.program)
+  return program_;
 }
-inline const ::tensorflow::tpu::OnlineYogiParameters_SignActivation& OnlineYogiParameters::_internal_sign() const {
-  return *activation_.sign_;
-}
-inline ::tensorflow::tpu::OnlineYogiParameters_SignActivation* OnlineYogiParameters::release_sign() {
-  // @@protoc_insertion_point(field_release:tensorflow.tpu.OnlineYogiParameters.sign)
-  if (has_sign()) {
-    clear_has_activation();
-      ::tensorflow::tpu::OnlineYogiParameters_SignActivation* temp = activation_.sign_;
-    activation_.sign_ = NULL;
-    return temp;
+inline void UserDefinedProgramParameters::set_allocated_program(::xla::HloModuleProto* program) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete reinterpret_cast< ::google::protobuf::MessageLite*>(program_);
+  }
+  if (program) {
+    ::google::protobuf::Arena* submessage_arena =
+      reinterpret_cast<::google::protobuf::MessageLite*>(program)->GetArena();
+    if (message_arena != submessage_arena) {
+      program = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, program, submessage_arena);
+    }
+    
   } else {
-    return NULL;
+    
   }
-}
-inline const ::tensorflow::tpu::OnlineYogiParameters_SignActivation& OnlineYogiParameters::sign() const {
-  // @@protoc_insertion_point(field_get:tensorflow.tpu.OnlineYogiParameters.sign)
-  return has_sign()
-      ? *activation_.sign_
-      : *reinterpret_cast< ::tensorflow::tpu::OnlineYogiParameters_SignActivation*>(&::tensorflow::tpu::_OnlineYogiParameters_SignActivation_default_instance_);
-}
-inline ::tensorflow::tpu::OnlineYogiParameters_SignActivation* OnlineYogiParameters::mutable_sign() {
-  if (!has_sign()) {
-    clear_activation();
-    set_has_sign();
-    activation_.sign_ = CreateMaybeMessage< ::tensorflow::tpu::OnlineYogiParameters_SignActivation >(
-        GetArenaNoVirtual());
-  }
-  // @@protoc_insertion_point(field_mutable:tensorflow.tpu.OnlineYogiParameters.sign)
-  return activation_.sign_;
+  program_ = program;
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.tpu.UserDefinedProgramParameters.program)
 }
 
-// .tensorflow.tpu.OnlineYogiParameters.TanhActivation tanh = 7;
-inline bool OnlineYogiParameters::has_tanh() const {
-  return activation_case() == kTanh;
-}
-inline void OnlineYogiParameters::set_has_tanh() {
-  _oneof_case_[0] = kTanh;
-}
-inline void OnlineYogiParameters::clear_tanh() {
-  if (has_tanh()) {
-    delete activation_.tanh_;
-    clear_has_activation();
-  }
-}
-inline const ::tensorflow::tpu::OnlineYogiParameters_TanhActivation& OnlineYogiParameters::_internal_tanh() const {
-  return *activation_.tanh_;
-}
-inline ::tensorflow::tpu::OnlineYogiParameters_TanhActivation* OnlineYogiParameters::release_tanh() {
-  // @@protoc_insertion_point(field_release:tensorflow.tpu.OnlineYogiParameters.tanh)
-  if (has_tanh()) {
-    clear_has_activation();
-      ::tensorflow::tpu::OnlineYogiParameters_TanhActivation* temp = activation_.tanh_;
-    activation_.tanh_ = NULL;
-    return temp;
-  } else {
-    return NULL;
-  }
-}
-inline const ::tensorflow::tpu::OnlineYogiParameters_TanhActivation& OnlineYogiParameters::tanh() const {
-  // @@protoc_insertion_point(field_get:tensorflow.tpu.OnlineYogiParameters.tanh)
-  return has_tanh()
-      ? *activation_.tanh_
-      : *reinterpret_cast< ::tensorflow::tpu::OnlineYogiParameters_TanhActivation*>(&::tensorflow::tpu::_OnlineYogiParameters_TanhActivation_default_instance_);
-}
-inline ::tensorflow::tpu::OnlineYogiParameters_TanhActivation* OnlineYogiParameters::mutable_tanh() {
-  if (!has_tanh()) {
-    clear_activation();
-    set_has_tanh();
-    activation_.tanh_ = CreateMaybeMessage< ::tensorflow::tpu::OnlineYogiParameters_TanhActivation >(
-        GetArenaNoVirtual());
-  }
-  // @@protoc_insertion_point(field_mutable:tensorflow.tpu.OnlineYogiParameters.tanh)
-  return activation_.tanh_;
-}
+// -------------------------------------------------------------------
 
-inline bool OnlineYogiParameters::has_activation() const {
-  return activation_case() != ACTIVATION_NOT_SET;
-}
-inline void OnlineYogiParameters::clear_has_activation() {
-  _oneof_case_[0] = ACTIVATION_NOT_SET;
-}
-inline OnlineYogiParameters::ActivationCase OnlineYogiParameters::activation_case() const {
-  return OnlineYogiParameters::ActivationCase(_oneof_case_[0]);
-}
+// AssignParameters
+
 // -------------------------------------------------------------------
 
 // GradientAccumulationStatus
+
+// -------------------------------------------------------------------
+
+// LowDimensionalPackingStatus
 
 // -------------------------------------------------------------------
 
@@ -4687,6 +5338,74 @@ inline void OptimizationParameters::set_weight_decay_factor(float value) {
   // @@protoc_insertion_point(field_set:tensorflow.tpu.OptimizationParameters.weight_decay_factor)
 }
 
+// bool multiply_weight_decay_factor_by_learning_rate = 22;
+inline void OptimizationParameters::clear_multiply_weight_decay_factor_by_learning_rate() {
+  multiply_weight_decay_factor_by_learning_rate_ = false;
+}
+inline bool OptimizationParameters::multiply_weight_decay_factor_by_learning_rate() const {
+  // @@protoc_insertion_point(field_get:tensorflow.tpu.OptimizationParameters.multiply_weight_decay_factor_by_learning_rate)
+  return multiply_weight_decay_factor_by_learning_rate_;
+}
+inline void OptimizationParameters::set_multiply_weight_decay_factor_by_learning_rate(bool value) {
+  
+  multiply_weight_decay_factor_by_learning_rate_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.tpu.OptimizationParameters.multiply_weight_decay_factor_by_learning_rate)
+}
+
+// .tensorflow.tpu.SimulatedQuantization simulated_quantization = 27;
+inline bool OptimizationParameters::has_simulated_quantization() const {
+  return this != internal_default_instance() && simulated_quantization_ != NULL;
+}
+inline void OptimizationParameters::clear_simulated_quantization() {
+  if (GetArenaNoVirtual() == NULL && simulated_quantization_ != NULL) {
+    delete simulated_quantization_;
+  }
+  simulated_quantization_ = NULL;
+}
+inline const ::tensorflow::tpu::SimulatedQuantization& OptimizationParameters::_internal_simulated_quantization() const {
+  return *simulated_quantization_;
+}
+inline const ::tensorflow::tpu::SimulatedQuantization& OptimizationParameters::simulated_quantization() const {
+  const ::tensorflow::tpu::SimulatedQuantization* p = simulated_quantization_;
+  // @@protoc_insertion_point(field_get:tensorflow.tpu.OptimizationParameters.simulated_quantization)
+  return p != NULL ? *p : *reinterpret_cast<const ::tensorflow::tpu::SimulatedQuantization*>(
+      &::tensorflow::tpu::_SimulatedQuantization_default_instance_);
+}
+inline ::tensorflow::tpu::SimulatedQuantization* OptimizationParameters::release_simulated_quantization() {
+  // @@protoc_insertion_point(field_release:tensorflow.tpu.OptimizationParameters.simulated_quantization)
+  
+  ::tensorflow::tpu::SimulatedQuantization* temp = simulated_quantization_;
+  simulated_quantization_ = NULL;
+  return temp;
+}
+inline ::tensorflow::tpu::SimulatedQuantization* OptimizationParameters::mutable_simulated_quantization() {
+  
+  if (simulated_quantization_ == NULL) {
+    auto* p = CreateMaybeMessage<::tensorflow::tpu::SimulatedQuantization>(GetArenaNoVirtual());
+    simulated_quantization_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:tensorflow.tpu.OptimizationParameters.simulated_quantization)
+  return simulated_quantization_;
+}
+inline void OptimizationParameters::set_allocated_simulated_quantization(::tensorflow::tpu::SimulatedQuantization* simulated_quantization) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete simulated_quantization_;
+  }
+  if (simulated_quantization) {
+    ::google::protobuf::Arena* submessage_arena = NULL;
+    if (message_arena != submessage_arena) {
+      simulated_quantization = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, simulated_quantization, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  simulated_quantization_ = simulated_quantization;
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.tpu.OptimizationParameters.simulated_quantization)
+}
+
 // .tensorflow.tpu.GradientAccumulationStatus.Status gradient_accumulation_status = 17;
 inline void OptimizationParameters::clear_gradient_accumulation_status() {
   gradient_accumulation_status_ = 0;
@@ -4699,6 +5418,20 @@ inline void OptimizationParameters::set_gradient_accumulation_status(::tensorflo
   
   gradient_accumulation_status_ = value;
   // @@protoc_insertion_point(field_set:tensorflow.tpu.OptimizationParameters.gradient_accumulation_status)
+}
+
+// .tensorflow.tpu.LowDimensionalPackingStatus.Status low_dimensional_packing_status = 28;
+inline void OptimizationParameters::clear_low_dimensional_packing_status() {
+  low_dimensional_packing_status_ = 0;
+}
+inline ::tensorflow::tpu::LowDimensionalPackingStatus_Status OptimizationParameters::low_dimensional_packing_status() const {
+  // @@protoc_insertion_point(field_get:tensorflow.tpu.OptimizationParameters.low_dimensional_packing_status)
+  return static_cast< ::tensorflow::tpu::LowDimensionalPackingStatus_Status >(low_dimensional_packing_status_);
+}
+inline void OptimizationParameters::set_low_dimensional_packing_status(::tensorflow::tpu::LowDimensionalPackingStatus_Status value) {
+  
+  low_dimensional_packing_status_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.tpu.OptimizationParameters.low_dimensional_packing_status)
 }
 
 // .tensorflow.tpu.HotIdReplicationConfiguration hot_id_replication_configuration = 18;
@@ -4797,6 +5530,50 @@ inline ::tensorflow::tpu::AdagradParameters* OptimizationParameters::mutable_ada
   }
   // @@protoc_insertion_point(field_mutable:tensorflow.tpu.OptimizationParameters.adagrad)
   return parameters_.adagrad_;
+}
+
+// .tensorflow.tpu.AdagradMomentumParameters adagrad_momentum = 26;
+inline bool OptimizationParameters::has_adagrad_momentum() const {
+  return parameters_case() == kAdagradMomentum;
+}
+inline void OptimizationParameters::set_has_adagrad_momentum() {
+  _oneof_case_[0] = kAdagradMomentum;
+}
+inline void OptimizationParameters::clear_adagrad_momentum() {
+  if (has_adagrad_momentum()) {
+    delete parameters_.adagrad_momentum_;
+    clear_has_parameters();
+  }
+}
+inline const ::tensorflow::tpu::AdagradMomentumParameters& OptimizationParameters::_internal_adagrad_momentum() const {
+  return *parameters_.adagrad_momentum_;
+}
+inline ::tensorflow::tpu::AdagradMomentumParameters* OptimizationParameters::release_adagrad_momentum() {
+  // @@protoc_insertion_point(field_release:tensorflow.tpu.OptimizationParameters.adagrad_momentum)
+  if (has_adagrad_momentum()) {
+    clear_has_parameters();
+      ::tensorflow::tpu::AdagradMomentumParameters* temp = parameters_.adagrad_momentum_;
+    parameters_.adagrad_momentum_ = NULL;
+    return temp;
+  } else {
+    return NULL;
+  }
+}
+inline const ::tensorflow::tpu::AdagradMomentumParameters& OptimizationParameters::adagrad_momentum() const {
+  // @@protoc_insertion_point(field_get:tensorflow.tpu.OptimizationParameters.adagrad_momentum)
+  return has_adagrad_momentum()
+      ? *parameters_.adagrad_momentum_
+      : *reinterpret_cast< ::tensorflow::tpu::AdagradMomentumParameters*>(&::tensorflow::tpu::_AdagradMomentumParameters_default_instance_);
+}
+inline ::tensorflow::tpu::AdagradMomentumParameters* OptimizationParameters::mutable_adagrad_momentum() {
+  if (!has_adagrad_momentum()) {
+    clear_parameters();
+    set_has_adagrad_momentum();
+    parameters_.adagrad_momentum_ = CreateMaybeMessage< ::tensorflow::tpu::AdagradMomentumParameters >(
+        GetArenaNoVirtual());
+  }
+  // @@protoc_insertion_point(field_mutable:tensorflow.tpu.OptimizationParameters.adagrad_momentum)
+  return parameters_.adagrad_momentum_;
 }
 
 // .tensorflow.tpu.BoundedAdagradParameters bounded_adagrad = 19;
@@ -5283,6 +6060,182 @@ inline ::tensorflow::tpu::OnlineYogiParameters* OptimizationParameters::mutable_
   return parameters_.online_yogi_;
 }
 
+// .tensorflow.tpu.ProximalYogiParameters proximal_yogi = 21;
+inline bool OptimizationParameters::has_proximal_yogi() const {
+  return parameters_case() == kProximalYogi;
+}
+inline void OptimizationParameters::set_has_proximal_yogi() {
+  _oneof_case_[0] = kProximalYogi;
+}
+inline void OptimizationParameters::clear_proximal_yogi() {
+  if (has_proximal_yogi()) {
+    delete parameters_.proximal_yogi_;
+    clear_has_parameters();
+  }
+}
+inline const ::tensorflow::tpu::ProximalYogiParameters& OptimizationParameters::_internal_proximal_yogi() const {
+  return *parameters_.proximal_yogi_;
+}
+inline ::tensorflow::tpu::ProximalYogiParameters* OptimizationParameters::release_proximal_yogi() {
+  // @@protoc_insertion_point(field_release:tensorflow.tpu.OptimizationParameters.proximal_yogi)
+  if (has_proximal_yogi()) {
+    clear_has_parameters();
+      ::tensorflow::tpu::ProximalYogiParameters* temp = parameters_.proximal_yogi_;
+    parameters_.proximal_yogi_ = NULL;
+    return temp;
+  } else {
+    return NULL;
+  }
+}
+inline const ::tensorflow::tpu::ProximalYogiParameters& OptimizationParameters::proximal_yogi() const {
+  // @@protoc_insertion_point(field_get:tensorflow.tpu.OptimizationParameters.proximal_yogi)
+  return has_proximal_yogi()
+      ? *parameters_.proximal_yogi_
+      : *reinterpret_cast< ::tensorflow::tpu::ProximalYogiParameters*>(&::tensorflow::tpu::_ProximalYogiParameters_default_instance_);
+}
+inline ::tensorflow::tpu::ProximalYogiParameters* OptimizationParameters::mutable_proximal_yogi() {
+  if (!has_proximal_yogi()) {
+    clear_parameters();
+    set_has_proximal_yogi();
+    parameters_.proximal_yogi_ = CreateMaybeMessage< ::tensorflow::tpu::ProximalYogiParameters >(
+        GetArenaNoVirtual());
+  }
+  // @@protoc_insertion_point(field_mutable:tensorflow.tpu.OptimizationParameters.proximal_yogi)
+  return parameters_.proximal_yogi_;
+}
+
+// .tensorflow.tpu.FrequencyEstimatorParameters frequency_estimator = 23;
+inline bool OptimizationParameters::has_frequency_estimator() const {
+  return parameters_case() == kFrequencyEstimator;
+}
+inline void OptimizationParameters::set_has_frequency_estimator() {
+  _oneof_case_[0] = kFrequencyEstimator;
+}
+inline void OptimizationParameters::clear_frequency_estimator() {
+  if (has_frequency_estimator()) {
+    delete parameters_.frequency_estimator_;
+    clear_has_parameters();
+  }
+}
+inline const ::tensorflow::tpu::FrequencyEstimatorParameters& OptimizationParameters::_internal_frequency_estimator() const {
+  return *parameters_.frequency_estimator_;
+}
+inline ::tensorflow::tpu::FrequencyEstimatorParameters* OptimizationParameters::release_frequency_estimator() {
+  // @@protoc_insertion_point(field_release:tensorflow.tpu.OptimizationParameters.frequency_estimator)
+  if (has_frequency_estimator()) {
+    clear_has_parameters();
+      ::tensorflow::tpu::FrequencyEstimatorParameters* temp = parameters_.frequency_estimator_;
+    parameters_.frequency_estimator_ = NULL;
+    return temp;
+  } else {
+    return NULL;
+  }
+}
+inline const ::tensorflow::tpu::FrequencyEstimatorParameters& OptimizationParameters::frequency_estimator() const {
+  // @@protoc_insertion_point(field_get:tensorflow.tpu.OptimizationParameters.frequency_estimator)
+  return has_frequency_estimator()
+      ? *parameters_.frequency_estimator_
+      : *reinterpret_cast< ::tensorflow::tpu::FrequencyEstimatorParameters*>(&::tensorflow::tpu::_FrequencyEstimatorParameters_default_instance_);
+}
+inline ::tensorflow::tpu::FrequencyEstimatorParameters* OptimizationParameters::mutable_frequency_estimator() {
+  if (!has_frequency_estimator()) {
+    clear_parameters();
+    set_has_frequency_estimator();
+    parameters_.frequency_estimator_ = CreateMaybeMessage< ::tensorflow::tpu::FrequencyEstimatorParameters >(
+        GetArenaNoVirtual());
+  }
+  // @@protoc_insertion_point(field_mutable:tensorflow.tpu.OptimizationParameters.frequency_estimator)
+  return parameters_.frequency_estimator_;
+}
+
+// .tensorflow.tpu.UserDefinedProgramParameters user_defined_program = 24;
+inline bool OptimizationParameters::has_user_defined_program() const {
+  return parameters_case() == kUserDefinedProgram;
+}
+inline void OptimizationParameters::set_has_user_defined_program() {
+  _oneof_case_[0] = kUserDefinedProgram;
+}
+inline void OptimizationParameters::clear_user_defined_program() {
+  if (has_user_defined_program()) {
+    delete parameters_.user_defined_program_;
+    clear_has_parameters();
+  }
+}
+inline const ::tensorflow::tpu::UserDefinedProgramParameters& OptimizationParameters::_internal_user_defined_program() const {
+  return *parameters_.user_defined_program_;
+}
+inline ::tensorflow::tpu::UserDefinedProgramParameters* OptimizationParameters::release_user_defined_program() {
+  // @@protoc_insertion_point(field_release:tensorflow.tpu.OptimizationParameters.user_defined_program)
+  if (has_user_defined_program()) {
+    clear_has_parameters();
+      ::tensorflow::tpu::UserDefinedProgramParameters* temp = parameters_.user_defined_program_;
+    parameters_.user_defined_program_ = NULL;
+    return temp;
+  } else {
+    return NULL;
+  }
+}
+inline const ::tensorflow::tpu::UserDefinedProgramParameters& OptimizationParameters::user_defined_program() const {
+  // @@protoc_insertion_point(field_get:tensorflow.tpu.OptimizationParameters.user_defined_program)
+  return has_user_defined_program()
+      ? *parameters_.user_defined_program_
+      : *reinterpret_cast< ::tensorflow::tpu::UserDefinedProgramParameters*>(&::tensorflow::tpu::_UserDefinedProgramParameters_default_instance_);
+}
+inline ::tensorflow::tpu::UserDefinedProgramParameters* OptimizationParameters::mutable_user_defined_program() {
+  if (!has_user_defined_program()) {
+    clear_parameters();
+    set_has_user_defined_program();
+    parameters_.user_defined_program_ = CreateMaybeMessage< ::tensorflow::tpu::UserDefinedProgramParameters >(
+        GetArenaNoVirtual());
+  }
+  // @@protoc_insertion_point(field_mutable:tensorflow.tpu.OptimizationParameters.user_defined_program)
+  return parameters_.user_defined_program_;
+}
+
+// .tensorflow.tpu.AssignParameters assign = 25;
+inline bool OptimizationParameters::has_assign() const {
+  return parameters_case() == kAssign;
+}
+inline void OptimizationParameters::set_has_assign() {
+  _oneof_case_[0] = kAssign;
+}
+inline void OptimizationParameters::clear_assign() {
+  if (has_assign()) {
+    delete parameters_.assign_;
+    clear_has_parameters();
+  }
+}
+inline const ::tensorflow::tpu::AssignParameters& OptimizationParameters::_internal_assign() const {
+  return *parameters_.assign_;
+}
+inline ::tensorflow::tpu::AssignParameters* OptimizationParameters::release_assign() {
+  // @@protoc_insertion_point(field_release:tensorflow.tpu.OptimizationParameters.assign)
+  if (has_assign()) {
+    clear_has_parameters();
+      ::tensorflow::tpu::AssignParameters* temp = parameters_.assign_;
+    parameters_.assign_ = NULL;
+    return temp;
+  } else {
+    return NULL;
+  }
+}
+inline const ::tensorflow::tpu::AssignParameters& OptimizationParameters::assign() const {
+  // @@protoc_insertion_point(field_get:tensorflow.tpu.OptimizationParameters.assign)
+  return has_assign()
+      ? *parameters_.assign_
+      : *reinterpret_cast< ::tensorflow::tpu::AssignParameters*>(&::tensorflow::tpu::_AssignParameters_default_instance_);
+}
+inline ::tensorflow::tpu::AssignParameters* OptimizationParameters::mutable_assign() {
+  if (!has_assign()) {
+    clear_parameters();
+    set_has_assign();
+    parameters_.assign_ = CreateMaybeMessage< ::tensorflow::tpu::AssignParameters >(
+        GetArenaNoVirtual());
+  }
+  // @@protoc_insertion_point(field_mutable:tensorflow.tpu.OptimizationParameters.assign)
+  return parameters_.assign_;
+}
+
 inline bool OptimizationParameters::has_parameters() const {
   return parameters_case() != PARAMETERS_NOT_SET;
 }
@@ -5295,20 +6248,6 @@ inline OptimizationParameters::ParametersCase OptimizationParameters::parameters
 // -------------------------------------------------------------------
 
 // StateVariableSpecification_UserDefined
-
-// double padding_initial_value = 1;
-inline void StateVariableSpecification_UserDefined::clear_padding_initial_value() {
-  padding_initial_value_ = 0;
-}
-inline double StateVariableSpecification_UserDefined::padding_initial_value() const {
-  // @@protoc_insertion_point(field_get:tensorflow.tpu.StateVariableSpecification.UserDefined.padding_initial_value)
-  return padding_initial_value_;
-}
-inline void StateVariableSpecification_UserDefined::set_padding_initial_value(double value) {
-  
-  padding_initial_value_ = value;
-  // @@protoc_insertion_point(field_set:tensorflow.tpu.StateVariableSpecification.UserDefined.padding_initial_value)
-}
 
 // -------------------------------------------------------------------
 
@@ -5529,6 +6468,16 @@ inline StateVariableSpecification::UsageCase StateVariableSpecification::usage_c
 
 // -------------------------------------------------------------------
 
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 
 // @@protoc_insertion_point(namespace_scope)
 
@@ -5542,6 +6491,11 @@ template <> struct is_proto_enum< ::tensorflow::tpu::GradientAccumulationStatus_
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::tensorflow::tpu::GradientAccumulationStatus_Status>() {
   return ::tensorflow::tpu::GradientAccumulationStatus_Status_descriptor();
+}
+template <> struct is_proto_enum< ::tensorflow::tpu::LowDimensionalPackingStatus_Status> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::tensorflow::tpu::LowDimensionalPackingStatus_Status>() {
+  return ::tensorflow::tpu::LowDimensionalPackingStatus_Status_descriptor();
 }
 template <> struct is_proto_enum< ::tensorflow::tpu::HotIdReplicationConfiguration_Status> : ::std::true_type {};
 template <>

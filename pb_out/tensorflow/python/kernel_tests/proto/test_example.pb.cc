@@ -60,11 +60,6 @@ class ExtraFieldsDefaultTypeInternal {
   ::google::protobuf::internal::ExplicitlyConstructed<ExtraFields>
       _instance;
 } _ExtraFields_default_instance_;
-class EnumValueDefaultTypeInternal {
- public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EnumValue>
-      _instance;
-} _EnumValue_default_instance_;
 class InnerMessageValueDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<InnerMessageValue>
@@ -199,20 +194,6 @@ static void InitDefaultsExtraFields() {
 ::google::protobuf::internal::SCCInfo<0> scc_info_ExtraFields =
     {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsExtraFields}, {}};
 
-static void InitDefaultsEnumValue() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::tensorflow::contrib::proto::_EnumValue_default_instance_;
-    new (ptr) ::tensorflow::contrib::proto::EnumValue();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::tensorflow::contrib::proto::EnumValue::InitAsDefaultInstance();
-}
-
-::google::protobuf::internal::SCCInfo<0> scc_info_EnumValue =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEnumValue}, {}};
-
 static void InitDefaultsInnerMessageValue() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -293,7 +274,6 @@ void InitDefaults() {
   ::google::protobuf::internal::InitSCC(&scc_info_PackedTestValue.base);
   ::google::protobuf::internal::InitSCC(&scc_info_PrimitiveValue.base);
   ::google::protobuf::internal::InitSCC(&scc_info_ExtraFields.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EnumValue.base);
   ::google::protobuf::internal::InitSCC(&scc_info_InnerMessageValue.base);
   ::google::protobuf::internal::InitSCC(&scc_info_MiddleMessageValue.base);
   ::google::protobuf::internal::InitSCC(&scc_info_MessageValue.base);
@@ -301,7 +281,7 @@ void InitDefaults() {
   ::google::protobuf::internal::InitSCC(&scc_info_RepeatedMessageValue.base);
 }
 
-::google::protobuf::Metadata file_level_metadata[12];
+::google::protobuf::Metadata file_level_metadata[11];
 const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[1];
 
 const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
@@ -350,6 +330,7 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::contrib::proto::TestValue, sint32_value_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::contrib::proto::TestValue, sint64_value_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::contrib::proto::TestValue, message_value_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::contrib::proto::TestValue, enum_value_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::contrib::proto::TestValue, double_value_with_default_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::contrib::proto::TestValue, float_value_with_default_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::contrib::proto::TestValue, int64_value_with_default_),
@@ -365,6 +346,7 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::contrib::proto::TestValue, sfixed64_value_with_default_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::contrib::proto::TestValue, sint32_value_with_default_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::contrib::proto::TestValue, sint64_value_with_default_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::contrib::proto::TestValue, enum_value_with_default_),
   ~0u,
   ~0u,
   ~0u,
@@ -381,21 +363,23 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   ~0u,
   ~0u,
   ~0u,
-  3,
-  5,
+  ~0u,
+  2,
   4,
-  7,
+  3,
   6,
+  5,
+  7,
   8,
   9,
-  10,
   0,
   1,
+  10,
   11,
   12,
-  13,
-  2,
   14,
+  13,
+  15,
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::contrib::proto::PackedTestValue, _has_bits_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::contrib::proto::PackedTestValue, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -417,6 +401,7 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::contrib::proto::PackedTestValue, sint32_value_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::contrib::proto::PackedTestValue, sint64_value_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::contrib::proto::PackedTestValue, message_value_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::contrib::proto::PackedTestValue, enum_value_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::contrib::proto::PackedTestValue, double_value_with_default_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::contrib::proto::PackedTestValue, float_value_with_default_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::contrib::proto::PackedTestValue, int64_value_with_default_),
@@ -432,6 +417,7 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::contrib::proto::PackedTestValue, sfixed64_value_with_default_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::contrib::proto::PackedTestValue, sint32_value_with_default_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::contrib::proto::PackedTestValue, sint64_value_with_default_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::contrib::proto::PackedTestValue, enum_value_with_default_),
   ~0u,
   ~0u,
   ~0u,
@@ -448,21 +434,23 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   ~0u,
   ~0u,
   ~0u,
-  3,
-  5,
+  ~0u,
+  2,
   4,
-  7,
+  3,
   6,
+  5,
+  7,
   8,
   9,
-  10,
   0,
   1,
+  10,
   11,
   12,
-  13,
-  2,
   14,
+  13,
+  15,
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::contrib::proto::PrimitiveValue, _has_bits_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::contrib::proto::PrimitiveValue, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -507,15 +495,6 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::contrib::proto::ExtraFields, bool_value_),
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::contrib::proto::EnumValue, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::contrib::proto::EnumValue, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::contrib::proto::EnumValue, enum_value_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::contrib::proto::EnumValue, repeated_enum_value_),
-  0,
-  ~0u,
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::contrib::proto::InnerMessageValue, _has_bits_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::contrib::proto::InnerMessageValue, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -565,16 +544,15 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
 static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   { 0, 9, sizeof(::tensorflow::contrib::proto::TestCase)},
   { 13, 21, sizeof(::tensorflow::contrib::proto::FieldSpec)},
-  { 24, 60, sizeof(::tensorflow::contrib::proto::TestValue)},
-  { 91, 127, sizeof(::tensorflow::contrib::proto::PackedTestValue)},
-  { 158, 178, sizeof(::tensorflow::contrib::proto::PrimitiveValue)},
-  { 193, 200, sizeof(::tensorflow::contrib::proto::ExtraFields)},
-  { 202, 209, sizeof(::tensorflow::contrib::proto::EnumValue)},
-  { 211, 218, sizeof(::tensorflow::contrib::proto::InnerMessageValue)},
-  { 220, 228, sizeof(::tensorflow::contrib::proto::MiddleMessageValue)},
-  { 231, 238, sizeof(::tensorflow::contrib::proto::MessageValue)},
-  { 240, 247, sizeof(::tensorflow::contrib::proto::RepeatedMessageValue_NestedMessageValue)},
-  { 249, 255, sizeof(::tensorflow::contrib::proto::RepeatedMessageValue)},
+  { 24, 62, sizeof(::tensorflow::contrib::proto::TestValue)},
+  { 95, 133, sizeof(::tensorflow::contrib::proto::PackedTestValue)},
+  { 166, 186, sizeof(::tensorflow::contrib::proto::PrimitiveValue)},
+  { 201, 208, sizeof(::tensorflow::contrib::proto::ExtraFields)},
+  { 210, 217, sizeof(::tensorflow::contrib::proto::InnerMessageValue)},
+  { 219, 227, sizeof(::tensorflow::contrib::proto::MiddleMessageValue)},
+  { 230, 237, sizeof(::tensorflow::contrib::proto::MessageValue)},
+  { 239, 246, sizeof(::tensorflow::contrib::proto::RepeatedMessageValue_NestedMessageValue)},
+  { 248, 254, sizeof(::tensorflow::contrib::proto::RepeatedMessageValue)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
@@ -584,7 +562,6 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::contrib::proto::_PackedTestValue_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::contrib::proto::_PrimitiveValue_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::contrib::proto::_ExtraFields_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::contrib::proto::_EnumValue_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::contrib::proto::_InnerMessageValue_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::contrib::proto::_MiddleMessageValue_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::contrib::proto::_MessageValue_default_instance_),
@@ -607,7 +584,7 @@ void protobuf_AssignDescriptorsOnce() {
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 12);
+  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 11);
 }
 
 void AddDescriptorsImpl() {
@@ -622,7 +599,7 @@ void AddDescriptorsImpl() {
       "nsorflow.contrib.proto.FieldSpec\"r\n\tFiel"
       "dSpec\022\014\n\004name\030\001 \001(\t\022#\n\005dtype\030\002 \001(\0162\024.ten"
       "sorflow.DataType\0222\n\005value\030\003 \001(\0132#.tensor"
-      "flow.contrib.proto.TestValue\"\364\007\n\tTestVal"
+      "flow.contrib.proto.TestValue\"\362\010\n\tTestVal"
       "ue\022\024\n\014double_value\030\001 \003(\001\022\023\n\013float_value\030"
       "\002 \003(\002\022\023\n\013int64_value\030\003 \003(\003\022\024\n\014uint64_val"
       "ue\030\004 \003(\004\022\023\n\013int32_value\030\005 \003(\005\022\025\n\rfixed64"
@@ -632,83 +609,86 @@ void AddDescriptorsImpl() {
       "\022\026\n\016sfixed32_value\030\017 \003(\017\022\026\n\016sfixed64_val"
       "ue\030\020 \003(\020\022\024\n\014sint32_value\030\021 \003(\021\022\024\n\014sint64"
       "_value\030\022 \003(\022\022\?\n\rmessage_value\030\023 \003(\0132(.te"
-      "nsorflow.contrib.proto.PrimitiveValue\022$\n"
-      "\031double_value_with_default\030\024 \001(\001:\0011\022#\n\030f"
-      "loat_value_with_default\030\025 \001(\002:\0012\022#\n\030int6"
-      "4_value_with_default\030\026 \001(\003:\0013\022$\n\031uint64_"
-      "value_with_default\030\027 \001(\004:\0014\022#\n\030int32_val"
-      "ue_with_default\030\030 \001(\005:\0015\022%\n\032fixed64_valu"
-      "e_with_default\030\031 \001(\006:\0016\022%\n\032fixed32_value"
-      "_with_default\030\032 \001(\007:\0017\022%\n\027bool_value_wit"
-      "h_default\030\033 \001(\010:\004true\022$\n\031string_value_wi"
-      "th_default\030\034 \001(\t:\001a\0229\n\030bytes_value_with_"
-      "default\030\035 \001(\014:\027a longer default string\022$"
-      "\n\031uint32_value_with_default\030\036 \001(\r:\0019\022\'\n\033"
-      "sfixed32_value_with_default\030\037 \001(\017:\00210\022\'\n"
-      "\033sfixed64_value_with_default\030  \001(\020:\00211\022%"
-      "\n\031sint32_value_with_default\030! \001(\021:\00212\022%\n"
-      "\031sint64_value_with_default\030\" \001(\022:\00213*\005\010d"
-      "\020\310\001\"\247\010\n\017PackedTestValue\022\030\n\014double_value\030"
-      "\001 \003(\001B\002\020\001\022\027\n\013float_value\030\002 \003(\002B\002\020\001\022\027\n\013in"
-      "t64_value\030\003 \003(\003B\002\020\001\022\030\n\014uint64_value\030\004 \003("
-      "\004B\002\020\001\022\027\n\013int32_value\030\005 \003(\005B\002\020\001\022\031\n\rfixed6"
-      "4_value\030\006 \003(\006B\002\020\001\022\031\n\rfixed32_value\030\007 \003(\007"
-      "B\002\020\001\022\026\n\nbool_value\030\010 \003(\010B\002\020\001\022\024\n\014string_v"
-      "alue\030\t \003(\t\022\023\n\013bytes_value\030\014 \003(\014\022\030\n\014uint3"
-      "2_value\030\r \003(\rB\002\020\001\022\032\n\016sfixed32_value\030\017 \003("
-      "\017B\002\020\001\022\032\n\016sfixed64_value\030\020 \003(\020B\002\020\001\022\030\n\014sin"
-      "t32_value\030\021 \003(\021B\002\020\001\022\030\n\014sint64_value\030\022 \003("
-      "\022B\002\020\001\022\?\n\rmessage_value\030\023 \003(\0132(.tensorflo"
-      "w.contrib.proto.PrimitiveValue\022$\n\031double"
-      "_value_with_default\030\024 \001(\001:\0011\022#\n\030float_va"
-      "lue_with_default\030\025 \001(\002:\0012\022#\n\030int64_value"
-      "_with_default\030\026 \001(\003:\0013\022$\n\031uint64_value_w"
-      "ith_default\030\027 \001(\004:\0014\022#\n\030int32_value_with"
-      "_default\030\030 \001(\005:\0015\022%\n\032fixed64_value_with_"
-      "default\030\031 \001(\006:\0016\022%\n\032fixed32_value_with_d"
-      "efault\030\032 \001(\007:\0017\022%\n\027bool_value_with_defau"
-      "lt\030\033 \001(\010:\004true\022$\n\031string_value_with_defa"
-      "ult\030\034 \001(\t:\001a\0229\n\030bytes_value_with_default"
-      "\030\035 \001(\014:\027a longer default string\022$\n\031uint3"
-      "2_value_with_default\030\036 \001(\r:\0019\022\'\n\033sfixed3"
-      "2_value_with_default\030\037 \001(\017:\00210\022\'\n\033sfixed"
-      "64_value_with_default\030  \001(\020:\00211\022%\n\031sint3"
-      "2_value_with_default\030! \001(\021:\00212\022%\n\031sint64"
-      "_value_with_default\030\" \001(\022:\00213\"\332\002\n\016Primit"
-      "iveValue\022\024\n\014double_value\030\001 \001(\001\022\023\n\013float_"
-      "value\030\002 \001(\002\022\023\n\013int64_value\030\003 \001(\003\022\024\n\014uint"
-      "64_value\030\004 \001(\004\022\023\n\013int32_value\030\005 \001(\005\022\025\n\rf"
-      "ixed64_value\030\006 \001(\006\022\025\n\rfixed32_value\030\007 \001("
-      "\007\022\022\n\nbool_value\030\010 \001(\010\022\024\n\014string_value\030\t "
-      "\001(\t\022\023\n\013bytes_value\030\014 \001(\014\022\024\n\014uint32_value"
-      "\030\r \001(\r\022\026\n\016sfixed32_value\030\017 \001(\017\022\026\n\016sfixed"
-      "64_value\030\020 \001(\020\022\024\n\014sint32_value\030\021 \001(\021\022\024\n\014"
-      "sint64_value\030\022 \001(\022\"9\n\013ExtraFields\022\025\n\014str"
-      "ing_value\030\360\r \001(\t\022\023\n\nbool_value\030\361\r \001(\010\"\351\001"
-      "\n\tEnumValue\022=\n\nenum_value\030\016 \001(\0162).tensor"
-      "flow.contrib.proto.EnumValue.Color\022F\n\023re"
-      "peated_enum_value\030\017 \003(\0162).tensorflow.con"
-      "trib.proto.EnumValue.Color\"U\n\005Color\022\007\n\003R"
-      "ED\020\000\022\n\n\006ORANGE\020\001\022\n\n\006YELLOW\020\002\022\t\n\005GREEN\020\003\022"
-      "\010\n\004BLUE\020\004\022\n\n\006INDIGO\020\005\022\n\n\006VIOLET\020\006\">\n\021Inn"
-      "erMessageValue\022\023\n\013float_value\030\002 \001(\002\022\024\n\014b"
-      "ytes_values\030\010 \003(\014\"\204\001\n\022MiddleMessageValue"
-      "\022\024\n\014int32_values\030\005 \003(\005\022B\n\rmessage_value\030"
-      "\013 \001(\0132+.tensorflow.contrib.proto.InnerMe"
-      "ssageValue\022\024\n\014uint32_value\030\r \001(\r\"i\n\014Mess"
-      "ageValue\022\024\n\014double_value\030\001 \001(\001\022C\n\rmessag"
-      "e_value\030\013 \001(\0132,.tensorflow.contrib.proto"
-      ".MiddleMessageValue\"\262\001\n\024RepeatedMessageV"
-      "alue\022Y\n\016message_values\030\013 \003(\0132A.tensorflo"
-      "w.contrib.proto.RepeatedMessageValue.Nes"
-      "tedMessageValue\032\?\n\022NestedMessageValue\022\023\n"
-      "\013float_value\030\002 \001(\002\022\024\n\014bytes_values\030\010 \003(\014"
-      ":`\n\text_value\022#.tensorflow.contrib.proto"
-      ".TestValue\030d \003(\0132(.tensorflow.contrib.pr"
-      "oto.PrimitiveValue"
+      "nsorflow.contrib.proto.PrimitiveValue\0223\n"
+      "\nenum_value\030# \003(\0162\037.tensorflow.contrib.p"
+      "roto.Color\022$\n\031double_value_with_default\030"
+      "\024 \001(\001:\0011\022#\n\030float_value_with_default\030\025 \001"
+      "(\002:\0012\022#\n\030int64_value_with_default\030\026 \001(\003:"
+      "\0013\022$\n\031uint64_value_with_default\030\027 \001(\004:\0014"
+      "\022#\n\030int32_value_with_default\030\030 \001(\005:\0015\022%\n"
+      "\032fixed64_value_with_default\030\031 \001(\006:\0016\022%\n\032"
+      "fixed32_value_with_default\030\032 \001(\007:\0017\022%\n\027b"
+      "ool_value_with_default\030\033 \001(\010:\004true\022$\n\031st"
+      "ring_value_with_default\030\034 \001(\t:\001a\0229\n\030byte"
+      "s_value_with_default\030\035 \001(\014:\027a longer def"
+      "ault string\022$\n\031uint32_value_with_default"
+      "\030\036 \001(\r:\0019\022\'\n\033sfixed32_value_with_default"
+      "\030\037 \001(\017:\00210\022\'\n\033sfixed64_value_with_defaul"
+      "t\030  \001(\020:\00211\022%\n\031sint32_value_with_default"
+      "\030! \001(\021:\00212\022%\n\031sint64_value_with_default\030"
+      "\" \001(\022:\00213\022G\n\027enum_value_with_default\030$ \001"
+      "(\0162\037.tensorflow.contrib.proto.Color:\005GRE"
+      "EN*\005\010d\020\310\001\"\245\t\n\017PackedTestValue\022\030\n\014double_"
+      "value\030\001 \003(\001B\002\020\001\022\027\n\013float_value\030\002 \003(\002B\002\020\001"
+      "\022\027\n\013int64_value\030\003 \003(\003B\002\020\001\022\030\n\014uint64_valu"
+      "e\030\004 \003(\004B\002\020\001\022\027\n\013int32_value\030\005 \003(\005B\002\020\001\022\031\n\r"
+      "fixed64_value\030\006 \003(\006B\002\020\001\022\031\n\rfixed32_value"
+      "\030\007 \003(\007B\002\020\001\022\026\n\nbool_value\030\010 \003(\010B\002\020\001\022\024\n\014st"
+      "ring_value\030\t \003(\t\022\023\n\013bytes_value\030\014 \003(\014\022\030\n"
+      "\014uint32_value\030\r \003(\rB\002\020\001\022\032\n\016sfixed32_valu"
+      "e\030\017 \003(\017B\002\020\001\022\032\n\016sfixed64_value\030\020 \003(\020B\002\020\001\022"
+      "\030\n\014sint32_value\030\021 \003(\021B\002\020\001\022\030\n\014sint64_valu"
+      "e\030\022 \003(\022B\002\020\001\022\?\n\rmessage_value\030\023 \003(\0132(.ten"
+      "sorflow.contrib.proto.PrimitiveValue\0223\n\n"
+      "enum_value\030# \003(\0162\037.tensorflow.contrib.pr"
+      "oto.Color\022$\n\031double_value_with_default\030\024"
+      " \001(\001:\0011\022#\n\030float_value_with_default\030\025 \001("
+      "\002:\0012\022#\n\030int64_value_with_default\030\026 \001(\003:\001"
+      "3\022$\n\031uint64_value_with_default\030\027 \001(\004:\0014\022"
+      "#\n\030int32_value_with_default\030\030 \001(\005:\0015\022%\n\032"
+      "fixed64_value_with_default\030\031 \001(\006:\0016\022%\n\032f"
+      "ixed32_value_with_default\030\032 \001(\007:\0017\022%\n\027bo"
+      "ol_value_with_default\030\033 \001(\010:\004true\022$\n\031str"
+      "ing_value_with_default\030\034 \001(\t:\001a\0229\n\030bytes"
+      "_value_with_default\030\035 \001(\014:\027a longer defa"
+      "ult string\022$\n\031uint32_value_with_default\030"
+      "\036 \001(\r:\0019\022\'\n\033sfixed32_value_with_default\030"
+      "\037 \001(\017:\00210\022\'\n\033sfixed64_value_with_default"
+      "\030  \001(\020:\00211\022%\n\031sint32_value_with_default\030"
+      "! \001(\021:\00212\022%\n\031sint64_value_with_default\030\""
+      " \001(\022:\00213\022G\n\027enum_value_with_default\030$ \001("
+      "\0162\037.tensorflow.contrib.proto.Color:\005GREE"
+      "N\"\332\002\n\016PrimitiveValue\022\024\n\014double_value\030\001 \001"
+      "(\001\022\023\n\013float_value\030\002 \001(\002\022\023\n\013int64_value\030\003"
+      " \001(\003\022\024\n\014uint64_value\030\004 \001(\004\022\023\n\013int32_valu"
+      "e\030\005 \001(\005\022\025\n\rfixed64_value\030\006 \001(\006\022\025\n\rfixed3"
+      "2_value\030\007 \001(\007\022\022\n\nbool_value\030\010 \001(\010\022\024\n\014str"
+      "ing_value\030\t \001(\t\022\023\n\013bytes_value\030\014 \001(\014\022\024\n\014"
+      "uint32_value\030\r \001(\r\022\026\n\016sfixed32_value\030\017 \001"
+      "(\017\022\026\n\016sfixed64_value\030\020 \001(\020\022\024\n\014sint32_val"
+      "ue\030\021 \001(\021\022\024\n\014sint64_value\030\022 \001(\022\"9\n\013ExtraF"
+      "ields\022\025\n\014string_value\030\360\r \001(\t\022\023\n\nbool_val"
+      "ue\030\361\r \001(\010\">\n\021InnerMessageValue\022\023\n\013float_"
+      "value\030\002 \001(\002\022\024\n\014bytes_values\030\010 \003(\014\"\204\001\n\022Mi"
+      "ddleMessageValue\022\024\n\014int32_values\030\005 \003(\005\022B"
+      "\n\rmessage_value\030\013 \001(\0132+.tensorflow.contr"
+      "ib.proto.InnerMessageValue\022\024\n\014uint32_val"
+      "ue\030\r \001(\r\"i\n\014MessageValue\022\024\n\014double_value"
+      "\030\001 \001(\001\022C\n\rmessage_value\030\013 \001(\0132,.tensorfl"
+      "ow.contrib.proto.MiddleMessageValue\"\262\001\n\024"
+      "RepeatedMessageValue\022Y\n\016message_values\030\013"
+      " \003(\0132A.tensorflow.contrib.proto.Repeated"
+      "MessageValue.NestedMessageValue\032\?\n\022Neste"
+      "dMessageValue\022\023\n\013float_value\030\002 \001(\002\022\024\n\014by"
+      "tes_values\030\010 \003(\014*U\n\005Color\022\007\n\003RED\020\000\022\n\n\006OR"
+      "ANGE\020\001\022\n\n\006YELLOW\020\002\022\t\n\005GREEN\020\003\022\010\n\004BLUE\020\004\022"
+      "\n\n\006INDIGO\020\005\022\n\n\006VIOLET\020\006:`\n\text_value\022#.t"
+      "ensorflow.contrib.proto.TestValue\030d \003(\0132"
+      "(.tensorflow.contrib.proto.PrimitiveValu"
+      "e"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 3698);
+      descriptor, 3801);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/python/kernel_tests/proto/test_example.proto", &protobuf_RegisterTypes);
   ::protobuf_tensorflow_2fcore_2fframework_2ftypes_2eproto::AddDescriptors();
@@ -728,11 +708,11 @@ struct StaticDescriptorInitializer {
 namespace tensorflow {
 namespace contrib {
 namespace proto {
-const ::google::protobuf::EnumDescriptor* EnumValue_Color_descriptor() {
+const ::google::protobuf::EnumDescriptor* Color_descriptor() {
   protobuf_tensorflow_2fpython_2fkernel_5ftests_2fproto_2ftest_5fexample_2eproto::protobuf_AssignDescriptorsOnce();
   return protobuf_tensorflow_2fpython_2fkernel_5ftests_2fproto_2ftest_5fexample_2eproto::file_level_enum_descriptors[0];
 }
-bool EnumValue_Color_IsValid(int value) {
+bool Color_IsValid(int value) {
   switch (value) {
     case 0:
     case 1:
@@ -747,18 +727,6 @@ bool EnumValue_Color_IsValid(int value) {
   }
 }
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const EnumValue_Color EnumValue::RED;
-const EnumValue_Color EnumValue::ORANGE;
-const EnumValue_Color EnumValue::YELLOW;
-const EnumValue_Color EnumValue::GREEN;
-const EnumValue_Color EnumValue::BLUE;
-const EnumValue_Color EnumValue::INDIGO;
-const EnumValue_Color EnumValue::VIOLET;
-const EnumValue_Color EnumValue::Color_MIN;
-const EnumValue_Color EnumValue::Color_MAX;
-const int EnumValue::Color_ARRAYSIZE;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 // ===================================================================
 
@@ -1506,6 +1474,7 @@ const int TestValue::kSfixed64ValueFieldNumber;
 const int TestValue::kSint32ValueFieldNumber;
 const int TestValue::kSint64ValueFieldNumber;
 const int TestValue::kMessageValueFieldNumber;
+const int TestValue::kEnumValueFieldNumber;
 const int TestValue::kDoubleValueWithDefaultFieldNumber;
 const int TestValue::kFloatValueWithDefaultFieldNumber;
 const int TestValue::kInt64ValueWithDefaultFieldNumber;
@@ -1521,6 +1490,7 @@ const int TestValue::kSfixed32ValueWithDefaultFieldNumber;
 const int TestValue::kSfixed64ValueWithDefaultFieldNumber;
 const int TestValue::kSint32ValueWithDefaultFieldNumber;
 const int TestValue::kSint64ValueWithDefaultFieldNumber;
+const int TestValue::kEnumValueWithDefaultFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TestValue::TestValue()
@@ -1549,7 +1519,8 @@ TestValue::TestValue(const TestValue& from)
       sfixed64_value_(from.sfixed64_value_),
       sint32_value_(from.sint32_value_),
       sint64_value_(from.sint64_value_),
-      message_value_(from.message_value_) {
+      message_value_(from.message_value_),
+      enum_value_(from.enum_value_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   _extensions_.MergeFrom(from._extensions_);
   string_value_with_default_.UnsafeSetDefault(&::tensorflow::contrib::proto::TestValue::_i_give_permission_to_break_this_code_default_string_value_with_default_.get());
@@ -1560,16 +1531,15 @@ TestValue::TestValue(const TestValue& from)
   if (from.has_bytes_value_with_default()) {
     bytes_value_with_default_.AssignWithDefault(&::tensorflow::contrib::proto::TestValue::_i_give_permission_to_break_this_code_default_bytes_value_with_default_.get(), from.bytes_value_with_default_);
   }
-  ::memcpy(&sint32_value_with_default_, &from.sint32_value_with_default_,
-    static_cast<size_t>(reinterpret_cast<char*>(&sint64_value_with_default_) -
-    reinterpret_cast<char*>(&sint32_value_with_default_)) + sizeof(sint64_value_with_default_));
+  ::memcpy(&double_value_with_default_, &from.double_value_with_default_,
+    static_cast<size_t>(reinterpret_cast<char*>(&enum_value_with_default_) -
+    reinterpret_cast<char*>(&double_value_with_default_)) + sizeof(enum_value_with_default_));
   // @@protoc_insertion_point(copy_constructor:tensorflow.contrib.proto.TestValue)
 }
 
 void TestValue::SharedCtor() {
   string_value_with_default_.UnsafeSetDefault(&::tensorflow::contrib::proto::TestValue::_i_give_permission_to_break_this_code_default_string_value_with_default_.get());
   bytes_value_with_default_.UnsafeSetDefault(&::tensorflow::contrib::proto::TestValue::_i_give_permission_to_break_this_code_default_bytes_value_with_default_.get());
-  sint32_value_with_default_ = 12;
   double_value_with_default_ = 1;
   int64_value_with_default_ = GOOGLE_LONGLONG(3);
   float_value_with_default_ = 2;
@@ -1582,6 +1552,8 @@ void TestValue::SharedCtor() {
   sfixed32_value_with_default_ = 10;
   sfixed64_value_with_default_ = GOOGLE_LONGLONG(11);
   sint64_value_with_default_ = GOOGLE_LONGLONG(13);
+  sint32_value_with_default_ = 12;
+  enum_value_with_default_ = 3;
 }
 
 TestValue::~TestValue() {
@@ -1631,6 +1603,7 @@ void TestValue::Clear() {
   sint32_value_.Clear();
   sint64_value_.Clear();
   message_value_.Clear();
+  enum_value_.Clear();
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 255u) {
     if (cached_has_bits & 0x00000001u) {
@@ -1639,21 +1612,22 @@ void TestValue::Clear() {
     if (cached_has_bits & 0x00000002u) {
       bytes_value_with_default_.UnsafeMutablePointer()->assign(*&::tensorflow::contrib::proto::TestValue::_i_give_permission_to_break_this_code_default_bytes_value_with_default_.get());
     }
-    sint32_value_with_default_ = 12;
     double_value_with_default_ = 1;
     int64_value_with_default_ = GOOGLE_LONGLONG(3);
     float_value_with_default_ = 2;
     int32_value_with_default_ = 5;
     uint64_value_with_default_ = GOOGLE_ULONGLONG(4);
-  }
-  if (cached_has_bits & 32512u) {
     fixed64_value_with_default_ = GOOGLE_ULONGLONG(6);
+  }
+  if (cached_has_bits & 65280u) {
     fixed32_value_with_default_ = 7u;
     bool_value_with_default_ = true;
     uint32_value_with_default_ = 9u;
     sfixed32_value_with_default_ = 10;
     sfixed64_value_with_default_ = GOOGLE_LONGLONG(11);
     sint64_value_with_default_ = GOOGLE_LONGLONG(13);
+    sint32_value_with_default_ = 12;
+    enum_value_with_default_ = 3;
   }
   _has_bits_.Clear();
   _internal_metadata_.Clear();
@@ -2167,6 +2141,55 @@ bool TestValue::MergePartialFromCodedStream(
         break;
       }
 
+      // repeated .tensorflow.contrib.proto.Color enum_value = 35;
+      case 35: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(24u /* 280 & 0xFF */)) {
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          if (::tensorflow::contrib::proto::Color_IsValid(value)) {
+            add_enum_value(static_cast< ::tensorflow::contrib::proto::Color >(value));
+          } else {
+            mutable_unknown_fields()->AddVarint(
+                35, static_cast< ::google::protobuf::uint64>(value));
+          }
+        } else if (
+            static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(26u /* 282 & 0xFF */)) {
+          DO_((::google::protobuf::internal::WireFormat::ReadPackedEnumPreserveUnknowns(
+                 input,
+                 35,
+                 ::tensorflow::contrib::proto::Color_IsValid,
+                 mutable_unknown_fields(),
+                 this->mutable_enum_value())));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // optional .tensorflow.contrib.proto.Color enum_value_with_default = 36 [default = GREEN];
+      case 36: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(32u /* 288 & 0xFF */)) {
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          if (::tensorflow::contrib::proto::Color_IsValid(value)) {
+            set_enum_value_with_default(static_cast< ::tensorflow::contrib::proto::Color >(value));
+          } else {
+            mutable_unknown_fields()->AddVarint(
+                36, static_cast< ::google::protobuf::uint64>(value));
+          }
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -2304,42 +2327,42 @@ void TestValue::SerializeWithCachedSizes(
 
   cached_has_bits = _has_bits_[0];
   // optional double double_value_with_default = 20 [default = 1];
-  if (cached_has_bits & 0x00000008u) {
+  if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(20, this->double_value_with_default(), output);
   }
 
   // optional float float_value_with_default = 21 [default = 2];
-  if (cached_has_bits & 0x00000020u) {
+  if (cached_has_bits & 0x00000010u) {
     ::google::protobuf::internal::WireFormatLite::WriteFloat(21, this->float_value_with_default(), output);
   }
 
   // optional int64 int64_value_with_default = 22 [default = 3];
-  if (cached_has_bits & 0x00000010u) {
+  if (cached_has_bits & 0x00000008u) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(22, this->int64_value_with_default(), output);
   }
 
   // optional uint64 uint64_value_with_default = 23 [default = 4];
-  if (cached_has_bits & 0x00000080u) {
+  if (cached_has_bits & 0x00000040u) {
     ::google::protobuf::internal::WireFormatLite::WriteUInt64(23, this->uint64_value_with_default(), output);
   }
 
   // optional int32 int32_value_with_default = 24 [default = 5];
-  if (cached_has_bits & 0x00000040u) {
+  if (cached_has_bits & 0x00000020u) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(24, this->int32_value_with_default(), output);
   }
 
   // optional fixed64 fixed64_value_with_default = 25 [default = 6];
-  if (cached_has_bits & 0x00000100u) {
+  if (cached_has_bits & 0x00000080u) {
     ::google::protobuf::internal::WireFormatLite::WriteFixed64(25, this->fixed64_value_with_default(), output);
   }
 
   // optional fixed32 fixed32_value_with_default = 26 [default = 7];
-  if (cached_has_bits & 0x00000200u) {
+  if (cached_has_bits & 0x00000100u) {
     ::google::protobuf::internal::WireFormatLite::WriteFixed32(26, this->fixed32_value_with_default(), output);
   }
 
   // optional bool bool_value_with_default = 27 [default = true];
-  if (cached_has_bits & 0x00000400u) {
+  if (cached_has_bits & 0x00000200u) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(27, this->bool_value_with_default(), output);
   }
 
@@ -2360,28 +2383,40 @@ void TestValue::SerializeWithCachedSizes(
   }
 
   // optional uint32 uint32_value_with_default = 30 [default = 9];
-  if (cached_has_bits & 0x00000800u) {
+  if (cached_has_bits & 0x00000400u) {
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(30, this->uint32_value_with_default(), output);
   }
 
   // optional sfixed32 sfixed32_value_with_default = 31 [default = 10];
-  if (cached_has_bits & 0x00001000u) {
+  if (cached_has_bits & 0x00000800u) {
     ::google::protobuf::internal::WireFormatLite::WriteSFixed32(31, this->sfixed32_value_with_default(), output);
   }
 
   // optional sfixed64 sfixed64_value_with_default = 32 [default = 11];
-  if (cached_has_bits & 0x00002000u) {
+  if (cached_has_bits & 0x00001000u) {
     ::google::protobuf::internal::WireFormatLite::WriteSFixed64(32, this->sfixed64_value_with_default(), output);
   }
 
   // optional sint32 sint32_value_with_default = 33 [default = 12];
-  if (cached_has_bits & 0x00000004u) {
+  if (cached_has_bits & 0x00004000u) {
     ::google::protobuf::internal::WireFormatLite::WriteSInt32(33, this->sint32_value_with_default(), output);
   }
 
   // optional sint64 sint64_value_with_default = 34 [default = 13];
-  if (cached_has_bits & 0x00004000u) {
+  if (cached_has_bits & 0x00002000u) {
     ::google::protobuf::internal::WireFormatLite::WriteSInt64(34, this->sint64_value_with_default(), output);
+  }
+
+  // repeated .tensorflow.contrib.proto.Color enum_value = 35;
+  for (int i = 0, n = this->enum_value_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      35, this->enum_value(i), output);
+  }
+
+  // optional .tensorflow.contrib.proto.Color enum_value_with_default = 36 [default = GREEN];
+  if (cached_has_bits & 0x00008000u) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      36, this->enum_value_with_default(), output);
   }
 
   // Extension range [100, 200)
@@ -2480,42 +2515,42 @@ void TestValue::SerializeWithCachedSizes(
 
   cached_has_bits = _has_bits_[0];
   // optional double double_value_with_default = 20 [default = 1];
-  if (cached_has_bits & 0x00000008u) {
+  if (cached_has_bits & 0x00000004u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(20, this->double_value_with_default(), target);
   }
 
   // optional float float_value_with_default = 21 [default = 2];
-  if (cached_has_bits & 0x00000020u) {
+  if (cached_has_bits & 0x00000010u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(21, this->float_value_with_default(), target);
   }
 
   // optional int64 int64_value_with_default = 22 [default = 3];
-  if (cached_has_bits & 0x00000010u) {
+  if (cached_has_bits & 0x00000008u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(22, this->int64_value_with_default(), target);
   }
 
   // optional uint64 uint64_value_with_default = 23 [default = 4];
-  if (cached_has_bits & 0x00000080u) {
+  if (cached_has_bits & 0x00000040u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt64ToArray(23, this->uint64_value_with_default(), target);
   }
 
   // optional int32 int32_value_with_default = 24 [default = 5];
-  if (cached_has_bits & 0x00000040u) {
+  if (cached_has_bits & 0x00000020u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(24, this->int32_value_with_default(), target);
   }
 
   // optional fixed64 fixed64_value_with_default = 25 [default = 6];
-  if (cached_has_bits & 0x00000100u) {
+  if (cached_has_bits & 0x00000080u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFixed64ToArray(25, this->fixed64_value_with_default(), target);
   }
 
   // optional fixed32 fixed32_value_with_default = 26 [default = 7];
-  if (cached_has_bits & 0x00000200u) {
+  if (cached_has_bits & 0x00000100u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFixed32ToArray(26, this->fixed32_value_with_default(), target);
   }
 
   // optional bool bool_value_with_default = 27 [default = true];
-  if (cached_has_bits & 0x00000400u) {
+  if (cached_has_bits & 0x00000200u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(27, this->bool_value_with_default(), target);
   }
 
@@ -2538,28 +2573,38 @@ void TestValue::SerializeWithCachedSizes(
   }
 
   // optional uint32 uint32_value_with_default = 30 [default = 9];
-  if (cached_has_bits & 0x00000800u) {
+  if (cached_has_bits & 0x00000400u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(30, this->uint32_value_with_default(), target);
   }
 
   // optional sfixed32 sfixed32_value_with_default = 31 [default = 10];
-  if (cached_has_bits & 0x00001000u) {
+  if (cached_has_bits & 0x00000800u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteSFixed32ToArray(31, this->sfixed32_value_with_default(), target);
   }
 
   // optional sfixed64 sfixed64_value_with_default = 32 [default = 11];
-  if (cached_has_bits & 0x00002000u) {
+  if (cached_has_bits & 0x00001000u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteSFixed64ToArray(32, this->sfixed64_value_with_default(), target);
   }
 
   // optional sint32 sint32_value_with_default = 33 [default = 12];
-  if (cached_has_bits & 0x00000004u) {
+  if (cached_has_bits & 0x00004000u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteSInt32ToArray(33, this->sint32_value_with_default(), target);
   }
 
   // optional sint64 sint64_value_with_default = 34 [default = 13];
-  if (cached_has_bits & 0x00004000u) {
+  if (cached_has_bits & 0x00002000u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteSInt64ToArray(34, this->sint64_value_with_default(), target);
+  }
+
+  // repeated .tensorflow.contrib.proto.Color enum_value = 35;
+  target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+    35, this->enum_value_, target);
+
+  // optional .tensorflow.contrib.proto.Color enum_value_with_default = 36 [default = GREEN];
+  if (cached_has_bits & 0x00008000u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      36, this->enum_value_with_default(), target);
   }
 
   // Extension range [100, 200)
@@ -2729,6 +2774,16 @@ size_t TestValue::ByteSizeLong() const {
     }
   }
 
+  // repeated .tensorflow.contrib.proto.Color enum_value = 35;
+  {
+    size_t data_size = 0;
+    unsigned int count = static_cast<unsigned int>(this->enum_value_size());for (unsigned int i = 0; i < count; i++) {
+      data_size += ::google::protobuf::internal::WireFormatLite::EnumSize(
+        this->enum_value(static_cast<int>(i)));
+    }
+    total_size += (2UL * count) + data_size;
+  }
+
   if (_has_bits_[0 / 32] & 255u) {
     // optional string string_value_with_default = 28 [default = "a"];
     if (has_string_value_with_default()) {
@@ -2742,13 +2797,6 @@ size_t TestValue::ByteSizeLong() const {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->bytes_value_with_default());
-    }
-
-    // optional sint32 sint32_value_with_default = 33 [default = 12];
-    if (has_sint32_value_with_default()) {
-      total_size += 2 +
-        ::google::protobuf::internal::WireFormatLite::SInt32Size(
-          this->sint32_value_with_default());
     }
 
     // optional double double_value_with_default = 20 [default = 1];
@@ -2782,13 +2830,13 @@ size_t TestValue::ByteSizeLong() const {
           this->uint64_value_with_default());
     }
 
-  }
-  if (_has_bits_[8 / 32] & 32512u) {
     // optional fixed64 fixed64_value_with_default = 25 [default = 6];
     if (has_fixed64_value_with_default()) {
       total_size += 2 + 8;
     }
 
+  }
+  if (_has_bits_[8 / 32] & 65280u) {
     // optional fixed32 fixed32_value_with_default = 26 [default = 7];
     if (has_fixed32_value_with_default()) {
       total_size += 2 + 4;
@@ -2821,6 +2869,19 @@ size_t TestValue::ByteSizeLong() const {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::SInt64Size(
           this->sint64_value_with_default());
+    }
+
+    // optional sint32 sint32_value_with_default = 33 [default = 12];
+    if (has_sint32_value_with_default()) {
+      total_size += 2 +
+        ::google::protobuf::internal::WireFormatLite::SInt32Size(
+          this->sint32_value_with_default());
+    }
+
+    // optional .tensorflow.contrib.proto.Color enum_value_with_default = 36 [default = GREEN];
+    if (has_enum_value_with_default()) {
+      total_size += 2 +
+        ::google::protobuf::internal::WireFormatLite::EnumSize(this->enum_value_with_default());
     }
 
   }
@@ -2868,6 +2929,7 @@ void TestValue::MergeFrom(const TestValue& from) {
   sint32_value_.MergeFrom(from.sint32_value_);
   sint64_value_.MergeFrom(from.sint64_value_);
   message_value_.MergeFrom(from.message_value_);
+  enum_value_.MergeFrom(from.enum_value_);
   cached_has_bits = from._has_bits_[0];
   if (cached_has_bits & 255u) {
     if (cached_has_bits & 0x00000001u) {
@@ -2879,46 +2941,49 @@ void TestValue::MergeFrom(const TestValue& from) {
       bytes_value_with_default_.AssignWithDefault(&::tensorflow::contrib::proto::TestValue::_i_give_permission_to_break_this_code_default_bytes_value_with_default_.get(), from.bytes_value_with_default_);
     }
     if (cached_has_bits & 0x00000004u) {
-      sint32_value_with_default_ = from.sint32_value_with_default_;
-    }
-    if (cached_has_bits & 0x00000008u) {
       double_value_with_default_ = from.double_value_with_default_;
     }
-    if (cached_has_bits & 0x00000010u) {
+    if (cached_has_bits & 0x00000008u) {
       int64_value_with_default_ = from.int64_value_with_default_;
     }
-    if (cached_has_bits & 0x00000020u) {
+    if (cached_has_bits & 0x00000010u) {
       float_value_with_default_ = from.float_value_with_default_;
     }
-    if (cached_has_bits & 0x00000040u) {
+    if (cached_has_bits & 0x00000020u) {
       int32_value_with_default_ = from.int32_value_with_default_;
     }
-    if (cached_has_bits & 0x00000080u) {
+    if (cached_has_bits & 0x00000040u) {
       uint64_value_with_default_ = from.uint64_value_with_default_;
+    }
+    if (cached_has_bits & 0x00000080u) {
+      fixed64_value_with_default_ = from.fixed64_value_with_default_;
     }
     _has_bits_[0] |= cached_has_bits;
   }
-  if (cached_has_bits & 32512u) {
+  if (cached_has_bits & 65280u) {
     if (cached_has_bits & 0x00000100u) {
-      fixed64_value_with_default_ = from.fixed64_value_with_default_;
-    }
-    if (cached_has_bits & 0x00000200u) {
       fixed32_value_with_default_ = from.fixed32_value_with_default_;
     }
-    if (cached_has_bits & 0x00000400u) {
+    if (cached_has_bits & 0x00000200u) {
       bool_value_with_default_ = from.bool_value_with_default_;
     }
-    if (cached_has_bits & 0x00000800u) {
+    if (cached_has_bits & 0x00000400u) {
       uint32_value_with_default_ = from.uint32_value_with_default_;
     }
-    if (cached_has_bits & 0x00001000u) {
+    if (cached_has_bits & 0x00000800u) {
       sfixed32_value_with_default_ = from.sfixed32_value_with_default_;
     }
-    if (cached_has_bits & 0x00002000u) {
+    if (cached_has_bits & 0x00001000u) {
       sfixed64_value_with_default_ = from.sfixed64_value_with_default_;
     }
-    if (cached_has_bits & 0x00004000u) {
+    if (cached_has_bits & 0x00002000u) {
       sint64_value_with_default_ = from.sint64_value_with_default_;
+    }
+    if (cached_has_bits & 0x00004000u) {
+      sint32_value_with_default_ = from.sint32_value_with_default_;
+    }
+    if (cached_has_bits & 0x00008000u) {
+      enum_value_with_default_ = from.enum_value_with_default_;
     }
     _has_bits_[0] |= cached_has_bits;
   }
@@ -2968,11 +3033,11 @@ void TestValue::InternalSwap(TestValue* other) {
   sint32_value_.InternalSwap(&other->sint32_value_);
   sint64_value_.InternalSwap(&other->sint64_value_);
   CastToBase(&message_value_)->InternalSwap(CastToBase(&other->message_value_));
+  enum_value_.InternalSwap(&other->enum_value_);
   string_value_with_default_.Swap(&other->string_value_with_default_, &::tensorflow::contrib::proto::TestValue::_i_give_permission_to_break_this_code_default_string_value_with_default_.get(),
     GetArenaNoVirtual());
   bytes_value_with_default_.Swap(&other->bytes_value_with_default_, &::tensorflow::contrib::proto::TestValue::_i_give_permission_to_break_this_code_default_bytes_value_with_default_.get(),
     GetArenaNoVirtual());
-  swap(sint32_value_with_default_, other->sint32_value_with_default_);
   swap(double_value_with_default_, other->double_value_with_default_);
   swap(int64_value_with_default_, other->int64_value_with_default_);
   swap(float_value_with_default_, other->float_value_with_default_);
@@ -2985,6 +3050,8 @@ void TestValue::InternalSwap(TestValue* other) {
   swap(sfixed32_value_with_default_, other->sfixed32_value_with_default_);
   swap(sfixed64_value_with_default_, other->sfixed64_value_with_default_);
   swap(sint64_value_with_default_, other->sint64_value_with_default_);
+  swap(sint32_value_with_default_, other->sint32_value_with_default_);
+  swap(enum_value_with_default_, other->enum_value_with_default_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
   _extensions_.Swap(&other->_extensions_);
@@ -3019,6 +3086,7 @@ const int PackedTestValue::kSfixed64ValueFieldNumber;
 const int PackedTestValue::kSint32ValueFieldNumber;
 const int PackedTestValue::kSint64ValueFieldNumber;
 const int PackedTestValue::kMessageValueFieldNumber;
+const int PackedTestValue::kEnumValueFieldNumber;
 const int PackedTestValue::kDoubleValueWithDefaultFieldNumber;
 const int PackedTestValue::kFloatValueWithDefaultFieldNumber;
 const int PackedTestValue::kInt64ValueWithDefaultFieldNumber;
@@ -3034,6 +3102,7 @@ const int PackedTestValue::kSfixed32ValueWithDefaultFieldNumber;
 const int PackedTestValue::kSfixed64ValueWithDefaultFieldNumber;
 const int PackedTestValue::kSint32ValueWithDefaultFieldNumber;
 const int PackedTestValue::kSint64ValueWithDefaultFieldNumber;
+const int PackedTestValue::kEnumValueWithDefaultFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 PackedTestValue::PackedTestValue()
@@ -3062,7 +3131,8 @@ PackedTestValue::PackedTestValue(const PackedTestValue& from)
       sfixed64_value_(from.sfixed64_value_),
       sint32_value_(from.sint32_value_),
       sint64_value_(from.sint64_value_),
-      message_value_(from.message_value_) {
+      message_value_(from.message_value_),
+      enum_value_(from.enum_value_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   string_value_with_default_.UnsafeSetDefault(&::tensorflow::contrib::proto::PackedTestValue::_i_give_permission_to_break_this_code_default_string_value_with_default_.get());
   if (from.has_string_value_with_default()) {
@@ -3072,16 +3142,15 @@ PackedTestValue::PackedTestValue(const PackedTestValue& from)
   if (from.has_bytes_value_with_default()) {
     bytes_value_with_default_.AssignWithDefault(&::tensorflow::contrib::proto::PackedTestValue::_i_give_permission_to_break_this_code_default_bytes_value_with_default_.get(), from.bytes_value_with_default_);
   }
-  ::memcpy(&sint32_value_with_default_, &from.sint32_value_with_default_,
-    static_cast<size_t>(reinterpret_cast<char*>(&sint64_value_with_default_) -
-    reinterpret_cast<char*>(&sint32_value_with_default_)) + sizeof(sint64_value_with_default_));
+  ::memcpy(&double_value_with_default_, &from.double_value_with_default_,
+    static_cast<size_t>(reinterpret_cast<char*>(&enum_value_with_default_) -
+    reinterpret_cast<char*>(&double_value_with_default_)) + sizeof(enum_value_with_default_));
   // @@protoc_insertion_point(copy_constructor:tensorflow.contrib.proto.PackedTestValue)
 }
 
 void PackedTestValue::SharedCtor() {
   string_value_with_default_.UnsafeSetDefault(&::tensorflow::contrib::proto::PackedTestValue::_i_give_permission_to_break_this_code_default_string_value_with_default_.get());
   bytes_value_with_default_.UnsafeSetDefault(&::tensorflow::contrib::proto::PackedTestValue::_i_give_permission_to_break_this_code_default_bytes_value_with_default_.get());
-  sint32_value_with_default_ = 12;
   double_value_with_default_ = 1;
   int64_value_with_default_ = GOOGLE_LONGLONG(3);
   float_value_with_default_ = 2;
@@ -3094,6 +3163,8 @@ void PackedTestValue::SharedCtor() {
   sfixed32_value_with_default_ = 10;
   sfixed64_value_with_default_ = GOOGLE_LONGLONG(11);
   sint64_value_with_default_ = GOOGLE_LONGLONG(13);
+  sint32_value_with_default_ = 12;
+  enum_value_with_default_ = 3;
 }
 
 PackedTestValue::~PackedTestValue() {
@@ -3142,6 +3213,7 @@ void PackedTestValue::Clear() {
   sint32_value_.Clear();
   sint64_value_.Clear();
   message_value_.Clear();
+  enum_value_.Clear();
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 255u) {
     if (cached_has_bits & 0x00000001u) {
@@ -3150,21 +3222,22 @@ void PackedTestValue::Clear() {
     if (cached_has_bits & 0x00000002u) {
       bytes_value_with_default_.UnsafeMutablePointer()->assign(*&::tensorflow::contrib::proto::PackedTestValue::_i_give_permission_to_break_this_code_default_bytes_value_with_default_.get());
     }
-    sint32_value_with_default_ = 12;
     double_value_with_default_ = 1;
     int64_value_with_default_ = GOOGLE_LONGLONG(3);
     float_value_with_default_ = 2;
     int32_value_with_default_ = 5;
     uint64_value_with_default_ = GOOGLE_ULONGLONG(4);
-  }
-  if (cached_has_bits & 32512u) {
     fixed64_value_with_default_ = GOOGLE_ULONGLONG(6);
+  }
+  if (cached_has_bits & 65280u) {
     fixed32_value_with_default_ = 7u;
     bool_value_with_default_ = true;
     uint32_value_with_default_ = 9u;
     sfixed32_value_with_default_ = 10;
     sfixed64_value_with_default_ = GOOGLE_LONGLONG(11);
     sint64_value_with_default_ = GOOGLE_LONGLONG(13);
+    sint32_value_with_default_ = 12;
+    enum_value_with_default_ = 3;
   }
   _has_bits_.Clear();
   _internal_metadata_.Clear();
@@ -3678,6 +3751,55 @@ bool PackedTestValue::MergePartialFromCodedStream(
         break;
       }
 
+      // repeated .tensorflow.contrib.proto.Color enum_value = 35;
+      case 35: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(24u /* 280 & 0xFF */)) {
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          if (::tensorflow::contrib::proto::Color_IsValid(value)) {
+            add_enum_value(static_cast< ::tensorflow::contrib::proto::Color >(value));
+          } else {
+            mutable_unknown_fields()->AddVarint(
+                35, static_cast< ::google::protobuf::uint64>(value));
+          }
+        } else if (
+            static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(26u /* 282 & 0xFF */)) {
+          DO_((::google::protobuf::internal::WireFormat::ReadPackedEnumPreserveUnknowns(
+                 input,
+                 35,
+                 ::tensorflow::contrib::proto::Color_IsValid,
+                 mutable_unknown_fields(),
+                 this->mutable_enum_value())));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // optional .tensorflow.contrib.proto.Color enum_value_with_default = 36 [default = GREEN];
+      case 36: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(32u /* 288 & 0xFF */)) {
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          if (::tensorflow::contrib::proto::Color_IsValid(value)) {
+            set_enum_value_with_default(static_cast< ::tensorflow::contrib::proto::Color >(value));
+          } else {
+            mutable_unknown_fields()->AddVarint(
+                36, static_cast< ::google::protobuf::uint64>(value));
+          }
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -3860,42 +3982,42 @@ void PackedTestValue::SerializeWithCachedSizes(
 
   cached_has_bits = _has_bits_[0];
   // optional double double_value_with_default = 20 [default = 1];
-  if (cached_has_bits & 0x00000008u) {
+  if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(20, this->double_value_with_default(), output);
   }
 
   // optional float float_value_with_default = 21 [default = 2];
-  if (cached_has_bits & 0x00000020u) {
+  if (cached_has_bits & 0x00000010u) {
     ::google::protobuf::internal::WireFormatLite::WriteFloat(21, this->float_value_with_default(), output);
   }
 
   // optional int64 int64_value_with_default = 22 [default = 3];
-  if (cached_has_bits & 0x00000010u) {
+  if (cached_has_bits & 0x00000008u) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(22, this->int64_value_with_default(), output);
   }
 
   // optional uint64 uint64_value_with_default = 23 [default = 4];
-  if (cached_has_bits & 0x00000080u) {
+  if (cached_has_bits & 0x00000040u) {
     ::google::protobuf::internal::WireFormatLite::WriteUInt64(23, this->uint64_value_with_default(), output);
   }
 
   // optional int32 int32_value_with_default = 24 [default = 5];
-  if (cached_has_bits & 0x00000040u) {
+  if (cached_has_bits & 0x00000020u) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(24, this->int32_value_with_default(), output);
   }
 
   // optional fixed64 fixed64_value_with_default = 25 [default = 6];
-  if (cached_has_bits & 0x00000100u) {
+  if (cached_has_bits & 0x00000080u) {
     ::google::protobuf::internal::WireFormatLite::WriteFixed64(25, this->fixed64_value_with_default(), output);
   }
 
   // optional fixed32 fixed32_value_with_default = 26 [default = 7];
-  if (cached_has_bits & 0x00000200u) {
+  if (cached_has_bits & 0x00000100u) {
     ::google::protobuf::internal::WireFormatLite::WriteFixed32(26, this->fixed32_value_with_default(), output);
   }
 
   // optional bool bool_value_with_default = 27 [default = true];
-  if (cached_has_bits & 0x00000400u) {
+  if (cached_has_bits & 0x00000200u) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(27, this->bool_value_with_default(), output);
   }
 
@@ -3916,28 +4038,40 @@ void PackedTestValue::SerializeWithCachedSizes(
   }
 
   // optional uint32 uint32_value_with_default = 30 [default = 9];
-  if (cached_has_bits & 0x00000800u) {
+  if (cached_has_bits & 0x00000400u) {
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(30, this->uint32_value_with_default(), output);
   }
 
   // optional sfixed32 sfixed32_value_with_default = 31 [default = 10];
-  if (cached_has_bits & 0x00001000u) {
+  if (cached_has_bits & 0x00000800u) {
     ::google::protobuf::internal::WireFormatLite::WriteSFixed32(31, this->sfixed32_value_with_default(), output);
   }
 
   // optional sfixed64 sfixed64_value_with_default = 32 [default = 11];
-  if (cached_has_bits & 0x00002000u) {
+  if (cached_has_bits & 0x00001000u) {
     ::google::protobuf::internal::WireFormatLite::WriteSFixed64(32, this->sfixed64_value_with_default(), output);
   }
 
   // optional sint32 sint32_value_with_default = 33 [default = 12];
-  if (cached_has_bits & 0x00000004u) {
+  if (cached_has_bits & 0x00004000u) {
     ::google::protobuf::internal::WireFormatLite::WriteSInt32(33, this->sint32_value_with_default(), output);
   }
 
   // optional sint64 sint64_value_with_default = 34 [default = 13];
-  if (cached_has_bits & 0x00004000u) {
+  if (cached_has_bits & 0x00002000u) {
     ::google::protobuf::internal::WireFormatLite::WriteSInt64(34, this->sint64_value_with_default(), output);
+  }
+
+  // repeated .tensorflow.contrib.proto.Color enum_value = 35;
+  for (int i = 0, n = this->enum_value_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      35, this->enum_value(i), output);
+  }
+
+  // optional .tensorflow.contrib.proto.Color enum_value_with_default = 36 [default = GREEN];
+  if (cached_has_bits & 0x00008000u) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      36, this->enum_value_with_default(), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -4149,42 +4283,42 @@ void PackedTestValue::SerializeWithCachedSizes(
 
   cached_has_bits = _has_bits_[0];
   // optional double double_value_with_default = 20 [default = 1];
-  if (cached_has_bits & 0x00000008u) {
+  if (cached_has_bits & 0x00000004u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(20, this->double_value_with_default(), target);
   }
 
   // optional float float_value_with_default = 21 [default = 2];
-  if (cached_has_bits & 0x00000020u) {
+  if (cached_has_bits & 0x00000010u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(21, this->float_value_with_default(), target);
   }
 
   // optional int64 int64_value_with_default = 22 [default = 3];
-  if (cached_has_bits & 0x00000010u) {
+  if (cached_has_bits & 0x00000008u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(22, this->int64_value_with_default(), target);
   }
 
   // optional uint64 uint64_value_with_default = 23 [default = 4];
-  if (cached_has_bits & 0x00000080u) {
+  if (cached_has_bits & 0x00000040u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt64ToArray(23, this->uint64_value_with_default(), target);
   }
 
   // optional int32 int32_value_with_default = 24 [default = 5];
-  if (cached_has_bits & 0x00000040u) {
+  if (cached_has_bits & 0x00000020u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(24, this->int32_value_with_default(), target);
   }
 
   // optional fixed64 fixed64_value_with_default = 25 [default = 6];
-  if (cached_has_bits & 0x00000100u) {
+  if (cached_has_bits & 0x00000080u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFixed64ToArray(25, this->fixed64_value_with_default(), target);
   }
 
   // optional fixed32 fixed32_value_with_default = 26 [default = 7];
-  if (cached_has_bits & 0x00000200u) {
+  if (cached_has_bits & 0x00000100u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFixed32ToArray(26, this->fixed32_value_with_default(), target);
   }
 
   // optional bool bool_value_with_default = 27 [default = true];
-  if (cached_has_bits & 0x00000400u) {
+  if (cached_has_bits & 0x00000200u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(27, this->bool_value_with_default(), target);
   }
 
@@ -4207,28 +4341,38 @@ void PackedTestValue::SerializeWithCachedSizes(
   }
 
   // optional uint32 uint32_value_with_default = 30 [default = 9];
-  if (cached_has_bits & 0x00000800u) {
+  if (cached_has_bits & 0x00000400u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(30, this->uint32_value_with_default(), target);
   }
 
   // optional sfixed32 sfixed32_value_with_default = 31 [default = 10];
-  if (cached_has_bits & 0x00001000u) {
+  if (cached_has_bits & 0x00000800u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteSFixed32ToArray(31, this->sfixed32_value_with_default(), target);
   }
 
   // optional sfixed64 sfixed64_value_with_default = 32 [default = 11];
-  if (cached_has_bits & 0x00002000u) {
+  if (cached_has_bits & 0x00001000u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteSFixed64ToArray(32, this->sfixed64_value_with_default(), target);
   }
 
   // optional sint32 sint32_value_with_default = 33 [default = 12];
-  if (cached_has_bits & 0x00000004u) {
+  if (cached_has_bits & 0x00004000u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteSInt32ToArray(33, this->sint32_value_with_default(), target);
   }
 
   // optional sint64 sint64_value_with_default = 34 [default = 13];
-  if (cached_has_bits & 0x00004000u) {
+  if (cached_has_bits & 0x00002000u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteSInt64ToArray(34, this->sint64_value_with_default(), target);
+  }
+
+  // repeated .tensorflow.contrib.proto.Color enum_value = 35;
+  target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+    35, this->enum_value_, target);
+
+  // optional .tensorflow.contrib.proto.Color enum_value_with_default = 36 [default = GREEN];
+  if (cached_has_bits & 0x00008000u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      36, this->enum_value_with_default(), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -4483,6 +4627,16 @@ size_t PackedTestValue::ByteSizeLong() const {
     }
   }
 
+  // repeated .tensorflow.contrib.proto.Color enum_value = 35;
+  {
+    size_t data_size = 0;
+    unsigned int count = static_cast<unsigned int>(this->enum_value_size());for (unsigned int i = 0; i < count; i++) {
+      data_size += ::google::protobuf::internal::WireFormatLite::EnumSize(
+        this->enum_value(static_cast<int>(i)));
+    }
+    total_size += (2UL * count) + data_size;
+  }
+
   if (_has_bits_[0 / 32] & 255u) {
     // optional string string_value_with_default = 28 [default = "a"];
     if (has_string_value_with_default()) {
@@ -4496,13 +4650,6 @@ size_t PackedTestValue::ByteSizeLong() const {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->bytes_value_with_default());
-    }
-
-    // optional sint32 sint32_value_with_default = 33 [default = 12];
-    if (has_sint32_value_with_default()) {
-      total_size += 2 +
-        ::google::protobuf::internal::WireFormatLite::SInt32Size(
-          this->sint32_value_with_default());
     }
 
     // optional double double_value_with_default = 20 [default = 1];
@@ -4536,13 +4683,13 @@ size_t PackedTestValue::ByteSizeLong() const {
           this->uint64_value_with_default());
     }
 
-  }
-  if (_has_bits_[8 / 32] & 32512u) {
     // optional fixed64 fixed64_value_with_default = 25 [default = 6];
     if (has_fixed64_value_with_default()) {
       total_size += 2 + 8;
     }
 
+  }
+  if (_has_bits_[8 / 32] & 65280u) {
     // optional fixed32 fixed32_value_with_default = 26 [default = 7];
     if (has_fixed32_value_with_default()) {
       total_size += 2 + 4;
@@ -4575,6 +4722,19 @@ size_t PackedTestValue::ByteSizeLong() const {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::SInt64Size(
           this->sint64_value_with_default());
+    }
+
+    // optional sint32 sint32_value_with_default = 33 [default = 12];
+    if (has_sint32_value_with_default()) {
+      total_size += 2 +
+        ::google::protobuf::internal::WireFormatLite::SInt32Size(
+          this->sint32_value_with_default());
+    }
+
+    // optional .tensorflow.contrib.proto.Color enum_value_with_default = 36 [default = GREEN];
+    if (has_enum_value_with_default()) {
+      total_size += 2 +
+        ::google::protobuf::internal::WireFormatLite::EnumSize(this->enum_value_with_default());
     }
 
   }
@@ -4621,6 +4781,7 @@ void PackedTestValue::MergeFrom(const PackedTestValue& from) {
   sint32_value_.MergeFrom(from.sint32_value_);
   sint64_value_.MergeFrom(from.sint64_value_);
   message_value_.MergeFrom(from.message_value_);
+  enum_value_.MergeFrom(from.enum_value_);
   cached_has_bits = from._has_bits_[0];
   if (cached_has_bits & 255u) {
     if (cached_has_bits & 0x00000001u) {
@@ -4632,46 +4793,49 @@ void PackedTestValue::MergeFrom(const PackedTestValue& from) {
       bytes_value_with_default_.AssignWithDefault(&::tensorflow::contrib::proto::PackedTestValue::_i_give_permission_to_break_this_code_default_bytes_value_with_default_.get(), from.bytes_value_with_default_);
     }
     if (cached_has_bits & 0x00000004u) {
-      sint32_value_with_default_ = from.sint32_value_with_default_;
-    }
-    if (cached_has_bits & 0x00000008u) {
       double_value_with_default_ = from.double_value_with_default_;
     }
-    if (cached_has_bits & 0x00000010u) {
+    if (cached_has_bits & 0x00000008u) {
       int64_value_with_default_ = from.int64_value_with_default_;
     }
-    if (cached_has_bits & 0x00000020u) {
+    if (cached_has_bits & 0x00000010u) {
       float_value_with_default_ = from.float_value_with_default_;
     }
-    if (cached_has_bits & 0x00000040u) {
+    if (cached_has_bits & 0x00000020u) {
       int32_value_with_default_ = from.int32_value_with_default_;
     }
-    if (cached_has_bits & 0x00000080u) {
+    if (cached_has_bits & 0x00000040u) {
       uint64_value_with_default_ = from.uint64_value_with_default_;
+    }
+    if (cached_has_bits & 0x00000080u) {
+      fixed64_value_with_default_ = from.fixed64_value_with_default_;
     }
     _has_bits_[0] |= cached_has_bits;
   }
-  if (cached_has_bits & 32512u) {
+  if (cached_has_bits & 65280u) {
     if (cached_has_bits & 0x00000100u) {
-      fixed64_value_with_default_ = from.fixed64_value_with_default_;
-    }
-    if (cached_has_bits & 0x00000200u) {
       fixed32_value_with_default_ = from.fixed32_value_with_default_;
     }
-    if (cached_has_bits & 0x00000400u) {
+    if (cached_has_bits & 0x00000200u) {
       bool_value_with_default_ = from.bool_value_with_default_;
     }
-    if (cached_has_bits & 0x00000800u) {
+    if (cached_has_bits & 0x00000400u) {
       uint32_value_with_default_ = from.uint32_value_with_default_;
     }
-    if (cached_has_bits & 0x00001000u) {
+    if (cached_has_bits & 0x00000800u) {
       sfixed32_value_with_default_ = from.sfixed32_value_with_default_;
     }
-    if (cached_has_bits & 0x00002000u) {
+    if (cached_has_bits & 0x00001000u) {
       sfixed64_value_with_default_ = from.sfixed64_value_with_default_;
     }
-    if (cached_has_bits & 0x00004000u) {
+    if (cached_has_bits & 0x00002000u) {
       sint64_value_with_default_ = from.sint64_value_with_default_;
+    }
+    if (cached_has_bits & 0x00004000u) {
+      sint32_value_with_default_ = from.sint32_value_with_default_;
+    }
+    if (cached_has_bits & 0x00008000u) {
+      enum_value_with_default_ = from.enum_value_with_default_;
     }
     _has_bits_[0] |= cached_has_bits;
   }
@@ -4717,11 +4881,11 @@ void PackedTestValue::InternalSwap(PackedTestValue* other) {
   sint32_value_.InternalSwap(&other->sint32_value_);
   sint64_value_.InternalSwap(&other->sint64_value_);
   CastToBase(&message_value_)->InternalSwap(CastToBase(&other->message_value_));
+  enum_value_.InternalSwap(&other->enum_value_);
   string_value_with_default_.Swap(&other->string_value_with_default_, &::tensorflow::contrib::proto::PackedTestValue::_i_give_permission_to_break_this_code_default_string_value_with_default_.get(),
     GetArenaNoVirtual());
   bytes_value_with_default_.Swap(&other->bytes_value_with_default_, &::tensorflow::contrib::proto::PackedTestValue::_i_give_permission_to_break_this_code_default_bytes_value_with_default_.get(),
     GetArenaNoVirtual());
-  swap(sint32_value_with_default_, other->sint32_value_with_default_);
   swap(double_value_with_default_, other->double_value_with_default_);
   swap(int64_value_with_default_, other->int64_value_with_default_);
   swap(float_value_with_default_, other->float_value_with_default_);
@@ -4734,6 +4898,8 @@ void PackedTestValue::InternalSwap(PackedTestValue* other) {
   swap(sfixed32_value_with_default_, other->sfixed32_value_with_default_);
   swap(sfixed64_value_with_default_, other->sfixed64_value_with_default_);
   swap(sint64_value_with_default_, other->sint64_value_with_default_);
+  swap(sint32_value_with_default_, other->sint32_value_with_default_);
+  swap(enum_value_with_default_, other->enum_value_with_default_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
@@ -5813,295 +5979,6 @@ void ExtraFields::InternalSwap(ExtraFields* other) {
 }
 
 ::google::protobuf::Metadata ExtraFields::GetMetadata() const {
-  protobuf_tensorflow_2fpython_2fkernel_5ftests_2fproto_2ftest_5fexample_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_tensorflow_2fpython_2fkernel_5ftests_2fproto_2ftest_5fexample_2eproto::file_level_metadata[kIndexInFileMessages];
-}
-
-
-// ===================================================================
-
-void EnumValue::InitAsDefaultInstance() {
-}
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int EnumValue::kEnumValueFieldNumber;
-const int EnumValue::kRepeatedEnumValueFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-EnumValue::EnumValue()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_tensorflow_2fpython_2fkernel_5ftests_2fproto_2ftest_5fexample_2eproto::scc_info_EnumValue.base);
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.contrib.proto.EnumValue)
-}
-EnumValue::EnumValue(const EnumValue& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _has_bits_(from._has_bits_),
-      repeated_enum_value_(from.repeated_enum_value_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  enum_value_ = from.enum_value_;
-  // @@protoc_insertion_point(copy_constructor:tensorflow.contrib.proto.EnumValue)
-}
-
-void EnumValue::SharedCtor() {
-  enum_value_ = 0;
-}
-
-EnumValue::~EnumValue() {
-  // @@protoc_insertion_point(destructor:tensorflow.contrib.proto.EnumValue)
-  SharedDtor();
-}
-
-void EnumValue::SharedDtor() {
-}
-
-void EnumValue::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
-}
-const ::google::protobuf::Descriptor* EnumValue::descriptor() {
-  ::protobuf_tensorflow_2fpython_2fkernel_5ftests_2fproto_2ftest_5fexample_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_tensorflow_2fpython_2fkernel_5ftests_2fproto_2ftest_5fexample_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
-const EnumValue& EnumValue::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fpython_2fkernel_5ftests_2fproto_2ftest_5fexample_2eproto::scc_info_EnumValue.base);
-  return *internal_default_instance();
-}
-
-
-void EnumValue::Clear() {
-// @@protoc_insertion_point(message_clear_start:tensorflow.contrib.proto.EnumValue)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  repeated_enum_value_.Clear();
-  enum_value_ = 0;
-  _has_bits_.Clear();
-  _internal_metadata_.Clear();
-}
-
-bool EnumValue::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.contrib.proto.EnumValue)
-  for (;;) {
-    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // optional .tensorflow.contrib.proto.EnumValue.Color enum_value = 14;
-      case 14: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(112u /* 112 & 0xFF */)) {
-          int value;
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::tensorflow::contrib::proto::EnumValue_Color_IsValid(value)) {
-            set_enum_value(static_cast< ::tensorflow::contrib::proto::EnumValue_Color >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(
-                14, static_cast< ::google::protobuf::uint64>(value));
-          }
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // repeated .tensorflow.contrib.proto.EnumValue.Color repeated_enum_value = 15;
-      case 15: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(120u /* 120 & 0xFF */)) {
-          int value;
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::tensorflow::contrib::proto::EnumValue_Color_IsValid(value)) {
-            add_repeated_enum_value(static_cast< ::tensorflow::contrib::proto::EnumValue_Color >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(
-                15, static_cast< ::google::protobuf::uint64>(value));
-          }
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(122u /* 122 & 0xFF */)) {
-          DO_((::google::protobuf::internal::WireFormat::ReadPackedEnumPreserveUnknowns(
-                 input,
-                 15,
-                 ::tensorflow::contrib::proto::EnumValue_Color_IsValid,
-                 mutable_unknown_fields(),
-                 this->mutable_repeated_enum_value())));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::google::protobuf::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.contrib.proto.EnumValue)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.contrib.proto.EnumValue)
-  return false;
-#undef DO_
-}
-
-void EnumValue::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.contrib.proto.EnumValue)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // optional .tensorflow.contrib.proto.EnumValue.Color enum_value = 14;
-  if (cached_has_bits & 0x00000001u) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      14, this->enum_value(), output);
-  }
-
-  // repeated .tensorflow.contrib.proto.EnumValue.Color repeated_enum_value = 15;
-  for (int i = 0, n = this->repeated_enum_value_size(); i < n; i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      15, this->repeated_enum_value(i), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.contrib.proto.EnumValue)
-}
-
-::google::protobuf::uint8* EnumValue::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
-  // @@protoc_insertion_point(serialize_to_array_start:tensorflow.contrib.proto.EnumValue)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // optional .tensorflow.contrib.proto.EnumValue.Color enum_value = 14;
-  if (cached_has_bits & 0x00000001u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      14, this->enum_value(), target);
-  }
-
-  // repeated .tensorflow.contrib.proto.EnumValue.Color repeated_enum_value = 15;
-  target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-    15, this->repeated_enum_value_, target);
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
-  }
-  // @@protoc_insertion_point(serialize_to_array_end:tensorflow.contrib.proto.EnumValue)
-  return target;
-}
-
-size_t EnumValue::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:tensorflow.contrib.proto.EnumValue)
-  size_t total_size = 0;
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
-  // repeated .tensorflow.contrib.proto.EnumValue.Color repeated_enum_value = 15;
-  {
-    size_t data_size = 0;
-    unsigned int count = static_cast<unsigned int>(this->repeated_enum_value_size());for (unsigned int i = 0; i < count; i++) {
-      data_size += ::google::protobuf::internal::WireFormatLite::EnumSize(
-        this->repeated_enum_value(static_cast<int>(i)));
-    }
-    total_size += (1UL * count) + data_size;
-  }
-
-  // optional .tensorflow.contrib.proto.EnumValue.Color enum_value = 14;
-  if (has_enum_value()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->enum_value());
-  }
-
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
-}
-
-void EnumValue::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:tensorflow.contrib.proto.EnumValue)
-  GOOGLE_DCHECK_NE(&from, this);
-  const EnumValue* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EnumValue>(
-          &from);
-  if (source == NULL) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:tensorflow.contrib.proto.EnumValue)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:tensorflow.contrib.proto.EnumValue)
-    MergeFrom(*source);
-  }
-}
-
-void EnumValue::MergeFrom(const EnumValue& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.contrib.proto.EnumValue)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  repeated_enum_value_.MergeFrom(from.repeated_enum_value_);
-  if (from.has_enum_value()) {
-    set_enum_value(from.enum_value());
-  }
-}
-
-void EnumValue::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:tensorflow.contrib.proto.EnumValue)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void EnumValue::CopyFrom(const EnumValue& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:tensorflow.contrib.proto.EnumValue)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool EnumValue::IsInitialized() const {
-  return true;
-}
-
-void EnumValue::Swap(EnumValue* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void EnumValue::InternalSwap(EnumValue* other) {
-  using std::swap;
-  repeated_enum_value_.InternalSwap(&other->repeated_enum_value_);
-  swap(enum_value_, other->enum_value_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-}
-
-::google::protobuf::Metadata EnumValue::GetMetadata() const {
   protobuf_tensorflow_2fpython_2fkernel_5ftests_2fproto_2ftest_5fexample_2eproto::protobuf_AssignDescriptorsOnce();
   return ::protobuf_tensorflow_2fpython_2fkernel_5ftests_2fproto_2ftest_5fexample_2eproto::file_level_metadata[kIndexInFileMessages];
 }
@@ -7504,9 +7381,6 @@ template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::contrib::proto::Prim
 }
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::contrib::proto::ExtraFields* Arena::CreateMaybeMessage< ::tensorflow::contrib::proto::ExtraFields >(Arena* arena) {
   return Arena::CreateInternal< ::tensorflow::contrib::proto::ExtraFields >(arena);
-}
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::contrib::proto::EnumValue* Arena::CreateMaybeMessage< ::tensorflow::contrib::proto::EnumValue >(Arena* arena) {
-  return Arena::CreateInternal< ::tensorflow::contrib::proto::EnumValue >(arena);
 }
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::contrib::proto::InnerMessageValue* Arena::CreateMaybeMessage< ::tensorflow::contrib::proto::InnerMessageValue >(Arena* arena) {
   return Arena::CreateInternal< ::tensorflow::contrib::proto::InnerMessageValue >(arena);

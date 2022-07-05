@@ -32,10 +32,10 @@
 #include <google/protobuf/unknown_field_set.h>
 #include "tensorflow_serving/apis/classification.pb.h"
 #include "tensorflow_serving/apis/inference.pb.h"
+#include "tensorflow_serving/apis/logging.pb.h"
 #include "tensorflow_serving/apis/predict.pb.h"
 #include "tensorflow_serving/apis/regression.pb.h"
 #include "tensorflow_serving/apis/session_service.pb.h"
-#include "tensorflow_serving/core/logging.pb.h"
 // @@protoc_insertion_point(includes)
 #define PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto 
 

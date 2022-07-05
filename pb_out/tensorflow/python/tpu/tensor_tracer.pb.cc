@@ -24,8 +24,9 @@ extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fframework_2fgraph_2
 }  // namespace protobuf_tensorflow_2fcore_2fframework_2fgraph_2eproto
 namespace protobuf_tensorflow_2fpython_2ftpu_2ftensor_5ftracer_2eproto {
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fpython_2ftpu_2ftensor_5ftracer_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TensorTracerReport_TensorTracerConfig;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fpython_2ftpu_2ftensor_5ftracer_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TensorTracerReport_TracedTensorDef;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fpython_2ftpu_2ftensor_5ftracer_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TensorTracerReport_TracedTensorDef_Stack;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fpython_2ftpu_2ftensor_5ftracer_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_TensorTracerReport_TensordefEntry_DoNotUse;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fpython_2ftpu_2ftensor_5ftracer_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_TensorTracerReport_TracedTensorDef;
 }  // namespace protobuf_tensorflow_2fpython_2ftpu_2ftensor_5ftracer_2eproto
 namespace tensorflow {
 class TensorTracerReport_TensordefEntry_DoNotUseDefaultTypeInternal {
@@ -38,6 +39,11 @@ class TensorTracerReport_TensorTracerConfigDefaultTypeInternal {
   ::google::protobuf::internal::ExplicitlyConstructed<TensorTracerReport_TensorTracerConfig>
       _instance;
 } _TensorTracerReport_TensorTracerConfig_default_instance_;
+class TensorTracerReport_TracedTensorDef_StackDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<TensorTracerReport_TracedTensorDef_Stack>
+      _instance;
+} _TensorTracerReport_TracedTensorDef_Stack_default_instance_;
 class TensorTracerReport_TracedTensorDefDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<TensorTracerReport_TracedTensorDef>
@@ -78,6 +84,20 @@ static void InitDefaultsTensorTracerReport_TensorTracerConfig() {
 ::google::protobuf::internal::SCCInfo<0> scc_info_TensorTracerReport_TensorTracerConfig =
     {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTensorTracerReport_TensorTracerConfig}, {}};
 
+static void InitDefaultsTensorTracerReport_TracedTensorDef_Stack() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::tensorflow::_TensorTracerReport_TracedTensorDef_Stack_default_instance_;
+    new (ptr) ::tensorflow::TensorTracerReport_TracedTensorDef_Stack();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::tensorflow::TensorTracerReport_TracedTensorDef_Stack::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<0> scc_info_TensorTracerReport_TracedTensorDef_Stack =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTensorTracerReport_TracedTensorDef_Stack}, {}};
+
 static void InitDefaultsTensorTracerReport_TracedTensorDef() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -89,8 +109,9 @@ static void InitDefaultsTensorTracerReport_TracedTensorDef() {
   ::tensorflow::TensorTracerReport_TracedTensorDef::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_TensorTracerReport_TracedTensorDef =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTensorTracerReport_TracedTensorDef}, {}};
+::google::protobuf::internal::SCCInfo<1> scc_info_TensorTracerReport_TracedTensorDef =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsTensorTracerReport_TracedTensorDef}, {
+      &protobuf_tensorflow_2fpython_2ftpu_2ftensor_5ftracer_2eproto::scc_info_TensorTracerReport_TracedTensorDef_Stack.base,}};
 
 static void InitDefaultsTensorTracerReport() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -112,11 +133,12 @@ static void InitDefaultsTensorTracerReport() {
 void InitDefaults() {
   ::google::protobuf::internal::InitSCC(&scc_info_TensorTracerReport_TensordefEntry_DoNotUse.base);
   ::google::protobuf::internal::InitSCC(&scc_info_TensorTracerReport_TensorTracerConfig.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TensorTracerReport_TracedTensorDef_Stack.base);
   ::google::protobuf::internal::InitSCC(&scc_info_TensorTracerReport_TracedTensorDef.base);
   ::google::protobuf::internal::InitSCC(&scc_info_TensorTracerReport.base);
 }
 
-::google::protobuf::Metadata file_level_metadata[4];
+::google::protobuf::Metadata file_level_metadata[5];
 
 const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::TensorTracerReport_TensordefEntry_DoNotUse, _has_bits_),
@@ -143,6 +165,15 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::TensorTracerReport_TensorTracerConfig, included_cores_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::TensorTracerReport_TensorTracerConfig, signatures_),
   ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::TensorTracerReport_TracedTensorDef_Stack, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::TensorTracerReport_TracedTensorDef_Stack, stack_fn_names_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::TensorTracerReport_TracedTensorDef_Stack, stack_lines_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::TensorTracerReport_TracedTensorDef_Stack, stack_filenames_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::TensorTracerReport_TracedTensorDef_Stack, stack_linenos_),
+  ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::TensorTracerReport_TracedTensorDef, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
@@ -152,6 +183,7 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::TensorTracerReport_TracedTensorDef, trace_point_name_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::TensorTracerReport_TracedTensorDef, is_traced_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::TensorTracerReport_TracedTensorDef, explanation_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::TensorTracerReport_TracedTensorDef, op_stack_info_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::TensorTracerReport, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -160,17 +192,23 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::TensorTracerReport, config_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::TensorTracerReport, graphdef_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::TensorTracerReport, tensordef_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::TensorTracerReport, fingerprint_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::TensorTracerReport, concrete_function_name_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::TensorTracerReport, last_common_frame_no_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::TensorTracerReport, outputs_),
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   { 0, 7, sizeof(::tensorflow::TensorTracerReport_TensordefEntry_DoNotUse)},
   { 9, -1, sizeof(::tensorflow::TensorTracerReport_TensorTracerConfig)},
-  { 23, -1, sizeof(::tensorflow::TensorTracerReport_TracedTensorDef)},
-  { 33, -1, sizeof(::tensorflow::TensorTracerReport)},
+  { 23, -1, sizeof(::tensorflow::TensorTracerReport_TracedTensorDef_Stack)},
+  { 32, -1, sizeof(::tensorflow::TensorTracerReport_TracedTensorDef)},
+  { 43, -1, sizeof(::tensorflow::TensorTracerReport)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::_TensorTracerReport_TensordefEntry_DoNotUse_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::_TensorTracerReport_TensorTracerConfig_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::_TensorTracerReport_TracedTensorDef_Stack_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::_TensorTracerReport_TracedTensorDef_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::_TensorTracerReport_default_instance_),
 };
@@ -190,7 +228,7 @@ void protobuf_AssignDescriptorsOnce() {
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 4);
+  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 5);
 }
 
 void AddDescriptorsImpl() {
@@ -198,25 +236,32 @@ void AddDescriptorsImpl() {
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n)tensorflow/python/tpu/tensor_tracer.pr"
       "oto\022\ntensorflow\032%tensorflow/core/framewo"
-      "rk/graph.proto\"\346\004\n\022TensorTracerReport\022A\n"
+      "rk/graph.proto\"\376\006\n\022TensorTracerReport\022A\n"
       "\006config\030\001 \001(\01321.tensorflow.TensorTracerR"
       "eport.TensorTracerConfig\022&\n\010graphdef\030\002 \001"
       "(\0132\024.tensorflow.GraphDef\022@\n\ttensordef\030\003 "
       "\003(\0132-.tensorflow.TensorTracerReport.Tens"
-      "ordefEntry\032`\n\016TensordefEntry\022\013\n\003key\030\001 \001("
-      "\t\022=\n\005value\030\002 \001(\0132..tensorflow.TensorTrac"
-      "erReport.TracedTensorDef:\0028\001\032\310\001\n\022TensorT"
-      "racerConfig\022\017\n\007version\030\001 \001(\t\022\016\n\006device\030\002"
-      " \001(\t\022\022\n\ntrace_mode\030\003 \001(\t\022\021\n\tnum_cores\030\004 "
-      "\001(\005\022\021\n\tnum_hosts\030\005 \001(\005\022\017\n\007submode\030\006 \001(\t\022"
-      "\032\n\022num_cores_per_host\030\007 \001(\005\022\026\n\016included_"
-      "cores\030\010 \003(\005\022\022\n\nsignatures\030\t \003(\t\032v\n\017Trace"
-      "dTensorDef\022\014\n\004name\030\001 \001(\t\022\023\n\013cache_index\030"
-      "\002 \001(\005\022\030\n\020trace_point_name\030\003 \001(\t\022\021\n\tis_tr"
-      "aced\030\004 \001(\010\022\023\n\013explanation\030\005 \001(\tb\006proto3"
+      "ordefEntry\022\023\n\013fingerprint\030\004 \001(\t\022\036\n\026concr"
+      "ete_function_name\030\005 \001(\t\022\034\n\024last_common_f"
+      "rame_no\030\006 \001(\005\022\017\n\007outputs\030\007 \003(\t\032`\n\016Tensor"
+      "defEntry\022\013\n\003key\030\001 \001(\t\022=\n\005value\030\002 \001(\0132..t"
+      "ensorflow.TensorTracerReport.TracedTenso"
+      "rDef:\0028\001\032\310\001\n\022TensorTracerConfig\022\017\n\007versi"
+      "on\030\001 \001(\t\022\016\n\006device\030\002 \001(\t\022\022\n\ntrace_mode\030\003"
+      " \001(\t\022\021\n\tnum_cores\030\004 \001(\005\022\021\n\tnum_hosts\030\005 \001"
+      "(\005\022\017\n\007submode\030\006 \001(\t\022\032\n\022num_cores_per_hos"
+      "t\030\007 \001(\005\022\026\n\016included_cores\030\010 \003(\005\022\022\n\nsigna"
+      "tures\030\t \003(\t\032\251\002\n\017TracedTensorDef\022\014\n\004name\030"
+      "\001 \001(\t\022\023\n\013cache_index\030\002 \001(\005\022\030\n\020trace_poin"
+      "t_name\030\003 \001(\t\022\021\n\tis_traced\030\004 \001(\010\022\023\n\013expla"
+      "nation\030\005 \001(\t\022K\n\rop_stack_info\030\006 \001(\01324.te"
+      "nsorflow.TensorTracerReport.TracedTensor"
+      "Def.Stack\032d\n\005Stack\022\026\n\016stack_fn_names\030\001 \003"
+      "(\t\022\023\n\013stack_lines\030\002 \003(\t\022\027\n\017stack_filenam"
+      "es\030\003 \003(\t\022\025\n\rstack_linenos\030\004 \003(\005b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 719);
+      descriptor, 999);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/python/tpu/tensor_tracer.proto", &protobuf_RegisterTypes);
   ::protobuf_tensorflow_2fcore_2fframework_2fgraph_2eproto::AddDescriptors();
@@ -901,7 +946,407 @@ void TensorTracerReport_TensorTracerConfig::InternalSwap(TensorTracerReport_Tens
 
 // ===================================================================
 
+void TensorTracerReport_TracedTensorDef_Stack::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int TensorTracerReport_TracedTensorDef_Stack::kStackFnNamesFieldNumber;
+const int TensorTracerReport_TracedTensorDef_Stack::kStackLinesFieldNumber;
+const int TensorTracerReport_TracedTensorDef_Stack::kStackFilenamesFieldNumber;
+const int TensorTracerReport_TracedTensorDef_Stack::kStackLinenosFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+TensorTracerReport_TracedTensorDef_Stack::TensorTracerReport_TracedTensorDef_Stack()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fpython_2ftpu_2ftensor_5ftracer_2eproto::scc_info_TensorTracerReport_TracedTensorDef_Stack.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:tensorflow.TensorTracerReport.TracedTensorDef.Stack)
+}
+TensorTracerReport_TracedTensorDef_Stack::TensorTracerReport_TracedTensorDef_Stack(const TensorTracerReport_TracedTensorDef_Stack& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      stack_fn_names_(from.stack_fn_names_),
+      stack_lines_(from.stack_lines_),
+      stack_filenames_(from.stack_filenames_),
+      stack_linenos_(from.stack_linenos_) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:tensorflow.TensorTracerReport.TracedTensorDef.Stack)
+}
+
+void TensorTracerReport_TracedTensorDef_Stack::SharedCtor() {
+}
+
+TensorTracerReport_TracedTensorDef_Stack::~TensorTracerReport_TracedTensorDef_Stack() {
+  // @@protoc_insertion_point(destructor:tensorflow.TensorTracerReport.TracedTensorDef.Stack)
+  SharedDtor();
+}
+
+void TensorTracerReport_TracedTensorDef_Stack::SharedDtor() {
+}
+
+void TensorTracerReport_TracedTensorDef_Stack::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* TensorTracerReport_TracedTensorDef_Stack::descriptor() {
+  ::protobuf_tensorflow_2fpython_2ftpu_2ftensor_5ftracer_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fpython_2ftpu_2ftensor_5ftracer_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const TensorTracerReport_TracedTensorDef_Stack& TensorTracerReport_TracedTensorDef_Stack::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fpython_2ftpu_2ftensor_5ftracer_2eproto::scc_info_TensorTracerReport_TracedTensorDef_Stack.base);
+  return *internal_default_instance();
+}
+
+
+void TensorTracerReport_TracedTensorDef_Stack::Clear() {
+// @@protoc_insertion_point(message_clear_start:tensorflow.TensorTracerReport.TracedTensorDef.Stack)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  stack_fn_names_.Clear();
+  stack_lines_.Clear();
+  stack_filenames_.Clear();
+  stack_linenos_.Clear();
+  _internal_metadata_.Clear();
+}
+
+bool TensorTracerReport_TracedTensorDef_Stack::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:tensorflow.TensorTracerReport.TracedTensorDef.Stack)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // repeated string stack_fn_names = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->add_stack_fn_names()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->stack_fn_names(this->stack_fn_names_size() - 1).data(),
+            static_cast<int>(this->stack_fn_names(this->stack_fn_names_size() - 1).length()),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_fn_names"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated string stack_lines = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->add_stack_lines()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->stack_lines(this->stack_lines_size() - 1).data(),
+            static_cast<int>(this->stack_lines(this->stack_lines_size() - 1).length()),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_lines"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated string stack_filenames = 3;
+      case 3: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->add_stack_filenames()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->stack_filenames(this->stack_filenames_size() - 1).data(),
+            static_cast<int>(this->stack_filenames(this->stack_filenames_size() - 1).length()),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_filenames"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated int32 stack_linenos = 4;
+      case 4: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, this->mutable_stack_linenos())));
+        } else if (
+            static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 1, 34u, input, this->mutable_stack_linenos())));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:tensorflow.TensorTracerReport.TracedTensorDef.Stack)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:tensorflow.TensorTracerReport.TracedTensorDef.Stack)
+  return false;
+#undef DO_
+}
+
+void TensorTracerReport_TracedTensorDef_Stack::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:tensorflow.TensorTracerReport.TracedTensorDef.Stack)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated string stack_fn_names = 1;
+  for (int i = 0, n = this->stack_fn_names_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->stack_fn_names(i).data(), static_cast<int>(this->stack_fn_names(i).length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_fn_names");
+    ::google::protobuf::internal::WireFormatLite::WriteString(
+      1, this->stack_fn_names(i), output);
+  }
+
+  // repeated string stack_lines = 2;
+  for (int i = 0, n = this->stack_lines_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->stack_lines(i).data(), static_cast<int>(this->stack_lines(i).length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_lines");
+    ::google::protobuf::internal::WireFormatLite::WriteString(
+      2, this->stack_lines(i), output);
+  }
+
+  // repeated string stack_filenames = 3;
+  for (int i = 0, n = this->stack_filenames_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->stack_filenames(i).data(), static_cast<int>(this->stack_filenames(i).length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_filenames");
+    ::google::protobuf::internal::WireFormatLite::WriteString(
+      3, this->stack_filenames(i), output);
+  }
+
+  // repeated int32 stack_linenos = 4;
+  if (this->stack_linenos_size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteTag(4, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
+    output->WriteVarint32(static_cast< ::google::protobuf::uint32>(
+        _stack_linenos_cached_byte_size_));
+  }
+  for (int i = 0, n = this->stack_linenos_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32NoTag(
+      this->stack_linenos(i), output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:tensorflow.TensorTracerReport.TracedTensorDef.Stack)
+}
+
+::google::protobuf::uint8* TensorTracerReport_TracedTensorDef_Stack::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:tensorflow.TensorTracerReport.TracedTensorDef.Stack)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated string stack_fn_names = 1;
+  for (int i = 0, n = this->stack_fn_names_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->stack_fn_names(i).data(), static_cast<int>(this->stack_fn_names(i).length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_fn_names");
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteStringToArray(1, this->stack_fn_names(i), target);
+  }
+
+  // repeated string stack_lines = 2;
+  for (int i = 0, n = this->stack_lines_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->stack_lines(i).data(), static_cast<int>(this->stack_lines(i).length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_lines");
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteStringToArray(2, this->stack_lines(i), target);
+  }
+
+  // repeated string stack_filenames = 3;
+  for (int i = 0, n = this->stack_filenames_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->stack_filenames(i).data(), static_cast<int>(this->stack_filenames(i).length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_filenames");
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteStringToArray(3, this->stack_filenames(i), target);
+  }
+
+  // repeated int32 stack_linenos = 4;
+  if (this->stack_linenos_size() > 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
+      4,
+      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
+      target);
+    target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
+        static_cast< ::google::protobuf::int32>(
+            _stack_linenos_cached_byte_size_), target);
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteInt32NoTagToArray(this->stack_linenos_, target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:tensorflow.TensorTracerReport.TracedTensorDef.Stack)
+  return target;
+}
+
+size_t TensorTracerReport_TracedTensorDef_Stack::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:tensorflow.TensorTracerReport.TracedTensorDef.Stack)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // repeated string stack_fn_names = 1;
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->stack_fn_names_size());
+  for (int i = 0, n = this->stack_fn_names_size(); i < n; i++) {
+    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
+      this->stack_fn_names(i));
+  }
+
+  // repeated string stack_lines = 2;
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->stack_lines_size());
+  for (int i = 0, n = this->stack_lines_size(); i < n; i++) {
+    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
+      this->stack_lines(i));
+  }
+
+  // repeated string stack_filenames = 3;
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->stack_filenames_size());
+  for (int i = 0, n = this->stack_filenames_size(); i < n; i++) {
+    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
+      this->stack_filenames(i));
+  }
+
+  // repeated int32 stack_linenos = 4;
+  {
+    size_t data_size = ::google::protobuf::internal::WireFormatLite::
+      Int32Size(this->stack_linenos_);
+    if (data_size > 0) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int32Size(
+            static_cast< ::google::protobuf::int32>(data_size));
+    }
+    int cached_size = ::google::protobuf::internal::ToCachedSize(data_size);
+    GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+    _stack_linenos_cached_byte_size_ = cached_size;
+    GOOGLE_SAFE_CONCURRENT_WRITES_END();
+    total_size += data_size;
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void TensorTracerReport_TracedTensorDef_Stack::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:tensorflow.TensorTracerReport.TracedTensorDef.Stack)
+  GOOGLE_DCHECK_NE(&from, this);
+  const TensorTracerReport_TracedTensorDef_Stack* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const TensorTracerReport_TracedTensorDef_Stack>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:tensorflow.TensorTracerReport.TracedTensorDef.Stack)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:tensorflow.TensorTracerReport.TracedTensorDef.Stack)
+    MergeFrom(*source);
+  }
+}
+
+void TensorTracerReport_TracedTensorDef_Stack::MergeFrom(const TensorTracerReport_TracedTensorDef_Stack& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.TensorTracerReport.TracedTensorDef.Stack)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  stack_fn_names_.MergeFrom(from.stack_fn_names_);
+  stack_lines_.MergeFrom(from.stack_lines_);
+  stack_filenames_.MergeFrom(from.stack_filenames_);
+  stack_linenos_.MergeFrom(from.stack_linenos_);
+}
+
+void TensorTracerReport_TracedTensorDef_Stack::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:tensorflow.TensorTracerReport.TracedTensorDef.Stack)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void TensorTracerReport_TracedTensorDef_Stack::CopyFrom(const TensorTracerReport_TracedTensorDef_Stack& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:tensorflow.TensorTracerReport.TracedTensorDef.Stack)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool TensorTracerReport_TracedTensorDef_Stack::IsInitialized() const {
+  return true;
+}
+
+void TensorTracerReport_TracedTensorDef_Stack::Swap(TensorTracerReport_TracedTensorDef_Stack* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void TensorTracerReport_TracedTensorDef_Stack::InternalSwap(TensorTracerReport_TracedTensorDef_Stack* other) {
+  using std::swap;
+  stack_fn_names_.InternalSwap(CastToBase(&other->stack_fn_names_));
+  stack_lines_.InternalSwap(CastToBase(&other->stack_lines_));
+  stack_filenames_.InternalSwap(CastToBase(&other->stack_filenames_));
+  stack_linenos_.InternalSwap(&other->stack_linenos_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata TensorTracerReport_TracedTensorDef_Stack::GetMetadata() const {
+  protobuf_tensorflow_2fpython_2ftpu_2ftensor_5ftracer_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fpython_2ftpu_2ftensor_5ftracer_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
 void TensorTracerReport_TracedTensorDef::InitAsDefaultInstance() {
+  ::tensorflow::_TensorTracerReport_TracedTensorDef_default_instance_._instance.get_mutable()->op_stack_info_ = const_cast< ::tensorflow::TensorTracerReport_TracedTensorDef_Stack*>(
+      ::tensorflow::TensorTracerReport_TracedTensorDef_Stack::internal_default_instance());
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TensorTracerReport_TracedTensorDef::kNameFieldNumber;
@@ -909,6 +1354,7 @@ const int TensorTracerReport_TracedTensorDef::kCacheIndexFieldNumber;
 const int TensorTracerReport_TracedTensorDef::kTracePointNameFieldNumber;
 const int TensorTracerReport_TracedTensorDef::kIsTracedFieldNumber;
 const int TensorTracerReport_TracedTensorDef::kExplanationFieldNumber;
+const int TensorTracerReport_TracedTensorDef::kOpStackInfoFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TensorTracerReport_TracedTensorDef::TensorTracerReport_TracedTensorDef()
@@ -934,6 +1380,11 @@ TensorTracerReport_TracedTensorDef::TensorTracerReport_TracedTensorDef(const Ten
   if (from.explanation().size() > 0) {
     explanation_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.explanation_);
   }
+  if (from.has_op_stack_info()) {
+    op_stack_info_ = new ::tensorflow::TensorTracerReport_TracedTensorDef_Stack(*from.op_stack_info_);
+  } else {
+    op_stack_info_ = NULL;
+  }
   ::memcpy(&cache_index_, &from.cache_index_,
     static_cast<size_t>(reinterpret_cast<char*>(&is_traced_) -
     reinterpret_cast<char*>(&cache_index_)) + sizeof(is_traced_));
@@ -944,9 +1395,9 @@ void TensorTracerReport_TracedTensorDef::SharedCtor() {
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   trace_point_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   explanation_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&cache_index_, 0, static_cast<size_t>(
+  ::memset(&op_stack_info_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&is_traced_) -
-      reinterpret_cast<char*>(&cache_index_)) + sizeof(is_traced_));
+      reinterpret_cast<char*>(&op_stack_info_)) + sizeof(is_traced_));
 }
 
 TensorTracerReport_TracedTensorDef::~TensorTracerReport_TracedTensorDef() {
@@ -958,6 +1409,7 @@ void TensorTracerReport_TracedTensorDef::SharedDtor() {
   name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   trace_point_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   explanation_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (this != internal_default_instance()) delete op_stack_info_;
 }
 
 void TensorTracerReport_TracedTensorDef::SetCachedSize(int size) const {
@@ -983,6 +1435,10 @@ void TensorTracerReport_TracedTensorDef::Clear() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   trace_point_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   explanation_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (GetArenaNoVirtual() == NULL && op_stack_info_ != NULL) {
+    delete op_stack_info_;
+  }
+  op_stack_info_ = NULL;
   ::memset(&cache_index_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&is_traced_) -
       reinterpret_cast<char*>(&cache_index_)) + sizeof(is_traced_));
@@ -1075,6 +1531,18 @@ bool TensorTracerReport_TracedTensorDef::MergePartialFromCodedStream(
         break;
       }
 
+      // .tensorflow.TensorTracerReport.TracedTensorDef.Stack op_stack_info = 6;
+      case 6: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_op_stack_info()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -1141,6 +1609,12 @@ void TensorTracerReport_TracedTensorDef::SerializeWithCachedSizes(
       5, this->explanation(), output);
   }
 
+  // .tensorflow.TensorTracerReport.TracedTensorDef.Stack op_stack_info = 6;
+  if (this->has_op_stack_info()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      6, this->_internal_op_stack_info(), output);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -1198,6 +1672,13 @@ void TensorTracerReport_TracedTensorDef::SerializeWithCachedSizes(
         5, this->explanation(), target);
   }
 
+  // .tensorflow.TensorTracerReport.TracedTensorDef.Stack op_stack_info = 6;
+  if (this->has_op_stack_info()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        6, this->_internal_op_stack_info(), deterministic, target);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
@@ -1234,6 +1715,13 @@ size_t TensorTracerReport_TracedTensorDef::ByteSizeLong() const {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->explanation());
+  }
+
+  // .tensorflow.TensorTracerReport.TracedTensorDef.Stack op_stack_info = 6;
+  if (this->has_op_stack_info()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *op_stack_info_);
   }
 
   // int32 cache_index = 2;
@@ -1287,6 +1775,9 @@ void TensorTracerReport_TracedTensorDef::MergeFrom(const TensorTracerReport_Trac
 
     explanation_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.explanation_);
   }
+  if (from.has_op_stack_info()) {
+    mutable_op_stack_info()->::tensorflow::TensorTracerReport_TracedTensorDef_Stack::MergeFrom(from.op_stack_info());
+  }
   if (from.cache_index() != 0) {
     set_cache_index(from.cache_index());
   }
@@ -1325,6 +1816,7 @@ void TensorTracerReport_TracedTensorDef::InternalSwap(TensorTracerReport_TracedT
     GetArenaNoVirtual());
   explanation_.Swap(&other->explanation_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
+  swap(op_stack_info_, other->op_stack_info_);
   swap(cache_index_, other->cache_index_);
   swap(is_traced_, other->is_traced_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -1354,6 +1846,10 @@ void TensorTracerReport::clear_graphdef() {
 const int TensorTracerReport::kConfigFieldNumber;
 const int TensorTracerReport::kGraphdefFieldNumber;
 const int TensorTracerReport::kTensordefFieldNumber;
+const int TensorTracerReport::kFingerprintFieldNumber;
+const int TensorTracerReport::kConcreteFunctionNameFieldNumber;
+const int TensorTracerReport::kLastCommonFrameNoFieldNumber;
+const int TensorTracerReport::kOutputsFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TensorTracerReport::TensorTracerReport()
@@ -1365,9 +1861,18 @@ TensorTracerReport::TensorTracerReport()
 }
 TensorTracerReport::TensorTracerReport(const TensorTracerReport& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
+      _internal_metadata_(NULL),
+      outputs_(from.outputs_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   tensordef_.MergeFrom(from.tensordef_);
+  fingerprint_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.fingerprint().size() > 0) {
+    fingerprint_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.fingerprint_);
+  }
+  concrete_function_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.concrete_function_name().size() > 0) {
+    concrete_function_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.concrete_function_name_);
+  }
   if (from.has_config()) {
     config_ = new ::tensorflow::TensorTracerReport_TensorTracerConfig(*from.config_);
   } else {
@@ -1378,13 +1883,16 @@ TensorTracerReport::TensorTracerReport(const TensorTracerReport& from)
   } else {
     graphdef_ = NULL;
   }
+  last_common_frame_no_ = from.last_common_frame_no_;
   // @@protoc_insertion_point(copy_constructor:tensorflow.TensorTracerReport)
 }
 
 void TensorTracerReport::SharedCtor() {
+  fingerprint_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  concrete_function_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&config_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&graphdef_) -
-      reinterpret_cast<char*>(&config_)) + sizeof(graphdef_));
+      reinterpret_cast<char*>(&last_common_frame_no_) -
+      reinterpret_cast<char*>(&config_)) + sizeof(last_common_frame_no_));
 }
 
 TensorTracerReport::~TensorTracerReport() {
@@ -1393,6 +1901,8 @@ TensorTracerReport::~TensorTracerReport() {
 }
 
 void TensorTracerReport::SharedDtor() {
+  fingerprint_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  concrete_function_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete config_;
   if (this != internal_default_instance()) delete graphdef_;
 }
@@ -1418,6 +1928,9 @@ void TensorTracerReport::Clear() {
   (void) cached_has_bits;
 
   tensordef_.Clear();
+  outputs_.Clear();
+  fingerprint_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  concrete_function_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (GetArenaNoVirtual() == NULL && config_ != NULL) {
     delete config_;
   }
@@ -1426,6 +1939,7 @@ void TensorTracerReport::Clear() {
     delete graphdef_;
   }
   graphdef_ = NULL;
+  last_common_frame_no_ = 0;
   _internal_metadata_.Clear();
 }
 
@@ -1480,6 +1994,69 @@ bool TensorTracerReport::MergePartialFromCodedStream(
             parser.key().data(), static_cast<int>(parser.key().length()),
             ::google::protobuf::internal::WireFormatLite::PARSE,
             "tensorflow.TensorTracerReport.TensordefEntry.key"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string fingerprint = 4;
+      case 4: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_fingerprint()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->fingerprint().data(), static_cast<int>(this->fingerprint().length()),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "tensorflow.TensorTracerReport.fingerprint"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string concrete_function_name = 5;
+      case 5: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_concrete_function_name()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->concrete_function_name().data(), static_cast<int>(this->concrete_function_name().length()),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "tensorflow.TensorTracerReport.concrete_function_name"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int32 last_common_frame_no = 6;
+      case 6: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(48u /* 48 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &last_common_frame_no_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated string outputs = 7;
+      case 7: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(58u /* 58 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->add_outputs()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->outputs(this->outputs_size() - 1).data(),
+            static_cast<int>(this->outputs(this->outputs_size() - 1).length()),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "tensorflow.TensorTracerReport.outputs"));
         } else {
           goto handle_unusual;
         }
@@ -1573,6 +2150,41 @@ void TensorTracerReport::SerializeWithCachedSizes(
     }
   }
 
+  // string fingerprint = 4;
+  if (this->fingerprint().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->fingerprint().data(), static_cast<int>(this->fingerprint().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "tensorflow.TensorTracerReport.fingerprint");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      4, this->fingerprint(), output);
+  }
+
+  // string concrete_function_name = 5;
+  if (this->concrete_function_name().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->concrete_function_name().data(), static_cast<int>(this->concrete_function_name().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "tensorflow.TensorTracerReport.concrete_function_name");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      5, this->concrete_function_name(), output);
+  }
+
+  // int32 last_common_frame_no = 6;
+  if (this->last_common_frame_no() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(6, this->last_common_frame_no(), output);
+  }
+
+  // repeated string outputs = 7;
+  for (int i = 0, n = this->outputs_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->outputs(i).data(), static_cast<int>(this->outputs(i).length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "tensorflow.TensorTracerReport.outputs");
+    ::google::protobuf::internal::WireFormatLite::WriteString(
+      7, this->outputs(i), output);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -1654,6 +2266,43 @@ void TensorTracerReport::SerializeWithCachedSizes(
     }
   }
 
+  // string fingerprint = 4;
+  if (this->fingerprint().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->fingerprint().data(), static_cast<int>(this->fingerprint().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "tensorflow.TensorTracerReport.fingerprint");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        4, this->fingerprint(), target);
+  }
+
+  // string concrete_function_name = 5;
+  if (this->concrete_function_name().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->concrete_function_name().data(), static_cast<int>(this->concrete_function_name().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "tensorflow.TensorTracerReport.concrete_function_name");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        5, this->concrete_function_name(), target);
+  }
+
+  // int32 last_common_frame_no = 6;
+  if (this->last_common_frame_no() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(6, this->last_common_frame_no(), target);
+  }
+
+  // repeated string outputs = 7;
+  for (int i = 0, n = this->outputs_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->outputs(i).data(), static_cast<int>(this->outputs(i).length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "tensorflow.TensorTracerReport.outputs");
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteStringToArray(7, this->outputs(i), target);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
@@ -1685,6 +2334,28 @@ size_t TensorTracerReport::ByteSizeLong() const {
     }
   }
 
+  // repeated string outputs = 7;
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->outputs_size());
+  for (int i = 0, n = this->outputs_size(); i < n; i++) {
+    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
+      this->outputs(i));
+  }
+
+  // string fingerprint = 4;
+  if (this->fingerprint().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->fingerprint());
+  }
+
+  // string concrete_function_name = 5;
+  if (this->concrete_function_name().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->concrete_function_name());
+  }
+
   // .tensorflow.TensorTracerReport.TensorTracerConfig config = 1;
   if (this->has_config()) {
     total_size += 1 +
@@ -1697,6 +2368,13 @@ size_t TensorTracerReport::ByteSizeLong() const {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *graphdef_);
+  }
+
+  // int32 last_common_frame_no = 6;
+  if (this->last_common_frame_no() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->last_common_frame_no());
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -1727,11 +2405,23 @@ void TensorTracerReport::MergeFrom(const TensorTracerReport& from) {
   (void) cached_has_bits;
 
   tensordef_.MergeFrom(from.tensordef_);
+  outputs_.MergeFrom(from.outputs_);
+  if (from.fingerprint().size() > 0) {
+
+    fingerprint_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.fingerprint_);
+  }
+  if (from.concrete_function_name().size() > 0) {
+
+    concrete_function_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.concrete_function_name_);
+  }
   if (from.has_config()) {
     mutable_config()->::tensorflow::TensorTracerReport_TensorTracerConfig::MergeFrom(from.config());
   }
   if (from.has_graphdef()) {
     mutable_graphdef()->::tensorflow::GraphDef::MergeFrom(from.graphdef());
+  }
+  if (from.last_common_frame_no() != 0) {
+    set_last_common_frame_no(from.last_common_frame_no());
   }
 }
 
@@ -1760,8 +2450,14 @@ void TensorTracerReport::Swap(TensorTracerReport* other) {
 void TensorTracerReport::InternalSwap(TensorTracerReport* other) {
   using std::swap;
   tensordef_.Swap(&other->tensordef_);
+  outputs_.InternalSwap(CastToBase(&other->outputs_));
+  fingerprint_.Swap(&other->fingerprint_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  concrete_function_name_.Swap(&other->concrete_function_name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
   swap(config_, other->config_);
   swap(graphdef_, other->graphdef_);
+  swap(last_common_frame_no_, other->last_common_frame_no_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
@@ -1780,6 +2476,9 @@ template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::TensorTracerReport_T
 }
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::TensorTracerReport_TensorTracerConfig* Arena::CreateMaybeMessage< ::tensorflow::TensorTracerReport_TensorTracerConfig >(Arena* arena) {
   return Arena::CreateInternal< ::tensorflow::TensorTracerReport_TensorTracerConfig >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::TensorTracerReport_TracedTensorDef_Stack* Arena::CreateMaybeMessage< ::tensorflow::TensorTracerReport_TracedTensorDef_Stack >(Arena* arena) {
+  return Arena::CreateInternal< ::tensorflow::TensorTracerReport_TracedTensorDef_Stack >(arena);
 }
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::TensorTracerReport_TracedTensorDef* Arena::CreateMaybeMessage< ::tensorflow::TensorTracerReport_TracedTensorDef >(Arena* arena) {
   return Arena::CreateInternal< ::tensorflow::TensorTracerReport_TracedTensorDef >(arena);

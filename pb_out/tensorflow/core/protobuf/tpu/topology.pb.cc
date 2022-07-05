@@ -19,8 +19,16 @@
 #endif
 // @@protoc_insertion_point(includes)
 
+namespace protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2ftopology_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2ftopology_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TPUHardwareFeature;
+}  // namespace protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2ftopology_2eproto
 namespace tensorflow {
 namespace tpu {
+class TPUHardwareFeatureDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<TPUHardwareFeature>
+      _instance;
+} _TPUHardwareFeature_default_instance_;
 class TopologyProtoDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<TopologyProto>
@@ -29,6 +37,20 @@ class TopologyProtoDefaultTypeInternal {
 }  // namespace tpu
 }  // namespace tensorflow
 namespace protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2ftopology_2eproto {
+static void InitDefaultsTPUHardwareFeature() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::tensorflow::tpu::_TPUHardwareFeature_default_instance_;
+    new (ptr) ::tensorflow::tpu::TPUHardwareFeature();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::tensorflow::tpu::TPUHardwareFeature::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<0> scc_info_TPUHardwareFeature =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTPUHardwareFeature}, {}};
+
 static void InitDefaultsTopologyProto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -40,16 +62,25 @@ static void InitDefaultsTopologyProto() {
   ::tensorflow::tpu::TopologyProto::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_TopologyProto =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTopologyProto}, {}};
+::google::protobuf::internal::SCCInfo<1> scc_info_TopologyProto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsTopologyProto}, {
+      &protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2ftopology_2eproto::scc_info_TPUHardwareFeature.base,}};
 
 void InitDefaults() {
+  ::google::protobuf::internal::InitSCC(&scc_info_TPUHardwareFeature.base);
   ::google::protobuf::internal::InitSCC(&scc_info_TopologyProto.base);
 }
 
-::google::protobuf::Metadata file_level_metadata[1];
+::google::protobuf::Metadata file_level_metadata[2];
+const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[1];
 
 const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::TPUHardwareFeature, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::TPUHardwareFeature, embedding_feature_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::TopologyProto, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -59,12 +90,15 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::TopologyProto, num_tasks_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::TopologyProto, num_tpu_devices_per_task_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::TopologyProto, device_coordinates_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::tpu::TopologyProto, tpu_hardware_feature_),
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::tensorflow::tpu::TopologyProto)},
+  { 0, -1, sizeof(::tensorflow::tpu::TPUHardwareFeature)},
+  { 6, -1, sizeof(::tensorflow::tpu::TopologyProto)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::tpu::_TPUHardwareFeature_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::tensorflow::tpu::_TopologyProto_default_instance_),
 };
 
@@ -72,7 +106,7 @@ void protobuf_AssignDescriptors() {
   AddDescriptors();
   AssignDescriptors(
       "tensorflow/core/protobuf/tpu/topology.proto", schemas, file_default_instances, TableStruct::offsets,
-      file_level_metadata, NULL, NULL);
+      file_level_metadata, file_level_enum_descriptors, NULL);
 }
 
 void protobuf_AssignDescriptorsOnce() {
@@ -83,20 +117,26 @@ void protobuf_AssignDescriptorsOnce() {
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 1);
+  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 2);
 }
 
 void AddDescriptorsImpl() {
   InitDefaults();
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n+tensorflow/core/protobuf/tpu/topology."
-      "proto\022\016tensorflow.tpu\"t\n\rTopologyProto\022\022"
-      "\n\nmesh_shape\030\001 \003(\005\022\021\n\tnum_tasks\030\002 \001(\005\022 \n"
-      "\030num_tpu_devices_per_task\030\003 \001(\005\022\032\n\022devic"
-      "e_coordinates\030\004 \003(\005B\003\370\001\001b\006proto3"
+      "proto\022\016tensorflow.tpu\"\231\001\n\022TPUHardwareFea"
+      "ture\022N\n\021embedding_feature\030\001 \001(\01623.tensor"
+      "flow.tpu.TPUHardwareFeature.EmbeddingFea"
+      "ture\"3\n\020EmbeddingFeature\022\017\n\013UNSUPPORTED\020"
+      "\000\022\006\n\002V1\020\001\022\006\n\002V2\020\002\"\266\001\n\rTopologyProto\022\022\n\nm"
+      "esh_shape\030\001 \003(\005\022\021\n\tnum_tasks\030\002 \001(\005\022 \n\030nu"
+      "m_tpu_devices_per_task\030\003 \001(\005\022\032\n\022device_c"
+      "oordinates\030\004 \003(\005\022@\n\024tpu_hardware_feature"
+      "\030\005 \001(\0132\".tensorflow.tpu.TPUHardwareFeatu"
+      "reB\003\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 192);
+      descriptor, 415);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/protobuf/tpu/topology.proto", &protobuf_RegisterTypes);
 }
@@ -114,16 +154,310 @@ struct StaticDescriptorInitializer {
 }  // namespace protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2ftopology_2eproto
 namespace tensorflow {
 namespace tpu {
+const ::google::protobuf::EnumDescriptor* TPUHardwareFeature_EmbeddingFeature_descriptor() {
+  protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2ftopology_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2ftopology_2eproto::file_level_enum_descriptors[0];
+}
+bool TPUHardwareFeature_EmbeddingFeature_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+      return true;
+    default:
+      return false;
+  }
+}
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const TPUHardwareFeature_EmbeddingFeature TPUHardwareFeature::UNSUPPORTED;
+const TPUHardwareFeature_EmbeddingFeature TPUHardwareFeature::V1;
+const TPUHardwareFeature_EmbeddingFeature TPUHardwareFeature::V2;
+const TPUHardwareFeature_EmbeddingFeature TPUHardwareFeature::EmbeddingFeature_MIN;
+const TPUHardwareFeature_EmbeddingFeature TPUHardwareFeature::EmbeddingFeature_MAX;
+const int TPUHardwareFeature::EmbeddingFeature_ARRAYSIZE;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+// ===================================================================
+
+void TPUHardwareFeature::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int TPUHardwareFeature::kEmbeddingFeatureFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+TPUHardwareFeature::TPUHardwareFeature()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2ftopology_2eproto::scc_info_TPUHardwareFeature.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:tensorflow.tpu.TPUHardwareFeature)
+}
+TPUHardwareFeature::TPUHardwareFeature(::google::protobuf::Arena* arena)
+  : ::google::protobuf::Message(),
+  _internal_metadata_(arena) {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2ftopology_2eproto::scc_info_TPUHardwareFeature.base);
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:tensorflow.tpu.TPUHardwareFeature)
+}
+TPUHardwareFeature::TPUHardwareFeature(const TPUHardwareFeature& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  embedding_feature_ = from.embedding_feature_;
+  // @@protoc_insertion_point(copy_constructor:tensorflow.tpu.TPUHardwareFeature)
+}
+
+void TPUHardwareFeature::SharedCtor() {
+  embedding_feature_ = 0;
+}
+
+TPUHardwareFeature::~TPUHardwareFeature() {
+  // @@protoc_insertion_point(destructor:tensorflow.tpu.TPUHardwareFeature)
+  SharedDtor();
+}
+
+void TPUHardwareFeature::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
+}
+
+void TPUHardwareFeature::ArenaDtor(void* object) {
+  TPUHardwareFeature* _this = reinterpret_cast< TPUHardwareFeature* >(object);
+  (void)_this;
+}
+void TPUHardwareFeature::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+}
+void TPUHardwareFeature::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* TPUHardwareFeature::descriptor() {
+  ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2ftopology_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2ftopology_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const TPUHardwareFeature& TPUHardwareFeature::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2ftopology_2eproto::scc_info_TPUHardwareFeature.base);
+  return *internal_default_instance();
+}
+
+
+void TPUHardwareFeature::Clear() {
+// @@protoc_insertion_point(message_clear_start:tensorflow.tpu.TPUHardwareFeature)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  embedding_feature_ = 0;
+  _internal_metadata_.Clear();
+}
+
+bool TPUHardwareFeature::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:tensorflow.tpu.TPUHardwareFeature)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // .tensorflow.tpu.TPUHardwareFeature.EmbeddingFeature embedding_feature = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_embedding_feature(static_cast< ::tensorflow::tpu::TPUHardwareFeature_EmbeddingFeature >(value));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:tensorflow.tpu.TPUHardwareFeature)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:tensorflow.tpu.TPUHardwareFeature)
+  return false;
+#undef DO_
+}
+
+void TPUHardwareFeature::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:tensorflow.tpu.TPUHardwareFeature)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .tensorflow.tpu.TPUHardwareFeature.EmbeddingFeature embedding_feature = 1;
+  if (this->embedding_feature() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      1, this->embedding_feature(), output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:tensorflow.tpu.TPUHardwareFeature)
+}
+
+::google::protobuf::uint8* TPUHardwareFeature::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:tensorflow.tpu.TPUHardwareFeature)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .tensorflow.tpu.TPUHardwareFeature.EmbeddingFeature embedding_feature = 1;
+  if (this->embedding_feature() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      1, this->embedding_feature(), target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:tensorflow.tpu.TPUHardwareFeature)
+  return target;
+}
+
+size_t TPUHardwareFeature::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:tensorflow.tpu.TPUHardwareFeature)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // .tensorflow.tpu.TPUHardwareFeature.EmbeddingFeature embedding_feature = 1;
+  if (this->embedding_feature() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->embedding_feature());
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void TPUHardwareFeature::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:tensorflow.tpu.TPUHardwareFeature)
+  GOOGLE_DCHECK_NE(&from, this);
+  const TPUHardwareFeature* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const TPUHardwareFeature>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:tensorflow.tpu.TPUHardwareFeature)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:tensorflow.tpu.TPUHardwareFeature)
+    MergeFrom(*source);
+  }
+}
+
+void TPUHardwareFeature::MergeFrom(const TPUHardwareFeature& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.tpu.TPUHardwareFeature)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.embedding_feature() != 0) {
+    set_embedding_feature(from.embedding_feature());
+  }
+}
+
+void TPUHardwareFeature::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:tensorflow.tpu.TPUHardwareFeature)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void TPUHardwareFeature::CopyFrom(const TPUHardwareFeature& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:tensorflow.tpu.TPUHardwareFeature)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool TPUHardwareFeature::IsInitialized() const {
+  return true;
+}
+
+void TPUHardwareFeature::Swap(TPUHardwareFeature* other) {
+  if (other == this) return;
+  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
+    InternalSwap(other);
+  } else {
+    TPUHardwareFeature* temp = New(GetArenaNoVirtual());
+    temp->MergeFrom(*other);
+    other->CopyFrom(*this);
+    InternalSwap(temp);
+    if (GetArenaNoVirtual() == NULL) {
+      delete temp;
+    }
+  }
+}
+void TPUHardwareFeature::UnsafeArenaSwap(TPUHardwareFeature* other) {
+  if (other == this) return;
+  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
+  InternalSwap(other);
+}
+void TPUHardwareFeature::InternalSwap(TPUHardwareFeature* other) {
+  using std::swap;
+  swap(embedding_feature_, other->embedding_feature_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata TPUHardwareFeature::GetMetadata() const {
+  protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2ftopology_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2ftopology_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
 
 // ===================================================================
 
 void TopologyProto::InitAsDefaultInstance() {
+  ::tensorflow::tpu::_TopologyProto_default_instance_._instance.get_mutable()->tpu_hardware_feature_ = const_cast< ::tensorflow::tpu::TPUHardwareFeature*>(
+      ::tensorflow::tpu::TPUHardwareFeature::internal_default_instance());
+}
+void TopologyProto::unsafe_arena_set_allocated_tpu_hardware_feature(
+    ::tensorflow::tpu::TPUHardwareFeature* tpu_hardware_feature) {
+  if (GetArenaNoVirtual() == NULL) {
+    delete tpu_hardware_feature_;
+  }
+  tpu_hardware_feature_ = tpu_hardware_feature;
+  if (tpu_hardware_feature) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.tpu.TopologyProto.tpu_hardware_feature)
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TopologyProto::kMeshShapeFieldNumber;
 const int TopologyProto::kNumTasksFieldNumber;
 const int TopologyProto::kNumTpuDevicesPerTaskFieldNumber;
 const int TopologyProto::kDeviceCoordinatesFieldNumber;
+const int TopologyProto::kTpuHardwareFeatureFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TopologyProto::TopologyProto()
@@ -149,6 +483,11 @@ TopologyProto::TopologyProto(const TopologyProto& from)
       mesh_shape_(from.mesh_shape_),
       device_coordinates_(from.device_coordinates_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (from.has_tpu_hardware_feature()) {
+    tpu_hardware_feature_ = new ::tensorflow::tpu::TPUHardwareFeature(*from.tpu_hardware_feature_);
+  } else {
+    tpu_hardware_feature_ = NULL;
+  }
   ::memcpy(&num_tasks_, &from.num_tasks_,
     static_cast<size_t>(reinterpret_cast<char*>(&num_tpu_devices_per_task_) -
     reinterpret_cast<char*>(&num_tasks_)) + sizeof(num_tpu_devices_per_task_));
@@ -156,9 +495,9 @@ TopologyProto::TopologyProto(const TopologyProto& from)
 }
 
 void TopologyProto::SharedCtor() {
-  ::memset(&num_tasks_, 0, static_cast<size_t>(
+  ::memset(&tpu_hardware_feature_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&num_tpu_devices_per_task_) -
-      reinterpret_cast<char*>(&num_tasks_)) + sizeof(num_tpu_devices_per_task_));
+      reinterpret_cast<char*>(&tpu_hardware_feature_)) + sizeof(num_tpu_devices_per_task_));
 }
 
 TopologyProto::~TopologyProto() {
@@ -168,6 +507,7 @@ TopologyProto::~TopologyProto() {
 
 void TopologyProto::SharedDtor() {
   GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
+  if (this != internal_default_instance()) delete tpu_hardware_feature_;
 }
 
 void TopologyProto::ArenaDtor(void* object) {
@@ -198,6 +538,10 @@ void TopologyProto::Clear() {
 
   mesh_shape_.Clear();
   device_coordinates_.Clear();
+  if (GetArenaNoVirtual() == NULL && tpu_hardware_feature_ != NULL) {
+    delete tpu_hardware_feature_;
+  }
+  tpu_hardware_feature_ = NULL;
   ::memset(&num_tasks_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&num_tpu_devices_per_task_) -
       reinterpret_cast<char*>(&num_tasks_)) + sizeof(num_tpu_devices_per_task_));
@@ -280,6 +624,18 @@ bool TopologyProto::MergePartialFromCodedStream(
         break;
       }
 
+      // .tensorflow.tpu.TPUHardwareFeature tpu_hardware_feature = 5;
+      case 5: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_tpu_hardware_feature()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -338,6 +694,12 @@ void TopologyProto::SerializeWithCachedSizes(
       this->device_coordinates(i), output);
   }
 
+  // .tensorflow.tpu.TPUHardwareFeature tpu_hardware_feature = 5;
+  if (this->has_tpu_hardware_feature()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      5, this->_internal_tpu_hardware_feature(), output);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -386,6 +748,13 @@ void TopologyProto::SerializeWithCachedSizes(
             _device_coordinates_cached_byte_size_), target);
     target = ::google::protobuf::internal::WireFormatLite::
       WriteInt32NoTagToArray(this->device_coordinates_, target);
+  }
+
+  // .tensorflow.tpu.TPUHardwareFeature tpu_hardware_feature = 5;
+  if (this->has_tpu_hardware_feature()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        5, this->_internal_tpu_hardware_feature(), deterministic, target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -437,6 +806,13 @@ size_t TopologyProto::ByteSizeLong() const {
     total_size += data_size;
   }
 
+  // .tensorflow.tpu.TPUHardwareFeature tpu_hardware_feature = 5;
+  if (this->has_tpu_hardware_feature()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *tpu_hardware_feature_);
+  }
+
   // int32 num_tasks = 2;
   if (this->num_tasks() != 0) {
     total_size += 1 +
@@ -480,6 +856,9 @@ void TopologyProto::MergeFrom(const TopologyProto& from) {
 
   mesh_shape_.MergeFrom(from.mesh_shape_);
   device_coordinates_.MergeFrom(from.device_coordinates_);
+  if (from.has_tpu_hardware_feature()) {
+    mutable_tpu_hardware_feature()->::tensorflow::tpu::TPUHardwareFeature::MergeFrom(from.tpu_hardware_feature());
+  }
   if (from.num_tasks() != 0) {
     set_num_tasks(from.num_tasks());
   }
@@ -529,6 +908,7 @@ void TopologyProto::InternalSwap(TopologyProto* other) {
   using std::swap;
   mesh_shape_.InternalSwap(&other->mesh_shape_);
   device_coordinates_.InternalSwap(&other->device_coordinates_);
+  swap(tpu_hardware_feature_, other->tpu_hardware_feature_);
   swap(num_tasks_, other->num_tasks_);
   swap(num_tpu_devices_per_task_, other->num_tpu_devices_per_task_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -545,6 +925,9 @@ void TopologyProto::InternalSwap(TopologyProto* other) {
 }  // namespace tensorflow
 namespace google {
 namespace protobuf {
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::tpu::TPUHardwareFeature* Arena::CreateMaybeMessage< ::tensorflow::tpu::TPUHardwareFeature >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::tensorflow::tpu::TPUHardwareFeature >(arena);
+}
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::tensorflow::tpu::TopologyProto* Arena::CreateMaybeMessage< ::tensorflow::tpu::TopologyProto >(Arena* arena) {
   return Arena::CreateMessageInternal< ::tensorflow::tpu::TopologyProto >(arena);
 }

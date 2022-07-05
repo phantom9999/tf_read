@@ -22,6 +22,9 @@
 namespace protobuf_google_2fprotobuf_2fany_2eproto {
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_google_2fprotobuf_2fany_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_Any;
 }  // namespace protobuf_google_2fprotobuf_2fany_2eproto
+namespace protobuf_tensorflow_5fserving_2fconfig_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_5fserving_2fconfig_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto ::google::protobuf::internal::SCCInfo<3> scc_info_FileSystemStoragePathSourceConfig_ServableVersionPolicy;
+}  // namespace protobuf_tensorflow_5fserving_2fconfig_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto
 namespace protobuf_tensorflow_5fserving_2fconfig_2flogging_5fconfig_2eproto {
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_5fserving_2fconfig_2flogging_5fconfig_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_LoggingConfig;
 }  // namespace protobuf_tensorflow_5fserving_2fconfig_2flogging_5fconfig_2eproto
@@ -30,9 +33,6 @@ extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_5fserving_2fconfig_2fmodel_5
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_5fserving_2fconfig_2fmodel_5fserver_5fconfig_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_ModelConfigList;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_5fserving_2fconfig_2fmodel_5fserver_5fconfig_2eproto ::google::protobuf::internal::SCCInfo<3> scc_info_ModelConfig;
 }  // namespace protobuf_tensorflow_5fserving_2fconfig_2fmodel_5fserver_5fconfig_2eproto
-namespace protobuf_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto ::google::protobuf::internal::SCCInfo<3> scc_info_FileSystemStoragePathSourceConfig_ServableVersionPolicy;
-}  // namespace protobuf_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto
 namespace tensorflow {
 namespace serving {
 class ModelConfig_VersionLabelsEntry_DoNotUseDefaultTypeInternal {
@@ -86,7 +86,7 @@ static void InitDefaultsModelConfig() {
 
 ::google::protobuf::internal::SCCInfo<3> scc_info_ModelConfig =
     {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 3, InitDefaultsModelConfig}, {
-      &protobuf_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto::scc_info_FileSystemStoragePathSourceConfig_ServableVersionPolicy.base,
+      &protobuf_tensorflow_5fserving_2fconfig_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto::scc_info_FileSystemStoragePathSourceConfig_ServableVersionPolicy.base,
       &protobuf_tensorflow_5fserving_2fconfig_2fmodel_5fserver_5fconfig_2eproto::scc_info_ModelConfig_VersionLabelsEntry_DoNotUse.base,
       &protobuf_tensorflow_5fserving_2fconfig_2flogging_5fconfig_2eproto::scc_info_LoggingConfig.base,}};
 
@@ -205,37 +205,37 @@ void AddDescriptorsImpl() {
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n3tensorflow_serving/config/model_server"
       "_config.proto\022\022tensorflow.serving\032\031googl"
-      "e/protobuf/any.proto\032.tensorflow_serving"
-      "/config/logging_config.proto\032Mtensorflow"
-      "_serving/sources/storage_path/file_syste"
-      "m_storage_path_source.proto\"\253\003\n\013ModelCon"
-      "fig\022\014\n\004name\030\001 \001(\t\022\021\n\tbase_path\030\002 \001(\t\0225\n\n"
-      "model_type\030\003 \001(\0162\035.tensorflow.serving.Mo"
-      "delTypeB\002\030\001\022\026\n\016model_platform\030\004 \001(\t\022i\n\024m"
-      "odel_version_policy\030\007 \001(\0132K.tensorflow.s"
-      "erving.FileSystemStoragePathSourceConfig"
-      ".ServableVersionPolicy\022J\n\016version_labels"
-      "\030\010 \003(\01322.tensorflow.serving.ModelConfig."
-      "VersionLabelsEntry\0229\n\016logging_config\030\006 \001"
-      "(\0132!.tensorflow.serving.LoggingConfig\0324\n"
-      "\022VersionLabelsEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005valu"
-      "e\030\002 \001(\003:\0028\001J\004\010\005\020\006\"B\n\017ModelConfigList\022/\n\006"
-      "config\030\001 \003(\0132\037.tensorflow.serving.ModelC"
-      "onfig\"\224\001\n\021ModelServerConfig\022@\n\021model_con"
-      "fig_list\030\001 \001(\0132#.tensorflow.serving.Mode"
-      "lConfigListH\000\0223\n\023custom_model_config\030\002 \001"
-      "(\0132\024.google.protobuf.AnyH\000B\010\n\006config*N\n\t"
-      "ModelType\022\036\n\026MODEL_TYPE_UNSPECIFIED\020\000\032\002\010"
-      "\001\022\022\n\nTENSORFLOW\020\001\032\002\010\001\022\r\n\005OTHER\020\002\032\002\010\001B\003\370\001"
-      "\001b\006proto3"
+      "e/protobuf/any.proto\032\?tensorflow_serving"
+      "/config/file_system_storage_path_source."
+      "proto\032.tensorflow_serving/config/logging"
+      "_config.proto\"\261\003\n\013ModelConfig\022\014\n\004name\030\001 "
+      "\001(\t\022\021\n\tbase_path\030\002 \001(\t\0225\n\nmodel_type\030\003 \001"
+      "(\0162\035.tensorflow.serving.ModelTypeB\002\030\001\022\026\n"
+      "\016model_platform\030\004 \001(\t\022i\n\024model_version_p"
+      "olicy\030\007 \001(\0132K.tensorflow.serving.FileSys"
+      "temStoragePathSourceConfig.ServableVersi"
+      "onPolicy\022J\n\016version_labels\030\010 \003(\01322.tenso"
+      "rflow.serving.ModelConfig.VersionLabelsE"
+      "ntry\0229\n\016logging_config\030\006 \001(\0132!.tensorflo"
+      "w.serving.LoggingConfig\0324\n\022VersionLabels"
+      "Entry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\003:\0028\001J\004\010"
+      "\005\020\006J\004\010\t\020\n\"B\n\017ModelConfigList\022/\n\006config\030\001"
+      " \003(\0132\037.tensorflow.serving.ModelConfig\"\224\001"
+      "\n\021ModelServerConfig\022@\n\021model_config_list"
+      "\030\001 \001(\0132#.tensorflow.serving.ModelConfigL"
+      "istH\000\0223\n\023custom_model_config\030\002 \001(\0132\024.goo"
+      "gle.protobuf.AnyH\000B\010\n\006config*N\n\tModelTyp"
+      "e\022\036\n\026MODEL_TYPE_UNSPECIFIED\020\000\032\002\010\001\022\022\n\nTEN"
+      "SORFLOW\020\001\032\002\010\001\022\r\n\005OTHER\020\002\032\002\010\001B\003\370\001\001b\006proto"
+      "3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 969);
+      descriptor, 961);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow_serving/config/model_server_config.proto", &protobuf_RegisterTypes);
   ::protobuf_google_2fprotobuf_2fany_2eproto::AddDescriptors();
+  ::protobuf_tensorflow_5fserving_2fconfig_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto::AddDescriptors();
   ::protobuf_tensorflow_5fserving_2fconfig_2flogging_5fconfig_2eproto::AddDescriptors();
-  ::protobuf_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto::AddDescriptors();
 }
 
 void AddDescriptors() {

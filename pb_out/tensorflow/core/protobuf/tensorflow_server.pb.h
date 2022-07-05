@@ -30,8 +30,9 @@
 #include <google/protobuf/repeated_field.h>  // IWYU pragma: export
 #include <google/protobuf/extension_set.h>  // IWYU pragma: export
 #include <google/protobuf/unknown_field_set.h>
-#include "tensorflow/core/protobuf/config.pb.h"
 #include "tensorflow/core/protobuf/cluster.pb.h"
+#include "tensorflow/core/protobuf/config.pb.h"
+#include "tensorflow/core/protobuf/device_filters.pb.h"
 // @@protoc_insertion_point(includes)
 #define PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftensorflow_5fserver_2eproto 
 
@@ -236,11 +237,32 @@ class ServerDef : public ::google::protobuf::Message /* @@protoc_insertion_point
       ::tensorflow::ConfigProto* default_session_config);
   ::tensorflow::ConfigProto* unsafe_arena_release_default_session_config();
 
+  // .tensorflow.ClusterDeviceFilters cluster_device_filters = 7;
+  bool has_cluster_device_filters() const;
+  void clear_cluster_device_filters();
+  static const int kClusterDeviceFiltersFieldNumber = 7;
+  private:
+  const ::tensorflow::ClusterDeviceFilters& _internal_cluster_device_filters() const;
+  public:
+  const ::tensorflow::ClusterDeviceFilters& cluster_device_filters() const;
+  ::tensorflow::ClusterDeviceFilters* release_cluster_device_filters();
+  ::tensorflow::ClusterDeviceFilters* mutable_cluster_device_filters();
+  void set_allocated_cluster_device_filters(::tensorflow::ClusterDeviceFilters* cluster_device_filters);
+  void unsafe_arena_set_allocated_cluster_device_filters(
+      ::tensorflow::ClusterDeviceFilters* cluster_device_filters);
+  ::tensorflow::ClusterDeviceFilters* unsafe_arena_release_cluster_device_filters();
+
   // int32 task_index = 3;
   void clear_task_index();
   static const int kTaskIndexFieldNumber = 3;
   ::google::protobuf::int32 task_index() const;
   void set_task_index(::google::protobuf::int32 value);
+
+  // int32 port = 6;
+  void clear_port();
+  static const int kPortFieldNumber = 6;
+  ::google::protobuf::int32 port() const;
+  void set_port(::google::protobuf::int32 value);
 
   // @@protoc_insertion_point(class_scope:tensorflow.ServerDef)
  private:
@@ -253,7 +275,9 @@ class ServerDef : public ::google::protobuf::Message /* @@protoc_insertion_point
   ::google::protobuf::internal::ArenaStringPtr protocol_;
   ::tensorflow::ClusterDef* cluster_;
   ::tensorflow::ConfigProto* default_session_config_;
+  ::tensorflow::ClusterDeviceFilters* cluster_device_filters_;
   ::google::protobuf::int32 task_index_;
+  ::google::protobuf::int32 port_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2ftensorflow_5fserver_2eproto::TableStruct;
 };
@@ -548,6 +572,79 @@ inline void ServerDef::unsafe_arena_set_allocated_protocol(
   protocol_.UnsafeArenaSetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       protocol, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.ServerDef.protocol)
+}
+
+// int32 port = 6;
+inline void ServerDef::clear_port() {
+  port_ = 0;
+}
+inline ::google::protobuf::int32 ServerDef::port() const {
+  // @@protoc_insertion_point(field_get:tensorflow.ServerDef.port)
+  return port_;
+}
+inline void ServerDef::set_port(::google::protobuf::int32 value) {
+  
+  port_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.ServerDef.port)
+}
+
+// .tensorflow.ClusterDeviceFilters cluster_device_filters = 7;
+inline bool ServerDef::has_cluster_device_filters() const {
+  return this != internal_default_instance() && cluster_device_filters_ != NULL;
+}
+inline const ::tensorflow::ClusterDeviceFilters& ServerDef::_internal_cluster_device_filters() const {
+  return *cluster_device_filters_;
+}
+inline const ::tensorflow::ClusterDeviceFilters& ServerDef::cluster_device_filters() const {
+  const ::tensorflow::ClusterDeviceFilters* p = cluster_device_filters_;
+  // @@protoc_insertion_point(field_get:tensorflow.ServerDef.cluster_device_filters)
+  return p != NULL ? *p : *reinterpret_cast<const ::tensorflow::ClusterDeviceFilters*>(
+      &::tensorflow::_ClusterDeviceFilters_default_instance_);
+}
+inline ::tensorflow::ClusterDeviceFilters* ServerDef::release_cluster_device_filters() {
+  // @@protoc_insertion_point(field_release:tensorflow.ServerDef.cluster_device_filters)
+  
+  ::tensorflow::ClusterDeviceFilters* temp = cluster_device_filters_;
+  if (GetArenaNoVirtual() != NULL) {
+    temp = ::google::protobuf::internal::DuplicateIfNonNull(temp);
+  }
+  cluster_device_filters_ = NULL;
+  return temp;
+}
+inline ::tensorflow::ClusterDeviceFilters* ServerDef::unsafe_arena_release_cluster_device_filters() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:tensorflow.ServerDef.cluster_device_filters)
+  
+  ::tensorflow::ClusterDeviceFilters* temp = cluster_device_filters_;
+  cluster_device_filters_ = NULL;
+  return temp;
+}
+inline ::tensorflow::ClusterDeviceFilters* ServerDef::mutable_cluster_device_filters() {
+  
+  if (cluster_device_filters_ == NULL) {
+    auto* p = CreateMaybeMessage<::tensorflow::ClusterDeviceFilters>(GetArenaNoVirtual());
+    cluster_device_filters_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:tensorflow.ServerDef.cluster_device_filters)
+  return cluster_device_filters_;
+}
+inline void ServerDef::set_allocated_cluster_device_filters(::tensorflow::ClusterDeviceFilters* cluster_device_filters) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete reinterpret_cast< ::google::protobuf::MessageLite*>(cluster_device_filters_);
+  }
+  if (cluster_device_filters) {
+    ::google::protobuf::Arena* submessage_arena =
+      reinterpret_cast<::google::protobuf::MessageLite*>(cluster_device_filters)->GetArena();
+    if (message_arena != submessage_arena) {
+      cluster_device_filters = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, cluster_device_filters, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  cluster_device_filters_ = cluster_device_filters;
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.ServerDef.cluster_device_filters)
 }
 
 #ifdef __GNUC__

@@ -71,13 +71,13 @@ void AddDescriptorsImpl() {
       "_REF\020t\022\021\n\rDT_UINT16_REF\020u\022\025\n\021DT_COMPLEX1"
       "28_REF\020v\022\017\n\013DT_HALF_REF\020w\022\023\n\017DT_RESOURCE"
       "_REF\020x\022\022\n\016DT_VARIANT_REF\020y\022\021\n\rDT_UINT32_"
-      "REF\020z\022\021\n\rDT_UINT64_REF\020{Bk\n\030org.tensorfl"
-      "ow.frameworkB\013TypesProtosP\001Z=github.com/"
+      "REF\020z\022\021\n\rDT_UINT64_REF\020{Bz\n\030org.tensorfl"
+      "ow.frameworkB\013TypesProtosP\001ZLgithub.com/"
       "tensorflow/tensorflow/tensorflow/go/core"
-      "/framework\370\001\001b\006proto3"
+      "/framework/types_go_proto\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 981);
+      descriptor, 996);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/framework/types.proto", &protobuf_RegisterTypes);
 }

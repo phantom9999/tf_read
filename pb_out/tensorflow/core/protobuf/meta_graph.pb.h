@@ -49,7 +49,7 @@ namespace protobuf_tensorflow_2fcore_2fprotobuf_2fmeta_5fgraph_2eproto {
 struct TableStruct {
   static const ::google::protobuf::internal::ParseTableField entries[];
   static const ::google::protobuf::internal::AuxillaryParseTableField aux[];
-  static const ::google::protobuf::internal::ParseTable schema[17];
+  static const ::google::protobuf::internal::ParseTable schema[18];
   static const ::google::protobuf::internal::FieldMetadata field_metadata[];
   static const ::google::protobuf::internal::SerializationTable serialization_table[];
   static const ::google::protobuf::uint32 offsets[];
@@ -87,6 +87,9 @@ extern MetaGraphDef_CollectionDefEntry_DoNotUseDefaultTypeInternal _MetaGraphDef
 class MetaGraphDef_MetaInfoDef;
 class MetaGraphDef_MetaInfoDefDefaultTypeInternal;
 extern MetaGraphDef_MetaInfoDefDefaultTypeInternal _MetaGraphDef_MetaInfoDef_default_instance_;
+class MetaGraphDef_MetaInfoDef_FunctionAliasesEntry_DoNotUse;
+class MetaGraphDef_MetaInfoDef_FunctionAliasesEntry_DoNotUseDefaultTypeInternal;
+extern MetaGraphDef_MetaInfoDef_FunctionAliasesEntry_DoNotUseDefaultTypeInternal _MetaGraphDef_MetaInfoDef_FunctionAliasesEntry_DoNotUse_default_instance_;
 class MetaGraphDef_SignatureDefEntry_DoNotUse;
 class MetaGraphDef_SignatureDefEntry_DoNotUseDefaultTypeInternal;
 extern MetaGraphDef_SignatureDefEntry_DoNotUseDefaultTypeInternal _MetaGraphDef_SignatureDefEntry_DoNotUse_default_instance_;
@@ -121,6 +124,7 @@ template<> ::tensorflow::CollectionDef_NodeList* Arena::CreateMaybeMessage<::ten
 template<> ::tensorflow::MetaGraphDef* Arena::CreateMaybeMessage<::tensorflow::MetaGraphDef>(Arena*);
 template<> ::tensorflow::MetaGraphDef_CollectionDefEntry_DoNotUse* Arena::CreateMaybeMessage<::tensorflow::MetaGraphDef_CollectionDefEntry_DoNotUse>(Arena*);
 template<> ::tensorflow::MetaGraphDef_MetaInfoDef* Arena::CreateMaybeMessage<::tensorflow::MetaGraphDef_MetaInfoDef>(Arena*);
+template<> ::tensorflow::MetaGraphDef_MetaInfoDef_FunctionAliasesEntry_DoNotUse* Arena::CreateMaybeMessage<::tensorflow::MetaGraphDef_MetaInfoDef_FunctionAliasesEntry_DoNotUse>(Arena*);
 template<> ::tensorflow::MetaGraphDef_SignatureDefEntry_DoNotUse* Arena::CreateMaybeMessage<::tensorflow::MetaGraphDef_SignatureDefEntry_DoNotUse>(Arena*);
 template<> ::tensorflow::SignatureDef* Arena::CreateMaybeMessage<::tensorflow::SignatureDef>(Arena*);
 template<> ::tensorflow::SignatureDef_InputsEntry_DoNotUse* Arena::CreateMaybeMessage<::tensorflow::SignatureDef_InputsEntry_DoNotUse>(Arena*);
@@ -133,6 +137,27 @@ template<> ::tensorflow::TensorInfo_CooSparse* Arena::CreateMaybeMessage<::tenso
 namespace tensorflow {
 
 // ===================================================================
+
+class MetaGraphDef_MetaInfoDef_FunctionAliasesEntry_DoNotUse : public ::google::protobuf::internal::MapEntry<MetaGraphDef_MetaInfoDef_FunctionAliasesEntry_DoNotUse, 
+    ::std::string, ::std::string,
+    ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
+    ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
+    0 > {
+public:
+  typedef ::google::protobuf::internal::MapEntry<MetaGraphDef_MetaInfoDef_FunctionAliasesEntry_DoNotUse, 
+    ::std::string, ::std::string,
+    ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
+    ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
+    0 > SuperType;
+  MetaGraphDef_MetaInfoDef_FunctionAliasesEntry_DoNotUse();
+  MetaGraphDef_MetaInfoDef_FunctionAliasesEntry_DoNotUse(::google::protobuf::Arena* arena);
+  void MergeFrom(const MetaGraphDef_MetaInfoDef_FunctionAliasesEntry_DoNotUse& other);
+  static const MetaGraphDef_MetaInfoDef_FunctionAliasesEntry_DoNotUse* internal_default_instance() { return reinterpret_cast<const MetaGraphDef_MetaInfoDef_FunctionAliasesEntry_DoNotUse*>(&_MetaGraphDef_MetaInfoDef_FunctionAliasesEntry_DoNotUse_default_instance_); }
+  void MergeFrom(const ::google::protobuf::Message& other) final;
+  ::google::protobuf::Metadata GetMetadata() const;
+};
+
+// -------------------------------------------------------------------
 
 class MetaGraphDef_MetaInfoDef : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.MetaGraphDef.MetaInfoDef) */ {
  public:
@@ -175,7 +200,7 @@ class MetaGraphDef_MetaInfoDef : public ::google::protobuf::Message /* @@protoc_
                &_MetaGraphDef_MetaInfoDef_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    0;
+    1;
 
   void UnsafeArenaSwap(MetaGraphDef_MetaInfoDef* other);
   void Swap(MetaGraphDef_MetaInfoDef* other);
@@ -231,6 +256,7 @@ class MetaGraphDef_MetaInfoDef : public ::google::protobuf::Message /* @@protoc_
 
   // nested types ----------------------------------------------------
 
+
   // accessors -------------------------------------------------------
 
   // repeated string tags = 4;
@@ -254,6 +280,15 @@ class MetaGraphDef_MetaInfoDef : public ::google::protobuf::Message /* @@protoc_
   void add_tags(const char* value, size_t size);
   const ::google::protobuf::RepeatedPtrField< ::std::string>& tags() const;
   ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_tags();
+
+  // map<string, string> function_aliases = 8;
+  int function_aliases_size() const;
+  void clear_function_aliases();
+  static const int kFunctionAliasesFieldNumber = 8;
+  const ::google::protobuf::Map< ::std::string, ::std::string >&
+      function_aliases() const;
+  ::google::protobuf::Map< ::std::string, ::std::string >*
+      mutable_function_aliases();
 
   // string meta_graph_version = 1;
   void clear_meta_graph_version();
@@ -368,6 +403,12 @@ class MetaGraphDef_MetaInfoDef : public ::google::protobuf::Message /* @@protoc_
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::google::protobuf::RepeatedPtrField< ::std::string> tags_;
+  ::google::protobuf::internal::MapField<
+      MetaGraphDef_MetaInfoDef_FunctionAliasesEntry_DoNotUse,
+      ::std::string, ::std::string,
+      ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
+      ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
+      0 > function_aliases_;
   ::google::protobuf::internal::ArenaStringPtr meta_graph_version_;
   ::google::protobuf::internal::ArenaStringPtr tensorflow_version_;
   ::google::protobuf::internal::ArenaStringPtr tensorflow_git_version_;
@@ -462,7 +503,7 @@ class MetaGraphDef : public ::google::protobuf::Message /* @@protoc_insertion_po
                &_MetaGraphDef_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    3;
+    4;
 
   void UnsafeArenaSwap(MetaGraphDef* other);
   void Swap(MetaGraphDef* other);
@@ -682,7 +723,7 @@ class CollectionDef_NodeList : public ::google::protobuf::Message /* @@protoc_in
                &_CollectionDef_NodeList_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    4;
+    5;
 
   void UnsafeArenaSwap(CollectionDef_NodeList* other);
   void Swap(CollectionDef_NodeList* other);
@@ -816,7 +857,7 @@ class CollectionDef_BytesList : public ::google::protobuf::Message /* @@protoc_i
                &_CollectionDef_BytesList_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    5;
+    6;
 
   void UnsafeArenaSwap(CollectionDef_BytesList* other);
   void Swap(CollectionDef_BytesList* other);
@@ -950,7 +991,7 @@ class CollectionDef_Int64List : public ::google::protobuf::Message /* @@protoc_i
                &_CollectionDef_Int64List_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    6;
+    7;
 
   void UnsafeArenaSwap(CollectionDef_Int64List* other);
   void Swap(CollectionDef_Int64List* other);
@@ -1075,7 +1116,7 @@ class CollectionDef_FloatList : public ::google::protobuf::Message /* @@protoc_i
                &_CollectionDef_FloatList_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    7;
+    8;
 
   void UnsafeArenaSwap(CollectionDef_FloatList* other);
   void Swap(CollectionDef_FloatList* other);
@@ -1200,7 +1241,7 @@ class CollectionDef_AnyList : public ::google::protobuf::Message /* @@protoc_ins
                &_CollectionDef_AnyList_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    8;
+    9;
 
   void UnsafeArenaSwap(CollectionDef_AnyList* other);
   void Swap(CollectionDef_AnyList* other);
@@ -1333,7 +1374,7 @@ class CollectionDef : public ::google::protobuf::Message /* @@protoc_insertion_p
                &_CollectionDef_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    9;
+    10;
 
   void UnsafeArenaSwap(CollectionDef* other);
   void Swap(CollectionDef* other);
@@ -1545,7 +1586,7 @@ class TensorInfo_CooSparse : public ::google::protobuf::Message /* @@protoc_inse
                &_TensorInfo_CooSparse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    10;
+    11;
 
   void UnsafeArenaSwap(TensorInfo_CooSparse* other);
   void Swap(TensorInfo_CooSparse* other);
@@ -1728,7 +1769,7 @@ class TensorInfo_CompositeTensor : public ::google::protobuf::Message /* @@proto
                &_TensorInfo_CompositeTensor_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    11;
+    12;
 
   void UnsafeArenaSwap(TensorInfo_CompositeTensor* other);
   void Swap(TensorInfo_CompositeTensor* other);
@@ -1875,7 +1916,7 @@ class TensorInfo : public ::google::protobuf::Message /* @@protoc_insertion_poin
                &_TensorInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    12;
+    13;
 
   void UnsafeArenaSwap(TensorInfo* other);
   void Swap(TensorInfo* other);
@@ -2126,7 +2167,7 @@ class SignatureDef : public ::google::protobuf::Message /* @@protoc_insertion_po
                &_SignatureDef_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    15;
+    16;
 
   void UnsafeArenaSwap(SignatureDef* other);
   void Swap(SignatureDef* other);
@@ -2292,7 +2333,7 @@ class AssetFileDef : public ::google::protobuf::Message /* @@protoc_insertion_po
                &_AssetFileDef_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    16;
+    17;
 
   void UnsafeArenaSwap(AssetFileDef* other);
   void Swap(AssetFileDef* other);
@@ -2409,6 +2450,8 @@ class AssetFileDef : public ::google::protobuf::Message /* @@protoc_insertion_po
   #pragma GCC diagnostic push
   #pragma GCC diagnostic ignored "-Wstrict-aliasing"
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // MetaGraphDef_MetaInfoDef
 
 // string meta_graph_version = 1;
@@ -2834,6 +2877,24 @@ inline void MetaGraphDef_MetaInfoDef::set_stripped_default_attrs(bool value) {
   
   stripped_default_attrs_ = value;
   // @@protoc_insertion_point(field_set:tensorflow.MetaGraphDef.MetaInfoDef.stripped_default_attrs)
+}
+
+// map<string, string> function_aliases = 8;
+inline int MetaGraphDef_MetaInfoDef::function_aliases_size() const {
+  return function_aliases_.size();
+}
+inline void MetaGraphDef_MetaInfoDef::clear_function_aliases() {
+  function_aliases_.Clear();
+}
+inline const ::google::protobuf::Map< ::std::string, ::std::string >&
+MetaGraphDef_MetaInfoDef::function_aliases() const {
+  // @@protoc_insertion_point(field_map:tensorflow.MetaGraphDef.MetaInfoDef.function_aliases)
+  return function_aliases_.GetMap();
+}
+inline ::google::protobuf::Map< ::std::string, ::std::string >*
+MetaGraphDef_MetaInfoDef::mutable_function_aliases() {
+  // @@protoc_insertion_point(field_mutable_map:tensorflow.MetaGraphDef.MetaInfoDef.function_aliases)
+  return function_aliases_.MutableMap();
 }
 
 // -------------------------------------------------------------------
@@ -4683,6 +4744,8 @@ inline void AssetFileDef::unsafe_arena_set_allocated_filename(
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

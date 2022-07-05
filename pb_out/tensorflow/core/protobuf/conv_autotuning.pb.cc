@@ -118,10 +118,12 @@ void AddDescriptorsImpl() {
       "e\022\025\n\rinput_address\030\t \001(\003\022\026\n\016filter_addre"
       "ss\030\n \001(\003\022\026\n\016output_address\030\013 \001(\003\022\024\n\014bias"
       "_address\030\014 \001(\003\022\032\n\022side_input_address\030\r \001"
-      "(\003b\006proto3"
+      "(\003BWZUgithub.com/tensorflow/tensorflow/t"
+      "ensorflow/go/core/protobuf/for_core_prot"
+      "os_go_protob\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 650);
+      descriptor, 739);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/protobuf/conv_autotuning.proto", &protobuf_RegisterTypes);
   ::protobuf_tensorflow_2fstream_5fexecutor_2fdnn_2eproto::AddDescriptors();

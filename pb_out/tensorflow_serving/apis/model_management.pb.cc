@@ -19,12 +19,12 @@
 #endif
 // @@protoc_insertion_point(includes)
 
+namespace protobuf_tensorflow_5fserving_2fapis_2fstatus_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_5fserving_2fapis_2fstatus_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_StatusProto;
+}  // namespace protobuf_tensorflow_5fserving_2fapis_2fstatus_2eproto
 namespace protobuf_tensorflow_5fserving_2fconfig_2fmodel_5fserver_5fconfig_2eproto {
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_5fserving_2fconfig_2fmodel_5fserver_5fconfig_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_ModelServerConfig;
 }  // namespace protobuf_tensorflow_5fserving_2fconfig_2fmodel_5fserver_5fconfig_2eproto
-namespace protobuf_tensorflow_5fserving_2futil_2fstatus_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_5fserving_2futil_2fstatus_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_StatusProto;
-}  // namespace protobuf_tensorflow_5fserving_2futil_2fstatus_2eproto
 namespace tensorflow {
 namespace serving {
 class ReloadConfigRequestDefaultTypeInternal {
@@ -68,7 +68,7 @@ static void InitDefaultsReloadConfigResponse() {
 
 ::google::protobuf::internal::SCCInfo<1> scc_info_ReloadConfigResponse =
     {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsReloadConfigResponse}, {
-      &protobuf_tensorflow_5fserving_2futil_2fstatus_2eproto::scc_info_StatusProto.base,}};
+      &protobuf_tensorflow_5fserving_2fapis_2fstatus_2eproto::scc_info_StatusProto.base,}};
 
 void InitDefaults() {
   ::google::protobuf::internal::InitSCC(&scc_info_ReloadConfigRequest.base);
@@ -123,9 +123,9 @@ void AddDescriptorsImpl() {
   InitDefaults();
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n.tensorflow_serving/apis/model_manageme"
-      "nt.proto\022\022tensorflow.serving\0323tensorflow"
-      "_serving/config/model_server_config.prot"
-      "o\032$tensorflow_serving/util/status.proto\""
+      "nt.proto\022\022tensorflow.serving\032$tensorflow"
+      "_serving/apis/status.proto\0323tensorflow_s"
+      "erving/config/model_server_config.proto\""
       "L\n\023ReloadConfigRequest\0225\n\006config\030\001 \001(\0132%"
       ".tensorflow.serving.ModelServerConfig\"G\n"
       "\024ReloadConfigResponse\022/\n\006status\030\001 \001(\0132\037."
@@ -136,8 +136,8 @@ void AddDescriptorsImpl() {
       descriptor, 323);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow_serving/apis/model_management.proto", &protobuf_RegisterTypes);
+  ::protobuf_tensorflow_5fserving_2fapis_2fstatus_2eproto::AddDescriptors();
   ::protobuf_tensorflow_5fserving_2fconfig_2fmodel_5fserver_5fconfig_2eproto::AddDescriptors();
-  ::protobuf_tensorflow_5fserving_2futil_2fstatus_2eproto::AddDescriptors();
 }
 
 void AddDescriptors() {

@@ -176,6 +176,72 @@ class TocoFlags : public ::google::protobuf::Message /* @@protoc_insertion_point
 
   // accessors -------------------------------------------------------
 
+  // repeated string custom_opdefs = 32 [deprecated = true];
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR int custom_opdefs_size() const;
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR void clear_custom_opdefs();
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR static const int kCustomOpdefsFieldNumber = 32;
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR const ::std::string& custom_opdefs(int index) const;
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR ::std::string* mutable_custom_opdefs(int index);
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR void set_custom_opdefs(int index, const ::std::string& value);
+  #if LANG_CXX11
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR void set_custom_opdefs(int index, ::std::string&& value);
+  #endif
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR void set_custom_opdefs(int index, const char* value);
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR void set_custom_opdefs(int index, const char* value, size_t size);
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR ::std::string* add_custom_opdefs();
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR void add_custom_opdefs(const ::std::string& value);
+  #if LANG_CXX11
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR void add_custom_opdefs(::std::string&& value);
+  #endif
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR void add_custom_opdefs(const char* value);
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR void add_custom_opdefs(const char* value, size_t size);
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR const ::google::protobuf::RepeatedPtrField< ::std::string>& custom_opdefs() const;
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_custom_opdefs();
+
+  // repeated string select_user_tf_ops = 33;
+  int select_user_tf_ops_size() const;
+  void clear_select_user_tf_ops();
+  static const int kSelectUserTfOpsFieldNumber = 33;
+  const ::std::string& select_user_tf_ops(int index) const;
+  ::std::string* mutable_select_user_tf_ops(int index);
+  void set_select_user_tf_ops(int index, const ::std::string& value);
+  #if LANG_CXX11
+  void set_select_user_tf_ops(int index, ::std::string&& value);
+  #endif
+  void set_select_user_tf_ops(int index, const char* value);
+  void set_select_user_tf_ops(int index, const char* value, size_t size);
+  ::std::string* add_select_user_tf_ops();
+  void add_select_user_tf_ops(const ::std::string& value);
+  #if LANG_CXX11
+  void add_select_user_tf_ops(::std::string&& value);
+  #endif
+  void add_select_user_tf_ops(const char* value);
+  void add_select_user_tf_ops(const char* value, size_t size);
+  const ::google::protobuf::RepeatedPtrField< ::std::string>& select_user_tf_ops() const;
+  ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_select_user_tf_ops();
+
+  // repeated string supported_backends = 41;
+  int supported_backends_size() const;
+  void clear_supported_backends();
+  static const int kSupportedBackendsFieldNumber = 41;
+  const ::std::string& supported_backends(int index) const;
+  ::std::string* mutable_supported_backends(int index);
+  void set_supported_backends(int index, const ::std::string& value);
+  #if LANG_CXX11
+  void set_supported_backends(int index, ::std::string&& value);
+  #endif
+  void set_supported_backends(int index, const char* value);
+  void set_supported_backends(int index, const char* value, size_t size);
+  ::std::string* add_supported_backends();
+  void add_supported_backends(const ::std::string& value);
+  #if LANG_CXX11
+  void add_supported_backends(::std::string&& value);
+  #endif
+  void add_supported_backends(const char* value);
+  void add_supported_backends(const char* value, size_t size);
+  const ::google::protobuf::RepeatedPtrField< ::std::string>& supported_backends() const;
+  ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_supported_backends();
+
   // optional string dump_graphviz_dir = 24;
   bool has_dump_graphviz_dir() const;
   void clear_dump_graphviz_dir();
@@ -190,6 +256,36 @@ class TocoFlags : public ::google::protobuf::Message /* @@protoc_insertion_point
   ::std::string* mutable_dump_graphviz_dir();
   ::std::string* release_dump_graphviz_dir();
   void set_allocated_dump_graphviz_dir(::std::string* dump_graphviz_dir);
+
+  // optional string conversion_summary_dir = 31;
+  bool has_conversion_summary_dir() const;
+  void clear_conversion_summary_dir();
+  static const int kConversionSummaryDirFieldNumber = 31;
+  const ::std::string& conversion_summary_dir() const;
+  void set_conversion_summary_dir(const ::std::string& value);
+  #if LANG_CXX11
+  void set_conversion_summary_dir(::std::string&& value);
+  #endif
+  void set_conversion_summary_dir(const char* value);
+  void set_conversion_summary_dir(const char* value, size_t size);
+  ::std::string* mutable_conversion_summary_dir();
+  ::std::string* release_conversion_summary_dir();
+  void set_allocated_conversion_summary_dir(::std::string* conversion_summary_dir);
+
+  // optional string tf_quantization_mode = 45;
+  bool has_tf_quantization_mode() const;
+  void clear_tf_quantization_mode();
+  static const int kTfQuantizationModeFieldNumber = 45;
+  const ::std::string& tf_quantization_mode() const;
+  void set_tf_quantization_mode(const ::std::string& value);
+  #if LANG_CXX11
+  void set_tf_quantization_mode(::std::string&& value);
+  #endif
+  void set_tf_quantization_mode(const char* value);
+  void set_tf_quantization_mode(const char* value, size_t size);
+  ::std::string* mutable_tf_quantization_mode();
+  ::std::string* release_tf_quantization_mode();
+  void set_allocated_tf_quantization_mode(::std::string* tf_quantization_mode);
 
   // optional .toco.FileFormat input_format = 1;
   bool has_input_format() const;
@@ -338,6 +434,97 @@ class TocoFlags : public ::google::protobuf::Message /* @@protoc_insertion_point
   bool quantize_to_float16() const;
   void set_quantize_to_float16(bool value);
 
+  // optional bool allow_bfloat16 = 38 [default = false];
+  bool has_allow_bfloat16() const;
+  void clear_allow_bfloat16();
+  static const int kAllowBfloat16FieldNumber = 38;
+  bool allow_bfloat16() const;
+  void set_allow_bfloat16(bool value);
+
+  // optional bool allow_all_select_tf_ops = 39;
+  bool has_allow_all_select_tf_ops() const;
+  void clear_allow_all_select_tf_ops();
+  static const int kAllowAllSelectTfOpsFieldNumber = 39;
+  bool allow_all_select_tf_ops() const;
+  void set_allow_all_select_tf_ops(bool value);
+
+  // optional bool unfold_large_splat_constant = 40 [default = false];
+  bool has_unfold_large_splat_constant() const;
+  void clear_unfold_large_splat_constant();
+  static const int kUnfoldLargeSplatConstantFieldNumber = 40;
+  bool unfold_large_splat_constant() const;
+  void set_unfold_large_splat_constant(bool value);
+
+  // optional .toco.IODataType accumulation_type = 37;
+  bool has_accumulation_type() const;
+  void clear_accumulation_type();
+  static const int kAccumulationTypeFieldNumber = 37;
+  ::toco::IODataType accumulation_type() const;
+  void set_accumulation_type(::toco::IODataType value);
+
+  // optional bool default_to_single_batch_in_tensor_list_ops = 42 [default = false];
+  bool has_default_to_single_batch_in_tensor_list_ops() const;
+  void clear_default_to_single_batch_in_tensor_list_ops();
+  static const int kDefaultToSingleBatchInTensorListOpsFieldNumber = 42;
+  bool default_to_single_batch_in_tensor_list_ops() const;
+  void set_default_to_single_batch_in_tensor_list_ops(bool value);
+
+  // optional bool disable_per_channel_quantization = 43 [default = false];
+  bool has_disable_per_channel_quantization() const;
+  void clear_disable_per_channel_quantization();
+  static const int kDisablePerChannelQuantizationFieldNumber = 43;
+  bool disable_per_channel_quantization() const;
+  void set_disable_per_channel_quantization(bool value);
+
+  // optional bool enable_mlir_dynamic_range_quantizer = 44 [default = false];
+  bool has_enable_mlir_dynamic_range_quantizer() const;
+  void clear_enable_mlir_dynamic_range_quantizer();
+  static const int kEnableMlirDynamicRangeQuantizerFieldNumber = 44;
+  bool enable_mlir_dynamic_range_quantizer() const;
+  void set_enable_mlir_dynamic_range_quantizer(bool value);
+
+  // optional bool disable_infer_tensor_range = 46 [default = false];
+  bool has_disable_infer_tensor_range() const;
+  void clear_disable_infer_tensor_range();
+  static const int kDisableInferTensorRangeFieldNumber = 46;
+  bool disable_infer_tensor_range() const;
+  void set_disable_infer_tensor_range(bool value);
+
+  // optional bool use_fake_quant_num_bits = 47 [default = false];
+  bool has_use_fake_quant_num_bits() const;
+  void clear_use_fake_quant_num_bits();
+  static const int kUseFakeQuantNumBitsFieldNumber = 47;
+  bool use_fake_quant_num_bits() const;
+  void set_use_fake_quant_num_bits(bool value);
+
+  // optional bool enable_dynamic_update_slice = 48 [default = false];
+  bool has_enable_dynamic_update_slice() const;
+  void clear_enable_dynamic_update_slice();
+  static const int kEnableDynamicUpdateSliceFieldNumber = 48;
+  bool enable_dynamic_update_slice() const;
+  void set_enable_dynamic_update_slice(bool value);
+
+  // optional bool preserve_assert_op = 49 [default = false];
+  bool has_preserve_assert_op() const;
+  void clear_preserve_assert_op();
+  static const int kPreserveAssertOpFieldNumber = 49;
+  bool preserve_assert_op() const;
+  void set_preserve_assert_op(bool value);
+
+  // optional bool guarantee_all_funcs_one_use = 50 [default = false];
+  bool has_guarantee_all_funcs_one_use() const;
+  void clear_guarantee_all_funcs_one_use();
+  static const int kGuaranteeAllFuncsOneUseFieldNumber = 50;
+  bool guarantee_all_funcs_one_use() const;
+  void set_guarantee_all_funcs_one_use(bool value);
+
+  // optional int64 dedupe_array_min_size_bytes = 18 [default = 64];
+  bool has_dedupe_array_min_size_bytes() const;
+  void clear_dedupe_array_min_size_bytes();
+  static const int kDedupeArrayMinSizeBytesFieldNumber = 18;
+  ::google::protobuf::int64 dedupe_array_min_size_bytes() const;
+  void set_dedupe_array_min_size_bytes(::google::protobuf::int64 value);
+
   // optional bool split_tflite_lstm_inputs = 19 [default = true];
   bool has_split_tflite_lstm_inputs() const;
   void clear_split_tflite_lstm_inputs();
@@ -352,12 +539,26 @@ class TocoFlags : public ::google::protobuf::Message /* @@protoc_insertion_point
   bool allow_dynamic_tensors() const;
   void set_allow_dynamic_tensors(bool value);
 
-  // optional int64 dedupe_array_min_size_bytes = 18 [default = 64];
-  bool has_dedupe_array_min_size_bytes() const;
-  void clear_dedupe_array_min_size_bytes();
-  static const int kDedupeArrayMinSizeBytesFieldNumber = 18;
-  ::google::protobuf::int64 dedupe_array_min_size_bytes() const;
-  void set_dedupe_array_min_size_bytes(::google::protobuf::int64 value);
+  // optional bool enable_tflite_resource_variables = 34 [default = true];
+  bool has_enable_tflite_resource_variables() const;
+  void clear_enable_tflite_resource_variables();
+  static const int kEnableTfliteResourceVariablesFieldNumber = 34;
+  bool enable_tflite_resource_variables() const;
+  void set_enable_tflite_resource_variables(bool value);
+
+  // optional bool unfold_batchmatmul = 35 [default = true];
+  bool has_unfold_batchmatmul() const;
+  void clear_unfold_batchmatmul();
+  static const int kUnfoldBatchmatmulFieldNumber = 35;
+  bool unfold_batchmatmul() const;
+  void set_unfold_batchmatmul(bool value);
+
+  // optional bool lower_tensor_list_ops = 36 [default = true];
+  bool has_lower_tensor_list_ops() const;
+  void clear_lower_tensor_list_ops();
+  static const int kLowerTensorListOpsFieldNumber = 36;
+  bool lower_tensor_list_ops() const;
+  void set_lower_tensor_list_ops(bool value);
 
   // @@protoc_insertion_point(class_scope:toco.TocoFlags)
  private:
@@ -411,11 +612,49 @@ class TocoFlags : public ::google::protobuf::Message /* @@protoc_insertion_point
   void clear_has_quantize_to_float16();
   void set_has_allow_dynamic_tensors();
   void clear_has_allow_dynamic_tensors();
+  void set_has_conversion_summary_dir();
+  void clear_has_conversion_summary_dir();
+  void set_has_enable_tflite_resource_variables();
+  void clear_has_enable_tflite_resource_variables();
+  void set_has_unfold_batchmatmul();
+  void clear_has_unfold_batchmatmul();
+  void set_has_lower_tensor_list_ops();
+  void clear_has_lower_tensor_list_ops();
+  void set_has_accumulation_type();
+  void clear_has_accumulation_type();
+  void set_has_allow_bfloat16();
+  void clear_has_allow_bfloat16();
+  void set_has_allow_all_select_tf_ops();
+  void clear_has_allow_all_select_tf_ops();
+  void set_has_unfold_large_splat_constant();
+  void clear_has_unfold_large_splat_constant();
+  void set_has_default_to_single_batch_in_tensor_list_ops();
+  void clear_has_default_to_single_batch_in_tensor_list_ops();
+  void set_has_disable_per_channel_quantization();
+  void clear_has_disable_per_channel_quantization();
+  void set_has_enable_mlir_dynamic_range_quantizer();
+  void clear_has_enable_mlir_dynamic_range_quantizer();
+  void set_has_tf_quantization_mode();
+  void clear_has_tf_quantization_mode();
+  void set_has_disable_infer_tensor_range();
+  void clear_has_disable_infer_tensor_range();
+  void set_has_use_fake_quant_num_bits();
+  void clear_has_use_fake_quant_num_bits();
+  void set_has_enable_dynamic_update_slice();
+  void clear_has_enable_dynamic_update_slice();
+  void set_has_preserve_assert_op();
+  void clear_has_preserve_assert_op();
+  void set_has_guarantee_all_funcs_one_use();
+  void clear_has_guarantee_all_funcs_one_use();
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
-  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  ::google::protobuf::internal::HasBits<2> _has_bits_;
+  ::google::protobuf::RepeatedPtrField< ::std::string> custom_opdefs_;
+  ::google::protobuf::RepeatedPtrField< ::std::string> select_user_tf_ops_;
+  ::google::protobuf::RepeatedPtrField< ::std::string> supported_backends_;
   ::google::protobuf::internal::ArenaStringPtr dump_graphviz_dir_;
+  ::google::protobuf::internal::ArenaStringPtr conversion_summary_dir_;
+  ::google::protobuf::internal::ArenaStringPtr tf_quantization_mode_;
   int input_format_;
   int output_format_;
   int inference_type_;
@@ -437,9 +676,25 @@ class TocoFlags : public ::google::protobuf::Message /* @@protoc_insertion_point
   bool enable_select_tf_ops_;
   bool force_select_tf_ops_;
   bool quantize_to_float16_;
+  bool allow_bfloat16_;
+  bool allow_all_select_tf_ops_;
+  bool unfold_large_splat_constant_;
+  int accumulation_type_;
+  bool default_to_single_batch_in_tensor_list_ops_;
+  bool disable_per_channel_quantization_;
+  bool enable_mlir_dynamic_range_quantizer_;
+  bool disable_infer_tensor_range_;
+  bool use_fake_quant_num_bits_;
+  bool enable_dynamic_update_slice_;
+  bool preserve_assert_op_;
+  bool guarantee_all_funcs_one_use_;
+  ::google::protobuf::int64 dedupe_array_min_size_bytes_;
   bool split_tflite_lstm_inputs_;
   bool allow_dynamic_tensors_;
-  ::google::protobuf::int64 dedupe_array_min_size_bytes_;
+  bool enable_tflite_resource_variables_;
+  bool unfold_batchmatmul_;
+  bool lower_tensor_list_ops_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2flite_2ftoco_2ftoco_5fflags_2eproto::TableStruct;
 };
 // ===================================================================
@@ -455,13 +710,13 @@ class TocoFlags : public ::google::protobuf::Message /* @@protoc_insertion_point
 
 // optional .toco.FileFormat input_format = 1;
 inline bool TocoFlags::has_input_format() const {
-  return (_has_bits_[0] & 0x00000002u) != 0;
+  return (_has_bits_[0] & 0x00000008u) != 0;
 }
 inline void TocoFlags::set_has_input_format() {
-  _has_bits_[0] |= 0x00000002u;
+  _has_bits_[0] |= 0x00000008u;
 }
 inline void TocoFlags::clear_has_input_format() {
-  _has_bits_[0] &= ~0x00000002u;
+  _has_bits_[0] &= ~0x00000008u;
 }
 inline void TocoFlags::clear_input_format() {
   input_format_ = 0;
@@ -480,13 +735,13 @@ inline void TocoFlags::set_input_format(::toco::FileFormat value) {
 
 // optional .toco.FileFormat output_format = 2;
 inline bool TocoFlags::has_output_format() const {
-  return (_has_bits_[0] & 0x00000004u) != 0;
+  return (_has_bits_[0] & 0x00000010u) != 0;
 }
 inline void TocoFlags::set_has_output_format() {
-  _has_bits_[0] |= 0x00000004u;
+  _has_bits_[0] |= 0x00000010u;
 }
 inline void TocoFlags::clear_has_output_format() {
-  _has_bits_[0] &= ~0x00000004u;
+  _has_bits_[0] &= ~0x00000010u;
 }
 inline void TocoFlags::clear_output_format() {
   output_format_ = 0;
@@ -505,13 +760,13 @@ inline void TocoFlags::set_output_format(::toco::FileFormat value) {
 
 // optional .toco.IODataType inference_input_type = 11;
 inline bool TocoFlags::has_inference_input_type() const {
-  return (_has_bits_[0] & 0x00000400u) != 0;
+  return (_has_bits_[0] & 0x00001000u) != 0;
 }
 inline void TocoFlags::set_has_inference_input_type() {
-  _has_bits_[0] |= 0x00000400u;
+  _has_bits_[0] |= 0x00001000u;
 }
 inline void TocoFlags::clear_has_inference_input_type() {
-  _has_bits_[0] &= ~0x00000400u;
+  _has_bits_[0] &= ~0x00001000u;
 }
 inline void TocoFlags::clear_inference_input_type() {
   inference_input_type_ = 0;
@@ -530,13 +785,13 @@ inline void TocoFlags::set_inference_input_type(::toco::IODataType value) {
 
 // optional .toco.IODataType inference_type = 4;
 inline bool TocoFlags::has_inference_type() const {
-  return (_has_bits_[0] & 0x00000008u) != 0;
+  return (_has_bits_[0] & 0x00000020u) != 0;
 }
 inline void TocoFlags::set_has_inference_type() {
-  _has_bits_[0] |= 0x00000008u;
+  _has_bits_[0] |= 0x00000020u;
 }
 inline void TocoFlags::clear_has_inference_type() {
-  _has_bits_[0] &= ~0x00000008u;
+  _has_bits_[0] &= ~0x00000020u;
 }
 inline void TocoFlags::clear_inference_type() {
   inference_type_ = 0;
@@ -555,13 +810,13 @@ inline void TocoFlags::set_inference_type(::toco::IODataType value) {
 
 // optional float default_ranges_min = 5;
 inline bool TocoFlags::has_default_ranges_min() const {
-  return (_has_bits_[0] & 0x00000010u) != 0;
+  return (_has_bits_[0] & 0x00000040u) != 0;
 }
 inline void TocoFlags::set_has_default_ranges_min() {
-  _has_bits_[0] |= 0x00000010u;
+  _has_bits_[0] |= 0x00000040u;
 }
 inline void TocoFlags::clear_has_default_ranges_min() {
-  _has_bits_[0] &= ~0x00000010u;
+  _has_bits_[0] &= ~0x00000040u;
 }
 inline void TocoFlags::clear_default_ranges_min() {
   default_ranges_min_ = 0;
@@ -579,13 +834,13 @@ inline void TocoFlags::set_default_ranges_min(float value) {
 
 // optional float default_ranges_max = 6;
 inline bool TocoFlags::has_default_ranges_max() const {
-  return (_has_bits_[0] & 0x00000020u) != 0;
+  return (_has_bits_[0] & 0x00000080u) != 0;
 }
 inline void TocoFlags::set_has_default_ranges_max() {
-  _has_bits_[0] |= 0x00000020u;
+  _has_bits_[0] |= 0x00000080u;
 }
 inline void TocoFlags::clear_has_default_ranges_max() {
-  _has_bits_[0] &= ~0x00000020u;
+  _has_bits_[0] &= ~0x00000080u;
 }
 inline void TocoFlags::clear_default_ranges_max() {
   default_ranges_max_ = 0;
@@ -603,13 +858,13 @@ inline void TocoFlags::set_default_ranges_max(float value) {
 
 // optional float default_int16_ranges_min = 15;
 inline bool TocoFlags::has_default_int16_ranges_min() const {
-  return (_has_bits_[0] & 0x00000800u) != 0;
+  return (_has_bits_[0] & 0x00002000u) != 0;
 }
 inline void TocoFlags::set_has_default_int16_ranges_min() {
-  _has_bits_[0] |= 0x00000800u;
+  _has_bits_[0] |= 0x00002000u;
 }
 inline void TocoFlags::clear_has_default_int16_ranges_min() {
-  _has_bits_[0] &= ~0x00000800u;
+  _has_bits_[0] &= ~0x00002000u;
 }
 inline void TocoFlags::clear_default_int16_ranges_min() {
   default_int16_ranges_min_ = 0;
@@ -627,13 +882,13 @@ inline void TocoFlags::set_default_int16_ranges_min(float value) {
 
 // optional float default_int16_ranges_max = 16;
 inline bool TocoFlags::has_default_int16_ranges_max() const {
-  return (_has_bits_[0] & 0x00001000u) != 0;
+  return (_has_bits_[0] & 0x00004000u) != 0;
 }
 inline void TocoFlags::set_has_default_int16_ranges_max() {
-  _has_bits_[0] |= 0x00001000u;
+  _has_bits_[0] |= 0x00004000u;
 }
 inline void TocoFlags::clear_has_default_int16_ranges_max() {
-  _has_bits_[0] &= ~0x00001000u;
+  _has_bits_[0] &= ~0x00004000u;
 }
 inline void TocoFlags::clear_default_int16_ranges_max() {
   default_int16_ranges_max_ = 0;
@@ -651,13 +906,13 @@ inline void TocoFlags::set_default_int16_ranges_max(float value) {
 
 // optional bool drop_fake_quant = 7;
 inline bool TocoFlags::has_drop_fake_quant() const {
-  return (_has_bits_[0] & 0x00000040u) != 0;
+  return (_has_bits_[0] & 0x00000100u) != 0;
 }
 inline void TocoFlags::set_has_drop_fake_quant() {
-  _has_bits_[0] |= 0x00000040u;
+  _has_bits_[0] |= 0x00000100u;
 }
 inline void TocoFlags::clear_has_drop_fake_quant() {
-  _has_bits_[0] &= ~0x00000040u;
+  _has_bits_[0] &= ~0x00000100u;
 }
 inline void TocoFlags::clear_drop_fake_quant() {
   drop_fake_quant_ = false;
@@ -675,13 +930,13 @@ inline void TocoFlags::set_drop_fake_quant(bool value) {
 
 // optional bool reorder_across_fake_quant = 8;
 inline bool TocoFlags::has_reorder_across_fake_quant() const {
-  return (_has_bits_[0] & 0x00000080u) != 0;
+  return (_has_bits_[0] & 0x00000200u) != 0;
 }
 inline void TocoFlags::set_has_reorder_across_fake_quant() {
-  _has_bits_[0] |= 0x00000080u;
+  _has_bits_[0] |= 0x00000200u;
 }
 inline void TocoFlags::clear_has_reorder_across_fake_quant() {
-  _has_bits_[0] &= ~0x00000080u;
+  _has_bits_[0] &= ~0x00000200u;
 }
 inline void TocoFlags::clear_reorder_across_fake_quant() {
   reorder_across_fake_quant_ = false;
@@ -699,13 +954,13 @@ inline void TocoFlags::set_reorder_across_fake_quant(bool value) {
 
 // optional bool allow_custom_ops = 10;
 inline bool TocoFlags::has_allow_custom_ops() const {
-  return (_has_bits_[0] & 0x00000100u) != 0;
+  return (_has_bits_[0] & 0x00000400u) != 0;
 }
 inline void TocoFlags::set_has_allow_custom_ops() {
-  _has_bits_[0] |= 0x00000100u;
+  _has_bits_[0] |= 0x00000400u;
 }
 inline void TocoFlags::clear_has_allow_custom_ops() {
-  _has_bits_[0] &= ~0x00000100u;
+  _has_bits_[0] &= ~0x00000400u;
 }
 inline void TocoFlags::clear_allow_custom_ops() {
   allow_custom_ops_ = false;
@@ -723,13 +978,13 @@ inline void TocoFlags::set_allow_custom_ops(bool value) {
 
 // optional bool drop_control_dependency = 12;
 inline bool TocoFlags::has_drop_control_dependency() const {
-  return (_has_bits_[0] & 0x00000200u) != 0;
+  return (_has_bits_[0] & 0x00000800u) != 0;
 }
 inline void TocoFlags::set_has_drop_control_dependency() {
-  _has_bits_[0] |= 0x00000200u;
+  _has_bits_[0] |= 0x00000800u;
 }
 inline void TocoFlags::clear_has_drop_control_dependency() {
-  _has_bits_[0] &= ~0x00000200u;
+  _has_bits_[0] &= ~0x00000800u;
 }
 inline void TocoFlags::clear_drop_control_dependency() {
   drop_control_dependency_ = false;
@@ -747,13 +1002,13 @@ inline void TocoFlags::set_drop_control_dependency(bool value) {
 
 // optional bool debug_disable_recurrent_cell_fusion = 13;
 inline bool TocoFlags::has_debug_disable_recurrent_cell_fusion() const {
-  return (_has_bits_[0] & 0x00002000u) != 0;
+  return (_has_bits_[0] & 0x00008000u) != 0;
 }
 inline void TocoFlags::set_has_debug_disable_recurrent_cell_fusion() {
-  _has_bits_[0] |= 0x00002000u;
+  _has_bits_[0] |= 0x00008000u;
 }
 inline void TocoFlags::clear_has_debug_disable_recurrent_cell_fusion() {
-  _has_bits_[0] &= ~0x00002000u;
+  _has_bits_[0] &= ~0x00008000u;
 }
 inline void TocoFlags::clear_debug_disable_recurrent_cell_fusion() {
   debug_disable_recurrent_cell_fusion_ = false;
@@ -771,13 +1026,13 @@ inline void TocoFlags::set_debug_disable_recurrent_cell_fusion(bool value) {
 
 // optional bool propagate_fake_quant_num_bits = 14;
 inline bool TocoFlags::has_propagate_fake_quant_num_bits() const {
-  return (_has_bits_[0] & 0x00004000u) != 0;
+  return (_has_bits_[0] & 0x00010000u) != 0;
 }
 inline void TocoFlags::set_has_propagate_fake_quant_num_bits() {
-  _has_bits_[0] |= 0x00004000u;
+  _has_bits_[0] |= 0x00010000u;
 }
 inline void TocoFlags::clear_has_propagate_fake_quant_num_bits() {
-  _has_bits_[0] &= ~0x00004000u;
+  _has_bits_[0] &= ~0x00010000u;
 }
 inline void TocoFlags::clear_propagate_fake_quant_num_bits() {
   propagate_fake_quant_num_bits_ = false;
@@ -795,13 +1050,13 @@ inline void TocoFlags::set_propagate_fake_quant_num_bits(bool value) {
 
 // optional bool allow_nudging_weights_to_use_fast_gemm_kernel = 17;
 inline bool TocoFlags::has_allow_nudging_weights_to_use_fast_gemm_kernel() const {
-  return (_has_bits_[0] & 0x00008000u) != 0;
+  return (_has_bits_[0] & 0x00020000u) != 0;
 }
 inline void TocoFlags::set_has_allow_nudging_weights_to_use_fast_gemm_kernel() {
-  _has_bits_[0] |= 0x00008000u;
+  _has_bits_[0] |= 0x00020000u;
 }
 inline void TocoFlags::clear_has_allow_nudging_weights_to_use_fast_gemm_kernel() {
-  _has_bits_[0] &= ~0x00008000u;
+  _has_bits_[0] &= ~0x00020000u;
 }
 inline void TocoFlags::clear_allow_nudging_weights_to_use_fast_gemm_kernel() {
   allow_nudging_weights_to_use_fast_gemm_kernel_ = false;
@@ -819,13 +1074,13 @@ inline void TocoFlags::set_allow_nudging_weights_to_use_fast_gemm_kernel(bool va
 
 // optional int64 dedupe_array_min_size_bytes = 18 [default = 64];
 inline bool TocoFlags::has_dedupe_array_min_size_bytes() const {
-  return (_has_bits_[0] & 0x01000000u) != 0;
+  return (_has_bits_[1] & 0x00000010u) != 0;
 }
 inline void TocoFlags::set_has_dedupe_array_min_size_bytes() {
-  _has_bits_[0] |= 0x01000000u;
+  _has_bits_[1] |= 0x00000010u;
 }
 inline void TocoFlags::clear_has_dedupe_array_min_size_bytes() {
-  _has_bits_[0] &= ~0x01000000u;
+  _has_bits_[1] &= ~0x00000010u;
 }
 inline void TocoFlags::clear_dedupe_array_min_size_bytes() {
   dedupe_array_min_size_bytes_ = GOOGLE_LONGLONG(64);
@@ -843,13 +1098,13 @@ inline void TocoFlags::set_dedupe_array_min_size_bytes(::google::protobuf::int64
 
 // optional bool split_tflite_lstm_inputs = 19 [default = true];
 inline bool TocoFlags::has_split_tflite_lstm_inputs() const {
-  return (_has_bits_[0] & 0x00400000u) != 0;
+  return (_has_bits_[1] & 0x00000020u) != 0;
 }
 inline void TocoFlags::set_has_split_tflite_lstm_inputs() {
-  _has_bits_[0] |= 0x00400000u;
+  _has_bits_[1] |= 0x00000020u;
 }
 inline void TocoFlags::clear_has_split_tflite_lstm_inputs() {
-  _has_bits_[0] &= ~0x00400000u;
+  _has_bits_[1] &= ~0x00000020u;
 }
 inline void TocoFlags::clear_split_tflite_lstm_inputs() {
   split_tflite_lstm_inputs_ = true;
@@ -867,13 +1122,13 @@ inline void TocoFlags::set_split_tflite_lstm_inputs(bool value) {
 
 // optional bool quantize_weights = 20 [default = false];
 inline bool TocoFlags::has_quantize_weights() const {
-  return (_has_bits_[0] & 0x00010000u) != 0;
+  return (_has_bits_[0] & 0x00040000u) != 0;
 }
 inline void TocoFlags::set_has_quantize_weights() {
-  _has_bits_[0] |= 0x00010000u;
+  _has_bits_[0] |= 0x00040000u;
 }
 inline void TocoFlags::clear_has_quantize_weights() {
-  _has_bits_[0] &= ~0x00010000u;
+  _has_bits_[0] &= ~0x00040000u;
 }
 inline void TocoFlags::clear_quantize_weights() {
   quantize_weights_ = false;
@@ -957,13 +1212,13 @@ inline void TocoFlags::set_allocated_dump_graphviz_dir(::std::string* dump_graph
 
 // optional bool dump_graphviz_include_video = 25;
 inline bool TocoFlags::has_dump_graphviz_include_video() const {
-  return (_has_bits_[0] & 0x00020000u) != 0;
+  return (_has_bits_[0] & 0x00080000u) != 0;
 }
 inline void TocoFlags::set_has_dump_graphviz_include_video() {
-  _has_bits_[0] |= 0x00020000u;
+  _has_bits_[0] |= 0x00080000u;
 }
 inline void TocoFlags::clear_has_dump_graphviz_include_video() {
-  _has_bits_[0] &= ~0x00020000u;
+  _has_bits_[0] &= ~0x00080000u;
 }
 inline void TocoFlags::clear_dump_graphviz_include_video() {
   dump_graphviz_include_video_ = false;
@@ -981,13 +1236,13 @@ inline void TocoFlags::set_dump_graphviz_include_video(bool value) {
 
 // optional bool post_training_quantize = 26 [default = false];
 inline bool TocoFlags::has_post_training_quantize() const {
-  return (_has_bits_[0] & 0x00040000u) != 0;
+  return (_has_bits_[0] & 0x00100000u) != 0;
 }
 inline void TocoFlags::set_has_post_training_quantize() {
-  _has_bits_[0] |= 0x00040000u;
+  _has_bits_[0] |= 0x00100000u;
 }
 inline void TocoFlags::clear_has_post_training_quantize() {
-  _has_bits_[0] &= ~0x00040000u;
+  _has_bits_[0] &= ~0x00100000u;
 }
 inline void TocoFlags::clear_post_training_quantize() {
   post_training_quantize_ = false;
@@ -1005,13 +1260,13 @@ inline void TocoFlags::set_post_training_quantize(bool value) {
 
 // optional bool enable_select_tf_ops = 27 [default = false];
 inline bool TocoFlags::has_enable_select_tf_ops() const {
-  return (_has_bits_[0] & 0x00080000u) != 0;
+  return (_has_bits_[0] & 0x00200000u) != 0;
 }
 inline void TocoFlags::set_has_enable_select_tf_ops() {
-  _has_bits_[0] |= 0x00080000u;
+  _has_bits_[0] |= 0x00200000u;
 }
 inline void TocoFlags::clear_has_enable_select_tf_ops() {
-  _has_bits_[0] &= ~0x00080000u;
+  _has_bits_[0] &= ~0x00200000u;
 }
 inline void TocoFlags::clear_enable_select_tf_ops() {
   enable_select_tf_ops_ = false;
@@ -1029,13 +1284,13 @@ inline void TocoFlags::set_enable_select_tf_ops(bool value) {
 
 // optional bool force_select_tf_ops = 28 [default = false];
 inline bool TocoFlags::has_force_select_tf_ops() const {
-  return (_has_bits_[0] & 0x00100000u) != 0;
+  return (_has_bits_[0] & 0x00400000u) != 0;
 }
 inline void TocoFlags::set_has_force_select_tf_ops() {
-  _has_bits_[0] |= 0x00100000u;
+  _has_bits_[0] |= 0x00400000u;
 }
 inline void TocoFlags::clear_has_force_select_tf_ops() {
-  _has_bits_[0] &= ~0x00100000u;
+  _has_bits_[0] &= ~0x00400000u;
 }
 inline void TocoFlags::clear_force_select_tf_ops() {
   force_select_tf_ops_ = false;
@@ -1053,13 +1308,13 @@ inline void TocoFlags::set_force_select_tf_ops(bool value) {
 
 // optional bool quantize_to_float16 = 29 [default = false];
 inline bool TocoFlags::has_quantize_to_float16() const {
-  return (_has_bits_[0] & 0x00200000u) != 0;
+  return (_has_bits_[0] & 0x00800000u) != 0;
 }
 inline void TocoFlags::set_has_quantize_to_float16() {
-  _has_bits_[0] |= 0x00200000u;
+  _has_bits_[0] |= 0x00800000u;
 }
 inline void TocoFlags::clear_has_quantize_to_float16() {
-  _has_bits_[0] &= ~0x00200000u;
+  _has_bits_[0] &= ~0x00800000u;
 }
 inline void TocoFlags::clear_quantize_to_float16() {
   quantize_to_float16_ = false;
@@ -1077,13 +1332,13 @@ inline void TocoFlags::set_quantize_to_float16(bool value) {
 
 // optional bool allow_dynamic_tensors = 30 [default = true];
 inline bool TocoFlags::has_allow_dynamic_tensors() const {
-  return (_has_bits_[0] & 0x00800000u) != 0;
+  return (_has_bits_[1] & 0x00000040u) != 0;
 }
 inline void TocoFlags::set_has_allow_dynamic_tensors() {
-  _has_bits_[0] |= 0x00800000u;
+  _has_bits_[1] |= 0x00000040u;
 }
 inline void TocoFlags::clear_has_allow_dynamic_tensors() {
-  _has_bits_[0] &= ~0x00800000u;
+  _has_bits_[1] &= ~0x00000040u;
 }
 inline void TocoFlags::clear_allow_dynamic_tensors() {
   allow_dynamic_tensors_ = true;
@@ -1097,6 +1352,706 @@ inline void TocoFlags::set_allow_dynamic_tensors(bool value) {
   set_has_allow_dynamic_tensors();
   allow_dynamic_tensors_ = value;
   // @@protoc_insertion_point(field_set:toco.TocoFlags.allow_dynamic_tensors)
+}
+
+// optional string conversion_summary_dir = 31;
+inline bool TocoFlags::has_conversion_summary_dir() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void TocoFlags::set_has_conversion_summary_dir() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void TocoFlags::clear_has_conversion_summary_dir() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void TocoFlags::clear_conversion_summary_dir() {
+  conversion_summary_dir_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  clear_has_conversion_summary_dir();
+}
+inline const ::std::string& TocoFlags::conversion_summary_dir() const {
+  // @@protoc_insertion_point(field_get:toco.TocoFlags.conversion_summary_dir)
+  return conversion_summary_dir_.GetNoArena();
+}
+inline void TocoFlags::set_conversion_summary_dir(const ::std::string& value) {
+  set_has_conversion_summary_dir();
+  conversion_summary_dir_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:toco.TocoFlags.conversion_summary_dir)
+}
+#if LANG_CXX11
+inline void TocoFlags::set_conversion_summary_dir(::std::string&& value) {
+  set_has_conversion_summary_dir();
+  conversion_summary_dir_.SetNoArena(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:toco.TocoFlags.conversion_summary_dir)
+}
+#endif
+inline void TocoFlags::set_conversion_summary_dir(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  set_has_conversion_summary_dir();
+  conversion_summary_dir_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:toco.TocoFlags.conversion_summary_dir)
+}
+inline void TocoFlags::set_conversion_summary_dir(const char* value, size_t size) {
+  set_has_conversion_summary_dir();
+  conversion_summary_dir_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:toco.TocoFlags.conversion_summary_dir)
+}
+inline ::std::string* TocoFlags::mutable_conversion_summary_dir() {
+  set_has_conversion_summary_dir();
+  // @@protoc_insertion_point(field_mutable:toco.TocoFlags.conversion_summary_dir)
+  return conversion_summary_dir_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* TocoFlags::release_conversion_summary_dir() {
+  // @@protoc_insertion_point(field_release:toco.TocoFlags.conversion_summary_dir)
+  if (!has_conversion_summary_dir()) {
+    return NULL;
+  }
+  clear_has_conversion_summary_dir();
+  return conversion_summary_dir_.ReleaseNonDefaultNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void TocoFlags::set_allocated_conversion_summary_dir(::std::string* conversion_summary_dir) {
+  if (conversion_summary_dir != NULL) {
+    set_has_conversion_summary_dir();
+  } else {
+    clear_has_conversion_summary_dir();
+  }
+  conversion_summary_dir_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), conversion_summary_dir);
+  // @@protoc_insertion_point(field_set_allocated:toco.TocoFlags.conversion_summary_dir)
+}
+
+// repeated string custom_opdefs = 32 [deprecated = true];
+inline int TocoFlags::custom_opdefs_size() const {
+  return custom_opdefs_.size();
+}
+inline void TocoFlags::clear_custom_opdefs() {
+  custom_opdefs_.Clear();
+}
+inline const ::std::string& TocoFlags::custom_opdefs(int index) const {
+  // @@protoc_insertion_point(field_get:toco.TocoFlags.custom_opdefs)
+  return custom_opdefs_.Get(index);
+}
+inline ::std::string* TocoFlags::mutable_custom_opdefs(int index) {
+  // @@protoc_insertion_point(field_mutable:toco.TocoFlags.custom_opdefs)
+  return custom_opdefs_.Mutable(index);
+}
+inline void TocoFlags::set_custom_opdefs(int index, const ::std::string& value) {
+  // @@protoc_insertion_point(field_set:toco.TocoFlags.custom_opdefs)
+  custom_opdefs_.Mutable(index)->assign(value);
+}
+#if LANG_CXX11
+inline void TocoFlags::set_custom_opdefs(int index, ::std::string&& value) {
+  // @@protoc_insertion_point(field_set:toco.TocoFlags.custom_opdefs)
+  custom_opdefs_.Mutable(index)->assign(std::move(value));
+}
+#endif
+inline void TocoFlags::set_custom_opdefs(int index, const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  custom_opdefs_.Mutable(index)->assign(value);
+  // @@protoc_insertion_point(field_set_char:toco.TocoFlags.custom_opdefs)
+}
+inline void TocoFlags::set_custom_opdefs(int index, const char* value, size_t size) {
+  custom_opdefs_.Mutable(index)->assign(
+    reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_set_pointer:toco.TocoFlags.custom_opdefs)
+}
+inline ::std::string* TocoFlags::add_custom_opdefs() {
+  // @@protoc_insertion_point(field_add_mutable:toco.TocoFlags.custom_opdefs)
+  return custom_opdefs_.Add();
+}
+inline void TocoFlags::add_custom_opdefs(const ::std::string& value) {
+  custom_opdefs_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add:toco.TocoFlags.custom_opdefs)
+}
+#if LANG_CXX11
+inline void TocoFlags::add_custom_opdefs(::std::string&& value) {
+  custom_opdefs_.Add(std::move(value));
+  // @@protoc_insertion_point(field_add:toco.TocoFlags.custom_opdefs)
+}
+#endif
+inline void TocoFlags::add_custom_opdefs(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  custom_opdefs_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add_char:toco.TocoFlags.custom_opdefs)
+}
+inline void TocoFlags::add_custom_opdefs(const char* value, size_t size) {
+  custom_opdefs_.Add()->assign(reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_add_pointer:toco.TocoFlags.custom_opdefs)
+}
+inline const ::google::protobuf::RepeatedPtrField< ::std::string>&
+TocoFlags::custom_opdefs() const {
+  // @@protoc_insertion_point(field_list:toco.TocoFlags.custom_opdefs)
+  return custom_opdefs_;
+}
+inline ::google::protobuf::RepeatedPtrField< ::std::string>*
+TocoFlags::mutable_custom_opdefs() {
+  // @@protoc_insertion_point(field_mutable_list:toco.TocoFlags.custom_opdefs)
+  return &custom_opdefs_;
+}
+
+// repeated string select_user_tf_ops = 33;
+inline int TocoFlags::select_user_tf_ops_size() const {
+  return select_user_tf_ops_.size();
+}
+inline void TocoFlags::clear_select_user_tf_ops() {
+  select_user_tf_ops_.Clear();
+}
+inline const ::std::string& TocoFlags::select_user_tf_ops(int index) const {
+  // @@protoc_insertion_point(field_get:toco.TocoFlags.select_user_tf_ops)
+  return select_user_tf_ops_.Get(index);
+}
+inline ::std::string* TocoFlags::mutable_select_user_tf_ops(int index) {
+  // @@protoc_insertion_point(field_mutable:toco.TocoFlags.select_user_tf_ops)
+  return select_user_tf_ops_.Mutable(index);
+}
+inline void TocoFlags::set_select_user_tf_ops(int index, const ::std::string& value) {
+  // @@protoc_insertion_point(field_set:toco.TocoFlags.select_user_tf_ops)
+  select_user_tf_ops_.Mutable(index)->assign(value);
+}
+#if LANG_CXX11
+inline void TocoFlags::set_select_user_tf_ops(int index, ::std::string&& value) {
+  // @@protoc_insertion_point(field_set:toco.TocoFlags.select_user_tf_ops)
+  select_user_tf_ops_.Mutable(index)->assign(std::move(value));
+}
+#endif
+inline void TocoFlags::set_select_user_tf_ops(int index, const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  select_user_tf_ops_.Mutable(index)->assign(value);
+  // @@protoc_insertion_point(field_set_char:toco.TocoFlags.select_user_tf_ops)
+}
+inline void TocoFlags::set_select_user_tf_ops(int index, const char* value, size_t size) {
+  select_user_tf_ops_.Mutable(index)->assign(
+    reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_set_pointer:toco.TocoFlags.select_user_tf_ops)
+}
+inline ::std::string* TocoFlags::add_select_user_tf_ops() {
+  // @@protoc_insertion_point(field_add_mutable:toco.TocoFlags.select_user_tf_ops)
+  return select_user_tf_ops_.Add();
+}
+inline void TocoFlags::add_select_user_tf_ops(const ::std::string& value) {
+  select_user_tf_ops_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add:toco.TocoFlags.select_user_tf_ops)
+}
+#if LANG_CXX11
+inline void TocoFlags::add_select_user_tf_ops(::std::string&& value) {
+  select_user_tf_ops_.Add(std::move(value));
+  // @@protoc_insertion_point(field_add:toco.TocoFlags.select_user_tf_ops)
+}
+#endif
+inline void TocoFlags::add_select_user_tf_ops(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  select_user_tf_ops_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add_char:toco.TocoFlags.select_user_tf_ops)
+}
+inline void TocoFlags::add_select_user_tf_ops(const char* value, size_t size) {
+  select_user_tf_ops_.Add()->assign(reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_add_pointer:toco.TocoFlags.select_user_tf_ops)
+}
+inline const ::google::protobuf::RepeatedPtrField< ::std::string>&
+TocoFlags::select_user_tf_ops() const {
+  // @@protoc_insertion_point(field_list:toco.TocoFlags.select_user_tf_ops)
+  return select_user_tf_ops_;
+}
+inline ::google::protobuf::RepeatedPtrField< ::std::string>*
+TocoFlags::mutable_select_user_tf_ops() {
+  // @@protoc_insertion_point(field_mutable_list:toco.TocoFlags.select_user_tf_ops)
+  return &select_user_tf_ops_;
+}
+
+// optional bool enable_tflite_resource_variables = 34 [default = true];
+inline bool TocoFlags::has_enable_tflite_resource_variables() const {
+  return (_has_bits_[1] & 0x00000080u) != 0;
+}
+inline void TocoFlags::set_has_enable_tflite_resource_variables() {
+  _has_bits_[1] |= 0x00000080u;
+}
+inline void TocoFlags::clear_has_enable_tflite_resource_variables() {
+  _has_bits_[1] &= ~0x00000080u;
+}
+inline void TocoFlags::clear_enable_tflite_resource_variables() {
+  enable_tflite_resource_variables_ = true;
+  clear_has_enable_tflite_resource_variables();
+}
+inline bool TocoFlags::enable_tflite_resource_variables() const {
+  // @@protoc_insertion_point(field_get:toco.TocoFlags.enable_tflite_resource_variables)
+  return enable_tflite_resource_variables_;
+}
+inline void TocoFlags::set_enable_tflite_resource_variables(bool value) {
+  set_has_enable_tflite_resource_variables();
+  enable_tflite_resource_variables_ = value;
+  // @@protoc_insertion_point(field_set:toco.TocoFlags.enable_tflite_resource_variables)
+}
+
+// optional bool unfold_batchmatmul = 35 [default = true];
+inline bool TocoFlags::has_unfold_batchmatmul() const {
+  return (_has_bits_[1] & 0x00000100u) != 0;
+}
+inline void TocoFlags::set_has_unfold_batchmatmul() {
+  _has_bits_[1] |= 0x00000100u;
+}
+inline void TocoFlags::clear_has_unfold_batchmatmul() {
+  _has_bits_[1] &= ~0x00000100u;
+}
+inline void TocoFlags::clear_unfold_batchmatmul() {
+  unfold_batchmatmul_ = true;
+  clear_has_unfold_batchmatmul();
+}
+inline bool TocoFlags::unfold_batchmatmul() const {
+  // @@protoc_insertion_point(field_get:toco.TocoFlags.unfold_batchmatmul)
+  return unfold_batchmatmul_;
+}
+inline void TocoFlags::set_unfold_batchmatmul(bool value) {
+  set_has_unfold_batchmatmul();
+  unfold_batchmatmul_ = value;
+  // @@protoc_insertion_point(field_set:toco.TocoFlags.unfold_batchmatmul)
+}
+
+// optional bool lower_tensor_list_ops = 36 [default = true];
+inline bool TocoFlags::has_lower_tensor_list_ops() const {
+  return (_has_bits_[1] & 0x00000200u) != 0;
+}
+inline void TocoFlags::set_has_lower_tensor_list_ops() {
+  _has_bits_[1] |= 0x00000200u;
+}
+inline void TocoFlags::clear_has_lower_tensor_list_ops() {
+  _has_bits_[1] &= ~0x00000200u;
+}
+inline void TocoFlags::clear_lower_tensor_list_ops() {
+  lower_tensor_list_ops_ = true;
+  clear_has_lower_tensor_list_ops();
+}
+inline bool TocoFlags::lower_tensor_list_ops() const {
+  // @@protoc_insertion_point(field_get:toco.TocoFlags.lower_tensor_list_ops)
+  return lower_tensor_list_ops_;
+}
+inline void TocoFlags::set_lower_tensor_list_ops(bool value) {
+  set_has_lower_tensor_list_ops();
+  lower_tensor_list_ops_ = value;
+  // @@protoc_insertion_point(field_set:toco.TocoFlags.lower_tensor_list_ops)
+}
+
+// optional .toco.IODataType accumulation_type = 37;
+inline bool TocoFlags::has_accumulation_type() const {
+  return (_has_bits_[0] & 0x08000000u) != 0;
+}
+inline void TocoFlags::set_has_accumulation_type() {
+  _has_bits_[0] |= 0x08000000u;
+}
+inline void TocoFlags::clear_has_accumulation_type() {
+  _has_bits_[0] &= ~0x08000000u;
+}
+inline void TocoFlags::clear_accumulation_type() {
+  accumulation_type_ = 0;
+  clear_has_accumulation_type();
+}
+inline ::toco::IODataType TocoFlags::accumulation_type() const {
+  // @@protoc_insertion_point(field_get:toco.TocoFlags.accumulation_type)
+  return static_cast< ::toco::IODataType >(accumulation_type_);
+}
+inline void TocoFlags::set_accumulation_type(::toco::IODataType value) {
+  assert(::toco::IODataType_IsValid(value));
+  set_has_accumulation_type();
+  accumulation_type_ = value;
+  // @@protoc_insertion_point(field_set:toco.TocoFlags.accumulation_type)
+}
+
+// optional bool allow_bfloat16 = 38 [default = false];
+inline bool TocoFlags::has_allow_bfloat16() const {
+  return (_has_bits_[0] & 0x01000000u) != 0;
+}
+inline void TocoFlags::set_has_allow_bfloat16() {
+  _has_bits_[0] |= 0x01000000u;
+}
+inline void TocoFlags::clear_has_allow_bfloat16() {
+  _has_bits_[0] &= ~0x01000000u;
+}
+inline void TocoFlags::clear_allow_bfloat16() {
+  allow_bfloat16_ = false;
+  clear_has_allow_bfloat16();
+}
+inline bool TocoFlags::allow_bfloat16() const {
+  // @@protoc_insertion_point(field_get:toco.TocoFlags.allow_bfloat16)
+  return allow_bfloat16_;
+}
+inline void TocoFlags::set_allow_bfloat16(bool value) {
+  set_has_allow_bfloat16();
+  allow_bfloat16_ = value;
+  // @@protoc_insertion_point(field_set:toco.TocoFlags.allow_bfloat16)
+}
+
+// optional bool allow_all_select_tf_ops = 39;
+inline bool TocoFlags::has_allow_all_select_tf_ops() const {
+  return (_has_bits_[0] & 0x02000000u) != 0;
+}
+inline void TocoFlags::set_has_allow_all_select_tf_ops() {
+  _has_bits_[0] |= 0x02000000u;
+}
+inline void TocoFlags::clear_has_allow_all_select_tf_ops() {
+  _has_bits_[0] &= ~0x02000000u;
+}
+inline void TocoFlags::clear_allow_all_select_tf_ops() {
+  allow_all_select_tf_ops_ = false;
+  clear_has_allow_all_select_tf_ops();
+}
+inline bool TocoFlags::allow_all_select_tf_ops() const {
+  // @@protoc_insertion_point(field_get:toco.TocoFlags.allow_all_select_tf_ops)
+  return allow_all_select_tf_ops_;
+}
+inline void TocoFlags::set_allow_all_select_tf_ops(bool value) {
+  set_has_allow_all_select_tf_ops();
+  allow_all_select_tf_ops_ = value;
+  // @@protoc_insertion_point(field_set:toco.TocoFlags.allow_all_select_tf_ops)
+}
+
+// optional bool unfold_large_splat_constant = 40 [default = false];
+inline bool TocoFlags::has_unfold_large_splat_constant() const {
+  return (_has_bits_[0] & 0x04000000u) != 0;
+}
+inline void TocoFlags::set_has_unfold_large_splat_constant() {
+  _has_bits_[0] |= 0x04000000u;
+}
+inline void TocoFlags::clear_has_unfold_large_splat_constant() {
+  _has_bits_[0] &= ~0x04000000u;
+}
+inline void TocoFlags::clear_unfold_large_splat_constant() {
+  unfold_large_splat_constant_ = false;
+  clear_has_unfold_large_splat_constant();
+}
+inline bool TocoFlags::unfold_large_splat_constant() const {
+  // @@protoc_insertion_point(field_get:toco.TocoFlags.unfold_large_splat_constant)
+  return unfold_large_splat_constant_;
+}
+inline void TocoFlags::set_unfold_large_splat_constant(bool value) {
+  set_has_unfold_large_splat_constant();
+  unfold_large_splat_constant_ = value;
+  // @@protoc_insertion_point(field_set:toco.TocoFlags.unfold_large_splat_constant)
+}
+
+// repeated string supported_backends = 41;
+inline int TocoFlags::supported_backends_size() const {
+  return supported_backends_.size();
+}
+inline void TocoFlags::clear_supported_backends() {
+  supported_backends_.Clear();
+}
+inline const ::std::string& TocoFlags::supported_backends(int index) const {
+  // @@protoc_insertion_point(field_get:toco.TocoFlags.supported_backends)
+  return supported_backends_.Get(index);
+}
+inline ::std::string* TocoFlags::mutable_supported_backends(int index) {
+  // @@protoc_insertion_point(field_mutable:toco.TocoFlags.supported_backends)
+  return supported_backends_.Mutable(index);
+}
+inline void TocoFlags::set_supported_backends(int index, const ::std::string& value) {
+  // @@protoc_insertion_point(field_set:toco.TocoFlags.supported_backends)
+  supported_backends_.Mutable(index)->assign(value);
+}
+#if LANG_CXX11
+inline void TocoFlags::set_supported_backends(int index, ::std::string&& value) {
+  // @@protoc_insertion_point(field_set:toco.TocoFlags.supported_backends)
+  supported_backends_.Mutable(index)->assign(std::move(value));
+}
+#endif
+inline void TocoFlags::set_supported_backends(int index, const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  supported_backends_.Mutable(index)->assign(value);
+  // @@protoc_insertion_point(field_set_char:toco.TocoFlags.supported_backends)
+}
+inline void TocoFlags::set_supported_backends(int index, const char* value, size_t size) {
+  supported_backends_.Mutable(index)->assign(
+    reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_set_pointer:toco.TocoFlags.supported_backends)
+}
+inline ::std::string* TocoFlags::add_supported_backends() {
+  // @@protoc_insertion_point(field_add_mutable:toco.TocoFlags.supported_backends)
+  return supported_backends_.Add();
+}
+inline void TocoFlags::add_supported_backends(const ::std::string& value) {
+  supported_backends_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add:toco.TocoFlags.supported_backends)
+}
+#if LANG_CXX11
+inline void TocoFlags::add_supported_backends(::std::string&& value) {
+  supported_backends_.Add(std::move(value));
+  // @@protoc_insertion_point(field_add:toco.TocoFlags.supported_backends)
+}
+#endif
+inline void TocoFlags::add_supported_backends(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  supported_backends_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add_char:toco.TocoFlags.supported_backends)
+}
+inline void TocoFlags::add_supported_backends(const char* value, size_t size) {
+  supported_backends_.Add()->assign(reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_add_pointer:toco.TocoFlags.supported_backends)
+}
+inline const ::google::protobuf::RepeatedPtrField< ::std::string>&
+TocoFlags::supported_backends() const {
+  // @@protoc_insertion_point(field_list:toco.TocoFlags.supported_backends)
+  return supported_backends_;
+}
+inline ::google::protobuf::RepeatedPtrField< ::std::string>*
+TocoFlags::mutable_supported_backends() {
+  // @@protoc_insertion_point(field_mutable_list:toco.TocoFlags.supported_backends)
+  return &supported_backends_;
+}
+
+// optional bool default_to_single_batch_in_tensor_list_ops = 42 [default = false];
+inline bool TocoFlags::has_default_to_single_batch_in_tensor_list_ops() const {
+  return (_has_bits_[0] & 0x10000000u) != 0;
+}
+inline void TocoFlags::set_has_default_to_single_batch_in_tensor_list_ops() {
+  _has_bits_[0] |= 0x10000000u;
+}
+inline void TocoFlags::clear_has_default_to_single_batch_in_tensor_list_ops() {
+  _has_bits_[0] &= ~0x10000000u;
+}
+inline void TocoFlags::clear_default_to_single_batch_in_tensor_list_ops() {
+  default_to_single_batch_in_tensor_list_ops_ = false;
+  clear_has_default_to_single_batch_in_tensor_list_ops();
+}
+inline bool TocoFlags::default_to_single_batch_in_tensor_list_ops() const {
+  // @@protoc_insertion_point(field_get:toco.TocoFlags.default_to_single_batch_in_tensor_list_ops)
+  return default_to_single_batch_in_tensor_list_ops_;
+}
+inline void TocoFlags::set_default_to_single_batch_in_tensor_list_ops(bool value) {
+  set_has_default_to_single_batch_in_tensor_list_ops();
+  default_to_single_batch_in_tensor_list_ops_ = value;
+  // @@protoc_insertion_point(field_set:toco.TocoFlags.default_to_single_batch_in_tensor_list_ops)
+}
+
+// optional bool disable_per_channel_quantization = 43 [default = false];
+inline bool TocoFlags::has_disable_per_channel_quantization() const {
+  return (_has_bits_[0] & 0x20000000u) != 0;
+}
+inline void TocoFlags::set_has_disable_per_channel_quantization() {
+  _has_bits_[0] |= 0x20000000u;
+}
+inline void TocoFlags::clear_has_disable_per_channel_quantization() {
+  _has_bits_[0] &= ~0x20000000u;
+}
+inline void TocoFlags::clear_disable_per_channel_quantization() {
+  disable_per_channel_quantization_ = false;
+  clear_has_disable_per_channel_quantization();
+}
+inline bool TocoFlags::disable_per_channel_quantization() const {
+  // @@protoc_insertion_point(field_get:toco.TocoFlags.disable_per_channel_quantization)
+  return disable_per_channel_quantization_;
+}
+inline void TocoFlags::set_disable_per_channel_quantization(bool value) {
+  set_has_disable_per_channel_quantization();
+  disable_per_channel_quantization_ = value;
+  // @@protoc_insertion_point(field_set:toco.TocoFlags.disable_per_channel_quantization)
+}
+
+// optional bool enable_mlir_dynamic_range_quantizer = 44 [default = false];
+inline bool TocoFlags::has_enable_mlir_dynamic_range_quantizer() const {
+  return (_has_bits_[0] & 0x40000000u) != 0;
+}
+inline void TocoFlags::set_has_enable_mlir_dynamic_range_quantizer() {
+  _has_bits_[0] |= 0x40000000u;
+}
+inline void TocoFlags::clear_has_enable_mlir_dynamic_range_quantizer() {
+  _has_bits_[0] &= ~0x40000000u;
+}
+inline void TocoFlags::clear_enable_mlir_dynamic_range_quantizer() {
+  enable_mlir_dynamic_range_quantizer_ = false;
+  clear_has_enable_mlir_dynamic_range_quantizer();
+}
+inline bool TocoFlags::enable_mlir_dynamic_range_quantizer() const {
+  // @@protoc_insertion_point(field_get:toco.TocoFlags.enable_mlir_dynamic_range_quantizer)
+  return enable_mlir_dynamic_range_quantizer_;
+}
+inline void TocoFlags::set_enable_mlir_dynamic_range_quantizer(bool value) {
+  set_has_enable_mlir_dynamic_range_quantizer();
+  enable_mlir_dynamic_range_quantizer_ = value;
+  // @@protoc_insertion_point(field_set:toco.TocoFlags.enable_mlir_dynamic_range_quantizer)
+}
+
+// optional string tf_quantization_mode = 45;
+inline bool TocoFlags::has_tf_quantization_mode() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void TocoFlags::set_has_tf_quantization_mode() {
+  _has_bits_[0] |= 0x00000004u;
+}
+inline void TocoFlags::clear_has_tf_quantization_mode() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline void TocoFlags::clear_tf_quantization_mode() {
+  tf_quantization_mode_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  clear_has_tf_quantization_mode();
+}
+inline const ::std::string& TocoFlags::tf_quantization_mode() const {
+  // @@protoc_insertion_point(field_get:toco.TocoFlags.tf_quantization_mode)
+  return tf_quantization_mode_.GetNoArena();
+}
+inline void TocoFlags::set_tf_quantization_mode(const ::std::string& value) {
+  set_has_tf_quantization_mode();
+  tf_quantization_mode_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:toco.TocoFlags.tf_quantization_mode)
+}
+#if LANG_CXX11
+inline void TocoFlags::set_tf_quantization_mode(::std::string&& value) {
+  set_has_tf_quantization_mode();
+  tf_quantization_mode_.SetNoArena(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:toco.TocoFlags.tf_quantization_mode)
+}
+#endif
+inline void TocoFlags::set_tf_quantization_mode(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  set_has_tf_quantization_mode();
+  tf_quantization_mode_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:toco.TocoFlags.tf_quantization_mode)
+}
+inline void TocoFlags::set_tf_quantization_mode(const char* value, size_t size) {
+  set_has_tf_quantization_mode();
+  tf_quantization_mode_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:toco.TocoFlags.tf_quantization_mode)
+}
+inline ::std::string* TocoFlags::mutable_tf_quantization_mode() {
+  set_has_tf_quantization_mode();
+  // @@protoc_insertion_point(field_mutable:toco.TocoFlags.tf_quantization_mode)
+  return tf_quantization_mode_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* TocoFlags::release_tf_quantization_mode() {
+  // @@protoc_insertion_point(field_release:toco.TocoFlags.tf_quantization_mode)
+  if (!has_tf_quantization_mode()) {
+    return NULL;
+  }
+  clear_has_tf_quantization_mode();
+  return tf_quantization_mode_.ReleaseNonDefaultNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void TocoFlags::set_allocated_tf_quantization_mode(::std::string* tf_quantization_mode) {
+  if (tf_quantization_mode != NULL) {
+    set_has_tf_quantization_mode();
+  } else {
+    clear_has_tf_quantization_mode();
+  }
+  tf_quantization_mode_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), tf_quantization_mode);
+  // @@protoc_insertion_point(field_set_allocated:toco.TocoFlags.tf_quantization_mode)
+}
+
+// optional bool disable_infer_tensor_range = 46 [default = false];
+inline bool TocoFlags::has_disable_infer_tensor_range() const {
+  return (_has_bits_[0] & 0x80000000u) != 0;
+}
+inline void TocoFlags::set_has_disable_infer_tensor_range() {
+  _has_bits_[0] |= 0x80000000u;
+}
+inline void TocoFlags::clear_has_disable_infer_tensor_range() {
+  _has_bits_[0] &= ~0x80000000u;
+}
+inline void TocoFlags::clear_disable_infer_tensor_range() {
+  disable_infer_tensor_range_ = false;
+  clear_has_disable_infer_tensor_range();
+}
+inline bool TocoFlags::disable_infer_tensor_range() const {
+  // @@protoc_insertion_point(field_get:toco.TocoFlags.disable_infer_tensor_range)
+  return disable_infer_tensor_range_;
+}
+inline void TocoFlags::set_disable_infer_tensor_range(bool value) {
+  set_has_disable_infer_tensor_range();
+  disable_infer_tensor_range_ = value;
+  // @@protoc_insertion_point(field_set:toco.TocoFlags.disable_infer_tensor_range)
+}
+
+// optional bool use_fake_quant_num_bits = 47 [default = false];
+inline bool TocoFlags::has_use_fake_quant_num_bits() const {
+  return (_has_bits_[1] & 0x00000001u) != 0;
+}
+inline void TocoFlags::set_has_use_fake_quant_num_bits() {
+  _has_bits_[1] |= 0x00000001u;
+}
+inline void TocoFlags::clear_has_use_fake_quant_num_bits() {
+  _has_bits_[1] &= ~0x00000001u;
+}
+inline void TocoFlags::clear_use_fake_quant_num_bits() {
+  use_fake_quant_num_bits_ = false;
+  clear_has_use_fake_quant_num_bits();
+}
+inline bool TocoFlags::use_fake_quant_num_bits() const {
+  // @@protoc_insertion_point(field_get:toco.TocoFlags.use_fake_quant_num_bits)
+  return use_fake_quant_num_bits_;
+}
+inline void TocoFlags::set_use_fake_quant_num_bits(bool value) {
+  set_has_use_fake_quant_num_bits();
+  use_fake_quant_num_bits_ = value;
+  // @@protoc_insertion_point(field_set:toco.TocoFlags.use_fake_quant_num_bits)
+}
+
+// optional bool enable_dynamic_update_slice = 48 [default = false];
+inline bool TocoFlags::has_enable_dynamic_update_slice() const {
+  return (_has_bits_[1] & 0x00000002u) != 0;
+}
+inline void TocoFlags::set_has_enable_dynamic_update_slice() {
+  _has_bits_[1] |= 0x00000002u;
+}
+inline void TocoFlags::clear_has_enable_dynamic_update_slice() {
+  _has_bits_[1] &= ~0x00000002u;
+}
+inline void TocoFlags::clear_enable_dynamic_update_slice() {
+  enable_dynamic_update_slice_ = false;
+  clear_has_enable_dynamic_update_slice();
+}
+inline bool TocoFlags::enable_dynamic_update_slice() const {
+  // @@protoc_insertion_point(field_get:toco.TocoFlags.enable_dynamic_update_slice)
+  return enable_dynamic_update_slice_;
+}
+inline void TocoFlags::set_enable_dynamic_update_slice(bool value) {
+  set_has_enable_dynamic_update_slice();
+  enable_dynamic_update_slice_ = value;
+  // @@protoc_insertion_point(field_set:toco.TocoFlags.enable_dynamic_update_slice)
+}
+
+// optional bool preserve_assert_op = 49 [default = false];
+inline bool TocoFlags::has_preserve_assert_op() const {
+  return (_has_bits_[1] & 0x00000004u) != 0;
+}
+inline void TocoFlags::set_has_preserve_assert_op() {
+  _has_bits_[1] |= 0x00000004u;
+}
+inline void TocoFlags::clear_has_preserve_assert_op() {
+  _has_bits_[1] &= ~0x00000004u;
+}
+inline void TocoFlags::clear_preserve_assert_op() {
+  preserve_assert_op_ = false;
+  clear_has_preserve_assert_op();
+}
+inline bool TocoFlags::preserve_assert_op() const {
+  // @@protoc_insertion_point(field_get:toco.TocoFlags.preserve_assert_op)
+  return preserve_assert_op_;
+}
+inline void TocoFlags::set_preserve_assert_op(bool value) {
+  set_has_preserve_assert_op();
+  preserve_assert_op_ = value;
+  // @@protoc_insertion_point(field_set:toco.TocoFlags.preserve_assert_op)
+}
+
+// optional bool guarantee_all_funcs_one_use = 50 [default = false];
+inline bool TocoFlags::has_guarantee_all_funcs_one_use() const {
+  return (_has_bits_[1] & 0x00000008u) != 0;
+}
+inline void TocoFlags::set_has_guarantee_all_funcs_one_use() {
+  _has_bits_[1] |= 0x00000008u;
+}
+inline void TocoFlags::clear_has_guarantee_all_funcs_one_use() {
+  _has_bits_[1] &= ~0x00000008u;
+}
+inline void TocoFlags::clear_guarantee_all_funcs_one_use() {
+  guarantee_all_funcs_one_use_ = false;
+  clear_has_guarantee_all_funcs_one_use();
+}
+inline bool TocoFlags::guarantee_all_funcs_one_use() const {
+  // @@protoc_insertion_point(field_get:toco.TocoFlags.guarantee_all_funcs_one_use)
+  return guarantee_all_funcs_one_use_;
+}
+inline void TocoFlags::set_guarantee_all_funcs_one_use(bool value) {
+  set_has_guarantee_all_funcs_one_use();
+  guarantee_all_funcs_one_use_ = value;
+  // @@protoc_insertion_point(field_set:toco.TocoFlags.guarantee_all_funcs_one_use)
 }
 
 #ifdef __GNUC__

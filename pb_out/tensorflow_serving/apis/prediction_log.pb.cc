@@ -27,6 +27,9 @@ namespace protobuf_tensorflow_5fserving_2fapis_2finference_2eproto {
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_5fserving_2fapis_2finference_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_MultiInferenceResponse;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_5fserving_2fapis_2finference_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_MultiInferenceRequest;
 }  // namespace protobuf_tensorflow_5fserving_2fapis_2finference_2eproto
+namespace protobuf_tensorflow_5fserving_2fapis_2flogging_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_5fserving_2fapis_2flogging_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_LogMetadata;
+}  // namespace protobuf_tensorflow_5fserving_2fapis_2flogging_2eproto
 namespace protobuf_tensorflow_5fserving_2fapis_2fpredict_2eproto {
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_5fserving_2fapis_2fpredict_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_PredictRequest;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_5fserving_2fapis_2fpredict_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_PredictResponse;
@@ -46,9 +49,6 @@ namespace protobuf_tensorflow_5fserving_2fapis_2fsession_5fservice_2eproto {
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_5fserving_2fapis_2fsession_5fservice_2eproto ::google::protobuf::internal::SCCInfo<3> scc_info_SessionRunRequest;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_5fserving_2fapis_2fsession_5fservice_2eproto ::google::protobuf::internal::SCCInfo<3> scc_info_SessionRunResponse;
 }  // namespace protobuf_tensorflow_5fserving_2fapis_2fsession_5fservice_2eproto
-namespace protobuf_tensorflow_5fserving_2fcore_2flogging_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_5fserving_2fcore_2flogging_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_LogMetadata;
-}  // namespace protobuf_tensorflow_5fserving_2fcore_2flogging_2eproto
 namespace tensorflow {
 namespace serving {
 class ClassifyLogDefaultTypeInternal {
@@ -182,7 +182,7 @@ static void InitDefaultsPredictionLog() {
 
 ::google::protobuf::internal::SCCInfo<6> scc_info_PredictionLog =
     {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 6, InitDefaultsPredictionLog}, {
-      &protobuf_tensorflow_5fserving_2fcore_2flogging_2eproto::scc_info_LogMetadata.base,
+      &protobuf_tensorflow_5fserving_2fapis_2flogging_2eproto::scc_info_LogMetadata.base,
       &protobuf_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto::scc_info_ClassifyLog.base,
       &protobuf_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto::scc_info_RegressLog.base,
       &protobuf_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto::scc_info_PredictLog.base,
@@ -292,10 +292,10 @@ void AddDescriptorsImpl() {
       ".proto\022\022tensorflow.serving\032,tensorflow_s"
       "erving/apis/classification.proto\032\'tensor"
       "flow_serving/apis/inference.proto\032%tenso"
-      "rflow_serving/apis/predict.proto\032(tensor"
-      "flow_serving/apis/regression.proto\032-tens"
-      "orflow_serving/apis/session_service.prot"
-      "o\032%tensorflow_serving/core/logging.proto"
+      "rflow_serving/apis/logging.proto\032%tensor"
+      "flow_serving/apis/predict.proto\032(tensorf"
+      "low_serving/apis/regression.proto\032-tenso"
+      "rflow_serving/apis/session_service.proto"
       "\"\207\001\n\013ClassifyLog\022:\n\007request\030\001 \001(\0132).tens"
       "orflow.serving.ClassificationRequest\022<\n\010"
       "response\030\002 \001(\0132*.tensorflow.serving.Clas"
@@ -330,10 +330,10 @@ void AddDescriptorsImpl() {
     "tensorflow_serving/apis/prediction_log.proto", &protobuf_RegisterTypes);
   ::protobuf_tensorflow_5fserving_2fapis_2fclassification_2eproto::AddDescriptors();
   ::protobuf_tensorflow_5fserving_2fapis_2finference_2eproto::AddDescriptors();
+  ::protobuf_tensorflow_5fserving_2fapis_2flogging_2eproto::AddDescriptors();
   ::protobuf_tensorflow_5fserving_2fapis_2fpredict_2eproto::AddDescriptors();
   ::protobuf_tensorflow_5fserving_2fapis_2fregression_2eproto::AddDescriptors();
   ::protobuf_tensorflow_5fserving_2fapis_2fsession_5fservice_2eproto::AddDescriptors();
-  ::protobuf_tensorflow_5fserving_2fcore_2flogging_2eproto::AddDescriptors();
 }
 
 void AddDescriptors() {

@@ -29,9 +29,10 @@
 #include <google/protobuf/message.h>
 #include <google/protobuf/repeated_field.h>  // IWYU pragma: export
 #include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/generated_enum_reflection.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "tensorflow/compiler/xla/service/hlo.pb.h"
-#include "tensorflow/core/lib/core/error_codes.pb.h"
+#include "tensorflow/core/protobuf/error_codes.pb.h"
 // @@protoc_insertion_point(includes)
 #define PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2fcompilation_5fresult_2eproto 
 
@@ -62,6 +63,27 @@ template<> ::tensorflow::tpu::CompilationResultProto* Arena::CreateMaybeMessage<
 namespace tensorflow {
 namespace tpu {
 
+enum CompilationResultProto_ErrorCode {
+  CompilationResultProto_ErrorCode_UNKNOWN = 0,
+  CompilationResultProto_ErrorCode_OUT_OF_MEMORY = 1,
+  CompilationResultProto_ErrorCode_CompilationResultProto_ErrorCode_INT_MIN_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32min,
+  CompilationResultProto_ErrorCode_CompilationResultProto_ErrorCode_INT_MAX_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32max
+};
+bool CompilationResultProto_ErrorCode_IsValid(int value);
+const CompilationResultProto_ErrorCode CompilationResultProto_ErrorCode_ErrorCode_MIN = CompilationResultProto_ErrorCode_UNKNOWN;
+const CompilationResultProto_ErrorCode CompilationResultProto_ErrorCode_ErrorCode_MAX = CompilationResultProto_ErrorCode_OUT_OF_MEMORY;
+const int CompilationResultProto_ErrorCode_ErrorCode_ARRAYSIZE = CompilationResultProto_ErrorCode_ErrorCode_MAX + 1;
+
+const ::google::protobuf::EnumDescriptor* CompilationResultProto_ErrorCode_descriptor();
+inline const ::std::string& CompilationResultProto_ErrorCode_Name(CompilationResultProto_ErrorCode value) {
+  return ::google::protobuf::internal::NameOfEnum(
+    CompilationResultProto_ErrorCode_descriptor(), value);
+}
+inline bool CompilationResultProto_ErrorCode_Parse(
+    const ::std::string& name, CompilationResultProto_ErrorCode* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<CompilationResultProto_ErrorCode>(
+    CompilationResultProto_ErrorCode_descriptor(), name, value);
+}
 // ===================================================================
 
 class CompilationResultProto : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.tpu.CompilationResultProto) */ {
@@ -161,6 +183,32 @@ class CompilationResultProto : public ::google::protobuf::Message /* @@protoc_in
 
   // nested types ----------------------------------------------------
 
+  typedef CompilationResultProto_ErrorCode ErrorCode;
+  static const ErrorCode UNKNOWN =
+    CompilationResultProto_ErrorCode_UNKNOWN;
+  static const ErrorCode OUT_OF_MEMORY =
+    CompilationResultProto_ErrorCode_OUT_OF_MEMORY;
+  static inline bool ErrorCode_IsValid(int value) {
+    return CompilationResultProto_ErrorCode_IsValid(value);
+  }
+  static const ErrorCode ErrorCode_MIN =
+    CompilationResultProto_ErrorCode_ErrorCode_MIN;
+  static const ErrorCode ErrorCode_MAX =
+    CompilationResultProto_ErrorCode_ErrorCode_MAX;
+  static const int ErrorCode_ARRAYSIZE =
+    CompilationResultProto_ErrorCode_ErrorCode_ARRAYSIZE;
+  static inline const ::google::protobuf::EnumDescriptor*
+  ErrorCode_descriptor() {
+    return CompilationResultProto_ErrorCode_descriptor();
+  }
+  static inline const ::std::string& ErrorCode_Name(ErrorCode value) {
+    return CompilationResultProto_ErrorCode_Name(value);
+  }
+  static inline bool ErrorCode_Parse(const ::std::string& name,
+      ErrorCode* value) {
+    return CompilationResultProto_ErrorCode_Parse(name, value);
+  }
+
   // accessors -------------------------------------------------------
 
   // repeated .xla.HloProto hlo_protos = 3;
@@ -204,6 +252,12 @@ class CompilationResultProto : public ::google::protobuf::Message /* @@protoc_in
   ::tensorflow::error::Code status_code() const;
   void set_status_code(::tensorflow::error::Code value);
 
+  // .tensorflow.tpu.CompilationResultProto.ErrorCode error_code = 4;
+  void clear_error_code();
+  static const int kErrorCodeFieldNumber = 4;
+  ::tensorflow::tpu::CompilationResultProto_ErrorCode error_code() const;
+  void set_error_code(::tensorflow::tpu::CompilationResultProto_ErrorCode value);
+
   // @@protoc_insertion_point(class_scope:tensorflow.tpu.CompilationResultProto)
  private:
 
@@ -214,6 +268,7 @@ class CompilationResultProto : public ::google::protobuf::Message /* @@protoc_in
   ::google::protobuf::RepeatedPtrField< ::xla::HloProto > hlo_protos_;
   ::google::protobuf::internal::ArenaStringPtr status_error_message_;
   int status_code_;
+  int error_code_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2fcompilation_5fresult_2eproto::TableStruct;
 };
@@ -344,6 +399,20 @@ CompilationResultProto::hlo_protos() const {
   return hlo_protos_;
 }
 
+// .tensorflow.tpu.CompilationResultProto.ErrorCode error_code = 4;
+inline void CompilationResultProto::clear_error_code() {
+  error_code_ = 0;
+}
+inline ::tensorflow::tpu::CompilationResultProto_ErrorCode CompilationResultProto::error_code() const {
+  // @@protoc_insertion_point(field_get:tensorflow.tpu.CompilationResultProto.error_code)
+  return static_cast< ::tensorflow::tpu::CompilationResultProto_ErrorCode >(error_code_);
+}
+inline void CompilationResultProto::set_error_code(::tensorflow::tpu::CompilationResultProto_ErrorCode value) {
+  
+  error_code_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.tpu.CompilationResultProto.error_code)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
@@ -352,6 +421,18 @@ CompilationResultProto::hlo_protos() const {
 
 }  // namespace tpu
 }  // namespace tensorflow
+
+namespace google {
+namespace protobuf {
+
+template <> struct is_proto_enum< ::tensorflow::tpu::CompilationResultProto_ErrorCode> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::tensorflow::tpu::CompilationResultProto_ErrorCode>() {
+  return ::tensorflow::tpu::CompilationResultProto_ErrorCode_descriptor();
+}
+
+}  // namespace protobuf
+}  // namespace google
 
 // @@protoc_insertion_point(global_scope)
 

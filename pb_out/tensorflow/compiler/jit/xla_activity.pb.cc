@@ -199,6 +199,7 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::XlaJitCompilationActivity, compile_count_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::XlaJitCompilationActivity, compile_time_us_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::XlaJitCompilationActivity, cumulative_compile_time_us_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::XlaJitCompilationActivity, used_persistent_cache_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::XlaOptimizationRemark, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -213,7 +214,7 @@ static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROT
   { 15, -1, sizeof(::tensorflow::XlaAutoClusteringSummary)},
   { 24, -1, sizeof(::tensorflow::XlaAutoClusteringActivity)},
   { 32, -1, sizeof(::tensorflow::XlaJitCompilationActivity)},
-  { 41, -1, sizeof(::tensorflow::XlaOptimizationRemark)},
+  { 42, -1, sizeof(::tensorflow::XlaOptimizationRemark)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
@@ -262,21 +263,21 @@ void AddDescriptorsImpl() {
       "obal_jit_level\030\001 \001(\0162+.tensorflow.Optimi"
       "zerOptions.GlobalJitLevel\022\036\n\026cpu_global_"
       "jit_enabled\030\002 \001(\010\0225\n\007summary\030\003 \001(\0132$.ten"
-      "sorflow.XlaAutoClusteringSummary\"\205\001\n\031Xla"
+      "sorflow.XlaAutoClusteringSummary\"\244\001\n\031Xla"
       "JitCompilationActivity\022\024\n\014cluster_name\030\001"
       " \001(\t\022\025\n\rcompile_count\030\002 \001(\005\022\027\n\017compile_t"
       "ime_us\030\003 \001(\003\022\"\n\032cumulative_compile_time_"
-      "us\030\004 \001(\003\"\213\002\n\025XlaOptimizationRemark\022:\n\007wa"
-      "rning\030\001 \001(\0162).tensorflow.XlaOptimization"
-      "Remark.Warning\022\031\n\021debug_information\030\002 \001("
-      "\t\"\232\001\n\007Warning\022\010\n\004NONE\020\000\022\030\n\024INACCURATE_OP"
-      "ERATION\020\001\022\022\n\016SLOW_OPERATION\020\002\022\033\n\027UNIMPLE"
-      "MENTED_OPERATION\020\003\022 \n\034SLOW_IMAGE_RESIZE_"
-      "DIMENSIONS\020\004\022\030\n\024MEGAMORPHIC_FUNCTION\020\005b\006"
-      "proto3"
+      "us\030\004 \001(\003\022\035\n\025used_persistent_cache\030\005 \001(\010\""
+      "\213\002\n\025XlaOptimizationRemark\022:\n\007warning\030\001 \001"
+      "(\0162).tensorflow.XlaOptimizationRemark.Wa"
+      "rning\022\031\n\021debug_information\030\002 \001(\t\"\232\001\n\007War"
+      "ning\022\010\n\004NONE\020\000\022\030\n\024INACCURATE_OPERATION\020\001"
+      "\022\022\n\016SLOW_OPERATION\020\002\022\033\n\027UNIMPLEMENTED_OP"
+      "ERATION\020\003\022 \n\034SLOW_IMAGE_RESIZE_DIMENSION"
+      "S\020\004\022\030\n\024MEGAMORPHIC_FUNCTION\020\005b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 1086);
+      descriptor, 1117);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/compiler/jit/xla_activity.proto", &protobuf_RegisterTypes);
   ::protobuf_tensorflow_2fcore_2fprotobuf_2fconfig_2eproto::AddDescriptors();
@@ -1609,6 +1610,7 @@ const int XlaJitCompilationActivity::kClusterNameFieldNumber;
 const int XlaJitCompilationActivity::kCompileCountFieldNumber;
 const int XlaJitCompilationActivity::kCompileTimeUsFieldNumber;
 const int XlaJitCompilationActivity::kCumulativeCompileTimeUsFieldNumber;
+const int XlaJitCompilationActivity::kUsedPersistentCacheFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 XlaJitCompilationActivity::XlaJitCompilationActivity()
@@ -1627,16 +1629,16 @@ XlaJitCompilationActivity::XlaJitCompilationActivity(const XlaJitCompilationActi
     cluster_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.cluster_name_);
   }
   ::memcpy(&compile_time_us_, &from.compile_time_us_,
-    static_cast<size_t>(reinterpret_cast<char*>(&compile_count_) -
-    reinterpret_cast<char*>(&compile_time_us_)) + sizeof(compile_count_));
+    static_cast<size_t>(reinterpret_cast<char*>(&cumulative_compile_time_us_) -
+    reinterpret_cast<char*>(&compile_time_us_)) + sizeof(cumulative_compile_time_us_));
   // @@protoc_insertion_point(copy_constructor:tensorflow.XlaJitCompilationActivity)
 }
 
 void XlaJitCompilationActivity::SharedCtor() {
   cluster_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&compile_time_us_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&compile_count_) -
-      reinterpret_cast<char*>(&compile_time_us_)) + sizeof(compile_count_));
+      reinterpret_cast<char*>(&cumulative_compile_time_us_) -
+      reinterpret_cast<char*>(&compile_time_us_)) + sizeof(cumulative_compile_time_us_));
 }
 
 XlaJitCompilationActivity::~XlaJitCompilationActivity() {
@@ -1670,8 +1672,8 @@ void XlaJitCompilationActivity::Clear() {
 
   cluster_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&compile_time_us_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&compile_count_) -
-      reinterpret_cast<char*>(&compile_time_us_)) + sizeof(compile_count_));
+      reinterpret_cast<char*>(&cumulative_compile_time_us_) -
+      reinterpret_cast<char*>(&compile_time_us_)) + sizeof(cumulative_compile_time_us_));
   _internal_metadata_.Clear();
 }
 
@@ -1743,6 +1745,20 @@ bool XlaJitCompilationActivity::MergePartialFromCodedStream(
         break;
       }
 
+      // bool used_persistent_cache = 5;
+      case 5: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &used_persistent_cache_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -1794,6 +1810,11 @@ void XlaJitCompilationActivity::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteInt64(4, this->cumulative_compile_time_us(), output);
   }
 
+  // bool used_persistent_cache = 5;
+  if (this->used_persistent_cache() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(5, this->used_persistent_cache(), output);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -1834,6 +1855,11 @@ void XlaJitCompilationActivity::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(4, this->cumulative_compile_time_us(), target);
   }
 
+  // bool used_persistent_cache = 5;
+  if (this->used_persistent_cache() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(5, this->used_persistent_cache(), target);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
@@ -1865,18 +1891,23 @@ size_t XlaJitCompilationActivity::ByteSizeLong() const {
         this->compile_time_us());
   }
 
-  // int64 cumulative_compile_time_us = 4;
-  if (this->cumulative_compile_time_us() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int64Size(
-        this->cumulative_compile_time_us());
-  }
-
   // int32 compile_count = 2;
   if (this->compile_count() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
         this->compile_count());
+  }
+
+  // bool used_persistent_cache = 5;
+  if (this->used_persistent_cache() != 0) {
+    total_size += 1 + 1;
+  }
+
+  // int64 cumulative_compile_time_us = 4;
+  if (this->cumulative_compile_time_us() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int64Size(
+        this->cumulative_compile_time_us());
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -1913,11 +1944,14 @@ void XlaJitCompilationActivity::MergeFrom(const XlaJitCompilationActivity& from)
   if (from.compile_time_us() != 0) {
     set_compile_time_us(from.compile_time_us());
   }
-  if (from.cumulative_compile_time_us() != 0) {
-    set_cumulative_compile_time_us(from.cumulative_compile_time_us());
-  }
   if (from.compile_count() != 0) {
     set_compile_count(from.compile_count());
+  }
+  if (from.used_persistent_cache() != 0) {
+    set_used_persistent_cache(from.used_persistent_cache());
+  }
+  if (from.cumulative_compile_time_us() != 0) {
+    set_cumulative_compile_time_us(from.cumulative_compile_time_us());
   }
 }
 
@@ -1948,8 +1982,9 @@ void XlaJitCompilationActivity::InternalSwap(XlaJitCompilationActivity* other) {
   cluster_name_.Swap(&other->cluster_name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(compile_time_us_, other->compile_time_us_);
-  swap(cumulative_compile_time_us_, other->cumulative_compile_time_us_);
   swap(compile_count_, other->compile_count_);
+  swap(used_persistent_cache_, other->used_persistent_cache_);
+  swap(cumulative_compile_time_us_, other->cumulative_compile_time_us_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 

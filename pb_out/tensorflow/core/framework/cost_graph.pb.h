@@ -40,7 +40,7 @@ namespace protobuf_tensorflow_2fcore_2fframework_2fcost_5fgraph_2eproto {
 struct TableStruct {
   static const ::google::protobuf::internal::ParseTableField entries[];
   static const ::google::protobuf::internal::AuxillaryParseTableField aux[];
-  static const ::google::protobuf::internal::ParseTable schema[4];
+  static const ::google::protobuf::internal::ParseTable schema[5];
   static const ::google::protobuf::internal::FieldMetadata field_metadata[];
   static const ::google::protobuf::internal::SerializationTable serialization_table[];
   static const ::google::protobuf::uint32 offsets[];
@@ -51,6 +51,9 @@ namespace tensorflow {
 class CostGraphDef;
 class CostGraphDefDefaultTypeInternal;
 extern CostGraphDefDefaultTypeInternal _CostGraphDef_default_instance_;
+class CostGraphDef_AggregatedCost;
+class CostGraphDef_AggregatedCostDefaultTypeInternal;
+extern CostGraphDef_AggregatedCostDefaultTypeInternal _CostGraphDef_AggregatedCost_default_instance_;
 class CostGraphDef_Node;
 class CostGraphDef_NodeDefaultTypeInternal;
 extern CostGraphDef_NodeDefaultTypeInternal _CostGraphDef_Node_default_instance_;
@@ -64,6 +67,7 @@ extern CostGraphDef_Node_OutputInfoDefaultTypeInternal _CostGraphDef_Node_Output
 namespace google {
 namespace protobuf {
 template<> ::tensorflow::CostGraphDef* Arena::CreateMaybeMessage<::tensorflow::CostGraphDef>(Arena*);
+template<> ::tensorflow::CostGraphDef_AggregatedCost* Arena::CreateMaybeMessage<::tensorflow::CostGraphDef_AggregatedCost>(Arena*);
 template<> ::tensorflow::CostGraphDef_Node* Arena::CreateMaybeMessage<::tensorflow::CostGraphDef_Node>(Arena*);
 template<> ::tensorflow::CostGraphDef_Node_InputInfo* Arena::CreateMaybeMessage<::tensorflow::CostGraphDef_Node_InputInfo>(Arena*);
 template<> ::tensorflow::CostGraphDef_Node_OutputInfo* Arena::CreateMaybeMessage<::tensorflow::CostGraphDef_Node_OutputInfo>(Arena*);
@@ -625,6 +629,148 @@ class CostGraphDef_Node : public ::google::protobuf::Message /* @@protoc_inserti
 };
 // -------------------------------------------------------------------
 
+class CostGraphDef_AggregatedCost : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.CostGraphDef.AggregatedCost) */ {
+ public:
+  CostGraphDef_AggregatedCost();
+  virtual ~CostGraphDef_AggregatedCost();
+
+  CostGraphDef_AggregatedCost(const CostGraphDef_AggregatedCost& from);
+
+  inline CostGraphDef_AggregatedCost& operator=(const CostGraphDef_AggregatedCost& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  CostGraphDef_AggregatedCost(CostGraphDef_AggregatedCost&& from) noexcept
+    : CostGraphDef_AggregatedCost() {
+    *this = ::std::move(from);
+  }
+
+  inline CostGraphDef_AggregatedCost& operator=(CostGraphDef_AggregatedCost&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  inline ::google::protobuf::Arena* GetArena() const final {
+    return GetArenaNoVirtual();
+  }
+  inline void* GetMaybeArenaPointer() const final {
+    return MaybeArenaPtr();
+  }
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const CostGraphDef_AggregatedCost& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const CostGraphDef_AggregatedCost* internal_default_instance() {
+    return reinterpret_cast<const CostGraphDef_AggregatedCost*>(
+               &_CostGraphDef_AggregatedCost_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    3;
+
+  void UnsafeArenaSwap(CostGraphDef_AggregatedCost* other);
+  void Swap(CostGraphDef_AggregatedCost* other);
+  friend void swap(CostGraphDef_AggregatedCost& a, CostGraphDef_AggregatedCost& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline CostGraphDef_AggregatedCost* New() const final {
+    return CreateMaybeMessage<CostGraphDef_AggregatedCost>(NULL);
+  }
+
+  CostGraphDef_AggregatedCost* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<CostGraphDef_AggregatedCost>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const CostGraphDef_AggregatedCost& from);
+  void MergeFrom(const CostGraphDef_AggregatedCost& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CostGraphDef_AggregatedCost* other);
+  protected:
+  explicit CostGraphDef_AggregatedCost(::google::protobuf::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::google::protobuf::Arena* arena);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return _internal_metadata_.arena();
+  }
+  inline void* MaybeArenaPtr() const {
+    return _internal_metadata_.raw_arena_ptr();
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // string dimension = 2;
+  void clear_dimension();
+  static const int kDimensionFieldNumber = 2;
+  const ::std::string& dimension() const;
+  void set_dimension(const ::std::string& value);
+  #if LANG_CXX11
+  void set_dimension(::std::string&& value);
+  #endif
+  void set_dimension(const char* value);
+  void set_dimension(const char* value, size_t size);
+  ::std::string* mutable_dimension();
+  ::std::string* release_dimension();
+  void set_allocated_dimension(::std::string* dimension);
+  PROTOBUF_RUNTIME_DEPRECATED("The unsafe_arena_ accessors for"
+  "    string fields are deprecated and will be removed in a"
+  "    future release.")
+  ::std::string* unsafe_arena_release_dimension();
+  PROTOBUF_RUNTIME_DEPRECATED("The unsafe_arena_ accessors for"
+  "    string fields are deprecated and will be removed in a"
+  "    future release.")
+  void unsafe_arena_set_allocated_dimension(
+      ::std::string* dimension);
+
+  // float cost = 1;
+  void clear_cost();
+  static const int kCostFieldNumber = 1;
+  float cost() const;
+  void set_cost(float value);
+
+  // @@protoc_insertion_point(class_scope:tensorflow.CostGraphDef.AggregatedCost)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::google::protobuf::internal::ArenaStringPtr dimension_;
+  float cost_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fcore_2fframework_2fcost_5fgraph_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
 class CostGraphDef : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.CostGraphDef) */ {
  public:
   CostGraphDef();
@@ -666,7 +812,7 @@ class CostGraphDef : public ::google::protobuf::Message /* @@protoc_insertion_po
                &_CostGraphDef_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    3;
+    4;
 
   void UnsafeArenaSwap(CostGraphDef* other);
   void Swap(CostGraphDef* other);
@@ -723,6 +869,7 @@ class CostGraphDef : public ::google::protobuf::Message /* @@protoc_insertion_po
   // nested types ----------------------------------------------------
 
   typedef CostGraphDef_Node Node;
+  typedef CostGraphDef_AggregatedCost AggregatedCost;
 
   // accessors -------------------------------------------------------
 
@@ -738,6 +885,18 @@ class CostGraphDef : public ::google::protobuf::Message /* @@protoc_insertion_po
   const ::google::protobuf::RepeatedPtrField< ::tensorflow::CostGraphDef_Node >&
       node() const;
 
+  // repeated .tensorflow.CostGraphDef.AggregatedCost cost = 2;
+  int cost_size() const;
+  void clear_cost();
+  static const int kCostFieldNumber = 2;
+  ::tensorflow::CostGraphDef_AggregatedCost* mutable_cost(int index);
+  ::google::protobuf::RepeatedPtrField< ::tensorflow::CostGraphDef_AggregatedCost >*
+      mutable_cost();
+  const ::tensorflow::CostGraphDef_AggregatedCost& cost(int index) const;
+  ::tensorflow::CostGraphDef_AggregatedCost* add_cost();
+  const ::google::protobuf::RepeatedPtrField< ::tensorflow::CostGraphDef_AggregatedCost >&
+      cost() const;
+
   // @@protoc_insertion_point(class_scope:tensorflow.CostGraphDef)
  private:
 
@@ -746,6 +905,7 @@ class CostGraphDef : public ::google::protobuf::Message /* @@protoc_insertion_po
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::google::protobuf::RepeatedPtrField< ::tensorflow::CostGraphDef_Node > node_;
+  ::google::protobuf::RepeatedPtrField< ::tensorflow::CostGraphDef_AggregatedCost > cost_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcore_2fframework_2fcost_5fgraph_2eproto::TableStruct;
 };
@@ -1293,6 +1453,99 @@ inline void CostGraphDef_Node::set_inaccurate(bool value) {
 
 // -------------------------------------------------------------------
 
+// CostGraphDef_AggregatedCost
+
+// float cost = 1;
+inline void CostGraphDef_AggregatedCost::clear_cost() {
+  cost_ = 0;
+}
+inline float CostGraphDef_AggregatedCost::cost() const {
+  // @@protoc_insertion_point(field_get:tensorflow.CostGraphDef.AggregatedCost.cost)
+  return cost_;
+}
+inline void CostGraphDef_AggregatedCost::set_cost(float value) {
+  
+  cost_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.CostGraphDef.AggregatedCost.cost)
+}
+
+// string dimension = 2;
+inline void CostGraphDef_AggregatedCost::clear_dimension() {
+  dimension_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+inline const ::std::string& CostGraphDef_AggregatedCost::dimension() const {
+  // @@protoc_insertion_point(field_get:tensorflow.CostGraphDef.AggregatedCost.dimension)
+  return dimension_.Get();
+}
+inline void CostGraphDef_AggregatedCost::set_dimension(const ::std::string& value) {
+  
+  dimension_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set:tensorflow.CostGraphDef.AggregatedCost.dimension)
+}
+#if LANG_CXX11
+inline void CostGraphDef_AggregatedCost::set_dimension(::std::string&& value) {
+  
+  dimension_.Set(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_rvalue:tensorflow.CostGraphDef.AggregatedCost.dimension)
+}
+#endif
+inline void CostGraphDef_AggregatedCost::set_dimension(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  
+  dimension_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
+              GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_char:tensorflow.CostGraphDef.AggregatedCost.dimension)
+}
+inline void CostGraphDef_AggregatedCost::set_dimension(const char* value,
+    size_t size) {
+  
+  dimension_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_pointer:tensorflow.CostGraphDef.AggregatedCost.dimension)
+}
+inline ::std::string* CostGraphDef_AggregatedCost::mutable_dimension() {
+  
+  // @@protoc_insertion_point(field_mutable:tensorflow.CostGraphDef.AggregatedCost.dimension)
+  return dimension_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+inline ::std::string* CostGraphDef_AggregatedCost::release_dimension() {
+  // @@protoc_insertion_point(field_release:tensorflow.CostGraphDef.AggregatedCost.dimension)
+  
+  return dimension_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+inline void CostGraphDef_AggregatedCost::set_allocated_dimension(::std::string* dimension) {
+  if (dimension != NULL) {
+    
+  } else {
+    
+  }
+  dimension_.SetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), dimension,
+      GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.CostGraphDef.AggregatedCost.dimension)
+}
+inline ::std::string* CostGraphDef_AggregatedCost::unsafe_arena_release_dimension() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:tensorflow.CostGraphDef.AggregatedCost.dimension)
+  GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
+  
+  return dimension_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      GetArenaNoVirtual());
+}
+inline void CostGraphDef_AggregatedCost::unsafe_arena_set_allocated_dimension(
+    ::std::string* dimension) {
+  GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
+  if (dimension != NULL) {
+    
+  } else {
+    
+  }
+  dimension_.UnsafeArenaSetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      dimension, GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.CostGraphDef.AggregatedCost.dimension)
+}
+
+// -------------------------------------------------------------------
+
 // CostGraphDef
 
 // repeated .tensorflow.CostGraphDef.Node node = 1;
@@ -1325,9 +1578,41 @@ CostGraphDef::node() const {
   return node_;
 }
 
+// repeated .tensorflow.CostGraphDef.AggregatedCost cost = 2;
+inline int CostGraphDef::cost_size() const {
+  return cost_.size();
+}
+inline void CostGraphDef::clear_cost() {
+  cost_.Clear();
+}
+inline ::tensorflow::CostGraphDef_AggregatedCost* CostGraphDef::mutable_cost(int index) {
+  // @@protoc_insertion_point(field_mutable:tensorflow.CostGraphDef.cost)
+  return cost_.Mutable(index);
+}
+inline ::google::protobuf::RepeatedPtrField< ::tensorflow::CostGraphDef_AggregatedCost >*
+CostGraphDef::mutable_cost() {
+  // @@protoc_insertion_point(field_mutable_list:tensorflow.CostGraphDef.cost)
+  return &cost_;
+}
+inline const ::tensorflow::CostGraphDef_AggregatedCost& CostGraphDef::cost(int index) const {
+  // @@protoc_insertion_point(field_get:tensorflow.CostGraphDef.cost)
+  return cost_.Get(index);
+}
+inline ::tensorflow::CostGraphDef_AggregatedCost* CostGraphDef::add_cost() {
+  // @@protoc_insertion_point(field_add:tensorflow.CostGraphDef.cost)
+  return cost_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::tensorflow::CostGraphDef_AggregatedCost >&
+CostGraphDef::cost() const {
+  // @@protoc_insertion_point(field_list:tensorflow.CostGraphDef.cost)
+  return cost_;
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

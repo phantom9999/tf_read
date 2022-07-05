@@ -34,6 +34,7 @@
 #include <google/protobuf/map_field_inl.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "tensorflow/core/framework/attr_value.pb.h"
+#include "tensorflow/core/framework/full_type.pb.h"
 // @@protoc_insertion_point(includes)
 #define PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fframework_2fnode_5fdef_2eproto 
 
@@ -465,6 +466,21 @@ class NodeDef : public ::google::protobuf::Message /* @@protoc_insertion_point(c
       ::tensorflow::NodeDef_ExperimentalDebugInfo* experimental_debug_info);
   ::tensorflow::NodeDef_ExperimentalDebugInfo* unsafe_arena_release_experimental_debug_info();
 
+  // .tensorflow.FullTypeDef experimental_type = 7;
+  bool has_experimental_type() const;
+  void clear_experimental_type();
+  static const int kExperimentalTypeFieldNumber = 7;
+  private:
+  const ::tensorflow::FullTypeDef& _internal_experimental_type() const;
+  public:
+  const ::tensorflow::FullTypeDef& experimental_type() const;
+  ::tensorflow::FullTypeDef* release_experimental_type();
+  ::tensorflow::FullTypeDef* mutable_experimental_type();
+  void set_allocated_experimental_type(::tensorflow::FullTypeDef* experimental_type);
+  void unsafe_arena_set_allocated_experimental_type(
+      ::tensorflow::FullTypeDef* experimental_type);
+  ::tensorflow::FullTypeDef* unsafe_arena_release_experimental_type();
+
   // @@protoc_insertion_point(class_scope:tensorflow.NodeDef)
  private:
 
@@ -483,6 +499,7 @@ class NodeDef : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   ::google::protobuf::internal::ArenaStringPtr op_;
   ::google::protobuf::internal::ArenaStringPtr device_;
   ::tensorflow::NodeDef_ExperimentalDebugInfo* experimental_debug_info_;
+  ::tensorflow::FullTypeDef* experimental_type_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcore_2fframework_2fnode_5fdef_2eproto::TableStruct;
 };
@@ -1013,6 +1030,65 @@ inline void NodeDef::set_allocated_experimental_debug_info(::tensorflow::NodeDef
   }
   experimental_debug_info_ = experimental_debug_info;
   // @@protoc_insertion_point(field_set_allocated:tensorflow.NodeDef.experimental_debug_info)
+}
+
+// .tensorflow.FullTypeDef experimental_type = 7;
+inline bool NodeDef::has_experimental_type() const {
+  return this != internal_default_instance() && experimental_type_ != NULL;
+}
+inline const ::tensorflow::FullTypeDef& NodeDef::_internal_experimental_type() const {
+  return *experimental_type_;
+}
+inline const ::tensorflow::FullTypeDef& NodeDef::experimental_type() const {
+  const ::tensorflow::FullTypeDef* p = experimental_type_;
+  // @@protoc_insertion_point(field_get:tensorflow.NodeDef.experimental_type)
+  return p != NULL ? *p : *reinterpret_cast<const ::tensorflow::FullTypeDef*>(
+      &::tensorflow::_FullTypeDef_default_instance_);
+}
+inline ::tensorflow::FullTypeDef* NodeDef::release_experimental_type() {
+  // @@protoc_insertion_point(field_release:tensorflow.NodeDef.experimental_type)
+  
+  ::tensorflow::FullTypeDef* temp = experimental_type_;
+  if (GetArenaNoVirtual() != NULL) {
+    temp = ::google::protobuf::internal::DuplicateIfNonNull(temp);
+  }
+  experimental_type_ = NULL;
+  return temp;
+}
+inline ::tensorflow::FullTypeDef* NodeDef::unsafe_arena_release_experimental_type() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:tensorflow.NodeDef.experimental_type)
+  
+  ::tensorflow::FullTypeDef* temp = experimental_type_;
+  experimental_type_ = NULL;
+  return temp;
+}
+inline ::tensorflow::FullTypeDef* NodeDef::mutable_experimental_type() {
+  
+  if (experimental_type_ == NULL) {
+    auto* p = CreateMaybeMessage<::tensorflow::FullTypeDef>(GetArenaNoVirtual());
+    experimental_type_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:tensorflow.NodeDef.experimental_type)
+  return experimental_type_;
+}
+inline void NodeDef::set_allocated_experimental_type(::tensorflow::FullTypeDef* experimental_type) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete reinterpret_cast< ::google::protobuf::MessageLite*>(experimental_type_);
+  }
+  if (experimental_type) {
+    ::google::protobuf::Arena* submessage_arena =
+      reinterpret_cast<::google::protobuf::MessageLite*>(experimental_type)->GetArena();
+    if (message_arena != submessage_arena) {
+      experimental_type = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, experimental_type, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  experimental_type_ = experimental_type;
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.NodeDef.experimental_type)
 }
 
 #ifdef __GNUC__

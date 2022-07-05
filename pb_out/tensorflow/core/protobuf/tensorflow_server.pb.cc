@@ -25,6 +25,9 @@ extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2fcluster_
 namespace protobuf_tensorflow_2fcore_2fprotobuf_2fconfig_2eproto {
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2fconfig_2eproto ::google::protobuf::internal::SCCInfo<7> scc_info_ConfigProto;
 }  // namespace protobuf_tensorflow_2fcore_2fprotobuf_2fconfig_2eproto
+namespace protobuf_tensorflow_2fcore_2fprotobuf_2fdevice_5ffilters_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2fdevice_5ffilters_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_ClusterDeviceFilters;
+}  // namespace protobuf_tensorflow_2fcore_2fprotobuf_2fdevice_5ffilters_2eproto
 namespace tensorflow {
 class ServerDefDefaultTypeInternal {
  public:
@@ -44,10 +47,11 @@ static void InitDefaultsServerDef() {
   ::tensorflow::ServerDef::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<2> scc_info_ServerDef =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsServerDef}, {
+::google::protobuf::internal::SCCInfo<3> scc_info_ServerDef =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 3, InitDefaultsServerDef}, {
       &protobuf_tensorflow_2fcore_2fprotobuf_2fcluster_2eproto::scc_info_ClusterDef.base,
-      &protobuf_tensorflow_2fcore_2fprotobuf_2fconfig_2eproto::scc_info_ConfigProto.base,}};
+      &protobuf_tensorflow_2fcore_2fprotobuf_2fconfig_2eproto::scc_info_ConfigProto.base,
+      &protobuf_tensorflow_2fcore_2fprotobuf_2fdevice_5ffilters_2eproto::scc_info_ClusterDeviceFilters.base,}};
 
 void InitDefaults() {
   ::google::protobuf::internal::InitSCC(&scc_info_ServerDef.base);
@@ -66,6 +70,8 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::ServerDef, task_index_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::ServerDef, default_session_config_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::ServerDef, protocol_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::ServerDef, port_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::ServerDef, cluster_device_filters_),
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::tensorflow::ServerDef)},
@@ -97,23 +103,28 @@ void AddDescriptorsImpl() {
   InitDefaults();
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n0tensorflow/core/protobuf/tensorflow_se"
-      "rver.proto\022\ntensorflow\032%tensorflow/core/"
-      "protobuf/config.proto\032&tensorflow/core/p"
-      "rotobuf/cluster.proto\"\245\001\n\tServerDef\022\'\n\007c"
-      "luster\030\001 \001(\0132\026.tensorflow.ClusterDef\022\020\n\010"
-      "job_name\030\002 \001(\t\022\022\n\ntask_index\030\003 \001(\005\0227\n\026de"
-      "fault_session_config\030\004 \001(\0132\027.tensorflow."
-      "ConfigProto\022\020\n\010protocol\030\005 \001(\tBm\n\032org.ten"
-      "sorflow.distruntimeB\014ServerProtosP\001Z<git"
-      "hub.com/tensorflow/tensorflow/tensorflow"
-      "/go/core/protobuf\370\001\001b\006proto3"
+      "rver.proto\022\ntensorflow\032&tensorflow/core/"
+      "protobuf/cluster.proto\032%tensorflow/core/"
+      "protobuf/config.proto\032-tensorflow/core/p"
+      "rotobuf/device_filters.proto\"\365\001\n\tServerD"
+      "ef\022\'\n\007cluster\030\001 \001(\0132\026.tensorflow.Cluster"
+      "Def\022\020\n\010job_name\030\002 \001(\t\022\022\n\ntask_index\030\003 \001("
+      "\005\0227\n\026default_session_config\030\004 \001(\0132\027.tens"
+      "orflow.ConfigProto\022\020\n\010protocol\030\005 \001(\t\022\014\n\004"
+      "port\030\006 \001(\005\022@\n\026cluster_device_filters\030\007 \001"
+      "(\0132 .tensorflow.ClusterDeviceFiltersB\206\001\n"
+      "\032org.tensorflow.distruntimeB\014ServerProto"
+      "sP\001ZUgithub.com/tensorflow/tensorflow/te"
+      "nsorflow/go/core/protobuf/for_core_proto"
+      "s_go_proto\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 428);
+      descriptor, 581);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/protobuf/tensorflow_server.proto", &protobuf_RegisterTypes);
-  ::protobuf_tensorflow_2fcore_2fprotobuf_2fconfig_2eproto::AddDescriptors();
   ::protobuf_tensorflow_2fcore_2fprotobuf_2fcluster_2eproto::AddDescriptors();
+  ::protobuf_tensorflow_2fcore_2fprotobuf_2fconfig_2eproto::AddDescriptors();
+  ::protobuf_tensorflow_2fcore_2fprotobuf_2fdevice_5ffilters_2eproto::AddDescriptors();
 }
 
 void AddDescriptors() {
@@ -136,6 +147,8 @@ void ServerDef::InitAsDefaultInstance() {
       ::tensorflow::ClusterDef::internal_default_instance());
   ::tensorflow::_ServerDef_default_instance_._instance.get_mutable()->default_session_config_ = const_cast< ::tensorflow::ConfigProto*>(
       ::tensorflow::ConfigProto::internal_default_instance());
+  ::tensorflow::_ServerDef_default_instance_._instance.get_mutable()->cluster_device_filters_ = const_cast< ::tensorflow::ClusterDeviceFilters*>(
+      ::tensorflow::ClusterDeviceFilters::internal_default_instance());
 }
 void ServerDef::unsafe_arena_set_allocated_cluster(
     ::tensorflow::ClusterDef* cluster) {
@@ -175,12 +188,33 @@ void ServerDef::clear_default_session_config() {
   }
   default_session_config_ = NULL;
 }
+void ServerDef::unsafe_arena_set_allocated_cluster_device_filters(
+    ::tensorflow::ClusterDeviceFilters* cluster_device_filters) {
+  if (GetArenaNoVirtual() == NULL) {
+    delete cluster_device_filters_;
+  }
+  cluster_device_filters_ = cluster_device_filters;
+  if (cluster_device_filters) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.ServerDef.cluster_device_filters)
+}
+void ServerDef::clear_cluster_device_filters() {
+  if (GetArenaNoVirtual() == NULL && cluster_device_filters_ != NULL) {
+    delete cluster_device_filters_;
+  }
+  cluster_device_filters_ = NULL;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int ServerDef::kClusterFieldNumber;
 const int ServerDef::kJobNameFieldNumber;
 const int ServerDef::kTaskIndexFieldNumber;
 const int ServerDef::kDefaultSessionConfigFieldNumber;
 const int ServerDef::kProtocolFieldNumber;
+const int ServerDef::kPortFieldNumber;
+const int ServerDef::kClusterDeviceFiltersFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 ServerDef::ServerDef()
@@ -222,7 +256,14 @@ ServerDef::ServerDef(const ServerDef& from)
   } else {
     default_session_config_ = NULL;
   }
-  task_index_ = from.task_index_;
+  if (from.has_cluster_device_filters()) {
+    cluster_device_filters_ = new ::tensorflow::ClusterDeviceFilters(*from.cluster_device_filters_);
+  } else {
+    cluster_device_filters_ = NULL;
+  }
+  ::memcpy(&task_index_, &from.task_index_,
+    static_cast<size_t>(reinterpret_cast<char*>(&port_) -
+    reinterpret_cast<char*>(&task_index_)) + sizeof(port_));
   // @@protoc_insertion_point(copy_constructor:tensorflow.ServerDef)
 }
 
@@ -230,8 +271,8 @@ void ServerDef::SharedCtor() {
   job_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   protocol_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&cluster_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&task_index_) -
-      reinterpret_cast<char*>(&cluster_)) + sizeof(task_index_));
+      reinterpret_cast<char*>(&port_) -
+      reinterpret_cast<char*>(&cluster_)) + sizeof(port_));
 }
 
 ServerDef::~ServerDef() {
@@ -245,6 +286,7 @@ void ServerDef::SharedDtor() {
   protocol_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete cluster_;
   if (this != internal_default_instance()) delete default_session_config_;
+  if (this != internal_default_instance()) delete cluster_device_filters_;
 }
 
 void ServerDef::ArenaDtor(void* object) {
@@ -283,7 +325,13 @@ void ServerDef::Clear() {
     delete default_session_config_;
   }
   default_session_config_ = NULL;
-  task_index_ = 0;
+  if (GetArenaNoVirtual() == NULL && cluster_device_filters_ != NULL) {
+    delete cluster_device_filters_;
+  }
+  cluster_device_filters_ = NULL;
+  ::memset(&task_index_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&port_) -
+      reinterpret_cast<char*>(&task_index_)) + sizeof(port_));
   _internal_metadata_.Clear();
 }
 
@@ -367,6 +415,32 @@ bool ServerDef::MergePartialFromCodedStream(
         break;
       }
 
+      // int32 port = 6;
+      case 6: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(48u /* 48 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &port_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .tensorflow.ClusterDeviceFilters cluster_device_filters = 7;
+      case 7: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(58u /* 58 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_cluster_device_filters()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -430,6 +504,17 @@ void ServerDef::SerializeWithCachedSizes(
       5, this->protocol(), output);
   }
 
+  // int32 port = 6;
+  if (this->port() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(6, this->port(), output);
+  }
+
+  // .tensorflow.ClusterDeviceFilters cluster_device_filters = 7;
+  if (this->has_cluster_device_filters()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      7, this->_internal_cluster_device_filters(), output);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -485,6 +570,18 @@ void ServerDef::SerializeWithCachedSizes(
         5, this->protocol(), target);
   }
 
+  // int32 port = 6;
+  if (this->port() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(6, this->port(), target);
+  }
+
+  // .tensorflow.ClusterDeviceFilters cluster_device_filters = 7;
+  if (this->has_cluster_device_filters()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        7, this->_internal_cluster_device_filters(), deterministic, target);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
@@ -530,11 +627,25 @@ size_t ServerDef::ByteSizeLong() const {
         *default_session_config_);
   }
 
+  // .tensorflow.ClusterDeviceFilters cluster_device_filters = 7;
+  if (this->has_cluster_device_filters()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *cluster_device_filters_);
+  }
+
   // int32 task_index = 3;
   if (this->task_index() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
         this->task_index());
+  }
+
+  // int32 port = 6;
+  if (this->port() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->port());
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -576,8 +687,14 @@ void ServerDef::MergeFrom(const ServerDef& from) {
   if (from.has_default_session_config()) {
     mutable_default_session_config()->::tensorflow::ConfigProto::MergeFrom(from.default_session_config());
   }
+  if (from.has_cluster_device_filters()) {
+    mutable_cluster_device_filters()->::tensorflow::ClusterDeviceFilters::MergeFrom(from.cluster_device_filters());
+  }
   if (from.task_index() != 0) {
     set_task_index(from.task_index());
+  }
+  if (from.port() != 0) {
+    set_port(from.port());
   }
 }
 
@@ -626,7 +743,9 @@ void ServerDef::InternalSwap(ServerDef* other) {
     GetArenaNoVirtual());
   swap(cluster_, other->cluster_);
   swap(default_session_config_, other->default_session_config_);
+  swap(cluster_device_filters_, other->cluster_device_filters_);
   swap(task_index_, other->task_index_);
+  swap(port_, other->port_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 

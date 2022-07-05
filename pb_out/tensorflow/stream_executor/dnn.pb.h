@@ -29,8 +29,12 @@
 #include <google/protobuf/message.h>
 #include <google/protobuf/repeated_field.h>  // IWYU pragma: export
 #include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/map.h>  // IWYU pragma: export
+#include <google/protobuf/map_entry.h>
+#include <google/protobuf/map_field_inl.h>
 #include <google/protobuf/generated_enum_reflection.h>
 #include <google/protobuf/unknown_field_set.h>
+#include <google/protobuf/wrappers.pb.h>
 // @@protoc_insertion_point(includes)
 #define PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fstream_5fexecutor_2fdnn_2eproto 
 
@@ -39,7 +43,7 @@ namespace protobuf_tensorflow_2fstream_5fexecutor_2fdnn_2eproto {
 struct TableStruct {
   static const ::google::protobuf::internal::ParseTableField entries[];
   static const ::google::protobuf::internal::AuxillaryParseTableField aux[];
-  static const ::google::protobuf::internal::ParseTable schema[3];
+  static const ::google::protobuf::internal::ParseTable schema[5];
   static const ::google::protobuf::internal::FieldMetadata field_metadata[];
   static const ::google::protobuf::internal::SerializationTable serialization_table[];
   static const ::google::protobuf::uint32 offsets[];
@@ -48,9 +52,15 @@ void AddDescriptors();
 }  // namespace protobuf_tensorflow_2fstream_5fexecutor_2fdnn_2eproto
 namespace stream_executor {
 namespace dnn {
+class AlgorithmConfigProto;
+class AlgorithmConfigProtoDefaultTypeInternal;
+extern AlgorithmConfigProtoDefaultTypeInternal _AlgorithmConfigProto_default_instance_;
 class AlgorithmProto;
 class AlgorithmProtoDefaultTypeInternal;
 extern AlgorithmProtoDefaultTypeInternal _AlgorithmProto_default_instance_;
+class AlgorithmProto_TuningKnobsEntry_DoNotUse;
+class AlgorithmProto_TuningKnobsEntry_DoNotUseDefaultTypeInternal;
+extern AlgorithmProto_TuningKnobsEntry_DoNotUseDefaultTypeInternal _AlgorithmProto_TuningKnobsEntry_DoNotUse_default_instance_;
 class ConvolutionDescriptorProto;
 class ConvolutionDescriptorProtoDefaultTypeInternal;
 extern ConvolutionDescriptorProtoDefaultTypeInternal _ConvolutionDescriptorProto_default_instance_;
@@ -61,7 +71,9 @@ extern TensorDescriptorProtoDefaultTypeInternal _TensorDescriptorProto_default_i
 }  // namespace stream_executor
 namespace google {
 namespace protobuf {
+template<> ::stream_executor::dnn::AlgorithmConfigProto* Arena::CreateMaybeMessage<::stream_executor::dnn::AlgorithmConfigProto>(Arena*);
 template<> ::stream_executor::dnn::AlgorithmProto* Arena::CreateMaybeMessage<::stream_executor::dnn::AlgorithmProto>(Arena*);
+template<> ::stream_executor::dnn::AlgorithmProto_TuningKnobsEntry_DoNotUse* Arena::CreateMaybeMessage<::stream_executor::dnn::AlgorithmProto_TuningKnobsEntry_DoNotUse>(Arena*);
 template<> ::stream_executor::dnn::ConvolutionDescriptorProto* Arena::CreateMaybeMessage<::stream_executor::dnn::ConvolutionDescriptorProto>(Arena*);
 template<> ::stream_executor::dnn::TensorDescriptorProto* Arena::CreateMaybeMessage<::stream_executor::dnn::TensorDescriptorProto>(Arena*);
 }  // namespace protobuf
@@ -96,12 +108,15 @@ enum DataType {
   kHalf = 2,
   kInt8 = 3,
   kInt32 = 4,
+  kComplexFloat = 5,
+  kComplexDouble = 6,
+  kBF16 = 7,
   DataType_INT_MIN_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32min,
   DataType_INT_MAX_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32max
 };
 bool DataType_IsValid(int value);
 const DataType DataType_MIN = kFloat;
-const DataType DataType_MAX = kInt32;
+const DataType DataType_MAX = kBF16;
 const int DataType_ARRAYSIZE = DataType_MAX + 1;
 
 const ::google::protobuf::EnumDescriptor* DataType_descriptor();
@@ -120,12 +135,13 @@ enum DataLayout {
   kBatchYXDepth = 2,
   kBatchDepthYX = 3,
   kBatchDepthYX4 = 4,
+  kBatchDepthYX32 = 5,
   DataLayout_INT_MIN_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32min,
   DataLayout_INT_MAX_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32max
 };
 bool DataLayout_IsValid(int value);
 const DataLayout DataLayout_MIN = kYXDepthBatch;
-const DataLayout DataLayout_MAX = kBatchDepthYX4;
+const DataLayout DataLayout_MAX = kBatchDepthYX32;
 const int DataLayout_ARRAYSIZE = DataLayout_MAX + 1;
 
 const ::google::protobuf::EnumDescriptor* DataLayout_descriptor();
@@ -142,6 +158,7 @@ enum FilterLayout {
   kOutputInputYX = 0,
   kOutputYXInput = 1,
   kOutputInputYX4 = 2,
+  kOutputInputYX32 = 5,
   kInputYXOutput = 3,
   kYXInputOutput = 4,
   FilterLayout_INT_MIN_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32min,
@@ -149,7 +166,7 @@ enum FilterLayout {
 };
 bool FilterLayout_IsValid(int value);
 const FilterLayout FilterLayout_MIN = kOutputInputYX;
-const FilterLayout FilterLayout_MAX = kYXInputOutput;
+const FilterLayout FilterLayout_MAX = kOutputInputYX32;
 const int FilterLayout_ARRAYSIZE = FilterLayout_MAX + 1;
 
 const ::google::protobuf::EnumDescriptor* FilterLayout_descriptor();
@@ -390,6 +407,27 @@ class TensorDescriptorProto : public ::google::protobuf::Message /* @@protoc_ins
 };
 // -------------------------------------------------------------------
 
+class AlgorithmProto_TuningKnobsEntry_DoNotUse : public ::google::protobuf::internal::MapEntry<AlgorithmProto_TuningKnobsEntry_DoNotUse, 
+    ::google::protobuf::int64, ::google::protobuf::int64,
+    ::google::protobuf::internal::WireFormatLite::TYPE_INT64,
+    ::google::protobuf::internal::WireFormatLite::TYPE_INT64,
+    0 > {
+public:
+  typedef ::google::protobuf::internal::MapEntry<AlgorithmProto_TuningKnobsEntry_DoNotUse, 
+    ::google::protobuf::int64, ::google::protobuf::int64,
+    ::google::protobuf::internal::WireFormatLite::TYPE_INT64,
+    ::google::protobuf::internal::WireFormatLite::TYPE_INT64,
+    0 > SuperType;
+  AlgorithmProto_TuningKnobsEntry_DoNotUse();
+  AlgorithmProto_TuningKnobsEntry_DoNotUse(::google::protobuf::Arena* arena);
+  void MergeFrom(const AlgorithmProto_TuningKnobsEntry_DoNotUse& other);
+  static const AlgorithmProto_TuningKnobsEntry_DoNotUse* internal_default_instance() { return reinterpret_cast<const AlgorithmProto_TuningKnobsEntry_DoNotUse*>(&_AlgorithmProto_TuningKnobsEntry_DoNotUse_default_instance_); }
+  void MergeFrom(const ::google::protobuf::Message& other) final;
+  ::google::protobuf::Metadata GetMetadata() const;
+};
+
+// -------------------------------------------------------------------
+
 class AlgorithmProto : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:stream_executor.dnn.AlgorithmProto) */ {
  public:
   AlgorithmProto();
@@ -425,7 +463,7 @@ class AlgorithmProto : public ::google::protobuf::Message /* @@protoc_insertion_
                &_AlgorithmProto_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    1;
+    2;
 
   void Swap(AlgorithmProto* other);
   friend void swap(AlgorithmProto& a, AlgorithmProto& b) {
@@ -475,6 +513,7 @@ class AlgorithmProto : public ::google::protobuf::Message /* @@protoc_insertion_
 
   // nested types ----------------------------------------------------
 
+
   typedef AlgorithmProto_MathType MathType;
   static const MathType DEFAULT_MATH =
     AlgorithmProto_MathType_DEFAULT_MATH;
@@ -503,6 +542,27 @@ class AlgorithmProto : public ::google::protobuf::Message /* @@protoc_insertion_
 
   // accessors -------------------------------------------------------
 
+  // map<int64, int64> tuning_knobs = 4;
+  int tuning_knobs_size() const;
+  void clear_tuning_knobs();
+  static const int kTuningKnobsFieldNumber = 4;
+  const ::google::protobuf::Map< ::google::protobuf::int64, ::google::protobuf::int64 >&
+      tuning_knobs() const;
+  ::google::protobuf::Map< ::google::protobuf::int64, ::google::protobuf::int64 >*
+      mutable_tuning_knobs();
+
+  // .google.protobuf.UInt64Value workspace_size = 6;
+  bool has_workspace_size() const;
+  void clear_workspace_size();
+  static const int kWorkspaceSizeFieldNumber = 6;
+  private:
+  const ::google::protobuf::UInt64Value& _internal_workspace_size() const;
+  public:
+  const ::google::protobuf::UInt64Value& workspace_size() const;
+  ::google::protobuf::UInt64Value* release_workspace_size();
+  ::google::protobuf::UInt64Value* mutable_workspace_size();
+  void set_allocated_workspace_size(::google::protobuf::UInt64Value* workspace_size);
+
   // int64 algo_id = 1;
   void clear_algo_id();
   static const int kAlgoIdFieldNumber = 1;
@@ -515,13 +575,203 @@ class AlgorithmProto : public ::google::protobuf::Message /* @@protoc_insertion_
   ::stream_executor::dnn::AlgorithmProto_MathType math_type() const;
   void set_math_type(::stream_executor::dnn::AlgorithmProto_MathType value);
 
+  // bool is_cudnn_frontend = 5;
+  void clear_is_cudnn_frontend();
+  static const int kIsCudnnFrontendFieldNumber = 5;
+  bool is_cudnn_frontend() const;
+  void set_is_cudnn_frontend(bool value);
+
   // @@protoc_insertion_point(class_scope:stream_executor.dnn.AlgorithmProto)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::internal::MapField<
+      AlgorithmProto_TuningKnobsEntry_DoNotUse,
+      ::google::protobuf::int64, ::google::protobuf::int64,
+      ::google::protobuf::internal::WireFormatLite::TYPE_INT64,
+      ::google::protobuf::internal::WireFormatLite::TYPE_INT64,
+      0 > tuning_knobs_;
+  ::google::protobuf::UInt64Value* workspace_size_;
   ::google::protobuf::int64 algo_id_;
   int math_type_;
+  bool is_cudnn_frontend_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fstream_5fexecutor_2fdnn_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
+class AlgorithmConfigProto : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:stream_executor.dnn.AlgorithmConfigProto) */ {
+ public:
+  AlgorithmConfigProto();
+  virtual ~AlgorithmConfigProto();
+
+  AlgorithmConfigProto(const AlgorithmConfigProto& from);
+
+  inline AlgorithmConfigProto& operator=(const AlgorithmConfigProto& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  AlgorithmConfigProto(AlgorithmConfigProto&& from) noexcept
+    : AlgorithmConfigProto() {
+    *this = ::std::move(from);
+  }
+
+  inline AlgorithmConfigProto& operator=(AlgorithmConfigProto&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const AlgorithmConfigProto& default_instance();
+
+  enum OptionalAlgorithmCase {
+    kAlgorithm = 1,
+    OPTIONAL_ALGORITHM_NOT_SET = 0,
+  };
+
+  enum OptionalAlgorithmNoScratchCase {
+    kAlgorithmNoScratch = 2,
+    OPTIONAL_ALGORITHM_NO_SCRATCH_NOT_SET = 0,
+  };
+
+  enum OptionalScratchSizeCase {
+    kScratchSize = 3,
+    OPTIONAL_SCRATCH_SIZE_NOT_SET = 0,
+  };
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const AlgorithmConfigProto* internal_default_instance() {
+    return reinterpret_cast<const AlgorithmConfigProto*>(
+               &_AlgorithmConfigProto_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    3;
+
+  void Swap(AlgorithmConfigProto* other);
+  friend void swap(AlgorithmConfigProto& a, AlgorithmConfigProto& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline AlgorithmConfigProto* New() const final {
+    return CreateMaybeMessage<AlgorithmConfigProto>(NULL);
+  }
+
+  AlgorithmConfigProto* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<AlgorithmConfigProto>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const AlgorithmConfigProto& from);
+  void MergeFrom(const AlgorithmConfigProto& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(AlgorithmConfigProto* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // .stream_executor.dnn.AlgorithmProto algorithm = 1;
+  bool has_algorithm() const;
+  void clear_algorithm();
+  static const int kAlgorithmFieldNumber = 1;
+  private:
+  const ::stream_executor::dnn::AlgorithmProto& _internal_algorithm() const;
+  public:
+  const ::stream_executor::dnn::AlgorithmProto& algorithm() const;
+  ::stream_executor::dnn::AlgorithmProto* release_algorithm();
+  ::stream_executor::dnn::AlgorithmProto* mutable_algorithm();
+  void set_allocated_algorithm(::stream_executor::dnn::AlgorithmProto* algorithm);
+
+  // .stream_executor.dnn.AlgorithmProto algorithm_no_scratch = 2;
+  bool has_algorithm_no_scratch() const;
+  void clear_algorithm_no_scratch();
+  static const int kAlgorithmNoScratchFieldNumber = 2;
+  private:
+  const ::stream_executor::dnn::AlgorithmProto& _internal_algorithm_no_scratch() const;
+  public:
+  const ::stream_executor::dnn::AlgorithmProto& algorithm_no_scratch() const;
+  ::stream_executor::dnn::AlgorithmProto* release_algorithm_no_scratch();
+  ::stream_executor::dnn::AlgorithmProto* mutable_algorithm_no_scratch();
+  void set_allocated_algorithm_no_scratch(::stream_executor::dnn::AlgorithmProto* algorithm_no_scratch);
+
+  // int64 scratch_size = 3;
+  private:
+  bool has_scratch_size() const;
+  public:
+  void clear_scratch_size();
+  static const int kScratchSizeFieldNumber = 3;
+  ::google::protobuf::int64 scratch_size() const;
+  void set_scratch_size(::google::protobuf::int64 value);
+
+  void clear_optional_algorithm();
+  OptionalAlgorithmCase optional_algorithm_case() const;
+  void clear_optional_algorithm_no_scratch();
+  OptionalAlgorithmNoScratchCase optional_algorithm_no_scratch_case() const;
+  void clear_optional_scratch_size();
+  OptionalScratchSizeCase optional_scratch_size_case() const;
+  // @@protoc_insertion_point(class_scope:stream_executor.dnn.AlgorithmConfigProto)
+ private:
+  void set_has_algorithm();
+  void set_has_algorithm_no_scratch();
+  void set_has_scratch_size();
+
+  inline bool has_optional_algorithm() const;
+  inline void clear_has_optional_algorithm();
+
+  inline bool has_optional_algorithm_no_scratch() const;
+  inline void clear_has_optional_algorithm_no_scratch();
+
+  inline bool has_optional_scratch_size() const;
+  inline void clear_has_optional_scratch_size();
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  union OptionalAlgorithmUnion {
+    OptionalAlgorithmUnion() {}
+    ::stream_executor::dnn::AlgorithmProto* algorithm_;
+  } optional_algorithm_;
+  union OptionalAlgorithmNoScratchUnion {
+    OptionalAlgorithmNoScratchUnion() {}
+    ::stream_executor::dnn::AlgorithmProto* algorithm_no_scratch_;
+  } optional_algorithm_no_scratch_;
+  union OptionalScratchSizeUnion {
+    OptionalScratchSizeUnion() {}
+    ::google::protobuf::int64 scratch_size_;
+  } optional_scratch_size_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  ::google::protobuf::uint32 _oneof_case_[3];
+
   friend struct ::protobuf_tensorflow_2fstream_5fexecutor_2fdnn_2eproto::TableStruct;
 };
 // -------------------------------------------------------------------
@@ -561,7 +811,7 @@ class ConvolutionDescriptorProto : public ::google::protobuf::Message /* @@proto
                &_ConvolutionDescriptorProto_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    2;
+    4;
 
   void Swap(ConvolutionDescriptorProto* other);
   friend void swap(ConvolutionDescriptorProto& a, ConvolutionDescriptorProto& b) {
@@ -822,6 +1072,8 @@ inline TensorDescriptorProto::LayoutOneofCase TensorDescriptorProto::layout_oneo
 }
 // -------------------------------------------------------------------
 
+// -------------------------------------------------------------------
+
 // AlgorithmProto
 
 // int64 algo_id = 1;
@@ -852,6 +1104,235 @@ inline void AlgorithmProto::set_math_type(::stream_executor::dnn::AlgorithmProto
   // @@protoc_insertion_point(field_set:stream_executor.dnn.AlgorithmProto.math_type)
 }
 
+// map<int64, int64> tuning_knobs = 4;
+inline int AlgorithmProto::tuning_knobs_size() const {
+  return tuning_knobs_.size();
+}
+inline void AlgorithmProto::clear_tuning_knobs() {
+  tuning_knobs_.Clear();
+}
+inline const ::google::protobuf::Map< ::google::protobuf::int64, ::google::protobuf::int64 >&
+AlgorithmProto::tuning_knobs() const {
+  // @@protoc_insertion_point(field_map:stream_executor.dnn.AlgorithmProto.tuning_knobs)
+  return tuning_knobs_.GetMap();
+}
+inline ::google::protobuf::Map< ::google::protobuf::int64, ::google::protobuf::int64 >*
+AlgorithmProto::mutable_tuning_knobs() {
+  // @@protoc_insertion_point(field_mutable_map:stream_executor.dnn.AlgorithmProto.tuning_knobs)
+  return tuning_knobs_.MutableMap();
+}
+
+// bool is_cudnn_frontend = 5;
+inline void AlgorithmProto::clear_is_cudnn_frontend() {
+  is_cudnn_frontend_ = false;
+}
+inline bool AlgorithmProto::is_cudnn_frontend() const {
+  // @@protoc_insertion_point(field_get:stream_executor.dnn.AlgorithmProto.is_cudnn_frontend)
+  return is_cudnn_frontend_;
+}
+inline void AlgorithmProto::set_is_cudnn_frontend(bool value) {
+  
+  is_cudnn_frontend_ = value;
+  // @@protoc_insertion_point(field_set:stream_executor.dnn.AlgorithmProto.is_cudnn_frontend)
+}
+
+// .google.protobuf.UInt64Value workspace_size = 6;
+inline bool AlgorithmProto::has_workspace_size() const {
+  return this != internal_default_instance() && workspace_size_ != NULL;
+}
+inline const ::google::protobuf::UInt64Value& AlgorithmProto::_internal_workspace_size() const {
+  return *workspace_size_;
+}
+inline const ::google::protobuf::UInt64Value& AlgorithmProto::workspace_size() const {
+  const ::google::protobuf::UInt64Value* p = workspace_size_;
+  // @@protoc_insertion_point(field_get:stream_executor.dnn.AlgorithmProto.workspace_size)
+  return p != NULL ? *p : *reinterpret_cast<const ::google::protobuf::UInt64Value*>(
+      &::google::protobuf::_UInt64Value_default_instance_);
+}
+inline ::google::protobuf::UInt64Value* AlgorithmProto::release_workspace_size() {
+  // @@protoc_insertion_point(field_release:stream_executor.dnn.AlgorithmProto.workspace_size)
+  
+  ::google::protobuf::UInt64Value* temp = workspace_size_;
+  workspace_size_ = NULL;
+  return temp;
+}
+inline ::google::protobuf::UInt64Value* AlgorithmProto::mutable_workspace_size() {
+  
+  if (workspace_size_ == NULL) {
+    auto* p = CreateMaybeMessage<::google::protobuf::UInt64Value>(GetArenaNoVirtual());
+    workspace_size_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:stream_executor.dnn.AlgorithmProto.workspace_size)
+  return workspace_size_;
+}
+inline void AlgorithmProto::set_allocated_workspace_size(::google::protobuf::UInt64Value* workspace_size) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete reinterpret_cast< ::google::protobuf::MessageLite*>(workspace_size_);
+  }
+  if (workspace_size) {
+    ::google::protobuf::Arena* submessage_arena =
+      reinterpret_cast<::google::protobuf::MessageLite*>(workspace_size)->GetArena();
+    if (message_arena != submessage_arena) {
+      workspace_size = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, workspace_size, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  workspace_size_ = workspace_size;
+  // @@protoc_insertion_point(field_set_allocated:stream_executor.dnn.AlgorithmProto.workspace_size)
+}
+
+// -------------------------------------------------------------------
+
+// AlgorithmConfigProto
+
+// .stream_executor.dnn.AlgorithmProto algorithm = 1;
+inline bool AlgorithmConfigProto::has_algorithm() const {
+  return optional_algorithm_case() == kAlgorithm;
+}
+inline void AlgorithmConfigProto::set_has_algorithm() {
+  _oneof_case_[0] = kAlgorithm;
+}
+inline void AlgorithmConfigProto::clear_algorithm() {
+  if (has_algorithm()) {
+    delete optional_algorithm_.algorithm_;
+    clear_has_optional_algorithm();
+  }
+}
+inline const ::stream_executor::dnn::AlgorithmProto& AlgorithmConfigProto::_internal_algorithm() const {
+  return *optional_algorithm_.algorithm_;
+}
+inline ::stream_executor::dnn::AlgorithmProto* AlgorithmConfigProto::release_algorithm() {
+  // @@protoc_insertion_point(field_release:stream_executor.dnn.AlgorithmConfigProto.algorithm)
+  if (has_algorithm()) {
+    clear_has_optional_algorithm();
+      ::stream_executor::dnn::AlgorithmProto* temp = optional_algorithm_.algorithm_;
+    optional_algorithm_.algorithm_ = NULL;
+    return temp;
+  } else {
+    return NULL;
+  }
+}
+inline const ::stream_executor::dnn::AlgorithmProto& AlgorithmConfigProto::algorithm() const {
+  // @@protoc_insertion_point(field_get:stream_executor.dnn.AlgorithmConfigProto.algorithm)
+  return has_algorithm()
+      ? *optional_algorithm_.algorithm_
+      : *reinterpret_cast< ::stream_executor::dnn::AlgorithmProto*>(&::stream_executor::dnn::_AlgorithmProto_default_instance_);
+}
+inline ::stream_executor::dnn::AlgorithmProto* AlgorithmConfigProto::mutable_algorithm() {
+  if (!has_algorithm()) {
+    clear_optional_algorithm();
+    set_has_algorithm();
+    optional_algorithm_.algorithm_ = CreateMaybeMessage< ::stream_executor::dnn::AlgorithmProto >(
+        GetArenaNoVirtual());
+  }
+  // @@protoc_insertion_point(field_mutable:stream_executor.dnn.AlgorithmConfigProto.algorithm)
+  return optional_algorithm_.algorithm_;
+}
+
+// .stream_executor.dnn.AlgorithmProto algorithm_no_scratch = 2;
+inline bool AlgorithmConfigProto::has_algorithm_no_scratch() const {
+  return optional_algorithm_no_scratch_case() == kAlgorithmNoScratch;
+}
+inline void AlgorithmConfigProto::set_has_algorithm_no_scratch() {
+  _oneof_case_[1] = kAlgorithmNoScratch;
+}
+inline void AlgorithmConfigProto::clear_algorithm_no_scratch() {
+  if (has_algorithm_no_scratch()) {
+    delete optional_algorithm_no_scratch_.algorithm_no_scratch_;
+    clear_has_optional_algorithm_no_scratch();
+  }
+}
+inline const ::stream_executor::dnn::AlgorithmProto& AlgorithmConfigProto::_internal_algorithm_no_scratch() const {
+  return *optional_algorithm_no_scratch_.algorithm_no_scratch_;
+}
+inline ::stream_executor::dnn::AlgorithmProto* AlgorithmConfigProto::release_algorithm_no_scratch() {
+  // @@protoc_insertion_point(field_release:stream_executor.dnn.AlgorithmConfigProto.algorithm_no_scratch)
+  if (has_algorithm_no_scratch()) {
+    clear_has_optional_algorithm_no_scratch();
+      ::stream_executor::dnn::AlgorithmProto* temp = optional_algorithm_no_scratch_.algorithm_no_scratch_;
+    optional_algorithm_no_scratch_.algorithm_no_scratch_ = NULL;
+    return temp;
+  } else {
+    return NULL;
+  }
+}
+inline const ::stream_executor::dnn::AlgorithmProto& AlgorithmConfigProto::algorithm_no_scratch() const {
+  // @@protoc_insertion_point(field_get:stream_executor.dnn.AlgorithmConfigProto.algorithm_no_scratch)
+  return has_algorithm_no_scratch()
+      ? *optional_algorithm_no_scratch_.algorithm_no_scratch_
+      : *reinterpret_cast< ::stream_executor::dnn::AlgorithmProto*>(&::stream_executor::dnn::_AlgorithmProto_default_instance_);
+}
+inline ::stream_executor::dnn::AlgorithmProto* AlgorithmConfigProto::mutable_algorithm_no_scratch() {
+  if (!has_algorithm_no_scratch()) {
+    clear_optional_algorithm_no_scratch();
+    set_has_algorithm_no_scratch();
+    optional_algorithm_no_scratch_.algorithm_no_scratch_ = CreateMaybeMessage< ::stream_executor::dnn::AlgorithmProto >(
+        GetArenaNoVirtual());
+  }
+  // @@protoc_insertion_point(field_mutable:stream_executor.dnn.AlgorithmConfigProto.algorithm_no_scratch)
+  return optional_algorithm_no_scratch_.algorithm_no_scratch_;
+}
+
+// int64 scratch_size = 3;
+inline bool AlgorithmConfigProto::has_scratch_size() const {
+  return optional_scratch_size_case() == kScratchSize;
+}
+inline void AlgorithmConfigProto::set_has_scratch_size() {
+  _oneof_case_[2] = kScratchSize;
+}
+inline void AlgorithmConfigProto::clear_scratch_size() {
+  if (has_scratch_size()) {
+    optional_scratch_size_.scratch_size_ = GOOGLE_LONGLONG(0);
+    clear_has_optional_scratch_size();
+  }
+}
+inline ::google::protobuf::int64 AlgorithmConfigProto::scratch_size() const {
+  // @@protoc_insertion_point(field_get:stream_executor.dnn.AlgorithmConfigProto.scratch_size)
+  if (has_scratch_size()) {
+    return optional_scratch_size_.scratch_size_;
+  }
+  return GOOGLE_LONGLONG(0);
+}
+inline void AlgorithmConfigProto::set_scratch_size(::google::protobuf::int64 value) {
+  if (!has_scratch_size()) {
+    clear_optional_scratch_size();
+    set_has_scratch_size();
+  }
+  optional_scratch_size_.scratch_size_ = value;
+  // @@protoc_insertion_point(field_set:stream_executor.dnn.AlgorithmConfigProto.scratch_size)
+}
+
+inline bool AlgorithmConfigProto::has_optional_algorithm() const {
+  return optional_algorithm_case() != OPTIONAL_ALGORITHM_NOT_SET;
+}
+inline void AlgorithmConfigProto::clear_has_optional_algorithm() {
+  _oneof_case_[0] = OPTIONAL_ALGORITHM_NOT_SET;
+}
+inline bool AlgorithmConfigProto::has_optional_algorithm_no_scratch() const {
+  return optional_algorithm_no_scratch_case() != OPTIONAL_ALGORITHM_NO_SCRATCH_NOT_SET;
+}
+inline void AlgorithmConfigProto::clear_has_optional_algorithm_no_scratch() {
+  _oneof_case_[1] = OPTIONAL_ALGORITHM_NO_SCRATCH_NOT_SET;
+}
+inline bool AlgorithmConfigProto::has_optional_scratch_size() const {
+  return optional_scratch_size_case() != OPTIONAL_SCRATCH_SIZE_NOT_SET;
+}
+inline void AlgorithmConfigProto::clear_has_optional_scratch_size() {
+  _oneof_case_[2] = OPTIONAL_SCRATCH_SIZE_NOT_SET;
+}
+inline AlgorithmConfigProto::OptionalAlgorithmCase AlgorithmConfigProto::optional_algorithm_case() const {
+  return AlgorithmConfigProto::OptionalAlgorithmCase(_oneof_case_[0]);
+}
+inline AlgorithmConfigProto::OptionalAlgorithmNoScratchCase AlgorithmConfigProto::optional_algorithm_no_scratch_case() const {
+  return AlgorithmConfigProto::OptionalAlgorithmNoScratchCase(_oneof_case_[1]);
+}
+inline AlgorithmConfigProto::OptionalScratchSizeCase AlgorithmConfigProto::optional_scratch_size_case() const {
+  return AlgorithmConfigProto::OptionalScratchSizeCase(_oneof_case_[2]);
+}
 // -------------------------------------------------------------------
 
 // ConvolutionDescriptorProto
@@ -1044,6 +1525,10 @@ inline void ConvolutionDescriptorProto::set_allocated_name(::std::string* name) 
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

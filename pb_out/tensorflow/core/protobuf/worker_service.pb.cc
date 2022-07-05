@@ -85,13 +85,13 @@ void AddDescriptorsImpl() {
       "\032!.tensorflow.CompleteGroupResponse\022]\n\020C"
       "ompleteInstance\022#.tensorflow.CompleteIns"
       "tanceRequest\032$.tensorflow.CompleteInstan"
-      "ceResponseBq\n\032org.tensorflow.distruntime"
-      "B\023WorkerServiceProtosP\001Z<github.com/tens"
-      "orflow/tensorflow/tensorflow/go/core/pro"
-      "tobufb\006proto3"
+      "ceResponseB\212\001\n\032org.tensorflow.distruntim"
+      "eB\023WorkerServiceProtosP\001ZUgithub.com/ten"
+      "sorflow/tensorflow/tensorflow/go/core/pr"
+      "otobuf/for_core_protos_go_protob\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 1493);
+      descriptor, 1519);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/protobuf/worker_service.proto", &protobuf_RegisterTypes);
   ::protobuf_tensorflow_2fcore_2fprotobuf_2fworker_2eproto::AddDescriptors();

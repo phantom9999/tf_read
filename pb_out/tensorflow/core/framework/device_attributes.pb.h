@@ -680,6 +680,12 @@ class DeviceAttributes : public ::google::protobuf::Message /* @@protoc_insertio
   ::google::protobuf::uint64 incarnation() const;
   void set_incarnation(::google::protobuf::uint64 value);
 
+  // int64 xla_global_id = 8;
+  void clear_xla_global_id();
+  static const int kXlaGlobalIdFieldNumber = 8;
+  ::google::protobuf::int64 xla_global_id() const;
+  void set_xla_global_id(::google::protobuf::int64 value);
+
   // @@protoc_insertion_point(class_scope:tensorflow.DeviceAttributes)
  private:
 
@@ -693,6 +699,7 @@ class DeviceAttributes : public ::google::protobuf::Message /* @@protoc_insertio
   ::tensorflow::DeviceLocality* locality_;
   ::google::protobuf::int64 memory_limit_;
   ::google::protobuf::uint64 incarnation_;
+  ::google::protobuf::int64 xla_global_id_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcore_2fframework_2fdevice_5fattributes_2eproto::TableStruct;
 };
@@ -1261,6 +1268,20 @@ inline void DeviceAttributes::unsafe_arena_set_allocated_physical_device_desc(
   physical_device_desc_.UnsafeArenaSetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       physical_device_desc, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.DeviceAttributes.physical_device_desc)
+}
+
+// int64 xla_global_id = 8;
+inline void DeviceAttributes::clear_xla_global_id() {
+  xla_global_id_ = GOOGLE_LONGLONG(0);
+}
+inline ::google::protobuf::int64 DeviceAttributes::xla_global_id() const {
+  // @@protoc_insertion_point(field_get:tensorflow.DeviceAttributes.xla_global_id)
+  return xla_global_id_;
+}
+inline void DeviceAttributes::set_xla_global_id(::google::protobuf::int64 value) {
+  
+  xla_global_id_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.DeviceAttributes.xla_global_id)
 }
 
 #ifdef __GNUC__

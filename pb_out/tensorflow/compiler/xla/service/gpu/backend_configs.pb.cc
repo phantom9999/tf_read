@@ -21,7 +21,11 @@
 
 namespace protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto {
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_DotDimensionNumbers;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_LayoutProto;
 }  // namespace protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto
+namespace protobuf_tensorflow_2fstream_5fexecutor_2fdnn_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fstream_5fexecutor_2fdnn_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_AlgorithmProto;
+}  // namespace protobuf_tensorflow_2fstream_5fexecutor_2fdnn_2eproto
 namespace xla {
 namespace gpu {
 class CudnnConvBackendConfigDefaultTypeInternal {
@@ -35,6 +39,11 @@ class GemmBackendConfigDefaultTypeInternal {
       _instance;
   ::google::protobuf::int64 selected_algorithm_;
 } _GemmBackendConfig_default_instance_;
+class BitcastBackendConfigDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<BitcastBackendConfig>
+      _instance;
+} _BitcastBackendConfig_default_instance_;
 }  // namespace gpu
 }  // namespace xla
 namespace protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fgpu_2fbackend_5fconfigs_2eproto {
@@ -49,8 +58,9 @@ static void InitDefaultsCudnnConvBackendConfig() {
   ::xla::gpu::CudnnConvBackendConfig::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CudnnConvBackendConfig =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCudnnConvBackendConfig}, {}};
+::google::protobuf::internal::SCCInfo<1> scc_info_CudnnConvBackendConfig =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsCudnnConvBackendConfig}, {
+      &protobuf_tensorflow_2fstream_5fexecutor_2fdnn_2eproto::scc_info_AlgorithmProto.base,}};
 
 static void InitDefaultsGemmBackendConfig() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -67,12 +77,28 @@ static void InitDefaultsGemmBackendConfig() {
     {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsGemmBackendConfig}, {
       &protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto::scc_info_DotDimensionNumbers.base,}};
 
+static void InitDefaultsBitcastBackendConfig() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::xla::gpu::_BitcastBackendConfig_default_instance_;
+    new (ptr) ::xla::gpu::BitcastBackendConfig();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::xla::gpu::BitcastBackendConfig::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<1> scc_info_BitcastBackendConfig =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsBitcastBackendConfig}, {
+      &protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto::scc_info_LayoutProto.base,}};
+
 void InitDefaults() {
   ::google::protobuf::internal::InitSCC(&scc_info_CudnnConvBackendConfig.base);
   ::google::protobuf::internal::InitSCC(&scc_info_GemmBackendConfig.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_BitcastBackendConfig.base);
 }
 
-::google::protobuf::Metadata file_level_metadata[2];
+::google::protobuf::Metadata file_level_metadata[3];
 
 const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
@@ -81,7 +107,6 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::gpu::CudnnConvBackendConfig, algorithm_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::gpu::CudnnConvBackendConfig, tensor_ops_enabled_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::gpu::CudnnConvBackendConfig, conv_result_scale_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::gpu::CudnnConvBackendConfig, activation_mode_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::gpu::CudnnConvBackendConfig, side_input_scale_),
@@ -96,16 +121,27 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::gpu::GemmBackendConfig, beta_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::gpu::GemmBackendConfig, dot_dimension_numbers_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::gpu::GemmBackendConfig, batch_size_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::gpu::GemmBackendConfig, lhs_stride_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::gpu::GemmBackendConfig, rhs_stride_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::gpu::GemmBackendConfig, algorithm_),
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::gpu::BitcastBackendConfig, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::gpu::BitcastBackendConfig, source_layout_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::gpu::BitcastBackendConfig, result_layout_),
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::xla::gpu::CudnnConvBackendConfig)},
-  { 10, -1, sizeof(::xla::gpu::GemmBackendConfig)},
+  { 9, -1, sizeof(::xla::gpu::GemmBackendConfig)},
+  { 23, -1, sizeof(::xla::gpu::BitcastBackendConfig)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::xla::gpu::_CudnnConvBackendConfig_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::xla::gpu::_GemmBackendConfig_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::xla::gpu::_BitcastBackendConfig_default_instance_),
 };
 
 void protobuf_AssignDescriptors() {
@@ -123,7 +159,7 @@ void protobuf_AssignDescriptorsOnce() {
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 2);
+  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 3);
 }
 
 void AddDescriptorsImpl() {
@@ -131,22 +167,28 @@ void AddDescriptorsImpl() {
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n9tensorflow/compiler/xla/service/gpu/ba"
       "ckend_configs.proto\022\007xla.gpu\032&tensorflow"
-      "/compiler/xla/xla_data.proto\"\225\001\n\026CudnnCo"
-      "nvBackendConfig\022\021\n\talgorithm\030\001 \001(\003\022\032\n\022te"
-      "nsor_ops_enabled\030\002 \001(\010\022\031\n\021conv_result_sc"
-      "ale\030\004 \001(\001\022\027\n\017activation_mode\030\003 \001(\003\022\030\n\020si"
-      "de_input_scale\030\005 \001(\001\"\301\001\n\021GemmBackendConf"
-      "ig\022\034\n\022selected_algorithm\030\001 \001(\003H\000\022\022\n\nalph"
-      "a_real\030\002 \001(\001\022\022\n\nalpha_imag\030\t \001(\001\022\014\n\004beta"
-      "\030\003 \001(\001\0227\n\025dot_dimension_numbers\030\007 \001(\0132\030."
-      "xla.DotDimensionNumbers\022\022\n\nbatch_size\030\010 "
-      "\001(\003B\013\n\talgorithmb\006proto3"
+      "/compiler/xla/xla_data.proto\032$tensorflow"
+      "/stream_executor/dnn.proto\"\252\001\n\026CudnnConv"
+      "BackendConfig\0226\n\talgorithm\030\006 \001(\0132#.strea"
+      "m_executor.dnn.AlgorithmProto\022\031\n\021conv_re"
+      "sult_scale\030\004 \001(\001\022\027\n\017activation_mode\030\003 \001("
+      "\003\022\030\n\020side_input_scale\030\005 \001(\001J\004\010\001\020\002J\004\010\002\020\003\""
+      "\351\001\n\021GemmBackendConfig\022\034\n\022selected_algori"
+      "thm\030\001 \001(\003H\000\022\022\n\nalpha_real\030\002 \001(\001\022\022\n\nalpha"
+      "_imag\030\t \001(\001\022\014\n\004beta\030\003 \001(\001\0227\n\025dot_dimensi"
+      "on_numbers\030\007 \001(\0132\030.xla.DotDimensionNumbe"
+      "rs\022\022\n\nbatch_size\030\010 \001(\003\022\022\n\nlhs_stride\030\n \001"
+      "(\003\022\022\n\nrhs_stride\030\013 \001(\003B\013\n\talgorithm\"h\n\024B"
+      "itcastBackendConfig\022\'\n\rsource_layout\030\001 \001"
+      "(\0132\020.xla.LayoutProto\022\'\n\rresult_layout\030\002 "
+      "\001(\0132\020.xla.LayoutProtob\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 464);
+      descriptor, 669);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/compiler/xla/service/gpu/backend_configs.proto", &protobuf_RegisterTypes);
   ::protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto::AddDescriptors();
+  ::protobuf_tensorflow_2fstream_5fexecutor_2fdnn_2eproto::AddDescriptors();
 }
 
 void AddDescriptors() {
@@ -166,10 +208,17 @@ namespace gpu {
 // ===================================================================
 
 void CudnnConvBackendConfig::InitAsDefaultInstance() {
+  ::xla::gpu::_CudnnConvBackendConfig_default_instance_._instance.get_mutable()->algorithm_ = const_cast< ::stream_executor::dnn::AlgorithmProto*>(
+      ::stream_executor::dnn::AlgorithmProto::internal_default_instance());
+}
+void CudnnConvBackendConfig::clear_algorithm() {
+  if (GetArenaNoVirtual() == NULL && algorithm_ != NULL) {
+    delete algorithm_;
+  }
+  algorithm_ = NULL;
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CudnnConvBackendConfig::kAlgorithmFieldNumber;
-const int CudnnConvBackendConfig::kTensorOpsEnabledFieldNumber;
 const int CudnnConvBackendConfig::kConvResultScaleFieldNumber;
 const int CudnnConvBackendConfig::kActivationModeFieldNumber;
 const int CudnnConvBackendConfig::kSideInputScaleFieldNumber;
@@ -186,16 +235,21 @@ CudnnConvBackendConfig::CudnnConvBackendConfig(const CudnnConvBackendConfig& fro
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::memcpy(&algorithm_, &from.algorithm_,
-    static_cast<size_t>(reinterpret_cast<char*>(&tensor_ops_enabled_) -
-    reinterpret_cast<char*>(&algorithm_)) + sizeof(tensor_ops_enabled_));
+  if (from.has_algorithm()) {
+    algorithm_ = new ::stream_executor::dnn::AlgorithmProto(*from.algorithm_);
+  } else {
+    algorithm_ = NULL;
+  }
+  ::memcpy(&activation_mode_, &from.activation_mode_,
+    static_cast<size_t>(reinterpret_cast<char*>(&side_input_scale_) -
+    reinterpret_cast<char*>(&activation_mode_)) + sizeof(side_input_scale_));
   // @@protoc_insertion_point(copy_constructor:xla.gpu.CudnnConvBackendConfig)
 }
 
 void CudnnConvBackendConfig::SharedCtor() {
   ::memset(&algorithm_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&tensor_ops_enabled_) -
-      reinterpret_cast<char*>(&algorithm_)) + sizeof(tensor_ops_enabled_));
+      reinterpret_cast<char*>(&side_input_scale_) -
+      reinterpret_cast<char*>(&algorithm_)) + sizeof(side_input_scale_));
 }
 
 CudnnConvBackendConfig::~CudnnConvBackendConfig() {
@@ -204,6 +258,7 @@ CudnnConvBackendConfig::~CudnnConvBackendConfig() {
 }
 
 void CudnnConvBackendConfig::SharedDtor() {
+  if (this != internal_default_instance()) delete algorithm_;
 }
 
 void CudnnConvBackendConfig::SetCachedSize(int size) const {
@@ -226,9 +281,13 @@ void CudnnConvBackendConfig::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  ::memset(&algorithm_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&tensor_ops_enabled_) -
-      reinterpret_cast<char*>(&algorithm_)) + sizeof(tensor_ops_enabled_));
+  if (GetArenaNoVirtual() == NULL && algorithm_ != NULL) {
+    delete algorithm_;
+  }
+  algorithm_ = NULL;
+  ::memset(&activation_mode_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&side_input_scale_) -
+      reinterpret_cast<char*>(&activation_mode_)) + sizeof(side_input_scale_));
   _internal_metadata_.Clear();
 }
 
@@ -242,34 +301,6 @@ bool CudnnConvBackendConfig::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // int64 algorithm = 1;
-      case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
-                 input, &algorithm_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // bool tensor_ops_enabled = 2;
-      case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, &tensor_ops_enabled_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
       // int64 activation_mode = 3;
       case 3: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
@@ -312,6 +343,18 @@ bool CudnnConvBackendConfig::MergePartialFromCodedStream(
         break;
       }
 
+      // .stream_executor.dnn.AlgorithmProto algorithm = 6;
+      case 6: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_algorithm()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -338,16 +381,6 @@ void CudnnConvBackendConfig::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int64 algorithm = 1;
-  if (this->algorithm() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteInt64(1, this->algorithm(), output);
-  }
-
-  // bool tensor_ops_enabled = 2;
-  if (this->tensor_ops_enabled() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteBool(2, this->tensor_ops_enabled(), output);
-  }
-
   // int64 activation_mode = 3;
   if (this->activation_mode() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(3, this->activation_mode(), output);
@@ -361,6 +394,12 @@ void CudnnConvBackendConfig::SerializeWithCachedSizes(
   // double side_input_scale = 5;
   if (this->side_input_scale() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(5, this->side_input_scale(), output);
+  }
+
+  // .stream_executor.dnn.AlgorithmProto algorithm = 6;
+  if (this->has_algorithm()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      6, this->_internal_algorithm(), output);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -377,16 +416,6 @@ void CudnnConvBackendConfig::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int64 algorithm = 1;
-  if (this->algorithm() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(1, this->algorithm(), target);
-  }
-
-  // bool tensor_ops_enabled = 2;
-  if (this->tensor_ops_enabled() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(2, this->tensor_ops_enabled(), target);
-  }
-
   // int64 activation_mode = 3;
   if (this->activation_mode() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(3, this->activation_mode(), target);
@@ -400,6 +429,13 @@ void CudnnConvBackendConfig::SerializeWithCachedSizes(
   // double side_input_scale = 5;
   if (this->side_input_scale() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(5, this->side_input_scale(), target);
+  }
+
+  // .stream_executor.dnn.AlgorithmProto algorithm = 6;
+  if (this->has_algorithm()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        6, this->_internal_algorithm(), deterministic, target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -419,11 +455,11 @@ size_t CudnnConvBackendConfig::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
-  // int64 algorithm = 1;
-  if (this->algorithm() != 0) {
+  // .stream_executor.dnn.AlgorithmProto algorithm = 6;
+  if (this->has_algorithm()) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int64Size(
-        this->algorithm());
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *algorithm_);
   }
 
   // int64 activation_mode = 3;
@@ -441,11 +477,6 @@ size_t CudnnConvBackendConfig::ByteSizeLong() const {
   // double side_input_scale = 5;
   if (this->side_input_scale() != 0) {
     total_size += 1 + 8;
-  }
-
-  // bool tensor_ops_enabled = 2;
-  if (this->tensor_ops_enabled() != 0) {
-    total_size += 1 + 1;
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -475,8 +506,8 @@ void CudnnConvBackendConfig::MergeFrom(const CudnnConvBackendConfig& from) {
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.algorithm() != 0) {
-    set_algorithm(from.algorithm());
+  if (from.has_algorithm()) {
+    mutable_algorithm()->::stream_executor::dnn::AlgorithmProto::MergeFrom(from.algorithm());
   }
   if (from.activation_mode() != 0) {
     set_activation_mode(from.activation_mode());
@@ -486,9 +517,6 @@ void CudnnConvBackendConfig::MergeFrom(const CudnnConvBackendConfig& from) {
   }
   if (from.side_input_scale() != 0) {
     set_side_input_scale(from.side_input_scale());
-  }
-  if (from.tensor_ops_enabled() != 0) {
-    set_tensor_ops_enabled(from.tensor_ops_enabled());
   }
 }
 
@@ -520,7 +548,6 @@ void CudnnConvBackendConfig::InternalSwap(CudnnConvBackendConfig* other) {
   swap(activation_mode_, other->activation_mode_);
   swap(conv_result_scale_, other->conv_result_scale_);
   swap(side_input_scale_, other->side_input_scale_);
-  swap(tensor_ops_enabled_, other->tensor_ops_enabled_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
@@ -550,6 +577,8 @@ const int GemmBackendConfig::kAlphaImagFieldNumber;
 const int GemmBackendConfig::kBetaFieldNumber;
 const int GemmBackendConfig::kDotDimensionNumbersFieldNumber;
 const int GemmBackendConfig::kBatchSizeFieldNumber;
+const int GemmBackendConfig::kLhsStrideFieldNumber;
+const int GemmBackendConfig::kRhsStrideFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 GemmBackendConfig::GemmBackendConfig()
@@ -569,8 +598,8 @@ GemmBackendConfig::GemmBackendConfig(const GemmBackendConfig& from)
     dot_dimension_numbers_ = NULL;
   }
   ::memcpy(&alpha_real_, &from.alpha_real_,
-    static_cast<size_t>(reinterpret_cast<char*>(&alpha_imag_) -
-    reinterpret_cast<char*>(&alpha_real_)) + sizeof(alpha_imag_));
+    static_cast<size_t>(reinterpret_cast<char*>(&rhs_stride_) -
+    reinterpret_cast<char*>(&alpha_real_)) + sizeof(rhs_stride_));
   clear_has_algorithm();
   switch (from.algorithm_case()) {
     case kSelectedAlgorithm: {
@@ -586,8 +615,8 @@ GemmBackendConfig::GemmBackendConfig(const GemmBackendConfig& from)
 
 void GemmBackendConfig::SharedCtor() {
   ::memset(&dot_dimension_numbers_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&alpha_imag_) -
-      reinterpret_cast<char*>(&dot_dimension_numbers_)) + sizeof(alpha_imag_));
+      reinterpret_cast<char*>(&rhs_stride_) -
+      reinterpret_cast<char*>(&dot_dimension_numbers_)) + sizeof(rhs_stride_));
   clear_has_algorithm();
 }
 
@@ -643,8 +672,8 @@ void GemmBackendConfig::Clear() {
   }
   dot_dimension_numbers_ = NULL;
   ::memset(&alpha_real_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&alpha_imag_) -
-      reinterpret_cast<char*>(&alpha_real_)) + sizeof(alpha_imag_));
+      reinterpret_cast<char*>(&rhs_stride_) -
+      reinterpret_cast<char*>(&alpha_real_)) + sizeof(rhs_stride_));
   clear_algorithm();
   _internal_metadata_.Clear();
 }
@@ -742,6 +771,34 @@ bool GemmBackendConfig::MergePartialFromCodedStream(
         break;
       }
 
+      // int64 lhs_stride = 10;
+      case 10: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(80u /* 80 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 input, &lhs_stride_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int64 rhs_stride = 11;
+      case 11: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(88u /* 88 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 input, &rhs_stride_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -799,6 +856,16 @@ void GemmBackendConfig::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteDouble(9, this->alpha_imag(), output);
   }
 
+  // int64 lhs_stride = 10;
+  if (this->lhs_stride() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt64(10, this->lhs_stride(), output);
+  }
+
+  // int64 rhs_stride = 11;
+  if (this->rhs_stride() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt64(11, this->rhs_stride(), output);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -845,6 +912,16 @@ void GemmBackendConfig::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(9, this->alpha_imag(), target);
   }
 
+  // int64 lhs_stride = 10;
+  if (this->lhs_stride() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(10, this->lhs_stride(), target);
+  }
+
+  // int64 rhs_stride = 11;
+  if (this->rhs_stride() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(11, this->rhs_stride(), target);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
@@ -889,6 +966,20 @@ size_t GemmBackendConfig::ByteSizeLong() const {
   // double alpha_imag = 9;
   if (this->alpha_imag() != 0) {
     total_size += 1 + 8;
+  }
+
+  // int64 lhs_stride = 10;
+  if (this->lhs_stride() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int64Size(
+        this->lhs_stride());
+  }
+
+  // int64 rhs_stride = 11;
+  if (this->rhs_stride() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int64Size(
+        this->rhs_stride());
   }
 
   switch (algorithm_case()) {
@@ -945,6 +1036,12 @@ void GemmBackendConfig::MergeFrom(const GemmBackendConfig& from) {
   if (from.alpha_imag() != 0) {
     set_alpha_imag(from.alpha_imag());
   }
+  if (from.lhs_stride() != 0) {
+    set_lhs_stride(from.lhs_stride());
+  }
+  if (from.rhs_stride() != 0) {
+    set_rhs_stride(from.rhs_stride());
+  }
   switch (from.algorithm_case()) {
     case kSelectedAlgorithm: {
       set_selected_algorithm(from.selected_algorithm());
@@ -985,12 +1082,311 @@ void GemmBackendConfig::InternalSwap(GemmBackendConfig* other) {
   swap(beta_, other->beta_);
   swap(batch_size_, other->batch_size_);
   swap(alpha_imag_, other->alpha_imag_);
+  swap(lhs_stride_, other->lhs_stride_);
+  swap(rhs_stride_, other->rhs_stride_);
   swap(algorithm_, other->algorithm_);
   swap(_oneof_case_[0], other->_oneof_case_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata GemmBackendConfig::GetMetadata() const {
+  protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fgpu_2fbackend_5fconfigs_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fgpu_2fbackend_5fconfigs_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void BitcastBackendConfig::InitAsDefaultInstance() {
+  ::xla::gpu::_BitcastBackendConfig_default_instance_._instance.get_mutable()->source_layout_ = const_cast< ::xla::LayoutProto*>(
+      ::xla::LayoutProto::internal_default_instance());
+  ::xla::gpu::_BitcastBackendConfig_default_instance_._instance.get_mutable()->result_layout_ = const_cast< ::xla::LayoutProto*>(
+      ::xla::LayoutProto::internal_default_instance());
+}
+void BitcastBackendConfig::clear_source_layout() {
+  if (GetArenaNoVirtual() == NULL && source_layout_ != NULL) {
+    delete source_layout_;
+  }
+  source_layout_ = NULL;
+}
+void BitcastBackendConfig::clear_result_layout() {
+  if (GetArenaNoVirtual() == NULL && result_layout_ != NULL) {
+    delete result_layout_;
+  }
+  result_layout_ = NULL;
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int BitcastBackendConfig::kSourceLayoutFieldNumber;
+const int BitcastBackendConfig::kResultLayoutFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+BitcastBackendConfig::BitcastBackendConfig()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fgpu_2fbackend_5fconfigs_2eproto::scc_info_BitcastBackendConfig.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:xla.gpu.BitcastBackendConfig)
+}
+BitcastBackendConfig::BitcastBackendConfig(const BitcastBackendConfig& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (from.has_source_layout()) {
+    source_layout_ = new ::xla::LayoutProto(*from.source_layout_);
+  } else {
+    source_layout_ = NULL;
+  }
+  if (from.has_result_layout()) {
+    result_layout_ = new ::xla::LayoutProto(*from.result_layout_);
+  } else {
+    result_layout_ = NULL;
+  }
+  // @@protoc_insertion_point(copy_constructor:xla.gpu.BitcastBackendConfig)
+}
+
+void BitcastBackendConfig::SharedCtor() {
+  ::memset(&source_layout_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&result_layout_) -
+      reinterpret_cast<char*>(&source_layout_)) + sizeof(result_layout_));
+}
+
+BitcastBackendConfig::~BitcastBackendConfig() {
+  // @@protoc_insertion_point(destructor:xla.gpu.BitcastBackendConfig)
+  SharedDtor();
+}
+
+void BitcastBackendConfig::SharedDtor() {
+  if (this != internal_default_instance()) delete source_layout_;
+  if (this != internal_default_instance()) delete result_layout_;
+}
+
+void BitcastBackendConfig::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* BitcastBackendConfig::descriptor() {
+  ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fgpu_2fbackend_5fconfigs_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fgpu_2fbackend_5fconfigs_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const BitcastBackendConfig& BitcastBackendConfig::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fgpu_2fbackend_5fconfigs_2eproto::scc_info_BitcastBackendConfig.base);
+  return *internal_default_instance();
+}
+
+
+void BitcastBackendConfig::Clear() {
+// @@protoc_insertion_point(message_clear_start:xla.gpu.BitcastBackendConfig)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (GetArenaNoVirtual() == NULL && source_layout_ != NULL) {
+    delete source_layout_;
+  }
+  source_layout_ = NULL;
+  if (GetArenaNoVirtual() == NULL && result_layout_ != NULL) {
+    delete result_layout_;
+  }
+  result_layout_ = NULL;
+  _internal_metadata_.Clear();
+}
+
+bool BitcastBackendConfig::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:xla.gpu.BitcastBackendConfig)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // .xla.LayoutProto source_layout = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_source_layout()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .xla.LayoutProto result_layout = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_result_layout()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:xla.gpu.BitcastBackendConfig)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:xla.gpu.BitcastBackendConfig)
+  return false;
+#undef DO_
+}
+
+void BitcastBackendConfig::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:xla.gpu.BitcastBackendConfig)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .xla.LayoutProto source_layout = 1;
+  if (this->has_source_layout()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      1, this->_internal_source_layout(), output);
+  }
+
+  // .xla.LayoutProto result_layout = 2;
+  if (this->has_result_layout()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      2, this->_internal_result_layout(), output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:xla.gpu.BitcastBackendConfig)
+}
+
+::google::protobuf::uint8* BitcastBackendConfig::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:xla.gpu.BitcastBackendConfig)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .xla.LayoutProto source_layout = 1;
+  if (this->has_source_layout()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        1, this->_internal_source_layout(), deterministic, target);
+  }
+
+  // .xla.LayoutProto result_layout = 2;
+  if (this->has_result_layout()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        2, this->_internal_result_layout(), deterministic, target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:xla.gpu.BitcastBackendConfig)
+  return target;
+}
+
+size_t BitcastBackendConfig::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:xla.gpu.BitcastBackendConfig)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // .xla.LayoutProto source_layout = 1;
+  if (this->has_source_layout()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *source_layout_);
+  }
+
+  // .xla.LayoutProto result_layout = 2;
+  if (this->has_result_layout()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *result_layout_);
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void BitcastBackendConfig::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:xla.gpu.BitcastBackendConfig)
+  GOOGLE_DCHECK_NE(&from, this);
+  const BitcastBackendConfig* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const BitcastBackendConfig>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:xla.gpu.BitcastBackendConfig)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:xla.gpu.BitcastBackendConfig)
+    MergeFrom(*source);
+  }
+}
+
+void BitcastBackendConfig::MergeFrom(const BitcastBackendConfig& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:xla.gpu.BitcastBackendConfig)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.has_source_layout()) {
+    mutable_source_layout()->::xla::LayoutProto::MergeFrom(from.source_layout());
+  }
+  if (from.has_result_layout()) {
+    mutable_result_layout()->::xla::LayoutProto::MergeFrom(from.result_layout());
+  }
+}
+
+void BitcastBackendConfig::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:xla.gpu.BitcastBackendConfig)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void BitcastBackendConfig::CopyFrom(const BitcastBackendConfig& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:xla.gpu.BitcastBackendConfig)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool BitcastBackendConfig::IsInitialized() const {
+  return true;
+}
+
+void BitcastBackendConfig::Swap(BitcastBackendConfig* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void BitcastBackendConfig::InternalSwap(BitcastBackendConfig* other) {
+  using std::swap;
+  swap(source_layout_, other->source_layout_);
+  swap(result_layout_, other->result_layout_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata BitcastBackendConfig::GetMetadata() const {
   protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fgpu_2fbackend_5fconfigs_2eproto::protobuf_AssignDescriptorsOnce();
   return ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fgpu_2fbackend_5fconfigs_2eproto::file_level_metadata[kIndexInFileMessages];
 }
@@ -1006,6 +1402,9 @@ template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xla::gpu::CudnnConvBackendConfig
 }
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xla::gpu::GemmBackendConfig* Arena::CreateMaybeMessage< ::xla::gpu::GemmBackendConfig >(Arena* arena) {
   return Arena::CreateInternal< ::xla::gpu::GemmBackendConfig >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xla::gpu::BitcastBackendConfig* Arena::CreateMaybeMessage< ::xla::gpu::BitcastBackendConfig >(Arena* arena) {
+  return Arena::CreateInternal< ::xla::gpu::BitcastBackendConfig >(arena);
 }
 }  // namespace protobuf
 }  // namespace google

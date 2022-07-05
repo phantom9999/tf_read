@@ -126,13 +126,13 @@ void AddDescriptorsImpl() {
       "\024.tensorflow.Features\"i\n\017SequenceExample"
       "\022%\n\007context\030\001 \001(\0132\024.tensorflow.Features\022"
       "/\n\rfeature_lists\030\002 \001(\0132\030.tensorflow.Feat"
-      "ureListsBi\n\026org.tensorflow.exampleB\rExam"
-      "pleProtosP\001Z;github.com/tensorflow/tenso"
-      "rflow/tensorflow/go/core/example\370\001\001b\006pro"
-      "to3"
+      "ureListsB\201\001\n\026org.tensorflow.exampleB\rExa"
+      "mpleProtosP\001ZSgithub.com/tensorflow/tens"
+      "orflow/tensorflow/go/core/example/exampl"
+      "e_protos_go_proto\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 363);
+      descriptor, 388);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/example/example.proto", &protobuf_RegisterTypes);
   ::protobuf_tensorflow_2fcore_2fexample_2ffeature_2eproto::AddDescriptors();

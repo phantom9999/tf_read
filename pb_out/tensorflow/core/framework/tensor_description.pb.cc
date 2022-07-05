@@ -95,26 +95,27 @@ void AddDescriptorsImpl() {
   InitDefaults();
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n2tensorflow/core/framework/tensor_descr"
-      "iption.proto\022\ntensorflow\032%tensorflow/cor"
-      "e/framework/types.proto\032,tensorflow/core"
-      "/framework/tensor_shape.proto\0326tensorflo"
-      "w/core/framework/allocation_description."
+      "iption.proto\022\ntensorflow\0326tensorflow/cor"
+      "e/framework/allocation_description.proto"
+      "\032,tensorflow/core/framework/tensor_shape"
+      ".proto\032%tensorflow/core/framework/types."
       "proto\"\250\001\n\021TensorDescription\022#\n\005dtype\030\001 \001"
       "(\0162\024.tensorflow.DataType\022+\n\005shape\030\002 \001(\0132"
       "\034.tensorflow.TensorShapeProto\022A\n\026allocat"
       "ion_description\030\004 \001(\0132!.tensorflow.Alloc"
-      "ationDescriptionBw\n\030org.tensorflow.frame"
-      "workB\027TensorDescriptionProtosP\001Z=github."
-      "com/tensorflow/tensorflow/tensorflow/go/"
-      "core/framework\370\001\001b\006proto3"
+      "ationDescriptionB\223\001\n\030org.tensorflow.fram"
+      "eworkB\027TensorDescriptionProtosP\001ZYgithub"
+      ".com/tensorflow/tensorflow/tensorflow/go"
+      "/core/framework/tensor_description_go_pr"
+      "oto\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 505);
+      descriptor, 534);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/framework/tensor_description.proto", &protobuf_RegisterTypes);
-  ::protobuf_tensorflow_2fcore_2fframework_2ftypes_2eproto::AddDescriptors();
-  ::protobuf_tensorflow_2fcore_2fframework_2ftensor_5fshape_2eproto::AddDescriptors();
   ::protobuf_tensorflow_2fcore_2fframework_2fallocation_5fdescription_2eproto::AddDescriptors();
+  ::protobuf_tensorflow_2fcore_2fframework_2ftensor_5fshape_2eproto::AddDescriptors();
+  ::protobuf_tensorflow_2fcore_2fframework_2ftypes_2eproto::AddDescriptors();
 }
 
 void AddDescriptors() {

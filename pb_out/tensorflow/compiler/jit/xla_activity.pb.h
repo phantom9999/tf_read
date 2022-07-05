@@ -724,17 +724,23 @@ class XlaJitCompilationActivity : public ::google::protobuf::Message /* @@protoc
   ::google::protobuf::int64 compile_time_us() const;
   void set_compile_time_us(::google::protobuf::int64 value);
 
-  // int64 cumulative_compile_time_us = 4;
-  void clear_cumulative_compile_time_us();
-  static const int kCumulativeCompileTimeUsFieldNumber = 4;
-  ::google::protobuf::int64 cumulative_compile_time_us() const;
-  void set_cumulative_compile_time_us(::google::protobuf::int64 value);
-
   // int32 compile_count = 2;
   void clear_compile_count();
   static const int kCompileCountFieldNumber = 2;
   ::google::protobuf::int32 compile_count() const;
   void set_compile_count(::google::protobuf::int32 value);
+
+  // bool used_persistent_cache = 5;
+  void clear_used_persistent_cache();
+  static const int kUsedPersistentCacheFieldNumber = 5;
+  bool used_persistent_cache() const;
+  void set_used_persistent_cache(bool value);
+
+  // int64 cumulative_compile_time_us = 4;
+  void clear_cumulative_compile_time_us();
+  static const int kCumulativeCompileTimeUsFieldNumber = 4;
+  ::google::protobuf::int64 cumulative_compile_time_us() const;
+  void set_cumulative_compile_time_us(::google::protobuf::int64 value);
 
   // @@protoc_insertion_point(class_scope:tensorflow.XlaJitCompilationActivity)
  private:
@@ -742,8 +748,9 @@ class XlaJitCompilationActivity : public ::google::protobuf::Message /* @@protoc
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
   ::google::protobuf::internal::ArenaStringPtr cluster_name_;
   ::google::protobuf::int64 compile_time_us_;
-  ::google::protobuf::int64 cumulative_compile_time_us_;
   ::google::protobuf::int32 compile_count_;
+  bool used_persistent_cache_;
+  ::google::protobuf::int64 cumulative_compile_time_us_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcompiler_2fjit_2fxla_5factivity_2eproto::TableStruct;
 };
@@ -1353,6 +1360,20 @@ inline void XlaJitCompilationActivity::set_cumulative_compile_time_us(::google::
   
   cumulative_compile_time_us_ = value;
   // @@protoc_insertion_point(field_set:tensorflow.XlaJitCompilationActivity.cumulative_compile_time_us)
+}
+
+// bool used_persistent_cache = 5;
+inline void XlaJitCompilationActivity::clear_used_persistent_cache() {
+  used_persistent_cache_ = false;
+}
+inline bool XlaJitCompilationActivity::used_persistent_cache() const {
+  // @@protoc_insertion_point(field_get:tensorflow.XlaJitCompilationActivity.used_persistent_cache)
+  return used_persistent_cache_;
+}
+inline void XlaJitCompilationActivity::set_used_persistent_cache(bool value) {
+  
+  used_persistent_cache_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.XlaJitCompilationActivity.used_persistent_cache)
 }
 
 // -------------------------------------------------------------------

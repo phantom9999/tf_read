@@ -129,20 +129,21 @@ void AddDescriptorsImpl() {
       "\n/tensorflow/core/framework/resource_han"
       "dle.proto\022\ntensorflow\032,tensorflow/core/f"
       "ramework/tensor_shape.proto\032%tensorflow/"
-      "core/framework/types.proto\"\237\002\n\023ResourceH"
+      "core/framework/types.proto\"\245\002\n\023ResourceH"
       "andleProto\022\016\n\006device\030\001 \001(\t\022\021\n\tcontainer\030"
       "\002 \001(\t\022\014\n\004name\030\003 \001(\t\022\021\n\thash_code\030\004 \001(\004\022\027"
       "\n\017maybe_type_name\030\005 \001(\t\022H\n\021dtypes_and_sh"
       "apes\030\006 \003(\0132-.tensorflow.ResourceHandlePr"
       "oto.DtypeAndShape\032a\n\rDtypeAndShape\022#\n\005dt"
       "ype\030\001 \001(\0162\024.tensorflow.DataType\022+\n\005shape"
-      "\030\002 \001(\0132\034.tensorflow.TensorShapeProtoBn\n\030"
-      "org.tensorflow.frameworkB\016ResourceHandle"
-      "P\001Z=github.com/tensorflow/tensorflow/ten"
-      "sorflow/go/core/framework\370\001\001b\006proto3"
+      "\030\002 \001(\0132\034.tensorflow.TensorShapeProtoJ\004\010\007"
+      "\020\010B\207\001\n\030org.tensorflow.frameworkB\016Resourc"
+      "eHandleP\001ZVgithub.com/tensorflow/tensorf"
+      "low/tensorflow/go/core/framework/resourc"
+      "e_handle_go_proto\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 556);
+      descriptor, 588);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/framework/resource_handle.proto", &protobuf_RegisterTypes);
   ::protobuf_tensorflow_2fcore_2fframework_2ftensor_5fshape_2eproto::AddDescriptors();

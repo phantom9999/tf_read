@@ -22,6 +22,9 @@
 namespace protobuf_tensorflow_2fcore_2fframework_2fattr_5fvalue_2eproto {
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fframework_2fattr_5fvalue_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_AttrValue;
 }  // namespace protobuf_tensorflow_2fcore_2fframework_2fattr_5fvalue_2eproto
+namespace protobuf_tensorflow_2fcore_2fframework_2ffull_5ftype_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fframework_2ffull_5ftype_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_FullTypeDef;
+}  // namespace protobuf_tensorflow_2fcore_2fframework_2ffull_5ftype_2eproto
 namespace protobuf_tensorflow_2fcore_2fframework_2fnode_5fdef_2eproto {
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fframework_2fnode_5fdef_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_NodeDef_ExperimentalDebugInfo;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fframework_2fnode_5fdef_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_NodeDef_AttrEntry_DoNotUse;
@@ -83,10 +86,11 @@ static void InitDefaultsNodeDef() {
   ::tensorflow::NodeDef::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<2> scc_info_NodeDef =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsNodeDef}, {
+::google::protobuf::internal::SCCInfo<3> scc_info_NodeDef =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 3, InitDefaultsNodeDef}, {
       &protobuf_tensorflow_2fcore_2fframework_2fnode_5fdef_2eproto::scc_info_NodeDef_AttrEntry_DoNotUse.base,
-      &protobuf_tensorflow_2fcore_2fframework_2fnode_5fdef_2eproto::scc_info_NodeDef_ExperimentalDebugInfo.base,}};
+      &protobuf_tensorflow_2fcore_2fframework_2fnode_5fdef_2eproto::scc_info_NodeDef_ExperimentalDebugInfo.base,
+      &protobuf_tensorflow_2fcore_2fframework_2ffull_5ftype_2eproto::scc_info_FullTypeDef.base,}};
 
 void InitDefaults() {
   ::google::protobuf::internal::InitSCC(&scc_info_NodeDef_AttrEntry_DoNotUse.base);
@@ -124,6 +128,7 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::NodeDef, device_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::NodeDef, attr_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::NodeDef, experimental_debug_info_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::NodeDef, experimental_type_),
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   { 0, 7, sizeof(::tensorflow::NodeDef_AttrEntry_DoNotUse)},
@@ -160,24 +165,28 @@ void AddDescriptorsImpl() {
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n(tensorflow/core/framework/node_def.pro"
       "to\022\ntensorflow\032*tensorflow/core/framewor"
-      "k/attr_value.proto\"\322\002\n\007NodeDef\022\014\n\004name\030\001"
-      " \001(\t\022\n\n\002op\030\002 \001(\t\022\r\n\005input\030\003 \003(\t\022\016\n\006devic"
-      "e\030\004 \001(\t\022+\n\004attr\030\005 \003(\0132\035.tensorflow.NodeD"
-      "ef.AttrEntry\022J\n\027experimental_debug_info\030"
-      "\006 \001(\0132).tensorflow.NodeDef.ExperimentalD"
-      "ebugInfo\032B\n\tAttrEntry\022\013\n\003key\030\001 \001(\t\022$\n\005va"
-      "lue\030\002 \001(\0132\025.tensorflow.AttrValue:\0028\001\032Q\n\025"
-      "ExperimentalDebugInfo\022\033\n\023original_node_n"
-      "ames\030\001 \003(\t\022\033\n\023original_func_names\030\002 \003(\tB"
-      "i\n\030org.tensorflow.frameworkB\tNodeProtoP\001"
-      "Z=github.com/tensorflow/tensorflow/tenso"
-      "rflow/go/core/framework\370\001\001b\006proto3"
+      "k/attr_value.proto\032)tensorflow/core/fram"
+      "ework/full_type.proto\"\206\003\n\007NodeDef\022\014\n\004nam"
+      "e\030\001 \001(\t\022\n\n\002op\030\002 \001(\t\022\r\n\005input\030\003 \003(\t\022\016\n\006de"
+      "vice\030\004 \001(\t\022+\n\004attr\030\005 \003(\0132\035.tensorflow.No"
+      "deDef.AttrEntry\022J\n\027experimental_debug_in"
+      "fo\030\006 \001(\0132).tensorflow.NodeDef.Experiment"
+      "alDebugInfo\0222\n\021experimental_type\030\007 \001(\0132\027"
+      ".tensorflow.FullTypeDef\032B\n\tAttrEntry\022\013\n\003"
+      "key\030\001 \001(\t\022$\n\005value\030\002 \001(\0132\025.tensorflow.At"
+      "trValue:\0028\001\032Q\n\025ExperimentalDebugInfo\022\033\n\023"
+      "original_node_names\030\001 \003(\t\022\033\n\023original_fu"
+      "nc_names\030\002 \003(\tB{\n\030org.tensorflow.framewo"
+      "rkB\tNodeProtoP\001ZOgithub.com/tensorflow/t"
+      "ensorflow/tensorflow/go/core/framework/n"
+      "ode_def_go_proto\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 554);
+      descriptor, 667);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/framework/node_def.proto", &protobuf_RegisterTypes);
   ::protobuf_tensorflow_2fcore_2fframework_2fattr_5fvalue_2eproto::AddDescriptors();
+  ::protobuf_tensorflow_2fcore_2fframework_2ffull_5ftype_2eproto::AddDescriptors();
 }
 
 void AddDescriptors() {
@@ -531,6 +540,8 @@ void NodeDef_ExperimentalDebugInfo::InternalSwap(NodeDef_ExperimentalDebugInfo* 
 void NodeDef::InitAsDefaultInstance() {
   ::tensorflow::_NodeDef_default_instance_._instance.get_mutable()->experimental_debug_info_ = const_cast< ::tensorflow::NodeDef_ExperimentalDebugInfo*>(
       ::tensorflow::NodeDef_ExperimentalDebugInfo::internal_default_instance());
+  ::tensorflow::_NodeDef_default_instance_._instance.get_mutable()->experimental_type_ = const_cast< ::tensorflow::FullTypeDef*>(
+      ::tensorflow::FullTypeDef::internal_default_instance());
 }
 void NodeDef::clear_attr() {
   attr_.Clear();
@@ -548,6 +559,25 @@ void NodeDef::unsafe_arena_set_allocated_experimental_debug_info(
   }
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.NodeDef.experimental_debug_info)
 }
+void NodeDef::unsafe_arena_set_allocated_experimental_type(
+    ::tensorflow::FullTypeDef* experimental_type) {
+  if (GetArenaNoVirtual() == NULL) {
+    delete experimental_type_;
+  }
+  experimental_type_ = experimental_type;
+  if (experimental_type) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.NodeDef.experimental_type)
+}
+void NodeDef::clear_experimental_type() {
+  if (GetArenaNoVirtual() == NULL && experimental_type_ != NULL) {
+    delete experimental_type_;
+  }
+  experimental_type_ = NULL;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int NodeDef::kNameFieldNumber;
 const int NodeDef::kOpFieldNumber;
@@ -555,6 +585,7 @@ const int NodeDef::kInputFieldNumber;
 const int NodeDef::kDeviceFieldNumber;
 const int NodeDef::kAttrFieldNumber;
 const int NodeDef::kExperimentalDebugInfoFieldNumber;
+const int NodeDef::kExperimentalTypeFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 NodeDef::NodeDef()
@@ -600,6 +631,11 @@ NodeDef::NodeDef(const NodeDef& from)
   } else {
     experimental_debug_info_ = NULL;
   }
+  if (from.has_experimental_type()) {
+    experimental_type_ = new ::tensorflow::FullTypeDef(*from.experimental_type_);
+  } else {
+    experimental_type_ = NULL;
+  }
   // @@protoc_insertion_point(copy_constructor:tensorflow.NodeDef)
 }
 
@@ -607,7 +643,9 @@ void NodeDef::SharedCtor() {
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   op_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   device_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  experimental_debug_info_ = NULL;
+  ::memset(&experimental_debug_info_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&experimental_type_) -
+      reinterpret_cast<char*>(&experimental_debug_info_)) + sizeof(experimental_type_));
 }
 
 NodeDef::~NodeDef() {
@@ -621,6 +659,7 @@ void NodeDef::SharedDtor() {
   op_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   device_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete experimental_debug_info_;
+  if (this != internal_default_instance()) delete experimental_type_;
 }
 
 void NodeDef::ArenaDtor(void* object) {
@@ -658,6 +697,10 @@ void NodeDef::Clear() {
     delete experimental_debug_info_;
   }
   experimental_debug_info_ = NULL;
+  if (GetArenaNoVirtual() == NULL && experimental_type_ != NULL) {
+    delete experimental_type_;
+  }
+  experimental_type_ = NULL;
   _internal_metadata_.Clear();
 }
 
@@ -765,6 +808,18 @@ bool NodeDef::MergePartialFromCodedStream(
             static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_experimental_debug_info()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .tensorflow.FullTypeDef experimental_type = 7;
+      case 7: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(58u /* 58 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_experimental_type()));
         } else {
           goto handle_unusual;
         }
@@ -898,6 +953,12 @@ void NodeDef::SerializeWithCachedSizes(
       6, this->_internal_experimental_debug_info(), output);
   }
 
+  // .tensorflow.FullTypeDef experimental_type = 7;
+  if (this->has_experimental_type()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      7, this->_internal_experimental_type(), output);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -1021,6 +1082,13 @@ void NodeDef::SerializeWithCachedSizes(
         6, this->_internal_experimental_debug_info(), deterministic, target);
   }
 
+  // .tensorflow.FullTypeDef experimental_type = 7;
+  if (this->has_experimental_type()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        7, this->_internal_experimental_type(), deterministic, target);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
@@ -1094,6 +1162,13 @@ size_t NodeDef::ByteSizeLong() const {
         *experimental_debug_info_);
   }
 
+  // .tensorflow.FullTypeDef experimental_type = 7;
+  if (this->has_experimental_type()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *experimental_type_);
+  }
+
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -1134,6 +1209,9 @@ void NodeDef::MergeFrom(const NodeDef& from) {
   }
   if (from.has_experimental_debug_info()) {
     mutable_experimental_debug_info()->::tensorflow::NodeDef_ExperimentalDebugInfo::MergeFrom(from.experimental_debug_info());
+  }
+  if (from.has_experimental_type()) {
+    mutable_experimental_type()->::tensorflow::FullTypeDef::MergeFrom(from.experimental_type());
   }
 }
 
@@ -1185,6 +1263,7 @@ void NodeDef::InternalSwap(NodeDef* other) {
   device_.Swap(&other->device_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(experimental_debug_info_, other->experimental_debug_info_);
+  swap(experimental_type_, other->experimental_type_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 

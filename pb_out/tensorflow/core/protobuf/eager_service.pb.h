@@ -38,8 +38,8 @@
 #include "tensorflow/core/framework/function.pb.h"
 #include "tensorflow/core/framework/tensor.pb.h"
 #include "tensorflow/core/framework/tensor_shape.pb.h"
-#include "tensorflow/core/framework/types.pb.h"
 #include "tensorflow/core/framework/versions.pb.h"
+#include "tensorflow/core/protobuf/remote_tensor_handle.pb.h"
 #include "tensorflow/core/protobuf/tensorflow_server.pb.h"
 // @@protoc_insertion_point(includes)
 #define PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto 
@@ -49,7 +49,7 @@ namespace protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto {
 struct TableStruct {
   static const ::google::protobuf::internal::ParseTableField entries[];
   static const ::google::protobuf::internal::AuxillaryParseTableField aux[];
-  static const ::google::protobuf::internal::ParseTable schema[20];
+  static const ::google::protobuf::internal::ParseTable schema[26];
   static const ::google::protobuf::internal::FieldMetadata field_metadata[];
   static const ::google::protobuf::internal::SerializationTable serialization_table[];
   static const ::google::protobuf::uint32 offsets[];
@@ -58,6 +58,9 @@ void AddDescriptors();
 }  // namespace protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto
 namespace tensorflow {
 namespace eager {
+class CleanupFunctionOp;
+class CleanupFunctionOpDefaultTypeInternal;
+extern CleanupFunctionOpDefaultTypeInternal _CleanupFunctionOp_default_instance_;
 class CloseContextRequest;
 class CloseContextRequestDefaultTypeInternal;
 extern CloseContextRequestDefaultTypeInternal _CloseContextRequest_default_instance_;
@@ -88,30 +91,45 @@ extern OperationDefaultTypeInternal _Operation_default_instance_;
 class Operation_AttrsEntry_DoNotUse;
 class Operation_AttrsEntry_DoNotUseDefaultTypeInternal;
 extern Operation_AttrsEntry_DoNotUseDefaultTypeInternal _Operation_AttrsEntry_DoNotUse_default_instance_;
+class Operation_Input;
+class Operation_InputDefaultTypeInternal;
+extern Operation_InputDefaultTypeInternal _Operation_Input_default_instance_;
 class QueueItem;
 class QueueItemDefaultTypeInternal;
 extern QueueItemDefaultTypeInternal _QueueItem_default_instance_;
 class QueueResponse;
 class QueueResponseDefaultTypeInternal;
 extern QueueResponseDefaultTypeInternal _QueueResponse_default_instance_;
-class RegisterFunctionRequest;
-class RegisterFunctionRequestDefaultTypeInternal;
-extern RegisterFunctionRequestDefaultTypeInternal _RegisterFunctionRequest_default_instance_;
-class RegisterFunctionResponse;
-class RegisterFunctionResponseDefaultTypeInternal;
-extern RegisterFunctionResponseDefaultTypeInternal _RegisterFunctionResponse_default_instance_;
-class RemoteTensorHandle;
-class RemoteTensorHandleDefaultTypeInternal;
-extern RemoteTensorHandleDefaultTypeInternal _RemoteTensorHandle_default_instance_;
+class RegisterFunctionOp;
+class RegisterFunctionOpDefaultTypeInternal;
+extern RegisterFunctionOpDefaultTypeInternal _RegisterFunctionOp_default_instance_;
+class RunComponentFunctionRequest;
+class RunComponentFunctionRequestDefaultTypeInternal;
+extern RunComponentFunctionRequestDefaultTypeInternal _RunComponentFunctionRequest_default_instance_;
+class RunComponentFunctionResponse;
+class RunComponentFunctionResponseDefaultTypeInternal;
+extern RunComponentFunctionResponseDefaultTypeInternal _RunComponentFunctionResponse_default_instance_;
+class SendPackedHandleOp;
+class SendPackedHandleOpDefaultTypeInternal;
+extern SendPackedHandleOpDefaultTypeInternal _SendPackedHandleOp_default_instance_;
+class SendPackedHandleOp_Handle;
+class SendPackedHandleOp_HandleDefaultTypeInternal;
+extern SendPackedHandleOp_HandleDefaultTypeInternal _SendPackedHandleOp_Handle_default_instance_;
+class SendPackedHandleOp_LocalTensorHandle;
+class SendPackedHandleOp_LocalTensorHandleDefaultTypeInternal;
+extern SendPackedHandleOp_LocalTensorHandleDefaultTypeInternal _SendPackedHandleOp_LocalTensorHandle_default_instance_;
 class SendTensorOp;
 class SendTensorOpDefaultTypeInternal;
 extern SendTensorOpDefaultTypeInternal _SendTensorOp_default_instance_;
-class SendTensorRequest;
-class SendTensorRequestDefaultTypeInternal;
-extern SendTensorRequestDefaultTypeInternal _SendTensorRequest_default_instance_;
-class SendTensorResponse;
-class SendTensorResponseDefaultTypeInternal;
-extern SendTensorResponseDefaultTypeInternal _SendTensorResponse_default_instance_;
+class SyncRemoteExecutorForStream;
+class SyncRemoteExecutorForStreamDefaultTypeInternal;
+extern SyncRemoteExecutorForStreamDefaultTypeInternal _SyncRemoteExecutorForStream_default_instance_;
+class UpdateContextRequest;
+class UpdateContextRequestDefaultTypeInternal;
+extern UpdateContextRequestDefaultTypeInternal _UpdateContextRequest_default_instance_;
+class UpdateContextResponse;
+class UpdateContextResponseDefaultTypeInternal;
+extern UpdateContextResponseDefaultTypeInternal _UpdateContextResponse_default_instance_;
 class WaitQueueDoneRequest;
 class WaitQueueDoneRequestDefaultTypeInternal;
 extern WaitQueueDoneRequestDefaultTypeInternal _WaitQueueDoneRequest_default_instance_;
@@ -122,6 +140,7 @@ extern WaitQueueDoneResponseDefaultTypeInternal _WaitQueueDoneResponse_default_i
 }  // namespace tensorflow
 namespace google {
 namespace protobuf {
+template<> ::tensorflow::eager::CleanupFunctionOp* Arena::CreateMaybeMessage<::tensorflow::eager::CleanupFunctionOp>(Arena*);
 template<> ::tensorflow::eager::CloseContextRequest* Arena::CreateMaybeMessage<::tensorflow::eager::CloseContextRequest>(Arena*);
 template<> ::tensorflow::eager::CloseContextResponse* Arena::CreateMaybeMessage<::tensorflow::eager::CloseContextResponse>(Arena*);
 template<> ::tensorflow::eager::CreateContextRequest* Arena::CreateMaybeMessage<::tensorflow::eager::CreateContextRequest>(Arena*);
@@ -132,14 +151,19 @@ template<> ::tensorflow::eager::KeepAliveRequest* Arena::CreateMaybeMessage<::te
 template<> ::tensorflow::eager::KeepAliveResponse* Arena::CreateMaybeMessage<::tensorflow::eager::KeepAliveResponse>(Arena*);
 template<> ::tensorflow::eager::Operation* Arena::CreateMaybeMessage<::tensorflow::eager::Operation>(Arena*);
 template<> ::tensorflow::eager::Operation_AttrsEntry_DoNotUse* Arena::CreateMaybeMessage<::tensorflow::eager::Operation_AttrsEntry_DoNotUse>(Arena*);
+template<> ::tensorflow::eager::Operation_Input* Arena::CreateMaybeMessage<::tensorflow::eager::Operation_Input>(Arena*);
 template<> ::tensorflow::eager::QueueItem* Arena::CreateMaybeMessage<::tensorflow::eager::QueueItem>(Arena*);
 template<> ::tensorflow::eager::QueueResponse* Arena::CreateMaybeMessage<::tensorflow::eager::QueueResponse>(Arena*);
-template<> ::tensorflow::eager::RegisterFunctionRequest* Arena::CreateMaybeMessage<::tensorflow::eager::RegisterFunctionRequest>(Arena*);
-template<> ::tensorflow::eager::RegisterFunctionResponse* Arena::CreateMaybeMessage<::tensorflow::eager::RegisterFunctionResponse>(Arena*);
-template<> ::tensorflow::eager::RemoteTensorHandle* Arena::CreateMaybeMessage<::tensorflow::eager::RemoteTensorHandle>(Arena*);
+template<> ::tensorflow::eager::RegisterFunctionOp* Arena::CreateMaybeMessage<::tensorflow::eager::RegisterFunctionOp>(Arena*);
+template<> ::tensorflow::eager::RunComponentFunctionRequest* Arena::CreateMaybeMessage<::tensorflow::eager::RunComponentFunctionRequest>(Arena*);
+template<> ::tensorflow::eager::RunComponentFunctionResponse* Arena::CreateMaybeMessage<::tensorflow::eager::RunComponentFunctionResponse>(Arena*);
+template<> ::tensorflow::eager::SendPackedHandleOp* Arena::CreateMaybeMessage<::tensorflow::eager::SendPackedHandleOp>(Arena*);
+template<> ::tensorflow::eager::SendPackedHandleOp_Handle* Arena::CreateMaybeMessage<::tensorflow::eager::SendPackedHandleOp_Handle>(Arena*);
+template<> ::tensorflow::eager::SendPackedHandleOp_LocalTensorHandle* Arena::CreateMaybeMessage<::tensorflow::eager::SendPackedHandleOp_LocalTensorHandle>(Arena*);
 template<> ::tensorflow::eager::SendTensorOp* Arena::CreateMaybeMessage<::tensorflow::eager::SendTensorOp>(Arena*);
-template<> ::tensorflow::eager::SendTensorRequest* Arena::CreateMaybeMessage<::tensorflow::eager::SendTensorRequest>(Arena*);
-template<> ::tensorflow::eager::SendTensorResponse* Arena::CreateMaybeMessage<::tensorflow::eager::SendTensorResponse>(Arena*);
+template<> ::tensorflow::eager::SyncRemoteExecutorForStream* Arena::CreateMaybeMessage<::tensorflow::eager::SyncRemoteExecutorForStream>(Arena*);
+template<> ::tensorflow::eager::UpdateContextRequest* Arena::CreateMaybeMessage<::tensorflow::eager::UpdateContextRequest>(Arena*);
+template<> ::tensorflow::eager::UpdateContextResponse* Arena::CreateMaybeMessage<::tensorflow::eager::UpdateContextResponse>(Arena*);
 template<> ::tensorflow::eager::WaitQueueDoneRequest* Arena::CreateMaybeMessage<::tensorflow::eager::WaitQueueDoneRequest>(Arena*);
 template<> ::tensorflow::eager::WaitQueueDoneResponse* Arena::CreateMaybeMessage<::tensorflow::eager::WaitQueueDoneResponse>(Arena*);
 }  // namespace protobuf
@@ -149,24 +173,24 @@ namespace eager {
 
 // ===================================================================
 
-class RemoteTensorHandle : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.eager.RemoteTensorHandle) */ {
+class Operation_Input : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.eager.Operation.Input) */ {
  public:
-  RemoteTensorHandle();
-  virtual ~RemoteTensorHandle();
+  Operation_Input();
+  virtual ~Operation_Input();
 
-  RemoteTensorHandle(const RemoteTensorHandle& from);
+  Operation_Input(const Operation_Input& from);
 
-  inline RemoteTensorHandle& operator=(const RemoteTensorHandle& from) {
+  inline Operation_Input& operator=(const Operation_Input& from) {
     CopyFrom(from);
     return *this;
   }
   #if LANG_CXX11
-  RemoteTensorHandle(RemoteTensorHandle&& from) noexcept
-    : RemoteTensorHandle() {
+  Operation_Input(Operation_Input&& from) noexcept
+    : Operation_Input() {
     *this = ::std::move(from);
   }
 
-  inline RemoteTensorHandle& operator=(RemoteTensorHandle&& from) noexcept {
+  inline Operation_Input& operator=(Operation_Input&& from) noexcept {
     if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
       if (this != &from) InternalSwap(&from);
     } else {
@@ -176,34 +200,40 @@ class RemoteTensorHandle : public ::google::protobuf::Message /* @@protoc_insert
   }
   #endif
   static const ::google::protobuf::Descriptor* descriptor();
-  static const RemoteTensorHandle& default_instance();
+  static const Operation_Input& default_instance();
+
+  enum ItemCase {
+    kRemoteHandle = 1,
+    kTensor = 2,
+    ITEM_NOT_SET = 0,
+  };
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
-  static inline const RemoteTensorHandle* internal_default_instance() {
-    return reinterpret_cast<const RemoteTensorHandle*>(
-               &_RemoteTensorHandle_default_instance_);
+  static inline const Operation_Input* internal_default_instance() {
+    return reinterpret_cast<const Operation_Input*>(
+               &_Operation_Input_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     0;
 
-  void Swap(RemoteTensorHandle* other);
-  friend void swap(RemoteTensorHandle& a, RemoteTensorHandle& b) {
+  void Swap(Operation_Input* other);
+  friend void swap(Operation_Input& a, Operation_Input& b) {
     a.Swap(&b);
   }
 
   // implements Message ----------------------------------------------
 
-  inline RemoteTensorHandle* New() const final {
-    return CreateMaybeMessage<RemoteTensorHandle>(NULL);
+  inline Operation_Input* New() const final {
+    return CreateMaybeMessage<Operation_Input>(NULL);
   }
 
-  RemoteTensorHandle* New(::google::protobuf::Arena* arena) const final {
-    return CreateMaybeMessage<RemoteTensorHandle>(arena);
+  Operation_Input* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<Operation_Input>(arena);
   }
   void CopyFrom(const ::google::protobuf::Message& from) final;
   void MergeFrom(const ::google::protobuf::Message& from) final;
-  void CopyFrom(const RemoteTensorHandle& from);
-  void MergeFrom(const RemoteTensorHandle& from);
+  void CopyFrom(const Operation_Input& from);
+  void MergeFrom(const Operation_Input& from);
   void Clear() final;
   bool IsInitialized() const final;
 
@@ -220,7 +250,7 @@ class RemoteTensorHandle : public ::google::protobuf::Message /* @@protoc_insert
   void SharedCtor();
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(RemoteTensorHandle* other);
+  void InternalSwap(Operation_Input* other);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
@@ -236,62 +266,49 @@ class RemoteTensorHandle : public ::google::protobuf::Message /* @@protoc_insert
 
   // accessors -------------------------------------------------------
 
-  // string device = 3;
-  void clear_device();
-  static const int kDeviceFieldNumber = 3;
-  const ::std::string& device() const;
-  void set_device(const ::std::string& value);
-  #if LANG_CXX11
-  void set_device(::std::string&& value);
-  #endif
-  void set_device(const char* value);
-  void set_device(const char* value, size_t size);
-  ::std::string* mutable_device();
-  ::std::string* release_device();
-  void set_allocated_device(::std::string* device);
+  // .tensorflow.eager.RemoteTensorHandle remote_handle = 1;
+  bool has_remote_handle() const;
+  void clear_remote_handle();
+  static const int kRemoteHandleFieldNumber = 1;
+  private:
+  const ::tensorflow::eager::RemoteTensorHandle& _internal_remote_handle() const;
+  public:
+  const ::tensorflow::eager::RemoteTensorHandle& remote_handle() const;
+  ::tensorflow::eager::RemoteTensorHandle* release_remote_handle();
+  ::tensorflow::eager::RemoteTensorHandle* mutable_remote_handle();
+  void set_allocated_remote_handle(::tensorflow::eager::RemoteTensorHandle* remote_handle);
 
-  // string op_device = 4;
-  void clear_op_device();
-  static const int kOpDeviceFieldNumber = 4;
-  const ::std::string& op_device() const;
-  void set_op_device(const ::std::string& value);
-  #if LANG_CXX11
-  void set_op_device(::std::string&& value);
-  #endif
-  void set_op_device(const char* value);
-  void set_op_device(const char* value, size_t size);
-  ::std::string* mutable_op_device();
-  ::std::string* release_op_device();
-  void set_allocated_op_device(::std::string* op_device);
+  // .tensorflow.TensorProto tensor = 2;
+  bool has_tensor() const;
+  void clear_tensor();
+  static const int kTensorFieldNumber = 2;
+  private:
+  const ::tensorflow::TensorProto& _internal_tensor() const;
+  public:
+  const ::tensorflow::TensorProto& tensor() const;
+  ::tensorflow::TensorProto* release_tensor();
+  ::tensorflow::TensorProto* mutable_tensor();
+  void set_allocated_tensor(::tensorflow::TensorProto* tensor);
 
-  // int64 op_id = 1;
-  void clear_op_id();
-  static const int kOpIdFieldNumber = 1;
-  ::google::protobuf::int64 op_id() const;
-  void set_op_id(::google::protobuf::int64 value);
-
-  // int32 output_num = 2;
-  void clear_output_num();
-  static const int kOutputNumFieldNumber = 2;
-  ::google::protobuf::int32 output_num() const;
-  void set_output_num(::google::protobuf::int32 value);
-
-  // .tensorflow.DataType dtype = 5;
-  void clear_dtype();
-  static const int kDtypeFieldNumber = 5;
-  ::tensorflow::DataType dtype() const;
-  void set_dtype(::tensorflow::DataType value);
-
-  // @@protoc_insertion_point(class_scope:tensorflow.eager.RemoteTensorHandle)
+  void clear_item();
+  ItemCase item_case() const;
+  // @@protoc_insertion_point(class_scope:tensorflow.eager.Operation.Input)
  private:
+  void set_has_remote_handle();
+  void set_has_tensor();
+
+  inline bool has_item() const;
+  inline void clear_has_item();
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::ArenaStringPtr device_;
-  ::google::protobuf::internal::ArenaStringPtr op_device_;
-  ::google::protobuf::int64 op_id_;
-  ::google::protobuf::int32 output_num_;
-  int dtype_;
+  union ItemUnion {
+    ItemUnion() {}
+    ::tensorflow::eager::RemoteTensorHandle* remote_handle_;
+    ::tensorflow::TensorProto* tensor_;
+  } item_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  ::google::protobuf::uint32 _oneof_case_[1];
+
   friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::TableStruct;
 };
 // -------------------------------------------------------------------
@@ -402,20 +419,9 @@ class Operation : public ::google::protobuf::Message /* @@protoc_insertion_point
 
   // nested types ----------------------------------------------------
 
+  typedef Operation_Input Input;
 
   // accessors -------------------------------------------------------
-
-  // repeated .tensorflow.eager.RemoteTensorHandle inputs = 3;
-  int inputs_size() const;
-  void clear_inputs();
-  static const int kInputsFieldNumber = 3;
-  ::tensorflow::eager::RemoteTensorHandle* mutable_inputs(int index);
-  ::google::protobuf::RepeatedPtrField< ::tensorflow::eager::RemoteTensorHandle >*
-      mutable_inputs();
-  const ::tensorflow::eager::RemoteTensorHandle& inputs(int index) const;
-  ::tensorflow::eager::RemoteTensorHandle* add_inputs();
-  const ::google::protobuf::RepeatedPtrField< ::tensorflow::eager::RemoteTensorHandle >&
-      inputs() const;
 
   // repeated int64 control_op_ids = 4;
   int control_op_ids_size() const;
@@ -437,6 +443,18 @@ class Operation : public ::google::protobuf::Message /* @@protoc_insertion_point
       attrs() const;
   ::google::protobuf::Map< ::std::string, ::tensorflow::AttrValue >*
       mutable_attrs();
+
+  // repeated .tensorflow.eager.Operation.Input op_inputs = 10;
+  int op_inputs_size() const;
+  void clear_op_inputs();
+  static const int kOpInputsFieldNumber = 10;
+  ::tensorflow::eager::Operation_Input* mutable_op_inputs(int index);
+  ::google::protobuf::RepeatedPtrField< ::tensorflow::eager::Operation_Input >*
+      mutable_op_inputs();
+  const ::tensorflow::eager::Operation_Input& op_inputs(int index) const;
+  ::tensorflow::eager::Operation_Input* add_op_inputs();
+  const ::google::protobuf::RepeatedPtrField< ::tensorflow::eager::Operation_Input >&
+      op_inputs() const;
 
   // string name = 2;
   void clear_name();
@@ -472,11 +490,28 @@ class Operation : public ::google::protobuf::Message /* @@protoc_insertion_point
   ::google::protobuf::int64 id() const;
   void set_id(::google::protobuf::int64 value);
 
+  // int64 func_step_id = 8;
+  void clear_func_step_id();
+  static const int kFuncStepIdFieldNumber = 8;
+  ::google::protobuf::int64 func_step_id() const;
+  void set_func_step_id(::google::protobuf::int64 value);
+
+  // bool is_component_function = 7;
+  void clear_is_component_function();
+  static const int kIsComponentFunctionFieldNumber = 7;
+  bool is_component_function() const;
+  void set_is_component_function(bool value);
+
+  // bool is_function = 9;
+  void clear_is_function();
+  static const int kIsFunctionFieldNumber = 9;
+  bool is_function() const;
+  void set_is_function(bool value);
+
   // @@protoc_insertion_point(class_scope:tensorflow.eager.Operation)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::RepeatedPtrField< ::tensorflow::eager::RemoteTensorHandle > inputs_;
   ::google::protobuf::RepeatedField< ::google::protobuf::int64 > control_op_ids_;
   mutable int _control_op_ids_cached_byte_size_;
   ::google::protobuf::internal::MapField<
@@ -485,9 +520,13 @@ class Operation : public ::google::protobuf::Message /* @@protoc_insertion_point
       ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
       ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE,
       0 > attrs_;
+  ::google::protobuf::RepeatedPtrField< ::tensorflow::eager::Operation_Input > op_inputs_;
   ::google::protobuf::internal::ArenaStringPtr name_;
   ::google::protobuf::internal::ArenaStringPtr device_;
   ::google::protobuf::int64 id_;
+  ::google::protobuf::int64 func_step_id_;
+  bool is_component_function_;
+  bool is_function_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::TableStruct;
 };
@@ -526,6 +565,10 @@ class QueueItem : public ::google::protobuf::Message /* @@protoc_insertion_point
     kHandleToDecref = 1,
     kOperation = 2,
     kSendTensor = 3,
+    kRegisterFunction = 4,
+    kCleanupFunction = 5,
+    kSyncRemoteExecutorForStream = 6,
+    kSendPackedHandle = 7,
     ITEM_NOT_SET = 0,
   };
 
@@ -623,6 +666,54 @@ class QueueItem : public ::google::protobuf::Message /* @@protoc_insertion_point
   ::tensorflow::eager::SendTensorOp* mutable_send_tensor();
   void set_allocated_send_tensor(::tensorflow::eager::SendTensorOp* send_tensor);
 
+  // .tensorflow.eager.RegisterFunctionOp register_function = 4;
+  bool has_register_function() const;
+  void clear_register_function();
+  static const int kRegisterFunctionFieldNumber = 4;
+  private:
+  const ::tensorflow::eager::RegisterFunctionOp& _internal_register_function() const;
+  public:
+  const ::tensorflow::eager::RegisterFunctionOp& register_function() const;
+  ::tensorflow::eager::RegisterFunctionOp* release_register_function();
+  ::tensorflow::eager::RegisterFunctionOp* mutable_register_function();
+  void set_allocated_register_function(::tensorflow::eager::RegisterFunctionOp* register_function);
+
+  // .tensorflow.eager.CleanupFunctionOp cleanup_function = 5;
+  bool has_cleanup_function() const;
+  void clear_cleanup_function();
+  static const int kCleanupFunctionFieldNumber = 5;
+  private:
+  const ::tensorflow::eager::CleanupFunctionOp& _internal_cleanup_function() const;
+  public:
+  const ::tensorflow::eager::CleanupFunctionOp& cleanup_function() const;
+  ::tensorflow::eager::CleanupFunctionOp* release_cleanup_function();
+  ::tensorflow::eager::CleanupFunctionOp* mutable_cleanup_function();
+  void set_allocated_cleanup_function(::tensorflow::eager::CleanupFunctionOp* cleanup_function);
+
+  // .tensorflow.eager.SyncRemoteExecutorForStream sync_remote_executor_for_stream = 6;
+  bool has_sync_remote_executor_for_stream() const;
+  void clear_sync_remote_executor_for_stream();
+  static const int kSyncRemoteExecutorForStreamFieldNumber = 6;
+  private:
+  const ::tensorflow::eager::SyncRemoteExecutorForStream& _internal_sync_remote_executor_for_stream() const;
+  public:
+  const ::tensorflow::eager::SyncRemoteExecutorForStream& sync_remote_executor_for_stream() const;
+  ::tensorflow::eager::SyncRemoteExecutorForStream* release_sync_remote_executor_for_stream();
+  ::tensorflow::eager::SyncRemoteExecutorForStream* mutable_sync_remote_executor_for_stream();
+  void set_allocated_sync_remote_executor_for_stream(::tensorflow::eager::SyncRemoteExecutorForStream* sync_remote_executor_for_stream);
+
+  // .tensorflow.eager.SendPackedHandleOp send_packed_handle = 7;
+  bool has_send_packed_handle() const;
+  void clear_send_packed_handle();
+  static const int kSendPackedHandleFieldNumber = 7;
+  private:
+  const ::tensorflow::eager::SendPackedHandleOp& _internal_send_packed_handle() const;
+  public:
+  const ::tensorflow::eager::SendPackedHandleOp& send_packed_handle() const;
+  ::tensorflow::eager::SendPackedHandleOp* release_send_packed_handle();
+  ::tensorflow::eager::SendPackedHandleOp* mutable_send_packed_handle();
+  void set_allocated_send_packed_handle(::tensorflow::eager::SendPackedHandleOp* send_packed_handle);
+
   void clear_item();
   ItemCase item_case() const;
   // @@protoc_insertion_point(class_scope:tensorflow.eager.QueueItem)
@@ -630,6 +721,10 @@ class QueueItem : public ::google::protobuf::Message /* @@protoc_insertion_point
   void set_has_handle_to_decref();
   void set_has_operation();
   void set_has_send_tensor();
+  void set_has_register_function();
+  void set_has_cleanup_function();
+  void set_has_sync_remote_executor_for_stream();
+  void set_has_send_packed_handle();
 
   inline bool has_item() const;
   inline void clear_has_item();
@@ -640,6 +735,10 @@ class QueueItem : public ::google::protobuf::Message /* @@protoc_insertion_point
     ::tensorflow::eager::RemoteTensorHandle* handle_to_decref_;
     ::tensorflow::eager::Operation* operation_;
     ::tensorflow::eager::SendTensorOp* send_tensor_;
+    ::tensorflow::eager::RegisterFunctionOp* register_function_;
+    ::tensorflow::eager::CleanupFunctionOp* cleanup_function_;
+    ::tensorflow::eager::SyncRemoteExecutorForStream* sync_remote_executor_for_stream_;
+    ::tensorflow::eager::SendPackedHandleOp* send_packed_handle_;
   } item_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   ::google::protobuf::uint32 _oneof_case_[1];
@@ -747,11 +846,47 @@ class QueueResponse : public ::google::protobuf::Message /* @@protoc_insertion_p
   const ::google::protobuf::RepeatedPtrField< ::tensorflow::TensorShapeProto >&
       shape() const;
 
+  // repeated .tensorflow.TensorProto tensor = 2;
+  int tensor_size() const;
+  void clear_tensor();
+  static const int kTensorFieldNumber = 2;
+  ::tensorflow::TensorProto* mutable_tensor(int index);
+  ::google::protobuf::RepeatedPtrField< ::tensorflow::TensorProto >*
+      mutable_tensor();
+  const ::tensorflow::TensorProto& tensor(int index) const;
+  ::tensorflow::TensorProto* add_tensor();
+  const ::google::protobuf::RepeatedPtrField< ::tensorflow::TensorProto >&
+      tensor() const;
+
+  // repeated string device = 3;
+  int device_size() const;
+  void clear_device();
+  static const int kDeviceFieldNumber = 3;
+  const ::std::string& device(int index) const;
+  ::std::string* mutable_device(int index);
+  void set_device(int index, const ::std::string& value);
+  #if LANG_CXX11
+  void set_device(int index, ::std::string&& value);
+  #endif
+  void set_device(int index, const char* value);
+  void set_device(int index, const char* value, size_t size);
+  ::std::string* add_device();
+  void add_device(const ::std::string& value);
+  #if LANG_CXX11
+  void add_device(::std::string&& value);
+  #endif
+  void add_device(const char* value);
+  void add_device(const char* value, size_t size);
+  const ::google::protobuf::RepeatedPtrField< ::std::string>& device() const;
+  ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_device();
+
   // @@protoc_insertion_point(class_scope:tensorflow.eager.QueueResponse)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
   ::google::protobuf::RepeatedPtrField< ::tensorflow::TensorShapeProto > shape_;
+  ::google::protobuf::RepeatedPtrField< ::tensorflow::TensorProto > tensor_;
+  ::google::protobuf::RepeatedPtrField< ::std::string> device_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::TableStruct;
 };
@@ -892,11 +1027,23 @@ class CreateContextRequest : public ::google::protobuf::Message /* @@protoc_inse
   ::google::protobuf::uint64 context_id() const;
   void set_context_id(::google::protobuf::uint64 value);
 
+  // fixed64 context_view_id = 8;
+  void clear_context_view_id();
+  static const int kContextViewIdFieldNumber = 8;
+  ::google::protobuf::uint64 context_view_id() const;
+  void set_context_view_id(::google::protobuf::uint64 value);
+
   // bool async = 2;
   void clear_async();
   static const int kAsyncFieldNumber = 2;
   bool async() const;
   void set_async(bool value);
+
+  // bool lazy_copy_remote_function_inputs = 9;
+  void clear_lazy_copy_remote_function_inputs();
+  static const int kLazyCopyRemoteFunctionInputsFieldNumber = 9;
+  bool lazy_copy_remote_function_inputs() const;
+  void set_lazy_copy_remote_function_inputs(bool value);
 
   // @@protoc_insertion_point(class_scope:tensorflow.eager.CreateContextRequest)
  private:
@@ -907,7 +1054,9 @@ class CreateContextRequest : public ::google::protobuf::Message /* @@protoc_inse
   ::tensorflow::VersionDef* version_def_;
   ::google::protobuf::int64 keep_alive_secs_;
   ::google::protobuf::uint64 context_id_;
+  ::google::protobuf::uint64 context_view_id_;
   bool async_;
+  bool lazy_copy_remote_function_inputs_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::TableStruct;
 };
@@ -1022,6 +1171,251 @@ class CreateContextResponse : public ::google::protobuf::Message /* @@protoc_ins
 };
 // -------------------------------------------------------------------
 
+class UpdateContextRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.eager.UpdateContextRequest) */ {
+ public:
+  UpdateContextRequest();
+  virtual ~UpdateContextRequest();
+
+  UpdateContextRequest(const UpdateContextRequest& from);
+
+  inline UpdateContextRequest& operator=(const UpdateContextRequest& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  UpdateContextRequest(UpdateContextRequest&& from) noexcept
+    : UpdateContextRequest() {
+    *this = ::std::move(from);
+  }
+
+  inline UpdateContextRequest& operator=(UpdateContextRequest&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const UpdateContextRequest& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const UpdateContextRequest* internal_default_instance() {
+    return reinterpret_cast<const UpdateContextRequest*>(
+               &_UpdateContextRequest_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    7;
+
+  void Swap(UpdateContextRequest* other);
+  friend void swap(UpdateContextRequest& a, UpdateContextRequest& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline UpdateContextRequest* New() const final {
+    return CreateMaybeMessage<UpdateContextRequest>(NULL);
+  }
+
+  UpdateContextRequest* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<UpdateContextRequest>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const UpdateContextRequest& from);
+  void MergeFrom(const UpdateContextRequest& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(UpdateContextRequest* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // repeated .tensorflow.DeviceAttributes cluster_device_attributes = 2;
+  int cluster_device_attributes_size() const;
+  void clear_cluster_device_attributes();
+  static const int kClusterDeviceAttributesFieldNumber = 2;
+  ::tensorflow::DeviceAttributes* mutable_cluster_device_attributes(int index);
+  ::google::protobuf::RepeatedPtrField< ::tensorflow::DeviceAttributes >*
+      mutable_cluster_device_attributes();
+  const ::tensorflow::DeviceAttributes& cluster_device_attributes(int index) const;
+  ::tensorflow::DeviceAttributes* add_cluster_device_attributes();
+  const ::google::protobuf::RepeatedPtrField< ::tensorflow::DeviceAttributes >&
+      cluster_device_attributes() const;
+
+  // .tensorflow.ServerDef server_def = 1;
+  bool has_server_def() const;
+  void clear_server_def();
+  static const int kServerDefFieldNumber = 1;
+  private:
+  const ::tensorflow::ServerDef& _internal_server_def() const;
+  public:
+  const ::tensorflow::ServerDef& server_def() const;
+  ::tensorflow::ServerDef* release_server_def();
+  ::tensorflow::ServerDef* mutable_server_def();
+  void set_allocated_server_def(::tensorflow::ServerDef* server_def);
+
+  // fixed64 context_id = 3;
+  void clear_context_id();
+  static const int kContextIdFieldNumber = 3;
+  ::google::protobuf::uint64 context_id() const;
+  void set_context_id(::google::protobuf::uint64 value);
+
+  // fixed64 context_view_id = 4;
+  void clear_context_view_id();
+  static const int kContextViewIdFieldNumber = 4;
+  ::google::protobuf::uint64 context_view_id() const;
+  void set_context_view_id(::google::protobuf::uint64 value);
+
+  // @@protoc_insertion_point(class_scope:tensorflow.eager.UpdateContextRequest)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::RepeatedPtrField< ::tensorflow::DeviceAttributes > cluster_device_attributes_;
+  ::tensorflow::ServerDef* server_def_;
+  ::google::protobuf::uint64 context_id_;
+  ::google::protobuf::uint64 context_view_id_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
+class UpdateContextResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.eager.UpdateContextResponse) */ {
+ public:
+  UpdateContextResponse();
+  virtual ~UpdateContextResponse();
+
+  UpdateContextResponse(const UpdateContextResponse& from);
+
+  inline UpdateContextResponse& operator=(const UpdateContextResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  UpdateContextResponse(UpdateContextResponse&& from) noexcept
+    : UpdateContextResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline UpdateContextResponse& operator=(UpdateContextResponse&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const UpdateContextResponse& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const UpdateContextResponse* internal_default_instance() {
+    return reinterpret_cast<const UpdateContextResponse*>(
+               &_UpdateContextResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    8;
+
+  void Swap(UpdateContextResponse* other);
+  friend void swap(UpdateContextResponse& a, UpdateContextResponse& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline UpdateContextResponse* New() const final {
+    return CreateMaybeMessage<UpdateContextResponse>(NULL);
+  }
+
+  UpdateContextResponse* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<UpdateContextResponse>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const UpdateContextResponse& from);
+  void MergeFrom(const UpdateContextResponse& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(UpdateContextResponse* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // repeated .tensorflow.DeviceAttributes device_attributes = 1;
+  int device_attributes_size() const;
+  void clear_device_attributes();
+  static const int kDeviceAttributesFieldNumber = 1;
+  ::tensorflow::DeviceAttributes* mutable_device_attributes(int index);
+  ::google::protobuf::RepeatedPtrField< ::tensorflow::DeviceAttributes >*
+      mutable_device_attributes();
+  const ::tensorflow::DeviceAttributes& device_attributes(int index) const;
+  ::tensorflow::DeviceAttributes* add_device_attributes();
+  const ::google::protobuf::RepeatedPtrField< ::tensorflow::DeviceAttributes >&
+      device_attributes() const;
+
+  // @@protoc_insertion_point(class_scope:tensorflow.eager.UpdateContextResponse)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::RepeatedPtrField< ::tensorflow::DeviceAttributes > device_attributes_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
 class EnqueueRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.eager.EnqueueRequest) */ {
  public:
   EnqueueRequest();
@@ -1057,7 +1451,7 @@ class EnqueueRequest : public ::google::protobuf::Message /* @@protoc_insertion_
                &_EnqueueRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    7;
+    9;
 
   void Swap(EnqueueRequest* other);
   friend void swap(EnqueueRequest& a, EnqueueRequest& b) {
@@ -1173,7 +1567,7 @@ class EnqueueResponse : public ::google::protobuf::Message /* @@protoc_insertion
                &_EnqueueResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    8;
+    10;
 
   void Swap(EnqueueResponse* other);
   friend void swap(EnqueueResponse& a, EnqueueResponse& b) {
@@ -1282,7 +1676,7 @@ class WaitQueueDoneRequest : public ::google::protobuf::Message /* @@protoc_inse
                &_WaitQueueDoneRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    9;
+    11;
 
   void Swap(WaitQueueDoneRequest* other);
   friend void swap(WaitQueueDoneRequest& a, WaitQueueDoneRequest& b) {
@@ -1399,7 +1793,7 @@ class WaitQueueDoneResponse : public ::google::protobuf::Message /* @@protoc_ins
                &_WaitQueueDoneResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    10;
+    12;
 
   void Swap(WaitQueueDoneResponse* other);
   friend void swap(WaitQueueDoneResponse& a, WaitQueueDoneResponse& b) {
@@ -1460,6 +1854,258 @@ class WaitQueueDoneResponse : public ::google::protobuf::Message /* @@protoc_ins
 };
 // -------------------------------------------------------------------
 
+class RunComponentFunctionRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.eager.RunComponentFunctionRequest) */ {
+ public:
+  RunComponentFunctionRequest();
+  virtual ~RunComponentFunctionRequest();
+
+  RunComponentFunctionRequest(const RunComponentFunctionRequest& from);
+
+  inline RunComponentFunctionRequest& operator=(const RunComponentFunctionRequest& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  RunComponentFunctionRequest(RunComponentFunctionRequest&& from) noexcept
+    : RunComponentFunctionRequest() {
+    *this = ::std::move(from);
+  }
+
+  inline RunComponentFunctionRequest& operator=(RunComponentFunctionRequest&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const RunComponentFunctionRequest& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const RunComponentFunctionRequest* internal_default_instance() {
+    return reinterpret_cast<const RunComponentFunctionRequest*>(
+               &_RunComponentFunctionRequest_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    13;
+
+  void Swap(RunComponentFunctionRequest* other);
+  friend void swap(RunComponentFunctionRequest& a, RunComponentFunctionRequest& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline RunComponentFunctionRequest* New() const final {
+    return CreateMaybeMessage<RunComponentFunctionRequest>(NULL);
+  }
+
+  RunComponentFunctionRequest* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<RunComponentFunctionRequest>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const RunComponentFunctionRequest& from);
+  void MergeFrom(const RunComponentFunctionRequest& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(RunComponentFunctionRequest* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // repeated int32 output_num = 3;
+  int output_num_size() const;
+  void clear_output_num();
+  static const int kOutputNumFieldNumber = 3;
+  ::google::protobuf::int32 output_num(int index) const;
+  void set_output_num(int index, ::google::protobuf::int32 value);
+  void add_output_num(::google::protobuf::int32 value);
+  const ::google::protobuf::RepeatedField< ::google::protobuf::int32 >&
+      output_num() const;
+  ::google::protobuf::RepeatedField< ::google::protobuf::int32 >*
+      mutable_output_num();
+
+  // .tensorflow.eager.Operation operation = 2;
+  bool has_operation() const;
+  void clear_operation();
+  static const int kOperationFieldNumber = 2;
+  private:
+  const ::tensorflow::eager::Operation& _internal_operation() const;
+  public:
+  const ::tensorflow::eager::Operation& operation() const;
+  ::tensorflow::eager::Operation* release_operation();
+  ::tensorflow::eager::Operation* mutable_operation();
+  void set_allocated_operation(::tensorflow::eager::Operation* operation);
+
+  // fixed64 context_id = 1;
+  void clear_context_id();
+  static const int kContextIdFieldNumber = 1;
+  ::google::protobuf::uint64 context_id() const;
+  void set_context_id(::google::protobuf::uint64 value);
+
+  // @@protoc_insertion_point(class_scope:tensorflow.eager.RunComponentFunctionRequest)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::RepeatedField< ::google::protobuf::int32 > output_num_;
+  mutable int _output_num_cached_byte_size_;
+  ::tensorflow::eager::Operation* operation_;
+  ::google::protobuf::uint64 context_id_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
+class RunComponentFunctionResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.eager.RunComponentFunctionResponse) */ {
+ public:
+  RunComponentFunctionResponse();
+  virtual ~RunComponentFunctionResponse();
+
+  RunComponentFunctionResponse(const RunComponentFunctionResponse& from);
+
+  inline RunComponentFunctionResponse& operator=(const RunComponentFunctionResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  RunComponentFunctionResponse(RunComponentFunctionResponse&& from) noexcept
+    : RunComponentFunctionResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline RunComponentFunctionResponse& operator=(RunComponentFunctionResponse&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const RunComponentFunctionResponse& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const RunComponentFunctionResponse* internal_default_instance() {
+    return reinterpret_cast<const RunComponentFunctionResponse*>(
+               &_RunComponentFunctionResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    14;
+
+  void Swap(RunComponentFunctionResponse* other);
+  friend void swap(RunComponentFunctionResponse& a, RunComponentFunctionResponse& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline RunComponentFunctionResponse* New() const final {
+    return CreateMaybeMessage<RunComponentFunctionResponse>(NULL);
+  }
+
+  RunComponentFunctionResponse* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<RunComponentFunctionResponse>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const RunComponentFunctionResponse& from);
+  void MergeFrom(const RunComponentFunctionResponse& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(RunComponentFunctionResponse* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // repeated .tensorflow.TensorShapeProto shape = 1;
+  int shape_size() const;
+  void clear_shape();
+  static const int kShapeFieldNumber = 1;
+  ::tensorflow::TensorShapeProto* mutable_shape(int index);
+  ::google::protobuf::RepeatedPtrField< ::tensorflow::TensorShapeProto >*
+      mutable_shape();
+  const ::tensorflow::TensorShapeProto& shape(int index) const;
+  ::tensorflow::TensorShapeProto* add_shape();
+  const ::google::protobuf::RepeatedPtrField< ::tensorflow::TensorShapeProto >&
+      shape() const;
+
+  // repeated .tensorflow.TensorProto tensor = 2;
+  int tensor_size() const;
+  void clear_tensor();
+  static const int kTensorFieldNumber = 2;
+  ::tensorflow::TensorProto* mutable_tensor(int index);
+  ::google::protobuf::RepeatedPtrField< ::tensorflow::TensorProto >*
+      mutable_tensor();
+  const ::tensorflow::TensorProto& tensor(int index) const;
+  ::tensorflow::TensorProto* add_tensor();
+  const ::google::protobuf::RepeatedPtrField< ::tensorflow::TensorProto >&
+      tensor() const;
+
+  // @@protoc_insertion_point(class_scope:tensorflow.eager.RunComponentFunctionResponse)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::RepeatedPtrField< ::tensorflow::TensorShapeProto > shape_;
+  ::google::protobuf::RepeatedPtrField< ::tensorflow::TensorProto > tensor_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
 class KeepAliveRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.eager.KeepAliveRequest) */ {
  public:
   KeepAliveRequest();
@@ -1495,7 +2141,7 @@ class KeepAliveRequest : public ::google::protobuf::Message /* @@protoc_insertio
                &_KeepAliveRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    11;
+    15;
 
   void Swap(KeepAliveRequest* other);
   friend void swap(KeepAliveRequest& a, KeepAliveRequest& b) {
@@ -1598,7 +2244,7 @@ class KeepAliveResponse : public ::google::protobuf::Message /* @@protoc_inserti
                &_KeepAliveResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    12;
+    16;
 
   void Swap(KeepAliveResponse* other);
   friend void swap(KeepAliveResponse& a, KeepAliveResponse& b) {
@@ -1650,10 +2296,17 @@ class KeepAliveResponse : public ::google::protobuf::Message /* @@protoc_inserti
 
   // accessors -------------------------------------------------------
 
+  // fixed64 context_view_id = 1;
+  void clear_context_view_id();
+  static const int kContextViewIdFieldNumber = 1;
+  ::google::protobuf::uint64 context_view_id() const;
+  void set_context_view_id(::google::protobuf::uint64 value);
+
   // @@protoc_insertion_point(class_scope:tensorflow.eager.KeepAliveResponse)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::uint64 context_view_id_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::TableStruct;
 };
@@ -1694,7 +2347,7 @@ class CloseContextRequest : public ::google::protobuf::Message /* @@protoc_inser
                &_CloseContextRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    13;
+    17;
 
   void Swap(CloseContextRequest* other);
   friend void swap(CloseContextRequest& a, CloseContextRequest& b) {
@@ -1752,11 +2405,18 @@ class CloseContextRequest : public ::google::protobuf::Message /* @@protoc_inser
   ::google::protobuf::uint64 context_id() const;
   void set_context_id(::google::protobuf::uint64 value);
 
+  // fixed64 context_view_id = 2;
+  void clear_context_view_id();
+  static const int kContextViewIdFieldNumber = 2;
+  ::google::protobuf::uint64 context_view_id() const;
+  void set_context_view_id(::google::protobuf::uint64 value);
+
   // @@protoc_insertion_point(class_scope:tensorflow.eager.CloseContextRequest)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
   ::google::protobuf::uint64 context_id_;
+  ::google::protobuf::uint64 context_view_id_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::TableStruct;
 };
@@ -1797,7 +2457,7 @@ class CloseContextResponse : public ::google::protobuf::Message /* @@protoc_inse
                &_CloseContextResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    14;
+    18;
 
   void Swap(CloseContextResponse* other);
   friend void swap(CloseContextResponse& a, CloseContextResponse& b) {
@@ -1858,24 +2518,24 @@ class CloseContextResponse : public ::google::protobuf::Message /* @@protoc_inse
 };
 // -------------------------------------------------------------------
 
-class RegisterFunctionRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.eager.RegisterFunctionRequest) */ {
+class RegisterFunctionOp : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.eager.RegisterFunctionOp) */ {
  public:
-  RegisterFunctionRequest();
-  virtual ~RegisterFunctionRequest();
+  RegisterFunctionOp();
+  virtual ~RegisterFunctionOp();
 
-  RegisterFunctionRequest(const RegisterFunctionRequest& from);
+  RegisterFunctionOp(const RegisterFunctionOp& from);
 
-  inline RegisterFunctionRequest& operator=(const RegisterFunctionRequest& from) {
+  inline RegisterFunctionOp& operator=(const RegisterFunctionOp& from) {
     CopyFrom(from);
     return *this;
   }
   #if LANG_CXX11
-  RegisterFunctionRequest(RegisterFunctionRequest&& from) noexcept
-    : RegisterFunctionRequest() {
+  RegisterFunctionOp(RegisterFunctionOp&& from) noexcept
+    : RegisterFunctionOp() {
     *this = ::std::move(from);
   }
 
-  inline RegisterFunctionRequest& operator=(RegisterFunctionRequest&& from) noexcept {
+  inline RegisterFunctionOp& operator=(RegisterFunctionOp&& from) noexcept {
     if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
       if (this != &from) InternalSwap(&from);
     } else {
@@ -1885,34 +2545,34 @@ class RegisterFunctionRequest : public ::google::protobuf::Message /* @@protoc_i
   }
   #endif
   static const ::google::protobuf::Descriptor* descriptor();
-  static const RegisterFunctionRequest& default_instance();
+  static const RegisterFunctionOp& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
-  static inline const RegisterFunctionRequest* internal_default_instance() {
-    return reinterpret_cast<const RegisterFunctionRequest*>(
-               &_RegisterFunctionRequest_default_instance_);
+  static inline const RegisterFunctionOp* internal_default_instance() {
+    return reinterpret_cast<const RegisterFunctionOp*>(
+               &_RegisterFunctionOp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    15;
+    19;
 
-  void Swap(RegisterFunctionRequest* other);
-  friend void swap(RegisterFunctionRequest& a, RegisterFunctionRequest& b) {
+  void Swap(RegisterFunctionOp* other);
+  friend void swap(RegisterFunctionOp& a, RegisterFunctionOp& b) {
     a.Swap(&b);
   }
 
   // implements Message ----------------------------------------------
 
-  inline RegisterFunctionRequest* New() const final {
-    return CreateMaybeMessage<RegisterFunctionRequest>(NULL);
+  inline RegisterFunctionOp* New() const final {
+    return CreateMaybeMessage<RegisterFunctionOp>(NULL);
   }
 
-  RegisterFunctionRequest* New(::google::protobuf::Arena* arena) const final {
-    return CreateMaybeMessage<RegisterFunctionRequest>(arena);
+  RegisterFunctionOp* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<RegisterFunctionOp>(arena);
   }
   void CopyFrom(const ::google::protobuf::Message& from) final;
   void MergeFrom(const ::google::protobuf::Message& from) final;
-  void CopyFrom(const RegisterFunctionRequest& from);
-  void MergeFrom(const RegisterFunctionRequest& from);
+  void CopyFrom(const RegisterFunctionOp& from);
+  void MergeFrom(const RegisterFunctionOp& from);
   void Clear() final;
   bool IsInitialized() const final;
 
@@ -1929,7 +2589,7 @@ class RegisterFunctionRequest : public ::google::protobuf::Message /* @@protoc_i
   void SharedCtor();
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(RegisterFunctionRequest* other);
+  void InternalSwap(RegisterFunctionOp* other);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
@@ -1945,10 +2605,10 @@ class RegisterFunctionRequest : public ::google::protobuf::Message /* @@protoc_i
 
   // accessors -------------------------------------------------------
 
-  // .tensorflow.FunctionDef function_def = 2;
+  // .tensorflow.FunctionDef function_def = 1;
   bool has_function_def() const;
   void clear_function_def();
-  static const int kFunctionDefFieldNumber = 2;
+  static const int kFunctionDefFieldNumber = 1;
   private:
   const ::tensorflow::FunctionDef& _internal_function_def() const;
   public:
@@ -1957,41 +2617,54 @@ class RegisterFunctionRequest : public ::google::protobuf::Message /* @@protoc_i
   ::tensorflow::FunctionDef* mutable_function_def();
   void set_allocated_function_def(::tensorflow::FunctionDef* function_def);
 
-  // fixed64 context_id = 1;
-  void clear_context_id();
-  static const int kContextIdFieldNumber = 1;
-  ::google::protobuf::uint64 context_id() const;
-  void set_context_id(::google::protobuf::uint64 value);
+  // .tensorflow.FunctionDefLibrary library = 3;
+  bool has_library() const;
+  void clear_library();
+  static const int kLibraryFieldNumber = 3;
+  private:
+  const ::tensorflow::FunctionDefLibrary& _internal_library() const;
+  public:
+  const ::tensorflow::FunctionDefLibrary& library() const;
+  ::tensorflow::FunctionDefLibrary* release_library();
+  ::tensorflow::FunctionDefLibrary* mutable_library();
+  void set_allocated_library(::tensorflow::FunctionDefLibrary* library);
 
-  // @@protoc_insertion_point(class_scope:tensorflow.eager.RegisterFunctionRequest)
+  // bool is_component_function = 2;
+  void clear_is_component_function();
+  static const int kIsComponentFunctionFieldNumber = 2;
+  bool is_component_function() const;
+  void set_is_component_function(bool value);
+
+  // @@protoc_insertion_point(class_scope:tensorflow.eager.RegisterFunctionOp)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
   ::tensorflow::FunctionDef* function_def_;
-  ::google::protobuf::uint64 context_id_;
+  ::tensorflow::FunctionDefLibrary* library_;
+  bool is_component_function_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::TableStruct;
 };
 // -------------------------------------------------------------------
 
-class RegisterFunctionResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.eager.RegisterFunctionResponse) */ {
+class CleanupFunctionOp : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.eager.CleanupFunctionOp) */ {
  public:
-  RegisterFunctionResponse();
-  virtual ~RegisterFunctionResponse();
+  CleanupFunctionOp();
+  virtual ~CleanupFunctionOp();
 
-  RegisterFunctionResponse(const RegisterFunctionResponse& from);
+  CleanupFunctionOp(const CleanupFunctionOp& from);
 
-  inline RegisterFunctionResponse& operator=(const RegisterFunctionResponse& from) {
+  inline CleanupFunctionOp& operator=(const CleanupFunctionOp& from) {
     CopyFrom(from);
     return *this;
   }
   #if LANG_CXX11
-  RegisterFunctionResponse(RegisterFunctionResponse&& from) noexcept
-    : RegisterFunctionResponse() {
+  CleanupFunctionOp(CleanupFunctionOp&& from) noexcept
+    : CleanupFunctionOp() {
     *this = ::std::move(from);
   }
 
-  inline RegisterFunctionResponse& operator=(RegisterFunctionResponse&& from) noexcept {
+  inline CleanupFunctionOp& operator=(CleanupFunctionOp&& from) noexcept {
     if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
       if (this != &from) InternalSwap(&from);
     } else {
@@ -2001,34 +2674,34 @@ class RegisterFunctionResponse : public ::google::protobuf::Message /* @@protoc_
   }
   #endif
   static const ::google::protobuf::Descriptor* descriptor();
-  static const RegisterFunctionResponse& default_instance();
+  static const CleanupFunctionOp& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
-  static inline const RegisterFunctionResponse* internal_default_instance() {
-    return reinterpret_cast<const RegisterFunctionResponse*>(
-               &_RegisterFunctionResponse_default_instance_);
+  static inline const CleanupFunctionOp* internal_default_instance() {
+    return reinterpret_cast<const CleanupFunctionOp*>(
+               &_CleanupFunctionOp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    16;
+    20;
 
-  void Swap(RegisterFunctionResponse* other);
-  friend void swap(RegisterFunctionResponse& a, RegisterFunctionResponse& b) {
+  void Swap(CleanupFunctionOp* other);
+  friend void swap(CleanupFunctionOp& a, CleanupFunctionOp& b) {
     a.Swap(&b);
   }
 
   // implements Message ----------------------------------------------
 
-  inline RegisterFunctionResponse* New() const final {
-    return CreateMaybeMessage<RegisterFunctionResponse>(NULL);
+  inline CleanupFunctionOp* New() const final {
+    return CreateMaybeMessage<CleanupFunctionOp>(NULL);
   }
 
-  RegisterFunctionResponse* New(::google::protobuf::Arena* arena) const final {
-    return CreateMaybeMessage<RegisterFunctionResponse>(arena);
+  CleanupFunctionOp* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<CleanupFunctionOp>(arena);
   }
   void CopyFrom(const ::google::protobuf::Message& from) final;
   void MergeFrom(const ::google::protobuf::Message& from) final;
-  void CopyFrom(const RegisterFunctionResponse& from);
-  void MergeFrom(const RegisterFunctionResponse& from);
+  void CopyFrom(const CleanupFunctionOp& from);
+  void MergeFrom(const CleanupFunctionOp& from);
   void Clear() final;
   bool IsInitialized() const final;
 
@@ -2045,7 +2718,7 @@ class RegisterFunctionResponse : public ::google::protobuf::Message /* @@protoc_
   void SharedCtor();
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(RegisterFunctionResponse* other);
+  void InternalSwap(CleanupFunctionOp* other);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
@@ -2061,7 +2734,110 @@ class RegisterFunctionResponse : public ::google::protobuf::Message /* @@protoc_
 
   // accessors -------------------------------------------------------
 
-  // @@protoc_insertion_point(class_scope:tensorflow.eager.RegisterFunctionResponse)
+  // int64 step_id = 1;
+  void clear_step_id();
+  static const int kStepIdFieldNumber = 1;
+  ::google::protobuf::int64 step_id() const;
+  void set_step_id(::google::protobuf::int64 value);
+
+  // @@protoc_insertion_point(class_scope:tensorflow.eager.CleanupFunctionOp)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::int64 step_id_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
+class SyncRemoteExecutorForStream : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.eager.SyncRemoteExecutorForStream) */ {
+ public:
+  SyncRemoteExecutorForStream();
+  virtual ~SyncRemoteExecutorForStream();
+
+  SyncRemoteExecutorForStream(const SyncRemoteExecutorForStream& from);
+
+  inline SyncRemoteExecutorForStream& operator=(const SyncRemoteExecutorForStream& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  SyncRemoteExecutorForStream(SyncRemoteExecutorForStream&& from) noexcept
+    : SyncRemoteExecutorForStream() {
+    *this = ::std::move(from);
+  }
+
+  inline SyncRemoteExecutorForStream& operator=(SyncRemoteExecutorForStream&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const SyncRemoteExecutorForStream& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const SyncRemoteExecutorForStream* internal_default_instance() {
+    return reinterpret_cast<const SyncRemoteExecutorForStream*>(
+               &_SyncRemoteExecutorForStream_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    21;
+
+  void Swap(SyncRemoteExecutorForStream* other);
+  friend void swap(SyncRemoteExecutorForStream& a, SyncRemoteExecutorForStream& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline SyncRemoteExecutorForStream* New() const final {
+    return CreateMaybeMessage<SyncRemoteExecutorForStream>(NULL);
+  }
+
+  SyncRemoteExecutorForStream* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<SyncRemoteExecutorForStream>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const SyncRemoteExecutorForStream& from);
+  void MergeFrom(const SyncRemoteExecutorForStream& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(SyncRemoteExecutorForStream* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // @@protoc_insertion_point(class_scope:tensorflow.eager.SyncRemoteExecutorForStream)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
@@ -2105,7 +2881,7 @@ class SendTensorOp : public ::google::protobuf::Message /* @@protoc_insertion_po
                &_SendTensorOp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    17;
+    22;
 
   void Swap(SendTensorOp* other);
   friend void swap(SendTensorOp& a, SendTensorOp& b) {
@@ -2201,24 +2977,24 @@ class SendTensorOp : public ::google::protobuf::Message /* @@protoc_insertion_po
 };
 // -------------------------------------------------------------------
 
-class SendTensorRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.eager.SendTensorRequest) */ {
+class SendPackedHandleOp_LocalTensorHandle : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.eager.SendPackedHandleOp.LocalTensorHandle) */ {
  public:
-  SendTensorRequest();
-  virtual ~SendTensorRequest();
+  SendPackedHandleOp_LocalTensorHandle();
+  virtual ~SendPackedHandleOp_LocalTensorHandle();
 
-  SendTensorRequest(const SendTensorRequest& from);
+  SendPackedHandleOp_LocalTensorHandle(const SendPackedHandleOp_LocalTensorHandle& from);
 
-  inline SendTensorRequest& operator=(const SendTensorRequest& from) {
+  inline SendPackedHandleOp_LocalTensorHandle& operator=(const SendPackedHandleOp_LocalTensorHandle& from) {
     CopyFrom(from);
     return *this;
   }
   #if LANG_CXX11
-  SendTensorRequest(SendTensorRequest&& from) noexcept
-    : SendTensorRequest() {
+  SendPackedHandleOp_LocalTensorHandle(SendPackedHandleOp_LocalTensorHandle&& from) noexcept
+    : SendPackedHandleOp_LocalTensorHandle() {
     *this = ::std::move(from);
   }
 
-  inline SendTensorRequest& operator=(SendTensorRequest&& from) noexcept {
+  inline SendPackedHandleOp_LocalTensorHandle& operator=(SendPackedHandleOp_LocalTensorHandle&& from) noexcept {
     if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
       if (this != &from) InternalSwap(&from);
     } else {
@@ -2228,34 +3004,34 @@ class SendTensorRequest : public ::google::protobuf::Message /* @@protoc_inserti
   }
   #endif
   static const ::google::protobuf::Descriptor* descriptor();
-  static const SendTensorRequest& default_instance();
+  static const SendPackedHandleOp_LocalTensorHandle& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
-  static inline const SendTensorRequest* internal_default_instance() {
-    return reinterpret_cast<const SendTensorRequest*>(
-               &_SendTensorRequest_default_instance_);
+  static inline const SendPackedHandleOp_LocalTensorHandle* internal_default_instance() {
+    return reinterpret_cast<const SendPackedHandleOp_LocalTensorHandle*>(
+               &_SendPackedHandleOp_LocalTensorHandle_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    18;
+    23;
 
-  void Swap(SendTensorRequest* other);
-  friend void swap(SendTensorRequest& a, SendTensorRequest& b) {
+  void Swap(SendPackedHandleOp_LocalTensorHandle* other);
+  friend void swap(SendPackedHandleOp_LocalTensorHandle& a, SendPackedHandleOp_LocalTensorHandle& b) {
     a.Swap(&b);
   }
 
   // implements Message ----------------------------------------------
 
-  inline SendTensorRequest* New() const final {
-    return CreateMaybeMessage<SendTensorRequest>(NULL);
+  inline SendPackedHandleOp_LocalTensorHandle* New() const final {
+    return CreateMaybeMessage<SendPackedHandleOp_LocalTensorHandle>(NULL);
   }
 
-  SendTensorRequest* New(::google::protobuf::Arena* arena) const final {
-    return CreateMaybeMessage<SendTensorRequest>(arena);
+  SendPackedHandleOp_LocalTensorHandle* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<SendPackedHandleOp_LocalTensorHandle>(arena);
   }
   void CopyFrom(const ::google::protobuf::Message& from) final;
   void MergeFrom(const ::google::protobuf::Message& from) final;
-  void CopyFrom(const SendTensorRequest& from);
-  void MergeFrom(const SendTensorRequest& from);
+  void CopyFrom(const SendPackedHandleOp_LocalTensorHandle& from);
+  void MergeFrom(const SendPackedHandleOp_LocalTensorHandle& from);
   void Clear() final;
   bool IsInitialized() const final;
 
@@ -2272,7 +3048,7 @@ class SendTensorRequest : public ::google::protobuf::Message /* @@protoc_inserti
   void SharedCtor();
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(SendTensorRequest* other);
+  void InternalSwap(SendPackedHandleOp_LocalTensorHandle* other);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
@@ -2288,21 +3064,288 @@ class SendTensorRequest : public ::google::protobuf::Message /* @@protoc_inserti
 
   // accessors -------------------------------------------------------
 
-  // repeated .tensorflow.TensorProto tensors = 3;
-  int tensors_size() const;
-  void clear_tensors();
-  static const int kTensorsFieldNumber = 3;
-  ::tensorflow::TensorProto* mutable_tensors(int index);
-  ::google::protobuf::RepeatedPtrField< ::tensorflow::TensorProto >*
-      mutable_tensors();
-  const ::tensorflow::TensorProto& tensors(int index) const;
-  ::tensorflow::TensorProto* add_tensors();
-  const ::google::protobuf::RepeatedPtrField< ::tensorflow::TensorProto >&
-      tensors() const;
+  // string device = 2;
+  void clear_device();
+  static const int kDeviceFieldNumber = 2;
+  const ::std::string& device() const;
+  void set_device(const ::std::string& value);
+  #if LANG_CXX11
+  void set_device(::std::string&& value);
+  #endif
+  void set_device(const char* value);
+  void set_device(const char* value, size_t size);
+  ::std::string* mutable_device();
+  ::std::string* release_device();
+  void set_allocated_device(::std::string* device);
 
-  // string device_name = 4;
+  // .tensorflow.TensorProto tensor = 1;
+  bool has_tensor() const;
+  void clear_tensor();
+  static const int kTensorFieldNumber = 1;
+  private:
+  const ::tensorflow::TensorProto& _internal_tensor() const;
+  public:
+  const ::tensorflow::TensorProto& tensor() const;
+  ::tensorflow::TensorProto* release_tensor();
+  ::tensorflow::TensorProto* mutable_tensor();
+  void set_allocated_tensor(::tensorflow::TensorProto* tensor);
+
+  // @@protoc_insertion_point(class_scope:tensorflow.eager.SendPackedHandleOp.LocalTensorHandle)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::internal::ArenaStringPtr device_;
+  ::tensorflow::TensorProto* tensor_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
+class SendPackedHandleOp_Handle : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.eager.SendPackedHandleOp.Handle) */ {
+ public:
+  SendPackedHandleOp_Handle();
+  virtual ~SendPackedHandleOp_Handle();
+
+  SendPackedHandleOp_Handle(const SendPackedHandleOp_Handle& from);
+
+  inline SendPackedHandleOp_Handle& operator=(const SendPackedHandleOp_Handle& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  SendPackedHandleOp_Handle(SendPackedHandleOp_Handle&& from) noexcept
+    : SendPackedHandleOp_Handle() {
+    *this = ::std::move(from);
+  }
+
+  inline SendPackedHandleOp_Handle& operator=(SendPackedHandleOp_Handle&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const SendPackedHandleOp_Handle& default_instance();
+
+  enum ItemCase {
+    kLocalHandle = 1,
+    kRemoteHandle = 2,
+    ITEM_NOT_SET = 0,
+  };
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const SendPackedHandleOp_Handle* internal_default_instance() {
+    return reinterpret_cast<const SendPackedHandleOp_Handle*>(
+               &_SendPackedHandleOp_Handle_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    24;
+
+  void Swap(SendPackedHandleOp_Handle* other);
+  friend void swap(SendPackedHandleOp_Handle& a, SendPackedHandleOp_Handle& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline SendPackedHandleOp_Handle* New() const final {
+    return CreateMaybeMessage<SendPackedHandleOp_Handle>(NULL);
+  }
+
+  SendPackedHandleOp_Handle* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<SendPackedHandleOp_Handle>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const SendPackedHandleOp_Handle& from);
+  void MergeFrom(const SendPackedHandleOp_Handle& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(SendPackedHandleOp_Handle* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // .tensorflow.eager.SendPackedHandleOp.LocalTensorHandle local_handle = 1;
+  bool has_local_handle() const;
+  void clear_local_handle();
+  static const int kLocalHandleFieldNumber = 1;
+  private:
+  const ::tensorflow::eager::SendPackedHandleOp_LocalTensorHandle& _internal_local_handle() const;
+  public:
+  const ::tensorflow::eager::SendPackedHandleOp_LocalTensorHandle& local_handle() const;
+  ::tensorflow::eager::SendPackedHandleOp_LocalTensorHandle* release_local_handle();
+  ::tensorflow::eager::SendPackedHandleOp_LocalTensorHandle* mutable_local_handle();
+  void set_allocated_local_handle(::tensorflow::eager::SendPackedHandleOp_LocalTensorHandle* local_handle);
+
+  // .tensorflow.eager.RemoteTensorHandle remote_handle = 2;
+  bool has_remote_handle() const;
+  void clear_remote_handle();
+  static const int kRemoteHandleFieldNumber = 2;
+  private:
+  const ::tensorflow::eager::RemoteTensorHandle& _internal_remote_handle() const;
+  public:
+  const ::tensorflow::eager::RemoteTensorHandle& remote_handle() const;
+  ::tensorflow::eager::RemoteTensorHandle* release_remote_handle();
+  ::tensorflow::eager::RemoteTensorHandle* mutable_remote_handle();
+  void set_allocated_remote_handle(::tensorflow::eager::RemoteTensorHandle* remote_handle);
+
+  void clear_item();
+  ItemCase item_case() const;
+  // @@protoc_insertion_point(class_scope:tensorflow.eager.SendPackedHandleOp.Handle)
+ private:
+  void set_has_local_handle();
+  void set_has_remote_handle();
+
+  inline bool has_item() const;
+  inline void clear_has_item();
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  union ItemUnion {
+    ItemUnion() {}
+    ::tensorflow::eager::SendPackedHandleOp_LocalTensorHandle* local_handle_;
+    ::tensorflow::eager::RemoteTensorHandle* remote_handle_;
+  } item_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  ::google::protobuf::uint32 _oneof_case_[1];
+
+  friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
+class SendPackedHandleOp : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.eager.SendPackedHandleOp) */ {
+ public:
+  SendPackedHandleOp();
+  virtual ~SendPackedHandleOp();
+
+  SendPackedHandleOp(const SendPackedHandleOp& from);
+
+  inline SendPackedHandleOp& operator=(const SendPackedHandleOp& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  SendPackedHandleOp(SendPackedHandleOp&& from) noexcept
+    : SendPackedHandleOp() {
+    *this = ::std::move(from);
+  }
+
+  inline SendPackedHandleOp& operator=(SendPackedHandleOp&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const SendPackedHandleOp& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const SendPackedHandleOp* internal_default_instance() {
+    return reinterpret_cast<const SendPackedHandleOp*>(
+               &_SendPackedHandleOp_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    25;
+
+  void Swap(SendPackedHandleOp* other);
+  friend void swap(SendPackedHandleOp& a, SendPackedHandleOp& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline SendPackedHandleOp* New() const final {
+    return CreateMaybeMessage<SendPackedHandleOp>(NULL);
+  }
+
+  SendPackedHandleOp* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<SendPackedHandleOp>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const SendPackedHandleOp& from);
+  void MergeFrom(const SendPackedHandleOp& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(SendPackedHandleOp* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  typedef SendPackedHandleOp_LocalTensorHandle LocalTensorHandle;
+  typedef SendPackedHandleOp_Handle Handle;
+
+  // accessors -------------------------------------------------------
+
+  // repeated .tensorflow.eager.SendPackedHandleOp.Handle handles = 2;
+  int handles_size() const;
+  void clear_handles();
+  static const int kHandlesFieldNumber = 2;
+  ::tensorflow::eager::SendPackedHandleOp_Handle* mutable_handles(int index);
+  ::google::protobuf::RepeatedPtrField< ::tensorflow::eager::SendPackedHandleOp_Handle >*
+      mutable_handles();
+  const ::tensorflow::eager::SendPackedHandleOp_Handle& handles(int index) const;
+  ::tensorflow::eager::SendPackedHandleOp_Handle* add_handles();
+  const ::google::protobuf::RepeatedPtrField< ::tensorflow::eager::SendPackedHandleOp_Handle >&
+      handles() const;
+
+  // string device_name = 3;
   void clear_device_name();
-  static const int kDeviceNameFieldNumber = 4;
+  static const int kDeviceNameFieldNumber = 3;
   const ::std::string& device_name() const;
   void set_device_name(const ::std::string& value);
   #if LANG_CXX11
@@ -2314,122 +3357,19 @@ class SendTensorRequest : public ::google::protobuf::Message /* @@protoc_inserti
   ::std::string* release_device_name();
   void set_allocated_device_name(::std::string* device_name);
 
-  // fixed64 context_id = 1;
-  void clear_context_id();
-  static const int kContextIdFieldNumber = 1;
-  ::google::protobuf::uint64 context_id() const;
-  void set_context_id(::google::protobuf::uint64 value);
-
-  // int64 op_id = 2;
+  // int64 op_id = 1;
   void clear_op_id();
-  static const int kOpIdFieldNumber = 2;
+  static const int kOpIdFieldNumber = 1;
   ::google::protobuf::int64 op_id() const;
   void set_op_id(::google::protobuf::int64 value);
 
-  // @@protoc_insertion_point(class_scope:tensorflow.eager.SendTensorRequest)
+  // @@protoc_insertion_point(class_scope:tensorflow.eager.SendPackedHandleOp)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::RepeatedPtrField< ::tensorflow::TensorProto > tensors_;
+  ::google::protobuf::RepeatedPtrField< ::tensorflow::eager::SendPackedHandleOp_Handle > handles_;
   ::google::protobuf::internal::ArenaStringPtr device_name_;
-  ::google::protobuf::uint64 context_id_;
   ::google::protobuf::int64 op_id_;
-  mutable ::google::protobuf::internal::CachedSize _cached_size_;
-  friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::TableStruct;
-};
-// -------------------------------------------------------------------
-
-class SendTensorResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.eager.SendTensorResponse) */ {
- public:
-  SendTensorResponse();
-  virtual ~SendTensorResponse();
-
-  SendTensorResponse(const SendTensorResponse& from);
-
-  inline SendTensorResponse& operator=(const SendTensorResponse& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  #if LANG_CXX11
-  SendTensorResponse(SendTensorResponse&& from) noexcept
-    : SendTensorResponse() {
-    *this = ::std::move(from);
-  }
-
-  inline SendTensorResponse& operator=(SendTensorResponse&& from) noexcept {
-    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
-      if (this != &from) InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-  #endif
-  static const ::google::protobuf::Descriptor* descriptor();
-  static const SendTensorResponse& default_instance();
-
-  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
-  static inline const SendTensorResponse* internal_default_instance() {
-    return reinterpret_cast<const SendTensorResponse*>(
-               &_SendTensorResponse_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    19;
-
-  void Swap(SendTensorResponse* other);
-  friend void swap(SendTensorResponse& a, SendTensorResponse& b) {
-    a.Swap(&b);
-  }
-
-  // implements Message ----------------------------------------------
-
-  inline SendTensorResponse* New() const final {
-    return CreateMaybeMessage<SendTensorResponse>(NULL);
-  }
-
-  SendTensorResponse* New(::google::protobuf::Arena* arena) const final {
-    return CreateMaybeMessage<SendTensorResponse>(arena);
-  }
-  void CopyFrom(const ::google::protobuf::Message& from) final;
-  void MergeFrom(const ::google::protobuf::Message& from) final;
-  void CopyFrom(const SendTensorResponse& from);
-  void MergeFrom(const SendTensorResponse& from);
-  void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) final;
-  void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const final;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  void SharedCtor();
-  void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(SendTensorResponse* other);
-  private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
-  }
-  inline void* MaybeArenaPtr() const {
-    return NULL;
-  }
-  public:
-
-  ::google::protobuf::Metadata GetMetadata() const final;
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  // @@protoc_insertion_point(class_scope:tensorflow.eager.SendTensorResponse)
- private:
-
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2feager_5fservice_2eproto::TableStruct;
 };
@@ -2442,156 +3382,93 @@ class SendTensorResponse : public ::google::protobuf::Message /* @@protoc_insert
   #pragma GCC diagnostic push
   #pragma GCC diagnostic ignored "-Wstrict-aliasing"
 #endif  // __GNUC__
-// RemoteTensorHandle
+// Operation_Input
 
-// int64 op_id = 1;
-inline void RemoteTensorHandle::clear_op_id() {
-  op_id_ = GOOGLE_LONGLONG(0);
+// .tensorflow.eager.RemoteTensorHandle remote_handle = 1;
+inline bool Operation_Input::has_remote_handle() const {
+  return item_case() == kRemoteHandle;
 }
-inline ::google::protobuf::int64 RemoteTensorHandle::op_id() const {
-  // @@protoc_insertion_point(field_get:tensorflow.eager.RemoteTensorHandle.op_id)
-  return op_id_;
+inline void Operation_Input::set_has_remote_handle() {
+  _oneof_case_[0] = kRemoteHandle;
 }
-inline void RemoteTensorHandle::set_op_id(::google::protobuf::int64 value) {
-  
-  op_id_ = value;
-  // @@protoc_insertion_point(field_set:tensorflow.eager.RemoteTensorHandle.op_id)
+inline const ::tensorflow::eager::RemoteTensorHandle& Operation_Input::_internal_remote_handle() const {
+  return *item_.remote_handle_;
 }
-
-// int32 output_num = 2;
-inline void RemoteTensorHandle::clear_output_num() {
-  output_num_ = 0;
-}
-inline ::google::protobuf::int32 RemoteTensorHandle::output_num() const {
-  // @@protoc_insertion_point(field_get:tensorflow.eager.RemoteTensorHandle.output_num)
-  return output_num_;
-}
-inline void RemoteTensorHandle::set_output_num(::google::protobuf::int32 value) {
-  
-  output_num_ = value;
-  // @@protoc_insertion_point(field_set:tensorflow.eager.RemoteTensorHandle.output_num)
-}
-
-// string device = 3;
-inline void RemoteTensorHandle::clear_device() {
-  device_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline const ::std::string& RemoteTensorHandle::device() const {
-  // @@protoc_insertion_point(field_get:tensorflow.eager.RemoteTensorHandle.device)
-  return device_.GetNoArena();
-}
-inline void RemoteTensorHandle::set_device(const ::std::string& value) {
-  
-  device_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:tensorflow.eager.RemoteTensorHandle.device)
-}
-#if LANG_CXX11
-inline void RemoteTensorHandle::set_device(::std::string&& value) {
-  
-  device_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:tensorflow.eager.RemoteTensorHandle.device)
-}
-#endif
-inline void RemoteTensorHandle::set_device(const char* value) {
-  GOOGLE_DCHECK(value != NULL);
-  
-  device_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:tensorflow.eager.RemoteTensorHandle.device)
-}
-inline void RemoteTensorHandle::set_device(const char* value, size_t size) {
-  
-  device_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:tensorflow.eager.RemoteTensorHandle.device)
-}
-inline ::std::string* RemoteTensorHandle::mutable_device() {
-  
-  // @@protoc_insertion_point(field_mutable:tensorflow.eager.RemoteTensorHandle.device)
-  return device_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline ::std::string* RemoteTensorHandle::release_device() {
-  // @@protoc_insertion_point(field_release:tensorflow.eager.RemoteTensorHandle.device)
-  
-  return device_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline void RemoteTensorHandle::set_allocated_device(::std::string* device) {
-  if (device != NULL) {
-    
+inline ::tensorflow::eager::RemoteTensorHandle* Operation_Input::release_remote_handle() {
+  // @@protoc_insertion_point(field_release:tensorflow.eager.Operation.Input.remote_handle)
+  if (has_remote_handle()) {
+    clear_has_item();
+      ::tensorflow::eager::RemoteTensorHandle* temp = item_.remote_handle_;
+    item_.remote_handle_ = NULL;
+    return temp;
   } else {
-    
+    return NULL;
   }
-  device_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), device);
-  // @@protoc_insertion_point(field_set_allocated:tensorflow.eager.RemoteTensorHandle.device)
+}
+inline const ::tensorflow::eager::RemoteTensorHandle& Operation_Input::remote_handle() const {
+  // @@protoc_insertion_point(field_get:tensorflow.eager.Operation.Input.remote_handle)
+  return has_remote_handle()
+      ? *item_.remote_handle_
+      : *reinterpret_cast< ::tensorflow::eager::RemoteTensorHandle*>(&::tensorflow::eager::_RemoteTensorHandle_default_instance_);
+}
+inline ::tensorflow::eager::RemoteTensorHandle* Operation_Input::mutable_remote_handle() {
+  if (!has_remote_handle()) {
+    clear_item();
+    set_has_remote_handle();
+    item_.remote_handle_ = CreateMaybeMessage< ::tensorflow::eager::RemoteTensorHandle >(
+        GetArenaNoVirtual());
+  }
+  // @@protoc_insertion_point(field_mutable:tensorflow.eager.Operation.Input.remote_handle)
+  return item_.remote_handle_;
 }
 
-// string op_device = 4;
-inline void RemoteTensorHandle::clear_op_device() {
-  op_device_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+// .tensorflow.TensorProto tensor = 2;
+inline bool Operation_Input::has_tensor() const {
+  return item_case() == kTensor;
 }
-inline const ::std::string& RemoteTensorHandle::op_device() const {
-  // @@protoc_insertion_point(field_get:tensorflow.eager.RemoteTensorHandle.op_device)
-  return op_device_.GetNoArena();
+inline void Operation_Input::set_has_tensor() {
+  _oneof_case_[0] = kTensor;
 }
-inline void RemoteTensorHandle::set_op_device(const ::std::string& value) {
-  
-  op_device_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:tensorflow.eager.RemoteTensorHandle.op_device)
+inline const ::tensorflow::TensorProto& Operation_Input::_internal_tensor() const {
+  return *item_.tensor_;
 }
-#if LANG_CXX11
-inline void RemoteTensorHandle::set_op_device(::std::string&& value) {
-  
-  op_device_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:tensorflow.eager.RemoteTensorHandle.op_device)
-}
-#endif
-inline void RemoteTensorHandle::set_op_device(const char* value) {
-  GOOGLE_DCHECK(value != NULL);
-  
-  op_device_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:tensorflow.eager.RemoteTensorHandle.op_device)
-}
-inline void RemoteTensorHandle::set_op_device(const char* value, size_t size) {
-  
-  op_device_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:tensorflow.eager.RemoteTensorHandle.op_device)
-}
-inline ::std::string* RemoteTensorHandle::mutable_op_device() {
-  
-  // @@protoc_insertion_point(field_mutable:tensorflow.eager.RemoteTensorHandle.op_device)
-  return op_device_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline ::std::string* RemoteTensorHandle::release_op_device() {
-  // @@protoc_insertion_point(field_release:tensorflow.eager.RemoteTensorHandle.op_device)
-  
-  return op_device_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline void RemoteTensorHandle::set_allocated_op_device(::std::string* op_device) {
-  if (op_device != NULL) {
-    
+inline ::tensorflow::TensorProto* Operation_Input::release_tensor() {
+  // @@protoc_insertion_point(field_release:tensorflow.eager.Operation.Input.tensor)
+  if (has_tensor()) {
+    clear_has_item();
+      ::tensorflow::TensorProto* temp = item_.tensor_;
+    item_.tensor_ = NULL;
+    return temp;
   } else {
-    
+    return NULL;
   }
-  op_device_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), op_device);
-  // @@protoc_insertion_point(field_set_allocated:tensorflow.eager.RemoteTensorHandle.op_device)
+}
+inline const ::tensorflow::TensorProto& Operation_Input::tensor() const {
+  // @@protoc_insertion_point(field_get:tensorflow.eager.Operation.Input.tensor)
+  return has_tensor()
+      ? *item_.tensor_
+      : *reinterpret_cast< ::tensorflow::TensorProto*>(&::tensorflow::_TensorProto_default_instance_);
+}
+inline ::tensorflow::TensorProto* Operation_Input::mutable_tensor() {
+  if (!has_tensor()) {
+    clear_item();
+    set_has_tensor();
+    item_.tensor_ = CreateMaybeMessage< ::tensorflow::TensorProto >(
+        GetArenaNoVirtual());
+  }
+  // @@protoc_insertion_point(field_mutable:tensorflow.eager.Operation.Input.tensor)
+  return item_.tensor_;
 }
 
-// .tensorflow.DataType dtype = 5;
-inline void RemoteTensorHandle::clear_dtype() {
-  dtype_ = 0;
+inline bool Operation_Input::has_item() const {
+  return item_case() != ITEM_NOT_SET;
 }
-inline ::tensorflow::DataType RemoteTensorHandle::dtype() const {
-  // @@protoc_insertion_point(field_get:tensorflow.eager.RemoteTensorHandle.dtype)
-  return static_cast< ::tensorflow::DataType >(dtype_);
+inline void Operation_Input::clear_has_item() {
+  _oneof_case_[0] = ITEM_NOT_SET;
 }
-inline void RemoteTensorHandle::set_dtype(::tensorflow::DataType value) {
-  
-  dtype_ = value;
-  // @@protoc_insertion_point(field_set:tensorflow.eager.RemoteTensorHandle.dtype)
+inline Operation_Input::ItemCase Operation_Input::item_case() const {
+  return Operation_Input::ItemCase(_oneof_case_[0]);
 }
-
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
@@ -2665,34 +3542,34 @@ inline void Operation::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:tensorflow.eager.Operation.name)
 }
 
-// repeated .tensorflow.eager.RemoteTensorHandle inputs = 3;
-inline int Operation::inputs_size() const {
-  return inputs_.size();
+// repeated .tensorflow.eager.Operation.Input op_inputs = 10;
+inline int Operation::op_inputs_size() const {
+  return op_inputs_.size();
 }
-inline void Operation::clear_inputs() {
-  inputs_.Clear();
+inline void Operation::clear_op_inputs() {
+  op_inputs_.Clear();
 }
-inline ::tensorflow::eager::RemoteTensorHandle* Operation::mutable_inputs(int index) {
-  // @@protoc_insertion_point(field_mutable:tensorflow.eager.Operation.inputs)
-  return inputs_.Mutable(index);
+inline ::tensorflow::eager::Operation_Input* Operation::mutable_op_inputs(int index) {
+  // @@protoc_insertion_point(field_mutable:tensorflow.eager.Operation.op_inputs)
+  return op_inputs_.Mutable(index);
 }
-inline ::google::protobuf::RepeatedPtrField< ::tensorflow::eager::RemoteTensorHandle >*
-Operation::mutable_inputs() {
-  // @@protoc_insertion_point(field_mutable_list:tensorflow.eager.Operation.inputs)
-  return &inputs_;
+inline ::google::protobuf::RepeatedPtrField< ::tensorflow::eager::Operation_Input >*
+Operation::mutable_op_inputs() {
+  // @@protoc_insertion_point(field_mutable_list:tensorflow.eager.Operation.op_inputs)
+  return &op_inputs_;
 }
-inline const ::tensorflow::eager::RemoteTensorHandle& Operation::inputs(int index) const {
-  // @@protoc_insertion_point(field_get:tensorflow.eager.Operation.inputs)
-  return inputs_.Get(index);
+inline const ::tensorflow::eager::Operation_Input& Operation::op_inputs(int index) const {
+  // @@protoc_insertion_point(field_get:tensorflow.eager.Operation.op_inputs)
+  return op_inputs_.Get(index);
 }
-inline ::tensorflow::eager::RemoteTensorHandle* Operation::add_inputs() {
-  // @@protoc_insertion_point(field_add:tensorflow.eager.Operation.inputs)
-  return inputs_.Add();
+inline ::tensorflow::eager::Operation_Input* Operation::add_op_inputs() {
+  // @@protoc_insertion_point(field_add:tensorflow.eager.Operation.op_inputs)
+  return op_inputs_.Add();
 }
-inline const ::google::protobuf::RepeatedPtrField< ::tensorflow::eager::RemoteTensorHandle >&
-Operation::inputs() const {
-  // @@protoc_insertion_point(field_list:tensorflow.eager.Operation.inputs)
-  return inputs_;
+inline const ::google::protobuf::RepeatedPtrField< ::tensorflow::eager::Operation_Input >&
+Operation::op_inputs() const {
+  // @@protoc_insertion_point(field_list:tensorflow.eager.Operation.op_inputs)
+  return op_inputs_;
 }
 
 // repeated int64 control_op_ids = 4;
@@ -2793,6 +3670,48 @@ inline void Operation::set_allocated_device(::std::string* device) {
   // @@protoc_insertion_point(field_set_allocated:tensorflow.eager.Operation.device)
 }
 
+// bool is_component_function = 7;
+inline void Operation::clear_is_component_function() {
+  is_component_function_ = false;
+}
+inline bool Operation::is_component_function() const {
+  // @@protoc_insertion_point(field_get:tensorflow.eager.Operation.is_component_function)
+  return is_component_function_;
+}
+inline void Operation::set_is_component_function(bool value) {
+  
+  is_component_function_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.eager.Operation.is_component_function)
+}
+
+// int64 func_step_id = 8;
+inline void Operation::clear_func_step_id() {
+  func_step_id_ = GOOGLE_LONGLONG(0);
+}
+inline ::google::protobuf::int64 Operation::func_step_id() const {
+  // @@protoc_insertion_point(field_get:tensorflow.eager.Operation.func_step_id)
+  return func_step_id_;
+}
+inline void Operation::set_func_step_id(::google::protobuf::int64 value) {
+  
+  func_step_id_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.eager.Operation.func_step_id)
+}
+
+// bool is_function = 9;
+inline void Operation::clear_is_function() {
+  is_function_ = false;
+}
+inline bool Operation::is_function() const {
+  // @@protoc_insertion_point(field_get:tensorflow.eager.Operation.is_function)
+  return is_function_;
+}
+inline void Operation::set_is_function(bool value) {
+  
+  is_function_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.eager.Operation.is_function)
+}
+
 // -------------------------------------------------------------------
 
 // QueueItem
@@ -2803,12 +3722,6 @@ inline bool QueueItem::has_handle_to_decref() const {
 }
 inline void QueueItem::set_has_handle_to_decref() {
   _oneof_case_[0] = kHandleToDecref;
-}
-inline void QueueItem::clear_handle_to_decref() {
-  if (has_handle_to_decref()) {
-    delete item_.handle_to_decref_;
-    clear_has_item();
-  }
 }
 inline const ::tensorflow::eager::RemoteTensorHandle& QueueItem::_internal_handle_to_decref() const {
   return *item_.handle_to_decref_;
@@ -2929,6 +3842,182 @@ inline ::tensorflow::eager::SendTensorOp* QueueItem::mutable_send_tensor() {
   return item_.send_tensor_;
 }
 
+// .tensorflow.eager.RegisterFunctionOp register_function = 4;
+inline bool QueueItem::has_register_function() const {
+  return item_case() == kRegisterFunction;
+}
+inline void QueueItem::set_has_register_function() {
+  _oneof_case_[0] = kRegisterFunction;
+}
+inline void QueueItem::clear_register_function() {
+  if (has_register_function()) {
+    delete item_.register_function_;
+    clear_has_item();
+  }
+}
+inline const ::tensorflow::eager::RegisterFunctionOp& QueueItem::_internal_register_function() const {
+  return *item_.register_function_;
+}
+inline ::tensorflow::eager::RegisterFunctionOp* QueueItem::release_register_function() {
+  // @@protoc_insertion_point(field_release:tensorflow.eager.QueueItem.register_function)
+  if (has_register_function()) {
+    clear_has_item();
+      ::tensorflow::eager::RegisterFunctionOp* temp = item_.register_function_;
+    item_.register_function_ = NULL;
+    return temp;
+  } else {
+    return NULL;
+  }
+}
+inline const ::tensorflow::eager::RegisterFunctionOp& QueueItem::register_function() const {
+  // @@protoc_insertion_point(field_get:tensorflow.eager.QueueItem.register_function)
+  return has_register_function()
+      ? *item_.register_function_
+      : *reinterpret_cast< ::tensorflow::eager::RegisterFunctionOp*>(&::tensorflow::eager::_RegisterFunctionOp_default_instance_);
+}
+inline ::tensorflow::eager::RegisterFunctionOp* QueueItem::mutable_register_function() {
+  if (!has_register_function()) {
+    clear_item();
+    set_has_register_function();
+    item_.register_function_ = CreateMaybeMessage< ::tensorflow::eager::RegisterFunctionOp >(
+        GetArenaNoVirtual());
+  }
+  // @@protoc_insertion_point(field_mutable:tensorflow.eager.QueueItem.register_function)
+  return item_.register_function_;
+}
+
+// .tensorflow.eager.CleanupFunctionOp cleanup_function = 5;
+inline bool QueueItem::has_cleanup_function() const {
+  return item_case() == kCleanupFunction;
+}
+inline void QueueItem::set_has_cleanup_function() {
+  _oneof_case_[0] = kCleanupFunction;
+}
+inline void QueueItem::clear_cleanup_function() {
+  if (has_cleanup_function()) {
+    delete item_.cleanup_function_;
+    clear_has_item();
+  }
+}
+inline const ::tensorflow::eager::CleanupFunctionOp& QueueItem::_internal_cleanup_function() const {
+  return *item_.cleanup_function_;
+}
+inline ::tensorflow::eager::CleanupFunctionOp* QueueItem::release_cleanup_function() {
+  // @@protoc_insertion_point(field_release:tensorflow.eager.QueueItem.cleanup_function)
+  if (has_cleanup_function()) {
+    clear_has_item();
+      ::tensorflow::eager::CleanupFunctionOp* temp = item_.cleanup_function_;
+    item_.cleanup_function_ = NULL;
+    return temp;
+  } else {
+    return NULL;
+  }
+}
+inline const ::tensorflow::eager::CleanupFunctionOp& QueueItem::cleanup_function() const {
+  // @@protoc_insertion_point(field_get:tensorflow.eager.QueueItem.cleanup_function)
+  return has_cleanup_function()
+      ? *item_.cleanup_function_
+      : *reinterpret_cast< ::tensorflow::eager::CleanupFunctionOp*>(&::tensorflow::eager::_CleanupFunctionOp_default_instance_);
+}
+inline ::tensorflow::eager::CleanupFunctionOp* QueueItem::mutable_cleanup_function() {
+  if (!has_cleanup_function()) {
+    clear_item();
+    set_has_cleanup_function();
+    item_.cleanup_function_ = CreateMaybeMessage< ::tensorflow::eager::CleanupFunctionOp >(
+        GetArenaNoVirtual());
+  }
+  // @@protoc_insertion_point(field_mutable:tensorflow.eager.QueueItem.cleanup_function)
+  return item_.cleanup_function_;
+}
+
+// .tensorflow.eager.SyncRemoteExecutorForStream sync_remote_executor_for_stream = 6;
+inline bool QueueItem::has_sync_remote_executor_for_stream() const {
+  return item_case() == kSyncRemoteExecutorForStream;
+}
+inline void QueueItem::set_has_sync_remote_executor_for_stream() {
+  _oneof_case_[0] = kSyncRemoteExecutorForStream;
+}
+inline void QueueItem::clear_sync_remote_executor_for_stream() {
+  if (has_sync_remote_executor_for_stream()) {
+    delete item_.sync_remote_executor_for_stream_;
+    clear_has_item();
+  }
+}
+inline const ::tensorflow::eager::SyncRemoteExecutorForStream& QueueItem::_internal_sync_remote_executor_for_stream() const {
+  return *item_.sync_remote_executor_for_stream_;
+}
+inline ::tensorflow::eager::SyncRemoteExecutorForStream* QueueItem::release_sync_remote_executor_for_stream() {
+  // @@protoc_insertion_point(field_release:tensorflow.eager.QueueItem.sync_remote_executor_for_stream)
+  if (has_sync_remote_executor_for_stream()) {
+    clear_has_item();
+      ::tensorflow::eager::SyncRemoteExecutorForStream* temp = item_.sync_remote_executor_for_stream_;
+    item_.sync_remote_executor_for_stream_ = NULL;
+    return temp;
+  } else {
+    return NULL;
+  }
+}
+inline const ::tensorflow::eager::SyncRemoteExecutorForStream& QueueItem::sync_remote_executor_for_stream() const {
+  // @@protoc_insertion_point(field_get:tensorflow.eager.QueueItem.sync_remote_executor_for_stream)
+  return has_sync_remote_executor_for_stream()
+      ? *item_.sync_remote_executor_for_stream_
+      : *reinterpret_cast< ::tensorflow::eager::SyncRemoteExecutorForStream*>(&::tensorflow::eager::_SyncRemoteExecutorForStream_default_instance_);
+}
+inline ::tensorflow::eager::SyncRemoteExecutorForStream* QueueItem::mutable_sync_remote_executor_for_stream() {
+  if (!has_sync_remote_executor_for_stream()) {
+    clear_item();
+    set_has_sync_remote_executor_for_stream();
+    item_.sync_remote_executor_for_stream_ = CreateMaybeMessage< ::tensorflow::eager::SyncRemoteExecutorForStream >(
+        GetArenaNoVirtual());
+  }
+  // @@protoc_insertion_point(field_mutable:tensorflow.eager.QueueItem.sync_remote_executor_for_stream)
+  return item_.sync_remote_executor_for_stream_;
+}
+
+// .tensorflow.eager.SendPackedHandleOp send_packed_handle = 7;
+inline bool QueueItem::has_send_packed_handle() const {
+  return item_case() == kSendPackedHandle;
+}
+inline void QueueItem::set_has_send_packed_handle() {
+  _oneof_case_[0] = kSendPackedHandle;
+}
+inline void QueueItem::clear_send_packed_handle() {
+  if (has_send_packed_handle()) {
+    delete item_.send_packed_handle_;
+    clear_has_item();
+  }
+}
+inline const ::tensorflow::eager::SendPackedHandleOp& QueueItem::_internal_send_packed_handle() const {
+  return *item_.send_packed_handle_;
+}
+inline ::tensorflow::eager::SendPackedHandleOp* QueueItem::release_send_packed_handle() {
+  // @@protoc_insertion_point(field_release:tensorflow.eager.QueueItem.send_packed_handle)
+  if (has_send_packed_handle()) {
+    clear_has_item();
+      ::tensorflow::eager::SendPackedHandleOp* temp = item_.send_packed_handle_;
+    item_.send_packed_handle_ = NULL;
+    return temp;
+  } else {
+    return NULL;
+  }
+}
+inline const ::tensorflow::eager::SendPackedHandleOp& QueueItem::send_packed_handle() const {
+  // @@protoc_insertion_point(field_get:tensorflow.eager.QueueItem.send_packed_handle)
+  return has_send_packed_handle()
+      ? *item_.send_packed_handle_
+      : *reinterpret_cast< ::tensorflow::eager::SendPackedHandleOp*>(&::tensorflow::eager::_SendPackedHandleOp_default_instance_);
+}
+inline ::tensorflow::eager::SendPackedHandleOp* QueueItem::mutable_send_packed_handle() {
+  if (!has_send_packed_handle()) {
+    clear_item();
+    set_has_send_packed_handle();
+    item_.send_packed_handle_ = CreateMaybeMessage< ::tensorflow::eager::SendPackedHandleOp >(
+        GetArenaNoVirtual());
+  }
+  // @@protoc_insertion_point(field_mutable:tensorflow.eager.QueueItem.send_packed_handle)
+  return item_.send_packed_handle_;
+}
+
 inline bool QueueItem::has_item() const {
   return item_case() != ITEM_NOT_SET;
 }
@@ -2967,6 +4056,102 @@ inline const ::google::protobuf::RepeatedPtrField< ::tensorflow::TensorShapeProt
 QueueResponse::shape() const {
   // @@protoc_insertion_point(field_list:tensorflow.eager.QueueResponse.shape)
   return shape_;
+}
+
+// repeated string device = 3;
+inline int QueueResponse::device_size() const {
+  return device_.size();
+}
+inline void QueueResponse::clear_device() {
+  device_.Clear();
+}
+inline const ::std::string& QueueResponse::device(int index) const {
+  // @@protoc_insertion_point(field_get:tensorflow.eager.QueueResponse.device)
+  return device_.Get(index);
+}
+inline ::std::string* QueueResponse::mutable_device(int index) {
+  // @@protoc_insertion_point(field_mutable:tensorflow.eager.QueueResponse.device)
+  return device_.Mutable(index);
+}
+inline void QueueResponse::set_device(int index, const ::std::string& value) {
+  // @@protoc_insertion_point(field_set:tensorflow.eager.QueueResponse.device)
+  device_.Mutable(index)->assign(value);
+}
+#if LANG_CXX11
+inline void QueueResponse::set_device(int index, ::std::string&& value) {
+  // @@protoc_insertion_point(field_set:tensorflow.eager.QueueResponse.device)
+  device_.Mutable(index)->assign(std::move(value));
+}
+#endif
+inline void QueueResponse::set_device(int index, const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  device_.Mutable(index)->assign(value);
+  // @@protoc_insertion_point(field_set_char:tensorflow.eager.QueueResponse.device)
+}
+inline void QueueResponse::set_device(int index, const char* value, size_t size) {
+  device_.Mutable(index)->assign(
+    reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_set_pointer:tensorflow.eager.QueueResponse.device)
+}
+inline ::std::string* QueueResponse::add_device() {
+  // @@protoc_insertion_point(field_add_mutable:tensorflow.eager.QueueResponse.device)
+  return device_.Add();
+}
+inline void QueueResponse::add_device(const ::std::string& value) {
+  device_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add:tensorflow.eager.QueueResponse.device)
+}
+#if LANG_CXX11
+inline void QueueResponse::add_device(::std::string&& value) {
+  device_.Add(std::move(value));
+  // @@protoc_insertion_point(field_add:tensorflow.eager.QueueResponse.device)
+}
+#endif
+inline void QueueResponse::add_device(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  device_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add_char:tensorflow.eager.QueueResponse.device)
+}
+inline void QueueResponse::add_device(const char* value, size_t size) {
+  device_.Add()->assign(reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_add_pointer:tensorflow.eager.QueueResponse.device)
+}
+inline const ::google::protobuf::RepeatedPtrField< ::std::string>&
+QueueResponse::device() const {
+  // @@protoc_insertion_point(field_list:tensorflow.eager.QueueResponse.device)
+  return device_;
+}
+inline ::google::protobuf::RepeatedPtrField< ::std::string>*
+QueueResponse::mutable_device() {
+  // @@protoc_insertion_point(field_mutable_list:tensorflow.eager.QueueResponse.device)
+  return &device_;
+}
+
+// repeated .tensorflow.TensorProto tensor = 2;
+inline int QueueResponse::tensor_size() const {
+  return tensor_.size();
+}
+inline ::tensorflow::TensorProto* QueueResponse::mutable_tensor(int index) {
+  // @@protoc_insertion_point(field_mutable:tensorflow.eager.QueueResponse.tensor)
+  return tensor_.Mutable(index);
+}
+inline ::google::protobuf::RepeatedPtrField< ::tensorflow::TensorProto >*
+QueueResponse::mutable_tensor() {
+  // @@protoc_insertion_point(field_mutable_list:tensorflow.eager.QueueResponse.tensor)
+  return &tensor_;
+}
+inline const ::tensorflow::TensorProto& QueueResponse::tensor(int index) const {
+  // @@protoc_insertion_point(field_get:tensorflow.eager.QueueResponse.tensor)
+  return tensor_.Get(index);
+}
+inline ::tensorflow::TensorProto* QueueResponse::add_tensor() {
+  // @@protoc_insertion_point(field_add:tensorflow.eager.QueueResponse.tensor)
+  return tensor_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::tensorflow::TensorProto >&
+QueueResponse::tensor() const {
+  // @@protoc_insertion_point(field_list:tensorflow.eager.QueueResponse.tensor)
+  return tensor_;
 }
 
 // -------------------------------------------------------------------
@@ -3140,6 +4325,34 @@ inline void CreateContextRequest::set_context_id(::google::protobuf::uint64 valu
   // @@protoc_insertion_point(field_set:tensorflow.eager.CreateContextRequest.context_id)
 }
 
+// fixed64 context_view_id = 8;
+inline void CreateContextRequest::clear_context_view_id() {
+  context_view_id_ = GOOGLE_ULONGLONG(0);
+}
+inline ::google::protobuf::uint64 CreateContextRequest::context_view_id() const {
+  // @@protoc_insertion_point(field_get:tensorflow.eager.CreateContextRequest.context_view_id)
+  return context_view_id_;
+}
+inline void CreateContextRequest::set_context_view_id(::google::protobuf::uint64 value) {
+  
+  context_view_id_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.eager.CreateContextRequest.context_view_id)
+}
+
+// bool lazy_copy_remote_function_inputs = 9;
+inline void CreateContextRequest::clear_lazy_copy_remote_function_inputs() {
+  lazy_copy_remote_function_inputs_ = false;
+}
+inline bool CreateContextRequest::lazy_copy_remote_function_inputs() const {
+  // @@protoc_insertion_point(field_get:tensorflow.eager.CreateContextRequest.lazy_copy_remote_function_inputs)
+  return lazy_copy_remote_function_inputs_;
+}
+inline void CreateContextRequest::set_lazy_copy_remote_function_inputs(bool value) {
+  
+  lazy_copy_remote_function_inputs_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.eager.CreateContextRequest.lazy_copy_remote_function_inputs)
+}
+
 // -------------------------------------------------------------------
 
 // CreateContextResponse
@@ -3168,6 +4381,145 @@ inline ::tensorflow::DeviceAttributes* CreateContextResponse::add_device_attribu
 inline const ::google::protobuf::RepeatedPtrField< ::tensorflow::DeviceAttributes >&
 CreateContextResponse::device_attributes() const {
   // @@protoc_insertion_point(field_list:tensorflow.eager.CreateContextResponse.device_attributes)
+  return device_attributes_;
+}
+
+// -------------------------------------------------------------------
+
+// UpdateContextRequest
+
+// .tensorflow.ServerDef server_def = 1;
+inline bool UpdateContextRequest::has_server_def() const {
+  return this != internal_default_instance() && server_def_ != NULL;
+}
+inline const ::tensorflow::ServerDef& UpdateContextRequest::_internal_server_def() const {
+  return *server_def_;
+}
+inline const ::tensorflow::ServerDef& UpdateContextRequest::server_def() const {
+  const ::tensorflow::ServerDef* p = server_def_;
+  // @@protoc_insertion_point(field_get:tensorflow.eager.UpdateContextRequest.server_def)
+  return p != NULL ? *p : *reinterpret_cast<const ::tensorflow::ServerDef*>(
+      &::tensorflow::_ServerDef_default_instance_);
+}
+inline ::tensorflow::ServerDef* UpdateContextRequest::release_server_def() {
+  // @@protoc_insertion_point(field_release:tensorflow.eager.UpdateContextRequest.server_def)
+  
+  ::tensorflow::ServerDef* temp = server_def_;
+  server_def_ = NULL;
+  return temp;
+}
+inline ::tensorflow::ServerDef* UpdateContextRequest::mutable_server_def() {
+  
+  if (server_def_ == NULL) {
+    auto* p = CreateMaybeMessage<::tensorflow::ServerDef>(GetArenaNoVirtual());
+    server_def_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:tensorflow.eager.UpdateContextRequest.server_def)
+  return server_def_;
+}
+inline void UpdateContextRequest::set_allocated_server_def(::tensorflow::ServerDef* server_def) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete reinterpret_cast< ::google::protobuf::MessageLite*>(server_def_);
+  }
+  if (server_def) {
+    ::google::protobuf::Arena* submessage_arena =
+      reinterpret_cast<::google::protobuf::MessageLite*>(server_def)->GetArena();
+    if (message_arena != submessage_arena) {
+      server_def = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, server_def, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  server_def_ = server_def;
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.eager.UpdateContextRequest.server_def)
+}
+
+// repeated .tensorflow.DeviceAttributes cluster_device_attributes = 2;
+inline int UpdateContextRequest::cluster_device_attributes_size() const {
+  return cluster_device_attributes_.size();
+}
+inline ::tensorflow::DeviceAttributes* UpdateContextRequest::mutable_cluster_device_attributes(int index) {
+  // @@protoc_insertion_point(field_mutable:tensorflow.eager.UpdateContextRequest.cluster_device_attributes)
+  return cluster_device_attributes_.Mutable(index);
+}
+inline ::google::protobuf::RepeatedPtrField< ::tensorflow::DeviceAttributes >*
+UpdateContextRequest::mutable_cluster_device_attributes() {
+  // @@protoc_insertion_point(field_mutable_list:tensorflow.eager.UpdateContextRequest.cluster_device_attributes)
+  return &cluster_device_attributes_;
+}
+inline const ::tensorflow::DeviceAttributes& UpdateContextRequest::cluster_device_attributes(int index) const {
+  // @@protoc_insertion_point(field_get:tensorflow.eager.UpdateContextRequest.cluster_device_attributes)
+  return cluster_device_attributes_.Get(index);
+}
+inline ::tensorflow::DeviceAttributes* UpdateContextRequest::add_cluster_device_attributes() {
+  // @@protoc_insertion_point(field_add:tensorflow.eager.UpdateContextRequest.cluster_device_attributes)
+  return cluster_device_attributes_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::tensorflow::DeviceAttributes >&
+UpdateContextRequest::cluster_device_attributes() const {
+  // @@protoc_insertion_point(field_list:tensorflow.eager.UpdateContextRequest.cluster_device_attributes)
+  return cluster_device_attributes_;
+}
+
+// fixed64 context_id = 3;
+inline void UpdateContextRequest::clear_context_id() {
+  context_id_ = GOOGLE_ULONGLONG(0);
+}
+inline ::google::protobuf::uint64 UpdateContextRequest::context_id() const {
+  // @@protoc_insertion_point(field_get:tensorflow.eager.UpdateContextRequest.context_id)
+  return context_id_;
+}
+inline void UpdateContextRequest::set_context_id(::google::protobuf::uint64 value) {
+  
+  context_id_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.eager.UpdateContextRequest.context_id)
+}
+
+// fixed64 context_view_id = 4;
+inline void UpdateContextRequest::clear_context_view_id() {
+  context_view_id_ = GOOGLE_ULONGLONG(0);
+}
+inline ::google::protobuf::uint64 UpdateContextRequest::context_view_id() const {
+  // @@protoc_insertion_point(field_get:tensorflow.eager.UpdateContextRequest.context_view_id)
+  return context_view_id_;
+}
+inline void UpdateContextRequest::set_context_view_id(::google::protobuf::uint64 value) {
+  
+  context_view_id_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.eager.UpdateContextRequest.context_view_id)
+}
+
+// -------------------------------------------------------------------
+
+// UpdateContextResponse
+
+// repeated .tensorflow.DeviceAttributes device_attributes = 1;
+inline int UpdateContextResponse::device_attributes_size() const {
+  return device_attributes_.size();
+}
+inline ::tensorflow::DeviceAttributes* UpdateContextResponse::mutable_device_attributes(int index) {
+  // @@protoc_insertion_point(field_mutable:tensorflow.eager.UpdateContextResponse.device_attributes)
+  return device_attributes_.Mutable(index);
+}
+inline ::google::protobuf::RepeatedPtrField< ::tensorflow::DeviceAttributes >*
+UpdateContextResponse::mutable_device_attributes() {
+  // @@protoc_insertion_point(field_mutable_list:tensorflow.eager.UpdateContextResponse.device_attributes)
+  return &device_attributes_;
+}
+inline const ::tensorflow::DeviceAttributes& UpdateContextResponse::device_attributes(int index) const {
+  // @@protoc_insertion_point(field_get:tensorflow.eager.UpdateContextResponse.device_attributes)
+  return device_attributes_.Get(index);
+}
+inline ::tensorflow::DeviceAttributes* UpdateContextResponse::add_device_attributes() {
+  // @@protoc_insertion_point(field_add:tensorflow.eager.UpdateContextResponse.device_attributes)
+  return device_attributes_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::tensorflow::DeviceAttributes >&
+UpdateContextResponse::device_attributes() const {
+  // @@protoc_insertion_point(field_list:tensorflow.eager.UpdateContextResponse.device_attributes)
   return device_attributes_;
 }
 
@@ -3307,6 +4659,166 @@ WaitQueueDoneRequest::mutable_op_id() {
 
 // -------------------------------------------------------------------
 
+// RunComponentFunctionRequest
+
+// fixed64 context_id = 1;
+inline void RunComponentFunctionRequest::clear_context_id() {
+  context_id_ = GOOGLE_ULONGLONG(0);
+}
+inline ::google::protobuf::uint64 RunComponentFunctionRequest::context_id() const {
+  // @@protoc_insertion_point(field_get:tensorflow.eager.RunComponentFunctionRequest.context_id)
+  return context_id_;
+}
+inline void RunComponentFunctionRequest::set_context_id(::google::protobuf::uint64 value) {
+  
+  context_id_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.eager.RunComponentFunctionRequest.context_id)
+}
+
+// .tensorflow.eager.Operation operation = 2;
+inline bool RunComponentFunctionRequest::has_operation() const {
+  return this != internal_default_instance() && operation_ != NULL;
+}
+inline void RunComponentFunctionRequest::clear_operation() {
+  if (GetArenaNoVirtual() == NULL && operation_ != NULL) {
+    delete operation_;
+  }
+  operation_ = NULL;
+}
+inline const ::tensorflow::eager::Operation& RunComponentFunctionRequest::_internal_operation() const {
+  return *operation_;
+}
+inline const ::tensorflow::eager::Operation& RunComponentFunctionRequest::operation() const {
+  const ::tensorflow::eager::Operation* p = operation_;
+  // @@protoc_insertion_point(field_get:tensorflow.eager.RunComponentFunctionRequest.operation)
+  return p != NULL ? *p : *reinterpret_cast<const ::tensorflow::eager::Operation*>(
+      &::tensorflow::eager::_Operation_default_instance_);
+}
+inline ::tensorflow::eager::Operation* RunComponentFunctionRequest::release_operation() {
+  // @@protoc_insertion_point(field_release:tensorflow.eager.RunComponentFunctionRequest.operation)
+  
+  ::tensorflow::eager::Operation* temp = operation_;
+  operation_ = NULL;
+  return temp;
+}
+inline ::tensorflow::eager::Operation* RunComponentFunctionRequest::mutable_operation() {
+  
+  if (operation_ == NULL) {
+    auto* p = CreateMaybeMessage<::tensorflow::eager::Operation>(GetArenaNoVirtual());
+    operation_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:tensorflow.eager.RunComponentFunctionRequest.operation)
+  return operation_;
+}
+inline void RunComponentFunctionRequest::set_allocated_operation(::tensorflow::eager::Operation* operation) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete operation_;
+  }
+  if (operation) {
+    ::google::protobuf::Arena* submessage_arena = NULL;
+    if (message_arena != submessage_arena) {
+      operation = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, operation, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  operation_ = operation;
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.eager.RunComponentFunctionRequest.operation)
+}
+
+// repeated int32 output_num = 3;
+inline int RunComponentFunctionRequest::output_num_size() const {
+  return output_num_.size();
+}
+inline void RunComponentFunctionRequest::clear_output_num() {
+  output_num_.Clear();
+}
+inline ::google::protobuf::int32 RunComponentFunctionRequest::output_num(int index) const {
+  // @@protoc_insertion_point(field_get:tensorflow.eager.RunComponentFunctionRequest.output_num)
+  return output_num_.Get(index);
+}
+inline void RunComponentFunctionRequest::set_output_num(int index, ::google::protobuf::int32 value) {
+  output_num_.Set(index, value);
+  // @@protoc_insertion_point(field_set:tensorflow.eager.RunComponentFunctionRequest.output_num)
+}
+inline void RunComponentFunctionRequest::add_output_num(::google::protobuf::int32 value) {
+  output_num_.Add(value);
+  // @@protoc_insertion_point(field_add:tensorflow.eager.RunComponentFunctionRequest.output_num)
+}
+inline const ::google::protobuf::RepeatedField< ::google::protobuf::int32 >&
+RunComponentFunctionRequest::output_num() const {
+  // @@protoc_insertion_point(field_list:tensorflow.eager.RunComponentFunctionRequest.output_num)
+  return output_num_;
+}
+inline ::google::protobuf::RepeatedField< ::google::protobuf::int32 >*
+RunComponentFunctionRequest::mutable_output_num() {
+  // @@protoc_insertion_point(field_mutable_list:tensorflow.eager.RunComponentFunctionRequest.output_num)
+  return &output_num_;
+}
+
+// -------------------------------------------------------------------
+
+// RunComponentFunctionResponse
+
+// repeated .tensorflow.TensorShapeProto shape = 1;
+inline int RunComponentFunctionResponse::shape_size() const {
+  return shape_.size();
+}
+inline ::tensorflow::TensorShapeProto* RunComponentFunctionResponse::mutable_shape(int index) {
+  // @@protoc_insertion_point(field_mutable:tensorflow.eager.RunComponentFunctionResponse.shape)
+  return shape_.Mutable(index);
+}
+inline ::google::protobuf::RepeatedPtrField< ::tensorflow::TensorShapeProto >*
+RunComponentFunctionResponse::mutable_shape() {
+  // @@protoc_insertion_point(field_mutable_list:tensorflow.eager.RunComponentFunctionResponse.shape)
+  return &shape_;
+}
+inline const ::tensorflow::TensorShapeProto& RunComponentFunctionResponse::shape(int index) const {
+  // @@protoc_insertion_point(field_get:tensorflow.eager.RunComponentFunctionResponse.shape)
+  return shape_.Get(index);
+}
+inline ::tensorflow::TensorShapeProto* RunComponentFunctionResponse::add_shape() {
+  // @@protoc_insertion_point(field_add:tensorflow.eager.RunComponentFunctionResponse.shape)
+  return shape_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::tensorflow::TensorShapeProto >&
+RunComponentFunctionResponse::shape() const {
+  // @@protoc_insertion_point(field_list:tensorflow.eager.RunComponentFunctionResponse.shape)
+  return shape_;
+}
+
+// repeated .tensorflow.TensorProto tensor = 2;
+inline int RunComponentFunctionResponse::tensor_size() const {
+  return tensor_.size();
+}
+inline ::tensorflow::TensorProto* RunComponentFunctionResponse::mutable_tensor(int index) {
+  // @@protoc_insertion_point(field_mutable:tensorflow.eager.RunComponentFunctionResponse.tensor)
+  return tensor_.Mutable(index);
+}
+inline ::google::protobuf::RepeatedPtrField< ::tensorflow::TensorProto >*
+RunComponentFunctionResponse::mutable_tensor() {
+  // @@protoc_insertion_point(field_mutable_list:tensorflow.eager.RunComponentFunctionResponse.tensor)
+  return &tensor_;
+}
+inline const ::tensorflow::TensorProto& RunComponentFunctionResponse::tensor(int index) const {
+  // @@protoc_insertion_point(field_get:tensorflow.eager.RunComponentFunctionResponse.tensor)
+  return tensor_.Get(index);
+}
+inline ::tensorflow::TensorProto* RunComponentFunctionResponse::add_tensor() {
+  // @@protoc_insertion_point(field_add:tensorflow.eager.RunComponentFunctionResponse.tensor)
+  return tensor_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::tensorflow::TensorProto >&
+RunComponentFunctionResponse::tensor() const {
+  // @@protoc_insertion_point(field_list:tensorflow.eager.RunComponentFunctionResponse.tensor)
+  return tensor_;
+}
+
+// -------------------------------------------------------------------
+
 // KeepAliveRequest
 
 // fixed64 context_id = 1;
@@ -3327,6 +4839,20 @@ inline void KeepAliveRequest::set_context_id(::google::protobuf::uint64 value) {
 
 // KeepAliveResponse
 
+// fixed64 context_view_id = 1;
+inline void KeepAliveResponse::clear_context_view_id() {
+  context_view_id_ = GOOGLE_ULONGLONG(0);
+}
+inline ::google::protobuf::uint64 KeepAliveResponse::context_view_id() const {
+  // @@protoc_insertion_point(field_get:tensorflow.eager.KeepAliveResponse.context_view_id)
+  return context_view_id_;
+}
+inline void KeepAliveResponse::set_context_view_id(::google::protobuf::uint64 value) {
+  
+  context_view_id_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.eager.KeepAliveResponse.context_view_id)
+}
+
 // -------------------------------------------------------------------
 
 // CloseContextRequest
@@ -3345,58 +4871,58 @@ inline void CloseContextRequest::set_context_id(::google::protobuf::uint64 value
   // @@protoc_insertion_point(field_set:tensorflow.eager.CloseContextRequest.context_id)
 }
 
+// fixed64 context_view_id = 2;
+inline void CloseContextRequest::clear_context_view_id() {
+  context_view_id_ = GOOGLE_ULONGLONG(0);
+}
+inline ::google::protobuf::uint64 CloseContextRequest::context_view_id() const {
+  // @@protoc_insertion_point(field_get:tensorflow.eager.CloseContextRequest.context_view_id)
+  return context_view_id_;
+}
+inline void CloseContextRequest::set_context_view_id(::google::protobuf::uint64 value) {
+  
+  context_view_id_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.eager.CloseContextRequest.context_view_id)
+}
+
 // -------------------------------------------------------------------
 
 // CloseContextResponse
 
 // -------------------------------------------------------------------
 
-// RegisterFunctionRequest
+// RegisterFunctionOp
 
-// fixed64 context_id = 1;
-inline void RegisterFunctionRequest::clear_context_id() {
-  context_id_ = GOOGLE_ULONGLONG(0);
-}
-inline ::google::protobuf::uint64 RegisterFunctionRequest::context_id() const {
-  // @@protoc_insertion_point(field_get:tensorflow.eager.RegisterFunctionRequest.context_id)
-  return context_id_;
-}
-inline void RegisterFunctionRequest::set_context_id(::google::protobuf::uint64 value) {
-  
-  context_id_ = value;
-  // @@protoc_insertion_point(field_set:tensorflow.eager.RegisterFunctionRequest.context_id)
-}
-
-// .tensorflow.FunctionDef function_def = 2;
-inline bool RegisterFunctionRequest::has_function_def() const {
+// .tensorflow.FunctionDef function_def = 1;
+inline bool RegisterFunctionOp::has_function_def() const {
   return this != internal_default_instance() && function_def_ != NULL;
 }
-inline const ::tensorflow::FunctionDef& RegisterFunctionRequest::_internal_function_def() const {
+inline const ::tensorflow::FunctionDef& RegisterFunctionOp::_internal_function_def() const {
   return *function_def_;
 }
-inline const ::tensorflow::FunctionDef& RegisterFunctionRequest::function_def() const {
+inline const ::tensorflow::FunctionDef& RegisterFunctionOp::function_def() const {
   const ::tensorflow::FunctionDef* p = function_def_;
-  // @@protoc_insertion_point(field_get:tensorflow.eager.RegisterFunctionRequest.function_def)
+  // @@protoc_insertion_point(field_get:tensorflow.eager.RegisterFunctionOp.function_def)
   return p != NULL ? *p : *reinterpret_cast<const ::tensorflow::FunctionDef*>(
       &::tensorflow::_FunctionDef_default_instance_);
 }
-inline ::tensorflow::FunctionDef* RegisterFunctionRequest::release_function_def() {
-  // @@protoc_insertion_point(field_release:tensorflow.eager.RegisterFunctionRequest.function_def)
+inline ::tensorflow::FunctionDef* RegisterFunctionOp::release_function_def() {
+  // @@protoc_insertion_point(field_release:tensorflow.eager.RegisterFunctionOp.function_def)
   
   ::tensorflow::FunctionDef* temp = function_def_;
   function_def_ = NULL;
   return temp;
 }
-inline ::tensorflow::FunctionDef* RegisterFunctionRequest::mutable_function_def() {
+inline ::tensorflow::FunctionDef* RegisterFunctionOp::mutable_function_def() {
   
   if (function_def_ == NULL) {
     auto* p = CreateMaybeMessage<::tensorflow::FunctionDef>(GetArenaNoVirtual());
     function_def_ = p;
   }
-  // @@protoc_insertion_point(field_mutable:tensorflow.eager.RegisterFunctionRequest.function_def)
+  // @@protoc_insertion_point(field_mutable:tensorflow.eager.RegisterFunctionOp.function_def)
   return function_def_;
 }
-inline void RegisterFunctionRequest::set_allocated_function_def(::tensorflow::FunctionDef* function_def) {
+inline void RegisterFunctionOp::set_allocated_function_def(::tensorflow::FunctionDef* function_def) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete reinterpret_cast< ::google::protobuf::MessageLite*>(function_def_);
@@ -3413,12 +4939,93 @@ inline void RegisterFunctionRequest::set_allocated_function_def(::tensorflow::Fu
     
   }
   function_def_ = function_def;
-  // @@protoc_insertion_point(field_set_allocated:tensorflow.eager.RegisterFunctionRequest.function_def)
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.eager.RegisterFunctionOp.function_def)
+}
+
+// bool is_component_function = 2;
+inline void RegisterFunctionOp::clear_is_component_function() {
+  is_component_function_ = false;
+}
+inline bool RegisterFunctionOp::is_component_function() const {
+  // @@protoc_insertion_point(field_get:tensorflow.eager.RegisterFunctionOp.is_component_function)
+  return is_component_function_;
+}
+inline void RegisterFunctionOp::set_is_component_function(bool value) {
+  
+  is_component_function_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.eager.RegisterFunctionOp.is_component_function)
+}
+
+// .tensorflow.FunctionDefLibrary library = 3;
+inline bool RegisterFunctionOp::has_library() const {
+  return this != internal_default_instance() && library_ != NULL;
+}
+inline const ::tensorflow::FunctionDefLibrary& RegisterFunctionOp::_internal_library() const {
+  return *library_;
+}
+inline const ::tensorflow::FunctionDefLibrary& RegisterFunctionOp::library() const {
+  const ::tensorflow::FunctionDefLibrary* p = library_;
+  // @@protoc_insertion_point(field_get:tensorflow.eager.RegisterFunctionOp.library)
+  return p != NULL ? *p : *reinterpret_cast<const ::tensorflow::FunctionDefLibrary*>(
+      &::tensorflow::_FunctionDefLibrary_default_instance_);
+}
+inline ::tensorflow::FunctionDefLibrary* RegisterFunctionOp::release_library() {
+  // @@protoc_insertion_point(field_release:tensorflow.eager.RegisterFunctionOp.library)
+  
+  ::tensorflow::FunctionDefLibrary* temp = library_;
+  library_ = NULL;
+  return temp;
+}
+inline ::tensorflow::FunctionDefLibrary* RegisterFunctionOp::mutable_library() {
+  
+  if (library_ == NULL) {
+    auto* p = CreateMaybeMessage<::tensorflow::FunctionDefLibrary>(GetArenaNoVirtual());
+    library_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:tensorflow.eager.RegisterFunctionOp.library)
+  return library_;
+}
+inline void RegisterFunctionOp::set_allocated_library(::tensorflow::FunctionDefLibrary* library) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete reinterpret_cast< ::google::protobuf::MessageLite*>(library_);
+  }
+  if (library) {
+    ::google::protobuf::Arena* submessage_arena =
+      reinterpret_cast<::google::protobuf::MessageLite*>(library)->GetArena();
+    if (message_arena != submessage_arena) {
+      library = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, library, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  library_ = library;
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.eager.RegisterFunctionOp.library)
 }
 
 // -------------------------------------------------------------------
 
-// RegisterFunctionResponse
+// CleanupFunctionOp
+
+// int64 step_id = 1;
+inline void CleanupFunctionOp::clear_step_id() {
+  step_id_ = GOOGLE_LONGLONG(0);
+}
+inline ::google::protobuf::int64 CleanupFunctionOp::step_id() const {
+  // @@protoc_insertion_point(field_get:tensorflow.eager.CleanupFunctionOp.step_id)
+  return step_id_;
+}
+inline void CleanupFunctionOp::set_step_id(::google::protobuf::int64 value) {
+  
+  step_id_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.eager.CleanupFunctionOp.step_id)
+}
+
+// -------------------------------------------------------------------
+
+// SyncRemoteExecutorForStream
 
 // -------------------------------------------------------------------
 
@@ -3520,123 +5127,321 @@ inline void SendTensorOp::set_allocated_device_name(::std::string* device_name) 
 
 // -------------------------------------------------------------------
 
-// SendTensorRequest
+// SendPackedHandleOp_LocalTensorHandle
 
-// fixed64 context_id = 1;
-inline void SendTensorRequest::clear_context_id() {
-  context_id_ = GOOGLE_ULONGLONG(0);
+// .tensorflow.TensorProto tensor = 1;
+inline bool SendPackedHandleOp_LocalTensorHandle::has_tensor() const {
+  return this != internal_default_instance() && tensor_ != NULL;
 }
-inline ::google::protobuf::uint64 SendTensorRequest::context_id() const {
-  // @@protoc_insertion_point(field_get:tensorflow.eager.SendTensorRequest.context_id)
-  return context_id_;
+inline const ::tensorflow::TensorProto& SendPackedHandleOp_LocalTensorHandle::_internal_tensor() const {
+  return *tensor_;
 }
-inline void SendTensorRequest::set_context_id(::google::protobuf::uint64 value) {
+inline const ::tensorflow::TensorProto& SendPackedHandleOp_LocalTensorHandle::tensor() const {
+  const ::tensorflow::TensorProto* p = tensor_;
+  // @@protoc_insertion_point(field_get:tensorflow.eager.SendPackedHandleOp.LocalTensorHandle.tensor)
+  return p != NULL ? *p : *reinterpret_cast<const ::tensorflow::TensorProto*>(
+      &::tensorflow::_TensorProto_default_instance_);
+}
+inline ::tensorflow::TensorProto* SendPackedHandleOp_LocalTensorHandle::release_tensor() {
+  // @@protoc_insertion_point(field_release:tensorflow.eager.SendPackedHandleOp.LocalTensorHandle.tensor)
   
-  context_id_ = value;
-  // @@protoc_insertion_point(field_set:tensorflow.eager.SendTensorRequest.context_id)
+  ::tensorflow::TensorProto* temp = tensor_;
+  tensor_ = NULL;
+  return temp;
 }
-
-// int64 op_id = 2;
-inline void SendTensorRequest::clear_op_id() {
-  op_id_ = GOOGLE_LONGLONG(0);
-}
-inline ::google::protobuf::int64 SendTensorRequest::op_id() const {
-  // @@protoc_insertion_point(field_get:tensorflow.eager.SendTensorRequest.op_id)
-  return op_id_;
-}
-inline void SendTensorRequest::set_op_id(::google::protobuf::int64 value) {
+inline ::tensorflow::TensorProto* SendPackedHandleOp_LocalTensorHandle::mutable_tensor() {
   
-  op_id_ = value;
-  // @@protoc_insertion_point(field_set:tensorflow.eager.SendTensorRequest.op_id)
+  if (tensor_ == NULL) {
+    auto* p = CreateMaybeMessage<::tensorflow::TensorProto>(GetArenaNoVirtual());
+    tensor_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:tensorflow.eager.SendPackedHandleOp.LocalTensorHandle.tensor)
+  return tensor_;
+}
+inline void SendPackedHandleOp_LocalTensorHandle::set_allocated_tensor(::tensorflow::TensorProto* tensor) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete reinterpret_cast< ::google::protobuf::MessageLite*>(tensor_);
+  }
+  if (tensor) {
+    ::google::protobuf::Arena* submessage_arena =
+      reinterpret_cast<::google::protobuf::MessageLite*>(tensor)->GetArena();
+    if (message_arena != submessage_arena) {
+      tensor = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, tensor, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  tensor_ = tensor;
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.eager.SendPackedHandleOp.LocalTensorHandle.tensor)
 }
 
-// repeated .tensorflow.TensorProto tensors = 3;
-inline int SendTensorRequest::tensors_size() const {
-  return tensors_.size();
+// string device = 2;
+inline void SendPackedHandleOp_LocalTensorHandle::clear_device() {
+  device_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline ::tensorflow::TensorProto* SendTensorRequest::mutable_tensors(int index) {
-  // @@protoc_insertion_point(field_mutable:tensorflow.eager.SendTensorRequest.tensors)
-  return tensors_.Mutable(index);
+inline const ::std::string& SendPackedHandleOp_LocalTensorHandle::device() const {
+  // @@protoc_insertion_point(field_get:tensorflow.eager.SendPackedHandleOp.LocalTensorHandle.device)
+  return device_.GetNoArena();
 }
-inline ::google::protobuf::RepeatedPtrField< ::tensorflow::TensorProto >*
-SendTensorRequest::mutable_tensors() {
-  // @@protoc_insertion_point(field_mutable_list:tensorflow.eager.SendTensorRequest.tensors)
-  return &tensors_;
-}
-inline const ::tensorflow::TensorProto& SendTensorRequest::tensors(int index) const {
-  // @@protoc_insertion_point(field_get:tensorflow.eager.SendTensorRequest.tensors)
-  return tensors_.Get(index);
-}
-inline ::tensorflow::TensorProto* SendTensorRequest::add_tensors() {
-  // @@protoc_insertion_point(field_add:tensorflow.eager.SendTensorRequest.tensors)
-  return tensors_.Add();
-}
-inline const ::google::protobuf::RepeatedPtrField< ::tensorflow::TensorProto >&
-SendTensorRequest::tensors() const {
-  // @@protoc_insertion_point(field_list:tensorflow.eager.SendTensorRequest.tensors)
-  return tensors_;
-}
-
-// string device_name = 4;
-inline void SendTensorRequest::clear_device_name() {
-  device_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline const ::std::string& SendTensorRequest::device_name() const {
-  // @@protoc_insertion_point(field_get:tensorflow.eager.SendTensorRequest.device_name)
-  return device_name_.GetNoArena();
-}
-inline void SendTensorRequest::set_device_name(const ::std::string& value) {
+inline void SendPackedHandleOp_LocalTensorHandle::set_device(const ::std::string& value) {
   
-  device_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:tensorflow.eager.SendTensorRequest.device_name)
+  device_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:tensorflow.eager.SendPackedHandleOp.LocalTensorHandle.device)
 }
 #if LANG_CXX11
-inline void SendTensorRequest::set_device_name(::std::string&& value) {
+inline void SendPackedHandleOp_LocalTensorHandle::set_device(::std::string&& value) {
+  
+  device_.SetNoArena(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:tensorflow.eager.SendPackedHandleOp.LocalTensorHandle.device)
+}
+#endif
+inline void SendPackedHandleOp_LocalTensorHandle::set_device(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  
+  device_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:tensorflow.eager.SendPackedHandleOp.LocalTensorHandle.device)
+}
+inline void SendPackedHandleOp_LocalTensorHandle::set_device(const char* value, size_t size) {
+  
+  device_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:tensorflow.eager.SendPackedHandleOp.LocalTensorHandle.device)
+}
+inline ::std::string* SendPackedHandleOp_LocalTensorHandle::mutable_device() {
+  
+  // @@protoc_insertion_point(field_mutable:tensorflow.eager.SendPackedHandleOp.LocalTensorHandle.device)
+  return device_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* SendPackedHandleOp_LocalTensorHandle::release_device() {
+  // @@protoc_insertion_point(field_release:tensorflow.eager.SendPackedHandleOp.LocalTensorHandle.device)
+  
+  return device_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void SendPackedHandleOp_LocalTensorHandle::set_allocated_device(::std::string* device) {
+  if (device != NULL) {
+    
+  } else {
+    
+  }
+  device_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), device);
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.eager.SendPackedHandleOp.LocalTensorHandle.device)
+}
+
+// -------------------------------------------------------------------
+
+// SendPackedHandleOp_Handle
+
+// .tensorflow.eager.SendPackedHandleOp.LocalTensorHandle local_handle = 1;
+inline bool SendPackedHandleOp_Handle::has_local_handle() const {
+  return item_case() == kLocalHandle;
+}
+inline void SendPackedHandleOp_Handle::set_has_local_handle() {
+  _oneof_case_[0] = kLocalHandle;
+}
+inline void SendPackedHandleOp_Handle::clear_local_handle() {
+  if (has_local_handle()) {
+    delete item_.local_handle_;
+    clear_has_item();
+  }
+}
+inline const ::tensorflow::eager::SendPackedHandleOp_LocalTensorHandle& SendPackedHandleOp_Handle::_internal_local_handle() const {
+  return *item_.local_handle_;
+}
+inline ::tensorflow::eager::SendPackedHandleOp_LocalTensorHandle* SendPackedHandleOp_Handle::release_local_handle() {
+  // @@protoc_insertion_point(field_release:tensorflow.eager.SendPackedHandleOp.Handle.local_handle)
+  if (has_local_handle()) {
+    clear_has_item();
+      ::tensorflow::eager::SendPackedHandleOp_LocalTensorHandle* temp = item_.local_handle_;
+    item_.local_handle_ = NULL;
+    return temp;
+  } else {
+    return NULL;
+  }
+}
+inline const ::tensorflow::eager::SendPackedHandleOp_LocalTensorHandle& SendPackedHandleOp_Handle::local_handle() const {
+  // @@protoc_insertion_point(field_get:tensorflow.eager.SendPackedHandleOp.Handle.local_handle)
+  return has_local_handle()
+      ? *item_.local_handle_
+      : *reinterpret_cast< ::tensorflow::eager::SendPackedHandleOp_LocalTensorHandle*>(&::tensorflow::eager::_SendPackedHandleOp_LocalTensorHandle_default_instance_);
+}
+inline ::tensorflow::eager::SendPackedHandleOp_LocalTensorHandle* SendPackedHandleOp_Handle::mutable_local_handle() {
+  if (!has_local_handle()) {
+    clear_item();
+    set_has_local_handle();
+    item_.local_handle_ = CreateMaybeMessage< ::tensorflow::eager::SendPackedHandleOp_LocalTensorHandle >(
+        GetArenaNoVirtual());
+  }
+  // @@protoc_insertion_point(field_mutable:tensorflow.eager.SendPackedHandleOp.Handle.local_handle)
+  return item_.local_handle_;
+}
+
+// .tensorflow.eager.RemoteTensorHandle remote_handle = 2;
+inline bool SendPackedHandleOp_Handle::has_remote_handle() const {
+  return item_case() == kRemoteHandle;
+}
+inline void SendPackedHandleOp_Handle::set_has_remote_handle() {
+  _oneof_case_[0] = kRemoteHandle;
+}
+inline const ::tensorflow::eager::RemoteTensorHandle& SendPackedHandleOp_Handle::_internal_remote_handle() const {
+  return *item_.remote_handle_;
+}
+inline ::tensorflow::eager::RemoteTensorHandle* SendPackedHandleOp_Handle::release_remote_handle() {
+  // @@protoc_insertion_point(field_release:tensorflow.eager.SendPackedHandleOp.Handle.remote_handle)
+  if (has_remote_handle()) {
+    clear_has_item();
+      ::tensorflow::eager::RemoteTensorHandle* temp = item_.remote_handle_;
+    item_.remote_handle_ = NULL;
+    return temp;
+  } else {
+    return NULL;
+  }
+}
+inline const ::tensorflow::eager::RemoteTensorHandle& SendPackedHandleOp_Handle::remote_handle() const {
+  // @@protoc_insertion_point(field_get:tensorflow.eager.SendPackedHandleOp.Handle.remote_handle)
+  return has_remote_handle()
+      ? *item_.remote_handle_
+      : *reinterpret_cast< ::tensorflow::eager::RemoteTensorHandle*>(&::tensorflow::eager::_RemoteTensorHandle_default_instance_);
+}
+inline ::tensorflow::eager::RemoteTensorHandle* SendPackedHandleOp_Handle::mutable_remote_handle() {
+  if (!has_remote_handle()) {
+    clear_item();
+    set_has_remote_handle();
+    item_.remote_handle_ = CreateMaybeMessage< ::tensorflow::eager::RemoteTensorHandle >(
+        GetArenaNoVirtual());
+  }
+  // @@protoc_insertion_point(field_mutable:tensorflow.eager.SendPackedHandleOp.Handle.remote_handle)
+  return item_.remote_handle_;
+}
+
+inline bool SendPackedHandleOp_Handle::has_item() const {
+  return item_case() != ITEM_NOT_SET;
+}
+inline void SendPackedHandleOp_Handle::clear_has_item() {
+  _oneof_case_[0] = ITEM_NOT_SET;
+}
+inline SendPackedHandleOp_Handle::ItemCase SendPackedHandleOp_Handle::item_case() const {
+  return SendPackedHandleOp_Handle::ItemCase(_oneof_case_[0]);
+}
+// -------------------------------------------------------------------
+
+// SendPackedHandleOp
+
+// int64 op_id = 1;
+inline void SendPackedHandleOp::clear_op_id() {
+  op_id_ = GOOGLE_LONGLONG(0);
+}
+inline ::google::protobuf::int64 SendPackedHandleOp::op_id() const {
+  // @@protoc_insertion_point(field_get:tensorflow.eager.SendPackedHandleOp.op_id)
+  return op_id_;
+}
+inline void SendPackedHandleOp::set_op_id(::google::protobuf::int64 value) {
+  
+  op_id_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.eager.SendPackedHandleOp.op_id)
+}
+
+// repeated .tensorflow.eager.SendPackedHandleOp.Handle handles = 2;
+inline int SendPackedHandleOp::handles_size() const {
+  return handles_.size();
+}
+inline void SendPackedHandleOp::clear_handles() {
+  handles_.Clear();
+}
+inline ::tensorflow::eager::SendPackedHandleOp_Handle* SendPackedHandleOp::mutable_handles(int index) {
+  // @@protoc_insertion_point(field_mutable:tensorflow.eager.SendPackedHandleOp.handles)
+  return handles_.Mutable(index);
+}
+inline ::google::protobuf::RepeatedPtrField< ::tensorflow::eager::SendPackedHandleOp_Handle >*
+SendPackedHandleOp::mutable_handles() {
+  // @@protoc_insertion_point(field_mutable_list:tensorflow.eager.SendPackedHandleOp.handles)
+  return &handles_;
+}
+inline const ::tensorflow::eager::SendPackedHandleOp_Handle& SendPackedHandleOp::handles(int index) const {
+  // @@protoc_insertion_point(field_get:tensorflow.eager.SendPackedHandleOp.handles)
+  return handles_.Get(index);
+}
+inline ::tensorflow::eager::SendPackedHandleOp_Handle* SendPackedHandleOp::add_handles() {
+  // @@protoc_insertion_point(field_add:tensorflow.eager.SendPackedHandleOp.handles)
+  return handles_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::tensorflow::eager::SendPackedHandleOp_Handle >&
+SendPackedHandleOp::handles() const {
+  // @@protoc_insertion_point(field_list:tensorflow.eager.SendPackedHandleOp.handles)
+  return handles_;
+}
+
+// string device_name = 3;
+inline void SendPackedHandleOp::clear_device_name() {
+  device_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline const ::std::string& SendPackedHandleOp::device_name() const {
+  // @@protoc_insertion_point(field_get:tensorflow.eager.SendPackedHandleOp.device_name)
+  return device_name_.GetNoArena();
+}
+inline void SendPackedHandleOp::set_device_name(const ::std::string& value) {
+  
+  device_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:tensorflow.eager.SendPackedHandleOp.device_name)
+}
+#if LANG_CXX11
+inline void SendPackedHandleOp::set_device_name(::std::string&& value) {
   
   device_name_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:tensorflow.eager.SendTensorRequest.device_name)
+  // @@protoc_insertion_point(field_set_rvalue:tensorflow.eager.SendPackedHandleOp.device_name)
 }
 #endif
-inline void SendTensorRequest::set_device_name(const char* value) {
+inline void SendPackedHandleOp::set_device_name(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   
   device_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:tensorflow.eager.SendTensorRequest.device_name)
+  // @@protoc_insertion_point(field_set_char:tensorflow.eager.SendPackedHandleOp.device_name)
 }
-inline void SendTensorRequest::set_device_name(const char* value, size_t size) {
+inline void SendPackedHandleOp::set_device_name(const char* value, size_t size) {
   
   device_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:tensorflow.eager.SendTensorRequest.device_name)
+  // @@protoc_insertion_point(field_set_pointer:tensorflow.eager.SendPackedHandleOp.device_name)
 }
-inline ::std::string* SendTensorRequest::mutable_device_name() {
+inline ::std::string* SendPackedHandleOp::mutable_device_name() {
   
-  // @@protoc_insertion_point(field_mutable:tensorflow.eager.SendTensorRequest.device_name)
+  // @@protoc_insertion_point(field_mutable:tensorflow.eager.SendPackedHandleOp.device_name)
   return device_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline ::std::string* SendTensorRequest::release_device_name() {
-  // @@protoc_insertion_point(field_release:tensorflow.eager.SendTensorRequest.device_name)
+inline ::std::string* SendPackedHandleOp::release_device_name() {
+  // @@protoc_insertion_point(field_release:tensorflow.eager.SendPackedHandleOp.device_name)
   
   return device_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline void SendTensorRequest::set_allocated_device_name(::std::string* device_name) {
+inline void SendPackedHandleOp::set_allocated_device_name(::std::string* device_name) {
   if (device_name != NULL) {
     
   } else {
     
   }
   device_name_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), device_name);
-  // @@protoc_insertion_point(field_set_allocated:tensorflow.eager.SendTensorRequest.device_name)
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.eager.SendPackedHandleOp.device_name)
 }
-
-// -------------------------------------------------------------------
-
-// SendTensorResponse
 
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

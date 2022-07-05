@@ -210,6 +210,7 @@ void InitDefaults() {
 }
 
 ::google::protobuf::Metadata file_level_metadata[8];
+const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[1];
 
 const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
@@ -245,6 +246,7 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::SummaryMetadata, plugin_data_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::SummaryMetadata, display_name_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::SummaryMetadata, summary_description_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::SummaryMetadata, data_class_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::Summary_Image, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -291,10 +293,10 @@ static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROT
   { 6, -1, sizeof(::tensorflow::HistogramProto)},
   { 18, -1, sizeof(::tensorflow::SummaryMetadata_PluginData)},
   { 25, -1, sizeof(::tensorflow::SummaryMetadata)},
-  { 33, -1, sizeof(::tensorflow::Summary_Image)},
-  { 42, -1, sizeof(::tensorflow::Summary_Audio)},
-  { 52, -1, sizeof(::tensorflow::Summary_Value)},
-  { 67, -1, sizeof(::tensorflow::Summary)},
+  { 34, -1, sizeof(::tensorflow::Summary_Image)},
+  { 43, -1, sizeof(::tensorflow::Summary_Audio)},
+  { 53, -1, sizeof(::tensorflow::Summary_Value)},
+  { 68, -1, sizeof(::tensorflow::Summary)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
@@ -312,7 +314,7 @@ void protobuf_AssignDescriptors() {
   AddDescriptors();
   AssignDescriptors(
       "tensorflow/core/framework/summary.proto", schemas, file_default_instances, TableStruct::offsets,
-      file_level_metadata, NULL, NULL);
+      file_level_metadata, file_level_enum_descriptors, NULL);
 }
 
 void protobuf_AssignDescriptorsOnce() {
@@ -335,33 +337,37 @@ void AddDescriptorsImpl() {
       "ype_hint\030\001 \001(\t\"\207\001\n\016HistogramProto\022\013\n\003min"
       "\030\001 \001(\001\022\013\n\003max\030\002 \001(\001\022\013\n\003num\030\003 \001(\001\022\013\n\003sum\030"
       "\004 \001(\001\022\023\n\013sum_squares\030\005 \001(\001\022\030\n\014bucket_lim"
-      "it\030\006 \003(\001B\002\020\001\022\022\n\006bucket\030\007 \003(\001B\002\020\001\"\265\001\n\017Sum"
+      "it\030\006 \003(\001B\002\020\001\022\022\n\006bucket\030\007 \003(\001B\002\020\001\"\340\001\n\017Sum"
       "maryMetadata\022;\n\013plugin_data\030\001 \001(\0132&.tens"
       "orflow.SummaryMetadata.PluginData\022\024\n\014dis"
       "play_name\030\002 \001(\t\022\033\n\023summary_description\030\003"
-      " \001(\t\0322\n\nPluginData\022\023\n\013plugin_name\030\001 \001(\t\022"
-      "\017\n\007content\030\002 \001(\014\"\336\004\n\007Summary\022(\n\005value\030\001 "
-      "\003(\0132\031.tensorflow.Summary.Value\032X\n\005Image\022"
-      "\016\n\006height\030\001 \001(\005\022\r\n\005width\030\002 \001(\005\022\022\n\ncolors"
-      "pace\030\003 \001(\005\022\034\n\024encoded_image_string\030\004 \001(\014"
-      "\032}\n\005Audio\022\023\n\013sample_rate\030\001 \001(\002\022\024\n\014num_ch"
-      "annels\030\002 \001(\003\022\025\n\rlength_frames\030\003 \001(\003\022\034\n\024e"
-      "ncoded_audio_string\030\004 \001(\014\022\024\n\014content_typ"
-      "e\030\005 \001(\t\032\317\002\n\005Value\022\021\n\tnode_name\030\007 \001(\t\022\013\n\003"
-      "tag\030\001 \001(\t\022-\n\010metadata\030\t \001(\0132\033.tensorflow"
-      ".SummaryMetadata\022\026\n\014simple_value\030\002 \001(\002H\000"
-      "\022&\n\034obsolete_old_style_histogram\030\003 \001(\014H\000"
-      "\022*\n\005image\030\004 \001(\0132\031.tensorflow.Summary.Ima"
-      "geH\000\022+\n\005histo\030\005 \001(\0132\032.tensorflow.Histogr"
-      "amProtoH\000\022*\n\005audio\030\006 \001(\0132\031.tensorflow.Su"
-      "mmary.AudioH\000\022)\n\006tensor\030\010 \001(\0132\027.tensorfl"
-      "ow.TensorProtoH\000B\007\n\005valueBm\n\030org.tensorf"
-      "low.frameworkB\rSummaryProtosP\001Z=github.c"
-      "om/tensorflow/tensorflow/tensorflow/go/c"
-      "ore/framework\370\001\001b\006proto3"
+      " \001(\t\022)\n\ndata_class\030\004 \001(\0162\025.tensorflow.Da"
+      "taClass\0322\n\nPluginData\022\023\n\013plugin_name\030\001 \001"
+      "(\t\022\017\n\007content\030\002 \001(\014\"\336\004\n\007Summary\022(\n\005value"
+      "\030\001 \003(\0132\031.tensorflow.Summary.Value\032X\n\005Ima"
+      "ge\022\016\n\006height\030\001 \001(\005\022\r\n\005width\030\002 \001(\005\022\022\n\ncol"
+      "orspace\030\003 \001(\005\022\034\n\024encoded_image_string\030\004 "
+      "\001(\014\032}\n\005Audio\022\023\n\013sample_rate\030\001 \001(\002\022\024\n\014num"
+      "_channels\030\002 \001(\003\022\025\n\rlength_frames\030\003 \001(\003\022\034"
+      "\n\024encoded_audio_string\030\004 \001(\014\022\024\n\014content_"
+      "type\030\005 \001(\t\032\317\002\n\005Value\022\021\n\tnode_name\030\007 \001(\t\022"
+      "\013\n\003tag\030\001 \001(\t\022-\n\010metadata\030\t \001(\0132\033.tensorf"
+      "low.SummaryMetadata\022\026\n\014simple_value\030\002 \001("
+      "\002H\000\022&\n\034obsolete_old_style_histogram\030\003 \001("
+      "\014H\000\022*\n\005image\030\004 \001(\0132\031.tensorflow.Summary."
+      "ImageH\000\022+\n\005histo\030\005 \001(\0132\032.tensorflow.Hist"
+      "ogramProtoH\000\022*\n\005audio\030\006 \001(\0132\031.tensorflow"
+      ".Summary.AudioH\000\022)\n\006tensor\030\010 \001(\0132\027.tenso"
+      "rflow.TensorProtoH\000B\007\n\005value*o\n\tDataClas"
+      "s\022\026\n\022DATA_CLASS_UNKNOWN\020\000\022\025\n\021DATA_CLASS_"
+      "SCALAR\020\001\022\025\n\021DATA_CLASS_TENSOR\020\002\022\034\n\030DATA_"
+      "CLASS_BLOB_SEQUENCE\020\003B~\n\030org.tensorflow."
+      "frameworkB\rSummaryProtosP\001ZNgithub.com/t"
+      "ensorflow/tensorflow/tensorflow/go/core/"
+      "framework/summary_go_proto\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 1184);
+      descriptor, 1357);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/framework/summary.proto", &protobuf_RegisterTypes);
   ::protobuf_tensorflow_2fcore_2fframework_2ftensor_2eproto::AddDescriptors();
@@ -379,6 +385,22 @@ struct StaticDescriptorInitializer {
 } static_descriptor_initializer;
 }  // namespace protobuf_tensorflow_2fcore_2fframework_2fsummary_2eproto
 namespace tensorflow {
+const ::google::protobuf::EnumDescriptor* DataClass_descriptor() {
+  protobuf_tensorflow_2fcore_2fframework_2fsummary_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_tensorflow_2fcore_2fframework_2fsummary_2eproto::file_level_enum_descriptors[0];
+}
+bool DataClass_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+      return true;
+    default:
+      return false;
+  }
+}
+
 
 // ===================================================================
 
@@ -1512,6 +1534,7 @@ void SummaryMetadata::unsafe_arena_set_allocated_plugin_data(
 const int SummaryMetadata::kPluginDataFieldNumber;
 const int SummaryMetadata::kDisplayNameFieldNumber;
 const int SummaryMetadata::kSummaryDescriptionFieldNumber;
+const int SummaryMetadata::kDataClassFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 SummaryMetadata::SummaryMetadata()
@@ -1548,13 +1571,16 @@ SummaryMetadata::SummaryMetadata(const SummaryMetadata& from)
   } else {
     plugin_data_ = NULL;
   }
+  data_class_ = from.data_class_;
   // @@protoc_insertion_point(copy_constructor:tensorflow.SummaryMetadata)
 }
 
 void SummaryMetadata::SharedCtor() {
   display_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   summary_description_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  plugin_data_ = NULL;
+  ::memset(&plugin_data_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&data_class_) -
+      reinterpret_cast<char*>(&plugin_data_)) + sizeof(data_class_));
 }
 
 SummaryMetadata::~SummaryMetadata() {
@@ -1601,6 +1627,7 @@ void SummaryMetadata::Clear() {
     delete plugin_data_;
   }
   plugin_data_ = NULL;
+  data_class_ = 0;
   _internal_metadata_.Clear();
 }
 
@@ -1652,6 +1679,21 @@ bool SummaryMetadata::MergePartialFromCodedStream(
             this->summary_description().data(), static_cast<int>(this->summary_description().length()),
             ::google::protobuf::internal::WireFormatLite::PARSE,
             "tensorflow.SummaryMetadata.summary_description"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .tensorflow.DataClass data_class = 4;
+      case 4: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_data_class(static_cast< ::tensorflow::DataClass >(value));
         } else {
           goto handle_unusual;
         }
@@ -1710,6 +1752,12 @@ void SummaryMetadata::SerializeWithCachedSizes(
       3, this->summary_description(), output);
   }
 
+  // .tensorflow.DataClass data_class = 4;
+  if (this->data_class() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      4, this->data_class(), output);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -1753,6 +1801,12 @@ void SummaryMetadata::SerializeWithCachedSizes(
         3, this->summary_description(), target);
   }
 
+  // .tensorflow.DataClass data_class = 4;
+  if (this->data_class() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      4, this->data_class(), target);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
@@ -1791,6 +1845,12 @@ size_t SummaryMetadata::ByteSizeLong() const {
         *plugin_data_);
   }
 
+  // .tensorflow.DataClass data_class = 4;
+  if (this->data_class() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->data_class());
+  }
+
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -1826,6 +1886,9 @@ void SummaryMetadata::MergeFrom(const SummaryMetadata& from) {
   }
   if (from.has_plugin_data()) {
     mutable_plugin_data()->::tensorflow::SummaryMetadata_PluginData::MergeFrom(from.plugin_data());
+  }
+  if (from.data_class() != 0) {
+    set_data_class(from.data_class());
   }
 }
 
@@ -1873,6 +1936,7 @@ void SummaryMetadata::InternalSwap(SummaryMetadata* other) {
   summary_description_.Swap(&other->summary_description_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(plugin_data_, other->plugin_data_);
+  swap(data_class_, other->data_class_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 

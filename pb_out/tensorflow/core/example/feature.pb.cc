@@ -351,12 +351,13 @@ void AddDescriptorsImpl() {
       " \003(\0132).tensorflow.FeatureLists.FeatureLi"
       "stEntry\032K\n\020FeatureListEntry\022\013\n\003key\030\001 \001(\t"
       "\022&\n\005value\030\002 \001(\0132\027.tensorflow.FeatureList"
-      ":\0028\001Bi\n\026org.tensorflow.exampleB\rFeatureP"
-      "rotosP\001Z;github.com/tensorflow/tensorflo"
-      "w/tensorflow/go/core/example\370\001\001b\006proto3"
+      ":\0028\001B\201\001\n\026org.tensorflow.exampleB\rFeature"
+      "ProtosP\001ZSgithub.com/tensorflow/tensorfl"
+      "ow/tensorflow/go/core/example/example_pr"
+      "otos_go_proto\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 759);
+      descriptor, 784);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/example/feature.proto", &protobuf_RegisterTypes);
 }

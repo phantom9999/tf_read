@@ -154,13 +154,14 @@ void AddDescriptorsImpl() {
       "tasks\030\002 \003(\0132\035.tensorflow.JobDef.TasksEnt"
       "ry\032,\n\nTasksEntry\022\013\n\003key\030\001 \001(\005\022\r\n\005value\030\002"
       " \001(\t:\0028\001\"-\n\nClusterDef\022\037\n\003job\030\001 \003(\0132\022.te"
-      "nsorflow.JobDefBn\n\032org.tensorflow.distru"
-      "ntimeB\rClusterProtosP\001Z<github.com/tenso"
-      "rflow/tensorflow/tensorflow/go/core/prot"
-      "obuf\370\001\001b\006proto3"
+      "nsorflow.JobDefB\207\001\n\032org.tensorflow.distr"
+      "untimeB\rClusterProtosP\001ZUgithub.com/tens"
+      "orflow/tensorflow/tensorflow/go/core/pro"
+      "tobuf/for_core_protos_go_proto\370\001\001b\006proto"
+      "3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 335);
+      descriptor, 361);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/protobuf/cluster.proto", &protobuf_RegisterTypes);
 }

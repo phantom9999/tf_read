@@ -33,6 +33,7 @@
 #include <google/protobuf/unknown_field_set.h>
 #include <google/protobuf/any.pb.h>
 #include <google/protobuf/duration.pb.h>
+#include "tensorflow/stream_executor/dnn.pb.h"
 // @@protoc_insertion_point(includes)
 #define PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2fautotuning_2eproto 
 
@@ -41,7 +42,7 @@ namespace protobuf_tensorflow_2fcore_2fprotobuf_2fautotuning_2eproto {
 struct TableStruct {
   static const ::google::protobuf::internal::ParseTableField entries[];
   static const ::google::protobuf::internal::AuxillaryParseTableField aux[];
-  static const ::google::protobuf::internal::ParseTable schema[7];
+  static const ::google::protobuf::internal::ParseTable schema[8];
   static const ::google::protobuf::internal::FieldMetadata field_metadata[];
   static const ::google::protobuf::internal::SerializationTable serialization_table[];
   static const ::google::protobuf::uint32 offsets[];
@@ -55,6 +56,9 @@ extern AutotuneResultDefaultTypeInternal _AutotuneResult_default_instance_;
 class AutotuneResult_ConvKey;
 class AutotuneResult_ConvKeyDefaultTypeInternal;
 extern AutotuneResult_ConvKeyDefaultTypeInternal _AutotuneResult_ConvKey_default_instance_;
+class AutotuneResult_CudaConvPlanKey;
+class AutotuneResult_CudaConvPlanKeyDefaultTypeInternal;
+extern AutotuneResult_CudaConvPlanKeyDefaultTypeInternal _AutotuneResult_CudaConvPlanKey_default_instance_;
 class AutotuneResult_FailureResult;
 class AutotuneResult_FailureResultDefaultTypeInternal;
 extern AutotuneResult_FailureResultDefaultTypeInternal _AutotuneResult_FailureResult_default_instance_;
@@ -75,6 +79,7 @@ namespace google {
 namespace protobuf {
 template<> ::tensorflow::AutotuneResult* Arena::CreateMaybeMessage<::tensorflow::AutotuneResult>(Arena*);
 template<> ::tensorflow::AutotuneResult_ConvKey* Arena::CreateMaybeMessage<::tensorflow::AutotuneResult_ConvKey>(Arena*);
+template<> ::tensorflow::AutotuneResult_CudaConvPlanKey* Arena::CreateMaybeMessage<::tensorflow::AutotuneResult_CudaConvPlanKey>(Arena*);
 template<> ::tensorflow::AutotuneResult_FailureResult* Arena::CreateMaybeMessage<::tensorflow::AutotuneResult_FailureResult>(Arena*);
 template<> ::tensorflow::AutotuneResult_GemmKey* Arena::CreateMaybeMessage<::tensorflow::AutotuneResult_GemmKey>(Arena*);
 template<> ::tensorflow::AutotuningLog* Arena::CreateMaybeMessage<::tensorflow::AutotuningLog>(Arena*);
@@ -88,12 +93,13 @@ enum AutotuneResult_FailureKind {
   AutotuneResult_FailureKind_UNKNOWN = 0,
   AutotuneResult_FailureKind_REDZONE_MODIFIED = 1,
   AutotuneResult_FailureKind_WRONG_RESULT = 2,
+  AutotuneResult_FailureKind_DISQUALIFIED = 3,
   AutotuneResult_FailureKind_AutotuneResult_FailureKind_INT_MIN_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32min,
   AutotuneResult_FailureKind_AutotuneResult_FailureKind_INT_MAX_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32max
 };
 bool AutotuneResult_FailureKind_IsValid(int value);
 const AutotuneResult_FailureKind AutotuneResult_FailureKind_FailureKind_MIN = AutotuneResult_FailureKind_UNKNOWN;
-const AutotuneResult_FailureKind AutotuneResult_FailureKind_FailureKind_MAX = AutotuneResult_FailureKind_WRONG_RESULT;
+const AutotuneResult_FailureKind AutotuneResult_FailureKind_FailureKind_MAX = AutotuneResult_FailureKind_DISQUALIFIED;
 const int AutotuneResult_FailureKind_FailureKind_ARRAYSIZE = AutotuneResult_FailureKind_FailureKind_MAX + 1;
 
 const ::google::protobuf::EnumDescriptor* AutotuneResult_FailureKind_descriptor();
@@ -367,6 +373,8 @@ class AutotuneResult_FailureResult : public ::google::protobuf::Message /* @@pro
   enum KeyCase {
     kReferenceConv = 11,
     kReferenceGemm = 12,
+    kReferenceCudaConvPlan = 14,
+    kReferenceAlgorithm = 15,
     KEY_NOT_SET = 0,
   };
 
@@ -478,12 +486,38 @@ class AutotuneResult_FailureResult : public ::google::protobuf::Message /* @@pro
   ::tensorflow::AutotuneResult_GemmKey* mutable_reference_gemm();
   void set_allocated_reference_gemm(::tensorflow::AutotuneResult_GemmKey* reference_gemm);
 
+  // .tensorflow.AutotuneResult.CudaConvPlanKey reference_cuda_conv_plan = 14;
+  bool has_reference_cuda_conv_plan() const;
+  void clear_reference_cuda_conv_plan();
+  static const int kReferenceCudaConvPlanFieldNumber = 14;
+  private:
+  const ::tensorflow::AutotuneResult_CudaConvPlanKey& _internal_reference_cuda_conv_plan() const;
+  public:
+  const ::tensorflow::AutotuneResult_CudaConvPlanKey& reference_cuda_conv_plan() const;
+  ::tensorflow::AutotuneResult_CudaConvPlanKey* release_reference_cuda_conv_plan();
+  ::tensorflow::AutotuneResult_CudaConvPlanKey* mutable_reference_cuda_conv_plan();
+  void set_allocated_reference_cuda_conv_plan(::tensorflow::AutotuneResult_CudaConvPlanKey* reference_cuda_conv_plan);
+
+  // .stream_executor.dnn.AlgorithmProto reference_algorithm = 15;
+  bool has_reference_algorithm() const;
+  void clear_reference_algorithm();
+  static const int kReferenceAlgorithmFieldNumber = 15;
+  private:
+  const ::stream_executor::dnn::AlgorithmProto& _internal_reference_algorithm() const;
+  public:
+  const ::stream_executor::dnn::AlgorithmProto& reference_algorithm() const;
+  ::stream_executor::dnn::AlgorithmProto* release_reference_algorithm();
+  ::stream_executor::dnn::AlgorithmProto* mutable_reference_algorithm();
+  void set_allocated_reference_algorithm(::stream_executor::dnn::AlgorithmProto* reference_algorithm);
+
   void clear_key();
   KeyCase key_case() const;
   // @@protoc_insertion_point(class_scope:tensorflow.AutotuneResult.FailureResult)
  private:
   void set_has_reference_conv();
   void set_has_reference_gemm();
+  void set_has_reference_cuda_conv_plan();
+  void set_has_reference_algorithm();
 
   inline bool has_key() const;
   inline void clear_has_key();
@@ -496,6 +530,8 @@ class AutotuneResult_FailureResult : public ::google::protobuf::Message /* @@pro
     KeyUnion() {}
     ::tensorflow::AutotuneResult_ConvKey* reference_conv_;
     ::tensorflow::AutotuneResult_GemmKey* reference_gemm_;
+    ::tensorflow::AutotuneResult_CudaConvPlanKey* reference_cuda_conv_plan_;
+    ::stream_executor::dnn::AlgorithmProto* reference_algorithm_;
   } key_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   ::google::protobuf::uint32 _oneof_case_[1];
@@ -717,6 +753,117 @@ class AutotuneResult_GemmKey : public ::google::protobuf::Message /* @@protoc_in
 };
 // -------------------------------------------------------------------
 
+class AutotuneResult_CudaConvPlanKey : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.AutotuneResult.CudaConvPlanKey) */ {
+ public:
+  AutotuneResult_CudaConvPlanKey();
+  virtual ~AutotuneResult_CudaConvPlanKey();
+
+  AutotuneResult_CudaConvPlanKey(const AutotuneResult_CudaConvPlanKey& from);
+
+  inline AutotuneResult_CudaConvPlanKey& operator=(const AutotuneResult_CudaConvPlanKey& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  AutotuneResult_CudaConvPlanKey(AutotuneResult_CudaConvPlanKey&& from) noexcept
+    : AutotuneResult_CudaConvPlanKey() {
+    *this = ::std::move(from);
+  }
+
+  inline AutotuneResult_CudaConvPlanKey& operator=(AutotuneResult_CudaConvPlanKey&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const AutotuneResult_CudaConvPlanKey& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const AutotuneResult_CudaConvPlanKey* internal_default_instance() {
+    return reinterpret_cast<const AutotuneResult_CudaConvPlanKey*>(
+               &_AutotuneResult_CudaConvPlanKey_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    5;
+
+  void Swap(AutotuneResult_CudaConvPlanKey* other);
+  friend void swap(AutotuneResult_CudaConvPlanKey& a, AutotuneResult_CudaConvPlanKey& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline AutotuneResult_CudaConvPlanKey* New() const final {
+    return CreateMaybeMessage<AutotuneResult_CudaConvPlanKey>(NULL);
+  }
+
+  AutotuneResult_CudaConvPlanKey* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<AutotuneResult_CudaConvPlanKey>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const AutotuneResult_CudaConvPlanKey& from);
+  void MergeFrom(const AutotuneResult_CudaConvPlanKey& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(AutotuneResult_CudaConvPlanKey* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // string exec_plan_id = 1;
+  void clear_exec_plan_id();
+  static const int kExecPlanIdFieldNumber = 1;
+  const ::std::string& exec_plan_id() const;
+  void set_exec_plan_id(const ::std::string& value);
+  #if LANG_CXX11
+  void set_exec_plan_id(::std::string&& value);
+  #endif
+  void set_exec_plan_id(const char* value);
+  void set_exec_plan_id(const char* value, size_t size);
+  ::std::string* mutable_exec_plan_id();
+  ::std::string* release_exec_plan_id();
+  void set_allocated_exec_plan_id(::std::string* exec_plan_id);
+
+  // @@protoc_insertion_point(class_scope:tensorflow.AutotuneResult.CudaConvPlanKey)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::internal::ArenaStringPtr exec_plan_id_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2fautotuning_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
 class AutotuneResult : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.AutotuneResult) */ {
  public:
   AutotuneResult();
@@ -749,6 +896,8 @@ class AutotuneResult : public ::google::protobuf::Message /* @@protoc_insertion_
   enum KeyCase {
     kConv = 5,
     kGemm = 6,
+    kCudaConvPlan = 15,
+    kAlgorithm = 16,
     KEY_NOT_SET = 0,
   };
 
@@ -758,7 +907,7 @@ class AutotuneResult : public ::google::protobuf::Message /* @@protoc_insertion_
                &_AutotuneResult_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    5;
+    6;
 
   void Swap(AutotuneResult* other);
   friend void swap(AutotuneResult& a, AutotuneResult& b) {
@@ -811,6 +960,7 @@ class AutotuneResult : public ::google::protobuf::Message /* @@protoc_insertion_
   typedef AutotuneResult_FailureResult FailureResult;
   typedef AutotuneResult_ConvKey ConvKey;
   typedef AutotuneResult_GemmKey GemmKey;
+  typedef AutotuneResult_CudaConvPlanKey CudaConvPlanKey;
 
   typedef AutotuneResult_FailureKind FailureKind;
   static const FailureKind UNKNOWN =
@@ -819,6 +969,8 @@ class AutotuneResult : public ::google::protobuf::Message /* @@protoc_insertion_
     AutotuneResult_FailureKind_REDZONE_MODIFIED;
   static const FailureKind WRONG_RESULT =
     AutotuneResult_FailureKind_WRONG_RESULT;
+  static const FailureKind DISQUALIFIED =
+    AutotuneResult_FailureKind_DISQUALIFIED;
   static inline bool FailureKind_IsValid(int value) {
     return AutotuneResult_FailureKind_IsValid(value);
   }
@@ -896,12 +1048,38 @@ class AutotuneResult : public ::google::protobuf::Message /* @@protoc_insertion_
   ::tensorflow::AutotuneResult_GemmKey* mutable_gemm();
   void set_allocated_gemm(::tensorflow::AutotuneResult_GemmKey* gemm);
 
+  // .tensorflow.AutotuneResult.CudaConvPlanKey cuda_conv_plan = 15;
+  bool has_cuda_conv_plan() const;
+  void clear_cuda_conv_plan();
+  static const int kCudaConvPlanFieldNumber = 15;
+  private:
+  const ::tensorflow::AutotuneResult_CudaConvPlanKey& _internal_cuda_conv_plan() const;
+  public:
+  const ::tensorflow::AutotuneResult_CudaConvPlanKey& cuda_conv_plan() const;
+  ::tensorflow::AutotuneResult_CudaConvPlanKey* release_cuda_conv_plan();
+  ::tensorflow::AutotuneResult_CudaConvPlanKey* mutable_cuda_conv_plan();
+  void set_allocated_cuda_conv_plan(::tensorflow::AutotuneResult_CudaConvPlanKey* cuda_conv_plan);
+
+  // .stream_executor.dnn.AlgorithmProto algorithm = 16;
+  bool has_algorithm() const;
+  void clear_algorithm();
+  static const int kAlgorithmFieldNumber = 16;
+  private:
+  const ::stream_executor::dnn::AlgorithmProto& _internal_algorithm() const;
+  public:
+  const ::stream_executor::dnn::AlgorithmProto& algorithm() const;
+  ::stream_executor::dnn::AlgorithmProto* release_algorithm();
+  ::stream_executor::dnn::AlgorithmProto* mutable_algorithm();
+  void set_allocated_algorithm(::stream_executor::dnn::AlgorithmProto* algorithm);
+
   void clear_key();
   KeyCase key_case() const;
   // @@protoc_insertion_point(class_scope:tensorflow.AutotuneResult)
  private:
   void set_has_conv();
   void set_has_gemm();
+  void set_has_cuda_conv_plan();
+  void set_has_algorithm();
 
   inline bool has_key() const;
   inline void clear_has_key();
@@ -914,6 +1092,8 @@ class AutotuneResult : public ::google::protobuf::Message /* @@protoc_insertion_
     KeyUnion() {}
     ::tensorflow::AutotuneResult_ConvKey* conv_;
     ::tensorflow::AutotuneResult_GemmKey* gemm_;
+    ::tensorflow::AutotuneResult_CudaConvPlanKey* cuda_conv_plan_;
+    ::stream_executor::dnn::AlgorithmProto* algorithm_;
   } key_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   ::google::protobuf::uint32 _oneof_case_[1];
@@ -957,7 +1137,7 @@ class AutotuningLog : public ::google::protobuf::Message /* @@protoc_insertion_p
                &_AutotuningLog_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    6;
+    7;
 
   void Swap(AutotuningLog* other);
   friend void swap(AutotuningLog& a, AutotuningLog& b) {
@@ -1342,6 +1522,88 @@ inline ::tensorflow::AutotuneResult_GemmKey* AutotuneResult_FailureResult::mutab
   return key_.reference_gemm_;
 }
 
+// .tensorflow.AutotuneResult.CudaConvPlanKey reference_cuda_conv_plan = 14;
+inline bool AutotuneResult_FailureResult::has_reference_cuda_conv_plan() const {
+  return key_case() == kReferenceCudaConvPlan;
+}
+inline void AutotuneResult_FailureResult::set_has_reference_cuda_conv_plan() {
+  _oneof_case_[0] = kReferenceCudaConvPlan;
+}
+inline void AutotuneResult_FailureResult::clear_reference_cuda_conv_plan() {
+  if (has_reference_cuda_conv_plan()) {
+    delete key_.reference_cuda_conv_plan_;
+    clear_has_key();
+  }
+}
+inline const ::tensorflow::AutotuneResult_CudaConvPlanKey& AutotuneResult_FailureResult::_internal_reference_cuda_conv_plan() const {
+  return *key_.reference_cuda_conv_plan_;
+}
+inline ::tensorflow::AutotuneResult_CudaConvPlanKey* AutotuneResult_FailureResult::release_reference_cuda_conv_plan() {
+  // @@protoc_insertion_point(field_release:tensorflow.AutotuneResult.FailureResult.reference_cuda_conv_plan)
+  if (has_reference_cuda_conv_plan()) {
+    clear_has_key();
+      ::tensorflow::AutotuneResult_CudaConvPlanKey* temp = key_.reference_cuda_conv_plan_;
+    key_.reference_cuda_conv_plan_ = NULL;
+    return temp;
+  } else {
+    return NULL;
+  }
+}
+inline const ::tensorflow::AutotuneResult_CudaConvPlanKey& AutotuneResult_FailureResult::reference_cuda_conv_plan() const {
+  // @@protoc_insertion_point(field_get:tensorflow.AutotuneResult.FailureResult.reference_cuda_conv_plan)
+  return has_reference_cuda_conv_plan()
+      ? *key_.reference_cuda_conv_plan_
+      : *reinterpret_cast< ::tensorflow::AutotuneResult_CudaConvPlanKey*>(&::tensorflow::_AutotuneResult_CudaConvPlanKey_default_instance_);
+}
+inline ::tensorflow::AutotuneResult_CudaConvPlanKey* AutotuneResult_FailureResult::mutable_reference_cuda_conv_plan() {
+  if (!has_reference_cuda_conv_plan()) {
+    clear_key();
+    set_has_reference_cuda_conv_plan();
+    key_.reference_cuda_conv_plan_ = CreateMaybeMessage< ::tensorflow::AutotuneResult_CudaConvPlanKey >(
+        GetArenaNoVirtual());
+  }
+  // @@protoc_insertion_point(field_mutable:tensorflow.AutotuneResult.FailureResult.reference_cuda_conv_plan)
+  return key_.reference_cuda_conv_plan_;
+}
+
+// .stream_executor.dnn.AlgorithmProto reference_algorithm = 15;
+inline bool AutotuneResult_FailureResult::has_reference_algorithm() const {
+  return key_case() == kReferenceAlgorithm;
+}
+inline void AutotuneResult_FailureResult::set_has_reference_algorithm() {
+  _oneof_case_[0] = kReferenceAlgorithm;
+}
+inline const ::stream_executor::dnn::AlgorithmProto& AutotuneResult_FailureResult::_internal_reference_algorithm() const {
+  return *key_.reference_algorithm_;
+}
+inline ::stream_executor::dnn::AlgorithmProto* AutotuneResult_FailureResult::release_reference_algorithm() {
+  // @@protoc_insertion_point(field_release:tensorflow.AutotuneResult.FailureResult.reference_algorithm)
+  if (has_reference_algorithm()) {
+    clear_has_key();
+      ::stream_executor::dnn::AlgorithmProto* temp = key_.reference_algorithm_;
+    key_.reference_algorithm_ = NULL;
+    return temp;
+  } else {
+    return NULL;
+  }
+}
+inline const ::stream_executor::dnn::AlgorithmProto& AutotuneResult_FailureResult::reference_algorithm() const {
+  // @@protoc_insertion_point(field_get:tensorflow.AutotuneResult.FailureResult.reference_algorithm)
+  return has_reference_algorithm()
+      ? *key_.reference_algorithm_
+      : *reinterpret_cast< ::stream_executor::dnn::AlgorithmProto*>(&::stream_executor::dnn::_AlgorithmProto_default_instance_);
+}
+inline ::stream_executor::dnn::AlgorithmProto* AutotuneResult_FailureResult::mutable_reference_algorithm() {
+  if (!has_reference_algorithm()) {
+    clear_key();
+    set_has_reference_algorithm();
+    key_.reference_algorithm_ = CreateMaybeMessage< ::stream_executor::dnn::AlgorithmProto >(
+        GetArenaNoVirtual());
+  }
+  // @@protoc_insertion_point(field_mutable:tensorflow.AutotuneResult.FailureResult.reference_algorithm)
+  return key_.reference_algorithm_;
+}
+
 // int64 buffer_address = 13;
 inline void AutotuneResult_FailureResult::clear_buffer_address() {
   buffer_address_ = GOOGLE_LONGLONG(0);
@@ -1413,6 +1675,63 @@ inline void AutotuneResult_GemmKey::set_algorithm(::google::protobuf::int64 valu
   
   algorithm_ = value;
   // @@protoc_insertion_point(field_set:tensorflow.AutotuneResult.GemmKey.algorithm)
+}
+
+// -------------------------------------------------------------------
+
+// AutotuneResult_CudaConvPlanKey
+
+// string exec_plan_id = 1;
+inline void AutotuneResult_CudaConvPlanKey::clear_exec_plan_id() {
+  exec_plan_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline const ::std::string& AutotuneResult_CudaConvPlanKey::exec_plan_id() const {
+  // @@protoc_insertion_point(field_get:tensorflow.AutotuneResult.CudaConvPlanKey.exec_plan_id)
+  return exec_plan_id_.GetNoArena();
+}
+inline void AutotuneResult_CudaConvPlanKey::set_exec_plan_id(const ::std::string& value) {
+  
+  exec_plan_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:tensorflow.AutotuneResult.CudaConvPlanKey.exec_plan_id)
+}
+#if LANG_CXX11
+inline void AutotuneResult_CudaConvPlanKey::set_exec_plan_id(::std::string&& value) {
+  
+  exec_plan_id_.SetNoArena(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:tensorflow.AutotuneResult.CudaConvPlanKey.exec_plan_id)
+}
+#endif
+inline void AutotuneResult_CudaConvPlanKey::set_exec_plan_id(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  
+  exec_plan_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:tensorflow.AutotuneResult.CudaConvPlanKey.exec_plan_id)
+}
+inline void AutotuneResult_CudaConvPlanKey::set_exec_plan_id(const char* value, size_t size) {
+  
+  exec_plan_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:tensorflow.AutotuneResult.CudaConvPlanKey.exec_plan_id)
+}
+inline ::std::string* AutotuneResult_CudaConvPlanKey::mutable_exec_plan_id() {
+  
+  // @@protoc_insertion_point(field_mutable:tensorflow.AutotuneResult.CudaConvPlanKey.exec_plan_id)
+  return exec_plan_id_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* AutotuneResult_CudaConvPlanKey::release_exec_plan_id() {
+  // @@protoc_insertion_point(field_release:tensorflow.AutotuneResult.CudaConvPlanKey.exec_plan_id)
+  
+  return exec_plan_id_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void AutotuneResult_CudaConvPlanKey::set_allocated_exec_plan_id(::std::string* exec_plan_id) {
+  if (exec_plan_id != NULL) {
+    
+  } else {
+    
+  }
+  exec_plan_id_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), exec_plan_id);
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.AutotuneResult.CudaConvPlanKey.exec_plan_id)
 }
 
 // -------------------------------------------------------------------
@@ -1622,6 +1941,88 @@ inline ::tensorflow::AutotuneResult_GemmKey* AutotuneResult::mutable_gemm() {
   }
   // @@protoc_insertion_point(field_mutable:tensorflow.AutotuneResult.gemm)
   return key_.gemm_;
+}
+
+// .tensorflow.AutotuneResult.CudaConvPlanKey cuda_conv_plan = 15;
+inline bool AutotuneResult::has_cuda_conv_plan() const {
+  return key_case() == kCudaConvPlan;
+}
+inline void AutotuneResult::set_has_cuda_conv_plan() {
+  _oneof_case_[0] = kCudaConvPlan;
+}
+inline void AutotuneResult::clear_cuda_conv_plan() {
+  if (has_cuda_conv_plan()) {
+    delete key_.cuda_conv_plan_;
+    clear_has_key();
+  }
+}
+inline const ::tensorflow::AutotuneResult_CudaConvPlanKey& AutotuneResult::_internal_cuda_conv_plan() const {
+  return *key_.cuda_conv_plan_;
+}
+inline ::tensorflow::AutotuneResult_CudaConvPlanKey* AutotuneResult::release_cuda_conv_plan() {
+  // @@protoc_insertion_point(field_release:tensorflow.AutotuneResult.cuda_conv_plan)
+  if (has_cuda_conv_plan()) {
+    clear_has_key();
+      ::tensorflow::AutotuneResult_CudaConvPlanKey* temp = key_.cuda_conv_plan_;
+    key_.cuda_conv_plan_ = NULL;
+    return temp;
+  } else {
+    return NULL;
+  }
+}
+inline const ::tensorflow::AutotuneResult_CudaConvPlanKey& AutotuneResult::cuda_conv_plan() const {
+  // @@protoc_insertion_point(field_get:tensorflow.AutotuneResult.cuda_conv_plan)
+  return has_cuda_conv_plan()
+      ? *key_.cuda_conv_plan_
+      : *reinterpret_cast< ::tensorflow::AutotuneResult_CudaConvPlanKey*>(&::tensorflow::_AutotuneResult_CudaConvPlanKey_default_instance_);
+}
+inline ::tensorflow::AutotuneResult_CudaConvPlanKey* AutotuneResult::mutable_cuda_conv_plan() {
+  if (!has_cuda_conv_plan()) {
+    clear_key();
+    set_has_cuda_conv_plan();
+    key_.cuda_conv_plan_ = CreateMaybeMessage< ::tensorflow::AutotuneResult_CudaConvPlanKey >(
+        GetArenaNoVirtual());
+  }
+  // @@protoc_insertion_point(field_mutable:tensorflow.AutotuneResult.cuda_conv_plan)
+  return key_.cuda_conv_plan_;
+}
+
+// .stream_executor.dnn.AlgorithmProto algorithm = 16;
+inline bool AutotuneResult::has_algorithm() const {
+  return key_case() == kAlgorithm;
+}
+inline void AutotuneResult::set_has_algorithm() {
+  _oneof_case_[0] = kAlgorithm;
+}
+inline const ::stream_executor::dnn::AlgorithmProto& AutotuneResult::_internal_algorithm() const {
+  return *key_.algorithm_;
+}
+inline ::stream_executor::dnn::AlgorithmProto* AutotuneResult::release_algorithm() {
+  // @@protoc_insertion_point(field_release:tensorflow.AutotuneResult.algorithm)
+  if (has_algorithm()) {
+    clear_has_key();
+      ::stream_executor::dnn::AlgorithmProto* temp = key_.algorithm_;
+    key_.algorithm_ = NULL;
+    return temp;
+  } else {
+    return NULL;
+  }
+}
+inline const ::stream_executor::dnn::AlgorithmProto& AutotuneResult::algorithm() const {
+  // @@protoc_insertion_point(field_get:tensorflow.AutotuneResult.algorithm)
+  return has_algorithm()
+      ? *key_.algorithm_
+      : *reinterpret_cast< ::stream_executor::dnn::AlgorithmProto*>(&::stream_executor::dnn::_AlgorithmProto_default_instance_);
+}
+inline ::stream_executor::dnn::AlgorithmProto* AutotuneResult::mutable_algorithm() {
+  if (!has_algorithm()) {
+    clear_key();
+    set_has_algorithm();
+    key_.algorithm_ = CreateMaybeMessage< ::stream_executor::dnn::AlgorithmProto >(
+        GetArenaNoVirtual());
+  }
+  // @@protoc_insertion_point(field_mutable:tensorflow.AutotuneResult.algorithm)
+  return key_.algorithm_;
 }
 
 inline bool AutotuneResult::has_key() const {
@@ -1932,6 +2333,8 @@ inline void AutotuningLog::set_allocated_blas_version(::std::string* blas_versio
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

@@ -29,6 +29,9 @@
 #include <google/protobuf/message.h>
 #include <google/protobuf/repeated_field.h>  // IWYU pragma: export
 #include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/map.h>  // IWYU pragma: export
+#include <google/protobuf/map_entry.h>
+#include <google/protobuf/map_field_inl.h>
 #include <google/protobuf/generated_enum_reflection.h>
 #include <google/protobuf/unknown_field_set.h>
 // @@protoc_insertion_point(includes)
@@ -39,7 +42,7 @@ namespace protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto {
 struct TableStruct {
   static const ::google::protobuf::internal::ParseTableField entries[];
   static const ::google::protobuf::internal::AuxillaryParseTableField aux[];
-  static const ::google::protobuf::internal::ParseTable schema[31];
+  static const ::google::protobuf::internal::ParseTable schema[35];
   static const ::google::protobuf::internal::FieldMetadata field_metadata[];
   static const ::google::protobuf::internal::SerializationTable serialization_table[];
   static const ::google::protobuf::uint32 offsets[];
@@ -59,6 +62,9 @@ extern ComputationStatsDefaultTypeInternal _ComputationStats_default_instance_;
 class ConvolutionDimensionNumbers;
 class ConvolutionDimensionNumbersDefaultTypeInternal;
 extern ConvolutionDimensionNumbersDefaultTypeInternal _ConvolutionDimensionNumbers_default_instance_;
+class CustomCallOutputOperandAliasing;
+class CustomCallOutputOperandAliasingDefaultTypeInternal;
+extern CustomCallOutputOperandAliasingDefaultTypeInternal _CustomCallOutputOperandAliasing_default_instance_;
 class DeviceAssignmentProto;
 class DeviceAssignmentProtoDefaultTypeInternal;
 extern DeviceAssignmentProtoDefaultTypeInternal _DeviceAssignmentProto_default_instance_;
@@ -77,6 +83,12 @@ extern ExecutionHandleDefaultTypeInternal _ExecutionHandle_default_instance_;
 class ExecutionProfile;
 class ExecutionProfileDefaultTypeInternal;
 extern ExecutionProfileDefaultTypeInternal _ExecutionProfile_default_instance_;
+class FrontendAttributes;
+class FrontendAttributesDefaultTypeInternal;
+extern FrontendAttributesDefaultTypeInternal _FrontendAttributes_default_instance_;
+class FrontendAttributes_MapEntry_DoNotUse;
+class FrontendAttributes_MapEntry_DoNotUseDefaultTypeInternal;
+extern FrontendAttributes_MapEntry_DoNotUseDefaultTypeInternal _FrontendAttributes_MapEntry_DoNotUse_default_instance_;
 class GatherDimensionNumbers;
 class GatherDimensionNumbersDefaultTypeInternal;
 extern GatherDimensionNumbersDefaultTypeInternal _GatherDimensionNumbers_default_instance_;
@@ -92,6 +104,9 @@ extern LiteralProtoDefaultTypeInternal _LiteralProto_default_instance_;
 class OpMetadata;
 class OpMetadataDefaultTypeInternal;
 extern OpMetadataDefaultTypeInternal _OpMetadata_default_instance_;
+class OpMetadata_ProfileInfo;
+class OpMetadata_ProfileInfoDefaultTypeInternal;
+extern OpMetadata_ProfileInfoDefaultTypeInternal _OpMetadata_ProfileInfo_default_instance_;
 class OpSharding;
 class OpShardingDefaultTypeInternal;
 extern OpShardingDefaultTypeInternal _OpSharding_default_instance_;
@@ -147,17 +162,21 @@ template<> ::xla::ChannelHandle* Arena::CreateMaybeMessage<::xla::ChannelHandle>
 template<> ::xla::CholeskyOptions* Arena::CreateMaybeMessage<::xla::CholeskyOptions>(Arena*);
 template<> ::xla::ComputationStats* Arena::CreateMaybeMessage<::xla::ComputationStats>(Arena*);
 template<> ::xla::ConvolutionDimensionNumbers* Arena::CreateMaybeMessage<::xla::ConvolutionDimensionNumbers>(Arena*);
+template<> ::xla::CustomCallOutputOperandAliasing* Arena::CreateMaybeMessage<::xla::CustomCallOutputOperandAliasing>(Arena*);
 template<> ::xla::DeviceAssignmentProto* Arena::CreateMaybeMessage<::xla::DeviceAssignmentProto>(Arena*);
 template<> ::xla::DeviceAssignmentProto_ComputationDevice* Arena::CreateMaybeMessage<::xla::DeviceAssignmentProto_ComputationDevice>(Arena*);
 template<> ::xla::DeviceHandle* Arena::CreateMaybeMessage<::xla::DeviceHandle>(Arena*);
 template<> ::xla::DotDimensionNumbers* Arena::CreateMaybeMessage<::xla::DotDimensionNumbers>(Arena*);
 template<> ::xla::ExecutionHandle* Arena::CreateMaybeMessage<::xla::ExecutionHandle>(Arena*);
 template<> ::xla::ExecutionProfile* Arena::CreateMaybeMessage<::xla::ExecutionProfile>(Arena*);
+template<> ::xla::FrontendAttributes* Arena::CreateMaybeMessage<::xla::FrontendAttributes>(Arena*);
+template<> ::xla::FrontendAttributes_MapEntry_DoNotUse* Arena::CreateMaybeMessage<::xla::FrontendAttributes_MapEntry_DoNotUse>(Arena*);
 template<> ::xla::GatherDimensionNumbers* Arena::CreateMaybeMessage<::xla::GatherDimensionNumbers>(Arena*);
 template<> ::xla::GlobalDataHandle* Arena::CreateMaybeMessage<::xla::GlobalDataHandle>(Arena*);
 template<> ::xla::LayoutProto* Arena::CreateMaybeMessage<::xla::LayoutProto>(Arena*);
 template<> ::xla::LiteralProto* Arena::CreateMaybeMessage<::xla::LiteralProto>(Arena*);
 template<> ::xla::OpMetadata* Arena::CreateMaybeMessage<::xla::OpMetadata>(Arena*);
+template<> ::xla::OpMetadata_ProfileInfo* Arena::CreateMaybeMessage<::xla::OpMetadata_ProfileInfo>(Arena*);
 template<> ::xla::OpSharding* Arena::CreateMaybeMessage<::xla::OpSharding>(Arena*);
 template<> ::xla::PaddingConfig* Arena::CreateMaybeMessage<::xla::PaddingConfig>(Arena*);
 template<> ::xla::PaddingConfig_PaddingConfigDimension* Arena::CreateMaybeMessage<::xla::PaddingConfig_PaddingConfigDimension>(Arena*);
@@ -229,12 +248,13 @@ enum OpSharding_Type {
   OpSharding_Type_MAXIMAL = 1,
   OpSharding_Type_TUPLE = 2,
   OpSharding_Type_OTHER = 3,
+  OpSharding_Type_MANUAL = 4,
   OpSharding_Type_OpSharding_Type_INT_MIN_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32min,
   OpSharding_Type_OpSharding_Type_INT_MAX_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32max
 };
 bool OpSharding_Type_IsValid(int value);
 const OpSharding_Type OpSharding_Type_Type_MIN = OpSharding_Type_REPLICATED;
-const OpSharding_Type OpSharding_Type_Type_MAX = OpSharding_Type_OTHER;
+const OpSharding_Type OpSharding_Type_Type_MAX = OpSharding_Type_MANUAL;
 const int OpSharding_Type_Type_ARRAYSIZE = OpSharding_Type_Type_MAX + 1;
 
 const ::google::protobuf::EnumDescriptor* OpSharding_Type_descriptor();
@@ -310,13 +330,12 @@ inline bool PrimitiveType_Parse(
 enum Format {
   INVALID_FORMAT = 0,
   DENSE = 1,
-  SPARSE = 2,
   Format_INT_MIN_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32min,
   Format_INT_MAX_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32max
 };
 bool Format_IsValid(int value);
 const Format Format_MIN = INVALID_FORMAT;
-const Format Format_MAX = SPARSE;
+const Format Format_MAX = DENSE;
 const int Format_ARRAYSIZE = Format_MAX + 1;
 
 const ::google::protobuf::EnumDescriptor* Format_descriptor();
@@ -328,6 +347,95 @@ inline bool Format_Parse(
     const ::std::string& name, Format* value) {
   return ::google::protobuf::internal::ParseNamedEnum<Format>(
     Format_descriptor(), name, value);
+}
+enum ProfileType {
+  INVALID = 0,
+  WINDOW = 1,
+  FLAG = 2,
+  INTEGER = 3,
+  ProfileType_INT_MIN_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32min,
+  ProfileType_INT_MAX_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32max
+};
+bool ProfileType_IsValid(int value);
+const ProfileType ProfileType_MIN = INVALID;
+const ProfileType ProfileType_MAX = INTEGER;
+const int ProfileType_ARRAYSIZE = ProfileType_MAX + 1;
+
+const ::google::protobuf::EnumDescriptor* ProfileType_descriptor();
+inline const ::std::string& ProfileType_Name(ProfileType value) {
+  return ::google::protobuf::internal::NameOfEnum(
+    ProfileType_descriptor(), value);
+}
+inline bool ProfileType_Parse(
+    const ::std::string& name, ProfileType* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<ProfileType>(
+    ProfileType_descriptor(), name, value);
+}
+enum ProfileSource {
+  PROFILE_SOURCE_UNKNOWN_SOURCE = 0,
+  PROFILE_SOURCE_EMBEDDED = 1,
+  PROFILE_SOURCE_REMOTE = 2,
+  ProfileSource_INT_MIN_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32min,
+  ProfileSource_INT_MAX_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32max
+};
+bool ProfileSource_IsValid(int value);
+const ProfileSource ProfileSource_MIN = PROFILE_SOURCE_UNKNOWN_SOURCE;
+const ProfileSource ProfileSource_MAX = PROFILE_SOURCE_REMOTE;
+const int ProfileSource_ARRAYSIZE = ProfileSource_MAX + 1;
+
+const ::google::protobuf::EnumDescriptor* ProfileSource_descriptor();
+inline const ::std::string& ProfileSource_Name(ProfileSource value) {
+  return ::google::protobuf::internal::NameOfEnum(
+    ProfileSource_descriptor(), value);
+}
+inline bool ProfileSource_Parse(
+    const ::std::string& name, ProfileSource* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<ProfileSource>(
+    ProfileSource_descriptor(), name, value);
+}
+enum CompilationEvent {
+  COMPILATION_EVENT_UNKNOWN_EVENT = 0,
+  COMPILATION_EVENT_FIRST_COMPILATION = 1,
+  COMPILATION_EVENT_RECOMPILATION = 2,
+  CompilationEvent_INT_MIN_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32min,
+  CompilationEvent_INT_MAX_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32max
+};
+bool CompilationEvent_IsValid(int value);
+const CompilationEvent CompilationEvent_MIN = COMPILATION_EVENT_UNKNOWN_EVENT;
+const CompilationEvent CompilationEvent_MAX = COMPILATION_EVENT_RECOMPILATION;
+const int CompilationEvent_ARRAYSIZE = CompilationEvent_MAX + 1;
+
+const ::google::protobuf::EnumDescriptor* CompilationEvent_descriptor();
+inline const ::std::string& CompilationEvent_Name(CompilationEvent value) {
+  return ::google::protobuf::internal::NameOfEnum(
+    CompilationEvent_descriptor(), value);
+}
+inline bool CompilationEvent_Parse(
+    const ::std::string& name, CompilationEvent* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<CompilationEvent>(
+    CompilationEvent_descriptor(), name, value);
+}
+enum PaddingType {
+  PADDING_INVALID = 0,
+  PADDING_VALID = 1,
+  PADDING_SAME = 2,
+  PaddingType_INT_MIN_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32min,
+  PaddingType_INT_MAX_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32max
+};
+bool PaddingType_IsValid(int value);
+const PaddingType PaddingType_MIN = PADDING_INVALID;
+const PaddingType PaddingType_MAX = PADDING_SAME;
+const int PaddingType_ARRAYSIZE = PaddingType_MAX + 1;
+
+const ::google::protobuf::EnumDescriptor* PaddingType_descriptor();
+inline const ::std::string& PaddingType_Name(PaddingType value) {
+  return ::google::protobuf::internal::NameOfEnum(
+    PaddingType_descriptor(), value);
+}
+inline bool PaddingType_Parse(
+    const ::std::string& name, PaddingType* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<PaddingType>(
+    PaddingType_descriptor(), name, value);
 }
 enum FftType {
   FFT = 0,
@@ -373,6 +481,28 @@ inline bool RandomDistribution_Parse(
     const ::std::string& name, RandomDistribution* value) {
   return ::google::protobuf::internal::ParseNamedEnum<RandomDistribution>(
     RandomDistribution_descriptor(), name, value);
+}
+enum RandomAlgorithm {
+  RNG_DEFAULT = 0,
+  RNG_THREE_FRY = 1,
+  RNG_PHILOX = 2,
+  RandomAlgorithm_INT_MIN_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32min,
+  RandomAlgorithm_INT_MAX_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32max
+};
+bool RandomAlgorithm_IsValid(int value);
+const RandomAlgorithm RandomAlgorithm_MIN = RNG_DEFAULT;
+const RandomAlgorithm RandomAlgorithm_MAX = RNG_PHILOX;
+const int RandomAlgorithm_ARRAYSIZE = RandomAlgorithm_MAX + 1;
+
+const ::google::protobuf::EnumDescriptor* RandomAlgorithm_descriptor();
+inline const ::std::string& RandomAlgorithm_Name(RandomAlgorithm value) {
+  return ::google::protobuf::internal::NameOfEnum(
+    RandomAlgorithm_descriptor(), value);
+}
+inline bool RandomAlgorithm_Parse(
+    const ::std::string& name, RandomAlgorithm* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<RandomAlgorithm>(
+    RandomAlgorithm_descriptor(), name, value);
 }
 // ===================================================================
 
@@ -882,23 +1012,17 @@ class LayoutProto : public ::google::protobuf::Message /* @@protoc_insertion_poi
   const ::google::protobuf::RepeatedPtrField< ::xla::TileProto >&
       tiles() const;
 
-  // int64 max_sparse_elements = 5;
-  void clear_max_sparse_elements();
-  static const int kMaxSparseElementsFieldNumber = 5;
-  ::google::protobuf::int64 max_sparse_elements() const;
-  void set_max_sparse_elements(::google::protobuf::int64 value);
+  // .xla.Format format = 4;
+  void clear_format();
+  static const int kFormatFieldNumber = 4;
+  ::xla::Format format() const;
+  void set_format(::xla::Format value);
 
   // int64 element_size_in_bits = 7;
   void clear_element_size_in_bits();
   static const int kElementSizeInBitsFieldNumber = 7;
   ::google::protobuf::int64 element_size_in_bits() const;
   void set_element_size_in_bits(::google::protobuf::int64 value);
-
-  // .xla.Format format = 4;
-  void clear_format();
-  static const int kFormatFieldNumber = 4;
-  ::xla::Format format() const;
-  void set_format(::xla::Format value);
 
   // int64 memory_space = 8;
   void clear_memory_space();
@@ -916,9 +1040,8 @@ class LayoutProto : public ::google::protobuf::Message /* @@protoc_insertion_poi
   ::google::protobuf::RepeatedField< ::google::protobuf::int64 > minor_to_major_;
   mutable int _minor_to_major_cached_byte_size_;
   ::google::protobuf::RepeatedPtrField< ::xla::TileProto > tiles_;
-  ::google::protobuf::int64 max_sparse_elements_;
-  ::google::protobuf::int64 element_size_in_bits_;
   int format_;
+  ::google::protobuf::int64 element_size_in_bits_;
   ::google::protobuf::int64 memory_space_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto::TableStruct;
@@ -1388,6 +1511,150 @@ class ComputationStats : public ::google::protobuf::Message /* @@protoc_insertio
 };
 // -------------------------------------------------------------------
 
+class OpMetadata_ProfileInfo : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:xla.OpMetadata.ProfileInfo) */ {
+ public:
+  OpMetadata_ProfileInfo();
+  virtual ~OpMetadata_ProfileInfo();
+
+  OpMetadata_ProfileInfo(const OpMetadata_ProfileInfo& from);
+
+  inline OpMetadata_ProfileInfo& operator=(const OpMetadata_ProfileInfo& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  OpMetadata_ProfileInfo(OpMetadata_ProfileInfo&& from) noexcept
+    : OpMetadata_ProfileInfo() {
+    *this = ::std::move(from);
+  }
+
+  inline OpMetadata_ProfileInfo& operator=(OpMetadata_ProfileInfo&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  inline ::google::protobuf::Arena* GetArena() const final {
+    return GetArenaNoVirtual();
+  }
+  inline void* GetMaybeArenaPointer() const final {
+    return MaybeArenaPtr();
+  }
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const OpMetadata_ProfileInfo& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const OpMetadata_ProfileInfo* internal_default_instance() {
+    return reinterpret_cast<const OpMetadata_ProfileInfo*>(
+               &_OpMetadata_ProfileInfo_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    7;
+
+  void UnsafeArenaSwap(OpMetadata_ProfileInfo* other);
+  void Swap(OpMetadata_ProfileInfo* other);
+  friend void swap(OpMetadata_ProfileInfo& a, OpMetadata_ProfileInfo& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline OpMetadata_ProfileInfo* New() const final {
+    return CreateMaybeMessage<OpMetadata_ProfileInfo>(NULL);
+  }
+
+  OpMetadata_ProfileInfo* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<OpMetadata_ProfileInfo>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const OpMetadata_ProfileInfo& from);
+  void MergeFrom(const OpMetadata_ProfileInfo& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(OpMetadata_ProfileInfo* other);
+  protected:
+  explicit OpMetadata_ProfileInfo(::google::protobuf::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::google::protobuf::Arena* arena);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return _internal_metadata_.arena();
+  }
+  inline void* MaybeArenaPtr() const {
+    return _internal_metadata_.raw_arena_ptr();
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // repeated .xla.ProfileType profile_type = 1;
+  int profile_type_size() const;
+  void clear_profile_type();
+  static const int kProfileTypeFieldNumber = 1;
+  ::xla::ProfileType profile_type(int index) const;
+  void set_profile_type(int index, ::xla::ProfileType value);
+  void add_profile_type(::xla::ProfileType value);
+  const ::google::protobuf::RepeatedField<int>& profile_type() const;
+  ::google::protobuf::RepeatedField<int>* mutable_profile_type();
+
+  // double relative_speedup = 2;
+  void clear_relative_speedup();
+  static const int kRelativeSpeedupFieldNumber = 2;
+  double relative_speedup() const;
+  void set_relative_speedup(double value);
+
+  // .xla.ProfileSource profile_source = 3;
+  void clear_profile_source();
+  static const int kProfileSourceFieldNumber = 3;
+  ::xla::ProfileSource profile_source() const;
+  void set_profile_source(::xla::ProfileSource value);
+
+  // .xla.CompilationEvent compilation_event = 4;
+  void clear_compilation_event();
+  static const int kCompilationEventFieldNumber = 4;
+  ::xla::CompilationEvent compilation_event() const;
+  void set_compilation_event(::xla::CompilationEvent value);
+
+  // @@protoc_insertion_point(class_scope:xla.OpMetadata.ProfileInfo)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::google::protobuf::RepeatedField<int> profile_type_;
+  mutable int _profile_type_cached_byte_size_;
+  double relative_speedup_;
+  int profile_source_;
+  int compilation_event_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
 class OpMetadata : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:xla.OpMetadata) */ {
  public:
   OpMetadata();
@@ -1429,7 +1696,7 @@ class OpMetadata : public ::google::protobuf::Message /* @@protoc_insertion_poin
                &_OpMetadata_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    7;
+    8;
 
   void UnsafeArenaSwap(OpMetadata* other);
   void Swap(OpMetadata* other);
@@ -1485,7 +1752,19 @@ class OpMetadata : public ::google::protobuf::Message /* @@protoc_insertion_poin
 
   // nested types ----------------------------------------------------
 
+  typedef OpMetadata_ProfileInfo ProfileInfo;
+
   // accessors -------------------------------------------------------
+
+  // repeated .xla.ProfileType profile_type = 5 [deprecated = true];
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR int profile_type_size() const;
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR void clear_profile_type();
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR static const int kProfileTypeFieldNumber = 5;
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR ::xla::ProfileType profile_type(int index) const;
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR void set_profile_type(int index, ::xla::ProfileType value);
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR void add_profile_type(::xla::ProfileType value);
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR const ::google::protobuf::RepeatedField<int>& profile_type() const;
+  GOOGLE_PROTOBUF_DEPRECATED_ATTR ::google::protobuf::RepeatedField<int>* mutable_profile_type();
 
   // string op_type = 1;
   void clear_op_type();
@@ -1556,6 +1835,45 @@ class OpMetadata : public ::google::protobuf::Message /* @@protoc_insertion_poin
   void unsafe_arena_set_allocated_source_file(
       ::std::string* source_file);
 
+  // .xla.OpMetadata.ProfileInfo profile_info = 10;
+  bool has_profile_info() const;
+  void clear_profile_info();
+  static const int kProfileInfoFieldNumber = 10;
+  private:
+  const ::xla::OpMetadata_ProfileInfo& _internal_profile_info() const;
+  public:
+  const ::xla::OpMetadata_ProfileInfo& profile_info() const;
+  ::xla::OpMetadata_ProfileInfo* release_profile_info();
+  ::xla::OpMetadata_ProfileInfo* mutable_profile_info();
+  void set_allocated_profile_info(::xla::OpMetadata_ProfileInfo* profile_info);
+  void unsafe_arena_set_allocated_profile_info(
+      ::xla::OpMetadata_ProfileInfo* profile_info);
+  ::xla::OpMetadata_ProfileInfo* unsafe_arena_release_profile_info();
+
+  // int64 creation_pass_id = 6;
+  void clear_creation_pass_id();
+  static const int kCreationPassIdFieldNumber = 6;
+  ::google::protobuf::int64 creation_pass_id() const;
+  void set_creation_pass_id(::google::protobuf::int64 value);
+
+  // int64 logical_creation_pass_id = 7;
+  void clear_logical_creation_pass_id();
+  static const int kLogicalCreationPassIdFieldNumber = 7;
+  ::google::protobuf::int64 logical_creation_pass_id() const;
+  void set_logical_creation_pass_id(::google::protobuf::int64 value);
+
+  // int64 size_of_generated_code_in_bytes = 8;
+  void clear_size_of_generated_code_in_bytes();
+  static const int kSizeOfGeneratedCodeInBytesFieldNumber = 8;
+  ::google::protobuf::int64 size_of_generated_code_in_bytes() const;
+  void set_size_of_generated_code_in_bytes(::google::protobuf::int64 value);
+
+  // int64 size_of_memory_working_set_in_bytes = 9;
+  void clear_size_of_memory_working_set_in_bytes();
+  static const int kSizeOfMemoryWorkingSetInBytesFieldNumber = 9;
+  ::google::protobuf::int64 size_of_memory_working_set_in_bytes() const;
+  void set_size_of_memory_working_set_in_bytes(::google::protobuf::int64 value);
+
   // int32 source_line = 4;
   void clear_source_line();
   static const int kSourceLineFieldNumber = 4;
@@ -1569,9 +1887,16 @@ class OpMetadata : public ::google::protobuf::Message /* @@protoc_insertion_poin
   template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
+  ::google::protobuf::RepeatedField<int> profile_type_;
+  mutable int _profile_type_cached_byte_size_;
   ::google::protobuf::internal::ArenaStringPtr op_type_;
   ::google::protobuf::internal::ArenaStringPtr op_name_;
   ::google::protobuf::internal::ArenaStringPtr source_file_;
+  ::xla::OpMetadata_ProfileInfo* profile_info_;
+  ::google::protobuf::int64 creation_pass_id_;
+  ::google::protobuf::int64 logical_creation_pass_id_;
+  ::google::protobuf::int64 size_of_generated_code_in_bytes_;
+  ::google::protobuf::int64 size_of_memory_working_set_in_bytes_;
   ::google::protobuf::int32 source_line_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto::TableStruct;
@@ -1619,7 +1944,7 @@ class ExecutionProfile : public ::google::protobuf::Message /* @@protoc_insertio
                &_ExecutionProfile_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    8;
+    9;
 
   void UnsafeArenaSwap(ExecutionProfile* other);
   void Swap(ExecutionProfile* other);
@@ -1779,7 +2104,7 @@ class ExecutionHandle : public ::google::protobuf::Message /* @@protoc_insertion
                &_ExecutionHandle_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    9;
+    10;
 
   void UnsafeArenaSwap(ExecutionHandle* other);
   void Swap(ExecutionHandle* other);
@@ -1897,7 +2222,7 @@ class GlobalDataHandle : public ::google::protobuf::Message /* @@protoc_insertio
                &_GlobalDataHandle_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    10;
+    11;
 
   void UnsafeArenaSwap(GlobalDataHandle* other);
   void Swap(GlobalDataHandle* other);
@@ -2015,7 +2340,7 @@ class DeviceHandle : public ::google::protobuf::Message /* @@protoc_insertion_po
                &_DeviceHandle_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    11;
+    12;
 
   void UnsafeArenaSwap(DeviceHandle* other);
   void Swap(DeviceHandle* other);
@@ -2140,7 +2465,7 @@ class ChannelHandle : public ::google::protobuf::Message /* @@protoc_insertion_p
                &_ChannelHandle_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    12;
+    13;
 
   void UnsafeArenaSwap(ChannelHandle* other);
   void Swap(ChannelHandle* other);
@@ -2295,7 +2620,7 @@ class DeviceAssignmentProto_ComputationDevice : public ::google::protobuf::Messa
                &_DeviceAssignmentProto_ComputationDevice_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    13;
+    14;
 
   void UnsafeArenaSwap(DeviceAssignmentProto_ComputationDevice* other);
   void Swap(DeviceAssignmentProto_ComputationDevice* other);
@@ -2420,7 +2745,7 @@ class DeviceAssignmentProto : public ::google::protobuf::Message /* @@protoc_ins
                &_DeviceAssignmentProto_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    14;
+    15;
 
   void UnsafeArenaSwap(DeviceAssignmentProto* other);
   void Swap(DeviceAssignmentProto* other);
@@ -2560,7 +2885,7 @@ class LiteralProto : public ::google::protobuf::Message /* @@protoc_insertion_po
                &_LiteralProto_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    15;
+    16;
 
   void UnsafeArenaSwap(LiteralProto* other);
   void Swap(LiteralProto* other);
@@ -2984,7 +3309,7 @@ class WindowDimension : public ::google::protobuf::Message /* @@protoc_insertion
                &_WindowDimension_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    16;
+    17;
 
   void UnsafeArenaSwap(WindowDimension* other);
   void Swap(WindowDimension* other);
@@ -3144,7 +3469,7 @@ class Window : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
                &_Window_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    17;
+    18;
 
   void UnsafeArenaSwap(Window* other);
   void Swap(Window* other);
@@ -3268,7 +3593,7 @@ class GatherDimensionNumbers : public ::google::protobuf::Message /* @@protoc_in
                &_GatherDimensionNumbers_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    18;
+    19;
 
   void UnsafeArenaSwap(GatherDimensionNumbers* other);
   void Swap(GatherDimensionNumbers* other);
@@ -3428,7 +3753,7 @@ class ScatterDimensionNumbers : public ::google::protobuf::Message /* @@protoc_i
                &_ScatterDimensionNumbers_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    19;
+    20;
 
   void UnsafeArenaSwap(ScatterDimensionNumbers* other);
   void Swap(ScatterDimensionNumbers* other);
@@ -3588,7 +3913,7 @@ class ConvolutionDimensionNumbers : public ::google::protobuf::Message /* @@prot
                &_ConvolutionDimensionNumbers_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    20;
+    21;
 
   void UnsafeArenaSwap(ConvolutionDimensionNumbers* other);
   void Swap(ConvolutionDimensionNumbers* other);
@@ -3783,7 +4108,7 @@ class DotDimensionNumbers : public ::google::protobuf::Message /* @@protoc_inser
                &_DotDimensionNumbers_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    21;
+    22;
 
   void UnsafeArenaSwap(DotDimensionNumbers* other);
   void Swap(DotDimensionNumbers* other);
@@ -3950,7 +4275,7 @@ class TriangularSolveOptions : public ::google::protobuf::Message /* @@protoc_in
                &_TriangularSolveOptions_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    22;
+    23;
 
   void UnsafeArenaSwap(TriangularSolveOptions* other);
   void Swap(TriangularSolveOptions* other);
@@ -4119,7 +4444,7 @@ class CholeskyOptions : public ::google::protobuf::Message /* @@protoc_insertion
                &_CholeskyOptions_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    23;
+    24;
 
   void UnsafeArenaSwap(CholeskyOptions* other);
   void Swap(CholeskyOptions* other);
@@ -4196,6 +4521,154 @@ class CholeskyOptions : public ::google::protobuf::Message /* @@protoc_insertion
 };
 // -------------------------------------------------------------------
 
+class FrontendAttributes_MapEntry_DoNotUse : public ::google::protobuf::internal::MapEntry<FrontendAttributes_MapEntry_DoNotUse, 
+    ::std::string, ::std::string,
+    ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
+    ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
+    0 > {
+public:
+  typedef ::google::protobuf::internal::MapEntry<FrontendAttributes_MapEntry_DoNotUse, 
+    ::std::string, ::std::string,
+    ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
+    ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
+    0 > SuperType;
+  FrontendAttributes_MapEntry_DoNotUse();
+  FrontendAttributes_MapEntry_DoNotUse(::google::protobuf::Arena* arena);
+  void MergeFrom(const FrontendAttributes_MapEntry_DoNotUse& other);
+  static const FrontendAttributes_MapEntry_DoNotUse* internal_default_instance() { return reinterpret_cast<const FrontendAttributes_MapEntry_DoNotUse*>(&_FrontendAttributes_MapEntry_DoNotUse_default_instance_); }
+  void MergeFrom(const ::google::protobuf::Message& other) final;
+  ::google::protobuf::Metadata GetMetadata() const;
+};
+
+// -------------------------------------------------------------------
+
+class FrontendAttributes : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:xla.FrontendAttributes) */ {
+ public:
+  FrontendAttributes();
+  virtual ~FrontendAttributes();
+
+  FrontendAttributes(const FrontendAttributes& from);
+
+  inline FrontendAttributes& operator=(const FrontendAttributes& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  FrontendAttributes(FrontendAttributes&& from) noexcept
+    : FrontendAttributes() {
+    *this = ::std::move(from);
+  }
+
+  inline FrontendAttributes& operator=(FrontendAttributes&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  inline ::google::protobuf::Arena* GetArena() const final {
+    return GetArenaNoVirtual();
+  }
+  inline void* GetMaybeArenaPointer() const final {
+    return MaybeArenaPtr();
+  }
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const FrontendAttributes& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const FrontendAttributes* internal_default_instance() {
+    return reinterpret_cast<const FrontendAttributes*>(
+               &_FrontendAttributes_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    26;
+
+  void UnsafeArenaSwap(FrontendAttributes* other);
+  void Swap(FrontendAttributes* other);
+  friend void swap(FrontendAttributes& a, FrontendAttributes& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline FrontendAttributes* New() const final {
+    return CreateMaybeMessage<FrontendAttributes>(NULL);
+  }
+
+  FrontendAttributes* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<FrontendAttributes>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const FrontendAttributes& from);
+  void MergeFrom(const FrontendAttributes& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(FrontendAttributes* other);
+  protected:
+  explicit FrontendAttributes(::google::protobuf::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::google::protobuf::Arena* arena);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return _internal_metadata_.arena();
+  }
+  inline void* MaybeArenaPtr() const {
+    return _internal_metadata_.raw_arena_ptr();
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+
+  // accessors -------------------------------------------------------
+
+  // map<string, string> map = 1;
+  int map_size() const;
+  void clear_map();
+  static const int kMapFieldNumber = 1;
+  const ::google::protobuf::Map< ::std::string, ::std::string >&
+      map() const;
+  ::google::protobuf::Map< ::std::string, ::std::string >*
+      mutable_map();
+
+  // @@protoc_insertion_point(class_scope:xla.FrontendAttributes)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::google::protobuf::internal::MapField<
+      FrontendAttributes_MapEntry_DoNotUse,
+      ::std::string, ::std::string,
+      ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
+      ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
+      0 > map_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
 class OpSharding : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:xla.OpSharding) */ {
  public:
   OpSharding();
@@ -4237,7 +4710,7 @@ class OpSharding : public ::google::protobuf::Message /* @@protoc_insertion_poin
                &_OpSharding_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    24;
+    27;
 
   void UnsafeArenaSwap(OpSharding* other);
   void Swap(OpSharding* other);
@@ -4302,6 +4775,8 @@ class OpSharding : public ::google::protobuf::Message /* @@protoc_insertion_poin
     OpSharding_Type_TUPLE;
   static const Type OTHER =
     OpSharding_Type_OTHER;
+  static const Type MANUAL =
+    OpSharding_Type_MANUAL;
   static inline bool Type_IsValid(int value) {
     return OpSharding_Type_IsValid(value);
   }
@@ -4361,6 +4836,28 @@ class OpSharding : public ::google::protobuf::Message /* @@protoc_insertion_poin
   const ::google::protobuf::RepeatedPtrField< ::xla::OpSharding >&
       tuple_shardings() const;
 
+  // repeated .xla.OpMetadata metadata = 7;
+  int metadata_size() const;
+  void clear_metadata();
+  static const int kMetadataFieldNumber = 7;
+  ::xla::OpMetadata* mutable_metadata(int index);
+  ::google::protobuf::RepeatedPtrField< ::xla::OpMetadata >*
+      mutable_metadata();
+  const ::xla::OpMetadata& metadata(int index) const;
+  ::xla::OpMetadata* add_metadata();
+  const ::google::protobuf::RepeatedPtrField< ::xla::OpMetadata >&
+      metadata() const;
+
+  // repeated .xla.OpSharding.Type last_tile_dims = 8;
+  int last_tile_dims_size() const;
+  void clear_last_tile_dims();
+  static const int kLastTileDimsFieldNumber = 8;
+  ::xla::OpSharding_Type last_tile_dims(int index) const;
+  void set_last_tile_dims(int index, ::xla::OpSharding_Type value);
+  void add_last_tile_dims(::xla::OpSharding_Type value);
+  const ::google::protobuf::RepeatedField<int>& last_tile_dims() const;
+  ::google::protobuf::RepeatedField<int>* mutable_last_tile_dims();
+
   // .xla.ShapeProto tile_shape = 2;
   bool has_tile_shape() const;
   void clear_tile_shape();
@@ -4382,6 +4879,12 @@ class OpSharding : public ::google::protobuf::Message /* @@protoc_insertion_poin
   ::xla::OpSharding_Type type() const;
   void set_type(::xla::OpSharding_Type value);
 
+  // bool replicate_on_last_tile_dim = 6;
+  void clear_replicate_on_last_tile_dim();
+  static const int kReplicateOnLastTileDimFieldNumber = 6;
+  bool replicate_on_last_tile_dim() const;
+  void set_replicate_on_last_tile_dim(bool value);
+
   // @@protoc_insertion_point(class_scope:xla.OpSharding)
  private:
 
@@ -4394,8 +4897,12 @@ class OpSharding : public ::google::protobuf::Message /* @@protoc_insertion_poin
   ::google::protobuf::RepeatedField< ::google::protobuf::int64 > tile_assignment_devices_;
   mutable int _tile_assignment_devices_cached_byte_size_;
   ::google::protobuf::RepeatedPtrField< ::xla::OpSharding > tuple_shardings_;
+  ::google::protobuf::RepeatedPtrField< ::xla::OpMetadata > metadata_;
+  ::google::protobuf::RepeatedField<int> last_tile_dims_;
+  mutable int _last_tile_dims_cached_byte_size_;
   ::xla::ShapeProto* tile_shape_;
   int type_;
+  bool replicate_on_last_tile_dim_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto::TableStruct;
 };
@@ -4442,7 +4949,7 @@ class ReplicaGroup : public ::google::protobuf::Message /* @@protoc_insertion_po
                &_ReplicaGroup_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    25;
+    28;
 
   void UnsafeArenaSwap(ReplicaGroup* other);
   void Swap(ReplicaGroup* other);
@@ -4567,7 +5074,7 @@ class SourceTarget : public ::google::protobuf::Message /* @@protoc_insertion_po
                &_SourceTarget_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    26;
+    29;
 
   void UnsafeArenaSwap(SourceTarget* other);
   void Swap(SourceTarget* other);
@@ -4692,7 +5199,7 @@ class PrecisionConfig : public ::google::protobuf::Message /* @@protoc_insertion
                &_PrecisionConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    27;
+    30;
 
   void UnsafeArenaSwap(PrecisionConfig* other);
   void Swap(PrecisionConfig* other);
@@ -4843,7 +5350,7 @@ class ParameterReplication : public ::google::protobuf::Message /* @@protoc_inse
                &_ParameterReplication_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    28;
+    31;
 
   void UnsafeArenaSwap(ParameterReplication* other);
   void Swap(ParameterReplication* other);
@@ -4968,7 +5475,7 @@ class WhileLoopBackendConfig_KnownTripCount : public ::google::protobuf::Message
                &_WhileLoopBackendConfig_KnownTripCount_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    29;
+    32;
 
   void UnsafeArenaSwap(WhileLoopBackendConfig_KnownTripCount* other);
   void Swap(WhileLoopBackendConfig_KnownTripCount* other);
@@ -5086,7 +5593,7 @@ class WhileLoopBackendConfig : public ::google::protobuf::Message /* @@protoc_in
                &_WhileLoopBackendConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    30;
+    33;
 
   void UnsafeArenaSwap(WhileLoopBackendConfig* other);
   void Swap(WhileLoopBackendConfig* other);
@@ -5169,6 +5676,152 @@ class WhileLoopBackendConfig : public ::google::protobuf::Message /* @@protoc_in
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::xla::WhileLoopBackendConfig_KnownTripCount* known_trip_count_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
+class CustomCallOutputOperandAliasing : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:xla.CustomCallOutputOperandAliasing) */ {
+ public:
+  CustomCallOutputOperandAliasing();
+  virtual ~CustomCallOutputOperandAliasing();
+
+  CustomCallOutputOperandAliasing(const CustomCallOutputOperandAliasing& from);
+
+  inline CustomCallOutputOperandAliasing& operator=(const CustomCallOutputOperandAliasing& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  CustomCallOutputOperandAliasing(CustomCallOutputOperandAliasing&& from) noexcept
+    : CustomCallOutputOperandAliasing() {
+    *this = ::std::move(from);
+  }
+
+  inline CustomCallOutputOperandAliasing& operator=(CustomCallOutputOperandAliasing&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  inline ::google::protobuf::Arena* GetArena() const final {
+    return GetArenaNoVirtual();
+  }
+  inline void* GetMaybeArenaPointer() const final {
+    return MaybeArenaPtr();
+  }
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const CustomCallOutputOperandAliasing& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const CustomCallOutputOperandAliasing* internal_default_instance() {
+    return reinterpret_cast<const CustomCallOutputOperandAliasing*>(
+               &_CustomCallOutputOperandAliasing_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    34;
+
+  void UnsafeArenaSwap(CustomCallOutputOperandAliasing* other);
+  void Swap(CustomCallOutputOperandAliasing* other);
+  friend void swap(CustomCallOutputOperandAliasing& a, CustomCallOutputOperandAliasing& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline CustomCallOutputOperandAliasing* New() const final {
+    return CreateMaybeMessage<CustomCallOutputOperandAliasing>(NULL);
+  }
+
+  CustomCallOutputOperandAliasing* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<CustomCallOutputOperandAliasing>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const CustomCallOutputOperandAliasing& from);
+  void MergeFrom(const CustomCallOutputOperandAliasing& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CustomCallOutputOperandAliasing* other);
+  protected:
+  explicit CustomCallOutputOperandAliasing(::google::protobuf::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::google::protobuf::Arena* arena);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return _internal_metadata_.arena();
+  }
+  inline void* MaybeArenaPtr() const {
+    return _internal_metadata_.raw_arena_ptr();
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // repeated int64 output_shape_index = 1;
+  int output_shape_index_size() const;
+  void clear_output_shape_index();
+  static const int kOutputShapeIndexFieldNumber = 1;
+  ::google::protobuf::int64 output_shape_index(int index) const;
+  void set_output_shape_index(int index, ::google::protobuf::int64 value);
+  void add_output_shape_index(::google::protobuf::int64 value);
+  const ::google::protobuf::RepeatedField< ::google::protobuf::int64 >&
+      output_shape_index() const;
+  ::google::protobuf::RepeatedField< ::google::protobuf::int64 >*
+      mutable_output_shape_index();
+
+  // repeated int64 operand_shape_index = 3;
+  int operand_shape_index_size() const;
+  void clear_operand_shape_index();
+  static const int kOperandShapeIndexFieldNumber = 3;
+  ::google::protobuf::int64 operand_shape_index(int index) const;
+  void set_operand_shape_index(int index, ::google::protobuf::int64 value);
+  void add_operand_shape_index(::google::protobuf::int64 value);
+  const ::google::protobuf::RepeatedField< ::google::protobuf::int64 >&
+      operand_shape_index() const;
+  ::google::protobuf::RepeatedField< ::google::protobuf::int64 >*
+      mutable_operand_shape_index();
+
+  // int64 operand_index = 2;
+  void clear_operand_index();
+  static const int kOperandIndexFieldNumber = 2;
+  ::google::protobuf::int64 operand_index() const;
+  void set_operand_index(::google::protobuf::int64 value);
+
+  // @@protoc_insertion_point(class_scope:xla.CustomCallOutputOperandAliasing)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::google::protobuf::RepeatedField< ::google::protobuf::int64 > output_shape_index_;
+  mutable int _output_shape_index_cached_byte_size_;
+  ::google::protobuf::RepeatedField< ::google::protobuf::int64 > operand_shape_index_;
+  mutable int _operand_shape_index_cached_byte_size_;
+  ::google::protobuf::int64 operand_index_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto::TableStruct;
 };
@@ -5339,20 +5992,6 @@ inline ::google::protobuf::RepeatedField< ::google::protobuf::int64 >*
 LayoutProto::mutable_minor_to_major() {
   // @@protoc_insertion_point(field_mutable_list:xla.LayoutProto.minor_to_major)
   return &minor_to_major_;
-}
-
-// int64 max_sparse_elements = 5;
-inline void LayoutProto::clear_max_sparse_elements() {
-  max_sparse_elements_ = GOOGLE_LONGLONG(0);
-}
-inline ::google::protobuf::int64 LayoutProto::max_sparse_elements() const {
-  // @@protoc_insertion_point(field_get:xla.LayoutProto.max_sparse_elements)
-  return max_sparse_elements_;
-}
-inline void LayoutProto::set_max_sparse_elements(::google::protobuf::int64 value) {
-  
-  max_sparse_elements_ = value;
-  // @@protoc_insertion_point(field_set:xla.LayoutProto.max_sparse_elements)
 }
 
 // repeated .xla.TileProto tiles = 6;
@@ -5788,6 +6427,82 @@ inline void ComputationStats::set_transcendental_count(double value) {
 
 // -------------------------------------------------------------------
 
+// OpMetadata_ProfileInfo
+
+// repeated .xla.ProfileType profile_type = 1;
+inline int OpMetadata_ProfileInfo::profile_type_size() const {
+  return profile_type_.size();
+}
+inline void OpMetadata_ProfileInfo::clear_profile_type() {
+  profile_type_.Clear();
+}
+inline ::xla::ProfileType OpMetadata_ProfileInfo::profile_type(int index) const {
+  // @@protoc_insertion_point(field_get:xla.OpMetadata.ProfileInfo.profile_type)
+  return static_cast< ::xla::ProfileType >(profile_type_.Get(index));
+}
+inline void OpMetadata_ProfileInfo::set_profile_type(int index, ::xla::ProfileType value) {
+  profile_type_.Set(index, value);
+  // @@protoc_insertion_point(field_set:xla.OpMetadata.ProfileInfo.profile_type)
+}
+inline void OpMetadata_ProfileInfo::add_profile_type(::xla::ProfileType value) {
+  profile_type_.Add(value);
+  // @@protoc_insertion_point(field_add:xla.OpMetadata.ProfileInfo.profile_type)
+}
+inline const ::google::protobuf::RepeatedField<int>&
+OpMetadata_ProfileInfo::profile_type() const {
+  // @@protoc_insertion_point(field_list:xla.OpMetadata.ProfileInfo.profile_type)
+  return profile_type_;
+}
+inline ::google::protobuf::RepeatedField<int>*
+OpMetadata_ProfileInfo::mutable_profile_type() {
+  // @@protoc_insertion_point(field_mutable_list:xla.OpMetadata.ProfileInfo.profile_type)
+  return &profile_type_;
+}
+
+// double relative_speedup = 2;
+inline void OpMetadata_ProfileInfo::clear_relative_speedup() {
+  relative_speedup_ = 0;
+}
+inline double OpMetadata_ProfileInfo::relative_speedup() const {
+  // @@protoc_insertion_point(field_get:xla.OpMetadata.ProfileInfo.relative_speedup)
+  return relative_speedup_;
+}
+inline void OpMetadata_ProfileInfo::set_relative_speedup(double value) {
+  
+  relative_speedup_ = value;
+  // @@protoc_insertion_point(field_set:xla.OpMetadata.ProfileInfo.relative_speedup)
+}
+
+// .xla.ProfileSource profile_source = 3;
+inline void OpMetadata_ProfileInfo::clear_profile_source() {
+  profile_source_ = 0;
+}
+inline ::xla::ProfileSource OpMetadata_ProfileInfo::profile_source() const {
+  // @@protoc_insertion_point(field_get:xla.OpMetadata.ProfileInfo.profile_source)
+  return static_cast< ::xla::ProfileSource >(profile_source_);
+}
+inline void OpMetadata_ProfileInfo::set_profile_source(::xla::ProfileSource value) {
+  
+  profile_source_ = value;
+  // @@protoc_insertion_point(field_set:xla.OpMetadata.ProfileInfo.profile_source)
+}
+
+// .xla.CompilationEvent compilation_event = 4;
+inline void OpMetadata_ProfileInfo::clear_compilation_event() {
+  compilation_event_ = 0;
+}
+inline ::xla::CompilationEvent OpMetadata_ProfileInfo::compilation_event() const {
+  // @@protoc_insertion_point(field_get:xla.OpMetadata.ProfileInfo.compilation_event)
+  return static_cast< ::xla::CompilationEvent >(compilation_event_);
+}
+inline void OpMetadata_ProfileInfo::set_compilation_event(::xla::CompilationEvent value) {
+  
+  compilation_event_ = value;
+  // @@protoc_insertion_point(field_set:xla.OpMetadata.ProfileInfo.compilation_event)
+}
+
+// -------------------------------------------------------------------
+
 // OpMetadata
 
 // string op_type = 1;
@@ -6027,6 +6742,157 @@ inline void OpMetadata::set_source_line(::google::protobuf::int32 value) {
   
   source_line_ = value;
   // @@protoc_insertion_point(field_set:xla.OpMetadata.source_line)
+}
+
+// repeated .xla.ProfileType profile_type = 5 [deprecated = true];
+inline int OpMetadata::profile_type_size() const {
+  return profile_type_.size();
+}
+inline void OpMetadata::clear_profile_type() {
+  profile_type_.Clear();
+}
+inline ::xla::ProfileType OpMetadata::profile_type(int index) const {
+  // @@protoc_insertion_point(field_get:xla.OpMetadata.profile_type)
+  return static_cast< ::xla::ProfileType >(profile_type_.Get(index));
+}
+inline void OpMetadata::set_profile_type(int index, ::xla::ProfileType value) {
+  profile_type_.Set(index, value);
+  // @@protoc_insertion_point(field_set:xla.OpMetadata.profile_type)
+}
+inline void OpMetadata::add_profile_type(::xla::ProfileType value) {
+  profile_type_.Add(value);
+  // @@protoc_insertion_point(field_add:xla.OpMetadata.profile_type)
+}
+inline const ::google::protobuf::RepeatedField<int>&
+OpMetadata::profile_type() const {
+  // @@protoc_insertion_point(field_list:xla.OpMetadata.profile_type)
+  return profile_type_;
+}
+inline ::google::protobuf::RepeatedField<int>*
+OpMetadata::mutable_profile_type() {
+  // @@protoc_insertion_point(field_mutable_list:xla.OpMetadata.profile_type)
+  return &profile_type_;
+}
+
+// int64 creation_pass_id = 6;
+inline void OpMetadata::clear_creation_pass_id() {
+  creation_pass_id_ = GOOGLE_LONGLONG(0);
+}
+inline ::google::protobuf::int64 OpMetadata::creation_pass_id() const {
+  // @@protoc_insertion_point(field_get:xla.OpMetadata.creation_pass_id)
+  return creation_pass_id_;
+}
+inline void OpMetadata::set_creation_pass_id(::google::protobuf::int64 value) {
+  
+  creation_pass_id_ = value;
+  // @@protoc_insertion_point(field_set:xla.OpMetadata.creation_pass_id)
+}
+
+// int64 logical_creation_pass_id = 7;
+inline void OpMetadata::clear_logical_creation_pass_id() {
+  logical_creation_pass_id_ = GOOGLE_LONGLONG(0);
+}
+inline ::google::protobuf::int64 OpMetadata::logical_creation_pass_id() const {
+  // @@protoc_insertion_point(field_get:xla.OpMetadata.logical_creation_pass_id)
+  return logical_creation_pass_id_;
+}
+inline void OpMetadata::set_logical_creation_pass_id(::google::protobuf::int64 value) {
+  
+  logical_creation_pass_id_ = value;
+  // @@protoc_insertion_point(field_set:xla.OpMetadata.logical_creation_pass_id)
+}
+
+// int64 size_of_generated_code_in_bytes = 8;
+inline void OpMetadata::clear_size_of_generated_code_in_bytes() {
+  size_of_generated_code_in_bytes_ = GOOGLE_LONGLONG(0);
+}
+inline ::google::protobuf::int64 OpMetadata::size_of_generated_code_in_bytes() const {
+  // @@protoc_insertion_point(field_get:xla.OpMetadata.size_of_generated_code_in_bytes)
+  return size_of_generated_code_in_bytes_;
+}
+inline void OpMetadata::set_size_of_generated_code_in_bytes(::google::protobuf::int64 value) {
+  
+  size_of_generated_code_in_bytes_ = value;
+  // @@protoc_insertion_point(field_set:xla.OpMetadata.size_of_generated_code_in_bytes)
+}
+
+// int64 size_of_memory_working_set_in_bytes = 9;
+inline void OpMetadata::clear_size_of_memory_working_set_in_bytes() {
+  size_of_memory_working_set_in_bytes_ = GOOGLE_LONGLONG(0);
+}
+inline ::google::protobuf::int64 OpMetadata::size_of_memory_working_set_in_bytes() const {
+  // @@protoc_insertion_point(field_get:xla.OpMetadata.size_of_memory_working_set_in_bytes)
+  return size_of_memory_working_set_in_bytes_;
+}
+inline void OpMetadata::set_size_of_memory_working_set_in_bytes(::google::protobuf::int64 value) {
+  
+  size_of_memory_working_set_in_bytes_ = value;
+  // @@protoc_insertion_point(field_set:xla.OpMetadata.size_of_memory_working_set_in_bytes)
+}
+
+// .xla.OpMetadata.ProfileInfo profile_info = 10;
+inline bool OpMetadata::has_profile_info() const {
+  return this != internal_default_instance() && profile_info_ != NULL;
+}
+inline void OpMetadata::clear_profile_info() {
+  if (GetArenaNoVirtual() == NULL && profile_info_ != NULL) {
+    delete profile_info_;
+  }
+  profile_info_ = NULL;
+}
+inline const ::xla::OpMetadata_ProfileInfo& OpMetadata::_internal_profile_info() const {
+  return *profile_info_;
+}
+inline const ::xla::OpMetadata_ProfileInfo& OpMetadata::profile_info() const {
+  const ::xla::OpMetadata_ProfileInfo* p = profile_info_;
+  // @@protoc_insertion_point(field_get:xla.OpMetadata.profile_info)
+  return p != NULL ? *p : *reinterpret_cast<const ::xla::OpMetadata_ProfileInfo*>(
+      &::xla::_OpMetadata_ProfileInfo_default_instance_);
+}
+inline ::xla::OpMetadata_ProfileInfo* OpMetadata::release_profile_info() {
+  // @@protoc_insertion_point(field_release:xla.OpMetadata.profile_info)
+  
+  ::xla::OpMetadata_ProfileInfo* temp = profile_info_;
+  if (GetArenaNoVirtual() != NULL) {
+    temp = ::google::protobuf::internal::DuplicateIfNonNull(temp);
+  }
+  profile_info_ = NULL;
+  return temp;
+}
+inline ::xla::OpMetadata_ProfileInfo* OpMetadata::unsafe_arena_release_profile_info() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:xla.OpMetadata.profile_info)
+  
+  ::xla::OpMetadata_ProfileInfo* temp = profile_info_;
+  profile_info_ = NULL;
+  return temp;
+}
+inline ::xla::OpMetadata_ProfileInfo* OpMetadata::mutable_profile_info() {
+  
+  if (profile_info_ == NULL) {
+    auto* p = CreateMaybeMessage<::xla::OpMetadata_ProfileInfo>(GetArenaNoVirtual());
+    profile_info_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:xla.OpMetadata.profile_info)
+  return profile_info_;
+}
+inline void OpMetadata::set_allocated_profile_info(::xla::OpMetadata_ProfileInfo* profile_info) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete profile_info_;
+  }
+  if (profile_info) {
+    ::google::protobuf::Arena* submessage_arena =
+      ::google::protobuf::Arena::GetArena(profile_info);
+    if (message_arena != submessage_arena) {
+      profile_info = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, profile_info, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  profile_info_ = profile_info;
+  // @@protoc_insertion_point(field_set_allocated:xla.OpMetadata.profile_info)
 }
 
 // -------------------------------------------------------------------
@@ -7910,6 +8776,30 @@ inline void CholeskyOptions::set_lower(bool value) {
 
 // -------------------------------------------------------------------
 
+// -------------------------------------------------------------------
+
+// FrontendAttributes
+
+// map<string, string> map = 1;
+inline int FrontendAttributes::map_size() const {
+  return map_.size();
+}
+inline void FrontendAttributes::clear_map() {
+  map_.Clear();
+}
+inline const ::google::protobuf::Map< ::std::string, ::std::string >&
+FrontendAttributes::map() const {
+  // @@protoc_insertion_point(field_map:xla.FrontendAttributes.map)
+  return map_.GetMap();
+}
+inline ::google::protobuf::Map< ::std::string, ::std::string >*
+FrontendAttributes::mutable_map() {
+  // @@protoc_insertion_point(field_mutable_map:xla.FrontendAttributes.map)
+  return map_.MutableMap();
+}
+
+// -------------------------------------------------------------------
+
 // OpSharding
 
 // .xla.OpSharding.Type type = 1;
@@ -8079,6 +8969,80 @@ inline const ::google::protobuf::RepeatedPtrField< ::xla::OpSharding >&
 OpSharding::tuple_shardings() const {
   // @@protoc_insertion_point(field_list:xla.OpSharding.tuple_shardings)
   return tuple_shardings_;
+}
+
+// bool replicate_on_last_tile_dim = 6;
+inline void OpSharding::clear_replicate_on_last_tile_dim() {
+  replicate_on_last_tile_dim_ = false;
+}
+inline bool OpSharding::replicate_on_last_tile_dim() const {
+  // @@protoc_insertion_point(field_get:xla.OpSharding.replicate_on_last_tile_dim)
+  return replicate_on_last_tile_dim_;
+}
+inline void OpSharding::set_replicate_on_last_tile_dim(bool value) {
+  
+  replicate_on_last_tile_dim_ = value;
+  // @@protoc_insertion_point(field_set:xla.OpSharding.replicate_on_last_tile_dim)
+}
+
+// repeated .xla.OpMetadata metadata = 7;
+inline int OpSharding::metadata_size() const {
+  return metadata_.size();
+}
+inline void OpSharding::clear_metadata() {
+  metadata_.Clear();
+}
+inline ::xla::OpMetadata* OpSharding::mutable_metadata(int index) {
+  // @@protoc_insertion_point(field_mutable:xla.OpSharding.metadata)
+  return metadata_.Mutable(index);
+}
+inline ::google::protobuf::RepeatedPtrField< ::xla::OpMetadata >*
+OpSharding::mutable_metadata() {
+  // @@protoc_insertion_point(field_mutable_list:xla.OpSharding.metadata)
+  return &metadata_;
+}
+inline const ::xla::OpMetadata& OpSharding::metadata(int index) const {
+  // @@protoc_insertion_point(field_get:xla.OpSharding.metadata)
+  return metadata_.Get(index);
+}
+inline ::xla::OpMetadata* OpSharding::add_metadata() {
+  // @@protoc_insertion_point(field_add:xla.OpSharding.metadata)
+  return metadata_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::xla::OpMetadata >&
+OpSharding::metadata() const {
+  // @@protoc_insertion_point(field_list:xla.OpSharding.metadata)
+  return metadata_;
+}
+
+// repeated .xla.OpSharding.Type last_tile_dims = 8;
+inline int OpSharding::last_tile_dims_size() const {
+  return last_tile_dims_.size();
+}
+inline void OpSharding::clear_last_tile_dims() {
+  last_tile_dims_.Clear();
+}
+inline ::xla::OpSharding_Type OpSharding::last_tile_dims(int index) const {
+  // @@protoc_insertion_point(field_get:xla.OpSharding.last_tile_dims)
+  return static_cast< ::xla::OpSharding_Type >(last_tile_dims_.Get(index));
+}
+inline void OpSharding::set_last_tile_dims(int index, ::xla::OpSharding_Type value) {
+  last_tile_dims_.Set(index, value);
+  // @@protoc_insertion_point(field_set:xla.OpSharding.last_tile_dims)
+}
+inline void OpSharding::add_last_tile_dims(::xla::OpSharding_Type value) {
+  last_tile_dims_.Add(value);
+  // @@protoc_insertion_point(field_add:xla.OpSharding.last_tile_dims)
+}
+inline const ::google::protobuf::RepeatedField<int>&
+OpSharding::last_tile_dims() const {
+  // @@protoc_insertion_point(field_list:xla.OpSharding.last_tile_dims)
+  return last_tile_dims_;
+}
+inline ::google::protobuf::RepeatedField<int>*
+OpSharding::mutable_last_tile_dims() {
+  // @@protoc_insertion_point(field_mutable_list:xla.OpSharding.last_tile_dims)
+  return &last_tile_dims_;
 }
 
 // -------------------------------------------------------------------
@@ -8302,9 +9266,95 @@ inline void WhileLoopBackendConfig::set_allocated_known_trip_count(::xla::WhileL
   // @@protoc_insertion_point(field_set_allocated:xla.WhileLoopBackendConfig.known_trip_count)
 }
 
+// -------------------------------------------------------------------
+
+// CustomCallOutputOperandAliasing
+
+// repeated int64 output_shape_index = 1;
+inline int CustomCallOutputOperandAliasing::output_shape_index_size() const {
+  return output_shape_index_.size();
+}
+inline void CustomCallOutputOperandAliasing::clear_output_shape_index() {
+  output_shape_index_.Clear();
+}
+inline ::google::protobuf::int64 CustomCallOutputOperandAliasing::output_shape_index(int index) const {
+  // @@protoc_insertion_point(field_get:xla.CustomCallOutputOperandAliasing.output_shape_index)
+  return output_shape_index_.Get(index);
+}
+inline void CustomCallOutputOperandAliasing::set_output_shape_index(int index, ::google::protobuf::int64 value) {
+  output_shape_index_.Set(index, value);
+  // @@protoc_insertion_point(field_set:xla.CustomCallOutputOperandAliasing.output_shape_index)
+}
+inline void CustomCallOutputOperandAliasing::add_output_shape_index(::google::protobuf::int64 value) {
+  output_shape_index_.Add(value);
+  // @@protoc_insertion_point(field_add:xla.CustomCallOutputOperandAliasing.output_shape_index)
+}
+inline const ::google::protobuf::RepeatedField< ::google::protobuf::int64 >&
+CustomCallOutputOperandAliasing::output_shape_index() const {
+  // @@protoc_insertion_point(field_list:xla.CustomCallOutputOperandAliasing.output_shape_index)
+  return output_shape_index_;
+}
+inline ::google::protobuf::RepeatedField< ::google::protobuf::int64 >*
+CustomCallOutputOperandAliasing::mutable_output_shape_index() {
+  // @@protoc_insertion_point(field_mutable_list:xla.CustomCallOutputOperandAliasing.output_shape_index)
+  return &output_shape_index_;
+}
+
+// int64 operand_index = 2;
+inline void CustomCallOutputOperandAliasing::clear_operand_index() {
+  operand_index_ = GOOGLE_LONGLONG(0);
+}
+inline ::google::protobuf::int64 CustomCallOutputOperandAliasing::operand_index() const {
+  // @@protoc_insertion_point(field_get:xla.CustomCallOutputOperandAliasing.operand_index)
+  return operand_index_;
+}
+inline void CustomCallOutputOperandAliasing::set_operand_index(::google::protobuf::int64 value) {
+  
+  operand_index_ = value;
+  // @@protoc_insertion_point(field_set:xla.CustomCallOutputOperandAliasing.operand_index)
+}
+
+// repeated int64 operand_shape_index = 3;
+inline int CustomCallOutputOperandAliasing::operand_shape_index_size() const {
+  return operand_shape_index_.size();
+}
+inline void CustomCallOutputOperandAliasing::clear_operand_shape_index() {
+  operand_shape_index_.Clear();
+}
+inline ::google::protobuf::int64 CustomCallOutputOperandAliasing::operand_shape_index(int index) const {
+  // @@protoc_insertion_point(field_get:xla.CustomCallOutputOperandAliasing.operand_shape_index)
+  return operand_shape_index_.Get(index);
+}
+inline void CustomCallOutputOperandAliasing::set_operand_shape_index(int index, ::google::protobuf::int64 value) {
+  operand_shape_index_.Set(index, value);
+  // @@protoc_insertion_point(field_set:xla.CustomCallOutputOperandAliasing.operand_shape_index)
+}
+inline void CustomCallOutputOperandAliasing::add_operand_shape_index(::google::protobuf::int64 value) {
+  operand_shape_index_.Add(value);
+  // @@protoc_insertion_point(field_add:xla.CustomCallOutputOperandAliasing.operand_shape_index)
+}
+inline const ::google::protobuf::RepeatedField< ::google::protobuf::int64 >&
+CustomCallOutputOperandAliasing::operand_shape_index() const {
+  // @@protoc_insertion_point(field_list:xla.CustomCallOutputOperandAliasing.operand_shape_index)
+  return operand_shape_index_;
+}
+inline ::google::protobuf::RepeatedField< ::google::protobuf::int64 >*
+CustomCallOutputOperandAliasing::mutable_operand_shape_index() {
+  // @@protoc_insertion_point(field_mutable_list:xla.CustomCallOutputOperandAliasing.operand_shape_index)
+  return &operand_shape_index_;
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
@@ -8403,6 +9453,26 @@ template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::xla::Format>() {
   return ::xla::Format_descriptor();
 }
+template <> struct is_proto_enum< ::xla::ProfileType> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::xla::ProfileType>() {
+  return ::xla::ProfileType_descriptor();
+}
+template <> struct is_proto_enum< ::xla::ProfileSource> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::xla::ProfileSource>() {
+  return ::xla::ProfileSource_descriptor();
+}
+template <> struct is_proto_enum< ::xla::CompilationEvent> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::xla::CompilationEvent>() {
+  return ::xla::CompilationEvent_descriptor();
+}
+template <> struct is_proto_enum< ::xla::PaddingType> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::xla::PaddingType>() {
+  return ::xla::PaddingType_descriptor();
+}
 template <> struct is_proto_enum< ::xla::FftType> : ::std::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::xla::FftType>() {
@@ -8412,6 +9482,11 @@ template <> struct is_proto_enum< ::xla::RandomDistribution> : ::std::true_type 
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::xla::RandomDistribution>() {
   return ::xla::RandomDistribution_descriptor();
+}
+template <> struct is_proto_enum< ::xla::RandomAlgorithm> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::xla::RandomAlgorithm>() {
+  return ::xla::RandomAlgorithm_descriptor();
 }
 
 }  // namespace protobuf

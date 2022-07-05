@@ -91,13 +91,13 @@ void AddDescriptorsImpl() {
       "proto\022\ntensorflow\"r\n\017ReaderBaseState\022\024\n\014"
       "work_started\030\001 \001(\003\022\025\n\rwork_finished\030\002 \001("
       "\003\022\034\n\024num_records_produced\030\003 \001(\003\022\024\n\014curre"
-      "nt_work\030\004 \001(\014Bp\n\030org.tensorflow.framewor"
-      "kB\020ReaderBaseProtosP\001Z=github.com/tensor"
-      "flow/tensorflow/tensorflow/go/core/frame"
-      "work\370\001\001b\006proto3"
+      "nt_work\030\004 \001(\014B\205\001\n\030org.tensorflow.framewo"
+      "rkB\020ReaderBaseProtosP\001ZRgithub.com/tenso"
+      "rflow/tensorflow/tensorflow/go/core/fram"
+      "ework/reader_base_go_proto\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 295);
+      descriptor, 317);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/framework/reader_base.proto", &protobuf_RegisterTypes);
 }

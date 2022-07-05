@@ -375,13 +375,13 @@ void AddDescriptorsImpl() {
       "mesEntry\0322\n\020ThreadNamesEntry\022\013\n\003key\030\001 \001("
       "\r\022\r\n\005value\030\002 \001(\t:\0028\001\";\n\tStepStats\022.\n\tdev"
       "_stats\030\001 \003(\0132\033.tensorflow.DeviceStepStat"
-      "sBo\n\030org.tensorflow.frameworkB\017StepStats"
-      "ProtosP\001Z=github.com/tensorflow/tensorfl"
-      "ow/tensorflow/go/core/framework\370\001\001b\006prot"
-      "o3"
+      "sB\203\001\n\030org.tensorflow.frameworkB\017StepStat"
+      "sProtosP\001ZQgithub.com/tensorflow/tensorf"
+      "low/tensorflow/go/core/framework/step_st"
+      "ats_go_proto\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 1682);
+      descriptor, 1703);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/framework/step_stats.proto", &protobuf_RegisterTypes);
   ::protobuf_tensorflow_2fcore_2fframework_2fallocation_5fdescription_2eproto::AddDescriptors();

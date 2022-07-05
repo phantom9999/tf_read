@@ -38,9 +38,9 @@
 #include "tensorflow/core/framework/tensor.pb.h"
 #include "tensorflow/core/framework/tensor_shape.pb.h"
 #include "tensorflow/core/framework/types.pb.h"
-#include "tensorflow/core/lib/core/error_codes.pb.h"
 #include "tensorflow/core/protobuf/config.pb.h"
 #include "tensorflow/core/protobuf/debug.pb.h"
+#include "tensorflow/core/protobuf/error_codes.pb.h"
 #include "tensorflow/core/protobuf/named_tensor.pb.h"
 #include "tensorflow/core/protobuf/tensorflow_server.pb.h"
 // @@protoc_insertion_point(includes)
@@ -581,6 +581,29 @@ class CreateWorkerSessionRequest : public ::google::protobuf::Message /* @@proto
   void unsafe_arena_set_allocated_session_handle(
       ::std::string* session_handle);
 
+  // string master_task = 5;
+  void clear_master_task();
+  static const int kMasterTaskFieldNumber = 5;
+  const ::std::string& master_task() const;
+  void set_master_task(const ::std::string& value);
+  #if LANG_CXX11
+  void set_master_task(::std::string&& value);
+  #endif
+  void set_master_task(const char* value);
+  void set_master_task(const char* value, size_t size);
+  ::std::string* mutable_master_task();
+  ::std::string* release_master_task();
+  void set_allocated_master_task(::std::string* master_task);
+  PROTOBUF_RUNTIME_DEPRECATED("The unsafe_arena_ accessors for"
+  "    string fields are deprecated and will be removed in a"
+  "    future release.")
+  ::std::string* unsafe_arena_release_master_task();
+  PROTOBUF_RUNTIME_DEPRECATED("The unsafe_arena_ accessors for"
+  "    string fields are deprecated and will be removed in a"
+  "    future release.")
+  void unsafe_arena_set_allocated_master_task(
+      ::std::string* master_task);
+
   // .tensorflow.ServerDef server_def = 2;
   bool has_server_def() const;
   void clear_server_def();
@@ -595,6 +618,12 @@ class CreateWorkerSessionRequest : public ::google::protobuf::Message /* @@proto
   void unsafe_arena_set_allocated_server_def(
       ::tensorflow::ServerDef* server_def);
   ::tensorflow::ServerDef* unsafe_arena_release_server_def();
+
+  // int64 master_incarnation = 6;
+  void clear_master_incarnation();
+  static const int kMasterIncarnationFieldNumber = 6;
+  ::google::protobuf::int64 master_incarnation() const;
+  void set_master_incarnation(::google::protobuf::int64 value);
 
   // bool isolate_session_state = 3;
   void clear_isolate_session_state();
@@ -611,7 +640,9 @@ class CreateWorkerSessionRequest : public ::google::protobuf::Message /* @@proto
   typedef void DestructorSkippable_;
   ::google::protobuf::RepeatedPtrField< ::tensorflow::DeviceAttributes > cluster_device_attributes_;
   ::google::protobuf::internal::ArenaStringPtr session_handle_;
+  ::google::protobuf::internal::ArenaStringPtr master_task_;
   ::tensorflow::ServerDef* server_def_;
+  ::google::protobuf::int64 master_incarnation_;
   bool isolate_session_state_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2fworker_2eproto::TableStruct;
@@ -1142,6 +1173,21 @@ class RegisterGraphRequest : public ::google::protobuf::Message /* @@protoc_inse
       ::tensorflow::DebugOptions* debug_options);
   ::tensorflow::DebugOptions* unsafe_arena_release_debug_options();
 
+  // .tensorflow.ConfigProto config_proto = 8;
+  bool has_config_proto() const;
+  void clear_config_proto();
+  static const int kConfigProtoFieldNumber = 8;
+  private:
+  const ::tensorflow::ConfigProto& _internal_config_proto() const;
+  public:
+  const ::tensorflow::ConfigProto& config_proto() const;
+  ::tensorflow::ConfigProto* release_config_proto();
+  ::tensorflow::ConfigProto* mutable_config_proto();
+  void set_allocated_config_proto(::tensorflow::ConfigProto* config_proto);
+  void unsafe_arena_set_allocated_config_proto(
+      ::tensorflow::ConfigProto* config_proto);
+  ::tensorflow::ConfigProto* unsafe_arena_release_config_proto();
+
   // int64 collective_graph_key = 7;
   void clear_collective_graph_key();
   static const int kCollectiveGraphKeyFieldNumber = 7;
@@ -1171,6 +1217,7 @@ class RegisterGraphRequest : public ::google::protobuf::Message /* @@protoc_inse
   ::tensorflow::GraphDef* graph_def_;
   ::tensorflow::GraphOptions* graph_options_;
   ::tensorflow::DebugOptions* debug_options_;
+  ::tensorflow::ConfigProto* config_proto_;
   ::google::protobuf::int64 collective_graph_key_;
   bool create_worker_session_called_;
   bool has_control_flow_;
@@ -4576,28 +4623,6 @@ class CompleteGroupRequest : public ::google::protobuf::Message /* @@protoc_inse
 
   // accessors -------------------------------------------------------
 
-  // repeated string device_name = 4;
-  int device_name_size() const;
-  void clear_device_name();
-  static const int kDeviceNameFieldNumber = 4;
-  const ::std::string& device_name(int index) const;
-  ::std::string* mutable_device_name(int index);
-  void set_device_name(int index, const ::std::string& value);
-  #if LANG_CXX11
-  void set_device_name(int index, ::std::string&& value);
-  #endif
-  void set_device_name(int index, const char* value);
-  void set_device_name(int index, const char* value, size_t size);
-  ::std::string* add_device_name();
-  void add_device_name(const ::std::string& value);
-  #if LANG_CXX11
-  void add_device_name(::std::string&& value);
-  #endif
-  void add_device_name(const char* value);
-  void add_device_name(const char* value, size_t size);
-  const ::google::protobuf::RepeatedPtrField< ::std::string>& device_name() const;
-  ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_device_name();
-
   // string device_type = 3;
   void clear_device_type();
   static const int kDeviceTypeFieldNumber = 3;
@@ -4620,6 +4645,21 @@ class CompleteGroupRequest : public ::google::protobuf::Message /* @@protoc_inse
   "    future release.")
   void unsafe_arena_set_allocated_device_type(
       ::std::string* device_type);
+
+  // .tensorflow.DeviceAttributes device_attributes = 6;
+  bool has_device_attributes() const;
+  void clear_device_attributes();
+  static const int kDeviceAttributesFieldNumber = 6;
+  private:
+  const ::tensorflow::DeviceAttributes& _internal_device_attributes() const;
+  public:
+  const ::tensorflow::DeviceAttributes& device_attributes() const;
+  ::tensorflow::DeviceAttributes* release_device_attributes();
+  ::tensorflow::DeviceAttributes* mutable_device_attributes();
+  void set_allocated_device_attributes(::tensorflow::DeviceAttributes* device_attributes);
+  void unsafe_arena_set_allocated_device_attributes(
+      ::tensorflow::DeviceAttributes* device_attributes);
+  ::tensorflow::DeviceAttributes* unsafe_arena_release_device_attributes();
 
   // int32 group_key = 1;
   void clear_group_key();
@@ -4646,8 +4686,8 @@ class CompleteGroupRequest : public ::google::protobuf::Message /* @@protoc_inse
   template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::google::protobuf::RepeatedPtrField< ::std::string> device_name_;
   ::google::protobuf::internal::ArenaStringPtr device_type_;
+  ::tensorflow::DeviceAttributes* device_attributes_;
   ::google::protobuf::int32 group_key_;
   ::google::protobuf::int32 group_size_;
   ::google::protobuf::int32 collective_type_;
@@ -4755,49 +4795,17 @@ class CompleteGroupResponse : public ::google::protobuf::Message /* @@protoc_ins
 
   // accessors -------------------------------------------------------
 
-  // repeated string device_name = 5;
-  int device_name_size() const;
-  void clear_device_name();
-  static const int kDeviceNameFieldNumber = 5;
-  const ::std::string& device_name(int index) const;
-  ::std::string* mutable_device_name(int index);
-  void set_device_name(int index, const ::std::string& value);
-  #if LANG_CXX11
-  void set_device_name(int index, ::std::string&& value);
-  #endif
-  void set_device_name(int index, const char* value);
-  void set_device_name(int index, const char* value, size_t size);
-  ::std::string* add_device_name();
-  void add_device_name(const ::std::string& value);
-  #if LANG_CXX11
-  void add_device_name(::std::string&& value);
-  #endif
-  void add_device_name(const char* value);
-  void add_device_name(const char* value, size_t size);
-  const ::google::protobuf::RepeatedPtrField< ::std::string>& device_name() const;
-  ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_device_name();
-
-  // repeated string task_name = 6;
-  int task_name_size() const;
-  void clear_task_name();
-  static const int kTaskNameFieldNumber = 6;
-  const ::std::string& task_name(int index) const;
-  ::std::string* mutable_task_name(int index);
-  void set_task_name(int index, const ::std::string& value);
-  #if LANG_CXX11
-  void set_task_name(int index, ::std::string&& value);
-  #endif
-  void set_task_name(int index, const char* value);
-  void set_task_name(int index, const char* value, size_t size);
-  ::std::string* add_task_name();
-  void add_task_name(const ::std::string& value);
-  #if LANG_CXX11
-  void add_task_name(::std::string&& value);
-  #endif
-  void add_task_name(const char* value);
-  void add_task_name(const char* value, size_t size);
-  const ::google::protobuf::RepeatedPtrField< ::std::string>& task_name() const;
-  ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_task_name();
+  // repeated .tensorflow.DeviceAttributes device_attributes = 8;
+  int device_attributes_size() const;
+  void clear_device_attributes();
+  static const int kDeviceAttributesFieldNumber = 8;
+  ::tensorflow::DeviceAttributes* mutable_device_attributes(int index);
+  ::google::protobuf::RepeatedPtrField< ::tensorflow::DeviceAttributes >*
+      mutable_device_attributes();
+  const ::tensorflow::DeviceAttributes& device_attributes(int index) const;
+  ::tensorflow::DeviceAttributes* add_device_attributes();
+  const ::google::protobuf::RepeatedPtrField< ::tensorflow::DeviceAttributes >&
+      device_attributes() const;
 
   // string device_type = 3;
   void clear_device_type();
@@ -4870,8 +4878,7 @@ class CompleteGroupResponse : public ::google::protobuf::Message /* @@protoc_ins
   template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::google::protobuf::RepeatedPtrField< ::std::string> device_name_;
-  ::google::protobuf::RepeatedPtrField< ::std::string> task_name_;
+  ::google::protobuf::RepeatedPtrField< ::tensorflow::DeviceAttributes > device_attributes_;
   ::google::protobuf::internal::ArenaStringPtr device_type_;
   ::google::protobuf::internal::ArenaStringPtr communicator_key_;
   ::google::protobuf::int32 group_key_;
@@ -5855,6 +5862,95 @@ CreateWorkerSessionRequest::cluster_device_attributes() const {
   return cluster_device_attributes_;
 }
 
+// string master_task = 5;
+inline void CreateWorkerSessionRequest::clear_master_task() {
+  master_task_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+inline const ::std::string& CreateWorkerSessionRequest::master_task() const {
+  // @@protoc_insertion_point(field_get:tensorflow.CreateWorkerSessionRequest.master_task)
+  return master_task_.Get();
+}
+inline void CreateWorkerSessionRequest::set_master_task(const ::std::string& value) {
+  
+  master_task_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set:tensorflow.CreateWorkerSessionRequest.master_task)
+}
+#if LANG_CXX11
+inline void CreateWorkerSessionRequest::set_master_task(::std::string&& value) {
+  
+  master_task_.Set(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_rvalue:tensorflow.CreateWorkerSessionRequest.master_task)
+}
+#endif
+inline void CreateWorkerSessionRequest::set_master_task(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  
+  master_task_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
+              GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_char:tensorflow.CreateWorkerSessionRequest.master_task)
+}
+inline void CreateWorkerSessionRequest::set_master_task(const char* value,
+    size_t size) {
+  
+  master_task_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_pointer:tensorflow.CreateWorkerSessionRequest.master_task)
+}
+inline ::std::string* CreateWorkerSessionRequest::mutable_master_task() {
+  
+  // @@protoc_insertion_point(field_mutable:tensorflow.CreateWorkerSessionRequest.master_task)
+  return master_task_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+inline ::std::string* CreateWorkerSessionRequest::release_master_task() {
+  // @@protoc_insertion_point(field_release:tensorflow.CreateWorkerSessionRequest.master_task)
+  
+  return master_task_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+inline void CreateWorkerSessionRequest::set_allocated_master_task(::std::string* master_task) {
+  if (master_task != NULL) {
+    
+  } else {
+    
+  }
+  master_task_.SetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), master_task,
+      GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.CreateWorkerSessionRequest.master_task)
+}
+inline ::std::string* CreateWorkerSessionRequest::unsafe_arena_release_master_task() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:tensorflow.CreateWorkerSessionRequest.master_task)
+  GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
+  
+  return master_task_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      GetArenaNoVirtual());
+}
+inline void CreateWorkerSessionRequest::unsafe_arena_set_allocated_master_task(
+    ::std::string* master_task) {
+  GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
+  if (master_task != NULL) {
+    
+  } else {
+    
+  }
+  master_task_.UnsafeArenaSetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      master_task, GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.CreateWorkerSessionRequest.master_task)
+}
+
+// int64 master_incarnation = 6;
+inline void CreateWorkerSessionRequest::clear_master_incarnation() {
+  master_incarnation_ = GOOGLE_LONGLONG(0);
+}
+inline ::google::protobuf::int64 CreateWorkerSessionRequest::master_incarnation() const {
+  // @@protoc_insertion_point(field_get:tensorflow.CreateWorkerSessionRequest.master_incarnation)
+  return master_incarnation_;
+}
+inline void CreateWorkerSessionRequest::set_master_incarnation(::google::protobuf::int64 value) {
+  
+  master_incarnation_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.CreateWorkerSessionRequest.master_incarnation)
+}
+
 // -------------------------------------------------------------------
 
 // CreateWorkerSessionResponse
@@ -6238,6 +6334,65 @@ inline void RegisterGraphRequest::set_collective_graph_key(::google::protobuf::i
   
   collective_graph_key_ = value;
   // @@protoc_insertion_point(field_set:tensorflow.RegisterGraphRequest.collective_graph_key)
+}
+
+// .tensorflow.ConfigProto config_proto = 8;
+inline bool RegisterGraphRequest::has_config_proto() const {
+  return this != internal_default_instance() && config_proto_ != NULL;
+}
+inline const ::tensorflow::ConfigProto& RegisterGraphRequest::_internal_config_proto() const {
+  return *config_proto_;
+}
+inline const ::tensorflow::ConfigProto& RegisterGraphRequest::config_proto() const {
+  const ::tensorflow::ConfigProto* p = config_proto_;
+  // @@protoc_insertion_point(field_get:tensorflow.RegisterGraphRequest.config_proto)
+  return p != NULL ? *p : *reinterpret_cast<const ::tensorflow::ConfigProto*>(
+      &::tensorflow::_ConfigProto_default_instance_);
+}
+inline ::tensorflow::ConfigProto* RegisterGraphRequest::release_config_proto() {
+  // @@protoc_insertion_point(field_release:tensorflow.RegisterGraphRequest.config_proto)
+  
+  ::tensorflow::ConfigProto* temp = config_proto_;
+  if (GetArenaNoVirtual() != NULL) {
+    temp = ::google::protobuf::internal::DuplicateIfNonNull(temp);
+  }
+  config_proto_ = NULL;
+  return temp;
+}
+inline ::tensorflow::ConfigProto* RegisterGraphRequest::unsafe_arena_release_config_proto() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:tensorflow.RegisterGraphRequest.config_proto)
+  
+  ::tensorflow::ConfigProto* temp = config_proto_;
+  config_proto_ = NULL;
+  return temp;
+}
+inline ::tensorflow::ConfigProto* RegisterGraphRequest::mutable_config_proto() {
+  
+  if (config_proto_ == NULL) {
+    auto* p = CreateMaybeMessage<::tensorflow::ConfigProto>(GetArenaNoVirtual());
+    config_proto_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:tensorflow.RegisterGraphRequest.config_proto)
+  return config_proto_;
+}
+inline void RegisterGraphRequest::set_allocated_config_proto(::tensorflow::ConfigProto* config_proto) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete reinterpret_cast< ::google::protobuf::MessageLite*>(config_proto_);
+  }
+  if (config_proto) {
+    ::google::protobuf::Arena* submessage_arena =
+      reinterpret_cast<::google::protobuf::MessageLite*>(config_proto)->GetArena();
+    if (message_arena != submessage_arena) {
+      config_proto = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, config_proto, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  config_proto_ = config_proto;
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.RegisterGraphRequest.config_proto)
 }
 
 // -------------------------------------------------------------------
@@ -8858,75 +9013,6 @@ inline void CompleteGroupRequest::unsafe_arena_set_allocated_device_type(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.CompleteGroupRequest.device_type)
 }
 
-// repeated string device_name = 4;
-inline int CompleteGroupRequest::device_name_size() const {
-  return device_name_.size();
-}
-inline void CompleteGroupRequest::clear_device_name() {
-  device_name_.Clear();
-}
-inline const ::std::string& CompleteGroupRequest::device_name(int index) const {
-  // @@protoc_insertion_point(field_get:tensorflow.CompleteGroupRequest.device_name)
-  return device_name_.Get(index);
-}
-inline ::std::string* CompleteGroupRequest::mutable_device_name(int index) {
-  // @@protoc_insertion_point(field_mutable:tensorflow.CompleteGroupRequest.device_name)
-  return device_name_.Mutable(index);
-}
-inline void CompleteGroupRequest::set_device_name(int index, const ::std::string& value) {
-  // @@protoc_insertion_point(field_set:tensorflow.CompleteGroupRequest.device_name)
-  device_name_.Mutable(index)->assign(value);
-}
-#if LANG_CXX11
-inline void CompleteGroupRequest::set_device_name(int index, ::std::string&& value) {
-  // @@protoc_insertion_point(field_set:tensorflow.CompleteGroupRequest.device_name)
-  device_name_.Mutable(index)->assign(std::move(value));
-}
-#endif
-inline void CompleteGroupRequest::set_device_name(int index, const char* value) {
-  GOOGLE_DCHECK(value != NULL);
-  device_name_.Mutable(index)->assign(value);
-  // @@protoc_insertion_point(field_set_char:tensorflow.CompleteGroupRequest.device_name)
-}
-inline void CompleteGroupRequest::set_device_name(int index, const char* value, size_t size) {
-  device_name_.Mutable(index)->assign(
-    reinterpret_cast<const char*>(value), size);
-  // @@protoc_insertion_point(field_set_pointer:tensorflow.CompleteGroupRequest.device_name)
-}
-inline ::std::string* CompleteGroupRequest::add_device_name() {
-  // @@protoc_insertion_point(field_add_mutable:tensorflow.CompleteGroupRequest.device_name)
-  return device_name_.Add();
-}
-inline void CompleteGroupRequest::add_device_name(const ::std::string& value) {
-  device_name_.Add()->assign(value);
-  // @@protoc_insertion_point(field_add:tensorflow.CompleteGroupRequest.device_name)
-}
-#if LANG_CXX11
-inline void CompleteGroupRequest::add_device_name(::std::string&& value) {
-  device_name_.Add(std::move(value));
-  // @@protoc_insertion_point(field_add:tensorflow.CompleteGroupRequest.device_name)
-}
-#endif
-inline void CompleteGroupRequest::add_device_name(const char* value) {
-  GOOGLE_DCHECK(value != NULL);
-  device_name_.Add()->assign(value);
-  // @@protoc_insertion_point(field_add_char:tensorflow.CompleteGroupRequest.device_name)
-}
-inline void CompleteGroupRequest::add_device_name(const char* value, size_t size) {
-  device_name_.Add()->assign(reinterpret_cast<const char*>(value), size);
-  // @@protoc_insertion_point(field_add_pointer:tensorflow.CompleteGroupRequest.device_name)
-}
-inline const ::google::protobuf::RepeatedPtrField< ::std::string>&
-CompleteGroupRequest::device_name() const {
-  // @@protoc_insertion_point(field_list:tensorflow.CompleteGroupRequest.device_name)
-  return device_name_;
-}
-inline ::google::protobuf::RepeatedPtrField< ::std::string>*
-CompleteGroupRequest::mutable_device_name() {
-  // @@protoc_insertion_point(field_mutable_list:tensorflow.CompleteGroupRequest.device_name)
-  return &device_name_;
-}
-
 // int32 collective_type = 5;
 inline void CompleteGroupRequest::clear_collective_type() {
   collective_type_ = 0;
@@ -8939,6 +9025,65 @@ inline void CompleteGroupRequest::set_collective_type(::google::protobuf::int32 
   
   collective_type_ = value;
   // @@protoc_insertion_point(field_set:tensorflow.CompleteGroupRequest.collective_type)
+}
+
+// .tensorflow.DeviceAttributes device_attributes = 6;
+inline bool CompleteGroupRequest::has_device_attributes() const {
+  return this != internal_default_instance() && device_attributes_ != NULL;
+}
+inline const ::tensorflow::DeviceAttributes& CompleteGroupRequest::_internal_device_attributes() const {
+  return *device_attributes_;
+}
+inline const ::tensorflow::DeviceAttributes& CompleteGroupRequest::device_attributes() const {
+  const ::tensorflow::DeviceAttributes* p = device_attributes_;
+  // @@protoc_insertion_point(field_get:tensorflow.CompleteGroupRequest.device_attributes)
+  return p != NULL ? *p : *reinterpret_cast<const ::tensorflow::DeviceAttributes*>(
+      &::tensorflow::_DeviceAttributes_default_instance_);
+}
+inline ::tensorflow::DeviceAttributes* CompleteGroupRequest::release_device_attributes() {
+  // @@protoc_insertion_point(field_release:tensorflow.CompleteGroupRequest.device_attributes)
+  
+  ::tensorflow::DeviceAttributes* temp = device_attributes_;
+  if (GetArenaNoVirtual() != NULL) {
+    temp = ::google::protobuf::internal::DuplicateIfNonNull(temp);
+  }
+  device_attributes_ = NULL;
+  return temp;
+}
+inline ::tensorflow::DeviceAttributes* CompleteGroupRequest::unsafe_arena_release_device_attributes() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:tensorflow.CompleteGroupRequest.device_attributes)
+  
+  ::tensorflow::DeviceAttributes* temp = device_attributes_;
+  device_attributes_ = NULL;
+  return temp;
+}
+inline ::tensorflow::DeviceAttributes* CompleteGroupRequest::mutable_device_attributes() {
+  
+  if (device_attributes_ == NULL) {
+    auto* p = CreateMaybeMessage<::tensorflow::DeviceAttributes>(GetArenaNoVirtual());
+    device_attributes_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:tensorflow.CompleteGroupRequest.device_attributes)
+  return device_attributes_;
+}
+inline void CompleteGroupRequest::set_allocated_device_attributes(::tensorflow::DeviceAttributes* device_attributes) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete reinterpret_cast< ::google::protobuf::MessageLite*>(device_attributes_);
+  }
+  if (device_attributes) {
+    ::google::protobuf::Arena* submessage_arena =
+      reinterpret_cast<::google::protobuf::MessageLite*>(device_attributes)->GetArena();
+    if (message_arena != submessage_arena) {
+      device_attributes = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, device_attributes, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  device_attributes_ = device_attributes;
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.CompleteGroupRequest.device_attributes)
 }
 
 // -------------------------------------------------------------------
@@ -9062,144 +9207,6 @@ inline void CompleteGroupResponse::set_num_tasks(::google::protobuf::int32 value
   // @@protoc_insertion_point(field_set:tensorflow.CompleteGroupResponse.num_tasks)
 }
 
-// repeated string device_name = 5;
-inline int CompleteGroupResponse::device_name_size() const {
-  return device_name_.size();
-}
-inline void CompleteGroupResponse::clear_device_name() {
-  device_name_.Clear();
-}
-inline const ::std::string& CompleteGroupResponse::device_name(int index) const {
-  // @@protoc_insertion_point(field_get:tensorflow.CompleteGroupResponse.device_name)
-  return device_name_.Get(index);
-}
-inline ::std::string* CompleteGroupResponse::mutable_device_name(int index) {
-  // @@protoc_insertion_point(field_mutable:tensorflow.CompleteGroupResponse.device_name)
-  return device_name_.Mutable(index);
-}
-inline void CompleteGroupResponse::set_device_name(int index, const ::std::string& value) {
-  // @@protoc_insertion_point(field_set:tensorflow.CompleteGroupResponse.device_name)
-  device_name_.Mutable(index)->assign(value);
-}
-#if LANG_CXX11
-inline void CompleteGroupResponse::set_device_name(int index, ::std::string&& value) {
-  // @@protoc_insertion_point(field_set:tensorflow.CompleteGroupResponse.device_name)
-  device_name_.Mutable(index)->assign(std::move(value));
-}
-#endif
-inline void CompleteGroupResponse::set_device_name(int index, const char* value) {
-  GOOGLE_DCHECK(value != NULL);
-  device_name_.Mutable(index)->assign(value);
-  // @@protoc_insertion_point(field_set_char:tensorflow.CompleteGroupResponse.device_name)
-}
-inline void CompleteGroupResponse::set_device_name(int index, const char* value, size_t size) {
-  device_name_.Mutable(index)->assign(
-    reinterpret_cast<const char*>(value), size);
-  // @@protoc_insertion_point(field_set_pointer:tensorflow.CompleteGroupResponse.device_name)
-}
-inline ::std::string* CompleteGroupResponse::add_device_name() {
-  // @@protoc_insertion_point(field_add_mutable:tensorflow.CompleteGroupResponse.device_name)
-  return device_name_.Add();
-}
-inline void CompleteGroupResponse::add_device_name(const ::std::string& value) {
-  device_name_.Add()->assign(value);
-  // @@protoc_insertion_point(field_add:tensorflow.CompleteGroupResponse.device_name)
-}
-#if LANG_CXX11
-inline void CompleteGroupResponse::add_device_name(::std::string&& value) {
-  device_name_.Add(std::move(value));
-  // @@protoc_insertion_point(field_add:tensorflow.CompleteGroupResponse.device_name)
-}
-#endif
-inline void CompleteGroupResponse::add_device_name(const char* value) {
-  GOOGLE_DCHECK(value != NULL);
-  device_name_.Add()->assign(value);
-  // @@protoc_insertion_point(field_add_char:tensorflow.CompleteGroupResponse.device_name)
-}
-inline void CompleteGroupResponse::add_device_name(const char* value, size_t size) {
-  device_name_.Add()->assign(reinterpret_cast<const char*>(value), size);
-  // @@protoc_insertion_point(field_add_pointer:tensorflow.CompleteGroupResponse.device_name)
-}
-inline const ::google::protobuf::RepeatedPtrField< ::std::string>&
-CompleteGroupResponse::device_name() const {
-  // @@protoc_insertion_point(field_list:tensorflow.CompleteGroupResponse.device_name)
-  return device_name_;
-}
-inline ::google::protobuf::RepeatedPtrField< ::std::string>*
-CompleteGroupResponse::mutable_device_name() {
-  // @@protoc_insertion_point(field_mutable_list:tensorflow.CompleteGroupResponse.device_name)
-  return &device_name_;
-}
-
-// repeated string task_name = 6;
-inline int CompleteGroupResponse::task_name_size() const {
-  return task_name_.size();
-}
-inline void CompleteGroupResponse::clear_task_name() {
-  task_name_.Clear();
-}
-inline const ::std::string& CompleteGroupResponse::task_name(int index) const {
-  // @@protoc_insertion_point(field_get:tensorflow.CompleteGroupResponse.task_name)
-  return task_name_.Get(index);
-}
-inline ::std::string* CompleteGroupResponse::mutable_task_name(int index) {
-  // @@protoc_insertion_point(field_mutable:tensorflow.CompleteGroupResponse.task_name)
-  return task_name_.Mutable(index);
-}
-inline void CompleteGroupResponse::set_task_name(int index, const ::std::string& value) {
-  // @@protoc_insertion_point(field_set:tensorflow.CompleteGroupResponse.task_name)
-  task_name_.Mutable(index)->assign(value);
-}
-#if LANG_CXX11
-inline void CompleteGroupResponse::set_task_name(int index, ::std::string&& value) {
-  // @@protoc_insertion_point(field_set:tensorflow.CompleteGroupResponse.task_name)
-  task_name_.Mutable(index)->assign(std::move(value));
-}
-#endif
-inline void CompleteGroupResponse::set_task_name(int index, const char* value) {
-  GOOGLE_DCHECK(value != NULL);
-  task_name_.Mutable(index)->assign(value);
-  // @@protoc_insertion_point(field_set_char:tensorflow.CompleteGroupResponse.task_name)
-}
-inline void CompleteGroupResponse::set_task_name(int index, const char* value, size_t size) {
-  task_name_.Mutable(index)->assign(
-    reinterpret_cast<const char*>(value), size);
-  // @@protoc_insertion_point(field_set_pointer:tensorflow.CompleteGroupResponse.task_name)
-}
-inline ::std::string* CompleteGroupResponse::add_task_name() {
-  // @@protoc_insertion_point(field_add_mutable:tensorflow.CompleteGroupResponse.task_name)
-  return task_name_.Add();
-}
-inline void CompleteGroupResponse::add_task_name(const ::std::string& value) {
-  task_name_.Add()->assign(value);
-  // @@protoc_insertion_point(field_add:tensorflow.CompleteGroupResponse.task_name)
-}
-#if LANG_CXX11
-inline void CompleteGroupResponse::add_task_name(::std::string&& value) {
-  task_name_.Add(std::move(value));
-  // @@protoc_insertion_point(field_add:tensorflow.CompleteGroupResponse.task_name)
-}
-#endif
-inline void CompleteGroupResponse::add_task_name(const char* value) {
-  GOOGLE_DCHECK(value != NULL);
-  task_name_.Add()->assign(value);
-  // @@protoc_insertion_point(field_add_char:tensorflow.CompleteGroupResponse.task_name)
-}
-inline void CompleteGroupResponse::add_task_name(const char* value, size_t size) {
-  task_name_.Add()->assign(reinterpret_cast<const char*>(value), size);
-  // @@protoc_insertion_point(field_add_pointer:tensorflow.CompleteGroupResponse.task_name)
-}
-inline const ::google::protobuf::RepeatedPtrField< ::std::string>&
-CompleteGroupResponse::task_name() const {
-  // @@protoc_insertion_point(field_list:tensorflow.CompleteGroupResponse.task_name)
-  return task_name_;
-}
-inline ::google::protobuf::RepeatedPtrField< ::std::string>*
-CompleteGroupResponse::mutable_task_name() {
-  // @@protoc_insertion_point(field_mutable_list:tensorflow.CompleteGroupResponse.task_name)
-  return &task_name_;
-}
-
 // bytes communicator_key = 7;
 inline void CompleteGroupResponse::clear_communicator_key() {
   communicator_key_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
@@ -9273,6 +9280,33 @@ inline void CompleteGroupResponse::unsafe_arena_set_allocated_communicator_key(
   communicator_key_.UnsafeArenaSetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       communicator_key, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.CompleteGroupResponse.communicator_key)
+}
+
+// repeated .tensorflow.DeviceAttributes device_attributes = 8;
+inline int CompleteGroupResponse::device_attributes_size() const {
+  return device_attributes_.size();
+}
+inline ::tensorflow::DeviceAttributes* CompleteGroupResponse::mutable_device_attributes(int index) {
+  // @@protoc_insertion_point(field_mutable:tensorflow.CompleteGroupResponse.device_attributes)
+  return device_attributes_.Mutable(index);
+}
+inline ::google::protobuf::RepeatedPtrField< ::tensorflow::DeviceAttributes >*
+CompleteGroupResponse::mutable_device_attributes() {
+  // @@protoc_insertion_point(field_mutable_list:tensorflow.CompleteGroupResponse.device_attributes)
+  return &device_attributes_;
+}
+inline const ::tensorflow::DeviceAttributes& CompleteGroupResponse::device_attributes(int index) const {
+  // @@protoc_insertion_point(field_get:tensorflow.CompleteGroupResponse.device_attributes)
+  return device_attributes_.Get(index);
+}
+inline ::tensorflow::DeviceAttributes* CompleteGroupResponse::add_device_attributes() {
+  // @@protoc_insertion_point(field_add:tensorflow.CompleteGroupResponse.device_attributes)
+  return device_attributes_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::tensorflow::DeviceAttributes >&
+CompleteGroupResponse::device_attributes() const {
+  // @@protoc_insertion_point(field_list:tensorflow.CompleteGroupResponse.device_attributes)
+  return device_attributes_;
 }
 
 // -------------------------------------------------------------------

@@ -227,9 +227,9 @@ void AddDescriptorsImpl() {
   InitDefaults();
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n:tensorflow/core/example/example_parser"
-      "_configuration.proto\022\ntensorflow\032,tensor"
-      "flow/core/framework/tensor_shape.proto\032&"
-      "tensorflow/core/framework/tensor.proto\032%"
+      "_configuration.proto\022\ntensorflow\032&tensor"
+      "flow/core/framework/tensor.proto\032,tensor"
+      "flow/core/framework/tensor_shape.proto\032%"
       "tensorflow/core/framework/types.proto\"\243\001"
       "\n\022VarLenFeatureProto\022#\n\005dtype\030\001 \001(\0162\024.te"
       "nsorflow.DataType\022!\n\031values_output_tenso"
@@ -248,17 +248,18 @@ void AddDescriptorsImpl() {
       "(\01326.tensorflow.ExampleParserConfigurati"
       "on.FeatureMapEntry\032S\n\017FeatureMapEntry\022\013\n"
       "\003key\030\001 \001(\t\022/\n\005value\030\002 \001(\0132 .tensorflow.F"
-      "eatureConfiguration:\0028\001B|\n\026org.tensorflo"
-      "w.exampleB ExampleParserConfigurationPro"
-      "tosP\001Z;github.com/tensorflow/tensorflow/"
-      "tensorflow/go/core/example\370\001\001b\006proto3"
+      "eatureConfiguration:\0028\001B\242\001\n\026org.tensorfl"
+      "ow.exampleB ExampleParserConfigurationPr"
+      "otosP\001Zagithub.com/tensorflow/tensorflow"
+      "/tensorflow/go/core/example/example_pars"
+      "er_configuration_go_proto\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 1037);
+      descriptor, 1076);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/example/example_parser_configuration.proto", &protobuf_RegisterTypes);
-  ::protobuf_tensorflow_2fcore_2fframework_2ftensor_5fshape_2eproto::AddDescriptors();
   ::protobuf_tensorflow_2fcore_2fframework_2ftensor_2eproto::AddDescriptors();
+  ::protobuf_tensorflow_2fcore_2fframework_2ftensor_5fshape_2eproto::AddDescriptors();
   ::protobuf_tensorflow_2fcore_2fframework_2ftypes_2eproto::AddDescriptors();
 }
 

@@ -25,9 +25,9 @@ extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_5fserving_2fapis_2fget_5fmod
 namespace protobuf_tensorflow_5fserving_2fapis_2fmodel_2eproto {
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_5fserving_2fapis_2fmodel_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_ModelSpec;
 }  // namespace protobuf_tensorflow_5fserving_2fapis_2fmodel_2eproto
-namespace protobuf_tensorflow_5fserving_2futil_2fstatus_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_5fserving_2futil_2fstatus_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_StatusProto;
-}  // namespace protobuf_tensorflow_5fserving_2futil_2fstatus_2eproto
+namespace protobuf_tensorflow_5fserving_2fapis_2fstatus_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_5fserving_2fapis_2fstatus_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_StatusProto;
+}  // namespace protobuf_tensorflow_5fserving_2fapis_2fstatus_2eproto
 namespace tensorflow {
 namespace serving {
 class GetModelStatusRequestDefaultTypeInternal {
@@ -76,7 +76,7 @@ static void InitDefaultsModelVersionStatus() {
 
 ::google::protobuf::internal::SCCInfo<1> scc_info_ModelVersionStatus =
     {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsModelVersionStatus}, {
-      &protobuf_tensorflow_5fserving_2futil_2fstatus_2eproto::scc_info_StatusProto.base,}};
+      &protobuf_tensorflow_5fserving_2fapis_2fstatus_2eproto::scc_info_StatusProto.base,}};
 
 static void InitDefaultsGetModelStatusResponse() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -160,7 +160,7 @@ void AddDescriptorsImpl() {
       "\n.tensorflow_serving/apis/get_model_stat"
       "us.proto\022\022tensorflow.serving\032#tensorflow"
       "_serving/apis/model.proto\032$tensorflow_se"
-      "rving/util/status.proto\"J\n\025GetModelStatu"
+      "rving/apis/status.proto\"J\n\025GetModelStatu"
       "sRequest\0221\n\nmodel_spec\030\001 \001(\0132\035.tensorflo"
       "w.serving.ModelSpec\"\350\001\n\022ModelVersionStat"
       "us\022\017\n\007version\030\001 \001(\003\022;\n\005state\030\002 \001(\0162,.ten"
@@ -178,7 +178,7 @@ void AddDescriptorsImpl() {
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow_serving/apis/get_model_status.proto", &protobuf_RegisterTypes);
   ::protobuf_tensorflow_5fserving_2fapis_2fmodel_2eproto::AddDescriptors();
-  ::protobuf_tensorflow_5fserving_2futil_2fstatus_2eproto::AddDescriptors();
+  ::protobuf_tensorflow_5fserving_2fapis_2fstatus_2eproto::AddDescriptors();
 }
 
 void AddDescriptors() {

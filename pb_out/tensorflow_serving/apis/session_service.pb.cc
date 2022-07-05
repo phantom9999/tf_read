@@ -95,6 +95,7 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::serving::SessionRunRequest, feed_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::serving::SessionRunRequest, fetch_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::serving::SessionRunRequest, target_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::serving::SessionRunRequest, tensor_name_is_alias_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::serving::SessionRunRequest, options_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::serving::SessionRunResponse, _internal_metadata_),
@@ -107,7 +108,7 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::tensorflow::serving::SessionRunRequest)},
-  { 10, -1, sizeof(::tensorflow::serving::SessionRunResponse)},
+  { 11, -1, sizeof(::tensorflow::serving::SessionRunResponse)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
@@ -137,30 +138,31 @@ void AddDescriptorsImpl() {
   InitDefaults();
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n-tensorflow_serving/apis/session_servic"
-      "e.proto\022\022tensorflow.serving\032#tensorflow_"
-      "serving/apis/model.proto\032%tensorflow/cor"
-      "e/protobuf/config.proto\032+tensorflow/core"
-      "/protobuf/named_tensor.proto\"\272\001\n\021Session"
+      "e.proto\022\022tensorflow.serving\032%tensorflow/"
+      "core/protobuf/config.proto\032+tensorflow/c"
+      "ore/protobuf/named_tensor.proto\032#tensorf"
+      "low_serving/apis/model.proto\"\330\001\n\021Session"
       "RunRequest\0221\n\nmodel_spec\030\001 \001(\0132\035.tensorf"
       "low.serving.ModelSpec\022*\n\004feed\030\002 \003(\0132\034.te"
       "nsorflow.NamedTensorProto\022\r\n\005fetch\030\003 \003(\t"
-      "\022\016\n\006target\030\004 \003(\t\022\'\n\007options\030\005 \001(\0132\026.tens"
-      "orflow.RunOptions\"\240\001\n\022SessionRunResponse"
-      "\0221\n\nmodel_spec\030\003 \001(\0132\035.tensorflow.servin"
-      "g.ModelSpec\022,\n\006tensor\030\001 \003(\0132\034.tensorflow"
-      ".NamedTensorProto\022)\n\010metadata\030\002 \001(\0132\027.te"
-      "nsorflow.RunMetadata2m\n\016SessionService\022["
-      "\n\nSessionRun\022%.tensorflow.serving.Sessio"
-      "nRunRequest\032&.tensorflow.serving.Session"
-      "RunResponseB\003\370\001\001b\006proto3"
+      "\022\016\n\006target\030\004 \003(\t\022\034\n\024tensor_name_is_alias"
+      "\030\006 \001(\010\022\'\n\007options\030\005 \001(\0132\026.tensorflow.Run"
+      "Options\"\240\001\n\022SessionRunResponse\0221\n\nmodel_"
+      "spec\030\003 \001(\0132\035.tensorflow.serving.ModelSpe"
+      "c\022,\n\006tensor\030\001 \003(\0132\034.tensorflow.NamedTens"
+      "orProto\022)\n\010metadata\030\002 \001(\0132\027.tensorflow.R"
+      "unMetadata2m\n\016SessionService\022[\n\nSessionR"
+      "un\022%.tensorflow.serving.SessionRunReques"
+      "t\032&.tensorflow.serving.SessionRunRespons"
+      "eB\003\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 664);
+      descriptor, 694);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow_serving/apis/session_service.proto", &protobuf_RegisterTypes);
-  ::protobuf_tensorflow_5fserving_2fapis_2fmodel_2eproto::AddDescriptors();
   ::protobuf_tensorflow_2fcore_2fprotobuf_2fconfig_2eproto::AddDescriptors();
   ::protobuf_tensorflow_2fcore_2fprotobuf_2fnamed_5ftensor_2eproto::AddDescriptors();
+  ::protobuf_tensorflow_5fserving_2fapis_2fmodel_2eproto::AddDescriptors();
 }
 
 void AddDescriptors() {
@@ -231,6 +233,7 @@ const int SessionRunRequest::kModelSpecFieldNumber;
 const int SessionRunRequest::kFeedFieldNumber;
 const int SessionRunRequest::kFetchFieldNumber;
 const int SessionRunRequest::kTargetFieldNumber;
+const int SessionRunRequest::kTensorNameIsAliasFieldNumber;
 const int SessionRunRequest::kOptionsFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
@@ -269,13 +272,14 @@ SessionRunRequest::SessionRunRequest(const SessionRunRequest& from)
   } else {
     options_ = NULL;
   }
+  tensor_name_is_alias_ = from.tensor_name_is_alias_;
   // @@protoc_insertion_point(copy_constructor:tensorflow.serving.SessionRunRequest)
 }
 
 void SessionRunRequest::SharedCtor() {
   ::memset(&model_spec_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&options_) -
-      reinterpret_cast<char*>(&model_spec_)) + sizeof(options_));
+      reinterpret_cast<char*>(&tensor_name_is_alias_) -
+      reinterpret_cast<char*>(&model_spec_)) + sizeof(tensor_name_is_alias_));
 }
 
 SessionRunRequest::~SessionRunRequest() {
@@ -326,6 +330,7 @@ void SessionRunRequest::Clear() {
     delete options_;
   }
   options_ = NULL;
+  tensor_name_is_alias_ = false;
   _internal_metadata_.Clear();
 }
 
@@ -409,6 +414,20 @@ bool SessionRunRequest::MergePartialFromCodedStream(
         break;
       }
 
+      // bool tensor_name_is_alias = 6;
+      case 6: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(48u /* 48 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &tensor_name_is_alias_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -476,6 +495,11 @@ void SessionRunRequest::SerializeWithCachedSizes(
       5, this->_internal_options(), output);
   }
 
+  // bool tensor_name_is_alias = 6;
+  if (this->tensor_name_is_alias() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(6, this->tensor_name_is_alias(), output);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -530,6 +554,11 @@ void SessionRunRequest::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
         5, this->_internal_options(), deterministic, target);
+  }
+
+  // bool tensor_name_is_alias = 6;
+  if (this->tensor_name_is_alias() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(6, this->tensor_name_is_alias(), target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -590,6 +619,11 @@ size_t SessionRunRequest::ByteSizeLong() const {
         *options_);
   }
 
+  // bool tensor_name_is_alias = 6;
+  if (this->tensor_name_is_alias() != 0) {
+    total_size += 1 + 1;
+  }
+
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -625,6 +659,9 @@ void SessionRunRequest::MergeFrom(const SessionRunRequest& from) {
   }
   if (from.has_options()) {
     mutable_options()->::tensorflow::RunOptions::MergeFrom(from.options());
+  }
+  if (from.tensor_name_is_alias() != 0) {
+    set_tensor_name_is_alias(from.tensor_name_is_alias());
   }
 }
 
@@ -672,6 +709,7 @@ void SessionRunRequest::InternalSwap(SessionRunRequest* other) {
   target_.InternalSwap(CastToBase(&other->target_));
   swap(model_spec_, other->model_spec_);
   swap(options_, other->options_);
+  swap(tensor_name_is_alias_, other->tensor_name_is_alias_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 

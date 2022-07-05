@@ -32,7 +32,6 @@
 #include <google/protobuf/generated_enum_reflection.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "tensorflow/core/protobuf/tpu/optimization_parameters.pb.h"
-#include "tensorflow/core/protobuf/tpu/tpu_embedding_output_layout.pb.h"
 // @@protoc_insertion_point(includes)
 #define PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2ftpu_5fembedding_5fconfiguration_2eproto 
 
@@ -41,7 +40,7 @@ namespace protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2ftpu_5fembedding_5fconfig
 struct TableStruct {
   static const ::google::protobuf::internal::ParseTableField entries[];
   static const ::google::protobuf::internal::AuxillaryParseTableField aux[];
-  static const ::google::protobuf::internal::ParseTable schema[2];
+  static const ::google::protobuf::internal::ParseTable schema[3];
   static const ::google::protobuf::internal::FieldMetadata field_metadata[];
   static const ::google::protobuf::internal::SerializationTable serialization_table[];
   static const ::google::protobuf::uint32 offsets[];
@@ -53,6 +52,9 @@ namespace tpu {
 class TPUEmbeddingConfiguration;
 class TPUEmbeddingConfigurationDefaultTypeInternal;
 extern TPUEmbeddingConfigurationDefaultTypeInternal _TPUEmbeddingConfiguration_default_instance_;
+class TPUEmbeddingConfiguration_FeatureDescriptor;
+class TPUEmbeddingConfiguration_FeatureDescriptorDefaultTypeInternal;
+extern TPUEmbeddingConfiguration_FeatureDescriptorDefaultTypeInternal _TPUEmbeddingConfiguration_FeatureDescriptor_default_instance_;
 class TPUEmbeddingConfiguration_TableDescriptor;
 class TPUEmbeddingConfiguration_TableDescriptorDefaultTypeInternal;
 extern TPUEmbeddingConfiguration_TableDescriptorDefaultTypeInternal _TPUEmbeddingConfiguration_TableDescriptor_default_instance_;
@@ -61,6 +63,7 @@ extern TPUEmbeddingConfiguration_TableDescriptorDefaultTypeInternal _TPUEmbeddin
 namespace google {
 namespace protobuf {
 template<> ::tensorflow::tpu::TPUEmbeddingConfiguration* Arena::CreateMaybeMessage<::tensorflow::tpu::TPUEmbeddingConfiguration>(Arena*);
+template<> ::tensorflow::tpu::TPUEmbeddingConfiguration_FeatureDescriptor* Arena::CreateMaybeMessage<::tensorflow::tpu::TPUEmbeddingConfiguration_FeatureDescriptor>(Arena*);
 template<> ::tensorflow::tpu::TPUEmbeddingConfiguration_TableDescriptor* Arena::CreateMaybeMessage<::tensorflow::tpu::TPUEmbeddingConfiguration_TableDescriptor>(Arena*);
 }  // namespace protobuf
 }  // namespace google
@@ -226,11 +229,11 @@ class TPUEmbeddingConfiguration_TableDescriptor : public ::google::protobuf::Mes
   ::tensorflow::tpu::OptimizationParameters* mutable_optimization_parameters();
   void set_allocated_optimization_parameters(::tensorflow::tpu::OptimizationParameters* optimization_parameters);
 
-  // int32 vocabulary_size = 2;
+  // int64 vocabulary_size = 2;
   void clear_vocabulary_size();
   static const int kVocabularySizeFieldNumber = 2;
-  ::google::protobuf::int32 vocabulary_size() const;
-  void set_vocabulary_size(::google::protobuf::int32 value);
+  ::google::protobuf::int64 vocabulary_size() const;
+  void set_vocabulary_size(::google::protobuf::int64 value);
 
   // int32 dimension = 3;
   void clear_dimension();
@@ -250,9 +253,141 @@ class TPUEmbeddingConfiguration_TableDescriptor : public ::google::protobuf::Mes
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
   ::google::protobuf::internal::ArenaStringPtr name_;
   ::tensorflow::tpu::OptimizationParameters* optimization_parameters_;
-  ::google::protobuf::int32 vocabulary_size_;
+  ::google::protobuf::int64 vocabulary_size_;
   ::google::protobuf::int32 dimension_;
   ::google::protobuf::int32 num_features_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2ftpu_5fembedding_5fconfiguration_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
+class TPUEmbeddingConfiguration_FeatureDescriptor : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.tpu.TPUEmbeddingConfiguration.FeatureDescriptor) */ {
+ public:
+  TPUEmbeddingConfiguration_FeatureDescriptor();
+  virtual ~TPUEmbeddingConfiguration_FeatureDescriptor();
+
+  TPUEmbeddingConfiguration_FeatureDescriptor(const TPUEmbeddingConfiguration_FeatureDescriptor& from);
+
+  inline TPUEmbeddingConfiguration_FeatureDescriptor& operator=(const TPUEmbeddingConfiguration_FeatureDescriptor& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  TPUEmbeddingConfiguration_FeatureDescriptor(TPUEmbeddingConfiguration_FeatureDescriptor&& from) noexcept
+    : TPUEmbeddingConfiguration_FeatureDescriptor() {
+    *this = ::std::move(from);
+  }
+
+  inline TPUEmbeddingConfiguration_FeatureDescriptor& operator=(TPUEmbeddingConfiguration_FeatureDescriptor&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const TPUEmbeddingConfiguration_FeatureDescriptor& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const TPUEmbeddingConfiguration_FeatureDescriptor* internal_default_instance() {
+    return reinterpret_cast<const TPUEmbeddingConfiguration_FeatureDescriptor*>(
+               &_TPUEmbeddingConfiguration_FeatureDescriptor_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    1;
+
+  void Swap(TPUEmbeddingConfiguration_FeatureDescriptor* other);
+  friend void swap(TPUEmbeddingConfiguration_FeatureDescriptor& a, TPUEmbeddingConfiguration_FeatureDescriptor& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline TPUEmbeddingConfiguration_FeatureDescriptor* New() const final {
+    return CreateMaybeMessage<TPUEmbeddingConfiguration_FeatureDescriptor>(NULL);
+  }
+
+  TPUEmbeddingConfiguration_FeatureDescriptor* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<TPUEmbeddingConfiguration_FeatureDescriptor>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const TPUEmbeddingConfiguration_FeatureDescriptor& from);
+  void MergeFrom(const TPUEmbeddingConfiguration_FeatureDescriptor& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(TPUEmbeddingConfiguration_FeatureDescriptor* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // repeated int32 input_shape = 3;
+  int input_shape_size() const;
+  void clear_input_shape();
+  static const int kInputShapeFieldNumber = 3;
+  ::google::protobuf::int32 input_shape(int index) const;
+  void set_input_shape(int index, ::google::protobuf::int32 value);
+  void add_input_shape(::google::protobuf::int32 value);
+  const ::google::protobuf::RepeatedField< ::google::protobuf::int32 >&
+      input_shape() const;
+  ::google::protobuf::RepeatedField< ::google::protobuf::int32 >*
+      mutable_input_shape();
+
+  // string name = 1;
+  void clear_name();
+  static const int kNameFieldNumber = 1;
+  const ::std::string& name() const;
+  void set_name(const ::std::string& value);
+  #if LANG_CXX11
+  void set_name(::std::string&& value);
+  #endif
+  void set_name(const char* value);
+  void set_name(const char* value, size_t size);
+  ::std::string* mutable_name();
+  ::std::string* release_name();
+  void set_allocated_name(::std::string* name);
+
+  // int32 table_id = 2;
+  void clear_table_id();
+  static const int kTableIdFieldNumber = 2;
+  ::google::protobuf::int32 table_id() const;
+  void set_table_id(::google::protobuf::int32 value);
+
+  // @@protoc_insertion_point(class_scope:tensorflow.tpu.TPUEmbeddingConfiguration.FeatureDescriptor)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::RepeatedField< ::google::protobuf::int32 > input_shape_;
+  mutable int _input_shape_cached_byte_size_;
+  ::google::protobuf::internal::ArenaStringPtr name_;
+  ::google::protobuf::int32 table_id_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2ftpu_2ftpu_5fembedding_5fconfiguration_2eproto::TableStruct;
 };
@@ -293,7 +428,7 @@ class TPUEmbeddingConfiguration : public ::google::protobuf::Message /* @@protoc
                &_TPUEmbeddingConfiguration_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    1;
+    2;
 
   void Swap(TPUEmbeddingConfiguration* other);
   friend void swap(TPUEmbeddingConfiguration& a, TPUEmbeddingConfiguration& b) {
@@ -344,6 +479,7 @@ class TPUEmbeddingConfiguration : public ::google::protobuf::Message /* @@protoc
   // nested types ----------------------------------------------------
 
   typedef TPUEmbeddingConfiguration_TableDescriptor TableDescriptor;
+  typedef TPUEmbeddingConfiguration_FeatureDescriptor FeatureDescriptor;
 
   typedef TPUEmbeddingConfiguration_Mode Mode;
   static const Mode UNSPECIFIED =
@@ -415,17 +551,31 @@ class TPUEmbeddingConfiguration : public ::google::protobuf::Message /* @@protoc
   const ::google::protobuf::RepeatedPtrField< ::tensorflow::tpu::TPUEmbeddingConfiguration_TableDescriptor >&
       table_descriptor() const;
 
-  // .tensorflow.tpu.TPUEmbeddingOutputLayout output_layout = 8;
-  bool has_output_layout() const;
-  void clear_output_layout();
-  static const int kOutputLayoutFieldNumber = 8;
-  private:
-  const ::tensorflow::tpu::TPUEmbeddingOutputLayout& _internal_output_layout() const;
-  public:
-  const ::tensorflow::tpu::TPUEmbeddingOutputLayout& output_layout() const;
-  ::tensorflow::tpu::TPUEmbeddingOutputLayout* release_output_layout();
-  ::tensorflow::tpu::TPUEmbeddingOutputLayout* mutable_output_layout();
-  void set_allocated_output_layout(::tensorflow::tpu::TPUEmbeddingOutputLayout* output_layout);
+  // repeated .tensorflow.tpu.TPUEmbeddingConfiguration.FeatureDescriptor feature_descriptor = 10;
+  int feature_descriptor_size() const;
+  void clear_feature_descriptor();
+  static const int kFeatureDescriptorFieldNumber = 10;
+  ::tensorflow::tpu::TPUEmbeddingConfiguration_FeatureDescriptor* mutable_feature_descriptor(int index);
+  ::google::protobuf::RepeatedPtrField< ::tensorflow::tpu::TPUEmbeddingConfiguration_FeatureDescriptor >*
+      mutable_feature_descriptor();
+  const ::tensorflow::tpu::TPUEmbeddingConfiguration_FeatureDescriptor& feature_descriptor(int index) const;
+  ::tensorflow::tpu::TPUEmbeddingConfiguration_FeatureDescriptor* add_feature_descriptor();
+  const ::google::protobuf::RepeatedPtrField< ::tensorflow::tpu::TPUEmbeddingConfiguration_FeatureDescriptor >&
+      feature_descriptor() const;
+
+  // string profile_data_directory = 9;
+  void clear_profile_data_directory();
+  static const int kProfileDataDirectoryFieldNumber = 9;
+  const ::std::string& profile_data_directory() const;
+  void set_profile_data_directory(const ::std::string& value);
+  #if LANG_CXX11
+  void set_profile_data_directory(::std::string&& value);
+  #endif
+  void set_profile_data_directory(const char* value);
+  void set_profile_data_directory(const char* value, size_t size);
+  ::std::string* mutable_profile_data_directory();
+  ::std::string* release_profile_data_directory();
+  void set_allocated_profile_data_directory(::std::string* profile_data_directory);
 
   // .tensorflow.tpu.TPUEmbeddingConfiguration.Mode mode = 2;
   void clear_mode();
@@ -468,7 +618,8 @@ class TPUEmbeddingConfiguration : public ::google::protobuf::Message /* @@protoc
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
   ::google::protobuf::RepeatedPtrField< ::tensorflow::tpu::TPUEmbeddingConfiguration_TableDescriptor > table_descriptor_;
-  ::tensorflow::tpu::TPUEmbeddingOutputLayout* output_layout_;
+  ::google::protobuf::RepeatedPtrField< ::tensorflow::tpu::TPUEmbeddingConfiguration_FeatureDescriptor > feature_descriptor_;
+  ::google::protobuf::internal::ArenaStringPtr profile_data_directory_;
   int mode_;
   ::google::protobuf::int32 batch_size_per_tensor_core_;
   ::google::protobuf::int32 num_hosts_;
@@ -542,15 +693,15 @@ inline void TPUEmbeddingConfiguration_TableDescriptor::set_allocated_name(::std:
   // @@protoc_insertion_point(field_set_allocated:tensorflow.tpu.TPUEmbeddingConfiguration.TableDescriptor.name)
 }
 
-// int32 vocabulary_size = 2;
+// int64 vocabulary_size = 2;
 inline void TPUEmbeddingConfiguration_TableDescriptor::clear_vocabulary_size() {
-  vocabulary_size_ = 0;
+  vocabulary_size_ = GOOGLE_LONGLONG(0);
 }
-inline ::google::protobuf::int32 TPUEmbeddingConfiguration_TableDescriptor::vocabulary_size() const {
+inline ::google::protobuf::int64 TPUEmbeddingConfiguration_TableDescriptor::vocabulary_size() const {
   // @@protoc_insertion_point(field_get:tensorflow.tpu.TPUEmbeddingConfiguration.TableDescriptor.vocabulary_size)
   return vocabulary_size_;
 }
-inline void TPUEmbeddingConfiguration_TableDescriptor::set_vocabulary_size(::google::protobuf::int32 value) {
+inline void TPUEmbeddingConfiguration_TableDescriptor::set_vocabulary_size(::google::protobuf::int64 value) {
   
   vocabulary_size_ = value;
   // @@protoc_insertion_point(field_set:tensorflow.tpu.TPUEmbeddingConfiguration.TableDescriptor.vocabulary_size)
@@ -630,6 +781,107 @@ inline void TPUEmbeddingConfiguration_TableDescriptor::set_allocated_optimizatio
   }
   optimization_parameters_ = optimization_parameters;
   // @@protoc_insertion_point(field_set_allocated:tensorflow.tpu.TPUEmbeddingConfiguration.TableDescriptor.optimization_parameters)
+}
+
+// -------------------------------------------------------------------
+
+// TPUEmbeddingConfiguration_FeatureDescriptor
+
+// string name = 1;
+inline void TPUEmbeddingConfiguration_FeatureDescriptor::clear_name() {
+  name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline const ::std::string& TPUEmbeddingConfiguration_FeatureDescriptor::name() const {
+  // @@protoc_insertion_point(field_get:tensorflow.tpu.TPUEmbeddingConfiguration.FeatureDescriptor.name)
+  return name_.GetNoArena();
+}
+inline void TPUEmbeddingConfiguration_FeatureDescriptor::set_name(const ::std::string& value) {
+  
+  name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:tensorflow.tpu.TPUEmbeddingConfiguration.FeatureDescriptor.name)
+}
+#if LANG_CXX11
+inline void TPUEmbeddingConfiguration_FeatureDescriptor::set_name(::std::string&& value) {
+  
+  name_.SetNoArena(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:tensorflow.tpu.TPUEmbeddingConfiguration.FeatureDescriptor.name)
+}
+#endif
+inline void TPUEmbeddingConfiguration_FeatureDescriptor::set_name(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  
+  name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:tensorflow.tpu.TPUEmbeddingConfiguration.FeatureDescriptor.name)
+}
+inline void TPUEmbeddingConfiguration_FeatureDescriptor::set_name(const char* value, size_t size) {
+  
+  name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:tensorflow.tpu.TPUEmbeddingConfiguration.FeatureDescriptor.name)
+}
+inline ::std::string* TPUEmbeddingConfiguration_FeatureDescriptor::mutable_name() {
+  
+  // @@protoc_insertion_point(field_mutable:tensorflow.tpu.TPUEmbeddingConfiguration.FeatureDescriptor.name)
+  return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* TPUEmbeddingConfiguration_FeatureDescriptor::release_name() {
+  // @@protoc_insertion_point(field_release:tensorflow.tpu.TPUEmbeddingConfiguration.FeatureDescriptor.name)
+  
+  return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void TPUEmbeddingConfiguration_FeatureDescriptor::set_allocated_name(::std::string* name) {
+  if (name != NULL) {
+    
+  } else {
+    
+  }
+  name_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), name);
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.tpu.TPUEmbeddingConfiguration.FeatureDescriptor.name)
+}
+
+// int32 table_id = 2;
+inline void TPUEmbeddingConfiguration_FeatureDescriptor::clear_table_id() {
+  table_id_ = 0;
+}
+inline ::google::protobuf::int32 TPUEmbeddingConfiguration_FeatureDescriptor::table_id() const {
+  // @@protoc_insertion_point(field_get:tensorflow.tpu.TPUEmbeddingConfiguration.FeatureDescriptor.table_id)
+  return table_id_;
+}
+inline void TPUEmbeddingConfiguration_FeatureDescriptor::set_table_id(::google::protobuf::int32 value) {
+  
+  table_id_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.tpu.TPUEmbeddingConfiguration.FeatureDescriptor.table_id)
+}
+
+// repeated int32 input_shape = 3;
+inline int TPUEmbeddingConfiguration_FeatureDescriptor::input_shape_size() const {
+  return input_shape_.size();
+}
+inline void TPUEmbeddingConfiguration_FeatureDescriptor::clear_input_shape() {
+  input_shape_.Clear();
+}
+inline ::google::protobuf::int32 TPUEmbeddingConfiguration_FeatureDescriptor::input_shape(int index) const {
+  // @@protoc_insertion_point(field_get:tensorflow.tpu.TPUEmbeddingConfiguration.FeatureDescriptor.input_shape)
+  return input_shape_.Get(index);
+}
+inline void TPUEmbeddingConfiguration_FeatureDescriptor::set_input_shape(int index, ::google::protobuf::int32 value) {
+  input_shape_.Set(index, value);
+  // @@protoc_insertion_point(field_set:tensorflow.tpu.TPUEmbeddingConfiguration.FeatureDescriptor.input_shape)
+}
+inline void TPUEmbeddingConfiguration_FeatureDescriptor::add_input_shape(::google::protobuf::int32 value) {
+  input_shape_.Add(value);
+  // @@protoc_insertion_point(field_add:tensorflow.tpu.TPUEmbeddingConfiguration.FeatureDescriptor.input_shape)
+}
+inline const ::google::protobuf::RepeatedField< ::google::protobuf::int32 >&
+TPUEmbeddingConfiguration_FeatureDescriptor::input_shape() const {
+  // @@protoc_insertion_point(field_list:tensorflow.tpu.TPUEmbeddingConfiguration.FeatureDescriptor.input_shape)
+  return input_shape_;
+}
+inline ::google::protobuf::RepeatedField< ::google::protobuf::int32 >*
+TPUEmbeddingConfiguration_FeatureDescriptor::mutable_input_shape() {
+  // @@protoc_insertion_point(field_mutable_list:tensorflow.tpu.TPUEmbeddingConfiguration.FeatureDescriptor.input_shape)
+  return &input_shape_;
 }
 
 // -------------------------------------------------------------------
@@ -750,57 +1002,94 @@ inline void TPUEmbeddingConfiguration::set_pipeline_execution_with_tensor_core(b
   // @@protoc_insertion_point(field_set:tensorflow.tpu.TPUEmbeddingConfiguration.pipeline_execution_with_tensor_core)
 }
 
-// .tensorflow.tpu.TPUEmbeddingOutputLayout output_layout = 8;
-inline bool TPUEmbeddingConfiguration::has_output_layout() const {
-  return this != internal_default_instance() && output_layout_ != NULL;
+// string profile_data_directory = 9;
+inline void TPUEmbeddingConfiguration::clear_profile_data_directory() {
+  profile_data_directory_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline const ::tensorflow::tpu::TPUEmbeddingOutputLayout& TPUEmbeddingConfiguration::_internal_output_layout() const {
-  return *output_layout_;
+inline const ::std::string& TPUEmbeddingConfiguration::profile_data_directory() const {
+  // @@protoc_insertion_point(field_get:tensorflow.tpu.TPUEmbeddingConfiguration.profile_data_directory)
+  return profile_data_directory_.GetNoArena();
 }
-inline const ::tensorflow::tpu::TPUEmbeddingOutputLayout& TPUEmbeddingConfiguration::output_layout() const {
-  const ::tensorflow::tpu::TPUEmbeddingOutputLayout* p = output_layout_;
-  // @@protoc_insertion_point(field_get:tensorflow.tpu.TPUEmbeddingConfiguration.output_layout)
-  return p != NULL ? *p : *reinterpret_cast<const ::tensorflow::tpu::TPUEmbeddingOutputLayout*>(
-      &::tensorflow::tpu::_TPUEmbeddingOutputLayout_default_instance_);
-}
-inline ::tensorflow::tpu::TPUEmbeddingOutputLayout* TPUEmbeddingConfiguration::release_output_layout() {
-  // @@protoc_insertion_point(field_release:tensorflow.tpu.TPUEmbeddingConfiguration.output_layout)
+inline void TPUEmbeddingConfiguration::set_profile_data_directory(const ::std::string& value) {
   
-  ::tensorflow::tpu::TPUEmbeddingOutputLayout* temp = output_layout_;
-  output_layout_ = NULL;
-  return temp;
+  profile_data_directory_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:tensorflow.tpu.TPUEmbeddingConfiguration.profile_data_directory)
 }
-inline ::tensorflow::tpu::TPUEmbeddingOutputLayout* TPUEmbeddingConfiguration::mutable_output_layout() {
+#if LANG_CXX11
+inline void TPUEmbeddingConfiguration::set_profile_data_directory(::std::string&& value) {
   
-  if (output_layout_ == NULL) {
-    auto* p = CreateMaybeMessage<::tensorflow::tpu::TPUEmbeddingOutputLayout>(GetArenaNoVirtual());
-    output_layout_ = p;
-  }
-  // @@protoc_insertion_point(field_mutable:tensorflow.tpu.TPUEmbeddingConfiguration.output_layout)
-  return output_layout_;
+  profile_data_directory_.SetNoArena(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:tensorflow.tpu.TPUEmbeddingConfiguration.profile_data_directory)
 }
-inline void TPUEmbeddingConfiguration::set_allocated_output_layout(::tensorflow::tpu::TPUEmbeddingOutputLayout* output_layout) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
-  if (message_arena == NULL) {
-    delete reinterpret_cast< ::google::protobuf::MessageLite*>(output_layout_);
-  }
-  if (output_layout) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
-    if (message_arena != submessage_arena) {
-      output_layout = ::google::protobuf::internal::GetOwnedMessage(
-          message_arena, output_layout, submessage_arena);
-    }
+#endif
+inline void TPUEmbeddingConfiguration::set_profile_data_directory(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  
+  profile_data_directory_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:tensorflow.tpu.TPUEmbeddingConfiguration.profile_data_directory)
+}
+inline void TPUEmbeddingConfiguration::set_profile_data_directory(const char* value, size_t size) {
+  
+  profile_data_directory_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:tensorflow.tpu.TPUEmbeddingConfiguration.profile_data_directory)
+}
+inline ::std::string* TPUEmbeddingConfiguration::mutable_profile_data_directory() {
+  
+  // @@protoc_insertion_point(field_mutable:tensorflow.tpu.TPUEmbeddingConfiguration.profile_data_directory)
+  return profile_data_directory_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* TPUEmbeddingConfiguration::release_profile_data_directory() {
+  // @@protoc_insertion_point(field_release:tensorflow.tpu.TPUEmbeddingConfiguration.profile_data_directory)
+  
+  return profile_data_directory_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void TPUEmbeddingConfiguration::set_allocated_profile_data_directory(::std::string* profile_data_directory) {
+  if (profile_data_directory != NULL) {
     
   } else {
     
   }
-  output_layout_ = output_layout;
-  // @@protoc_insertion_point(field_set_allocated:tensorflow.tpu.TPUEmbeddingConfiguration.output_layout)
+  profile_data_directory_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), profile_data_directory);
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.tpu.TPUEmbeddingConfiguration.profile_data_directory)
+}
+
+// repeated .tensorflow.tpu.TPUEmbeddingConfiguration.FeatureDescriptor feature_descriptor = 10;
+inline int TPUEmbeddingConfiguration::feature_descriptor_size() const {
+  return feature_descriptor_.size();
+}
+inline void TPUEmbeddingConfiguration::clear_feature_descriptor() {
+  feature_descriptor_.Clear();
+}
+inline ::tensorflow::tpu::TPUEmbeddingConfiguration_FeatureDescriptor* TPUEmbeddingConfiguration::mutable_feature_descriptor(int index) {
+  // @@protoc_insertion_point(field_mutable:tensorflow.tpu.TPUEmbeddingConfiguration.feature_descriptor)
+  return feature_descriptor_.Mutable(index);
+}
+inline ::google::protobuf::RepeatedPtrField< ::tensorflow::tpu::TPUEmbeddingConfiguration_FeatureDescriptor >*
+TPUEmbeddingConfiguration::mutable_feature_descriptor() {
+  // @@protoc_insertion_point(field_mutable_list:tensorflow.tpu.TPUEmbeddingConfiguration.feature_descriptor)
+  return &feature_descriptor_;
+}
+inline const ::tensorflow::tpu::TPUEmbeddingConfiguration_FeatureDescriptor& TPUEmbeddingConfiguration::feature_descriptor(int index) const {
+  // @@protoc_insertion_point(field_get:tensorflow.tpu.TPUEmbeddingConfiguration.feature_descriptor)
+  return feature_descriptor_.Get(index);
+}
+inline ::tensorflow::tpu::TPUEmbeddingConfiguration_FeatureDescriptor* TPUEmbeddingConfiguration::add_feature_descriptor() {
+  // @@protoc_insertion_point(field_add:tensorflow.tpu.TPUEmbeddingConfiguration.feature_descriptor)
+  return feature_descriptor_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::tensorflow::tpu::TPUEmbeddingConfiguration_FeatureDescriptor >&
+TPUEmbeddingConfiguration::feature_descriptor() const {
+  // @@protoc_insertion_point(field_list:tensorflow.tpu.TPUEmbeddingConfiguration.feature_descriptor)
+  return feature_descriptor_;
 }
 
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 

@@ -26,21 +26,27 @@ namespace protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto {
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_HloSnapshot;
 }  // namespace protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto
 namespace protobuf_tensorflow_2fcompiler_2fxla_2fxla_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fxla_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_DebugOptions;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fxla_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_DebugOptions;
 }  // namespace protobuf_tensorflow_2fcompiler_2fxla_2fxla_2eproto
 namespace protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto {
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_LiteralProto;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_ProgramShapeProto;
 }  // namespace protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto
 namespace protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CommonExecutionConfig;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_DeviceAssignment_ComputationDevice_DeviceMeshCoordinates;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_Percentiles_Point;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_XLAComputationConfig_Experimental_UpdateIndexPair;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_XLATupleNode;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_XRTChainedExecuteOp_Input;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_XRTChainedExecuteOp_Output;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_DeviceAssignment;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_DeviceAssignment_ComputationDevice;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_MetricValues;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_Percentiles;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_XLAComputationConfig_Experimental;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_XRTChainedExecuteOp;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto ::google::protobuf::internal::SCCInfo<4> scc_info_XLAComputationConfig;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto ::google::protobuf::internal::SCCInfo<5> scc_info_XLAComputationConfig;
 }  // namespace protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto
 namespace xrt {
 class DeviceAssignment_ComputationDevice_DeviceMeshCoordinatesDefaultTypeInternal {
@@ -58,6 +64,16 @@ class DeviceAssignmentDefaultTypeInternal {
   ::google::protobuf::internal::ExplicitlyConstructed<DeviceAssignment>
       _instance;
 } _DeviceAssignment_default_instance_;
+class XLAComputationConfig_Experimental_UpdateIndexPairDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<XLAComputationConfig_Experimental_UpdateIndexPair>
+      _instance;
+} _XLAComputationConfig_Experimental_UpdateIndexPair_default_instance_;
+class XLAComputationConfig_ExperimentalDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<XLAComputationConfig_Experimental>
+      _instance;
+} _XLAComputationConfig_Experimental_default_instance_;
 class XLAComputationConfigDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<XLAComputationConfig>
@@ -78,6 +94,11 @@ class XLATupleNodeDefaultTypeInternal {
   ::google::protobuf::internal::ExplicitlyConstructed<XLATupleNode>
       _instance;
 } _XLATupleNode_default_instance_;
+class CommonExecutionConfigDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<CommonExecutionConfig>
+      _instance;
+} _CommonExecutionConfig_default_instance_;
 class XRTExecutionConfigDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<XRTExecutionConfig>
@@ -110,6 +131,38 @@ class XRTChainedExecutePlanDefaultTypeInternal {
   ::google::protobuf::internal::ExplicitlyConstructed<XRTChainedExecutePlan>
       _instance;
 } _XRTChainedExecutePlan_default_instance_;
+class XRTMetricsCollectDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<XRTMetricsCollect>
+      _instance;
+} _XRTMetricsCollect_default_instance_;
+class Percentiles_PointDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<Percentiles_Point>
+      _instance;
+} _Percentiles_Point_default_instance_;
+class PercentilesDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<Percentiles>
+      _instance;
+} _Percentiles_default_instance_;
+class MetricValuesDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<MetricValues>
+      _instance;
+  const ::xrt::Percentiles* percentiles_value_;
+  ::google::protobuf::int64 int64_value_;
+} _MetricValues_default_instance_;
+class MetricsReportDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<MetricsReport>
+      _instance;
+} _MetricsReport_default_instance_;
+class MemoryInfoDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<MemoryInfo>
+      _instance;
+} _MemoryInfo_default_instance_;
 }  // namespace xrt
 namespace protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto {
 static void InitDefaultsDeviceAssignment_ComputationDevice_DeviceMeshCoordinates() {
@@ -156,6 +209,35 @@ static void InitDefaultsDeviceAssignment() {
     {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsDeviceAssignment}, {
       &protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::scc_info_DeviceAssignment_ComputationDevice.base,}};
 
+static void InitDefaultsXLAComputationConfig_Experimental_UpdateIndexPair() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::xrt::_XLAComputationConfig_Experimental_UpdateIndexPair_default_instance_;
+    new (ptr) ::xrt::XLAComputationConfig_Experimental_UpdateIndexPair();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::xrt::XLAComputationConfig_Experimental_UpdateIndexPair::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<0> scc_info_XLAComputationConfig_Experimental_UpdateIndexPair =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsXLAComputationConfig_Experimental_UpdateIndexPair}, {}};
+
+static void InitDefaultsXLAComputationConfig_Experimental() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::xrt::_XLAComputationConfig_Experimental_default_instance_;
+    new (ptr) ::xrt::XLAComputationConfig_Experimental();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::xrt::XLAComputationConfig_Experimental::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<1> scc_info_XLAComputationConfig_Experimental =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsXLAComputationConfig_Experimental}, {
+      &protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::scc_info_XLAComputationConfig_Experimental_UpdateIndexPair.base,}};
+
 static void InitDefaultsXLAComputationConfig() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -167,12 +249,13 @@ static void InitDefaultsXLAComputationConfig() {
   ::xrt::XLAComputationConfig::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<4> scc_info_XLAComputationConfig =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 4, InitDefaultsXLAComputationConfig}, {
+::google::protobuf::internal::SCCInfo<5> scc_info_XLAComputationConfig =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 5, InitDefaultsXLAComputationConfig}, {
       &protobuf_tensorflow_2fcompiler_2ftf2xla_2fhost_5fcompute_5fmetadata_2eproto::scc_info_HostComputeMetadata.base,
       &protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto::scc_info_ProgramShapeProto.base,
       &protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::scc_info_DeviceAssignment.base,
-      &protobuf_tensorflow_2fcompiler_2fxla_2fxla_2eproto::scc_info_DebugOptions.base,}};
+      &protobuf_tensorflow_2fcompiler_2fxla_2fxla_2eproto::scc_info_DebugOptions.base,
+      &protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::scc_info_XLAComputationConfig_Experimental.base,}};
 
 static void InitDefaultsXLAComputation() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -219,6 +302,20 @@ static void InitDefaultsXLATupleNode() {
 ::google::protobuf::internal::SCCInfo<0> scc_info_XLATupleNode =
     {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsXLATupleNode}, {}};
 
+static void InitDefaultsCommonExecutionConfig() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::xrt::_CommonExecutionConfig_default_instance_;
+    new (ptr) ::xrt::CommonExecutionConfig();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::xrt::CommonExecutionConfig::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<0> scc_info_CommonExecutionConfig =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCommonExecutionConfig}, {}};
+
 static void InitDefaultsXRTExecutionConfig() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -230,8 +327,9 @@ static void InitDefaultsXRTExecutionConfig() {
   ::xrt::XRTExecutionConfig::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_XRTExecutionConfig =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsXRTExecutionConfig}, {}};
+::google::protobuf::internal::SCCInfo<1> scc_info_XRTExecutionConfig =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsXRTExecutionConfig}, {
+      &protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::scc_info_CommonExecutionConfig.base,}};
 
 static void InitDefaultsXRTChainedExecuteConfig() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -244,8 +342,9 @@ static void InitDefaultsXRTChainedExecuteConfig() {
   ::xrt::XRTChainedExecuteConfig::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_XRTChainedExecuteConfig =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsXRTChainedExecuteConfig}, {}};
+::google::protobuf::internal::SCCInfo<1> scc_info_XRTChainedExecuteConfig =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsXRTChainedExecuteConfig}, {
+      &protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::scc_info_CommonExecutionConfig.base,}};
 
 static void InitDefaultsXRTChainedExecuteOp_Input() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -306,23 +405,120 @@ static void InitDefaultsXRTChainedExecutePlan() {
     {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsXRTChainedExecutePlan}, {
       &protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::scc_info_XRTChainedExecuteOp.base,}};
 
+static void InitDefaultsXRTMetricsCollect() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::xrt::_XRTMetricsCollect_default_instance_;
+    new (ptr) ::xrt::XRTMetricsCollect();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::xrt::XRTMetricsCollect::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<0> scc_info_XRTMetricsCollect =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsXRTMetricsCollect}, {}};
+
+static void InitDefaultsPercentiles_Point() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::xrt::_Percentiles_Point_default_instance_;
+    new (ptr) ::xrt::Percentiles_Point();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::xrt::Percentiles_Point::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<0> scc_info_Percentiles_Point =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsPercentiles_Point}, {}};
+
+static void InitDefaultsPercentiles() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::xrt::_Percentiles_default_instance_;
+    new (ptr) ::xrt::Percentiles();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::xrt::Percentiles::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<1> scc_info_Percentiles =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsPercentiles}, {
+      &protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::scc_info_Percentiles_Point.base,}};
+
+static void InitDefaultsMetricValues() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::xrt::_MetricValues_default_instance_;
+    new (ptr) ::xrt::MetricValues();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::xrt::MetricValues::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<1> scc_info_MetricValues =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsMetricValues}, {
+      &protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::scc_info_Percentiles.base,}};
+
+static void InitDefaultsMetricsReport() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::xrt::_MetricsReport_default_instance_;
+    new (ptr) ::xrt::MetricsReport();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::xrt::MetricsReport::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<1> scc_info_MetricsReport =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsMetricsReport}, {
+      &protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::scc_info_MetricValues.base,}};
+
+static void InitDefaultsMemoryInfo() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::xrt::_MemoryInfo_default_instance_;
+    new (ptr) ::xrt::MemoryInfo();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::xrt::MemoryInfo::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<0> scc_info_MemoryInfo =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsMemoryInfo}, {}};
+
 void InitDefaults() {
   ::google::protobuf::internal::InitSCC(&scc_info_DeviceAssignment_ComputationDevice_DeviceMeshCoordinates.base);
   ::google::protobuf::internal::InitSCC(&scc_info_DeviceAssignment_ComputationDevice.base);
   ::google::protobuf::internal::InitSCC(&scc_info_DeviceAssignment.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_XLAComputationConfig_Experimental_UpdateIndexPair.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_XLAComputationConfig_Experimental.base);
   ::google::protobuf::internal::InitSCC(&scc_info_XLAComputationConfig.base);
   ::google::protobuf::internal::InitSCC(&scc_info_XLAComputation.base);
   ::google::protobuf::internal::InitSCC(&scc_info_XLAAllocation.base);
   ::google::protobuf::internal::InitSCC(&scc_info_XLATupleNode.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CommonExecutionConfig.base);
   ::google::protobuf::internal::InitSCC(&scc_info_XRTExecutionConfig.base);
   ::google::protobuf::internal::InitSCC(&scc_info_XRTChainedExecuteConfig.base);
   ::google::protobuf::internal::InitSCC(&scc_info_XRTChainedExecuteOp_Input.base);
   ::google::protobuf::internal::InitSCC(&scc_info_XRTChainedExecuteOp_Output.base);
   ::google::protobuf::internal::InitSCC(&scc_info_XRTChainedExecuteOp.base);
   ::google::protobuf::internal::InitSCC(&scc_info_XRTChainedExecutePlan.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_XRTMetricsCollect.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_Percentiles_Point.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_Percentiles.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_MetricValues.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_MetricsReport.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_MemoryInfo.base);
 }
 
-::google::protobuf::Metadata file_level_metadata[13];
+::google::protobuf::Metadata file_level_metadata[22];
+const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[1];
 
 const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
@@ -344,6 +540,19 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   ~0u,  // no _weak_field_map_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::DeviceAssignment, computation_devices_),
   ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::XLAComputationConfig_Experimental_UpdateIndexPair, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::XLAComputationConfig_Experimental_UpdateIndexPair, index_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::XLAComputationConfig_Experimental_UpdateIndexPair, updated_),
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::XLAComputationConfig_Experimental, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::XLAComputationConfig_Experimental, stateful_input_indices_),
+  ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::XLAComputationConfig, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
@@ -355,6 +564,7 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::XLAComputationConfig, per_core_program_shape_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::XLAComputationConfig, device_assignment_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::XLAComputationConfig, debug_options_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::XLAComputationConfig, experimental_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::XLAComputation, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -377,6 +587,14 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::XLATupleNode, release_input_handle_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::XLATupleNode, tuples_),
   ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::CommonExecutionConfig, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::CommonExecutionConfig, replica_id_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::CommonExecutionConfig, local_replica_mapping_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::CommonExecutionConfig, run_id_),
+  ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::XRTExecutionConfig, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
@@ -388,6 +606,7 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::XRTExecutionConfig, release_input_handles_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::XRTExecutionConfig, release_compilation_handle_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::XRTExecutionConfig, return_exploded_tuple_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::XRTExecutionConfig, common_config_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::XRTChainedExecuteConfig, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -396,6 +615,7 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::XRTChainedExecuteConfig, rng_seed_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::XRTChainedExecuteConfig, core_index_in_replica_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::XRTChainedExecuteConfig, execution_instance_key_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::XRTChainedExecuteConfig, common_config_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::XRTChainedExecuteOp_Input, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -426,44 +646,113 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::XRTChainedExecutePlan, ops_),
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::XRTMetricsCollect, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::XRTMetricsCollect, metrics_regex_),
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::Percentiles_Point, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::Percentiles_Point, percentile_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::Percentiles_Point, value_),
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::Percentiles, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::Percentiles, start_nstime_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::Percentiles, end_nstime_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::Percentiles, min_value_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::Percentiles, max_value_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::Percentiles, mean_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::Percentiles, stddev_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::Percentiles, num_samples_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::Percentiles, total_samples_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::Percentiles, accumulator_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::Percentiles, points_),
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::MetricValues, _internal_metadata_),
+  ~0u,  // no _extensions_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::MetricValues, _oneof_case_[0]),
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::MetricValues, name_),
+  offsetof(::xrt::MetricValuesDefaultTypeInternal, percentiles_value_),
+  offsetof(::xrt::MetricValuesDefaultTypeInternal, int64_value_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::MetricValues, unit_of_measure_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::MetricValues, values_oneof_),
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::MetricsReport, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::MetricsReport, metrics_),
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::MemoryInfo, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::MemoryInfo, kb_total_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xrt::MemoryInfo, kb_free_),
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::xrt::DeviceAssignment_ComputationDevice_DeviceMeshCoordinates)},
   { 6, -1, sizeof(::xrt::DeviceAssignment_ComputationDevice)},
   { 12, -1, sizeof(::xrt::DeviceAssignment)},
-  { 18, -1, sizeof(::xrt::XLAComputationConfig)},
-  { 30, -1, sizeof(::xrt::XLAComputation)},
-  { 37, -1, sizeof(::xrt::XLAAllocation)},
-  { 43, -1, sizeof(::xrt::XLATupleNode)},
-  { 51, -1, sizeof(::xrt::XRTExecutionConfig)},
-  { 63, -1, sizeof(::xrt::XRTChainedExecuteConfig)},
-  { 71, -1, sizeof(::xrt::XRTChainedExecuteOp_Input)},
-  { 78, -1, sizeof(::xrt::XRTChainedExecuteOp_Output)},
-  { 85, -1, sizeof(::xrt::XRTChainedExecuteOp)},
-  { 95, -1, sizeof(::xrt::XRTChainedExecutePlan)},
+  { 18, -1, sizeof(::xrt::XLAComputationConfig_Experimental_UpdateIndexPair)},
+  { 25, -1, sizeof(::xrt::XLAComputationConfig_Experimental)},
+  { 31, -1, sizeof(::xrt::XLAComputationConfig)},
+  { 44, -1, sizeof(::xrt::XLAComputation)},
+  { 51, -1, sizeof(::xrt::XLAAllocation)},
+  { 57, -1, sizeof(::xrt::XLATupleNode)},
+  { 65, -1, sizeof(::xrt::CommonExecutionConfig)},
+  { 73, -1, sizeof(::xrt::XRTExecutionConfig)},
+  { 86, -1, sizeof(::xrt::XRTChainedExecuteConfig)},
+  { 95, -1, sizeof(::xrt::XRTChainedExecuteOp_Input)},
+  { 102, -1, sizeof(::xrt::XRTChainedExecuteOp_Output)},
+  { 109, -1, sizeof(::xrt::XRTChainedExecuteOp)},
+  { 119, -1, sizeof(::xrt::XRTChainedExecutePlan)},
+  { 125, -1, sizeof(::xrt::XRTMetricsCollect)},
+  { 131, -1, sizeof(::xrt::Percentiles_Point)},
+  { 138, -1, sizeof(::xrt::Percentiles)},
+  { 153, -1, sizeof(::xrt::MetricValues)},
+  { 163, -1, sizeof(::xrt::MetricsReport)},
+  { 169, -1, sizeof(::xrt::MemoryInfo)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::xrt::_DeviceAssignment_ComputationDevice_DeviceMeshCoordinates_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::xrt::_DeviceAssignment_ComputationDevice_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::xrt::_DeviceAssignment_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::xrt::_XLAComputationConfig_Experimental_UpdateIndexPair_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::xrt::_XLAComputationConfig_Experimental_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::xrt::_XLAComputationConfig_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::xrt::_XLAComputation_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::xrt::_XLAAllocation_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::xrt::_XLATupleNode_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::xrt::_CommonExecutionConfig_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::xrt::_XRTExecutionConfig_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::xrt::_XRTChainedExecuteConfig_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::xrt::_XRTChainedExecuteOp_Input_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::xrt::_XRTChainedExecuteOp_Output_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::xrt::_XRTChainedExecuteOp_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::xrt::_XRTChainedExecutePlan_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::xrt::_XRTMetricsCollect_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::xrt::_Percentiles_Point_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::xrt::_Percentiles_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::xrt::_MetricValues_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::xrt::_MetricsReport_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::xrt::_MemoryInfo_default_instance_),
 };
 
 void protobuf_AssignDescriptors() {
   AddDescriptors();
   AssignDescriptors(
       "tensorflow/compiler/xrt/xrt.proto", schemas, file_default_instances, TableStruct::offsets,
-      file_level_metadata, NULL, NULL);
+      file_level_metadata, file_level_enum_descriptors, NULL);
 }
 
 void protobuf_AssignDescriptorsOnce() {
@@ -474,7 +763,7 @@ void protobuf_AssignDescriptorsOnce() {
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 13);
+  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 22);
 }
 
 void AddDescriptorsImpl() {
@@ -491,7 +780,7 @@ void AddDescriptorsImpl() {
       "nDevice\022V\n\017replica_devices\030\001 \003(\0132=.xrt.D"
       "eviceAssignment.ComputationDevice.Device"
       "MeshCoordinates\032&\n\025DeviceMeshCoordinates"
-      "\022\r\n\005value\030\001 \003(\005\"\325\002\n\024XLAComputationConfig"
+      "\022\r\n\005value\030\001 \003(\005\"\257\004\n\024XLAComputationConfig"
       "\022\024\n\014num_replicas\030\001 \001(\005\022\035\n\025num_cores_per_"
       "replica\030\002 \001(\005\022E\n\025host_compute_metadata\030\003"
       " \001(\0132&.tensorflow.tf2xla.HostComputeMeta"
@@ -499,34 +788,61 @@ void AddDescriptorsImpl() {
       "mShapeProto\0226\n\026per_core_program_shape\030\005 "
       "\003(\0132\026.xla.ProgramShapeProto\0220\n\021device_as"
       "signment\030\006 \001(\0132\025.xrt.DeviceAssignment\022(\n"
-      "\rdebug_options\030\007 \001(\0132\021.xla.DebugOptions\""
-      "c\n\016XLAComputation\022)\n\006config\030\001 \001(\0132\031.xrt."
-      "XLAComputationConfig\022&\n\014hlo_snapshot\030\002 \001"
-      "(\0132\020.xla.HloSnapshot\"7\n\rXLAAllocation\022 \n"
-      "\005value\030\002 \001(\0132\021.xla.LiteralProtoJ\004\010\001\020\002\"d\n"
-      "\014XLATupleNode\022\023\n\013input_index\030\001 \001(\005\022\034\n\024re"
-      "lease_input_handle\030\002 \001(\010\022!\n\006tuples\030\003 \003(\013"
-      "2\021.xrt.XLATupleNode\"\337\001\n\022XRTExecutionConf"
-      "ig\022\026\n\016device_ordinal\030\001 \001(\005\022\035\n\025core_index"
-      "_in_replica\030\002 \001(\005\022\036\n\026execution_instance_"
-      "key\030\003 \001(\t\022\020\n\010rng_seed\030\004 \001(\r\022\035\n\025release_i"
-      "nput_handles\030\005 \001(\010\022\"\n\032release_compilatio"
-      "n_handle\030\006 \001(\010\022\035\n\025return_exploded_tuple\030"
-      "\007 \001(\010\"j\n\027XRTChainedExecuteConfig\022\020\n\010rng_"
-      "seed\030\001 \001(\r\022\035\n\025core_index_in_replica\030\002 \001("
-      "\005\022\036\n\026execution_instance_key\030\003 \001(\t\"\237\002\n\023XR"
-      "TChainedExecuteOp\022\025\n\013data_handle\030\001 \001(\003H\000"
-      "\022\034\n\022computation_handle\030\002 \001(\003H\000\0220\n\007output"
-      "s\030\003 \003(\0132\037.xrt.XRTChainedExecuteOp.Output"
-      "\022.\n\006inputs\030\004 \003(\0132\036.xrt.XRTChainedExecute"
-      "Op.Input\032/\n\005Input\022\020\n\010op_index\030\001 \001(\003\022\024\n\014o"
-      "utput_index\030\002 \001(\003\0324\n\006Output\022\024\n\014output_in"
-      "dex\030\001 \001(\003\022\024\n\014result_index\030\002 \001(\003B\n\n\010op_on"
-      "eof\">\n\025XRTChainedExecutePlan\022%\n\003ops\030\001 \003("
-      "\0132\030.xrt.XRTChainedExecuteOpb\006proto3"
+      "\rdebug_options\030\007 \001(\0132\021.xla.DebugOptions\022"
+      "<\n\014experimental\030\010 \001(\0132&.xrt.XLAComputati"
+      "onConfig.Experimental\032\231\001\n\014Experimental\022V"
+      "\n\026stateful_input_indices\030\001 \003(\01326.xrt.XLA"
+      "ComputationConfig.Experimental.UpdateInd"
+      "exPair\0321\n\017UpdateIndexPair\022\r\n\005index\030\001 \001(\005"
+      "\022\017\n\007updated\030\002 \001(\010\"c\n\016XLAComputation\022)\n\006c"
+      "onfig\030\001 \001(\0132\031.xrt.XLAComputationConfig\022&"
+      "\n\014hlo_snapshot\030\002 \001(\0132\020.xla.HloSnapshot\"7"
+      "\n\rXLAAllocation\022 \n\005value\030\002 \001(\0132\021.xla.Lit"
+      "eralProtoJ\004\010\001\020\002\"d\n\014XLATupleNode\022\023\n\013input"
+      "_index\030\001 \001(\005\022\034\n\024release_input_handle\030\002 \001"
+      "(\010\022!\n\006tuples\030\003 \003(\0132\021.xrt.XLATupleNode\"Z\n"
+      "\025CommonExecutionConfig\022\022\n\nreplica_id\030\001 \001"
+      "(\005\022\035\n\025local_replica_mapping\030\002 \003(\005\022\016\n\006run"
+      "_id\030\003 \001(\003\"\230\002\n\022XRTExecutionConfig\022\026\n\016devi"
+      "ce_ordinal\030\001 \001(\005\022\035\n\025core_index_in_replic"
+      "a\030\002 \001(\005\022\036\n\026execution_instance_key\030\003 \001(\t\022"
+      "\020\n\010rng_seed\030\004 \001(\r\022\035\n\025release_input_handl"
+      "es\030\005 \001(\010\022\"\n\032release_compilation_handle\030\006"
+      " \001(\010\022\035\n\025return_exploded_tuple\030\007 \001(\010\0221\n\rc"
+      "ommon_config\030\t \001(\0132\032.xrt.CommonExecution"
+      "ConfigJ\004\010\010\020\t\"\243\001\n\027XRTChainedExecuteConfig"
+      "\022\020\n\010rng_seed\030\001 \001(\r\022\035\n\025core_index_in_repl"
+      "ica\030\002 \001(\005\022\036\n\026execution_instance_key\030\003 \001("
+      "\t\0221\n\rcommon_config\030\005 \001(\0132\032.xrt.CommonExe"
+      "cutionConfigJ\004\010\004\020\005\"\237\002\n\023XRTChainedExecute"
+      "Op\022\025\n\013data_handle\030\001 \001(\003H\000\022\034\n\022computation"
+      "_handle\030\002 \001(\003H\000\0220\n\007outputs\030\003 \003(\0132\037.xrt.X"
+      "RTChainedExecuteOp.Output\022.\n\006inputs\030\004 \003("
+      "\0132\036.xrt.XRTChainedExecuteOp.Input\032/\n\005Inp"
+      "ut\022\020\n\010op_index\030\001 \001(\003\022\024\n\014output_index\030\002 \001"
+      "(\003\0324\n\006Output\022\024\n\014output_index\030\001 \001(\003\022\024\n\014re"
+      "sult_index\030\002 \001(\003B\n\n\010op_oneof\">\n\025XRTChain"
+      "edExecutePlan\022%\n\003ops\030\001 \003(\0132\030.xrt.XRTChai"
+      "nedExecuteOp\"*\n\021XRTMetricsCollect\022\025\n\rmet"
+      "rics_regex\030\001 \003(\t\"\220\002\n\013Percentiles\022\024\n\014star"
+      "t_nstime\030\001 \001(\004\022\022\n\nend_nstime\030\002 \001(\004\022\021\n\tmi"
+      "n_value\030\003 \001(\001\022\021\n\tmax_value\030\004 \001(\001\022\014\n\004mean"
+      "\030\005 \001(\001\022\016\n\006stddev\030\006 \001(\001\022\023\n\013num_samples\030\007 "
+      "\001(\004\022\025\n\rtotal_samples\030\010 \001(\004\022\023\n\013accumulato"
+      "r\030\t \001(\001\022&\n\006points\030\n \003(\0132\026.xrt.Percentile"
+      "s.Point\032*\n\005Point\022\022\n\npercentile\030\001 \001(\001\022\r\n\005"
+      "value\030\002 \001(\001\"\353\001\n\014MetricValues\022\014\n\004name\030\001 \001"
+      "(\t\022-\n\021percentiles_value\030\002 \001(\0132\020.xrt.Perc"
+      "entilesH\000\022\025\n\013int64_value\030\003 \001(\003H\000\0228\n\017unit"
+      "_of_measure\030\004 \001(\0162\037.xrt.MetricValues.Uni"
+      "tOfMeasure\"=\n\rUnitOfMeasure\022\013\n\007INVALID\020\000"
+      "\022\n\n\006NUMBER\020\001\022\010\n\004TIME\020\002\022\t\n\005BYTES\020\003B\016\n\014val"
+      "ues_oneof\"3\n\rMetricsReport\022\"\n\007metrics\030\001 "
+      "\003(\0132\021.xrt.MetricValues\"/\n\nMemoryInfo\022\020\n\010"
+      "kb_total\030\001 \001(\003\022\017\n\007kb_free\030\002 \001(\003b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 1755);
+      descriptor, 2839);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/compiler/xrt/xrt.proto", &protobuf_RegisterTypes);
   ::protobuf_tensorflow_2fcompiler_2ftf2xla_2fhost_5fcompute_5fmetadata_2eproto::AddDescriptors();
@@ -547,6 +863,31 @@ struct StaticDescriptorInitializer {
 } static_descriptor_initializer;
 }  // namespace protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto
 namespace xrt {
+const ::google::protobuf::EnumDescriptor* MetricValues_UnitOfMeasure_descriptor() {
+  protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::file_level_enum_descriptors[0];
+}
+bool MetricValues_UnitOfMeasure_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+      return true;
+    default:
+      return false;
+  }
+}
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const MetricValues_UnitOfMeasure MetricValues::INVALID;
+const MetricValues_UnitOfMeasure MetricValues::NUMBER;
+const MetricValues_UnitOfMeasure MetricValues::TIME;
+const MetricValues_UnitOfMeasure MetricValues::BYTES;
+const MetricValues_UnitOfMeasure MetricValues::UnitOfMeasure_MIN;
+const MetricValues_UnitOfMeasure MetricValues::UnitOfMeasure_MAX;
+const int MetricValues::UnitOfMeasure_ARRAYSIZE;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 // ===================================================================
 
@@ -1256,6 +1597,498 @@ void DeviceAssignment::InternalSwap(DeviceAssignment* other) {
 
 // ===================================================================
 
+void XLAComputationConfig_Experimental_UpdateIndexPair::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int XLAComputationConfig_Experimental_UpdateIndexPair::kIndexFieldNumber;
+const int XLAComputationConfig_Experimental_UpdateIndexPair::kUpdatedFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+XLAComputationConfig_Experimental_UpdateIndexPair::XLAComputationConfig_Experimental_UpdateIndexPair()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::scc_info_XLAComputationConfig_Experimental_UpdateIndexPair.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:xrt.XLAComputationConfig.Experimental.UpdateIndexPair)
+}
+XLAComputationConfig_Experimental_UpdateIndexPair::XLAComputationConfig_Experimental_UpdateIndexPair(const XLAComputationConfig_Experimental_UpdateIndexPair& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::memcpy(&index_, &from.index_,
+    static_cast<size_t>(reinterpret_cast<char*>(&updated_) -
+    reinterpret_cast<char*>(&index_)) + sizeof(updated_));
+  // @@protoc_insertion_point(copy_constructor:xrt.XLAComputationConfig.Experimental.UpdateIndexPair)
+}
+
+void XLAComputationConfig_Experimental_UpdateIndexPair::SharedCtor() {
+  ::memset(&index_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&updated_) -
+      reinterpret_cast<char*>(&index_)) + sizeof(updated_));
+}
+
+XLAComputationConfig_Experimental_UpdateIndexPair::~XLAComputationConfig_Experimental_UpdateIndexPair() {
+  // @@protoc_insertion_point(destructor:xrt.XLAComputationConfig.Experimental.UpdateIndexPair)
+  SharedDtor();
+}
+
+void XLAComputationConfig_Experimental_UpdateIndexPair::SharedDtor() {
+}
+
+void XLAComputationConfig_Experimental_UpdateIndexPair::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* XLAComputationConfig_Experimental_UpdateIndexPair::descriptor() {
+  ::protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const XLAComputationConfig_Experimental_UpdateIndexPair& XLAComputationConfig_Experimental_UpdateIndexPair::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::scc_info_XLAComputationConfig_Experimental_UpdateIndexPair.base);
+  return *internal_default_instance();
+}
+
+
+void XLAComputationConfig_Experimental_UpdateIndexPair::Clear() {
+// @@protoc_insertion_point(message_clear_start:xrt.XLAComputationConfig.Experimental.UpdateIndexPair)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&index_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&updated_) -
+      reinterpret_cast<char*>(&index_)) + sizeof(updated_));
+  _internal_metadata_.Clear();
+}
+
+bool XLAComputationConfig_Experimental_UpdateIndexPair::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:xrt.XLAComputationConfig.Experimental.UpdateIndexPair)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // int32 index = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &index_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool updated = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &updated_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:xrt.XLAComputationConfig.Experimental.UpdateIndexPair)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:xrt.XLAComputationConfig.Experimental.UpdateIndexPair)
+  return false;
+#undef DO_
+}
+
+void XLAComputationConfig_Experimental_UpdateIndexPair::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:xrt.XLAComputationConfig.Experimental.UpdateIndexPair)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 index = 1;
+  if (this->index() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->index(), output);
+  }
+
+  // bool updated = 2;
+  if (this->updated() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(2, this->updated(), output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:xrt.XLAComputationConfig.Experimental.UpdateIndexPair)
+}
+
+::google::protobuf::uint8* XLAComputationConfig_Experimental_UpdateIndexPair::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:xrt.XLAComputationConfig.Experimental.UpdateIndexPair)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 index = 1;
+  if (this->index() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(1, this->index(), target);
+  }
+
+  // bool updated = 2;
+  if (this->updated() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(2, this->updated(), target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:xrt.XLAComputationConfig.Experimental.UpdateIndexPair)
+  return target;
+}
+
+size_t XLAComputationConfig_Experimental_UpdateIndexPair::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:xrt.XLAComputationConfig.Experimental.UpdateIndexPair)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // int32 index = 1;
+  if (this->index() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->index());
+  }
+
+  // bool updated = 2;
+  if (this->updated() != 0) {
+    total_size += 1 + 1;
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void XLAComputationConfig_Experimental_UpdateIndexPair::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:xrt.XLAComputationConfig.Experimental.UpdateIndexPair)
+  GOOGLE_DCHECK_NE(&from, this);
+  const XLAComputationConfig_Experimental_UpdateIndexPair* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const XLAComputationConfig_Experimental_UpdateIndexPair>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:xrt.XLAComputationConfig.Experimental.UpdateIndexPair)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:xrt.XLAComputationConfig.Experimental.UpdateIndexPair)
+    MergeFrom(*source);
+  }
+}
+
+void XLAComputationConfig_Experimental_UpdateIndexPair::MergeFrom(const XLAComputationConfig_Experimental_UpdateIndexPair& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:xrt.XLAComputationConfig.Experimental.UpdateIndexPair)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.index() != 0) {
+    set_index(from.index());
+  }
+  if (from.updated() != 0) {
+    set_updated(from.updated());
+  }
+}
+
+void XLAComputationConfig_Experimental_UpdateIndexPair::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:xrt.XLAComputationConfig.Experimental.UpdateIndexPair)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void XLAComputationConfig_Experimental_UpdateIndexPair::CopyFrom(const XLAComputationConfig_Experimental_UpdateIndexPair& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:xrt.XLAComputationConfig.Experimental.UpdateIndexPair)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool XLAComputationConfig_Experimental_UpdateIndexPair::IsInitialized() const {
+  return true;
+}
+
+void XLAComputationConfig_Experimental_UpdateIndexPair::Swap(XLAComputationConfig_Experimental_UpdateIndexPair* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void XLAComputationConfig_Experimental_UpdateIndexPair::InternalSwap(XLAComputationConfig_Experimental_UpdateIndexPair* other) {
+  using std::swap;
+  swap(index_, other->index_);
+  swap(updated_, other->updated_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata XLAComputationConfig_Experimental_UpdateIndexPair::GetMetadata() const {
+  protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void XLAComputationConfig_Experimental::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int XLAComputationConfig_Experimental::kStatefulInputIndicesFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+XLAComputationConfig_Experimental::XLAComputationConfig_Experimental()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::scc_info_XLAComputationConfig_Experimental.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:xrt.XLAComputationConfig.Experimental)
+}
+XLAComputationConfig_Experimental::XLAComputationConfig_Experimental(const XLAComputationConfig_Experimental& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      stateful_input_indices_(from.stateful_input_indices_) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:xrt.XLAComputationConfig.Experimental)
+}
+
+void XLAComputationConfig_Experimental::SharedCtor() {
+}
+
+XLAComputationConfig_Experimental::~XLAComputationConfig_Experimental() {
+  // @@protoc_insertion_point(destructor:xrt.XLAComputationConfig.Experimental)
+  SharedDtor();
+}
+
+void XLAComputationConfig_Experimental::SharedDtor() {
+}
+
+void XLAComputationConfig_Experimental::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* XLAComputationConfig_Experimental::descriptor() {
+  ::protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const XLAComputationConfig_Experimental& XLAComputationConfig_Experimental::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::scc_info_XLAComputationConfig_Experimental.base);
+  return *internal_default_instance();
+}
+
+
+void XLAComputationConfig_Experimental::Clear() {
+// @@protoc_insertion_point(message_clear_start:xrt.XLAComputationConfig.Experimental)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  stateful_input_indices_.Clear();
+  _internal_metadata_.Clear();
+}
+
+bool XLAComputationConfig_Experimental::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:xrt.XLAComputationConfig.Experimental)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // repeated .xrt.XLAComputationConfig.Experimental.UpdateIndexPair stateful_input_indices = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+                input, add_stateful_input_indices()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:xrt.XLAComputationConfig.Experimental)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:xrt.XLAComputationConfig.Experimental)
+  return false;
+#undef DO_
+}
+
+void XLAComputationConfig_Experimental::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:xrt.XLAComputationConfig.Experimental)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated .xrt.XLAComputationConfig.Experimental.UpdateIndexPair stateful_input_indices = 1;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->stateful_input_indices_size()); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      1,
+      this->stateful_input_indices(static_cast<int>(i)),
+      output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:xrt.XLAComputationConfig.Experimental)
+}
+
+::google::protobuf::uint8* XLAComputationConfig_Experimental::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:xrt.XLAComputationConfig.Experimental)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated .xrt.XLAComputationConfig.Experimental.UpdateIndexPair stateful_input_indices = 1;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->stateful_input_indices_size()); i < n; i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        1, this->stateful_input_indices(static_cast<int>(i)), deterministic, target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:xrt.XLAComputationConfig.Experimental)
+  return target;
+}
+
+size_t XLAComputationConfig_Experimental::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:xrt.XLAComputationConfig.Experimental)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // repeated .xrt.XLAComputationConfig.Experimental.UpdateIndexPair stateful_input_indices = 1;
+  {
+    unsigned int count = static_cast<unsigned int>(this->stateful_input_indices_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          this->stateful_input_indices(static_cast<int>(i)));
+    }
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void XLAComputationConfig_Experimental::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:xrt.XLAComputationConfig.Experimental)
+  GOOGLE_DCHECK_NE(&from, this);
+  const XLAComputationConfig_Experimental* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const XLAComputationConfig_Experimental>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:xrt.XLAComputationConfig.Experimental)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:xrt.XLAComputationConfig.Experimental)
+    MergeFrom(*source);
+  }
+}
+
+void XLAComputationConfig_Experimental::MergeFrom(const XLAComputationConfig_Experimental& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:xrt.XLAComputationConfig.Experimental)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  stateful_input_indices_.MergeFrom(from.stateful_input_indices_);
+}
+
+void XLAComputationConfig_Experimental::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:xrt.XLAComputationConfig.Experimental)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void XLAComputationConfig_Experimental::CopyFrom(const XLAComputationConfig_Experimental& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:xrt.XLAComputationConfig.Experimental)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool XLAComputationConfig_Experimental::IsInitialized() const {
+  return true;
+}
+
+void XLAComputationConfig_Experimental::Swap(XLAComputationConfig_Experimental* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void XLAComputationConfig_Experimental::InternalSwap(XLAComputationConfig_Experimental* other) {
+  using std::swap;
+  CastToBase(&stateful_input_indices_)->InternalSwap(CastToBase(&other->stateful_input_indices_));
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata XLAComputationConfig_Experimental::GetMetadata() const {
+  protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
 void XLAComputationConfig::InitAsDefaultInstance() {
   ::xrt::_XLAComputationConfig_default_instance_._instance.get_mutable()->host_compute_metadata_ = const_cast< ::tensorflow::tf2xla::HostComputeMetadata*>(
       ::tensorflow::tf2xla::HostComputeMetadata::internal_default_instance());
@@ -1265,6 +2098,8 @@ void XLAComputationConfig::InitAsDefaultInstance() {
       ::xrt::DeviceAssignment::internal_default_instance());
   ::xrt::_XLAComputationConfig_default_instance_._instance.get_mutable()->debug_options_ = const_cast< ::xla::DebugOptions*>(
       ::xla::DebugOptions::internal_default_instance());
+  ::xrt::_XLAComputationConfig_default_instance_._instance.get_mutable()->experimental_ = const_cast< ::xrt::XLAComputationConfig_Experimental*>(
+      ::xrt::XLAComputationConfig_Experimental::internal_default_instance());
 }
 void XLAComputationConfig::clear_host_compute_metadata() {
   if (GetArenaNoVirtual() == NULL && host_compute_metadata_ != NULL) {
@@ -1295,6 +2130,7 @@ const int XLAComputationConfig::kProgramShapeFieldNumber;
 const int XLAComputationConfig::kPerCoreProgramShapeFieldNumber;
 const int XLAComputationConfig::kDeviceAssignmentFieldNumber;
 const int XLAComputationConfig::kDebugOptionsFieldNumber;
+const int XLAComputationConfig::kExperimentalFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 XLAComputationConfig::XLAComputationConfig()
@@ -1329,6 +2165,11 @@ XLAComputationConfig::XLAComputationConfig(const XLAComputationConfig& from)
   } else {
     debug_options_ = NULL;
   }
+  if (from.has_experimental()) {
+    experimental_ = new ::xrt::XLAComputationConfig_Experimental(*from.experimental_);
+  } else {
+    experimental_ = NULL;
+  }
   ::memcpy(&num_replicas_, &from.num_replicas_,
     static_cast<size_t>(reinterpret_cast<char*>(&num_cores_per_replica_) -
     reinterpret_cast<char*>(&num_replicas_)) + sizeof(num_cores_per_replica_));
@@ -1351,6 +2192,7 @@ void XLAComputationConfig::SharedDtor() {
   if (this != internal_default_instance()) delete program_shape_;
   if (this != internal_default_instance()) delete device_assignment_;
   if (this != internal_default_instance()) delete debug_options_;
+  if (this != internal_default_instance()) delete experimental_;
 }
 
 void XLAComputationConfig::SetCachedSize(int size) const {
@@ -1390,6 +2232,10 @@ void XLAComputationConfig::Clear() {
     delete debug_options_;
   }
   debug_options_ = NULL;
+  if (GetArenaNoVirtual() == NULL && experimental_ != NULL) {
+    delete experimental_;
+  }
+  experimental_ = NULL;
   ::memset(&num_replicas_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&num_cores_per_replica_) -
       reinterpret_cast<char*>(&num_replicas_)) + sizeof(num_cores_per_replica_));
@@ -1494,6 +2340,18 @@ bool XLAComputationConfig::MergePartialFromCodedStream(
         break;
       }
 
+      // .xrt.XLAComputationConfig.Experimental experimental = 8;
+      case 8: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(66u /* 66 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_experimental()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -1563,6 +2421,12 @@ void XLAComputationConfig::SerializeWithCachedSizes(
       7, this->_internal_debug_options(), output);
   }
 
+  // .xrt.XLAComputationConfig.Experimental experimental = 8;
+  if (this->has_experimental()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      8, this->_internal_experimental(), output);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -1623,6 +2487,13 @@ void XLAComputationConfig::SerializeWithCachedSizes(
         7, this->_internal_debug_options(), deterministic, target);
   }
 
+  // .xrt.XLAComputationConfig.Experimental experimental = 8;
+  if (this->has_experimental()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        8, this->_internal_experimental(), deterministic, target);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
@@ -1679,6 +2550,13 @@ size_t XLAComputationConfig::ByteSizeLong() const {
         *debug_options_);
   }
 
+  // .xrt.XLAComputationConfig.Experimental experimental = 8;
+  if (this->has_experimental()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *experimental_);
+  }
+
   // int32 num_replicas = 1;
   if (this->num_replicas() != 0) {
     total_size += 1 +
@@ -1733,6 +2611,9 @@ void XLAComputationConfig::MergeFrom(const XLAComputationConfig& from) {
   if (from.has_debug_options()) {
     mutable_debug_options()->::xla::DebugOptions::MergeFrom(from.debug_options());
   }
+  if (from.has_experimental()) {
+    mutable_experimental()->::xrt::XLAComputationConfig_Experimental::MergeFrom(from.experimental());
+  }
   if (from.num_replicas() != 0) {
     set_num_replicas(from.num_replicas());
   }
@@ -1770,6 +2651,7 @@ void XLAComputationConfig::InternalSwap(XLAComputationConfig* other) {
   swap(program_shape_, other->program_shape_);
   swap(device_assignment_, other->device_assignment_);
   swap(debug_options_, other->debug_options_);
+  swap(experimental_, other->experimental_);
   swap(num_replicas_, other->num_replicas_);
   swap(num_cores_per_replica_, other->num_cores_per_replica_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -2622,7 +3504,338 @@ void XLATupleNode::InternalSwap(XLATupleNode* other) {
 
 // ===================================================================
 
+void CommonExecutionConfig::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int CommonExecutionConfig::kReplicaIdFieldNumber;
+const int CommonExecutionConfig::kLocalReplicaMappingFieldNumber;
+const int CommonExecutionConfig::kRunIdFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+CommonExecutionConfig::CommonExecutionConfig()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::scc_info_CommonExecutionConfig.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:xrt.CommonExecutionConfig)
+}
+CommonExecutionConfig::CommonExecutionConfig(const CommonExecutionConfig& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      local_replica_mapping_(from.local_replica_mapping_) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::memcpy(&run_id_, &from.run_id_,
+    static_cast<size_t>(reinterpret_cast<char*>(&replica_id_) -
+    reinterpret_cast<char*>(&run_id_)) + sizeof(replica_id_));
+  // @@protoc_insertion_point(copy_constructor:xrt.CommonExecutionConfig)
+}
+
+void CommonExecutionConfig::SharedCtor() {
+  ::memset(&run_id_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&replica_id_) -
+      reinterpret_cast<char*>(&run_id_)) + sizeof(replica_id_));
+}
+
+CommonExecutionConfig::~CommonExecutionConfig() {
+  // @@protoc_insertion_point(destructor:xrt.CommonExecutionConfig)
+  SharedDtor();
+}
+
+void CommonExecutionConfig::SharedDtor() {
+}
+
+void CommonExecutionConfig::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* CommonExecutionConfig::descriptor() {
+  ::protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const CommonExecutionConfig& CommonExecutionConfig::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::scc_info_CommonExecutionConfig.base);
+  return *internal_default_instance();
+}
+
+
+void CommonExecutionConfig::Clear() {
+// @@protoc_insertion_point(message_clear_start:xrt.CommonExecutionConfig)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  local_replica_mapping_.Clear();
+  ::memset(&run_id_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&replica_id_) -
+      reinterpret_cast<char*>(&run_id_)) + sizeof(replica_id_));
+  _internal_metadata_.Clear();
+}
+
+bool CommonExecutionConfig::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:xrt.CommonExecutionConfig)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // int32 replica_id = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &replica_id_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated int32 local_replica_mapping = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, this->mutable_local_replica_mapping())));
+        } else if (
+            static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 1, 18u, input, this->mutable_local_replica_mapping())));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int64 run_id = 3;
+      case 3: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 input, &run_id_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:xrt.CommonExecutionConfig)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:xrt.CommonExecutionConfig)
+  return false;
+#undef DO_
+}
+
+void CommonExecutionConfig::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:xrt.CommonExecutionConfig)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 replica_id = 1;
+  if (this->replica_id() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->replica_id(), output);
+  }
+
+  // repeated int32 local_replica_mapping = 2;
+  if (this->local_replica_mapping_size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteTag(2, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
+    output->WriteVarint32(static_cast< ::google::protobuf::uint32>(
+        _local_replica_mapping_cached_byte_size_));
+  }
+  for (int i = 0, n = this->local_replica_mapping_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32NoTag(
+      this->local_replica_mapping(i), output);
+  }
+
+  // int64 run_id = 3;
+  if (this->run_id() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt64(3, this->run_id(), output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:xrt.CommonExecutionConfig)
+}
+
+::google::protobuf::uint8* CommonExecutionConfig::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:xrt.CommonExecutionConfig)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 replica_id = 1;
+  if (this->replica_id() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(1, this->replica_id(), target);
+  }
+
+  // repeated int32 local_replica_mapping = 2;
+  if (this->local_replica_mapping_size() > 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
+      2,
+      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
+      target);
+    target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
+        static_cast< ::google::protobuf::int32>(
+            _local_replica_mapping_cached_byte_size_), target);
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteInt32NoTagToArray(this->local_replica_mapping_, target);
+  }
+
+  // int64 run_id = 3;
+  if (this->run_id() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(3, this->run_id(), target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:xrt.CommonExecutionConfig)
+  return target;
+}
+
+size_t CommonExecutionConfig::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:xrt.CommonExecutionConfig)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // repeated int32 local_replica_mapping = 2;
+  {
+    size_t data_size = ::google::protobuf::internal::WireFormatLite::
+      Int32Size(this->local_replica_mapping_);
+    if (data_size > 0) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int32Size(
+            static_cast< ::google::protobuf::int32>(data_size));
+    }
+    int cached_size = ::google::protobuf::internal::ToCachedSize(data_size);
+    GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+    _local_replica_mapping_cached_byte_size_ = cached_size;
+    GOOGLE_SAFE_CONCURRENT_WRITES_END();
+    total_size += data_size;
+  }
+
+  // int64 run_id = 3;
+  if (this->run_id() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int64Size(
+        this->run_id());
+  }
+
+  // int32 replica_id = 1;
+  if (this->replica_id() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->replica_id());
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void CommonExecutionConfig::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:xrt.CommonExecutionConfig)
+  GOOGLE_DCHECK_NE(&from, this);
+  const CommonExecutionConfig* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const CommonExecutionConfig>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:xrt.CommonExecutionConfig)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:xrt.CommonExecutionConfig)
+    MergeFrom(*source);
+  }
+}
+
+void CommonExecutionConfig::MergeFrom(const CommonExecutionConfig& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:xrt.CommonExecutionConfig)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  local_replica_mapping_.MergeFrom(from.local_replica_mapping_);
+  if (from.run_id() != 0) {
+    set_run_id(from.run_id());
+  }
+  if (from.replica_id() != 0) {
+    set_replica_id(from.replica_id());
+  }
+}
+
+void CommonExecutionConfig::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:xrt.CommonExecutionConfig)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void CommonExecutionConfig::CopyFrom(const CommonExecutionConfig& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:xrt.CommonExecutionConfig)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool CommonExecutionConfig::IsInitialized() const {
+  return true;
+}
+
+void CommonExecutionConfig::Swap(CommonExecutionConfig* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void CommonExecutionConfig::InternalSwap(CommonExecutionConfig* other) {
+  using std::swap;
+  local_replica_mapping_.InternalSwap(&other->local_replica_mapping_);
+  swap(run_id_, other->run_id_);
+  swap(replica_id_, other->replica_id_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata CommonExecutionConfig::GetMetadata() const {
+  protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
 void XRTExecutionConfig::InitAsDefaultInstance() {
+  ::xrt::_XRTExecutionConfig_default_instance_._instance.get_mutable()->common_config_ = const_cast< ::xrt::CommonExecutionConfig*>(
+      ::xrt::CommonExecutionConfig::internal_default_instance());
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int XRTExecutionConfig::kDeviceOrdinalFieldNumber;
@@ -2632,6 +3845,7 @@ const int XRTExecutionConfig::kRngSeedFieldNumber;
 const int XRTExecutionConfig::kReleaseInputHandlesFieldNumber;
 const int XRTExecutionConfig::kReleaseCompilationHandleFieldNumber;
 const int XRTExecutionConfig::kReturnExplodedTupleFieldNumber;
+const int XRTExecutionConfig::kCommonConfigFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 XRTExecutionConfig::XRTExecutionConfig()
@@ -2649,6 +3863,11 @@ XRTExecutionConfig::XRTExecutionConfig(const XRTExecutionConfig& from)
   if (from.execution_instance_key().size() > 0) {
     execution_instance_key_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.execution_instance_key_);
   }
+  if (from.has_common_config()) {
+    common_config_ = new ::xrt::CommonExecutionConfig(*from.common_config_);
+  } else {
+    common_config_ = NULL;
+  }
   ::memcpy(&device_ordinal_, &from.device_ordinal_,
     static_cast<size_t>(reinterpret_cast<char*>(&return_exploded_tuple_) -
     reinterpret_cast<char*>(&device_ordinal_)) + sizeof(return_exploded_tuple_));
@@ -2657,9 +3876,9 @@ XRTExecutionConfig::XRTExecutionConfig(const XRTExecutionConfig& from)
 
 void XRTExecutionConfig::SharedCtor() {
   execution_instance_key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&device_ordinal_, 0, static_cast<size_t>(
+  ::memset(&common_config_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&return_exploded_tuple_) -
-      reinterpret_cast<char*>(&device_ordinal_)) + sizeof(return_exploded_tuple_));
+      reinterpret_cast<char*>(&common_config_)) + sizeof(return_exploded_tuple_));
 }
 
 XRTExecutionConfig::~XRTExecutionConfig() {
@@ -2669,6 +3888,7 @@ XRTExecutionConfig::~XRTExecutionConfig() {
 
 void XRTExecutionConfig::SharedDtor() {
   execution_instance_key_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (this != internal_default_instance()) delete common_config_;
 }
 
 void XRTExecutionConfig::SetCachedSize(int size) const {
@@ -2692,6 +3912,10 @@ void XRTExecutionConfig::Clear() {
   (void) cached_has_bits;
 
   execution_instance_key_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (GetArenaNoVirtual() == NULL && common_config_ != NULL) {
+    delete common_config_;
+  }
+  common_config_ = NULL;
   ::memset(&device_ordinal_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&return_exploded_tuple_) -
       reinterpret_cast<char*>(&device_ordinal_)) + sizeof(return_exploded_tuple_));
@@ -2808,6 +4032,18 @@ bool XRTExecutionConfig::MergePartialFromCodedStream(
         break;
       }
 
+      // .xrt.CommonExecutionConfig common_config = 9;
+      case 9: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(74u /* 74 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_common_config()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -2874,6 +4110,12 @@ void XRTExecutionConfig::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteBool(7, this->return_exploded_tuple(), output);
   }
 
+  // .xrt.CommonExecutionConfig common_config = 9;
+  if (this->has_common_config()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      9, this->_internal_common_config(), output);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -2929,6 +4171,13 @@ void XRTExecutionConfig::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(7, this->return_exploded_tuple(), target);
   }
 
+  // .xrt.CommonExecutionConfig common_config = 9;
+  if (this->has_common_config()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        9, this->_internal_common_config(), deterministic, target);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
@@ -2951,6 +4200,13 @@ size_t XRTExecutionConfig::ByteSizeLong() const {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->execution_instance_key());
+  }
+
+  // .xrt.CommonExecutionConfig common_config = 9;
+  if (this->has_common_config()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *common_config_);
   }
 
   // int32 device_ordinal = 1;
@@ -3020,6 +4276,9 @@ void XRTExecutionConfig::MergeFrom(const XRTExecutionConfig& from) {
 
     execution_instance_key_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.execution_instance_key_);
   }
+  if (from.has_common_config()) {
+    mutable_common_config()->::xrt::CommonExecutionConfig::MergeFrom(from.common_config());
+  }
   if (from.device_ordinal() != 0) {
     set_device_ordinal(from.device_ordinal());
   }
@@ -3066,6 +4325,7 @@ void XRTExecutionConfig::InternalSwap(XRTExecutionConfig* other) {
   using std::swap;
   execution_instance_key_.Swap(&other->execution_instance_key_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
+  swap(common_config_, other->common_config_);
   swap(device_ordinal_, other->device_ordinal_);
   swap(core_index_in_replica_, other->core_index_in_replica_);
   swap(rng_seed_, other->rng_seed_);
@@ -3084,11 +4344,14 @@ void XRTExecutionConfig::InternalSwap(XRTExecutionConfig* other) {
 // ===================================================================
 
 void XRTChainedExecuteConfig::InitAsDefaultInstance() {
+  ::xrt::_XRTChainedExecuteConfig_default_instance_._instance.get_mutable()->common_config_ = const_cast< ::xrt::CommonExecutionConfig*>(
+      ::xrt::CommonExecutionConfig::internal_default_instance());
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int XRTChainedExecuteConfig::kRngSeedFieldNumber;
 const int XRTChainedExecuteConfig::kCoreIndexInReplicaFieldNumber;
 const int XRTChainedExecuteConfig::kExecutionInstanceKeyFieldNumber;
+const int XRTChainedExecuteConfig::kCommonConfigFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 XRTChainedExecuteConfig::XRTChainedExecuteConfig()
@@ -3106,6 +4369,11 @@ XRTChainedExecuteConfig::XRTChainedExecuteConfig(const XRTChainedExecuteConfig& 
   if (from.execution_instance_key().size() > 0) {
     execution_instance_key_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.execution_instance_key_);
   }
+  if (from.has_common_config()) {
+    common_config_ = new ::xrt::CommonExecutionConfig(*from.common_config_);
+  } else {
+    common_config_ = NULL;
+  }
   ::memcpy(&rng_seed_, &from.rng_seed_,
     static_cast<size_t>(reinterpret_cast<char*>(&core_index_in_replica_) -
     reinterpret_cast<char*>(&rng_seed_)) + sizeof(core_index_in_replica_));
@@ -3114,9 +4382,9 @@ XRTChainedExecuteConfig::XRTChainedExecuteConfig(const XRTChainedExecuteConfig& 
 
 void XRTChainedExecuteConfig::SharedCtor() {
   execution_instance_key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&rng_seed_, 0, static_cast<size_t>(
+  ::memset(&common_config_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&core_index_in_replica_) -
-      reinterpret_cast<char*>(&rng_seed_)) + sizeof(core_index_in_replica_));
+      reinterpret_cast<char*>(&common_config_)) + sizeof(core_index_in_replica_));
 }
 
 XRTChainedExecuteConfig::~XRTChainedExecuteConfig() {
@@ -3126,6 +4394,7 @@ XRTChainedExecuteConfig::~XRTChainedExecuteConfig() {
 
 void XRTChainedExecuteConfig::SharedDtor() {
   execution_instance_key_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (this != internal_default_instance()) delete common_config_;
 }
 
 void XRTChainedExecuteConfig::SetCachedSize(int size) const {
@@ -3149,6 +4418,10 @@ void XRTChainedExecuteConfig::Clear() {
   (void) cached_has_bits;
 
   execution_instance_key_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (GetArenaNoVirtual() == NULL && common_config_ != NULL) {
+    delete common_config_;
+  }
+  common_config_ = NULL;
   ::memset(&rng_seed_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&core_index_in_replica_) -
       reinterpret_cast<char*>(&rng_seed_)) + sizeof(core_index_in_replica_));
@@ -3209,6 +4482,18 @@ bool XRTChainedExecuteConfig::MergePartialFromCodedStream(
         break;
       }
 
+      // .xrt.CommonExecutionConfig common_config = 5;
+      case 5: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_common_config()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -3255,6 +4540,12 @@ void XRTChainedExecuteConfig::SerializeWithCachedSizes(
       3, this->execution_instance_key(), output);
   }
 
+  // .xrt.CommonExecutionConfig common_config = 5;
+  if (this->has_common_config()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      5, this->_internal_common_config(), output);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -3290,6 +4581,13 @@ void XRTChainedExecuteConfig::SerializeWithCachedSizes(
         3, this->execution_instance_key(), target);
   }
 
+  // .xrt.CommonExecutionConfig common_config = 5;
+  if (this->has_common_config()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        5, this->_internal_common_config(), deterministic, target);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
@@ -3312,6 +4610,13 @@ size_t XRTChainedExecuteConfig::ByteSizeLong() const {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->execution_instance_key());
+  }
+
+  // .xrt.CommonExecutionConfig common_config = 5;
+  if (this->has_common_config()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *common_config_);
   }
 
   // uint32 rng_seed = 1;
@@ -3359,6 +4664,9 @@ void XRTChainedExecuteConfig::MergeFrom(const XRTChainedExecuteConfig& from) {
 
     execution_instance_key_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.execution_instance_key_);
   }
+  if (from.has_common_config()) {
+    mutable_common_config()->::xrt::CommonExecutionConfig::MergeFrom(from.common_config());
+  }
   if (from.rng_seed() != 0) {
     set_rng_seed(from.rng_seed());
   }
@@ -3393,6 +4701,7 @@ void XRTChainedExecuteConfig::InternalSwap(XRTChainedExecuteConfig* other) {
   using std::swap;
   execution_instance_key_.Swap(&other->execution_instance_key_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
+  swap(common_config_, other->common_config_);
   swap(rng_seed_, other->rng_seed_);
   swap(core_index_in_replica_, other->core_index_in_replica_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -4563,6 +5872,1971 @@ void XRTChainedExecutePlan::InternalSwap(XRTChainedExecutePlan* other) {
 }
 
 
+// ===================================================================
+
+void XRTMetricsCollect::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int XRTMetricsCollect::kMetricsRegexFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+XRTMetricsCollect::XRTMetricsCollect()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::scc_info_XRTMetricsCollect.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:xrt.XRTMetricsCollect)
+}
+XRTMetricsCollect::XRTMetricsCollect(const XRTMetricsCollect& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      metrics_regex_(from.metrics_regex_) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:xrt.XRTMetricsCollect)
+}
+
+void XRTMetricsCollect::SharedCtor() {
+}
+
+XRTMetricsCollect::~XRTMetricsCollect() {
+  // @@protoc_insertion_point(destructor:xrt.XRTMetricsCollect)
+  SharedDtor();
+}
+
+void XRTMetricsCollect::SharedDtor() {
+}
+
+void XRTMetricsCollect::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* XRTMetricsCollect::descriptor() {
+  ::protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const XRTMetricsCollect& XRTMetricsCollect::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::scc_info_XRTMetricsCollect.base);
+  return *internal_default_instance();
+}
+
+
+void XRTMetricsCollect::Clear() {
+// @@protoc_insertion_point(message_clear_start:xrt.XRTMetricsCollect)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  metrics_regex_.Clear();
+  _internal_metadata_.Clear();
+}
+
+bool XRTMetricsCollect::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:xrt.XRTMetricsCollect)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // repeated string metrics_regex = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->add_metrics_regex()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->metrics_regex(this->metrics_regex_size() - 1).data(),
+            static_cast<int>(this->metrics_regex(this->metrics_regex_size() - 1).length()),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "xrt.XRTMetricsCollect.metrics_regex"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:xrt.XRTMetricsCollect)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:xrt.XRTMetricsCollect)
+  return false;
+#undef DO_
+}
+
+void XRTMetricsCollect::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:xrt.XRTMetricsCollect)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated string metrics_regex = 1;
+  for (int i = 0, n = this->metrics_regex_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->metrics_regex(i).data(), static_cast<int>(this->metrics_regex(i).length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "xrt.XRTMetricsCollect.metrics_regex");
+    ::google::protobuf::internal::WireFormatLite::WriteString(
+      1, this->metrics_regex(i), output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:xrt.XRTMetricsCollect)
+}
+
+::google::protobuf::uint8* XRTMetricsCollect::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:xrt.XRTMetricsCollect)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated string metrics_regex = 1;
+  for (int i = 0, n = this->metrics_regex_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->metrics_regex(i).data(), static_cast<int>(this->metrics_regex(i).length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "xrt.XRTMetricsCollect.metrics_regex");
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteStringToArray(1, this->metrics_regex(i), target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:xrt.XRTMetricsCollect)
+  return target;
+}
+
+size_t XRTMetricsCollect::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:xrt.XRTMetricsCollect)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // repeated string metrics_regex = 1;
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->metrics_regex_size());
+  for (int i = 0, n = this->metrics_regex_size(); i < n; i++) {
+    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
+      this->metrics_regex(i));
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void XRTMetricsCollect::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:xrt.XRTMetricsCollect)
+  GOOGLE_DCHECK_NE(&from, this);
+  const XRTMetricsCollect* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const XRTMetricsCollect>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:xrt.XRTMetricsCollect)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:xrt.XRTMetricsCollect)
+    MergeFrom(*source);
+  }
+}
+
+void XRTMetricsCollect::MergeFrom(const XRTMetricsCollect& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:xrt.XRTMetricsCollect)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  metrics_regex_.MergeFrom(from.metrics_regex_);
+}
+
+void XRTMetricsCollect::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:xrt.XRTMetricsCollect)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void XRTMetricsCollect::CopyFrom(const XRTMetricsCollect& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:xrt.XRTMetricsCollect)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool XRTMetricsCollect::IsInitialized() const {
+  return true;
+}
+
+void XRTMetricsCollect::Swap(XRTMetricsCollect* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void XRTMetricsCollect::InternalSwap(XRTMetricsCollect* other) {
+  using std::swap;
+  metrics_regex_.InternalSwap(CastToBase(&other->metrics_regex_));
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata XRTMetricsCollect::GetMetadata() const {
+  protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void Percentiles_Point::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int Percentiles_Point::kPercentileFieldNumber;
+const int Percentiles_Point::kValueFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+Percentiles_Point::Percentiles_Point()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::scc_info_Percentiles_Point.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:xrt.Percentiles.Point)
+}
+Percentiles_Point::Percentiles_Point(const Percentiles_Point& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::memcpy(&percentile_, &from.percentile_,
+    static_cast<size_t>(reinterpret_cast<char*>(&value_) -
+    reinterpret_cast<char*>(&percentile_)) + sizeof(value_));
+  // @@protoc_insertion_point(copy_constructor:xrt.Percentiles.Point)
+}
+
+void Percentiles_Point::SharedCtor() {
+  ::memset(&percentile_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&value_) -
+      reinterpret_cast<char*>(&percentile_)) + sizeof(value_));
+}
+
+Percentiles_Point::~Percentiles_Point() {
+  // @@protoc_insertion_point(destructor:xrt.Percentiles.Point)
+  SharedDtor();
+}
+
+void Percentiles_Point::SharedDtor() {
+}
+
+void Percentiles_Point::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* Percentiles_Point::descriptor() {
+  ::protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const Percentiles_Point& Percentiles_Point::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::scc_info_Percentiles_Point.base);
+  return *internal_default_instance();
+}
+
+
+void Percentiles_Point::Clear() {
+// @@protoc_insertion_point(message_clear_start:xrt.Percentiles.Point)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&percentile_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&value_) -
+      reinterpret_cast<char*>(&percentile_)) + sizeof(value_));
+  _internal_metadata_.Clear();
+}
+
+bool Percentiles_Point::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:xrt.Percentiles.Point)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // double percentile = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(9u /* 9 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
+                 input, &percentile_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // double value = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(17u /* 17 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
+                 input, &value_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:xrt.Percentiles.Point)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:xrt.Percentiles.Point)
+  return false;
+#undef DO_
+}
+
+void Percentiles_Point::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:xrt.Percentiles.Point)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // double percentile = 1;
+  if (this->percentile() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteDouble(1, this->percentile(), output);
+  }
+
+  // double value = 2;
+  if (this->value() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteDouble(2, this->value(), output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:xrt.Percentiles.Point)
+}
+
+::google::protobuf::uint8* Percentiles_Point::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:xrt.Percentiles.Point)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // double percentile = 1;
+  if (this->percentile() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(1, this->percentile(), target);
+  }
+
+  // double value = 2;
+  if (this->value() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(2, this->value(), target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:xrt.Percentiles.Point)
+  return target;
+}
+
+size_t Percentiles_Point::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:xrt.Percentiles.Point)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // double percentile = 1;
+  if (this->percentile() != 0) {
+    total_size += 1 + 8;
+  }
+
+  // double value = 2;
+  if (this->value() != 0) {
+    total_size += 1 + 8;
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void Percentiles_Point::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:xrt.Percentiles.Point)
+  GOOGLE_DCHECK_NE(&from, this);
+  const Percentiles_Point* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const Percentiles_Point>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:xrt.Percentiles.Point)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:xrt.Percentiles.Point)
+    MergeFrom(*source);
+  }
+}
+
+void Percentiles_Point::MergeFrom(const Percentiles_Point& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:xrt.Percentiles.Point)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.percentile() != 0) {
+    set_percentile(from.percentile());
+  }
+  if (from.value() != 0) {
+    set_value(from.value());
+  }
+}
+
+void Percentiles_Point::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:xrt.Percentiles.Point)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void Percentiles_Point::CopyFrom(const Percentiles_Point& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:xrt.Percentiles.Point)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool Percentiles_Point::IsInitialized() const {
+  return true;
+}
+
+void Percentiles_Point::Swap(Percentiles_Point* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void Percentiles_Point::InternalSwap(Percentiles_Point* other) {
+  using std::swap;
+  swap(percentile_, other->percentile_);
+  swap(value_, other->value_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata Percentiles_Point::GetMetadata() const {
+  protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void Percentiles::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int Percentiles::kStartNstimeFieldNumber;
+const int Percentiles::kEndNstimeFieldNumber;
+const int Percentiles::kMinValueFieldNumber;
+const int Percentiles::kMaxValueFieldNumber;
+const int Percentiles::kMeanFieldNumber;
+const int Percentiles::kStddevFieldNumber;
+const int Percentiles::kNumSamplesFieldNumber;
+const int Percentiles::kTotalSamplesFieldNumber;
+const int Percentiles::kAccumulatorFieldNumber;
+const int Percentiles::kPointsFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+Percentiles::Percentiles()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::scc_info_Percentiles.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:xrt.Percentiles)
+}
+Percentiles::Percentiles(const Percentiles& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      points_(from.points_) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::memcpy(&start_nstime_, &from.start_nstime_,
+    static_cast<size_t>(reinterpret_cast<char*>(&accumulator_) -
+    reinterpret_cast<char*>(&start_nstime_)) + sizeof(accumulator_));
+  // @@protoc_insertion_point(copy_constructor:xrt.Percentiles)
+}
+
+void Percentiles::SharedCtor() {
+  ::memset(&start_nstime_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&accumulator_) -
+      reinterpret_cast<char*>(&start_nstime_)) + sizeof(accumulator_));
+}
+
+Percentiles::~Percentiles() {
+  // @@protoc_insertion_point(destructor:xrt.Percentiles)
+  SharedDtor();
+}
+
+void Percentiles::SharedDtor() {
+}
+
+void Percentiles::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* Percentiles::descriptor() {
+  ::protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const Percentiles& Percentiles::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::scc_info_Percentiles.base);
+  return *internal_default_instance();
+}
+
+
+void Percentiles::Clear() {
+// @@protoc_insertion_point(message_clear_start:xrt.Percentiles)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  points_.Clear();
+  ::memset(&start_nstime_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&accumulator_) -
+      reinterpret_cast<char*>(&start_nstime_)) + sizeof(accumulator_));
+  _internal_metadata_.Clear();
+}
+
+bool Percentiles::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:xrt.Percentiles)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // uint64 start_nstime = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
+                 input, &start_nstime_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // uint64 end_nstime = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
+                 input, &end_nstime_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // double min_value = 3;
+      case 3: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(25u /* 25 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
+                 input, &min_value_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // double max_value = 4;
+      case 4: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(33u /* 33 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
+                 input, &max_value_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // double mean = 5;
+      case 5: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(41u /* 41 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
+                 input, &mean_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // double stddev = 6;
+      case 6: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(49u /* 49 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
+                 input, &stddev_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // uint64 num_samples = 7;
+      case 7: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(56u /* 56 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
+                 input, &num_samples_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // uint64 total_samples = 8;
+      case 8: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(64u /* 64 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
+                 input, &total_samples_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // double accumulator = 9;
+      case 9: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(73u /* 73 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
+                 input, &accumulator_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated .xrt.Percentiles.Point points = 10;
+      case 10: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(82u /* 82 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+                input, add_points()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:xrt.Percentiles)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:xrt.Percentiles)
+  return false;
+#undef DO_
+}
+
+void Percentiles::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:xrt.Percentiles)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // uint64 start_nstime = 1;
+  if (this->start_nstime() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt64(1, this->start_nstime(), output);
+  }
+
+  // uint64 end_nstime = 2;
+  if (this->end_nstime() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt64(2, this->end_nstime(), output);
+  }
+
+  // double min_value = 3;
+  if (this->min_value() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteDouble(3, this->min_value(), output);
+  }
+
+  // double max_value = 4;
+  if (this->max_value() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteDouble(4, this->max_value(), output);
+  }
+
+  // double mean = 5;
+  if (this->mean() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteDouble(5, this->mean(), output);
+  }
+
+  // double stddev = 6;
+  if (this->stddev() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteDouble(6, this->stddev(), output);
+  }
+
+  // uint64 num_samples = 7;
+  if (this->num_samples() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt64(7, this->num_samples(), output);
+  }
+
+  // uint64 total_samples = 8;
+  if (this->total_samples() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt64(8, this->total_samples(), output);
+  }
+
+  // double accumulator = 9;
+  if (this->accumulator() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteDouble(9, this->accumulator(), output);
+  }
+
+  // repeated .xrt.Percentiles.Point points = 10;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->points_size()); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      10,
+      this->points(static_cast<int>(i)),
+      output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:xrt.Percentiles)
+}
+
+::google::protobuf::uint8* Percentiles::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:xrt.Percentiles)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // uint64 start_nstime = 1;
+  if (this->start_nstime() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt64ToArray(1, this->start_nstime(), target);
+  }
+
+  // uint64 end_nstime = 2;
+  if (this->end_nstime() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt64ToArray(2, this->end_nstime(), target);
+  }
+
+  // double min_value = 3;
+  if (this->min_value() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(3, this->min_value(), target);
+  }
+
+  // double max_value = 4;
+  if (this->max_value() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(4, this->max_value(), target);
+  }
+
+  // double mean = 5;
+  if (this->mean() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(5, this->mean(), target);
+  }
+
+  // double stddev = 6;
+  if (this->stddev() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(6, this->stddev(), target);
+  }
+
+  // uint64 num_samples = 7;
+  if (this->num_samples() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt64ToArray(7, this->num_samples(), target);
+  }
+
+  // uint64 total_samples = 8;
+  if (this->total_samples() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt64ToArray(8, this->total_samples(), target);
+  }
+
+  // double accumulator = 9;
+  if (this->accumulator() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(9, this->accumulator(), target);
+  }
+
+  // repeated .xrt.Percentiles.Point points = 10;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->points_size()); i < n; i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        10, this->points(static_cast<int>(i)), deterministic, target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:xrt.Percentiles)
+  return target;
+}
+
+size_t Percentiles::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:xrt.Percentiles)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // repeated .xrt.Percentiles.Point points = 10;
+  {
+    unsigned int count = static_cast<unsigned int>(this->points_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          this->points(static_cast<int>(i)));
+    }
+  }
+
+  // uint64 start_nstime = 1;
+  if (this->start_nstime() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::UInt64Size(
+        this->start_nstime());
+  }
+
+  // uint64 end_nstime = 2;
+  if (this->end_nstime() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::UInt64Size(
+        this->end_nstime());
+  }
+
+  // double min_value = 3;
+  if (this->min_value() != 0) {
+    total_size += 1 + 8;
+  }
+
+  // double max_value = 4;
+  if (this->max_value() != 0) {
+    total_size += 1 + 8;
+  }
+
+  // double mean = 5;
+  if (this->mean() != 0) {
+    total_size += 1 + 8;
+  }
+
+  // double stddev = 6;
+  if (this->stddev() != 0) {
+    total_size += 1 + 8;
+  }
+
+  // uint64 num_samples = 7;
+  if (this->num_samples() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::UInt64Size(
+        this->num_samples());
+  }
+
+  // uint64 total_samples = 8;
+  if (this->total_samples() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::UInt64Size(
+        this->total_samples());
+  }
+
+  // double accumulator = 9;
+  if (this->accumulator() != 0) {
+    total_size += 1 + 8;
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void Percentiles::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:xrt.Percentiles)
+  GOOGLE_DCHECK_NE(&from, this);
+  const Percentiles* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const Percentiles>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:xrt.Percentiles)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:xrt.Percentiles)
+    MergeFrom(*source);
+  }
+}
+
+void Percentiles::MergeFrom(const Percentiles& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:xrt.Percentiles)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  points_.MergeFrom(from.points_);
+  if (from.start_nstime() != 0) {
+    set_start_nstime(from.start_nstime());
+  }
+  if (from.end_nstime() != 0) {
+    set_end_nstime(from.end_nstime());
+  }
+  if (from.min_value() != 0) {
+    set_min_value(from.min_value());
+  }
+  if (from.max_value() != 0) {
+    set_max_value(from.max_value());
+  }
+  if (from.mean() != 0) {
+    set_mean(from.mean());
+  }
+  if (from.stddev() != 0) {
+    set_stddev(from.stddev());
+  }
+  if (from.num_samples() != 0) {
+    set_num_samples(from.num_samples());
+  }
+  if (from.total_samples() != 0) {
+    set_total_samples(from.total_samples());
+  }
+  if (from.accumulator() != 0) {
+    set_accumulator(from.accumulator());
+  }
+}
+
+void Percentiles::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:xrt.Percentiles)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void Percentiles::CopyFrom(const Percentiles& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:xrt.Percentiles)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool Percentiles::IsInitialized() const {
+  return true;
+}
+
+void Percentiles::Swap(Percentiles* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void Percentiles::InternalSwap(Percentiles* other) {
+  using std::swap;
+  CastToBase(&points_)->InternalSwap(CastToBase(&other->points_));
+  swap(start_nstime_, other->start_nstime_);
+  swap(end_nstime_, other->end_nstime_);
+  swap(min_value_, other->min_value_);
+  swap(max_value_, other->max_value_);
+  swap(mean_, other->mean_);
+  swap(stddev_, other->stddev_);
+  swap(num_samples_, other->num_samples_);
+  swap(total_samples_, other->total_samples_);
+  swap(accumulator_, other->accumulator_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata Percentiles::GetMetadata() const {
+  protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void MetricValues::InitAsDefaultInstance() {
+  ::xrt::_MetricValues_default_instance_.percentiles_value_ = const_cast< ::xrt::Percentiles*>(
+      ::xrt::Percentiles::internal_default_instance());
+  ::xrt::_MetricValues_default_instance_.int64_value_ = GOOGLE_LONGLONG(0);
+}
+void MetricValues::set_allocated_percentiles_value(::xrt::Percentiles* percentiles_value) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  clear_values_oneof();
+  if (percentiles_value) {
+    ::google::protobuf::Arena* submessage_arena = NULL;
+    if (message_arena != submessage_arena) {
+      percentiles_value = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, percentiles_value, submessage_arena);
+    }
+    set_has_percentiles_value();
+    values_oneof_.percentiles_value_ = percentiles_value;
+  }
+  // @@protoc_insertion_point(field_set_allocated:xrt.MetricValues.percentiles_value)
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int MetricValues::kNameFieldNumber;
+const int MetricValues::kPercentilesValueFieldNumber;
+const int MetricValues::kInt64ValueFieldNumber;
+const int MetricValues::kUnitOfMeasureFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+MetricValues::MetricValues()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::scc_info_MetricValues.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:xrt.MetricValues)
+}
+MetricValues::MetricValues(const MetricValues& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.name().size() > 0) {
+    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
+  }
+  unit_of_measure_ = from.unit_of_measure_;
+  clear_has_values_oneof();
+  switch (from.values_oneof_case()) {
+    case kPercentilesValue: {
+      mutable_percentiles_value()->::xrt::Percentiles::MergeFrom(from.percentiles_value());
+      break;
+    }
+    case kInt64Value: {
+      set_int64_value(from.int64_value());
+      break;
+    }
+    case VALUES_ONEOF_NOT_SET: {
+      break;
+    }
+  }
+  // @@protoc_insertion_point(copy_constructor:xrt.MetricValues)
+}
+
+void MetricValues::SharedCtor() {
+  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  unit_of_measure_ = 0;
+  clear_has_values_oneof();
+}
+
+MetricValues::~MetricValues() {
+  // @@protoc_insertion_point(destructor:xrt.MetricValues)
+  SharedDtor();
+}
+
+void MetricValues::SharedDtor() {
+  name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (has_values_oneof()) {
+    clear_values_oneof();
+  }
+}
+
+void MetricValues::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* MetricValues::descriptor() {
+  ::protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const MetricValues& MetricValues::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::scc_info_MetricValues.base);
+  return *internal_default_instance();
+}
+
+
+void MetricValues::clear_values_oneof() {
+// @@protoc_insertion_point(one_of_clear_start:xrt.MetricValues)
+  switch (values_oneof_case()) {
+    case kPercentilesValue: {
+      delete values_oneof_.percentiles_value_;
+      break;
+    }
+    case kInt64Value: {
+      // No need to clear
+      break;
+    }
+    case VALUES_ONEOF_NOT_SET: {
+      break;
+    }
+  }
+  _oneof_case_[0] = VALUES_ONEOF_NOT_SET;
+}
+
+
+void MetricValues::Clear() {
+// @@protoc_insertion_point(message_clear_start:xrt.MetricValues)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  unit_of_measure_ = 0;
+  clear_values_oneof();
+  _internal_metadata_.Clear();
+}
+
+bool MetricValues::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:xrt.MetricValues)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string name = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_name()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->name().data(), static_cast<int>(this->name().length()),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "xrt.MetricValues.name"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .xrt.Percentiles percentiles_value = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_percentiles_value()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int64 int64_value = 3;
+      case 3: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
+          clear_values_oneof();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 input, &values_oneof_.int64_value_)));
+          set_has_int64_value();
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .xrt.MetricValues.UnitOfMeasure unit_of_measure = 4;
+      case 4: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_unit_of_measure(static_cast< ::xrt::MetricValues_UnitOfMeasure >(value));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:xrt.MetricValues)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:xrt.MetricValues)
+  return false;
+#undef DO_
+}
+
+void MetricValues::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:xrt.MetricValues)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string name = 1;
+  if (this->name().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->name().data(), static_cast<int>(this->name().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "xrt.MetricValues.name");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->name(), output);
+  }
+
+  // .xrt.Percentiles percentiles_value = 2;
+  if (has_percentiles_value()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      2, this->_internal_percentiles_value(), output);
+  }
+
+  // int64 int64_value = 3;
+  if (has_int64_value()) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt64(3, this->int64_value(), output);
+  }
+
+  // .xrt.MetricValues.UnitOfMeasure unit_of_measure = 4;
+  if (this->unit_of_measure() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      4, this->unit_of_measure(), output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:xrt.MetricValues)
+}
+
+::google::protobuf::uint8* MetricValues::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:xrt.MetricValues)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string name = 1;
+  if (this->name().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->name().data(), static_cast<int>(this->name().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "xrt.MetricValues.name");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        1, this->name(), target);
+  }
+
+  // .xrt.Percentiles percentiles_value = 2;
+  if (has_percentiles_value()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        2, this->_internal_percentiles_value(), deterministic, target);
+  }
+
+  // int64 int64_value = 3;
+  if (has_int64_value()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(3, this->int64_value(), target);
+  }
+
+  // .xrt.MetricValues.UnitOfMeasure unit_of_measure = 4;
+  if (this->unit_of_measure() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      4, this->unit_of_measure(), target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:xrt.MetricValues)
+  return target;
+}
+
+size_t MetricValues::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:xrt.MetricValues)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // string name = 1;
+  if (this->name().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->name());
+  }
+
+  // .xrt.MetricValues.UnitOfMeasure unit_of_measure = 4;
+  if (this->unit_of_measure() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->unit_of_measure());
+  }
+
+  switch (values_oneof_case()) {
+    // .xrt.Percentiles percentiles_value = 2;
+    case kPercentilesValue: {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          *values_oneof_.percentiles_value_);
+      break;
+    }
+    // int64 int64_value = 3;
+    case kInt64Value: {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int64Size(
+          this->int64_value());
+      break;
+    }
+    case VALUES_ONEOF_NOT_SET: {
+      break;
+    }
+  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void MetricValues::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:xrt.MetricValues)
+  GOOGLE_DCHECK_NE(&from, this);
+  const MetricValues* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const MetricValues>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:xrt.MetricValues)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:xrt.MetricValues)
+    MergeFrom(*source);
+  }
+}
+
+void MetricValues::MergeFrom(const MetricValues& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:xrt.MetricValues)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.name().size() > 0) {
+
+    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
+  }
+  if (from.unit_of_measure() != 0) {
+    set_unit_of_measure(from.unit_of_measure());
+  }
+  switch (from.values_oneof_case()) {
+    case kPercentilesValue: {
+      mutable_percentiles_value()->::xrt::Percentiles::MergeFrom(from.percentiles_value());
+      break;
+    }
+    case kInt64Value: {
+      set_int64_value(from.int64_value());
+      break;
+    }
+    case VALUES_ONEOF_NOT_SET: {
+      break;
+    }
+  }
+}
+
+void MetricValues::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:xrt.MetricValues)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void MetricValues::CopyFrom(const MetricValues& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:xrt.MetricValues)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool MetricValues::IsInitialized() const {
+  return true;
+}
+
+void MetricValues::Swap(MetricValues* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void MetricValues::InternalSwap(MetricValues* other) {
+  using std::swap;
+  name_.Swap(&other->name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  swap(unit_of_measure_, other->unit_of_measure_);
+  swap(values_oneof_, other->values_oneof_);
+  swap(_oneof_case_[0], other->_oneof_case_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata MetricValues::GetMetadata() const {
+  protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void MetricsReport::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int MetricsReport::kMetricsFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+MetricsReport::MetricsReport()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::scc_info_MetricsReport.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:xrt.MetricsReport)
+}
+MetricsReport::MetricsReport(const MetricsReport& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      metrics_(from.metrics_) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:xrt.MetricsReport)
+}
+
+void MetricsReport::SharedCtor() {
+}
+
+MetricsReport::~MetricsReport() {
+  // @@protoc_insertion_point(destructor:xrt.MetricsReport)
+  SharedDtor();
+}
+
+void MetricsReport::SharedDtor() {
+}
+
+void MetricsReport::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* MetricsReport::descriptor() {
+  ::protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const MetricsReport& MetricsReport::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::scc_info_MetricsReport.base);
+  return *internal_default_instance();
+}
+
+
+void MetricsReport::Clear() {
+// @@protoc_insertion_point(message_clear_start:xrt.MetricsReport)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  metrics_.Clear();
+  _internal_metadata_.Clear();
+}
+
+bool MetricsReport::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:xrt.MetricsReport)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // repeated .xrt.MetricValues metrics = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+                input, add_metrics()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:xrt.MetricsReport)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:xrt.MetricsReport)
+  return false;
+#undef DO_
+}
+
+void MetricsReport::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:xrt.MetricsReport)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated .xrt.MetricValues metrics = 1;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->metrics_size()); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      1,
+      this->metrics(static_cast<int>(i)),
+      output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:xrt.MetricsReport)
+}
+
+::google::protobuf::uint8* MetricsReport::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:xrt.MetricsReport)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated .xrt.MetricValues metrics = 1;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->metrics_size()); i < n; i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        1, this->metrics(static_cast<int>(i)), deterministic, target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:xrt.MetricsReport)
+  return target;
+}
+
+size_t MetricsReport::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:xrt.MetricsReport)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // repeated .xrt.MetricValues metrics = 1;
+  {
+    unsigned int count = static_cast<unsigned int>(this->metrics_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          this->metrics(static_cast<int>(i)));
+    }
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void MetricsReport::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:xrt.MetricsReport)
+  GOOGLE_DCHECK_NE(&from, this);
+  const MetricsReport* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const MetricsReport>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:xrt.MetricsReport)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:xrt.MetricsReport)
+    MergeFrom(*source);
+  }
+}
+
+void MetricsReport::MergeFrom(const MetricsReport& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:xrt.MetricsReport)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  metrics_.MergeFrom(from.metrics_);
+}
+
+void MetricsReport::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:xrt.MetricsReport)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void MetricsReport::CopyFrom(const MetricsReport& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:xrt.MetricsReport)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool MetricsReport::IsInitialized() const {
+  return true;
+}
+
+void MetricsReport::Swap(MetricsReport* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void MetricsReport::InternalSwap(MetricsReport* other) {
+  using std::swap;
+  CastToBase(&metrics_)->InternalSwap(CastToBase(&other->metrics_));
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata MetricsReport::GetMetadata() const {
+  protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void MemoryInfo::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int MemoryInfo::kKbTotalFieldNumber;
+const int MemoryInfo::kKbFreeFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+MemoryInfo::MemoryInfo()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::scc_info_MemoryInfo.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:xrt.MemoryInfo)
+}
+MemoryInfo::MemoryInfo(const MemoryInfo& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::memcpy(&kb_total_, &from.kb_total_,
+    static_cast<size_t>(reinterpret_cast<char*>(&kb_free_) -
+    reinterpret_cast<char*>(&kb_total_)) + sizeof(kb_free_));
+  // @@protoc_insertion_point(copy_constructor:xrt.MemoryInfo)
+}
+
+void MemoryInfo::SharedCtor() {
+  ::memset(&kb_total_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&kb_free_) -
+      reinterpret_cast<char*>(&kb_total_)) + sizeof(kb_free_));
+}
+
+MemoryInfo::~MemoryInfo() {
+  // @@protoc_insertion_point(destructor:xrt.MemoryInfo)
+  SharedDtor();
+}
+
+void MemoryInfo::SharedDtor() {
+}
+
+void MemoryInfo::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* MemoryInfo::descriptor() {
+  ::protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const MemoryInfo& MemoryInfo::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::scc_info_MemoryInfo.base);
+  return *internal_default_instance();
+}
+
+
+void MemoryInfo::Clear() {
+// @@protoc_insertion_point(message_clear_start:xrt.MemoryInfo)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&kb_total_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&kb_free_) -
+      reinterpret_cast<char*>(&kb_total_)) + sizeof(kb_free_));
+  _internal_metadata_.Clear();
+}
+
+bool MemoryInfo::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:xrt.MemoryInfo)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // int64 kb_total = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 input, &kb_total_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int64 kb_free = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 input, &kb_free_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:xrt.MemoryInfo)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:xrt.MemoryInfo)
+  return false;
+#undef DO_
+}
+
+void MemoryInfo::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:xrt.MemoryInfo)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int64 kb_total = 1;
+  if (this->kb_total() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt64(1, this->kb_total(), output);
+  }
+
+  // int64 kb_free = 2;
+  if (this->kb_free() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt64(2, this->kb_free(), output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:xrt.MemoryInfo)
+}
+
+::google::protobuf::uint8* MemoryInfo::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:xrt.MemoryInfo)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int64 kb_total = 1;
+  if (this->kb_total() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(1, this->kb_total(), target);
+  }
+
+  // int64 kb_free = 2;
+  if (this->kb_free() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(2, this->kb_free(), target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:xrt.MemoryInfo)
+  return target;
+}
+
+size_t MemoryInfo::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:xrt.MemoryInfo)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // int64 kb_total = 1;
+  if (this->kb_total() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int64Size(
+        this->kb_total());
+  }
+
+  // int64 kb_free = 2;
+  if (this->kb_free() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int64Size(
+        this->kb_free());
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void MemoryInfo::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:xrt.MemoryInfo)
+  GOOGLE_DCHECK_NE(&from, this);
+  const MemoryInfo* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const MemoryInfo>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:xrt.MemoryInfo)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:xrt.MemoryInfo)
+    MergeFrom(*source);
+  }
+}
+
+void MemoryInfo::MergeFrom(const MemoryInfo& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:xrt.MemoryInfo)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.kb_total() != 0) {
+    set_kb_total(from.kb_total());
+  }
+  if (from.kb_free() != 0) {
+    set_kb_free(from.kb_free());
+  }
+}
+
+void MemoryInfo::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:xrt.MemoryInfo)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void MemoryInfo::CopyFrom(const MemoryInfo& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:xrt.MemoryInfo)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool MemoryInfo::IsInitialized() const {
+  return true;
+}
+
+void MemoryInfo::Swap(MemoryInfo* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void MemoryInfo::InternalSwap(MemoryInfo* other) {
+  using std::swap;
+  swap(kb_total_, other->kb_total_);
+  swap(kb_free_, other->kb_free_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata MemoryInfo::GetMetadata() const {
+  protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcompiler_2fxrt_2fxrt_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace xrt
 namespace google {
@@ -4576,6 +7850,12 @@ template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xrt::DeviceAssignment_Computatio
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xrt::DeviceAssignment* Arena::CreateMaybeMessage< ::xrt::DeviceAssignment >(Arena* arena) {
   return Arena::CreateInternal< ::xrt::DeviceAssignment >(arena);
 }
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xrt::XLAComputationConfig_Experimental_UpdateIndexPair* Arena::CreateMaybeMessage< ::xrt::XLAComputationConfig_Experimental_UpdateIndexPair >(Arena* arena) {
+  return Arena::CreateInternal< ::xrt::XLAComputationConfig_Experimental_UpdateIndexPair >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xrt::XLAComputationConfig_Experimental* Arena::CreateMaybeMessage< ::xrt::XLAComputationConfig_Experimental >(Arena* arena) {
+  return Arena::CreateInternal< ::xrt::XLAComputationConfig_Experimental >(arena);
+}
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xrt::XLAComputationConfig* Arena::CreateMaybeMessage< ::xrt::XLAComputationConfig >(Arena* arena) {
   return Arena::CreateInternal< ::xrt::XLAComputationConfig >(arena);
 }
@@ -4587,6 +7867,9 @@ template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xrt::XLAAllocation* Arena::Creat
 }
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xrt::XLATupleNode* Arena::CreateMaybeMessage< ::xrt::XLATupleNode >(Arena* arena) {
   return Arena::CreateInternal< ::xrt::XLATupleNode >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xrt::CommonExecutionConfig* Arena::CreateMaybeMessage< ::xrt::CommonExecutionConfig >(Arena* arena) {
+  return Arena::CreateInternal< ::xrt::CommonExecutionConfig >(arena);
 }
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xrt::XRTExecutionConfig* Arena::CreateMaybeMessage< ::xrt::XRTExecutionConfig >(Arena* arena) {
   return Arena::CreateInternal< ::xrt::XRTExecutionConfig >(arena);
@@ -4605,6 +7888,24 @@ template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xrt::XRTChainedExecuteOp* Arena:
 }
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xrt::XRTChainedExecutePlan* Arena::CreateMaybeMessage< ::xrt::XRTChainedExecutePlan >(Arena* arena) {
   return Arena::CreateInternal< ::xrt::XRTChainedExecutePlan >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xrt::XRTMetricsCollect* Arena::CreateMaybeMessage< ::xrt::XRTMetricsCollect >(Arena* arena) {
+  return Arena::CreateInternal< ::xrt::XRTMetricsCollect >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xrt::Percentiles_Point* Arena::CreateMaybeMessage< ::xrt::Percentiles_Point >(Arena* arena) {
+  return Arena::CreateInternal< ::xrt::Percentiles_Point >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xrt::Percentiles* Arena::CreateMaybeMessage< ::xrt::Percentiles >(Arena* arena) {
+  return Arena::CreateInternal< ::xrt::Percentiles >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xrt::MetricValues* Arena::CreateMaybeMessage< ::xrt::MetricValues >(Arena* arena) {
+  return Arena::CreateInternal< ::xrt::MetricValues >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xrt::MetricsReport* Arena::CreateMaybeMessage< ::xrt::MetricsReport >(Arena* arena) {
+  return Arena::CreateInternal< ::xrt::MetricsReport >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xrt::MemoryInfo* Arena::CreateMaybeMessage< ::xrt::MemoryInfo >(Arena* arena) {
+  return Arena::CreateInternal< ::xrt::MemoryInfo >(arena);
 }
 }  // namespace protobuf
 }  // namespace google

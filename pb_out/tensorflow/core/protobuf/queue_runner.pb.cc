@@ -89,21 +89,22 @@ void AddDescriptorsImpl() {
   InitDefaults();
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n+tensorflow/core/protobuf/queue_runner."
-      "proto\022\ntensorflow\032*tensorflow/core/lib/c"
-      "ore/error_codes.proto\"\252\001\n\016QueueRunnerDef"
+      "proto\022\ntensorflow\032*tensorflow/core/proto"
+      "buf/error_codes.proto\"\252\001\n\016QueueRunnerDef"
       "\022\022\n\nqueue_name\030\001 \001(\t\022\027\n\017enqueue_op_name\030"
       "\002 \003(\t\022\025\n\rclose_op_name\030\003 \001(\t\022\026\n\016cancel_o"
       "p_name\030\004 \001(\t\022<\n\034queue_closed_exception_t"
-      "ypes\030\005 \003(\0162\026.tensorflow.error.CodeBp\n\030or"
-      "g.tensorflow.frameworkB\021QueueRunnerProto"
-      "sP\001Z<github.com/tensorflow/tensorflow/te"
-      "nsorflow/go/core/protobuf\370\001\001b\006proto3"
+      "ypes\030\005 \003(\0162\026.tensorflow.error.CodeB\211\001\n\030o"
+      "rg.tensorflow.frameworkB\021QueueRunnerProt"
+      "osP\001ZUgithub.com/tensorflow/tensorflow/t"
+      "ensorflow/go/core/protobuf/for_core_prot"
+      "os_go_proto\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 396);
+      descriptor, 422);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/protobuf/queue_runner.proto", &protobuf_RegisterTypes);
-  ::protobuf_tensorflow_2fcore_2flib_2fcore_2ferror_5fcodes_2eproto::AddDescriptors();
+  ::protobuf_tensorflow_2fcore_2fprotobuf_2ferror_5fcodes_2eproto::AddDescriptors();
 }
 
 void AddDescriptors() {

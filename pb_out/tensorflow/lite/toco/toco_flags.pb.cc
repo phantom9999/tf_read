@@ -79,34 +79,74 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::TocoFlags, force_select_tf_ops_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::TocoFlags, quantize_to_float16_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::TocoFlags, allow_dynamic_tensors_),
-  1,
-  2,
-  10,
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::TocoFlags, conversion_summary_dir_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::TocoFlags, custom_opdefs_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::TocoFlags, select_user_tf_ops_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::TocoFlags, enable_tflite_resource_variables_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::TocoFlags, unfold_batchmatmul_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::TocoFlags, lower_tensor_list_ops_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::TocoFlags, accumulation_type_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::TocoFlags, allow_bfloat16_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::TocoFlags, allow_all_select_tf_ops_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::TocoFlags, unfold_large_splat_constant_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::TocoFlags, supported_backends_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::TocoFlags, default_to_single_batch_in_tensor_list_ops_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::TocoFlags, disable_per_channel_quantization_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::TocoFlags, enable_mlir_dynamic_range_quantizer_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::TocoFlags, tf_quantization_mode_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::TocoFlags, disable_infer_tensor_range_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::TocoFlags, use_fake_quant_num_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::TocoFlags, enable_dynamic_update_slice_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::TocoFlags, preserve_assert_op_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::toco::TocoFlags, guarantee_all_funcs_one_use_),
   3,
   4,
-  5,
-  11,
   12,
+  5,
   6,
   7,
-  8,
-  9,
   13,
   14,
+  8,
+  9,
+  10,
+  11,
   15,
-  24,
-  22,
   16,
-  0,
   17,
+  36,
+  37,
   18,
+  0,
   19,
   20,
   21,
+  22,
   23,
+  38,
+  1,
+  ~0u,
+  ~0u,
+  39,
+  40,
+  41,
+  27,
+  24,
+  25,
+  26,
+  ~0u,
+  28,
+  29,
+  30,
+  2,
+  31,
+  32,
+  33,
+  34,
+  35,
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 30, sizeof(::toco::TocoFlags)},
+  { 0, 50, sizeof(::toco::TocoFlags)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
@@ -136,7 +176,7 @@ void AddDescriptorsImpl() {
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n%tensorflow/lite/toco/toco_flags.proto\022"
       "\004toco\032 tensorflow/lite/toco/types.proto\""
-      "\237\007\n\tTocoFlags\022&\n\014input_format\030\001 \001(\0162\020.to"
+      "\256\r\n\tTocoFlags\022&\n\014input_format\030\001 \001(\0162\020.to"
       "co.FileFormat\022\'\n\routput_format\030\002 \001(\0162\020.t"
       "oco.FileFormat\022.\n\024inference_input_type\030\013"
       " \001(\0162\020.toco.IODataType\022(\n\016inference_type"
@@ -159,12 +199,32 @@ void AddDescriptorsImpl() {
       "_tf_ops\030\033 \001(\010:\005false\022\"\n\023force_select_tf_"
       "ops\030\034 \001(\010:\005false\022\"\n\023quantize_to_float16\030"
       "\035 \001(\010:\005false\022#\n\025allow_dynamic_tensors\030\036 "
-      "\001(\010:\004true*\\\n\nFileFormat\022\027\n\023FILE_FORMAT_U"
-      "NKNOWN\020\000\022\027\n\023TENSORFLOW_GRAPHDEF\020\001\022\n\n\006TFL"
-      "ITE\020\002\022\020\n\014GRAPHVIZ_DOT\020\003"
+      "\001(\010:\004true\022\036\n\026conversion_summary_dir\030\037 \001("
+      "\t\022\031\n\rcustom_opdefs\030  \003(\tB\002\030\001\022\032\n\022select_u"
+      "ser_tf_ops\030! \003(\t\022.\n enable_tflite_resour"
+      "ce_variables\030\" \001(\010:\004true\022 \n\022unfold_batch"
+      "matmul\030# \001(\010:\004true\022#\n\025lower_tensor_list_"
+      "ops\030$ \001(\010:\004true\022+\n\021accumulation_type\030% \001"
+      "(\0162\020.toco.IODataType\022\035\n\016allow_bfloat16\030&"
+      " \001(\010:\005false\022\037\n\027allow_all_select_tf_ops\030\'"
+      " \001(\010\022*\n\033unfold_large_splat_constant\030( \001("
+      "\010:\005false\022\032\n\022supported_backends\030) \003(\t\0229\n*"
+      "default_to_single_batch_in_tensor_list_o"
+      "ps\030* \001(\010:\005false\022/\n disable_per_channel_q"
+      "uantization\030+ \001(\010:\005false\0222\n#enable_mlir_"
+      "dynamic_range_quantizer\030, \001(\010:\005false\022\034\n\024"
+      "tf_quantization_mode\030- \001(\t\022)\n\032disable_in"
+      "fer_tensor_range\030. \001(\010:\005false\022&\n\027use_fak"
+      "e_quant_num_bits\030/ \001(\010:\005false\022*\n\033enable_"
+      "dynamic_update_slice\0300 \001(\010:\005false\022!\n\022pre"
+      "serve_assert_op\0301 \001(\010:\005false\022*\n\033guarante"
+      "e_all_funcs_one_use\0302 \001(\010:\005false*\\\n\nFile"
+      "Format\022\027\n\023FILE_FORMAT_UNKNOWN\020\000\022\027\n\023TENSO"
+      "RFLOW_GRAPHDEF\020\001\022\n\n\006TFLITE\020\002\022\020\n\014GRAPHVIZ"
+      "_DOT\020\003"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 1103);
+      descriptor, 1886);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/lite/toco/toco_flags.proto", &protobuf_RegisterTypes);
   ::protobuf_tensorflow_2flite_2ftoco_2ftypes_2eproto::AddDescriptors();
@@ -229,6 +289,26 @@ const int TocoFlags::kEnableSelectTfOpsFieldNumber;
 const int TocoFlags::kForceSelectTfOpsFieldNumber;
 const int TocoFlags::kQuantizeToFloat16FieldNumber;
 const int TocoFlags::kAllowDynamicTensorsFieldNumber;
+const int TocoFlags::kConversionSummaryDirFieldNumber;
+const int TocoFlags::kCustomOpdefsFieldNumber;
+const int TocoFlags::kSelectUserTfOpsFieldNumber;
+const int TocoFlags::kEnableTfliteResourceVariablesFieldNumber;
+const int TocoFlags::kUnfoldBatchmatmulFieldNumber;
+const int TocoFlags::kLowerTensorListOpsFieldNumber;
+const int TocoFlags::kAccumulationTypeFieldNumber;
+const int TocoFlags::kAllowBfloat16FieldNumber;
+const int TocoFlags::kAllowAllSelectTfOpsFieldNumber;
+const int TocoFlags::kUnfoldLargeSplatConstantFieldNumber;
+const int TocoFlags::kSupportedBackendsFieldNumber;
+const int TocoFlags::kDefaultToSingleBatchInTensorListOpsFieldNumber;
+const int TocoFlags::kDisablePerChannelQuantizationFieldNumber;
+const int TocoFlags::kEnableMlirDynamicRangeQuantizerFieldNumber;
+const int TocoFlags::kTfQuantizationModeFieldNumber;
+const int TocoFlags::kDisableInferTensorRangeFieldNumber;
+const int TocoFlags::kUseFakeQuantNumBitsFieldNumber;
+const int TocoFlags::kEnableDynamicUpdateSliceFieldNumber;
+const int TocoFlags::kPreserveAssertOpFieldNumber;
+const int TocoFlags::kGuaranteeAllFuncsOneUseFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TocoFlags::TocoFlags()
@@ -241,26 +321,42 @@ TocoFlags::TocoFlags()
 TocoFlags::TocoFlags(const TocoFlags& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL),
-      _has_bits_(from._has_bits_) {
+      _has_bits_(from._has_bits_),
+      custom_opdefs_(from.custom_opdefs_),
+      select_user_tf_ops_(from.select_user_tf_ops_),
+      supported_backends_(from.supported_backends_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   dump_graphviz_dir_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.has_dump_graphviz_dir()) {
     dump_graphviz_dir_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.dump_graphviz_dir_);
   }
+  conversion_summary_dir_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.has_conversion_summary_dir()) {
+    conversion_summary_dir_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.conversion_summary_dir_);
+  }
+  tf_quantization_mode_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.has_tf_quantization_mode()) {
+    tf_quantization_mode_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.tf_quantization_mode_);
+  }
   ::memcpy(&input_format_, &from.input_format_,
-    static_cast<size_t>(reinterpret_cast<char*>(&dedupe_array_min_size_bytes_) -
-    reinterpret_cast<char*>(&input_format_)) + sizeof(dedupe_array_min_size_bytes_));
+    static_cast<size_t>(reinterpret_cast<char*>(&lower_tensor_list_ops_) -
+    reinterpret_cast<char*>(&input_format_)) + sizeof(lower_tensor_list_ops_));
   // @@protoc_insertion_point(copy_constructor:toco.TocoFlags)
 }
 
 void TocoFlags::SharedCtor() {
   dump_graphviz_dir_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  conversion_summary_dir_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  tf_quantization_mode_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&input_format_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&quantize_to_float16_) -
-      reinterpret_cast<char*>(&input_format_)) + sizeof(quantize_to_float16_));
+      reinterpret_cast<char*>(&guarantee_all_funcs_one_use_) -
+      reinterpret_cast<char*>(&input_format_)) + sizeof(guarantee_all_funcs_one_use_));
+  dedupe_array_min_size_bytes_ = GOOGLE_LONGLONG(64);
   split_tflite_lstm_inputs_ = true;
   allow_dynamic_tensors_ = true;
-  dedupe_array_min_size_bytes_ = GOOGLE_LONGLONG(64);
+  enable_tflite_resource_variables_ = true;
+  unfold_batchmatmul_ = true;
+  lower_tensor_list_ops_ = true;
 }
 
 TocoFlags::~TocoFlags() {
@@ -270,6 +366,8 @@ TocoFlags::~TocoFlags() {
 
 void TocoFlags::SharedDtor() {
   dump_graphviz_dir_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  conversion_summary_dir_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  tf_quantization_mode_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
 void TocoFlags::SetCachedSize(int size) const {
@@ -292,28 +390,55 @@ void TocoFlags::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  custom_opdefs_.Clear();
+  select_user_tf_ops_.Clear();
+  supported_backends_.Clear();
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 0x00000001u) {
-    dump_graphviz_dir_.ClearNonDefaultToEmptyNoArena();
+  if (cached_has_bits & 7u) {
+    if (cached_has_bits & 0x00000001u) {
+      dump_graphviz_dir_.ClearNonDefaultToEmptyNoArena();
+    }
+    if (cached_has_bits & 0x00000002u) {
+      conversion_summary_dir_.ClearNonDefaultToEmptyNoArena();
+    }
+    if (cached_has_bits & 0x00000004u) {
+      tf_quantization_mode_.ClearNonDefaultToEmptyNoArena();
+    }
   }
-  if (cached_has_bits & 254u) {
+  if (cached_has_bits & 248u) {
     ::memset(&input_format_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&reorder_across_fake_quant_) -
-        reinterpret_cast<char*>(&input_format_)) + sizeof(reorder_across_fake_quant_));
+        reinterpret_cast<char*>(&default_ranges_max_) -
+        reinterpret_cast<char*>(&input_format_)) + sizeof(default_ranges_max_));
   }
   if (cached_has_bits & 65280u) {
-    ::memset(&allow_custom_ops_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&allow_nudging_weights_to_use_fast_gemm_kernel_) -
-        reinterpret_cast<char*>(&allow_custom_ops_)) + sizeof(allow_nudging_weights_to_use_fast_gemm_kernel_));
+    ::memset(&drop_fake_quant_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&debug_disable_recurrent_cell_fusion_) -
+        reinterpret_cast<char*>(&drop_fake_quant_)) + sizeof(debug_disable_recurrent_cell_fusion_));
   }
   if (cached_has_bits & 16711680u) {
-    ::memset(&quantize_weights_, 0, static_cast<size_t>(
+    ::memset(&propagate_fake_quant_num_bits_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&quantize_to_float16_) -
-        reinterpret_cast<char*>(&quantize_weights_)) + sizeof(quantize_to_float16_));
+        reinterpret_cast<char*>(&propagate_fake_quant_num_bits_)) + sizeof(quantize_to_float16_));
+  }
+  if (cached_has_bits & 4278190080u) {
+    ::memset(&allow_bfloat16_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&disable_infer_tensor_range_) -
+        reinterpret_cast<char*>(&allow_bfloat16_)) + sizeof(disable_infer_tensor_range_));
+  }
+  cached_has_bits = _has_bits_[1];
+  if (cached_has_bits & 255u) {
+    ::memset(&use_fake_quant_num_bits_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&guarantee_all_funcs_one_use_) -
+        reinterpret_cast<char*>(&use_fake_quant_num_bits_)) + sizeof(guarantee_all_funcs_one_use_));
+    dedupe_array_min_size_bytes_ = GOOGLE_LONGLONG(64);
     split_tflite_lstm_inputs_ = true;
     allow_dynamic_tensors_ = true;
+    enable_tflite_resource_variables_ = true;
   }
-  dedupe_array_min_size_bytes_ = GOOGLE_LONGLONG(64);
+  if (cached_has_bits & 768u) {
+    unfold_batchmatmul_ = true;
+    lower_tensor_list_ops_ = true;
+  }
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
@@ -704,6 +829,305 @@ bool TocoFlags::MergePartialFromCodedStream(
         break;
       }
 
+      // optional string conversion_summary_dir = 31;
+      case 31: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(250u /* 250 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_conversion_summary_dir()));
+          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+            this->conversion_summary_dir().data(), static_cast<int>(this->conversion_summary_dir().length()),
+            ::google::protobuf::internal::WireFormat::PARSE,
+            "toco.TocoFlags.conversion_summary_dir");
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated string custom_opdefs = 32 [deprecated = true];
+      case 32: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(2u /* 258 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->add_custom_opdefs()));
+          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+            this->custom_opdefs(this->custom_opdefs_size() - 1).data(),
+            static_cast<int>(this->custom_opdefs(this->custom_opdefs_size() - 1).length()),
+            ::google::protobuf::internal::WireFormat::PARSE,
+            "toco.TocoFlags.custom_opdefs");
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated string select_user_tf_ops = 33;
+      case 33: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(10u /* 266 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->add_select_user_tf_ops()));
+          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+            this->select_user_tf_ops(this->select_user_tf_ops_size() - 1).data(),
+            static_cast<int>(this->select_user_tf_ops(this->select_user_tf_ops_size() - 1).length()),
+            ::google::protobuf::internal::WireFormat::PARSE,
+            "toco.TocoFlags.select_user_tf_ops");
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // optional bool enable_tflite_resource_variables = 34 [default = true];
+      case 34: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(16u /* 272 & 0xFF */)) {
+          set_has_enable_tflite_resource_variables();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &enable_tflite_resource_variables_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // optional bool unfold_batchmatmul = 35 [default = true];
+      case 35: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(24u /* 280 & 0xFF */)) {
+          set_has_unfold_batchmatmul();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &unfold_batchmatmul_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // optional bool lower_tensor_list_ops = 36 [default = true];
+      case 36: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(32u /* 288 & 0xFF */)) {
+          set_has_lower_tensor_list_ops();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &lower_tensor_list_ops_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // optional .toco.IODataType accumulation_type = 37;
+      case 37: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(40u /* 296 & 0xFF */)) {
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          if (::toco::IODataType_IsValid(value)) {
+            set_accumulation_type(static_cast< ::toco::IODataType >(value));
+          } else {
+            mutable_unknown_fields()->AddVarint(
+                37, static_cast< ::google::protobuf::uint64>(value));
+          }
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // optional bool allow_bfloat16 = 38 [default = false];
+      case 38: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(48u /* 304 & 0xFF */)) {
+          set_has_allow_bfloat16();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &allow_bfloat16_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // optional bool allow_all_select_tf_ops = 39;
+      case 39: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(56u /* 312 & 0xFF */)) {
+          set_has_allow_all_select_tf_ops();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &allow_all_select_tf_ops_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // optional bool unfold_large_splat_constant = 40 [default = false];
+      case 40: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(64u /* 320 & 0xFF */)) {
+          set_has_unfold_large_splat_constant();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &unfold_large_splat_constant_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated string supported_backends = 41;
+      case 41: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(74u /* 330 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->add_supported_backends()));
+          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+            this->supported_backends(this->supported_backends_size() - 1).data(),
+            static_cast<int>(this->supported_backends(this->supported_backends_size() - 1).length()),
+            ::google::protobuf::internal::WireFormat::PARSE,
+            "toco.TocoFlags.supported_backends");
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // optional bool default_to_single_batch_in_tensor_list_ops = 42 [default = false];
+      case 42: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(80u /* 336 & 0xFF */)) {
+          set_has_default_to_single_batch_in_tensor_list_ops();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &default_to_single_batch_in_tensor_list_ops_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // optional bool disable_per_channel_quantization = 43 [default = false];
+      case 43: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(88u /* 344 & 0xFF */)) {
+          set_has_disable_per_channel_quantization();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &disable_per_channel_quantization_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // optional bool enable_mlir_dynamic_range_quantizer = 44 [default = false];
+      case 44: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(96u /* 352 & 0xFF */)) {
+          set_has_enable_mlir_dynamic_range_quantizer();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &enable_mlir_dynamic_range_quantizer_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // optional string tf_quantization_mode = 45;
+      case 45: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(106u /* 362 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_tf_quantization_mode()));
+          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+            this->tf_quantization_mode().data(), static_cast<int>(this->tf_quantization_mode().length()),
+            ::google::protobuf::internal::WireFormat::PARSE,
+            "toco.TocoFlags.tf_quantization_mode");
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // optional bool disable_infer_tensor_range = 46 [default = false];
+      case 46: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(112u /* 368 & 0xFF */)) {
+          set_has_disable_infer_tensor_range();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &disable_infer_tensor_range_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // optional bool use_fake_quant_num_bits = 47 [default = false];
+      case 47: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(120u /* 376 & 0xFF */)) {
+          set_has_use_fake_quant_num_bits();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &use_fake_quant_num_bits_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // optional bool enable_dynamic_update_slice = 48 [default = false];
+      case 48: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(128u /* 384 & 0xFF */)) {
+          set_has_enable_dynamic_update_slice();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &enable_dynamic_update_slice_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // optional bool preserve_assert_op = 49 [default = false];
+      case 49: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(136u /* 392 & 0xFF */)) {
+          set_has_preserve_assert_op();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &preserve_assert_op_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // optional bool guarantee_all_funcs_one_use = 50 [default = false];
+      case 50: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(144u /* 400 & 0xFF */)) {
+          set_has_guarantee_all_funcs_one_use();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &guarantee_all_funcs_one_use_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -732,96 +1156,98 @@ void TocoFlags::SerializeWithCachedSizes(
 
   cached_has_bits = _has_bits_[0];
   // optional .toco.FileFormat input_format = 1;
-  if (cached_has_bits & 0x00000002u) {
+  if (cached_has_bits & 0x00000008u) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       1, this->input_format(), output);
   }
 
   // optional .toco.FileFormat output_format = 2;
-  if (cached_has_bits & 0x00000004u) {
+  if (cached_has_bits & 0x00000010u) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       2, this->output_format(), output);
   }
 
   // optional .toco.IODataType inference_type = 4;
-  if (cached_has_bits & 0x00000008u) {
+  if (cached_has_bits & 0x00000020u) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       4, this->inference_type(), output);
   }
 
   // optional float default_ranges_min = 5;
-  if (cached_has_bits & 0x00000010u) {
+  if (cached_has_bits & 0x00000040u) {
     ::google::protobuf::internal::WireFormatLite::WriteFloat(5, this->default_ranges_min(), output);
   }
 
   // optional float default_ranges_max = 6;
-  if (cached_has_bits & 0x00000020u) {
+  if (cached_has_bits & 0x00000080u) {
     ::google::protobuf::internal::WireFormatLite::WriteFloat(6, this->default_ranges_max(), output);
   }
 
   // optional bool drop_fake_quant = 7;
-  if (cached_has_bits & 0x00000040u) {
+  if (cached_has_bits & 0x00000100u) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(7, this->drop_fake_quant(), output);
   }
 
   // optional bool reorder_across_fake_quant = 8;
-  if (cached_has_bits & 0x00000080u) {
+  if (cached_has_bits & 0x00000200u) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(8, this->reorder_across_fake_quant(), output);
   }
 
   // optional bool allow_custom_ops = 10;
-  if (cached_has_bits & 0x00000100u) {
+  if (cached_has_bits & 0x00000400u) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(10, this->allow_custom_ops(), output);
   }
 
   // optional .toco.IODataType inference_input_type = 11;
-  if (cached_has_bits & 0x00000400u) {
+  if (cached_has_bits & 0x00001000u) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       11, this->inference_input_type(), output);
   }
 
   // optional bool drop_control_dependency = 12;
-  if (cached_has_bits & 0x00000200u) {
+  if (cached_has_bits & 0x00000800u) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(12, this->drop_control_dependency(), output);
   }
 
   // optional bool debug_disable_recurrent_cell_fusion = 13;
-  if (cached_has_bits & 0x00002000u) {
+  if (cached_has_bits & 0x00008000u) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(13, this->debug_disable_recurrent_cell_fusion(), output);
   }
 
   // optional bool propagate_fake_quant_num_bits = 14;
-  if (cached_has_bits & 0x00004000u) {
+  if (cached_has_bits & 0x00010000u) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(14, this->propagate_fake_quant_num_bits(), output);
   }
 
   // optional float default_int16_ranges_min = 15;
-  if (cached_has_bits & 0x00000800u) {
+  if (cached_has_bits & 0x00002000u) {
     ::google::protobuf::internal::WireFormatLite::WriteFloat(15, this->default_int16_ranges_min(), output);
   }
 
   // optional float default_int16_ranges_max = 16;
-  if (cached_has_bits & 0x00001000u) {
+  if (cached_has_bits & 0x00004000u) {
     ::google::protobuf::internal::WireFormatLite::WriteFloat(16, this->default_int16_ranges_max(), output);
   }
 
   // optional bool allow_nudging_weights_to_use_fast_gemm_kernel = 17;
-  if (cached_has_bits & 0x00008000u) {
+  if (cached_has_bits & 0x00020000u) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(17, this->allow_nudging_weights_to_use_fast_gemm_kernel(), output);
   }
 
+  cached_has_bits = _has_bits_[1];
   // optional int64 dedupe_array_min_size_bytes = 18 [default = 64];
-  if (cached_has_bits & 0x01000000u) {
+  if (cached_has_bits & 0x00000010u) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(18, this->dedupe_array_min_size_bytes(), output);
   }
 
   // optional bool split_tflite_lstm_inputs = 19 [default = true];
-  if (cached_has_bits & 0x00400000u) {
+  if (cached_has_bits & 0x00000020u) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(19, this->split_tflite_lstm_inputs(), output);
   }
 
+  cached_has_bits = _has_bits_[0];
   // optional bool quantize_weights = 20 [default = false];
-  if (cached_has_bits & 0x00010000u) {
+  if (cached_has_bits & 0x00040000u) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(20, this->quantize_weights(), output);
   }
 
@@ -836,33 +1262,164 @@ void TocoFlags::SerializeWithCachedSizes(
   }
 
   // optional bool dump_graphviz_include_video = 25;
-  if (cached_has_bits & 0x00020000u) {
+  if (cached_has_bits & 0x00080000u) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(25, this->dump_graphviz_include_video(), output);
   }
 
   // optional bool post_training_quantize = 26 [default = false];
-  if (cached_has_bits & 0x00040000u) {
+  if (cached_has_bits & 0x00100000u) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(26, this->post_training_quantize(), output);
   }
 
   // optional bool enable_select_tf_ops = 27 [default = false];
-  if (cached_has_bits & 0x00080000u) {
+  if (cached_has_bits & 0x00200000u) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(27, this->enable_select_tf_ops(), output);
   }
 
   // optional bool force_select_tf_ops = 28 [default = false];
-  if (cached_has_bits & 0x00100000u) {
+  if (cached_has_bits & 0x00400000u) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(28, this->force_select_tf_ops(), output);
   }
 
   // optional bool quantize_to_float16 = 29 [default = false];
-  if (cached_has_bits & 0x00200000u) {
+  if (cached_has_bits & 0x00800000u) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(29, this->quantize_to_float16(), output);
   }
 
+  cached_has_bits = _has_bits_[1];
   // optional bool allow_dynamic_tensors = 30 [default = true];
-  if (cached_has_bits & 0x00800000u) {
+  if (cached_has_bits & 0x00000040u) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(30, this->allow_dynamic_tensors(), output);
+  }
+
+  cached_has_bits = _has_bits_[0];
+  // optional string conversion_summary_dir = 31;
+  if (cached_has_bits & 0x00000002u) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->conversion_summary_dir().data(), static_cast<int>(this->conversion_summary_dir().length()),
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "toco.TocoFlags.conversion_summary_dir");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      31, this->conversion_summary_dir(), output);
+  }
+
+  // repeated string custom_opdefs = 32 [deprecated = true];
+  for (int i = 0, n = this->custom_opdefs_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->custom_opdefs(i).data(), static_cast<int>(this->custom_opdefs(i).length()),
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "toco.TocoFlags.custom_opdefs");
+    ::google::protobuf::internal::WireFormatLite::WriteString(
+      32, this->custom_opdefs(i), output);
+  }
+
+  // repeated string select_user_tf_ops = 33;
+  for (int i = 0, n = this->select_user_tf_ops_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->select_user_tf_ops(i).data(), static_cast<int>(this->select_user_tf_ops(i).length()),
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "toco.TocoFlags.select_user_tf_ops");
+    ::google::protobuf::internal::WireFormatLite::WriteString(
+      33, this->select_user_tf_ops(i), output);
+  }
+
+  cached_has_bits = _has_bits_[1];
+  // optional bool enable_tflite_resource_variables = 34 [default = true];
+  if (cached_has_bits & 0x00000080u) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(34, this->enable_tflite_resource_variables(), output);
+  }
+
+  // optional bool unfold_batchmatmul = 35 [default = true];
+  if (cached_has_bits & 0x00000100u) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(35, this->unfold_batchmatmul(), output);
+  }
+
+  // optional bool lower_tensor_list_ops = 36 [default = true];
+  if (cached_has_bits & 0x00000200u) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(36, this->lower_tensor_list_ops(), output);
+  }
+
+  cached_has_bits = _has_bits_[0];
+  // optional .toco.IODataType accumulation_type = 37;
+  if (cached_has_bits & 0x08000000u) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      37, this->accumulation_type(), output);
+  }
+
+  // optional bool allow_bfloat16 = 38 [default = false];
+  if (cached_has_bits & 0x01000000u) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(38, this->allow_bfloat16(), output);
+  }
+
+  // optional bool allow_all_select_tf_ops = 39;
+  if (cached_has_bits & 0x02000000u) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(39, this->allow_all_select_tf_ops(), output);
+  }
+
+  // optional bool unfold_large_splat_constant = 40 [default = false];
+  if (cached_has_bits & 0x04000000u) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(40, this->unfold_large_splat_constant(), output);
+  }
+
+  // repeated string supported_backends = 41;
+  for (int i = 0, n = this->supported_backends_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->supported_backends(i).data(), static_cast<int>(this->supported_backends(i).length()),
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "toco.TocoFlags.supported_backends");
+    ::google::protobuf::internal::WireFormatLite::WriteString(
+      41, this->supported_backends(i), output);
+  }
+
+  // optional bool default_to_single_batch_in_tensor_list_ops = 42 [default = false];
+  if (cached_has_bits & 0x10000000u) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(42, this->default_to_single_batch_in_tensor_list_ops(), output);
+  }
+
+  // optional bool disable_per_channel_quantization = 43 [default = false];
+  if (cached_has_bits & 0x20000000u) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(43, this->disable_per_channel_quantization(), output);
+  }
+
+  // optional bool enable_mlir_dynamic_range_quantizer = 44 [default = false];
+  if (cached_has_bits & 0x40000000u) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(44, this->enable_mlir_dynamic_range_quantizer(), output);
+  }
+
+  // optional string tf_quantization_mode = 45;
+  if (cached_has_bits & 0x00000004u) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->tf_quantization_mode().data(), static_cast<int>(this->tf_quantization_mode().length()),
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "toco.TocoFlags.tf_quantization_mode");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      45, this->tf_quantization_mode(), output);
+  }
+
+  // optional bool disable_infer_tensor_range = 46 [default = false];
+  if (cached_has_bits & 0x80000000u) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(46, this->disable_infer_tensor_range(), output);
+  }
+
+  cached_has_bits = _has_bits_[1];
+  // optional bool use_fake_quant_num_bits = 47 [default = false];
+  if (cached_has_bits & 0x00000001u) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(47, this->use_fake_quant_num_bits(), output);
+  }
+
+  // optional bool enable_dynamic_update_slice = 48 [default = false];
+  if (cached_has_bits & 0x00000002u) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(48, this->enable_dynamic_update_slice(), output);
+  }
+
+  // optional bool preserve_assert_op = 49 [default = false];
+  if (cached_has_bits & 0x00000004u) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(49, this->preserve_assert_op(), output);
+  }
+
+  // optional bool guarantee_all_funcs_one_use = 50 [default = false];
+  if (cached_has_bits & 0x00000008u) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(50, this->guarantee_all_funcs_one_use(), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -881,96 +1438,98 @@ void TocoFlags::SerializeWithCachedSizes(
 
   cached_has_bits = _has_bits_[0];
   // optional .toco.FileFormat input_format = 1;
-  if (cached_has_bits & 0x00000002u) {
+  if (cached_has_bits & 0x00000008u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       1, this->input_format(), target);
   }
 
   // optional .toco.FileFormat output_format = 2;
-  if (cached_has_bits & 0x00000004u) {
+  if (cached_has_bits & 0x00000010u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       2, this->output_format(), target);
   }
 
   // optional .toco.IODataType inference_type = 4;
-  if (cached_has_bits & 0x00000008u) {
+  if (cached_has_bits & 0x00000020u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       4, this->inference_type(), target);
   }
 
   // optional float default_ranges_min = 5;
-  if (cached_has_bits & 0x00000010u) {
+  if (cached_has_bits & 0x00000040u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(5, this->default_ranges_min(), target);
   }
 
   // optional float default_ranges_max = 6;
-  if (cached_has_bits & 0x00000020u) {
+  if (cached_has_bits & 0x00000080u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(6, this->default_ranges_max(), target);
   }
 
   // optional bool drop_fake_quant = 7;
-  if (cached_has_bits & 0x00000040u) {
+  if (cached_has_bits & 0x00000100u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(7, this->drop_fake_quant(), target);
   }
 
   // optional bool reorder_across_fake_quant = 8;
-  if (cached_has_bits & 0x00000080u) {
+  if (cached_has_bits & 0x00000200u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(8, this->reorder_across_fake_quant(), target);
   }
 
   // optional bool allow_custom_ops = 10;
-  if (cached_has_bits & 0x00000100u) {
+  if (cached_has_bits & 0x00000400u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(10, this->allow_custom_ops(), target);
   }
 
   // optional .toco.IODataType inference_input_type = 11;
-  if (cached_has_bits & 0x00000400u) {
+  if (cached_has_bits & 0x00001000u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       11, this->inference_input_type(), target);
   }
 
   // optional bool drop_control_dependency = 12;
-  if (cached_has_bits & 0x00000200u) {
+  if (cached_has_bits & 0x00000800u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(12, this->drop_control_dependency(), target);
   }
 
   // optional bool debug_disable_recurrent_cell_fusion = 13;
-  if (cached_has_bits & 0x00002000u) {
+  if (cached_has_bits & 0x00008000u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(13, this->debug_disable_recurrent_cell_fusion(), target);
   }
 
   // optional bool propagate_fake_quant_num_bits = 14;
-  if (cached_has_bits & 0x00004000u) {
+  if (cached_has_bits & 0x00010000u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(14, this->propagate_fake_quant_num_bits(), target);
   }
 
   // optional float default_int16_ranges_min = 15;
-  if (cached_has_bits & 0x00000800u) {
+  if (cached_has_bits & 0x00002000u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(15, this->default_int16_ranges_min(), target);
   }
 
   // optional float default_int16_ranges_max = 16;
-  if (cached_has_bits & 0x00001000u) {
+  if (cached_has_bits & 0x00004000u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(16, this->default_int16_ranges_max(), target);
   }
 
   // optional bool allow_nudging_weights_to_use_fast_gemm_kernel = 17;
-  if (cached_has_bits & 0x00008000u) {
+  if (cached_has_bits & 0x00020000u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(17, this->allow_nudging_weights_to_use_fast_gemm_kernel(), target);
   }
 
+  cached_has_bits = _has_bits_[1];
   // optional int64 dedupe_array_min_size_bytes = 18 [default = 64];
-  if (cached_has_bits & 0x01000000u) {
+  if (cached_has_bits & 0x00000010u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(18, this->dedupe_array_min_size_bytes(), target);
   }
 
   // optional bool split_tflite_lstm_inputs = 19 [default = true];
-  if (cached_has_bits & 0x00400000u) {
+  if (cached_has_bits & 0x00000020u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(19, this->split_tflite_lstm_inputs(), target);
   }
 
+  cached_has_bits = _has_bits_[0];
   // optional bool quantize_weights = 20 [default = false];
-  if (cached_has_bits & 0x00010000u) {
+  if (cached_has_bits & 0x00040000u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(20, this->quantize_weights(), target);
   }
 
@@ -986,33 +1545,166 @@ void TocoFlags::SerializeWithCachedSizes(
   }
 
   // optional bool dump_graphviz_include_video = 25;
-  if (cached_has_bits & 0x00020000u) {
+  if (cached_has_bits & 0x00080000u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(25, this->dump_graphviz_include_video(), target);
   }
 
   // optional bool post_training_quantize = 26 [default = false];
-  if (cached_has_bits & 0x00040000u) {
+  if (cached_has_bits & 0x00100000u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(26, this->post_training_quantize(), target);
   }
 
   // optional bool enable_select_tf_ops = 27 [default = false];
-  if (cached_has_bits & 0x00080000u) {
+  if (cached_has_bits & 0x00200000u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(27, this->enable_select_tf_ops(), target);
   }
 
   // optional bool force_select_tf_ops = 28 [default = false];
-  if (cached_has_bits & 0x00100000u) {
+  if (cached_has_bits & 0x00400000u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(28, this->force_select_tf_ops(), target);
   }
 
   // optional bool quantize_to_float16 = 29 [default = false];
-  if (cached_has_bits & 0x00200000u) {
+  if (cached_has_bits & 0x00800000u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(29, this->quantize_to_float16(), target);
   }
 
+  cached_has_bits = _has_bits_[1];
   // optional bool allow_dynamic_tensors = 30 [default = true];
-  if (cached_has_bits & 0x00800000u) {
+  if (cached_has_bits & 0x00000040u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(30, this->allow_dynamic_tensors(), target);
+  }
+
+  cached_has_bits = _has_bits_[0];
+  // optional string conversion_summary_dir = 31;
+  if (cached_has_bits & 0x00000002u) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->conversion_summary_dir().data(), static_cast<int>(this->conversion_summary_dir().length()),
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "toco.TocoFlags.conversion_summary_dir");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        31, this->conversion_summary_dir(), target);
+  }
+
+  // repeated string custom_opdefs = 32 [deprecated = true];
+  for (int i = 0, n = this->custom_opdefs_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->custom_opdefs(i).data(), static_cast<int>(this->custom_opdefs(i).length()),
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "toco.TocoFlags.custom_opdefs");
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteStringToArray(32, this->custom_opdefs(i), target);
+  }
+
+  // repeated string select_user_tf_ops = 33;
+  for (int i = 0, n = this->select_user_tf_ops_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->select_user_tf_ops(i).data(), static_cast<int>(this->select_user_tf_ops(i).length()),
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "toco.TocoFlags.select_user_tf_ops");
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteStringToArray(33, this->select_user_tf_ops(i), target);
+  }
+
+  cached_has_bits = _has_bits_[1];
+  // optional bool enable_tflite_resource_variables = 34 [default = true];
+  if (cached_has_bits & 0x00000080u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(34, this->enable_tflite_resource_variables(), target);
+  }
+
+  // optional bool unfold_batchmatmul = 35 [default = true];
+  if (cached_has_bits & 0x00000100u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(35, this->unfold_batchmatmul(), target);
+  }
+
+  // optional bool lower_tensor_list_ops = 36 [default = true];
+  if (cached_has_bits & 0x00000200u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(36, this->lower_tensor_list_ops(), target);
+  }
+
+  cached_has_bits = _has_bits_[0];
+  // optional .toco.IODataType accumulation_type = 37;
+  if (cached_has_bits & 0x08000000u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      37, this->accumulation_type(), target);
+  }
+
+  // optional bool allow_bfloat16 = 38 [default = false];
+  if (cached_has_bits & 0x01000000u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(38, this->allow_bfloat16(), target);
+  }
+
+  // optional bool allow_all_select_tf_ops = 39;
+  if (cached_has_bits & 0x02000000u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(39, this->allow_all_select_tf_ops(), target);
+  }
+
+  // optional bool unfold_large_splat_constant = 40 [default = false];
+  if (cached_has_bits & 0x04000000u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(40, this->unfold_large_splat_constant(), target);
+  }
+
+  // repeated string supported_backends = 41;
+  for (int i = 0, n = this->supported_backends_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->supported_backends(i).data(), static_cast<int>(this->supported_backends(i).length()),
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "toco.TocoFlags.supported_backends");
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteStringToArray(41, this->supported_backends(i), target);
+  }
+
+  // optional bool default_to_single_batch_in_tensor_list_ops = 42 [default = false];
+  if (cached_has_bits & 0x10000000u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(42, this->default_to_single_batch_in_tensor_list_ops(), target);
+  }
+
+  // optional bool disable_per_channel_quantization = 43 [default = false];
+  if (cached_has_bits & 0x20000000u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(43, this->disable_per_channel_quantization(), target);
+  }
+
+  // optional bool enable_mlir_dynamic_range_quantizer = 44 [default = false];
+  if (cached_has_bits & 0x40000000u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(44, this->enable_mlir_dynamic_range_quantizer(), target);
+  }
+
+  // optional string tf_quantization_mode = 45;
+  if (cached_has_bits & 0x00000004u) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->tf_quantization_mode().data(), static_cast<int>(this->tf_quantization_mode().length()),
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "toco.TocoFlags.tf_quantization_mode");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        45, this->tf_quantization_mode(), target);
+  }
+
+  // optional bool disable_infer_tensor_range = 46 [default = false];
+  if (cached_has_bits & 0x80000000u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(46, this->disable_infer_tensor_range(), target);
+  }
+
+  cached_has_bits = _has_bits_[1];
+  // optional bool use_fake_quant_num_bits = 47 [default = false];
+  if (cached_has_bits & 0x00000001u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(47, this->use_fake_quant_num_bits(), target);
+  }
+
+  // optional bool enable_dynamic_update_slice = 48 [default = false];
+  if (cached_has_bits & 0x00000002u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(48, this->enable_dynamic_update_slice(), target);
+  }
+
+  // optional bool preserve_assert_op = 49 [default = false];
+  if (cached_has_bits & 0x00000004u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(49, this->preserve_assert_op(), target);
+  }
+
+  // optional bool guarantee_all_funcs_one_use = 50 [default = false];
+  if (cached_has_bits & 0x00000008u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(50, this->guarantee_all_funcs_one_use(), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -1032,12 +1724,50 @@ size_t TocoFlags::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  // repeated string custom_opdefs = 32 [deprecated = true];
+  total_size += 2 *
+      ::google::protobuf::internal::FromIntSize(this->custom_opdefs_size());
+  for (int i = 0, n = this->custom_opdefs_size(); i < n; i++) {
+    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
+      this->custom_opdefs(i));
+  }
+
+  // repeated string select_user_tf_ops = 33;
+  total_size += 2 *
+      ::google::protobuf::internal::FromIntSize(this->select_user_tf_ops_size());
+  for (int i = 0, n = this->select_user_tf_ops_size(); i < n; i++) {
+    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
+      this->select_user_tf_ops(i));
+  }
+
+  // repeated string supported_backends = 41;
+  total_size += 2 *
+      ::google::protobuf::internal::FromIntSize(this->supported_backends_size());
+  for (int i = 0, n = this->supported_backends_size(); i < n; i++) {
+    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
+      this->supported_backends(i));
+  }
+
   if (_has_bits_[0 / 32] & 255u) {
     // optional string dump_graphviz_dir = 24;
     if (has_dump_graphviz_dir()) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->dump_graphviz_dir());
+    }
+
+    // optional string conversion_summary_dir = 31;
+    if (has_conversion_summary_dir()) {
+      total_size += 2 +
+        ::google::protobuf::internal::WireFormatLite::StringSize(
+          this->conversion_summary_dir());
+    }
+
+    // optional string tf_quantization_mode = 45;
+    if (has_tf_quantization_mode()) {
+      total_size += 2 +
+        ::google::protobuf::internal::WireFormatLite::StringSize(
+          this->tf_quantization_mode());
     }
 
     // optional .toco.FileFormat input_format = 1;
@@ -1068,6 +1798,8 @@ size_t TocoFlags::ByteSizeLong() const {
       total_size += 1 + 4;
     }
 
+  }
+  if (_has_bits_[8 / 32] & 65280u) {
     // optional bool drop_fake_quant = 7;
     if (has_drop_fake_quant()) {
       total_size += 1 + 1;
@@ -1078,8 +1810,6 @@ size_t TocoFlags::ByteSizeLong() const {
       total_size += 1 + 1;
     }
 
-  }
-  if (_has_bits_[8 / 32] & 65280u) {
     // optional bool allow_custom_ops = 10;
     if (has_allow_custom_ops()) {
       total_size += 1 + 1;
@@ -1111,6 +1841,8 @@ size_t TocoFlags::ByteSizeLong() const {
       total_size += 1 + 1;
     }
 
+  }
+  if (_has_bits_[16 / 32] & 16711680u) {
     // optional bool propagate_fake_quant_num_bits = 14;
     if (has_propagate_fake_quant_num_bits()) {
       total_size += 1 + 1;
@@ -1121,8 +1853,6 @@ size_t TocoFlags::ByteSizeLong() const {
       total_size += 2 + 1;
     }
 
-  }
-  if (_has_bits_[16 / 32] & 16711680u) {
     // optional bool quantize_weights = 20 [default = false];
     if (has_quantize_weights()) {
       total_size += 2 + 1;
@@ -1153,6 +1883,78 @@ size_t TocoFlags::ByteSizeLong() const {
       total_size += 2 + 1;
     }
 
+  }
+  if (_has_bits_[24 / 32] & 4278190080u) {
+    // optional bool allow_bfloat16 = 38 [default = false];
+    if (has_allow_bfloat16()) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool allow_all_select_tf_ops = 39;
+    if (has_allow_all_select_tf_ops()) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool unfold_large_splat_constant = 40 [default = false];
+    if (has_unfold_large_splat_constant()) {
+      total_size += 2 + 1;
+    }
+
+    // optional .toco.IODataType accumulation_type = 37;
+    if (has_accumulation_type()) {
+      total_size += 2 +
+        ::google::protobuf::internal::WireFormatLite::EnumSize(this->accumulation_type());
+    }
+
+    // optional bool default_to_single_batch_in_tensor_list_ops = 42 [default = false];
+    if (has_default_to_single_batch_in_tensor_list_ops()) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool disable_per_channel_quantization = 43 [default = false];
+    if (has_disable_per_channel_quantization()) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool enable_mlir_dynamic_range_quantizer = 44 [default = false];
+    if (has_enable_mlir_dynamic_range_quantizer()) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool disable_infer_tensor_range = 46 [default = false];
+    if (has_disable_infer_tensor_range()) {
+      total_size += 2 + 1;
+    }
+
+  }
+  if (_has_bits_[32 / 32] & 255u) {
+    // optional bool use_fake_quant_num_bits = 47 [default = false];
+    if (has_use_fake_quant_num_bits()) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool enable_dynamic_update_slice = 48 [default = false];
+    if (has_enable_dynamic_update_slice()) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool preserve_assert_op = 49 [default = false];
+    if (has_preserve_assert_op()) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool guarantee_all_funcs_one_use = 50 [default = false];
+    if (has_guarantee_all_funcs_one_use()) {
+      total_size += 2 + 1;
+    }
+
+    // optional int64 dedupe_array_min_size_bytes = 18 [default = 64];
+    if (has_dedupe_array_min_size_bytes()) {
+      total_size += 2 +
+        ::google::protobuf::internal::WireFormatLite::Int64Size(
+          this->dedupe_array_min_size_bytes());
+    }
+
     // optional bool split_tflite_lstm_inputs = 19 [default = true];
     if (has_split_tflite_lstm_inputs()) {
       total_size += 2 + 1;
@@ -1163,14 +1965,24 @@ size_t TocoFlags::ByteSizeLong() const {
       total_size += 2 + 1;
     }
 
-  }
-  // optional int64 dedupe_array_min_size_bytes = 18 [default = 64];
-  if (has_dedupe_array_min_size_bytes()) {
-    total_size += 2 +
-      ::google::protobuf::internal::WireFormatLite::Int64Size(
-        this->dedupe_array_min_size_bytes());
-  }
+    // optional bool enable_tflite_resource_variables = 34 [default = true];
+    if (has_enable_tflite_resource_variables()) {
+      total_size += 2 + 1;
+    }
 
+  }
+  if (_has_bits_[40 / 32] & 768u) {
+    // optional bool unfold_batchmatmul = 35 [default = true];
+    if (has_unfold_batchmatmul()) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool lower_tensor_list_ops = 36 [default = true];
+    if (has_lower_tensor_list_ops()) {
+      total_size += 2 + 1;
+    }
+
+  }
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -1198,6 +2010,9 @@ void TocoFlags::MergeFrom(const TocoFlags& from) {
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
+  custom_opdefs_.MergeFrom(from.custom_opdefs_);
+  select_user_tf_ops_.MergeFrom(from.select_user_tf_ops_);
+  supported_backends_.MergeFrom(from.supported_backends_);
   cached_has_bits = from._has_bits_[0];
   if (cached_has_bits & 255u) {
     if (cached_has_bits & 0x00000001u) {
@@ -1205,84 +2020,147 @@ void TocoFlags::MergeFrom(const TocoFlags& from) {
       dump_graphviz_dir_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.dump_graphviz_dir_);
     }
     if (cached_has_bits & 0x00000002u) {
-      input_format_ = from.input_format_;
+      set_has_conversion_summary_dir();
+      conversion_summary_dir_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.conversion_summary_dir_);
     }
     if (cached_has_bits & 0x00000004u) {
-      output_format_ = from.output_format_;
+      set_has_tf_quantization_mode();
+      tf_quantization_mode_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.tf_quantization_mode_);
     }
     if (cached_has_bits & 0x00000008u) {
-      inference_type_ = from.inference_type_;
+      input_format_ = from.input_format_;
     }
     if (cached_has_bits & 0x00000010u) {
-      default_ranges_min_ = from.default_ranges_min_;
+      output_format_ = from.output_format_;
     }
     if (cached_has_bits & 0x00000020u) {
-      default_ranges_max_ = from.default_ranges_max_;
+      inference_type_ = from.inference_type_;
     }
     if (cached_has_bits & 0x00000040u) {
-      drop_fake_quant_ = from.drop_fake_quant_;
+      default_ranges_min_ = from.default_ranges_min_;
     }
     if (cached_has_bits & 0x00000080u) {
-      reorder_across_fake_quant_ = from.reorder_across_fake_quant_;
+      default_ranges_max_ = from.default_ranges_max_;
     }
     _has_bits_[0] |= cached_has_bits;
   }
   if (cached_has_bits & 65280u) {
     if (cached_has_bits & 0x00000100u) {
-      allow_custom_ops_ = from.allow_custom_ops_;
+      drop_fake_quant_ = from.drop_fake_quant_;
     }
     if (cached_has_bits & 0x00000200u) {
-      drop_control_dependency_ = from.drop_control_dependency_;
+      reorder_across_fake_quant_ = from.reorder_across_fake_quant_;
     }
     if (cached_has_bits & 0x00000400u) {
-      inference_input_type_ = from.inference_input_type_;
+      allow_custom_ops_ = from.allow_custom_ops_;
     }
     if (cached_has_bits & 0x00000800u) {
-      default_int16_ranges_min_ = from.default_int16_ranges_min_;
+      drop_control_dependency_ = from.drop_control_dependency_;
     }
     if (cached_has_bits & 0x00001000u) {
-      default_int16_ranges_max_ = from.default_int16_ranges_max_;
+      inference_input_type_ = from.inference_input_type_;
     }
     if (cached_has_bits & 0x00002000u) {
-      debug_disable_recurrent_cell_fusion_ = from.debug_disable_recurrent_cell_fusion_;
+      default_int16_ranges_min_ = from.default_int16_ranges_min_;
     }
     if (cached_has_bits & 0x00004000u) {
-      propagate_fake_quant_num_bits_ = from.propagate_fake_quant_num_bits_;
+      default_int16_ranges_max_ = from.default_int16_ranges_max_;
     }
     if (cached_has_bits & 0x00008000u) {
-      allow_nudging_weights_to_use_fast_gemm_kernel_ = from.allow_nudging_weights_to_use_fast_gemm_kernel_;
+      debug_disable_recurrent_cell_fusion_ = from.debug_disable_recurrent_cell_fusion_;
     }
     _has_bits_[0] |= cached_has_bits;
   }
   if (cached_has_bits & 16711680u) {
     if (cached_has_bits & 0x00010000u) {
-      quantize_weights_ = from.quantize_weights_;
+      propagate_fake_quant_num_bits_ = from.propagate_fake_quant_num_bits_;
     }
     if (cached_has_bits & 0x00020000u) {
-      dump_graphviz_include_video_ = from.dump_graphviz_include_video_;
+      allow_nudging_weights_to_use_fast_gemm_kernel_ = from.allow_nudging_weights_to_use_fast_gemm_kernel_;
     }
     if (cached_has_bits & 0x00040000u) {
-      post_training_quantize_ = from.post_training_quantize_;
+      quantize_weights_ = from.quantize_weights_;
     }
     if (cached_has_bits & 0x00080000u) {
-      enable_select_tf_ops_ = from.enable_select_tf_ops_;
+      dump_graphviz_include_video_ = from.dump_graphviz_include_video_;
     }
     if (cached_has_bits & 0x00100000u) {
-      force_select_tf_ops_ = from.force_select_tf_ops_;
+      post_training_quantize_ = from.post_training_quantize_;
     }
     if (cached_has_bits & 0x00200000u) {
-      quantize_to_float16_ = from.quantize_to_float16_;
+      enable_select_tf_ops_ = from.enable_select_tf_ops_;
     }
     if (cached_has_bits & 0x00400000u) {
-      split_tflite_lstm_inputs_ = from.split_tflite_lstm_inputs_;
+      force_select_tf_ops_ = from.force_select_tf_ops_;
     }
     if (cached_has_bits & 0x00800000u) {
-      allow_dynamic_tensors_ = from.allow_dynamic_tensors_;
+      quantize_to_float16_ = from.quantize_to_float16_;
     }
     _has_bits_[0] |= cached_has_bits;
   }
-  if (cached_has_bits & 0x01000000u) {
-    set_dedupe_array_min_size_bytes(from.dedupe_array_min_size_bytes());
+  if (cached_has_bits & 4278190080u) {
+    if (cached_has_bits & 0x01000000u) {
+      allow_bfloat16_ = from.allow_bfloat16_;
+    }
+    if (cached_has_bits & 0x02000000u) {
+      allow_all_select_tf_ops_ = from.allow_all_select_tf_ops_;
+    }
+    if (cached_has_bits & 0x04000000u) {
+      unfold_large_splat_constant_ = from.unfold_large_splat_constant_;
+    }
+    if (cached_has_bits & 0x08000000u) {
+      accumulation_type_ = from.accumulation_type_;
+    }
+    if (cached_has_bits & 0x10000000u) {
+      default_to_single_batch_in_tensor_list_ops_ = from.default_to_single_batch_in_tensor_list_ops_;
+    }
+    if (cached_has_bits & 0x20000000u) {
+      disable_per_channel_quantization_ = from.disable_per_channel_quantization_;
+    }
+    if (cached_has_bits & 0x40000000u) {
+      enable_mlir_dynamic_range_quantizer_ = from.enable_mlir_dynamic_range_quantizer_;
+    }
+    if (cached_has_bits & 0x80000000u) {
+      disable_infer_tensor_range_ = from.disable_infer_tensor_range_;
+    }
+    _has_bits_[0] |= cached_has_bits;
+  }
+  cached_has_bits = from._has_bits_[1];
+  if (cached_has_bits & 255u) {
+    if (cached_has_bits & 0x00000001u) {
+      use_fake_quant_num_bits_ = from.use_fake_quant_num_bits_;
+    }
+    if (cached_has_bits & 0x00000002u) {
+      enable_dynamic_update_slice_ = from.enable_dynamic_update_slice_;
+    }
+    if (cached_has_bits & 0x00000004u) {
+      preserve_assert_op_ = from.preserve_assert_op_;
+    }
+    if (cached_has_bits & 0x00000008u) {
+      guarantee_all_funcs_one_use_ = from.guarantee_all_funcs_one_use_;
+    }
+    if (cached_has_bits & 0x00000010u) {
+      dedupe_array_min_size_bytes_ = from.dedupe_array_min_size_bytes_;
+    }
+    if (cached_has_bits & 0x00000020u) {
+      split_tflite_lstm_inputs_ = from.split_tflite_lstm_inputs_;
+    }
+    if (cached_has_bits & 0x00000040u) {
+      allow_dynamic_tensors_ = from.allow_dynamic_tensors_;
+    }
+    if (cached_has_bits & 0x00000080u) {
+      enable_tflite_resource_variables_ = from.enable_tflite_resource_variables_;
+    }
+    _has_bits_[1] |= cached_has_bits;
+  }
+  if (cached_has_bits & 768u) {
+    if (cached_has_bits & 0x00000100u) {
+      unfold_batchmatmul_ = from.unfold_batchmatmul_;
+    }
+    if (cached_has_bits & 0x00000200u) {
+      lower_tensor_list_ops_ = from.lower_tensor_list_ops_;
+    }
+    _has_bits_[1] |= cached_has_bits;
   }
 }
 
@@ -1310,7 +2188,14 @@ void TocoFlags::Swap(TocoFlags* other) {
 }
 void TocoFlags::InternalSwap(TocoFlags* other) {
   using std::swap;
+  custom_opdefs_.InternalSwap(CastToBase(&other->custom_opdefs_));
+  select_user_tf_ops_.InternalSwap(CastToBase(&other->select_user_tf_ops_));
+  supported_backends_.InternalSwap(CastToBase(&other->supported_backends_));
   dump_graphviz_dir_.Swap(&other->dump_graphviz_dir_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  conversion_summary_dir_.Swap(&other->conversion_summary_dir_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  tf_quantization_mode_.Swap(&other->tf_quantization_mode_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(input_format_, other->input_format_);
   swap(output_format_, other->output_format_);
@@ -1333,10 +2218,26 @@ void TocoFlags::InternalSwap(TocoFlags* other) {
   swap(enable_select_tf_ops_, other->enable_select_tf_ops_);
   swap(force_select_tf_ops_, other->force_select_tf_ops_);
   swap(quantize_to_float16_, other->quantize_to_float16_);
+  swap(allow_bfloat16_, other->allow_bfloat16_);
+  swap(allow_all_select_tf_ops_, other->allow_all_select_tf_ops_);
+  swap(unfold_large_splat_constant_, other->unfold_large_splat_constant_);
+  swap(accumulation_type_, other->accumulation_type_);
+  swap(default_to_single_batch_in_tensor_list_ops_, other->default_to_single_batch_in_tensor_list_ops_);
+  swap(disable_per_channel_quantization_, other->disable_per_channel_quantization_);
+  swap(enable_mlir_dynamic_range_quantizer_, other->enable_mlir_dynamic_range_quantizer_);
+  swap(disable_infer_tensor_range_, other->disable_infer_tensor_range_);
+  swap(use_fake_quant_num_bits_, other->use_fake_quant_num_bits_);
+  swap(enable_dynamic_update_slice_, other->enable_dynamic_update_slice_);
+  swap(preserve_assert_op_, other->preserve_assert_op_);
+  swap(guarantee_all_funcs_one_use_, other->guarantee_all_funcs_one_use_);
+  swap(dedupe_array_min_size_bytes_, other->dedupe_array_min_size_bytes_);
   swap(split_tflite_lstm_inputs_, other->split_tflite_lstm_inputs_);
   swap(allow_dynamic_tensors_, other->allow_dynamic_tensors_);
-  swap(dedupe_array_min_size_bytes_, other->dedupe_array_min_size_bytes_);
+  swap(enable_tflite_resource_variables_, other->enable_tflite_resource_variables_);
+  swap(unfold_batchmatmul_, other->unfold_batchmatmul_);
+  swap(lower_tensor_list_ops_, other->lower_tensor_list_ops_);
   swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_has_bits_[1], other->_has_bits_[1]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 

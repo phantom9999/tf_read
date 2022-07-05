@@ -84,12 +84,14 @@ enum RewriterConfig_Toggle {
   RewriterConfig_Toggle_ON = 1,
   RewriterConfig_Toggle_OFF = 2,
   RewriterConfig_Toggle_AGGRESSIVE = 3,
+  RewriterConfig_Toggle_EXPERIMENTAL_MLIR = 4,
+  RewriterConfig_Toggle_EXPERIMENTAL_BOTH = 5,
   RewriterConfig_Toggle_RewriterConfig_Toggle_INT_MIN_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32min,
   RewriterConfig_Toggle_RewriterConfig_Toggle_INT_MAX_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32max
 };
 bool RewriterConfig_Toggle_IsValid(int value);
 const RewriterConfig_Toggle RewriterConfig_Toggle_Toggle_MIN = RewriterConfig_Toggle_DEFAULT;
-const RewriterConfig_Toggle RewriterConfig_Toggle_Toggle_MAX = RewriterConfig_Toggle_AGGRESSIVE;
+const RewriterConfig_Toggle RewriterConfig_Toggle_Toggle_MAX = RewriterConfig_Toggle_EXPERIMENTAL_BOTH;
 const int RewriterConfig_Toggle_Toggle_ARRAYSIZE = RewriterConfig_Toggle_Toggle_MAX + 1;
 
 const ::google::protobuf::EnumDescriptor* RewriterConfig_Toggle_descriptor();
@@ -101,6 +103,28 @@ inline bool RewriterConfig_Toggle_Parse(
     const ::std::string& name, RewriterConfig_Toggle* value) {
   return ::google::protobuf::internal::ParseNamedEnum<RewriterConfig_Toggle>(
     RewriterConfig_Toggle_descriptor(), name, value);
+}
+enum RewriterConfig_CpuLayout {
+  RewriterConfig_CpuLayout_NO_CONVERSION_ON_CPU = 0,
+  RewriterConfig_CpuLayout_NCHW_TO_NHWC = 1,
+  RewriterConfig_CpuLayout_NHWC_TO_NCHW = 2,
+  RewriterConfig_CpuLayout_RewriterConfig_CpuLayout_INT_MIN_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32min,
+  RewriterConfig_CpuLayout_RewriterConfig_CpuLayout_INT_MAX_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32max
+};
+bool RewriterConfig_CpuLayout_IsValid(int value);
+const RewriterConfig_CpuLayout RewriterConfig_CpuLayout_CpuLayout_MIN = RewriterConfig_CpuLayout_NO_CONVERSION_ON_CPU;
+const RewriterConfig_CpuLayout RewriterConfig_CpuLayout_CpuLayout_MAX = RewriterConfig_CpuLayout_NHWC_TO_NCHW;
+const int RewriterConfig_CpuLayout_CpuLayout_ARRAYSIZE = RewriterConfig_CpuLayout_CpuLayout_MAX + 1;
+
+const ::google::protobuf::EnumDescriptor* RewriterConfig_CpuLayout_descriptor();
+inline const ::std::string& RewriterConfig_CpuLayout_Name(RewriterConfig_CpuLayout value) {
+  return ::google::protobuf::internal::NameOfEnum(
+    RewriterConfig_CpuLayout_descriptor(), value);
+}
+inline bool RewriterConfig_CpuLayout_Parse(
+    const ::std::string& name, RewriterConfig_CpuLayout* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<RewriterConfig_CpuLayout>(
+    RewriterConfig_CpuLayout_descriptor(), name, value);
 }
 enum RewriterConfig_NumIterationsType {
   RewriterConfig_NumIterationsType_DEFAULT_NUM_ITERS = 0,
@@ -691,6 +715,10 @@ class RewriterConfig : public ::google::protobuf::Message /* @@protoc_insertion_
     RewriterConfig_Toggle_OFF;
   static const Toggle AGGRESSIVE =
     RewriterConfig_Toggle_AGGRESSIVE;
+  static const Toggle EXPERIMENTAL_MLIR =
+    RewriterConfig_Toggle_EXPERIMENTAL_MLIR;
+  static const Toggle EXPERIMENTAL_BOTH =
+    RewriterConfig_Toggle_EXPERIMENTAL_BOTH;
   static inline bool Toggle_IsValid(int value) {
     return RewriterConfig_Toggle_IsValid(value);
   }
@@ -710,6 +738,34 @@ class RewriterConfig : public ::google::protobuf::Message /* @@protoc_insertion_
   static inline bool Toggle_Parse(const ::std::string& name,
       Toggle* value) {
     return RewriterConfig_Toggle_Parse(name, value);
+  }
+
+  typedef RewriterConfig_CpuLayout CpuLayout;
+  static const CpuLayout NO_CONVERSION_ON_CPU =
+    RewriterConfig_CpuLayout_NO_CONVERSION_ON_CPU;
+  static const CpuLayout NCHW_TO_NHWC =
+    RewriterConfig_CpuLayout_NCHW_TO_NHWC;
+  static const CpuLayout NHWC_TO_NCHW =
+    RewriterConfig_CpuLayout_NHWC_TO_NCHW;
+  static inline bool CpuLayout_IsValid(int value) {
+    return RewriterConfig_CpuLayout_IsValid(value);
+  }
+  static const CpuLayout CpuLayout_MIN =
+    RewriterConfig_CpuLayout_CpuLayout_MIN;
+  static const CpuLayout CpuLayout_MAX =
+    RewriterConfig_CpuLayout_CpuLayout_MAX;
+  static const int CpuLayout_ARRAYSIZE =
+    RewriterConfig_CpuLayout_CpuLayout_ARRAYSIZE;
+  static inline const ::google::protobuf::EnumDescriptor*
+  CpuLayout_descriptor() {
+    return RewriterConfig_CpuLayout_descriptor();
+  }
+  static inline const ::std::string& CpuLayout_Name(CpuLayout value) {
+    return RewriterConfig_CpuLayout_Name(value);
+  }
+  static inline bool CpuLayout_Parse(const ::std::string& name,
+      CpuLayout* value) {
+    return RewriterConfig_CpuLayout_Parse(name, value);
   }
 
   typedef RewriterConfig_NumIterationsType NumIterationsType;
@@ -961,24 +1017,6 @@ class RewriterConfig : public ::google::protobuf::Message /* @@protoc_insertion_
   ::tensorflow::RewriterConfig_Toggle remapping() const;
   void set_remapping(::tensorflow::RewriterConfig_Toggle value);
 
-  // bool disable_model_pruning = 2;
-  void clear_disable_model_pruning();
-  static const int kDisableModelPruningFieldNumber = 2;
-  bool disable_model_pruning() const;
-  void set_disable_model_pruning(bool value);
-
-  // bool disable_meta_optimizer = 19;
-  void clear_disable_meta_optimizer();
-  static const int kDisableMetaOptimizerFieldNumber = 19;
-  bool disable_meta_optimizer() const;
-  void set_disable_meta_optimizer(bool value);
-
-  // bool fail_on_optimizer_errors = 21;
-  void clear_fail_on_optimizer_errors();
-  static const int kFailOnOptimizerErrorsFieldNumber = 21;
-  bool fail_on_optimizer_errors() const;
-  void set_fail_on_optimizer_errors(bool value);
-
   // .tensorflow.RewriterConfig.Toggle scoped_allocator_optimization = 15;
   void clear_scoped_allocator_optimization();
   static const int kScopedAllocatorOptimizationFieldNumber = 15;
@@ -991,17 +1029,47 @@ class RewriterConfig : public ::google::protobuf::Message /* @@protoc_insertion_
   ::google::protobuf::int32 min_graph_nodes() const;
   void set_min_graph_nodes(::google::protobuf::int32 value);
 
-  // int64 meta_optimizer_timeout_ms = 20;
-  void clear_meta_optimizer_timeout_ms();
-  static const int kMetaOptimizerTimeoutMsFieldNumber = 20;
-  ::google::protobuf::int64 meta_optimizer_timeout_ms() const;
-  void set_meta_optimizer_timeout_ms(::google::protobuf::int64 value);
-
   // .tensorflow.RewriterConfig.Toggle pin_to_host_optimization = 18;
   void clear_pin_to_host_optimization();
   static const int kPinToHostOptimizationFieldNumber = 18;
   ::tensorflow::RewriterConfig_Toggle pin_to_host_optimization() const;
   void set_pin_to_host_optimization(::tensorflow::RewriterConfig_Toggle value);
+
+  // bool disable_model_pruning = 2;
+  void clear_disable_model_pruning();
+  static const int kDisableModelPruningFieldNumber = 2;
+  bool disable_model_pruning() const;
+  void set_disable_model_pruning(bool value);
+
+  // bool disable_meta_optimizer = 19;
+  void clear_disable_meta_optimizer();
+  static const int kDisableMetaOptimizerFieldNumber = 19;
+  bool disable_meta_optimizer() const;
+  void set_disable_meta_optimizer(bool value);
+
+  // bool experimental_disable_compressed_tensor_optimization = 26;
+  void clear_experimental_disable_compressed_tensor_optimization();
+  static const int kExperimentalDisableCompressedTensorOptimizationFieldNumber = 26;
+  bool experimental_disable_compressed_tensor_optimization() const;
+  void set_experimental_disable_compressed_tensor_optimization(bool value);
+
+  // bool experimental_disable_folding_quantization_emulation = 27;
+  void clear_experimental_disable_folding_quantization_emulation();
+  static const int kExperimentalDisableFoldingQuantizationEmulationFieldNumber = 27;
+  bool experimental_disable_folding_quantization_emulation() const;
+  void set_experimental_disable_folding_quantization_emulation(bool value);
+
+  // bool fail_on_optimizer_errors = 21;
+  void clear_fail_on_optimizer_errors();
+  static const int kFailOnOptimizerErrorsFieldNumber = 21;
+  bool fail_on_optimizer_errors() const;
+  void set_fail_on_optimizer_errors(bool value);
+
+  // int64 meta_optimizer_timeout_ms = 20;
+  void clear_meta_optimizer_timeout_ms();
+  static const int kMetaOptimizerTimeoutMsFieldNumber = 20;
+  ::google::protobuf::int64 meta_optimizer_timeout_ms() const;
+  void set_meta_optimizer_timeout_ms(::google::protobuf::int64 value);
 
   // .tensorflow.RewriterConfig.Toggle implementation_selector = 22;
   void clear_implementation_selector();
@@ -1014,6 +1082,36 @@ class RewriterConfig : public ::google::protobuf::Message /* @@protoc_insertion_
   static const int kAutoMixedPrecisionFieldNumber = 23;
   ::tensorflow::RewriterConfig_Toggle auto_mixed_precision() const;
   void set_auto_mixed_precision(::tensorflow::RewriterConfig_Toggle value);
+
+  // .tensorflow.RewriterConfig.Toggle common_subgraph_elimination = 24;
+  void clear_common_subgraph_elimination();
+  static const int kCommonSubgraphEliminationFieldNumber = 24;
+  ::tensorflow::RewriterConfig_Toggle common_subgraph_elimination() const;
+  void set_common_subgraph_elimination(::tensorflow::RewriterConfig_Toggle value);
+
+  // .tensorflow.RewriterConfig.Toggle auto_mixed_precision_mkl = 25;
+  void clear_auto_mixed_precision_mkl();
+  static const int kAutoMixedPrecisionMklFieldNumber = 25;
+  ::tensorflow::RewriterConfig_Toggle auto_mixed_precision_mkl() const;
+  void set_auto_mixed_precision_mkl(::tensorflow::RewriterConfig_Toggle value);
+
+  // .tensorflow.RewriterConfig.Toggle use_plugin_optimizers = 28;
+  void clear_use_plugin_optimizers();
+  static const int kUsePluginOptimizersFieldNumber = 28;
+  ::tensorflow::RewriterConfig_Toggle use_plugin_optimizers() const;
+  void set_use_plugin_optimizers(::tensorflow::RewriterConfig_Toggle value);
+
+  // .tensorflow.RewriterConfig.Toggle auto_mixed_precision_cpu = 29;
+  void clear_auto_mixed_precision_cpu();
+  static const int kAutoMixedPrecisionCpuFieldNumber = 29;
+  ::tensorflow::RewriterConfig_Toggle auto_mixed_precision_cpu() const;
+  void set_auto_mixed_precision_cpu(::tensorflow::RewriterConfig_Toggle value);
+
+  // .tensorflow.RewriterConfig.CpuLayout cpu_layout_conversion = 50;
+  void clear_cpu_layout_conversion();
+  static const int kCpuLayoutConversionFieldNumber = 50;
+  ::tensorflow::RewriterConfig_CpuLayout cpu_layout_conversion() const;
+  void set_cpu_layout_conversion(::tensorflow::RewriterConfig_CpuLayout value);
 
   // @@protoc_insertion_point(class_scope:tensorflow.RewriterConfig)
  private:
@@ -1040,15 +1138,22 @@ class RewriterConfig : public ::google::protobuf::Message /* @@protoc_insertion_
   int meta_optimizer_iterations_;
   int shape_optimization_;
   int remapping_;
-  bool disable_model_pruning_;
-  bool disable_meta_optimizer_;
-  bool fail_on_optimizer_errors_;
   int scoped_allocator_optimization_;
   ::google::protobuf::int32 min_graph_nodes_;
-  ::google::protobuf::int64 meta_optimizer_timeout_ms_;
   int pin_to_host_optimization_;
+  bool disable_model_pruning_;
+  bool disable_meta_optimizer_;
+  bool experimental_disable_compressed_tensor_optimization_;
+  bool experimental_disable_folding_quantization_emulation_;
+  bool fail_on_optimizer_errors_;
+  ::google::protobuf::int64 meta_optimizer_timeout_ms_;
   int implementation_selector_;
   int auto_mixed_precision_;
+  int common_subgraph_elimination_;
+  int auto_mixed_precision_mkl_;
+  int use_plugin_optimizers_;
+  int auto_mixed_precision_cpu_;
+  int cpu_layout_conversion_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto::TableStruct;
 };
@@ -1264,6 +1369,20 @@ RewriterConfig_CustomGraphOptimizer::mutable_parameter_map() {
 
 // RewriterConfig
 
+// .tensorflow.RewriterConfig.CpuLayout cpu_layout_conversion = 50;
+inline void RewriterConfig::clear_cpu_layout_conversion() {
+  cpu_layout_conversion_ = 0;
+}
+inline ::tensorflow::RewriterConfig_CpuLayout RewriterConfig::cpu_layout_conversion() const {
+  // @@protoc_insertion_point(field_get:tensorflow.RewriterConfig.cpu_layout_conversion)
+  return static_cast< ::tensorflow::RewriterConfig_CpuLayout >(cpu_layout_conversion_);
+}
+inline void RewriterConfig::set_cpu_layout_conversion(::tensorflow::RewriterConfig_CpuLayout value) {
+  
+  cpu_layout_conversion_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.RewriterConfig.cpu_layout_conversion)
+}
+
 // .tensorflow.RewriterConfig.Toggle layout_optimizer = 1;
 inline void RewriterConfig::clear_layout_optimizer() {
   layout_optimizer_ = 0;
@@ -1318,6 +1437,20 @@ inline void RewriterConfig::set_remapping(::tensorflow::RewriterConfig_Toggle va
   
   remapping_ = value;
   // @@protoc_insertion_point(field_set:tensorflow.RewriterConfig.remapping)
+}
+
+// .tensorflow.RewriterConfig.Toggle common_subgraph_elimination = 24;
+inline void RewriterConfig::clear_common_subgraph_elimination() {
+  common_subgraph_elimination_ = 0;
+}
+inline ::tensorflow::RewriterConfig_Toggle RewriterConfig::common_subgraph_elimination() const {
+  // @@protoc_insertion_point(field_get:tensorflow.RewriterConfig.common_subgraph_elimination)
+  return static_cast< ::tensorflow::RewriterConfig_Toggle >(common_subgraph_elimination_);
+}
+inline void RewriterConfig::set_common_subgraph_elimination(::tensorflow::RewriterConfig_Toggle value) {
+  
+  common_subgraph_elimination_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.RewriterConfig.common_subgraph_elimination)
 }
 
 // .tensorflow.RewriterConfig.Toggle arithmetic_optimization = 7;
@@ -1460,6 +1593,34 @@ inline void RewriterConfig::set_auto_mixed_precision(::tensorflow::RewriterConfi
   // @@protoc_insertion_point(field_set:tensorflow.RewriterConfig.auto_mixed_precision)
 }
 
+// .tensorflow.RewriterConfig.Toggle auto_mixed_precision_mkl = 25;
+inline void RewriterConfig::clear_auto_mixed_precision_mkl() {
+  auto_mixed_precision_mkl_ = 0;
+}
+inline ::tensorflow::RewriterConfig_Toggle RewriterConfig::auto_mixed_precision_mkl() const {
+  // @@protoc_insertion_point(field_get:tensorflow.RewriterConfig.auto_mixed_precision_mkl)
+  return static_cast< ::tensorflow::RewriterConfig_Toggle >(auto_mixed_precision_mkl_);
+}
+inline void RewriterConfig::set_auto_mixed_precision_mkl(::tensorflow::RewriterConfig_Toggle value) {
+  
+  auto_mixed_precision_mkl_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.RewriterConfig.auto_mixed_precision_mkl)
+}
+
+// .tensorflow.RewriterConfig.Toggle auto_mixed_precision_cpu = 29;
+inline void RewriterConfig::clear_auto_mixed_precision_cpu() {
+  auto_mixed_precision_cpu_ = 0;
+}
+inline ::tensorflow::RewriterConfig_Toggle RewriterConfig::auto_mixed_precision_cpu() const {
+  // @@protoc_insertion_point(field_get:tensorflow.RewriterConfig.auto_mixed_precision_cpu)
+  return static_cast< ::tensorflow::RewriterConfig_Toggle >(auto_mixed_precision_cpu_);
+}
+inline void RewriterConfig::set_auto_mixed_precision_cpu(::tensorflow::RewriterConfig_Toggle value) {
+  
+  auto_mixed_precision_cpu_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.RewriterConfig.auto_mixed_precision_cpu)
+}
+
 // bool disable_meta_optimizer = 19;
 inline void RewriterConfig::clear_disable_meta_optimizer() {
   disable_meta_optimizer_ = false;
@@ -1472,6 +1633,20 @@ inline void RewriterConfig::set_disable_meta_optimizer(bool value) {
   
   disable_meta_optimizer_ = value;
   // @@protoc_insertion_point(field_set:tensorflow.RewriterConfig.disable_meta_optimizer)
+}
+
+// .tensorflow.RewriterConfig.Toggle use_plugin_optimizers = 28;
+inline void RewriterConfig::clear_use_plugin_optimizers() {
+  use_plugin_optimizers_ = 0;
+}
+inline ::tensorflow::RewriterConfig_Toggle RewriterConfig::use_plugin_optimizers() const {
+  // @@protoc_insertion_point(field_get:tensorflow.RewriterConfig.use_plugin_optimizers)
+  return static_cast< ::tensorflow::RewriterConfig_Toggle >(use_plugin_optimizers_);
+}
+inline void RewriterConfig::set_use_plugin_optimizers(::tensorflow::RewriterConfig_Toggle value) {
+  
+  use_plugin_optimizers_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.RewriterConfig.use_plugin_optimizers)
 }
 
 // .tensorflow.RewriterConfig.NumIterationsType meta_optimizer_iterations = 12;
@@ -1500,6 +1675,34 @@ inline void RewriterConfig::set_min_graph_nodes(::google::protobuf::int32 value)
   
   min_graph_nodes_ = value;
   // @@protoc_insertion_point(field_set:tensorflow.RewriterConfig.min_graph_nodes)
+}
+
+// bool experimental_disable_compressed_tensor_optimization = 26;
+inline void RewriterConfig::clear_experimental_disable_compressed_tensor_optimization() {
+  experimental_disable_compressed_tensor_optimization_ = false;
+}
+inline bool RewriterConfig::experimental_disable_compressed_tensor_optimization() const {
+  // @@protoc_insertion_point(field_get:tensorflow.RewriterConfig.experimental_disable_compressed_tensor_optimization)
+  return experimental_disable_compressed_tensor_optimization_;
+}
+inline void RewriterConfig::set_experimental_disable_compressed_tensor_optimization(bool value) {
+  
+  experimental_disable_compressed_tensor_optimization_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.RewriterConfig.experimental_disable_compressed_tensor_optimization)
+}
+
+// bool experimental_disable_folding_quantization_emulation = 27;
+inline void RewriterConfig::clear_experimental_disable_folding_quantization_emulation() {
+  experimental_disable_folding_quantization_emulation_ = false;
+}
+inline bool RewriterConfig::experimental_disable_folding_quantization_emulation() const {
+  // @@protoc_insertion_point(field_get:tensorflow.RewriterConfig.experimental_disable_folding_quantization_emulation)
+  return experimental_disable_folding_quantization_emulation_;
+}
+inline void RewriterConfig::set_experimental_disable_folding_quantization_emulation(bool value) {
+  
+  experimental_disable_folding_quantization_emulation_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.RewriterConfig.experimental_disable_folding_quantization_emulation)
 }
 
 // .tensorflow.RewriterConfig.MemOptType memory_optimization = 4;
@@ -1989,6 +2192,11 @@ template <> struct is_proto_enum< ::tensorflow::RewriterConfig_Toggle> : ::std::
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::tensorflow::RewriterConfig_Toggle>() {
   return ::tensorflow::RewriterConfig_Toggle_descriptor();
+}
+template <> struct is_proto_enum< ::tensorflow::RewriterConfig_CpuLayout> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::tensorflow::RewriterConfig_CpuLayout>() {
+  return ::tensorflow::RewriterConfig_CpuLayout_descriptor();
 }
 template <> struct is_proto_enum< ::tensorflow::RewriterConfig_NumIterationsType> : ::std::true_type {};
 template <>

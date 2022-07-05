@@ -193,11 +193,13 @@ void AddDescriptorsImpl() {
       "&.tensorflow.GraphDebugInfo.FileLineCol\032"
       "T\n\013TracesEntry\022\013\n\003key\030\001 \001(\t\0224\n\005value\030\002 \001"
       "(\0132%.tensorflow.GraphDebugInfo.StackTrac"
-      "e:\0028\001B5\n\030org.tensorflow.frameworkB\024Graph"
-      "DebugInfoProtosP\001\370\001\001b\006proto3"
+      "e:\0028\001B\214\001\n\030org.tensorflow.frameworkB\024Grap"
+      "hDebugInfoProtosP\001ZUgithub.com/tensorflo"
+      "w/tensorflow/tensorflow/go/core/protobuf"
+      "/for_core_protos_go_proto\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 468);
+      descriptor, 556);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/protobuf/graph_debug_info.proto", &protobuf_RegisterTypes);
 }

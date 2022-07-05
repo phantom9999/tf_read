@@ -42,7 +42,7 @@ namespace protobuf_tensorflow_2fpython_2ftpu_2ftensor_5ftracer_2eproto {
 struct TableStruct {
   static const ::google::protobuf::internal::ParseTableField entries[];
   static const ::google::protobuf::internal::AuxillaryParseTableField aux[];
-  static const ::google::protobuf::internal::ParseTable schema[4];
+  static const ::google::protobuf::internal::ParseTable schema[5];
   static const ::google::protobuf::internal::FieldMetadata field_metadata[];
   static const ::google::protobuf::internal::SerializationTable serialization_table[];
   static const ::google::protobuf::uint32 offsets[];
@@ -62,6 +62,9 @@ extern TensorTracerReport_TensordefEntry_DoNotUseDefaultTypeInternal _TensorTrac
 class TensorTracerReport_TracedTensorDef;
 class TensorTracerReport_TracedTensorDefDefaultTypeInternal;
 extern TensorTracerReport_TracedTensorDefDefaultTypeInternal _TensorTracerReport_TracedTensorDef_default_instance_;
+class TensorTracerReport_TracedTensorDef_Stack;
+class TensorTracerReport_TracedTensorDef_StackDefaultTypeInternal;
+extern TensorTracerReport_TracedTensorDef_StackDefaultTypeInternal _TensorTracerReport_TracedTensorDef_Stack_default_instance_;
 }  // namespace tensorflow
 namespace google {
 namespace protobuf {
@@ -69,6 +72,7 @@ template<> ::tensorflow::TensorTracerReport* Arena::CreateMaybeMessage<::tensorf
 template<> ::tensorflow::TensorTracerReport_TensorTracerConfig* Arena::CreateMaybeMessage<::tensorflow::TensorTracerReport_TensorTracerConfig>(Arena*);
 template<> ::tensorflow::TensorTracerReport_TensordefEntry_DoNotUse* Arena::CreateMaybeMessage<::tensorflow::TensorTracerReport_TensordefEntry_DoNotUse>(Arena*);
 template<> ::tensorflow::TensorTracerReport_TracedTensorDef* Arena::CreateMaybeMessage<::tensorflow::TensorTracerReport_TracedTensorDef>(Arena*);
+template<> ::tensorflow::TensorTracerReport_TracedTensorDef_Stack* Arena::CreateMaybeMessage<::tensorflow::TensorTracerReport_TracedTensorDef_Stack>(Arena*);
 }  // namespace protobuf
 }  // namespace google
 namespace tensorflow {
@@ -310,6 +314,185 @@ class TensorTracerReport_TensorTracerConfig : public ::google::protobuf::Message
 };
 // -------------------------------------------------------------------
 
+class TensorTracerReport_TracedTensorDef_Stack : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.TensorTracerReport.TracedTensorDef.Stack) */ {
+ public:
+  TensorTracerReport_TracedTensorDef_Stack();
+  virtual ~TensorTracerReport_TracedTensorDef_Stack();
+
+  TensorTracerReport_TracedTensorDef_Stack(const TensorTracerReport_TracedTensorDef_Stack& from);
+
+  inline TensorTracerReport_TracedTensorDef_Stack& operator=(const TensorTracerReport_TracedTensorDef_Stack& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  TensorTracerReport_TracedTensorDef_Stack(TensorTracerReport_TracedTensorDef_Stack&& from) noexcept
+    : TensorTracerReport_TracedTensorDef_Stack() {
+    *this = ::std::move(from);
+  }
+
+  inline TensorTracerReport_TracedTensorDef_Stack& operator=(TensorTracerReport_TracedTensorDef_Stack&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const TensorTracerReport_TracedTensorDef_Stack& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const TensorTracerReport_TracedTensorDef_Stack* internal_default_instance() {
+    return reinterpret_cast<const TensorTracerReport_TracedTensorDef_Stack*>(
+               &_TensorTracerReport_TracedTensorDef_Stack_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    2;
+
+  void Swap(TensorTracerReport_TracedTensorDef_Stack* other);
+  friend void swap(TensorTracerReport_TracedTensorDef_Stack& a, TensorTracerReport_TracedTensorDef_Stack& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline TensorTracerReport_TracedTensorDef_Stack* New() const final {
+    return CreateMaybeMessage<TensorTracerReport_TracedTensorDef_Stack>(NULL);
+  }
+
+  TensorTracerReport_TracedTensorDef_Stack* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<TensorTracerReport_TracedTensorDef_Stack>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const TensorTracerReport_TracedTensorDef_Stack& from);
+  void MergeFrom(const TensorTracerReport_TracedTensorDef_Stack& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(TensorTracerReport_TracedTensorDef_Stack* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // repeated string stack_fn_names = 1;
+  int stack_fn_names_size() const;
+  void clear_stack_fn_names();
+  static const int kStackFnNamesFieldNumber = 1;
+  const ::std::string& stack_fn_names(int index) const;
+  ::std::string* mutable_stack_fn_names(int index);
+  void set_stack_fn_names(int index, const ::std::string& value);
+  #if LANG_CXX11
+  void set_stack_fn_names(int index, ::std::string&& value);
+  #endif
+  void set_stack_fn_names(int index, const char* value);
+  void set_stack_fn_names(int index, const char* value, size_t size);
+  ::std::string* add_stack_fn_names();
+  void add_stack_fn_names(const ::std::string& value);
+  #if LANG_CXX11
+  void add_stack_fn_names(::std::string&& value);
+  #endif
+  void add_stack_fn_names(const char* value);
+  void add_stack_fn_names(const char* value, size_t size);
+  const ::google::protobuf::RepeatedPtrField< ::std::string>& stack_fn_names() const;
+  ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_stack_fn_names();
+
+  // repeated string stack_lines = 2;
+  int stack_lines_size() const;
+  void clear_stack_lines();
+  static const int kStackLinesFieldNumber = 2;
+  const ::std::string& stack_lines(int index) const;
+  ::std::string* mutable_stack_lines(int index);
+  void set_stack_lines(int index, const ::std::string& value);
+  #if LANG_CXX11
+  void set_stack_lines(int index, ::std::string&& value);
+  #endif
+  void set_stack_lines(int index, const char* value);
+  void set_stack_lines(int index, const char* value, size_t size);
+  ::std::string* add_stack_lines();
+  void add_stack_lines(const ::std::string& value);
+  #if LANG_CXX11
+  void add_stack_lines(::std::string&& value);
+  #endif
+  void add_stack_lines(const char* value);
+  void add_stack_lines(const char* value, size_t size);
+  const ::google::protobuf::RepeatedPtrField< ::std::string>& stack_lines() const;
+  ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_stack_lines();
+
+  // repeated string stack_filenames = 3;
+  int stack_filenames_size() const;
+  void clear_stack_filenames();
+  static const int kStackFilenamesFieldNumber = 3;
+  const ::std::string& stack_filenames(int index) const;
+  ::std::string* mutable_stack_filenames(int index);
+  void set_stack_filenames(int index, const ::std::string& value);
+  #if LANG_CXX11
+  void set_stack_filenames(int index, ::std::string&& value);
+  #endif
+  void set_stack_filenames(int index, const char* value);
+  void set_stack_filenames(int index, const char* value, size_t size);
+  ::std::string* add_stack_filenames();
+  void add_stack_filenames(const ::std::string& value);
+  #if LANG_CXX11
+  void add_stack_filenames(::std::string&& value);
+  #endif
+  void add_stack_filenames(const char* value);
+  void add_stack_filenames(const char* value, size_t size);
+  const ::google::protobuf::RepeatedPtrField< ::std::string>& stack_filenames() const;
+  ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_stack_filenames();
+
+  // repeated int32 stack_linenos = 4;
+  int stack_linenos_size() const;
+  void clear_stack_linenos();
+  static const int kStackLinenosFieldNumber = 4;
+  ::google::protobuf::int32 stack_linenos(int index) const;
+  void set_stack_linenos(int index, ::google::protobuf::int32 value);
+  void add_stack_linenos(::google::protobuf::int32 value);
+  const ::google::protobuf::RepeatedField< ::google::protobuf::int32 >&
+      stack_linenos() const;
+  ::google::protobuf::RepeatedField< ::google::protobuf::int32 >*
+      mutable_stack_linenos();
+
+  // @@protoc_insertion_point(class_scope:tensorflow.TensorTracerReport.TracedTensorDef.Stack)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::RepeatedPtrField< ::std::string> stack_fn_names_;
+  ::google::protobuf::RepeatedPtrField< ::std::string> stack_lines_;
+  ::google::protobuf::RepeatedPtrField< ::std::string> stack_filenames_;
+  ::google::protobuf::RepeatedField< ::google::protobuf::int32 > stack_linenos_;
+  mutable int _stack_linenos_cached_byte_size_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fpython_2ftpu_2ftensor_5ftracer_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
 class TensorTracerReport_TracedTensorDef : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.TensorTracerReport.TracedTensorDef) */ {
  public:
   TensorTracerReport_TracedTensorDef();
@@ -345,7 +528,7 @@ class TensorTracerReport_TracedTensorDef : public ::google::protobuf::Message /*
                &_TensorTracerReport_TracedTensorDef_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    2;
+    3;
 
   void Swap(TensorTracerReport_TracedTensorDef* other);
   friend void swap(TensorTracerReport_TracedTensorDef& a, TensorTracerReport_TracedTensorDef& b) {
@@ -395,6 +578,8 @@ class TensorTracerReport_TracedTensorDef : public ::google::protobuf::Message /*
 
   // nested types ----------------------------------------------------
 
+  typedef TensorTracerReport_TracedTensorDef_Stack Stack;
+
   // accessors -------------------------------------------------------
 
   // string name = 1;
@@ -439,6 +624,18 @@ class TensorTracerReport_TracedTensorDef : public ::google::protobuf::Message /*
   ::std::string* release_explanation();
   void set_allocated_explanation(::std::string* explanation);
 
+  // .tensorflow.TensorTracerReport.TracedTensorDef.Stack op_stack_info = 6;
+  bool has_op_stack_info() const;
+  void clear_op_stack_info();
+  static const int kOpStackInfoFieldNumber = 6;
+  private:
+  const ::tensorflow::TensorTracerReport_TracedTensorDef_Stack& _internal_op_stack_info() const;
+  public:
+  const ::tensorflow::TensorTracerReport_TracedTensorDef_Stack& op_stack_info() const;
+  ::tensorflow::TensorTracerReport_TracedTensorDef_Stack* release_op_stack_info();
+  ::tensorflow::TensorTracerReport_TracedTensorDef_Stack* mutable_op_stack_info();
+  void set_allocated_op_stack_info(::tensorflow::TensorTracerReport_TracedTensorDef_Stack* op_stack_info);
+
   // int32 cache_index = 2;
   void clear_cache_index();
   static const int kCacheIndexFieldNumber = 2;
@@ -458,6 +655,7 @@ class TensorTracerReport_TracedTensorDef : public ::google::protobuf::Message /*
   ::google::protobuf::internal::ArenaStringPtr name_;
   ::google::protobuf::internal::ArenaStringPtr trace_point_name_;
   ::google::protobuf::internal::ArenaStringPtr explanation_;
+  ::tensorflow::TensorTracerReport_TracedTensorDef_Stack* op_stack_info_;
   ::google::protobuf::int32 cache_index_;
   bool is_traced_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
@@ -500,7 +698,7 @@ class TensorTracerReport : public ::google::protobuf::Message /* @@protoc_insert
                &_TensorTracerReport_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    3;
+    4;
 
   void Swap(TensorTracerReport* other);
   friend void swap(TensorTracerReport& a, TensorTracerReport& b) {
@@ -564,6 +762,56 @@ class TensorTracerReport : public ::google::protobuf::Message /* @@protoc_insert
   ::google::protobuf::Map< ::std::string, ::tensorflow::TensorTracerReport_TracedTensorDef >*
       mutable_tensordef();
 
+  // repeated string outputs = 7;
+  int outputs_size() const;
+  void clear_outputs();
+  static const int kOutputsFieldNumber = 7;
+  const ::std::string& outputs(int index) const;
+  ::std::string* mutable_outputs(int index);
+  void set_outputs(int index, const ::std::string& value);
+  #if LANG_CXX11
+  void set_outputs(int index, ::std::string&& value);
+  #endif
+  void set_outputs(int index, const char* value);
+  void set_outputs(int index, const char* value, size_t size);
+  ::std::string* add_outputs();
+  void add_outputs(const ::std::string& value);
+  #if LANG_CXX11
+  void add_outputs(::std::string&& value);
+  #endif
+  void add_outputs(const char* value);
+  void add_outputs(const char* value, size_t size);
+  const ::google::protobuf::RepeatedPtrField< ::std::string>& outputs() const;
+  ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_outputs();
+
+  // string fingerprint = 4;
+  void clear_fingerprint();
+  static const int kFingerprintFieldNumber = 4;
+  const ::std::string& fingerprint() const;
+  void set_fingerprint(const ::std::string& value);
+  #if LANG_CXX11
+  void set_fingerprint(::std::string&& value);
+  #endif
+  void set_fingerprint(const char* value);
+  void set_fingerprint(const char* value, size_t size);
+  ::std::string* mutable_fingerprint();
+  ::std::string* release_fingerprint();
+  void set_allocated_fingerprint(::std::string* fingerprint);
+
+  // string concrete_function_name = 5;
+  void clear_concrete_function_name();
+  static const int kConcreteFunctionNameFieldNumber = 5;
+  const ::std::string& concrete_function_name() const;
+  void set_concrete_function_name(const ::std::string& value);
+  #if LANG_CXX11
+  void set_concrete_function_name(::std::string&& value);
+  #endif
+  void set_concrete_function_name(const char* value);
+  void set_concrete_function_name(const char* value, size_t size);
+  ::std::string* mutable_concrete_function_name();
+  ::std::string* release_concrete_function_name();
+  void set_allocated_concrete_function_name(::std::string* concrete_function_name);
+
   // .tensorflow.TensorTracerReport.TensorTracerConfig config = 1;
   bool has_config() const;
   void clear_config();
@@ -588,6 +836,12 @@ class TensorTracerReport : public ::google::protobuf::Message /* @@protoc_insert
   ::tensorflow::GraphDef* mutable_graphdef();
   void set_allocated_graphdef(::tensorflow::GraphDef* graphdef);
 
+  // int32 last_common_frame_no = 6;
+  void clear_last_common_frame_no();
+  static const int kLastCommonFrameNoFieldNumber = 6;
+  ::google::protobuf::int32 last_common_frame_no() const;
+  void set_last_common_frame_no(::google::protobuf::int32 value);
+
   // @@protoc_insertion_point(class_scope:tensorflow.TensorTracerReport)
  private:
 
@@ -598,8 +852,12 @@ class TensorTracerReport : public ::google::protobuf::Message /* @@protoc_insert
       ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
       ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE,
       0 > tensordef_;
+  ::google::protobuf::RepeatedPtrField< ::std::string> outputs_;
+  ::google::protobuf::internal::ArenaStringPtr fingerprint_;
+  ::google::protobuf::internal::ArenaStringPtr concrete_function_name_;
   ::tensorflow::TensorTracerReport_TensorTracerConfig* config_;
   ::tensorflow::GraphDef* graphdef_;
+  ::google::protobuf::int32 last_common_frame_no_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fpython_2ftpu_2ftensor_5ftracer_2eproto::TableStruct;
 };
@@ -971,6 +1229,247 @@ TensorTracerReport_TensorTracerConfig::mutable_signatures() {
 
 // -------------------------------------------------------------------
 
+// TensorTracerReport_TracedTensorDef_Stack
+
+// repeated string stack_fn_names = 1;
+inline int TensorTracerReport_TracedTensorDef_Stack::stack_fn_names_size() const {
+  return stack_fn_names_.size();
+}
+inline void TensorTracerReport_TracedTensorDef_Stack::clear_stack_fn_names() {
+  stack_fn_names_.Clear();
+}
+inline const ::std::string& TensorTracerReport_TracedTensorDef_Stack::stack_fn_names(int index) const {
+  // @@protoc_insertion_point(field_get:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_fn_names)
+  return stack_fn_names_.Get(index);
+}
+inline ::std::string* TensorTracerReport_TracedTensorDef_Stack::mutable_stack_fn_names(int index) {
+  // @@protoc_insertion_point(field_mutable:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_fn_names)
+  return stack_fn_names_.Mutable(index);
+}
+inline void TensorTracerReport_TracedTensorDef_Stack::set_stack_fn_names(int index, const ::std::string& value) {
+  // @@protoc_insertion_point(field_set:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_fn_names)
+  stack_fn_names_.Mutable(index)->assign(value);
+}
+#if LANG_CXX11
+inline void TensorTracerReport_TracedTensorDef_Stack::set_stack_fn_names(int index, ::std::string&& value) {
+  // @@protoc_insertion_point(field_set:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_fn_names)
+  stack_fn_names_.Mutable(index)->assign(std::move(value));
+}
+#endif
+inline void TensorTracerReport_TracedTensorDef_Stack::set_stack_fn_names(int index, const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  stack_fn_names_.Mutable(index)->assign(value);
+  // @@protoc_insertion_point(field_set_char:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_fn_names)
+}
+inline void TensorTracerReport_TracedTensorDef_Stack::set_stack_fn_names(int index, const char* value, size_t size) {
+  stack_fn_names_.Mutable(index)->assign(
+    reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_set_pointer:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_fn_names)
+}
+inline ::std::string* TensorTracerReport_TracedTensorDef_Stack::add_stack_fn_names() {
+  // @@protoc_insertion_point(field_add_mutable:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_fn_names)
+  return stack_fn_names_.Add();
+}
+inline void TensorTracerReport_TracedTensorDef_Stack::add_stack_fn_names(const ::std::string& value) {
+  stack_fn_names_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_fn_names)
+}
+#if LANG_CXX11
+inline void TensorTracerReport_TracedTensorDef_Stack::add_stack_fn_names(::std::string&& value) {
+  stack_fn_names_.Add(std::move(value));
+  // @@protoc_insertion_point(field_add:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_fn_names)
+}
+#endif
+inline void TensorTracerReport_TracedTensorDef_Stack::add_stack_fn_names(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  stack_fn_names_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add_char:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_fn_names)
+}
+inline void TensorTracerReport_TracedTensorDef_Stack::add_stack_fn_names(const char* value, size_t size) {
+  stack_fn_names_.Add()->assign(reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_add_pointer:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_fn_names)
+}
+inline const ::google::protobuf::RepeatedPtrField< ::std::string>&
+TensorTracerReport_TracedTensorDef_Stack::stack_fn_names() const {
+  // @@protoc_insertion_point(field_list:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_fn_names)
+  return stack_fn_names_;
+}
+inline ::google::protobuf::RepeatedPtrField< ::std::string>*
+TensorTracerReport_TracedTensorDef_Stack::mutable_stack_fn_names() {
+  // @@protoc_insertion_point(field_mutable_list:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_fn_names)
+  return &stack_fn_names_;
+}
+
+// repeated string stack_lines = 2;
+inline int TensorTracerReport_TracedTensorDef_Stack::stack_lines_size() const {
+  return stack_lines_.size();
+}
+inline void TensorTracerReport_TracedTensorDef_Stack::clear_stack_lines() {
+  stack_lines_.Clear();
+}
+inline const ::std::string& TensorTracerReport_TracedTensorDef_Stack::stack_lines(int index) const {
+  // @@protoc_insertion_point(field_get:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_lines)
+  return stack_lines_.Get(index);
+}
+inline ::std::string* TensorTracerReport_TracedTensorDef_Stack::mutable_stack_lines(int index) {
+  // @@protoc_insertion_point(field_mutable:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_lines)
+  return stack_lines_.Mutable(index);
+}
+inline void TensorTracerReport_TracedTensorDef_Stack::set_stack_lines(int index, const ::std::string& value) {
+  // @@protoc_insertion_point(field_set:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_lines)
+  stack_lines_.Mutable(index)->assign(value);
+}
+#if LANG_CXX11
+inline void TensorTracerReport_TracedTensorDef_Stack::set_stack_lines(int index, ::std::string&& value) {
+  // @@protoc_insertion_point(field_set:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_lines)
+  stack_lines_.Mutable(index)->assign(std::move(value));
+}
+#endif
+inline void TensorTracerReport_TracedTensorDef_Stack::set_stack_lines(int index, const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  stack_lines_.Mutable(index)->assign(value);
+  // @@protoc_insertion_point(field_set_char:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_lines)
+}
+inline void TensorTracerReport_TracedTensorDef_Stack::set_stack_lines(int index, const char* value, size_t size) {
+  stack_lines_.Mutable(index)->assign(
+    reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_set_pointer:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_lines)
+}
+inline ::std::string* TensorTracerReport_TracedTensorDef_Stack::add_stack_lines() {
+  // @@protoc_insertion_point(field_add_mutable:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_lines)
+  return stack_lines_.Add();
+}
+inline void TensorTracerReport_TracedTensorDef_Stack::add_stack_lines(const ::std::string& value) {
+  stack_lines_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_lines)
+}
+#if LANG_CXX11
+inline void TensorTracerReport_TracedTensorDef_Stack::add_stack_lines(::std::string&& value) {
+  stack_lines_.Add(std::move(value));
+  // @@protoc_insertion_point(field_add:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_lines)
+}
+#endif
+inline void TensorTracerReport_TracedTensorDef_Stack::add_stack_lines(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  stack_lines_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add_char:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_lines)
+}
+inline void TensorTracerReport_TracedTensorDef_Stack::add_stack_lines(const char* value, size_t size) {
+  stack_lines_.Add()->assign(reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_add_pointer:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_lines)
+}
+inline const ::google::protobuf::RepeatedPtrField< ::std::string>&
+TensorTracerReport_TracedTensorDef_Stack::stack_lines() const {
+  // @@protoc_insertion_point(field_list:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_lines)
+  return stack_lines_;
+}
+inline ::google::protobuf::RepeatedPtrField< ::std::string>*
+TensorTracerReport_TracedTensorDef_Stack::mutable_stack_lines() {
+  // @@protoc_insertion_point(field_mutable_list:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_lines)
+  return &stack_lines_;
+}
+
+// repeated string stack_filenames = 3;
+inline int TensorTracerReport_TracedTensorDef_Stack::stack_filenames_size() const {
+  return stack_filenames_.size();
+}
+inline void TensorTracerReport_TracedTensorDef_Stack::clear_stack_filenames() {
+  stack_filenames_.Clear();
+}
+inline const ::std::string& TensorTracerReport_TracedTensorDef_Stack::stack_filenames(int index) const {
+  // @@protoc_insertion_point(field_get:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_filenames)
+  return stack_filenames_.Get(index);
+}
+inline ::std::string* TensorTracerReport_TracedTensorDef_Stack::mutable_stack_filenames(int index) {
+  // @@protoc_insertion_point(field_mutable:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_filenames)
+  return stack_filenames_.Mutable(index);
+}
+inline void TensorTracerReport_TracedTensorDef_Stack::set_stack_filenames(int index, const ::std::string& value) {
+  // @@protoc_insertion_point(field_set:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_filenames)
+  stack_filenames_.Mutable(index)->assign(value);
+}
+#if LANG_CXX11
+inline void TensorTracerReport_TracedTensorDef_Stack::set_stack_filenames(int index, ::std::string&& value) {
+  // @@protoc_insertion_point(field_set:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_filenames)
+  stack_filenames_.Mutable(index)->assign(std::move(value));
+}
+#endif
+inline void TensorTracerReport_TracedTensorDef_Stack::set_stack_filenames(int index, const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  stack_filenames_.Mutable(index)->assign(value);
+  // @@protoc_insertion_point(field_set_char:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_filenames)
+}
+inline void TensorTracerReport_TracedTensorDef_Stack::set_stack_filenames(int index, const char* value, size_t size) {
+  stack_filenames_.Mutable(index)->assign(
+    reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_set_pointer:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_filenames)
+}
+inline ::std::string* TensorTracerReport_TracedTensorDef_Stack::add_stack_filenames() {
+  // @@protoc_insertion_point(field_add_mutable:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_filenames)
+  return stack_filenames_.Add();
+}
+inline void TensorTracerReport_TracedTensorDef_Stack::add_stack_filenames(const ::std::string& value) {
+  stack_filenames_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_filenames)
+}
+#if LANG_CXX11
+inline void TensorTracerReport_TracedTensorDef_Stack::add_stack_filenames(::std::string&& value) {
+  stack_filenames_.Add(std::move(value));
+  // @@protoc_insertion_point(field_add:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_filenames)
+}
+#endif
+inline void TensorTracerReport_TracedTensorDef_Stack::add_stack_filenames(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  stack_filenames_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add_char:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_filenames)
+}
+inline void TensorTracerReport_TracedTensorDef_Stack::add_stack_filenames(const char* value, size_t size) {
+  stack_filenames_.Add()->assign(reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_add_pointer:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_filenames)
+}
+inline const ::google::protobuf::RepeatedPtrField< ::std::string>&
+TensorTracerReport_TracedTensorDef_Stack::stack_filenames() const {
+  // @@protoc_insertion_point(field_list:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_filenames)
+  return stack_filenames_;
+}
+inline ::google::protobuf::RepeatedPtrField< ::std::string>*
+TensorTracerReport_TracedTensorDef_Stack::mutable_stack_filenames() {
+  // @@protoc_insertion_point(field_mutable_list:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_filenames)
+  return &stack_filenames_;
+}
+
+// repeated int32 stack_linenos = 4;
+inline int TensorTracerReport_TracedTensorDef_Stack::stack_linenos_size() const {
+  return stack_linenos_.size();
+}
+inline void TensorTracerReport_TracedTensorDef_Stack::clear_stack_linenos() {
+  stack_linenos_.Clear();
+}
+inline ::google::protobuf::int32 TensorTracerReport_TracedTensorDef_Stack::stack_linenos(int index) const {
+  // @@protoc_insertion_point(field_get:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_linenos)
+  return stack_linenos_.Get(index);
+}
+inline void TensorTracerReport_TracedTensorDef_Stack::set_stack_linenos(int index, ::google::protobuf::int32 value) {
+  stack_linenos_.Set(index, value);
+  // @@protoc_insertion_point(field_set:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_linenos)
+}
+inline void TensorTracerReport_TracedTensorDef_Stack::add_stack_linenos(::google::protobuf::int32 value) {
+  stack_linenos_.Add(value);
+  // @@protoc_insertion_point(field_add:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_linenos)
+}
+inline const ::google::protobuf::RepeatedField< ::google::protobuf::int32 >&
+TensorTracerReport_TracedTensorDef_Stack::stack_linenos() const {
+  // @@protoc_insertion_point(field_list:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_linenos)
+  return stack_linenos_;
+}
+inline ::google::protobuf::RepeatedField< ::google::protobuf::int32 >*
+TensorTracerReport_TracedTensorDef_Stack::mutable_stack_linenos() {
+  // @@protoc_insertion_point(field_mutable_list:tensorflow.TensorTracerReport.TracedTensorDef.Stack.stack_linenos)
+  return &stack_linenos_;
+}
+
+// -------------------------------------------------------------------
+
 // TensorTracerReport_TracedTensorDef
 
 // string name = 1;
@@ -1160,6 +1659,60 @@ inline void TensorTracerReport_TracedTensorDef::set_allocated_explanation(::std:
   // @@protoc_insertion_point(field_set_allocated:tensorflow.TensorTracerReport.TracedTensorDef.explanation)
 }
 
+// .tensorflow.TensorTracerReport.TracedTensorDef.Stack op_stack_info = 6;
+inline bool TensorTracerReport_TracedTensorDef::has_op_stack_info() const {
+  return this != internal_default_instance() && op_stack_info_ != NULL;
+}
+inline void TensorTracerReport_TracedTensorDef::clear_op_stack_info() {
+  if (GetArenaNoVirtual() == NULL && op_stack_info_ != NULL) {
+    delete op_stack_info_;
+  }
+  op_stack_info_ = NULL;
+}
+inline const ::tensorflow::TensorTracerReport_TracedTensorDef_Stack& TensorTracerReport_TracedTensorDef::_internal_op_stack_info() const {
+  return *op_stack_info_;
+}
+inline const ::tensorflow::TensorTracerReport_TracedTensorDef_Stack& TensorTracerReport_TracedTensorDef::op_stack_info() const {
+  const ::tensorflow::TensorTracerReport_TracedTensorDef_Stack* p = op_stack_info_;
+  // @@protoc_insertion_point(field_get:tensorflow.TensorTracerReport.TracedTensorDef.op_stack_info)
+  return p != NULL ? *p : *reinterpret_cast<const ::tensorflow::TensorTracerReport_TracedTensorDef_Stack*>(
+      &::tensorflow::_TensorTracerReport_TracedTensorDef_Stack_default_instance_);
+}
+inline ::tensorflow::TensorTracerReport_TracedTensorDef_Stack* TensorTracerReport_TracedTensorDef::release_op_stack_info() {
+  // @@protoc_insertion_point(field_release:tensorflow.TensorTracerReport.TracedTensorDef.op_stack_info)
+  
+  ::tensorflow::TensorTracerReport_TracedTensorDef_Stack* temp = op_stack_info_;
+  op_stack_info_ = NULL;
+  return temp;
+}
+inline ::tensorflow::TensorTracerReport_TracedTensorDef_Stack* TensorTracerReport_TracedTensorDef::mutable_op_stack_info() {
+  
+  if (op_stack_info_ == NULL) {
+    auto* p = CreateMaybeMessage<::tensorflow::TensorTracerReport_TracedTensorDef_Stack>(GetArenaNoVirtual());
+    op_stack_info_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:tensorflow.TensorTracerReport.TracedTensorDef.op_stack_info)
+  return op_stack_info_;
+}
+inline void TensorTracerReport_TracedTensorDef::set_allocated_op_stack_info(::tensorflow::TensorTracerReport_TracedTensorDef_Stack* op_stack_info) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete op_stack_info_;
+  }
+  if (op_stack_info) {
+    ::google::protobuf::Arena* submessage_arena = NULL;
+    if (message_arena != submessage_arena) {
+      op_stack_info = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, op_stack_info, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  op_stack_info_ = op_stack_info;
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.TensorTracerReport.TracedTensorDef.op_stack_info)
+}
+
 // -------------------------------------------------------------------
 
 // TensorTracerReport
@@ -1285,9 +1838,200 @@ TensorTracerReport::mutable_tensordef() {
   return tensordef_.MutableMap();
 }
 
+// string fingerprint = 4;
+inline void TensorTracerReport::clear_fingerprint() {
+  fingerprint_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline const ::std::string& TensorTracerReport::fingerprint() const {
+  // @@protoc_insertion_point(field_get:tensorflow.TensorTracerReport.fingerprint)
+  return fingerprint_.GetNoArena();
+}
+inline void TensorTracerReport::set_fingerprint(const ::std::string& value) {
+  
+  fingerprint_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:tensorflow.TensorTracerReport.fingerprint)
+}
+#if LANG_CXX11
+inline void TensorTracerReport::set_fingerprint(::std::string&& value) {
+  
+  fingerprint_.SetNoArena(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:tensorflow.TensorTracerReport.fingerprint)
+}
+#endif
+inline void TensorTracerReport::set_fingerprint(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  
+  fingerprint_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:tensorflow.TensorTracerReport.fingerprint)
+}
+inline void TensorTracerReport::set_fingerprint(const char* value, size_t size) {
+  
+  fingerprint_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:tensorflow.TensorTracerReport.fingerprint)
+}
+inline ::std::string* TensorTracerReport::mutable_fingerprint() {
+  
+  // @@protoc_insertion_point(field_mutable:tensorflow.TensorTracerReport.fingerprint)
+  return fingerprint_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* TensorTracerReport::release_fingerprint() {
+  // @@protoc_insertion_point(field_release:tensorflow.TensorTracerReport.fingerprint)
+  
+  return fingerprint_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void TensorTracerReport::set_allocated_fingerprint(::std::string* fingerprint) {
+  if (fingerprint != NULL) {
+    
+  } else {
+    
+  }
+  fingerprint_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), fingerprint);
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.TensorTracerReport.fingerprint)
+}
+
+// string concrete_function_name = 5;
+inline void TensorTracerReport::clear_concrete_function_name() {
+  concrete_function_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline const ::std::string& TensorTracerReport::concrete_function_name() const {
+  // @@protoc_insertion_point(field_get:tensorflow.TensorTracerReport.concrete_function_name)
+  return concrete_function_name_.GetNoArena();
+}
+inline void TensorTracerReport::set_concrete_function_name(const ::std::string& value) {
+  
+  concrete_function_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:tensorflow.TensorTracerReport.concrete_function_name)
+}
+#if LANG_CXX11
+inline void TensorTracerReport::set_concrete_function_name(::std::string&& value) {
+  
+  concrete_function_name_.SetNoArena(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:tensorflow.TensorTracerReport.concrete_function_name)
+}
+#endif
+inline void TensorTracerReport::set_concrete_function_name(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  
+  concrete_function_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:tensorflow.TensorTracerReport.concrete_function_name)
+}
+inline void TensorTracerReport::set_concrete_function_name(const char* value, size_t size) {
+  
+  concrete_function_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:tensorflow.TensorTracerReport.concrete_function_name)
+}
+inline ::std::string* TensorTracerReport::mutable_concrete_function_name() {
+  
+  // @@protoc_insertion_point(field_mutable:tensorflow.TensorTracerReport.concrete_function_name)
+  return concrete_function_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* TensorTracerReport::release_concrete_function_name() {
+  // @@protoc_insertion_point(field_release:tensorflow.TensorTracerReport.concrete_function_name)
+  
+  return concrete_function_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void TensorTracerReport::set_allocated_concrete_function_name(::std::string* concrete_function_name) {
+  if (concrete_function_name != NULL) {
+    
+  } else {
+    
+  }
+  concrete_function_name_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), concrete_function_name);
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.TensorTracerReport.concrete_function_name)
+}
+
+// int32 last_common_frame_no = 6;
+inline void TensorTracerReport::clear_last_common_frame_no() {
+  last_common_frame_no_ = 0;
+}
+inline ::google::protobuf::int32 TensorTracerReport::last_common_frame_no() const {
+  // @@protoc_insertion_point(field_get:tensorflow.TensorTracerReport.last_common_frame_no)
+  return last_common_frame_no_;
+}
+inline void TensorTracerReport::set_last_common_frame_no(::google::protobuf::int32 value) {
+  
+  last_common_frame_no_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.TensorTracerReport.last_common_frame_no)
+}
+
+// repeated string outputs = 7;
+inline int TensorTracerReport::outputs_size() const {
+  return outputs_.size();
+}
+inline void TensorTracerReport::clear_outputs() {
+  outputs_.Clear();
+}
+inline const ::std::string& TensorTracerReport::outputs(int index) const {
+  // @@protoc_insertion_point(field_get:tensorflow.TensorTracerReport.outputs)
+  return outputs_.Get(index);
+}
+inline ::std::string* TensorTracerReport::mutable_outputs(int index) {
+  // @@protoc_insertion_point(field_mutable:tensorflow.TensorTracerReport.outputs)
+  return outputs_.Mutable(index);
+}
+inline void TensorTracerReport::set_outputs(int index, const ::std::string& value) {
+  // @@protoc_insertion_point(field_set:tensorflow.TensorTracerReport.outputs)
+  outputs_.Mutable(index)->assign(value);
+}
+#if LANG_CXX11
+inline void TensorTracerReport::set_outputs(int index, ::std::string&& value) {
+  // @@protoc_insertion_point(field_set:tensorflow.TensorTracerReport.outputs)
+  outputs_.Mutable(index)->assign(std::move(value));
+}
+#endif
+inline void TensorTracerReport::set_outputs(int index, const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  outputs_.Mutable(index)->assign(value);
+  // @@protoc_insertion_point(field_set_char:tensorflow.TensorTracerReport.outputs)
+}
+inline void TensorTracerReport::set_outputs(int index, const char* value, size_t size) {
+  outputs_.Mutable(index)->assign(
+    reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_set_pointer:tensorflow.TensorTracerReport.outputs)
+}
+inline ::std::string* TensorTracerReport::add_outputs() {
+  // @@protoc_insertion_point(field_add_mutable:tensorflow.TensorTracerReport.outputs)
+  return outputs_.Add();
+}
+inline void TensorTracerReport::add_outputs(const ::std::string& value) {
+  outputs_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add:tensorflow.TensorTracerReport.outputs)
+}
+#if LANG_CXX11
+inline void TensorTracerReport::add_outputs(::std::string&& value) {
+  outputs_.Add(std::move(value));
+  // @@protoc_insertion_point(field_add:tensorflow.TensorTracerReport.outputs)
+}
+#endif
+inline void TensorTracerReport::add_outputs(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  outputs_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add_char:tensorflow.TensorTracerReport.outputs)
+}
+inline void TensorTracerReport::add_outputs(const char* value, size_t size) {
+  outputs_.Add()->assign(reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_add_pointer:tensorflow.TensorTracerReport.outputs)
+}
+inline const ::google::protobuf::RepeatedPtrField< ::std::string>&
+TensorTracerReport::outputs() const {
+  // @@protoc_insertion_point(field_list:tensorflow.TensorTracerReport.outputs)
+  return outputs_;
+}
+inline ::google::protobuf::RepeatedPtrField< ::std::string>*
+TensorTracerReport::mutable_outputs() {
+  // @@protoc_insertion_point(field_mutable_list:tensorflow.TensorTracerReport.outputs)
+  return &outputs_;
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

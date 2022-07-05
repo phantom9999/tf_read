@@ -31,6 +31,7 @@
 #include <google/protobuf/extension_set.h>  // IWYU pragma: export
 #include <google/protobuf/generated_enum_reflection.h>
 #include <google/protobuf/unknown_field_set.h>
+#include "tensorflow/lite/tools/evaluation/proto/preprocessing_steps.pb.h"
 // @@protoc_insertion_point(includes)
 #define PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2flite_2ftools_2fevaluation_2fproto_2fevaluation_5fstages_2eproto 
 
@@ -144,11 +145,13 @@ namespace evaluation {
 enum TfliteInferenceParams_Delegate {
   TfliteInferenceParams_Delegate_NONE = 0,
   TfliteInferenceParams_Delegate_NNAPI = 1,
-  TfliteInferenceParams_Delegate_GPU = 2
+  TfliteInferenceParams_Delegate_GPU = 2,
+  TfliteInferenceParams_Delegate_HEXAGON = 3,
+  TfliteInferenceParams_Delegate_XNNPACK = 4
 };
 bool TfliteInferenceParams_Delegate_IsValid(int value);
 const TfliteInferenceParams_Delegate TfliteInferenceParams_Delegate_Delegate_MIN = TfliteInferenceParams_Delegate_NONE;
-const TfliteInferenceParams_Delegate TfliteInferenceParams_Delegate_Delegate_MAX = TfliteInferenceParams_Delegate_GPU;
+const TfliteInferenceParams_Delegate TfliteInferenceParams_Delegate_Delegate_MAX = TfliteInferenceParams_Delegate_XNNPACK;
 const int TfliteInferenceParams_Delegate_Delegate_ARRAYSIZE = TfliteInferenceParams_Delegate_Delegate_MAX + 1;
 
 const ::google::protobuf::EnumDescriptor* TfliteInferenceParams_Delegate_descriptor();
@@ -1107,44 +1110,29 @@ class ImagePreprocessingParams : public ::google::protobuf::Message /* @@protoc_
 
   // accessors -------------------------------------------------------
 
-  // optional int32 image_height = 1;
-  bool has_image_height() const;
-  void clear_image_height();
-  static const int kImageHeightFieldNumber = 1;
-  ::google::protobuf::int32 image_height() const;
-  void set_image_height(::google::protobuf::int32 value);
+  // repeated .tflite.evaluation.ImagePreprocessingStepParams steps = 1;
+  int steps_size() const;
+  void clear_steps();
+  static const int kStepsFieldNumber = 1;
+  ::tflite::evaluation::ImagePreprocessingStepParams* mutable_steps(int index);
+  ::google::protobuf::RepeatedPtrField< ::tflite::evaluation::ImagePreprocessingStepParams >*
+      mutable_steps();
+  const ::tflite::evaluation::ImagePreprocessingStepParams& steps(int index) const;
+  ::tflite::evaluation::ImagePreprocessingStepParams* add_steps();
+  const ::google::protobuf::RepeatedPtrField< ::tflite::evaluation::ImagePreprocessingStepParams >&
+      steps() const;
 
-  // optional int32 image_width = 2;
-  bool has_image_width() const;
-  void clear_image_width();
-  static const int kImageWidthFieldNumber = 2;
-  ::google::protobuf::int32 image_width() const;
-  void set_image_width(::google::protobuf::int32 value);
-
-  // optional int32 output_type = 3;
+  // required int32 output_type = 2;
   bool has_output_type() const;
   void clear_output_type();
-  static const int kOutputTypeFieldNumber = 3;
+  static const int kOutputTypeFieldNumber = 2;
   ::google::protobuf::int32 output_type() const;
   void set_output_type(::google::protobuf::int32 value);
 
-  // optional float cropping_fraction = 4 [default = 0.875];
-  bool has_cropping_fraction() const;
-  void clear_cropping_fraction();
-  static const int kCroppingFractionFieldNumber = 4;
-  float cropping_fraction() const;
-  void set_cropping_fraction(float value);
-
   // @@protoc_insertion_point(class_scope:tflite.evaluation.ImagePreprocessingParams)
  private:
-  void set_has_image_height();
-  void clear_has_image_height();
-  void set_has_image_width();
-  void clear_has_image_width();
   void set_has_output_type();
   void clear_has_output_type();
-  void set_has_cropping_fraction();
-  void clear_has_cropping_fraction();
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
   template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
@@ -1152,10 +1140,8 @@ class ImagePreprocessingParams : public ::google::protobuf::Message /* @@protoc_
   typedef void DestructorSkippable_;
   ::google::protobuf::internal::HasBits<1> _has_bits_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
-  ::google::protobuf::int32 image_height_;
-  ::google::protobuf::int32 image_width_;
+  ::google::protobuf::RepeatedPtrField< ::tflite::evaluation::ImagePreprocessingStepParams > steps_;
   ::google::protobuf::int32 output_type_;
-  float cropping_fraction_;
   friend struct ::protobuf_tensorflow_2flite_2ftools_2fevaluation_2fproto_2fevaluation_5fstages_2eproto::TableStruct;
 };
 // -------------------------------------------------------------------
@@ -1271,6 +1257,10 @@ class TfliteInferenceParams : public ::google::protobuf::Message /* @@protoc_ins
     TfliteInferenceParams_Delegate_NNAPI;
   static const Delegate GPU =
     TfliteInferenceParams_Delegate_GPU;
+  static const Delegate HEXAGON =
+    TfliteInferenceParams_Delegate_HEXAGON;
+  static const Delegate XNNPACK =
+    TfliteInferenceParams_Delegate_XNNPACK;
   static inline bool Delegate_IsValid(int value) {
     return TfliteInferenceParams_Delegate_IsValid(value);
   }
@@ -2730,10 +2720,19 @@ class ObjectDetectionResult : public ::google::protobuf::Message /* @@protoc_ins
   void unsafe_arena_set_allocated_image_name(
       ::std::string* image_name);
 
+  // optional int64 image_id = 3;
+  bool has_image_id() const;
+  void clear_image_id();
+  static const int kImageIdFieldNumber = 3;
+  ::google::protobuf::int64 image_id() const;
+  void set_image_id(::google::protobuf::int64 value);
+
   // @@protoc_insertion_point(class_scope:tflite.evaluation.ObjectDetectionResult)
  private:
   void set_has_image_name();
   void clear_has_image_name();
+  void set_has_image_id();
+  void clear_has_image_id();
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
   template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
@@ -2743,6 +2742,7 @@ class ObjectDetectionResult : public ::google::protobuf::Message /* @@protoc_ins
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   ::google::protobuf::RepeatedPtrField< ::tflite::evaluation::ObjectDetectionResult_ObjectInstance > objects_;
   ::google::protobuf::internal::ArenaStringPtr image_name_;
+  ::google::protobuf::int64 image_id_;
   friend struct ::protobuf_tensorflow_2flite_2ftools_2fevaluation_2fproto_2fevaluation_5fstages_2eproto::TableStruct;
 };
 // -------------------------------------------------------------------
@@ -4838,63 +4838,42 @@ inline ProcessMetrics::StageMetricsCase ProcessMetrics::stage_metrics_case() con
 
 // ImagePreprocessingParams
 
-// optional int32 image_height = 1;
-inline bool ImagePreprocessingParams::has_image_height() const {
+// repeated .tflite.evaluation.ImagePreprocessingStepParams steps = 1;
+inline int ImagePreprocessingParams::steps_size() const {
+  return steps_.size();
+}
+inline ::tflite::evaluation::ImagePreprocessingStepParams* ImagePreprocessingParams::mutable_steps(int index) {
+  // @@protoc_insertion_point(field_mutable:tflite.evaluation.ImagePreprocessingParams.steps)
+  return steps_.Mutable(index);
+}
+inline ::google::protobuf::RepeatedPtrField< ::tflite::evaluation::ImagePreprocessingStepParams >*
+ImagePreprocessingParams::mutable_steps() {
+  // @@protoc_insertion_point(field_mutable_list:tflite.evaluation.ImagePreprocessingParams.steps)
+  return &steps_;
+}
+inline const ::tflite::evaluation::ImagePreprocessingStepParams& ImagePreprocessingParams::steps(int index) const {
+  // @@protoc_insertion_point(field_get:tflite.evaluation.ImagePreprocessingParams.steps)
+  return steps_.Get(index);
+}
+inline ::tflite::evaluation::ImagePreprocessingStepParams* ImagePreprocessingParams::add_steps() {
+  // @@protoc_insertion_point(field_add:tflite.evaluation.ImagePreprocessingParams.steps)
+  return steps_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::tflite::evaluation::ImagePreprocessingStepParams >&
+ImagePreprocessingParams::steps() const {
+  // @@protoc_insertion_point(field_list:tflite.evaluation.ImagePreprocessingParams.steps)
+  return steps_;
+}
+
+// required int32 output_type = 2;
+inline bool ImagePreprocessingParams::has_output_type() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
-inline void ImagePreprocessingParams::set_has_image_height() {
+inline void ImagePreprocessingParams::set_has_output_type() {
   _has_bits_[0] |= 0x00000001u;
 }
-inline void ImagePreprocessingParams::clear_has_image_height() {
-  _has_bits_[0] &= ~0x00000001u;
-}
-inline void ImagePreprocessingParams::clear_image_height() {
-  image_height_ = 0;
-  clear_has_image_height();
-}
-inline ::google::protobuf::int32 ImagePreprocessingParams::image_height() const {
-  // @@protoc_insertion_point(field_get:tflite.evaluation.ImagePreprocessingParams.image_height)
-  return image_height_;
-}
-inline void ImagePreprocessingParams::set_image_height(::google::protobuf::int32 value) {
-  set_has_image_height();
-  image_height_ = value;
-  // @@protoc_insertion_point(field_set:tflite.evaluation.ImagePreprocessingParams.image_height)
-}
-
-// optional int32 image_width = 2;
-inline bool ImagePreprocessingParams::has_image_width() const {
-  return (_has_bits_[0] & 0x00000002u) != 0;
-}
-inline void ImagePreprocessingParams::set_has_image_width() {
-  _has_bits_[0] |= 0x00000002u;
-}
-inline void ImagePreprocessingParams::clear_has_image_width() {
-  _has_bits_[0] &= ~0x00000002u;
-}
-inline void ImagePreprocessingParams::clear_image_width() {
-  image_width_ = 0;
-  clear_has_image_width();
-}
-inline ::google::protobuf::int32 ImagePreprocessingParams::image_width() const {
-  // @@protoc_insertion_point(field_get:tflite.evaluation.ImagePreprocessingParams.image_width)
-  return image_width_;
-}
-inline void ImagePreprocessingParams::set_image_width(::google::protobuf::int32 value) {
-  set_has_image_width();
-  image_width_ = value;
-  // @@protoc_insertion_point(field_set:tflite.evaluation.ImagePreprocessingParams.image_width)
-}
-
-// optional int32 output_type = 3;
-inline bool ImagePreprocessingParams::has_output_type() const {
-  return (_has_bits_[0] & 0x00000004u) != 0;
-}
-inline void ImagePreprocessingParams::set_has_output_type() {
-  _has_bits_[0] |= 0x00000004u;
-}
 inline void ImagePreprocessingParams::clear_has_output_type() {
-  _has_bits_[0] &= ~0x00000004u;
+  _has_bits_[0] &= ~0x00000001u;
 }
 inline void ImagePreprocessingParams::clear_output_type() {
   output_type_ = 0;
@@ -4908,30 +4887,6 @@ inline void ImagePreprocessingParams::set_output_type(::google::protobuf::int32 
   set_has_output_type();
   output_type_ = value;
   // @@protoc_insertion_point(field_set:tflite.evaluation.ImagePreprocessingParams.output_type)
-}
-
-// optional float cropping_fraction = 4 [default = 0.875];
-inline bool ImagePreprocessingParams::has_cropping_fraction() const {
-  return (_has_bits_[0] & 0x00000008u) != 0;
-}
-inline void ImagePreprocessingParams::set_has_cropping_fraction() {
-  _has_bits_[0] |= 0x00000008u;
-}
-inline void ImagePreprocessingParams::clear_has_cropping_fraction() {
-  _has_bits_[0] &= ~0x00000008u;
-}
-inline void ImagePreprocessingParams::clear_cropping_fraction() {
-  cropping_fraction_ = 0.875f;
-  clear_has_cropping_fraction();
-}
-inline float ImagePreprocessingParams::cropping_fraction() const {
-  // @@protoc_insertion_point(field_get:tflite.evaluation.ImagePreprocessingParams.cropping_fraction)
-  return cropping_fraction_;
-}
-inline void ImagePreprocessingParams::set_cropping_fraction(float value) {
-  set_has_cropping_fraction();
-  cropping_fraction_ = value;
-  // @@protoc_insertion_point(field_set:tflite.evaluation.ImagePreprocessingParams.cropping_fraction)
 }
 
 // -------------------------------------------------------------------
@@ -6124,6 +6079,30 @@ inline void ObjectDetectionResult::unsafe_arena_set_allocated_image_name(
   image_name_.UnsafeArenaSetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       image_name, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tflite.evaluation.ObjectDetectionResult.image_name)
+}
+
+// optional int64 image_id = 3;
+inline bool ObjectDetectionResult::has_image_id() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void ObjectDetectionResult::set_has_image_id() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void ObjectDetectionResult::clear_has_image_id() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void ObjectDetectionResult::clear_image_id() {
+  image_id_ = GOOGLE_LONGLONG(0);
+  clear_has_image_id();
+}
+inline ::google::protobuf::int64 ObjectDetectionResult::image_id() const {
+  // @@protoc_insertion_point(field_get:tflite.evaluation.ObjectDetectionResult.image_id)
+  return image_id_;
+}
+inline void ObjectDetectionResult::set_image_id(::google::protobuf::int64 value) {
+  set_has_image_id();
+  image_id_ = value;
+  // @@protoc_insertion_point(field_set:tflite.evaluation.ObjectDetectionResult.image_id)
 }
 
 // -------------------------------------------------------------------

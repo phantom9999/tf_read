@@ -21,16 +21,22 @@
 
 namespace protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto {
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_BufferAllocationProto_Assigned;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CrossProgramPrefetch;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_DynamicParameterBindingProto_Binding;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EntryFunctionAttributes_ShapeIndex;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_HeapSimulatorTrace_Event;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_HloInputOutputAliasProto_AliasEntryProto;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_HloInstructionProto_SliceDimensions;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_HloModuleProto_ProfileInfo;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_HloPassMetadata;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_HloScheduleProto_InstructionSequence;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_LogicalBufferProto_Location;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto ::google::protobuf::internal::SCCInfo<17> scc_info_HloInstructionProto;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto ::google::protobuf::internal::SCCInfo<19> scc_info_HloInstructionProto;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_BufferAllocationProto;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_BufferAssignmentProto_BufferAlias;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_DynamicParameterBindingProto;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_EntryFunctionAttributes;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_EntryFunctionAttributes_BufferParameterAttributes;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_HeapSimulatorTrace;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_HloInputOutputAliasProto;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_HloScheduleProto;
@@ -39,26 +45,28 @@ extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fservice_2
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_HloComputationProto;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_HloProto;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto ::google::protobuf::internal::SCCInfo<4> scc_info_BufferAssignmentProto;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto ::google::protobuf::internal::SCCInfo<5> scc_info_HloModuleProto;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto ::google::protobuf::internal::SCCInfo<8> scc_info_HloModuleProto;
 }  // namespace protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto
 namespace protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto {
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CholeskyOptions;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ConvolutionDimensionNumbers;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CustomCallOutputOperandAliasing;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_DotDimensionNumbers;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_GatherDimensionNumbers;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_OpMetadata;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ParameterReplication;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_PrecisionConfig;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ReplicaGroup;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ScatterDimensionNumbers;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_SourceTarget;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TriangularSolveOptions;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_FrontendAttributes;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_LiteralProto;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_OpSharding;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_OpMetadata;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_PaddingConfig;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_ProgramShapeProto;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_ShapeProto;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_Window;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_OpSharding;
 }  // namespace protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto
 namespace xla {
 class HloInstructionProto_SliceDimensionsDefaultTypeInternal {
@@ -111,6 +119,16 @@ class DynamicParameterBindingProtoDefaultTypeInternal {
   ::google::protobuf::internal::ExplicitlyConstructed<DynamicParameterBindingProto>
       _instance;
 } _DynamicParameterBindingProto_default_instance_;
+class CrossProgramPrefetchDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<CrossProgramPrefetch>
+      _instance;
+} _CrossProgramPrefetch_default_instance_;
+class HloModuleProto_ProfileInfoDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<HloModuleProto_ProfileInfo>
+      _instance;
+} _HloModuleProto_ProfileInfo_default_instance_;
 class HloModuleProtoDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<HloModuleProto>
@@ -171,6 +189,36 @@ class HloSnapshotDefaultTypeInternal {
   ::google::protobuf::internal::ExplicitlyConstructed<HloSnapshot>
       _instance;
 } _HloSnapshot_default_instance_;
+class HloModuleMetadataProtoDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<HloModuleMetadataProto>
+      _instance;
+} _HloModuleMetadataProto_default_instance_;
+class HloPassMetadataDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<HloPassMetadata>
+      _instance;
+} _HloPassMetadata_default_instance_;
+class EntryFunctionAttributes_ShapeIndexDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<EntryFunctionAttributes_ShapeIndex>
+      _instance;
+} _EntryFunctionAttributes_ShapeIndex_default_instance_;
+class EntryFunctionAttributes_BufferParameterAttributesDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<EntryFunctionAttributes_BufferParameterAttributes>
+      _instance;
+} _EntryFunctionAttributes_BufferParameterAttributes_default_instance_;
+class EntryFunctionAttributesDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<EntryFunctionAttributes>
+      _instance;
+} _EntryFunctionAttributes_default_instance_;
+class GpuBefExecutableProtoDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<GpuBefExecutableProto>
+      _instance;
+} _GpuBefExecutableProto_default_instance_;
 }  // namespace xla
 namespace protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto {
 static void InitDefaultsHloInstructionProto_SliceDimensions() {
@@ -198,8 +246,8 @@ static void InitDefaultsHloInstructionProto() {
   ::xla::HloInstructionProto::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<17> scc_info_HloInstructionProto =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 17, InitDefaultsHloInstructionProto}, {
+::google::protobuf::internal::SCCInfo<19> scc_info_HloInstructionProto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 19, InitDefaultsHloInstructionProto}, {
       &protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto::scc_info_ShapeProto.base,
       &protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto::scc_info_OpMetadata.base,
       &protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto::scc_info_LiteralProto.base,
@@ -216,7 +264,9 @@ static void InitDefaultsHloInstructionProto() {
       &protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto::scc_info_SourceTarget.base,
       &protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto::scc_info_TriangularSolveOptions.base,
       &protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto::scc_info_CholeskyOptions.base,
-      &protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto::scc_info_ParameterReplication.base,}};
+      &protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto::scc_info_ParameterReplication.base,
+      &protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto::scc_info_CustomCallOutputOperandAliasing.base,
+      &protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto::scc_info_FrontendAttributes.base,}};
 
 static void InitDefaultsHloComputationProto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -335,6 +385,34 @@ static void InitDefaultsDynamicParameterBindingProto() {
     {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsDynamicParameterBindingProto}, {
       &protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_DynamicParameterBindingProto_Binding.base,}};
 
+static void InitDefaultsCrossProgramPrefetch() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::xla::_CrossProgramPrefetch_default_instance_;
+    new (ptr) ::xla::CrossProgramPrefetch();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::xla::CrossProgramPrefetch::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<0> scc_info_CrossProgramPrefetch =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCrossProgramPrefetch}, {}};
+
+static void InitDefaultsHloModuleProto_ProfileInfo() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::xla::_HloModuleProto_ProfileInfo_default_instance_;
+    new (ptr) ::xla::HloModuleProto_ProfileInfo();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::xla::HloModuleProto_ProfileInfo::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<0> scc_info_HloModuleProto_ProfileInfo =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsHloModuleProto_ProfileInfo}, {}};
+
 static void InitDefaultsHloModuleProto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -346,13 +424,16 @@ static void InitDefaultsHloModuleProto() {
   ::xla::HloModuleProto::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<5> scc_info_HloModuleProto =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 5, InitDefaultsHloModuleProto}, {
+::google::protobuf::internal::SCCInfo<8> scc_info_HloModuleProto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 8, InitDefaultsHloModuleProto}, {
       &protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_HloComputationProto.base,
       &protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto::scc_info_ProgramShapeProto.base,
       &protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_HloScheduleProto.base,
       &protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_HloInputOutputAliasProto.base,
-      &protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_DynamicParameterBindingProto.base,}};
+      &protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_DynamicParameterBindingProto.base,
+      &protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_CrossProgramPrefetch.base,
+      &protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto::scc_info_OpSharding.base,
+      &protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_HloModuleProto_ProfileInfo.base,}};
 
 static void InitDefaultsLogicalBufferProto_Location() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -521,6 +602,95 @@ static void InitDefaultsHloSnapshot() {
       &protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_HloProto.base,
       &protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto::scc_info_LiteralProto.base,}};
 
+static void InitDefaultsHloModuleMetadataProto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::xla::_HloModuleMetadataProto_default_instance_;
+    new (ptr) ::xla::HloModuleMetadataProto();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::xla::HloModuleMetadataProto::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<1> scc_info_HloModuleMetadataProto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsHloModuleMetadataProto}, {
+      &protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_HloPassMetadata.base,}};
+
+static void InitDefaultsHloPassMetadata() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::xla::_HloPassMetadata_default_instance_;
+    new (ptr) ::xla::HloPassMetadata();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::xla::HloPassMetadata::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<0> scc_info_HloPassMetadata =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsHloPassMetadata}, {}};
+
+static void InitDefaultsEntryFunctionAttributes_ShapeIndex() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::xla::_EntryFunctionAttributes_ShapeIndex_default_instance_;
+    new (ptr) ::xla::EntryFunctionAttributes_ShapeIndex();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::xla::EntryFunctionAttributes_ShapeIndex::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<0> scc_info_EntryFunctionAttributes_ShapeIndex =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEntryFunctionAttributes_ShapeIndex}, {}};
+
+static void InitDefaultsEntryFunctionAttributes_BufferParameterAttributes() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::xla::_EntryFunctionAttributes_BufferParameterAttributes_default_instance_;
+    new (ptr) ::xla::EntryFunctionAttributes_BufferParameterAttributes();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::xla::EntryFunctionAttributes_BufferParameterAttributes::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<1> scc_info_EntryFunctionAttributes_BufferParameterAttributes =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsEntryFunctionAttributes_BufferParameterAttributes}, {
+      &protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_EntryFunctionAttributes_ShapeIndex.base,}};
+
+static void InitDefaultsEntryFunctionAttributes() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::xla::_EntryFunctionAttributes_default_instance_;
+    new (ptr) ::xla::EntryFunctionAttributes();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::xla::EntryFunctionAttributes::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<1> scc_info_EntryFunctionAttributes =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsEntryFunctionAttributes}, {
+      &protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_EntryFunctionAttributes_BufferParameterAttributes.base,}};
+
+static void InitDefaultsGpuBefExecutableProto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::xla::_GpuBefExecutableProto_default_instance_;
+    new (ptr) ::xla::GpuBefExecutableProto();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::xla::GpuBefExecutableProto::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<2> scc_info_GpuBefExecutableProto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsGpuBefExecutableProto}, {
+      &protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_HloModuleProto.base,
+      &protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_EntryFunctionAttributes.base,}};
+
 void InitDefaults() {
   ::google::protobuf::internal::InitSCC(&scc_info_HloInstructionProto_SliceDimensions.base);
   ::google::protobuf::internal::InitSCC(&scc_info_HloInstructionProto.base);
@@ -532,6 +702,8 @@ void InitDefaults() {
   ::google::protobuf::internal::InitSCC(&scc_info_HloInputOutputAliasProto.base);
   ::google::protobuf::internal::InitSCC(&scc_info_DynamicParameterBindingProto_Binding.base);
   ::google::protobuf::internal::InitSCC(&scc_info_DynamicParameterBindingProto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CrossProgramPrefetch.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_HloModuleProto_ProfileInfo.base);
   ::google::protobuf::internal::InitSCC(&scc_info_HloModuleProto.base);
   ::google::protobuf::internal::InitSCC(&scc_info_LogicalBufferProto_Location.base);
   ::google::protobuf::internal::InitSCC(&scc_info_LogicalBufferProto.base);
@@ -544,10 +716,16 @@ void InitDefaults() {
   ::google::protobuf::internal::InitSCC(&scc_info_BufferAssignmentProto.base);
   ::google::protobuf::internal::InitSCC(&scc_info_HloProto.base);
   ::google::protobuf::internal::InitSCC(&scc_info_HloSnapshot.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_HloModuleMetadataProto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_HloPassMetadata.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EntryFunctionAttributes_ShapeIndex.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EntryFunctionAttributes_BufferParameterAttributes.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EntryFunctionAttributes.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_GpuBefExecutableProto.base);
 }
 
-::google::protobuf::Metadata file_level_metadata[22];
-const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[2];
+::google::protobuf::Metadata file_level_metadata[30];
+const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[5];
 
 const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
@@ -605,6 +783,7 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloInstructionProto, backend_config_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloInstructionProto, replica_groups_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloInstructionProto, all_reduce_id_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloInstructionProto, use_global_device_ids_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloInstructionProto, is_host_transfer_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloInstructionProto, is_stable_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloInstructionProto, scatter_dimension_numbers_),
@@ -619,8 +798,17 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloInstructionProto, parameter_replication_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloInstructionProto, outer_dimension_partitions_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloInstructionProto, custom_call_has_side_effect_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloInstructionProto, custom_call_output_operand_aliasing_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloInstructionProto, custom_call_schedule_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloInstructionProto, delta_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloInstructionProto, indices_are_sorted_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloInstructionProto, frontend_attributes_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloInstructionProto, unique_indices_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloInstructionProto, rng_algorithm_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloInstructionProto, comparison_type_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloInstructionProto, is_cross_program_prefetch_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloInstructionProto, padding_type_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloInstructionProto, custom_call_api_version_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloComputationProto, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -631,6 +819,7 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloComputationProto, program_shape_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloComputationProto, id_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloComputationProto, root_id_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloComputationProto, is_fusion_computation_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloScheduleProto_InstructionSequence, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -684,6 +873,22 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   ~0u,  // no _weak_field_map_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::DynamicParameterBindingProto, entries_),
   ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::CrossProgramPrefetch, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::CrossProgramPrefetch, parameter_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::CrossProgramPrefetch, index_),
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloModuleProto_ProfileInfo, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloModuleProto_ProfileInfo, profile_type_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloModuleProto_ProfileInfo, relative_speedup_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloModuleProto_ProfileInfo, profile_source_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloModuleProto_ProfileInfo, compilation_event_),
+  ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloModuleProto, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
@@ -697,6 +902,11 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloModuleProto, schedule_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloModuleProto, input_output_alias_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloModuleProto, dynamic_parameter_binding_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloModuleProto, cross_program_prefetches_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloModuleProto, is_dynamic_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloModuleProto, spmd_output_sharding_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloModuleProto, spmd_parameters_shardings_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloModuleProto, profile_info_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::LogicalBufferProto_Location, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -755,6 +965,7 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   ~0u,  // no _weak_field_map_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HeapSimulatorTrace, events_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HeapSimulatorTrace, whole_module_simulation_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HeapSimulatorTrace, buffer_allocation_index_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloModuleGroupProto, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -794,30 +1005,94 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloSnapshot, arguments_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloSnapshot, result_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloSnapshot, execution_platform_),
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloModuleMetadataProto, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloModuleMetadataProto, canonical_module_id_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloModuleMetadataProto, module_group_name_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloModuleMetadataProto, original_module_id_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloModuleMetadataProto, partitioned_module_ids_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloModuleMetadataProto, pass_metadata_),
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloPassMetadata, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloPassMetadata, pass_id_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloPassMetadata, pass_name_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloPassMetadata, pipeline_name_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloPassMetadata, dump_filenames_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloPassMetadata, module_changed_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloPassMetadata, module_id_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloPassMetadata, module_group_module_ids_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloPassMetadata, start_timestamp_usec_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::HloPassMetadata, end_timestamp_usec_),
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::EntryFunctionAttributes_ShapeIndex, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::EntryFunctionAttributes_ShapeIndex, indices_),
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::EntryFunctionAttributes_BufferParameterAttributes, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::EntryFunctionAttributes_BufferParameterAttributes, lmhlo_params_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::EntryFunctionAttributes_BufferParameterAttributes, lmhlo_params_present_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::EntryFunctionAttributes_BufferParameterAttributes, lmhlo_param_shape_index_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::EntryFunctionAttributes_BufferParameterAttributes, lmhlo_constant_name_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::EntryFunctionAttributes_BufferParameterAttributes, lmhlo_must_alias_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::EntryFunctionAttributes_BufferParameterAttributes, lmhlo_output_index_),
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::EntryFunctionAttributes, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::EntryFunctionAttributes, buffers_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::EntryFunctionAttributes, result_xla_shape_),
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::GpuBefExecutableProto, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::GpuBefExecutableProto, hlo_module_proto_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::GpuBefExecutableProto, bef_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xla::GpuBefExecutableProto, entry_func_attrs_),
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::xla::HloInstructionProto_SliceDimensions)},
   { 8, -1, sizeof(::xla::HloInstructionProto)},
-  { 71, -1, sizeof(::xla::HloComputationProto)},
-  { 81, -1, sizeof(::xla::HloScheduleProto_InstructionSequence)},
-  { 87, 94, sizeof(::xla::HloScheduleProto_SequencesEntry_DoNotUse)},
-  { 96, -1, sizeof(::xla::HloScheduleProto)},
-  { 102, -1, sizeof(::xla::HloInputOutputAliasProto_AliasEntryProto)},
-  { 111, -1, sizeof(::xla::HloInputOutputAliasProto)},
-  { 117, -1, sizeof(::xla::DynamicParameterBindingProto_Binding)},
-  { 127, -1, sizeof(::xla::DynamicParameterBindingProto)},
-  { 133, -1, sizeof(::xla::HloModuleProto)},
-  { 147, -1, sizeof(::xla::LogicalBufferProto_Location)},
-  { 155, -1, sizeof(::xla::LogicalBufferProto)},
-  { 164, -1, sizeof(::xla::BufferAllocationProto_Assigned)},
-  { 172, -1, sizeof(::xla::BufferAllocationProto)},
-  { 188, -1, sizeof(::xla::HeapSimulatorTrace_Event)},
-  { 198, -1, sizeof(::xla::HeapSimulatorTrace)},
-  { 205, -1, sizeof(::xla::HloModuleGroupProto)},
-  { 212, -1, sizeof(::xla::BufferAssignmentProto_BufferAlias)},
-  { 219, -1, sizeof(::xla::BufferAssignmentProto)},
-  { 228, -1, sizeof(::xla::HloProto)},
-  { 235, -1, sizeof(::xla::HloSnapshot)},
+  { 81, -1, sizeof(::xla::HloComputationProto)},
+  { 92, -1, sizeof(::xla::HloScheduleProto_InstructionSequence)},
+  { 98, 105, sizeof(::xla::HloScheduleProto_SequencesEntry_DoNotUse)},
+  { 107, -1, sizeof(::xla::HloScheduleProto)},
+  { 113, -1, sizeof(::xla::HloInputOutputAliasProto_AliasEntryProto)},
+  { 122, -1, sizeof(::xla::HloInputOutputAliasProto)},
+  { 128, -1, sizeof(::xla::DynamicParameterBindingProto_Binding)},
+  { 138, -1, sizeof(::xla::DynamicParameterBindingProto)},
+  { 144, -1, sizeof(::xla::CrossProgramPrefetch)},
+  { 151, -1, sizeof(::xla::HloModuleProto_ProfileInfo)},
+  { 160, -1, sizeof(::xla::HloModuleProto)},
+  { 179, -1, sizeof(::xla::LogicalBufferProto_Location)},
+  { 187, -1, sizeof(::xla::LogicalBufferProto)},
+  { 196, -1, sizeof(::xla::BufferAllocationProto_Assigned)},
+  { 204, -1, sizeof(::xla::BufferAllocationProto)},
+  { 220, -1, sizeof(::xla::HeapSimulatorTrace_Event)},
+  { 230, -1, sizeof(::xla::HeapSimulatorTrace)},
+  { 238, -1, sizeof(::xla::HloModuleGroupProto)},
+  { 245, -1, sizeof(::xla::BufferAssignmentProto_BufferAlias)},
+  { 252, -1, sizeof(::xla::BufferAssignmentProto)},
+  { 261, -1, sizeof(::xla::HloProto)},
+  { 268, -1, sizeof(::xla::HloSnapshot)},
+  { 277, -1, sizeof(::xla::HloModuleMetadataProto)},
+  { 287, -1, sizeof(::xla::HloPassMetadata)},
+  { 301, -1, sizeof(::xla::EntryFunctionAttributes_ShapeIndex)},
+  { 307, -1, sizeof(::xla::EntryFunctionAttributes_BufferParameterAttributes)},
+  { 318, -1, sizeof(::xla::EntryFunctionAttributes)},
+  { 325, -1, sizeof(::xla::GpuBefExecutableProto)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
@@ -831,6 +1106,8 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::xla::_HloInputOutputAliasProto_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::xla::_DynamicParameterBindingProto_Binding_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::xla::_DynamicParameterBindingProto_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::xla::_CrossProgramPrefetch_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::xla::_HloModuleProto_ProfileInfo_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::xla::_HloModuleProto_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::xla::_LogicalBufferProto_Location_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::xla::_LogicalBufferProto_default_instance_),
@@ -843,6 +1120,12 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::xla::_BufferAssignmentProto_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::xla::_HloProto_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::xla::_HloSnapshot_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::xla::_HloModuleMetadataProto_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::xla::_HloPassMetadata_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::xla::_EntryFunctionAttributes_ShapeIndex_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::xla::_EntryFunctionAttributes_BufferParameterAttributes_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::xla::_EntryFunctionAttributes_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::xla::_GpuBefExecutableProto_default_instance_),
 };
 
 void protobuf_AssignDescriptors() {
@@ -860,7 +1143,7 @@ void protobuf_AssignDescriptorsOnce() {
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 22);
+  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 30);
 }
 
 void AddDescriptorsImpl() {
@@ -868,7 +1151,7 @@ void AddDescriptorsImpl() {
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n)tensorflow/compiler/xla/service/hlo.pr"
       "oto\022\003xla\032&tensorflow/compiler/xla/xla_da"
-      "ta.proto\"\333\021\n\023HloInstructionProto\022\014\n\004name"
+      "ta.proto\"\237\025\n\023HloInstructionProto\022\014\n\004name"
       "\030\001 \001(\t\022\016\n\006opcode\030\002 \001(\t\022\036\n\005shape\030\003 \001(\0132\017."
       "xla.ShapeProto\022!\n\010metadata\030\007 \001(\0132\017.xla.O"
       "pMetadata\022\"\n\007literal\030\010 \001(\0132\021.xla.Literal"
@@ -899,109 +1182,165 @@ void AddDescriptorsImpl() {
       "d_ids\030$ \003(\003\022\037\n\027control_predecessor_ids\030%"
       " \003(\003\022\036\n\026called_computation_ids\030& \003(\003\022!\n\010"
       "sharding\030( \001(\0132\017.xla.OpSharding\022\026\n\016backe"
-      "nd_config\030+ \001(\t\022)\n\016replica_groups\0301 \003(\0132"
+      "nd_config\030+ \001(\014\022)\n\016replica_groups\0301 \003(\0132"
       "\021.xla.ReplicaGroup\022\031\n\rall_reduce_id\030- \001("
-      "\003B\002\030\001\022\030\n\020is_host_transfer\030/ \001(\010\022\021\n\tis_st"
-      "able\030< \001(\010\022\?\n\031scatter_dimension_numbers\030"
-      "0 \001(\0132\034.xla.ScatterDimensionNumbers\022.\n\020p"
-      "recision_config\0303 \001(\0132\024.xla.PrecisionCon"
-      "fig\022.\n\023source_target_pairs\0304 \003(\0132\021.xla.S"
-      "ourceTarget\022.\n\025domain_entry_sharding\0306 \001"
-      "(\0132\017.xla.OpSharding\022-\n\024domain_exit_shard"
-      "ing\0307 \001(\0132\017.xla.OpSharding\022\030\n\020constrain_"
-      "layout\0308 \001(\010\0223\n\032operand_shapes_with_layo"
-      "ut\0309 \003(\0132\017.xla.ShapeProto\022=\n\030triangular_"
-      "solve_options\030; \001(\0132\033.xla.TriangularSolv"
-      "eOptions\022.\n\020cholesky_options\030> \001(\0132\024.xla"
-      ".CholeskyOptions\0228\n\025parameter_replicatio"
-      "n\030= \001(\0132\031.xla.ParameterReplication\022\"\n\032ou"
-      "ter_dimension_partitions\030@ \003(\003\022#\n\033custom"
-      "_call_has_side_effect\030A \001(\010\022\r\n\005delta\030B \001"
-      "(\003\022\032\n\022indices_are_sorted\030C \001(\010\032\?\n\017SliceD"
-      "imensions\022\r\n\005start\030\001 \001(\003\022\r\n\005limit\030\002 \001(\003\022"
-      "\016\n\006stride\030\003 \001(\003J\004\010\n\020\013J\004\010\014\020\rJ\004\010\004\020\005J\004\010\005\020\006J"
-      "\004\010\006\020\007J\004\010,\020-J\004\0105\0206J\004\010.\020/R\016parameter_nameR"
-      "\036fused_instructions_computationR\roperand"
-      "_namesR\031control_predecessor_namesR\030calle"
-      "d_computation_namesR\021replica_group_idsR\022"
-      "custom_call_opaqueR\022all_reduce_barrier\"\260"
-      "\001\n\023HloComputationProto\022\014\n\004name\030\001 \001(\t\022.\n\014"
-      "instructions\030\002 \003(\0132\030.xla.HloInstructionP"
-      "roto\022-\n\rprogram_shape\030\004 \001(\0132\026.xla.Progra"
-      "mShapeProto\022\n\n\002id\030\005 \001(\003\022\017\n\007root_id\030\006 \001(\003"
-      "J\004\010\003\020\004R\troot_name\"\330\001\n\020HloScheduleProto\0227"
-      "\n\tsequences\030\001 \003(\0132$.xla.HloScheduleProto"
-      ".SequencesEntry\032.\n\023InstructionSequence\022\027"
-      "\n\017instruction_ids\030\001 \003(\003\032[\n\016SequencesEntr"
-      "y\022\013\n\003key\030\001 \001(\003\0228\n\005value\030\002 \001(\0132).xla.HloS"
-      "cheduleProto.InstructionSequence:\0028\001\"\264\002\n"
-      "\030HloInputOutputAliasProto\022>\n\007entries\030\001 \003"
-      "(\0132-.xla.HloInputOutputAliasProto.AliasE"
-      "ntryProto\032\230\001\n\017AliasEntryProto\022\032\n\022output_"
-      "shape_index\030\001 \003(\003\022\030\n\020parameter_number\030\002 "
-      "\001(\003\022\035\n\025parameter_shape_index\030\003 \003(\003\0220\n\004ki"
-      "nd\030\004 \001(\0162\".xla.HloInputOutputAliasProto."
-      "Kind\"=\n\004Kind\022\023\n\017UNDEFINED_ALIAS\020\000\022\016\n\nUSE"
-      "R_ALIAS\020\001\022\020\n\014SYSTEM_ALIAS\020\002\"\362\001\n\034DynamicP"
-      "arameterBindingProto\022:\n\007entries\030\001 \003(\0132)."
-      "xla.DynamicParameterBindingProto.Binding"
-      "\032\225\001\n\007Binding\022\031\n\021dynamic_param_num\030\001 \001(\003\022"
-      "\033\n\023dynamic_param_index\030\002 \003(\003\022\030\n\020target_p"
-      "aram_num\030\003 \001(\003\022\032\n\022target_param_index\030\004 \003"
-      "(\003\022\034\n\024target_param_dim_num\030\005 \001(\003\"\366\002\n\016Hlo"
-      "ModuleProto\022\014\n\004name\030\001 \001(\t\022\036\n\026entry_compu"
-      "tation_name\030\002 \001(\t\022\034\n\024entry_computation_i"
-      "d\030\006 \001(\003\022.\n\014computations\030\003 \003(\0132\030.xla.HloC"
-      "omputationProto\0222\n\022host_program_shape\030\004 "
-      "\001(\0132\026.xla.ProgramShapeProto\022\n\n\002id\030\005 \001(\003\022"
-      "\'\n\010schedule\030\007 \001(\0132\025.xla.HloScheduleProto"
-      "\0229\n\022input_output_alias\030\010 \001(\0132\035.xla.HloIn"
-      "putOutputAliasProto\022D\n\031dynamic_parameter"
-      "_binding\030\t \001(\0132!.xla.DynamicParameterBin"
-      "dingProto\"\310\001\n\022LogicalBufferProto\022\n\n\002id\030\001"
-      " \001(\003\022\014\n\004size\030\002 \001(\003\0224\n\ndefined_at\030\003 \001(\0132 "
-      ".xla.LogicalBufferProto.Location\022\r\n\005colo"
-      "r\030\004 \001(\003\032S\n\010Location\022\030\n\020computation_name\030"
-      "\001 \001(\t\022\030\n\020instruction_name\030\002 \001(\t\022\023\n\013shape"
-      "_index\030\003 \003(\003\"\370\002\n\025BufferAllocationProto\022\r"
-      "\n\005index\030\001 \001(\003\022\014\n\004size\030\002 \001(\003\022\027\n\017is_thread"
-      "_local\030\003 \001(\010\022\020\n\010is_tuple\030\013 \001(\010\022&\n\036is_ent"
-      "ry_computation_parameter\030\005 \001(\010\022\023\n\013is_con"
-      "stant\030\014 \001(\010\022\030\n\020parameter_number\030\006 \001(\003\022\035\n"
-      "\025parameter_shape_index\030\n \003(\003\022\026\n\016maybe_li"
-      "ve_out\030\007 \001(\010\022\r\n\005color\030\010 \001(\003\0225\n\010assigned\030"
-      "\t \003(\0132#.xla.BufferAllocationProto.Assign"
-      "ed\032C\n\010Assigned\022\031\n\021logical_buffer_id\030\001 \001("
-      "\003\022\016\n\006offset\030\002 \001(\003\022\014\n\004size\030\003 \001(\003\"\265\002\n\022Heap"
-      "SimulatorTrace\022-\n\006events\030\001 \003(\0132\035.xla.Hea"
-      "pSimulatorTrace.Event\022\037\n\027whole_module_si"
-      "mulation\030\002 \001(\010\032\316\001\n\005Event\0220\n\004kind\030\001 \001(\0162\""
-      ".xla.HeapSimulatorTrace.Event.Kind\022\021\n\tbu"
-      "ffer_id\030\002 \001(\003\022\030\n\020computation_name\030\003 \001(\t\022"
-      "\030\n\020instruction_name\030\004 \001(\t\022\037\n\027share_with_"
-      "canonical_id\030\005 \001(\003\"+\n\004Kind\022\t\n\005ALLOC\020\000\022\010\n"
-      "\004FREE\020\001\022\016\n\nSHARE_WITH\020\002\"M\n\023HloModuleGrou"
-      "pProto\022\014\n\004name\030\001 \001(\t\022(\n\013hlo_modules\030\002 \003("
-      "\0132\023.xla.HloModuleProto\"\326\002\n\025BufferAssignm"
-      "entProto\0220\n\017logical_buffers\030\001 \003(\0132\027.xla."
-      "LogicalBufferProto\022>\n\016buffer_aliases\030\002 \003"
-      "(\0132&.xla.BufferAssignmentProto.BufferAli"
-      "as\0226\n\022buffer_allocations\030\003 \003(\0132\032.xla.Buf"
-      "ferAllocationProto\0226\n\025heap_simulator_tra"
-      "ces\030\004 \003(\0132\027.xla.HeapSimulatorTrace\032[\n\013Bu"
-      "fferAlias\022\030\n\020source_buffer_id\030\001 \001(\003\0222\n\010l"
-      "ocation\030\002 \001(\0132 .xla.LogicalBufferProto.L"
-      "ocation\"~\n\010HloProto\022\'\n\nhlo_module\030\001 \001(\0132"
-      "\023.xla.HloModuleProto\0225\n\021buffer_assignmen"
-      "t\030\003 \001(\0132\032.xla.BufferAssignmentProtoJ\004\010\002\020"
-      "\003R\014hlo_ordering\"\216\001\n\013HloSnapshot\022\032\n\003hlo\030\001"
-      " \001(\0132\r.xla.HloProto\022$\n\targuments\030\002 \003(\0132\021"
-      ".xla.LiteralProto\022!\n\006result\030\003 \001(\0132\021.xla."
-      "LiteralProto\022\032\n\022execution_platform\030\004 \001(\t"
-      "B\003\370\001\001b\006proto3"
+      "\003B\002\030\001\022\035\n\025use_global_device_ids\030G \001(\010\022\030\n\020"
+      "is_host_transfer\030/ \001(\010\022\021\n\tis_stable\030< \001("
+      "\010\022\?\n\031scatter_dimension_numbers\0300 \001(\0132\034.x"
+      "la.ScatterDimensionNumbers\022.\n\020precision_"
+      "config\0303 \001(\0132\024.xla.PrecisionConfig\022.\n\023so"
+      "urce_target_pairs\0304 \003(\0132\021.xla.SourceTarg"
+      "et\022.\n\025domain_entry_sharding\0306 \001(\0132\017.xla."
+      "OpSharding\022-\n\024domain_exit_sharding\0307 \001(\013"
+      "2\017.xla.OpSharding\022\030\n\020constrain_layout\0308 "
+      "\001(\010\0223\n\032operand_shapes_with_layout\0309 \003(\0132"
+      "\017.xla.ShapeProto\022=\n\030triangular_solve_opt"
+      "ions\030; \001(\0132\033.xla.TriangularSolveOptions\022"
+      ".\n\020cholesky_options\030> \001(\0132\024.xla.Cholesky"
+      "Options\0228\n\025parameter_replication\030= \001(\0132\031"
+      ".xla.ParameterReplication\022\"\n\032outer_dimen"
+      "sion_partitions\030@ \003(\003\022#\n\033custom_call_has"
+      "_side_effect\030A \001(\010\022Q\n#custom_call_output"
+      "_operand_aliasing\030J \003(\0132$.xla.CustomCall"
+      "OutputOperandAliasing\0225\n\024custom_call_sch"
+      "edule\030L \001(\0162\027.xla.CustomCallSchedule\022\r\n\005"
+      "delta\030B \001(\003\022\032\n\022indices_are_sorted\030C \001(\010\022"
+      "4\n\023frontend_attributes\030D \001(\0132\027.xla.Front"
+      "endAttributes\022\026\n\016unique_indices\030E \001(\010\022+\n"
+      "\rrng_algorithm\030F \001(\0162\024.xla.RandomAlgorit"
+      "hm\022\027\n\017comparison_type\030H \001(\t\022!\n\031is_cross_"
+      "program_prefetch\030I \001(\010\022&\n\014padding_type\030K"
+      " \001(\0162\020.xla.PaddingType\022:\n\027custom_call_ap"
+      "i_version\030M \001(\0162\031.xla.CustomCallApiVersi"
+      "on\032\?\n\017SliceDimensions\022\r\n\005start\030\001 \001(\003\022\r\n\005"
+      "limit\030\002 \001(\003\022\016\n\006stride\030\003 \001(\003J\004\010\n\020\013J\004\010\014\020\rJ"
+      "\004\010\004\020\005J\004\010\005\020\006J\004\010\006\020\007J\004\010,\020-J\004\0105\0206J\004\010.\020/R\016par"
+      "ameter_nameR\036fused_instructions_computat"
+      "ionR\roperand_namesR\031control_predecessor_"
+      "namesR\030called_computation_namesR\021replica"
+      "_group_idsR\022custom_call_opaqueR\022all_redu"
+      "ce_barrier\"\317\001\n\023HloComputationProto\022\014\n\004na"
+      "me\030\001 \001(\t\022.\n\014instructions\030\002 \003(\0132\030.xla.Hlo"
+      "InstructionProto\022-\n\rprogram_shape\030\004 \001(\0132"
+      "\026.xla.ProgramShapeProto\022\n\n\002id\030\005 \001(\003\022\017\n\007r"
+      "oot_id\030\006 \001(\003\022\035\n\025is_fusion_computation\030\007 "
+      "\001(\010J\004\010\003\020\004R\troot_name\"\330\001\n\020HloScheduleProt"
+      "o\0227\n\tsequences\030\001 \003(\0132$.xla.HloSchedulePr"
+      "oto.SequencesEntry\032.\n\023InstructionSequenc"
+      "e\022\027\n\017instruction_ids\030\001 \003(\003\032[\n\016SequencesE"
+      "ntry\022\013\n\003key\030\001 \001(\003\0228\n\005value\030\002 \001(\0132).xla.H"
+      "loScheduleProto.InstructionSequence:\0028\001\""
+      "\333\001\n\030HloInputOutputAliasProto\022>\n\007entries\030"
+      "\001 \003(\0132-.xla.HloInputOutputAliasProto.Ali"
+      "asEntryProto\032\177\n\017AliasEntryProto\022\032\n\022outpu"
+      "t_shape_index\030\001 \003(\003\022\030\n\020parameter_number\030"
+      "\002 \001(\003\022\035\n\025parameter_shape_index\030\003 \003(\003\022\027\n\004"
+      "kind\030\004 \001(\0162\t.xla.Kind\"\362\001\n\034DynamicParamet"
+      "erBindingProto\022:\n\007entries\030\001 \003(\0132).xla.Dy"
+      "namicParameterBindingProto.Binding\032\225\001\n\007B"
+      "inding\022\031\n\021dynamic_param_num\030\001 \001(\003\022\033\n\023dyn"
+      "amic_param_index\030\002 \003(\003\022\030\n\020target_param_n"
+      "um\030\003 \001(\003\022\032\n\022target_param_index\030\004 \003(\003\022\034\n\024"
+      "target_param_dim_num\030\005 \001(\003\"8\n\024CrossProgr"
+      "amPrefetch\022\021\n\tparameter\030\001 \001(\003\022\r\n\005index\030\002"
+      " \003(\003\"\336\006\n\016HloModuleProto\022\014\n\004name\030\001 \001(\t\022\036\n"
+      "\026entry_computation_name\030\002 \001(\t\022\034\n\024entry_c"
+      "omputation_id\030\006 \001(\003\022.\n\014computations\030\003 \003("
+      "\0132\030.xla.HloComputationProto\0222\n\022host_prog"
+      "ram_shape\030\004 \001(\0132\026.xla.ProgramShapeProto\022"
+      "\n\n\002id\030\005 \001(\003\022\'\n\010schedule\030\007 \001(\0132\025.xla.HloS"
+      "cheduleProto\0229\n\022input_output_alias\030\010 \001(\013"
+      "2\035.xla.HloInputOutputAliasProto\022D\n\031dynam"
+      "ic_parameter_binding\030\t \001(\0132!.xla.Dynamic"
+      "ParameterBindingProto\022;\n\030cross_program_p"
+      "refetches\030\n \003(\0132\031.xla.CrossProgramPrefet"
+      "ch\022\022\n\nis_dynamic\030\013 \001(\010\022-\n\024spmd_output_sh"
+      "arding\030\014 \001(\0132\017.xla.OpSharding\0222\n\031spmd_pa"
+      "rameters_shardings\030\016 \003(\0132\017.xla.OpShardin"
+      "g\0225\n\014profile_info\030\r \003(\0132\037.xla.HloModuleP"
+      "roto.ProfileInfo\032\274\001\n\013ProfileInfo\0225\n\014prof"
+      "ile_type\030\001 \001(\0162\037.xla.HloModuleProto.Prof"
+      "ileType\022\030\n\020relative_speedup\030\002 \001(\001\022*\n\016pro"
+      "file_source\030\003 \001(\0162\022.xla.ProfileSource\0220\n"
+      "\021compilation_event\030\004 \001(\0162\025.xla.Compilati"
+      "onEvent\"<\n\013ProfileType\022\013\n\007INVALID\020\000\022\010\n\004F"
+      "LAG\020\001\022\n\n\006FUSION\020\002\022\n\n\006LAYOUT\020\003\"\310\001\n\022Logica"
+      "lBufferProto\022\n\n\002id\030\001 \001(\003\022\014\n\004size\030\002 \001(\003\0224"
+      "\n\ndefined_at\030\003 \001(\0132 .xla.LogicalBufferPr"
+      "oto.Location\022\r\n\005color\030\004 \001(\003\032S\n\010Location\022"
+      "\030\n\020computation_name\030\001 \001(\t\022\030\n\020instruction"
+      "_name\030\002 \001(\t\022\023\n\013shape_index\030\003 \003(\003\"\370\002\n\025Buf"
+      "ferAllocationProto\022\r\n\005index\030\001 \001(\003\022\014\n\004siz"
+      "e\030\002 \001(\003\022\027\n\017is_thread_local\030\003 \001(\010\022\020\n\010is_t"
+      "uple\030\013 \001(\010\022&\n\036is_entry_computation_param"
+      "eter\030\005 \001(\010\022\023\n\013is_constant\030\014 \001(\010\022\030\n\020param"
+      "eter_number\030\006 \001(\003\022\035\n\025parameter_shape_ind"
+      "ex\030\n \003(\003\022\026\n\016maybe_live_out\030\007 \001(\010\022\r\n\005colo"
+      "r\030\010 \001(\003\0225\n\010assigned\030\t \003(\0132#.xla.BufferAl"
+      "locationProto.Assigned\032C\n\010Assigned\022\031\n\021lo"
+      "gical_buffer_id\030\001 \001(\003\022\016\n\006offset\030\002 \001(\003\022\014\n"
+      "\004size\030\003 \001(\003\"\326\002\n\022HeapSimulatorTrace\022-\n\006ev"
+      "ents\030\001 \003(\0132\035.xla.HeapSimulatorTrace.Even"
+      "t\022\037\n\027whole_module_simulation\030\002 \001(\010\022\037\n\027bu"
+      "ffer_allocation_index\030\003 \001(\003\032\316\001\n\005Event\0220\n"
+      "\004kind\030\001 \001(\0162\".xla.HeapSimulatorTrace.Eve"
+      "nt.Kind\022\021\n\tbuffer_id\030\002 \001(\003\022\030\n\020computatio"
+      "n_name\030\003 \001(\t\022\030\n\020instruction_name\030\004 \001(\t\022\037"
+      "\n\027share_with_canonical_id\030\005 \001(\003\"+\n\004Kind\022"
+      "\t\n\005ALLOC\020\000\022\010\n\004FREE\020\001\022\016\n\nSHARE_WITH\020\002\"M\n\023"
+      "HloModuleGroupProto\022\014\n\004name\030\001 \001(\t\022(\n\013hlo"
+      "_modules\030\002 \003(\0132\023.xla.HloModuleProto\"\326\002\n\025"
+      "BufferAssignmentProto\0220\n\017logical_buffers"
+      "\030\001 \003(\0132\027.xla.LogicalBufferProto\022>\n\016buffe"
+      "r_aliases\030\002 \003(\0132&.xla.BufferAssignmentPr"
+      "oto.BufferAlias\0226\n\022buffer_allocations\030\003 "
+      "\003(\0132\032.xla.BufferAllocationProto\0226\n\025heap_"
+      "simulator_traces\030\004 \003(\0132\027.xla.HeapSimulat"
+      "orTrace\032[\n\013BufferAlias\022\030\n\020source_buffer_"
+      "id\030\001 \001(\003\0222\n\010location\030\002 \001(\0132 .xla.Logical"
+      "BufferProto.Location\"~\n\010HloProto\022\'\n\nhlo_"
+      "module\030\001 \001(\0132\023.xla.HloModuleProto\0225\n\021buf"
+      "fer_assignment\030\003 \001(\0132\032.xla.BufferAssignm"
+      "entProtoJ\004\010\002\020\003R\014hlo_ordering\"\216\001\n\013HloSnap"
+      "shot\022\032\n\003hlo\030\001 \001(\0132\r.xla.HloProto\022$\n\targu"
+      "ments\030\002 \003(\0132\021.xla.LiteralProto\022!\n\006result"
+      "\030\003 \001(\0132\021.xla.LiteralProto\022\032\n\022execution_p"
+      "latform\030\004 \001(\t\"\271\001\n\026HloModuleMetadataProto"
+      "\022\033\n\023canonical_module_id\030\001 \001(\003\022\031\n\021module_"
+      "group_name\030\002 \001(\t\022\032\n\022original_module_id\030\003"
+      " \001(\003\022\036\n\026partitioned_module_ids\030\004 \003(\003\022+\n\r"
+      "pass_metadata\030\005 \003(\0132\024.xla.HloPassMetadat"
+      "a\"\352\001\n\017HloPassMetadata\022\017\n\007pass_id\030\001 \001(\003\022\021"
+      "\n\tpass_name\030\002 \001(\t\022\025\n\rpipeline_name\030\003 \001(\t"
+      "\022\026\n\016dump_filenames\030\004 \003(\t\022\026\n\016module_chang"
+      "ed\030\005 \001(\010\022\021\n\tmodule_id\030\006 \001(\003\022\037\n\027module_gr"
+      "oup_module_ids\030\007 \003(\003\022\034\n\024start_timestamp_"
+      "usec\030\010 \001(\003\022\032\n\022end_timestamp_usec\030\t \001(\003\"\263"
+      "\003\n\027EntryFunctionAttributes\022G\n\007buffers\030\001 "
+      "\003(\01326.xla.EntryFunctionAttributes.Buffer"
+      "ParameterAttributes\022\030\n\020result_xla_shape\030"
+      "\002 \001(\t\032\035\n\nShapeIndex\022\017\n\007indices\030\001 \003(\003\032\225\002\n"
+      "\031BufferParameterAttributes\022\024\n\014lmhlo_para"
+      "ms\030\001 \001(\003\022\034\n\024lmhlo_params_present\030\006 \001(\010\022H"
+      "\n\027lmhlo_param_shape_index\030\002 \001(\0132\'.xla.En"
+      "tryFunctionAttributes.ShapeIndex\022\033\n\023lmhl"
+      "o_constant_name\030\003 \001(\t\022\030\n\020lmhlo_must_alia"
+      "s\030\004 \001(\010\022C\n\022lmhlo_output_index\030\005 \001(\0132\'.xl"
+      "a.EntryFunctionAttributes.ShapeIndex\"\213\001\n"
+      "\025GpuBefExecutableProto\022-\n\020hlo_module_pro"
+      "to\030\001 \001(\0132\023.xla.HloModuleProto\022\013\n\003bef\030\002 \001"
+      "(\014\0226\n\020entry_func_attrs\030\003 \001(\0132\034.xla.Entry"
+      "FunctionAttributes*S\n\022CustomCallSchedule"
+      "\022\021\n\rSCHEDULE_NONE\020\000\022\023\n\017SCHEDULE_LATEST\020\001"
+      "\022\025\n\021SCHEDULE_EARLIEST\020\002*o\n\024CustomCallApi"
+      "Version\022\033\n\027API_VERSION_UNSPECIFIED\020\000\022\030\n\024"
+      "API_VERSION_ORIGINAL\020\001\022 \n\034API_VERSION_ST"
+      "ATUS_RETURNING\020\002*:\n\004Kind\022\023\n\017UNDEFINED_AL"
+      "IAS\020\000\022\r\n\tMAY_ALIAS\020\001\022\016\n\nMUST_ALIAS\020\002B\003\370\001"
+      "\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 5293);
+      descriptor, 7529);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/compiler/xla/service/hlo.proto", &protobuf_RegisterTypes);
   ::protobuf_tensorflow_2fcompiler_2fxla_2fxla_5fdata_2eproto::AddDescriptors();
@@ -1019,15 +1358,16 @@ struct StaticDescriptorInitializer {
 } static_descriptor_initializer;
 }  // namespace protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto
 namespace xla {
-const ::google::protobuf::EnumDescriptor* HloInputOutputAliasProto_Kind_descriptor() {
+const ::google::protobuf::EnumDescriptor* HloModuleProto_ProfileType_descriptor() {
   protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::protobuf_AssignDescriptorsOnce();
   return protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::file_level_enum_descriptors[0];
 }
-bool HloInputOutputAliasProto_Kind_IsValid(int value) {
+bool HloModuleProto_ProfileType_IsValid(int value) {
   switch (value) {
     case 0:
     case 1:
     case 2:
+    case 3:
       return true;
     default:
       return false;
@@ -1035,12 +1375,13 @@ bool HloInputOutputAliasProto_Kind_IsValid(int value) {
 }
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
-const HloInputOutputAliasProto_Kind HloInputOutputAliasProto::UNDEFINED_ALIAS;
-const HloInputOutputAliasProto_Kind HloInputOutputAliasProto::USER_ALIAS;
-const HloInputOutputAliasProto_Kind HloInputOutputAliasProto::SYSTEM_ALIAS;
-const HloInputOutputAliasProto_Kind HloInputOutputAliasProto::Kind_MIN;
-const HloInputOutputAliasProto_Kind HloInputOutputAliasProto::Kind_MAX;
-const int HloInputOutputAliasProto::Kind_ARRAYSIZE;
+const HloModuleProto_ProfileType HloModuleProto::INVALID;
+const HloModuleProto_ProfileType HloModuleProto::FLAG;
+const HloModuleProto_ProfileType HloModuleProto::FUSION;
+const HloModuleProto_ProfileType HloModuleProto::LAYOUT;
+const HloModuleProto_ProfileType HloModuleProto::ProfileType_MIN;
+const HloModuleProto_ProfileType HloModuleProto::ProfileType_MAX;
+const int HloModuleProto::ProfileType_ARRAYSIZE;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 const ::google::protobuf::EnumDescriptor* HeapSimulatorTrace_Event_Kind_descriptor() {
   protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::protobuf_AssignDescriptorsOnce();
@@ -1065,6 +1406,51 @@ const HeapSimulatorTrace_Event_Kind HeapSimulatorTrace_Event::Kind_MIN;
 const HeapSimulatorTrace_Event_Kind HeapSimulatorTrace_Event::Kind_MAX;
 const int HeapSimulatorTrace_Event::Kind_ARRAYSIZE;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+const ::google::protobuf::EnumDescriptor* CustomCallSchedule_descriptor() {
+  protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::file_level_enum_descriptors[2];
+}
+bool CustomCallSchedule_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+      return true;
+    default:
+      return false;
+  }
+}
+
+const ::google::protobuf::EnumDescriptor* CustomCallApiVersion_descriptor() {
+  protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::file_level_enum_descriptors[3];
+}
+bool CustomCallApiVersion_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+      return true;
+    default:
+      return false;
+  }
+}
+
+const ::google::protobuf::EnumDescriptor* Kind_descriptor() {
+  protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::file_level_enum_descriptors[4];
+}
+bool Kind_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+      return true;
+    default:
+      return false;
+  }
+}
+
 
 // ===================================================================
 
@@ -1434,6 +1820,8 @@ void HloInstructionProto::InitAsDefaultInstance() {
       ::xla::CholeskyOptions::internal_default_instance());
   ::xla::_HloInstructionProto_default_instance_._instance.get_mutable()->parameter_replication_ = const_cast< ::xla::ParameterReplication*>(
       ::xla::ParameterReplication::internal_default_instance());
+  ::xla::_HloInstructionProto_default_instance_._instance.get_mutable()->frontend_attributes_ = const_cast< ::xla::FrontendAttributes*>(
+      ::xla::FrontendAttributes::internal_default_instance());
 }
 void HloInstructionProto::unsafe_arena_set_allocated_shape(
     ::xla::ShapeProto* shape) {
@@ -1767,6 +2155,28 @@ void HloInstructionProto::clear_parameter_replication() {
   }
   parameter_replication_ = NULL;
 }
+void HloInstructionProto::clear_custom_call_output_operand_aliasing() {
+  custom_call_output_operand_aliasing_.Clear();
+}
+void HloInstructionProto::unsafe_arena_set_allocated_frontend_attributes(
+    ::xla::FrontendAttributes* frontend_attributes) {
+  if (GetArenaNoVirtual() == NULL) {
+    delete frontend_attributes_;
+  }
+  frontend_attributes_ = frontend_attributes;
+  if (frontend_attributes) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:xla.HloInstructionProto.frontend_attributes)
+}
+void HloInstructionProto::clear_frontend_attributes() {
+  if (GetArenaNoVirtual() == NULL && frontend_attributes_ != NULL) {
+    delete frontend_attributes_;
+  }
+  frontend_attributes_ = NULL;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int HloInstructionProto::kNameFieldNumber;
 const int HloInstructionProto::kOpcodeFieldNumber;
@@ -1810,6 +2220,7 @@ const int HloInstructionProto::kShardingFieldNumber;
 const int HloInstructionProto::kBackendConfigFieldNumber;
 const int HloInstructionProto::kReplicaGroupsFieldNumber;
 const int HloInstructionProto::kAllReduceIdFieldNumber;
+const int HloInstructionProto::kUseGlobalDeviceIdsFieldNumber;
 const int HloInstructionProto::kIsHostTransferFieldNumber;
 const int HloInstructionProto::kIsStableFieldNumber;
 const int HloInstructionProto::kScatterDimensionNumbersFieldNumber;
@@ -1824,8 +2235,17 @@ const int HloInstructionProto::kCholeskyOptionsFieldNumber;
 const int HloInstructionProto::kParameterReplicationFieldNumber;
 const int HloInstructionProto::kOuterDimensionPartitionsFieldNumber;
 const int HloInstructionProto::kCustomCallHasSideEffectFieldNumber;
+const int HloInstructionProto::kCustomCallOutputOperandAliasingFieldNumber;
+const int HloInstructionProto::kCustomCallScheduleFieldNumber;
 const int HloInstructionProto::kDeltaFieldNumber;
 const int HloInstructionProto::kIndicesAreSortedFieldNumber;
+const int HloInstructionProto::kFrontendAttributesFieldNumber;
+const int HloInstructionProto::kUniqueIndicesFieldNumber;
+const int HloInstructionProto::kRngAlgorithmFieldNumber;
+const int HloInstructionProto::kComparisonTypeFieldNumber;
+const int HloInstructionProto::kIsCrossProgramPrefetchFieldNumber;
+const int HloInstructionProto::kPaddingTypeFieldNumber;
+const int HloInstructionProto::kCustomCallApiVersionFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 HloInstructionProto::HloInstructionProto()
@@ -1849,7 +2269,8 @@ HloInstructionProto::HloInstructionProto(::google::protobuf::Arena* arena)
   replica_groups_(arena),
   source_target_pairs_(arena),
   operand_shapes_with_layout_(arena),
-  outer_dimension_partitions_(arena) {
+  outer_dimension_partitions_(arena),
+  custom_call_output_operand_aliasing_(arena) {
   ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_HloInstructionProto.base);
   SharedCtor();
   RegisterArenaDtor(arena);
@@ -1869,7 +2290,8 @@ HloInstructionProto::HloInstructionProto(const HloInstructionProto& from)
       replica_groups_(from.replica_groups_),
       source_target_pairs_(from.source_target_pairs_),
       operand_shapes_with_layout_(from.operand_shapes_with_layout_),
-      outer_dimension_partitions_(from.outer_dimension_partitions_) {
+      outer_dimension_partitions_(from.outer_dimension_partitions_),
+      custom_call_output_operand_aliasing_(from.custom_call_output_operand_aliasing_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.name().size() > 0) {
@@ -1914,6 +2336,11 @@ HloInstructionProto::HloInstructionProto(const HloInstructionProto& from)
   comparison_direction_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.comparison_direction().size() > 0) {
     comparison_direction_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.comparison_direction(),
+      GetArenaNoVirtual());
+  }
+  comparison_type_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.comparison_type().size() > 0) {
+    comparison_type_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.comparison_type(),
       GetArenaNoVirtual());
   }
   if (from.has_shape()) {
@@ -2001,9 +2428,14 @@ HloInstructionProto::HloInstructionProto(const HloInstructionProto& from)
   } else {
     cholesky_options_ = NULL;
   }
+  if (from.has_frontend_attributes()) {
+    frontend_attributes_ = new ::xla::FrontendAttributes(*from.frontend_attributes_);
+  } else {
+    frontend_attributes_ = NULL;
+  }
   ::memcpy(&parameter_number_, &from.parameter_number_,
-    static_cast<size_t>(reinterpret_cast<char*>(&delta_) -
-    reinterpret_cast<char*>(&parameter_number_)) + sizeof(delta_));
+    static_cast<size_t>(reinterpret_cast<char*>(&custom_call_schedule_) -
+    reinterpret_cast<char*>(&parameter_number_)) + sizeof(custom_call_schedule_));
   // @@protoc_insertion_point(copy_constructor:xla.HloInstructionProto)
 }
 
@@ -2017,9 +2449,10 @@ void HloInstructionProto::SharedCtor() {
   channel_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   backend_config_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   comparison_direction_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  comparison_type_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&shape_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&delta_) -
-      reinterpret_cast<char*>(&shape_)) + sizeof(delta_));
+      reinterpret_cast<char*>(&custom_call_schedule_) -
+      reinterpret_cast<char*>(&shape_)) + sizeof(custom_call_schedule_));
 }
 
 HloInstructionProto::~HloInstructionProto() {
@@ -2038,6 +2471,7 @@ void HloInstructionProto::SharedDtor() {
   channel_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   backend_config_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   comparison_direction_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  comparison_type_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete shape_;
   if (this != internal_default_instance()) delete metadata_;
   if (this != internal_default_instance()) delete literal_;
@@ -2055,6 +2489,7 @@ void HloInstructionProto::SharedDtor() {
   if (this != internal_default_instance()) delete triangular_solve_options_;
   if (this != internal_default_instance()) delete parameter_replication_;
   if (this != internal_default_instance()) delete cholesky_options_;
+  if (this != internal_default_instance()) delete frontend_attributes_;
 }
 
 void HloInstructionProto::ArenaDtor(void* object) {
@@ -2095,6 +2530,7 @@ void HloInstructionProto::Clear() {
   source_target_pairs_.Clear();
   operand_shapes_with_layout_.Clear();
   outer_dimension_partitions_.Clear();
+  custom_call_output_operand_aliasing_.Clear();
   name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
   opcode_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
   fusion_kind_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
@@ -2104,6 +2540,7 @@ void HloInstructionProto::Clear() {
   channel_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
   backend_config_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
   comparison_direction_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  comparison_type_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
   if (GetArenaNoVirtual() == NULL && shape_ != NULL) {
     delete shape_;
   }
@@ -2172,9 +2609,13 @@ void HloInstructionProto::Clear() {
     delete cholesky_options_;
   }
   cholesky_options_ = NULL;
+  if (GetArenaNoVirtual() == NULL && frontend_attributes_ != NULL) {
+    delete frontend_attributes_;
+  }
+  frontend_attributes_ = NULL;
   ::memset(&parameter_number_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&delta_) -
-      reinterpret_cast<char*>(&parameter_number_)) + sizeof(delta_));
+      reinterpret_cast<char*>(&custom_call_schedule_) -
+      reinterpret_cast<char*>(&parameter_number_)) + sizeof(custom_call_schedule_));
   _internal_metadata_.Clear();
 }
 
@@ -2713,16 +3154,12 @@ bool HloInstructionProto::MergePartialFromCodedStream(
         break;
       }
 
-      // string backend_config = 43;
+      // bytes backend_config = 43;
       case 43: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(90u /* 346 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_backend_config()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-            this->backend_config().data(), static_cast<int>(this->backend_config().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
-            "xla.HloInstructionProto.backend_config"));
         } else {
           goto handle_unusual;
         }
@@ -3004,6 +3441,148 @@ bool HloInstructionProto::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &indices_are_sorted_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .xla.FrontendAttributes frontend_attributes = 68;
+      case 68: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(34u /* 546 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_frontend_attributes()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool unique_indices = 69;
+      case 69: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(40u /* 552 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &unique_indices_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .xla.RandomAlgorithm rng_algorithm = 70;
+      case 70: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(48u /* 560 & 0xFF */)) {
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_rng_algorithm(static_cast< ::xla::RandomAlgorithm >(value));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool use_global_device_ids = 71;
+      case 71: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(56u /* 568 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &use_global_device_ids_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string comparison_type = 72;
+      case 72: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(66u /* 578 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_comparison_type()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->comparison_type().data(), static_cast<int>(this->comparison_type().length()),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "xla.HloInstructionProto.comparison_type"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool is_cross_program_prefetch = 73;
+      case 73: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(72u /* 584 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &is_cross_program_prefetch_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated .xla.CustomCallOutputOperandAliasing custom_call_output_operand_aliasing = 74;
+      case 74: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(82u /* 594 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+                input, add_custom_call_output_operand_aliasing()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .xla.PaddingType padding_type = 75;
+      case 75: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(88u /* 600 & 0xFF */)) {
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_padding_type(static_cast< ::xla::PaddingType >(value));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .xla.CustomCallSchedule custom_call_schedule = 76;
+      case 76: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(96u /* 608 & 0xFF */)) {
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_custom_call_schedule(static_cast< ::xla::CustomCallSchedule >(value));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .xla.CustomCallApiVersion custom_call_api_version = 77;
+      case 77: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(104u /* 616 & 0xFF */)) {
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_custom_call_api_version(static_cast< ::xla::CustomCallApiVersion >(value));
         } else {
           goto handle_unusual;
         }
@@ -3301,13 +3880,9 @@ void HloInstructionProto::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteInt64(42, this->cost_estimate_ns(), output);
   }
 
-  // string backend_config = 43;
+  // bytes backend_config = 43;
   if (this->backend_config().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->backend_config().data(), static_cast<int>(this->backend_config().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "xla.HloInstructionProto.backend_config");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+    ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
       43, this->backend_config(), output);
   }
 
@@ -3444,6 +4019,70 @@ void HloInstructionProto::SerializeWithCachedSizes(
   // bool indices_are_sorted = 67;
   if (this->indices_are_sorted() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(67, this->indices_are_sorted(), output);
+  }
+
+  // .xla.FrontendAttributes frontend_attributes = 68;
+  if (this->has_frontend_attributes()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      68, this->_internal_frontend_attributes(), output);
+  }
+
+  // bool unique_indices = 69;
+  if (this->unique_indices() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(69, this->unique_indices(), output);
+  }
+
+  // .xla.RandomAlgorithm rng_algorithm = 70;
+  if (this->rng_algorithm() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      70, this->rng_algorithm(), output);
+  }
+
+  // bool use_global_device_ids = 71;
+  if (this->use_global_device_ids() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(71, this->use_global_device_ids(), output);
+  }
+
+  // string comparison_type = 72;
+  if (this->comparison_type().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->comparison_type().data(), static_cast<int>(this->comparison_type().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "xla.HloInstructionProto.comparison_type");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      72, this->comparison_type(), output);
+  }
+
+  // bool is_cross_program_prefetch = 73;
+  if (this->is_cross_program_prefetch() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(73, this->is_cross_program_prefetch(), output);
+  }
+
+  // repeated .xla.CustomCallOutputOperandAliasing custom_call_output_operand_aliasing = 74;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->custom_call_output_operand_aliasing_size()); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      74,
+      this->custom_call_output_operand_aliasing(static_cast<int>(i)),
+      output);
+  }
+
+  // .xla.PaddingType padding_type = 75;
+  if (this->padding_type() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      75, this->padding_type(), output);
+  }
+
+  // .xla.CustomCallSchedule custom_call_schedule = 76;
+  if (this->custom_call_schedule() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      76, this->custom_call_schedule(), output);
+  }
+
+  // .xla.CustomCallApiVersion custom_call_api_version = 77;
+  if (this->custom_call_api_version() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      77, this->custom_call_api_version(), output);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -3755,14 +4394,10 @@ void HloInstructionProto::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(42, this->cost_estimate_ns(), target);
   }
 
-  // string backend_config = 43;
+  // bytes backend_config = 43;
   if (this->backend_config().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->backend_config().data(), static_cast<int>(this->backend_config().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "xla.HloInstructionProto.backend_config");
     target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
         43, this->backend_config(), target);
   }
 
@@ -3906,6 +4541,71 @@ void HloInstructionProto::SerializeWithCachedSizes(
   // bool indices_are_sorted = 67;
   if (this->indices_are_sorted() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(67, this->indices_are_sorted(), target);
+  }
+
+  // .xla.FrontendAttributes frontend_attributes = 68;
+  if (this->has_frontend_attributes()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        68, this->_internal_frontend_attributes(), deterministic, target);
+  }
+
+  // bool unique_indices = 69;
+  if (this->unique_indices() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(69, this->unique_indices(), target);
+  }
+
+  // .xla.RandomAlgorithm rng_algorithm = 70;
+  if (this->rng_algorithm() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      70, this->rng_algorithm(), target);
+  }
+
+  // bool use_global_device_ids = 71;
+  if (this->use_global_device_ids() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(71, this->use_global_device_ids(), target);
+  }
+
+  // string comparison_type = 72;
+  if (this->comparison_type().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->comparison_type().data(), static_cast<int>(this->comparison_type().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "xla.HloInstructionProto.comparison_type");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        72, this->comparison_type(), target);
+  }
+
+  // bool is_cross_program_prefetch = 73;
+  if (this->is_cross_program_prefetch() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(73, this->is_cross_program_prefetch(), target);
+  }
+
+  // repeated .xla.CustomCallOutputOperandAliasing custom_call_output_operand_aliasing = 74;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->custom_call_output_operand_aliasing_size()); i < n; i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        74, this->custom_call_output_operand_aliasing(static_cast<int>(i)), deterministic, target);
+  }
+
+  // .xla.PaddingType padding_type = 75;
+  if (this->padding_type() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      75, this->padding_type(), target);
+  }
+
+  // .xla.CustomCallSchedule custom_call_schedule = 76;
+  if (this->custom_call_schedule() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      76, this->custom_call_schedule(), target);
+  }
+
+  // .xla.CustomCallApiVersion custom_call_api_version = 77;
+  if (this->custom_call_api_version() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      77, this->custom_call_api_version(), target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -4097,6 +4797,17 @@ size_t HloInstructionProto::ByteSizeLong() const {
     total_size += data_size;
   }
 
+  // repeated .xla.CustomCallOutputOperandAliasing custom_call_output_operand_aliasing = 74;
+  {
+    unsigned int count = static_cast<unsigned int>(this->custom_call_output_operand_aliasing_size());
+    total_size += 2UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          this->custom_call_output_operand_aliasing(static_cast<int>(i)));
+    }
+  }
+
   // string name = 1;
   if (this->name().size() > 0) {
     total_size += 1 +
@@ -4146,10 +4857,10 @@ size_t HloInstructionProto::ByteSizeLong() const {
         this->channel_name());
   }
 
-  // string backend_config = 43;
+  // bytes backend_config = 43;
   if (this->backend_config().size() > 0) {
     total_size += 2 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
+      ::google::protobuf::internal::WireFormatLite::BytesSize(
         this->backend_config());
   }
 
@@ -4158,6 +4869,13 @@ size_t HloInstructionProto::ByteSizeLong() const {
     total_size += 2 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->comparison_direction());
+  }
+
+  // string comparison_type = 72;
+  if (this->comparison_type().size() > 0) {
+    total_size += 2 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->comparison_type());
   }
 
   // .xla.ShapeProto shape = 3;
@@ -4279,6 +4997,13 @@ size_t HloInstructionProto::ByteSizeLong() const {
         *cholesky_options_);
   }
 
+  // .xla.FrontendAttributes frontend_attributes = 68;
+  if (this->has_frontend_attributes()) {
+    total_size += 2 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *frontend_attributes_);
+  }
+
   // int64 parameter_number = 9;
   if (this->parameter_number() != 0) {
     total_size += 1 +
@@ -4366,6 +5091,11 @@ size_t HloInstructionProto::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormatLite::EnumSize(this->fft_type());
   }
 
+  // bool use_global_device_ids = 71;
+  if (this->use_global_device_ids() != 0) {
+    total_size += 2 + 1;
+  }
+
   // bool is_host_transfer = 47;
   if (this->is_host_transfer() != 0) {
     total_size += 2 + 1;
@@ -4381,11 +5111,6 @@ size_t HloInstructionProto::ByteSizeLong() const {
     total_size += 2 + 1;
   }
 
-  // bool custom_call_has_side_effect = 65;
-  if (this->custom_call_has_side_effect() != 0) {
-    total_size += 2 + 1;
-  }
-
   // int64 batch_group_count = 58;
   if (this->batch_group_count() != 0) {
     total_size += 2 +
@@ -4393,16 +5118,55 @@ size_t HloInstructionProto::ByteSizeLong() const {
         this->batch_group_count());
   }
 
-  // bool indices_are_sorted = 67;
-  if (this->indices_are_sorted() != 0) {
-    total_size += 2 + 1;
-  }
-
   // int64 delta = 66;
   if (this->delta() != 0) {
     total_size += 2 +
       ::google::protobuf::internal::WireFormatLite::Int64Size(
         this->delta());
+  }
+
+  // bool custom_call_has_side_effect = 65;
+  if (this->custom_call_has_side_effect() != 0) {
+    total_size += 2 + 1;
+  }
+
+  // bool indices_are_sorted = 67;
+  if (this->indices_are_sorted() != 0) {
+    total_size += 2 + 1;
+  }
+
+  // bool unique_indices = 69;
+  if (this->unique_indices() != 0) {
+    total_size += 2 + 1;
+  }
+
+  // bool is_cross_program_prefetch = 73;
+  if (this->is_cross_program_prefetch() != 0) {
+    total_size += 2 + 1;
+  }
+
+  // .xla.RandomAlgorithm rng_algorithm = 70;
+  if (this->rng_algorithm() != 0) {
+    total_size += 2 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->rng_algorithm());
+  }
+
+  // .xla.CustomCallApiVersion custom_call_api_version = 77;
+  if (this->custom_call_api_version() != 0) {
+    total_size += 2 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->custom_call_api_version());
+  }
+
+  // .xla.PaddingType padding_type = 75;
+  if (this->padding_type() != 0) {
+    total_size += 2 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->padding_type());
+  }
+
+  // .xla.CustomCallSchedule custom_call_schedule = 76;
+  if (this->custom_call_schedule() != 0) {
+    total_size += 2 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->custom_call_schedule());
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -4444,6 +5208,7 @@ void HloInstructionProto::MergeFrom(const HloInstructionProto& from) {
   source_target_pairs_.MergeFrom(from.source_target_pairs_);
   operand_shapes_with_layout_.MergeFrom(from.operand_shapes_with_layout_);
   outer_dimension_partitions_.MergeFrom(from.outer_dimension_partitions_);
+  custom_call_output_operand_aliasing_.MergeFrom(from.custom_call_output_operand_aliasing_);
   if (from.name().size() > 0) {
     set_name(from.name());
   }
@@ -4470,6 +5235,9 @@ void HloInstructionProto::MergeFrom(const HloInstructionProto& from) {
   }
   if (from.comparison_direction().size() > 0) {
     set_comparison_direction(from.comparison_direction());
+  }
+  if (from.comparison_type().size() > 0) {
+    set_comparison_type(from.comparison_type());
   }
   if (from.has_shape()) {
     mutable_shape()->::xla::ShapeProto::MergeFrom(from.shape());
@@ -4522,6 +5290,9 @@ void HloInstructionProto::MergeFrom(const HloInstructionProto& from) {
   if (from.has_cholesky_options()) {
     mutable_cholesky_options()->::xla::CholeskyOptions::MergeFrom(from.cholesky_options());
   }
+  if (from.has_frontend_attributes()) {
+    mutable_frontend_attributes()->::xla::FrontendAttributes::MergeFrom(from.frontend_attributes());
+  }
   if (from.parameter_number() != 0) {
     set_parameter_number(from.parameter_number());
   }
@@ -4561,6 +5332,9 @@ void HloInstructionProto::MergeFrom(const HloInstructionProto& from) {
   if (from.fft_type() != 0) {
     set_fft_type(from.fft_type());
   }
+  if (from.use_global_device_ids() != 0) {
+    set_use_global_device_ids(from.use_global_device_ids());
+  }
   if (from.is_host_transfer() != 0) {
     set_is_host_transfer(from.is_host_transfer());
   }
@@ -4570,17 +5344,35 @@ void HloInstructionProto::MergeFrom(const HloInstructionProto& from) {
   if (from.constrain_layout() != 0) {
     set_constrain_layout(from.constrain_layout());
   }
-  if (from.custom_call_has_side_effect() != 0) {
-    set_custom_call_has_side_effect(from.custom_call_has_side_effect());
-  }
   if (from.batch_group_count() != 0) {
     set_batch_group_count(from.batch_group_count());
+  }
+  if (from.delta() != 0) {
+    set_delta(from.delta());
+  }
+  if (from.custom_call_has_side_effect() != 0) {
+    set_custom_call_has_side_effect(from.custom_call_has_side_effect());
   }
   if (from.indices_are_sorted() != 0) {
     set_indices_are_sorted(from.indices_are_sorted());
   }
-  if (from.delta() != 0) {
-    set_delta(from.delta());
+  if (from.unique_indices() != 0) {
+    set_unique_indices(from.unique_indices());
+  }
+  if (from.is_cross_program_prefetch() != 0) {
+    set_is_cross_program_prefetch(from.is_cross_program_prefetch());
+  }
+  if (from.rng_algorithm() != 0) {
+    set_rng_algorithm(from.rng_algorithm());
+  }
+  if (from.custom_call_api_version() != 0) {
+    set_custom_call_api_version(from.custom_call_api_version());
+  }
+  if (from.padding_type() != 0) {
+    set_padding_type(from.padding_type());
+  }
+  if (from.custom_call_schedule() != 0) {
+    set_custom_call_schedule(from.custom_call_schedule());
   }
 }
 
@@ -4635,6 +5427,7 @@ void HloInstructionProto::InternalSwap(HloInstructionProto* other) {
   CastToBase(&source_target_pairs_)->InternalSwap(CastToBase(&other->source_target_pairs_));
   CastToBase(&operand_shapes_with_layout_)->InternalSwap(CastToBase(&other->operand_shapes_with_layout_));
   outer_dimension_partitions_.InternalSwap(&other->outer_dimension_partitions_);
+  CastToBase(&custom_call_output_operand_aliasing_)->InternalSwap(CastToBase(&other->custom_call_output_operand_aliasing_));
   name_.Swap(&other->name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   opcode_.Swap(&other->opcode_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
@@ -4653,6 +5446,8 @@ void HloInstructionProto::InternalSwap(HloInstructionProto* other) {
     GetArenaNoVirtual());
   comparison_direction_.Swap(&other->comparison_direction_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
+  comparison_type_.Swap(&other->comparison_type_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
   swap(shape_, other->shape_);
   swap(metadata_, other->metadata_);
   swap(literal_, other->literal_);
@@ -4670,6 +5465,7 @@ void HloInstructionProto::InternalSwap(HloInstructionProto* other) {
   swap(triangular_solve_options_, other->triangular_solve_options_);
   swap(parameter_replication_, other->parameter_replication_);
   swap(cholesky_options_, other->cholesky_options_);
+  swap(frontend_attributes_, other->frontend_attributes_);
   swap(parameter_number_, other->parameter_number_);
   swap(tuple_index_, other->tuple_index_);
   swap(exponent_bits_, other->exponent_bits_);
@@ -4683,13 +5479,20 @@ void HloInstructionProto::InternalSwap(HloInstructionProto* other) {
   swap(all_reduce_id_, other->all_reduce_id_);
   swap(feature_group_count_, other->feature_group_count_);
   swap(fft_type_, other->fft_type_);
+  swap(use_global_device_ids_, other->use_global_device_ids_);
   swap(is_host_transfer_, other->is_host_transfer_);
   swap(is_stable_, other->is_stable_);
   swap(constrain_layout_, other->constrain_layout_);
-  swap(custom_call_has_side_effect_, other->custom_call_has_side_effect_);
   swap(batch_group_count_, other->batch_group_count_);
-  swap(indices_are_sorted_, other->indices_are_sorted_);
   swap(delta_, other->delta_);
+  swap(custom_call_has_side_effect_, other->custom_call_has_side_effect_);
+  swap(indices_are_sorted_, other->indices_are_sorted_);
+  swap(unique_indices_, other->unique_indices_);
+  swap(is_cross_program_prefetch_, other->is_cross_program_prefetch_);
+  swap(rng_algorithm_, other->rng_algorithm_);
+  swap(custom_call_api_version_, other->custom_call_api_version_);
+  swap(padding_type_, other->padding_type_);
+  swap(custom_call_schedule_, other->custom_call_schedule_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
@@ -4730,6 +5533,7 @@ const int HloComputationProto::kInstructionsFieldNumber;
 const int HloComputationProto::kProgramShapeFieldNumber;
 const int HloComputationProto::kIdFieldNumber;
 const int HloComputationProto::kRootIdFieldNumber;
+const int HloComputationProto::kIsFusionComputationFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 HloComputationProto::HloComputationProto()
@@ -4764,16 +5568,16 @@ HloComputationProto::HloComputationProto(const HloComputationProto& from)
     program_shape_ = NULL;
   }
   ::memcpy(&id_, &from.id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&root_id_) -
-    reinterpret_cast<char*>(&id_)) + sizeof(root_id_));
+    static_cast<size_t>(reinterpret_cast<char*>(&is_fusion_computation_) -
+    reinterpret_cast<char*>(&id_)) + sizeof(is_fusion_computation_));
   // @@protoc_insertion_point(copy_constructor:xla.HloComputationProto)
 }
 
 void HloComputationProto::SharedCtor() {
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&program_shape_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&root_id_) -
-      reinterpret_cast<char*>(&program_shape_)) + sizeof(root_id_));
+      reinterpret_cast<char*>(&is_fusion_computation_) -
+      reinterpret_cast<char*>(&program_shape_)) + sizeof(is_fusion_computation_));
 }
 
 HloComputationProto::~HloComputationProto() {
@@ -4820,8 +5624,8 @@ void HloComputationProto::Clear() {
   }
   program_shape_ = NULL;
   ::memset(&id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&root_id_) -
-      reinterpret_cast<char*>(&id_)) + sizeof(root_id_));
+      reinterpret_cast<char*>(&is_fusion_computation_) -
+      reinterpret_cast<char*>(&id_)) + sizeof(is_fusion_computation_));
   _internal_metadata_.Clear();
 }
 
@@ -4903,6 +5707,20 @@ bool HloComputationProto::MergePartialFromCodedStream(
         break;
       }
 
+      // bool is_fusion_computation = 7;
+      case 7: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(56u /* 56 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &is_fusion_computation_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -4964,6 +5782,11 @@ void HloComputationProto::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteInt64(6, this->root_id(), output);
   }
 
+  // bool is_fusion_computation = 7;
+  if (this->is_fusion_computation() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(7, this->is_fusion_computation(), output);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -5012,6 +5835,11 @@ void HloComputationProto::SerializeWithCachedSizes(
   // int64 root_id = 6;
   if (this->root_id() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(6, this->root_id(), target);
+  }
+
+  // bool is_fusion_computation = 7;
+  if (this->is_fusion_computation() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(7, this->is_fusion_computation(), target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -5070,6 +5898,11 @@ size_t HloComputationProto::ByteSizeLong() const {
         this->root_id());
   }
 
+  // bool is_fusion_computation = 7;
+  if (this->is_fusion_computation() != 0) {
+    total_size += 1 + 1;
+  }
+
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -5109,6 +5942,9 @@ void HloComputationProto::MergeFrom(const HloComputationProto& from) {
   }
   if (from.root_id() != 0) {
     set_root_id(from.root_id());
+  }
+  if (from.is_fusion_computation() != 0) {
+    set_is_fusion_computation(from.is_fusion_computation());
   }
 }
 
@@ -5157,6 +5993,7 @@ void HloComputationProto::InternalSwap(HloComputationProto* other) {
   swap(program_shape_, other->program_shape_);
   swap(id_, other->id_);
   swap(root_id_, other->root_id_);
+  swap(is_fusion_computation_, other->is_fusion_computation_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
@@ -5966,7 +6803,7 @@ bool HloInputOutputAliasProto_AliasEntryProto::MergePartialFromCodedStream(
         break;
       }
 
-      // .xla.HloInputOutputAliasProto.Kind kind = 4;
+      // .xla.Kind kind = 4;
       case 4: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
@@ -5974,7 +6811,7 @@ bool HloInputOutputAliasProto_AliasEntryProto::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
                  input, &value)));
-          set_kind(static_cast< ::xla::HloInputOutputAliasProto_Kind >(value));
+          set_kind(static_cast< ::xla::Kind >(value));
         } else {
           goto handle_unusual;
         }
@@ -6034,7 +6871,7 @@ void HloInputOutputAliasProto_AliasEntryProto::SerializeWithCachedSizes(
       this->parameter_shape_index(i), output);
   }
 
-  // .xla.HloInputOutputAliasProto.Kind kind = 4;
+  // .xla.Kind kind = 4;
   if (this->kind() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       4, this->kind(), output);
@@ -6085,7 +6922,7 @@ void HloInputOutputAliasProto_AliasEntryProto::SerializeWithCachedSizes(
       WriteInt64NoTagToArray(this->parameter_shape_index_, target);
   }
 
-  // .xla.HloInputOutputAliasProto.Kind kind = 4;
+  // .xla.Kind kind = 4;
   if (this->kind() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       4, this->kind(), target);
@@ -6147,7 +6984,7 @@ size_t HloInputOutputAliasProto_AliasEntryProto::ByteSizeLong() const {
         this->parameter_number());
   }
 
-  // .xla.HloInputOutputAliasProto.Kind kind = 4;
+  // .xla.Kind kind = 4;
   if (this->kind() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::EnumSize(this->kind());
@@ -7225,6 +8062,695 @@ void DynamicParameterBindingProto::InternalSwap(DynamicParameterBindingProto* ot
 
 // ===================================================================
 
+void CrossProgramPrefetch::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int CrossProgramPrefetch::kParameterFieldNumber;
+const int CrossProgramPrefetch::kIndexFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+CrossProgramPrefetch::CrossProgramPrefetch()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_CrossProgramPrefetch.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:xla.CrossProgramPrefetch)
+}
+CrossProgramPrefetch::CrossProgramPrefetch(::google::protobuf::Arena* arena)
+  : ::google::protobuf::Message(),
+  _internal_metadata_(arena),
+  index_(arena) {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_CrossProgramPrefetch.base);
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:xla.CrossProgramPrefetch)
+}
+CrossProgramPrefetch::CrossProgramPrefetch(const CrossProgramPrefetch& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      index_(from.index_) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  parameter_ = from.parameter_;
+  // @@protoc_insertion_point(copy_constructor:xla.CrossProgramPrefetch)
+}
+
+void CrossProgramPrefetch::SharedCtor() {
+  parameter_ = GOOGLE_LONGLONG(0);
+}
+
+CrossProgramPrefetch::~CrossProgramPrefetch() {
+  // @@protoc_insertion_point(destructor:xla.CrossProgramPrefetch)
+  SharedDtor();
+}
+
+void CrossProgramPrefetch::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
+}
+
+void CrossProgramPrefetch::ArenaDtor(void* object) {
+  CrossProgramPrefetch* _this = reinterpret_cast< CrossProgramPrefetch* >(object);
+  (void)_this;
+}
+void CrossProgramPrefetch::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+}
+void CrossProgramPrefetch::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* CrossProgramPrefetch::descriptor() {
+  ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const CrossProgramPrefetch& CrossProgramPrefetch::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_CrossProgramPrefetch.base);
+  return *internal_default_instance();
+}
+
+
+void CrossProgramPrefetch::Clear() {
+// @@protoc_insertion_point(message_clear_start:xla.CrossProgramPrefetch)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  index_.Clear();
+  parameter_ = GOOGLE_LONGLONG(0);
+  _internal_metadata_.Clear();
+}
+
+bool CrossProgramPrefetch::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:xla.CrossProgramPrefetch)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // int64 parameter = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 input, &parameter_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated int64 index = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 input, this->mutable_index())));
+        } else if (
+            static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 1, 18u, input, this->mutable_index())));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:xla.CrossProgramPrefetch)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:xla.CrossProgramPrefetch)
+  return false;
+#undef DO_
+}
+
+void CrossProgramPrefetch::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:xla.CrossProgramPrefetch)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int64 parameter = 1;
+  if (this->parameter() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt64(1, this->parameter(), output);
+  }
+
+  // repeated int64 index = 2;
+  if (this->index_size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteTag(2, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
+    output->WriteVarint32(static_cast< ::google::protobuf::uint32>(
+        _index_cached_byte_size_));
+  }
+  for (int i = 0, n = this->index_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt64NoTag(
+      this->index(i), output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:xla.CrossProgramPrefetch)
+}
+
+::google::protobuf::uint8* CrossProgramPrefetch::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:xla.CrossProgramPrefetch)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int64 parameter = 1;
+  if (this->parameter() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(1, this->parameter(), target);
+  }
+
+  // repeated int64 index = 2;
+  if (this->index_size() > 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
+      2,
+      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
+      target);
+    target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
+        static_cast< ::google::protobuf::int32>(
+            _index_cached_byte_size_), target);
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteInt64NoTagToArray(this->index_, target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:xla.CrossProgramPrefetch)
+  return target;
+}
+
+size_t CrossProgramPrefetch::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:xla.CrossProgramPrefetch)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // repeated int64 index = 2;
+  {
+    size_t data_size = ::google::protobuf::internal::WireFormatLite::
+      Int64Size(this->index_);
+    if (data_size > 0) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int32Size(
+            static_cast< ::google::protobuf::int32>(data_size));
+    }
+    int cached_size = ::google::protobuf::internal::ToCachedSize(data_size);
+    GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+    _index_cached_byte_size_ = cached_size;
+    GOOGLE_SAFE_CONCURRENT_WRITES_END();
+    total_size += data_size;
+  }
+
+  // int64 parameter = 1;
+  if (this->parameter() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int64Size(
+        this->parameter());
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void CrossProgramPrefetch::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:xla.CrossProgramPrefetch)
+  GOOGLE_DCHECK_NE(&from, this);
+  const CrossProgramPrefetch* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const CrossProgramPrefetch>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:xla.CrossProgramPrefetch)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:xla.CrossProgramPrefetch)
+    MergeFrom(*source);
+  }
+}
+
+void CrossProgramPrefetch::MergeFrom(const CrossProgramPrefetch& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:xla.CrossProgramPrefetch)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  index_.MergeFrom(from.index_);
+  if (from.parameter() != 0) {
+    set_parameter(from.parameter());
+  }
+}
+
+void CrossProgramPrefetch::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:xla.CrossProgramPrefetch)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void CrossProgramPrefetch::CopyFrom(const CrossProgramPrefetch& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:xla.CrossProgramPrefetch)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool CrossProgramPrefetch::IsInitialized() const {
+  return true;
+}
+
+void CrossProgramPrefetch::Swap(CrossProgramPrefetch* other) {
+  if (other == this) return;
+  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
+    InternalSwap(other);
+  } else {
+    CrossProgramPrefetch* temp = New(GetArenaNoVirtual());
+    temp->MergeFrom(*other);
+    other->CopyFrom(*this);
+    InternalSwap(temp);
+    if (GetArenaNoVirtual() == NULL) {
+      delete temp;
+    }
+  }
+}
+void CrossProgramPrefetch::UnsafeArenaSwap(CrossProgramPrefetch* other) {
+  if (other == this) return;
+  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
+  InternalSwap(other);
+}
+void CrossProgramPrefetch::InternalSwap(CrossProgramPrefetch* other) {
+  using std::swap;
+  index_.InternalSwap(&other->index_);
+  swap(parameter_, other->parameter_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata CrossProgramPrefetch::GetMetadata() const {
+  protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void HloModuleProto_ProfileInfo::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int HloModuleProto_ProfileInfo::kProfileTypeFieldNumber;
+const int HloModuleProto_ProfileInfo::kRelativeSpeedupFieldNumber;
+const int HloModuleProto_ProfileInfo::kProfileSourceFieldNumber;
+const int HloModuleProto_ProfileInfo::kCompilationEventFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+HloModuleProto_ProfileInfo::HloModuleProto_ProfileInfo()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_HloModuleProto_ProfileInfo.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:xla.HloModuleProto.ProfileInfo)
+}
+HloModuleProto_ProfileInfo::HloModuleProto_ProfileInfo(::google::protobuf::Arena* arena)
+  : ::google::protobuf::Message(),
+  _internal_metadata_(arena) {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_HloModuleProto_ProfileInfo.base);
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:xla.HloModuleProto.ProfileInfo)
+}
+HloModuleProto_ProfileInfo::HloModuleProto_ProfileInfo(const HloModuleProto_ProfileInfo& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::memcpy(&relative_speedup_, &from.relative_speedup_,
+    static_cast<size_t>(reinterpret_cast<char*>(&compilation_event_) -
+    reinterpret_cast<char*>(&relative_speedup_)) + sizeof(compilation_event_));
+  // @@protoc_insertion_point(copy_constructor:xla.HloModuleProto.ProfileInfo)
+}
+
+void HloModuleProto_ProfileInfo::SharedCtor() {
+  ::memset(&relative_speedup_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&compilation_event_) -
+      reinterpret_cast<char*>(&relative_speedup_)) + sizeof(compilation_event_));
+}
+
+HloModuleProto_ProfileInfo::~HloModuleProto_ProfileInfo() {
+  // @@protoc_insertion_point(destructor:xla.HloModuleProto.ProfileInfo)
+  SharedDtor();
+}
+
+void HloModuleProto_ProfileInfo::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
+}
+
+void HloModuleProto_ProfileInfo::ArenaDtor(void* object) {
+  HloModuleProto_ProfileInfo* _this = reinterpret_cast< HloModuleProto_ProfileInfo* >(object);
+  (void)_this;
+}
+void HloModuleProto_ProfileInfo::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+}
+void HloModuleProto_ProfileInfo::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* HloModuleProto_ProfileInfo::descriptor() {
+  ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const HloModuleProto_ProfileInfo& HloModuleProto_ProfileInfo::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_HloModuleProto_ProfileInfo.base);
+  return *internal_default_instance();
+}
+
+
+void HloModuleProto_ProfileInfo::Clear() {
+// @@protoc_insertion_point(message_clear_start:xla.HloModuleProto.ProfileInfo)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&relative_speedup_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&compilation_event_) -
+      reinterpret_cast<char*>(&relative_speedup_)) + sizeof(compilation_event_));
+  _internal_metadata_.Clear();
+}
+
+bool HloModuleProto_ProfileInfo::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:xla.HloModuleProto.ProfileInfo)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // .xla.HloModuleProto.ProfileType profile_type = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_profile_type(static_cast< ::xla::HloModuleProto_ProfileType >(value));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // double relative_speedup = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(17u /* 17 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
+                 input, &relative_speedup_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .xla.ProfileSource profile_source = 3;
+      case 3: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_profile_source(static_cast< ::xla::ProfileSource >(value));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .xla.CompilationEvent compilation_event = 4;
+      case 4: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_compilation_event(static_cast< ::xla::CompilationEvent >(value));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:xla.HloModuleProto.ProfileInfo)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:xla.HloModuleProto.ProfileInfo)
+  return false;
+#undef DO_
+}
+
+void HloModuleProto_ProfileInfo::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:xla.HloModuleProto.ProfileInfo)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .xla.HloModuleProto.ProfileType profile_type = 1;
+  if (this->profile_type() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      1, this->profile_type(), output);
+  }
+
+  // double relative_speedup = 2;
+  if (this->relative_speedup() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteDouble(2, this->relative_speedup(), output);
+  }
+
+  // .xla.ProfileSource profile_source = 3;
+  if (this->profile_source() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      3, this->profile_source(), output);
+  }
+
+  // .xla.CompilationEvent compilation_event = 4;
+  if (this->compilation_event() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      4, this->compilation_event(), output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:xla.HloModuleProto.ProfileInfo)
+}
+
+::google::protobuf::uint8* HloModuleProto_ProfileInfo::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:xla.HloModuleProto.ProfileInfo)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .xla.HloModuleProto.ProfileType profile_type = 1;
+  if (this->profile_type() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      1, this->profile_type(), target);
+  }
+
+  // double relative_speedup = 2;
+  if (this->relative_speedup() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(2, this->relative_speedup(), target);
+  }
+
+  // .xla.ProfileSource profile_source = 3;
+  if (this->profile_source() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      3, this->profile_source(), target);
+  }
+
+  // .xla.CompilationEvent compilation_event = 4;
+  if (this->compilation_event() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      4, this->compilation_event(), target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:xla.HloModuleProto.ProfileInfo)
+  return target;
+}
+
+size_t HloModuleProto_ProfileInfo::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:xla.HloModuleProto.ProfileInfo)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // double relative_speedup = 2;
+  if (this->relative_speedup() != 0) {
+    total_size += 1 + 8;
+  }
+
+  // .xla.HloModuleProto.ProfileType profile_type = 1;
+  if (this->profile_type() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->profile_type());
+  }
+
+  // .xla.ProfileSource profile_source = 3;
+  if (this->profile_source() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->profile_source());
+  }
+
+  // .xla.CompilationEvent compilation_event = 4;
+  if (this->compilation_event() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->compilation_event());
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void HloModuleProto_ProfileInfo::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:xla.HloModuleProto.ProfileInfo)
+  GOOGLE_DCHECK_NE(&from, this);
+  const HloModuleProto_ProfileInfo* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const HloModuleProto_ProfileInfo>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:xla.HloModuleProto.ProfileInfo)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:xla.HloModuleProto.ProfileInfo)
+    MergeFrom(*source);
+  }
+}
+
+void HloModuleProto_ProfileInfo::MergeFrom(const HloModuleProto_ProfileInfo& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:xla.HloModuleProto.ProfileInfo)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.relative_speedup() != 0) {
+    set_relative_speedup(from.relative_speedup());
+  }
+  if (from.profile_type() != 0) {
+    set_profile_type(from.profile_type());
+  }
+  if (from.profile_source() != 0) {
+    set_profile_source(from.profile_source());
+  }
+  if (from.compilation_event() != 0) {
+    set_compilation_event(from.compilation_event());
+  }
+}
+
+void HloModuleProto_ProfileInfo::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:xla.HloModuleProto.ProfileInfo)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void HloModuleProto_ProfileInfo::CopyFrom(const HloModuleProto_ProfileInfo& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:xla.HloModuleProto.ProfileInfo)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool HloModuleProto_ProfileInfo::IsInitialized() const {
+  return true;
+}
+
+void HloModuleProto_ProfileInfo::Swap(HloModuleProto_ProfileInfo* other) {
+  if (other == this) return;
+  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
+    InternalSwap(other);
+  } else {
+    HloModuleProto_ProfileInfo* temp = New(GetArenaNoVirtual());
+    temp->MergeFrom(*other);
+    other->CopyFrom(*this);
+    InternalSwap(temp);
+    if (GetArenaNoVirtual() == NULL) {
+      delete temp;
+    }
+  }
+}
+void HloModuleProto_ProfileInfo::UnsafeArenaSwap(HloModuleProto_ProfileInfo* other) {
+  if (other == this) return;
+  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
+  InternalSwap(other);
+}
+void HloModuleProto_ProfileInfo::InternalSwap(HloModuleProto_ProfileInfo* other) {
+  using std::swap;
+  swap(relative_speedup_, other->relative_speedup_);
+  swap(profile_type_, other->profile_type_);
+  swap(profile_source_, other->profile_source_);
+  swap(compilation_event_, other->compilation_event_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata HloModuleProto_ProfileInfo::GetMetadata() const {
+  protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
 void HloModuleProto::InitAsDefaultInstance() {
   ::xla::_HloModuleProto_default_instance_._instance.get_mutable()->host_program_shape_ = const_cast< ::xla::ProgramShapeProto*>(
       ::xla::ProgramShapeProto::internal_default_instance());
@@ -7234,6 +8760,8 @@ void HloModuleProto::InitAsDefaultInstance() {
       ::xla::HloInputOutputAliasProto::internal_default_instance());
   ::xla::_HloModuleProto_default_instance_._instance.get_mutable()->dynamic_parameter_binding_ = const_cast< ::xla::DynamicParameterBindingProto*>(
       ::xla::DynamicParameterBindingProto::internal_default_instance());
+  ::xla::_HloModuleProto_default_instance_._instance.get_mutable()->spmd_output_sharding_ = const_cast< ::xla::OpSharding*>(
+      ::xla::OpSharding::internal_default_instance());
 }
 void HloModuleProto::unsafe_arena_set_allocated_host_program_shape(
     ::xla::ProgramShapeProto* host_program_shape) {
@@ -7293,6 +8821,28 @@ void HloModuleProto::unsafe_arena_set_allocated_dynamic_parameter_binding(
   }
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:xla.HloModuleProto.dynamic_parameter_binding)
 }
+void HloModuleProto::unsafe_arena_set_allocated_spmd_output_sharding(
+    ::xla::OpSharding* spmd_output_sharding) {
+  if (GetArenaNoVirtual() == NULL) {
+    delete spmd_output_sharding_;
+  }
+  spmd_output_sharding_ = spmd_output_sharding;
+  if (spmd_output_sharding) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:xla.HloModuleProto.spmd_output_sharding)
+}
+void HloModuleProto::clear_spmd_output_sharding() {
+  if (GetArenaNoVirtual() == NULL && spmd_output_sharding_ != NULL) {
+    delete spmd_output_sharding_;
+  }
+  spmd_output_sharding_ = NULL;
+}
+void HloModuleProto::clear_spmd_parameters_shardings() {
+  spmd_parameters_shardings_.Clear();
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int HloModuleProto::kNameFieldNumber;
 const int HloModuleProto::kEntryComputationNameFieldNumber;
@@ -7303,6 +8853,11 @@ const int HloModuleProto::kIdFieldNumber;
 const int HloModuleProto::kScheduleFieldNumber;
 const int HloModuleProto::kInputOutputAliasFieldNumber;
 const int HloModuleProto::kDynamicParameterBindingFieldNumber;
+const int HloModuleProto::kCrossProgramPrefetchesFieldNumber;
+const int HloModuleProto::kIsDynamicFieldNumber;
+const int HloModuleProto::kSpmdOutputShardingFieldNumber;
+const int HloModuleProto::kSpmdParametersShardingsFieldNumber;
+const int HloModuleProto::kProfileInfoFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 HloModuleProto::HloModuleProto()
@@ -7315,7 +8870,10 @@ HloModuleProto::HloModuleProto()
 HloModuleProto::HloModuleProto(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
-  computations_(arena) {
+  computations_(arena),
+  cross_program_prefetches_(arena),
+  profile_info_(arena),
+  spmd_parameters_shardings_(arena) {
   ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_HloModuleProto.base);
   SharedCtor();
   RegisterArenaDtor(arena);
@@ -7324,7 +8882,10 @@ HloModuleProto::HloModuleProto(::google::protobuf::Arena* arena)
 HloModuleProto::HloModuleProto(const HloModuleProto& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL),
-      computations_(from.computations_) {
+      computations_(from.computations_),
+      cross_program_prefetches_(from.cross_program_prefetches_),
+      profile_info_(from.profile_info_),
+      spmd_parameters_shardings_(from.spmd_parameters_shardings_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.name().size() > 0) {
@@ -7356,9 +8917,14 @@ HloModuleProto::HloModuleProto(const HloModuleProto& from)
   } else {
     dynamic_parameter_binding_ = NULL;
   }
+  if (from.has_spmd_output_sharding()) {
+    spmd_output_sharding_ = new ::xla::OpSharding(*from.spmd_output_sharding_);
+  } else {
+    spmd_output_sharding_ = NULL;
+  }
   ::memcpy(&id_, &from.id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&entry_computation_id_) -
-    reinterpret_cast<char*>(&id_)) + sizeof(entry_computation_id_));
+    static_cast<size_t>(reinterpret_cast<char*>(&is_dynamic_) -
+    reinterpret_cast<char*>(&id_)) + sizeof(is_dynamic_));
   // @@protoc_insertion_point(copy_constructor:xla.HloModuleProto)
 }
 
@@ -7366,8 +8932,8 @@ void HloModuleProto::SharedCtor() {
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   entry_computation_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&host_program_shape_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&entry_computation_id_) -
-      reinterpret_cast<char*>(&host_program_shape_)) + sizeof(entry_computation_id_));
+      reinterpret_cast<char*>(&is_dynamic_) -
+      reinterpret_cast<char*>(&host_program_shape_)) + sizeof(is_dynamic_));
 }
 
 HloModuleProto::~HloModuleProto() {
@@ -7383,6 +8949,7 @@ void HloModuleProto::SharedDtor() {
   if (this != internal_default_instance()) delete schedule_;
   if (this != internal_default_instance()) delete input_output_alias_;
   if (this != internal_default_instance()) delete dynamic_parameter_binding_;
+  if (this != internal_default_instance()) delete spmd_output_sharding_;
 }
 
 void HloModuleProto::ArenaDtor(void* object) {
@@ -7412,6 +8979,9 @@ void HloModuleProto::Clear() {
   (void) cached_has_bits;
 
   computations_.Clear();
+  cross_program_prefetches_.Clear();
+  profile_info_.Clear();
+  spmd_parameters_shardings_.Clear();
   name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
   entry_computation_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
   if (GetArenaNoVirtual() == NULL && host_program_shape_ != NULL) {
@@ -7430,9 +9000,13 @@ void HloModuleProto::Clear() {
     delete dynamic_parameter_binding_;
   }
   dynamic_parameter_binding_ = NULL;
+  if (GetArenaNoVirtual() == NULL && spmd_output_sharding_ != NULL) {
+    delete spmd_output_sharding_;
+  }
+  spmd_output_sharding_ = NULL;
   ::memset(&id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&entry_computation_id_) -
-      reinterpret_cast<char*>(&id_)) + sizeof(entry_computation_id_));
+      reinterpret_cast<char*>(&is_dynamic_) -
+      reinterpret_cast<char*>(&id_)) + sizeof(is_dynamic_));
   _internal_metadata_.Clear();
 }
 
@@ -7566,6 +9140,68 @@ bool HloModuleProto::MergePartialFromCodedStream(
         break;
       }
 
+      // repeated .xla.CrossProgramPrefetch cross_program_prefetches = 10;
+      case 10: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(82u /* 82 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+                input, add_cross_program_prefetches()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool is_dynamic = 11;
+      case 11: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(88u /* 88 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &is_dynamic_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .xla.OpSharding spmd_output_sharding = 12;
+      case 12: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(98u /* 98 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_spmd_output_sharding()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated .xla.HloModuleProto.ProfileInfo profile_info = 13;
+      case 13: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(106u /* 106 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+                input, add_profile_info()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated .xla.OpSharding spmd_parameters_shardings = 14;
+      case 14: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(114u /* 114 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+                input, add_spmd_parameters_shardings()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -7655,6 +9291,44 @@ void HloModuleProto::SerializeWithCachedSizes(
       9, this->_internal_dynamic_parameter_binding(), output);
   }
 
+  // repeated .xla.CrossProgramPrefetch cross_program_prefetches = 10;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->cross_program_prefetches_size()); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      10,
+      this->cross_program_prefetches(static_cast<int>(i)),
+      output);
+  }
+
+  // bool is_dynamic = 11;
+  if (this->is_dynamic() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(11, this->is_dynamic(), output);
+  }
+
+  // .xla.OpSharding spmd_output_sharding = 12;
+  if (this->has_spmd_output_sharding()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      12, this->_internal_spmd_output_sharding(), output);
+  }
+
+  // repeated .xla.HloModuleProto.ProfileInfo profile_info = 13;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->profile_info_size()); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      13,
+      this->profile_info(static_cast<int>(i)),
+      output);
+  }
+
+  // repeated .xla.OpSharding spmd_parameters_shardings = 14;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->spmd_parameters_shardings_size()); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      14,
+      this->spmd_parameters_shardings(static_cast<int>(i)),
+      output);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -7737,6 +9411,42 @@ void HloModuleProto::SerializeWithCachedSizes(
         9, this->_internal_dynamic_parameter_binding(), deterministic, target);
   }
 
+  // repeated .xla.CrossProgramPrefetch cross_program_prefetches = 10;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->cross_program_prefetches_size()); i < n; i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        10, this->cross_program_prefetches(static_cast<int>(i)), deterministic, target);
+  }
+
+  // bool is_dynamic = 11;
+  if (this->is_dynamic() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(11, this->is_dynamic(), target);
+  }
+
+  // .xla.OpSharding spmd_output_sharding = 12;
+  if (this->has_spmd_output_sharding()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        12, this->_internal_spmd_output_sharding(), deterministic, target);
+  }
+
+  // repeated .xla.HloModuleProto.ProfileInfo profile_info = 13;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->profile_info_size()); i < n; i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        13, this->profile_info(static_cast<int>(i)), deterministic, target);
+  }
+
+  // repeated .xla.OpSharding spmd_parameters_shardings = 14;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->spmd_parameters_shardings_size()); i < n; i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        14, this->spmd_parameters_shardings(static_cast<int>(i)), deterministic, target);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
@@ -7762,6 +9472,39 @@ size_t HloModuleProto::ByteSizeLong() const {
       total_size +=
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           this->computations(static_cast<int>(i)));
+    }
+  }
+
+  // repeated .xla.CrossProgramPrefetch cross_program_prefetches = 10;
+  {
+    unsigned int count = static_cast<unsigned int>(this->cross_program_prefetches_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          this->cross_program_prefetches(static_cast<int>(i)));
+    }
+  }
+
+  // repeated .xla.HloModuleProto.ProfileInfo profile_info = 13;
+  {
+    unsigned int count = static_cast<unsigned int>(this->profile_info_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          this->profile_info(static_cast<int>(i)));
+    }
+  }
+
+  // repeated .xla.OpSharding spmd_parameters_shardings = 14;
+  {
+    unsigned int count = static_cast<unsigned int>(this->spmd_parameters_shardings_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          this->spmd_parameters_shardings(static_cast<int>(i)));
     }
   }
 
@@ -7807,6 +9550,13 @@ size_t HloModuleProto::ByteSizeLong() const {
         *dynamic_parameter_binding_);
   }
 
+  // .xla.OpSharding spmd_output_sharding = 12;
+  if (this->has_spmd_output_sharding()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *spmd_output_sharding_);
+  }
+
   // int64 id = 5;
   if (this->id() != 0) {
     total_size += 1 +
@@ -7819,6 +9569,11 @@ size_t HloModuleProto::ByteSizeLong() const {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int64Size(
         this->entry_computation_id());
+  }
+
+  // bool is_dynamic = 11;
+  if (this->is_dynamic() != 0) {
+    total_size += 1 + 1;
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -7849,6 +9604,9 @@ void HloModuleProto::MergeFrom(const HloModuleProto& from) {
   (void) cached_has_bits;
 
   computations_.MergeFrom(from.computations_);
+  cross_program_prefetches_.MergeFrom(from.cross_program_prefetches_);
+  profile_info_.MergeFrom(from.profile_info_);
+  spmd_parameters_shardings_.MergeFrom(from.spmd_parameters_shardings_);
   if (from.name().size() > 0) {
     set_name(from.name());
   }
@@ -7867,11 +9625,17 @@ void HloModuleProto::MergeFrom(const HloModuleProto& from) {
   if (from.has_dynamic_parameter_binding()) {
     mutable_dynamic_parameter_binding()->::xla::DynamicParameterBindingProto::MergeFrom(from.dynamic_parameter_binding());
   }
+  if (from.has_spmd_output_sharding()) {
+    mutable_spmd_output_sharding()->::xla::OpSharding::MergeFrom(from.spmd_output_sharding());
+  }
   if (from.id() != 0) {
     set_id(from.id());
   }
   if (from.entry_computation_id() != 0) {
     set_entry_computation_id(from.entry_computation_id());
+  }
+  if (from.is_dynamic() != 0) {
+    set_is_dynamic(from.is_dynamic());
   }
 }
 
@@ -7915,6 +9679,9 @@ void HloModuleProto::UnsafeArenaSwap(HloModuleProto* other) {
 void HloModuleProto::InternalSwap(HloModuleProto* other) {
   using std::swap;
   CastToBase(&computations_)->InternalSwap(CastToBase(&other->computations_));
+  CastToBase(&cross_program_prefetches_)->InternalSwap(CastToBase(&other->cross_program_prefetches_));
+  CastToBase(&profile_info_)->InternalSwap(CastToBase(&other->profile_info_));
+  CastToBase(&spmd_parameters_shardings_)->InternalSwap(CastToBase(&other->spmd_parameters_shardings_));
   name_.Swap(&other->name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   entry_computation_name_.Swap(&other->entry_computation_name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
@@ -7923,8 +9690,10 @@ void HloModuleProto::InternalSwap(HloModuleProto* other) {
   swap(schedule_, other->schedule_);
   swap(input_output_alias_, other->input_output_alias_);
   swap(dynamic_parameter_binding_, other->dynamic_parameter_binding_);
+  swap(spmd_output_sharding_, other->spmd_output_sharding_);
   swap(id_, other->id_);
   swap(entry_computation_id_, other->entry_computation_id_);
+  swap(is_dynamic_, other->is_dynamic_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
@@ -10157,6 +11926,7 @@ void HeapSimulatorTrace::InitAsDefaultInstance() {
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int HeapSimulatorTrace::kEventsFieldNumber;
 const int HeapSimulatorTrace::kWholeModuleSimulationFieldNumber;
+const int HeapSimulatorTrace::kBufferAllocationIndexFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 HeapSimulatorTrace::HeapSimulatorTrace()
@@ -10180,12 +11950,16 @@ HeapSimulatorTrace::HeapSimulatorTrace(const HeapSimulatorTrace& from)
       _internal_metadata_(NULL),
       events_(from.events_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  whole_module_simulation_ = from.whole_module_simulation_;
+  ::memcpy(&buffer_allocation_index_, &from.buffer_allocation_index_,
+    static_cast<size_t>(reinterpret_cast<char*>(&whole_module_simulation_) -
+    reinterpret_cast<char*>(&buffer_allocation_index_)) + sizeof(whole_module_simulation_));
   // @@protoc_insertion_point(copy_constructor:xla.HeapSimulatorTrace)
 }
 
 void HeapSimulatorTrace::SharedCtor() {
-  whole_module_simulation_ = false;
+  ::memset(&buffer_allocation_index_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&whole_module_simulation_) -
+      reinterpret_cast<char*>(&buffer_allocation_index_)) + sizeof(whole_module_simulation_));
 }
 
 HeapSimulatorTrace::~HeapSimulatorTrace() {
@@ -10224,7 +11998,9 @@ void HeapSimulatorTrace::Clear() {
   (void) cached_has_bits;
 
   events_.Clear();
-  whole_module_simulation_ = false;
+  ::memset(&buffer_allocation_index_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&whole_module_simulation_) -
+      reinterpret_cast<char*>(&buffer_allocation_index_)) + sizeof(whole_module_simulation_));
   _internal_metadata_.Clear();
 }
 
@@ -10258,6 +12034,20 @@ bool HeapSimulatorTrace::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &whole_module_simulation_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int64 buffer_allocation_index = 3;
+      case 3: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 input, &buffer_allocation_index_)));
         } else {
           goto handle_unusual;
         }
@@ -10304,6 +12094,11 @@ void HeapSimulatorTrace::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteBool(2, this->whole_module_simulation(), output);
   }
 
+  // int64 buffer_allocation_index = 3;
+  if (this->buffer_allocation_index() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt64(3, this->buffer_allocation_index(), output);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -10329,6 +12124,11 @@ void HeapSimulatorTrace::SerializeWithCachedSizes(
   // bool whole_module_simulation = 2;
   if (this->whole_module_simulation() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(2, this->whole_module_simulation(), target);
+  }
+
+  // int64 buffer_allocation_index = 3;
+  if (this->buffer_allocation_index() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(3, this->buffer_allocation_index(), target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -10357,6 +12157,13 @@ size_t HeapSimulatorTrace::ByteSizeLong() const {
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           this->events(static_cast<int>(i)));
     }
+  }
+
+  // int64 buffer_allocation_index = 3;
+  if (this->buffer_allocation_index() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int64Size(
+        this->buffer_allocation_index());
   }
 
   // bool whole_module_simulation = 2;
@@ -10392,6 +12199,9 @@ void HeapSimulatorTrace::MergeFrom(const HeapSimulatorTrace& from) {
   (void) cached_has_bits;
 
   events_.MergeFrom(from.events_);
+  if (from.buffer_allocation_index() != 0) {
+    set_buffer_allocation_index(from.buffer_allocation_index());
+  }
   if (from.whole_module_simulation() != 0) {
     set_whole_module_simulation(from.whole_module_simulation());
   }
@@ -10437,6 +12247,7 @@ void HeapSimulatorTrace::UnsafeArenaSwap(HeapSimulatorTrace* other) {
 void HeapSimulatorTrace::InternalSwap(HeapSimulatorTrace* other) {
   using std::swap;
   CastToBase(&events_)->InternalSwap(CastToBase(&other->events_));
+  swap(buffer_allocation_index_, other->buffer_allocation_index_);
   swap(whole_module_simulation_, other->whole_module_simulation_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
@@ -12275,6 +14086,2596 @@ void HloSnapshot::InternalSwap(HloSnapshot* other) {
 }
 
 
+// ===================================================================
+
+void HloModuleMetadataProto::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int HloModuleMetadataProto::kCanonicalModuleIdFieldNumber;
+const int HloModuleMetadataProto::kModuleGroupNameFieldNumber;
+const int HloModuleMetadataProto::kOriginalModuleIdFieldNumber;
+const int HloModuleMetadataProto::kPartitionedModuleIdsFieldNumber;
+const int HloModuleMetadataProto::kPassMetadataFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+HloModuleMetadataProto::HloModuleMetadataProto()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_HloModuleMetadataProto.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:xla.HloModuleMetadataProto)
+}
+HloModuleMetadataProto::HloModuleMetadataProto(::google::protobuf::Arena* arena)
+  : ::google::protobuf::Message(),
+  _internal_metadata_(arena),
+  partitioned_module_ids_(arena),
+  pass_metadata_(arena) {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_HloModuleMetadataProto.base);
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:xla.HloModuleMetadataProto)
+}
+HloModuleMetadataProto::HloModuleMetadataProto(const HloModuleMetadataProto& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      partitioned_module_ids_(from.partitioned_module_ids_),
+      pass_metadata_(from.pass_metadata_) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  module_group_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.module_group_name().size() > 0) {
+    module_group_name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.module_group_name(),
+      GetArenaNoVirtual());
+  }
+  ::memcpy(&canonical_module_id_, &from.canonical_module_id_,
+    static_cast<size_t>(reinterpret_cast<char*>(&original_module_id_) -
+    reinterpret_cast<char*>(&canonical_module_id_)) + sizeof(original_module_id_));
+  // @@protoc_insertion_point(copy_constructor:xla.HloModuleMetadataProto)
+}
+
+void HloModuleMetadataProto::SharedCtor() {
+  module_group_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  ::memset(&canonical_module_id_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&original_module_id_) -
+      reinterpret_cast<char*>(&canonical_module_id_)) + sizeof(original_module_id_));
+}
+
+HloModuleMetadataProto::~HloModuleMetadataProto() {
+  // @@protoc_insertion_point(destructor:xla.HloModuleMetadataProto)
+  SharedDtor();
+}
+
+void HloModuleMetadataProto::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
+  module_group_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+
+void HloModuleMetadataProto::ArenaDtor(void* object) {
+  HloModuleMetadataProto* _this = reinterpret_cast< HloModuleMetadataProto* >(object);
+  (void)_this;
+}
+void HloModuleMetadataProto::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+}
+void HloModuleMetadataProto::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* HloModuleMetadataProto::descriptor() {
+  ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const HloModuleMetadataProto& HloModuleMetadataProto::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_HloModuleMetadataProto.base);
+  return *internal_default_instance();
+}
+
+
+void HloModuleMetadataProto::Clear() {
+// @@protoc_insertion_point(message_clear_start:xla.HloModuleMetadataProto)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  partitioned_module_ids_.Clear();
+  pass_metadata_.Clear();
+  module_group_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  ::memset(&canonical_module_id_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&original_module_id_) -
+      reinterpret_cast<char*>(&canonical_module_id_)) + sizeof(original_module_id_));
+  _internal_metadata_.Clear();
+}
+
+bool HloModuleMetadataProto::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:xla.HloModuleMetadataProto)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // int64 canonical_module_id = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 input, &canonical_module_id_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string module_group_name = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_module_group_name()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->module_group_name().data(), static_cast<int>(this->module_group_name().length()),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "xla.HloModuleMetadataProto.module_group_name"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int64 original_module_id = 3;
+      case 3: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 input, &original_module_id_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated int64 partitioned_module_ids = 4;
+      case 4: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 input, this->mutable_partitioned_module_ids())));
+        } else if (
+            static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 1, 34u, input, this->mutable_partitioned_module_ids())));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated .xla.HloPassMetadata pass_metadata = 5;
+      case 5: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+                input, add_pass_metadata()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:xla.HloModuleMetadataProto)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:xla.HloModuleMetadataProto)
+  return false;
+#undef DO_
+}
+
+void HloModuleMetadataProto::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:xla.HloModuleMetadataProto)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int64 canonical_module_id = 1;
+  if (this->canonical_module_id() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt64(1, this->canonical_module_id(), output);
+  }
+
+  // string module_group_name = 2;
+  if (this->module_group_name().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->module_group_name().data(), static_cast<int>(this->module_group_name().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "xla.HloModuleMetadataProto.module_group_name");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->module_group_name(), output);
+  }
+
+  // int64 original_module_id = 3;
+  if (this->original_module_id() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt64(3, this->original_module_id(), output);
+  }
+
+  // repeated int64 partitioned_module_ids = 4;
+  if (this->partitioned_module_ids_size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteTag(4, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
+    output->WriteVarint32(static_cast< ::google::protobuf::uint32>(
+        _partitioned_module_ids_cached_byte_size_));
+  }
+  for (int i = 0, n = this->partitioned_module_ids_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt64NoTag(
+      this->partitioned_module_ids(i), output);
+  }
+
+  // repeated .xla.HloPassMetadata pass_metadata = 5;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->pass_metadata_size()); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      5,
+      this->pass_metadata(static_cast<int>(i)),
+      output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:xla.HloModuleMetadataProto)
+}
+
+::google::protobuf::uint8* HloModuleMetadataProto::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:xla.HloModuleMetadataProto)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int64 canonical_module_id = 1;
+  if (this->canonical_module_id() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(1, this->canonical_module_id(), target);
+  }
+
+  // string module_group_name = 2;
+  if (this->module_group_name().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->module_group_name().data(), static_cast<int>(this->module_group_name().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "xla.HloModuleMetadataProto.module_group_name");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        2, this->module_group_name(), target);
+  }
+
+  // int64 original_module_id = 3;
+  if (this->original_module_id() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(3, this->original_module_id(), target);
+  }
+
+  // repeated int64 partitioned_module_ids = 4;
+  if (this->partitioned_module_ids_size() > 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
+      4,
+      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
+      target);
+    target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
+        static_cast< ::google::protobuf::int32>(
+            _partitioned_module_ids_cached_byte_size_), target);
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteInt64NoTagToArray(this->partitioned_module_ids_, target);
+  }
+
+  // repeated .xla.HloPassMetadata pass_metadata = 5;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->pass_metadata_size()); i < n; i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        5, this->pass_metadata(static_cast<int>(i)), deterministic, target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:xla.HloModuleMetadataProto)
+  return target;
+}
+
+size_t HloModuleMetadataProto::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:xla.HloModuleMetadataProto)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // repeated int64 partitioned_module_ids = 4;
+  {
+    size_t data_size = ::google::protobuf::internal::WireFormatLite::
+      Int64Size(this->partitioned_module_ids_);
+    if (data_size > 0) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int32Size(
+            static_cast< ::google::protobuf::int32>(data_size));
+    }
+    int cached_size = ::google::protobuf::internal::ToCachedSize(data_size);
+    GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+    _partitioned_module_ids_cached_byte_size_ = cached_size;
+    GOOGLE_SAFE_CONCURRENT_WRITES_END();
+    total_size += data_size;
+  }
+
+  // repeated .xla.HloPassMetadata pass_metadata = 5;
+  {
+    unsigned int count = static_cast<unsigned int>(this->pass_metadata_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          this->pass_metadata(static_cast<int>(i)));
+    }
+  }
+
+  // string module_group_name = 2;
+  if (this->module_group_name().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->module_group_name());
+  }
+
+  // int64 canonical_module_id = 1;
+  if (this->canonical_module_id() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int64Size(
+        this->canonical_module_id());
+  }
+
+  // int64 original_module_id = 3;
+  if (this->original_module_id() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int64Size(
+        this->original_module_id());
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void HloModuleMetadataProto::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:xla.HloModuleMetadataProto)
+  GOOGLE_DCHECK_NE(&from, this);
+  const HloModuleMetadataProto* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const HloModuleMetadataProto>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:xla.HloModuleMetadataProto)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:xla.HloModuleMetadataProto)
+    MergeFrom(*source);
+  }
+}
+
+void HloModuleMetadataProto::MergeFrom(const HloModuleMetadataProto& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:xla.HloModuleMetadataProto)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  partitioned_module_ids_.MergeFrom(from.partitioned_module_ids_);
+  pass_metadata_.MergeFrom(from.pass_metadata_);
+  if (from.module_group_name().size() > 0) {
+    set_module_group_name(from.module_group_name());
+  }
+  if (from.canonical_module_id() != 0) {
+    set_canonical_module_id(from.canonical_module_id());
+  }
+  if (from.original_module_id() != 0) {
+    set_original_module_id(from.original_module_id());
+  }
+}
+
+void HloModuleMetadataProto::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:xla.HloModuleMetadataProto)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void HloModuleMetadataProto::CopyFrom(const HloModuleMetadataProto& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:xla.HloModuleMetadataProto)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool HloModuleMetadataProto::IsInitialized() const {
+  return true;
+}
+
+void HloModuleMetadataProto::Swap(HloModuleMetadataProto* other) {
+  if (other == this) return;
+  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
+    InternalSwap(other);
+  } else {
+    HloModuleMetadataProto* temp = New(GetArenaNoVirtual());
+    temp->MergeFrom(*other);
+    other->CopyFrom(*this);
+    InternalSwap(temp);
+    if (GetArenaNoVirtual() == NULL) {
+      delete temp;
+    }
+  }
+}
+void HloModuleMetadataProto::UnsafeArenaSwap(HloModuleMetadataProto* other) {
+  if (other == this) return;
+  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
+  InternalSwap(other);
+}
+void HloModuleMetadataProto::InternalSwap(HloModuleMetadataProto* other) {
+  using std::swap;
+  partitioned_module_ids_.InternalSwap(&other->partitioned_module_ids_);
+  CastToBase(&pass_metadata_)->InternalSwap(CastToBase(&other->pass_metadata_));
+  module_group_name_.Swap(&other->module_group_name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  swap(canonical_module_id_, other->canonical_module_id_);
+  swap(original_module_id_, other->original_module_id_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata HloModuleMetadataProto::GetMetadata() const {
+  protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void HloPassMetadata::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int HloPassMetadata::kPassIdFieldNumber;
+const int HloPassMetadata::kPassNameFieldNumber;
+const int HloPassMetadata::kPipelineNameFieldNumber;
+const int HloPassMetadata::kDumpFilenamesFieldNumber;
+const int HloPassMetadata::kModuleChangedFieldNumber;
+const int HloPassMetadata::kModuleIdFieldNumber;
+const int HloPassMetadata::kModuleGroupModuleIdsFieldNumber;
+const int HloPassMetadata::kStartTimestampUsecFieldNumber;
+const int HloPassMetadata::kEndTimestampUsecFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+HloPassMetadata::HloPassMetadata()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_HloPassMetadata.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:xla.HloPassMetadata)
+}
+HloPassMetadata::HloPassMetadata(::google::protobuf::Arena* arena)
+  : ::google::protobuf::Message(),
+  _internal_metadata_(arena),
+  dump_filenames_(arena),
+  module_group_module_ids_(arena) {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_HloPassMetadata.base);
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:xla.HloPassMetadata)
+}
+HloPassMetadata::HloPassMetadata(const HloPassMetadata& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      dump_filenames_(from.dump_filenames_),
+      module_group_module_ids_(from.module_group_module_ids_) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  pass_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.pass_name().size() > 0) {
+    pass_name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.pass_name(),
+      GetArenaNoVirtual());
+  }
+  pipeline_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.pipeline_name().size() > 0) {
+    pipeline_name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.pipeline_name(),
+      GetArenaNoVirtual());
+  }
+  ::memcpy(&pass_id_, &from.pass_id_,
+    static_cast<size_t>(reinterpret_cast<char*>(&module_changed_) -
+    reinterpret_cast<char*>(&pass_id_)) + sizeof(module_changed_));
+  // @@protoc_insertion_point(copy_constructor:xla.HloPassMetadata)
+}
+
+void HloPassMetadata::SharedCtor() {
+  pass_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  pipeline_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  ::memset(&pass_id_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&module_changed_) -
+      reinterpret_cast<char*>(&pass_id_)) + sizeof(module_changed_));
+}
+
+HloPassMetadata::~HloPassMetadata() {
+  // @@protoc_insertion_point(destructor:xla.HloPassMetadata)
+  SharedDtor();
+}
+
+void HloPassMetadata::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
+  pass_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  pipeline_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+
+void HloPassMetadata::ArenaDtor(void* object) {
+  HloPassMetadata* _this = reinterpret_cast< HloPassMetadata* >(object);
+  (void)_this;
+}
+void HloPassMetadata::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+}
+void HloPassMetadata::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* HloPassMetadata::descriptor() {
+  ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const HloPassMetadata& HloPassMetadata::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_HloPassMetadata.base);
+  return *internal_default_instance();
+}
+
+
+void HloPassMetadata::Clear() {
+// @@protoc_insertion_point(message_clear_start:xla.HloPassMetadata)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  dump_filenames_.Clear();
+  module_group_module_ids_.Clear();
+  pass_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  pipeline_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  ::memset(&pass_id_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&module_changed_) -
+      reinterpret_cast<char*>(&pass_id_)) + sizeof(module_changed_));
+  _internal_metadata_.Clear();
+}
+
+bool HloPassMetadata::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:xla.HloPassMetadata)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // int64 pass_id = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 input, &pass_id_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string pass_name = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_pass_name()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->pass_name().data(), static_cast<int>(this->pass_name().length()),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "xla.HloPassMetadata.pass_name"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string pipeline_name = 3;
+      case 3: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_pipeline_name()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->pipeline_name().data(), static_cast<int>(this->pipeline_name().length()),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "xla.HloPassMetadata.pipeline_name"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated string dump_filenames = 4;
+      case 4: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->add_dump_filenames()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->dump_filenames(this->dump_filenames_size() - 1).data(),
+            static_cast<int>(this->dump_filenames(this->dump_filenames_size() - 1).length()),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "xla.HloPassMetadata.dump_filenames"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool module_changed = 5;
+      case 5: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &module_changed_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int64 module_id = 6;
+      case 6: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(48u /* 48 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 input, &module_id_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated int64 module_group_module_ids = 7;
+      case 7: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(58u /* 58 & 0xFF */)) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 input, this->mutable_module_group_module_ids())));
+        } else if (
+            static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(56u /* 56 & 0xFF */)) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 1, 58u, input, this->mutable_module_group_module_ids())));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int64 start_timestamp_usec = 8;
+      case 8: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(64u /* 64 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 input, &start_timestamp_usec_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int64 end_timestamp_usec = 9;
+      case 9: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(72u /* 72 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 input, &end_timestamp_usec_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:xla.HloPassMetadata)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:xla.HloPassMetadata)
+  return false;
+#undef DO_
+}
+
+void HloPassMetadata::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:xla.HloPassMetadata)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int64 pass_id = 1;
+  if (this->pass_id() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt64(1, this->pass_id(), output);
+  }
+
+  // string pass_name = 2;
+  if (this->pass_name().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->pass_name().data(), static_cast<int>(this->pass_name().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "xla.HloPassMetadata.pass_name");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->pass_name(), output);
+  }
+
+  // string pipeline_name = 3;
+  if (this->pipeline_name().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->pipeline_name().data(), static_cast<int>(this->pipeline_name().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "xla.HloPassMetadata.pipeline_name");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      3, this->pipeline_name(), output);
+  }
+
+  // repeated string dump_filenames = 4;
+  for (int i = 0, n = this->dump_filenames_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->dump_filenames(i).data(), static_cast<int>(this->dump_filenames(i).length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "xla.HloPassMetadata.dump_filenames");
+    ::google::protobuf::internal::WireFormatLite::WriteString(
+      4, this->dump_filenames(i), output);
+  }
+
+  // bool module_changed = 5;
+  if (this->module_changed() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(5, this->module_changed(), output);
+  }
+
+  // int64 module_id = 6;
+  if (this->module_id() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt64(6, this->module_id(), output);
+  }
+
+  // repeated int64 module_group_module_ids = 7;
+  if (this->module_group_module_ids_size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteTag(7, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
+    output->WriteVarint32(static_cast< ::google::protobuf::uint32>(
+        _module_group_module_ids_cached_byte_size_));
+  }
+  for (int i = 0, n = this->module_group_module_ids_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt64NoTag(
+      this->module_group_module_ids(i), output);
+  }
+
+  // int64 start_timestamp_usec = 8;
+  if (this->start_timestamp_usec() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt64(8, this->start_timestamp_usec(), output);
+  }
+
+  // int64 end_timestamp_usec = 9;
+  if (this->end_timestamp_usec() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt64(9, this->end_timestamp_usec(), output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:xla.HloPassMetadata)
+}
+
+::google::protobuf::uint8* HloPassMetadata::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:xla.HloPassMetadata)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int64 pass_id = 1;
+  if (this->pass_id() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(1, this->pass_id(), target);
+  }
+
+  // string pass_name = 2;
+  if (this->pass_name().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->pass_name().data(), static_cast<int>(this->pass_name().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "xla.HloPassMetadata.pass_name");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        2, this->pass_name(), target);
+  }
+
+  // string pipeline_name = 3;
+  if (this->pipeline_name().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->pipeline_name().data(), static_cast<int>(this->pipeline_name().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "xla.HloPassMetadata.pipeline_name");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        3, this->pipeline_name(), target);
+  }
+
+  // repeated string dump_filenames = 4;
+  for (int i = 0, n = this->dump_filenames_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->dump_filenames(i).data(), static_cast<int>(this->dump_filenames(i).length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "xla.HloPassMetadata.dump_filenames");
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteStringToArray(4, this->dump_filenames(i), target);
+  }
+
+  // bool module_changed = 5;
+  if (this->module_changed() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(5, this->module_changed(), target);
+  }
+
+  // int64 module_id = 6;
+  if (this->module_id() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(6, this->module_id(), target);
+  }
+
+  // repeated int64 module_group_module_ids = 7;
+  if (this->module_group_module_ids_size() > 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
+      7,
+      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
+      target);
+    target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
+        static_cast< ::google::protobuf::int32>(
+            _module_group_module_ids_cached_byte_size_), target);
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteInt64NoTagToArray(this->module_group_module_ids_, target);
+  }
+
+  // int64 start_timestamp_usec = 8;
+  if (this->start_timestamp_usec() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(8, this->start_timestamp_usec(), target);
+  }
+
+  // int64 end_timestamp_usec = 9;
+  if (this->end_timestamp_usec() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(9, this->end_timestamp_usec(), target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:xla.HloPassMetadata)
+  return target;
+}
+
+size_t HloPassMetadata::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:xla.HloPassMetadata)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // repeated string dump_filenames = 4;
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->dump_filenames_size());
+  for (int i = 0, n = this->dump_filenames_size(); i < n; i++) {
+    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
+      this->dump_filenames(i));
+  }
+
+  // repeated int64 module_group_module_ids = 7;
+  {
+    size_t data_size = ::google::protobuf::internal::WireFormatLite::
+      Int64Size(this->module_group_module_ids_);
+    if (data_size > 0) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int32Size(
+            static_cast< ::google::protobuf::int32>(data_size));
+    }
+    int cached_size = ::google::protobuf::internal::ToCachedSize(data_size);
+    GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+    _module_group_module_ids_cached_byte_size_ = cached_size;
+    GOOGLE_SAFE_CONCURRENT_WRITES_END();
+    total_size += data_size;
+  }
+
+  // string pass_name = 2;
+  if (this->pass_name().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->pass_name());
+  }
+
+  // string pipeline_name = 3;
+  if (this->pipeline_name().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->pipeline_name());
+  }
+
+  // int64 pass_id = 1;
+  if (this->pass_id() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int64Size(
+        this->pass_id());
+  }
+
+  // int64 module_id = 6;
+  if (this->module_id() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int64Size(
+        this->module_id());
+  }
+
+  // int64 start_timestamp_usec = 8;
+  if (this->start_timestamp_usec() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int64Size(
+        this->start_timestamp_usec());
+  }
+
+  // int64 end_timestamp_usec = 9;
+  if (this->end_timestamp_usec() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int64Size(
+        this->end_timestamp_usec());
+  }
+
+  // bool module_changed = 5;
+  if (this->module_changed() != 0) {
+    total_size += 1 + 1;
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void HloPassMetadata::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:xla.HloPassMetadata)
+  GOOGLE_DCHECK_NE(&from, this);
+  const HloPassMetadata* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const HloPassMetadata>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:xla.HloPassMetadata)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:xla.HloPassMetadata)
+    MergeFrom(*source);
+  }
+}
+
+void HloPassMetadata::MergeFrom(const HloPassMetadata& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:xla.HloPassMetadata)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  dump_filenames_.MergeFrom(from.dump_filenames_);
+  module_group_module_ids_.MergeFrom(from.module_group_module_ids_);
+  if (from.pass_name().size() > 0) {
+    set_pass_name(from.pass_name());
+  }
+  if (from.pipeline_name().size() > 0) {
+    set_pipeline_name(from.pipeline_name());
+  }
+  if (from.pass_id() != 0) {
+    set_pass_id(from.pass_id());
+  }
+  if (from.module_id() != 0) {
+    set_module_id(from.module_id());
+  }
+  if (from.start_timestamp_usec() != 0) {
+    set_start_timestamp_usec(from.start_timestamp_usec());
+  }
+  if (from.end_timestamp_usec() != 0) {
+    set_end_timestamp_usec(from.end_timestamp_usec());
+  }
+  if (from.module_changed() != 0) {
+    set_module_changed(from.module_changed());
+  }
+}
+
+void HloPassMetadata::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:xla.HloPassMetadata)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void HloPassMetadata::CopyFrom(const HloPassMetadata& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:xla.HloPassMetadata)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool HloPassMetadata::IsInitialized() const {
+  return true;
+}
+
+void HloPassMetadata::Swap(HloPassMetadata* other) {
+  if (other == this) return;
+  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
+    InternalSwap(other);
+  } else {
+    HloPassMetadata* temp = New(GetArenaNoVirtual());
+    temp->MergeFrom(*other);
+    other->CopyFrom(*this);
+    InternalSwap(temp);
+    if (GetArenaNoVirtual() == NULL) {
+      delete temp;
+    }
+  }
+}
+void HloPassMetadata::UnsafeArenaSwap(HloPassMetadata* other) {
+  if (other == this) return;
+  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
+  InternalSwap(other);
+}
+void HloPassMetadata::InternalSwap(HloPassMetadata* other) {
+  using std::swap;
+  dump_filenames_.InternalSwap(CastToBase(&other->dump_filenames_));
+  module_group_module_ids_.InternalSwap(&other->module_group_module_ids_);
+  pass_name_.Swap(&other->pass_name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  pipeline_name_.Swap(&other->pipeline_name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  swap(pass_id_, other->pass_id_);
+  swap(module_id_, other->module_id_);
+  swap(start_timestamp_usec_, other->start_timestamp_usec_);
+  swap(end_timestamp_usec_, other->end_timestamp_usec_);
+  swap(module_changed_, other->module_changed_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata HloPassMetadata::GetMetadata() const {
+  protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void EntryFunctionAttributes_ShapeIndex::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int EntryFunctionAttributes_ShapeIndex::kIndicesFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+EntryFunctionAttributes_ShapeIndex::EntryFunctionAttributes_ShapeIndex()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_EntryFunctionAttributes_ShapeIndex.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:xla.EntryFunctionAttributes.ShapeIndex)
+}
+EntryFunctionAttributes_ShapeIndex::EntryFunctionAttributes_ShapeIndex(::google::protobuf::Arena* arena)
+  : ::google::protobuf::Message(),
+  _internal_metadata_(arena),
+  indices_(arena) {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_EntryFunctionAttributes_ShapeIndex.base);
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:xla.EntryFunctionAttributes.ShapeIndex)
+}
+EntryFunctionAttributes_ShapeIndex::EntryFunctionAttributes_ShapeIndex(const EntryFunctionAttributes_ShapeIndex& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      indices_(from.indices_) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:xla.EntryFunctionAttributes.ShapeIndex)
+}
+
+void EntryFunctionAttributes_ShapeIndex::SharedCtor() {
+}
+
+EntryFunctionAttributes_ShapeIndex::~EntryFunctionAttributes_ShapeIndex() {
+  // @@protoc_insertion_point(destructor:xla.EntryFunctionAttributes.ShapeIndex)
+  SharedDtor();
+}
+
+void EntryFunctionAttributes_ShapeIndex::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
+}
+
+void EntryFunctionAttributes_ShapeIndex::ArenaDtor(void* object) {
+  EntryFunctionAttributes_ShapeIndex* _this = reinterpret_cast< EntryFunctionAttributes_ShapeIndex* >(object);
+  (void)_this;
+}
+void EntryFunctionAttributes_ShapeIndex::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+}
+void EntryFunctionAttributes_ShapeIndex::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* EntryFunctionAttributes_ShapeIndex::descriptor() {
+  ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const EntryFunctionAttributes_ShapeIndex& EntryFunctionAttributes_ShapeIndex::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_EntryFunctionAttributes_ShapeIndex.base);
+  return *internal_default_instance();
+}
+
+
+void EntryFunctionAttributes_ShapeIndex::Clear() {
+// @@protoc_insertion_point(message_clear_start:xla.EntryFunctionAttributes.ShapeIndex)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  indices_.Clear();
+  _internal_metadata_.Clear();
+}
+
+bool EntryFunctionAttributes_ShapeIndex::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:xla.EntryFunctionAttributes.ShapeIndex)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // repeated int64 indices = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 input, this->mutable_indices())));
+        } else if (
+            static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 1, 10u, input, this->mutable_indices())));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:xla.EntryFunctionAttributes.ShapeIndex)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:xla.EntryFunctionAttributes.ShapeIndex)
+  return false;
+#undef DO_
+}
+
+void EntryFunctionAttributes_ShapeIndex::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:xla.EntryFunctionAttributes.ShapeIndex)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated int64 indices = 1;
+  if (this->indices_size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteTag(1, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
+    output->WriteVarint32(static_cast< ::google::protobuf::uint32>(
+        _indices_cached_byte_size_));
+  }
+  for (int i = 0, n = this->indices_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt64NoTag(
+      this->indices(i), output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:xla.EntryFunctionAttributes.ShapeIndex)
+}
+
+::google::protobuf::uint8* EntryFunctionAttributes_ShapeIndex::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:xla.EntryFunctionAttributes.ShapeIndex)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated int64 indices = 1;
+  if (this->indices_size() > 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
+      1,
+      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
+      target);
+    target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
+        static_cast< ::google::protobuf::int32>(
+            _indices_cached_byte_size_), target);
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteInt64NoTagToArray(this->indices_, target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:xla.EntryFunctionAttributes.ShapeIndex)
+  return target;
+}
+
+size_t EntryFunctionAttributes_ShapeIndex::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:xla.EntryFunctionAttributes.ShapeIndex)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // repeated int64 indices = 1;
+  {
+    size_t data_size = ::google::protobuf::internal::WireFormatLite::
+      Int64Size(this->indices_);
+    if (data_size > 0) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int32Size(
+            static_cast< ::google::protobuf::int32>(data_size));
+    }
+    int cached_size = ::google::protobuf::internal::ToCachedSize(data_size);
+    GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+    _indices_cached_byte_size_ = cached_size;
+    GOOGLE_SAFE_CONCURRENT_WRITES_END();
+    total_size += data_size;
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void EntryFunctionAttributes_ShapeIndex::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:xla.EntryFunctionAttributes.ShapeIndex)
+  GOOGLE_DCHECK_NE(&from, this);
+  const EntryFunctionAttributes_ShapeIndex* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const EntryFunctionAttributes_ShapeIndex>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:xla.EntryFunctionAttributes.ShapeIndex)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:xla.EntryFunctionAttributes.ShapeIndex)
+    MergeFrom(*source);
+  }
+}
+
+void EntryFunctionAttributes_ShapeIndex::MergeFrom(const EntryFunctionAttributes_ShapeIndex& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:xla.EntryFunctionAttributes.ShapeIndex)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  indices_.MergeFrom(from.indices_);
+}
+
+void EntryFunctionAttributes_ShapeIndex::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:xla.EntryFunctionAttributes.ShapeIndex)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void EntryFunctionAttributes_ShapeIndex::CopyFrom(const EntryFunctionAttributes_ShapeIndex& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:xla.EntryFunctionAttributes.ShapeIndex)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool EntryFunctionAttributes_ShapeIndex::IsInitialized() const {
+  return true;
+}
+
+void EntryFunctionAttributes_ShapeIndex::Swap(EntryFunctionAttributes_ShapeIndex* other) {
+  if (other == this) return;
+  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
+    InternalSwap(other);
+  } else {
+    EntryFunctionAttributes_ShapeIndex* temp = New(GetArenaNoVirtual());
+    temp->MergeFrom(*other);
+    other->CopyFrom(*this);
+    InternalSwap(temp);
+    if (GetArenaNoVirtual() == NULL) {
+      delete temp;
+    }
+  }
+}
+void EntryFunctionAttributes_ShapeIndex::UnsafeArenaSwap(EntryFunctionAttributes_ShapeIndex* other) {
+  if (other == this) return;
+  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
+  InternalSwap(other);
+}
+void EntryFunctionAttributes_ShapeIndex::InternalSwap(EntryFunctionAttributes_ShapeIndex* other) {
+  using std::swap;
+  indices_.InternalSwap(&other->indices_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata EntryFunctionAttributes_ShapeIndex::GetMetadata() const {
+  protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void EntryFunctionAttributes_BufferParameterAttributes::InitAsDefaultInstance() {
+  ::xla::_EntryFunctionAttributes_BufferParameterAttributes_default_instance_._instance.get_mutable()->lmhlo_param_shape_index_ = const_cast< ::xla::EntryFunctionAttributes_ShapeIndex*>(
+      ::xla::EntryFunctionAttributes_ShapeIndex::internal_default_instance());
+  ::xla::_EntryFunctionAttributes_BufferParameterAttributes_default_instance_._instance.get_mutable()->lmhlo_output_index_ = const_cast< ::xla::EntryFunctionAttributes_ShapeIndex*>(
+      ::xla::EntryFunctionAttributes_ShapeIndex::internal_default_instance());
+}
+void EntryFunctionAttributes_BufferParameterAttributes::unsafe_arena_set_allocated_lmhlo_param_shape_index(
+    ::xla::EntryFunctionAttributes_ShapeIndex* lmhlo_param_shape_index) {
+  if (GetArenaNoVirtual() == NULL) {
+    delete lmhlo_param_shape_index_;
+  }
+  lmhlo_param_shape_index_ = lmhlo_param_shape_index;
+  if (lmhlo_param_shape_index) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:xla.EntryFunctionAttributes.BufferParameterAttributes.lmhlo_param_shape_index)
+}
+void EntryFunctionAttributes_BufferParameterAttributes::unsafe_arena_set_allocated_lmhlo_output_index(
+    ::xla::EntryFunctionAttributes_ShapeIndex* lmhlo_output_index) {
+  if (GetArenaNoVirtual() == NULL) {
+    delete lmhlo_output_index_;
+  }
+  lmhlo_output_index_ = lmhlo_output_index;
+  if (lmhlo_output_index) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:xla.EntryFunctionAttributes.BufferParameterAttributes.lmhlo_output_index)
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int EntryFunctionAttributes_BufferParameterAttributes::kLmhloParamsFieldNumber;
+const int EntryFunctionAttributes_BufferParameterAttributes::kLmhloParamsPresentFieldNumber;
+const int EntryFunctionAttributes_BufferParameterAttributes::kLmhloParamShapeIndexFieldNumber;
+const int EntryFunctionAttributes_BufferParameterAttributes::kLmhloConstantNameFieldNumber;
+const int EntryFunctionAttributes_BufferParameterAttributes::kLmhloMustAliasFieldNumber;
+const int EntryFunctionAttributes_BufferParameterAttributes::kLmhloOutputIndexFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+EntryFunctionAttributes_BufferParameterAttributes::EntryFunctionAttributes_BufferParameterAttributes()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_EntryFunctionAttributes_BufferParameterAttributes.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:xla.EntryFunctionAttributes.BufferParameterAttributes)
+}
+EntryFunctionAttributes_BufferParameterAttributes::EntryFunctionAttributes_BufferParameterAttributes(::google::protobuf::Arena* arena)
+  : ::google::protobuf::Message(),
+  _internal_metadata_(arena) {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_EntryFunctionAttributes_BufferParameterAttributes.base);
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:xla.EntryFunctionAttributes.BufferParameterAttributes)
+}
+EntryFunctionAttributes_BufferParameterAttributes::EntryFunctionAttributes_BufferParameterAttributes(const EntryFunctionAttributes_BufferParameterAttributes& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  lmhlo_constant_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.lmhlo_constant_name().size() > 0) {
+    lmhlo_constant_name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.lmhlo_constant_name(),
+      GetArenaNoVirtual());
+  }
+  if (from.has_lmhlo_param_shape_index()) {
+    lmhlo_param_shape_index_ = new ::xla::EntryFunctionAttributes_ShapeIndex(*from.lmhlo_param_shape_index_);
+  } else {
+    lmhlo_param_shape_index_ = NULL;
+  }
+  if (from.has_lmhlo_output_index()) {
+    lmhlo_output_index_ = new ::xla::EntryFunctionAttributes_ShapeIndex(*from.lmhlo_output_index_);
+  } else {
+    lmhlo_output_index_ = NULL;
+  }
+  ::memcpy(&lmhlo_params_, &from.lmhlo_params_,
+    static_cast<size_t>(reinterpret_cast<char*>(&lmhlo_must_alias_) -
+    reinterpret_cast<char*>(&lmhlo_params_)) + sizeof(lmhlo_must_alias_));
+  // @@protoc_insertion_point(copy_constructor:xla.EntryFunctionAttributes.BufferParameterAttributes)
+}
+
+void EntryFunctionAttributes_BufferParameterAttributes::SharedCtor() {
+  lmhlo_constant_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  ::memset(&lmhlo_param_shape_index_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&lmhlo_must_alias_) -
+      reinterpret_cast<char*>(&lmhlo_param_shape_index_)) + sizeof(lmhlo_must_alias_));
+}
+
+EntryFunctionAttributes_BufferParameterAttributes::~EntryFunctionAttributes_BufferParameterAttributes() {
+  // @@protoc_insertion_point(destructor:xla.EntryFunctionAttributes.BufferParameterAttributes)
+  SharedDtor();
+}
+
+void EntryFunctionAttributes_BufferParameterAttributes::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
+  lmhlo_constant_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (this != internal_default_instance()) delete lmhlo_param_shape_index_;
+  if (this != internal_default_instance()) delete lmhlo_output_index_;
+}
+
+void EntryFunctionAttributes_BufferParameterAttributes::ArenaDtor(void* object) {
+  EntryFunctionAttributes_BufferParameterAttributes* _this = reinterpret_cast< EntryFunctionAttributes_BufferParameterAttributes* >(object);
+  (void)_this;
+}
+void EntryFunctionAttributes_BufferParameterAttributes::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+}
+void EntryFunctionAttributes_BufferParameterAttributes::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* EntryFunctionAttributes_BufferParameterAttributes::descriptor() {
+  ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const EntryFunctionAttributes_BufferParameterAttributes& EntryFunctionAttributes_BufferParameterAttributes::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_EntryFunctionAttributes_BufferParameterAttributes.base);
+  return *internal_default_instance();
+}
+
+
+void EntryFunctionAttributes_BufferParameterAttributes::Clear() {
+// @@protoc_insertion_point(message_clear_start:xla.EntryFunctionAttributes.BufferParameterAttributes)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  lmhlo_constant_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  if (GetArenaNoVirtual() == NULL && lmhlo_param_shape_index_ != NULL) {
+    delete lmhlo_param_shape_index_;
+  }
+  lmhlo_param_shape_index_ = NULL;
+  if (GetArenaNoVirtual() == NULL && lmhlo_output_index_ != NULL) {
+    delete lmhlo_output_index_;
+  }
+  lmhlo_output_index_ = NULL;
+  ::memset(&lmhlo_params_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&lmhlo_must_alias_) -
+      reinterpret_cast<char*>(&lmhlo_params_)) + sizeof(lmhlo_must_alias_));
+  _internal_metadata_.Clear();
+}
+
+bool EntryFunctionAttributes_BufferParameterAttributes::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:xla.EntryFunctionAttributes.BufferParameterAttributes)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // int64 lmhlo_params = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 input, &lmhlo_params_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .xla.EntryFunctionAttributes.ShapeIndex lmhlo_param_shape_index = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_lmhlo_param_shape_index()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string lmhlo_constant_name = 3;
+      case 3: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_lmhlo_constant_name()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->lmhlo_constant_name().data(), static_cast<int>(this->lmhlo_constant_name().length()),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "xla.EntryFunctionAttributes.BufferParameterAttributes.lmhlo_constant_name"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool lmhlo_must_alias = 4;
+      case 4: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &lmhlo_must_alias_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .xla.EntryFunctionAttributes.ShapeIndex lmhlo_output_index = 5;
+      case 5: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_lmhlo_output_index()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool lmhlo_params_present = 6;
+      case 6: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(48u /* 48 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &lmhlo_params_present_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:xla.EntryFunctionAttributes.BufferParameterAttributes)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:xla.EntryFunctionAttributes.BufferParameterAttributes)
+  return false;
+#undef DO_
+}
+
+void EntryFunctionAttributes_BufferParameterAttributes::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:xla.EntryFunctionAttributes.BufferParameterAttributes)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int64 lmhlo_params = 1;
+  if (this->lmhlo_params() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt64(1, this->lmhlo_params(), output);
+  }
+
+  // .xla.EntryFunctionAttributes.ShapeIndex lmhlo_param_shape_index = 2;
+  if (this->has_lmhlo_param_shape_index()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      2, this->_internal_lmhlo_param_shape_index(), output);
+  }
+
+  // string lmhlo_constant_name = 3;
+  if (this->lmhlo_constant_name().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->lmhlo_constant_name().data(), static_cast<int>(this->lmhlo_constant_name().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "xla.EntryFunctionAttributes.BufferParameterAttributes.lmhlo_constant_name");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      3, this->lmhlo_constant_name(), output);
+  }
+
+  // bool lmhlo_must_alias = 4;
+  if (this->lmhlo_must_alias() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(4, this->lmhlo_must_alias(), output);
+  }
+
+  // .xla.EntryFunctionAttributes.ShapeIndex lmhlo_output_index = 5;
+  if (this->has_lmhlo_output_index()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      5, this->_internal_lmhlo_output_index(), output);
+  }
+
+  // bool lmhlo_params_present = 6;
+  if (this->lmhlo_params_present() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(6, this->lmhlo_params_present(), output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:xla.EntryFunctionAttributes.BufferParameterAttributes)
+}
+
+::google::protobuf::uint8* EntryFunctionAttributes_BufferParameterAttributes::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:xla.EntryFunctionAttributes.BufferParameterAttributes)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int64 lmhlo_params = 1;
+  if (this->lmhlo_params() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(1, this->lmhlo_params(), target);
+  }
+
+  // .xla.EntryFunctionAttributes.ShapeIndex lmhlo_param_shape_index = 2;
+  if (this->has_lmhlo_param_shape_index()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        2, this->_internal_lmhlo_param_shape_index(), deterministic, target);
+  }
+
+  // string lmhlo_constant_name = 3;
+  if (this->lmhlo_constant_name().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->lmhlo_constant_name().data(), static_cast<int>(this->lmhlo_constant_name().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "xla.EntryFunctionAttributes.BufferParameterAttributes.lmhlo_constant_name");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        3, this->lmhlo_constant_name(), target);
+  }
+
+  // bool lmhlo_must_alias = 4;
+  if (this->lmhlo_must_alias() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(4, this->lmhlo_must_alias(), target);
+  }
+
+  // .xla.EntryFunctionAttributes.ShapeIndex lmhlo_output_index = 5;
+  if (this->has_lmhlo_output_index()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        5, this->_internal_lmhlo_output_index(), deterministic, target);
+  }
+
+  // bool lmhlo_params_present = 6;
+  if (this->lmhlo_params_present() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(6, this->lmhlo_params_present(), target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:xla.EntryFunctionAttributes.BufferParameterAttributes)
+  return target;
+}
+
+size_t EntryFunctionAttributes_BufferParameterAttributes::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:xla.EntryFunctionAttributes.BufferParameterAttributes)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // string lmhlo_constant_name = 3;
+  if (this->lmhlo_constant_name().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->lmhlo_constant_name());
+  }
+
+  // .xla.EntryFunctionAttributes.ShapeIndex lmhlo_param_shape_index = 2;
+  if (this->has_lmhlo_param_shape_index()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *lmhlo_param_shape_index_);
+  }
+
+  // .xla.EntryFunctionAttributes.ShapeIndex lmhlo_output_index = 5;
+  if (this->has_lmhlo_output_index()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *lmhlo_output_index_);
+  }
+
+  // int64 lmhlo_params = 1;
+  if (this->lmhlo_params() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int64Size(
+        this->lmhlo_params());
+  }
+
+  // bool lmhlo_params_present = 6;
+  if (this->lmhlo_params_present() != 0) {
+    total_size += 1 + 1;
+  }
+
+  // bool lmhlo_must_alias = 4;
+  if (this->lmhlo_must_alias() != 0) {
+    total_size += 1 + 1;
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void EntryFunctionAttributes_BufferParameterAttributes::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:xla.EntryFunctionAttributes.BufferParameterAttributes)
+  GOOGLE_DCHECK_NE(&from, this);
+  const EntryFunctionAttributes_BufferParameterAttributes* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const EntryFunctionAttributes_BufferParameterAttributes>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:xla.EntryFunctionAttributes.BufferParameterAttributes)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:xla.EntryFunctionAttributes.BufferParameterAttributes)
+    MergeFrom(*source);
+  }
+}
+
+void EntryFunctionAttributes_BufferParameterAttributes::MergeFrom(const EntryFunctionAttributes_BufferParameterAttributes& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:xla.EntryFunctionAttributes.BufferParameterAttributes)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.lmhlo_constant_name().size() > 0) {
+    set_lmhlo_constant_name(from.lmhlo_constant_name());
+  }
+  if (from.has_lmhlo_param_shape_index()) {
+    mutable_lmhlo_param_shape_index()->::xla::EntryFunctionAttributes_ShapeIndex::MergeFrom(from.lmhlo_param_shape_index());
+  }
+  if (from.has_lmhlo_output_index()) {
+    mutable_lmhlo_output_index()->::xla::EntryFunctionAttributes_ShapeIndex::MergeFrom(from.lmhlo_output_index());
+  }
+  if (from.lmhlo_params() != 0) {
+    set_lmhlo_params(from.lmhlo_params());
+  }
+  if (from.lmhlo_params_present() != 0) {
+    set_lmhlo_params_present(from.lmhlo_params_present());
+  }
+  if (from.lmhlo_must_alias() != 0) {
+    set_lmhlo_must_alias(from.lmhlo_must_alias());
+  }
+}
+
+void EntryFunctionAttributes_BufferParameterAttributes::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:xla.EntryFunctionAttributes.BufferParameterAttributes)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void EntryFunctionAttributes_BufferParameterAttributes::CopyFrom(const EntryFunctionAttributes_BufferParameterAttributes& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:xla.EntryFunctionAttributes.BufferParameterAttributes)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool EntryFunctionAttributes_BufferParameterAttributes::IsInitialized() const {
+  return true;
+}
+
+void EntryFunctionAttributes_BufferParameterAttributes::Swap(EntryFunctionAttributes_BufferParameterAttributes* other) {
+  if (other == this) return;
+  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
+    InternalSwap(other);
+  } else {
+    EntryFunctionAttributes_BufferParameterAttributes* temp = New(GetArenaNoVirtual());
+    temp->MergeFrom(*other);
+    other->CopyFrom(*this);
+    InternalSwap(temp);
+    if (GetArenaNoVirtual() == NULL) {
+      delete temp;
+    }
+  }
+}
+void EntryFunctionAttributes_BufferParameterAttributes::UnsafeArenaSwap(EntryFunctionAttributes_BufferParameterAttributes* other) {
+  if (other == this) return;
+  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
+  InternalSwap(other);
+}
+void EntryFunctionAttributes_BufferParameterAttributes::InternalSwap(EntryFunctionAttributes_BufferParameterAttributes* other) {
+  using std::swap;
+  lmhlo_constant_name_.Swap(&other->lmhlo_constant_name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  swap(lmhlo_param_shape_index_, other->lmhlo_param_shape_index_);
+  swap(lmhlo_output_index_, other->lmhlo_output_index_);
+  swap(lmhlo_params_, other->lmhlo_params_);
+  swap(lmhlo_params_present_, other->lmhlo_params_present_);
+  swap(lmhlo_must_alias_, other->lmhlo_must_alias_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata EntryFunctionAttributes_BufferParameterAttributes::GetMetadata() const {
+  protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void EntryFunctionAttributes::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int EntryFunctionAttributes::kBuffersFieldNumber;
+const int EntryFunctionAttributes::kResultXlaShapeFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+EntryFunctionAttributes::EntryFunctionAttributes()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_EntryFunctionAttributes.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:xla.EntryFunctionAttributes)
+}
+EntryFunctionAttributes::EntryFunctionAttributes(::google::protobuf::Arena* arena)
+  : ::google::protobuf::Message(),
+  _internal_metadata_(arena),
+  buffers_(arena) {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_EntryFunctionAttributes.base);
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:xla.EntryFunctionAttributes)
+}
+EntryFunctionAttributes::EntryFunctionAttributes(const EntryFunctionAttributes& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      buffers_(from.buffers_) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  result_xla_shape_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.result_xla_shape().size() > 0) {
+    result_xla_shape_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.result_xla_shape(),
+      GetArenaNoVirtual());
+  }
+  // @@protoc_insertion_point(copy_constructor:xla.EntryFunctionAttributes)
+}
+
+void EntryFunctionAttributes::SharedCtor() {
+  result_xla_shape_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+
+EntryFunctionAttributes::~EntryFunctionAttributes() {
+  // @@protoc_insertion_point(destructor:xla.EntryFunctionAttributes)
+  SharedDtor();
+}
+
+void EntryFunctionAttributes::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
+  result_xla_shape_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+
+void EntryFunctionAttributes::ArenaDtor(void* object) {
+  EntryFunctionAttributes* _this = reinterpret_cast< EntryFunctionAttributes* >(object);
+  (void)_this;
+}
+void EntryFunctionAttributes::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+}
+void EntryFunctionAttributes::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* EntryFunctionAttributes::descriptor() {
+  ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const EntryFunctionAttributes& EntryFunctionAttributes::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_EntryFunctionAttributes.base);
+  return *internal_default_instance();
+}
+
+
+void EntryFunctionAttributes::Clear() {
+// @@protoc_insertion_point(message_clear_start:xla.EntryFunctionAttributes)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  buffers_.Clear();
+  result_xla_shape_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  _internal_metadata_.Clear();
+}
+
+bool EntryFunctionAttributes::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:xla.EntryFunctionAttributes)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // repeated .xla.EntryFunctionAttributes.BufferParameterAttributes buffers = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+                input, add_buffers()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string result_xla_shape = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_result_xla_shape()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->result_xla_shape().data(), static_cast<int>(this->result_xla_shape().length()),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "xla.EntryFunctionAttributes.result_xla_shape"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:xla.EntryFunctionAttributes)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:xla.EntryFunctionAttributes)
+  return false;
+#undef DO_
+}
+
+void EntryFunctionAttributes::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:xla.EntryFunctionAttributes)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated .xla.EntryFunctionAttributes.BufferParameterAttributes buffers = 1;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->buffers_size()); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      1,
+      this->buffers(static_cast<int>(i)),
+      output);
+  }
+
+  // string result_xla_shape = 2;
+  if (this->result_xla_shape().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->result_xla_shape().data(), static_cast<int>(this->result_xla_shape().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "xla.EntryFunctionAttributes.result_xla_shape");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->result_xla_shape(), output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:xla.EntryFunctionAttributes)
+}
+
+::google::protobuf::uint8* EntryFunctionAttributes::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:xla.EntryFunctionAttributes)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated .xla.EntryFunctionAttributes.BufferParameterAttributes buffers = 1;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->buffers_size()); i < n; i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        1, this->buffers(static_cast<int>(i)), deterministic, target);
+  }
+
+  // string result_xla_shape = 2;
+  if (this->result_xla_shape().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->result_xla_shape().data(), static_cast<int>(this->result_xla_shape().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "xla.EntryFunctionAttributes.result_xla_shape");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        2, this->result_xla_shape(), target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:xla.EntryFunctionAttributes)
+  return target;
+}
+
+size_t EntryFunctionAttributes::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:xla.EntryFunctionAttributes)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // repeated .xla.EntryFunctionAttributes.BufferParameterAttributes buffers = 1;
+  {
+    unsigned int count = static_cast<unsigned int>(this->buffers_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          this->buffers(static_cast<int>(i)));
+    }
+  }
+
+  // string result_xla_shape = 2;
+  if (this->result_xla_shape().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->result_xla_shape());
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void EntryFunctionAttributes::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:xla.EntryFunctionAttributes)
+  GOOGLE_DCHECK_NE(&from, this);
+  const EntryFunctionAttributes* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const EntryFunctionAttributes>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:xla.EntryFunctionAttributes)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:xla.EntryFunctionAttributes)
+    MergeFrom(*source);
+  }
+}
+
+void EntryFunctionAttributes::MergeFrom(const EntryFunctionAttributes& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:xla.EntryFunctionAttributes)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  buffers_.MergeFrom(from.buffers_);
+  if (from.result_xla_shape().size() > 0) {
+    set_result_xla_shape(from.result_xla_shape());
+  }
+}
+
+void EntryFunctionAttributes::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:xla.EntryFunctionAttributes)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void EntryFunctionAttributes::CopyFrom(const EntryFunctionAttributes& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:xla.EntryFunctionAttributes)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool EntryFunctionAttributes::IsInitialized() const {
+  return true;
+}
+
+void EntryFunctionAttributes::Swap(EntryFunctionAttributes* other) {
+  if (other == this) return;
+  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
+    InternalSwap(other);
+  } else {
+    EntryFunctionAttributes* temp = New(GetArenaNoVirtual());
+    temp->MergeFrom(*other);
+    other->CopyFrom(*this);
+    InternalSwap(temp);
+    if (GetArenaNoVirtual() == NULL) {
+      delete temp;
+    }
+  }
+}
+void EntryFunctionAttributes::UnsafeArenaSwap(EntryFunctionAttributes* other) {
+  if (other == this) return;
+  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
+  InternalSwap(other);
+}
+void EntryFunctionAttributes::InternalSwap(EntryFunctionAttributes* other) {
+  using std::swap;
+  CastToBase(&buffers_)->InternalSwap(CastToBase(&other->buffers_));
+  result_xla_shape_.Swap(&other->result_xla_shape_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata EntryFunctionAttributes::GetMetadata() const {
+  protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void GpuBefExecutableProto::InitAsDefaultInstance() {
+  ::xla::_GpuBefExecutableProto_default_instance_._instance.get_mutable()->hlo_module_proto_ = const_cast< ::xla::HloModuleProto*>(
+      ::xla::HloModuleProto::internal_default_instance());
+  ::xla::_GpuBefExecutableProto_default_instance_._instance.get_mutable()->entry_func_attrs_ = const_cast< ::xla::EntryFunctionAttributes*>(
+      ::xla::EntryFunctionAttributes::internal_default_instance());
+}
+void GpuBefExecutableProto::unsafe_arena_set_allocated_hlo_module_proto(
+    ::xla::HloModuleProto* hlo_module_proto) {
+  if (GetArenaNoVirtual() == NULL) {
+    delete hlo_module_proto_;
+  }
+  hlo_module_proto_ = hlo_module_proto;
+  if (hlo_module_proto) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:xla.GpuBefExecutableProto.hlo_module_proto)
+}
+void GpuBefExecutableProto::unsafe_arena_set_allocated_entry_func_attrs(
+    ::xla::EntryFunctionAttributes* entry_func_attrs) {
+  if (GetArenaNoVirtual() == NULL) {
+    delete entry_func_attrs_;
+  }
+  entry_func_attrs_ = entry_func_attrs;
+  if (entry_func_attrs) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:xla.GpuBefExecutableProto.entry_func_attrs)
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int GpuBefExecutableProto::kHloModuleProtoFieldNumber;
+const int GpuBefExecutableProto::kBefFieldNumber;
+const int GpuBefExecutableProto::kEntryFuncAttrsFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+GpuBefExecutableProto::GpuBefExecutableProto()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_GpuBefExecutableProto.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:xla.GpuBefExecutableProto)
+}
+GpuBefExecutableProto::GpuBefExecutableProto(::google::protobuf::Arena* arena)
+  : ::google::protobuf::Message(),
+  _internal_metadata_(arena) {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_GpuBefExecutableProto.base);
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:xla.GpuBefExecutableProto)
+}
+GpuBefExecutableProto::GpuBefExecutableProto(const GpuBefExecutableProto& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  bef_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.bef().size() > 0) {
+    bef_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.bef(),
+      GetArenaNoVirtual());
+  }
+  if (from.has_hlo_module_proto()) {
+    hlo_module_proto_ = new ::xla::HloModuleProto(*from.hlo_module_proto_);
+  } else {
+    hlo_module_proto_ = NULL;
+  }
+  if (from.has_entry_func_attrs()) {
+    entry_func_attrs_ = new ::xla::EntryFunctionAttributes(*from.entry_func_attrs_);
+  } else {
+    entry_func_attrs_ = NULL;
+  }
+  // @@protoc_insertion_point(copy_constructor:xla.GpuBefExecutableProto)
+}
+
+void GpuBefExecutableProto::SharedCtor() {
+  bef_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  ::memset(&hlo_module_proto_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&entry_func_attrs_) -
+      reinterpret_cast<char*>(&hlo_module_proto_)) + sizeof(entry_func_attrs_));
+}
+
+GpuBefExecutableProto::~GpuBefExecutableProto() {
+  // @@protoc_insertion_point(destructor:xla.GpuBefExecutableProto)
+  SharedDtor();
+}
+
+void GpuBefExecutableProto::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
+  bef_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (this != internal_default_instance()) delete hlo_module_proto_;
+  if (this != internal_default_instance()) delete entry_func_attrs_;
+}
+
+void GpuBefExecutableProto::ArenaDtor(void* object) {
+  GpuBefExecutableProto* _this = reinterpret_cast< GpuBefExecutableProto* >(object);
+  (void)_this;
+}
+void GpuBefExecutableProto::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+}
+void GpuBefExecutableProto::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* GpuBefExecutableProto::descriptor() {
+  ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const GpuBefExecutableProto& GpuBefExecutableProto::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::scc_info_GpuBefExecutableProto.base);
+  return *internal_default_instance();
+}
+
+
+void GpuBefExecutableProto::Clear() {
+// @@protoc_insertion_point(message_clear_start:xla.GpuBefExecutableProto)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  bef_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  if (GetArenaNoVirtual() == NULL && hlo_module_proto_ != NULL) {
+    delete hlo_module_proto_;
+  }
+  hlo_module_proto_ = NULL;
+  if (GetArenaNoVirtual() == NULL && entry_func_attrs_ != NULL) {
+    delete entry_func_attrs_;
+  }
+  entry_func_attrs_ = NULL;
+  _internal_metadata_.Clear();
+}
+
+bool GpuBefExecutableProto::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:xla.GpuBefExecutableProto)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // .xla.HloModuleProto hlo_module_proto = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_hlo_module_proto()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bytes bef = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_bef()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .xla.EntryFunctionAttributes entry_func_attrs = 3;
+      case 3: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_entry_func_attrs()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:xla.GpuBefExecutableProto)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:xla.GpuBefExecutableProto)
+  return false;
+#undef DO_
+}
+
+void GpuBefExecutableProto::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:xla.GpuBefExecutableProto)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .xla.HloModuleProto hlo_module_proto = 1;
+  if (this->has_hlo_module_proto()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      1, this->_internal_hlo_module_proto(), output);
+  }
+
+  // bytes bef = 2;
+  if (this->bef().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
+      2, this->bef(), output);
+  }
+
+  // .xla.EntryFunctionAttributes entry_func_attrs = 3;
+  if (this->has_entry_func_attrs()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      3, this->_internal_entry_func_attrs(), output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:xla.GpuBefExecutableProto)
+}
+
+::google::protobuf::uint8* GpuBefExecutableProto::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:xla.GpuBefExecutableProto)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .xla.HloModuleProto hlo_module_proto = 1;
+  if (this->has_hlo_module_proto()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        1, this->_internal_hlo_module_proto(), deterministic, target);
+  }
+
+  // bytes bef = 2;
+  if (this->bef().size() > 0) {
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
+        2, this->bef(), target);
+  }
+
+  // .xla.EntryFunctionAttributes entry_func_attrs = 3;
+  if (this->has_entry_func_attrs()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        3, this->_internal_entry_func_attrs(), deterministic, target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:xla.GpuBefExecutableProto)
+  return target;
+}
+
+size_t GpuBefExecutableProto::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:xla.GpuBefExecutableProto)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // bytes bef = 2;
+  if (this->bef().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::BytesSize(
+        this->bef());
+  }
+
+  // .xla.HloModuleProto hlo_module_proto = 1;
+  if (this->has_hlo_module_proto()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *hlo_module_proto_);
+  }
+
+  // .xla.EntryFunctionAttributes entry_func_attrs = 3;
+  if (this->has_entry_func_attrs()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *entry_func_attrs_);
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void GpuBefExecutableProto::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:xla.GpuBefExecutableProto)
+  GOOGLE_DCHECK_NE(&from, this);
+  const GpuBefExecutableProto* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const GpuBefExecutableProto>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:xla.GpuBefExecutableProto)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:xla.GpuBefExecutableProto)
+    MergeFrom(*source);
+  }
+}
+
+void GpuBefExecutableProto::MergeFrom(const GpuBefExecutableProto& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:xla.GpuBefExecutableProto)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.bef().size() > 0) {
+    set_bef(from.bef());
+  }
+  if (from.has_hlo_module_proto()) {
+    mutable_hlo_module_proto()->::xla::HloModuleProto::MergeFrom(from.hlo_module_proto());
+  }
+  if (from.has_entry_func_attrs()) {
+    mutable_entry_func_attrs()->::xla::EntryFunctionAttributes::MergeFrom(from.entry_func_attrs());
+  }
+}
+
+void GpuBefExecutableProto::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:xla.GpuBefExecutableProto)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void GpuBefExecutableProto::CopyFrom(const GpuBefExecutableProto& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:xla.GpuBefExecutableProto)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool GpuBefExecutableProto::IsInitialized() const {
+  return true;
+}
+
+void GpuBefExecutableProto::Swap(GpuBefExecutableProto* other) {
+  if (other == this) return;
+  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
+    InternalSwap(other);
+  } else {
+    GpuBefExecutableProto* temp = New(GetArenaNoVirtual());
+    temp->MergeFrom(*other);
+    other->CopyFrom(*this);
+    InternalSwap(temp);
+    if (GetArenaNoVirtual() == NULL) {
+      delete temp;
+    }
+  }
+}
+void GpuBefExecutableProto::UnsafeArenaSwap(GpuBefExecutableProto* other) {
+  if (other == this) return;
+  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
+  InternalSwap(other);
+}
+void GpuBefExecutableProto::InternalSwap(GpuBefExecutableProto* other) {
+  using std::swap;
+  bef_.Swap(&other->bef_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  swap(hlo_module_proto_, other->hlo_module_proto_);
+  swap(entry_func_attrs_, other->entry_func_attrs_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata GpuBefExecutableProto::GetMetadata() const {
+  protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_tensorflow_2fcompiler_2fxla_2fservice_2fhlo_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace xla
 namespace google {
@@ -12308,6 +16709,12 @@ template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xla::DynamicParameterBindingProt
 }
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xla::DynamicParameterBindingProto* Arena::CreateMaybeMessage< ::xla::DynamicParameterBindingProto >(Arena* arena) {
   return Arena::CreateMessageInternal< ::xla::DynamicParameterBindingProto >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xla::CrossProgramPrefetch* Arena::CreateMaybeMessage< ::xla::CrossProgramPrefetch >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::xla::CrossProgramPrefetch >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xla::HloModuleProto_ProfileInfo* Arena::CreateMaybeMessage< ::xla::HloModuleProto_ProfileInfo >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::xla::HloModuleProto_ProfileInfo >(arena);
 }
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xla::HloModuleProto* Arena::CreateMaybeMessage< ::xla::HloModuleProto >(Arena* arena) {
   return Arena::CreateMessageInternal< ::xla::HloModuleProto >(arena);
@@ -12344,6 +16751,24 @@ template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xla::HloProto* Arena::CreateMayb
 }
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xla::HloSnapshot* Arena::CreateMaybeMessage< ::xla::HloSnapshot >(Arena* arena) {
   return Arena::CreateMessageInternal< ::xla::HloSnapshot >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xla::HloModuleMetadataProto* Arena::CreateMaybeMessage< ::xla::HloModuleMetadataProto >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::xla::HloModuleMetadataProto >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xla::HloPassMetadata* Arena::CreateMaybeMessage< ::xla::HloPassMetadata >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::xla::HloPassMetadata >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xla::EntryFunctionAttributes_ShapeIndex* Arena::CreateMaybeMessage< ::xla::EntryFunctionAttributes_ShapeIndex >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::xla::EntryFunctionAttributes_ShapeIndex >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xla::EntryFunctionAttributes_BufferParameterAttributes* Arena::CreateMaybeMessage< ::xla::EntryFunctionAttributes_BufferParameterAttributes >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::xla::EntryFunctionAttributes_BufferParameterAttributes >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xla::EntryFunctionAttributes* Arena::CreateMaybeMessage< ::xla::EntryFunctionAttributes >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::xla::EntryFunctionAttributes >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xla::GpuBefExecutableProto* Arena::CreateMaybeMessage< ::xla::GpuBefExecutableProto >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::xla::GpuBefExecutableProto >(arena);
 }
 }  // namespace protobuf
 }  // namespace google

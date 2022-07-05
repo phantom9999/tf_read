@@ -244,10 +244,12 @@ void AddDescriptorsImpl() {
       "se\030\035 \001(\0132\037.tensorflow.RunCallableRespons"
       "eH\001\022H\n\031release_callable_response\030\036 \001(\0132#"
       ".tensorflow.ReleaseCallableResponseH\001B\004\n"
-      "\002opB\n\n\010responseB\003\370\001\001b\006proto3"
+      "\002opB\n\n\010responseBZZUgithub.com/tensorflow"
+      "/tensorflow/tensorflow/go/core/protobuf/"
+      "for_core_protos_go_proto\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 1588);
+      descriptor, 1675);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/protobuf/replay_log.proto", &protobuf_RegisterTypes);
   ::protobuf_tensorflow_2fcore_2fprotobuf_2fmaster_2eproto::AddDescriptors();

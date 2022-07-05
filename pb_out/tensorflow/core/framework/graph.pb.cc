@@ -20,10 +20,10 @@
 // @@protoc_insertion_point(includes)
 
 namespace protobuf_tensorflow_2fcore_2fframework_2ffunction_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fframework_2ffunction_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_FunctionDefLibrary;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fframework_2ffunction_2eproto ::google::protobuf::internal::SCCInfo<3> scc_info_FunctionDefLibrary;
 }  // namespace protobuf_tensorflow_2fcore_2fframework_2ffunction_2eproto
 namespace protobuf_tensorflow_2fcore_2fframework_2fnode_5fdef_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fframework_2fnode_5fdef_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_NodeDef;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fframework_2fnode_5fdef_2eproto ::google::protobuf::internal::SCCInfo<3> scc_info_NodeDef;
 }  // namespace protobuf_tensorflow_2fcore_2fframework_2fnode_5fdef_2eproto
 namespace protobuf_tensorflow_2fcore_2fframework_2fversions_2eproto {
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2fcore_2fframework_2fversions_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_VersionDef;
@@ -100,24 +100,24 @@ void AddDescriptorsImpl() {
   InitDefaults();
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n%tensorflow/core/framework/graph.proto\022"
-      "\ntensorflow\032(tensorflow/core/framework/n"
-      "ode_def.proto\032(tensorflow/core/framework"
-      "/function.proto\032(tensorflow/core/framewo"
+      "\ntensorflow\032(tensorflow/core/framework/f"
+      "unction.proto\032(tensorflow/core/framework"
+      "/node_def.proto\032(tensorflow/core/framewo"
       "rk/versions.proto\"\235\001\n\010GraphDef\022!\n\004node\030\001"
       " \003(\0132\023.tensorflow.NodeDef\022(\n\010versions\030\004 "
       "\001(\0132\026.tensorflow.VersionDef\022\023\n\007version\030\003"
       " \001(\005B\002\030\001\022/\n\007library\030\002 \001(\0132\036.tensorflow.F"
-      "unctionDefLibraryBk\n\030org.tensorflow.fram"
-      "eworkB\013GraphProtosP\001Z=github.com/tensorf"
+      "unctionDefLibraryBz\n\030org.tensorflow.fram"
+      "eworkB\013GraphProtosP\001ZLgithub.com/tensorf"
       "low/tensorflow/tensorflow/go/core/framew"
-      "ork\370\001\001b\006proto3"
+      "ork/graph_go_proto\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 454);
+      descriptor, 469);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/framework/graph.proto", &protobuf_RegisterTypes);
-  ::protobuf_tensorflow_2fcore_2fframework_2fnode_5fdef_2eproto::AddDescriptors();
   ::protobuf_tensorflow_2fcore_2fframework_2ffunction_2eproto::AddDescriptors();
+  ::protobuf_tensorflow_2fcore_2fframework_2fnode_5fdef_2eproto::AddDescriptors();
   ::protobuf_tensorflow_2fcore_2fframework_2fversions_2eproto::AddDescriptors();
 }
 

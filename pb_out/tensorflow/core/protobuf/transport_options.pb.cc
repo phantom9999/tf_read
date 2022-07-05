@@ -86,10 +86,13 @@ void AddDescriptorsImpl() {
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n0tensorflow/core/protobuf/transport_opt"
       "ions.proto\022\ntensorflow\"*\n\020RecvBufRespExt"
-      "ra\022\026\n\016tensor_content\030\001 \003(\014b\006proto3"
+      "ra\022\026\n\016tensor_content\030\001 \003(\014BWZUgithub.com"
+      "/tensorflow/tensorflow/tensorflow/go/cor"
+      "e/protobuf/for_core_protos_go_protob\006pro"
+      "to3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 114);
+      descriptor, 203);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/protobuf/transport_options.proto", &protobuf_RegisterTypes);
 }

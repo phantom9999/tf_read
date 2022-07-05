@@ -44,7 +44,7 @@ namespace protobuf_tensorflow_2fcore_2fframework_2ffunction_2eproto {
 struct TableStruct {
   static const ::google::protobuf::internal::ParseTableField entries[];
   static const ::google::protobuf::internal::AuxillaryParseTableField aux[];
-  static const ::google::protobuf::internal::ParseTable schema[9];
+  static const ::google::protobuf::internal::ParseTable schema[11];
   static const ::google::protobuf::internal::FieldMetadata field_metadata[];
   static const ::google::protobuf::internal::SerializationTable serialization_table[];
   static const ::google::protobuf::uint32 offsets[];
@@ -73,12 +73,18 @@ extern FunctionDef_AttrEntry_DoNotUseDefaultTypeInternal _FunctionDef_AttrEntry_
 class FunctionDef_ControlRetEntry_DoNotUse;
 class FunctionDef_ControlRetEntry_DoNotUseDefaultTypeInternal;
 extern FunctionDef_ControlRetEntry_DoNotUseDefaultTypeInternal _FunctionDef_ControlRetEntry_DoNotUse_default_instance_;
+class FunctionDef_ResourceArgUniqueIdEntry_DoNotUse;
+class FunctionDef_ResourceArgUniqueIdEntry_DoNotUseDefaultTypeInternal;
+extern FunctionDef_ResourceArgUniqueIdEntry_DoNotUseDefaultTypeInternal _FunctionDef_ResourceArgUniqueIdEntry_DoNotUse_default_instance_;
 class FunctionDef_RetEntry_DoNotUse;
 class FunctionDef_RetEntry_DoNotUseDefaultTypeInternal;
 extern FunctionDef_RetEntry_DoNotUseDefaultTypeInternal _FunctionDef_RetEntry_DoNotUse_default_instance_;
 class GradientDef;
 class GradientDefDefaultTypeInternal;
 extern GradientDefDefaultTypeInternal _GradientDef_default_instance_;
+class RegisteredGradient;
+class RegisteredGradientDefaultTypeInternal;
+extern RegisteredGradientDefaultTypeInternal _RegisteredGradient_default_instance_;
 }  // namespace tensorflow
 namespace google {
 namespace protobuf {
@@ -89,8 +95,10 @@ template<> ::tensorflow::FunctionDef_ArgAttrs* Arena::CreateMaybeMessage<::tenso
 template<> ::tensorflow::FunctionDef_ArgAttrs_AttrEntry_DoNotUse* Arena::CreateMaybeMessage<::tensorflow::FunctionDef_ArgAttrs_AttrEntry_DoNotUse>(Arena*);
 template<> ::tensorflow::FunctionDef_AttrEntry_DoNotUse* Arena::CreateMaybeMessage<::tensorflow::FunctionDef_AttrEntry_DoNotUse>(Arena*);
 template<> ::tensorflow::FunctionDef_ControlRetEntry_DoNotUse* Arena::CreateMaybeMessage<::tensorflow::FunctionDef_ControlRetEntry_DoNotUse>(Arena*);
+template<> ::tensorflow::FunctionDef_ResourceArgUniqueIdEntry_DoNotUse* Arena::CreateMaybeMessage<::tensorflow::FunctionDef_ResourceArgUniqueIdEntry_DoNotUse>(Arena*);
 template<> ::tensorflow::FunctionDef_RetEntry_DoNotUse* Arena::CreateMaybeMessage<::tensorflow::FunctionDef_RetEntry_DoNotUse>(Arena*);
 template<> ::tensorflow::GradientDef* Arena::CreateMaybeMessage<::tensorflow::GradientDef>(Arena*);
+template<> ::tensorflow::RegisteredGradient* Arena::CreateMaybeMessage<::tensorflow::RegisteredGradient>(Arena*);
 }  // namespace protobuf
 }  // namespace google
 namespace tensorflow {
@@ -220,6 +228,18 @@ class FunctionDefLibrary : public ::google::protobuf::Message /* @@protoc_insert
   const ::google::protobuf::RepeatedPtrField< ::tensorflow::GradientDef >&
       gradient() const;
 
+  // repeated .tensorflow.RegisteredGradient registered_gradients = 3;
+  int registered_gradients_size() const;
+  void clear_registered_gradients();
+  static const int kRegisteredGradientsFieldNumber = 3;
+  ::tensorflow::RegisteredGradient* mutable_registered_gradients(int index);
+  ::google::protobuf::RepeatedPtrField< ::tensorflow::RegisteredGradient >*
+      mutable_registered_gradients();
+  const ::tensorflow::RegisteredGradient& registered_gradients(int index) const;
+  ::tensorflow::RegisteredGradient* add_registered_gradients();
+  const ::google::protobuf::RepeatedPtrField< ::tensorflow::RegisteredGradient >&
+      registered_gradients() const;
+
   // @@protoc_insertion_point(class_scope:tensorflow.FunctionDefLibrary)
  private:
 
@@ -229,6 +249,7 @@ class FunctionDefLibrary : public ::google::protobuf::Message /* @@protoc_insert
   typedef void DestructorSkippable_;
   ::google::protobuf::RepeatedPtrField< ::tensorflow::FunctionDef > function_;
   ::google::protobuf::RepeatedPtrField< ::tensorflow::GradientDef > gradient_;
+  ::google::protobuf::RepeatedPtrField< ::tensorflow::RegisteredGradient > registered_gradients_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcore_2fframework_2ffunction_2eproto::TableStruct;
 };
@@ -424,6 +445,27 @@ public:
 
 // -------------------------------------------------------------------
 
+class FunctionDef_ResourceArgUniqueIdEntry_DoNotUse : public ::google::protobuf::internal::MapEntry<FunctionDef_ResourceArgUniqueIdEntry_DoNotUse, 
+    ::google::protobuf::uint32, ::google::protobuf::uint32,
+    ::google::protobuf::internal::WireFormatLite::TYPE_UINT32,
+    ::google::protobuf::internal::WireFormatLite::TYPE_UINT32,
+    0 > {
+public:
+  typedef ::google::protobuf::internal::MapEntry<FunctionDef_ResourceArgUniqueIdEntry_DoNotUse, 
+    ::google::protobuf::uint32, ::google::protobuf::uint32,
+    ::google::protobuf::internal::WireFormatLite::TYPE_UINT32,
+    ::google::protobuf::internal::WireFormatLite::TYPE_UINT32,
+    0 > SuperType;
+  FunctionDef_ResourceArgUniqueIdEntry_DoNotUse();
+  FunctionDef_ResourceArgUniqueIdEntry_DoNotUse(::google::protobuf::Arena* arena);
+  void MergeFrom(const FunctionDef_ResourceArgUniqueIdEntry_DoNotUse& other);
+  static const FunctionDef_ResourceArgUniqueIdEntry_DoNotUse* internal_default_instance() { return reinterpret_cast<const FunctionDef_ResourceArgUniqueIdEntry_DoNotUse*>(&_FunctionDef_ResourceArgUniqueIdEntry_DoNotUse_default_instance_); }
+  void MergeFrom(const ::google::protobuf::Message& other) final;
+  ::google::protobuf::Metadata GetMetadata() const;
+};
+
+// -------------------------------------------------------------------
+
 class FunctionDef_RetEntry_DoNotUse : public ::google::protobuf::internal::MapEntry<FunctionDef_RetEntry_DoNotUse, 
     ::std::string, ::std::string,
     ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
@@ -507,7 +549,7 @@ class FunctionDef : public ::google::protobuf::Message /* @@protoc_insertion_poi
                &_FunctionDef_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    7;
+    8;
 
   void UnsafeArenaSwap(FunctionDef* other);
   void Swap(FunctionDef* other);
@@ -615,6 +657,15 @@ class FunctionDef : public ::google::protobuf::Message /* @@protoc_insertion_poi
   ::google::protobuf::Map< ::google::protobuf::uint32, ::tensorflow::FunctionDef_ArgAttrs >*
       mutable_arg_attr();
 
+  // map<uint32, uint32> resource_arg_unique_id = 8;
+  int resource_arg_unique_id_size() const;
+  void clear_resource_arg_unique_id();
+  static const int kResourceArgUniqueIdFieldNumber = 8;
+  const ::google::protobuf::Map< ::google::protobuf::uint32, ::google::protobuf::uint32 >&
+      resource_arg_unique_id() const;
+  ::google::protobuf::Map< ::google::protobuf::uint32, ::google::protobuf::uint32 >*
+      mutable_resource_arg_unique_id();
+
   // .tensorflow.OpDef signature = 1;
   bool has_signature() const;
   void clear_signature();
@@ -662,6 +713,12 @@ class FunctionDef : public ::google::protobuf::Message /* @@protoc_insertion_poi
       ::google::protobuf::internal::WireFormatLite::TYPE_UINT32,
       ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE,
       0 > arg_attr_;
+  ::google::protobuf::internal::MapField<
+      FunctionDef_ResourceArgUniqueIdEntry_DoNotUse,
+      ::google::protobuf::uint32, ::google::protobuf::uint32,
+      ::google::protobuf::internal::WireFormatLite::TYPE_UINT32,
+      ::google::protobuf::internal::WireFormatLite::TYPE_UINT32,
+      0 > resource_arg_unique_id_;
   ::tensorflow::OpDef* signature_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcore_2fframework_2ffunction_2eproto::TableStruct;
@@ -709,7 +766,7 @@ class GradientDef : public ::google::protobuf::Message /* @@protoc_insertion_poi
                &_GradientDef_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    8;
+    9;
 
   void UnsafeArenaSwap(GradientDef* other);
   void Swap(GradientDef* other);
@@ -825,6 +882,165 @@ class GradientDef : public ::google::protobuf::Message /* @@protoc_insertion_poi
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcore_2fframework_2ffunction_2eproto::TableStruct;
 };
+// -------------------------------------------------------------------
+
+class RegisteredGradient : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.RegisteredGradient) */ {
+ public:
+  RegisteredGradient();
+  virtual ~RegisteredGradient();
+
+  RegisteredGradient(const RegisteredGradient& from);
+
+  inline RegisteredGradient& operator=(const RegisteredGradient& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  RegisteredGradient(RegisteredGradient&& from) noexcept
+    : RegisteredGradient() {
+    *this = ::std::move(from);
+  }
+
+  inline RegisteredGradient& operator=(RegisteredGradient&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  inline ::google::protobuf::Arena* GetArena() const final {
+    return GetArenaNoVirtual();
+  }
+  inline void* GetMaybeArenaPointer() const final {
+    return MaybeArenaPtr();
+  }
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const RegisteredGradient& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const RegisteredGradient* internal_default_instance() {
+    return reinterpret_cast<const RegisteredGradient*>(
+               &_RegisteredGradient_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    10;
+
+  void UnsafeArenaSwap(RegisteredGradient* other);
+  void Swap(RegisteredGradient* other);
+  friend void swap(RegisteredGradient& a, RegisteredGradient& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline RegisteredGradient* New() const final {
+    return CreateMaybeMessage<RegisteredGradient>(NULL);
+  }
+
+  RegisteredGradient* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<RegisteredGradient>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const RegisteredGradient& from);
+  void MergeFrom(const RegisteredGradient& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(RegisteredGradient* other);
+  protected:
+  explicit RegisteredGradient(::google::protobuf::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::google::protobuf::Arena* arena);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return _internal_metadata_.arena();
+  }
+  inline void* MaybeArenaPtr() const {
+    return _internal_metadata_.raw_arena_ptr();
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // string gradient_func = 1;
+  void clear_gradient_func();
+  static const int kGradientFuncFieldNumber = 1;
+  const ::std::string& gradient_func() const;
+  void set_gradient_func(const ::std::string& value);
+  #if LANG_CXX11
+  void set_gradient_func(::std::string&& value);
+  #endif
+  void set_gradient_func(const char* value);
+  void set_gradient_func(const char* value, size_t size);
+  ::std::string* mutable_gradient_func();
+  ::std::string* release_gradient_func();
+  void set_allocated_gradient_func(::std::string* gradient_func);
+  PROTOBUF_RUNTIME_DEPRECATED("The unsafe_arena_ accessors for"
+  "    string fields are deprecated and will be removed in a"
+  "    future release.")
+  ::std::string* unsafe_arena_release_gradient_func();
+  PROTOBUF_RUNTIME_DEPRECATED("The unsafe_arena_ accessors for"
+  "    string fields are deprecated and will be removed in a"
+  "    future release.")
+  void unsafe_arena_set_allocated_gradient_func(
+      ::std::string* gradient_func);
+
+  // string registered_op_type = 2;
+  void clear_registered_op_type();
+  static const int kRegisteredOpTypeFieldNumber = 2;
+  const ::std::string& registered_op_type() const;
+  void set_registered_op_type(const ::std::string& value);
+  #if LANG_CXX11
+  void set_registered_op_type(::std::string&& value);
+  #endif
+  void set_registered_op_type(const char* value);
+  void set_registered_op_type(const char* value, size_t size);
+  ::std::string* mutable_registered_op_type();
+  ::std::string* release_registered_op_type();
+  void set_allocated_registered_op_type(::std::string* registered_op_type);
+  PROTOBUF_RUNTIME_DEPRECATED("The unsafe_arena_ accessors for"
+  "    string fields are deprecated and will be removed in a"
+  "    future release.")
+  ::std::string* unsafe_arena_release_registered_op_type();
+  PROTOBUF_RUNTIME_DEPRECATED("The unsafe_arena_ accessors for"
+  "    string fields are deprecated and will be removed in a"
+  "    future release.")
+  void unsafe_arena_set_allocated_registered_op_type(
+      ::std::string* registered_op_type);
+
+  // @@protoc_insertion_point(class_scope:tensorflow.RegisteredGradient)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::google::protobuf::internal::ArenaStringPtr gradient_func_;
+  ::google::protobuf::internal::ArenaStringPtr registered_op_type_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fcore_2fframework_2ffunction_2eproto::TableStruct;
+};
 // ===================================================================
 
 
@@ -896,6 +1112,36 @@ FunctionDefLibrary::gradient() const {
   return gradient_;
 }
 
+// repeated .tensorflow.RegisteredGradient registered_gradients = 3;
+inline int FunctionDefLibrary::registered_gradients_size() const {
+  return registered_gradients_.size();
+}
+inline void FunctionDefLibrary::clear_registered_gradients() {
+  registered_gradients_.Clear();
+}
+inline ::tensorflow::RegisteredGradient* FunctionDefLibrary::mutable_registered_gradients(int index) {
+  // @@protoc_insertion_point(field_mutable:tensorflow.FunctionDefLibrary.registered_gradients)
+  return registered_gradients_.Mutable(index);
+}
+inline ::google::protobuf::RepeatedPtrField< ::tensorflow::RegisteredGradient >*
+FunctionDefLibrary::mutable_registered_gradients() {
+  // @@protoc_insertion_point(field_mutable_list:tensorflow.FunctionDefLibrary.registered_gradients)
+  return &registered_gradients_;
+}
+inline const ::tensorflow::RegisteredGradient& FunctionDefLibrary::registered_gradients(int index) const {
+  // @@protoc_insertion_point(field_get:tensorflow.FunctionDefLibrary.registered_gradients)
+  return registered_gradients_.Get(index);
+}
+inline ::tensorflow::RegisteredGradient* FunctionDefLibrary::add_registered_gradients() {
+  // @@protoc_insertion_point(field_add:tensorflow.FunctionDefLibrary.registered_gradients)
+  return registered_gradients_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::tensorflow::RegisteredGradient >&
+FunctionDefLibrary::registered_gradients() const {
+  // @@protoc_insertion_point(field_list:tensorflow.FunctionDefLibrary.registered_gradients)
+  return registered_gradients_;
+}
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
@@ -918,6 +1164,8 @@ FunctionDef_ArgAttrs::mutable_attr() {
   // @@protoc_insertion_point(field_mutable_map:tensorflow.FunctionDef.ArgAttrs.attr)
   return attr_.MutableMap();
 }
+
+// -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
 
@@ -1019,6 +1267,24 @@ inline ::google::protobuf::Map< ::google::protobuf::uint32, ::tensorflow::Functi
 FunctionDef::mutable_arg_attr() {
   // @@protoc_insertion_point(field_mutable_map:tensorflow.FunctionDef.arg_attr)
   return arg_attr_.MutableMap();
+}
+
+// map<uint32, uint32> resource_arg_unique_id = 8;
+inline int FunctionDef::resource_arg_unique_id_size() const {
+  return resource_arg_unique_id_.size();
+}
+inline void FunctionDef::clear_resource_arg_unique_id() {
+  resource_arg_unique_id_.Clear();
+}
+inline const ::google::protobuf::Map< ::google::protobuf::uint32, ::google::protobuf::uint32 >&
+FunctionDef::resource_arg_unique_id() const {
+  // @@protoc_insertion_point(field_map:tensorflow.FunctionDef.resource_arg_unique_id)
+  return resource_arg_unique_id_.GetMap();
+}
+inline ::google::protobuf::Map< ::google::protobuf::uint32, ::google::protobuf::uint32 >*
+FunctionDef::mutable_resource_arg_unique_id() {
+  // @@protoc_insertion_point(field_mutable_map:tensorflow.FunctionDef.resource_arg_unique_id)
+  return resource_arg_unique_id_.MutableMap();
 }
 
 // repeated .tensorflow.NodeDef node_def = 3;
@@ -1238,9 +1504,167 @@ inline void GradientDef::unsafe_arena_set_allocated_gradient_func(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.GradientDef.gradient_func)
 }
 
+// -------------------------------------------------------------------
+
+// RegisteredGradient
+
+// string gradient_func = 1;
+inline void RegisteredGradient::clear_gradient_func() {
+  gradient_func_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+inline const ::std::string& RegisteredGradient::gradient_func() const {
+  // @@protoc_insertion_point(field_get:tensorflow.RegisteredGradient.gradient_func)
+  return gradient_func_.Get();
+}
+inline void RegisteredGradient::set_gradient_func(const ::std::string& value) {
+  
+  gradient_func_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set:tensorflow.RegisteredGradient.gradient_func)
+}
+#if LANG_CXX11
+inline void RegisteredGradient::set_gradient_func(::std::string&& value) {
+  
+  gradient_func_.Set(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_rvalue:tensorflow.RegisteredGradient.gradient_func)
+}
+#endif
+inline void RegisteredGradient::set_gradient_func(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  
+  gradient_func_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
+              GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_char:tensorflow.RegisteredGradient.gradient_func)
+}
+inline void RegisteredGradient::set_gradient_func(const char* value,
+    size_t size) {
+  
+  gradient_func_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_pointer:tensorflow.RegisteredGradient.gradient_func)
+}
+inline ::std::string* RegisteredGradient::mutable_gradient_func() {
+  
+  // @@protoc_insertion_point(field_mutable:tensorflow.RegisteredGradient.gradient_func)
+  return gradient_func_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+inline ::std::string* RegisteredGradient::release_gradient_func() {
+  // @@protoc_insertion_point(field_release:tensorflow.RegisteredGradient.gradient_func)
+  
+  return gradient_func_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+inline void RegisteredGradient::set_allocated_gradient_func(::std::string* gradient_func) {
+  if (gradient_func != NULL) {
+    
+  } else {
+    
+  }
+  gradient_func_.SetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), gradient_func,
+      GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.RegisteredGradient.gradient_func)
+}
+inline ::std::string* RegisteredGradient::unsafe_arena_release_gradient_func() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:tensorflow.RegisteredGradient.gradient_func)
+  GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
+  
+  return gradient_func_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      GetArenaNoVirtual());
+}
+inline void RegisteredGradient::unsafe_arena_set_allocated_gradient_func(
+    ::std::string* gradient_func) {
+  GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
+  if (gradient_func != NULL) {
+    
+  } else {
+    
+  }
+  gradient_func_.UnsafeArenaSetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      gradient_func, GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.RegisteredGradient.gradient_func)
+}
+
+// string registered_op_type = 2;
+inline void RegisteredGradient::clear_registered_op_type() {
+  registered_op_type_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+inline const ::std::string& RegisteredGradient::registered_op_type() const {
+  // @@protoc_insertion_point(field_get:tensorflow.RegisteredGradient.registered_op_type)
+  return registered_op_type_.Get();
+}
+inline void RegisteredGradient::set_registered_op_type(const ::std::string& value) {
+  
+  registered_op_type_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set:tensorflow.RegisteredGradient.registered_op_type)
+}
+#if LANG_CXX11
+inline void RegisteredGradient::set_registered_op_type(::std::string&& value) {
+  
+  registered_op_type_.Set(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_rvalue:tensorflow.RegisteredGradient.registered_op_type)
+}
+#endif
+inline void RegisteredGradient::set_registered_op_type(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  
+  registered_op_type_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
+              GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_char:tensorflow.RegisteredGradient.registered_op_type)
+}
+inline void RegisteredGradient::set_registered_op_type(const char* value,
+    size_t size) {
+  
+  registered_op_type_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_pointer:tensorflow.RegisteredGradient.registered_op_type)
+}
+inline ::std::string* RegisteredGradient::mutable_registered_op_type() {
+  
+  // @@protoc_insertion_point(field_mutable:tensorflow.RegisteredGradient.registered_op_type)
+  return registered_op_type_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+inline ::std::string* RegisteredGradient::release_registered_op_type() {
+  // @@protoc_insertion_point(field_release:tensorflow.RegisteredGradient.registered_op_type)
+  
+  return registered_op_type_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+inline void RegisteredGradient::set_allocated_registered_op_type(::std::string* registered_op_type) {
+  if (registered_op_type != NULL) {
+    
+  } else {
+    
+  }
+  registered_op_type_.SetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), registered_op_type,
+      GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.RegisteredGradient.registered_op_type)
+}
+inline ::std::string* RegisteredGradient::unsafe_arena_release_registered_op_type() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:tensorflow.RegisteredGradient.registered_op_type)
+  GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
+  
+  return registered_op_type_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      GetArenaNoVirtual());
+}
+inline void RegisteredGradient::unsafe_arena_set_allocated_registered_op_type(
+    ::std::string* registered_op_type) {
+  GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
+  if (registered_op_type != NULL) {
+    
+  } else {
+    
+  }
+  registered_op_type_.UnsafeArenaSetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      registered_op_type, GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.RegisteredGradient.registered_op_type)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

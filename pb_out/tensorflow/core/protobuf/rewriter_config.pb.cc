@@ -143,7 +143,7 @@ void InitDefaults() {
 }
 
 ::google::protobuf::Metadata file_level_metadata[5];
-const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[3];
+const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[4];
 
 const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
@@ -180,10 +180,12 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::RewriterConfig, cpu_layout_conversion_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::RewriterConfig, layout_optimizer_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::RewriterConfig, constant_folding_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::RewriterConfig, shape_optimization_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::RewriterConfig, remapping_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::RewriterConfig, common_subgraph_elimination_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::RewriterConfig, arithmetic_optimization_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::RewriterConfig, dependency_optimization_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::RewriterConfig, loop_optimization_),
@@ -194,9 +196,14 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::RewriterConfig, pin_to_host_optimization_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::RewriterConfig, implementation_selector_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::RewriterConfig, auto_mixed_precision_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::RewriterConfig, auto_mixed_precision_mkl_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::RewriterConfig, auto_mixed_precision_cpu_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::RewriterConfig, disable_meta_optimizer_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::RewriterConfig, use_plugin_optimizers_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::RewriterConfig, meta_optimizer_iterations_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::RewriterConfig, min_graph_nodes_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::RewriterConfig, experimental_disable_compressed_tensor_optimization_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::RewriterConfig, experimental_disable_folding_quantization_emulation_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::RewriterConfig, memory_optimization_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::RewriterConfig, memory_optimizer_target_node_name_scope_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tensorflow::RewriterConfig, meta_optimizer_timeout_ms_),
@@ -251,65 +258,80 @@ void AddDescriptorsImpl() {
       "e/protobuf/verifier_config.proto\";\n\023Auto"
       "ParallelOptions\022\016\n\006enable\030\001 \001(\010\022\024\n\014num_r"
       "eplicas\030\002 \001(\005\"+\n\026ScopedAllocatorOptions\022"
-      "\021\n\tenable_op\030\001 \003(\t\"\210\020\n\016RewriterConfig\022;\n"
-      "\020layout_optimizer\030\001 \001(\0162!.tensorflow.Rew"
-      "riterConfig.Toggle\022;\n\020constant_folding\030\003"
-      " \001(\0162!.tensorflow.RewriterConfig.Toggle\022"
-      "=\n\022shape_optimization\030\r \001(\0162!.tensorflow"
-      ".RewriterConfig.Toggle\0224\n\tremapping\030\016 \001("
-      "\0162!.tensorflow.RewriterConfig.Toggle\022B\n\027"
-      "arithmetic_optimization\030\007 \001(\0162!.tensorfl"
-      "ow.RewriterConfig.Toggle\022B\n\027dependency_o"
-      "ptimization\030\010 \001(\0162!.tensorflow.RewriterC"
-      "onfig.Toggle\022<\n\021loop_optimization\030\t \001(\0162"
-      "!.tensorflow.RewriterConfig.Toggle\022@\n\025fu"
-      "nction_optimization\030\n \001(\0162!.tensorflow.R"
-      "ewriterConfig.Toggle\0229\n\016debug_stripper\030\013"
-      " \001(\0162!.tensorflow.RewriterConfig.Toggle\022"
-      "\035\n\025disable_model_pruning\030\002 \001(\010\022H\n\035scoped"
-      "_allocator_optimization\030\017 \001(\0162!.tensorfl"
-      "ow.RewriterConfig.Toggle\022C\n\030pin_to_host_"
-      "optimization\030\022 \001(\0162!.tensorflow.Rewriter"
-      "Config.Toggle\022B\n\027implementation_selector"
-      "\030\026 \001(\0162!.tensorflow.RewriterConfig.Toggl"
-      "e\022\?\n\024auto_mixed_precision\030\027 \001(\0162!.tensor"
-      "flow.RewriterConfig.Toggle\022\036\n\026disable_me"
-      "ta_optimizer\030\023 \001(\010\022O\n\031meta_optimizer_ite"
-      "rations\030\014 \001(\0162,.tensorflow.RewriterConfi"
-      "g.NumIterationsType\022\027\n\017min_graph_nodes\030\021"
-      " \001(\005\022B\n\023memory_optimization\030\004 \001(\0162%.tens"
-      "orflow.RewriterConfig.MemOptType\022/\n\'memo"
-      "ry_optimizer_target_node_name_scope\030\006 \001("
-      "\t\022!\n\031meta_optimizer_timeout_ms\030\024 \001(\003\0226\n\r"
-      "auto_parallel\030\005 \001(\0132\037.tensorflow.AutoPar"
-      "allelOptions\022 \n\030fail_on_optimizer_errors"
-      "\030\025 \001(\010\022A\n\025scoped_allocator_opts\030\020 \001(\0132\"."
-      "tensorflow.ScopedAllocatorOptions\022\022\n\nopt"
-      "imizers\030d \003(\t\022K\n\021custom_optimizers\030\310\001 \003("
-      "\0132/.tensorflow.RewriterConfig.CustomGrap"
-      "hOptimizer\022D\n\037inter_optimizer_verifier_c"
-      "onfig\030\254\002 \001(\0132\032.tensorflow.VerifierConfig"
-      "\022F\n!post_optimization_verifier_config\030\255\002"
-      " \001(\0132\032.tensorflow.VerifierConfig\032\312\001\n\024Cus"
-      "tomGraphOptimizer\022\014\n\004name\030\001 \001(\t\022X\n\rparam"
-      "eter_map\030\002 \003(\0132A.tensorflow.RewriterConf"
-      "ig.CustomGraphOptimizer.ParameterMapEntr"
-      "y\032J\n\021ParameterMapEntry\022\013\n\003key\030\001 \001(\t\022$\n\005v"
-      "alue\030\002 \001(\0132\025.tensorflow.AttrValue:\0028\001\"6\n"
-      "\006Toggle\022\013\n\007DEFAULT\020\000\022\006\n\002ON\020\001\022\007\n\003OFF\020\002\022\016\n"
-      "\nAGGRESSIVE\020\003\"<\n\021NumIterationsType\022\025\n\021DE"
-      "FAULT_NUM_ITERS\020\000\022\007\n\003ONE\020\001\022\007\n\003TWO\020\002\"\237\001\n\n"
-      "MemOptType\022\023\n\017DEFAULT_MEM_OPT\020\000\022\016\n\nNO_ME"
-      "M_OPT\020\001\022\n\n\006MANUAL\020\002\022\027\n\023SWAPPING_HEURISTI"
-      "CS\020\004\022\034\n\030RECOMPUTATION_HEURISTICS\020\005\022\031\n\025SC"
-      "HEDULING_HEURISTICS\020\006\022\016\n\nHEURISTICS\020\003Bs\n"
-      "\030org.tensorflow.frameworkB\024RewriterConfi"
-      "gProtosP\001Z<github.com/tensorflow/tensorf"
-      "low/tensorflow/go/core/protobuf\370\001\001b\006prot"
-      "o3"
+      "\021\n\tenable_op\030\001 \003(\t\"\324\024\n\016RewriterConfig\022C\n"
+      "\025cpu_layout_conversion\0302 \001(\0162$.tensorflo"
+      "w.RewriterConfig.CpuLayout\022;\n\020layout_opt"
+      "imizer\030\001 \001(\0162!.tensorflow.RewriterConfig"
+      ".Toggle\022;\n\020constant_folding\030\003 \001(\0162!.tens"
+      "orflow.RewriterConfig.Toggle\022=\n\022shape_op"
+      "timization\030\r \001(\0162!.tensorflow.RewriterCo"
+      "nfig.Toggle\0224\n\tremapping\030\016 \001(\0162!.tensorf"
+      "low.RewriterConfig.Toggle\022F\n\033common_subg"
+      "raph_elimination\030\030 \001(\0162!.tensorflow.Rewr"
+      "iterConfig.Toggle\022B\n\027arithmetic_optimiza"
+      "tion\030\007 \001(\0162!.tensorflow.RewriterConfig.T"
+      "oggle\022B\n\027dependency_optimization\030\010 \001(\0162!"
+      ".tensorflow.RewriterConfig.Toggle\022<\n\021loo"
+      "p_optimization\030\t \001(\0162!.tensorflow.Rewrit"
+      "erConfig.Toggle\022@\n\025function_optimization"
+      "\030\n \001(\0162!.tensorflow.RewriterConfig.Toggl"
+      "e\0229\n\016debug_stripper\030\013 \001(\0162!.tensorflow.R"
+      "ewriterConfig.Toggle\022\035\n\025disable_model_pr"
+      "uning\030\002 \001(\010\022H\n\035scoped_allocator_optimiza"
+      "tion\030\017 \001(\0162!.tensorflow.RewriterConfig.T"
+      "oggle\022C\n\030pin_to_host_optimization\030\022 \001(\0162"
+      "!.tensorflow.RewriterConfig.Toggle\022B\n\027im"
+      "plementation_selector\030\026 \001(\0162!.tensorflow"
+      ".RewriterConfig.Toggle\022\?\n\024auto_mixed_pre"
+      "cision\030\027 \001(\0162!.tensorflow.RewriterConfig"
+      ".Toggle\022C\n\030auto_mixed_precision_mkl\030\031 \001("
+      "\0162!.tensorflow.RewriterConfig.Toggle\022C\n\030"
+      "auto_mixed_precision_cpu\030\035 \001(\0162!.tensorf"
+      "low.RewriterConfig.Toggle\022\036\n\026disable_met"
+      "a_optimizer\030\023 \001(\010\022@\n\025use_plugin_optimize"
+      "rs\030\034 \001(\0162!.tensorflow.RewriterConfig.Tog"
+      "gle\022O\n\031meta_optimizer_iterations\030\014 \001(\0162,"
+      ".tensorflow.RewriterConfig.NumIterations"
+      "Type\022\027\n\017min_graph_nodes\030\021 \001(\005\022;\n3experim"
+      "ental_disable_compressed_tensor_optimiza"
+      "tion\030\032 \001(\010\022;\n3experimental_disable_foldi"
+      "ng_quantization_emulation\030\033 \001(\010\022B\n\023memor"
+      "y_optimization\030\004 \001(\0162%.tensorflow.Rewrit"
+      "erConfig.MemOptType\022/\n\'memory_optimizer_"
+      "target_node_name_scope\030\006 \001(\t\022!\n\031meta_opt"
+      "imizer_timeout_ms\030\024 \001(\003\0226\n\rauto_parallel"
+      "\030\005 \001(\0132\037.tensorflow.AutoParallelOptions\022"
+      " \n\030fail_on_optimizer_errors\030\025 \001(\010\022A\n\025sco"
+      "ped_allocator_opts\030\020 \001(\0132\".tensorflow.Sc"
+      "opedAllocatorOptions\022\022\n\noptimizers\030d \003(\t"
+      "\022K\n\021custom_optimizers\030\310\001 \003(\0132/.tensorflo"
+      "w.RewriterConfig.CustomGraphOptimizer\022D\n"
+      "\037inter_optimizer_verifier_config\030\254\002 \001(\0132"
+      "\032.tensorflow.VerifierConfig\022F\n!post_opti"
+      "mization_verifier_config\030\255\002 \001(\0132\032.tensor"
+      "flow.VerifierConfig\032\312\001\n\024CustomGraphOptim"
+      "izer\022\014\n\004name\030\001 \001(\t\022X\n\rparameter_map\030\002 \003("
+      "\0132A.tensorflow.RewriterConfig.CustomGrap"
+      "hOptimizer.ParameterMapEntry\032J\n\021Paramete"
+      "rMapEntry\022\013\n\003key\030\001 \001(\t\022$\n\005value\030\002 \001(\0132\025."
+      "tensorflow.AttrValue:\0028\001\"d\n\006Toggle\022\013\n\007DE"
+      "FAULT\020\000\022\006\n\002ON\020\001\022\007\n\003OFF\020\002\022\016\n\nAGGRESSIVE\020\003"
+      "\022\025\n\021EXPERIMENTAL_MLIR\020\004\022\025\n\021EXPERIMENTAL_"
+      "BOTH\020\005\"I\n\tCpuLayout\022\030\n\024NO_CONVERSION_ON_"
+      "CPU\020\000\022\020\n\014NCHW_TO_NHWC\020\001\022\020\n\014NHWC_TO_NCHW\020"
+      "\002\"<\n\021NumIterationsType\022\025\n\021DEFAULT_NUM_IT"
+      "ERS\020\000\022\007\n\003ONE\020\001\022\007\n\003TWO\020\002\"\237\001\n\nMemOptType\022\023"
+      "\n\017DEFAULT_MEM_OPT\020\000\022\016\n\nNO_MEM_OPT\020\001\022\n\n\006M"
+      "ANUAL\020\002\022\027\n\023SWAPPING_HEURISTICS\020\004\022\034\n\030RECO"
+      "MPUTATION_HEURISTICS\020\005\022\031\n\025SCHEDULING_HEU"
+      "RISTICS\020\006\022\016\n\nHEURISTICS\020\003B\214\001\n\030org.tensor"
+      "flow.frameworkB\024RewriterConfigProtosP\001ZU"
+      "github.com/tensorflow/tensorflow/tensorf"
+      "low/go/core/protobuf/for_core_protos_go_"
+      "proto\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 2442);
+      descriptor, 3056);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/protobuf/rewriter_config.proto", &protobuf_RegisterTypes);
   ::protobuf_tensorflow_2fcore_2fframework_2fattr_5fvalue_2eproto::AddDescriptors();
@@ -338,6 +360,8 @@ bool RewriterConfig_Toggle_IsValid(int value) {
     case 1:
     case 2:
     case 3:
+    case 4:
+    case 5:
       return true;
     default:
       return false;
@@ -349,13 +373,38 @@ const RewriterConfig_Toggle RewriterConfig::DEFAULT;
 const RewriterConfig_Toggle RewriterConfig::ON;
 const RewriterConfig_Toggle RewriterConfig::OFF;
 const RewriterConfig_Toggle RewriterConfig::AGGRESSIVE;
+const RewriterConfig_Toggle RewriterConfig::EXPERIMENTAL_MLIR;
+const RewriterConfig_Toggle RewriterConfig::EXPERIMENTAL_BOTH;
 const RewriterConfig_Toggle RewriterConfig::Toggle_MIN;
 const RewriterConfig_Toggle RewriterConfig::Toggle_MAX;
 const int RewriterConfig::Toggle_ARRAYSIZE;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-const ::google::protobuf::EnumDescriptor* RewriterConfig_NumIterationsType_descriptor() {
+const ::google::protobuf::EnumDescriptor* RewriterConfig_CpuLayout_descriptor() {
   protobuf_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto::protobuf_AssignDescriptorsOnce();
   return protobuf_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto::file_level_enum_descriptors[1];
+}
+bool RewriterConfig_CpuLayout_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+      return true;
+    default:
+      return false;
+  }
+}
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const RewriterConfig_CpuLayout RewriterConfig::NO_CONVERSION_ON_CPU;
+const RewriterConfig_CpuLayout RewriterConfig::NCHW_TO_NHWC;
+const RewriterConfig_CpuLayout RewriterConfig::NHWC_TO_NCHW;
+const RewriterConfig_CpuLayout RewriterConfig::CpuLayout_MIN;
+const RewriterConfig_CpuLayout RewriterConfig::CpuLayout_MAX;
+const int RewriterConfig::CpuLayout_ARRAYSIZE;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+const ::google::protobuf::EnumDescriptor* RewriterConfig_NumIterationsType_descriptor() {
+  protobuf_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto::file_level_enum_descriptors[2];
 }
 bool RewriterConfig_NumIterationsType_IsValid(int value) {
   switch (value) {
@@ -378,7 +427,7 @@ const int RewriterConfig::NumIterationsType_ARRAYSIZE;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 const ::google::protobuf::EnumDescriptor* RewriterConfig_MemOptType_descriptor() {
   protobuf_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto::file_level_enum_descriptors[2];
+  return protobuf_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto::file_level_enum_descriptors[3];
 }
 bool RewriterConfig_MemOptType_IsValid(int value) {
   switch (value) {
@@ -1498,10 +1547,12 @@ void RewriterConfig::clear_post_optimization_verifier_config() {
   post_optimization_verifier_config_ = NULL;
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int RewriterConfig::kCpuLayoutConversionFieldNumber;
 const int RewriterConfig::kLayoutOptimizerFieldNumber;
 const int RewriterConfig::kConstantFoldingFieldNumber;
 const int RewriterConfig::kShapeOptimizationFieldNumber;
 const int RewriterConfig::kRemappingFieldNumber;
+const int RewriterConfig::kCommonSubgraphEliminationFieldNumber;
 const int RewriterConfig::kArithmeticOptimizationFieldNumber;
 const int RewriterConfig::kDependencyOptimizationFieldNumber;
 const int RewriterConfig::kLoopOptimizationFieldNumber;
@@ -1512,9 +1563,14 @@ const int RewriterConfig::kScopedAllocatorOptimizationFieldNumber;
 const int RewriterConfig::kPinToHostOptimizationFieldNumber;
 const int RewriterConfig::kImplementationSelectorFieldNumber;
 const int RewriterConfig::kAutoMixedPrecisionFieldNumber;
+const int RewriterConfig::kAutoMixedPrecisionMklFieldNumber;
+const int RewriterConfig::kAutoMixedPrecisionCpuFieldNumber;
 const int RewriterConfig::kDisableMetaOptimizerFieldNumber;
+const int RewriterConfig::kUsePluginOptimizersFieldNumber;
 const int RewriterConfig::kMetaOptimizerIterationsFieldNumber;
 const int RewriterConfig::kMinGraphNodesFieldNumber;
+const int RewriterConfig::kExperimentalDisableCompressedTensorOptimizationFieldNumber;
+const int RewriterConfig::kExperimentalDisableFoldingQuantizationEmulationFieldNumber;
 const int RewriterConfig::kMemoryOptimizationFieldNumber;
 const int RewriterConfig::kMemoryOptimizerTargetNodeNameScopeFieldNumber;
 const int RewriterConfig::kMetaOptimizerTimeoutMsFieldNumber;
@@ -1576,16 +1632,16 @@ RewriterConfig::RewriterConfig(const RewriterConfig& from)
     post_optimization_verifier_config_ = NULL;
   }
   ::memcpy(&layout_optimizer_, &from.layout_optimizer_,
-    static_cast<size_t>(reinterpret_cast<char*>(&auto_mixed_precision_) -
-    reinterpret_cast<char*>(&layout_optimizer_)) + sizeof(auto_mixed_precision_));
+    static_cast<size_t>(reinterpret_cast<char*>(&cpu_layout_conversion_) -
+    reinterpret_cast<char*>(&layout_optimizer_)) + sizeof(cpu_layout_conversion_));
   // @@protoc_insertion_point(copy_constructor:tensorflow.RewriterConfig)
 }
 
 void RewriterConfig::SharedCtor() {
   memory_optimizer_target_node_name_scope_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&auto_parallel_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&auto_mixed_precision_) -
-      reinterpret_cast<char*>(&auto_parallel_)) + sizeof(auto_mixed_precision_));
+      reinterpret_cast<char*>(&cpu_layout_conversion_) -
+      reinterpret_cast<char*>(&auto_parallel_)) + sizeof(cpu_layout_conversion_));
 }
 
 RewriterConfig::~RewriterConfig() {
@@ -1648,8 +1704,8 @@ void RewriterConfig::Clear() {
   }
   post_optimization_verifier_config_ = NULL;
   ::memset(&layout_optimizer_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&auto_mixed_precision_) -
-      reinterpret_cast<char*>(&layout_optimizer_)) + sizeof(auto_mixed_precision_));
+      reinterpret_cast<char*>(&cpu_layout_conversion_) -
+      reinterpret_cast<char*>(&layout_optimizer_)) + sizeof(cpu_layout_conversion_));
   _internal_metadata_.Clear();
 }
 
@@ -1998,6 +2054,109 @@ bool RewriterConfig::MergePartialFromCodedStream(
         break;
       }
 
+      // .tensorflow.RewriterConfig.Toggle common_subgraph_elimination = 24;
+      case 24: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(192u /* 192 & 0xFF */)) {
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_common_subgraph_elimination(static_cast< ::tensorflow::RewriterConfig_Toggle >(value));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .tensorflow.RewriterConfig.Toggle auto_mixed_precision_mkl = 25;
+      case 25: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(200u /* 200 & 0xFF */)) {
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_auto_mixed_precision_mkl(static_cast< ::tensorflow::RewriterConfig_Toggle >(value));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool experimental_disable_compressed_tensor_optimization = 26;
+      case 26: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(208u /* 208 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &experimental_disable_compressed_tensor_optimization_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool experimental_disable_folding_quantization_emulation = 27;
+      case 27: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(216u /* 216 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &experimental_disable_folding_quantization_emulation_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .tensorflow.RewriterConfig.Toggle use_plugin_optimizers = 28;
+      case 28: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(224u /* 224 & 0xFF */)) {
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_use_plugin_optimizers(static_cast< ::tensorflow::RewriterConfig_Toggle >(value));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .tensorflow.RewriterConfig.Toggle auto_mixed_precision_cpu = 29;
+      case 29: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(232u /* 232 & 0xFF */)) {
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_auto_mixed_precision_cpu(static_cast< ::tensorflow::RewriterConfig_Toggle >(value));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .tensorflow.RewriterConfig.CpuLayout cpu_layout_conversion = 50;
+      case 50: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(144u /* 400 & 0xFF */)) {
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_cpu_layout_conversion(static_cast< ::tensorflow::RewriterConfig_CpuLayout >(value));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       // repeated string optimizers = 100;
       case 100: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
@@ -2214,6 +2373,46 @@ void RewriterConfig::SerializeWithCachedSizes(
       23, this->auto_mixed_precision(), output);
   }
 
+  // .tensorflow.RewriterConfig.Toggle common_subgraph_elimination = 24;
+  if (this->common_subgraph_elimination() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      24, this->common_subgraph_elimination(), output);
+  }
+
+  // .tensorflow.RewriterConfig.Toggle auto_mixed_precision_mkl = 25;
+  if (this->auto_mixed_precision_mkl() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      25, this->auto_mixed_precision_mkl(), output);
+  }
+
+  // bool experimental_disable_compressed_tensor_optimization = 26;
+  if (this->experimental_disable_compressed_tensor_optimization() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(26, this->experimental_disable_compressed_tensor_optimization(), output);
+  }
+
+  // bool experimental_disable_folding_quantization_emulation = 27;
+  if (this->experimental_disable_folding_quantization_emulation() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(27, this->experimental_disable_folding_quantization_emulation(), output);
+  }
+
+  // .tensorflow.RewriterConfig.Toggle use_plugin_optimizers = 28;
+  if (this->use_plugin_optimizers() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      28, this->use_plugin_optimizers(), output);
+  }
+
+  // .tensorflow.RewriterConfig.Toggle auto_mixed_precision_cpu = 29;
+  if (this->auto_mixed_precision_cpu() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      29, this->auto_mixed_precision_cpu(), output);
+  }
+
+  // .tensorflow.RewriterConfig.CpuLayout cpu_layout_conversion = 50;
+  if (this->cpu_layout_conversion() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      50, this->cpu_layout_conversion(), output);
+  }
+
   // repeated string optimizers = 100;
   for (int i = 0, n = this->optimizers_size(); i < n; i++) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2399,6 +2598,46 @@ void RewriterConfig::SerializeWithCachedSizes(
       23, this->auto_mixed_precision(), target);
   }
 
+  // .tensorflow.RewriterConfig.Toggle common_subgraph_elimination = 24;
+  if (this->common_subgraph_elimination() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      24, this->common_subgraph_elimination(), target);
+  }
+
+  // .tensorflow.RewriterConfig.Toggle auto_mixed_precision_mkl = 25;
+  if (this->auto_mixed_precision_mkl() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      25, this->auto_mixed_precision_mkl(), target);
+  }
+
+  // bool experimental_disable_compressed_tensor_optimization = 26;
+  if (this->experimental_disable_compressed_tensor_optimization() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(26, this->experimental_disable_compressed_tensor_optimization(), target);
+  }
+
+  // bool experimental_disable_folding_quantization_emulation = 27;
+  if (this->experimental_disable_folding_quantization_emulation() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(27, this->experimental_disable_folding_quantization_emulation(), target);
+  }
+
+  // .tensorflow.RewriterConfig.Toggle use_plugin_optimizers = 28;
+  if (this->use_plugin_optimizers() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      28, this->use_plugin_optimizers(), target);
+  }
+
+  // .tensorflow.RewriterConfig.Toggle auto_mixed_precision_cpu = 29;
+  if (this->auto_mixed_precision_cpu() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      29, this->auto_mixed_precision_cpu(), target);
+  }
+
+  // .tensorflow.RewriterConfig.CpuLayout cpu_layout_conversion = 50;
+  if (this->cpu_layout_conversion() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      50, this->cpu_layout_conversion(), target);
+  }
+
   // repeated string optimizers = 100;
   for (int i = 0, n = this->optimizers_size(); i < n; i++) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2568,21 +2807,6 @@ size_t RewriterConfig::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormatLite::EnumSize(this->remapping());
   }
 
-  // bool disable_model_pruning = 2;
-  if (this->disable_model_pruning() != 0) {
-    total_size += 1 + 1;
-  }
-
-  // bool disable_meta_optimizer = 19;
-  if (this->disable_meta_optimizer() != 0) {
-    total_size += 2 + 1;
-  }
-
-  // bool fail_on_optimizer_errors = 21;
-  if (this->fail_on_optimizer_errors() != 0) {
-    total_size += 2 + 1;
-  }
-
   // .tensorflow.RewriterConfig.Toggle scoped_allocator_optimization = 15;
   if (this->scoped_allocator_optimization() != 0) {
     total_size += 1 +
@@ -2596,17 +2820,42 @@ size_t RewriterConfig::ByteSizeLong() const {
         this->min_graph_nodes());
   }
 
+  // .tensorflow.RewriterConfig.Toggle pin_to_host_optimization = 18;
+  if (this->pin_to_host_optimization() != 0) {
+    total_size += 2 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->pin_to_host_optimization());
+  }
+
+  // bool disable_model_pruning = 2;
+  if (this->disable_model_pruning() != 0) {
+    total_size += 1 + 1;
+  }
+
+  // bool disable_meta_optimizer = 19;
+  if (this->disable_meta_optimizer() != 0) {
+    total_size += 2 + 1;
+  }
+
+  // bool experimental_disable_compressed_tensor_optimization = 26;
+  if (this->experimental_disable_compressed_tensor_optimization() != 0) {
+    total_size += 2 + 1;
+  }
+
+  // bool experimental_disable_folding_quantization_emulation = 27;
+  if (this->experimental_disable_folding_quantization_emulation() != 0) {
+    total_size += 2 + 1;
+  }
+
+  // bool fail_on_optimizer_errors = 21;
+  if (this->fail_on_optimizer_errors() != 0) {
+    total_size += 2 + 1;
+  }
+
   // int64 meta_optimizer_timeout_ms = 20;
   if (this->meta_optimizer_timeout_ms() != 0) {
     total_size += 2 +
       ::google::protobuf::internal::WireFormatLite::Int64Size(
         this->meta_optimizer_timeout_ms());
-  }
-
-  // .tensorflow.RewriterConfig.Toggle pin_to_host_optimization = 18;
-  if (this->pin_to_host_optimization() != 0) {
-    total_size += 2 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->pin_to_host_optimization());
   }
 
   // .tensorflow.RewriterConfig.Toggle implementation_selector = 22;
@@ -2619,6 +2868,36 @@ size_t RewriterConfig::ByteSizeLong() const {
   if (this->auto_mixed_precision() != 0) {
     total_size += 2 +
       ::google::protobuf::internal::WireFormatLite::EnumSize(this->auto_mixed_precision());
+  }
+
+  // .tensorflow.RewriterConfig.Toggle common_subgraph_elimination = 24;
+  if (this->common_subgraph_elimination() != 0) {
+    total_size += 2 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->common_subgraph_elimination());
+  }
+
+  // .tensorflow.RewriterConfig.Toggle auto_mixed_precision_mkl = 25;
+  if (this->auto_mixed_precision_mkl() != 0) {
+    total_size += 2 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->auto_mixed_precision_mkl());
+  }
+
+  // .tensorflow.RewriterConfig.Toggle use_plugin_optimizers = 28;
+  if (this->use_plugin_optimizers() != 0) {
+    total_size += 2 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->use_plugin_optimizers());
+  }
+
+  // .tensorflow.RewriterConfig.Toggle auto_mixed_precision_cpu = 29;
+  if (this->auto_mixed_precision_cpu() != 0) {
+    total_size += 2 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->auto_mixed_precision_cpu());
+  }
+
+  // .tensorflow.RewriterConfig.CpuLayout cpu_layout_conversion = 50;
+  if (this->cpu_layout_conversion() != 0) {
+    total_size += 2 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->cpu_layout_conversion());
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -2698,32 +2977,53 @@ void RewriterConfig::MergeFrom(const RewriterConfig& from) {
   if (from.remapping() != 0) {
     set_remapping(from.remapping());
   }
-  if (from.disable_model_pruning() != 0) {
-    set_disable_model_pruning(from.disable_model_pruning());
-  }
-  if (from.disable_meta_optimizer() != 0) {
-    set_disable_meta_optimizer(from.disable_meta_optimizer());
-  }
-  if (from.fail_on_optimizer_errors() != 0) {
-    set_fail_on_optimizer_errors(from.fail_on_optimizer_errors());
-  }
   if (from.scoped_allocator_optimization() != 0) {
     set_scoped_allocator_optimization(from.scoped_allocator_optimization());
   }
   if (from.min_graph_nodes() != 0) {
     set_min_graph_nodes(from.min_graph_nodes());
   }
-  if (from.meta_optimizer_timeout_ms() != 0) {
-    set_meta_optimizer_timeout_ms(from.meta_optimizer_timeout_ms());
-  }
   if (from.pin_to_host_optimization() != 0) {
     set_pin_to_host_optimization(from.pin_to_host_optimization());
+  }
+  if (from.disable_model_pruning() != 0) {
+    set_disable_model_pruning(from.disable_model_pruning());
+  }
+  if (from.disable_meta_optimizer() != 0) {
+    set_disable_meta_optimizer(from.disable_meta_optimizer());
+  }
+  if (from.experimental_disable_compressed_tensor_optimization() != 0) {
+    set_experimental_disable_compressed_tensor_optimization(from.experimental_disable_compressed_tensor_optimization());
+  }
+  if (from.experimental_disable_folding_quantization_emulation() != 0) {
+    set_experimental_disable_folding_quantization_emulation(from.experimental_disable_folding_quantization_emulation());
+  }
+  if (from.fail_on_optimizer_errors() != 0) {
+    set_fail_on_optimizer_errors(from.fail_on_optimizer_errors());
+  }
+  if (from.meta_optimizer_timeout_ms() != 0) {
+    set_meta_optimizer_timeout_ms(from.meta_optimizer_timeout_ms());
   }
   if (from.implementation_selector() != 0) {
     set_implementation_selector(from.implementation_selector());
   }
   if (from.auto_mixed_precision() != 0) {
     set_auto_mixed_precision(from.auto_mixed_precision());
+  }
+  if (from.common_subgraph_elimination() != 0) {
+    set_common_subgraph_elimination(from.common_subgraph_elimination());
+  }
+  if (from.auto_mixed_precision_mkl() != 0) {
+    set_auto_mixed_precision_mkl(from.auto_mixed_precision_mkl());
+  }
+  if (from.use_plugin_optimizers() != 0) {
+    set_use_plugin_optimizers(from.use_plugin_optimizers());
+  }
+  if (from.auto_mixed_precision_cpu() != 0) {
+    set_auto_mixed_precision_cpu(from.auto_mixed_precision_cpu());
+  }
+  if (from.cpu_layout_conversion() != 0) {
+    set_cpu_layout_conversion(from.cpu_layout_conversion());
   }
 }
 
@@ -2785,15 +3085,22 @@ void RewriterConfig::InternalSwap(RewriterConfig* other) {
   swap(meta_optimizer_iterations_, other->meta_optimizer_iterations_);
   swap(shape_optimization_, other->shape_optimization_);
   swap(remapping_, other->remapping_);
-  swap(disable_model_pruning_, other->disable_model_pruning_);
-  swap(disable_meta_optimizer_, other->disable_meta_optimizer_);
-  swap(fail_on_optimizer_errors_, other->fail_on_optimizer_errors_);
   swap(scoped_allocator_optimization_, other->scoped_allocator_optimization_);
   swap(min_graph_nodes_, other->min_graph_nodes_);
-  swap(meta_optimizer_timeout_ms_, other->meta_optimizer_timeout_ms_);
   swap(pin_to_host_optimization_, other->pin_to_host_optimization_);
+  swap(disable_model_pruning_, other->disable_model_pruning_);
+  swap(disable_meta_optimizer_, other->disable_meta_optimizer_);
+  swap(experimental_disable_compressed_tensor_optimization_, other->experimental_disable_compressed_tensor_optimization_);
+  swap(experimental_disable_folding_quantization_emulation_, other->experimental_disable_folding_quantization_emulation_);
+  swap(fail_on_optimizer_errors_, other->fail_on_optimizer_errors_);
+  swap(meta_optimizer_timeout_ms_, other->meta_optimizer_timeout_ms_);
   swap(implementation_selector_, other->implementation_selector_);
   swap(auto_mixed_precision_, other->auto_mixed_precision_);
+  swap(common_subgraph_elimination_, other->common_subgraph_elimination_);
+  swap(auto_mixed_precision_mkl_, other->auto_mixed_precision_mkl_);
+  swap(use_plugin_optimizers_, other->use_plugin_optimizers_);
+  swap(auto_mixed_precision_cpu_, other->auto_mixed_precision_cpu_);
+  swap(cpu_layout_conversion_, other->cpu_layout_conversion_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 

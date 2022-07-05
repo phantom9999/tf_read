@@ -21,7 +21,6 @@
 
 namespace protobuf_tensorflow_2flite_2ftools_2fevaluation_2fproto_2fevaluation_5fstages_2eproto {
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2flite_2ftools_2fevaluation_2fproto_2fevaluation_5fstages_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_AccuracyMetrics;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2flite_2ftools_2fevaluation_2fproto_2fevaluation_5fstages_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ImagePreprocessingParams;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2flite_2ftools_2fevaluation_2fproto_2fevaluation_5fstages_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_LatencyMetrics;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2flite_2ftools_2fevaluation_2fproto_2fevaluation_5fstages_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ObjectDetectionAveragePrecisionMetrics_AveragePrecision;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2flite_2ftools_2fevaluation_2fproto_2fevaluation_5fstages_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ObjectDetectionAveragePrecisionParams;
@@ -30,6 +29,7 @@ extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2flite_2ftools_2fevaluation_
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2flite_2ftools_2fevaluation_2fproto_2fevaluation_5fstages_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TfliteInferenceParams;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2flite_2ftools_2fevaluation_2fproto_2fevaluation_5fstages_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TopkAccuracyEvalMetrics;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2flite_2ftools_2fevaluation_2fproto_2fevaluation_5fstages_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TopkAccuracyEvalParams;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2flite_2ftools_2fevaluation_2fproto_2fevaluation_5fstages_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_ImagePreprocessingParams;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2flite_2ftools_2fevaluation_2fproto_2fevaluation_5fstages_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_ObjectDetectionAveragePrecisionMetrics;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2flite_2ftools_2fevaluation_2fproto_2fevaluation_5fstages_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_ObjectDetectionResult;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2flite_2ftools_2fevaluation_2fproto_2fevaluation_5fstages_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_ObjectDetectionResult_ObjectInstance;
@@ -39,6 +39,9 @@ extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2flite_2ftools_2fevaluation_
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2flite_2ftools_2fevaluation_2fproto_2fevaluation_5fstages_2eproto ::google::protobuf::internal::SCCInfo<3> scc_info_ImageClassificationMetrics;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2flite_2ftools_2fevaluation_2fproto_2fevaluation_5fstages_2eproto ::google::protobuf::internal::SCCInfo<3> scc_info_ObjectDetectionMetrics;
 }  // namespace protobuf_tensorflow_2flite_2ftools_2fevaluation_2fproto_2fevaluation_5fstages_2eproto
+namespace protobuf_tensorflow_2flite_2ftools_2fevaluation_2fproto_2fpreprocessing_5fsteps_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_tensorflow_2flite_2ftools_2fevaluation_2fproto_2fpreprocessing_5fsteps_2eproto ::google::protobuf::internal::SCCInfo<4> scc_info_ImagePreprocessingStepParams;
+}  // namespace protobuf_tensorflow_2flite_2ftools_2fevaluation_2fproto_2fpreprocessing_5fsteps_2eproto
 namespace tflite {
 namespace evaluation {
 class ProcessSpecificationDefaultTypeInternal {
@@ -241,8 +244,9 @@ static void InitDefaultsImagePreprocessingParams() {
   ::tflite::evaluation::ImagePreprocessingParams::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_ImagePreprocessingParams =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsImagePreprocessingParams}, {}};
+::google::protobuf::internal::SCCInfo<1> scc_info_ImagePreprocessingParams =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsImagePreprocessingParams}, {
+      &protobuf_tensorflow_2flite_2ftools_2fevaluation_2fproto_2fpreprocessing_5fsteps_2eproto::scc_info_ImagePreprocessingStepParams.base,}};
 
 static void InitDefaultsTfliteInferenceParams() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -585,14 +589,10 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tflite::evaluation::ImagePreprocessingParams, image_height_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tflite::evaluation::ImagePreprocessingParams, image_width_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tflite::evaluation::ImagePreprocessingParams, steps_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tflite::evaluation::ImagePreprocessingParams, output_type_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tflite::evaluation::ImagePreprocessingParams, cropping_fraction_),
+  ~0u,
   0,
-  1,
-  2,
-  3,
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tflite::evaluation::TfliteInferenceParams, _has_bits_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tflite::evaluation::TfliteInferenceParams, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -691,8 +691,10 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   ~0u,  // no _weak_field_map_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tflite::evaluation::ObjectDetectionResult, objects_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tflite::evaluation::ObjectDetectionResult, image_name_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tflite::evaluation::ObjectDetectionResult, image_id_),
   ~0u,
   0,
+  1,
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tflite::evaluation::ObjectDetectionGroundTruth, _has_bits_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::tflite::evaluation::ObjectDetectionGroundTruth, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -759,23 +761,23 @@ static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROT
   { 18, 29, sizeof(::tflite::evaluation::LatencyMetrics)},
   { 35, 44, sizeof(::tflite::evaluation::AccuracyMetrics)},
   { 48, 61, sizeof(::tflite::evaluation::ProcessMetrics)},
-  { 68, 77, sizeof(::tflite::evaluation::ImagePreprocessingParams)},
-  { 81, 90, sizeof(::tflite::evaluation::TfliteInferenceParams)},
-  { 94, 100, sizeof(::tflite::evaluation::TfliteInferenceMetrics)},
-  { 101, 107, sizeof(::tflite::evaluation::TopkAccuracyEvalParams)},
-  { 108, 114, sizeof(::tflite::evaluation::TopkAccuracyEvalMetrics)},
-  { 115, 122, sizeof(::tflite::evaluation::ImageClassificationParams)},
-  { 124, 133, sizeof(::tflite::evaluation::ImageClassificationMetrics)},
-  { 137, 145, sizeof(::tflite::evaluation::InferenceProfilerMetrics)},
-  { 148, 157, sizeof(::tflite::evaluation::ObjectDetectionResult_ObjectInstance_NormalizedBoundingBox)},
-  { 161, 169, sizeof(::tflite::evaluation::ObjectDetectionResult_ObjectInstance)},
-  { 172, 179, sizeof(::tflite::evaluation::ObjectDetectionResult)},
-  { 181, 187, sizeof(::tflite::evaluation::ObjectDetectionGroundTruth)},
-  { 188, 196, sizeof(::tflite::evaluation::ObjectDetectionAveragePrecisionParams)},
-  { 199, 206, sizeof(::tflite::evaluation::ObjectDetectionAveragePrecisionMetrics_AveragePrecision)},
-  { 208, 215, sizeof(::tflite::evaluation::ObjectDetectionAveragePrecisionMetrics)},
-  { 217, 225, sizeof(::tflite::evaluation::ObjectDetectionParams)},
-  { 228, 237, sizeof(::tflite::evaluation::ObjectDetectionMetrics)},
+  { 68, 75, sizeof(::tflite::evaluation::ImagePreprocessingParams)},
+  { 77, 86, sizeof(::tflite::evaluation::TfliteInferenceParams)},
+  { 90, 96, sizeof(::tflite::evaluation::TfliteInferenceMetrics)},
+  { 97, 103, sizeof(::tflite::evaluation::TopkAccuracyEvalParams)},
+  { 104, 110, sizeof(::tflite::evaluation::TopkAccuracyEvalMetrics)},
+  { 111, 118, sizeof(::tflite::evaluation::ImageClassificationParams)},
+  { 120, 129, sizeof(::tflite::evaluation::ImageClassificationMetrics)},
+  { 133, 141, sizeof(::tflite::evaluation::InferenceProfilerMetrics)},
+  { 144, 153, sizeof(::tflite::evaluation::ObjectDetectionResult_ObjectInstance_NormalizedBoundingBox)},
+  { 157, 165, sizeof(::tflite::evaluation::ObjectDetectionResult_ObjectInstance)},
+  { 168, 176, sizeof(::tflite::evaluation::ObjectDetectionResult)},
+  { 179, 185, sizeof(::tflite::evaluation::ObjectDetectionGroundTruth)},
+  { 186, 194, sizeof(::tflite::evaluation::ObjectDetectionAveragePrecisionParams)},
+  { 197, 204, sizeof(::tflite::evaluation::ObjectDetectionAveragePrecisionMetrics_AveragePrecision)},
+  { 206, 213, sizeof(::tflite::evaluation::ObjectDetectionAveragePrecisionMetrics)},
+  { 215, 223, sizeof(::tflite::evaluation::ObjectDetectionParams)},
+  { 226, 235, sizeof(::tflite::evaluation::ObjectDetectionMetrics)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
@@ -825,111 +827,115 @@ void AddDescriptorsImpl() {
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n>tensorflow/lite/tools/evaluation/proto"
       "/evaluation_stages.proto\022\021tflite.evaluat"
-      "ion\"\241\004\n\024ProcessSpecification\022Q\n\032image_pr"
-      "eprocessing_params\030\001 \001(\0132+.tflite.evalua"
-      "tion.ImagePreprocessingParamsH\000\022N\n\031topk_"
-      "accuracy_eval_params\030\002 \001(\0132).tflite.eval"
-      "uation.TopkAccuracyEvalParamsH\000\022K\n\027tflit"
-      "e_inference_params\030\003 \001(\0132(.tflite.evalua"
-      "tion.TfliteInferenceParamsH\000\022S\n\033image_cl"
-      "assification_params\030\004 \001(\0132,.tflite.evalu"
-      "ation.ImageClassificationParamsH\000\022m\n)obj"
-      "ect_detection_average_precision_params\030\005"
-      " \001(\01328.tflite.evaluation.ObjectDetection"
-      "AveragePrecisionParamsH\000\022K\n\027object_detec"
-      "tion_params\030\006 \001(\0132(.tflite.evaluation.Ob"
-      "jectDetectionParamsH\000B\010\n\006params\"{\n\016Laten"
-      "cyMetrics\022\017\n\007last_us\030\001 \001(\003\022\016\n\006max_us\030\002 \001"
-      "(\003\022\016\n\006min_us\030\003 \001(\003\022\016\n\006sum_us\030\004 \001(\003\022\016\n\006av"
-      "g_us\030\005 \001(\001\022\030\n\020std_deviation_us\030\006 \001(\003\"a\n\017"
-      "AccuracyMetrics\022\021\n\tmax_value\030\001 \001(\002\022\021\n\tmi"
-      "n_value\030\002 \001(\002\022\021\n\tavg_value\030\003 \001(\001\022\025\n\rstd_"
-      "deviation\030\004 \001(\002\"\341\004\n\016ProcessMetrics\0228\n\rto"
-      "tal_latency\030\001 \001(\0132!.tflite.evaluation.La"
-      "tencyMetrics\022K\n\025topk_accuracy_metrics\030\002 "
-      "\001(\0132*.tflite.evaluation.TopkAccuracyEval"
-      "MetricsH\000\022M\n\030tflite_inference_metrics\030\003 "
-      "\001(\0132).tflite.evaluation.TfliteInferenceM"
-      "etricsH\000\022U\n\034image_classification_metrics"
-      "\030\004 \001(\0132-.tflite.evaluation.ImageClassifi"
-      "cationMetricsH\000\022Q\n\032inference_profiler_me"
-      "trics\030\005 \001(\0132+.tflite.evaluation.Inferenc"
-      "eProfilerMetricsH\000\022o\n*object_detection_a"
-      "verage_precision_metrics\030\006 \001(\01329.tflite."
+      "ion\032@tensorflow/lite/tools/evaluation/pr"
+      "oto/preprocessing_steps.proto\"\241\004\n\024Proces"
+      "sSpecification\022Q\n\032image_preprocessing_pa"
+      "rams\030\001 \001(\0132+.tflite.evaluation.ImagePrep"
+      "rocessingParamsH\000\022N\n\031topk_accuracy_eval_"
+      "params\030\002 \001(\0132).tflite.evaluation.TopkAcc"
+      "uracyEvalParamsH\000\022K\n\027tflite_inference_pa"
+      "rams\030\003 \001(\0132(.tflite.evaluation.TfliteInf"
+      "erenceParamsH\000\022S\n\033image_classification_p"
+      "arams\030\004 \001(\0132,.tflite.evaluation.ImageCla"
+      "ssificationParamsH\000\022m\n)object_detection_"
+      "average_precision_params\030\005 \001(\01328.tflite."
       "evaluation.ObjectDetectionAveragePrecisi"
-      "onMetricsH\000\022M\n\030object_detection_metrics\030"
-      "\007 \001(\0132).tflite.evaluation.ObjectDetectio"
-      "nMetricsH\000B\017\n\rstage_metrics\"|\n\030ImagePrep"
-      "rocessingParams\022\024\n\014image_height\030\001 \001(\005\022\023\n"
-      "\013image_width\030\002 \001(\005\022\023\n\013output_type\030\003 \001(\005\022"
-      " \n\021cropping_fraction\030\004 \001(\002:\0050.875\"\327\001\n\025Tf"
-      "liteInferenceParams\022\027\n\017model_file_path\030\001"
-      " \001(\t\022C\n\010delegate\030\002 \001(\01621.tflite.evaluati"
-      "on.TfliteInferenceParams.Delegate\022\026\n\013num"
-      "_threads\030\003 \001(\005:\0011\022\036\n\023invocations_per_run"
-      "\030\004 \001(\005:\0011\"(\n\010Delegate\022\010\n\004NONE\020\000\022\t\n\005NNAPI"
-      "\020\001\022\007\n\003GPU\020\002\"0\n\026TfliteInferenceMetrics\022\026\n"
-      "\016num_inferences\030\001 \001(\005\"#\n\026TopkAccuracyEva"
-      "lParams\022\t\n\001k\030\001 \001(\005\"2\n\027TopkAccuracyEvalMe"
-      "trics\022\027\n\017topk_accuracies\030\001 \003(\002\"\255\001\n\031Image"
-      "ClassificationParams\022B\n\020inference_params"
-      "\030\001 \001(\0132(.tflite.evaluation.TfliteInferen"
-      "ceParams\022L\n\031topk_accuracy_eval_params\030\002 "
-      "\001(\0132).tflite.evaluation.TopkAccuracyEval"
-      "Params\"\256\002\n\032ImageClassificationMetrics\022A\n"
-      "\026pre_processing_latency\030\001 \001(\0132!.tflite.e"
-      "valuation.LatencyMetrics\022<\n\021inference_la"
-      "tency\030\002 \001(\0132!.tflite.evaluation.LatencyM"
-      "etrics\022D\n\021inference_metrics\030\003 \001(\0132).tfli"
-      "te.evaluation.TfliteInferenceMetrics\022I\n\025"
-      "topk_accuracy_metrics\030\004 \001(\0132*.tflite.eva"
-      "luation.TopkAccuracyEvalMetrics\"\314\001\n\030Infe"
-      "renceProfilerMetrics\022<\n\021reference_latenc"
-      "y\030\001 \001(\0132!.tflite.evaluation.LatencyMetri"
-      "cs\0227\n\014test_latency\030\002 \001(\0132!.tflite.evalua"
-      "tion.LatencyMetrics\0229\n\routput_errors\030\003 \003"
-      "(\0132\".tflite.evaluation.AccuracyMetrics\"\220"
-      "\003\n\025ObjectDetectionResult\022H\n\007objects\030\001 \003("
-      "\01327.tflite.evaluation.ObjectDetectionRes"
-      "ult.ObjectInstance\022\022\n\nimage_name\030\002 \001(\t\032\230"
-      "\002\n\016ObjectInstance\022\020\n\010class_id\030\001 \001(\005\022c\n\014b"
-      "ounding_box\030\002 \001(\0132M.tflite.evaluation.Ob"
-      "jectDetectionResult.ObjectInstance.Norma"
-      "lizedBoundingBox\022\020\n\005score\030\003 \001(\002:\0011\032}\n\025No"
-      "rmalizedBoundingBox\022\026\n\016normalized_top\030\001 "
-      "\001(\002\022\031\n\021normalized_bottom\030\002 \001(\002\022\027\n\017normal"
-      "ized_left\030\003 \001(\002\022\030\n\020normalized_right\030\004 \001("
-      "\002\"a\n\032ObjectDetectionGroundTruth\022C\n\021detec"
-      "tion_results\030\001 \003(\0132(.tflite.evaluation.O"
-      "bjectDetectionResult\"t\n%ObjectDetectionA"
-      "veragePrecisionParams\022\023\n\013num_classes\030\001 \001"
-      "(\005\022\026\n\016iou_thresholds\030\002 \003(\002\022\036\n\021num_recall"
-      "_points\030\003 \001(\005:\003100\"\211\002\n&ObjectDetectionAv"
-      "eragePrecisionMetrics\022q\n\035individual_aver"
-      "age_precisions\030\001 \003(\0132J.tflite.evaluation"
-      ".ObjectDetectionAveragePrecisionMetrics."
-      "AveragePrecision\022&\n\036overall_mean_average"
-      "_precision\030\002 \001(\002\032D\n\020AveragePrecision\022\025\n\r"
-      "iou_threshold\030\001 \001(\002\022\031\n\021average_precision"
-      "\030\002 \001(\002\"\301\001\n\025ObjectDetectionParams\022B\n\020infe"
-      "rence_params\030\001 \001(\0132(.tflite.evaluation.T"
-      "fliteInferenceParams\022\027\n\014class_offset\030\002 \001"
-      "(\005:\0011\022K\n\tap_params\030\003 \001(\01328.tflite.evalua"
-      "tion.ObjectDetectionAveragePrecisionPara"
-      "ms\"\275\002\n\026ObjectDetectionMetrics\022A\n\026pre_pro"
-      "cessing_latency\030\001 \001(\0132!.tflite.evaluatio"
-      "n.LatencyMetrics\022<\n\021inference_latency\030\002 "
-      "\001(\0132!.tflite.evaluation.LatencyMetrics\022D"
-      "\n\021inference_metrics\030\003 \001(\0132).tflite.evalu"
-      "ation.TfliteInferenceMetrics\022\\\n\031average_"
-      "precision_metrics\030\004 \001(\01329.tflite.evaluat"
-      "ion.ObjectDetectionAveragePrecisionMetri"
-      "csB\030\n\021tflite.evaluationP\001\370\001\001"
+      "onParamsH\000\022K\n\027object_detection_params\030\006 "
+      "\001(\0132(.tflite.evaluation.ObjectDetectionP"
+      "aramsH\000B\010\n\006params\"{\n\016LatencyMetrics\022\017\n\007l"
+      "ast_us\030\001 \001(\003\022\016\n\006max_us\030\002 \001(\003\022\016\n\006min_us\030\003"
+      " \001(\003\022\016\n\006sum_us\030\004 \001(\003\022\016\n\006avg_us\030\005 \001(\001\022\030\n\020"
+      "std_deviation_us\030\006 \001(\003\"a\n\017AccuracyMetric"
+      "s\022\021\n\tmax_value\030\001 \001(\002\022\021\n\tmin_value\030\002 \001(\002\022"
+      "\021\n\tavg_value\030\003 \001(\001\022\025\n\rstd_deviation\030\004 \001("
+      "\002\"\341\004\n\016ProcessMetrics\0228\n\rtotal_latency\030\001 "
+      "\001(\0132!.tflite.evaluation.LatencyMetrics\022K"
+      "\n\025topk_accuracy_metrics\030\002 \001(\0132*.tflite.e"
+      "valuation.TopkAccuracyEvalMetricsH\000\022M\n\030t"
+      "flite_inference_metrics\030\003 \001(\0132).tflite.e"
+      "valuation.TfliteInferenceMetricsH\000\022U\n\034im"
+      "age_classification_metrics\030\004 \001(\0132-.tflit"
+      "e.evaluation.ImageClassificationMetricsH"
+      "\000\022Q\n\032inference_profiler_metrics\030\005 \001(\0132+."
+      "tflite.evaluation.InferenceProfilerMetri"
+      "csH\000\022o\n*object_detection_average_precisi"
+      "on_metrics\030\006 \001(\01329.tflite.evaluation.Obj"
+      "ectDetectionAveragePrecisionMetricsH\000\022M\n"
+      "\030object_detection_metrics\030\007 \001(\0132).tflite"
+      ".evaluation.ObjectDetectionMetricsH\000B\017\n\r"
+      "stage_metrics\"o\n\030ImagePreprocessingParam"
+      "s\022>\n\005steps\030\001 \003(\0132/.tflite.evaluation.Ima"
+      "gePreprocessingStepParams\022\023\n\013output_type"
+      "\030\002 \002(\005\"\361\001\n\025TfliteInferenceParams\022\027\n\017mode"
+      "l_file_path\030\001 \001(\t\022C\n\010delegate\030\002 \001(\01621.tf"
+      "lite.evaluation.TfliteInferenceParams.De"
+      "legate\022\026\n\013num_threads\030\003 \001(\005:\0011\022\036\n\023invoca"
+      "tions_per_run\030\004 \001(\005:\0011\"B\n\010Delegate\022\010\n\004NO"
+      "NE\020\000\022\t\n\005NNAPI\020\001\022\007\n\003GPU\020\002\022\013\n\007HEXAGON\020\003\022\013\n"
+      "\007XNNPACK\020\004\"0\n\026TfliteInferenceMetrics\022\026\n\016"
+      "num_inferences\030\001 \001(\005\"#\n\026TopkAccuracyEval"
+      "Params\022\t\n\001k\030\001 \001(\005\"2\n\027TopkAccuracyEvalMet"
+      "rics\022\027\n\017topk_accuracies\030\001 \003(\002\"\255\001\n\031ImageC"
+      "lassificationParams\022B\n\020inference_params\030"
+      "\001 \001(\0132(.tflite.evaluation.TfliteInferenc"
+      "eParams\022L\n\031topk_accuracy_eval_params\030\002 \001"
+      "(\0132).tflite.evaluation.TopkAccuracyEvalP"
+      "arams\"\256\002\n\032ImageClassificationMetrics\022A\n\026"
+      "pre_processing_latency\030\001 \001(\0132!.tflite.ev"
+      "aluation.LatencyMetrics\022<\n\021inference_lat"
+      "ency\030\002 \001(\0132!.tflite.evaluation.LatencyMe"
+      "trics\022D\n\021inference_metrics\030\003 \001(\0132).tflit"
+      "e.evaluation.TfliteInferenceMetrics\022I\n\025t"
+      "opk_accuracy_metrics\030\004 \001(\0132*.tflite.eval"
+      "uation.TopkAccuracyEvalMetrics\"\314\001\n\030Infer"
+      "enceProfilerMetrics\022<\n\021reference_latency"
+      "\030\001 \001(\0132!.tflite.evaluation.LatencyMetric"
+      "s\0227\n\014test_latency\030\002 \001(\0132!.tflite.evaluat"
+      "ion.LatencyMetrics\0229\n\routput_errors\030\003 \003("
+      "\0132\".tflite.evaluation.AccuracyMetrics\"\242\003"
+      "\n\025ObjectDetectionResult\022H\n\007objects\030\001 \003(\013"
+      "27.tflite.evaluation.ObjectDetectionResu"
+      "lt.ObjectInstance\022\022\n\nimage_name\030\002 \001(\t\022\020\n"
+      "\010image_id\030\003 \001(\003\032\230\002\n\016ObjectInstance\022\020\n\010cl"
+      "ass_id\030\001 \001(\005\022c\n\014bounding_box\030\002 \001(\0132M.tfl"
+      "ite.evaluation.ObjectDetectionResult.Obj"
+      "ectInstance.NormalizedBoundingBox\022\020\n\005sco"
+      "re\030\003 \001(\002:\0011\032}\n\025NormalizedBoundingBox\022\026\n\016"
+      "normalized_top\030\001 \001(\002\022\031\n\021normalized_botto"
+      "m\030\002 \001(\002\022\027\n\017normalized_left\030\003 \001(\002\022\030\n\020norm"
+      "alized_right\030\004 \001(\002\"a\n\032ObjectDetectionGro"
+      "undTruth\022C\n\021detection_results\030\001 \003(\0132(.tf"
+      "lite.evaluation.ObjectDetectionResult\"t\n"
+      "%ObjectDetectionAveragePrecisionParams\022\023"
+      "\n\013num_classes\030\001 \001(\005\022\026\n\016iou_thresholds\030\002 "
+      "\003(\002\022\036\n\021num_recall_points\030\003 \001(\005:\003100\"\211\002\n&"
+      "ObjectDetectionAveragePrecisionMetrics\022q"
+      "\n\035individual_average_precisions\030\001 \003(\0132J."
+      "tflite.evaluation.ObjectDetectionAverage"
+      "PrecisionMetrics.AveragePrecision\022&\n\036ove"
+      "rall_mean_average_precision\030\002 \001(\002\032D\n\020Ave"
+      "ragePrecision\022\025\n\riou_threshold\030\001 \001(\002\022\031\n\021"
+      "average_precision\030\002 \001(\002\"\301\001\n\025ObjectDetect"
+      "ionParams\022B\n\020inference_params\030\001 \001(\0132(.tf"
+      "lite.evaluation.TfliteInferenceParams\022\027\n"
+      "\014class_offset\030\002 \001(\005:\0011\022K\n\tap_params\030\003 \001("
+      "\01328.tflite.evaluation.ObjectDetectionAve"
+      "ragePrecisionParams\"\275\002\n\026ObjectDetectionM"
+      "etrics\022A\n\026pre_processing_latency\030\001 \001(\0132!"
+      ".tflite.evaluation.LatencyMetrics\022<\n\021inf"
+      "erence_latency\030\002 \001(\0132!.tflite.evaluation"
+      ".LatencyMetrics\022D\n\021inference_metrics\030\003 \001"
+      "(\0132).tflite.evaluation.TfliteInferenceMe"
+      "trics\022\\\n\031average_precision_metrics\030\004 \001(\013"
+      "29.tflite.evaluation.ObjectDetectionAver"
+      "agePrecisionMetricsB\030\n\021tflite.evaluation"
+      "P\001\370\001\001"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 4068);
+      descriptor, 4165);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/lite/tools/evaluation/proto/evaluation_stages.proto", &protobuf_RegisterTypes);
+  ::protobuf_tensorflow_2flite_2ftools_2fevaluation_2fproto_2fpreprocessing_5fsteps_2eproto::AddDescriptors();
 }
 
 void AddDescriptors() {
@@ -954,6 +960,8 @@ bool TfliteInferenceParams_Delegate_IsValid(int value) {
     case 0:
     case 1:
     case 2:
+    case 3:
+    case 4:
       return true;
     default:
       return false;
@@ -964,6 +972,8 @@ bool TfliteInferenceParams_Delegate_IsValid(int value) {
 const TfliteInferenceParams_Delegate TfliteInferenceParams::NONE;
 const TfliteInferenceParams_Delegate TfliteInferenceParams::NNAPI;
 const TfliteInferenceParams_Delegate TfliteInferenceParams::GPU;
+const TfliteInferenceParams_Delegate TfliteInferenceParams::HEXAGON;
+const TfliteInferenceParams_Delegate TfliteInferenceParams::XNNPACK;
 const TfliteInferenceParams_Delegate TfliteInferenceParams::Delegate_MIN;
 const TfliteInferenceParams_Delegate TfliteInferenceParams::Delegate_MAX;
 const int TfliteInferenceParams::Delegate_ARRAYSIZE;
@@ -1550,6 +1560,32 @@ void ProcessSpecification::CopyFrom(const ProcessSpecification& from) {
 }
 
 bool ProcessSpecification::IsInitialized() const {
+  switch (params_case()) {
+    case kImagePreprocessingParams: {
+      if (has_image_preprocessing_params()) {
+        if (!this->image_preprocessing_params().IsInitialized()) return false;
+      }
+      break;
+    }
+    case kTopkAccuracyEvalParams: {
+      break;
+    }
+    case kTfliteInferenceParams: {
+      break;
+    }
+    case kImageClassificationParams: {
+      break;
+    }
+    case kObjectDetectionAveragePrecisionParams: {
+      break;
+    }
+    case kObjectDetectionParams: {
+      break;
+    }
+    case PARAMS_NOT_SET: {
+      break;
+    }
+  }
   return true;
 }
 
@@ -3097,11 +3133,12 @@ void ProcessMetrics::InternalSwap(ProcessMetrics* other) {
 
 void ImagePreprocessingParams::InitAsDefaultInstance() {
 }
+void ImagePreprocessingParams::clear_steps() {
+  steps_.Clear();
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int ImagePreprocessingParams::kImageHeightFieldNumber;
-const int ImagePreprocessingParams::kImageWidthFieldNumber;
+const int ImagePreprocessingParams::kStepsFieldNumber;
 const int ImagePreprocessingParams::kOutputTypeFieldNumber;
-const int ImagePreprocessingParams::kCroppingFractionFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 ImagePreprocessingParams::ImagePreprocessingParams()
@@ -3113,7 +3150,8 @@ ImagePreprocessingParams::ImagePreprocessingParams()
 }
 ImagePreprocessingParams::ImagePreprocessingParams(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
-  _internal_metadata_(arena) {
+  _internal_metadata_(arena),
+  steps_(arena) {
   ::google::protobuf::internal::InitSCC(&protobuf_tensorflow_2flite_2ftools_2fevaluation_2fproto_2fevaluation_5fstages_2eproto::scc_info_ImagePreprocessingParams.base);
   SharedCtor();
   RegisterArenaDtor(arena);
@@ -3122,19 +3160,15 @@ ImagePreprocessingParams::ImagePreprocessingParams(::google::protobuf::Arena* ar
 ImagePreprocessingParams::ImagePreprocessingParams(const ImagePreprocessingParams& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL),
-      _has_bits_(from._has_bits_) {
+      _has_bits_(from._has_bits_),
+      steps_(from.steps_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::memcpy(&image_height_, &from.image_height_,
-    static_cast<size_t>(reinterpret_cast<char*>(&cropping_fraction_) -
-    reinterpret_cast<char*>(&image_height_)) + sizeof(cropping_fraction_));
+  output_type_ = from.output_type_;
   // @@protoc_insertion_point(copy_constructor:tflite.evaluation.ImagePreprocessingParams)
 }
 
 void ImagePreprocessingParams::SharedCtor() {
-  ::memset(&image_height_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&output_type_) -
-      reinterpret_cast<char*>(&image_height_)) + sizeof(output_type_));
-  cropping_fraction_ = 0.875f;
+  output_type_ = 0;
 }
 
 ImagePreprocessingParams::~ImagePreprocessingParams() {
@@ -3172,13 +3206,8 @@ void ImagePreprocessingParams::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 15u) {
-    ::memset(&image_height_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&output_type_) -
-        reinterpret_cast<char*>(&image_height_)) + sizeof(output_type_));
-    cropping_fraction_ = 0.875f;
-  }
+  steps_.Clear();
+  output_type_ = 0;
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
@@ -3193,56 +3222,26 @@ bool ImagePreprocessingParams::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // optional int32 image_height = 1;
+      // repeated .tflite.evaluation.ImagePreprocessingStepParams steps = 1;
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_image_height();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
-                 input, &image_height_)));
+            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+                input, add_steps()));
         } else {
           goto handle_unusual;
         }
         break;
       }
 
-      // optional int32 image_width = 2;
+      // required int32 output_type = 2;
       case 2: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_image_width();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
-                 input, &image_width_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int32 output_type = 3;
-      case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
           set_has_output_type();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &output_type_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional float cropping_fraction = 4 [default = 0.875];
-      case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(37u /* 37 & 0xFF */)) {
-          set_has_cropping_fraction();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
-                 input, &cropping_fraction_)));
         } else {
           goto handle_unusual;
         }
@@ -3275,25 +3274,19 @@ void ImagePreprocessingParams::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
+  // repeated .tflite.evaluation.ImagePreprocessingStepParams steps = 1;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->steps_size()); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      1,
+      this->steps(static_cast<int>(i)),
+      output);
+  }
+
   cached_has_bits = _has_bits_[0];
-  // optional int32 image_height = 1;
+  // required int32 output_type = 2;
   if (cached_has_bits & 0x00000001u) {
-    ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->image_height(), output);
-  }
-
-  // optional int32 image_width = 2;
-  if (cached_has_bits & 0x00000002u) {
-    ::google::protobuf::internal::WireFormatLite::WriteInt32(2, this->image_width(), output);
-  }
-
-  // optional int32 output_type = 3;
-  if (cached_has_bits & 0x00000004u) {
-    ::google::protobuf::internal::WireFormatLite::WriteInt32(3, this->output_type(), output);
-  }
-
-  // optional float cropping_fraction = 4 [default = 0.875];
-  if (cached_has_bits & 0x00000008u) {
-    ::google::protobuf::internal::WireFormatLite::WriteFloat(4, this->cropping_fraction(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(2, this->output_type(), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -3310,25 +3303,18 @@ void ImagePreprocessingParams::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
+  // repeated .tflite.evaluation.ImagePreprocessingStepParams steps = 1;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->steps_size()); i < n; i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        1, this->steps(static_cast<int>(i)), deterministic, target);
+  }
+
   cached_has_bits = _has_bits_[0];
-  // optional int32 image_height = 1;
+  // required int32 output_type = 2;
   if (cached_has_bits & 0x00000001u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(1, this->image_height(), target);
-  }
-
-  // optional int32 image_width = 2;
-  if (cached_has_bits & 0x00000002u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(2, this->image_width(), target);
-  }
-
-  // optional int32 output_type = 3;
-  if (cached_has_bits & 0x00000004u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(3, this->output_type(), target);
-  }
-
-  // optional float cropping_fraction = 4 [default = 0.875];
-  if (cached_has_bits & 0x00000008u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(4, this->cropping_fraction(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(2, this->output_type(), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -3348,34 +3334,23 @@ size_t ImagePreprocessingParams::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 15u) {
-    // optional int32 image_height = 1;
-    if (has_image_height()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(
-          this->image_height());
-    }
-
-    // optional int32 image_width = 2;
-    if (has_image_width()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(
-          this->image_width());
-    }
-
-    // optional int32 output_type = 3;
-    if (has_output_type()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(
-          this->output_type());
-    }
-
-    // optional float cropping_fraction = 4 [default = 0.875];
-    if (has_cropping_fraction()) {
-      total_size += 1 + 4;
-    }
-
+  // required int32 output_type = 2;
+  if (has_output_type()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->output_type());
   }
+  // repeated .tflite.evaluation.ImagePreprocessingStepParams steps = 1;
+  {
+    unsigned int count = static_cast<unsigned int>(this->steps_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          this->steps(static_cast<int>(i)));
+    }
+  }
+
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -3403,21 +3378,9 @@ void ImagePreprocessingParams::MergeFrom(const ImagePreprocessingParams& from) {
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 15u) {
-    if (cached_has_bits & 0x00000001u) {
-      image_height_ = from.image_height_;
-    }
-    if (cached_has_bits & 0x00000002u) {
-      image_width_ = from.image_width_;
-    }
-    if (cached_has_bits & 0x00000004u) {
-      output_type_ = from.output_type_;
-    }
-    if (cached_has_bits & 0x00000008u) {
-      cropping_fraction_ = from.cropping_fraction_;
-    }
-    _has_bits_[0] |= cached_has_bits;
+  steps_.MergeFrom(from.steps_);
+  if (from.has_output_type()) {
+    set_output_type(from.output_type());
   }
 }
 
@@ -3436,6 +3399,8 @@ void ImagePreprocessingParams::CopyFrom(const ImagePreprocessingParams& from) {
 }
 
 bool ImagePreprocessingParams::IsInitialized() const {
+  if ((_has_bits_[0] & 0x00000001) != 0x00000001) return false;
+  if (!::google::protobuf::internal::AllAreInitialized(this->steps())) return false;
   return true;
 }
 
@@ -3460,10 +3425,8 @@ void ImagePreprocessingParams::UnsafeArenaSwap(ImagePreprocessingParams* other) 
 }
 void ImagePreprocessingParams::InternalSwap(ImagePreprocessingParams* other) {
   using std::swap;
-  swap(image_height_, other->image_height_);
-  swap(image_width_, other->image_width_);
+  CastToBase(&steps_)->InternalSwap(CastToBase(&other->steps_));
   swap(output_type_, other->output_type_);
-  swap(cropping_fraction_, other->cropping_fraction_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
@@ -6644,6 +6607,7 @@ void ObjectDetectionResult::InitAsDefaultInstance() {
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int ObjectDetectionResult::kObjectsFieldNumber;
 const int ObjectDetectionResult::kImageNameFieldNumber;
+const int ObjectDetectionResult::kImageIdFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 ObjectDetectionResult::ObjectDetectionResult()
@@ -6673,11 +6637,13 @@ ObjectDetectionResult::ObjectDetectionResult(const ObjectDetectionResult& from)
     image_name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.image_name(),
       GetArenaNoVirtual());
   }
+  image_id_ = from.image_id_;
   // @@protoc_insertion_point(copy_constructor:tflite.evaluation.ObjectDetectionResult)
 }
 
 void ObjectDetectionResult::SharedCtor() {
   image_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  image_id_ = GOOGLE_LONGLONG(0);
 }
 
 ObjectDetectionResult::~ObjectDetectionResult() {
@@ -6721,6 +6687,7 @@ void ObjectDetectionResult::Clear() {
   if (cached_has_bits & 0x00000001u) {
     image_name_.ClearNonDefaultToEmpty();
   }
+  image_id_ = GOOGLE_LONGLONG(0);
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
@@ -6757,6 +6724,20 @@ bool ObjectDetectionResult::MergePartialFromCodedStream(
             this->image_name().data(), static_cast<int>(this->image_name().length()),
             ::google::protobuf::internal::WireFormat::PARSE,
             "tflite.evaluation.ObjectDetectionResult.image_name");
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // optional int64 image_id = 3;
+      case 3: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
+          set_has_image_id();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 input, &image_id_)));
         } else {
           goto handle_unusual;
         }
@@ -6809,6 +6790,11 @@ void ObjectDetectionResult::SerializeWithCachedSizes(
       2, this->image_name(), output);
   }
 
+  // optional int64 image_id = 3;
+  if (cached_has_bits & 0x00000002u) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt64(3, this->image_id(), output);
+  }
+
   if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
@@ -6843,6 +6829,11 @@ void ObjectDetectionResult::SerializeWithCachedSizes(
         2, this->image_name(), target);
   }
 
+  // optional int64 image_id = 3;
+  if (cached_has_bits & 0x00000002u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(3, this->image_id(), target);
+  }
+
   if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target);
@@ -6871,13 +6862,22 @@ size_t ObjectDetectionResult::ByteSizeLong() const {
     }
   }
 
-  // optional string image_name = 2;
-  if (has_image_name()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->image_name());
-  }
+  if (_has_bits_[0 / 32] & 3u) {
+    // optional string image_name = 2;
+    if (has_image_name()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::StringSize(
+          this->image_name());
+    }
 
+    // optional int64 image_id = 3;
+    if (has_image_id()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int64Size(
+          this->image_id());
+    }
+
+  }
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -6906,8 +6906,15 @@ void ObjectDetectionResult::MergeFrom(const ObjectDetectionResult& from) {
   (void) cached_has_bits;
 
   objects_.MergeFrom(from.objects_);
-  if (from.has_image_name()) {
-    set_image_name(from.image_name());
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 3u) {
+    if (cached_has_bits & 0x00000001u) {
+      set_image_name(from.image_name());
+    }
+    if (cached_has_bits & 0x00000002u) {
+      image_id_ = from.image_id_;
+    }
+    _has_bits_[0] |= cached_has_bits;
   }
 }
 
@@ -6953,6 +6960,7 @@ void ObjectDetectionResult::InternalSwap(ObjectDetectionResult* other) {
   CastToBase(&objects_)->InternalSwap(CastToBase(&other->objects_));
   image_name_.Swap(&other->image_name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
+  swap(image_id_, other->image_id_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }

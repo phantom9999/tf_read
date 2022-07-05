@@ -38,6 +38,7 @@
 #include "tensorflow/core/framework/graph.pb.h"
 #include "tensorflow/core/framework/step_stats.pb.h"
 #include "tensorflow/core/protobuf/cluster.pb.h"
+#include "tensorflow/core/protobuf/coordination_config.pb.h"
 #include "tensorflow/core/protobuf/debug.pb.h"
 #include "tensorflow/core/protobuf/rewriter_config.pb.h"
 // @@protoc_insertion_point(includes)
@@ -48,7 +49,7 @@ namespace protobuf_tensorflow_2fcore_2fprotobuf_2fconfig_2eproto {
 struct TableStruct {
   static const ::google::protobuf::internal::ParseTableField entries[];
   static const ::google::protobuf::internal::AuxillaryParseTableField aux[];
-  static const ::google::protobuf::internal::ParseTable schema[19];
+  static const ::google::protobuf::internal::ParseTable schema[20];
   static const ::google::protobuf::internal::FieldMetadata field_metadata[];
   static const ::google::protobuf::internal::SerializationTable serialization_table[];
   static const ::google::protobuf::uint32 offsets[];
@@ -104,6 +105,9 @@ extern RunOptionsDefaultTypeInternal _RunOptions_default_instance_;
 class RunOptions_Experimental;
 class RunOptions_ExperimentalDefaultTypeInternal;
 extern RunOptions_ExperimentalDefaultTypeInternal _RunOptions_Experimental_default_instance_;
+class RunOptions_Experimental_RunHandlerPoolOptions;
+class RunOptions_Experimental_RunHandlerPoolOptionsDefaultTypeInternal;
+extern RunOptions_Experimental_RunHandlerPoolOptionsDefaultTypeInternal _RunOptions_Experimental_RunHandlerPoolOptions_default_instance_;
 class SessionMetadata;
 class SessionMetadataDefaultTypeInternal;
 extern SessionMetadataDefaultTypeInternal _SessionMetadata_default_instance_;
@@ -132,6 +136,7 @@ template<> ::tensorflow::RunMetadata* Arena::CreateMaybeMessage<::tensorflow::Ru
 template<> ::tensorflow::RunMetadata_FunctionGraphs* Arena::CreateMaybeMessage<::tensorflow::RunMetadata_FunctionGraphs>(Arena*);
 template<> ::tensorflow::RunOptions* Arena::CreateMaybeMessage<::tensorflow::RunOptions>(Arena*);
 template<> ::tensorflow::RunOptions_Experimental* Arena::CreateMaybeMessage<::tensorflow::RunOptions_Experimental>(Arena*);
+template<> ::tensorflow::RunOptions_Experimental_RunHandlerPoolOptions* Arena::CreateMaybeMessage<::tensorflow::RunOptions_Experimental_RunHandlerPoolOptions>(Arena*);
 template<> ::tensorflow::SessionMetadata* Arena::CreateMaybeMessage<::tensorflow::SessionMetadata>(Arena*);
 template<> ::tensorflow::TensorConnection* Arena::CreateMaybeMessage<::tensorflow::TensorConnection>(Arena*);
 template<> ::tensorflow::ThreadPoolOptionProto* Arena::CreateMaybeMessage<::tensorflow::ThreadPoolOptionProto>(Arena*);
@@ -182,6 +187,30 @@ inline bool OptimizerOptions_GlobalJitLevel_Parse(
     const ::std::string& name, OptimizerOptions_GlobalJitLevel* value) {
   return ::google::protobuf::internal::ParseNamedEnum<OptimizerOptions_GlobalJitLevel>(
     OptimizerOptions_GlobalJitLevel_descriptor(), name, value);
+}
+enum ConfigProto_Experimental_MlirBridgeRollout {
+  ConfigProto_Experimental_MlirBridgeRollout_MLIR_BRIDGE_ROLLOUT_UNSPECIFIED = 0,
+  ConfigProto_Experimental_MlirBridgeRollout_MLIR_BRIDGE_ROLLOUT_ENABLED = 1,
+  ConfigProto_Experimental_MlirBridgeRollout_MLIR_BRIDGE_ROLLOUT_DISABLED = 2,
+  ConfigProto_Experimental_MlirBridgeRollout_MLIR_BRIDGE_ROLLOUT_SAFE_MODE_ENABLED = 3,
+  ConfigProto_Experimental_MlirBridgeRollout_MLIR_BRIDGE_ROLLOUT_SAFE_MODE_FALLBACK_ENABLED = 4,
+  ConfigProto_Experimental_MlirBridgeRollout_ConfigProto_Experimental_MlirBridgeRollout_INT_MIN_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32min,
+  ConfigProto_Experimental_MlirBridgeRollout_ConfigProto_Experimental_MlirBridgeRollout_INT_MAX_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32max
+};
+bool ConfigProto_Experimental_MlirBridgeRollout_IsValid(int value);
+const ConfigProto_Experimental_MlirBridgeRollout ConfigProto_Experimental_MlirBridgeRollout_MlirBridgeRollout_MIN = ConfigProto_Experimental_MlirBridgeRollout_MLIR_BRIDGE_ROLLOUT_UNSPECIFIED;
+const ConfigProto_Experimental_MlirBridgeRollout ConfigProto_Experimental_MlirBridgeRollout_MlirBridgeRollout_MAX = ConfigProto_Experimental_MlirBridgeRollout_MLIR_BRIDGE_ROLLOUT_SAFE_MODE_FALLBACK_ENABLED;
+const int ConfigProto_Experimental_MlirBridgeRollout_MlirBridgeRollout_ARRAYSIZE = ConfigProto_Experimental_MlirBridgeRollout_MlirBridgeRollout_MAX + 1;
+
+const ::google::protobuf::EnumDescriptor* ConfigProto_Experimental_MlirBridgeRollout_descriptor();
+inline const ::std::string& ConfigProto_Experimental_MlirBridgeRollout_Name(ConfigProto_Experimental_MlirBridgeRollout value) {
+  return ::google::protobuf::internal::NameOfEnum(
+    ConfigProto_Experimental_MlirBridgeRollout_descriptor(), value);
+}
+inline bool ConfigProto_Experimental_MlirBridgeRollout_Parse(
+    const ::std::string& name, ConfigProto_Experimental_MlirBridgeRollout* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<ConfigProto_Experimental_MlirBridgeRollout>(
+    ConfigProto_Experimental_MlirBridgeRollout_descriptor(), name, value);
 }
 enum RunOptions_TraceLevel {
   RunOptions_TraceLevel_NO_TRACE = 0,
@@ -319,6 +348,18 @@ class GPUOptions_Experimental_VirtualDevices : public ::google::protobuf::Messag
   ::google::protobuf::RepeatedField< float >*
       mutable_memory_limit_mb();
 
+  // repeated int32 priority = 2;
+  int priority_size() const;
+  void clear_priority();
+  static const int kPriorityFieldNumber = 2;
+  ::google::protobuf::int32 priority(int index) const;
+  void set_priority(int index, ::google::protobuf::int32 value);
+  void add_priority(::google::protobuf::int32 value);
+  const ::google::protobuf::RepeatedField< ::google::protobuf::int32 >&
+      priority() const;
+  ::google::protobuf::RepeatedField< ::google::protobuf::int32 >*
+      mutable_priority();
+
   // @@protoc_insertion_point(class_scope:tensorflow.GPUOptions.Experimental.VirtualDevices)
  private:
 
@@ -328,6 +369,8 @@ class GPUOptions_Experimental_VirtualDevices : public ::google::protobuf::Messag
   typedef void DestructorSkippable_;
   ::google::protobuf::RepeatedField< float > memory_limit_mb_;
   mutable int _memory_limit_mb_cached_byte_size_;
+  ::google::protobuf::RepeatedField< ::google::protobuf::int32 > priority_;
+  mutable int _priority_cached_byte_size_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2fconfig_2eproto::TableStruct;
 };
@@ -475,6 +518,12 @@ class GPUOptions_Experimental : public ::google::protobuf::Message /* @@protoc_i
   ::google::protobuf::int32 num_dev_to_dev_copy_streams() const;
   void set_num_dev_to_dev_copy_streams(::google::protobuf::int32 value);
 
+  // int32 kernel_tracker_max_interval = 7;
+  void clear_kernel_tracker_max_interval();
+  static const int kKernelTrackerMaxIntervalFieldNumber = 7;
+  ::google::protobuf::int32 kernel_tracker_max_interval() const;
+  void set_kernel_tracker_max_interval(::google::protobuf::int32 value);
+
   // bool use_unified_memory = 2;
   void clear_use_unified_memory();
   static const int kUseUnifiedMemoryFieldNumber = 2;
@@ -487,17 +536,29 @@ class GPUOptions_Experimental : public ::google::protobuf::Message /* @@protoc_i
   bool timestamped_allocator() const;
   void set_timestamped_allocator(bool value);
 
-  // int32 kernel_tracker_max_interval = 7;
-  void clear_kernel_tracker_max_interval();
-  static const int kKernelTrackerMaxIntervalFieldNumber = 7;
-  ::google::protobuf::int32 kernel_tracker_max_interval() const;
-  void set_kernel_tracker_max_interval(::google::protobuf::int32 value);
+  // bool use_cuda_malloc_async = 11;
+  void clear_use_cuda_malloc_async();
+  static const int kUseCudaMallocAsyncFieldNumber = 11;
+  bool use_cuda_malloc_async() const;
+  void set_use_cuda_malloc_async(bool value);
+
+  // bool disallow_retry_on_allocation_failure = 12;
+  void clear_disallow_retry_on_allocation_failure();
+  static const int kDisallowRetryOnAllocationFailureFieldNumber = 12;
+  bool disallow_retry_on_allocation_failure() const;
+  void set_disallow_retry_on_allocation_failure(bool value);
 
   // int32 kernel_tracker_max_bytes = 8;
   void clear_kernel_tracker_max_bytes();
   static const int kKernelTrackerMaxBytesFieldNumber = 8;
   ::google::protobuf::int32 kernel_tracker_max_bytes() const;
   void set_kernel_tracker_max_bytes(::google::protobuf::int32 value);
+
+  // double internal_fragmentation_fraction = 10;
+  void clear_internal_fragmentation_fraction();
+  static const int kInternalFragmentationFractionFieldNumber = 10;
+  double internal_fragmentation_fraction() const;
+  void set_internal_fragmentation_fraction(double value);
 
   // int32 kernel_tracker_max_pending = 9;
   void clear_kernel_tracker_max_pending();
@@ -515,10 +576,13 @@ class GPUOptions_Experimental : public ::google::protobuf::Message /* @@protoc_i
   ::google::protobuf::RepeatedPtrField< ::tensorflow::GPUOptions_Experimental_VirtualDevices > virtual_devices_;
   ::google::protobuf::internal::ArenaStringPtr collective_ring_order_;
   ::google::protobuf::int32 num_dev_to_dev_copy_streams_;
+  ::google::protobuf::int32 kernel_tracker_max_interval_;
   bool use_unified_memory_;
   bool timestamped_allocator_;
-  ::google::protobuf::int32 kernel_tracker_max_interval_;
+  bool use_cuda_malloc_async_;
+  bool disallow_retry_on_allocation_failure_;
   ::google::protobuf::int32 kernel_tracker_max_bytes_;
+  double internal_fragmentation_fraction_;
   ::google::protobuf::int32 kernel_tracker_max_pending_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2fconfig_2eproto::TableStruct;
@@ -899,6 +963,12 @@ class OptimizerOptions : public ::google::protobuf::Message /* @@protoc_insertio
 
   // accessors -------------------------------------------------------
 
+  // .tensorflow.OptimizerOptions.Level opt_level = 3;
+  void clear_opt_level();
+  static const int kOptLevelFieldNumber = 3;
+  ::tensorflow::OptimizerOptions_Level opt_level() const;
+  void set_opt_level(::tensorflow::OptimizerOptions_Level value);
+
   // bool do_common_subexpression_elimination = 1;
   void clear_do_common_subexpression_elimination();
   static const int kDoCommonSubexpressionEliminationFieldNumber = 1;
@@ -917,11 +987,11 @@ class OptimizerOptions : public ::google::protobuf::Message /* @@protoc_insertio
   bool do_function_inlining() const;
   void set_do_function_inlining(bool value);
 
-  // .tensorflow.OptimizerOptions.Level opt_level = 3;
-  void clear_opt_level();
-  static const int kOptLevelFieldNumber = 3;
-  ::tensorflow::OptimizerOptions_Level opt_level() const;
-  void set_opt_level(::tensorflow::OptimizerOptions_Level value);
+  // bool cpu_global_jit = 7;
+  void clear_cpu_global_jit();
+  static const int kCpuGlobalJitFieldNumber = 7;
+  bool cpu_global_jit() const;
+  void set_cpu_global_jit(bool value);
 
   // int64 max_folded_constant_in_bytes = 6;
   void clear_max_folded_constant_in_bytes();
@@ -942,10 +1012,11 @@ class OptimizerOptions : public ::google::protobuf::Message /* @@protoc_insertio
   template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
+  int opt_level_;
   bool do_common_subexpression_elimination_;
   bool do_constant_folding_;
   bool do_function_inlining_;
-  int opt_level_;
+  bool cpu_global_jit_;
   ::google::protobuf::int64 max_folded_constant_in_bytes_;
   int global_jit_level_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
@@ -1433,6 +1504,12 @@ class RPCOptions : public ::google::protobuf::Message /* @@protoc_insertion_poin
   bool disable_session_connection_sharing() const;
   void set_disable_session_connection_sharing(bool value);
 
+  // int32 num_channels_per_target = 6;
+  void clear_num_channels_per_target();
+  static const int kNumChannelsPerTargetFieldNumber = 6;
+  ::google::protobuf::int32 num_channels_per_target() const;
+  void set_num_channels_per_target(::google::protobuf::int32 value);
+
   // @@protoc_insertion_point(class_scope:tensorflow.RPCOptions)
  private:
 
@@ -1445,6 +1522,7 @@ class RPCOptions : public ::google::protobuf::Message /* @@protoc_insertion_poin
   bool use_rpc_for_inprocess_master_;
   bool cache_rpc_response_;
   bool disable_session_connection_sharing_;
+  ::google::protobuf::int32 num_channels_per_target_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2fconfig_2eproto::TableStruct;
 };
@@ -1710,6 +1788,38 @@ class ConfigProto_Experimental : public ::google::protobuf::Message /* @@protoc_
 
   // nested types ----------------------------------------------------
 
+  typedef ConfigProto_Experimental_MlirBridgeRollout MlirBridgeRollout;
+  static const MlirBridgeRollout MLIR_BRIDGE_ROLLOUT_UNSPECIFIED =
+    ConfigProto_Experimental_MlirBridgeRollout_MLIR_BRIDGE_ROLLOUT_UNSPECIFIED;
+  static const MlirBridgeRollout MLIR_BRIDGE_ROLLOUT_ENABLED =
+    ConfigProto_Experimental_MlirBridgeRollout_MLIR_BRIDGE_ROLLOUT_ENABLED;
+  static const MlirBridgeRollout MLIR_BRIDGE_ROLLOUT_DISABLED =
+    ConfigProto_Experimental_MlirBridgeRollout_MLIR_BRIDGE_ROLLOUT_DISABLED;
+  static const MlirBridgeRollout MLIR_BRIDGE_ROLLOUT_SAFE_MODE_ENABLED =
+    ConfigProto_Experimental_MlirBridgeRollout_MLIR_BRIDGE_ROLLOUT_SAFE_MODE_ENABLED;
+  static const MlirBridgeRollout MLIR_BRIDGE_ROLLOUT_SAFE_MODE_FALLBACK_ENABLED =
+    ConfigProto_Experimental_MlirBridgeRollout_MLIR_BRIDGE_ROLLOUT_SAFE_MODE_FALLBACK_ENABLED;
+  static inline bool MlirBridgeRollout_IsValid(int value) {
+    return ConfigProto_Experimental_MlirBridgeRollout_IsValid(value);
+  }
+  static const MlirBridgeRollout MlirBridgeRollout_MIN =
+    ConfigProto_Experimental_MlirBridgeRollout_MlirBridgeRollout_MIN;
+  static const MlirBridgeRollout MlirBridgeRollout_MAX =
+    ConfigProto_Experimental_MlirBridgeRollout_MlirBridgeRollout_MAX;
+  static const int MlirBridgeRollout_ARRAYSIZE =
+    ConfigProto_Experimental_MlirBridgeRollout_MlirBridgeRollout_ARRAYSIZE;
+  static inline const ::google::protobuf::EnumDescriptor*
+  MlirBridgeRollout_descriptor() {
+    return ConfigProto_Experimental_MlirBridgeRollout_descriptor();
+  }
+  static inline const ::std::string& MlirBridgeRollout_Name(MlirBridgeRollout value) {
+    return ConfigProto_Experimental_MlirBridgeRollout_Name(value);
+  }
+  static inline bool MlirBridgeRollout_Parse(const ::std::string& name,
+      MlirBridgeRollout* value) {
+    return ConfigProto_Experimental_MlirBridgeRollout_Parse(name, value);
+  }
+
   // accessors -------------------------------------------------------
 
   // string collective_group_leader = 1;
@@ -1773,6 +1883,21 @@ class ConfigProto_Experimental : public ::google::protobuf::Message /* @@protoc_
       ::tensorflow::SessionMetadata* session_metadata);
   ::tensorflow::SessionMetadata* unsafe_arena_release_session_metadata();
 
+  // .tensorflow.CoordinationServiceConfig coordination_config = 23;
+  bool has_coordination_config() const;
+  void clear_coordination_config();
+  static const int kCoordinationConfigFieldNumber = 23;
+  private:
+  const ::tensorflow::CoordinationServiceConfig& _internal_coordination_config() const;
+  public:
+  const ::tensorflow::CoordinationServiceConfig& coordination_config() const;
+  ::tensorflow::CoordinationServiceConfig* release_coordination_config();
+  ::tensorflow::CoordinationServiceConfig* mutable_coordination_config();
+  void set_allocated_coordination_config(::tensorflow::CoordinationServiceConfig* coordination_config);
+  void unsafe_arena_set_allocated_coordination_config(
+      ::tensorflow::CoordinationServiceConfig* coordination_config);
+  ::tensorflow::CoordinationServiceConfig* unsafe_arena_release_coordination_config();
+
   // int32 recv_buf_max_chunk = 4;
   void clear_recv_buf_max_chunk();
   static const int kRecvBufMaxChunkFieldNumber = 4;
@@ -1821,6 +1946,54 @@ class ConfigProto_Experimental : public ::google::protobuf::Message /* @@protoc_
   bool optimize_for_static_graph() const;
   void set_optimize_for_static_graph(bool value);
 
+  // bool enable_mlir_bridge = 13;
+  void clear_enable_mlir_bridge();
+  static const int kEnableMlirBridgeFieldNumber = 13;
+  bool enable_mlir_bridge() const;
+  void set_enable_mlir_bridge(bool value);
+
+  // .tensorflow.ConfigProto.Experimental.MlirBridgeRollout mlir_bridge_rollout = 17;
+  void clear_mlir_bridge_rollout();
+  static const int kMlirBridgeRolloutFieldNumber = 17;
+  ::tensorflow::ConfigProto_Experimental_MlirBridgeRollout mlir_bridge_rollout() const;
+  void set_mlir_bridge_rollout(::tensorflow::ConfigProto_Experimental_MlirBridgeRollout value);
+
+  // int64 xla_fusion_autotuner_thresh = 15;
+  void clear_xla_fusion_autotuner_thresh();
+  static const int kXlaFusionAutotunerThreshFieldNumber = 15;
+  ::google::protobuf::int64 xla_fusion_autotuner_thresh() const;
+  void set_xla_fusion_autotuner_thresh(::google::protobuf::int64 value);
+
+  // bool enable_mlir_graph_optimization = 16;
+  void clear_enable_mlir_graph_optimization();
+  static const int kEnableMlirGraphOptimizationFieldNumber = 16;
+  bool enable_mlir_graph_optimization() const;
+  void set_enable_mlir_graph_optimization(bool value);
+
+  // bool disable_output_partition_graphs = 14;
+  void clear_disable_output_partition_graphs();
+  static const int kDisableOutputPartitionGraphsFieldNumber = 14;
+  bool disable_output_partition_graphs() const;
+  void set_disable_output_partition_graphs(bool value);
+
+  // bool use_tfrt = 18;
+  void clear_use_tfrt();
+  static const int kUseTfrtFieldNumber = 18;
+  bool use_tfrt() const;
+  void set_use_tfrt(bool value);
+
+  // bool disable_functional_ops_lowering = 21;
+  void clear_disable_functional_ops_lowering();
+  static const int kDisableFunctionalOpsLoweringFieldNumber = 21;
+  bool disable_functional_ops_lowering() const;
+  void set_disable_functional_ops_lowering(bool value);
+
+  // bool xla_prefer_single_graph_cluster = 22;
+  void clear_xla_prefer_single_graph_cluster();
+  static const int kXlaPreferSingleGraphClusterFieldNumber = 22;
+  bool xla_prefer_single_graph_cluster() const;
+  void set_xla_prefer_single_graph_cluster(bool value);
+
   // @@protoc_insertion_point(class_scope:tensorflow.ConfigProto.Experimental)
  private:
 
@@ -1831,6 +2004,7 @@ class ConfigProto_Experimental : public ::google::protobuf::Message /* @@protoc_
   ::google::protobuf::internal::ArenaStringPtr collective_group_leader_;
   ::google::protobuf::internal::ArenaStringPtr executor_type_;
   ::tensorflow::SessionMetadata* session_metadata_;
+  ::tensorflow::CoordinationServiceConfig* coordination_config_;
   ::google::protobuf::int32 recv_buf_max_chunk_;
   bool use_numa_affinity_;
   bool collective_deterministic_sequential_execution_;
@@ -1839,6 +2013,14 @@ class ConfigProto_Experimental : public ::google::protobuf::Message /* @@protoc_
   bool disable_thread_spinning_;
   bool share_cluster_devices_in_session_;
   bool optimize_for_static_graph_;
+  bool enable_mlir_bridge_;
+  int mlir_bridge_rollout_;
+  ::google::protobuf::int64 xla_fusion_autotuner_thresh_;
+  bool enable_mlir_graph_optimization_;
+  bool disable_output_partition_graphs_;
+  bool use_tfrt_;
+  bool disable_functional_ops_lowering_;
+  bool xla_prefer_single_graph_cluster_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2fconfig_2eproto::TableStruct;
 };
@@ -2111,6 +2293,12 @@ class ConfigProto : public ::google::protobuf::Message /* @@protoc_insertion_poi
   ::google::protobuf::int64 operation_timeout_in_ms() const;
   void set_operation_timeout_in_ms(::google::protobuf::int64 value);
 
+  // bool share_cluster_devices_in_session = 17;
+  void clear_share_cluster_devices_in_session();
+  static const int kShareClusterDevicesInSessionFieldNumber = 17;
+  bool share_cluster_devices_in_session() const;
+  void set_share_cluster_devices_in_session(bool value);
+
   // @@protoc_insertion_point(class_scope:tensorflow.ConfigProto)
  private:
 
@@ -2139,6 +2327,125 @@ class ConfigProto : public ::google::protobuf::Message /* @@protoc_insertion_poi
   bool log_device_placement_;
   bool isolate_session_state_;
   ::google::protobuf::int64 operation_timeout_in_ms_;
+  bool share_cluster_devices_in_session_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2fconfig_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
+class RunOptions_Experimental_RunHandlerPoolOptions : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:tensorflow.RunOptions.Experimental.RunHandlerPoolOptions) */ {
+ public:
+  RunOptions_Experimental_RunHandlerPoolOptions();
+  virtual ~RunOptions_Experimental_RunHandlerPoolOptions();
+
+  RunOptions_Experimental_RunHandlerPoolOptions(const RunOptions_Experimental_RunHandlerPoolOptions& from);
+
+  inline RunOptions_Experimental_RunHandlerPoolOptions& operator=(const RunOptions_Experimental_RunHandlerPoolOptions& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  RunOptions_Experimental_RunHandlerPoolOptions(RunOptions_Experimental_RunHandlerPoolOptions&& from) noexcept
+    : RunOptions_Experimental_RunHandlerPoolOptions() {
+    *this = ::std::move(from);
+  }
+
+  inline RunOptions_Experimental_RunHandlerPoolOptions& operator=(RunOptions_Experimental_RunHandlerPoolOptions&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  inline ::google::protobuf::Arena* GetArena() const final {
+    return GetArenaNoVirtual();
+  }
+  inline void* GetMaybeArenaPointer() const final {
+    return MaybeArenaPtr();
+  }
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const RunOptions_Experimental_RunHandlerPoolOptions& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const RunOptions_Experimental_RunHandlerPoolOptions* internal_default_instance() {
+    return reinterpret_cast<const RunOptions_Experimental_RunHandlerPoolOptions*>(
+               &_RunOptions_Experimental_RunHandlerPoolOptions_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    11;
+
+  void UnsafeArenaSwap(RunOptions_Experimental_RunHandlerPoolOptions* other);
+  void Swap(RunOptions_Experimental_RunHandlerPoolOptions* other);
+  friend void swap(RunOptions_Experimental_RunHandlerPoolOptions& a, RunOptions_Experimental_RunHandlerPoolOptions& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline RunOptions_Experimental_RunHandlerPoolOptions* New() const final {
+    return CreateMaybeMessage<RunOptions_Experimental_RunHandlerPoolOptions>(NULL);
+  }
+
+  RunOptions_Experimental_RunHandlerPoolOptions* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<RunOptions_Experimental_RunHandlerPoolOptions>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const RunOptions_Experimental_RunHandlerPoolOptions& from);
+  void MergeFrom(const RunOptions_Experimental_RunHandlerPoolOptions& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(RunOptions_Experimental_RunHandlerPoolOptions* other);
+  protected:
+  explicit RunOptions_Experimental_RunHandlerPoolOptions(::google::protobuf::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::google::protobuf::Arena* arena);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return _internal_metadata_.arena();
+  }
+  inline void* MaybeArenaPtr() const {
+    return _internal_metadata_.raw_arena_ptr();
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // int64 priority = 1;
+  void clear_priority();
+  static const int kPriorityFieldNumber = 1;
+  ::google::protobuf::int64 priority() const;
+  void set_priority(::google::protobuf::int64 value);
+
+  // @@protoc_insertion_point(class_scope:tensorflow.RunOptions.Experimental.RunHandlerPoolOptions)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::google::protobuf::int64 priority_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_tensorflow_2fcore_2fprotobuf_2fconfig_2eproto::TableStruct;
 };
@@ -2185,7 +2492,7 @@ class RunOptions_Experimental : public ::google::protobuf::Message /* @@protoc_i
                &_RunOptions_Experimental_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    11;
+    12;
 
   void UnsafeArenaSwap(RunOptions_Experimental* other);
   void Swap(RunOptions_Experimental* other);
@@ -2241,7 +2548,24 @@ class RunOptions_Experimental : public ::google::protobuf::Message /* @@protoc_i
 
   // nested types ----------------------------------------------------
 
+  typedef RunOptions_Experimental_RunHandlerPoolOptions RunHandlerPoolOptions;
+
   // accessors -------------------------------------------------------
+
+  // .tensorflow.RunOptions.Experimental.RunHandlerPoolOptions run_handler_pool_options = 3;
+  bool has_run_handler_pool_options() const;
+  void clear_run_handler_pool_options();
+  static const int kRunHandlerPoolOptionsFieldNumber = 3;
+  private:
+  const ::tensorflow::RunOptions_Experimental_RunHandlerPoolOptions& _internal_run_handler_pool_options() const;
+  public:
+  const ::tensorflow::RunOptions_Experimental_RunHandlerPoolOptions& run_handler_pool_options() const;
+  ::tensorflow::RunOptions_Experimental_RunHandlerPoolOptions* release_run_handler_pool_options();
+  ::tensorflow::RunOptions_Experimental_RunHandlerPoolOptions* mutable_run_handler_pool_options();
+  void set_allocated_run_handler_pool_options(::tensorflow::RunOptions_Experimental_RunHandlerPoolOptions* run_handler_pool_options);
+  void unsafe_arena_set_allocated_run_handler_pool_options(
+      ::tensorflow::RunOptions_Experimental_RunHandlerPoolOptions* run_handler_pool_options);
+  ::tensorflow::RunOptions_Experimental_RunHandlerPoolOptions* unsafe_arena_release_run_handler_pool_options();
 
   // int64 collective_graph_key = 1;
   void clear_collective_graph_key();
@@ -2262,6 +2586,7 @@ class RunOptions_Experimental : public ::google::protobuf::Message /* @@protoc_i
   template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
+  ::tensorflow::RunOptions_Experimental_RunHandlerPoolOptions* run_handler_pool_options_;
   ::google::protobuf::int64 collective_graph_key_;
   bool use_run_handler_pool_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
@@ -2310,7 +2635,7 @@ class RunOptions : public ::google::protobuf::Message /* @@protoc_insertion_poin
                &_RunOptions_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    12;
+    13;
 
   void UnsafeArenaSwap(RunOptions* other);
   void Swap(RunOptions* other);
@@ -2520,7 +2845,7 @@ class RunMetadata_FunctionGraphs : public ::google::protobuf::Message /* @@proto
                &_RunMetadata_FunctionGraphs_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    13;
+    14;
 
   void UnsafeArenaSwap(RunMetadata_FunctionGraphs* other);
   void Swap(RunMetadata_FunctionGraphs* other);
@@ -2676,7 +3001,7 @@ class RunMetadata : public ::google::protobuf::Message /* @@protoc_insertion_poi
                &_RunMetadata_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    14;
+    15;
 
   void UnsafeArenaSwap(RunMetadata* other);
   void Swap(RunMetadata* other);
@@ -2847,7 +3172,7 @@ class TensorConnection : public ::google::protobuf::Message /* @@protoc_insertio
                &_TensorConnection_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    15;
+    16;
 
   void UnsafeArenaSwap(TensorConnection* other);
   void Swap(TensorConnection* other);
@@ -3048,7 +3373,7 @@ class CallableOptions : public ::google::protobuf::Message /* @@protoc_insertion
                &_CallableOptions_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    18;
+    19;
 
   void UnsafeArenaSwap(CallableOptions* other);
   void Swap(CallableOptions* other);
@@ -3293,6 +3618,36 @@ GPUOptions_Experimental_VirtualDevices::mutable_memory_limit_mb() {
   return &memory_limit_mb_;
 }
 
+// repeated int32 priority = 2;
+inline int GPUOptions_Experimental_VirtualDevices::priority_size() const {
+  return priority_.size();
+}
+inline void GPUOptions_Experimental_VirtualDevices::clear_priority() {
+  priority_.Clear();
+}
+inline ::google::protobuf::int32 GPUOptions_Experimental_VirtualDevices::priority(int index) const {
+  // @@protoc_insertion_point(field_get:tensorflow.GPUOptions.Experimental.VirtualDevices.priority)
+  return priority_.Get(index);
+}
+inline void GPUOptions_Experimental_VirtualDevices::set_priority(int index, ::google::protobuf::int32 value) {
+  priority_.Set(index, value);
+  // @@protoc_insertion_point(field_set:tensorflow.GPUOptions.Experimental.VirtualDevices.priority)
+}
+inline void GPUOptions_Experimental_VirtualDevices::add_priority(::google::protobuf::int32 value) {
+  priority_.Add(value);
+  // @@protoc_insertion_point(field_add:tensorflow.GPUOptions.Experimental.VirtualDevices.priority)
+}
+inline const ::google::protobuf::RepeatedField< ::google::protobuf::int32 >&
+GPUOptions_Experimental_VirtualDevices::priority() const {
+  // @@protoc_insertion_point(field_list:tensorflow.GPUOptions.Experimental.VirtualDevices.priority)
+  return priority_;
+}
+inline ::google::protobuf::RepeatedField< ::google::protobuf::int32 >*
+GPUOptions_Experimental_VirtualDevices::mutable_priority() {
+  // @@protoc_insertion_point(field_mutable_list:tensorflow.GPUOptions.Experimental.VirtualDevices.priority)
+  return &priority_;
+}
+
 // -------------------------------------------------------------------
 
 // GPUOptions_Experimental
@@ -3484,6 +3839,48 @@ inline void GPUOptions_Experimental::set_kernel_tracker_max_pending(::google::pr
   
   kernel_tracker_max_pending_ = value;
   // @@protoc_insertion_point(field_set:tensorflow.GPUOptions.Experimental.kernel_tracker_max_pending)
+}
+
+// double internal_fragmentation_fraction = 10;
+inline void GPUOptions_Experimental::clear_internal_fragmentation_fraction() {
+  internal_fragmentation_fraction_ = 0;
+}
+inline double GPUOptions_Experimental::internal_fragmentation_fraction() const {
+  // @@protoc_insertion_point(field_get:tensorflow.GPUOptions.Experimental.internal_fragmentation_fraction)
+  return internal_fragmentation_fraction_;
+}
+inline void GPUOptions_Experimental::set_internal_fragmentation_fraction(double value) {
+  
+  internal_fragmentation_fraction_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.GPUOptions.Experimental.internal_fragmentation_fraction)
+}
+
+// bool use_cuda_malloc_async = 11;
+inline void GPUOptions_Experimental::clear_use_cuda_malloc_async() {
+  use_cuda_malloc_async_ = false;
+}
+inline bool GPUOptions_Experimental::use_cuda_malloc_async() const {
+  // @@protoc_insertion_point(field_get:tensorflow.GPUOptions.Experimental.use_cuda_malloc_async)
+  return use_cuda_malloc_async_;
+}
+inline void GPUOptions_Experimental::set_use_cuda_malloc_async(bool value) {
+  
+  use_cuda_malloc_async_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.GPUOptions.Experimental.use_cuda_malloc_async)
+}
+
+// bool disallow_retry_on_allocation_failure = 12;
+inline void GPUOptions_Experimental::clear_disallow_retry_on_allocation_failure() {
+  disallow_retry_on_allocation_failure_ = false;
+}
+inline bool GPUOptions_Experimental::disallow_retry_on_allocation_failure() const {
+  // @@protoc_insertion_point(field_get:tensorflow.GPUOptions.Experimental.disallow_retry_on_allocation_failure)
+  return disallow_retry_on_allocation_failure_;
+}
+inline void GPUOptions_Experimental::set_disallow_retry_on_allocation_failure(bool value) {
+  
+  disallow_retry_on_allocation_failure_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.GPUOptions.Experimental.disallow_retry_on_allocation_failure)
 }
 
 // -------------------------------------------------------------------
@@ -3875,6 +4272,20 @@ inline void OptimizerOptions::set_global_jit_level(::tensorflow::OptimizerOption
   
   global_jit_level_ = value;
   // @@protoc_insertion_point(field_set:tensorflow.OptimizerOptions.global_jit_level)
+}
+
+// bool cpu_global_jit = 7;
+inline void OptimizerOptions::clear_cpu_global_jit() {
+  cpu_global_jit_ = false;
+}
+inline bool OptimizerOptions::cpu_global_jit() const {
+  // @@protoc_insertion_point(field_get:tensorflow.OptimizerOptions.cpu_global_jit)
+  return cpu_global_jit_;
+}
+inline void OptimizerOptions::set_cpu_global_jit(bool value) {
+  
+  cpu_global_jit_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.OptimizerOptions.cpu_global_jit)
 }
 
 // -------------------------------------------------------------------
@@ -4331,6 +4742,20 @@ inline void RPCOptions::set_disable_session_connection_sharing(bool value) {
   // @@protoc_insertion_point(field_set:tensorflow.RPCOptions.disable_session_connection_sharing)
 }
 
+// int32 num_channels_per_target = 6;
+inline void RPCOptions::clear_num_channels_per_target() {
+  num_channels_per_target_ = 0;
+}
+inline ::google::protobuf::int32 RPCOptions::num_channels_per_target() const {
+  // @@protoc_insertion_point(field_get:tensorflow.RPCOptions.num_channels_per_target)
+  return num_channels_per_target_;
+}
+inline void RPCOptions::set_num_channels_per_target(::google::protobuf::int32 value) {
+  
+  num_channels_per_target_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.RPCOptions.num_channels_per_target)
+}
+
 // -------------------------------------------------------------------
 
 // SessionMetadata
@@ -4755,6 +5180,176 @@ inline void ConfigProto_Experimental::set_optimize_for_static_graph(bool value) 
   
   optimize_for_static_graph_ = value;
   // @@protoc_insertion_point(field_set:tensorflow.ConfigProto.Experimental.optimize_for_static_graph)
+}
+
+// bool enable_mlir_bridge = 13;
+inline void ConfigProto_Experimental::clear_enable_mlir_bridge() {
+  enable_mlir_bridge_ = false;
+}
+inline bool ConfigProto_Experimental::enable_mlir_bridge() const {
+  // @@protoc_insertion_point(field_get:tensorflow.ConfigProto.Experimental.enable_mlir_bridge)
+  return enable_mlir_bridge_;
+}
+inline void ConfigProto_Experimental::set_enable_mlir_bridge(bool value) {
+  
+  enable_mlir_bridge_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.ConfigProto.Experimental.enable_mlir_bridge)
+}
+
+// .tensorflow.ConfigProto.Experimental.MlirBridgeRollout mlir_bridge_rollout = 17;
+inline void ConfigProto_Experimental::clear_mlir_bridge_rollout() {
+  mlir_bridge_rollout_ = 0;
+}
+inline ::tensorflow::ConfigProto_Experimental_MlirBridgeRollout ConfigProto_Experimental::mlir_bridge_rollout() const {
+  // @@protoc_insertion_point(field_get:tensorflow.ConfigProto.Experimental.mlir_bridge_rollout)
+  return static_cast< ::tensorflow::ConfigProto_Experimental_MlirBridgeRollout >(mlir_bridge_rollout_);
+}
+inline void ConfigProto_Experimental::set_mlir_bridge_rollout(::tensorflow::ConfigProto_Experimental_MlirBridgeRollout value) {
+  
+  mlir_bridge_rollout_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.ConfigProto.Experimental.mlir_bridge_rollout)
+}
+
+// bool enable_mlir_graph_optimization = 16;
+inline void ConfigProto_Experimental::clear_enable_mlir_graph_optimization() {
+  enable_mlir_graph_optimization_ = false;
+}
+inline bool ConfigProto_Experimental::enable_mlir_graph_optimization() const {
+  // @@protoc_insertion_point(field_get:tensorflow.ConfigProto.Experimental.enable_mlir_graph_optimization)
+  return enable_mlir_graph_optimization_;
+}
+inline void ConfigProto_Experimental::set_enable_mlir_graph_optimization(bool value) {
+  
+  enable_mlir_graph_optimization_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.ConfigProto.Experimental.enable_mlir_graph_optimization)
+}
+
+// bool disable_output_partition_graphs = 14;
+inline void ConfigProto_Experimental::clear_disable_output_partition_graphs() {
+  disable_output_partition_graphs_ = false;
+}
+inline bool ConfigProto_Experimental::disable_output_partition_graphs() const {
+  // @@protoc_insertion_point(field_get:tensorflow.ConfigProto.Experimental.disable_output_partition_graphs)
+  return disable_output_partition_graphs_;
+}
+inline void ConfigProto_Experimental::set_disable_output_partition_graphs(bool value) {
+  
+  disable_output_partition_graphs_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.ConfigProto.Experimental.disable_output_partition_graphs)
+}
+
+// int64 xla_fusion_autotuner_thresh = 15;
+inline void ConfigProto_Experimental::clear_xla_fusion_autotuner_thresh() {
+  xla_fusion_autotuner_thresh_ = GOOGLE_LONGLONG(0);
+}
+inline ::google::protobuf::int64 ConfigProto_Experimental::xla_fusion_autotuner_thresh() const {
+  // @@protoc_insertion_point(field_get:tensorflow.ConfigProto.Experimental.xla_fusion_autotuner_thresh)
+  return xla_fusion_autotuner_thresh_;
+}
+inline void ConfigProto_Experimental::set_xla_fusion_autotuner_thresh(::google::protobuf::int64 value) {
+  
+  xla_fusion_autotuner_thresh_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.ConfigProto.Experimental.xla_fusion_autotuner_thresh)
+}
+
+// bool use_tfrt = 18;
+inline void ConfigProto_Experimental::clear_use_tfrt() {
+  use_tfrt_ = false;
+}
+inline bool ConfigProto_Experimental::use_tfrt() const {
+  // @@protoc_insertion_point(field_get:tensorflow.ConfigProto.Experimental.use_tfrt)
+  return use_tfrt_;
+}
+inline void ConfigProto_Experimental::set_use_tfrt(bool value) {
+  
+  use_tfrt_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.ConfigProto.Experimental.use_tfrt)
+}
+
+// bool disable_functional_ops_lowering = 21;
+inline void ConfigProto_Experimental::clear_disable_functional_ops_lowering() {
+  disable_functional_ops_lowering_ = false;
+}
+inline bool ConfigProto_Experimental::disable_functional_ops_lowering() const {
+  // @@protoc_insertion_point(field_get:tensorflow.ConfigProto.Experimental.disable_functional_ops_lowering)
+  return disable_functional_ops_lowering_;
+}
+inline void ConfigProto_Experimental::set_disable_functional_ops_lowering(bool value) {
+  
+  disable_functional_ops_lowering_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.ConfigProto.Experimental.disable_functional_ops_lowering)
+}
+
+// bool xla_prefer_single_graph_cluster = 22;
+inline void ConfigProto_Experimental::clear_xla_prefer_single_graph_cluster() {
+  xla_prefer_single_graph_cluster_ = false;
+}
+inline bool ConfigProto_Experimental::xla_prefer_single_graph_cluster() const {
+  // @@protoc_insertion_point(field_get:tensorflow.ConfigProto.Experimental.xla_prefer_single_graph_cluster)
+  return xla_prefer_single_graph_cluster_;
+}
+inline void ConfigProto_Experimental::set_xla_prefer_single_graph_cluster(bool value) {
+  
+  xla_prefer_single_graph_cluster_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.ConfigProto.Experimental.xla_prefer_single_graph_cluster)
+}
+
+// .tensorflow.CoordinationServiceConfig coordination_config = 23;
+inline bool ConfigProto_Experimental::has_coordination_config() const {
+  return this != internal_default_instance() && coordination_config_ != NULL;
+}
+inline const ::tensorflow::CoordinationServiceConfig& ConfigProto_Experimental::_internal_coordination_config() const {
+  return *coordination_config_;
+}
+inline const ::tensorflow::CoordinationServiceConfig& ConfigProto_Experimental::coordination_config() const {
+  const ::tensorflow::CoordinationServiceConfig* p = coordination_config_;
+  // @@protoc_insertion_point(field_get:tensorflow.ConfigProto.Experimental.coordination_config)
+  return p != NULL ? *p : *reinterpret_cast<const ::tensorflow::CoordinationServiceConfig*>(
+      &::tensorflow::_CoordinationServiceConfig_default_instance_);
+}
+inline ::tensorflow::CoordinationServiceConfig* ConfigProto_Experimental::release_coordination_config() {
+  // @@protoc_insertion_point(field_release:tensorflow.ConfigProto.Experimental.coordination_config)
+  
+  ::tensorflow::CoordinationServiceConfig* temp = coordination_config_;
+  if (GetArenaNoVirtual() != NULL) {
+    temp = ::google::protobuf::internal::DuplicateIfNonNull(temp);
+  }
+  coordination_config_ = NULL;
+  return temp;
+}
+inline ::tensorflow::CoordinationServiceConfig* ConfigProto_Experimental::unsafe_arena_release_coordination_config() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:tensorflow.ConfigProto.Experimental.coordination_config)
+  
+  ::tensorflow::CoordinationServiceConfig* temp = coordination_config_;
+  coordination_config_ = NULL;
+  return temp;
+}
+inline ::tensorflow::CoordinationServiceConfig* ConfigProto_Experimental::mutable_coordination_config() {
+  
+  if (coordination_config_ == NULL) {
+    auto* p = CreateMaybeMessage<::tensorflow::CoordinationServiceConfig>(GetArenaNoVirtual());
+    coordination_config_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:tensorflow.ConfigProto.Experimental.coordination_config)
+  return coordination_config_;
+}
+inline void ConfigProto_Experimental::set_allocated_coordination_config(::tensorflow::CoordinationServiceConfig* coordination_config) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete reinterpret_cast< ::google::protobuf::MessageLite*>(coordination_config_);
+  }
+  if (coordination_config) {
+    ::google::protobuf::Arena* submessage_arena = NULL;
+    if (message_arena != submessage_arena) {
+      coordination_config = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, coordination_config, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  coordination_config_ = coordination_config;
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.ConfigProto.Experimental.coordination_config)
 }
 
 // -------------------------------------------------------------------
@@ -5244,6 +5839,20 @@ inline void ConfigProto::set_isolate_session_state(bool value) {
   // @@protoc_insertion_point(field_set:tensorflow.ConfigProto.isolate_session_state)
 }
 
+// bool share_cluster_devices_in_session = 17;
+inline void ConfigProto::clear_share_cluster_devices_in_session() {
+  share_cluster_devices_in_session_ = false;
+}
+inline bool ConfigProto::share_cluster_devices_in_session() const {
+  // @@protoc_insertion_point(field_get:tensorflow.ConfigProto.share_cluster_devices_in_session)
+  return share_cluster_devices_in_session_;
+}
+inline void ConfigProto::set_share_cluster_devices_in_session(bool value) {
+  
+  share_cluster_devices_in_session_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.ConfigProto.share_cluster_devices_in_session)
+}
+
 // .tensorflow.ConfigProto.Experimental experimental = 16;
 inline bool ConfigProto::has_experimental() const {
   return this != internal_default_instance() && experimental_ != NULL;
@@ -5311,6 +5920,24 @@ inline void ConfigProto::set_allocated_experimental(::tensorflow::ConfigProto_Ex
 
 // -------------------------------------------------------------------
 
+// RunOptions_Experimental_RunHandlerPoolOptions
+
+// int64 priority = 1;
+inline void RunOptions_Experimental_RunHandlerPoolOptions::clear_priority() {
+  priority_ = GOOGLE_LONGLONG(0);
+}
+inline ::google::protobuf::int64 RunOptions_Experimental_RunHandlerPoolOptions::priority() const {
+  // @@protoc_insertion_point(field_get:tensorflow.RunOptions.Experimental.RunHandlerPoolOptions.priority)
+  return priority_;
+}
+inline void RunOptions_Experimental_RunHandlerPoolOptions::set_priority(::google::protobuf::int64 value) {
+  
+  priority_ = value;
+  // @@protoc_insertion_point(field_set:tensorflow.RunOptions.Experimental.RunHandlerPoolOptions.priority)
+}
+
+// -------------------------------------------------------------------
+
 // RunOptions_Experimental
 
 // int64 collective_graph_key = 1;
@@ -5339,6 +5966,71 @@ inline void RunOptions_Experimental::set_use_run_handler_pool(bool value) {
   
   use_run_handler_pool_ = value;
   // @@protoc_insertion_point(field_set:tensorflow.RunOptions.Experimental.use_run_handler_pool)
+}
+
+// .tensorflow.RunOptions.Experimental.RunHandlerPoolOptions run_handler_pool_options = 3;
+inline bool RunOptions_Experimental::has_run_handler_pool_options() const {
+  return this != internal_default_instance() && run_handler_pool_options_ != NULL;
+}
+inline void RunOptions_Experimental::clear_run_handler_pool_options() {
+  if (GetArenaNoVirtual() == NULL && run_handler_pool_options_ != NULL) {
+    delete run_handler_pool_options_;
+  }
+  run_handler_pool_options_ = NULL;
+}
+inline const ::tensorflow::RunOptions_Experimental_RunHandlerPoolOptions& RunOptions_Experimental::_internal_run_handler_pool_options() const {
+  return *run_handler_pool_options_;
+}
+inline const ::tensorflow::RunOptions_Experimental_RunHandlerPoolOptions& RunOptions_Experimental::run_handler_pool_options() const {
+  const ::tensorflow::RunOptions_Experimental_RunHandlerPoolOptions* p = run_handler_pool_options_;
+  // @@protoc_insertion_point(field_get:tensorflow.RunOptions.Experimental.run_handler_pool_options)
+  return p != NULL ? *p : *reinterpret_cast<const ::tensorflow::RunOptions_Experimental_RunHandlerPoolOptions*>(
+      &::tensorflow::_RunOptions_Experimental_RunHandlerPoolOptions_default_instance_);
+}
+inline ::tensorflow::RunOptions_Experimental_RunHandlerPoolOptions* RunOptions_Experimental::release_run_handler_pool_options() {
+  // @@protoc_insertion_point(field_release:tensorflow.RunOptions.Experimental.run_handler_pool_options)
+  
+  ::tensorflow::RunOptions_Experimental_RunHandlerPoolOptions* temp = run_handler_pool_options_;
+  if (GetArenaNoVirtual() != NULL) {
+    temp = ::google::protobuf::internal::DuplicateIfNonNull(temp);
+  }
+  run_handler_pool_options_ = NULL;
+  return temp;
+}
+inline ::tensorflow::RunOptions_Experimental_RunHandlerPoolOptions* RunOptions_Experimental::unsafe_arena_release_run_handler_pool_options() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:tensorflow.RunOptions.Experimental.run_handler_pool_options)
+  
+  ::tensorflow::RunOptions_Experimental_RunHandlerPoolOptions* temp = run_handler_pool_options_;
+  run_handler_pool_options_ = NULL;
+  return temp;
+}
+inline ::tensorflow::RunOptions_Experimental_RunHandlerPoolOptions* RunOptions_Experimental::mutable_run_handler_pool_options() {
+  
+  if (run_handler_pool_options_ == NULL) {
+    auto* p = CreateMaybeMessage<::tensorflow::RunOptions_Experimental_RunHandlerPoolOptions>(GetArenaNoVirtual());
+    run_handler_pool_options_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:tensorflow.RunOptions.Experimental.run_handler_pool_options)
+  return run_handler_pool_options_;
+}
+inline void RunOptions_Experimental::set_allocated_run_handler_pool_options(::tensorflow::RunOptions_Experimental_RunHandlerPoolOptions* run_handler_pool_options) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete run_handler_pool_options_;
+  }
+  if (run_handler_pool_options) {
+    ::google::protobuf::Arena* submessage_arena =
+      ::google::protobuf::Arena::GetArena(run_handler_pool_options);
+    if (message_arena != submessage_arena) {
+      run_handler_pool_options = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, run_handler_pool_options, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  run_handler_pool_options_ = run_handler_pool_options;
+  // @@protoc_insertion_point(field_set_allocated:tensorflow.RunOptions.Experimental.run_handler_pool_options)
 }
 
 // -------------------------------------------------------------------
@@ -6420,6 +7112,8 @@ inline void CallableOptions::set_fetch_skip_sync(bool value) {
 
 // -------------------------------------------------------------------
 
+// -------------------------------------------------------------------
+
 
 // @@protoc_insertion_point(namespace_scope)
 
@@ -6437,6 +7131,11 @@ template <> struct is_proto_enum< ::tensorflow::OptimizerOptions_GlobalJitLevel>
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::tensorflow::OptimizerOptions_GlobalJitLevel>() {
   return ::tensorflow::OptimizerOptions_GlobalJitLevel_descriptor();
+}
+template <> struct is_proto_enum< ::tensorflow::ConfigProto_Experimental_MlirBridgeRollout> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::tensorflow::ConfigProto_Experimental_MlirBridgeRollout>() {
+  return ::tensorflow::ConfigProto_Experimental_MlirBridgeRollout_descriptor();
 }
 template <> struct is_proto_enum< ::tensorflow::RunOptions_TraceLevel> : ::std::true_type {};
 template <>

@@ -93,13 +93,14 @@ void AddDescriptorsImpl() {
       "roto\022\ntensorflow\032)tensorflow/core/protob"
       "uf/meta_graph.proto\"_\n\nSavedModel\022\"\n\032sav"
       "ed_model_schema_version\030\001 \001(\003\022-\n\013meta_gr"
-      "aphs\030\002 \003(\0132\030.tensorflow.MetaGraphDefBo\n\030"
-      "org.tensorflow.frameworkB\020SavedModelProt"
-      "osP\001Z<github.com/tensorflow/tensorflow/t"
-      "ensorflow/go/core/protobuf\370\001\001b\006proto3"
+      "aphs\030\002 \003(\0132\030.tensorflow.MetaGraphDefB\210\001\n"
+      "\030org.tensorflow.frameworkB\020SavedModelPro"
+      "tosP\001ZUgithub.com/tensorflow/tensorflow/"
+      "tensorflow/go/core/protobuf/for_core_pro"
+      "tos_go_proto\370\001\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 317);
+      descriptor, 343);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/protobuf/saved_model.proto", &protobuf_RegisterTypes);
   ::protobuf_tensorflow_2fcore_2fprotobuf_2fmeta_5fgraph_2eproto::AddDescriptors();

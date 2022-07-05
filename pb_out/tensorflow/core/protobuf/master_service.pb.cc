@@ -74,13 +74,14 @@ void AddDescriptorsImpl() {
       "eRequest\032\037.tensorflow.RunCallableRespons"
       "e\022Z\n\017ReleaseCallable\022\".tensorflow.Releas"
       "eCallableRequest\032#.tensorflow.ReleaseCal"
-      "lableResponseBq\n\032org.tensorflow.distrunt"
-      "imeB\023MasterServiceProtosP\001Z<github.com/t"
-      "ensorflow/tensorflow/tensorflow/go/core/"
-      "protobufb\006proto3"
+      "lableResponseB\212\001\n\032org.tensorflow.distrun"
+      "timeB\023MasterServiceProtosP\001ZUgithub.com/"
+      "tensorflow/tensorflow/tensorflow/go/core"
+      "/protobuf/for_core_protos_go_protob\006prot"
+      "o3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 1056);
+      descriptor, 1082);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/protobuf/master_service.proto", &protobuf_RegisterTypes);
   ::protobuf_tensorflow_2fcore_2fprotobuf_2fmaster_2eproto::AddDescriptors();

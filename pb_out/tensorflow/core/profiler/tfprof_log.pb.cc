@@ -942,10 +942,12 @@ void AddDescriptorsImpl() {
       "key\030\001 \001(\005\022(\n\005value\030\002 \001(\0132\031.tensorflow.tf"
       "prof.Memory:\0028\001\"\035\n\005Tuple\022\024\n\014int64_values"
       "\030\001 \003(\003\"$\n\006Memory\022\r\n\005bytes\030\001 \001(\003\022\013\n\003ptr\030\002"
-      " \001(\004b\006proto3"
+      " \001(\004BRZPgithub.com/tensorflow/tensorflow"
+      "/tensorflow/go/core/profiler/tfprof_log_"
+      "go_protob\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 3212);
+      descriptor, 3296);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "tensorflow/core/profiler/tfprof_log.proto", &protobuf_RegisterTypes);
   ::protobuf_tensorflow_2fcore_2fframework_2fattr_5fvalue_2eproto::AddDescriptors();
